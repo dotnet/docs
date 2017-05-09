@@ -1,0 +1,49 @@
+<Type Name="ToolCreatedEventArgs" FullName="System.Activities.Presentation.Toolbox.ToolCreatedEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class ToolCreatedEventArgs : System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ToolCreatedEventArgs extends System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Toolbox.ToolCreatedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.RoutedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents event arguments for the tool created event in the rehosted toolbox.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The event arguments contain data about the event that is passed to the <xref:System.Activities.Presentation.Toolbox.ToolCreatedEventHandler>.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_ToolCreatedEventArgs#0](WFD_ToolCreatedEventArgs#0)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Components">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.IComponent[] Components { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IComponent[] Components" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolCreatedEventArgs.Components" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.IComponent[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the components to be included in the tool creation event in the rehosted toolbox.</summary>
+        <value>The <see cref="T:System.Array" /> of type <see cref="T:System.ComponentModel.IComponent" /> that contains the data passed to the <see cref="T:System.Activities.Presentation.Toolbox.ToolCreatedEventHandler" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

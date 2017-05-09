@@ -1,0 +1,77 @@
+<Type Name="DirectoryRequest" FullName="System.DirectoryServices.Protocols.DirectoryRequest">
+  <TypeSignature Language="C#" Value="public abstract class DirectoryRequest : System.DirectoryServices.Protocols.DirectoryOperation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DirectoryRequest extends System.DirectoryServices.Protocols.DirectoryOperation" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DirectoryRequest" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.Protocols.DirectoryOperation</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> class is the base class for request related classes, like the <see cref="T:System.DirectoryServices.Protocols.SearchRequest" /> and <see cref="T:System.DirectoryServices.Protocols.AddRequest" /> classes.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Controls">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.DirectoryControlCollection Controls { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.Protocols.DirectoryControlCollection Controls" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryRequest.Controls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.DirectoryControlCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirectoryRequest.Controls" /> property contains a <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> object.</summary>
+        <value>A <see cref="T:System.DirectoryServices.Protocols.DirectoryControlCollection" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestId">
+      <MemberSignature Language="C#" Value="public string RequestId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RequestId" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryRequest.RequestId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirectoryRequest.RequestId" /> property contains the <paramref name="requestID" /> specified in the request.</summary>
+        <value>The <paramref name="requestID" /> specified in the request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToXmlNode">
+      <MemberSignature Language="C#" Value="protected abstract System.Xml.XmlElement ToXmlNode (System.Xml.XmlDocument doc);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xml.XmlElement ToXmlNode(class System.Xml.XmlDocument doc) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryRequest.ToXmlNode(System.Xml.XmlDocument)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="doc" Type="System.Xml.XmlDocument" />
+      </Parameters>
+      <Docs>
+        <param name="doc">The <see cref="T:System.Xml.XmlDocument" /> to represent as an XML element.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryRequest.ToXmlNode(System.Xml.XmlDocument)" /> method creates an XML node from the specified <see cref="T:System.Xml.XmlDocument" /> object.</summary>
+        <returns>The created <see cref="T:System.Xml.XmlElement" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

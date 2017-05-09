@@ -1,0 +1,65 @@
+<Type Name="PeerMessagePropagationFilter" FullName="System.ServiceModel.PeerMessagePropagationFilter">
+  <TypeSignature Language="C#" Value="public abstract class PeerMessagePropagationFilter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PeerMessagePropagationFilter extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerMessagePropagationFilter" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the base class for peer channel message filters.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implementations of filters for messages transmitted over a peer channel must be derived from this class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected PeerMessagePropagationFilter ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerMessagePropagationFilter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.PeerMessagePropagationFilter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldMessagePropagate">
+      <MemberSignature Language="C#" Value="public abstract System.ServiceModel.PeerMessagePropagation ShouldMessagePropagate (System.ServiceModel.Channels.Message message, System.ServiceModel.PeerMessageOrigination origination);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.ServiceModel.PeerMessagePropagation ShouldMessagePropagate(class System.ServiceModel.Channels.Message message, valuetype System.ServiceModel.PeerMessageOrigination origination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerMessagePropagationFilter.ShouldMessagePropagate(System.ServiceModel.Channels.Message,System.ServiceModel.PeerMessageOrigination)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.PeerMessagePropagation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="origination" Type="System.ServiceModel.PeerMessageOrigination" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message to evaluate for propagation.</param>
+        <param name="origination">A <see cref="T:System.ServiceModel.PeerMessageOrigination" /> enumeration value that specifies the origin (local or remote) of the message under evaluation.</param>
+        <summary>Returns whether or not a message received on a peer channel should be propagated, and if so, the destination of the message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.PeerMessagePropagation" /> enumeration value that indicates the destination of the message (local, remote, both, or no propagation at all).</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

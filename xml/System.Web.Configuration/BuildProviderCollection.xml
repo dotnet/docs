@@ -1,0 +1,330 @@
+<Type Name="BuildProviderCollection" FullName="System.Web.Configuration.BuildProviderCollection">
+  <TypeSignature Language="C#" Value="public sealed class BuildProviderCollection : System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildProviderCollection extends System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.BuildProviderCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElementCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Configuration.ConfigurationCollection(typeof(System.Web.Configuration.BuildProvider))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Web.Configuration.BuildProvider" /> objects. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.BuildProviderCollection> is used to compile custom resource files. You can have any number of build providers. The <xref:System.Web.Configuration.BuildProviderCollection> does not refer to any actual element in the underlying configuration file. It is a construct that allows easy access to the compilation information it contains.  
+  
+   
+  
+## Examples  
+ This section provides two code examples. The first demonstrates how to declaratively specify values for several properties of the <xref:System.Web.Configuration.BuildProviderCollection> class. The second demonstrates how to use members of the <xref:System.Web.Configuration.BuildProviderCollection> class.  
+  
+ The following configuration file example shows how to declaratively specify values for several properties of the <xref:System.Web.Configuration.BuildProviderCollection> class.  
+  
+```  
+<system.web>  
+  <compilation>   
+    <buildProviders>  
+      <add extension=".aspx"   
+        type="System.Web.Compilation.PageBuildProvider"  
+         />  
+      <add extension=".ascx"   
+        type="System.Web.Compilation.UserControlBuildProvider"  
+         />  
+      <add extension=".master"   
+        type="System.Web.Compilation.MasterPageBuildProvider"  
+         />  
+      <add extension=".asix"   
+        type="System.Web.Compilation.ImageGeneratorBuildProvider"  
+         />  
+      <add extension=".asmx"   
+        type="System.Web.Compilation.WebServiceBuildProvider"  
+         />  
+      <add extension=".ashx"   
+        type="System.Web.Compilation.WebHandlerBuildProvider"  
+         />  
+      <add extension=".soap"   
+        type="System.Web.Compilation.WebServiceBuildProvider"  
+         />  
+      <add extension=".resx"   
+        type="System.Web.Compilation.ResXBuildProvider"  
+        appliesTo="Resources" />  
+      <add extension=".resources"   
+        type="System.Web.Compilation.ResourcesBuildProvider"  
+        appliesTo="Code, Resources" />  
+      <add extension=".wsdl"   
+        type="System.Web.Compilation.WsdlBuildProvider"  
+        appliesTo="Code" />  
+      <add extension=".xsd"   
+        type="System.Web.Compilation.XsdBuildProvider"  
+        appliesTo="Code" />  
+    </buildProviders>  
+  </compilation>  
+</system.web>  
+  
+```  
+  
+ The following code example demonstrates how to use members of the <xref:System.Web.Configuration.BuildProviderCollection> class.  
+  
+ [!code-csharp[System.Web.Configuration.BuildProviderCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/CS/BuildProviderCollection.cs#1)]
+ [!code-vb[System.Web.Configuration.BuildProviderCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/VB/BuildProviderCollection.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BuildProviderCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.BuildProviderCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.BuildProviderCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Web.Configuration.BuildProvider buildProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Configuration.BuildProvider buildProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.BuildProviderCollection.Add(System.Web.Configuration.BuildProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buildProvider" Type="System.Web.Configuration.BuildProvider" />
+      </Parameters>
+      <Docs>
+        <param name="buildProvider">A <see cref="T:System.Web.Configuration.BuildProvider" /> object.</param>
+        <summary>Adds a <see cref="T:System.Web.Configuration.BuildProvider" /> object to the <see cref="T:System.Web.Configuration.BuildProviderCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.Configuration.BuildProvider> object already exists in the collection, the build provider is ignored.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.Configuration.BuildProviderCollection.Add%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.BuildProviderCollection> class.  
+  
+ [!code-csharp[System.Web.Configuration.BuildProviderCollection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/CS/BuildProviderCollection.cs#4)]
+ [!code-vb[System.Web.Configuration.BuildProviderCollection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/VB/BuildProviderCollection.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.BuildProviderCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears all <see cref="T:System.Web.Configuration.BuildProvider" /> objects from the <see cref="T:System.Web.Configuration.BuildProviderCollection" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNewElement">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.BuildProviderCollection.CreateNewElement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementKey">
+      <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.BuildProviderCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Configuration.ConfigurationElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.BuildProvider this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.BuildProvider Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.BuildProviderCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.BuildProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">An integer value specifying a particular <see cref="T:System.Web.Configuration.BuildProvider" /> object within the <see cref="T:System.Web.Configuration.BuildProviderCollection" />.</param>
+        <summary>Gets the <see cref="T:System.Web.Configuration.BuildProvider" /> object at the specified index of the collection.</summary>
+        <value>A <see cref="T:System.Web.Configuration.BuildProvider" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.BuildProvider this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.BuildProvider Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.BuildProviderCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.BuildProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Web.Configuration.BuildProvider" /> object to return from the collection.</param>
+        <summary>Gets the <see cref="T:System.Web.Configuration.BuildProvider" /> collection element based on the specified name.</summary>
+        <value>A <see cref="T:System.Web.Configuration.BuildProvider" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.BuildProviderCollection.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.BuildProviderCollection.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">A string value specifying the <see cref="T:System.Web.Configuration.BuildProvider" /> reference.</param>
+        <summary>Removes a <see cref="T:System.Web.Configuration.BuildProvider" /> object from the <see cref="T:System.Web.Configuration.BuildProviderCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.Configuration.BuildProvider> does not exist in the collection, the build provider is ignored.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.Configuration.BuildProviderCollection.Remove%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.BuildProviderCollection> class.  
+  
+ [!code-csharp[System.Web.Configuration.BuildProviderCollection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/CS/BuildProviderCollection.cs#5)]
+ [!code-vb[System.Web.Configuration.BuildProviderCollection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/VB/BuildProviderCollection.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.BuildProviderCollection.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">An integer value specifying the location of a specific <see cref="T:System.Web.Configuration.BuildProvider" /> object within the <see cref="T:System.Web.Configuration.BuildProviderCollection" />.</param>
+        <summary>Removes the <see cref="T:System.Web.Configuration.BuildProvider" /> object at the specified index from the <see cref="T:System.Web.Configuration.BuildProviderCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the index does not specify a <xref:System.Web.Configuration.BuildProvider> in the collection, an out-of-range exception is thrown.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.Configuration.BuildProviderCollection.RemoveAt%2A> method. This code example is part of a larger example provided for the <xref:System.Web.Configuration.BuildProviderCollection> class.  
+  
+ [!code-csharp[System.Web.Configuration.BuildProviderCollection#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/CS/BuildProviderCollection.cs#6)]
+ [!code-vb[System.Web.Configuration.BuildProviderCollection#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.BuildProviderCollection/VB/BuildProviderCollection.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

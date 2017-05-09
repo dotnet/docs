@@ -1,0 +1,205 @@
+<Type Name="DataRowAction" FullName="System.Data.DataRowAction">
+  <TypeSignature Language="C#" Value="public enum DataRowAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataRowAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.DataRowAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes an action performed on a <see cref="T:System.Data.DataRow" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Data.DataRowAction> is returned as part of the <xref:System.Data.DataRowChangeEventArgs> to indicate the action that was taken on a row to raise the event.  
+  
+ Use the members of this enumeration to determine the action that has occurred on a <xref:System.Data.DataRow> with regard to the <xref:System.Data.DataTable> to which it belongs.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="Add" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataRowAction Add = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.DataRowAction.Add" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataRowAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The row has been added to the table.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Change">
+      <MemberSignature Language="C#" Value="Change" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataRowAction Change = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.DataRowAction.Change" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataRowAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The row has changed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeCurrentAndOriginal">
+      <MemberSignature Language="C#" Value="ChangeCurrentAndOriginal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataRowAction ChangeCurrentAndOriginal = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.DataRowAction.ChangeCurrentAndOriginal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataRowAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The original and the current versions of the row have been changed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeOriginal">
+      <MemberSignature Language="C#" Value="ChangeOriginal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataRowAction ChangeOriginal = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.DataRowAction.ChangeOriginal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataRowAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The original version of the row has been changed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Commit">
+      <MemberSignature Language="C#" Value="Commit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataRowAction Commit = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.DataRowAction.Commit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataRowAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The changes to the row have been committed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="Delete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataRowAction Delete = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.DataRowAction.Delete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataRowAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The row was deleted from the table.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Nothing">
+      <MemberSignature Language="C#" Value="Nothing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataRowAction Nothing = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.DataRowAction.Nothing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataRowAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The row has not changed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rollback">
+      <MemberSignature Language="C#" Value="Rollback" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataRowAction Rollback = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.DataRowAction.Rollback" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataRowAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The most recent change to the row has been rolled back.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

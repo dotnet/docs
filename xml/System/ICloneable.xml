@@ -1,0 +1,71 @@
+<Type Name="ICloneable" FullName="System.ICloneable">
+  <TypeSignature Language="C#" Value="public interface ICloneable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICloneable" />
+  <TypeSignature Language="DocId" Value="T:System.ICloneable" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Supports cloning, which creates a new instance of a class with the same value as an existing instance.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ICloneable> interface enables you to provide a customized implementation that creates a copy of an existing object. The <xref:System.ICloneable> interface contains one member, the <xref:System.ICloneable.Clone%2A> method, which is intended to provide cloning support beyond that supplied by <xref:System.Object.MemberwiseClone%2A?displayProperty=fullName>.  For more information about cloning, deep versus shallow copies, and examples, see the <xref:System.Object.MemberwiseClone%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>The <see cref="T:System.ICloneable" /> interface simply requires that your implementation of the <see cref="M:System.ICloneable.Clone" /> method return a copy of the current object instance. It does not specify whether the cloning operation performs a deep copy, a shallow copy, or something in between. Nor does it require all property values of the original instance to be copied to the new instance. For example, the <see cref="M:System.Globalization.NumberFormatInfo.Clone" /> method performs a shallow copy of all properties except the <see cref="P:System.Globalization.NumberFormatInfo.IsReadOnly" /> property; it always sets this property value to <see langword="false" /> in the cloned object. Because callers of <see cref="M:System.ICloneable.Clone" /> cannot depend on the method performing a predictable cloning operation, we recommend that <see cref="T:System.ICloneable" /> not be implemented in public APIs.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ICloneable.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new object that is a copy of the current instance.</summary>
+        <returns>A new object that is a copy of this instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The resulting clone must be of the same type as, or compatible with, the original instance.  
+  
+ An implementation of <xref:System.ICloneable.Clone%2A> can perform either a deep copy or a shallow copy. In a deep copy, all objects are duplicated; in a shallow copy, only the top-level objects are duplicated and the lower levels contain references. Because callers of <xref:System.ICloneable.Clone%2A> cannot depend on the method performing a predictable cloning operation, we recommend that <xref:System.ICloneable> not be implemented in public APIs.  
+  
+ See <xref:System.Object.MemberwiseClone%2A?displayProperty=fullName> for more information on cloning, deep versus shallow copies, and examples.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,165 @@
+<Type Name="BoundsSpecified" FullName="System.Windows.Forms.BoundsSpecified">
+  <TypeSignature Language="C#" Value="public enum BoundsSpecified" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BoundsSpecified extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BoundsSpecified" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the bounds of the control to use when defining a control's size and position.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration when calling the <xref:System.Windows.Forms.Control.SetBoundsCore%2A> and <xref:System.Windows.Forms.Control.SetBounds%2A> methods of the <xref:System.Windows.Forms.Control> class.  
+  
+   
+  
+## Examples  
+ [!code-cpp[Control.Layout#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Control.Layout/CPP/layout.cpp#1)]
+ [!code-csharp[Control.Layout#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.Layout/CS/layout.cs#1)]
+ [!code-vb[Control.Layout#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Control.Layout/VB/layout.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.BoundsSpecified All = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BoundsSpecified.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BoundsSpecified</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Both <see cref="P:System.Windows.Forms.Control.Location" /> and <see cref="P:System.Windows.Forms.Control.Size" /> property values are defined.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="Height" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.BoundsSpecified Height = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BoundsSpecified.Height" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BoundsSpecified</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The height of the control is defined.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="Location" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.BoundsSpecified Location = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BoundsSpecified.Location" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BoundsSpecified</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Both <see langword="X" /> and <see langword="Y" /> coordinates of the control are defined.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.BoundsSpecified None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BoundsSpecified.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BoundsSpecified</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No bounds are specified.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="Size" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.BoundsSpecified Size = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BoundsSpecified.Size" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BoundsSpecified</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Both <see cref="P:System.Windows.Forms.Control.Width" /> and <see cref="P:System.Windows.Forms.Control.Height" /> property values of the control are defined.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="Width" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.BoundsSpecified Width = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BoundsSpecified.Width" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BoundsSpecified</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The width of the control is defined.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="X">
+      <MemberSignature Language="C#" Value="X" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.BoundsSpecified X = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BoundsSpecified.X" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BoundsSpecified</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The left edge of the control is defined.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Y">
+      <MemberSignature Language="C#" Value="Y" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.BoundsSpecified Y = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BoundsSpecified.Y" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BoundsSpecified</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The top edge of the control is defined.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,146 @@
+<Type Name="ForestMode" FullName="System.DirectoryServices.ActiveDirectory.ForestMode">
+  <TypeSignature Language="C#" Value="public enum ForestMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ForestMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ForestMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates the mode in which a <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> is operating.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ForestMode Unknown = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ForestMode.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ForestMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> is operating in an unknown mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Windows2000Forest">
+      <MemberSignature Language="C#" Value="Windows2000Forest" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ForestMode Windows2000Forest = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ForestMode.Windows2000Forest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ForestMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> is operating in Windows 2000 mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Windows2003Forest">
+      <MemberSignature Language="C#" Value="Windows2003Forest" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ForestMode Windows2003Forest = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ForestMode.Windows2003Forest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ForestMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> is operating in Windows Server 2003 mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Windows2003InterimForest">
+      <MemberSignature Language="C#" Value="Windows2003InterimForest" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ForestMode Windows2003InterimForest = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ForestMode.Windows2003InterimForest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ForestMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> is operating in Windows Server 2003 domain-function mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Windows2008Forest">
+      <MemberSignature Language="C#" Value="Windows2008Forest" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ForestMode Windows2008Forest = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ForestMode.Windows2008Forest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ForestMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> is operating in Windows Server 2008 mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Windows2008R2Forest">
+      <MemberSignature Language="C#" Value="Windows2008R2Forest" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ForestMode Windows2008R2Forest = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ForestMode.Windows2008R2Forest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ForestMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> is operating in Windows Server 2008 R2 mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Windows2012R2Forest">
+      <MemberSignature Language="C#" Value="Windows2012R2Forest" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ForestMode Windows2012R2Forest = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ForestMode.Windows2012R2Forest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ForestMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>[Supported in the .NET Framework 4.5.1 and later versions] The <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> is operating in Windows Server 2012 R2 mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Windows8Forest">
+      <MemberSignature Language="C#" Value="Windows8Forest" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ForestMode Windows8Forest = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ForestMode.Windows8Forest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ForestMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> is operating in Windows 8 mode.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

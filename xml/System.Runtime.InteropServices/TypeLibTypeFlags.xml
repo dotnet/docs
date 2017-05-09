@@ -1,0 +1,274 @@
+<Type Name="TypeLibTypeFlags" FullName="System.Runtime.InteropServices.TypeLibTypeFlags">
+  <TypeSignature Language="C#" Value="public enum TypeLibTypeFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TypeLibTypeFlags extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TypeLibTypeFlags" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes the original settings of the <see cref="T:System.Runtime.InteropServices.TYPEFLAGS" /> in the COM type library from which the type was imported.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `TypeLibTypeFlags` is used along with the <xref:System.Runtime.InteropServices.TypeLibTypeAttribute>. The flags are retained for reference only. They are not used by the common language runtime.  
+  
+ For more information, see `TYPEFLAGS` in the MSDN library.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FAggregatable">
+      <MemberSignature Language="C#" Value="FAggregatable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FAggregatable = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FAggregatable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The class supports aggregation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FAppObject">
+      <MemberSignature Language="C#" Value="FAppObject" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FAppObject = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FAppObject" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A type description that describes an <see langword="Application" /> object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FCanCreate">
+      <MemberSignature Language="C#" Value="FCanCreate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FCanCreate = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FCanCreate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Instances of the type can be created by <see langword="ITypeInfo::CreateInstance" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FControl">
+      <MemberSignature Language="C#" Value="FControl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FControl = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FControl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The type is a control from which other types will be derived, and should not be displayed to users.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FDispatchable">
+      <MemberSignature Language="C#" Value="FDispatchable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FDispatchable = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FDispatchable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the interface derives from <see langword="IDispatch" />, either directly or indirectly.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FDual">
+      <MemberSignature Language="C#" Value="FDual" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FDual = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FDual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The interface supplies both <see langword="IDispatch" /> and V-table binding.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FHidden">
+      <MemberSignature Language="C#" Value="FHidden" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FHidden = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FHidden" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The type should not be displayed to browsers.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FLicensed">
+      <MemberSignature Language="C#" Value="FLicensed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FLicensed = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FLicensed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The type is licensed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FNonExtensible">
+      <MemberSignature Language="C#" Value="FNonExtensible" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FNonExtensible = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FNonExtensible" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The interface cannot add members at run time.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FOleAutomation">
+      <MemberSignature Language="C#" Value="FOleAutomation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FOleAutomation = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FOleAutomation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The types used in the interface are fully compatible with Automation, including vtable binding support.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FPreDeclId">
+      <MemberSignature Language="C#" Value="FPreDeclId" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FPreDeclId = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FPreDeclId" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The type is predefined. The client application should automatically create a single instance of the object that has this attribute. The name of the variable that points to the object is the same as the class name of the object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FReplaceable">
+      <MemberSignature Language="C#" Value="FReplaceable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FReplaceable = int32(2048)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FReplaceable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The object supports <see langword="IConnectionPointWithDefault" />, and has default behaviors.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FRestricted">
+      <MemberSignature Language="C#" Value="FRestricted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FRestricted = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FRestricted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This flag is intended for system-level types or types that type browsers should not display.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FReverseBind">
+      <MemberSignature Language="C#" Value="FReverseBind" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibTypeFlags FReverseBind = int32(8192)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibTypeFlags.FReverseBind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.TypeLibTypeFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates base interfaces should be checked for name resolution before checking child interfaces. This is the reverse of the default behavior.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

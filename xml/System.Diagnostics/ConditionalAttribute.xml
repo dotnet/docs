@@ -1,0 +1,168 @@
+<Type Name="ConditionalAttribute" FullName="System.Diagnostics.ConditionalAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ConditionalAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ConditionalAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.ConditionalAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Method, AllowMultiple=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates to compilers that a method call or attribute should be ignored unless a specified conditional compilation symbol is defined.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can apply the <xref:System.Diagnostics.ConditionalAttribute> attribute to methods and classes. However, its use on classes is valid only for types that are derived from <xref:System.Attribute>. <xref:System.Diagnostics.ConditionalAttribute> either will be ignored or will produce a compiler warning or error message if you apply it to any other type.  
+  
+ Applying <xref:System.Diagnostics.ConditionalAttribute> to a method indicates to compilers that a call to the method should not be compiled into Microsoft intermediate language (MSIL) unless the conditional compilation symbol that is associated with <xref:System.Diagnostics.ConditionalAttribute> is defined. You will get a compilation error in Visual Studio if you apply this attribute to a method that does not return void. Applying <xref:System.Diagnostics.ConditionalAttribute> to an attribute indicates that the attribute should not be emitted to metadata unless the conditional compilation symbol is defined. Any arguments passed to the method or attribute are still type-checked by the compiler.  
+  
+ You can use the following techniques to define conditional compilation symbols:  
+  
+-   Use compiler command-line options; for example, **/define:DEBUG**.  
+  
+-   Use environment variables in the operating system shell; for example, **set DEBUG=1**.  
+  
+-   Use pragmas in the source code; for example, define the compilation variable as follows:  
+  
+    ```csharp  
+    #define DEBUG  
+    ```  
+  
+    ```vb  
+    #Const DEBUG=True  
+    ```  
+  
+     To undefine the variable, use the following:  
+  
+    ```csharp  
+    #undef DEBUG  
+    ```  
+  
+    ```vb  
+    #Const DEBUG=False  
+    ```  
+  
+ Compilers that comply with the Common Language Specification (CLS) are permitted to ignore <xref:System.Diagnostics.ConditionalAttribute>. The C#, Visual Basic, and C++ compilers support <xref:System.Diagnostics.ConditionalAttribute>; the JScript compiler does not support the attribute.  
+  
+> [!NOTE]
+>  In Visual Basic, the `AddressOf` operator is not affected by this attribute. For example, `Call CType(AddressOf delegate, Action)` always invokes `delegate`, although `Call delegate()` might not.  
+  
+ <xref:System.Diagnostics.ConditionalAttribute> is applied to the methods that are defined in the <xref:System.Diagnostics.Debug> and <xref:System.Diagnostics.Trace> classes.  
+  
+ For more information about how to use attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of <xref:System.Diagnostics.ConditionalAttribute>. The example assumes that the condition is defined with the **/define** compiler option. You can obtain different results by changing the compiler option. You can optionally define the conditions by using pragmas in the sample code instead of identifying them as compiler options.  
+  
+ [!code-csharp[ConditionalAttributeSample1#7](~/samples/snippets/csharp/VS_Snippets_CLR/ConditionalAttributeSample1/CS/cas.cs#7)]
+ [!code-vb[ConditionalAttributeSample1#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/ConditionalAttributeSample1/VB/cas.vb#7)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConditionalAttribute (string conditionString);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string conditionString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.ConditionalAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="conditionString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="conditionString">A string that specifies the case-sensitive conditional compilation symbol that is associated with the attribute.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.ConditionalAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Diagnostics.ConditionalAttribute.%23ctor%2A> constructor. This example is part of a larger example provided for the <xref:System.Diagnostics.ConditionalAttribute> class.  
+  
+ [!code-csharp[ConditionalAttributeSample1#8](~/samples/snippets/csharp/VS_Snippets_CLR/ConditionalAttributeSample1/CS/cas.cs#8)]
+ [!code-vb[ConditionalAttributeSample1#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/ConditionalAttributeSample1/VB/cas.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConditionString">
+      <MemberSignature Language="C#" Value="public string ConditionString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConditionString" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.ConditionalAttribute.ConditionString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the conditional compilation symbol that is associated with the <see cref="T:System.Diagnostics.ConditionalAttribute" /> attribute.</summary>
+        <value>A string that specifies the case-sensitive conditional compilation symbol that is associated with the <see cref="T:System.Diagnostics.ConditionalAttribute" /> attribute.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is read-only.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

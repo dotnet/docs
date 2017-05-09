@@ -1,0 +1,86 @@
+<Type Name="TreeViewDrawMode" FullName="System.Windows.Forms.TreeViewDrawMode">
+  <TypeSignature Language="C#" Value="public enum TreeViewDrawMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TreeViewDrawMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeViewDrawMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines constants that represent the ways a <see cref="T:System.Windows.Forms.TreeView" /> can be drawn.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Forms.TreeView.DrawMode%2A?displayProperty=fullName> property to indicate whether the nodes or node-labels of a <xref:System.Windows.Forms.TreeView> are owner-drawn. For more information, see the <xref:System.Windows.Forms.TreeView.DrawNode?displayProperty=fullName> event.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to customize a <xref:System.Windows.Forms.TreeView> control using its owner-draw capability. The <xref:System.Windows.Forms.TreeView> control in the example displays optional node tags alongside the standard node labels. Node tags are specified using the <xref:System.Windows.Forms.TreeNode.Tag%2A?displayProperty=fullName> property. The <xref:System.Windows.Forms.TreeView> control also uses custom colors, including a custom highlight color.  
+  
+ You can customize most of the <xref:System.Windows.Forms.TreeView> colors by setting color properties, but the selection highlight color is not available as a property. Additionally, the default selection highlight rectangle extends only around a node label. Owner drawing must be used to draw the node tags and to draw a customized highlight rectangle large enough to include a node tag.  
+  
+ For the complete example, see the <xref:System.Windows.Forms.TreeView.DrawNode?displayProperty=fullName> reference topic.  
+  
+ [!code-cpp[TreeViewOwnerDraw#2](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeViewOwnerDraw/CPP/treeviewownerdraw.cpp#2)]
+ [!code-csharp[TreeViewOwnerDraw#2](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeViewOwnerDraw/CS/treeviewownerdraw.cs#2)]
+ [!code-vb[TreeViewOwnerDraw#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeViewOwnerDraw/VB/treeviewownerdraw.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewDrawMode Normal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewDrawMode.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeViewDrawMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Forms.TreeView" /> is drawn by the operating system.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OwnerDrawAll">
+      <MemberSignature Language="C#" Value="OwnerDrawAll" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewDrawMode OwnerDrawAll = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewDrawMode.OwnerDrawAll" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeViewDrawMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All elements of a <see cref="T:System.Windows.Forms.TreeView" /> node are drawn manually, including icons, checkboxes, plus and minus signs, and lines connecting the nodes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OwnerDrawText">
+      <MemberSignature Language="C#" Value="OwnerDrawText" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewDrawMode OwnerDrawText = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewDrawMode.OwnerDrawText" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeViewDrawMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The label portion of the <see cref="T:System.Windows.Forms.TreeView" /> nodes are drawn manually. Other node elements are drawn by the operating system, including icons, checkboxes, plus and minus signs, and lines connecting the nodes.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

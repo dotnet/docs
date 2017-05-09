@@ -1,0 +1,541 @@
+<Type Name="UserPrincipal" FullName="System.DirectoryServices.AccountManagement.UserPrincipal">
+  <TypeSignature Language="C#" Value="public class UserPrincipal : System.DirectoryServices.AccountManagement.AuthenticablePrincipal" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UserPrincipal extends System.DirectoryServices.AccountManagement.AuthenticablePrincipal" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.UserPrincipal" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.AccountManagement.AuthenticablePrincipal</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.DirectoryServices.AccountManagement.DirectoryRdnPrefix("CN")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical(System.Security.SecurityCriticalScope.Everything)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Encapsulates principals that are user accounts.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UserPrincipal (System.DirectoryServices.AccountManagement.PrincipalContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.AccountManagement.PrincipalContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.UserPrincipal.#ctor(System.DirectoryServices.AccountManagement.PrincipalContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> class by using the specified context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The user principal account is not persisted when it is created. To save the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example connects to the LDAP domain "fabrikam.com" with the username and password initialized in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor to "administrator" and "securelyStoredPassword."  
+  
+ The properties set in the example, such as user name and e-mail address, are created under the container specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor: "CN=Users,DC=fabrikam,DC=com."  
+  
+```  
+  
+PrincipalContext ctx = new PrincipalContext(  
+                                         ContextType.Domain,  
+                                         "fabrikam.com",   
+                                         "CN=Users,DC=fabrikam,DC=com",  
+                                         "administrator",   
+                                         "securelyStoredPassword");   
+  
+UserPrincipal usr = new UserPrincipal(ctx);  
+  
+usr.Name = "Jim Daly";  
+usr.Description = "This is the user account for Jim Daly";  
+usr.EmailAddress = "jimdaly@fabrikam.com";  
+usr.SetPassword("securelyStoredPassword");  
+usr.Save();  
+  
+usr.Dispose();  
+ctx.Dispose();   
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UserPrincipal (System.DirectoryServices.AccountManagement.PrincipalContext context, string samAccountName, string password, bool enabled);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.AccountManagement.PrincipalContext context, string samAccountName, string password, bool enabled) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.UserPrincipal.#ctor(System.DirectoryServices.AccountManagement.PrincipalContext,System.String,System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="samAccountName" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="enabled" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="samAccountName">The SAM account name for this user principal.</param>
+        <param name="password">The password for this account.</param>
+        <param name="enabled">A Boolean value that specifies whether the account is enabled.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> class by using the specified context, SAM account name, password, and enabled value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The user principal account is not persisted when it is created. To save the account, call the <xref:System.DirectoryServices.AccountManagement.Principal.Save%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdvancedSearchFilter">
+      <MemberSignature Language="C#" Value="public override System.DirectoryServices.AccountManagement.AdvancedFilters AdvancedSearchFilter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.AccountManagement.AdvancedFilters AdvancedSearchFilter" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.UserPrincipal.AdvancedSearchFilter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.AdvancedFilters</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns an <see cref="T:System.DirectoryServices.AccountManagement.AdvancedFilters" /> object to set read-only properties before passing the object to the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />.</summary>
+        <value>An <see cref="T:System.DirectoryServices.AccountManagement.AdvancedFilters" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.AccountManagement.UserPrincipal Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.DirectoryServices.AccountManagement.UserPrincipal Current" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.UserPrincipal.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.UserPrincipal</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a user principal object that represents the current user under which the thread is running.</summary>
+        <value>A <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> representing the current user.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+        <exception cref="T:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException">The user principal object for the current user could not be found. The principal object may contain an access control list to prevent access by unauthorized users.</exception>
+        <exception cref="T:System.MultipleMatchesException">Multiple user principal objects matching the current user were found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EmailAddress">
+      <MemberSignature Language="C#" Value="public string EmailAddress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EmailAddress" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.UserPrincipal.EmailAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the e-mail address for this account.</summary>
+        <value>The e-mail address of the user principal.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EmployeeId">
+      <MemberSignature Language="C#" Value="public string EmployeeId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EmployeeId" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.UserPrincipal.EmployeeId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the employee ID for this user principal.</summary>
+        <value>The employee ID of the user principal.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByBadPasswordAttempt">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.UserPrincipal&gt; FindByBadPasswordAttempt (System.DirectoryServices.AccountManagement.PrincipalContext context, DateTime time, System.DirectoryServices.AccountManagement.MatchType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;class System.DirectoryServices.AccountManagement.UserPrincipal&gt; FindByBadPasswordAttempt(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DateTime time, valuetype System.DirectoryServices.AccountManagement.MatchType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.UserPrincipal.FindByBadPasswordAttempt(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.UserPrincipal&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object that specifies the server or domain against which operations are performed.</param>
+        <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the incorrect password try. This parameter is used with the type parameter to determine the range of time in which the returned objects have an incorrect logon try recorded.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <summary>Returns a collection of <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> objects for users that have an incorrect password attempt recorded in the specified date and time range.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> objects, or an empty collection if no results are found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByExpirationTime">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.UserPrincipal&gt; FindByExpirationTime (System.DirectoryServices.AccountManagement.PrincipalContext context, DateTime time, System.DirectoryServices.AccountManagement.MatchType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;class System.DirectoryServices.AccountManagement.UserPrincipal&gt; FindByExpirationTime(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DateTime time, valuetype System.DirectoryServices.AccountManagement.MatchType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.UserPrincipal.FindByExpirationTime(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.UserPrincipal&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object that specifies the server or domain against which operations are performed.</param>
+        <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the incorrect password try. This parameter is used with the type parameter to determine the range of time in which the returned objects have an incorrect logon try recorded.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <summary>Returns a collection of <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> objects for users that have an account expiration time in the specified date and time range.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> objects, or an empty collection if no results are found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByIdentity">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.AccountManagement.UserPrincipal FindByIdentity (System.DirectoryServices.AccountManagement.PrincipalContext context, string identityValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.UserPrincipal FindByIdentity(class System.DirectoryServices.AccountManagement.PrincipalContext context, string identityValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.UserPrincipal.FindByIdentity(System.DirectoryServices.AccountManagement.PrincipalContext,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.UserPrincipal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="identityValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="identityValue">The identity of the user principal. This parameter can be any format that is contained in the <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration.</param>
+        <summary>Returns a user principal object that matches the specified identity value.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> object that matches the specified identity value, or null if no matches are found.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.AccountManagement.MultipleMatchesException">Multiple user principal objects matching the current user object were found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByIdentity">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.AccountManagement.UserPrincipal FindByIdentity (System.DirectoryServices.AccountManagement.PrincipalContext context, System.DirectoryServices.AccountManagement.IdentityType identityType, string identityValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.UserPrincipal FindByIdentity(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DirectoryServices.AccountManagement.IdentityType identityType, string identityValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.UserPrincipal.FindByIdentity(System.DirectoryServices.AccountManagement.PrincipalContext,System.DirectoryServices.AccountManagement.IdentityType,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.UserPrincipal</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="identityType" Type="System.DirectoryServices.AccountManagement.IdentityType" />
+        <Parameter Name="identityValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> that specifies the server or domain against which operations are performed.</param>
+        <param name="identityType">A <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration value that specifies the format of the <c>identityValue</c> parameter.</param>
+        <param name="identityValue">The identity of the user principal. This parameter can be any format that is contained in the <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration.</param>
+        <summary>Returns a user principal object that matches the specified identity type, and value. This version of the <see cref="Overload:System.DirectoryServices.AccountManagement.UserPrincipal.FindByIdentity" /> method determines the format of the identity value.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> object that matches the specified identity value and type, or null if no matches are found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code connects to the local computer store. Since the credentials are not specified in the <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructor, the credentials of the user running the current thread are used.  
+  
+ A search is performed to find the user who has SamAccountName "Guest".  
+  
+ If the user is found, a check is performed to determine whether this user's account is enabled. If the account is not enabled, the example code enables it.  
+  
+```  
+PrincipalContext ctx = new PrincipalContext(ContextType.Machine);  
+  
+UserPrincipal usr = UserPrincipal.FindByIdentity(ctx,   
+                                           IdentityType.SamAccountName,   
+                                           "Guest");  
+  
+if(usr != null)  
+{  
+    if (usr.Enabled == false)  
+        usr.Enabled = true;  
+  
+    usr.Save();  
+    usr.Dispose();  
+}  
+ctx.Dispose();   
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.DirectoryServices.AccountManagement.MultipleMatchesException">Multiple user principal objects matching the current user object were found.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The identity value is not a valid <see cref="T:System.DirectoryServices.AccountManagement.IdentityType" /> enumeration value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByLockoutTime">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.UserPrincipal&gt; FindByLockoutTime (System.DirectoryServices.AccountManagement.PrincipalContext context, DateTime time, System.DirectoryServices.AccountManagement.MatchType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;class System.DirectoryServices.AccountManagement.UserPrincipal&gt; FindByLockoutTime(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DateTime time, valuetype System.DirectoryServices.AccountManagement.MatchType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.UserPrincipal.FindByLockoutTime(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.UserPrincipal&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object that specifies the server or domain against which operations are performed.</param>
+        <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the incorrect password try. This parameter is used with the type parameter to determine the range of time in which the returned objects have an incorrect logon try recorded.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <summary>Returns a collection of <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> objects for users that have an account lockout time in the specified date and time range.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> objects, or an empty collection if no results are found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByLogonTime">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.UserPrincipal&gt; FindByLogonTime (System.DirectoryServices.AccountManagement.PrincipalContext context, DateTime time, System.DirectoryServices.AccountManagement.MatchType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;class System.DirectoryServices.AccountManagement.UserPrincipal&gt; FindByLogonTime(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DateTime time, valuetype System.DirectoryServices.AccountManagement.MatchType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.UserPrincipal.FindByLogonTime(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.UserPrincipal&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object that specifies the server or domain against which operations are performed.</param>
+        <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the incorrect password try. This parameter is used with the type parameter to determine the range of time in which the returned objects have an incorrect logon try recorded.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <summary>Returns a collection of <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> objects for users that have account logon recorded in the specified date and time range.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> objects, or an empty collection if no results are found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindByPasswordSetTime">
+      <MemberSignature Language="C#" Value="public static System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.UserPrincipal&gt; FindByPasswordSetTime (System.DirectoryServices.AccountManagement.PrincipalContext context, DateTime time, System.DirectoryServices.AccountManagement.MatchType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;class System.DirectoryServices.AccountManagement.UserPrincipal&gt; FindByPasswordSetTime(class System.DirectoryServices.AccountManagement.PrincipalContext context, valuetype System.DateTime time, valuetype System.DirectoryServices.AccountManagement.MatchType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.UserPrincipal.FindByPasswordSetTime(System.DirectoryServices.AccountManagement.PrincipalContext,System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.UserPrincipal&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.DirectoryServices.AccountManagement.PrincipalContext" />
+        <Parameter Name="time" Type="System.DateTime" />
+        <Parameter Name="type" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> object that specifies the server or domain against which operations are performed.</param>
+        <param name="time">A <see cref="T:System.DateTime" /> object that identifies the date and time of the incorrect password try. This parameter is used with the type parameter to determine the range of time in which the returned objects have an incorrect logon try recorded.</param>
+        <param name="type">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> enumeration value that specifies the type of match that is applied to the <c>time</c> parameter.</param>
+        <summary>Returns a collection of <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> objects for users that have set their password within the specified date and time range.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearchResult`1" /> that contains one or more <see cref="T:System.DirectoryServices.AccountManagement.UserPrincipal" /> objects, or an empty collection if no results are found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of the `time` object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAuthorizationGroups">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.Principal&gt; GetAuthorizationGroups ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;class System.DirectoryServices.AccountManagement.Principal&gt; GetAuthorizationGroups() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.UserPrincipal.GetAuthorizationGroups" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.Principal&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a collection of principal objects that contains all the authorization groups of which this user is a member. This function only returns groups that are security groups; distribution groups are not returned.</summary>
+        <returns>A collection of <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> objects that contain the groups of which the user is a member, or null if the user does not belong to any groups.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method searches all groups recursively and returns the groups in which the user is a member. The returned set may also include additional groups that system would consider the user a member of for authorization purposes.  
+  
+ The groups that are returned by this method may include groups from a different scope and store than the principal. For example, if the principal is an AD DS object that has a DN of "CN=SpecialGroups,DC=Fabrikam,DC=com, the returned set can contain groups that belong to the "CN=NormalGroups,DC=Fabrikam,DC=com.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.DirectoryServices.AccountManagement.PrincipalOperationException">The attempt to retrieve authorization groups failed.</exception>
+        <exception cref="T:System.NotSupportedException">The retrieval of authorization groups is not supported by this operating system.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GivenName">
+      <MemberSignature Language="C#" Value="public string GivenName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GivenName" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.UserPrincipal.GivenName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the given name for the user principal.</summary>
+        <value>The given name of the user principal.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MiddleName">
+      <MemberSignature Language="C#" Value="public string MiddleName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MiddleName" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.UserPrincipal.MiddleName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the middle name for the user principal.</summary>
+        <value>The middle name of the user principal.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Surname">
+      <MemberSignature Language="C#" Value="public string Surname { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Surname" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.UserPrincipal.Surname" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the surname for the user principal.</summary>
+        <value>The surname of the user principal.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="VoiceTelephoneNumber">
+      <MemberSignature Language="C#" Value="public string VoiceTelephoneNumber { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string VoiceTelephoneNumber" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.UserPrincipal.VoiceTelephoneNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the voice telephone number for the user principal.</summary>
+        <value>The voice telephone number of the user principal.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The underlying store does not support this property.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

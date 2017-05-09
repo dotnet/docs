@@ -1,0 +1,266 @@
+<Type Name="ResourceProperty" FullName="System.Data.Services.Providers.ResourceProperty">
+  <TypeSignature Language="C#" Value="public class ResourceProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResourceProperty extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.ResourceProperty" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{kind}: {name}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a type to describe a property on a resource.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following Unicode characters are allowed in XML names but not in identifiers in EDM:  
+  
+1.  U+00B7 '•'  
+  
+2.  U+0387 '·'  
+  
+3.  U+06DE '۞'  
+  
+4.  U+212E '℮'  
+  
+ If your property names can contain these characters, make sure that they are escaped properly in your provider implementation. The <xref:System.Xml.XmlConvert.EncodeName%2A> method will not properly escape these invalid EDM characters."  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResourceProperty (string name, System.Data.Services.Providers.ResourcePropertyKind kind, System.Data.Services.Providers.ResourceType propertyResourceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.Services.Providers.ResourcePropertyKind kind, class System.Data.Services.Providers.ResourceType propertyResourceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.ResourceProperty.#ctor(System.String,System.Data.Services.Providers.ResourcePropertyKind,System.Data.Services.Providers.ResourceType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="kind" Type="System.Data.Services.Providers.ResourcePropertyKind" />
+        <Parameter Name="propertyResourceType" Type="System.Data.Services.Providers.ResourceType" />
+      </Parameters>
+      <Docs>
+        <param name="name">Property name for the property as string.</param>
+        <param name="kind">
+          <see cref="T:System.Data.Services.Providers.ResourcePropertyKind" />.</param>
+        <param name="propertyResourceType">The <see cref="T:System.Data.Services.Providers.ResourceType" /> of the resource to which the property refers.</param>
+        <summary>Initializes a new <see cref="T:System.Data.Services.Providers.ResourceProperty" /> for an open property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following Unicode characters are allowed in XML names but not in identifiers in EDM:  
+  
+1.  U+00B7 '•'  
+  
+2.  U+0387 '·'  
+  
+3.  U+06DE '۞'  
+  
+4.  U+212E '℮'  
+  
+ If your property names can contain these characters, make sure that they are escaped properly in your provider implementation. The <xref:System.Xml.XmlConvert.EncodeName%2A> method will not properly escape these invalid EDM characters."  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanReflectOnInstanceTypeProperty">
+      <MemberSignature Language="C#" Value="public bool CanReflectOnInstanceTypeProperty { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanReflectOnInstanceTypeProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceProperty.CanReflectOnInstanceTypeProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this property can be accessed through reflection on the declaring resource instance type.</summary>
+        <value>
+          <see langword="true" /> when the property can be accessed through reflection; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Data.Services.Providers.ResourceProperty.CanReflectOnInstanceTypeProperty%2A> property returns `true`, the data service runtime uses reflection to get the property information on the declaring.<xref:System.Data.Services.Providers.ResourceType.InstanceType%2A> of the <xref:System.Data.Services.Providers.ResourceType>.  
+  
+ When the <xref:System.Data.Services.Providers.ResourceProperty.CanReflectOnInstanceTypeProperty%2A> property returns `false`, the data service runtime uses the <xref:System.Data.Services.Providers.IDataServiceQueryProvider> interface to get or set this property value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomState">
+      <MemberSignature Language="C#" Value="public object CustomState { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object CustomState" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceProperty.CustomState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets custom state information about a resource property that is defined by the developer.</summary>
+        <value>State information.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceProperty.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a Boolean value that indicates whether the property is read-only.</summary>
+        <value>
+          <see langword="True" /> if the property is read-only.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Kind">
+      <MemberSignature Language="C#" Value="public System.Data.Services.Providers.ResourcePropertyKind Kind { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Services.Providers.ResourcePropertyKind Kind" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceProperty.Kind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Providers.ResourcePropertyKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the kind of the resource property with regard to the resource.</summary>
+        <value>A <see cref="T:System.Data.Services.Providers.ResourcePropertyKind" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MimeType">
+      <MemberSignature Language="C#" Value="public string MimeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MimeType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceProperty.MimeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets MIME type for the property.</summary>
+        <value>String value that indicates MIME type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Null MIME type is not specified.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceProperty.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the resource property.</summary>
+        <value>The name of the resource property as string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceType">
+      <MemberSignature Language="C#" Value="public System.Data.Services.Providers.ResourceType ResourceType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Services.Providers.ResourceType ResourceType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceProperty.ResourceType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Providers.ResourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the resource property.</summary>
+        <value>The <see cref="T:System.Data.Services.Providers.ResourceType" /> of the resource property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetReadOnly">
+      <MemberSignature Language="C#" Value="public void SetReadOnly ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetReadOnly() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.ResourceProperty.SetReadOnly" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the resource property to read-only.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

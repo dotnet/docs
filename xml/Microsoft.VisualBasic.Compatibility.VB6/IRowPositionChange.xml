@@ -1,0 +1,71 @@
+<Type Name="IRowPositionChange" FullName="Microsoft.VisualBasic.Compatibility.VB6.IRowPositionChange">
+  <TypeSignature Language="C#" Value="public interface IRowPositionChange" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRowPositionChange" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IRowPositionChange" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0997A571-126E-11D0-9F8A-00A0C9A0631E")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides an implementation of the OLE DB <see langword="IRowPositionChange" /> interface for use by applications upgraded from Visual Basic 6.0.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OnRowPositionChange">
+      <MemberSignature Language="C#" Value="public int OnRowPositionChange (int dbReason, int eventPhase, int fCantDeny);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 OnRowPositionChange(int32 dbReason, int32 eventPhase, int32 fCantDeny) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowPositionChange.OnRowPositionChange(System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dbReason" Type="System.Int32" />
+        <Parameter Name="eventPhase" Type="System.Int32" />
+        <Parameter Name="fCantDeny" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="dbReason">The reason of the event that caused this change.</param>
+        <param name="eventPhase">The phase of this notification.</param>
+        <param name="fCantDeny">When this flag is set to <see langword="true" />, the consumer cannot veto the event by returning <see langword="S_FALSE" /> because the provider cannot undo the event.</param>
+        <summary>Notifies the consumer of a row position object of a change to the current row position.</summary>
+        <returns>An <see langword="Integer" /> that represents the result.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

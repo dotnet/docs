@@ -1,0 +1,232 @@
+<Type Name="KeyValuePair&lt;TKey,TValue&gt;" FullName="System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;">
+  <TypeSignature Language="C#" Value="public struct KeyValuePair&lt;TKey,TValue&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit KeyValuePair`2&lt;TKey, TValue&gt; extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.Generic.KeyValuePair`2" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TKey" />
+    <TypeParameter Name="TValue" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TKey">The type of the key.</typeparam>
+    <typeparam name="TValue">The type of the value.</typeparam>
+    <summary>Defines a key/value pair that can be set or retrieved.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Collections.Generic.Dictionary%602.Enumerator.Current%2A?displayProperty=fullName> property returns an instance of this type.  
+  
+ The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) returns an object of the type of the elements in the collection. Since each element of a collection based on <xref:System.Collections.Generic.IDictionary%602> is a key/value pair, the element type is not the type of the key or the type of the value. Instead, the element type is <xref:System.Collections.Generic.KeyValuePair%602>. For example:  
+  
+ [!code-cpp[Generic.Dictionary#11](~/samples/snippets/cpp/VS_Snippets_CLR/Generic.Dictionary/cpp/source2.cpp#11)]
+ [!code-csharp[Generic.Dictionary#11](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Dictionary/CS/source2.cs#11)]
+ [!code-vb[Generic.Dictionary#11](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Dictionary/VB/source2.vb#11)]  
+  
+ The `foreach` statement is a wrapper around the enumerator, which allows only reading from, not writing to, the collection.  
+  
+   
+  
+## Examples  
+ The following code example shows how to enumerate the keys and values in a dictionary, using the <xref:System.Collections.Generic.KeyValuePair%602> structure.  
+  
+ This code is part of a larger example provided for the <xref:System.Collections.Generic.Dictionary%602> class.  
+  
+ [!code-cpp[Generic.Dictionary#7](~/samples/snippets/cpp/VS_Snippets_CLR/Generic.Dictionary/cpp/source.cpp#7)]
+ [!code-csharp[Generic.Dictionary#7](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Dictionary/CS/source.cs#7)]
+ [!code-vb[Generic.Dictionary#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Dictionary/VB/source.vb#7)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public KeyValuePair (TKey key, TValue value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!TKey key, !TValue value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyValuePair`2.#ctor(`0,`1)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="key" Type="TKey" />
+        <Parameter Name="value" Type="TValue" />
+      </Parameters>
+      <Docs>
+        <param name="key">The object defined in each key/value pair.</param>
+        <param name="value">The definition associated with <c>key</c>.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.KeyValuePair`2" /> structure with the specified key and value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Key">
+      <MemberSignature Language="C#" Value="public TKey Key { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TKey Key" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Generic.KeyValuePair`2.Key" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the key in the key/value pair.</summary>
+        <value>A <paramref name="TKey" /> that is the key of the <see cref="T:System.Collections.Generic.KeyValuePair`2" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is read/only.  
+  
+   
+  
+## Examples  
+ The following code example shows how to enumerate the keys and values in a dictionary, using the <xref:System.Collections.Generic.KeyValuePair%602> structure.  
+  
+ This code is part of a larger example provided for the <xref:System.Collections.Generic.Dictionary%602> class.  
+  
+ [!code-cpp[Generic.Dictionary#7](~/samples/snippets/cpp/VS_Snippets_CLR/Generic.Dictionary/cpp/source.cpp#7)]
+ [!code-csharp[Generic.Dictionary#7](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Dictionary/CS/source.cs#7)]
+ [!code-vb[Generic.Dictionary#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Dictionary/VB/source.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyValuePair`2.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string representation of the <see cref="T:System.Collections.Generic.KeyValuePair`2" />, using the string representations of the key and value.</summary>
+        <returns>A string representation of the <see cref="T:System.Collections.Generic.KeyValuePair`2" />, which includes the string representations of the key and value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string representation consists of the string representations of the key and value, separated by a comma and a space, and enclosed in square brackets. For example, the <xref:System.Collections.Generic.KeyValuePair%602.ToString%2A> method for a <xref:System.Collections.Generic.KeyValuePair%602> structure with the string <xref:System.Collections.Generic.KeyValuePair%602.Key%2A> "Test" and the integer <xref:System.Collections.Generic.KeyValuePair%602.Value%2A> 14 returns the string "[Test, 14]".  
+  
+> [!NOTE]
+>  This method uses the `ToString` methods provided by the key and value types. Some types do not return useful or informative values for their `ToString` methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public TValue Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TValue Value" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Generic.KeyValuePair`2.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value in the key/value pair.</summary>
+        <value>A <paramref name="TValue" /> that is the value of the <see cref="T:System.Collections.Generic.KeyValuePair`2" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is read/only.  
+  
+   
+  
+## Examples  
+ The following code example shows how to enumerate the keys and values in a dictionary, using the <xref:System.Collections.Generic.KeyValuePair%602> structure.  
+  
+ This code is part of a larger example provided for the <xref:System.Collections.Generic.Dictionary%602> class.  
+  
+ [!code-cpp[Generic.Dictionary#7](~/samples/snippets/cpp/VS_Snippets_CLR/Generic.Dictionary/cpp/source.cpp#7)]
+ [!code-csharp[Generic.Dictionary#7](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Dictionary/CS/source.cs#7)]
+ [!code-vb[Generic.Dictionary#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Dictionary/VB/source.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,487 @@
+<Type Name="ECCurve+NamedCurves" FullName="System.Security.Cryptography.ECCurve+NamedCurves">
+  <TypeSignature Language="C#" Value="public static class ECCurve.NamedCurves" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit ECCurve/NamedCurves extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ECCurve.NamedCurves" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a factory class for creating named curves.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="brainpoolP160r1">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECCurve brainpoolP160r1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Security.Cryptography.ECCurve brainpoolP160r1" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP160r1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a brainpoolP160r1 named curve.</summary>
+        <value>A brainpoolP160r1 named curve.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="brainpoolP160t1">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECCurve brainpoolP160t1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Security.Cryptography.ECCurve brainpoolP160t1" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP160t1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a brainpoolP160t1 named curve.</summary>
+        <value>A brainpoolP160t1 named curve.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="brainpoolP192r1">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECCurve brainpoolP192r1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Security.Cryptography.ECCurve brainpoolP192r1" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP192r1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a brainpoolP192r1 named curve.</summary>
+        <value>A brainpoolP192r1 named curve.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="brainpoolP192t1">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECCurve brainpoolP192t1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Security.Cryptography.ECCurve brainpoolP192t1" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP192t1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a brainpoolP192t1 named curve.</summary>
+        <value>A brainpoolP192t1 named curve.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="brainpoolP224r1">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECCurve brainpoolP224r1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Security.Cryptography.ECCurve brainpoolP224r1" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP224r1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a brainpoolP224r1 named curve.</summary>
+        <value>A brainpoolP224r1 named curve.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="brainpoolP224t1">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECCurve brainpoolP224t1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Security.Cryptography.ECCurve brainpoolP224t1" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP224t1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a brainpoolP224t1 named curve.</summary>
+        <value>A brainpoolP224t1 named curve.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="brainpoolP256r1">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECCurve brainpoolP256r1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Security.Cryptography.ECCurve brainpoolP256r1" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP256r1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a brainpoolP256r1 named curve.</summary>
+        <value>A brainpoolP256r1 named curve.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="brainpoolP256t1">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECCurve brainpoolP256t1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Security.Cryptography.ECCurve brainpoolP256t1" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP256t1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a brainpoolP256t1 named curve.</summary>
+        <value>A brainpoolP256t1 named curve.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="brainpoolP320r1">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECCurve brainpoolP320r1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Security.Cryptography.ECCurve brainpoolP320r1" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP320r1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a brainpoolP320r1 named curve.</summary>
+        <value>A brainpoolP320r1 named curve.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="brainpoolP320t1">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECCurve brainpoolP320t1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Security.Cryptography.ECCurve brainpoolP320t1" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP320t1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a brainpoolP320t1 named curve.</summary>
+        <value>A brainpoolP320t1 named curve.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="brainpoolP384r1">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECCurve brainpoolP384r1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Security.Cryptography.ECCurve brainpoolP384r1" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP384r1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a brainpoolP384r1 named curve.</summary>
+        <value>A brainpoolP384r1 named curve.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="brainpoolP384t1">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECCurve brainpoolP384t1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Security.Cryptography.ECCurve brainpoolP384t1" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP384t1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a brainpoolP384t1 named curve.</summary>
+        <value>A brainpoolP384t1 named curve.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="brainpoolP512r1">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECCurve brainpoolP512r1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Security.Cryptography.ECCurve brainpoolP512r1" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP512r1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a brainpoolP512r1 named curve.</summary>
+        <value>A brainpoolP512r1 named curve.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="brainpoolP512t1">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECCurve brainpoolP512t1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Security.Cryptography.ECCurve brainpoolP512t1" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.brainpoolP512t1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a brainpoolP512t1 named curve.</summary>
+        <value>A brainpoolP512t1 named curve.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="nistP256">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECCurve nistP256 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Security.Cryptography.ECCurve nistP256" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.nistP256" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a nistP256 named curve.</summary>
+        <value>A nistP256 named curve.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="nistP384">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECCurve nistP384 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Security.Cryptography.ECCurve nistP384" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.nistP384" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a nistP384 named curve.</summary>
+        <value>A nistP384 named curve.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="nistP521">
+      <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECCurve nistP521 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Security.Cryptography.ECCurve nistP521" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.NamedCurves.nistP521" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a nistP521 named curve.</summary>
+        <value>A nistP521 named curve.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

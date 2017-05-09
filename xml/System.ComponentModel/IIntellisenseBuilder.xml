@@ -1,0 +1,76 @@
+<Type Name="IIntellisenseBuilder" FullName="System.ComponentModel.IIntellisenseBuilder">
+  <TypeSignature Language="C#" Value="public interface IIntellisenseBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IIntellisenseBuilder" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.IIntellisenseBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an interface to facilitate the retrieval of the builder's name and to display the builder.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.IIntellisenseBuilder.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a localized name.</summary>
+        <value>A localized name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public bool Show (string language, string value, ref string newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Show(string language, string value, string newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.IIntellisenseBuilder.Show(System.String,System.String,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="language" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="newValue" Type="System.String&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="language">The language service that is calling the builder.</param>
+        <param name="value">The expression being edited.</param>
+        <param name="newValue">The new value.</param>
+        <summary>Shows the builder.</summary>
+        <returns>
+          <see langword="true" /> if the value should be replaced with <paramref name="newValue" />; otherwise, <see langword="false" /> (if the user cancels, for example).</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

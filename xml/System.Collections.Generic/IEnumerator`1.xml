@@ -1,0 +1,129 @@
+<Type Name="IEnumerator&lt;T&gt;" FullName="System.Collections.Generic.IEnumerator&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface IEnumerator&lt;out T&gt; : IDisposable, System.Collections.IEnumerator" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEnumerator`1&lt;+ T&gt; implements class System.Collections.IEnumerator, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.Generic.IEnumerator`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>Covariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerator</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">The type of objects to enumerate.</typeparam>
+    <summary>Supports a simple iteration over a generic collection.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Collections.Generic.IEnumerator%601> is the base interface for all generic enumerators.  
+  
+ The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+  
+ Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+  
+ Initially, the enumerator is positioned before the first element in the collection. At this position, <xref:System.Collections.Generic.IEnumerator%601.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.IEnumerator%601.Current%2A>.  
+  
+ <xref:System.Collections.Generic.IEnumerator%601.Current%2A> returns the same object until <xref:System.Collections.IEnumerator.MoveNext%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the next element.  
+  
+ If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.IEnumerator%601.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
+  
+ The <xref:System.Collections.IEnumerator.Reset%2A> method is provided for COM interoperability. It does not necessarily need to be implemented; instead, the implementer can simply throw a <xref:System.NotSupportedException>. However, if you choose to do this, you should make sure no callers are relying on the <xref:System.Collections.IEnumerator.Reset%2A> functionality.  
+  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>.  
+  
+ The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration. To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+  
+ Default implementations of collections in the <xref:System.Collections.Generic?displayProperty=fullName> namespace are not synchronized.  
+  
+   
+  
+## Examples  
+ The following example shows an implementation of the <xref:System.Collections.Generic.IEnumerator%601> interface for a collection class of custom objects. The custom object is an instance of the type `Box`, and the collection class is `BoxCollection`. This code example is part of a larger example provided for the <xref:System.Collections.Generic.ICollection%601> interface.  
+  
+ [!code-csharp[System.Collections.Generic.BoxExamples#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.boxexamples/cs/program.cs#3)]
+ [!code-vb[System.Collections.Generic.BoxExamples#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.boxexamples/vb/program.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>Implementing this interface requires implementing the nongeneric <see cref="T:System.Collections.IEnumerator" /> interface. The <see cref="M:System.Collections.IEnumerator.MoveNext" /> and <see cref="M:System.Collections.IEnumerator.Reset" />methods do not depend on <paramref name="T" />, and appear only on the nongeneric interface. The <see cref="P:System.Collections.Generic.IEnumerator`1.Current" /> property appears on both interfaces, and has different return types. Implement the nongeneric <see cref="P:System.Collections.IEnumerator.Current" /> property as an explicit interface implementation. This allows any consumer of the nongeneric interface to consume the generic interface.  
+  
+ In addition, <see cref="T:System.Collections.Generic.IEnumerator`1" /> implements <see cref="T:System.IDisposable" />, which requires you to implement the <see cref="M:System.IDisposable.Dispose" /> method. This enables you to close database connections or release file handles or similar operations when using other resources. If there are no additional resources to dispose of, provide an empty <see cref="M:System.IDisposable.Dispose" /> implementation.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public T Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Current" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Generic.IEnumerator`1.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the element in the collection at the current position of the enumerator.</summary>
+        <value>The element in the collection at the current position of the enumerator.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Collections.Generic.IEnumerator%601.Current%2A> is undefined under any of the following conditions:  
+  
+-   The enumerator is positioned before the first element in the collection, immediately after the enumerator is created.   <xref:System.Collections.IEnumerator.MoveNext%2A> must be called to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.IEnumerator%601.Current%2A>.  
+  
+-   The last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, which indicates the end of the collection.  
+  
+-   The enumerator is invalidated due to changes made in the collection, such as adding, modifying, or deleting elements.  
+  
+ <xref:System.Collections.Generic.IEnumerator%601.Current%2A> returns the same object until <xref:System.Collections.IEnumerator.MoveNext%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the next element.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Implementing this interface requires implementing the nongeneric <see cref="T:System.Collections.IEnumerator" /> interface. The <see cref="P:System.Collections.Generic.IEnumerator`1.Current" /> property appears on both interfaces, and has different return types. Implement the nongeneric <see cref="P:System.Collections.IEnumerator.Current" /> property as an explicit interface implementation. This allows any consumer of the nongeneric interface to consume the generic interface.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

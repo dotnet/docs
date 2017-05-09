@@ -1,0 +1,73 @@
+<Type Name="IHashCodeProvider" FullName="System.Collections.IHashCodeProvider">
+  <TypeSignature Language="C#" Value="public interface IHashCodeProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHashCodeProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.IHashCodeProvider" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Please use IEqualityComparer instead.")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Supplies a hash code for an object, using a custom hash function.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Collections.IHashCodeProvider> interface is used in conjunction with the <xref:System.Collections.Hashtable> class. The objects used as keys by a <xref:System.Collections.Hashtable> object must override the <xref:System.Object.GetHashCode%2A?displayProperty=fullName> and <xref:System.Object.Equals%2A?displayProperty=fullName> methods. <xref:System.Object.GetHashCode%2A?displayProperty=fullName> or the key's implementation of <xref:System.Object.GetHashCode%2A?displayProperty=fullName> is used as the hash code provider. <xref:System.Object.Equals%2A?displayProperty=fullName> or the key's implementation of <xref:System.Object.Equals%2A?displayProperty=fullName> is used as the comparer.  
+  
+ However, some overloads of the <xref:System.Collections.Hashtable> constructor take a parameter that is an <xref:System.Collections.IHashCodeProvider> implementation, or a parameter that is an <xref:System.Collections.IComparer> implementation, or both. If an <xref:System.Collections.IHashCodeProvider> implementation is passed to the constructor, the <xref:System.Collections.IHashCodeProvider.GetHashCode%2A?displayProperty=fullName> method of that implementation is used as the hash code provider. If an <xref:System.Collections.IComparer> implementation is passed to the constructor, the <xref:System.Collections.IComparer.Compare%2A?displayProperty=fullName> method of that implementation is used as the comparer.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public int GetHashCode (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHashCode(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.IHashCodeProvider.GetHashCode(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The <see cref="T:System.Object" /> for which a hash code is to be returned.</param>
+        <summary>Returns a hash code for the specified object.</summary>
+        <returns>A hash code for the specified object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value from this method must not be persisted for two reasons. First, the hash function of a class might be altered to generate a better distribution, rendering any values from the old hash function useless. Second, the default implementation of this class does not guarantee that the same value will be returned by different instances.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The type of <paramref name="obj" /> is a reference type and <paramref name="obj" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

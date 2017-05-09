@@ -1,0 +1,275 @@
+<Type Name="PolicyUnit" FullName="System.IO.Log.PolicyUnit">
+  <TypeSignature Language="C#" Value="public struct PolicyUnit" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit PolicyUnit extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Log.PolicyUnit" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Log</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a size measurement in a log store policy.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.Log.PolicyUnit> structure represents a size measurement in a log store policy. The <xref:System.IO.Log.PolicyUnitType> enumeration lists the units of measurement that can be represented.  
+  
+ You can use the <xref:System.IO.Log.PolicyUnit.Value%2A> property to determine the size of the measurement. To determine the unit of measurement, use the <xref:System.IO.Log.PolicyUnit.Type%2A> property. You can convert other data types to a <xref:System.IO.Log.PolicyUnit> by using the <xref:System.IO.Log.PolicyUnit.Percentage%2A> and <xref:System.IO.Log.PolicyUnit.Extents%2A> methods.  
+  
+   
+  
+## Examples  
+ This example shows how to use the <xref:System.IO.Log.LogPolicy> class and <xref:System.IO.Log.PolicyUnit> structure to set policy for a log record sequence.  
+  
+ [!code-csharp[S_UELogRecordSequence#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#2)]
+ [!code-vb[S_UELogRecordSequence#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PolicyUnit (long value, System.IO.Log.PolicyUnitType type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 value, valuetype System.IO.Log.PolicyUnitType type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.#ctor(System.Int64,System.IO.Log.PolicyUnitType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int64" />
+        <Parameter Name="type" Type="System.IO.Log.PolicyUnitType" />
+      </Parameters>
+      <Docs>
+        <param name="value">The size of the <see cref="T:System.IO.Log.PolicyUnit" />.</param>
+        <param name="type">One of the <see cref="T:System.IO.Log.PolicyUnitType" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Log.PolicyUnit" /> structure with the specified value and type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to use the <xref:System.IO.Log.LogPolicy> class and <xref:System.IO.Log.PolicyUnit> structure to set policy for a log record sequence.  
+  
+ [!code-csharp[S_UELogRecordSequence#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#2)]
+ [!code-vb[S_UELogRecordSequence#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="value" /> or <paramref name="type" /> is not a valid value.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The specified object to be checked.</param>
+        <summary>Indicates whether this instance and a specified object are equal.</summary>
+        <returns>
+          <see langword="true" /> if this instance and a specified object are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Extents">
+      <MemberSignature Language="C#" Value="public static System.IO.Log.PolicyUnit Extents (long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.IO.Log.PolicyUnit Extents(int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.Extents(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.PolicyUnit</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="value">A number that represents the number of containers.</param>
+        <summary>Creates a <see cref="T:System.IO.Log.PolicyUnit" /> of type <see cref="F:System.IO.Log.PolicyUnitType.Extents" /> from the specified number.</summary>
+        <returns>A <see cref="T:System.IO.Log.PolicyUnit" /> of type <see cref="F:System.IO.Log.PolicyUnitType.Extents" /> from the specified number.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides a unique hash code for this object.</summary>
+        <returns>An integer with the hash code value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.IO.Log.PolicyUnit left, System.IO.Log.PolicyUnit right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.IO.Log.PolicyUnit left, valuetype System.IO.Log.PolicyUnit right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.op_Equality(System.IO.Log.PolicyUnit,System.IO.Log.PolicyUnit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.IO.Log.PolicyUnit" />
+        <Parameter Name="right" Type="System.IO.Log.PolicyUnit" />
+      </Parameters>
+      <Docs>
+        <param name="left">The <see cref="T:System.IO.Log.PolicyUnit" /> on the left side of the operator.</param>
+        <param name="right">The <see cref="T:System.IO.Log.PolicyUnit" /> on the right side of the operator.</param>
+        <summary>Compares two <see cref="T:System.IO.Log.PolicyUnit" /> instances to determine whether they are equal.</summary>
+        <returns>
+          <see langword="true" /> if both <see cref="T:System.IO.Log.PolicyUnit" /> instances are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this operator to compare two <xref:System.IO.Log.PolicyUnit> instances for equality. For both objects to be equal, they must have the same values for both the <xref:System.IO.Log.PolicyUnit.Type%2A> and <xref:System.IO.Log.PolicyUnit.Value%2A> properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.IO.Log.PolicyUnit left, System.IO.Log.PolicyUnit right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.IO.Log.PolicyUnit left, valuetype System.IO.Log.PolicyUnit right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.op_Inequality(System.IO.Log.PolicyUnit,System.IO.Log.PolicyUnit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.IO.Log.PolicyUnit" />
+        <Parameter Name="right" Type="System.IO.Log.PolicyUnit" />
+      </Parameters>
+      <Docs>
+        <param name="left">The <see cref="T:System.IO.Log.PolicyUnit" /> on the left side of the operator.</param>
+        <param name="right">The <see cref="T:System.IO.Log.PolicyUnit" /> on the right side of the operator.</param>
+        <summary>Compares two <see cref="T:System.IO.Log.PolicyUnit" /> instances to determine whether they are not equal.</summary>
+        <returns>
+          <see langword="true" /> if both <see cref="T:System.IO.Log.PolicyUnit" /> instances are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this operator to compare two <xref:System.IO.Log.PolicyUnit> instances for inequality. For both objects to not be equal, they must have different values for the <xref:System.IO.Log.PolicyUnit.Type%2A> and <xref:System.IO.Log.PolicyUnit.Value%2A>properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Percentage">
+      <MemberSignature Language="C#" Value="public static System.IO.Log.PolicyUnit Percentage (long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.IO.Log.PolicyUnit Percentage(int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.Percentage(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.PolicyUnit</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="value">A number that represents the percentage.</param>
+        <summary>Creates a <see cref="T:System.IO.Log.PolicyUnit" /> of type <see cref="F:System.IO.Log.PolicyUnitType.Percentage" /> from the specified number.</summary>
+        <returns>A <see cref="T:System.IO.Log.PolicyUnit" /> of type <see cref="F:System.IO.Log.PolicyUnitType.Percentage" /> from the specified number.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.PolicyUnit.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string representation of this object.</summary>
+        <returns>A string representing this object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public System.IO.Log.PolicyUnitType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Log.PolicyUnitType Type" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.PolicyUnit.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.PolicyUnitType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the unit type of the <see cref="T:System.IO.Log.PolicyUnit" />.</summary>
+        <value>One of the <see cref="T:System.IO.Log.PolicyUnitType" /> values. The default is <see cref="F:System.IO.Log.PolicyUnitType.Extents" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public long Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Value" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.PolicyUnit.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see cref="T:System.IO.Log.PolicyUnit" />.</summary>
+        <value>The value of the <see cref="T:System.IO.Log.PolicyUnit" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

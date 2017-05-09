@@ -1,0 +1,92 @@
+<Type Name="IComponentConnector" FullName="System.Windows.Markup.IComponentConnector">
+  <TypeSignature Language="C#" Value="public interface IComponentConnector" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComponentConnector" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IComponentConnector" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides markup compile and tools support for named XAML elements and for attaching event handlers to them.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface is used internally by <xref:System.Windows.Baml2006.Baml2006Reader>.  
+  
+ Implementations of <xref:System.Windows.Markup.IComponentConnector.InitializeComponent%2A> are widely observable as part of the infrastructure provided by frameworks or technologies that use XAML combined with application and programming models. For example, whenever you look at the generated classes for XAML root elements in WPF pages and applications, you will see <xref:System.Windows.Markup.IComponentConnector.InitializeComponent%2A> defined in the output. That method also exists in the compiled assembly and plays a role in the WPF application model of loading the XAML UI content at XAML parse time. For more information on the WPF integration of the `InitializeComponent` concept, see [Application Management Overview](~/docs/framework/wpf/app-development/application-management-overview.md) or [Code-Behind and XAML in WPF](~/docs/framework/wpf/advanced/code-behind-and-xaml-in-wpf.md).  
+  
+ In previous versions of the .NET Framework, this interface existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.IComponentConnector> is in the System.Xaml assembly. . For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
+  
+> [!TIP]
+>  A failure to resolve <xref:System.Windows.Markup.IComponentConnector> during an attempted build is often an indicator that you have not updated your WPF project correctly. In particular, the project is not referencing the System.Xaml assembly for a project that targets [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)]. Try running the `devenv /upgrade` option for the project, or otherwise adjust the project assembly references so that System.Xaml is in the reference list.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Connect">
+      <MemberSignature Language="C#" Value="public void Connect (int connectionId, object target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Connect(int32 connectionId, object target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IComponentConnector.Connect(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionId" Type="System.Int32" />
+        <Parameter Name="target" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="connectionId">An identifier token to distinguish calls.</param>
+        <param name="target">The target to connect events and names to.</param>
+        <summary>Attaches events and names to compiled content.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Markup.IComponentConnector> is used internally by <xref:System.Windows.Baml2006.Baml2006Reader>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeComponent">
+      <MemberSignature Language="C#" Value="public void InitializeComponent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitializeComponent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IComponentConnector.InitializeComponent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Loads the compiled page of a component.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Markup.IComponentConnector> is used internally by <xref:System.Windows.Baml2006.Baml2006Reader>.  
+  
+ Implementations of <xref:System.Windows.Markup.IComponentConnector.InitializeComponent%2A> are widely observable as part of the infrastructure provided by frameworks or technologies that use XAML combined with application and programming models. For example, whenever you look at the generated classes for XAML root elements in WPF pages and applications, you will see <xref:System.Windows.Markup.IComponentConnector.InitializeComponent%2A> defined in the output. That method also exists in the compiled assembly and plays a role in the WPF application model of loading the XAML UI content at XAML parse time. For more information on the WPF integration of the `InitializeComponent` concept, see [Application Management Overview](~/docs/framework/wpf/app-development/application-management-overview.md) or [Code-Behind and XAML in WPF](~/docs/framework/wpf/advanced/code-behind-and-xaml-in-wpf.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

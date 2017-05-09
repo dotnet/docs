@@ -1,0 +1,72 @@
+<Type Name="SchemaType" FullName="System.Data.SchemaType">
+  <TypeSignature Language="C#" Value="public enum SchemaType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SchemaType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.SchemaType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how to handle existing schema mappings when performing a <see cref="M:System.Data.Common.DataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType)" /> operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.SchemaType> usually should be set to `Mapped`, because any established table and column mappings are used.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Mapped">
+      <MemberSignature Language="C#" Value="Mapped" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SchemaType Mapped = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SchemaType.Mapped" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SchemaType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Apply any existing table mappings to the incoming schema. Configure the <see cref="T:System.Data.DataSet" /> with the transformed schema.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="Source" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SchemaType Source = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SchemaType.Source" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SchemaType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ignore any table mappings on the DataAdapter. Configure the <see cref="T:System.Data.DataSet" /> using the incoming schema without applying any transformations.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

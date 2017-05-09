@@ -1,0 +1,190 @@
+<Type Name="HierarchicalVirtualizationHeaderDesiredSizes" FullName="System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes">
+  <TypeSignature Language="C#" Value="public struct HierarchicalVirtualizationHeaderDesiredSizes" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit HierarchicalVirtualizationHeaderDesiredSizes extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the desired size of the control's header, in pixels and in logical units. This structure is used by the <see cref="T:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo" /> interface.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HierarchicalVirtualizationHeaderDesiredSizes (System.Windows.Size logicalSize, System.Windows.Size pixelSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Size logicalSize, valuetype System.Windows.Size pixelSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.#ctor(System.Windows.Size,System.Windows.Size)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="logicalSize" Type="System.Windows.Size" />
+        <Parameter Name="pixelSize" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="logicalSize">The size of the header, in logical units.</param>
+        <param name="pixelSize">The size of the header, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object oCompare);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object oCompare) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oCompare" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="oCompare">The object to compare.</param>
+        <summary>Returns a value that indicates whether the specified object is equal to this <see cref="T:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to this object; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes comparisonHeaderSizes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes comparisonHeaderSizes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.Equals(System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="comparisonHeaderSizes" Type="System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes" />
+      </Parameters>
+      <Docs>
+        <param name="comparisonHeaderSizes">The object to compare.</param>
+        <summary>Returns a value that indicates whether the specified <see cref="T:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes" /> object is equal to this <see cref="T:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to this object; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a hash code for the <see cref="T:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes" />.</summary>
+        <returns>A hash code for the <see cref="T:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogicalSize">
+      <MemberSignature Language="C#" Value="public System.Windows.Size LogicalSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size LogicalSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.LogicalSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the header, in logical units.</summary>
+        <value>The size of the header, in logical units.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes headerDesiredSizes1, System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes headerDesiredSizes2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes headerDesiredSizes1, valuetype System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes headerDesiredSizes2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.op_Equality(System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes,System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headerDesiredSizes1" Type="System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes" />
+        <Parameter Name="headerDesiredSizes2" Type="System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes" />
+      </Parameters>
+      <Docs>
+        <param name="headerDesiredSizes1">The first object to compare.</param>
+        <param name="headerDesiredSizes2">The second object to compare.</param>
+        <summary>Returns a value that indicates whether the specified <see cref="T:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes" /> objects are equal.</summary>
+        <returns>
+          <see langword="true" /> if the specified objects are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes headerDesiredSizes1, System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes headerDesiredSizes2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes headerDesiredSizes1, valuetype System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes headerDesiredSizes2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.op_Inequality(System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes,System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headerDesiredSizes1" Type="System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes" />
+        <Parameter Name="headerDesiredSizes2" Type="System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes" />
+      </Parameters>
+      <Docs>
+        <param name="headerDesiredSizes1">The first object to compare.</param>
+        <param name="headerDesiredSizes2">The second object to compare.</param>
+        <summary>Returns a value that indicates whether the specified <see cref="T:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes" /> objects are unequal.</summary>
+        <returns>
+          <see langword="true" /> if the specified objects are unequal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PixelSize">
+      <MemberSignature Language="C#" Value="public System.Windows.Size PixelSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size PixelSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.PixelSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the header, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
+        <value>The size of the header, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

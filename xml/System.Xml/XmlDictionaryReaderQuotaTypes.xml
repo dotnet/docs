@@ -1,0 +1,157 @@
+<Type Name="XmlDictionaryReaderQuotaTypes" FullName="System.Xml.XmlDictionaryReaderQuotaTypes">
+  <TypeSignature Language="C#" Value="public enum XmlDictionaryReaderQuotaTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlDictionaryReaderQuotaTypes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.XmlDictionaryReaderQuotaTypes" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enumerates the configurable quota values for XmlDictionaryReaders.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="MaxArrayLength">
+      <MemberSignature Language="C#" Value="MaxArrayLength" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlDictionaryReaderQuotaTypes MaxArrayLength = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlDictionaryReaderQuotaTypes.MaxArrayLength" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryReaderQuotaTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the maximum allowed array length.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxBytesPerRead">
+      <MemberSignature Language="C#" Value="MaxBytesPerRead" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlDictionaryReaderQuotaTypes MaxBytesPerRead = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlDictionaryReaderQuotaTypes.MaxBytesPerRead" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryReaderQuotaTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the maximum allowed bytes returned for each read.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxDepth">
+      <MemberSignature Language="C#" Value="MaxDepth" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlDictionaryReaderQuotaTypes MaxDepth = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlDictionaryReaderQuotaTypes.MaxDepth" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryReaderQuotaTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the maximum nested node depth.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxNameTableCharCount">
+      <MemberSignature Language="C#" Value="MaxNameTableCharCount" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlDictionaryReaderQuotaTypes MaxNameTableCharCount = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlDictionaryReaderQuotaTypes.MaxNameTableCharCount" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryReaderQuotaTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the maximum characters allowed in a table name.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxStringContentLength">
+      <MemberSignature Language="C#" Value="MaxStringContentLength" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlDictionaryReaderQuotaTypes MaxStringContentLength = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlDictionaryReaderQuotaTypes.MaxStringContentLength" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryReaderQuotaTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the maximum string length returned by the reader.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

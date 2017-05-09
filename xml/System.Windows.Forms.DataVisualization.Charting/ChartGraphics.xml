@@ -1,0 +1,238 @@
+<Type Name="ChartGraphics" FullName="System.Windows.Forms.DataVisualization.Charting.ChartGraphics">
+  <TypeSignature Language="C#" Value="public class ChartGraphics : System.Windows.Forms.DataVisualization.Charting.ChartElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChartGraphics extends System.Windows.Forms.DataVisualization.Charting.ChartElement" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.ChartGraphics" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.DataVisualization.Charting.ChartElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides numerous conversion functions and exposes a GDI+ <see cref="T:System.Drawing.Graphics" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides numerous conversion functions and also exposes a GDI+ <xref:System.Drawing.Graphics> object. Note that when rendering as Scalable Vector Graphics (SVG), use of the <xref:System.Drawing.Graphics> object for custom drawing will not be included as part of the SVG document.  
+  
+ Note also that, by default, <xref:System.Drawing.Graphics> functions usually take absolute coordinates. Therefore the conversion methods of this class should be useful if you perform drawing operations.  
+  
+ A <xref:System.Windows.Forms.DataVisualization.Charting.ChartGraphics> object is exposed in the <xref:System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs.ChartGraphics%2A> property of the <xref:System.Windows.Forms.DataVisualization.Charting.ChartPaintEventArgs> class?qualifyHint=False&autoUpgrade=True, which makes it easy to perform custom drawing in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.PrePaint> and <xref:System.Windows.Forms.DataVisualization.Charting.Chart.PostPaint> events.  
+  
+> [!IMPORTANT]
+>  If significant changes are made to the default behavior of the <xref:System.Drawing.Graphics> object, the chart image and its associated elements may be drawn erratically. For example, positioning may be altered. It is highly recommended that you become well acquainted with GDI+ before you make any significant changes to the properties of the <xref:System.Drawing.Graphics> object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartGraphics.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="True" /> to release both unmanaged and managed resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases unmanaged and, optionally, managed resources.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAbsolutePoint">
+      <MemberSignature Language="C#" Value="public System.Drawing.PointF GetAbsolutePoint (System.Drawing.PointF point);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.PointF GetAbsolutePoint(valuetype System.Drawing.PointF point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartGraphics.GetAbsolutePoint(System.Drawing.PointF)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.PointF</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point" Type="System.Drawing.PointF" />
+      </Parameters>
+      <Docs>
+        <param name="point">A <see cref="T:System.Drawing.PointF" /> object in relative coordinates.</param>
+        <summary>Takes a <see cref="T:System.Drawing.PointF" /> object and converts its relative coordinates to absolute coordinates.</summary>
+        <returns>A <see cref="T:System.Drawing.PointF" /> object in absolute coordinates.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAbsoluteRectangle">
+      <MemberSignature Language="C#" Value="public System.Drawing.RectangleF GetAbsoluteRectangle (System.Drawing.RectangleF rectangle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.RectangleF GetAbsoluteRectangle(valuetype System.Drawing.RectangleF rectangle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartGraphics.GetAbsoluteRectangle(System.Drawing.RectangleF)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RectangleF</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rectangle" Type="System.Drawing.RectangleF" />
+      </Parameters>
+      <Docs>
+        <param name="rectangle">A <see cref="T:System.Drawing.RectangleF" /> object in relative coordinates.</param>
+        <summary>Takes a <see cref="T:System.Drawing.RectangleF" /> object and converts its relative coordinates to absolute coordinates.</summary>
+        <returns>A <see cref="T:System.Drawing.RectangleF" /> object in absolute coordinates.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAbsoluteSize">
+      <MemberSignature Language="C#" Value="public System.Drawing.SizeF GetAbsoluteSize (System.Drawing.SizeF size);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.SizeF GetAbsoluteSize(valuetype System.Drawing.SizeF size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartGraphics.GetAbsoluteSize(System.Drawing.SizeF)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.SizeF</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="size" Type="System.Drawing.SizeF" />
+      </Parameters>
+      <Docs>
+        <param name="size">A <see cref="T:System.Drawing.SizeF" /> object in relative coordinates.</param>
+        <summary>Takes a <see cref="T:System.Drawing.SizeF" /> object that uses relative coordinates and returns a <see cref="T:System.Drawing.SizeF" /> object that uses absolute coordinates.</summary>
+        <returns>A <see cref="T:System.Drawing.SizeF" /> object in absolute coordinates.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPositionFromAxis">
+      <MemberSignature Language="C#" Value="public double GetPositionFromAxis (string chartAreaName, System.Windows.Forms.DataVisualization.Charting.AxisName axis, double axisValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 GetPositionFromAxis(string chartAreaName, valuetype System.Windows.Forms.DataVisualization.Charting.AxisName axis, float64 axisValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartGraphics.GetPositionFromAxis(System.String,System.Windows.Forms.DataVisualization.Charting.AxisName,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="chartAreaName" Type="System.String" />
+        <Parameter Name="axis" Type="System.Windows.Forms.DataVisualization.Charting.AxisName" />
+        <Parameter Name="axisValue" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="chartAreaName">Chart area name.</param>
+        <param name="axis">An <see cref="T:System.Windows.Forms.DataVisualization.Charting.AxisName" /> enumeration value that identifies the relevant axis.</param>
+        <param name="axisValue">The axis value to be converted to a relative pixel value.</param>
+        <summary>Takes a given axis value for a specified axis and returns the relative pixel value.</summary>
+        <returns>A <see langword="string" /> value that represents the converted axis value, in relative pixel coordinates.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRelativePoint">
+      <MemberSignature Language="C#" Value="public System.Drawing.PointF GetRelativePoint (System.Drawing.PointF point);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.PointF GetRelativePoint(valuetype System.Drawing.PointF point) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartGraphics.GetRelativePoint(System.Drawing.PointF)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.PointF</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point" Type="System.Drawing.PointF" />
+      </Parameters>
+      <Docs>
+        <param name="point">A <see cref="T:System.Drawing.PointF" /> object in absolute coordinates.</param>
+        <summary>Takes a <see cref="T:System.Drawing.PointF" /> object that uses absolute coordinates and returns a <see cref="T:System.Drawing.PointF" /> object that uses relative coordinates.</summary>
+        <returns>A <see cref="T:System.Drawing.PointF" /> object in relative coordinates.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRelativeRectangle">
+      <MemberSignature Language="C#" Value="public System.Drawing.RectangleF GetRelativeRectangle (System.Drawing.RectangleF rectangle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.RectangleF GetRelativeRectangle(valuetype System.Drawing.RectangleF rectangle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartGraphics.GetRelativeRectangle(System.Drawing.RectangleF)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.RectangleF</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rectangle" Type="System.Drawing.RectangleF" />
+      </Parameters>
+      <Docs>
+        <param name="rectangle">A <see cref="T:System.Drawing.RectangleF" /> structure in absolute coordinates.</param>
+        <summary>Takes a <see cref="T:System.Drawing.RectangleF" /> structure that is using absolute coordinates and returns a <see cref="T:System.Drawing.RectangleF" /> object that uses relative coordinates.</summary>
+        <returns>A <see cref="T:System.Drawing.RectangleF" /> structure in relative coordinates.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRelativeSize">
+      <MemberSignature Language="C#" Value="public System.Drawing.SizeF GetRelativeSize (System.Drawing.SizeF size);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.SizeF GetRelativeSize(valuetype System.Drawing.SizeF size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartGraphics.GetRelativeSize(System.Drawing.SizeF)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.SizeF</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="size" Type="System.Drawing.SizeF" />
+      </Parameters>
+      <Docs>
+        <param name="size">A <see cref="T:System.Drawing.SizeF" /> object in absolute coordinates.</param>
+        <summary>Takes a <see cref="T:System.Drawing.SizeF" /> object in absolute coordinates and returns a <see cref="T:System.Drawing.SizeF" /> object that uses relative coordinates.</summary>
+        <returns>A <see cref="T:System.Drawing.SizeF" /> object in relative coordinates.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Graphics">
+      <MemberSignature Language="C#" Value="public System.Drawing.Graphics Graphics { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Graphics Graphics" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartGraphics.Graphics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Graphics</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a GDI+ <see cref="T:System.Drawing.Graphics" /> object that can be used for drawing purposes.</summary>
+        <value>A <see cref="T:System.Drawing.Graphics" /> object used for drawing.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this property to perform any custom drawing that can be performed using GDI+.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

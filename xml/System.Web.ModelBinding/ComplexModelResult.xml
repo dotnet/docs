@@ -1,0 +1,75 @@
+<Type Name="ComplexModelResult" FullName="System.Web.ModelBinding.ComplexModelResult">
+  <TypeSignature Language="C#" Value="public sealed class ComplexModelResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ComplexModelResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ComplexModelResult" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a container for data that is stored by the <see cref="T:System.Web.ModelBinding.ComplexModel" /> class.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ComplexModelResult (object model, System.Web.ModelBinding.ModelValidationNode validationNode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object model, class System.Web.ModelBinding.ModelValidationNode validationNode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ComplexModelResult.#ctor(System.Object,System.Web.ModelBinding.ModelValidationNode)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="model" Type="System.Object" />
+        <Parameter Name="validationNode" Type="System.Web.ModelBinding.ModelValidationNode" />
+      </Parameters>
+      <Docs>
+        <param name="model">The model.</param>
+        <param name="validationNode">The validation node.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ComplexModelResult" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Model">
+      <MemberSignature Language="C#" Value="public object Model { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Model" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ComplexModelResult.Model" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the model.</summary>
+        <value>The model.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationNode">
+      <MemberSignature Language="C#" Value="public System.Web.ModelBinding.ModelValidationNode ValidationNode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.ModelBinding.ModelValidationNode ValidationNode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ComplexModelResult.ValidationNode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ModelBinding.ModelValidationNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the validation node.</summary>
+        <value>The validation node.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

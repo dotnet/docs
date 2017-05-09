@@ -1,0 +1,91 @@
+<Type Name="IExtenderProvider" FullName="System.ComponentModel.IExtenderProvider">
+  <TypeSignature Language="C#" Value="public interface IExtenderProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExtenderProvider" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.IExtenderProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the interface for extending properties to other components in a container.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An extender provider is a component that provides properties to other components. For example, the <xref:System.Windows.Forms.ToolTip> control is an extender provider. When you add a <xref:System.Windows.Forms.ToolTip> control to a <xref:System.Windows.Forms.Form>, all other controls on the form have a <xref:System.Windows.Forms.ToolTip> property added to their list of properties.  
+  
+ Any component that provides extender properties must implement <xref:System.ComponentModel.IExtenderProvider>. A visual designer can then call <xref:System.ComponentModel.IExtenderProvider.CanExtend%2A> to determine which objects in a container should receive the extender properties.  
+  
+ For more information about extender providers, see [How to: Implement an Extender Provider](http://msdn.microsoft.com/library/d824f40e-b20b-464c-ac22-97974d5ab4fe).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to implement the <xref:System.ComponentModel.IExtenderProvider> interface. This example is part of a larger example discussed in [How to: Implement a HelpLabel Extender Provider](http://msdn.microsoft.com/library/21e34929-ff78-4f3f-aee8-a16a4ef5ac9d).  
+  
+ [!code-csharp[System.Windows.Forms.HelpLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HelpLabel/CS/HelpLabel.cs#1)]
+ [!code-vb[System.Windows.Forms.HelpLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HelpLabel/VB/HelpLabel.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CanExtend">
+      <MemberSignature Language="C#" Value="public bool CanExtend (object extendee);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanExtend(object extendee) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.IExtenderProvider.CanExtend(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="extendee" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="extendee">The <see cref="T:System.Object" /> to receive the extender properties.</param>
+        <summary>Specifies whether this object can provide its extender properties to the specified object.</summary>
+        <returns>
+          <see langword="true" /> if this object can provide extender properties to the specified object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on extender properties, see [How to: Implement an Extender Provider](http://msdn.microsoft.com/library/d824f40e-b20b-464c-ac22-97974d5ab4fe).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to implement the <xref:System.ComponentModel.IExtenderProvider.CanExtend%2A> property. This example is part of a larger example discussed in [How to: Implement a HelpLabel Extender Provider](http://msdn.microsoft.com/library/21e34929-ff78-4f3f-aee8-a16a4ef5ac9d).  
+  
+ [!code-csharp[System.Windows.Forms.HelpLabel#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.HelpLabel/CS/HelpLabel.cs#1)]
+ [!code-vb[System.Windows.Forms.HelpLabel#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.HelpLabel/VB/HelpLabel.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,61 @@
+<Type Name="RenderingBias" FullName="System.Windows.Media.Effects.RenderingBias">
+  <TypeSignature Language="C#" Value="public enum RenderingBias" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RenderingBias extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.RenderingBias" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates whether the system renders an effect with emphasis on speed or quality.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ <xref:System.Windows.Media.Effects.Effect>  
+  
+ <xref:System.Windows.Media.Effects.BlurEffect>  
+  
+ <xref:System.Windows.Media.Effects.DropShadowEffect>  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Performance">
+      <MemberSignature Language="C#" Value="Performance" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Effects.RenderingBias Performance = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.RenderingBias.Performance" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Effects.RenderingBias</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The rendering system emphasizes performance.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Quality">
+      <MemberSignature Language="C#" Value="Quality" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Effects.RenderingBias Quality = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.RenderingBias.Quality" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Effects.RenderingBias</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The rendering system emphasizes quality.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

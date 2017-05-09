@@ -1,0 +1,73 @@
+<Type Name="AnnotationAction" FullName="System.Windows.Annotations.AnnotationAction">
+  <TypeSignature Language="C#" Value="public enum AnnotationAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AnnotationAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.AnnotationAction" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the actions that occur with <see cref="T:System.Windows.Annotations.Annotation" /> author, anchor, and cargo resources.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Annotations.AnnotationAction> defines the operations that occur to an annotation's <xref:System.Windows.Annotations.Annotation.Authors%2A>, <xref:System.Windows.Annotations.Annotation.Anchors%2A>, and <xref:System.Windows.Annotations.Annotation.Cargos%2A> properties.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Added">
+      <MemberSignature Language="C#" Value="Added" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Annotations.AnnotationAction Added = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Annotations.AnnotationAction.Added" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Annotations.AnnotationAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The component was added to the annotation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Modified">
+      <MemberSignature Language="C#" Value="Modified" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Annotations.AnnotationAction Modified = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Annotations.AnnotationAction.Modified" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Annotations.AnnotationAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The component was modified within the annotation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Removed">
+      <MemberSignature Language="C#" Value="Removed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Annotations.AnnotationAction Removed = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Annotations.AnnotationAction.Removed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Annotations.AnnotationAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The component was removed from the annotation.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

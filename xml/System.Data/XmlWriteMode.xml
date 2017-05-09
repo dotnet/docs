@@ -1,0 +1,93 @@
+<Type Name="XmlWriteMode" FullName="System.Data.XmlWriteMode">
+  <TypeSignature Language="C#" Value="public enum XmlWriteMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlWriteMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.XmlWriteMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how to write XML data and a relational schema from a <see cref="T:System.Data.DataSet" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration when setting the `WriteMode` parameter of the <xref:System.Data.DataSet.WriteXml%2A> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DiffGram">
+      <MemberSignature Language="C#" Value="DiffGram" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.XmlWriteMode DiffGram = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.XmlWriteMode.DiffGram" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.XmlWriteMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Writes the entire <see cref="T:System.Data.DataSet" /> as a DiffGram, including original and current values. To generate a DiffGram containing only changed values, call <see cref="M:System.Data.DataSet.GetChanges" />, and then call <see cref="M:System.Data.DataSet.WriteXml(System.IO.Stream)" /> as a DiffGram on the returned <see cref="T:System.Data.DataSet" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreSchema">
+      <MemberSignature Language="C#" Value="IgnoreSchema" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.XmlWriteMode IgnoreSchema = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.XmlWriteMode.IgnoreSchema" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.XmlWriteMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Writes the current contents of the <see cref="T:System.Data.DataSet" /> as XML data, without an XSD schema. If no data is loaded into the <see cref="T:System.Data.DataSet" />, nothing is written.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteSchema">
+      <MemberSignature Language="C#" Value="WriteSchema" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.XmlWriteMode WriteSchema = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.XmlWriteMode.WriteSchema" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.XmlWriteMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Writes the current contents of the <see cref="T:System.Data.DataSet" /> as XML data with the relational structure as inline XSD schema. If the <see cref="T:System.Data.DataSet" /> has only a schema with no data, only the inline schema is written. If the <see cref="T:System.Data.DataSet" /> does not have a current schema, nothing is written.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "examples [Visual Basic], accessing user data"
 ms.assetid: 32492a15-ee59-4a63-a1f1-9b24cc13140a
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

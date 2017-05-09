@@ -1,0 +1,96 @@
+<Type Name="RangeType" FullName="System.Web.UI.WebControls.Expressions.RangeType">
+  <TypeSignature Language="C#" Value="public enum RangeType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RangeType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Expressions.RangeType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of numeric comparison to use in an instance of the <see cref="T:System.Web.UI.WebControls.Expressions.RangeExpression" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Expressions.RangeExpression> enumeration is used to indicate whether a value is between two specified values. The enumeration is used in the <xref:System.Web.UI.WebControls.Expressions.RangeExpression.MinType%2A> or <xref:System.Web.UI.WebControls.Expressions.RangeExpression.MaxType%2A> properties of the <xref:System.Web.UI.WebControls.Expressions.RangeExpression> class.  
+  
+ You specify a minimum and a maximum value. You can include or exclude values that you specified by using the <xref:System.Web.UI.WebControls.Expressions.RangeType> class.  
+  
+ The following table describes the enumeration values.  
+  
+|Enumeration|Description|  
+|-----------------|-----------------|  
+|None|Specifies that the search does not have a boundary.|  
+|Inclusive|Performs a greater-than-or-less-than comparison. Corresponds to the >= or \<= operation.|  
+|Exclusive|Performs a greater-than-or-less-than comparison. Corresponds to the > or < operation.|  
+  
+   
+  
+## Examples  
+ The following example shows how to search the ListPrice column in the Products table of the AdventureWorks database for products that have a list price in the range specified in the `FromTextBox` and `ToTextBox` text boxes. The filter includes the specified minimum value in search results by using the Inclusive property but excludes the specified maximum value. This code example is part of a larger example provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/en-us/b305ae31-1a1b-4d07-a678-51457c17614f).  
+  
+```  
+<asp:RangeExpression DataField="ListPrice"    
+    MinType="Inclusive" MaxType="Exclusive">  
+  <asp:ControlParameter ControlID="FromTextBox" />  
+  <asp:ControlParameter ControlID="ToTextBox" />  
+</asp:RangeExpression>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Exclusive">
+      <MemberSignature Language="C#" Value="Exclusive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.Expressions.RangeType Exclusive = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Expressions.RangeType.Exclusive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Expressions.RangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a greater-than-or-less-than comparison. Corresponds to the <see langword="&gt;" /> or <see langword="&lt;" /> operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inclusive">
+      <MemberSignature Language="C#" Value="Inclusive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.Expressions.RangeType Inclusive = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Expressions.RangeType.Inclusive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Expressions.RangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an equal-to-or-greater-than comparison or an equal-to-or-less-than comparison. Corresponds to the <see langword="&gt;=" /> or <see langword="&lt;=" /> operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.Expressions.RangeType None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Expressions.RangeType.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Expressions.RangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the search does not have a boundary.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

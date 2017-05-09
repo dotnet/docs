@@ -1,0 +1,89 @@
+<Type Name="LiteralDesigner" FullName="System.Web.UI.Design.WebControls.LiteralDesigner">
+  <TypeSignature Language="C#" Value="public class LiteralDesigner : System.Web.UI.Design.ControlDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LiteralDesigner extends System.Web.UI.Design.ControlDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.LiteralDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.ControlDesigner</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.UI.Design.SupportsPreviewControl(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.Literal" /> Web server control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Literal> control allows a text string to be used as a control on a Web page.  
+  
+ In a visual designer, when you switch from Source to Design view, the markup source code that describes a <xref:System.Web.UI.WebControls.Literal> control is parsed and a design-time version of the control is created on the design surface. When you switch back to Source view, the design-time control is persisted to the markup source code and edited into the markup for the Web page. The <xref:System.Web.UI.Design.WebControls.LiteralDesigner> class provides design-time support for the <xref:System.Web.UI.WebControls.Literal> control.  
+  
+ The <xref:System.Web.UI.Design.WebControls.LiteralDesigner.OnComponentChanged%2A> method is called when there is a design-time change to the associated <xref:System.Web.UI.WebControls.Literal> control.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LiteralDesigner ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LiteralDesigner.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.LiteralDesigner" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.LiteralDesigner> class when it creates the associated <xref:System.Web.UI.WebControls.Literal> control or a copy of the <xref:System.Web.UI.WebControls.Literal> control on the design surface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnComponentChanged">
+      <MemberSignature Language="C#" Value="public override void OnComponentChanged (object sender, System.ComponentModel.Design.ComponentChangedEventArgs ce);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnComponentChanged(object sender, class System.ComponentModel.Design.ComponentChangedEventArgs ce) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LiteralDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="ce" Type="System.ComponentModel.Design.ComponentChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The object that is the source of the event.</param>
+        <param name="ce">A <see cref="T:System.ComponentModel.Design.ComponentChangedEventArgs" /> object that contains the event data.</param>
+        <summary>Called when there is a change to the associated control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.LiteralDesigner.OnComponentChanged%2A> method is called when the <xref:System.ComponentModel.Design.IComponentChangeService.ComponentChanged> event of the associated <xref:System.Web.UI.WebControls.Literal> control is raised. Typically, this is in response to a property change on the control (for example, a `Properties` grid change).  
+  
+ The <xref:System.Web.UI.Design.WebControls.LiteralDesigner.OnComponentChanged%2A> creates a <xref:System.ComponentModel.Design.ComponentChangedEventArgs> object and then calls the <xref:System.Web.UI.Design.ControlDesigner.OnComponentChanged%2A> base method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

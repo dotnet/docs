@@ -1,0 +1,90 @@
+<Type Name="PagesEnableSessionState" FullName="System.Web.Configuration.PagesEnableSessionState">
+  <TypeSignature Language="C#" Value="public enum PagesEnableSessionState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PagesEnableSessionState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.PagesEnableSessionState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Used to determine session-state activation for a single Web page or an entire Web application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration determines session-state activation for an entire Web application. This value can be used in the `pages` configuration-file section to affect all .aspx pages in the Web application for the scope of the configuration file. The <xref:System.Web.Configuration.PagesSection> type allows programmatic access to the `pages` configuration section.  
+  
+   
+  
+## Examples  
+ The following configuration file excerpt shows how to declaratively use values of the <xref:System.Web.Configuration.PagesEnableSessionState> enumeration to specify whether the session state is enabled.  
+  
+```  
+<system.web>  
+  <pages enableSessionState="true" />  
+</system.web>  
+  
+```  
+  
+ The following code example shows how to use the <xref:System.Web.Configuration.PagesEnableSessionState> enumeration with the <xref:System.Web.Configuration.PagesSection> type.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#14](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#14)]
+ [!code-vb[System.Web.Configuration.PagesSection#14](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#14)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="False">
+      <MemberSignature Language="C#" Value="False" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.PagesEnableSessionState False = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.PagesEnableSessionState.False" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.PagesEnableSessionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Session state is disabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOnly">
+      <MemberSignature Language="C#" Value="ReadOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.PagesEnableSessionState ReadOnly = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.PagesEnableSessionState.ReadOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.PagesEnableSessionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Session state is enabled, but not writable.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="True">
+      <MemberSignature Language="C#" Value="True" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.PagesEnableSessionState True = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.PagesEnableSessionState.True" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.PagesEnableSessionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Session state is enabled.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

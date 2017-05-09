@@ -1,0 +1,89 @@
+<Type Name="MdiLayout" FullName="System.Windows.Forms.MdiLayout">
+  <TypeSignature Language="C#" Value="public enum MdiLayout" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MdiLayout extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MdiLayout" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the layout of multiple document interface (MDI) child windows in an MDI parent window.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration when calling the <xref:System.Windows.Forms.Form.LayoutMdi%2A> method of the <xref:System.Windows.Forms.Form> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ArrangeIcons">
+      <MemberSignature Language="C#" Value="ArrangeIcons" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MdiLayout ArrangeIcons = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MdiLayout.ArrangeIcons" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MdiLayout</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All MDI child icons are arranged within the client region of the MDI parent form.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cascade">
+      <MemberSignature Language="C#" Value="Cascade" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MdiLayout Cascade = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MdiLayout.Cascade" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MdiLayout</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All MDI child windows are cascaded within the client region of the MDI parent form.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TileHorizontal">
+      <MemberSignature Language="C#" Value="TileHorizontal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MdiLayout TileHorizontal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MdiLayout.TileHorizontal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MdiLayout</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All MDI child windows are tiled horizontally within the client region of the MDI parent form.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TileVertical">
+      <MemberSignature Language="C#" Value="TileVertical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MdiLayout TileVertical = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MdiLayout.TileVertical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MdiLayout</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All MDI child windows are tiled vertically within the client region of the MDI parent form.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

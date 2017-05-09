@@ -1,0 +1,122 @@
+<Type Name="ImageFileMachine" FullName="System.Reflection.ImageFileMachine">
+  <TypeSignature Language="C#" Value="public enum ImageFileMachine" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ImageFileMachine extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.ImageFileMachine" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Identifies the platform targeted by an executable.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To obtain this value for a module, use the <xref:System.Reflection.Module.GetPEKind%2A?displayProperty=fullName> method.  
+  
+> [!NOTE]
+>  The values in this enumeration correspond to the constants IMAGE_FILE_MACHINE_I386, IMAGE_FILE_MACHINE_IA64, and IMAGE_FILE_MACHINE_AMD64 in the unmanaged Win32 API, which are accessed by the unmanaged `GetPEKind` function.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AMD64">
+      <MemberSignature Language="C#" Value="AMD64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.ImageFileMachine AMD64 = int32(34404)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.ImageFileMachine.AMD64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.ImageFileMachine</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Targets a 64-bit AMD processor.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ARM">
+      <MemberSignature Language="C#" Value="ARM" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.ImageFileMachine ARM = int32(452)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.ImageFileMachine.ARM" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.ImageFileMachine</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Targets an ARM processor.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="I386">
+      <MemberSignature Language="C#" Value="I386" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.ImageFileMachine I386 = int32(332)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.ImageFileMachine.I386" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.ImageFileMachine</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Targets a 32-bit Intel processor.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IA64">
+      <MemberSignature Language="C#" Value="IA64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.ImageFileMachine IA64 = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.Reflection.ImageFileMachine.IA64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.ImageFileMachine</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Targets a 64-bit Intel processor.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

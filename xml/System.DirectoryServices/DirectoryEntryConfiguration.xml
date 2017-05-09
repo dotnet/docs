@@ -1,0 +1,179 @@
+<Type Name="DirectoryEntryConfiguration" FullName="System.DirectoryServices.DirectoryEntryConfiguration">
+  <TypeSignature Language="C#" Value="public class DirectoryEntryConfiguration" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DirectoryEntryConfiguration extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectoryEntryConfiguration" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.DirectoryEntryConfiguration" /> class provides a direct way to specify and obtain provider-specific options for manipulating a directory object. Typically, the options apply to search operations of the underlying directory store. The supported options are provider-specific.</summary>
+    <remarks>To be added.</remarks>
+    <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
+      <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />
+    </permission>
+  </Docs>
+  <Members>
+    <Member MemberName="GetCurrentServerName">
+      <MemberSignature Language="C#" Value="public string GetCurrentServerName ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetCurrentServerName() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntryConfiguration.GetCurrentServerName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the host name of the server for the current binding to this directory object.</summary>
+        <returns>The name of the server.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMutuallyAuthenticated">
+      <MemberSignature Language="C#" Value="public bool IsMutuallyAuthenticated ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsMutuallyAuthenticated() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntryConfiguration.IsMutuallyAuthenticated" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines if mutual authentication is performed by the SSPI layer.</summary>
+        <returns>
+          <see langword="true" /> if mutual authentication has been performed; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageSize">
+      <MemberSignature Language="C#" Value="public int PageSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PageSize" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntryConfiguration.PageSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the page size in a paged search.</summary>
+        <value>The number of entries in a page.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PasswordEncoding">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.PasswordEncodingMethod PasswordEncoding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.PasswordEncodingMethod PasswordEncoding" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntryConfiguration.PasswordEncoding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.PasswordEncodingMethod</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the password encoding method.</summary>
+        <value>One of the <see cref="T:System.DirectoryServices.PasswordEncodingMethod" /> enumeration members that indicates the type of password encoding.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PasswordPort">
+      <MemberSignature Language="C#" Value="public int PasswordPort { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PasswordPort" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntryConfiguration.PasswordPort" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the port number to use to establish an SSL connection when the password is set or changed.</summary>
+        <value>The port number to use to establish an SSL connection when the password is set or changed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, port 636 is used to establish an SSL connection when setting or changing a password.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Referral">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.ReferralChasingOption Referral { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.ReferralChasingOption Referral" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntryConfiguration.Referral" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ReferralChasingOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines if and how referral chasing is pursued.</summary>
+        <value>A combination of one or more of the <see cref="T:System.DirectoryServices.ReferralChasingOption" /> enumeration members that specifies if and how referral chasing is pursued.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityMasks">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.SecurityMasks SecurityMasks { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.SecurityMasks SecurityMasks" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryEntryConfiguration.SecurityMasks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.SecurityMasks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a security mask to use with <see cref="T:System.DirectoryServices.DirectoryEntryConfiguration" />.</summary>
+        <value>A combination of one or more of the <see cref="T:System.DirectoryServices.SecurityMasks" /> enumeration members that specifies the security mask.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetUserNameQueryQuota">
+      <MemberSignature Language="C#" Value="public void SetUserNameQueryQuota (string accountName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetUserNameQueryQuota(string accountName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryEntryConfiguration.SetUserNameQueryQuota(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="accountName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="accountName">The account name that is being set to allow queries on its principal name.</param>
+        <summary>Sets the name of a security principal so that when the principal is accessed, its quota information will also be returned.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

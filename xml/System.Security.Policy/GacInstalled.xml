@@ -1,0 +1,278 @@
+<Type Name="GacInstalled" FullName="System.Security.Policy.GacInstalled">
+  <TypeSignature Language="C#" Value="public sealed class GacInstalled : System.Security.Policy.EvidenceBase, System.Security.Policy.IIdentityPermissionFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit GacInstalled extends System.Security.Policy.EvidenceBase implements class System.Security.Policy.IIdentityPermissionFactory" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Policy.GacInstalled" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Policy.EvidenceBase</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Security.Policy.IIdentityPermissionFactory</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Confirms that a code assembly originates in the global assembly cache (GAC) as evidence for policy evaluation. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The presence of <xref:System.Security.Policy.GacInstalled> evidence produces a <xref:System.Security.Permissions.GacIdentityPermission> in the grant set. If there is a <xref:System.Security.CodeAccessPermission.Demand%2A> for <xref:System.Security.Permissions.GacIdentityPermission>, the <xref:System.Security.Permissions.GacIdentityPermission> that corresponds to the <xref:System.Security.Policy.GacInstalled> evidence is compared with the demanded permission.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.GacInstalled> class.  
+  
+ [!code-cpp[System.Security.Policy.Gac#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Gac/CPP/gac.cpp#1)]
+ [!code-csharp[System.Security.Policy.Gac#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Gac/CS/gac.cs#1)]
+ [!code-vb[System.Security.Policy.Gac#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Gac/VB/gac.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GacInstalled ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacInstalled.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.GacInstalled" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor sets no property values because a <xref:System.Security.Policy.GacInstalled> object has no properties.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.GacInstalled.%23ctor%2A> constructor. This example is part of a larger example provided for the <xref:System.Security.Policy.GacInstalled> class.  
+  
+ [!code-cpp[System.Security.Policy.Gac#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Gac/CPP/gac.cpp#2)]
+ [!code-csharp[System.Security.Policy.Gac#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Gac/CS/gac.cs#2)]
+ [!code-vb[System.Security.Policy.Gac#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Gac/VB/gac.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public override System.Security.Policy.EvidenceBase Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Policy.EvidenceBase Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacInstalled.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.EvidenceBase</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new object that is a copy of the current instance.</summary>
+        <returns>A new object that is a copy of this instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public object Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Copy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacInstalled.Copy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an equivalent copy of the current object.</summary>
+        <returns>An equivalent copy of <see cref="T:System.Security.Policy.GacInstalled" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.GacInstalled.Copy%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.GacInstalled> class.  
+  
+ [!code-cpp[System.Security.Policy.Gac#4](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Gac/CPP/gac.cpp#4)]
+ [!code-csharp[System.Security.Policy.Gac#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Gac/CS/gac.cs#4)]
+ [!code-vb[System.Security.Policy.Gac#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Gac/VB/gac.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIdentityPermission">
+      <MemberSignature Language="C#" Value="public System.Security.IPermission CreateIdentityPermission (System.Security.Policy.Evidence evidence);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.IPermission CreateIdentityPermission(class System.Security.Policy.Evidence evidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacInstalled.CreateIdentityPermission(System.Security.Policy.Evidence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="evidence" Type="System.Security.Policy.Evidence" />
+      </Parameters>
+      <Docs>
+        <param name="evidence">The <see cref="T:System.Security.Policy.Evidence" /> from which to construct the identity permission.</param>
+        <summary>Creates a new identity permission that corresponds to the current object.</summary>
+        <returns>A new identity permission that corresponds to the current object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Permissions.GacIdentityPermission> can be used to determine whether the calling code is in the global assembly cache.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.GacInstalled.CreateIdentityPermission%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.GacInstalled> class.  
+  
+ [!code-cpp[System.Security.Policy.Gac#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Gac/CPP/gac.cpp#3)]
+ [!code-csharp[System.Security.Policy.Gac#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Gac/CS/gac.cs#3)]
+ [!code-vb[System.Security.Policy.Gac#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Gac/VB/gac.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacInstalled.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object to compare with the current object.</param>
+        <summary>Indicates whether the current object is equivalent to the specified object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="o" /> is a <see cref="T:System.Security.Policy.GacInstalled" /> object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.Policy.GacInstalled> objects have no properties to distinguish one from another, so all <xref:System.Security.Policy.GacInstalled> objects are equal.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.GacInstalled.Equals%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.GacInstalled> class.  
+  
+ [!code-cpp[System.Security.Policy.GacMembershipCondition#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CPP/gacmembershipcondition.cpp#5)]
+ [!code-csharp[System.Security.Policy.GacMembershipCondition#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/CS/gacmembershipcondition.cs#5)]
+ [!code-vb[System.Security.Policy.GacMembershipCondition#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.GacMembershipCondition/VB/gacmembershipcondition.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacInstalled.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a hash code for the current object.</summary>
+        <returns>A hash code for the current object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Policy.GacInstalled.GetHashCode%2A> method returns 0 (zero) because <xref:System.Security.Policy.GacInstalled> objects have no properties to distinguish one from another.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.GacInstalled.GetHashCode%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.GacInstalled> class.  
+  
+ [!code-cpp[System.Security.Policy.Gac#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Gac/CPP/gac.cpp#5)]
+ [!code-csharp[System.Security.Policy.Gac#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Gac/CS/gac.cs#5)]
+ [!code-vb[System.Security.Policy.Gac#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Gac/VB/gac.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.GacInstalled.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string representation of the current  object.</summary>
+        <returns>A string representation of the current object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns the XML encoding for the current object.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Security.Policy.GacInstalled.ToString%2A> method. This example is part of a larger example provided for the <xref:System.Security.Policy.GacInstalled> class.  
+  
+ [!code-cpp[System.Security.Policy.Gac#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.Gac/CPP/gac.cpp#6)]
+ [!code-csharp[System.Security.Policy.Gac#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.Gac/CS/gac.cs#6)]
+ [!code-vb[System.Security.Policy.Gac#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.Gac/VB/gac.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,95 @@
+<Type Name="IHttpHandler" FullName="System.Web.IHttpHandler">
+  <TypeSignature Language="C#" Value="public interface IHttpHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHttpHandler" />
+  <TypeSignature Language="DocId" Value="T:System.Web.IHttpHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the contract that ASP.NET implements to synchronously process HTTP Web requests using custom HTTP handlers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can write custom HTTP handlers to process specific, predefined types of HTTP requests in any Common Language Specification (CLS) compliant language. Executable code defined in the `HttpHandler` classes, rather than conventional ASP or ASP.NET Web pages, responds to these specific requests. HTTP handlers give you a means of interacting with the low-level request and response services of the IIS Web server and provide functionality much like ISAPI extensions but with a simpler programming model.  
+  
+ If your handler will access session state values, it must implement the <xref:System.Web.SessionState.IRequiresSessionState> interface (a marker interface with no methods).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsReusable">
+      <MemberSignature Language="C#" Value="public bool IsReusable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReusable" />
+      <MemberSignature Language="DocId" Value="P:System.Web.IHttpHandler.IsReusable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether another request can use the <see cref="T:System.Web.IHttpHandler" /> instance.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.IHttpHandler" /> instance is reusable; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You explicitly set the <xref:System.Web.IHttpHandler.IsReusable%2A> property to `true` or `false` by code you provide that overrides the <xref:System.Web.IHttpHandler.IsReusable%2A> property accessor (getter).  
+  
+   
+  
+## Examples  
+ The following code example writes four lines of text to the HTTP output stream in response to a client request for a page named handler.aspx. All requests for handler.aspx are serviced by the `MyHttpHandler` class in the namespace `HandlerExample` contained in the assembly HandlerTest.dll.  
+  
+ [!code-csharp[Classic IHttpHandler.ProcessRequest Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic IHttpHandler.ProcessRequest Example/CS/source.cs#1)]
+ [!code-vb[Classic IHttpHandler.ProcessRequest Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic IHttpHandler.ProcessRequest Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessRequest">
+      <MemberSignature Language="C#" Value="public void ProcessRequest (System.Web.HttpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessRequest(class System.Web.HttpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.Web.HttpContext" /> object that provides references to the intrinsic server objects (for example, <see langword="Request" />, <see langword="Response" />, <see langword="Session" />, and <see langword="Server" />) used to service HTTP requests.</param>
+        <summary>Enables processing of HTTP Web requests by a custom <see langword="HttpHandler" /> that implements the <see cref="T:System.Web.IHttpHandler" /> interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Place your custom `HttpHandler` code in the <xref:System.Web.IHttpHandler.ProcessRequest%2A> virtual method, as shown in the following example.  
+  
+   
+  
+## Examples  
+ The following code example writes four lines of text to the HTTP output stream in response to a client request for a page named handler.aspx. All requests for handler.aspx are serviced by the `MyHttpHandler` class in the namespace `HandlerExample` contained in the assembly HandlerTest.dll.  
+  
+ [!code-csharp[Classic IHttpHandler.ProcessRequest Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic IHttpHandler.ProcessRequest Example/CS/source.cs#1)]
+ [!code-vb[Classic IHttpHandler.ProcessRequest Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic IHttpHandler.ProcessRequest Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

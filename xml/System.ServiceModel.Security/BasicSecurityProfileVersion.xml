@@ -1,0 +1,39 @@
+<Type Name="BasicSecurityProfileVersion" FullName="System.ServiceModel.Security.BasicSecurityProfileVersion">
+  <TypeSignature Language="C#" Value="public abstract class BasicSecurityProfileVersion" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BasicSecurityProfileVersion extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.BasicSecurityProfileVersion" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a message version that corresponds to the Basic Security Profile specification.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BasicSecurityProfile10">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.BasicSecurityProfileVersion BasicSecurityProfile10 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Security.BasicSecurityProfileVersion BasicSecurityProfile10" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.BasicSecurityProfileVersion.BasicSecurityProfile10" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.BasicSecurityProfileVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Provides a message version that corresponds to the Basic Security Profile specification.</summary>
+        <value>A class that has a <c>ToString</c> method that returns the version in text form.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

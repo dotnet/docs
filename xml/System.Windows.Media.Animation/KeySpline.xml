@@ -1,0 +1,438 @@
+<Type Name="KeySpline" FullName="System.Windows.Media.Animation.KeySpline">
+  <TypeSignature Language="C#" Value="public class KeySpline : System.Windows.Freezable, IFormattable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeySpline extends System.Windows.Freezable implements class System.IFormattable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.KeySpline" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Freezable</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IFormattable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.KeySplineConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.None, Readability=System.Windows.Readability.Unreadable)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>This class is used by a spline key frame to define animation progress.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To understand how a <xref:System.Windows.Media.Animation.KeySpline> works, it is helpful to understand cubic Bezier curves. A cubic Bezier curve is defined by a start point, an end point, and two control points. The two coordinates in the <xref:System.Windows.Media.Animation.KeySpline> defines those two control points. When describing key splines, the start point of the Bezier curve is always 0, and the end point is always 1, which is why you define only the two control points. The resulting curve specifies how an animation is interpolated during a time segment; that is, the curve represents the rate of change in the animation's target attribute over the time segment. To better see the relationship between animation progress and a Bezier curve, see [Key Spline Animation Sample](http://go.microsoft.com/fwlink/?LinkID=160011).  
+  
+<a name="xamlAttributeUsage_KeySpline"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="cp1X,cp1Y cp2X,cp2Y"/>  
+```  
+  
+<a name="xamlValues_KeySpline"></a>   
+## XAML Values  
+ *cp1X*  
+ <xref:System.Windows.Point.X%2A> component of the curve's first control point. The value must be between 0 and 1.  
+  
+ *cp1Y*  
+ <xref:System.Windows.Point.Y%2A> component of the curve's first control point. The value must be between 0 and 1.  
+  
+ *cp2X*  
+ <xref:System.Windows.Point.X%2A> component of the curve's second control point. The value must be between 0 and 1.  
+  
+ *cp2Y*  
+ <xref:System.Windows.Point.Y%2A> component of the curve's second control point. The value must be between 0 and 1.  
+  
+ The separator between values may be either comma or one or more spaces. The convention shown here of commas between components of a point and space between points is a recommended convention. Do not use a comma as the decimal point within the values of point components, even if that is the norm in your culture. XAML values are treated as en-us in all type conversion cases, and the comma is thus interpreted as the separator and not as the intended decimal point.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public KeySpline ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeySpline.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.KeySpline" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default values for <xref:System.Windows.Media.Animation.KeySpline.ControlPoint1%2A> and <xref:System.Windows.Media.Animation.KeySpline.ControlPoint2%2A> are (0,0) and (1,1) respectively, which has no effect on the progress of an animation or key frame.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public KeySpline (System.Windows.Point controlPoint1, System.Windows.Point controlPoint2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Point controlPoint1, valuetype System.Windows.Point controlPoint2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeySpline.#ctor(System.Windows.Point,System.Windows.Point)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="controlPoint1" Type="System.Windows.Point" />
+        <Parameter Name="controlPoint2" Type="System.Windows.Point" />
+      </Parameters>
+      <Docs>
+        <param name="controlPoint1">The control point for the <see cref="P:System.Windows.Media.Animation.KeySpline.ControlPoint1" /> of the <see cref="T:System.Windows.Media.Animation.KeySpline" />.</param>
+        <param name="controlPoint2">The control point for the <see cref="P:System.Windows.Media.Animation.KeySpline.ControlPoint2" /> of the <see cref="T:System.Windows.Media.Animation.KeySpline" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.KeySpline" /> class with the specified control points.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public KeySpline (double x1, double y1, double x2, double y2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 x1, float64 y1, float64 x2, float64 y2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeySpline.#ctor(System.Double,System.Double,System.Double,System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="x1" Type="System.Double" />
+        <Parameter Name="y1" Type="System.Double" />
+        <Parameter Name="x2" Type="System.Double" />
+        <Parameter Name="y2" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="x1">The x-coordinate for the <see cref="P:System.Windows.Media.Animation.KeySpline.ControlPoint1" /> of the <see cref="T:System.Windows.Media.Animation.KeySpline" />.</param>
+        <param name="y1">The y-coordinate for the <see cref="P:System.Windows.Media.Animation.KeySpline.ControlPoint1" /> of the <see cref="T:System.Windows.Media.Animation.KeySpline" />.</param>
+        <param name="x2">The x-coordinate for the <see cref="P:System.Windows.Media.Animation.KeySpline.ControlPoint2" /> of the <see cref="T:System.Windows.Media.Animation.KeySpline" />.</param>
+        <param name="y2">The y-coordinate for the <see cref="P:System.Windows.Media.Animation.KeySpline.ControlPoint2" /> of the <see cref="T:System.Windows.Media.Animation.KeySpline" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.KeySpline" /> class with the specified coordinates for the control points.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneCore">
+      <MemberSignature Language="C#" Value="protected override void CloneCore (System.Windows.Freezable sourceFreezable);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCore(class System.Windows.Freezable sourceFreezable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeySpline.CloneCore(System.Windows.Freezable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceFreezable" Type="System.Windows.Freezable" />
+      </Parameters>
+      <Docs>
+        <param name="sourceFreezable">The <see cref="T:System.Windows.Media.Animation.KeySpline" /> to clone.</param>
+        <summary>Makes this instance a deep copy of the specified <see cref="T:System.Windows.Media.Animation.KeySpline" />. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the <xref:System.Windows.Freezable.Clone%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.Clone%2A> instead of calling this method directly.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCore%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneCurrentValueCore">
+      <MemberSignature Language="C#" Value="protected override void CloneCurrentValueCore (System.Windows.Freezable sourceFreezable);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCurrentValueCore(class System.Windows.Freezable sourceFreezable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeySpline.CloneCurrentValueCore(System.Windows.Freezable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceFreezable" Type="System.Windows.Freezable" />
+      </Parameters>
+      <Docs>
+        <param name="sourceFreezable">The <see cref="T:System.Windows.Media.Animation.KeySpline" /> to clone.</param>
+        <summary>Makes this instance a modifiable deep copy of the specified <see cref="T:System.Windows.Media.Animation.KeySpline" /> using current property values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the <xref:System.Windows.Freezable.CloneCurrentValue%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a modifiable copy of the current object, call <xref:System.Windows.Freezable.CloneCurrentValue%2A> instead of calling this method directly.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValueCore%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlPoint1">
+      <MemberSignature Language="C#" Value="public System.Windows.Point ControlPoint1 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Point ControlPoint1" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.KeySpline.ControlPoint1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The first control point used to define a Bezier curve that describes a <see cref="T:System.Windows.Media.Animation.KeySpline" />.</summary>
+        <value>The Bezier curve's first control point. The point's <see cref="P:System.Windows.Point.X" /> and <see cref="P:System.Windows.Point.Y" /> values must each be between 0 and 1, inclusive. The default value is (0,0).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To understand how a <xref:System.Windows.Media.Animation.KeySpline> works, it is helpful to understand cubic Bezier curves. A cubic Bezier curve is defined by a start point, an end point, and two control points. The two coordinates in the <xref:System.Windows.Media.Animation.KeySpline> defines those two control points. When describing key splines, the start point of the Bezier curve is always 0, and the end point is always 1, which is why you define only the two control points. The resulting curve specifies how an animation is interpolated during a time segment; that is, the curve represents the rate of change in the animation's target attribute over the time segment. To better see the relationship between animation progress and a Bezier curve, see [Key Spline Animation Sample](http://go.microsoft.com/fwlink/?LinkID=160011).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlPoint2">
+      <MemberSignature Language="C#" Value="public System.Windows.Point ControlPoint2 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Point ControlPoint2" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.KeySpline.ControlPoint2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The second control point used to define a Bezier curve that describes a <see cref="T:System.Windows.Media.Animation.KeySpline" />.</summary>
+        <value>The Bezier curve's second control point. The point's <see cref="P:System.Windows.Point.X" /> and <see cref="P:System.Windows.Point.Y" /> values must each be between 0 and 1, inclusive. The default value is (1,1).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To understand how a <xref:System.Windows.Media.Animation.KeySpline> works, it is helpful to understand cubic Bezier curves. A cubic Bezier curve is defined by a start point, an end point, and two control points. The two coordinates in the <xref:System.Windows.Media.Animation.KeySpline> defines those two control points. When describing key splines, the start point of the Bezier curve is always 0, and the end point is always 1, which is why you define only the two control points. The resulting curve specifies how an animation is interpolated during a time segment; that is, the curve represents the rate of change in the animation's target attribute over the time segment. To better see the relationship between animation progress and a Bezier curve, see [Key Spline Animation Sample](http://go.microsoft.com/fwlink/?LinkID=160011).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeySpline.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of <see cref="T:System.Windows.Media.Animation.KeySpline" />.</summary>
+        <returns>A new instance of <see cref="T:System.Windows.Media.Animation.KeySpline" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAsFrozenCore">
+      <MemberSignature Language="C#" Value="protected override void GetAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeySpline.GetAsFrozenCore(System.Windows.Freezable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceFreezable" Type="System.Windows.Freezable" />
+      </Parameters>
+      <Docs>
+        <param name="sourceFreezable">The <see cref="T:System.Windows.Media.Animation.KeySpline" /> object to clone.</param>
+        <summary>Makes this instance a clone of the specified <see cref="T:System.Windows.Media.Animation.KeySpline" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values. Note that if these properties contain resource references or data bindings, <xref:System.Windows.Freezable.GetAsFrozen%2A> will fail when trying to freeze the object and will throw an <xref:System.InvalidOperationException>.  
+  
+ This method is called by the <xref:System.Windows.Freezable.GetAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetAsFrozen%2A> instead of calling this method directly.  
+  
+ For more information, see <xref:System.Windows.Freezable.GetAsFrozenCore%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentValueAsFrozenCore">
+      <MemberSignature Language="C#" Value="protected override void GetCurrentValueAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetCurrentValueAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeySpline.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceFreezable" Type="System.Windows.Freezable" />
+      </Parameters>
+      <Docs>
+        <param name="sourceFreezable">The <see cref="T:System.Windows.Media.Animation.KeySpline" /> to copy and freeze.</param>
+        <summary>Makes this instance a frozen clone of the specified <see cref="T:System.Windows.Media.Animation.KeySpline" />. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> method and should not be called directly from your code, except when calling the base implementation while overriding this method. To create a frozen copy of the current object, call <xref:System.Windows.Freezable.GetCurrentValueAsFrozen%2A> instead of calling this method directly.  
+  
+ For more information, see <xref:System.Windows.Freezable.GetCurrentValueAsFrozenCore%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSplineProgress">
+      <MemberSignature Language="C#" Value="public double GetSplineProgress (double linearProgress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 GetSplineProgress(float64 linearProgress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeySpline.GetSplineProgress(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="linearProgress" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="linearProgress">The linear progress to evaluate.</param>
+        <summary>Calculates spline progress from a supplied linear progress.</summary>
+        <returns>The calculated spline progress.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To understand how a <xref:System.Windows.Media.Animation.KeySpline> works, it is helpful to understand cubic Bezier curves. A cubic Bezier curve is defined by a start point, an end point, and two control points. The two coordinates in the <xref:System.Windows.Media.Animation.KeySpline> defines those two control points. When describing key splines, the start point of the Bezier curve is always 0, and the end point is always 1, which is why you define only the two control points. The resulting curve specifies how an animation is interpolated during a time segment; that is, the curve represents the rate of change in the animation's target attribute over the time segment. To better see the relationship between animation progress and a Bezier curve, see [Key Spline Animation Sample](http://go.microsoft.com/fwlink/?LinkID=160011).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnChanged">
+      <MemberSignature Language="C#" Value="protected override void OnChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeySpline.OnChanged" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called when the current <see cref="T:System.Windows.Media.Animation.KeySpline" /> object is modified.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IFormattable.ToString">
+      <MemberSignature Language="C#" Value="string IFormattable.ToString (string format, IFormatProvider formatProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.IFormattable.ToString(string format, class System.IFormatProvider formatProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeySpline.System#IFormattable#ToString(System.String,System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" />
+        <Parameter Name="formatProvider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="format">The format to use.  
+  
+ -or-  
+  
+ A null reference (<see langword="Nothing" /> in Visual Basic) to use the default format defined for the type of the <see cref="T:System.IFormattable" /> implementation.</param>
+        <param name="formatProvider">The provider to use to format the value.  
+  
+ -or-  
+  
+ A null reference (<see langword="Nothing" /> in Visual Basic) to obtain the numeric format information from the current locale setting of the operating system.</param>
+        <summary>Formats the value of the current instance using the specified format.</summary>
+        <returns>The value of the current instance in the specified format.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeySpline.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a string representation of this instance of <see cref="T:System.Windows.Media.Animation.KeySpline" /> based on the current culture.</summary>
+        <returns>A string representation of this <see cref="T:System.Windows.Media.Animation.KeySpline" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public string ToString (IFormatProvider formatProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(class System.IFormatProvider formatProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.KeySpline.ToString(System.IFormatProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formatProvider" Type="System.IFormatProvider" />
+      </Parameters>
+      <Docs>
+        <param name="formatProvider">The format provider to use. If provider is <see langword="null" />, the current culture is used.</param>
+        <summary>Creates a string representation of this <see cref="T:System.Windows.Media.Animation.KeySpline" /> based on the supplied <see cref="T:System.IFormatProvider" />.</summary>
+        <returns>A string representation of this instance of <see cref="T:System.Windows.Media.Animation.KeySpline" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

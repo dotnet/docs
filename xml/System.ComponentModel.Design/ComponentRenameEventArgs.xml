@@ -1,0 +1,149 @@
+<Type Name="ComponentRenameEventArgs" FullName="System.ComponentModel.Design.ComponentRenameEventArgs">
+  <TypeSignature Language="C#" Value="public class ComponentRenameEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComponentRenameEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ComponentRenameEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentRename" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.ComponentModel.Design.ComponentRenameEventArgs> provides data about a <xref:System.ComponentModel.Design.IComponentChangeService.ComponentRename> event.  
+  
+ A <xref:System.ComponentModel.Design.ComponentRenameEventArgs> object provides the following information:  
+  
+-   A <xref:System.ComponentModel.Design.ComponentRenameEventArgs.Component%2A> property that references the component being renamed.  
+  
+-   An <xref:System.ComponentModel.Design.ComponentRenameEventArgs.OldName%2A> property that indicates the old name of the component.  
+  
+-   A <xref:System.ComponentModel.Design.ComponentRenameEventArgs.NewName%2A> property that indicates the new name of the component.  
+  
+   
+  
+## Examples  
+ The following example demonstrates creating a <xref:System.ComponentModel.Design.ComponentRenameEventArgs>.  
+  
+ [!code-cpp[ComponentRenameEventArgsExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ComponentRenameEventArgsExample/CPP/componentrenameeventargsexample.cpp#1)]
+ [!code-csharp[ComponentRenameEventArgsExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ComponentRenameEventArgsExample/CS/componentrenameeventargsexample.cs#1)]
+ [!code-vb[ComponentRenameEventArgsExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ComponentRenameEventArgsExample/VB/componentrenameeventargsexample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ComponentRenameEventArgs (object component, string oldName, string newName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object component, string oldName, string newName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentRenameEventArgs.#ctor(System.Object,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="component" Type="System.Object" />
+        <Parameter Name="oldName" Type="System.String" />
+        <Parameter Name="newName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component to be renamed.</param>
+        <param name="oldName">The old name of the component.</param>
+        <param name="newName">The new name of the component.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.ComponentRenameEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Component">
+      <MemberSignature Language="C#" Value="public object Component { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Component" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentRenameEventArgs.Component" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the component that is being renamed.</summary>
+        <value>The component that is being renamed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewName">
+      <MemberSignature Language="C#" Value="public virtual string NewName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NewName" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentRenameEventArgs.NewName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the component after the rename event.</summary>
+        <value>The name of the component after the rename event.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OldName">
+      <MemberSignature Language="C#" Value="public virtual string OldName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OldName" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentRenameEventArgs.OldName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the component before the rename event.</summary>
+        <value>The previous name of the component.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

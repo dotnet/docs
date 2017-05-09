@@ -24,8 +24,8 @@ helpviewer_keywords:
   - "<term> XML tag"
 ms.assetid: ec35fced-d58e-4520-a764-0691256e014b
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

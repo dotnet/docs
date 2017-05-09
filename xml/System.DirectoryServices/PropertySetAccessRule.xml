@@ -1,0 +1,103 @@
+<Type Name="PropertySetAccessRule" FullName="System.DirectoryServices.PropertySetAccessRule">
+  <TypeSignature Language="C#" Value="public sealed class PropertySetAccessRule : System.DirectoryServices.ActiveDirectoryAccessRule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PropertySetAccessRule extends System.DirectoryServices.ActiveDirectoryAccessRule" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.PropertySetAccessRule" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.ActiveDirectoryAccessRule</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.PropertySetAccessRule" /> class represents a specific type of access rule that is used to allow or deny access to an Active Directory Domain Services property set. For a list of property sets that are defined for Active Directory Domain Services, see the topic [Property Sets](http://msdn.microsoft.com/library/default.asp?url=/library/adschema/adschema/property_sets.asp) in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertySetAccessRule (System.Security.Principal.IdentityReference identity, System.Security.AccessControl.AccessControlType type, System.DirectoryServices.PropertyAccess access, Guid propertySetType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.AccessControlType type, valuetype System.DirectoryServices.PropertyAccess access, valuetype System.Guid propertySetType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.PropertySetAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.AccessControlType,System.DirectoryServices.PropertyAccess,System.Guid)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="identity" Type="System.Security.Principal.IdentityReference" />
+        <Parameter Name="type" Type="System.Security.AccessControl.AccessControlType" />
+        <Parameter Name="access" Type="System.DirectoryServices.PropertyAccess" />
+        <Parameter Name="propertySetType" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="identity">An <see cref="T:System.Security.Principal.IdentityReference" /> object that identifies the trustee of the access rule.</param>
+        <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> enumeration values that specifies the access rule type.</param>
+        <param name="access">One of the <see cref="T:System.DirectoryServices.PropertyAccess" /> enumeration values that specifies the property access type.</param>
+        <param name="propertySetType">The Rights-Guid of the property set that this access rule applies to. In the Active Directory Domain Services schema documentation, this information can be found in the **Rights-GUID** row on the reference page for each property set. For more information, see the topic Rights-GUID in the MSDN Library at http://msdn.microsoft.com/library.  
+  
+ For a list of property sets, see the topic Property Sets in the MSDN Library.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.PropertySetAccessRule" /> class with the specified identity reference, access control type, property access type, and property set identifier.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertySetAccessRule (System.Security.Principal.IdentityReference identity, System.Security.AccessControl.AccessControlType type, System.DirectoryServices.PropertyAccess access, Guid propertySetType, System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.AccessControlType type, valuetype System.DirectoryServices.PropertyAccess access, valuetype System.Guid propertySetType, valuetype System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.PropertySetAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.AccessControlType,System.DirectoryServices.PropertyAccess,System.Guid,System.DirectoryServices.ActiveDirectorySecurityInheritance)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="identity" Type="System.Security.Principal.IdentityReference" />
+        <Parameter Name="type" Type="System.Security.AccessControl.AccessControlType" />
+        <Parameter Name="access" Type="System.DirectoryServices.PropertyAccess" />
+        <Parameter Name="propertySetType" Type="System.Guid" />
+        <Parameter Name="inheritanceType" Type="System.DirectoryServices.ActiveDirectorySecurityInheritance" />
+      </Parameters>
+      <Docs>
+        <param name="identity">An <see cref="T:System.Security.Principal.IdentityReference" /> object that identifies the trustee of the access rule.</param>
+        <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> enumeration values that specifies the access rule type.</param>
+        <param name="access">One of the <see cref="T:System.DirectoryServices.PropertyAccess" /> enumeration values that specifies the property access type.</param>
+        <param name="propertySetType">The Rights-Guid of the property set that this access rule applies to. In the Active Directory Domain Services schema documentation, this information can be found in the **Rights-GUID** row on the reference page for each property set. For more information, see the topic Rights-GUID in the MSDN Library at http://msdn.microsoft.com/library.  
+  
+ For a list of property sets, see the topic Property Sets in the MSDN Library.</param>
+        <param name="inheritanceType">One of the <see cref="T:System.DirectoryServices.ActiveDirectorySecurityInheritance" /> enumeration values that specifies the inheritance type of the access rule.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.PropertySetAccessRule" /> class with the specified identity reference, access control type, property access type, property set identifier, and Active Directory Domain Services security inheritance information.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertySetAccessRule (System.Security.Principal.IdentityReference identity, System.Security.AccessControl.AccessControlType type, System.DirectoryServices.PropertyAccess access, Guid propertySetType, System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType, Guid inheritedObjectType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.AccessControlType type, valuetype System.DirectoryServices.PropertyAccess access, valuetype System.Guid propertySetType, valuetype System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType, valuetype System.Guid inheritedObjectType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.PropertySetAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.AccessControlType,System.DirectoryServices.PropertyAccess,System.Guid,System.DirectoryServices.ActiveDirectorySecurityInheritance,System.Guid)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="identity" Type="System.Security.Principal.IdentityReference" />
+        <Parameter Name="type" Type="System.Security.AccessControl.AccessControlType" />
+        <Parameter Name="access" Type="System.DirectoryServices.PropertyAccess" />
+        <Parameter Name="propertySetType" Type="System.Guid" />
+        <Parameter Name="inheritanceType" Type="System.DirectoryServices.ActiveDirectorySecurityInheritance" />
+        <Parameter Name="inheritedObjectType" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="identity">An <see cref="T:System.Security.Principal.IdentityReference" /> object that identifies the trustee of the access rule.</param>
+        <param name="type">One of the <see cref="T:System.Security.AccessControl.AccessControlType" /> enumeration values that specifies the access rule type.</param>
+        <param name="access">One of the <see cref="T:System.DirectoryServices.PropertyAccess" /> enumeration values that specifies the property access type.</param>
+        <param name="propertySetType">The Rights-Guid of the property set that this access rule applies to. In the Active Directory Domain Services schema documentation, this information can be found in the **Rights-GUID** row on the reference page for each property set. For more information, see the topic Rights-GUID in the MSDN Library at http://msdn.microsoft.com/library.  
+  
+ For a list of property sets, see the topic Property Sets in the MSDN Library.</param>
+        <param name="inheritanceType">One of the <see cref="T:System.DirectoryServices.ActiveDirectorySecurityInheritance" /> enumeration values that specifies the inheritance type of the access rule.</param>
+        <param name="inheritedObjectType">The schema GUID of the child object type that can inherit this access rule.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.PropertySetAccessRule" /> class with the specified identity reference, access control type, property access type, property set identifier, inheritance type, and inherited object type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

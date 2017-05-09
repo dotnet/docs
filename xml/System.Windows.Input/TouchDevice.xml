@@ -1,0 +1,765 @@
+<Type Name="TouchDevice" FullName="System.Windows.Input.TouchDevice">
+  <TypeSignature Language="C#" Value="public abstract class TouchDevice : System.Windows.Input.InputDevice, System.Windows.Input.IManipulator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TouchDevice extends System.Windows.Input.InputDevice implements class System.Windows.Input.IManipulator" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.TouchDevice" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Input.InputDevice</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Input.IManipulator</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a single touch input produced by a finger on a touchscreen.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You typically access a <xref:System.Windows.Input.TouchDevice> by using the <xref:System.Windows.Input.TouchEventArgs.TouchDevice%2A?displayProperty=fullName> property. A <xref:System.Windows.Input.TouchDevice> represents a single touch on a screen. If multiple touches are present, use the <xref:System.Windows.Input.TouchDevice.Id%2A> property to distinguish between them.  
+  
+> [!NOTE]
+>  This class contains an inheritance demand at the class level that applies to all members. A <xref:System.Security.SecurityException> is thrown when the derived class does not have full-trust permission. For more information about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
+  
+   
+  
+## Examples  
+ The following example enables you to create simple patterns on a <xref:System.Windows.Controls.Canvas> by dragging two fingers on a touchscreen. Each touch is represented by a <xref:System.Windows.Input.TouchDevice> in the <xref:System.Windows.Input.TouchEventArgs>. The pattern is created by drawing a line between the touch points that are provided by the touches. This example requires a Windows Touch–compatible screen.  
+  
+ The following markup creates the user interface, which consists of a <xref:System.Windows.Controls.Canvas> that is centered in a grid, and attaches the event handlers for the touch events.  
+  
+ [!code-xml[TouchEventsSample#000](~/samples/snippets/csharp/VS_Snippets_Wpf/toucheventssample/cs/mainwindow.xaml#000)]  
+  
+ The following code handles the touch events. When a touch is pressed on the <xref:System.Windows.Controls.Canvas>, the <xref:System.Windows.Input.TouchDevice> is captured to the <xref:System.Windows.Controls.Canvas>. When the touch is lifted, the <xref:System.Windows.Input.TouchDevice> is released. When a touch moves on the <xref:System.Windows.Controls.Canvas>, the <xref:System.Windows.Input.TouchDevice.Id%2A> is checked. If the move came from the first touch, its location is recorded. If the move came from the second touch, a line is drawn from the position of the first touch to the position of the second touch.  
+  
+ [!code-csharp[TouchEventsSample#100](~/samples/snippets/csharp/VS_Snippets_Wpf/toucheventssample/cs/mainwindow.xaml.cs#100)]
+ [!code-vb[TouchEventsSample#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/toucheventssample/vb/mainwindow.xaml.vb#100)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.Permissions.UIPermission">for deriving from this class. Security action: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected TouchDevice (int deviceId);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(int32 deviceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="deviceId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="deviceId">A unique identifier for the touch device.</param>
+        <summary>Called from constructors in derived classes to initialize the <see cref="T:System.Windows.Input.TouchDevice" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This class cannot be used by partially trusted or transparent code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Activate">
+      <MemberSignature Language="C#" Value="protected void Activate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Activate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.Activate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Adds the <see cref="T:System.Windows.Input.TouchDevice" /> to the input messaging system.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that inherit from <xref:System.Windows.Input.TouchDevice> should call this method to activate the current device.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The device is already activated.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Activated">
+      <MemberSignature Language="C#" Value="public event EventHandler Activated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Activated" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Input.TouchDevice.Activated" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="T:System.Windows.Input.TouchDevice" /> is added to the input messaging system.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveSource">
+      <MemberSignature Language="C#" Value="public override sealed System.Windows.PresentationSource ActiveSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.PresentationSource ActiveSource" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchDevice.ActiveSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.PresentationSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.PresentationSource" /> that is reporting input for this device.</summary>
+        <value>The source that is reporting input for this device.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Capture">
+      <MemberSignature Language="C#" Value="public bool Capture (System.Windows.IInputElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Capture(class System.Windows.IInputElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.Capture(System.Windows.IInputElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.IInputElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element that captures the touch input.</param>
+        <summary>Captures a touch to the specified element by using the <see cref="F:System.Windows.Input.CaptureMode.Element" /> capture mode.</summary>
+        <returns>
+          <see langword="true" /> if the element was able to capture the touch; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Input.TouchDevice> cannot be captured to an element if it is already captured to another element.  
+  
+   
+  
+## Examples  
+ The following example handles the <xref:System.Windows.UIElement.TouchDown> events that occur on a <xref:System.Windows.Controls.Canvas>. When a touch is pressed on the <xref:System.Windows.Controls.Canvas>, the <xref:System.Windows.Input.TouchDevice> is captured to the <xref:System.Windows.Controls.Canvas>.  
+  
+ This example is part of a larger example that is available in the <xref:System.Windows.Input.TouchDevice> class overview.  
+  
+ [!code-csharp[TouchEventsSample#110](~/samples/snippets/csharp/VS_Snippets_Wpf/toucheventssample/cs/mainwindow.xaml.cs#110)]
+ [!code-vb[TouchEventsSample#110](~/samples/snippets/visualbasic/VS_Snippets_Wpf/toucheventssample/vb/mainwindow.xaml.vb#110)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="element" /> is not a <see cref="T:System.Windows.UIElement" />, <see cref="T:System.Windows.UIElement3D" />, or <see cref="T:System.Windows.ContentElement" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Capture">
+      <MemberSignature Language="C#" Value="public bool Capture (System.Windows.IInputElement element, System.Windows.Input.CaptureMode captureMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Capture(class System.Windows.IInputElement element, valuetype System.Windows.Input.CaptureMode captureMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.Capture(System.Windows.IInputElement,System.Windows.Input.CaptureMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.IInputElement" />
+        <Parameter Name="captureMode" Type="System.Windows.Input.CaptureMode" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element that captures the touch.</param>
+        <param name="captureMode">The capture policy to use.</param>
+        <summary>Captures a touch to the specified element by using the specified <see cref="T:System.Windows.Input.CaptureMode" />.</summary>
+        <returns>
+          <see langword="true" /> if the element was able to capture the touch; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Input.TouchDevice> cannot be captured to an element if it is already captured to another element.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="element" /> is not a <see cref="T:System.Windows.UIElement" />, <see cref="T:System.Windows.UIElement3D" />, or <see cref="T:System.Windows.ContentElement" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Captured">
+      <MemberSignature Language="C#" Value="public System.Windows.IInputElement Captured { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IInputElement Captured" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchDevice.Captured" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.IInputElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the element that captured the <see cref="T:System.Windows.Input.TouchDevice" />.</summary>
+        <value>The element that captured the <see cref="T:System.Windows.Input.TouchDevice" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example handles the <xref:System.Windows.UIElement.TouchUp> events that occur on a <xref:System.Windows.Controls.Canvas>. It checks the <xref:System.Windows.Input.TouchDevice.Captured%2A> property to verify that the device that raised the event is captured to the <xref:System.Windows.Controls.Canvas>. If it is, the <xref:System.Windows.Input.TouchDevice> is released.  
+  
+ This example is part of a larger example that is available in the <xref:System.Windows.Input.TouchDevice> class overview.  
+  
+ [!code-csharp[TouchEventsSample#130](~/samples/snippets/csharp/VS_Snippets_Wpf/toucheventssample/cs/mainwindow.xaml.cs#130)]
+ [!code-vb[TouchEventsSample#130](~/samples/snippets/visualbasic/VS_Snippets_Wpf/toucheventssample/vb/mainwindow.xaml.vb#130)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CaptureMode">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.CaptureMode CaptureMode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.CaptureMode CaptureMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchDevice.CaptureMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.CaptureMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the capture policy of the <see cref="T:System.Windows.Input.TouchDevice" />.</summary>
+        <value>The capture policy of the <see cref="T:System.Windows.Input.TouchDevice" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deactivate">
+      <MemberSignature Language="C#" Value="protected void Deactivate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Deactivate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.Deactivate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes the <see cref="T:System.Windows.Input.TouchDevice" /> from the input messaging system.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that inherit from <xref:System.Windows.Input.TouchDevice> should call this method to deactivate the current device.  
+  
+ A <xref:System.Windows.UIElement.TouchLeave> event is raised without the corresponding <xref:System.Windows.UIElement.TouchUp> event.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The device is not activated.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Deactivated">
+      <MemberSignature Language="C#" Value="public event EventHandler Deactivated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Deactivated" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Input.TouchDevice.Deactivated" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="T:System.Windows.Input.TouchDevice" /> is removed from the input messaging system.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DirectlyOver">
+      <MemberSignature Language="C#" Value="public System.Windows.IInputElement DirectlyOver { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IInputElement DirectlyOver" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchDevice.DirectlyOver" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.IInputElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the element that the touch contact point is directly over.</summary>
+        <value>The element that the touch contact point is directly over.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIntermediateTouchPoints">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.Input.TouchPointCollection GetIntermediateTouchPoints (System.Windows.IInputElement relativeTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Input.TouchPointCollection GetIntermediateTouchPoints(class System.Windows.IInputElement relativeTo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.GetIntermediateTouchPoints(System.Windows.IInputElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.TouchPointCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relativeTo" Type="System.Windows.IInputElement" />
+      </Parameters>
+      <Docs>
+        <param name="relativeTo">The element that defines the coordinate space.</param>
+        <summary>When overridden in a derived class, returns all touch points that are collected between the most recent and previous touch events.</summary>
+        <returns>All touch points that were collected between the most recent and previous touch events.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTouchPoint">
+      <MemberSignature Language="C#" Value="public abstract System.Windows.Input.TouchPoint GetTouchPoint (System.Windows.IInputElement relativeTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Input.TouchPoint GetTouchPoint(class System.Windows.IInputElement relativeTo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.GetTouchPoint(System.Windows.IInputElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.TouchPoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relativeTo" Type="System.Windows.IInputElement" />
+      </Parameters>
+      <Docs>
+        <param name="relativeTo">The element that defines the coordinate space.</param>
+        <summary>Returns the current position of the touch device relative to the specified element.</summary>
+        <returns>The current position of the touch device relative to the specified element.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public int Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Id" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchDevice.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the unique identifier of the <see cref="T:System.Windows.Input.TouchDevice" />, as provided by the operating system.</summary>
+        <value>The unique identifier of the <see cref="T:System.Windows.Input.TouchDevice" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Input.TouchDevice> represents a single touch on a screen. If multiple touches are present, use the <xref:System.Windows.Input.TouchDevice.Id%2A> property to distinguish between them.  
+  
+   
+  
+## Examples  
+ The following example handles the <xref:System.Windows.UIElement.TouchMove> events that occur on a <xref:System.Windows.Controls.Canvas>. When a touch moves on the <xref:System.Windows.Controls.Canvas>, the <xref:System.Windows.Input.TouchDevice.Id%2A> is checked. If the move came from the first touch, its location is recorded. If the move came from the second touch, a line is drawn from the position of the first touch to the position of the second touch.  
+  
+ This example is part of a larger example available in the <xref:System.Windows.Input.TouchDevice> class overview.  
+  
+ [!code-csharp[TouchEventsSample#120](~/samples/snippets/csharp/VS_Snippets_Wpf/toucheventssample/cs/mainwindow.xaml.cs#120)]
+ [!code-vb[TouchEventsSample#120](~/samples/snippets/visualbasic/VS_Snippets_Wpf/toucheventssample/vb/mainwindow.xaml.vb#120)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsActive">
+      <MemberSignature Language="C#" Value="public bool IsActive { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsActive" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchDevice.IsActive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the device is active.</summary>
+        <value>
+          <see langword="true" /> if the device is active; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCapture">
+      <MemberSignature Language="C#" Value="protected virtual void OnCapture (System.Windows.IInputElement element, System.Windows.Input.CaptureMode captureMode);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCapture(class System.Windows.IInputElement element, valuetype System.Windows.Input.CaptureMode captureMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.OnCapture(System.Windows.IInputElement,System.Windows.Input.CaptureMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.IInputElement" />
+        <Parameter Name="captureMode" Type="System.Windows.Input.CaptureMode" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element that captures the touch input.</param>
+        <param name="captureMode">The capture policy.</param>
+        <summary>Called when a touch is captured to an element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.TouchDevice.OnCapture%2A> method has no default implementation. It can be overridden in a derived class to perform any actions that are required when the touch input is captured.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnManipulationEnded">
+      <MemberSignature Language="C#" Value="protected virtual void OnManipulationEnded (bool cancel);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnManipulationEnded(bool cancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.OnManipulationEnded(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancel" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="cancel">
+          <see langword="true" /> to cancel the action; otherwise, <see langword="false" />.</param>
+        <summary>Called when a manipulation has ended.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnManipulationStarted">
+      <MemberSignature Language="C#" Value="protected virtual void OnManipulationStarted ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnManipulationStarted() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.OnManipulationStarted" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called when a manipulation is started.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.TouchDevice.OnManipulationStarted%2A> method has no default implementation. It can be overridden in a derived class to perform any actions that are required when touch manipulation is started.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReportDown">
+      <MemberSignature Language="C#" Value="protected bool ReportDown ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool ReportDown() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.ReportDown" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reports that a touch is pressed on an element.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="E:System.Windows.UIElement.TouchDown" /> event was handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that inherit from <xref:System.Windows.Input.TouchDevice> should call this method to raise the <xref:System.Windows.UIElement.TouchDown> event. A <xref:System.Windows.UIElement.TouchEnter> event is raised before the <xref:System.Windows.UIElement.TouchDown> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReportMove">
+      <MemberSignature Language="C#" Value="protected bool ReportMove ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool ReportMove() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.ReportMove" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reports that a touch is moving across an element.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="E:System.Windows.UIElement.TouchMove" /> event was handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that inherit from <xref:System.Windows.Input.TouchDevice> should call this method to raise the <xref:System.Windows.UIElement.TouchMove> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReportUp">
+      <MemberSignature Language="C#" Value="protected bool ReportUp ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool ReportUp() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.ReportUp" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reports that a touch was lifted from an element.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="E:System.Windows.UIElement.TouchUp" /> event was handled; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that inherit from <xref:System.Windows.Input.TouchDevice> should call this method to raise the <xref:System.Windows.UIElement.TouchUp> event. A <xref:System.Windows.UIElement.TouchLeave> event is raised after the <xref:System.Windows.UIElement.TouchUp> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetActiveSource">
+      <MemberSignature Language="C#" Value="protected void SetActiveSource (System.Windows.PresentationSource activeSource);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetActiveSource(class System.Windows.PresentationSource activeSource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.SetActiveSource(System.Windows.PresentationSource)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activeSource" Type="System.Windows.PresentationSource" />
+      </Parameters>
+      <Docs>
+        <param name="activeSource">The source that reports input for this device.</param>
+        <summary>Sets the <see cref="T:System.Windows.PresentationSource" /> that is reporting input for this device.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Synchronize">
+      <MemberSignature Language="C#" Value="public void Synchronize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Synchronize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.Synchronize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Forces the <see cref="T:System.Windows.Input.TouchDevice" /> to synchronize the user interface with underlying touch points.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Synchronizing the user interface with the underlying touch positions might cause <xref:System.Windows.UIElement.TouchMove> events to be raised.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Input.IManipulator.GetPosition">
+      <MemberSignature Language="C#" Value="System.Windows.Point IManipulator.GetPosition (System.Windows.IInputElement relativeTo);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.Windows.Point System.Windows.Input.IManipulator.GetPosition(class System.Windows.IInputElement relativeTo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.System#Windows#Input#IManipulator#GetPosition(System.Windows.IInputElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relativeTo" Type="System.Windows.IInputElement" />
+      </Parameters>
+      <Docs>
+        <param name="relativeTo">The element to use as the frame of reference for calculating the position of the <see cref="T:System.Windows.Input.IManipulator" />.</param>
+        <summary>Returns the position of the <see cref="T:System.Windows.Input.IManipulator" /> object.</summary>
+        <returns>The position of the <see cref="T:System.Windows.Input.IManipulator" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.TouchDevice> instance is cast to an <xref:System.Windows.Input.IManipulator> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Input.IManipulator.Id">
+      <MemberSignature Language="C#" Value="int System.Windows.Input.IManipulator.Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 System.Windows.Input.IManipulator.Id" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchDevice.System#Windows#Input#IManipulator#Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the unique identifier of the <see cref="T:System.Windows.Input.TouchDevice" /> as provided by the operating system.</summary>
+        <value>The unique identifier of the <see cref="T:System.Windows.Input.TouchDevice" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.TouchDevice> instance is cast to an <xref:System.Windows.Input.IManipulator> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Input.IManipulator.ManipulationEnded">
+      <MemberSignature Language="C#" Value="void IManipulator.ManipulationEnded (bool cancel);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Input.IManipulator.ManipulationEnded(bool cancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.TouchDevice.System#Windows#Input#IManipulator#ManipulationEnded(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancel" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="cancel">
+          <see langword="true" /> to cancel the action; otherwise, <see langword="false" />.</param>
+        <summary>Occurs when a manipulation has ended.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.TouchDevice> instance is cast to an <xref:System.Windows.Input.IManipulator> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public override sealed System.Windows.IInputElement Target { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IInputElement Target" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.TouchDevice.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.IInputElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the element that receives input from the <see cref="T:System.Windows.Input.TouchDevice" />.</summary>
+        <value>The element that receives input from the <see cref="T:System.Windows.Input.TouchDevice" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Updated">
+      <MemberSignature Language="C#" Value="public event EventHandler Updated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Updated" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Input.TouchDevice.Updated" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a touch message is sent.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

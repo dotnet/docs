@@ -1,0 +1,114 @@
+<Type Name="MemberVisibility" FullName="Microsoft.Build.Tasks.Xaml.MemberVisibility">
+  <TypeSignature Language="C#" Value="public enum MemberVisibility" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MemberVisibility extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.MemberVisibility" />
+  <AssemblyInfo>
+    <AssemblyName>XamlBuildTask</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the member visibility options.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Assembly">
+      <MemberSignature Language="C#" Value="Assembly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Xaml.MemberVisibility Assembly = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Xaml.MemberVisibility.Assembly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Xaml.MemberVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The assembly visibility.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Family">
+      <MemberSignature Language="C#" Value="Family" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Xaml.MemberVisibility Family = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Xaml.MemberVisibility.Family" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Xaml.MemberVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The family visibility.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FamilyAndAssembly">
+      <MemberSignature Language="C#" Value="FamilyAndAssembly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Xaml.MemberVisibility FamilyAndAssembly = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Xaml.MemberVisibility.FamilyAndAssembly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Xaml.MemberVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The family and assembly visibility.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FamilyOrAssembly">
+      <MemberSignature Language="C#" Value="FamilyOrAssembly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Xaml.MemberVisibility FamilyOrAssembly = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Xaml.MemberVisibility.FamilyOrAssembly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Xaml.MemberVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The family or assembly visibility.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Private">
+      <MemberSignature Language="C#" Value="Private" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Xaml.MemberVisibility Private = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Xaml.MemberVisibility.Private" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Xaml.MemberVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The private visibility.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Public">
+      <MemberSignature Language="C#" Value="Public" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Xaml.MemberVisibility Public = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Xaml.MemberVisibility.Public" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Xaml.MemberVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The public visibility.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

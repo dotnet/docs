@@ -1,0 +1,65 @@
+<Type Name="WsiProfiles" FullName="System.Web.Services.WsiProfiles">
+  <TypeSignature Language="C#" Value="public enum WsiProfiles" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WsiProfiles extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.WsiProfiles" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes the Web services interoperability (WSI) specification to which a Web service claims to conform.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The WS-I organization publishes non-proprietary Web services specifications to promote the interoperability of Web services across platforms. This enumeration is used by the <xref:System.Web.Services.WebServiceBindingAttribute.ConformsTo%2A> property of the <xref:System.Web.Services.WebServiceBindingAttribute> attribute to indicate the WSI specification to which the Web service claims to conform.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BasicProfile1_1">
+      <MemberSignature Language="C#" Value="BasicProfile1_1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.WsiProfiles BasicProfile1_1 = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.WsiProfiles.BasicProfile1_1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.WsiProfiles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The web service claims to conform to the WSI Basic Profile version 1.1.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.WsiProfiles None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.WsiProfiles.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.WsiProfiles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The web service makes no conformance claims.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

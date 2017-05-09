@@ -1,0 +1,82 @@
+<Type Name="XamlCollectionKind" FullName="System.Xaml.Schema.XamlCollectionKind">
+  <TypeSignature Language="C#" Value="public enum XamlCollectionKind" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XamlCollectionKind extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.Schema.XamlCollectionKind" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the collection metaphor (if any) used by a XAML member.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Array">
+      <MemberSignature Language="C#" Value="Array" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.Schema.XamlCollectionKind Array = unsigned int8(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Xaml.Schema.XamlCollectionKind.Array" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.Schema.XamlCollectionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>XAML member supports an array collection.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Collection">
+      <MemberSignature Language="C#" Value="Collection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.Schema.XamlCollectionKind Collection = unsigned int8(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Xaml.Schema.XamlCollectionKind.Collection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.Schema.XamlCollectionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>XAML member supports a list or a collection.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Dictionary">
+      <MemberSignature Language="C#" Value="Dictionary" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.Schema.XamlCollectionKind Dictionary = unsigned int8(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Xaml.Schema.XamlCollectionKind.Dictionary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.Schema.XamlCollectionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>XAML member supports a dictionary (key-value pairs).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.Schema.XamlCollectionKind None = unsigned int8(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Xaml.Schema.XamlCollectionKind.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.Schema.XamlCollectionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>XAML member does not support a collection.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

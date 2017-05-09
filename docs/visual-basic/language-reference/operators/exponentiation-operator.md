@@ -25,8 +25,8 @@ helpviewer_keywords:
   - "arithmetic operators, exponentiation"
 ms.assetid: d89a1ca8-83da-4784-a87b-a9d7dceb3f62
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

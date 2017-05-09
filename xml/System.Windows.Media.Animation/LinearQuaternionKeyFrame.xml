@@ -1,0 +1,173 @@
+<Type Name="LinearQuaternionKeyFrame" FullName="System.Windows.Media.Animation.LinearQuaternionKeyFrame">
+  <TypeSignature Language="C#" Value="public class LinearQuaternionKeyFrame : System.Windows.Media.Animation.QuaternionKeyFrame" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinearQuaternionKeyFrame extends System.Windows.Media.Animation.QuaternionKeyFrame" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.LinearQuaternionKeyFrame" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Animation.QuaternionKeyFrame</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Animates from the <see cref="T:System.Windows.Media.Media3D.Quaternion" /> value of the previous key frame to its own <see cref="P:System.Windows.Media.Animation.QuaternionKeyFrame.Value" /> using linear interpolation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used as part of a <xref:System.Windows.Media.Animation.QuaternionKeyFrameCollection> in conjunction with a <xref:System.Windows.Media.Animation.QuaternionAnimationUsingKeyFrames> to animate a <xref:System.Windows.Media.Media3D.Quaternion> property value along a set of key frames.  
+  
+ A key frame defines a segment of the <xref:System.Windows.Media.Animation.QuaternionAnimationUsingKeyFrames> to which it belongs. Each key frame has a target <xref:System.Windows.Media.Animation.QuaternionKeyFrame.Value%2A> and a <xref:System.Windows.Media.Animation.QuaternionKeyFrame.KeyTime%2A>. The <xref:System.Windows.Media.Animation.QuaternionKeyFrame.KeyTime%2A> specifies the time at which the key frame's <xref:System.Windows.Media.Animation.QuaternionKeyFrame.Value%2A> should be reached. A key frame animates from the target value of the previous key frame to its own target value. It starts when the previous key frame ends and ends when its own key time is reached.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinearQuaternionKeyFrame ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearQuaternionKeyFrame.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.LinearQuaternionKeyFrame" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinearQuaternionKeyFrame (System.Windows.Media.Media3D.Quaternion value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Media3D.Quaternion value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearQuaternionKeyFrame.#ctor(System.Windows.Media.Media3D.Quaternion)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Windows.Media.Media3D.Quaternion" />
+      </Parameters>
+      <Docs>
+        <param name="value">Ending value (also known as "target value") for the key frame.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.LinearQuaternionKeyFrame" /> class with the specified ending value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinearQuaternionKeyFrame (System.Windows.Media.Media3D.Quaternion value, System.Windows.Media.Animation.KeyTime keyTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Media3D.Quaternion value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearQuaternionKeyFrame.#ctor(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Animation.KeyTime)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Windows.Media.Media3D.Quaternion" />
+        <Parameter Name="keyTime" Type="System.Windows.Media.Animation.KeyTime" />
+      </Parameters>
+      <Docs>
+        <param name="value">Ending value (also known as "target value") for the key frame.</param>
+        <param name="keyTime">Key time for the key frame. The key time determines when the target value is reached which is also when the key frame ends.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.LinearQuaternionKeyFrame" /> class with the specified ending value and key time.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearQuaternionKeyFrame.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of <see cref="T:System.Windows.Media.Animation.LinearQuaternionKeyFrame" />.</summary>
+        <returns>The new instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InterpolateValueCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Media.Media3D.Quaternion InterpolateValueCore (System.Windows.Media.Media3D.Quaternion baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Media.Media3D.Quaternion InterpolateValueCore(valuetype System.Windows.Media.Media3D.Quaternion baseValue, float64 keyFrameProgress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearQuaternionKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Quaternion,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Quaternion</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseValue" Type="System.Windows.Media.Media3D.Quaternion" />
+        <Parameter Name="keyFrameProgress" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="baseValue">The value to animate from.</param>
+        <param name="keyFrameProgress">A value between 0.0 and 1.0, inclusive, that specifies the percentage of time that has elapsed for this key frame.</param>
+        <summary>Interpolates, in a linear fashion, between the previous key frame value and the value of the current key frame, using the supplied progress increment.</summary>
+        <returns>The output value of this key frame given the specified base value and progress.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseShortestPath">
+      <MemberSignature Language="C#" Value="public bool UseShortestPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseShortestPath" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.LinearQuaternionKeyFrame.UseShortestPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that indicates whether the animation uses spherical linear interpolation to calculate the shortest arc between positions. This is a dependency property.</summary>
+        <value>Boolean value that indicates whether the animation uses spherical linear interpolation to calculate the shortest arc between positions.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_UseShortestPath"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Animation.LinearQuaternionKeyFrame.UseShortestPathProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseShortestPathProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty UseShortestPathProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty UseShortestPathProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.LinearQuaternionKeyFrame.UseShortestPathProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Animation.LinearQuaternionKeyFrame.UseShortestPath" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

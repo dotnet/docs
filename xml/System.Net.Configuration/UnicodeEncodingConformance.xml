@@ -1,0 +1,75 @@
+<Type Name="UnicodeEncodingConformance" FullName="System.Net.Configuration.UnicodeEncodingConformance">
+  <TypeSignature Language="C#" Value="public enum UnicodeEncodingConformance" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UnicodeEncodingConformance extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Configuration.UnicodeEncodingConformance" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Controls how Unicode characters are output by the <see cref="Overload:System.Net.WebUtility.HtmlEncode" /> methods.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on how Unicode characters are supposed to be encoded in HTML, see [Using character escapes in markup and CSS](http://go.microsoft.com/fwlink/?LinkId=256607).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Auto">
+      <MemberSignature Language="C#" Value="Auto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Configuration.UnicodeEncodingConformance Auto = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Configuration.UnicodeEncodingConformance.Auto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Configuration.UnicodeEncodingConformance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use automatic behavior. The Unicode encoding behavior is determined by current application's target Framework. For [!INCLUDE[net_v45](~/includes/net-v45-md.md)] and later, the Unicode encoding behavior is strict.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Compat">
+      <MemberSignature Language="C#" Value="Compat" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Configuration.UnicodeEncodingConformance Compat = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Configuration.UnicodeEncodingConformance.Compat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Configuration.UnicodeEncodingConformance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use compatible behavior. Specifies that individual UTF-16 surrogate code points are output as-is when one of <see cref="Overload:System.Net.WebUtility.HtmlEncode" /> methods is called. For example, given a string "\uD84C\uDFB4" (or "\U000233B4"), the output of <see cref="Overload:System.Net.WebUtility.HtmlEncode" /> is "\uD84C\uDFB4" (the input is not encoded).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Strict">
+      <MemberSignature Language="C#" Value="Strict" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Configuration.UnicodeEncodingConformance Strict = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Configuration.UnicodeEncodingConformance.Strict" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Configuration.UnicodeEncodingConformance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use strict behavior. Specifies that individual UTF-16 surrogate code points are combined into a single code point when one of the <see cref="Overload:System.Net.WebUtility.HtmlEncode" /> methods is called. For example, given the input string "\uD84C\uDFB4" (or "\U000233B4"), the output of the <see cref="Overload:System.Net.WebUtility.HtmlEncode" /> methods is "&amp;#144308;".  
+  
+ If the input is a malformed UTF-16 string (it contains unpaired surrogates, for example), the bad code points will be replaced with U+FFFD (Unicode replacement char) before being HTML-encoded.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

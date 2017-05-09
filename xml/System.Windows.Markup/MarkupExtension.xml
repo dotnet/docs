@@ -1,0 +1,131 @@
+<Type Name="MarkupExtension" FullName="System.Windows.Markup.MarkupExtension">
+  <TypeSignature Language="C#" Value="public abstract class MarkupExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MarkupExtension extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.MarkupExtension" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a base class for XAML markup extension implementations that can be supported by .NET Framework XAML Services and other XAML readers and XAML writers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Markup extensions return objects to callers, based on the input of string attribute values or markup elements in XAML. Markup extensions return objects in a more sophisticated way than type converters alone can accomplish. A XAML object writer invokes a type converter because a type or member has a type converter implementation associated with it. From the CLR frame of reference, this means that a type or member is <xref:System.ComponentModel.TypeConverterAttribute> attributed. From the XAML type system perspective, this means that a XAML type or a XAML member has a value for its `TypeConverter` property. The invocation of a type converter is tied to the type or property definition, and is always invoked by XAML processing for these cases. In contrast, a markup extension is more under the control of user code and user-produced markup, and can be applied whenever an application scenario demands it. A markup extension can be invoked and can be used for setting different type-member values, so long as the markup extension's return type is assignable to that value.  
+  
+ For information on creating a custom markup extension, see <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A>. For more information on markup extensions in general, see [Markup Extensions for XAML Overview](~/docs/framework/xaml-services/markup-extensions-for-xaml-overview.md). If you are building on WPF and using or creating markup extensions for XAML, other relevant information can be found in the topic [Markup Extensions and WPF XAML](~/docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
+  
+ The <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A> method of each markup extension implementation can use an <xref:System.IServiceProvider> at run time that can provide context. This  <xref:System.IServiceProvider> is then queried for specific services that pass information, such as <xref:System.Windows.Markup.IProvideValueTarget> or <xref:System.Windows.Markup.IXamlTypeResolver>. For more information on service contexts for a markup extension, see [Service Contexts Available to Type Converters and Markup Extensions](~/docs/framework/xaml-services/service-contexts-available-to-type-converters-and-markup-extensions.md).  
+  
+ Derived classes should be attributed with <xref:System.Windows.Markup.MarkupExtensionReturnTypeAttribute> to inform consumers of the most specific return type available from the markup extension's <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A> implementation.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MarkupExtension ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.MarkupExtension.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of a class derived from <see cref="T:System.Windows.Markup.MarkupExtension" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Markup.MarkupExtension> abstract class does not hold any private values that require initialization.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>A functional markup extension should define its own public default constructor. Additionally, the markup extension should implement constructors that are appropriate for the extension's intended capabilities and markup usage. For more information, see [Markup Extensions for XAML Overview](~/docs/framework/xaml-services/markup-extensions-for-xaml-overview.md).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvideValue">
+      <MemberSignature Language="C#" Value="public abstract object ProvideValue (IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ProvideValue(class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.MarkupExtension.ProvideValue(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">A service provider helper that can provide services for the markup extension.</param>
+        <summary>When implemented in a derived class, returns an object that is provided as the value of the target property for this markup extension.</summary>
+        <returns>The object value to set on the property where the extension is applied.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a XAML processor processes a type node and member value that is a markup extension, it invokes the <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A> method of that markup extension and writes the result into the object graph or serialization stream. The XAML object writer passes service context to each such implementation through the `serviceProvider` parameter.  
+  
+ See "Notes to Implementers" section for more information on how to implement <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A> in a custom markup extension.  
+  
+## WPF Usage Notes  
+  
+> [!IMPORTANT]
+>  WPF classes that have specific interactions with markup set operations should not rely on <xref:System.Windows.Markup.IReceiveMarkupExtension> for a [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] implementation. Use <xref:System.Windows.Markup.XamlSetMarkupExtensionAttribute>-attributed callbacks instead.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Common services returned by the default service provider that is typically available to a custom or existing <see cref="T:System.Windows.Markup.MarkupExtension" /> implementation include the following primary services.  
+  
+-   <see cref="T:System.Windows.Markup.IProvideValueTarget" /> reports the object reference and a property identifier from the context where the markup extension is used  
+  
+-   <see cref="T:System.Windows.Markup.IXamlTypeResolver" /> exposes a service that parallels the general XAML object writing behavior that can provide a <see cref="T:System.Type" /> based on a XAML type name. The name can optionally include a prefix for a mapped XAML namespace.  
+  
+-   <see cref="T:System.Xaml.IXamlSchemaContextProvider" /> exposes the active XAML schema context directly. From the reported <see cref="T:System.Xaml.XamlSchemaContext" />, you can obtain XAML schema context information such as how assemblies are mapped for type support, preferred prefix in assemblies, lists of each <see cref="T:System.Xaml.XamlType" /> in an assembly, and so on.  
+  
+-   Other services available for more specialized markup extension scenarios include:  
+  
+    -   <see cref="T:System.Windows.Markup.IUriContext" />  
+  
+    -   <see cref="T:System.Xaml.IAmbientProvider" />  
+  
+    -   <see cref="T:System.Xaml.IDestinationTypeProvider" />  
+  
+    -   <see cref="T:System.Xaml.IRootObjectProvider" />  
+  
+    -   <see cref="T:System.Xaml.IXamlNameResolver" />  
+  
+    -   <see cref="T:System.Xaml.IXamlNamespaceResolver" />  
+  
+ Potentially, implementations of <see cref="M:System.Windows.Markup.MarkupExtension.ProvideValue(System.IServiceProvider)" /> can ignore the <paramref name="serviceProvider" /> parameter. This is viable for some basic scenarios, where no context at all is required for returning a value.  
+  
+ In typical usage, the .NET Framework XAML Services and the implemented XAML object writers will provide a service provider to all value converter methods that are invoked during XAML processing. However, for robustness, you should provide code paths for null values both for the service provider itself and for any requested service. Null values might occur if your markup extension is applied in a circumstance where the typical service support provided by a XAML processor infrastructure is not available.  
+  
+ For more information on available services from the XAML service provider context and how to use them, see [Type Converters and Markup Extensions for XAML](~/docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md).  
+  
+ Implementations that require a certain service to be available in order to produce a useful <see cref="M:System.Windows.Markup.MarkupExtension.ProvideValue(System.IServiceProvider)" /> result are expected to throw exceptions if that service is not available. The recommended exception to throw is <see cref="T:System.InvalidOperationException" />.  
+  
+ The implementation may also throw exceptions if one of the arguments that the custom markup extension needs in order to provide a value is null, is invalid for its data type, or does not contain a value that the markup extension is capable of processing. The recommended exception to throw is <see cref="T:System.InvalidOperationException" />.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

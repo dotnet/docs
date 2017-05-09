@@ -1,0 +1,103 @@
+<Type Name="AudioState" FullName="System.Speech.Recognition.AudioState">
+  <TypeSignature Language="C#" Value="public enum AudioState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AudioState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.AudioState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Contains a list of possible states for the audio input to a speech recognition engine.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can obtain the audio input state of the speech recognition engine with the <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioState%2A?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.AudioState%2A?displayProperty=fullName> properties. The <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged?displayProperty=fullName> and <xref:System.Speech.Recognition.SpeechRecognizer.AudioStateChanged?displayProperty=fullName> events are raised when the audio input state of a speech recognition engine changes.  
+  
+   
+  
+## Examples  
+ The following example demonstrates an event handler that handles the changing audio state of a speech recognizer.  
+  
+```csharp  
+  
+private SpeechRecognitionEngine sre;  
+  
+// Initializes the speech recognition engine.  
+private void Initialize()  
+{  
+  sre = new SpeechRecognitionEngine();  
+  
+  // Add a handler for the AudioStateChanged event.  
+  sre.AudioStateChanged += new EventHandler<AudioStateChangedEventArgs>(sre_AudioStateChanged);  
+  
+  // Add other initialization code here.  
+}  
+  
+  // Handle the AudioStateChanged event.  
+  void sre_AudioStateChanged(object sender, AudioStateChangedEventArgs e)  
+{  
+  AudioState newState = e.AudioState;  
+  
+  // Handle event here.  
+}  
+  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Silence">
+      <MemberSignature Language="C#" Value="Silence" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Recognition.AudioState Silence = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.AudioState.Silence" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Recognition.AudioState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Receiving silence or non-speech background noise.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Speech">
+      <MemberSignature Language="C#" Value="Speech" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Recognition.AudioState Speech = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.AudioState.Speech" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Recognition.AudioState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Receiving speech input.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stopped">
+      <MemberSignature Language="C#" Value="Stopped" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Recognition.AudioState Stopped = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.AudioState.Stopped" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Recognition.AudioState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Not processing audio input.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

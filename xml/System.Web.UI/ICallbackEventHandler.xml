@@ -1,0 +1,85 @@
+<Type Name="ICallbackEventHandler" FullName="System.Web.UI.ICallbackEventHandler">
+  <TypeSignature Language="C#" Value="public interface ICallbackEventHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICallbackEventHandler" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ICallbackEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Used to indicate that a control can be the target of a callback event on the server.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement the <xref:System.Web.UI.ICallbackEventHandler> interface for any custom control that needs to receive callback events. For more information, see [Implementing Client Callbacks Without Postbacks](http://msdn.microsoft.com/library/dfaaa7d4-e1f2-4322-b2f5-796e0419f185).  
+  
+ Examples of controls that implement the <xref:System.Web.UI.ICallbackEventHandler> interface include the <xref:System.Web.UI.WebControls.GridView>, <xref:System.Web.UI.WebControls.DetailsView>, and <xref:System.Web.UI.WebControls.TreeView> controls. When a callback event targets a control that implements the <xref:System.Web.UI.ICallbackEventHandler> interface, the <xref:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent%2A> method is called to handle the event, passing the event argument as a parameter and the <xref:System.Web.UI.ICallbackEventHandler.GetCallbackResult%2A> method returns the result of the callback.  
+  
+ Controls that retrieve data from a data source control during callback can do so synchronously or asynchronously. ASP.NET controls like <xref:System.Web.UI.WebControls.GridView>, <xref:System.Web.UI.WebControls.DetailsView>, and <xref:System.Web.UI.WebControls.TreeView> are implemented synchronously. Synchronous callbacks do not prevent the user from working in the browser. In synchronous mode, only one callback at a time can execute, with the last callback taking precedence. When a Web control is implemented to support asynchronous behavior, multiple callbacks can be raised simultaneously. For details on asynchronous programming, see [Event-based Asynchronous Pattern (EAP)](~/docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md).  
+  
+ You can specify whether callback events originating from the user interface rendered by a control implementing the <xref:System.Web.UI.ICallbackEventHandler> interface are validated. Validation of events is a good security practice. However, for performance reasons you can disable it. To control whether event validation is performed on callback events, set the `enableEventValidation` attribute of the [@ Page](http://msdn.microsoft.com/en-us/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive or the `enableEventValidation` attribute of the [pages Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/4123bb66-3fe4-4d62-b70e-33758656b458) of the Web.config file. If you set the <xref:System.Web.UI.Page.EnableEventValidation%2A> property in code, set it in the `Page_Init` phase of page processing. For more information on balancing the security benefit of event validation with its performance cost, see [ASP.NET Performance Overview](http://msdn.microsoft.com/library/f882bf1b-a009-4312-ac06-74370ffabc0b).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetCallbackResult">
+      <MemberSignature Language="C#" Value="public string GetCallbackResult ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetCallbackResult() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ICallbackEventHandler.GetCallbackResult" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the results of a callback event that targets a control.</summary>
+        <returns>The result of the callback.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Exceptions thrown in <xref:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent%2A> will not prevent <xref:System.Web.UI.ICallbackEventHandler.GetCallbackResult%2A> from being called and returning a result. To prevent <xref:System.Web.UI.ICallbackEventHandler.GetCallbackResult%2A> from returning a result, set a flag when an exception is thrown in <xref:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent%2A> and return an empty string from <xref:System.Web.UI.ICallbackEventHandler.GetCallbackResult%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaiseCallbackEvent">
+      <MemberSignature Language="C#" Value="public void RaiseCallbackEvent (string eventArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RaiseCallbackEvent(string eventArgument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgument" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgument">A string that represents an event argument to pass to the event handler.</param>
+        <summary>Processes a callback event that targets a control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When `null` is used as the event argument parameter, the string is serialized to "null" and sent back to the server. Because there is no way to distinguish between `null` and "null", you should avoid using `null` argument parameters with callbacks.  
+  
+ Exceptions thrown in <xref:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent%2A> will not prevent <xref:System.Web.UI.ICallbackEventHandler.GetCallbackResult%2A> from being called and returning a result. To prevent <xref:System.Web.UI.ICallbackEventHandler.GetCallbackResult%2A> from returning a result, set a flag when an exception is thrown in <xref:System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent%2A> and return an empty string from <xref:System.Web.UI.ICallbackEventHandler.GetCallbackResult%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

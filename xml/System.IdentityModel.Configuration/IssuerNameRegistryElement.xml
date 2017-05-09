@@ -1,0 +1,94 @@
+<Type Name="IssuerNameRegistryElement" FullName="System.IdentityModel.Configuration.IssuerNameRegistryElement">
+  <TypeSignature Language="C#" Value="public sealed class IssuerNameRegistryElement : System.IdentityModel.Configuration.ConfigurationElementInterceptor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IssuerNameRegistryElement extends System.IdentityModel.Configuration.ConfigurationElementInterceptor" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Configuration.IssuerNameRegistryElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IdentityModel.Configuration.ConfigurationElementInterceptor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an <see langword="&lt;issuerNameRegistry&gt;" /> element in a configuration file. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `<issuerNameRegistry>` element configures the issuer name registry. The issuer name registry maps issuer tokens to a string name. The <xref:System.IdentityModel.Configuration.IssuerNameRegistryElement.Type%2A> property (which represents the `type` attribute of the element) can be set to register a custom type. By default, a type of <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> is assumed.  
+  
+ The `<issuerNameRegistry>` element can be specified at the service level under the `<identityConfiguration>` element or on a security token handler collection under the `<securityTokenHandlerConfiguration>` element. The `IssuerNameRegistry` property of the <xref:System.IdentityModel.Configuration.IdentityConfigurationElement> class and of the <xref:System.IdentityModel.Configuration.SecurityTokenHandlerConfigurationElement> class is an instance of <xref:System.IdentityModel.Configuration.IssuerNameRegistryElement>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IssuerNameRegistryElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.IssuerNameRegistryElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.IssuerNameRegistryElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.IssuerNameRegistryElement.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public string Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.IssuerNameRegistryElement.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("type", IsKey=false, IsRequired=false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string representation of the <see cref="T:System.Type" /> of the issuer name registry.</summary>
+        <value>The string representation of the <see cref="T:System.Type" /> of the issuer name registry. The type must derive from the <see cref="T:System.IdentityModel.Tokens.IssuerNameRegistry" /> class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is optional. It corresponds to the `type` attribute of the `<issuerNameRegistry>` element. If it is not specified, the property is `null`, a type of <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> is assumed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

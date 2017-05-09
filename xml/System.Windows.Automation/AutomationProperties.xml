@@ -1,0 +1,770 @@
+<Type Name="AutomationProperties" FullName="System.Windows.Automation.AutomationProperties">
+  <TypeSignature Language="C#" Value="public static class AutomationProperties" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AutomationProperties extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationProperties" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a means of getting or setting the value of the associated properties of the instance of the <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> element.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AcceleratorKeyProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AcceleratorKeyProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AcceleratorKeyProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.AcceleratorKeyProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationProperties.AcceleratorKey" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AccessKeyProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AccessKeyProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AccessKeyProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.AccessKeyProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationProperties.AccessKey" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutomationIdProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AutomationIdProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AutomationIdProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.AutomationIdProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationProperties.AutomationId" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAcceleratorKey">
+      <MemberSignature Language="C#" Value="public static string GetAcceleratorKey (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetAcceleratorKey(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetAcceleratorKey(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
+        <summary>Gets the <see cref="P:System.Windows.Automation.AutomationProperties.AcceleratorKey" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <returns>A string that contains the accelerator key.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAccessKey">
+      <MemberSignature Language="C#" Value="public static string GetAccessKey (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetAccessKey(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetAccessKey(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
+        <summary>Gets the <see cref="P:System.Windows.Automation.AutomationProperties.AccessKey" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <returns>The access key for the specified element.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAutomationId">
+      <MemberSignature Language="C#" Value="public static string GetAutomationId (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetAutomationId(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetAutomationId(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
+        <summary>Gets the <see cref="P:System.Windows.Automation.AutomationProperties.AutomationId" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <returns>The [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] identifier for the specified element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Windows.Automation.AutomationProperties.AutomationId%2A> property isn't set, this method returns the <xref:System.Windows.FrameworkElement.Name%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHelpText">
+      <MemberSignature Language="C#" Value="public static string GetHelpText (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetHelpText(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetHelpText(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
+        <summary>Gets the <see cref="P:System.Windows.Automation.AutomationProperties.HelpText" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <returns>A string containing the help text for the specified element. The string that is returned generally is the same text that is provided in the tooltip for the control.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsColumnHeader">
+      <MemberSignature Language="C#" Value="public static bool GetIsColumnHeader (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsColumnHeader(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetIsColumnHeader(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
+        <summary>Gets the <see cref="P:System.Windows.Automation.AutomationProperties.IsColumnHeader" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <returns>A <see langword="boolean" /> that indicates whether the specified element is a <see cref="F:System.Windows.Automation.TablePattern.ColumnHeadersProperty" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsOffscreenBehavior">
+      <MemberSignature Language="C#" Value="public static System.Windows.Automation.IsOffscreenBehavior GetIsOffscreenBehavior (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Automation.IsOffscreenBehavior GetIsOffscreenBehavior(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetIsOffscreenBehavior(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.IsOffscreenBehavior</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
+        <summary>Gets the <see cref="P:System.Windows.Automation.AutomationProperties.IsOffscreenBehavior" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <returns>A value that specifies how an element determines how the <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" /> property is determined.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsRequiredForForm">
+      <MemberSignature Language="C#" Value="public static bool GetIsRequiredForForm (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsRequiredForForm(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetIsRequiredForForm(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
+        <summary>Gets the <see cref="P:System.Windows.Automation.AutomationProperties.IsRequiredForForm" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <returns>A <see langword="boolean" /> that indicates whether the specified element is <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsRequiredForForm" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsRowHeader">
+      <MemberSignature Language="C#" Value="public static bool GetIsRowHeader (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsRowHeader(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetIsRowHeader(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
+        <summary>Gets the <see cref="P:System.Windows.Automation.AutomationProperties.IsRowHeader" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <returns>A <see langword="boolean" /> that indicates whether the specified element is a <see cref="F:System.Windows.Automation.TablePattern.RowHeadersProperty" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemStatus">
+      <MemberSignature Language="C#" Value="public static string GetItemStatus (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetItemStatus(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetItemStatus(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
+        <summary>Gets the <see cref="P:System.Windows.Automation.AutomationProperties.ItemStatus" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <returns>The <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.ItemStatus" /> of the given element.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemType">
+      <MemberSignature Language="C#" Value="public static string GetItemType (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetItemType(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetItemType(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
+        <summary>Gets the <see cref="P:System.Windows.Automation.AutomationProperties.ItemType" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <returns>The <see cref="P:System.Windows.Automation.AutomationElement.AutomationElementInformation.ItemType" /> of the given element.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLabeledBy">
+      <MemberSignature Language="C#" Value="public static System.Windows.UIElement GetLabeledBy (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.UIElement GetLabeledBy(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetLabeledBy(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.UIElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
+        <summary>Gets the <see cref="P:System.Windows.Automation.AutomationProperties.LabeledBy" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <returns>The element that is targeted by the label.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetName">
+      <MemberSignature Language="C#" Value="public static string GetName (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetName(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.GetName(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> to check.</param>
+        <summary>Gets the <see cref="P:System.Windows.Automation.AutomationProperties.Name" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <returns>The name of the specified element.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpTextProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HelpTextProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HelpTextProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.HelpTextProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationProperties.HelpText" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsColumnHeaderProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsColumnHeaderProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsColumnHeaderProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.IsColumnHeaderProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationProperties.IsColumnHeader" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOffscreenBehaviorProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsOffscreenBehaviorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsOffscreenBehaviorProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.IsOffscreenBehaviorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationProperties.IsOffscreenBehavior" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRequiredForFormProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsRequiredForFormProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsRequiredForFormProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.IsRequiredForFormProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationProperties.IsRequiredForForm" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRowHeaderProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsRowHeaderProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsRowHeaderProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.IsRowHeaderProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationProperties.IsRowHeader" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemStatusProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ItemStatusProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ItemStatusProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.ItemStatusProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationProperties.ItemStatus" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTypeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ItemTypeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ItemTypeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.ItemTypeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationProperties.ItemType" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LabeledByProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LabeledByProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LabeledByProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.LabeledByProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationProperties.LabeledBy" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty NameProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty NameProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.AutomationProperties.NameProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Automation.AutomationProperties.Name" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAcceleratorKey">
+      <MemberSignature Language="C#" Value="public static void SetAcceleratorKey (System.Windows.DependencyObject element, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAcceleratorKey(class System.Windows.DependencyObject element, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetAcceleratorKey(System.Windows.DependencyObject,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
+        <param name="value">The accelerator key value to set.</param>
+        <summary>Sets the <see cref="P:System.Windows.Automation.AutomationProperties.AcceleratorKey" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAccessKey">
+      <MemberSignature Language="C#" Value="public static void SetAccessKey (System.Windows.DependencyObject element, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAccessKey(class System.Windows.DependencyObject element, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetAccessKey(System.Windows.DependencyObject,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
+        <param name="value">The access key value to set.</param>
+        <summary>Sets the <see cref="P:System.Windows.Automation.AutomationProperties.AccessKey" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAutomationId">
+      <MemberSignature Language="C#" Value="public static void SetAutomationId (System.Windows.DependencyObject element, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAutomationId(class System.Windows.DependencyObject element, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetAutomationId(System.Windows.DependencyObject,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
+        <param name="value">The [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] identifier value to set.</param>
+        <summary>Sets the <see cref="P:System.Windows.Automation.AutomationProperties.AutomationId" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetHelpText">
+      <MemberSignature Language="C#" Value="public static void SetHelpText (System.Windows.DependencyObject element, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetHelpText(class System.Windows.DependencyObject element, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetHelpText(System.Windows.DependencyObject,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
+        <param name="value">The help text value to set.</param>
+        <summary>Sets the <see cref="P:System.Windows.Automation.AutomationProperties.HelpText" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIsColumnHeader">
+      <MemberSignature Language="C#" Value="public static void SetIsColumnHeader (System.Windows.DependencyObject element, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIsColumnHeader(class System.Windows.DependencyObject element, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetIsColumnHeader(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
+        <param name="value">The value to set; <see langword="true" /> if the element is meant to be a column header, otherwise <see langword="false" /></param>
+        <summary>Sets the <see cref="P:System.Windows.Automation.AutomationProperties.IsColumnHeader" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIsOffscreenBehavior">
+      <MemberSignature Language="C#" Value="public static void SetIsOffscreenBehavior (System.Windows.DependencyObject element, System.Windows.Automation.IsOffscreenBehavior value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIsOffscreenBehavior(class System.Windows.DependencyObject element, valuetype System.Windows.Automation.IsOffscreenBehavior value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetIsOffscreenBehavior(System.Windows.DependencyObject,System.Windows.Automation.IsOffscreenBehavior)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Windows.Automation.IsOffscreenBehavior" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
+        <param name="value">A value that specifies how an element determines how the <see cref="M:System.Windows.Automation.Peers.AutomationPeer.IsOffscreen" /> property is determined.</param>
+        <summary>Sets the <see cref="P:System.Windows.Automation.AutomationProperties.IsOffscreenBehavior" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIsRequiredForForm">
+      <MemberSignature Language="C#" Value="public static void SetIsRequiredForForm (System.Windows.DependencyObject element, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIsRequiredForForm(class System.Windows.DependencyObject element, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetIsRequiredForForm(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
+        <param name="value">The value to set; <see langword="true" /> if the element is meant to be required to be filled out on a form, otherwise <see langword="false" />.</param>
+        <summary>Sets the <see cref="P:System.Windows.Automation.AutomationProperties.IsRequiredForForm" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIsRowHeader">
+      <MemberSignature Language="C#" Value="public static void SetIsRowHeader (System.Windows.DependencyObject element, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIsRowHeader(class System.Windows.DependencyObject element, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetIsRowHeader(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
+        <param name="value">The value to set; <see langword="true" /> if the element is meant to be a row header, otherwise <see langword="false" />.</param>
+        <summary>Sets the <see cref="P:System.Windows.Automation.AutomationProperties.IsRowHeader" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItemStatus">
+      <MemberSignature Language="C#" Value="public static void SetItemStatus (System.Windows.DependencyObject element, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetItemStatus(class System.Windows.DependencyObject element, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetItemStatus(System.Windows.DependencyObject,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
+        <param name="value">The item status value to set.</param>
+        <summary>Sets the <see cref="P:System.Windows.Automation.AutomationProperties.ItemStatus" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItemType">
+      <MemberSignature Language="C#" Value="public static void SetItemType (System.Windows.DependencyObject element, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetItemType(class System.Windows.DependencyObject element, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetItemType(System.Windows.DependencyObject,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
+        <param name="value">The item type value to set.</param>
+        <summary>Sets the <see cref="P:System.Windows.Automation.AutomationProperties.ItemType" /> attached property for the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetLabeledBy">
+      <MemberSignature Language="C#" Value="public static void SetLabeledBy (System.Windows.DependencyObject element, System.Windows.UIElement value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetLabeledBy(class System.Windows.DependencyObject element, class System.Windows.UIElement value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetLabeledBy(System.Windows.DependencyObject,System.Windows.UIElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Windows.UIElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
+        <param name="value">The labeled by value to set.</param>
+        <summary>Sets the <see cref="P:System.Windows.Automation.AutomationProperties.LabeledBy" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetName">
+      <MemberSignature Language="C#" Value="public static void SetName (System.Windows.DependencyObject element, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetName(class System.Windows.DependencyObject element, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.AutomationProperties.SetName(System.Windows.DependencyObject,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Windows.DependencyObject" /> on which to set the property.</param>
+        <param name="value">The name value to set.</param>
+        <summary>Sets the <see cref="P:System.Windows.Automation.AutomationProperties.Name" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,1064 @@
+<Type Name="Queue&lt;T&gt;" FullName="System.Collections.Generic.Queue&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class Queue&lt;T&gt; : System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.ICollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Queue`1&lt;T&gt; extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.Generic.Queue`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Collections</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Generic.System_QueueDebugView`1))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">Specifies the type of elements in the queue.</typeparam>
+    <summary>Represents a first-in, first-out collection of objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class implements a generic queue as a circular array. Objects stored in a <xref:System.Collections.Generic.Queue%601> are inserted at one end and removed from the other. Queues and stacks are useful when you need temporary storage for information; that is, when you might want to discard an element after retrieving its value. Use <xref:System.Collections.Generic.Queue%601> if you need to access the information in the same order that it is stored in the collection. Use <xref:System.Collections.Generic.Stack%601> if you need to access the information in reverse order. Use <xref:System.Collections.Concurrent.ConcurrentQueue%601> or <xref:System.Collections.Concurrent.ConcurrentStack%601> if you need to access the collection from multiple threads concurrently.  
+  
+ Three main operations can be performed on a <xref:System.Collections.Generic.Queue%601> and its elements:  
+  
+-   <xref:System.Collections.Generic.Queue%601.Enqueue%2A> adds an element to the end of the <xref:System.Collections.Generic.Queue%601>.  
+  
+-   <xref:System.Collections.Generic.Queue%601.Dequeue%2A> removes the oldest element from the start of the <xref:System.Collections.Generic.Queue%601>.  
+  
+-   <xref:System.Collections.Generic.Queue%601.Peek%2A> peek returns the oldest element that is at the start of the <xref:System.Collections.Generic.Queue%601> but does not remove it from the <xref:System.Collections.Generic.Queue%601>.  
+  
+ The capacity of a <xref:System.Collections.Generic.Queue%601> is the number of elements the <xref:System.Collections.Generic.Queue%601> can hold. As elements are added to a <xref:System.Collections.Generic.Queue%601>, the capacity is automatically increased as required by reallocating the internal array. The capacity can be decreased by calling <xref:System.Collections.Generic.Queue%601.TrimExcess%2A>.  
+  
+ <xref:System.Collections.Generic.Queue%601> accepts `null` as a valid value for reference types and allows duplicate elements.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates several methods of the <xref:System.Collections.Generic.Queue%601> generic class. The code example creates a queue of strings with default capacity and uses the <xref:System.Collections.Generic.Queue%601.Enqueue%2A> method to queue five strings. The elements of the queue are enumerated, which does not change the state of the queue. The <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method is used to dequeue the first string. The <xref:System.Collections.Generic.Queue%601.Peek%2A> method is used to look at the next item in the queue, and then the <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method is used to dequeue it.  
+  
+ The <xref:System.Collections.Generic.Queue%601.ToArray%2A> method is used to create an array and copy the queue elements to it, then the array is passed to the <xref:System.Collections.Generic.Queue%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the queue. The elements of the copy are displayed.  
+  
+ An array twice the size of the queue is created, and the <xref:System.Collections.Generic.Queue%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Queue%601.%23ctor%2A> constructor is used again to create a second copy of the queue containing three null elements at the beginning.  
+  
+ The <xref:System.Collections.Generic.Queue%601.Contains%2A> method is used to show that the string "four" is in the first copy of the queue, after which the <xref:System.Collections.Generic.Queue%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Queue%601.Count%2A> property shows that the queue is empty.  
+  
+ [!code-csharp[Generic.Queue#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Queue/cs/source.cs#1)]
+ [!code-vb[Generic.Queue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Queue/vb/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>Public static (<see langword="Shared" /> in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.  
+  
+ A <see cref="T:System.Collections.Generic.Queue`1" /> can support multiple readers concurrently, as long as the collection is not modified.  Even so, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Queue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.Queue`1" /> class that is empty and has the default initial capacity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The capacity of a <xref:System.Collections.Generic.Queue%601> is the number of elements that the <xref:System.Collections.Generic.Queue%601> can hold. As elements are added to a <xref:System.Collections.Generic.Queue%601>, the capacity is automatically increased as required by reallocating the internal array.  
+  
+ If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.Generic.Queue%601>.  
+  
+ The capacity can be decreased by calling <xref:System.Collections.Generic.Queue%601.TrimExcess%2A>.  
+  
+ This constructor is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates this constructor and several other methods of the <xref:System.Collections.Generic.Queue%601> generic class. The code example creates a queue of strings with default capacity and uses the <xref:System.Collections.Generic.Queue%601.Enqueue%2A> method to queue five strings. The elements of the queue are enumerated, which does not change the state of the queue. The <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method is used to dequeue the first string. The <xref:System.Collections.Generic.Queue%601.Peek%2A> method is used to look at the next item in the queue, and then the <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method is used to dequeue it.  
+  
+ The <xref:System.Collections.Generic.Queue%601.ToArray%2A> method is used to create an array and copy the queue elements to it, then the array is passed to the <xref:System.Collections.Generic.Queue%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the queue. The elements of the copy are displayed.  
+  
+ An array twice the size of the queue is created, and the <xref:System.Collections.Generic.Queue%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Queue%601.%23ctor%2A> constructor is used again to create a second copy of the queue containing three null elements at the beginning.  
+  
+ The <xref:System.Collections.Generic.Queue%601.Contains%2A> method is used to show that the string "four" is in the first copy of the queue, after which the <xref:System.Collections.Generic.Queue%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Queue%601.Count%2A> property shows that the queue is empty.  
+  
+ [!code-csharp[Generic.Queue#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Queue/cs/source.cs#1)]
+ [!code-vb[Generic.Queue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Queue/vb/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Queue (System.Collections.Generic.IEnumerable&lt;T&gt; collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="collection">The collection whose elements are copied to the new <see cref="T:System.Collections.Generic.Queue`1" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.Queue`1" /> class that contains elements copied from the specified collection and has sufficient capacity to accommodate the number of elements copied.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The capacity of a <xref:System.Collections.Generic.Queue%601> is the number of elements that the <xref:System.Collections.Generic.Queue%601> can hold. As elements are added to a <xref:System.Collections.Generic.Queue%601>, the capacity is automatically increased as required by reallocating the internal array.  
+  
+ If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.Generic.Queue%601>.  
+  
+ The capacity can be decreased by calling <xref:System.Collections.Generic.Queue%601.TrimExcess%2A>.  
+  
+ The elements are copied onto the <xref:System.Collections.Generic.Queue%601> in the same order they are read by the <xref:System.Collections.Generic.IEnumerator%601> of the collection.  
+  
+ This constructor is an O(`n`) operation, where `n` is the number of elements in `collection`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates this constructor and several other methods of the <xref:System.Collections.Generic.Queue%601> generic class. The code example creates a queue of strings with default capacity and uses the <xref:System.Collections.Generic.Queue%601.Enqueue%2A> method to queue five strings. The elements of the queue are enumerated, which does not change the state of the queue. The <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method is used to dequeue the first string. The <xref:System.Collections.Generic.Queue%601.Peek%2A> method is used to look at the next item in the queue, and then the <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method is used to dequeue it.  
+  
+ The <xref:System.Collections.Generic.Queue%601.ToArray%2A> method is used to create an array and copy the queue elements to it, then the array is passed to the <xref:System.Collections.Generic.Queue%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the queue. The elements of the copy are displayed.  
+  
+ An array twice the size of the queue is created, and the <xref:System.Collections.Generic.Queue%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Queue%601.%23ctor%2A> constructor is used again to create a second copy of the queue containing three null elements at the beginning.  
+  
+ The <xref:System.Collections.Generic.Queue%601.Contains%2A> method is used to show that the string "four" is in the first copy of the queue, after which the <xref:System.Collections.Generic.Queue%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Queue%601.Count%2A> property shows that the queue is empty.  
+  
+ [!code-csharp[Generic.Queue#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Queue/cs/source.cs#1)]
+ [!code-vb[Generic.Queue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Queue/vb/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="collection" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Queue (int capacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 capacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="capacity" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="capacity">The initial number of elements that the <see cref="T:System.Collections.Generic.Queue`1" /> can contain.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.Queue`1" /> class that is empty and has the specified initial capacity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The capacity of a <xref:System.Collections.Generic.Queue%601> is the number of elements that the <xref:System.Collections.Generic.Queue%601> can hold. As elements are added to a <xref:System.Collections.Generic.Queue%601>, the capacity is automatically increased as required by reallocating the internal array.  
+  
+ If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.Generic.Queue%601>.  
+  
+ The capacity can be decreased by calling <xref:System.Collections.Generic.Queue%601.TrimExcess%2A>.  
+  
+ This constructor is an O(`n`) operation, where `n` is `capacity`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="capacity" /> is less than zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all objects from the <see cref="T:System.Collections.Generic.Queue`1" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Collections.Generic.Queue%601.Count%2A> is set to zero, and references to other objects from elements of the collection are also released.  
+  
+ The capacity remains unchanged. To reset the capacity of the <xref:System.Collections.Generic.Queue%601>, call <xref:System.Collections.Generic.Queue%601.TrimExcess%2A>. Trimming an empty <xref:System.Collections.Generic.Queue%601> sets the capacity of the <xref:System.Collections.Generic.Queue%601> to the default capacity.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Queue%601.Count%2A>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates several methods of the <xref:System.Collections.Generic.Queue%601> generic class, including the <xref:System.Collections.Generic.Queue%601.Clear%2A> method.  
+  
+ The code example creates a queue of strings with default capacity and uses the <xref:System.Collections.Generic.Queue%601.Enqueue%2A> method to queue five strings. The elements of the queue are enumerated, which does not change the state of the queue. The <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method is used to dequeue the first string. The <xref:System.Collections.Generic.Queue%601.Peek%2A> method is used to look at the next item in the queue, and then the <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method is used to dequeue it.  
+  
+ The <xref:System.Collections.Generic.Queue%601.ToArray%2A> method is used to create an array and copy the queue elements to it, then the array is passed to the <xref:System.Collections.Generic.Queue%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the queue. The elements of the copy are displayed.  
+  
+ An array twice the size of the queue is created, and the <xref:System.Collections.Generic.Queue%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Queue%601.%23ctor%2A> constructor is used again to create a second copy of the queue containing three null elements at the beginning.  
+  
+ The <xref:System.Collections.Generic.Queue%601.Contains%2A> method is used to show that the string "four" is in the first copy of the queue, after which the <xref:System.Collections.Generic.Queue%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Queue%601.Count%2A> property shows that the queue is empty.  
+  
+ [!code-csharp[Generic.Queue#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Queue/cs/source.cs#1)]
+ [!code-vb[Generic.Queue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Queue/vb/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.Contains(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">The object to locate in the <see cref="T:System.Collections.Generic.Queue`1" />. The value can be <see langword="null" /> for reference types.</param>
+        <summary>Determines whether an element is in the <see cref="T:System.Collections.Generic.Queue`1" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="item" /> is found in the <see cref="T:System.Collections.Generic.Queue`1" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the queue.  
+  
+ This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Queue%601.Count%2A>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates several methods of the <xref:System.Collections.Generic.Queue%601> generic class, including the <xref:System.Collections.Generic.Queue%601.Contains%2A> method.  
+  
+ The code example creates a queue of strings with default capacity and uses the <xref:System.Collections.Generic.Queue%601.Enqueue%2A> method to queue five strings. The elements of the queue are enumerated, which does not change the state of the queue. The <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method is used to dequeue the first string. The <xref:System.Collections.Generic.Queue%601.Peek%2A> method is used to look at the next item in the queue, and then the <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method is used to dequeue it.  
+  
+ The <xref:System.Collections.Generic.Queue%601.ToArray%2A> method is used to create an array and copy the queue elements to it, then the array is passed to the <xref:System.Collections.Generic.Queue%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the queue. The elements of the copy are displayed.  
+  
+ An array twice the size of the queue is created, and the <xref:System.Collections.Generic.Queue%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Queue%601.%23ctor%2A> constructor is used again to create a second copy of the queue containing three null elements at the beginning.  
+  
+ The <xref:System.Collections.Generic.Queue%601.Contains%2A> method is used to show that the string "four" is in the first copy of the queue, after which the <xref:System.Collections.Generic.Queue%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Queue%601.Count%2A> property shows that the queue is empty.  
+  
+ [!code-csharp[Generic.Queue#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Queue/cs/source.cs#1)]
+ [!code-vb[Generic.Queue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Queue/vb/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (T[] array, int arrayIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(!T[] array, int32 arrayIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.CopyTo(`0[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="arrayIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:System.Collections.Generic.Queue`1" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
+        <param name="arrayIndex">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the <see cref="T:System.Collections.Generic.Queue`1" /> elements to an existing one-dimensional <see cref="T:System.Array" />, starting at the specified array index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Collections.Generic.Queue%601>.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Queue%601.Count%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="arrayIndex" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">The number of elements in the source <see cref="T:System.Collections.Generic.Queue`1" /> is greater than the available space from <paramref name="arrayIndex" /> to the end of the destination <paramref name="array" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Generic.Queue`1.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of elements contained in the <see cref="T:System.Collections.Generic.Queue`1" />.</summary>
+        <value>The number of elements contained in the <see cref="T:System.Collections.Generic.Queue`1" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The capacity of a <xref:System.Collections.Generic.Queue%601> is the number of elements that the <xref:System.Collections.Generic.Queue%601> can store. <xref:System.Collections.Generic.Queue%601.Count%2A> is the number of elements that are actually in the <xref:System.Collections.Generic.Queue%601>.  
+  
+ The capacity is always greater than or equal to <xref:System.Collections.Generic.Queue%601.Count%2A>. If <xref:System.Collections.Generic.Queue%601.Count%2A> exceeds the capacity while adding elements, the capacity is increased by automatically reallocating the internal array before copying the old elements and adding the new elements.  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates several properties and methods of the <xref:System.Collections.Generic.Queue%601> generic class, including the <xref:System.Collections.Generic.Queue%601.Count%2A> property.  
+  
+ The code example creates a queue of strings with default capacity and uses the <xref:System.Collections.Generic.Queue%601.Enqueue%2A> method to queue five strings. The elements of the queue are enumerated, which does not change the state of the queue. The <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method is used to dequeue the first string. The <xref:System.Collections.Generic.Queue%601.Peek%2A> method is used to look at the next item in the queue, and then the <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method is used to dequeue it.  
+  
+ The <xref:System.Collections.Generic.Queue%601.ToArray%2A> method is used to create an array and copy the queue elements to it, then the array is passed to the <xref:System.Collections.Generic.Queue%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the queue. The elements of the copy are displayed.  
+  
+ An array twice the size of the queue is created, and the <xref:System.Collections.Generic.Queue%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Queue%601.%23ctor%2A> constructor is used again to create a second copy of the queue containing three null elements at the beginning.  
+  
+ The <xref:System.Collections.Generic.Queue%601.Contains%2A> method is used to show that the string "four" is in the first copy of the queue, after which the <xref:System.Collections.Generic.Queue%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Queue%601.Count%2A> property shows that the queue is empty.  
+  
+ [!code-csharp[Generic.Queue#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Queue/cs/source.cs#1)]
+ [!code-vb[Generic.Queue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Queue/vb/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dequeue">
+      <MemberSignature Language="C#" Value="public T Dequeue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T Dequeue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.Dequeue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes and returns the object at the beginning of the <see cref="T:System.Collections.Generic.Queue`1" />.</summary>
+        <returns>The object that is removed from the beginning of the <see cref="T:System.Collections.Generic.Queue`1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is similar to the <xref:System.Collections.Generic.Queue%601.Peek%2A> method, but <xref:System.Collections.Generic.Queue%601.Peek%2A> does not modify the <xref:System.Collections.Generic.Queue%601>.  
+  
+ If type `T` is a reference type, `null` can be added to the <xref:System.Collections.Generic.Queue%601> as a value.  
+  
+ This method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates several methods of the <xref:System.Collections.Generic.Queue%601> generic class, including the <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method.  
+  
+ The code example creates a queue of strings with default capacity and uses the <xref:System.Collections.Generic.Queue%601.Enqueue%2A> method to queue five strings. The elements of the queue are enumerated, which does not change the state of the queue. The <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method is used to dequeue the first string. The <xref:System.Collections.Generic.Queue%601.Peek%2A> method is used to look at the next item in the queue, and then the <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method is used to dequeue it.  
+  
+ The <xref:System.Collections.Generic.Queue%601.ToArray%2A> method is used to create an array and copy the queue elements to it, then the array is passed to the <xref:System.Collections.Generic.Queue%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the queue. The elements of the copy are displayed.  
+  
+ An array twice the size of the queue is created, and the <xref:System.Collections.Generic.Queue%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Queue%601.%23ctor%2A> constructor is used again to create a second copy of the queue containing three null elements at the beginning.  
+  
+ The <xref:System.Collections.Generic.Queue%601.Contains%2A> method is used to show that the string "four" is in the first copy of the queue, after which the <xref:System.Collections.Generic.Queue%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Queue%601.Count%2A> property shows that the queue is empty.  
+  
+ [!code-csharp[Generic.Queue#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Queue/cs/source.cs#1)]
+ [!code-vb[Generic.Queue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Queue/vb/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.Generic.Queue`1" /> is empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Enqueue">
+      <MemberSignature Language="C#" Value="public void Enqueue (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Enqueue(!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.Enqueue(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">The object to add to the <see cref="T:System.Collections.Generic.Queue`1" />. The value can be <see langword="null" /> for reference types.</param>
+        <summary>Adds an object to the end of the <see cref="T:System.Collections.Generic.Queue`1" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Collections.Generic.Queue%601.Count%2A> already equals the capacity, the capacity of the <xref:System.Collections.Generic.Queue%601> is increased by automatically reallocating the internal array, and the existing elements are copied to the new array before the new element is added.  
+  
+ If <xref:System.Collections.Generic.Queue%601.Count%2A> is less than the capacity of the internal array, this method is an O(1) operation. If the internal array needs to be reallocated to accommodate the new element, this method becomes an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Queue%601.Count%2A>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates several methods of the <xref:System.Collections.Generic.Queue%601> generic class, including the <xref:System.Collections.Generic.Queue%601.Enqueue%2A> method.  
+  
+ The code example creates a queue of strings with default capacity and uses the <xref:System.Collections.Generic.Queue%601.Enqueue%2A> method to queue five strings. The elements of the queue are enumerated, which does not change the state of the queue. The <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method is used to dequeue the first string. The <xref:System.Collections.Generic.Queue%601.Peek%2A> method is used to look at the next item in the queue, and then the <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method is used to dequeue it.  
+  
+ The <xref:System.Collections.Generic.Queue%601.ToArray%2A> method is used to create an array and copy the queue elements to it, then the array is passed to the <xref:System.Collections.Generic.Queue%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the queue. The elements of the copy are displayed.  
+  
+ An array twice the size of the queue is created, and the <xref:System.Collections.Generic.Queue%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Queue%601.%23ctor%2A> constructor is used again to create a second copy of the queue containing three null elements at the beginning.  
+  
+ The <xref:System.Collections.Generic.Queue%601.Contains%2A> method is used to show that the string "four" is in the first copy of the queue, after which the <xref:System.Collections.Generic.Queue%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Queue%601.Count%2A> property shows that the queue is empty.  
+  
+ [!code-csharp[Generic.Queue#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Queue/cs/source.cs#1)]
+ [!code-vb[Generic.Queue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Queue/vb/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Queue&lt;T&gt;.Enumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Generic.Queue`1/Enumerator&lt;!T&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Queue&lt;T&gt;+Enumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that iterates through the <see cref="T:System.Collections.Generic.Queue`1" />.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.Queue`1.Enumerator" /> for the <see cref="T:System.Collections.Generic.Queue`1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+  
+ Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+  
+ Initially, the enumerator is positioned before the first element in the collection. At this position, <xref:System.Collections.Generic.Queue%601.Enumerator.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.Generic.Queue%601.Enumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.Queue%601.Enumerator.Current%2A>.  
+  
+ <xref:System.Collections.Generic.Queue%601.Enumerator.Current%2A> returns the same object until <xref:System.Collections.Generic.Queue%601.Enumerator.MoveNext%2A> is called. <xref:System.Collections.Generic.Queue%601.Enumerator.MoveNext%2A> sets <xref:System.Collections.Generic.Queue%601.Enumerator.Current%2A> to the next element.  
+  
+ If <xref:System.Collections.Generic.Queue%601.Enumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.Generic.Queue%601.Enumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.Generic.Queue%601.Enumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.Generic.Queue%601.Enumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.Queue%601.Enumerator.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.Queue%601.Enumerator.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
+  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+  
+ The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+  
+ This method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates that the <xref:System.Collections.Generic.Queue%601> generic class is enumerable. The `foreach` statement (`For Each` in Visual Basic, `for each` in C++) is used to enumerate the queue.  
+  
+ The code example creates a queue of strings with default capacity and uses the <xref:System.Collections.Generic.Queue%601.Enqueue%2A> method to queue five strings. The elements of the queue are enumerated, which does not change the state of the queue. The <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method is used to dequeue the first string. The <xref:System.Collections.Generic.Queue%601.Peek%2A> method is used to look at the next item in the queue, and then the <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method is used to dequeue it.  
+  
+ The <xref:System.Collections.Generic.Queue%601.ToArray%2A> method is used to create an array and copy the queue elements to it, then the array is passed to the <xref:System.Collections.Generic.Queue%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the queue. The elements of the copy are displayed.  
+  
+ An array twice the size of the queue is created, and the <xref:System.Collections.Generic.Queue%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Queue%601.%23ctor%2A> constructor is used again to create a second copy of the queue containing three null elements at the beginning.  
+  
+ The <xref:System.Collections.Generic.Queue%601.Contains%2A> method is used to show that the string "four" is in the first copy of the queue, after which the <xref:System.Collections.Generic.Queue%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Queue%601.Count%2A> property shows that the queue is empty.  
+  
+ [!code-csharp[Generic.Queue#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Queue/cs/source.cs#1)]
+ [!code-vb[Generic.Queue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Queue/vb/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Peek">
+      <MemberSignature Language="C#" Value="public T Peek ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T Peek() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.Peek" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the object at the beginning of the <see cref="T:System.Collections.Generic.Queue`1" /> without removing it.</summary>
+        <returns>The object at the beginning of the <see cref="T:System.Collections.Generic.Queue`1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is similar to the <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method, but <xref:System.Collections.Generic.Queue%601.Peek%2A> does not modify the <xref:System.Collections.Generic.Queue%601>.  
+  
+ If type `T` is a reference type, `null` can be added to the <xref:System.Collections.Generic.Queue%601> as a value.  
+  
+ This method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates several methods of the <xref:System.Collections.Generic.Queue%601> generic class, including the <xref:System.Collections.Generic.Queue%601.Peek%2A> method.  
+  
+ The code example creates a queue of strings with default capacity and uses the <xref:System.Collections.Generic.Queue%601.Enqueue%2A> method to queue five strings. The elements of the queue are enumerated, which does not change the state of the queue. The <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method is used to dequeue the first string. The <xref:System.Collections.Generic.Queue%601.Peek%2A> method is used to look at the next item in the queue, and then the <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method is used to dequeue it.  
+  
+ The <xref:System.Collections.Generic.Queue%601.ToArray%2A> method is used to create an array and copy the queue elements to it, then the array is passed to the <xref:System.Collections.Generic.Queue%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the queue. The elements of the copy are displayed.  
+  
+ An array twice the size of the queue is created, and the <xref:System.Collections.Generic.Queue%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Queue%601.%23ctor%2A> constructor is used again to create a second copy of the queue containing three null elements at the beginning.  
+  
+ The <xref:System.Collections.Generic.Queue%601.Contains%2A> method is used to show that the string "four" is in the first copy of the queue, after which the <xref:System.Collections.Generic.Queue%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Queue%601.Count%2A> property shows that the queue is empty.  
+  
+ [!code-csharp[Generic.Queue#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Queue/cs/source.cs#1)]
+ [!code-vb[Generic.Queue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Queue/vb/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Collections.Generic.Queue`1" /> is empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;T&gt; IEnumerable&lt;T&gt;.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;!T&gt; System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that iterates through a collection.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+  
+ Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+  
+ Initially, the enumerator is positioned before the first element in the collection. At this position, <xref:System.Collections.Generic.IEnumerator%601.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.IEnumerator%601.Current%2A>.  
+  
+ <xref:System.Collections.Generic.IEnumerator%601.Current%2A> returns the same object until <xref:System.Collections.IEnumerator.MoveNext%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the next element.  
+  
+ If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.Generic.IEnumerator%601.Current%2A> is undefined. You cannot set <xref:System.Collections.Generic.IEnumerator%601.Current%2A> to the first element of the collection again; you must create a new enumerator instance instead.  
+  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+  
+ The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+  
+ This method is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.CopyTo">
+      <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:System.Collections.ICollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the elements of the <see cref="T:System.Collections.ICollection" /> to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  If the type of the source <xref:System.Collections.ICollection> cannot be cast automatically to the type of the destination `array`, the non-generic implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName> throw <xref:System.InvalidCastException>, whereas the generic implementations throw <xref:System.ArgumentException>.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Queue%601.Count%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="array" /> is multidimensional.  
+  
+ -or-  
+  
+ <paramref name="array" /> does not have zero-based indexing.  
+  
+ -or-  
+  
+ The number of elements in the source <see cref="T:System.Collections.ICollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.  
+  
+ -or-  
+  
+ The type of the source <see cref="T:System.Collections.ICollection" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.IsSynchronized">
+      <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Generic.Queue`1.System#Collections#ICollection#IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />.  In the default implementation of <see cref="T:System.Collections.Generic.Queue`1" />, this property always returns <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+  
+ Enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+  
+ <xref:System.Collections.ICollection.SyncRoot%2A> returns an object, which can be used to synchronize access to the <xref:System.Collections.ICollection>. Synchronization is effective only if all threads lock this object before accessing the collection.  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.SyncRoot">
+      <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Generic.Queue`1.System#Collections#ICollection#SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.ICollection" />.  In the default implementation of <see cref="T:System.Collections.Generic.Queue`1" />, this property always returns the current instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+  
+ Enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+  
+ <xref:System.Collections.ICollection.SyncRoot%2A> returns an object, which can be used to synchronize access to the <xref:System.Collections.ICollection>. Synchronization is effective only if all threads lock this object before accessing the collection. The following code shows the use of the <xref:System.Collections.ICollection.SyncRoot%2A> property for C#, C++, and Visual Basic.  
+  
+```csharp  
+ICollection ic = ...;  
+lock (ic.SyncRoot) {  
+   // Access the collection.  
+}  
+```  
+  
+```vb  
+Dim ic As IColletion = ...  
+SyncLock ic.SyncRoot  
+   ' Access the collection.  
+End SyncLock  
+```  
+  
+```cpp#  
+ICollection^ ic = ...;  
+try {  
+   Monitor::Enter(ic->SyncRoot);  
+   // Access the collection.  
+}  
+finally {  
+   Monitor::Exit(ic->SyncRoot);  
+}  
+```  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that iterates through a collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `foreach` statement of the C# language (`for each` in C++, `For Each` in Visual Basic) hides the complexity of the enumerators. Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+  
+ Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+  
+ Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position.  At this position, <xref:System.Collections.IEnumerator.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+  
+ <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
+  
+ If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+  
+ The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+  
+ Default implementations of collections in <xref:System.Collections.Generic?displayProperty=fullName> are not synchronized.  
+  
+ This method is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToArray">
+      <MemberSignature Language="C#" Value="public T[] ToArray ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T[] ToArray() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.ToArray" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Copies the <see cref="T:System.Collections.Generic.Queue`1" /> elements to a new array.</summary>
+        <returns>A new array containing elements copied from the <see cref="T:System.Collections.Generic.Queue`1" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Collections.Generic.Queue%601> is not modified. The order of the elements in the new array is the same as the order of the elements from the beginning of the <xref:System.Collections.Generic.Queue%601> to its end.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Queue%601.Count%2A>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates several methods of the <xref:System.Collections.Generic.Queue%601> generic class, including the <xref:System.Collections.Generic.Queue%601.ToArray%2A> method.  
+  
+ The code example creates a queue of strings with default capacity and uses the <xref:System.Collections.Generic.Queue%601.Enqueue%2A> method to queue five strings. The elements of the queue are enumerated, which does not change the state of the queue. The <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method is used to dequeue the first string. The <xref:System.Collections.Generic.Queue%601.Peek%2A> method is used to look at the next item in the queue, and then the <xref:System.Collections.Generic.Queue%601.Dequeue%2A> method is used to dequeue it.  
+  
+ The <xref:System.Collections.Generic.Queue%601.ToArray%2A> method is used to create an array and copy the queue elements to it, then the array is passed to the <xref:System.Collections.Generic.Queue%601.%23ctor%2A> constructor that takes <xref:System.Collections.Generic.IEnumerable%601>, creating a copy of the queue. The elements of the copy are displayed.  
+  
+ An array twice the size of the queue is created, and the <xref:System.Collections.Generic.Queue%601.CopyTo%2A> method is used to copy the array elements beginning at the middle of the array. The <xref:System.Collections.Generic.Queue%601.%23ctor%2A> constructor is used again to create a second copy of the queue containing three null elements at the beginning.  
+  
+ The <xref:System.Collections.Generic.Queue%601.Contains%2A> method is used to show that the string "four" is in the first copy of the queue, after which the <xref:System.Collections.Generic.Queue%601.Clear%2A> method clears the copy and the <xref:System.Collections.Generic.Queue%601.Count%2A> property shows that the queue is empty.  
+  
+ [!code-csharp[Generic.Queue#1](~/samples/snippets/csharp/VS_Snippets_CLR/Generic.Queue/cs/source.cs#1)]
+ [!code-vb[Generic.Queue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Generic.Queue/vb/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimExcess">
+      <MemberSignature Language="C#" Value="public void TrimExcess ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TrimExcess() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Queue`1.TrimExcess" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the capacity to the actual number of elements in the <see cref="T:System.Collections.Generic.Queue`1" />, if that number is less than 90 percent of current capacity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be used to minimize a collection's memory overhead if no new elements will be added to the collection. The cost of reallocating and copying a large <xref:System.Collections.Generic.Queue%601> can be considerable, however, so the <xref:System.Collections.Generic.Queue%601.TrimExcess%2A> method does nothing if the list is at more than 90 percent of capacity. This avoids incurring a large reallocation cost for a relatively small gain.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.Queue%601.Count%2A>.  
+  
+ To reset a <xref:System.Collections.Generic.Queue%601> to its initial state, call the <xref:System.Collections.Generic.Queue%601.Clear%2A> method before calling <xref:System.Collections.Generic.Queue%601.TrimExcess%2A> method. Trimming an empty <xref:System.Collections.Generic.Queue%601> sets the capacity of the <xref:System.Collections.Generic.Queue%601> to the default capacity.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

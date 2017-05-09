@@ -1,0 +1,120 @@
+<Type Name="SearchResultReferenceCollection" FullName="System.DirectoryServices.Protocols.SearchResultReferenceCollection">
+  <TypeSignature Language="C#" Value="public class SearchResultReferenceCollection : System.Collections.ReadOnlyCollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SearchResultReferenceCollection extends System.Collections.ReadOnlyCollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SearchResultReferenceCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ReadOnlyCollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.SearchResultReferenceCollection" /> class contains a collection of <see cref="T:System.DirectoryServices.Protocols.SearchResultReference" /> objects.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.DirectoryServices.Protocols.SearchResultReference value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.DirectoryServices.Protocols.SearchResultReference value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.SearchResultReferenceCollection.Contains(System.DirectoryServices.Protocols.SearchResultReference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.DirectoryServices.Protocols.SearchResultReference" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.SearchResultReference" /> object to locate.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SearchResultReferenceCollection.Contains(System.DirectoryServices.Protocols.SearchResultReference)" /> method determines if the collection contains specified <see cref="T:System.DirectoryServices.Protocols.SearchResultReference" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the collection contains <paramref name="value" /> or <see langword="false" /> if it does not.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.DirectoryServices.Protocols.SearchResultReference[] values, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.DirectoryServices.Protocols.SearchResultReference[] values, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.SearchResultReferenceCollection.CopyTo(System.DirectoryServices.Protocols.SearchResultReference[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="values" Type="System.DirectoryServices.Protocols.SearchResultReference[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="values">A one-dimensional array that is the destination of the elements copied from the <see cref="T:System.DirectoryServices.Protocols.SearchResultReferenceCollection" /> object.</param>
+        <param name="index">The zero-based index of <c>values</c> where copying begins.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SearchResultReferenceCollection.CopyTo(System.DirectoryServices.Protocols.SearchResultReference[],System.Int32)" /> method copies the entire collection to a one-dimensional array, starting at the specified index of the target array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="values" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="values" /> is multidimensional  
+  
+ -or-  
+  
+ The number of elements in the source <see cref="T:System.DirectoryServices.Protocols.SearchResultReferenceCollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="values" />.</exception>
+        <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.DirectoryServices.Protocols.SearchResultReferenceCollection" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.DirectoryServices.Protocols.SearchResultReference value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.DirectoryServices.Protocols.SearchResultReference value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.SearchResultReferenceCollection.IndexOf(System.DirectoryServices.Protocols.SearchResultReference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.DirectoryServices.Protocols.SearchResultReference" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.SearchResultReference" /> object for which the index is returned.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SearchResultReferenceCollection.IndexOf(System.DirectoryServices.Protocols.SearchResultReference)" /> method returns the zero-based index of the first occurrence of the specified <see cref="T:System.DirectoryServices.Protocols.SearchResultReference" /> object in <see cref="T:System.DirectoryServices.Protocols.SearchResultReferenceCollection" />.</summary>
+        <returns>The index value of the specified <see cref="T:System.DirectoryServices.Protocols.SearchResultReference" /> object, if found. If the object is not found, this method returns -1.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.SearchResultReference this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.Protocols.SearchResultReference Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SearchResultReferenceCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.SearchResultReference</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index value of the <see cref="T:System.DirectoryServices.Protocols.SearchResultReference" /> object.</param>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SearchResultReferenceCollection.Item(System.Int32)" /> property contains the <see cref="T:System.DirectoryServices.Protocols.SearchResultReference" /> object at the specified <paramref name="index" />.</summary>
+        <value>The <see cref="T:System.DirectoryServices.Protocols.SearchResultReference" /> object at the specified <paramref name="index" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

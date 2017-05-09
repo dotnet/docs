@@ -1,0 +1,946 @@
+<Type Name="VsaEngine" FullName="Microsoft.JScript.Vsa.VsaEngine">
+  <TypeSignature Language="C#" Value="public sealed class VsaEngine : Microsoft.JScript.Vsa.BaseVsaEngine, Microsoft.JScript.IEngine2, Microsoft.JScript.IRedirectOutput" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit VsaEngine extends Microsoft.JScript.Vsa.BaseVsaEngine implements class Microsoft.JScript.IEngine2, class Microsoft.JScript.IRedirectOutput" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.VsaEngine" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.JScript.Vsa.BaseVsaEngine</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.JScript.IEngine2</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.JScript.IRedirectOutput</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("B71E484D-93ED-4b56-BFB9-CEED5134822B")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Implements <see cref="T:Microsoft.Vsa.IVsaEngine" /> interface.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VsaEngine ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VsaEngine (bool fast);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool fast) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fast" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="fast">To be added.</param>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.Vsa.IJSVsaEngine Clone (AppDomain domain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.Vsa.IJSVsaEngine Clone(class System.AppDomain domain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.Clone(System.AppDomain)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.IJSVsaEngine</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="domain" Type="System.AppDomain" />
+      </Parameters>
+      <Docs>
+        <param name="domain">To be added.</param>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompileEmpty">
+      <MemberSignature Language="C#" Value="public bool CompileEmpty ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CompileEmpty() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.CompileEmpty" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectEvents">
+      <MemberSignature Language="C#" Value="public void ConnectEvents ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ConnectEvents() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.ConnectEvents" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEngine">
+      <MemberSignature Language="C#" Value="public static Microsoft.JScript.Vsa.VsaEngine CreateEngine ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.Vsa.VsaEngine CreateEngine() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.CreateEngine" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.VsaEngine</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEngineAndGetGlobalScope">
+      <MemberSignature Language="C#" Value="public static Microsoft.JScript.GlobalScope CreateEngineAndGetGlobalScope (bool fast, string[] assemblyNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.GlobalScope CreateEngineAndGetGlobalScope(bool fast, string[] assemblyNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.CreateEngineAndGetGlobalScope(System.Boolean,System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.GlobalScope</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fast" Type="System.Boolean" />
+        <Parameter Name="assemblyNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="fast">To be added.</param>
+        <param name="assemblyNames">To be added.</param>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEngineAndGetGlobalScopeWithType">
+      <MemberSignature Language="C#" Value="public static Microsoft.JScript.GlobalScope CreateEngineAndGetGlobalScopeWithType (bool fast, string[] assemblyNames, RuntimeTypeHandle callingTypeHandle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.GlobalScope CreateEngineAndGetGlobalScopeWithType(bool fast, string[] assemblyNames, valuetype System.RuntimeTypeHandle callingTypeHandle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.CreateEngineAndGetGlobalScopeWithType(System.Boolean,System.String[],System.RuntimeTypeHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.GlobalScope</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fast" Type="System.Boolean" />
+        <Parameter Name="assemblyNames" Type="System.String[]" />
+        <Parameter Name="callingTypeHandle" Type="System.RuntimeTypeHandle" />
+      </Parameters>
+      <Docs>
+        <param name="fast">To be added.</param>
+        <param name="assemblyNames">To be added.</param>
+        <param name="callingTypeHandle">To be added.</param>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace">
+      <MemberSignature Language="C#" Value="public static Microsoft.JScript.GlobalScope CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace (bool fast, string[] assemblyNames, RuntimeTypeHandle callingTypeHandle, string rootNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.GlobalScope CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace(bool fast, string[] assemblyNames, valuetype System.RuntimeTypeHandle callingTypeHandle, string rootNamespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace(System.Boolean,System.String[],System.RuntimeTypeHandle,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.GlobalScope</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fast" Type="System.Boolean" />
+        <Parameter Name="assemblyNames" Type="System.String[]" />
+        <Parameter Name="callingTypeHandle" Type="System.RuntimeTypeHandle" />
+        <Parameter Name="rootNamespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fast">To be added.</param>
+        <param name="assemblyNames">To be added.</param>
+        <param name="callingTypeHandle">To be added.</param>
+        <param name="rootNamespace">To be added.</param>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <returns>Returns <see cref="T:Microsoft.JScript.GlobalScope" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEngineWithType">
+      <MemberSignature Language="C#" Value="public static Microsoft.JScript.Vsa.VsaEngine CreateEngineWithType (RuntimeTypeHandle callingTypeHandle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.Vsa.VsaEngine CreateEngineWithType(valuetype System.RuntimeTypeHandle callingTypeHandle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.CreateEngineWithType(System.RuntimeTypeHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.VsaEngine</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callingTypeHandle" Type="System.RuntimeTypeHandle" />
+      </Parameters>
+      <Docs>
+        <param name="callingTypeHandle">To be added.</param>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectEvents">
+      <MemberSignature Language="C#" Value="public void DisconnectEvents ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DisconnectEvents() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.DisconnectEvents" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoClose">
+      <MemberSignature Language="C#" Value="protected override void DoClose ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DoClose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.DoClose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoCompile">
+      <MemberSignature Language="C#" Value="protected override bool DoCompile ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool DoCompile() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.DoCompile" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoLoadSourceState">
+      <MemberSignature Language="C#" Value="protected override void DoLoadSourceState (Microsoft.JScript.Vsa.IJSVsaPersistSite site);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DoLoadSourceState(class Microsoft.JScript.Vsa.IJSVsaPersistSite site) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.DoLoadSourceState(Microsoft.JScript.Vsa.IJSVsaPersistSite)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="site" Type="Microsoft.JScript.Vsa.IJSVsaPersistSite" />
+      </Parameters>
+      <Docs>
+        <param name="site">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoSaveCompiledState">
+      <MemberSignature Language="C#" Value="protected override void DoSaveCompiledState (out byte[] pe, out byte[] pdb);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DoSaveCompiledState(unsigned int8[] pe, unsigned int8[] pdb) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.DoSaveCompiledState(System.Byte[]@,System.Byte[]@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pe" Type="System.Byte[]&amp;" RefType="out" />
+        <Parameter Name="pdb" Type="System.Byte[]&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pe">To be added.</param>
+        <param name="pdb">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoSaveSourceState">
+      <MemberSignature Language="C#" Value="protected override void DoSaveSourceState (Microsoft.JScript.Vsa.IJSVsaPersistSite site);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DoSaveSourceState(class Microsoft.JScript.Vsa.IJSVsaPersistSite site) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.DoSaveSourceState(Microsoft.JScript.Vsa.IJSVsaPersistSite)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="site" Type="Microsoft.JScript.Vsa.IJSVsaPersistSite" />
+      </Parameters>
+      <Docs>
+        <param name="site">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAssembly">
+      <MemberSignature Language="C#" Value="public System.Reflection.Assembly GetAssembly ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Assembly GetAssembly() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.GetAssembly" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Assembly</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCustomOption">
+      <MemberSignature Language="C#" Value="protected override object GetCustomOption (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetCustomOption(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.GetCustomOption(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGlobalScope">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.IVsaScriptScope GetGlobalScope ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.IVsaScriptScope GetGlobalScope() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.GetGlobalScope" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.IVsaScriptScope</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItem">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.Vsa.IJSVsaItem GetItem (string itemName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.Vsa.IJSVsaItem GetItem(string itemName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.GetItem(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.IJSVsaItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="itemName">To be added.</param>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemAtIndex">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.Vsa.IJSVsaItem GetItemAtIndex (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.Vsa.IJSVsaItem GetItemAtIndex(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.GetItemAtIndex(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.IJSVsaItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemCount">
+      <MemberSignature Language="C#" Value="public int GetItemCount ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetItemCount() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.GetItemCount" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMainScope">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.GlobalScope GetMainScope ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.GlobalScope GetMainScope() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.GetMainScope" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.GlobalScope</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetModule">
+      <MemberSignature Language="C#" Value="public System.Reflection.Module GetModule ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Module GetModule() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.GetModule" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Module</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOriginalArrayConstructor">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.ArrayConstructor GetOriginalArrayConstructor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.ArrayConstructor GetOriginalArrayConstructor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.GetOriginalArrayConstructor" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.ArrayConstructor</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOriginalObjectConstructor">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.ObjectConstructor GetOriginalObjectConstructor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.ObjectConstructor GetOriginalObjectConstructor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.GetOriginalObjectConstructor" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.ObjectConstructor</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOriginalRegExpConstructor">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.RegExpConstructor GetOriginalRegExpConstructor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.RegExpConstructor GetOriginalRegExpConstructor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.GetOriginalRegExpConstructor" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.RegExpConstructor</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitVsaEngine">
+      <MemberSignature Language="C#" Value="public void InitVsaEngine (string rootMoniker, Microsoft.JScript.Vsa.IJSVsaSite site);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitVsaEngine(string rootMoniker, class Microsoft.JScript.Vsa.IJSVsaSite site) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.InitVsaEngine(System.String,Microsoft.JScript.Vsa.IJSVsaSite)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootMoniker" Type="System.String" />
+        <Parameter Name="site" Type="Microsoft.JScript.Vsa.IJSVsaSite" />
+      </Parameters>
+      <Docs>
+        <param name="rootMoniker">To be added.</param>
+        <param name="site">To be added.</param>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Interrupt">
+      <MemberSignature Language="C#" Value="public void Interrupt ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Interrupt() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.Interrupt" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidIdentifier">
+      <MemberSignature Language="C#" Value="public override bool IsValidIdentifier (string ident);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsValidIdentifier(string ident) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.IsValidIdentifier(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ident" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ident">To be added.</param>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidNamespaceName">
+      <MemberSignature Language="C#" Value="protected override bool IsValidNamespaceName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsValidNamespaceName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.IsValidNamespaceName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LenientGlobalObject">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.LenientGlobalObject LenientGlobalObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.JScript.LenientGlobalObject LenientGlobalObject" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Vsa.VsaEngine.LenientGlobalObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.LenientGlobalObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadCompiledState">
+      <MemberSignature Language="C#" Value="protected override System.Reflection.Assembly LoadCompiledState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Reflection.Assembly LoadCompiledState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.LoadCompiledState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Assembly</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopScriptObject">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.ScriptObject PopScriptObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.ScriptObject PopScriptObject() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.PopScriptObject" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.ScriptObject</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PushScriptObject">
+      <MemberSignature Language="C#" Value="public void PushScriptObject (Microsoft.JScript.ScriptObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PushScriptObject(class Microsoft.JScript.ScriptObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.PushScriptObject(Microsoft.JScript.ScriptObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Microsoft.JScript.ScriptObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterEventSource">
+      <MemberSignature Language="C#" Value="public void RegisterEventSource (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterEventSource(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.RegisterEventSource(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public override void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.Reset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetCompiledState">
+      <MemberSignature Language="C#" Value="protected override void ResetCompiledState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ResetCompiledState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.ResetCompiledState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Restart">
+      <MemberSignature Language="C#" Value="public void Restart ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Restart() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.Restart" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Run">
+      <MemberSignature Language="C#" Value="public void Run (AppDomain domain);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Run(class System.AppDomain domain) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.Run(System.AppDomain)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="domain" Type="System.AppDomain" />
+      </Parameters>
+      <Docs>
+        <param name="domain">To be added.</param>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunEmpty">
+      <MemberSignature Language="C#" Value="public void RunEmpty ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RunEmpty() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.RunEmpty" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptObjectStackTop">
+      <MemberSignature Language="C#" Value="public Microsoft.JScript.ScriptObject ScriptObjectStackTop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.ScriptObject ScriptObjectStackTop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.ScriptObjectStackTop" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.ScriptObject</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCustomOption">
+      <MemberSignature Language="C#" Value="protected override void SetCustomOption (string name, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetCustomOption(string name, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.SetCustomOption(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOutputStream">
+      <MemberSignature Language="C#" Value="public void SetOutputStream (Microsoft.JScript.IMessageReceiver output);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetOutputStream(class Microsoft.JScript.IMessageReceiver output) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.SetOutputStream(Microsoft.JScript.IMessageReceiver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="output" Type="Microsoft.JScript.IMessageReceiver" />
+      </Parameters>
+      <Docs>
+        <param name="output">To be added.</param>
+        <summary>This class, member, or property is internal to the script engine and should not be called from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateRootMoniker">
+      <MemberSignature Language="C#" Value="protected override void ValidateRootMoniker (string rootMoniker);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ValidateRootMoniker(string rootMoniker) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.VsaEngine.ValidateRootMoniker(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootMoniker" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="rootMoniker">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

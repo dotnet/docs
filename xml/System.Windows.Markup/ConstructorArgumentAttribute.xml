@@ -1,0 +1,81 @@
+<Type Name="ConstructorArgumentAttribute" FullName="System.Windows.Markup.ConstructorArgumentAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ConstructorArgumentAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConstructorArgumentAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.ConstructorArgumentAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property, AllowMultiple=false, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies that an object can be initialized by using a non-default constructor syntax, and that a property of the specified name supplies construction information.  This information is primarily for XAML serialization.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute specifies that the associated property can be initialized by a constructor parameter and should be ignored for XAML serialization if the constructor is used to construct the instance. This provides better round trip representations for parameterized constructor syntax rather than default constructor instantiation plus specific attributes.  
+  
+ A framework can potentially support preserving markup extension usages and reconstituting them rather than relying on `ProvideValue` output in the object tree for serialization. In this case, the <xref:System.Windows.Markup.ConstructorArgumentAttribute> information is useful during serialization for producing an accurate representation of the typical markup extension usage. For more information about markup extensions, see [Markup Extensions for XAML Overview](~/docs/framework/xaml-services/markup-extensions-for-xaml-overview.md).  
+  
+ In order to be valid for a <xref:System.Windows.Markup.ConstructorArgumentAttribute> attribution, a type's public non-default constructor must support exactly one parameter. The name of the parameter must correspond to a read/write property. The property must be otherwise serializable. You use this attribute to create the correspondence between the name of the parameter in the constructor, and the property. Specifically, you apply this attribute to the property-level definition of the connecting read/write property.  
+  
+ Consumers of <xref:System.Windows.Markup.ConstructorArgumentAttribute> may throw in cases where <xref:System.Windows.Markup.ConstructorArgumentAttribute.ArgumentName%2A> does not resolve to type backing, or when applied to a type that does not have the appropriate construction arguments and arity.  
+  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.ConstructorArgumentAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
+  
+## WPF Usage Notes  
+ For more information about markup extensions and WPF, see [Markup Extensions and WPF XAML](~/docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConstructorArgumentAttribute (string argumentName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string argumentName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ConstructorArgumentAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="argumentName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="argumentName">The name of the constructor that will initialize the associated property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.ConstructorArgumentAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArgumentName">
+      <MemberSignature Language="C#" Value="public string ArgumentName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ArgumentName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ConstructorArgumentAttribute.ArgumentName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name parameter of the constructor that will initialize the associated property.</summary>
+        <value>The name of the constructor. Assuming CLR backing, this corresponds to the <see cref="P:System.Reflection.ParameterInfo.Name" /> of the relevant constructor parameter.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,8 @@
+// <Snippet1>
+ typedef int OLE_COLOR;  
+ 
+ interface Baz {
+  HRESULT SetColor([in] OLE_COLOR cl);
+  HRESULT GetColor([out, retval] OLE_COLOR *cl);
+ }
+// </Snippet1>

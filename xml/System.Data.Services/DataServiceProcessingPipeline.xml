@@ -1,0 +1,102 @@
+<Type Name="DataServiceProcessingPipeline" FullName="System.Data.Services.DataServiceProcessingPipeline">
+  <TypeSignature Language="C#" Value="public sealed class DataServiceProcessingPipeline" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataServiceProcessingPipeline extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.DataServiceProcessingPipeline" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the events for the data service processing pipeline.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataServiceProcessingPipeline ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.DataServiceProcessingPipeline.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Services.DataServiceProcessingPipeline" /> instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessedChangeset">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;EventArgs&gt; ProcessedChangeset;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.EventArgs&gt; ProcessedChangeset" />
+      <MemberSignature Language="DocId" Value="E:System.Data.Services.DataServiceProcessingPipeline.ProcessedChangeset" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.EventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs after the change set has been processed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessedRequest">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Data.Services.DataServiceProcessingPipelineEventArgs&gt; ProcessedRequest;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Data.Services.DataServiceProcessingPipelineEventArgs&gt; ProcessedRequest" />
+      <MemberSignature Language="DocId" Value="E:System.Data.Services.DataServiceProcessingPipeline.ProcessedRequest" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Data.Services.DataServiceProcessingPipelineEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs after the request has been processed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessingChangeset">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;EventArgs&gt; ProcessingChangeset;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.EventArgs&gt; ProcessingChangeset" />
+      <MemberSignature Language="DocId" Value="E:System.Data.Services.DataServiceProcessingPipeline.ProcessingChangeset" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.EventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs before the change set is processed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessingRequest">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Data.Services.DataServiceProcessingPipelineEventArgs&gt; ProcessingRequest;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Data.Services.DataServiceProcessingPipelineEventArgs&gt; ProcessingRequest" />
+      <MemberSignature Language="DocId" Value="E:System.Data.Services.DataServiceProcessingPipeline.ProcessingRequest" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Data.Services.DataServiceProcessingPipelineEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs before the request is processed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

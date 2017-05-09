@@ -1,0 +1,39 @@
+<Type Name="VisualStyleElement+ToolBar" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+ToolBar">
+  <TypeSignature Language="C#" Value="public static class VisualStyleElement.ToolBar" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/ToolBar extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains classes that provide <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> objects for the parts of a toolbar. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar> class provides a foundation in which the following classes are defined:  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.Button>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.DropDownButton>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.SeparatorHorizontal>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.SeparatorVertical>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.SplitButton>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.SplitButtonDropDown>  
+  
+ Each of these classes provides a property that returns one or more <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> objects for the part of the toolbar specified by the class name.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

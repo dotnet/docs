@@ -1,0 +1,85 @@
+<Type Name="IDeserializationCallback" FullName="System.Runtime.Serialization.IDeserializationCallback">
+  <TypeSignature Language="C#" Value="public interface IDeserializationCallback" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDeserializationCallback" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.IDeserializationCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates that a class is to be notified when deserialization of the entire object graph has been completed. Note that this interface is not called when deserializing with the XmlSerializer (System.Xml.Serialization.XmlSerializer).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[IDeserializationCallback Interface Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/IDeserializationCallback Interface Example/CPP/ideserializationcallback.cpp#1)]
+ [!code-csharp[IDeserializationCallback Interface Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/IDeserializationCallback Interface Example/CS/ideserializationcallback.cs#1)]
+ [!code-vb[IDeserializationCallback Interface Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IDeserializationCallback Interface Example/VB/ideserializationcallback.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>Implement the current interface as part of support for a method that is called when deserialization of the object graph is complete.  
+  
+ If an object needs to execute code on its child objects, it can delay this action, implement <see cref="T:System.Runtime.Serialization.IDeserializationCallback" />, and execute the code only when it is called back on this interface.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="OnDeserialization">
+      <MemberSignature Language="C#" Value="public void OnDeserialization (object sender);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnDeserialization(object sender) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The object that initiated the callback. The functionality for this parameter is not currently implemented.</param>
+        <summary>Runs when the entire object graph has been deserialized.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[IDeserializationCallback Interface Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/IDeserializationCallback Interface Example/CPP/ideserializationcallback.cpp#1)]
+ [!code-csharp[IDeserializationCallback Interface Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/IDeserializationCallback Interface Example/CS/ideserializationcallback.cs#1)]
+ [!code-vb[IDeserializationCallback Interface Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IDeserializationCallback Interface Example/VB/ideserializationcallback.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

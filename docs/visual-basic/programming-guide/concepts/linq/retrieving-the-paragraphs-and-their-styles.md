@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: d9ed2238-d38e-4ad4-b88b-db7859df9bde
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Retrieving the Paragraphs and Their Styles (Visual Basic)

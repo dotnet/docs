@@ -1,0 +1,78 @@
+<Type Name="ComponentDesigner+ShadowPropertyCollection" FullName="System.ComponentModel.Design.ComponentDesigner+ShadowPropertyCollection">
+  <TypeSignature Language="C#" Value="protected sealed class ComponentDesigner.ShadowPropertyCollection" />
+  <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi sealed beforefieldinit ComponentDesigner/ShadowPropertyCollection extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ComponentDesigner.ShadowPropertyCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of shadow properties that should override inherited default or assigned values for specific properties. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ComponentModel.Design.ComponentDesigner.ShadowPropertyCollection> stores a collection of values for specific properties that override any other value for these properties at design time. This is useful for ensuring that a specific property is set to a specific value, for example, in situations when the background form should always have its visible property set to `true`.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentDesigner.ShadowPropertyCollection.Contains(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property to check for in the collection.</param>
+        <summary>Indicates whether a property matching the specified name exists in the collection.</summary>
+        <returns>
+          <see langword="true" /> if the property exists in the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object this[string propertyName] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ComponentDesigner.ShadowPropertyCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property to access in the collection.</param>
+        <summary>Gets or sets the object at the specified index.</summary>
+        <value>The value of the specified property, if it exists in the collection. Otherwise, the value is retrieved from the current value of the nonshadowed property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns the current value of a property, if the property has not been shadowed. Therefore, it is important to determine whether the property is shadowed by calling <xref:System.ComponentModel.Design.ComponentDesigner.ShadowPropertyCollection.Contains%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

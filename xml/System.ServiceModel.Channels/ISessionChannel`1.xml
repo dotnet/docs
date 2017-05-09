@@ -1,0 +1,60 @@
+<Type Name="ISessionChannel&lt;TSession&gt;" FullName="System.ServiceModel.Channels.ISessionChannel&lt;TSession&gt;">
+  <TypeSignature Language="C#" Value="public interface ISessionChannel&lt;TSession&gt; where TSession : ISession" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISessionChannel`1&lt;(class System.ServiceModel.Channels.ISession) TSession&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ISessionChannel`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TSession">
+      <Constraints>
+        <InterfaceName>System.ServiceModel.Channels.ISession</InterfaceName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TSession">The type of <see cref="T:System.ServiceModel.Channels.ISession" /> associated with the cannel.</typeparam>
+    <summary>Defines the interface that associates a channel with a specific type of session.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Channels.ISessionChannel%601> interface is the base interface for session-based channels. It associates the type of session with the channel by setting the generic type parameter `TSession` to a type that implements the <xref:System.ServiceModel.Channels.ISession> interface in a way that reflects its role in the message exchange. For example, the `TSession` is set to <xref:System.ServiceModel.Channels.IInputSession> for an incoming session on the receiving side of a one-way communication, to <xref:System.ServiceModel.Channels.IOutputSession> for an outgoing session on the sending side of a one-way communication, and to <xref:System.ServiceModel.Channels.IDuplexSession> for a duplex session for a bi-directional communication pattern.  
+  
+ The <xref:System.ServiceModel.Channels.ISessionChannel%601> interface provides a <xref:System.ServiceModel.Channels.ISessionChannel%601.Session%2A> property to retrieve the session with which the channel is associated.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Session">
+      <MemberSignature Language="C#" Value="public TSession Session { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TSession Session" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ISessionChannel`1.Session" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TSession</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of session associated with this channel.</summary>
+        <value>The type of <see cref="T:System.ServiceModel.Channels.ISession" /> associated with this channel.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This returns the generic parameter `TSession` used to define the interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

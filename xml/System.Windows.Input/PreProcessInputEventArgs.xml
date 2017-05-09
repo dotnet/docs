@@ -1,0 +1,95 @@
+<Type Name="PreProcessInputEventArgs" FullName="System.Windows.Input.PreProcessInputEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class PreProcessInputEventArgs : System.Windows.Input.ProcessInputEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PreProcessInputEventArgs extends System.Windows.Input.ProcessInputEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.PreProcessInputEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Input.ProcessInputEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for preprocess input events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Canceling a pre-process input stops the input from being processed further.  Listen for the <xref:System.Windows.Input.InputManager.PreNotifyInput> to determine if another handler canceled a pre-process input.  
+  
+ The input staging area processes input into [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] events.  
+  
+ All <xref:System.Windows.Input.InputManager.PreProcessInput> event handlers are called, even if one of the handlers cancels the input.  To verify if a handler further up the tree canceled the input, listen for the <xref:System.Windows.Input.InputManager.PreNotifyInput> event.  
+  
+ <xref:System.Windows.Input.PreProcessInputEventArgs> is used with the <xref:System.Windows.Input.InputManager.PreProcessInput> event.  
+  
+ Input is processed in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] in the follow stages:  
+  
+1.  Pre-process stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PreProcessInput> event.  
+  
+2.  Pre-notify stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PreNotifyInput> event.  
+  
+3.  The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] input event or events are raised.  
+  
+4.  Post-notify stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PostNotifyInput> event.  
+  
+5.  Post-process stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PostProcessInput> event.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="public void Cancel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Cancel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.PreProcessInputEventArgs.Cancel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Cancels the processing of the input event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Canceling a pre-process input stops the input from being processed further.  Listen for the <xref:System.Windows.Input.InputManager.PreNotifyInput> to determine if another handler canceled a pre-process input.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Canceled">
+      <MemberSignature Language="C#" Value="public bool Canceled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Canceled" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.PreProcessInputEventArgs.Canceled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determines whether processing of the input event was canceled.</summary>
+        <value>
+          <see langword="true" /> if the processing was canceled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Canceling a pre-process input stops the input from being processed further.  Listen for the <xref:System.Windows.Input.InputManager.PreNotifyInput> to determine if another handler canceled a pre-process input.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

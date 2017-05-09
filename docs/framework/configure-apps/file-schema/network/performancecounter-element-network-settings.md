@@ -1,0 +1,91 @@
+---
+title: "&lt;performanceCounter&gt; Element (Network Settings) | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net-framework"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "dotnet-clr"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/settings/performanceCounters"
+  - "http://schemas.microsoft.com/.NetConfiguration/v2.0#performanceCounters"
+dev_langs: 
+  - "VB"
+  - "CSharp"
+  - "C++"
+  - "jsharp"
+helpviewer_keywords: 
+  - "performanceCounter element"
+  - "<performanceCounter> element"
+ms.assetid: 3afa1586-e1b8-473d-8985-c3fc90cf561b
+caps.latest.revision: 11
+author: "mcleblanc"
+ms.author: "markl"
+manager: "markl"
+---
+# &lt;performanceCounter&gt; Element (Network Settings)
+Enables or disables networking performance counters.  
+  
+ \<configuration>  
+\<system.net>  
+\<settings>  
+\<performanceCounters>  
+  
+## Syntax  
+  
+```  
+<performanceCounters  
+  enabled="true|false"  
+/>  
+```  
+  
+## Attributes and Elements  
+ The following sections describe attributes, child elements, and parent elements.  
+  
+### Attributes  
+  
+|Attribute|Description|  
+|---------------|-----------------|  
+|`enabled`|Specifies whether the networking performance counters are enabled. The default value is `false`.|  
+  
+### Child Elements  
+ None.  
+  
+### Parent Elements  
+  
+|Element|Description|  
+|-------------|-----------------|  
+|[settings](../../../../../docs/framework/configure-apps/file-schema/network/settings-element-network-settings.md)|Configures basic network options for the <xref:System.Net> namespace.|  
+  
+## Remarks  
+ This element can be used in the application configuration file or the machine configuration file (Machine.config).  
+  
+ Networking performance counters need to be enabled in the configuration file to be used. All networking performance counters are enabled or disabled with a single setting in the configuration file. Individual networking performance counters cannot be enabled or disabled. For more information on the specific networking performance counters, see [Networking Performance Counters](http://msdn.microsoft.com/en-us/d1860235-f643-46ae-846c-ff0ed8b0e3cd).  
+  
+ The default value is that networking performance counters are disabled.  
+  
+ The <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=fullName> property can be used to get the current value of the **enabled** attribute from applicable configuration files.  
+  
+## Example  
+ The following code example shows how to configure the <xref:System.Net> and related namespaces to enable networking performance counters.  
+  
+```  
+<configuration>  
+  <system.net>  
+    <settings>  
+      <performanceCounters  
+        enabled="true"  
+      />  
+    </settings>  
+  </system.net>  
+</configuration>  
+```  
+  
+## See Also  
+ <xref:System.Net.Configuration.PerformanceCountersElement?displayProperty=fullName>   
+ <xref:System.Net.Configuration.PerformanceCountersElement.Enabled%2A?displayProperty=fullName>   
+ [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)   
+ [Networking Performance Counters](http://msdn.microsoft.com/en-us/d1860235-f643-46ae-846c-ff0ed8b0e3cd)

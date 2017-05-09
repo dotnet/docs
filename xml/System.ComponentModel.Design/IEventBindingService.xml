@@ -1,0 +1,315 @@
+<Type Name="IEventBindingService" FullName="System.ComponentModel.Design.IEventBindingService">
+  <TypeSignature Language="C#" Value="public interface IEventBindingService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEventBindingService" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IEventBindingService" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a service for registering event handlers for component events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The event binding service provides a way to link an event handler with a component event from designer code.  
+  
+ To link an event handler with a component event using the <xref:System.ComponentModel.Design.IEventBindingService>, you must first obtain an <xref:System.ComponentModel.EventDescriptor> for the event of the component you intend to link. The <xref:System.ComponentModel.Design.IEventBindingService> provides methods that can convert an <xref:System.ComponentModel.EventDescriptor> to a <xref:System.ComponentModel.PropertyDescriptor> which you can use to configure the event with an event handler method name.  
+  
+ The <xref:System.ComponentModel.TypeDescriptor> object provides a <xref:System.ComponentModel.TypeDescriptor.GetEvents%2A> method that you can use to obtain an <xref:System.ComponentModel.EventDescriptorCollection> containing <xref:System.ComponentModel.EventDescriptor> objects for each event of a component. The <xref:System.ComponentModel.Design.IEventBindingService.GetEventProperty%2A> and <xref:System.ComponentModel.Design.IEventBindingService.GetEventProperties%2A> methods of the <xref:System.ComponentModel.Design.IEventBindingService> return a <xref:System.ComponentModel.PropertyDescriptor> for each <xref:System.ComponentModel.EventDescriptor> passed to either method. Each <xref:System.ComponentModel.PropertyDescriptor> returned from <xref:System.ComponentModel.Design.IEventBindingService.GetEventProperty%2A> or <xref:System.ComponentModel.Design.IEventBindingService.GetEventProperties%2A> has a property type of string. You can set this string to a value that indicates the name of the event-handler method to link the event with using the <xref:System.ComponentModel.PropertyDescriptor.SetValue%2A> method of the <xref:System.ComponentModel.PropertyDescriptor>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a designer that uses the <xref:System.ComponentModel.Design.IEventBindingService> to link a component's event with an event handler at design time when the custom shortcut menu command that the designer adds for the component is invoked. To use the example, compile it to a class library, add a reference from a Windows Forms project, add the component in the class library to the Toolbox by right-clicking the Toolbox and selecting Customize Toolbox..., then choosing the class library and clicking OK, and add an instance of the EventControl to a Form. Then right-click the EventControl and click the Connect testEvent shortcut menu command. An empty event handler method is created and the EventControl's testEvent method is initialized to this event handler in the initialization code for the Form.  
+  
+ [!code-cpp[IEventBindingServiceExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IEventBindingServiceExample/CPP/source.cpp#1)]
+ [!code-csharp[IEventBindingServiceExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IEventBindingServiceExample/CS/source.cs#1)]
+ [!code-vb[IEventBindingServiceExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IEventBindingServiceExample/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateUniqueMethodName">
+      <MemberSignature Language="C#" Value="public string CreateUniqueMethodName (System.ComponentModel.IComponent component, System.ComponentModel.EventDescriptor e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string CreateUniqueMethodName(class System.ComponentModel.IComponent component, class System.ComponentModel.EventDescriptor e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IEventBindingService.CreateUniqueMethodName(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component instance the event is connected to.</param>
+        <param name="e">The event to create a name for.</param>
+        <summary>Creates a unique name for an event-handler method for the specified component and event.</summary>
+        <returns>The recommended name for the event-handler method for this event.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a name that is unique from any other method name in the user's source code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCompatibleMethods">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection GetCompatibleMethods (System.ComponentModel.EventDescriptor e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ICollection GetCompatibleMethods(class System.ComponentModel.EventDescriptor e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IEventBindingService.GetCompatibleMethods(System.ComponentModel.EventDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event to get the compatible event-handler methods for.</param>
+        <summary>Gets a collection of event-handler methods that have a method signature compatible with the specified event.</summary>
+        <returns>A collection of strings.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each string in the collection is the name of a method that has a method signature compatible with the specified event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEvent">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.EventDescriptor GetEvent (System.ComponentModel.PropertyDescriptor property);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.EventDescriptor GetEvent(class System.ComponentModel.PropertyDescriptor property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IEventBindingService.GetEvent(System.ComponentModel.PropertyDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.EventDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="System.ComponentModel.PropertyDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="property">The property that represents an event.</param>
+        <summary>Gets an <see cref="T:System.ComponentModel.EventDescriptor" /> for the event that the specified property descriptor represents, if it represents an event.</summary>
+        <returns>An <see cref="T:System.ComponentModel.EventDescriptor" /> for the event that the property represents, or <see langword="null" /> if the property does not represent an event.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEventProperties">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.PropertyDescriptorCollection GetEventProperties (System.ComponentModel.EventDescriptorCollection events);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection GetEventProperties(class System.ComponentModel.EventDescriptorCollection events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IEventBindingService.GetEventProperties(System.ComponentModel.EventDescriptorCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="events" Type="System.ComponentModel.EventDescriptorCollection" />
+      </Parameters>
+      <Docs>
+        <param name="events">The events to convert to properties.</param>
+        <summary>Converts a set of event descriptors to a set of property descriptors.</summary>
+        <returns>An array of <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects that describe the event set.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each returned <xref:System.ComponentModel.PropertyDescriptor> has a <xref:System.ComponentModel.PropertyDescriptor.PropertyType%2A> of string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEventProperty">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.PropertyDescriptor GetEventProperty (System.ComponentModel.EventDescriptor e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptor GetEventProperty(class System.ComponentModel.EventDescriptor e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IEventBindingService.GetEventProperty(System.ComponentModel.EventDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event to convert.</param>
+        <summary>Converts a single event descriptor to a property descriptor.</summary>
+        <returns>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that describes the event.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned <xref:System.ComponentModel.PropertyDescriptor> has a <xref:System.ComponentModel.PropertyDescriptor.PropertyType%2A> of string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowCode">
+      <MemberSignature Language="C#" Value="public bool ShowCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ShowCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IEventBindingService.ShowCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Displays the user code for the designer.</summary>
+        <returns>
+          <see langword="true" /> if the code is displayed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method displays the code editor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowCode">
+      <MemberSignature Language="C#" Value="public bool ShowCode (int lineNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ShowCode(int32 lineNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IEventBindingService.ShowCode(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lineNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="lineNumber">The line number to place the caret on.</param>
+        <summary>Displays the user code for the designer at the specified line.</summary>
+        <returns>
+          <see langword="true" /> if the code is displayed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method displays the code editor and positions the cursor on the specified line.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowCode">
+      <MemberSignature Language="C#" Value="public bool ShowCode (System.ComponentModel.IComponent component, System.ComponentModel.EventDescriptor e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ShowCode(class System.ComponentModel.IComponent component, class System.ComponentModel.EventDescriptor e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IEventBindingService.ShowCode(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component that the event is connected to.</param>
+        <param name="e">The event to display.</param>
+        <summary>Displays the user code for the specified event.</summary>
+        <returns>
+          <see langword="true" /> if the code is displayed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method displays the code editor and positions the cursor on the line that the specified event is declared on.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

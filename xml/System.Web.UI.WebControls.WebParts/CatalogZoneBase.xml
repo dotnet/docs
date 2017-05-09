@@ -1,0 +1,1276 @@
+<Type Name="CatalogZoneBase" FullName="System.Web.UI.WebControls.WebParts.CatalogZoneBase">
+  <TypeSignature Language="C#" Value="public abstract class CatalogZoneBase : System.Web.UI.WebControls.WebParts.ToolZone, System.Web.UI.IPostBackDataHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CatalogZoneBase extends System.Web.UI.WebControls.WebParts.ToolZone implements class System.Web.UI.IPostBackDataHandler" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.WebParts.ToolZone</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.IPostBackDataHandler</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Serves as the base class for all zone controls that act as catalogs. Catalogs contain lists of <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls that users can add to a Web page.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class is a base class that inherits from the <xref:System.Web.UI.WebControls.WebParts.ToolZone> class. It provides a base set of behaviors for derived zones.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class provides a unique user interface (UI) that enables users to add <xref:System.Web.UI.WebControls.WebParts.WebPart> controls and other server controls to Web pages. Controls that derive from the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class, such as <xref:System.Web.UI.WebControls.WebParts.CatalogZone>, are the controls actually placed on Web pages. They act as containers for other controls, known as <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls, that create lists of server controls for users to add to a page. Zones that derive from the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class can appear only when the page is in catalog display mode.  
+  
+> [!NOTE]
+>  A <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> zone can contain only <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls, and conversely, <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls can reside only in <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> zones.  
+  
+ The mechanism for adding server controls to a catalog is the following set of three controls that derive from the base <xref:System.Web.UI.WebControls.WebParts.CatalogPart> class.  
+  
+|Control|Description|  
+|-------------|-----------------|  
+|<xref:System.Web.UI.WebControls.WebParts.PageCatalogPart>|Maintains references to controls that have been closed on a page. These controls can be reopened (added back to the page) by users.|  
+|<xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart>|Contains references to controls that are declared in a Web Parts catalog in the markup of a Web page. These controls can be added to a Web page by users.|  
+|<xref:System.Web.UI.WebControls.WebParts.ImportCatalogPart>|Provides the UI for a user to upload a definition file to a catalog so that the control can be added to a Web page. Definition files are XML file with a .WebPart file name extension that import settings for a control. The control must be present on the server before the definition file can be imported.|  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class has a number of properties that are useful for displaying catalogs of <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.AddVerb%2A> property references the verb that adds a selected control from the catalog to the page, while the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CloseVerb%2A> property references a verb that closes the catalog and returns the page's display mode to browse mode. The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CatalogParts%2A> property references the collection of all <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls in the zone. Several text-oriented properties, such as <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.EmptyZoneText%2A>, <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.HeaderText%2A>, and <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.InstructionText%2A>, override base properties to provide default text appropriate for catalogs. The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectTargetZoneText%2A> property contains the text alongside the drop-down list control that allows users to choose which zone a control will be added to.  
+  
+ Several other properties are included in the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class. The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedCatalogPartID%2A> property is a unique string identifier for the currently selected <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control. The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.ShowCatalogIcons%2A> property indicates whether to show the icons that can be associated with controls by setting the <xref:System.Web.UI.WebControls.WebParts.WebPart.CatalogIconImageUrl%2A> property on a <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.PartLinkStyle%2A> property contains style attributes for the links to the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls that are not currently selected in the zone. In contrast, the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedPartLinkStyle%2A> property contains style attributes for a link to the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control that the user has currently selected in the zone.  
+  
+ In addition to the properties, there are also some methods in the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class, in addition to the standard event-handling and rendering methods inherited from other base controls, which are uniquely designed for the purpose of handling catalogs of controls. The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogPartChrome%2A> method creates the chrome (peripheral UI elements such as a border, verbs, icons, and a title) that surrounds each <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control in the zone, and also handles the rendering for the controls. The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogParts%2A> method is an abstract method; derived classes override it to create instances of all the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls contained in the zone. The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.InvalidateCatalogParts%2A> method can be called by a derived class if the collection of <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls in the zone changes for some programmatic reason, and the derived class needs to recreate the collection. The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.LoadPostData%2A> method loads the previously existing state for the check boxes next to the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in the catalog, whenever the page is posted back to the server; conversely, the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SaveControlState%2A> method saves the state of the check boxes. Finally, the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderCatalogPartLinks%2A> method provides all the rendering for the links to each <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control contained in the zone.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates several declarative and programmatic uses of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class. Because the class is abstract, the code examples use the derived <xref:System.Web.UI.WebControls.WebParts.CatalogZone> class that ships with the Web Parts control set, demonstrating the properties and methods that it inherits from the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class.  
+  
+ The code example has four parts:  
+  
+-   A user control that enables you to change display modes on the Web page.  
+  
+-   A Web page that contains a reference to a <xref:System.Web.UI.WebControls.WebParts.CatalogZone> control, and some code that demonstrates usage of some key <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class members.  
+  
+-   A custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control that is added to the custom <xref:System.Web.UI.WebControls.WebParts.CatalogZone> control.  
+  
+-   A description of how the example works in a browser.  
+  
+ The first part of this code example is the user control that enables you to change display modes on the page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#8](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/displaymodemenucs.ascx#8)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/displaymodemenuvb.ascx#8)]  -->  
+  
+ The second part of the code example is a Web page that contains a declarative reference to a <xref:System.Web.UI.WebControls.WebParts.CatalogZone> control. Near the top of the page are two `Register` directives--one for the user control, and one for the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control. Notice that below the `<asp:WebPartZone>` element is an `<asp: CatalogZone>` element that contains declarative references to the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control, and to an ASP.NET <xref:System.Web.UI.WebControls.Calendar> control. The zone also has a variety of tags and properties set to determine its appearance and behavior. Between the `<script>` tags in the page is a variety of event-handling code, most of which demonstrates the various programmatic uses of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> members.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#1)]  -->  
+  
+ The third part of the code example is the custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control named `TextDisplayWebPart`. It is declared within the zone, and an end user can add it from the catalog to the page. For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. For a demonstration of both methods of compiling, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_CatalogZoneBase_Overview#9](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/textdisplaywebpart.cs#9)]
+ [!code-vb[WebParts_CatalogZoneBase_Overview#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/textdisplaywebpart.vb#9)]  
+  
+ Note that for the code example to work, there is a setting you must add in the Web.config file to enable exporting Web Parts description files. Ensure that you have a Web.config file in the same directory as the Web page for this code example. Within the `<system.web>` section, make sure there is a `<webParts>` element with an `enableExport` attribute set to `true`, as in the following markup.  
+  
+ `<webParts enableExport="true">`  
+  
+ `...`  
+  
+ `</webParts>`  
+  
+ When you load the page in a browser, you can select **Catalog** from the drop-down list box to switch to catalog display mode. When the catalog is visible, you can see the two server controls that can be added from the catalog to the page, and you can also note in the UI the effects of the declarative and programmatic uses of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class members.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>If you want to develop a custom zone for hosting <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls, you must determine whether you want to provide zone template support. A zone template is created by types that implement the <see cref="T:System.Web.UI.ITemplate" /> interface, and is necessary if you want to enable page developers using your custom zone to reference <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls within your zone in the declarative markup of a Web page. If you need zone template support, you should inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZone" /> class. In contrast, if your custom zone and its <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls are going to be self-contained, and they will be created programmatically without any options for page developers to specify controls declaratively in a zone template, then you can inherit directly from the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> class. If you inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> class, you must override the <see cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogParts" /> method, and add the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> or other server controls you want in your catalog to a <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" /> object.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CatalogZoneBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes the class for use by an inherited class instance. This constructor can only be called by an inherited class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor is called when a derived class is initialized, such as the <xref:System.Web.UI.WebControls.WebParts.CatalogZone> class provided with the Web Parts control set. The base <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.%23ctor%2A> constructor helps prepare the page to display the Web Parts catalog user interface (UI), by passing the appropriate <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayMode> object to the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control. Specifically, the constructor passes a <xref:System.Web.UI.WebControls.WebParts.WebPartManager.CatalogDisplayMode> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddVerb">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.WebPartVerb AddVerb { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb AddVerb" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.AddVerb" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPartVerb</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> object that enables end users to add controls from a catalog to a Web Parts page.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> that enables end users to add controls from the catalog to a Web page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The add verb is referenced by the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.AddVerb%2A> property on a control derived from the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class. The add verb adds a control that an end user has selected in the catalog to a Web page. Typically, the add verb appears in the user interface (UI) as a <xref:System.Web.UI.WebControls.Button> control, although it can also be a link or an image.  
+  
+ The add verb is a zone-level control, meaning that although there might be several <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls in the catalog, the add verb applies to all the controls selected by the user and adds them to the selected zone.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to access the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.AddVerb%2A> property both declaratively and programmatically. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class overview.  
+  
+ The first part of the code example shows how to access the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.ApplyVerb%2A> property declaratively in a Web page. This example customizes the text for the verb.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  -->  
+  
+ The second part of the example shows how to access the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.AddVerb%2A> property programmatically, by using a toggle button to enable or disable it.  
+  
+ [!code-csharp[WebParts_CatalogZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#3)]
+ [!code-vb[WebParts_CatalogZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#3)]  
+  
+ When you load the page in a browser, you can select **Catalog** from the drop-down list to switch to catalog display mode. When the catalog is visible, you can examine the customized text on the <xref:System.Web.UI.WebControls.Button> control for the add verb, and you can click the **Enable or Disable Verbs** button to demonstrate that you can access the apply verb programmatically.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CatalogPartChrome">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.CatalogPartChrome CatalogPartChrome { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.CatalogPartChrome CatalogPartChrome" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CatalogPartChrome" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.CatalogPartChrome</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the instance of the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartChrome" /> class associated with the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> zone.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartChrome" /> that is associated with the zone.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogPartChrome%2A> method is called, it creates one instance of the <xref:System.Web.UI.WebControls.WebParts.CatalogPartChrome> class, and this instance is used to render the peripheral user interface (UI) elements (also called the chrome) for all <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls in a zone.  
+  
+ The chrome elements for an individual <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control include its border and title text. The <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls provided with the Web Parts control set do not have header verbs by default.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CatalogParts">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.CatalogPartCollection CatalogParts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.CatalogPartCollection CatalogParts" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CatalogParts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.CatalogPartCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of all the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls contained in a <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> zone.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" /> that contains all the individual <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls in a zone.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CatalogParts%2A> property provides a reference to a collection of all the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls in the zone. It references both the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls provided with the Web Parts control set, and any custom <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls that are added to the zone.  
+  
+ The collection is initially created when another method accesses the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CatalogParts%2A> property, and the property calls the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogParts%2A> method.  
+  
+> [!NOTE]
+>  Note that any <xref:System.Web.UI.WebControls.WebParts.CatalogPart> that is added to the collection of <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls in an implementation of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogParts%2A> method must have a value assigned to its ID property, otherwise an exception will be thrown when the collection is assigned to the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CatalogParts%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to access the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CatalogParts%2A> property programmatically. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class overview.  
+  
+ The code example shows how to access the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CatalogParts%2A> property, iterate through the collection, and list the IDs of all the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls in the zone.  
+  
+ [!code-csharp[WebParts_CatalogZoneBase_Overview#4](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#4)]
+ [!code-vb[WebParts_CatalogZoneBase_Overview#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#4)]  
+  
+ When you load the page in a browser, you can select **Catalog** from the drop-down list to switch to catalog display mode. When the catalog is visible, you can click the **List CatalogParts** button to demonstrate how the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CatalogParts%2A> property can be accessed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">A <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> being added to the collection did not have a value assigned to its ID property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="protected override void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Switches the Web page from catalog display mode to normal browse mode.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.Close%2A> method ignores any currently selected controls in the catalog. It simply calls the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control to return the Web page to browse mode.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseVerb">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.WebPartVerb CloseVerb { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb CloseVerb" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CloseVerb" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPartVerb</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> object that enables end users to close the catalog user interface (UI) and return the page to normal browse mode.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> that enables end users to close the catalog UI on the Web page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The close verb is referenced by the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CloseVerb%2A> property on a control derived from the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class.  
+  
+ User can click the close verb in the zone footer. When the user clicks the close verb, any <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls the user has selected are ignored, the catalog UI closes, and the page returns to normal browse mode.  
+  
+ The close verb is a zone-level control, meaning that its action applies at the level of the whole zone. When a user clicks the close verb, any controls that have been selected but not added to the page are ignored, the catalog is closed, and the page returns to browse mode.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to access the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CloseVerb%2A> property both declaratively and programmatically. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class overview.  
+  
+ The first part of the code example shows how to access the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CloseVerb%2A> property declaratively in a Web page. This example customizes the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb.Description%2A> property for the verb.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  -->  
+  
+ The second part of the example shows how to access the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CloseVerb%2A> property programmatically, by using a toggle button to enable or disable it.  
+  
+ [!code-csharp[WebParts_CatalogZoneBase_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#3)]
+ [!code-vb[WebParts_CatalogZoneBase_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#3)]  
+  
+ When you load the page in a browser, you can select **Catalog** from the drop-down list to switch to catalog display mode. When the catalog is visible, by positioning your mouse pointer over the **Close** button, you can see its description text in a ToolTip. You can also click the **Enable or Disable Verbs** button to demonstrate that you can access the close verb programmatically.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCatalogPartChrome">
+      <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.WebParts.CatalogPartChrome CreateCatalogPartChrome ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.WebParts.CatalogPartChrome CreateCatalogPartChrome() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogPartChrome" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.CatalogPartChrome</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an instance of a <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartChrome" /> object used to render the peripheral user interface (UI) elements for <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls in a zone.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartChrome" /> that renders the peripheral UI elements for the zone.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogPartChrome%2A> method returns a <xref:System.Web.UI.WebControls.WebParts.CatalogPartChrome> object. The chrome elements for an individual <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control include its border and title text. The <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls provided with the Web Parts control set do not have header verbs by default. However, it is possible to set the <xref:System.Web.UI.WebControls.WebParts.Part.ChromeState%2A> property of a <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control, so that you can minimize and restore the control programmatically if needed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCatalogParts">
+      <MemberSignature Language="C#" Value="protected abstract System.Web.UI.WebControls.WebParts.CatalogPartCollection CreateCatalogParts ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.WebParts.CatalogPartCollection CreateCatalogParts() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogParts" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.CatalogPartCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides a base method declaration that derived zones can override to handle the details of creating the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls contained in a zone.</summary>
+        <returns>A <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" /> that contains the collection of <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls associated with the zone.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogParts%2A> method provides no implementation. It is intended to be implemented in a derived class, and should be used to create an instance of the collection of <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls contained in a zone, whenever the hosting Web page enters catalog mode. The <xref:System.Web.UI.WebControls.WebParts.CatalogZone.CreateCatalogParts%2A?displayProperty=fullName> method provides one example of an implementation of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogParts%2A> method.  
+  
+> [!NOTE]
+>  Note that any <xref:System.Web.UI.WebControls.WebParts.CatalogPart> that is added to the collection of <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls in an implementation of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogParts%2A> method must have a value assigned to its ID property, otherwise an exception will be thrown when the collection is assigned to the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CatalogParts%2A> property.  
+  
+ The method can create the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls from several sources: controls that are declared in persistence format within a <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart> control, or controls that are persisted in various storage mechanisms, such as an XML file or a database.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Developers who create custom <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls should inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> or <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZone" /> classes, and override this method if they want to create a custom <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartChrome" /> object to render their custom <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChildControls">
+      <MemberSignature Language="C#" Value="protected override void CreateChildControls ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void CreateChildControls() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateChildControls" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates the set of child controls associated with a <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> zone.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmptyZoneText">
+      <MemberSignature Language="C#" Value="public override string EmptyZoneText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EmptyZoneText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.EmptyZoneText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a message that appears when a zone contains no controls.</summary>
+        <value>A string containing the message that appears in an empty zone. A default culture-specific string is supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string value of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.EmptyZoneText%2A> property is displayed when a Web page enters catalog mode, if the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> zone contains no <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.EmptyZoneText%2A> property declaratively. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class overview.  
+  
+ Notice that the code example declares two `<asp:catalogzone>` elements, and the second one does not declare any <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls, though it does assign a value to the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.EmptyZoneText%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  -->  
+  
+ When you load the page in a browser, you can select **Catalog** from the drop-down list to switch to catalog display mode. When the catalog is visible, notice that below the first zone, which contains two <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls, the second zone appears, and displays the contents of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.EmptyZoneText%2A> property because it contains no controls.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderText">
+      <MemberSignature Language="C#" Value="public override string HeaderText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HeaderText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.HeaderText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text for the header area of a zone.</summary>
+        <value>A string that contains the header text for the zone. A default culture-specific string is supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string value of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.HeaderText%2A> property is displayed in the header area of a <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> zone, which is at the very top of the zone. The text of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.HeaderText%2A> property is displayed when a page enters catalog mode and the catalog user interface (UI) becomes visible.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.HeaderText%2A> property declaratively and programmatically. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class overview.  
+  
+ Notice that the code example declares two `<asp:catalogzone>` elements. The second one does not declare any <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls, but both declare a value for the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.HeaderText%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  -->  
+  
+ In the second part of the code example, the value of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.HeaderText%2A> property in the first zone is programmatically assigned to a different value.  
+  
+ [!code-csharp[WebParts_CatalogZoneBase_Overview#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#5)]
+ [!code-vb[WebParts_CatalogZoneBase_Overview#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#5)]  
+  
+ When you load the page in a browser, you can select **Catalog** from the drop-down list to switch to catalog display mode. When the catalog is visible, notice the values of each <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.HeaderText%2A> property displayed in the header area of each zone. You can click the **Set Zone Text Properties** button, and the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.HeaderText%2A> property of the upper zone is set to the value assigned to it in the code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstructionText">
+      <MemberSignature Language="C#" Value="public override string InstructionText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InstructionText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.InstructionText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text in a zone that provides directions for end users.</summary>
+        <value>A string that contains the directions for end users. A default, culture-specific string is provided by the Web Parts control set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string value of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.InstructionText%2A> property is displayed just below the header area of a <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> zone. The text of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.InstructionText%2A> property is displayed when a page enters catalog mode and the catalog user interface (UI) becomes visible.  
+  
+ The purpose of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.InstructionText%2A> property is to provide the user with general instructions on what to do when the catalog UI is displayed.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.InstructionText%2A> property declaratively and programmatically. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class overview.  
+  
+ Notice that the code example declares two `<asp:catalogzone>` elements, and the first one declares a value for the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.InstructionText%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  -->  
+  
+ In the second part of the code example, the value of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.InstructionText%2A> property in the first zone is programmatically assigned to a different value.  
+  
+ [!code-csharp[WebParts_CatalogZoneBase_Overview#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#5)]
+ [!code-vb[WebParts_CatalogZoneBase_Overview#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#5)]  
+  
+ When you load the page in a browser, you can select **Catalog** from the drop-down list to switch to catalog display mode. When the catalog is visible, notice the value of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.InstructionText%2A> property displayed in the header area of each zone. You can click the **Set Zone Text Properties** button, and the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.InstructionText%2A> property of the upper zone is set to the value assigned to it in the code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidateCatalogParts">
+      <MemberSignature Language="C#" Value="protected void InvalidateCatalogParts ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void InvalidateCatalogParts() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.InvalidateCatalogParts" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Destroys the collection of <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls associated with a <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> zone.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.InvalidateCatalogParts%2A> method can be called by derived classes if the list of <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls associated with a <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> zone has changed for some reason, and the derived class needs to get an updated list of <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls. The derived class should first call <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.InvalidateCatalogParts%2A> to destroy the current collection, and then the base class will call <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CreateCatalogParts%2A> as needed to create the updated collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadControlState">
+      <MemberSignature Language="C#" Value="protected override void LoadControlState (object savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void LoadControlState(object savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.LoadControlState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">The previously saved state data.</param>
+        <summary>Loads the state from a previous page request for control properties that should persist across postbacks even when view state is disabled on the control.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="savedState" /> is not a valid control state.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadPostData">
+      <MemberSignature Language="C#" Value="protected virtual bool LoadPostData (string postDataKey, System.Collections.Specialized.NameValueCollection postCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="postDataKey" Type="System.String" />
+        <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="postDataKey">The key identifier for the control.</param>
+        <param name="postCollection">The collection of name/value pairs posted to the server.</param>
+        <summary>Processes the state of the check boxes that correspond to the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls in the catalog, when the page is posted back to the server.</summary>
+        <returns>This method, in contrast to the overridden base method, always returns <see langword="false" />, because the class does not expose any change event.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method iterates through the collection of <xref:System.Web.UI.WebControls.CheckBox> controls to determine which <xref:System.Web.UI.WebControls.WebParts.WebPart> or other server controls in the catalog have been selected by a user. The selected items are assigned to an internal array, which is then processed to add the corresponding controls to the Web page.  
+  
+ The method is not designed to be called from your code; it is used internally by the Web Parts control set.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadViewState">
+      <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.LoadViewState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">The previously saved state data.</param>
+        <summary>Loads previously saved state information for a zone.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, you can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.LoadViewState%2A> method first calls the base method to load any previously existing state information. Next, it adds the view-state data object containing the state information for the add verb, the close verb, the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.PartLinkStyle%2A> object, and the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedPartLinkStyle%2A> object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The size of the <paramref name="savedState" /> object does not equal the size of the current view-state object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInit">
+      <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.OnInit(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Registers the page object so that the page requires control state.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPreRender">
+      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.OnPreRender(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event and registers the page object so that it requires postbacks.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PartLinkStyle">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style PartLinkStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style PartLinkStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.PartLinkStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that contains style attributes for the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls that are not currently selected in the zone.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.Style" /> that contains style attributes for the controls that are not currently selected.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> zone, links are displayed for each type of <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control: <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart>, <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart>, and <xref:System.Web.UI.WebControls.WebParts.ImportCatalogPart>. When a user clicks one of the links, the corresponding <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control becomes the selected control, and the child controls contained by that selected control become visible.  
+  
+ The <xref:System.Web.UI.WebControls.Style> object referenced by the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.PartLinkStyle%2A> property contains the style attributes for the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls that are not currently selected. Although the object referenced by the property is read-only, you can still use it to set the underlying style characteristics for the unselected <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.PartLinkStyle%2A> property declaratively and programmatically. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class overview.  
+  
+ Notice that the first part of the code example declares two `<asp:catalogzone>` elements, and the first one declares a value for the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.PartLinkStyle%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  -->  
+  
+ In the second part of the code example, the text color for the unselected <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls is set to a different value.  
+  
+ [!code-csharp[WebParts_CatalogZoneBase_Overview#7](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#7)]
+ [!code-vb[WebParts_CatalogZoneBase_Overview#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#7)]  
+  
+ When you load the page in a browser, you can select **Catalog** from the drop-down list to switch to catalog display mode. When the catalog is visible, notice the style attributes of the unselected <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls listed in the zone (by default, the selected <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control is the <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart> control). You can click the **Change Part Link Styles** button to change the text color of the unselected controls. You can also click the links for the unselected controls, to see how the style attributes change when a control is selected.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaisePostBackEvent">
+      <MemberSignature Language="C#" Value="protected override void RaisePostBackEvent (string eventArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RaisePostBackEvent(string eventArgument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RaisePostBackEvent(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgument" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgument">A <see cref="T:System.String" /> that contains the argument for the event.</param>
+        <summary>Carries out the actions associated with one of the zone verbs, or raises an event that posts back to the server.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `eventArgument` parameter data indicates that the add verb or the close verb was clicked, then the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RaisePostBackEvent%2A> method carries out the action associated with the verb, such as adding <xref:System.Web.UI.WebControls.WebParts.WebPart> controls to the page, or closing the catalog. If the method is being called for any other reason, then the base method is invoked to raise a postback event to the server.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If you want to add custom verbs to a <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> zone, you need to override the <see cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RaisePostBackEvent(System.String)" /> method to handle the event if a user clicks a custom verb.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the zone's content.</param>
+        <summary>Renders the zone to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.Render%2A> method overrides the base method from the <xref:System.Web.UI.WebControls.WebControl> class to call the <xref:System.Web.UI.Page.VerifyRenderingInServerForm%2A> method, which verifies that an HTML form is rendered for the zone control at run time. After the verification, the method then renders the remaining contents of the zone.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderBody">
+      <MemberSignature Language="C#" Value="protected override void RenderBody (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderBody(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderBody(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the zone's body content.</param>
+        <summary>Overrides the base method to render the body area of a zone derived from the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderBody%2A> method renders the body area of a <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> zone, which is the main content area between the header and footer areas and contains <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderBody%2A> method overrides the base method in the <xref:System.Web.UI.WebControls.WebParts.WebZone> class to provide specialized rendering that addresses layout and style attributes that apply only to <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> zones. The method renders a table that contains the entire contents of the body, and within that table, it sets different attribute values depending on various conditions, including how many <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls are in the zone. If there are multiple <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls, a link is created for each control, and only the contents of the currently selected control are displayed. Special style attributes are set in the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.CatalogPartChrome%2A> property for the selected <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control versus the ones that are not currently selected.  
+  
+ If there are no <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls in the zone, the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderBody%2A> method renders the value of the <xref:System.Web.UI.WebControls.WebParts.EditorZoneBase.EmptyZoneText%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderCatalogPartLinks">
+      <MemberSignature Language="C#" Value="protected virtual void RenderCatalogPartLinks (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderCatalogPartLinks(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderCatalogPartLinks(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the contents of the links to the zone's controls.</param>
+        <summary>Renders the links to the individual <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls in a <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> zone.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderCatalogPartLinks%2A> method renders links to the individual <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls in a zone if there are multiple <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls.  
+  
+ The link for the currently selected <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control is rendered differently so that it stands out from the unselected controls. Developers can set the style attributes for the selected and unselected control links by using the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedPartLinkStyle%2A> and <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.PartLinkStyle%2A> properties, respectively.  
+  
+ The links to the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls in a zone are not navigational; they are for displaying the user interface (UI) of the controls. When a user clicks the link for a control, the UI for any other displayed control is hidden, and the UI for the selected control is displayed.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If you create a custom class that inherits from the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> class, you can optionally override the <see cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderCatalogPartLinks(System.Web.UI.HtmlTextWriter)" /> method. This method gives you programmatic control over how the links to <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls in your zone are rendered.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderFooter">
+      <MemberSignature Language="C#" Value="protected override void RenderFooter (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderFooter(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderFooter(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that renders the footer area for the zone.</param>
+        <summary>Renders the footer area for a <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> zone.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The footer of a <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> zone is the bottom area of the zone that contains the zone-level verbs such as the add verb and the close verb. In the underlying markup, a footer is simply a cell in an HTML table.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderFooter%2A> method first creates the style attributes for the footer, and then calls the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderVerbs%2A> method to render the add and close verbs.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderVerbs">
+      <MemberSignature Language="C#" Value="protected override void RenderVerbs (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderVerbs(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderVerbs(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that renders the verbs for the zone.</param>
+        <summary>Renders the verbs in the footer area of a <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> zone.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderVerbs%2A> method renders the add verb and the close verb within the footer area of a <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> zone.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>The <see cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderVerbs(System.Web.UI.HtmlTextWriter)" /> method does not handle the rendering for any custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> objects that a developer adds to a custom <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> zone. If you want to add custom verbs to a <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> class, you must inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> class, and override the <see cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RenderVerbs(System.Web.UI.HtmlTextWriter)" /> method, which you can use to render the custom verbs for your zone. You must also override the <see cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.RaisePostBackEvent(System.String)" /> method to handle the event when a custom verb is clicked by a user.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveControlState">
+      <MemberSignature Language="C#" Value="protected override object SaveControlState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object SaveControlState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SaveControlState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves any changes in a <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> control's state that occur after the Web page is posted back to the server.</summary>
+        <returns>An <see cref="T:System.Object" /> that contains the state data for the control. If there have been no changes to the state, the method returns <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SaveControlState%2A> method is concerned with state data that is essential for a control's operation (such as an index or keyword) and is separate from the control's view-state data.  
+  
+ The method first calls the base method to save the existing state data for the control. Next, it determines whether a <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control in the zone is currently selected, by checking whether the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedCatalogPartID%2A> property has a value. If there is a selected control, the method updates the existing state data with the state data from the selected control, and then returns all the state data.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>You can optionally override the <see cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SaveControlState" /> method in a derived class so that you can update the saved control state for other custom objects in the zone.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveViewState">
+      <MemberSignature Language="C#" Value="protected override object SaveViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SaveViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves any view-state changes that have occurred after a page was posted back to the server.</summary>
+        <returns>Returns the zone control's current view state. If no view state is associated with the zone, this method returns <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SaveViewState%2A> method calls the base method to save the view state associated with the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> zone. Next, it saves any view state for the add and close verbs, as well as for the <xref:System.Web.UI.WebControls.Style> objects associated with the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.PartLinkStyle%2A> and the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedPartLinkStyle%2A> properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedCatalogPartID">
+      <MemberSignature Language="C#" Value="public string SelectedCatalogPartID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SelectedCatalogPartID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedCatalogPartID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string as an identifier for the currently selected <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> control in a zone.</summary>
+        <value>A string that serves as the identifier for the currently selected control. The default is the value of the control's <see cref="P:System.Web.UI.Control.ID" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedCatalogPartID%2A> property allows you to set an identifier of your choice for the currently selected <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control. This does not change the control's <xref:System.Web.UI.Control.ID%2A> property value, so you can use this property for your own programmatic purposes. For example, if you wanted to always carry out some programmatic action on the currently selected <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control, this property enables you to access that control through a known value that you set in advance.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedCatalogPartID%2A> property declaratively and programmatically. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class overview.  
+  
+ Notice that the first part of the code example declares two `<asp:catalogzone>` elements, and the first one declares a value for the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedCatalogPartID%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  -->  
+  
+ In the second part of the code example, the text value for the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedCatalogPartID%2A> property of the currently selected control is displayed.  
+  
+ [!code-csharp[WebParts_CatalogZoneBase_Overview#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#6)]
+ [!code-vb[WebParts_CatalogZoneBase_Overview#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#6)]  
+  
+ When you load the page in a browser, you can select **Catalog** from the drop-down list to switch to catalog display mode. When the catalog is visible, click one of the links to a <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control to select it. Then click the **Show Selected CatalogPart ID** button to display the property value. Notice that the value of the property is the value that was set declaratively for the zone. If you select the other <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls in the zone, the same value becomes the value of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedCatalogPartID%2A> property for each control when it is selected. If you do not set the value of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedCatalogPartID%2A> property, the default value is always the value of the <xref:System.Web.UI.Control.ID%2A> property for the currently selected control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedPartLinkStyle">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style SelectedPartLinkStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style SelectedPartLinkStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedPartLinkStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that contains style attributes for the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> control that is currently selected in the zone.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.Style" /> that contains style attributes for the control that is currently selected.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> zone, links are displayed for each type of <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control: <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart>, <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart>, and <xref:System.Web.UI.WebControls.WebParts.ImportCatalogPart>. When a user clicks one of the links, the corresponding <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control becomes the selected control, and the child controls contained by that selected control become visible.  
+  
+ The <xref:System.Web.UI.WebControls.Style> object referenced by the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedPartLinkStyle%2A> property contains the style attributes of the link for the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control that is currently selected. Although the object referenced by the property is read-only, you can still use it to set the underlying style characteristics for the selected <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedPartLinkStyle%2A> property declaratively and programmatically. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class overview.  
+  
+ Notice that the first part of the code example declares two `<asp:catalogzone>` elements, and the first one declares a value for the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedPartLinkStyle%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  -->  
+  
+ In the second part of the code example, the text color for the selected <xref:System.Web.UI.WebControls.WebParts.CatalogPart> control is set to a different value.  
+  
+ [!code-csharp[WebParts_CatalogZoneBase_Overview#7](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#7)]
+ [!code-vb[WebParts_CatalogZoneBase_Overview#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#7)]  
+  
+ When you load the page in a browser, you can select **Catalog** from the drop-down list to switch to catalog display mode. When the catalog is visible, click the link for one of the listed <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls, and notice the style attributes of the selected control. You can click the **Change Part Link Styles** button to change the text color of the selected control. You can also click the links for the unselected controls, to see how the style attributes change when a control is selected.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectTargetZoneText">
+      <MemberSignature Language="C#" Value="public virtual string SelectTargetZoneText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SelectTargetZoneText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectTargetZoneText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text alongside the control in the catalog user interface (UI) that allows users to choose which zone to add their selected controls to.</summary>
+        <value>A string that contains the text to display alongside the zone selection control. A default culture-specific string is supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the catalog UI first appears, users can select one of the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls, such as <xref:System.Web.UI.WebControls.WebParts.DeclarativeCatalogPart>, that contains <xref:System.Web.UI.WebControls.WebParts.WebPart> or other server controls that can be added to the Web page. The user selects one or more controls, and can then use the <xref:System.Web.UI.WebControls.DropDownList> control in the footer area of the catalog and choose the <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control on the page in which to place the selected server controls. The text value of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectTargetZoneText%2A> property is displayed alongside the <xref:System.Web.UI.WebControls.DropDownList> control as a simple instruction.  
+  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectTargetZoneText%2A> property declaratively and programmatically. For the full code required to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class overview.  
+  
+ Notice that the first part of the code example declares two `<asp:catalogzone>` elements, and the first one declares a value for the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectTargetZoneText%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_CatalogZoneBase_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#2)]  -->  
+  
+ In the second part of the code example, the value of the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectTargetZoneText%2A> property is changed programmatically.  
+  
+ [!code-csharp[WebParts_CatalogZoneBase_Overview#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/CS/catalogzonebasecs.aspx#5)]
+ [!code-vb[WebParts_CatalogZoneBase_Overview#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_CatalogZoneBase_Overview/VB/catalogzonebasevb.aspx#5)]  
+  
+ When you load the page in a browser, you can select **Catalog** from the drop-down list to switch to catalog display mode. When the catalog is visible, note the text displayed alongside the <xref:System.Web.UI.WebControls.DropDownList> control in the footer of the catalog. You can click the **Set Zone Text Properties** button to change the text value of the property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowCatalogIcons">
+      <MemberSignature Language="C#" Value="public virtual bool ShowCatalogIcons { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowCatalogIcons" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogZoneBase.ShowCatalogIcons" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether server controls in the catalog display their associated icons in the catalog.</summary>
+        <value>
+          <see langword="true" /> if the icons associated with server controls in the catalog should be displayed; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.UI.WebControls.WebParts.WebPart> controls and other server controls that are wrapped as <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> controls at run time have a <xref:System.Web.UI.WebControls.WebParts.WebPart.CatalogIconImageUrl%2A> property. The value of this property is the URL to an image that is used as an icon to represent the control in a catalog of controls.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.ShowCatalogIcons%2A> property indicates whether the icons associated with <xref:System.Web.UI.WebControls.WebParts.WebPart> and other server controls are displayed in the catalog.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
+      <MemberSignature Language="C#" Value="bool IPostBackDataHandler.LoadPostData (string postDataKey, System.Collections.Specialized.NameValueCollection postCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Web.UI.IPostBackDataHandler.LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.System#Web#UI#IPostBackDataHandler#LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="postDataKey" Type="System.String" />
+        <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="postDataKey">The key identifier for the control.</param>
+        <param name="postCollection">The collection of name/value pairs posted to the server.</param>
+        <summary>Implements the <see cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> method by calling the <see cref="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> method of the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" /> class.</summary>
+        <returns>
+          <see langword="true" /> if an event should be raised to indicate that data has changed; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface. The method simply calls the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.LoadPostData%2A> method on the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> class, which in turn processes the state of the check boxes in a catalog that correspond to server controls in the catalog.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
+      <MemberSignature Language="C#" Value="void IPostBackDataHandler.RaisePostDataChangedEvent ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.System#Web#UI#IPostBackDataHandler#RaisePostDataChangedEvent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackViewState">
+      <MemberSignature Language="C#" Value="protected override void TrackViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TrackViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogZoneBase.TrackViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Tracks changes to a zone control's view state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.TrackViewState%2A> method first calls the base method in the <xref:System.Web.UI.WebControls.WebParts.ToolZone> class to track the view state associated with a <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase> zone. Next, the method begins tracking the view state for the add and close verbs, as well as the <xref:System.Web.UI.WebControls.Style> objects associated with the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.PartLinkStyle%2A> and the <xref:System.Web.UI.WebControls.WebParts.CatalogZoneBase.SelectedPartLinkStyle%2A> properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

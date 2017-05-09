@@ -1,0 +1,131 @@
+<Type Name="DataControlRowType" FullName="System.Web.UI.WebControls.DataControlRowType">
+  <TypeSignature Language="C#" Value="public enum DataControlRowType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataControlRowType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataControlRowType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the function of a row in a data control, such as a <see cref="T:System.Web.UI.WebControls.DetailsView" /> or <see cref="T:System.Web.UI.WebControls.GridView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataControlRowType> enumeration identifies the function of rows in a data control. It is used by the <xref:System.Web.UI.WebControls.DetailsView> and <xref:System.Web.UI.WebControls.GridView> controls to distinguish between rows that display data and rows that display other user interface (UI) elements, such as a header row, row separator, or pager buttons.  
+  
+ You can use the <xref:System.Web.UI.WebControls.DataControlRowType> enumeration to identify the type of a <xref:System.Web.UI.WebControls.GridViewRow> or <xref:System.Web.UI.WebControls.DetailsViewRow> object when you enumerate through a <xref:System.Web.UI.WebControls.GridViewRowCollection> or <xref:System.Web.UI.WebControls.DetailsViewRowCollection> collection. If you are writing a data control that creates rows, you can use the <xref:System.Web.UI.WebControls.DataControlRowType> enumeration to identify the function of different rows in the control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DataControlRowType> enumeration to check the type of a row when working with a <xref:System.Web.UI.WebControls.GridView> control. The `AuthorsGridView_RowCreated` method ensures that the <xref:System.Web.UI.WebControls.LinkButton.CommandArgument%2A> property of a <xref:System.Web.UI.WebControls.LinkButton> control is unique for all the data rows in the <xref:System.Web.UI.WebControls.GridView> control, so that when a row's <xref:System.Web.UI.WebControls.LinkButton> control is clicked, it can be identified correctly.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[GridViewCommandEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewCommandEventArgs/CS/gridviewcommandeventargscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[GridViewCommandEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewCommandEventArgs/VB/gridviewcommandeventargsvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DataRow">
+      <MemberSignature Language="C#" Value="DataRow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.DataControlRowType DataRow = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlRowType.DataRow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataControlRowType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A data row of a data control. Only <see cref="F:System.Web.UI.WebControls.DataControlRowType.DataRow" /> rows can be data-bound.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EmptyDataRow">
+      <MemberSignature Language="C#" Value="EmptyDataRow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.DataControlRowType EmptyDataRow = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlRowType.EmptyDataRow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataControlRowType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The empty row of a data-bound control. The empty row is displayed when the data-bound control has no records to display and the <see langword="EmptyDataTemplate" /> template is not <see langword="null" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Footer">
+      <MemberSignature Language="C#" Value="Footer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.DataControlRowType Footer = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlRowType.Footer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataControlRowType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A footer row of a data control. Footer rows cannot be data-bound.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Header">
+      <MemberSignature Language="C#" Value="Header" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.DataControlRowType Header = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlRowType.Header" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataControlRowType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A header row of a data control. Header rows cannot be data-bound.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pager">
+      <MemberSignature Language="C#" Value="Pager" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.DataControlRowType Pager = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlRowType.Pager" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataControlRowType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A row that displays pager buttons or a pager control. Pager rows cannot be data-bound.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Separator">
+      <MemberSignature Language="C#" Value="Separator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.DataControlRowType Separator = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlRowType.Separator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataControlRowType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A row separator. Row separators cannot be data-bound.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

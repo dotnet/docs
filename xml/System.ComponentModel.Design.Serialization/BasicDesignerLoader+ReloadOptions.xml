@@ -1,0 +1,87 @@
+<Type Name="BasicDesignerLoader+ReloadOptions" FullName="System.ComponentModel.Design.Serialization.BasicDesignerLoader+ReloadOptions">
+  <TypeSignature Language="C#" Value="protected enum BasicDesignerLoader.ReloadOptions" />
+  <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi sealed BasicDesignerLoader/ReloadOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the behavior of the <see cref="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.Reload(System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadOptions)" /> method. These flags can be combined using the bitwise <see langword="OR" /> operator.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.Serialization.BasicDesignerLoader/ReloadOptions Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadOptions.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.Serialization.BasicDesignerLoader+ReloadOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The designer loader flushes changes before reloading, but it does not force a reload, and it also does not set the <see cref="P:System.ComponentModel.Design.Serialization.BasicDesignerLoader.Modified" /> property to <see langword="true" /> if load errors occur.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Force">
+      <MemberSignature Language="C#" Value="Force" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.Serialization.BasicDesignerLoader/ReloadOptions Force = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadOptions.Force" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.Serialization.BasicDesignerLoader+ReloadOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The designer loader forces the reload to occur. Normally, a reload occurs only if the <see cref="M:System.ComponentModel.Design.Serialization.BasicDesignerLoader.IsReloadNeeded" /> method returns <see langword="true" />. This flag bypasses calling this method and always performs the reload.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifyOnError">
+      <MemberSignature Language="C#" Value="ModifyOnError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.Serialization.BasicDesignerLoader/ReloadOptions ModifyOnError = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadOptions.ModifyOnError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.Serialization.BasicDesignerLoader+ReloadOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The designer loader will set the <see cref="P:System.ComponentModel.Design.Serialization.BasicDesignerLoader.Modified" /> property to <see langword="true" /> if load errors occur. This flag is useful if you want a flush of the loader to overwrite persistent state that had errors.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoFlush">
+      <MemberSignature Language="C#" Value="NoFlush" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.Serialization.BasicDesignerLoader/ReloadOptions NoFlush = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.Serialization.BasicDesignerLoader.ReloadOptions.NoFlush" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.Serialization.BasicDesignerLoader+ReloadOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The designer loader abandons any changes before reloading.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

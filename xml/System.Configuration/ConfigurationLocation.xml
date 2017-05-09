@@ -1,0 +1,89 @@
+<Type Name="ConfigurationLocation" FullName="System.Configuration.ConfigurationLocation">
+  <TypeSignature Language="C#" Value="public class ConfigurationLocation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConfigurationLocation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationLocation" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a <see langword="location" /> element within a configuration file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance of the <xref:System.Configuration.ConfigurationLocation> class represents a single `location` element within a configuration file. Locations are used to specify configuration settings that apply only to a specified resource, such as a specific page, file, or subdirectory, within your Web application. Use the <xref:System.Configuration.ConfigurationLocation> class to obtain the path and the <xref:System.Configuration.Configuration> object that applies to the specified resource.  
+  
+   
+  
+## Examples  
+ In the following code example, the Web configuration for the application `MySampleApp` is loaded, and then the locations defined in the configuration are displayed.  
+  
+ [!code-csharp[ConfigurationLocationCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ConfigurationLocationCollection/CS/sample.cs#1)]
+ [!code-vb[ConfigurationLocationCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ConfigurationLocationCollection/VB/sample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OpenConfiguration">
+      <MemberSignature Language="C#" Value="public System.Configuration.Configuration OpenConfiguration ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Configuration.Configuration OpenConfiguration() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationLocation.OpenConfiguration" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Configuration</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an instance of a Configuration object.</summary>
+        <returns>A Configuration object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationLocation.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the relative path to the resource whose configuration settings are represented by this <see cref="T:System.Configuration.ConfigurationLocation" /> object.</summary>
+        <value>The relative path to the resource whose configuration settings are represented by this <see cref="T:System.Configuration.ConfigurationLocation" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The path that is returned by the <xref:System.Configuration.ConfigurationLocation.Path%2A> property is relative to the root of your Web site.  
+  
+> [!NOTE]
+>  The <xref:System.Configuration.ConfigurationLocation.Path%2A> property might contain a comma-delimited list of paths to which the configuration setting applies.  
+  
+   
+  
+## Examples  
+ The following code example shows how to access the <xref:System.Configuration.ConfigurationLocation.Path%2A> property and display the value returned to the console.  
+  
+ [!code-csharp[ConfigurationLocationCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/ConfigurationLocationCollection/CS/sample.cs#2)]
+ [!code-vb[ConfigurationLocationCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ConfigurationLocationCollection/VB/sample.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

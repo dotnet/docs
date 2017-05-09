@@ -1,0 +1,97 @@
+<Type Name="SrgsRulesCollection" FullName="System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection">
+  <TypeSignature Language="C#" Value="public sealed class SrgsRulesCollection : System.Collections.ObjectModel.KeyedCollection&lt;string,System.Speech.Recognition.SrgsGrammar.SrgsRule&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SrgsRulesCollection extends System.Collections.ObjectModel.KeyedCollection`2&lt;string, class System.Speech.Recognition.SrgsGrammar.SrgsRule&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.KeyedCollection&lt;System.String,System.Speech.Recognition.SrgsGrammar.SrgsRule&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.String</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="!1">System.Speech.Recognition.SrgsGrammar.SrgsRule</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsRule" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After you define the content for an <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object, you must add it to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Rules%2A> collection of an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> instance using the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.Add%2A> method. An <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> cannot be used for recognition until it has been added to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Rules%2A> collection of an <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> instance.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SrgsRulesCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Speech.Recognition.SrgsGrammar.SrgsRule[] rules);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Speech.Recognition.SrgsGrammar.SrgsRule[] rules) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.Add(System.Speech.Recognition.SrgsGrammar.SrgsRule[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rules" Type="System.Speech.Recognition.SrgsGrammar.SrgsRule[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="rules">The array of rule objects to add to the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection" /> object.</param>
+        <summary>Adds the contents of an array of <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsRule" /> objects to the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection" /> object.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="rules" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">Any <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsRule" /> object in the <paramref name="rules" /> array is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetKeyForItem">
+      <MemberSignature Language="C#" Value="protected override string GetKeyForItem (System.Speech.Recognition.SrgsGrammar.SrgsRule rule);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetKeyForItem(class System.Speech.Recognition.SrgsGrammar.SrgsRule rule) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.GetKeyForItem(System.Speech.Recognition.SrgsGrammar.SrgsRule)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rule" Type="System.Speech.Recognition.SrgsGrammar.SrgsRule" />
+      </Parameters>
+      <Docs>
+        <param name="rule">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

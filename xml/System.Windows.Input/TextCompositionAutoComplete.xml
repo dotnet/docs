@@ -1,0 +1,50 @@
+<Type Name="TextCompositionAutoComplete" FullName="System.Windows.Input.TextCompositionAutoComplete">
+  <TypeSignature Language="C#" Value="public enum TextCompositionAutoComplete" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextCompositionAutoComplete extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.TextCompositionAutoComplete" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines a set of states for the handling of automatic completion of a text composition.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Off">
+      <MemberSignature Language="C#" Value="Off" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.TextCompositionAutoComplete Off = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.TextCompositionAutoComplete.Off" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.TextCompositionAutoComplete</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Auto-complete is off.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="On">
+      <MemberSignature Language="C#" Value="On" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.TextCompositionAutoComplete On = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.TextCompositionAutoComplete.On" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.TextCompositionAutoComplete</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Auto-complete is on. A <see cref="E:System.Windows.Input.TextCompositionManager.TextInput" /> event will be raised automatically by the <see cref="T:System.Windows.Input.TextCompositionManager" /> after a <see cref="E:System.Windows.Input.TextCompositionManager.TextInputStart" /> event is handled.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

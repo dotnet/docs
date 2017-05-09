@@ -1,0 +1,37 @@
+<Type Name="WorkflowDesignerIcons" FullName="System.Activities.Presentation.WorkflowDesignerIcons">
+  <TypeSignature Language="C#" Value="public static class WorkflowDesignerIcons" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit WorkflowDesignerIcons extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.WorkflowDesignerIcons" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the workflow designer icons.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="UseWindowsStoreAppStyleIcons">
+      <MemberSignature Language="C#" Value="public static void UseWindowsStoreAppStyleIcons ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UseWindowsStoreAppStyleIcons() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowDesignerIcons.UseWindowsStoreAppStyleIcons" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Uses the Windows Store App style icons.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

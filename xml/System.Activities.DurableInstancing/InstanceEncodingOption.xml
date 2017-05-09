@@ -1,0 +1,57 @@
+<Type Name="InstanceEncodingOption" FullName="System.Activities.DurableInstancing.InstanceEncodingOption">
+  <TypeSignature Language="C#" Value="public enum InstanceEncodingOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InstanceEncodingOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.DurableInstancing.InstanceEncodingOption" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Contains options that specify whether the persistence provider should encode the instance state information using the GZip algorithm before saving the state information into the persistence store.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[netfx40_long](~/includes/netfx40-long-md.md)] ships with a SQL persistence provider as a constituent of the SQL Workflow Instance Store, which is a concrete implementation of the <xref:System.Runtime.Persistence.InstanceStore> class and is used to persist state information in to the SQL Server database. When the `instanceEncodingOption` attribute is set to GZip for the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> service behavior associated with a service, the SQL persistence provider uses the GZip algorithm to encode instance state information for the instance of the service before saving the state information into the SQL Server persistence database.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GZip">
+      <MemberSignature Language="C#" Value="GZip" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.DurableInstancing.InstanceEncodingOption GZip = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.DurableInstancing.InstanceEncodingOption.GZip" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.DurableInstancing.InstanceEncodingOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that instance data is compressed using the GZip algorithm.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.DurableInstancing.InstanceEncodingOption None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.DurableInstancing.InstanceEncodingOption.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.DurableInstancing.InstanceEncodingOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that instance data is not compressed.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

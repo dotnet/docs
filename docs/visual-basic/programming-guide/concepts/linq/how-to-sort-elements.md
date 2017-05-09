@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: c2c09279-6c8a-482e-8e71-b1453a815052
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Sort Elements (Visual Basic)

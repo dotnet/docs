@@ -1,0 +1,231 @@
+<Type Name="Capture" FullName="System.Text.RegularExpressions.Capture">
+  <TypeSignature Language="C#" Value="public class Capture" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Capture extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.Capture" />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the results from a single successful subexpression capture.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Text.RegularExpressions.Capture> object is immutable and has no public constructor. Instances are returned through the <xref:System.Text.RegularExpressions.CaptureCollection> object, which is returned by the `Match.Captures` and <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=fullName> properties. However, the `Match.Captures` property provides information about the same match as the <xref:System.Text.RegularExpressions.Match> object.  
+  
+ If you do not apply a  to a capturing group, the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=fullName> property returns a <xref:System.Text.RegularExpressions.CaptureCollection> with a single <xref:System.Text.RegularExpressions.Capture> object that provides information about the same capture as the <xref:System.Text.RegularExpressions.Group> object. If you do apply a quantifier to a capturing group, the `Group.Index`, `Group.Length`, and `Group.Value` properties provide information only about the last captured group, whereas the <xref:System.Text.RegularExpressions.Capture> objects in the <xref:System.Text.RegularExpressions.CaptureCollection> provide information about all subexpression captures. The example provides an illustration.  
+  
+   
+  
+## Examples  
+ The following example defines a regular expression that matches sentences that contain no punctuation except for a period (".").  
+  
+ [!code-csharp[System.Text.RegularExpressions.Capture.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.capture.class/cs/example1.cs#1)]
+ [!code-vb[System.Text.RegularExpressions.Capture.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.capture.class/vb/example1.vb#1)]  
+  
+ The regular expression pattern `((\w+)[\s.])+` is defined as shown in the following table. Note that in this regular expression, a quantifier (+) is applied to the entire regular expression.  
+  
+|Pattern|Description|  
+|-------------|-----------------|  
+|`(\w+)`|Match one or more word characters. This is the second capturing group.|  
+|`[\s.])`|Match a white-space character or period (".").|  
+|`((\w+)[\s.])`|Match one or more word characters followed by a white-space character or period ("."). This is the first capturing group.|  
+|`((\w+)[\s.])+`|Match one or more occurrences of a word character or characters followed by a white-space character or period (".").|  
+  
+ In this example, the input string consists of two sentences. As the output shows, the first sentence consists of only one word, so the <xref:System.Text.RegularExpressions.CaptureCollection> object has a single <xref:System.Text.RegularExpressions.Capture> object that represents the same capture as the <xref:System.Text.RegularExpressions.Group> object. The second sentence consists of multiple words, so the <xref:System.Text.RegularExpressions.Group> objects only contain information about the last matched subexpression. Group 1, which represents the first capture, contains the last word in the sentence that has a closing period. Group 2, which represents the second capture, contains the last word in the sentence. However, the <xref:System.Text.RegularExpressions.Capture> objects in the group's <xref:System.Text.RegularExpressions.CaptureCollection> object capture each subexpression match. The <xref:System.Text.RegularExpressions.Capture> objects in the first capturing group's collection of captures contain information about each captured word and white-space character or period. The <xref:System.Text.RegularExpressions.Capture> objects in the second capturing group's collection of captures contain information about each captured word.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.Capture.Index" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The position in the original string where the first character of the captured substring is found.</summary>
+        <value>The zero-based starting position in the original string where the captured substring is found.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public int Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
+      <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.Capture.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the length of the captured substring.</summary>
+        <value>The length of the captured substring.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.Capture.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the captured substring from the input string by calling the <see cref="P:System.Text.RegularExpressions.Capture.Value" /> property.</summary>
+        <returns>The substring that was captured by the match.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `ToString` is actually an internal call to the <xref:System.Text.RegularExpressions.Capture.Value%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.Capture.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the captured substring from the input string.</summary>
+        <value>The substring that is captured by the match.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a call to the <xref:System.Text.RegularExpressions.Regex.Match%2A?displayProperty=fullName> or <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=fullName> method fails to find a match, the value of the returned `Match.Value` property is <xref:System.String.Empty?displayProperty=fullName>. If the regular expression engine is unable to match a capturing group. the value of the returned `Group.Value` property is <xref:System.String.Empty?displayProperty=fullName>. See the second example for an illustration.  
+  
+   
+  
+## Examples  
+ The following example defines a regular expression that matches sentences that contain no punctuation except for a period ("."). The `Match.Value` property displays the result string, which consists of a matched sentence, for each match. The `Group.Value` property displays the result string for each capturing group; it consists of the last string captured by that capturing group. The <xref:System.Text.RegularExpressions.Capture.Value%2A?displayProperty=fullName> property displays the result string for each capture.  
+  
+ [!code-csharp[System.Text.RegularExpressions.Capture.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.capture.class/cs/example1.cs#1)]
+ [!code-vb[System.Text.RegularExpressions.Capture.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.capture.class/vb/example1.vb#1)]  
+  
+ The regular expression pattern `((\w+)[\s.])+` is defined as shown in the following table. Note that in this regular expression, a quantifier (+) is applied to the entire regular expression.  
+  
+|Pattern|Description|  
+|-------------|-----------------|  
+|`(\w+)`|Match one or more word characters. This is the second capturing group.|  
+|`[\s.])`|Match a white-space character or period (".").|  
+|`((\w+)[\s.])`|Match one or more word characters followed by a white-space character or period ("."). This is the first capturing group.|  
+|`((\w+)[\s.])+`|Match one or more occurrences of a word character or characters followed by a white-space character or period (".").|  
+  
+ In this example, the input string consists of two sentences. As the output shows, the first sentence consists of only one word, so the <xref:System.Text.RegularExpressions.CaptureCollection> object has a single <xref:System.Text.RegularExpressions.Capture> object that represents the same capture as the <xref:System.Text.RegularExpressions.Group> object. The second sentence consists of multiple words, so the <xref:System.Text.RegularExpressions.Group> objects only contain information about the last matched subexpression. Group 1, which represents the first capture, contains the last word in the sentence that has a closing period. Group 2, which represents the second capture, contains the last word in the sentence. However, the <xref:System.Text.RegularExpressions.Capture> objects in the group's <xref:System.Text.RegularExpressions.CaptureCollection> object capture each subexpression match. The <xref:System.Text.RegularExpressions.Capture> objects in the first capturing group's collection of captures contain information about each captured word and white-space character or period. The <xref:System.Text.RegularExpressions.Capture> objects in the second capturing group's collection of captures contain information about each captured word.  
+  
+ The following example uses a regular expression pattern, `^([a-z]+)(\d+)*\.([a-z]+(\d)*)$`, to match a product number that consists of two parts separated by a period. Both parts consist of alphabetic characters followed by optional numbers. Because the first input string does not match the pattern, the value of the returned <xref:System.Text.RegularExpressions.Match?displayProperty=fullName> object's `Value` property is <xref:System.String.Empty?displayProperty=fullName>. Similarly, when the regular expression pattern is unable to match a capturing group, the value of the corresponding <xref:System.Text.RegularExpressions.Group> object's `Value` property is <xref:System.String.Empty?displayProperty=fullName>.  
+  
+ [!code-csharp[System.Text.RegularExpressions.Capture.Value#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.capture.value/cs/value1.cs#1)]
+ [!code-vb[System.Text.RegularExpressions.Capture.Value#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.capture.value/vb/value1.vb#1)]  
+  
+ The regular expression pattern is defined as shown in the following table:  
+  
+|Pattern|Description|  
+|-------------|-----------------|  
+|`^`|Begin the match at the beginning of the string.|  
+|`([a-z]+)`|Match one or more occurrences of any character from a to z. Because the regular expression engine is passed the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option, this comparison is case-insensitive. This is the first capturing group.|  
+|`(\d+)?`|Match zero or one occurrence of one or more decimal digits. This is the second capturing group.|  
+|`\.`|Match a literal period character.|  
+|`([a-z]+`|Match one or more occurrences of any character from a to z. The comparison is case-insensitive.|  
+|`(\d)*`|Match zero or more decimal digits. A single matched digit is the fourth capturing group.|  
+|`([a-z]+(\d)*)`|Match one or more alphabetic characters from a to z followed by zero, one, or more decimal digits. This is the fourth capturing group.|  
+|`$`|Conclude the match at the end of the string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

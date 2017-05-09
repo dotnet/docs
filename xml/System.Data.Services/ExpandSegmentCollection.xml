@@ -1,0 +1,84 @@
+<Type Name="ExpandSegmentCollection" FullName="System.Data.Services.ExpandSegmentCollection">
+  <TypeSignature Language="C#" Value="public class ExpandSegmentCollection : System.Collections.Generic.List&lt;System.Data.Services.ExpandSegment&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExpandSegmentCollection extends System.Collections.Generic.List`1&lt;class System.Data.Services.ExpandSegment&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.ExpandSegmentCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.Generic.List&lt;System.Data.Services.ExpandSegment&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Data.Services.ExpandSegment</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The segments of a query that can be expanded by the <c>$expand</c> clause that follows a query.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An `$expand` clause indicates that each expand item should be fully expanded. For example, the value `OrderLines.Product.Image` with `$expand` causes `OrderLines`, the `Product` of each element in `OrderLines`, and the `Image` of the `Product` of each element in `OrderLines` to be expanded.  
+  
+ The left-most resource property in an `$expand` clause must be a property on the entity type within the entity set identified by the last path segment in the request URI.  
+  
+ Redundant `$expand` clause rules are ignored.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpandSegmentCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.ExpandSegmentCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a collection of expand segments for a query.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ExpandSegmentCollection (int capacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 capacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.ExpandSegmentCollection.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="capacity" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="capacity">The number of expand segments that the new collection can initially store.</param>
+        <summary>Initializes a new collection of expand segments that is empty and has the specified initial capacity.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasFilter">
+      <MemberSignature Language="C#" Value="public bool HasFilter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasFilter" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.ExpandSegmentCollection.HasFilter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Boolean value that indicates whether segments to be expanded include a filter clause.</summary>
+        <value>Boolean value that indicates whether segments to be expanded include a filter clause.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

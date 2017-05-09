@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "DataRepeater, displaying bound controls"
 ms.assetid: 56a15326-1334-4275-af4e-075cad79e6f7
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

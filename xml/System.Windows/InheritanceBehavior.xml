@@ -1,0 +1,193 @@
+<Type Name="InheritanceBehavior" FullName="System.Windows.InheritanceBehavior">
+  <TypeSignature Language="C#" Value="public enum InheritanceBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InheritanceBehavior extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.InheritanceBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates the current mode of lookup for both property value inheritance, a resource lookup, and a RelativeSource FindAncestor lookup.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A RelativeSource FindAncestor lookup occurs when a binding uses a <xref:System.Windows.Data.RelativeSource> that has its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to the <xref:System.Windows.Data.RelativeSourceMode?displayProperty=fullName> value.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.InheritanceBehavior Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.InheritanceBehavior.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.InheritanceBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Property value inheritance lookup will query the current element and continue walking up the element tree to the page root.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A resource lookup will query through the current element and further.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipAllNext">
+      <MemberSignature Language="C#" Value="SkipAllNext" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.InheritanceBehavior SkipAllNext = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.InheritanceBehavior.SkipAllNext" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.InheritanceBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Property value inheritance lookup will query the current element but not any further.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A resource lookup will query the current element but not any further.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipAllNow">
+      <MemberSignature Language="C#" Value="SkipAllNow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.InheritanceBehavior SkipAllNow = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.InheritanceBehavior.SkipAllNow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.InheritanceBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Property value inheritance lookup will not query the current element or any further.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A resource lookup will not query the current element or any further. A RelativeSource FindAncestor lookup will not query the current element or any further.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipToAppNext">
+      <MemberSignature Language="C#" Value="SkipToAppNext" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.InheritanceBehavior SkipToAppNext = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.InheritanceBehavior.SkipToAppNext" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.InheritanceBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Property value inheritance lookup will query the current element but not any further.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A resource lookup will query the current element and will then skip over to the application and theme dictionaries, rather than walking up the element tree toward the page root.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipToAppNow">
+      <MemberSignature Language="C#" Value="SkipToAppNow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.InheritanceBehavior SkipToAppNow = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.InheritanceBehavior.SkipToAppNow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.InheritanceBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Property value inheritance lookup will not query the current element or any further.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A resource lookup will not query the current element but will skip over to the application and then the theme dictionaries, rather than walking up the element tree toward the page root. A RelativeSource FindAncestor lookup will not query the current element or any further.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipToThemeNext">
+      <MemberSignature Language="C#" Value="SkipToThemeNext" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.InheritanceBehavior SkipToThemeNext = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.InheritanceBehavior.SkipToThemeNext" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.InheritanceBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Property value inheritance lookup will query the current element but not any further.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A resource lookup will query the current element and will then skip over to the theme dictionaries, rather than walking up the element tree toward the page root, or checking application dictionaries.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipToThemeNow">
+      <MemberSignature Language="C#" Value="SkipToThemeNow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.InheritanceBehavior SkipToThemeNow = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.InheritanceBehavior.SkipToThemeNow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.InheritanceBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Property value inheritance lookup will not query the current element or any further.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A resource lookup will not query the current element but will skip over to the theme dictionaries, rather than walking up the element tree toward the page root, or checking application dictionaries. A RelativeSource FindAncestor lookup will not query the current element or any further.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

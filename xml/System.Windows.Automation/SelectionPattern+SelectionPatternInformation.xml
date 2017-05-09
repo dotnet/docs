@@ -1,0 +1,120 @@
+<Type Name="SelectionPattern+SelectionPatternInformation" FullName="System.Windows.Automation.SelectionPattern+SelectionPatternInformation">
+  <TypeSignature Language="C#" Value="public struct SelectionPattern.SelectionPatternInformation" />
+  <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit SelectionPattern/SelectionPatternInformation extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.SelectionPattern.SelectionPatternInformation" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides access to the property values of a <see cref="T:System.Windows.Automation.SelectionPattern" /> object using its <see cref="P:System.Windows.Automation.SelectionPattern.Current" /> or <see cref="P:System.Windows.Automation.SelectionPattern.Cached" /> accessors.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CanSelectMultiple">
+      <MemberSignature Language="C#" Value="public bool CanSelectMultiple { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanSelectMultiple" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.SelectionPattern.SelectionPatternInformation.CanSelectMultiple" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the container allows more than one child element to be selected concurrently.</summary>
+        <value>
+          <see langword="true" /> if the control supports multiple selection; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be dynamic For example, in rare cases, a control might allow multiple items to be selected on initialization, but subsequently allow only single selections to be made.  
+  
+   
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.SelectionPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and subsequently used to retrieve property values.  
+  
+ [!code-csharp[UIASelectionPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIASelectionPattern_snip/CSharp/UIASelectionPattern_snippets.cs#101)]
+ [!code-vb[UIASelectionPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIASelectionPattern_snip/VisualBasic/UIASelectionPattern_snippets.vb#101)]  
+[!code-csharp[UIASelectionPattern_snip#104](~/samples/snippets/csharp/VS_Snippets_Wpf/UIASelectionPattern_snip/CSharp/UIASelectionPattern_snippets.cs#104)]
+[!code-vb[UIASelectionPattern_snip#104](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIASelectionPattern_snip/VisualBasic/UIASelectionPattern_snippets.vb#104)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSelection">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElement[] GetSelection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationElement[] GetSelection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.SelectionPattern.SelectionPatternInformation.GetSelection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationElement[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves all items in the selection container that are selected.</summary>
+        <returns>The collection of selected items. The default is an empty array.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In the following example, a collection of <xref:System.Windows.Automation.AutomationElement>s representing the selected items in a selection container is obtained.  
+  
+ [!code-csharp[UIASelectionPattern_snip#1025](~/samples/snippets/csharp/VS_Snippets_Wpf/UIASelectionPattern_snip/CSharp/UIASelectionPattern_snippets.cs#1025)]
+ [!code-vb[UIASelectionPattern_snip#1025](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIASelectionPattern_snip/VisualBasic/UIASelectionPattern_snippets.vb#1025)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSelectionRequired">
+      <MemberSignature Language="C#" Value="public bool IsSelectionRequired { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSelectionRequired" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.SelectionPattern.SelectionPatternInformation.IsSelectionRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the container requires at least one child item to be selected.</summary>
+        <value>
+          <see langword="true" /> if the control requires at least one item to be selected; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be dynamic. For example, the initial state of a control might not have any items selected by default, indicating that <xref:System.Windows.Automation.Provider.ISelectionProvider.IsSelectionRequired%2A> is `false`. However, after an item is selected, the control must always have at least one item selected.  
+  
+   
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.SelectionPattern>control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and subsequently used to retrieve property values.  
+  
+ [!code-csharp[UIASelectionPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIASelectionPattern_snip/CSharp/UIASelectionPattern_snippets.cs#101)]
+ [!code-vb[UIASelectionPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIASelectionPattern_snip/VisualBasic/UIASelectionPattern_snippets.vb#101)]  
+[!code-csharp[UIASelectionPattern_snip#104](~/samples/snippets/csharp/VS_Snippets_Wpf/UIASelectionPattern_snip/CSharp/UIASelectionPattern_snippets.cs#104)]
+[!code-vb[UIASelectionPattern_snip#104](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIASelectionPattern_snip/VisualBasic/UIASelectionPattern_snippets.vb#104)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

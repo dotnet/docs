@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "CallByName function"
 ms.assetid: 79a7b8b4-b8c7-4ad8-aca8-12a9a2b32f03
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

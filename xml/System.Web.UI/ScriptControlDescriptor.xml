@@ -1,0 +1,101 @@
+<Type Name="ScriptControlDescriptor" FullName="System.Web.UI.ScriptControlDescriptor">
+  <TypeSignature Language="C#" Value="public class ScriptControlDescriptor : System.Web.UI.ScriptComponentDescriptor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptControlDescriptor extends System.Web.UI.ScriptComponentDescriptor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptControlDescriptor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.ScriptComponentDescriptor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a client control object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScriptControlDescriptor (string type, string elementID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string elementID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptControlDescriptor.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="elementID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the client control object to create.</param>
+        <param name="elementID">The ID of the HTML element that represents the control object to create.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ScriptControlDescriptor" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientID">
+      <MemberSignature Language="C#" Value="public override string ClientID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClientID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptControlDescriptor.ClientID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the ID of the client component.</summary>
+        <value>The ID of the client component.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ScriptControlDescriptor.ClientID%2A> property of the <xref:System.Web.UI.ScriptControlDescriptor> class always returns the value of the <xref:System.Web.UI.ScriptControlDescriptor.ElementID%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementID">
+      <MemberSignature Language="C#" Value="public string ElementID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ElementID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptControlDescriptor.ElementID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the HTML ID of the client control object.</summary>
+        <value>The HTML ID of the client control object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public override string ID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptControlDescriptor.ID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the ID of the current <see cref="T:System.Web.UI.ScriptControlDescriptor" /> instance.</summary>
+        <value>The ID of the current <see cref="T:System.Web.UI.ScriptControlDescriptor" /> instance, if set; otherwise, an empty string ("").</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">An attempt was made to set the <see cref="P:System.Web.UI.ScriptControlDescriptor.ID" /> property.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

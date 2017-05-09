@@ -1,0 +1,73 @@
+<Type Name="InsertKeyMode" FullName="System.Windows.Forms.InsertKeyMode">
+  <TypeSignature Language="C#" Value="public enum InsertKeyMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InsertKeyMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.InsertKeyMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Represents the insertion mode used by text boxes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.InsertKeyMode> enumeration is used by the <xref:System.Windows.Forms.MaskedTextBox.InsertKeyMode%2A?displayProperty=fullName> property of the <xref:System.Windows.Forms.MaskedTextBox> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.InsertKeyMode Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.InsertKeyMode.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.InsertKeyMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Honors the current INSERT key mode of the keyboard.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="Insert" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.InsertKeyMode Insert = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.InsertKeyMode.Insert" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.InsertKeyMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the insertion mode is enabled regardless of the INSERT key mode of the keyboard.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Overwrite">
+      <MemberSignature Language="C#" Value="Overwrite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.InsertKeyMode Overwrite = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.InsertKeyMode.Overwrite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.InsertKeyMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the overwrite mode is enabled regardless of the INSERT key mode of the keyboard.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

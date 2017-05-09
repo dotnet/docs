@@ -89,5 +89,5 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 > For more information and troubleshooting tips on .NET Core debugging with OmniSharp in VS Code, see [Instructions for setting up the .NET Core debugger](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).
 
 ## See also
-- [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
-- [Debugging in Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging)
+[Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)   
+[Debugging in Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging)

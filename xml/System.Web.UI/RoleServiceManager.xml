@@ -1,0 +1,157 @@
+<Type Name="RoleServiceManager" FullName="System.Web.UI.RoleServiceManager">
+  <TypeSignature Language="C#" Value="public class RoleServiceManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RoleServiceManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.RoleServiceManager" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("Path")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.EmptyStringExpandableObjectConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Configures the location of a custom implementation of the role service.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.RoleServiceManager> class corresponds to the <xref:System.Web.UI.ScriptManager.RoleService%2A> property of the <xref:System.Web.UI.ScriptManager> or <xref:System.Web.UI.ScriptManagerProxy> control.  
+  
+ The role Web service is used by AJAX-enabled applications to retrieve role information for the current authenticated user by using an asynchronous Web service call. You can use <xref:System.Web.UI.RoleServiceManager> to provide the path of an alternative implementation of the role Web service instead of using the built-in Web service.  
+  
+ To use the role service in your application, you must enable it in the configuration file and declare it in the page. If you use the built-in role Web service, you have to enable it, but you do not have to explicitly declare the role service manager in the page.  
+  
+ To create a custom role service, you must implement a Web service that has two methods: `GetRolesForCurrentUser` and `IsCurrentUserInRole`. These methods must have the same signature as the corresponding methods of the built-in role Web service.  
+  
+ The following example shows the basic class structure that must be implemented in a custom role Web service class.  
+  
+  
+  
+ To use a custom role Web service, you can add the service declaratively in markup by putting a `RoleService` element inside the <xref:System.Web.UI.ScriptManager> control, as shown in the following example.  
+  
+```  
+<asp:ScriptManager ID="SM1" runat="server">  
+  <RoleService Path="MyRoleService.asmx" LoadRoles="true" />  
+</asp:ScriptManager>  
+```  
+  
+ You can also programmatically set the <xref:System.Web.UI.RoleServiceManager.Path%2A> property to use a custom role Web service.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RoleServiceManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.RoleServiceManager.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.RoleServiceManager" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadRoles">
+      <MemberSignature Language="C#" Value="public bool LoadRoles { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LoadRoles" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.RoleServiceManager.LoadRoles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the list of roles for the currently logged-on user must be retrieved.</summary>
+        <value>
+          <see langword="true" /> if the list of roles must be retrieved; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.UI.RoleServiceManager.LoadRoles%2A> property is set to `true`, the list of roles is retrieved by the <xref:System.Web.UI.RoleServiceManager> class by using the <xref:System.Web.Security.Roles.GetRolesForUser%2A?displayProperty=fullName> method. The list is then serialized into the page markup.  
+  
+> [!NOTE]
+>  When <xref:System.Web.UI.RoleServiceManager.LoadRoles%2A> is `true`, all the roles that the current authenticated user belongs to are sent to the browser. Because users can potentially see the role information, this can be a security issue.  
+  
+ The <xref:System.Web.UI.RoleServiceManager.LoadRoles%2A> property can be specified in the <xref:System.Web.UI.ScriptManager> control or in an associated <xref:System.Web.UI.ScriptManagerProxy> control. If <xref:System.Web.UI.RoleServiceManager.LoadRoles%2A> is set to `true` for a proxy instance, the list of roles is retrieved and added to the page. If <xref:System.Web.UI.RoleServiceManager.LoadRoles%2A> is `false`, the roles are not added to the page markup. In that case, you can use the  method to store role information in memory in the browser.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.RoleServiceManager.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path of the role service.</summary>
+        <value>The path of the custom role Web service.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.UI.RoleServiceManager.Path%2A> property is not set, the return value is <xref:System.String?displayProperty=fullName>. In that case, ASP.NET uses the built-in authentication Web service that corresponds to the following internal default path: ~/RolesService.svc. The same behavior occurs if you set <xref:System.Web.UI.RoleServiceManager.Path%2A> to an empty string or to `null`.  
+  
+ <xref:System.Web.UI.RoleServiceManager.Path%2A> can be specified in the <xref:System.Web.UI.ScriptManager> control or in an associated <xref:System.Web.UI.ScriptManagerProxy> control. When <xref:System.Web.UI.RoleServiceManager.Path%2A> is set at the <xref:System.Web.UI.ScriptManagerProxy> level, the following conditions are true:  
+  
+-   If there are multiple proxy objects in the control hierarchy, <xref:System.Web.UI.RoleServiceManager.Path%2A> does not have to be set for each proxy instance.  
+  
+-   If <xref:System.Web.UI.RoleServiceManager.Path%2A> is explicitly set for a proxy object, the value must be the same for all other proxy objects that this property is set for. If you set different paths for different proxy objects in the control hierarchy, an <xref:System.ArgumentException> exception is thrown.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">More than one unique path was set in the control hierarchy.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

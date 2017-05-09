@@ -1,0 +1,137 @@
+<Type Name="RegexStringValidatorAttribute" FullName="System.Configuration.RegexStringValidatorAttribute">
+  <TypeSignature Language="C#" Value="public sealed class RegexStringValidatorAttribute : System.Configuration.ConfigurationValidatorAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RegexStringValidatorAttribute extends System.Configuration.ConfigurationValidatorAttribute" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.RegexStringValidatorAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationValidatorAttribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Declaratively instructs the .NET Framework to perform string validation on a configuration property using a regular expression. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Configuration.RegexStringValidatorAttribute> to decorate a configuration property, which will instruct the .NET Framework to validate the property using the <xref:System.Configuration.RegexStringValidator> and pass to it the value of the decorating parameters.  
+  
+ You may apply <xref:System.Configuration.RegexStringValidatorAttribute> objects to property types only.  
+  
+   
+  
+## Examples  
+ The following example shows how to decorate the properties of a custom <xref:System.Configuration.ConfigurationSection> object using the <xref:System.Configuration.RegexStringValidatorAttribute> object.  
+  
+ [!code-csharp[System.Configuration.ConfigurationValidatorAttributes#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#4)]
+ [!code-vb[System.Configuration.ConfigurationValidatorAttributes#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RegexStringValidatorAttribute (string regex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string regex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.RegexStringValidatorAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="regex" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="regex">The string to use for regular expression validation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.RegexStringValidatorAttribute" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `regex` parameter contains the regular expression pattern that a string must match before it can be assigned to the decorated configuration-element property.  
+  
+ You use this constructor in the attributed model to ensure that the string value assigned to the related property contains only the allowed characters.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.RegexStringValidatorAttribute.%23ctor%2A> constructor.  
+  
+ [!code-csharp[System.Configuration.ConfigurationValidatorAttributes#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#4)]
+ [!code-vb[System.Configuration.ConfigurationValidatorAttributes#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Regex">
+      <MemberSignature Language="C#" Value="public string Regex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Regex" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.RegexStringValidatorAttribute.Regex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the string used to perform regular-expression validation.</summary>
+        <value>The string containing the regular expression used to filter the string assigned to the decorated configuration-element property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.RegexStringValidatorAttribute.Regex%2A> property.  
+  
+ [!code-csharp[System.Configuration.ConfigurationValidatorAttributes#16](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#16)]
+ [!code-vb[System.Configuration.ConfigurationValidatorAttributes#16](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#16)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidatorInstance">
+      <MemberSignature Language="C#" Value="public override System.Configuration.ConfigurationValidatorBase ValidatorInstance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationValidatorBase ValidatorInstance" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.RegexStringValidatorAttribute.ValidatorInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationValidatorBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an instance of the <see cref="T:System.Configuration.RegexStringValidator" /> class.</summary>
+        <value>The <see cref="T:System.Configuration.ConfigurationValidatorBase" /> validator instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Configuration.RegexStringValidatorAttribute.ValidatorInstance%2A> property to perform string validation by calling its <xref:System.Configuration.StringValidator.Validate%2A> method.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.RegexStringValidatorAttribute.ValidatorInstance%2A> method.  
+  
+ [!code-csharp[System.Configuration.ConfigurationValidatorAttributes#15](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/CS/ConfigurationValidatorAttributes.cs#15)]
+ [!code-vb[System.Configuration.ConfigurationValidatorAttributes#15](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationValidatorAttributes/VB/ConfigurationValidatorAttributes.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

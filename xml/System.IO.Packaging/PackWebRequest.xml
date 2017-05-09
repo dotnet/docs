@@ -1,0 +1,434 @@
+<Type Name="PackWebRequest" FullName="System.IO.Packaging.PackWebRequest">
+  <TypeSignature Language="C#" Value="public sealed class PackWebRequest : System.Net.WebRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PackWebRequest extends System.Net.WebRequest" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackWebRequest" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Net.WebRequest</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Makes a request to an entire <see cref="T:System.IO.Packaging.PackagePart" /> or to a <see cref="T:System.IO.Packaging.PackagePart" /> in a package, identified by a pack URI.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.IO.Packaging> [!INCLUDE[TLA2#tla_api#plural](~/includes/tla2sharptla-apisharpplural-md.md)] use a defined pack uri syntax to refer to parts that are contained in a package.  
+  
+ For more information about the abstract class that this class derives from and the operation of requests and responses, see <xref:System.Net.WebRequest>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CachePolicy">
+      <MemberSignature Language="C#" Value="public override System.Net.Cache.RequestCachePolicy CachePolicy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Cache.RequestCachePolicy CachePolicy" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.CachePolicy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Cache.RequestCachePolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Net.Cache.RequestCachePolicy" />.</summary>
+        <value>The <see cref="T:System.Net.Cache.RequestCachePolicy" /> to use with pack URI web request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.Packaging.PackWebRequest.CachePolicy%2A> property is distinct from the <xref:System.Net.WebRequest.CachePolicy%2A> of the inner <xref:System.Net.WebRequest> returned by the <xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Net.WebException">The specified <see cref="T:System.Net.Cache.RequestCachePolicy" /> to set is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionGroupName">
+      <MemberSignature Language="C#" Value="public override string ConnectionGroupName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectionGroupName" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.ConnectionGroupName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the connection group.</summary>
+        <value>The connection group name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.Packaging.PackWebRequest.ConnectionGroupName%2A> property enables the request to be associated with a connection group.  A connection group is useful when application makes requests to the same server for different users.  
+  
+ The <xref:System.IO.Packaging.PackWebRequest.ConnectionGroupName%2A> property is an empty string if the request resolves from the <xref:System.IO.Packaging.PackageStore> cache.  
+  
+ The <xref:System.IO.Packaging.PackWebRequest.ConnectionGroupName%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentLength">
+      <MemberSignature Language="C#" Value="public override long ContentLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 ContentLength" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.ContentLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <c>Content-length</c> [!INCLUDE[TLA#tla_http](~/includes/tlasharptla-http-md.md)] header.</summary>
+        <value>The content length, in bytes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that the pack URI protocol does not process information in the request other than the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)].  For most traditional purposes (such as estimating the size of POST information), there is no need for this property.  
+  
+ <xref:System.IO.Packaging.PackWebRequest.ContentLength%2A> returns 0 if the request resolves from the <xref:System.IO.Packaging.PackageStore> cache.  
+  
+ The <xref:System.IO.Packaging.PackWebRequest.ContentLength%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Set is not supported, <see cref="T:System.IO.Packaging.PackWebRequest" /> is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public override string ContentType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.ContentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <c>Content-type</c> [!INCLUDE[TLA#tla_http](~/includes/tlasharptla-http-md.md)] header.</summary>
+        <value>The contents of the header.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that the pack URI protocol does not process information in the request other than the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)].  For most purposes (such as determining the type of POST information), there is no use for this property.  
+  
+ <xref:System.IO.Packaging.PackWebRequest.ContentType%2A> returns an empty string if the request resolves from the <xref:System.IO.Packaging.PackageStore> cache.  
+  
+ The <xref:System.IO.Packaging.PackWebRequest.ContentType%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Credentials">
+      <MemberSignature Language="C#" Value="public override System.Net.ICredentials Credentials { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.ICredentials Credentials" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.Credentials" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.ICredentials</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the authentication credentials.</summary>
+        <value>The authentication credentials to use with the request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Requests to the package cache use their own cached credentials.  
+  
+ The <xref:System.IO.Packaging.PackWebRequest.Credentials%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInnerRequest">
+      <MemberSignature Language="C#" Value="public System.Net.WebRequest GetInnerRequest ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.WebRequest GetInnerRequest() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackWebRequest.GetInnerRequest" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebRequest</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the inner <see cref="T:System.Net.WebRequest" />.</summary>
+        <returns>A <see cref="T:System.Net.WebRequest" /> created from the inner-URI if the request resolves to a valid transport protocol such http or ftp; or a <see cref="T:System.Net.WebRequest" /> created with a null-URI if the request resolves from the <see cref="T:System.IO.Packaging.PackageStore" /> cache.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A> is provided for advanced scenarios only and is not needed for normal operation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The inner URI does not resolve to a valid transport protocol such as http for ftp, nor can the request be resolved from the <see cref="T:System.IO.Packaging.PackageStore" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRequestStream">
+      <MemberSignature Language="C#" Value="public override System.IO.Stream GetRequestStream ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IO.Stream GetRequestStream() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackWebRequest.GetRequestStream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Do not use—<see cref="M:System.IO.Packaging.PackWebRequest.GetRequestStream" /> is not supported by <see cref="T:System.IO.Packaging.PackWebRequest" />.</summary>
+        <returns>If <see cref="M:System.IO.Packaging.PackWebRequest.GetRequestStream" /> is called, a <see cref="T:System.NotSupportedException" /> is thrown.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.IO.Packaging.PackWebRequest.GetRequestStream%2A> exists to implement the contract required by the abstract base class.  The pack URI protocol does not support writing.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">Occurs on any call to <see cref="M:System.IO.Packaging.PackWebRequest.GetRequestStream" />.  The pack URI protocol does not support writing.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResponse">
+      <MemberSignature Language="C#" Value="public override System.Net.WebResponse GetResponse ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Net.WebResponse GetResponse() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackWebRequest.GetResponse" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Net.WebResponse</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the response stream for the request.</summary>
+        <returns>The response stream for the request.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Per the signature of the base class, <xref:System.IO.Packaging.PackWebRequest.GetResponse%2A> returns value of type <xref:System.Net.WebResponse>.  The return value it is actually of type <xref:System.IO.Packaging.PackWebResponse> specific to the response of the pack URI protocol.  
+  
+ The <xref:System.Net.WebResponse.Close%2A> method should be called when the application is finished with the <xref:System.Net.WebResponse> stream.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Headers">
+      <MemberSignature Language="C#" Value="public override System.Net.WebHeaderCollection Headers { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.WebHeaderCollection Headers" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.Headers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebHeaderCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the collection of header name/value pairs associated with the request.</summary>
+        <value>A header collection object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Package cache requests include a valid but otherwise empty header collection in their requests.  
+  
+ The <xref:System.IO.Packaging.PackWebRequest.Headers%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Method">
+      <MemberSignature Language="C#" Value="public override string Method { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Method" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.Method" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the protocol method to use with the pack URI request.</summary>
+        <value>The protocol method name that performs this request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.Packaging.PackWebRequest.Method%2A> property returns an empty string if the request resolves from the <xref:System.IO.Packaging.PackageStore> cache.  The <xref:System.IO.Packaging.PackWebRequest.Method%2A> property is only set when request references an external Web request, such as http or ftp.  
+  
+ The <xref:System.IO.Packaging.PackWebRequest.Method%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreAuthenticate">
+      <MemberSignature Language="C#" Value="public override bool PreAuthenticate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PreAuthenticate" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.PreAuthenticate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to preauthenticate the request.</summary>
+        <value>
+          <see langword="true" /> to send a <c>WWW-authenticate</c> [!INCLUDE[TLA#tla_http](~/includes/tlasharptla-http-md.md)] header with the initial request; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.Packaging.PackWebRequest.PreAuthenticate%2A> property returns `false` for requests resolved from the <xref:System.IO.Packaging.PackageStore> cache; there is no pre-authentication scheme for the pack URI protocol.  
+  
+ The <xref:System.IO.Packaging.PackWebRequest.PreAuthenticate%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Proxy">
+      <MemberSignature Language="C#" Value="public override System.Net.IWebProxy Proxy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IWebProxy Proxy" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.Proxy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Net.IWebProxy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the network proxy for Internet access.</summary>
+        <value>The <see cref="T:System.Net.WebProxy" /> to use for Internet access.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IO.Packaging.PackWebRequest.Proxy%2A> property is shared with the inner <xref:System.Net.WebRequest> (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestUri">
+      <MemberSignature Language="C#" Value="public override Uri RequestUri { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri RequestUri" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.RequestUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the resource associated with the request.</summary>
+        <value>The [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] of the resource associated with the request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timeout">
+      <MemberSignature Language="C#" Value="public override int Timeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Timeout" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.Timeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the length of time before the request times out.</summary>
+        <value>The number of milliseconds to wait before the request times out.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Requests to the package cache do not time out.  For requests that resolve from the <xref:System.IO.Packaging.PackageStore> cache, <xref:System.IO.Packaging.PackWebRequest.Timeout%2A> returns a value of –1.  
+  
+ The <xref:System.IO.Packaging.PackWebRequest.Timeout%2A> property is shared with the inner request (<xref:System.IO.Packaging.PackWebRequest.GetInnerRequest%2A>).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseDefaultCredentials">
+      <MemberSignature Language="C#" Value="public override bool UseDefaultCredentials { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseDefaultCredentials" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Packaging.PackWebRequest.UseDefaultCredentials" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the default authentication credentials.</summary>
+        <value>The default authentication credentials to use with the pack URI request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

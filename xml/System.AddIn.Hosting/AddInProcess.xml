@@ -1,0 +1,312 @@
+<Type Name="AddInProcess" FullName="System.AddIn.Hosting.AddInProcess">
+  <TypeSignature Language="C#" Value="public sealed class AddInProcess" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AddInProcess extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.AddIn.Hosting.AddInProcess" />
+  <AssemblyInfo>
+    <AssemblyName>System.AddIn</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an external process for running add-ins out-of-process from the host application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To activate an add-in in an external process, pass an <xref:System.AddIn.Hosting.AddInProcess> object to the appropriate <xref:System.AddIn.Hosting.AddInToken.Activate%60%601%28System.AddIn.Hosting.AddInProcess%2CSystem.Security.PermissionSet%29?displayProperty=fullName> method overload.  
+  
+ The executable that runs the add-in is obtained from one of two files installed with the .NET Framework under the Windows directory. By default, the executable that matches the bits-per-word of the host application is used. If the host is a 64-bit process, AddInProcess.exe is run; otherwise, AddInProcess32.exe is run. To specify the way the executable is selected, use the <xref:System.AddIn.Hosting.AddInProcess.%23ctor%28System.AddIn.Hosting.Platform%29> constructor to create the <xref:System.AddIn.Hosting.AddInProcess> object.  
+  
+   
+  
+## Examples  
+ The following example activates an add-in in an external process.  
+  
+ [!code-csharp[AddInP3Host#10](~/samples/snippets/csharp/VS_Snippets_CLR/addinP3Host/cs/P3Host.cs#10)]
+ [!code-vb[AddInP3Host#10](~/samples/snippets/visualbasic/VS_Snippets_CLR/addinP3Host/vb/p3host.vb#10)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AddInProcess ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInProcess.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Hosting.AddInProcess" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor has the same effect as using the <xref:System.AddIn.Hosting.AddInProcess.%23ctor%28System.AddIn.Hosting.Platform%29> constructor with the <xref:System.AddIn.Hosting.Platform?displayProperty=fullName> flag, to specify that the process that runs the add-in will have the same bits-per-word as the host process.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.Demand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AddInProcess (System.AddIn.Hosting.Platform platform);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.AddIn.Hosting.Platform platform) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInProcess.#ctor(System.AddIn.Hosting.Platform)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="platform" Type="System.AddIn.Hosting.Platform" />
+      </Parameters>
+      <Docs>
+        <param name="platform">A value that specifies the bits-per-word of the process that runs the add-in.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Hosting.AddInProcess" /> class, specifying the bits-per-word of the process in which the add-in runs.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows how `platform` affects the bits-per-word of the process on different operating systems:  
+  
+||32-bit operating system|64-bit operating system|  
+|-|------------------------------|------------------------------|  
+|Host|32-bit|Same as the host process|  
+|AnyCPU|32-bit|64-bit|  
+|X86|32-bit|32-bit|  
+|X64|Exception is thrown|64-bit|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The registry entry for the path to the executable (AddInProcess.exe or AddInProcess32.exe) is missing.  
+  
+ -or-  
+  
+ The executable is missing.</exception>
+        <permission cref="F:System.Security.Permissions.SecurityAction.Demand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCurrentProcess">
+      <MemberSignature Language="C#" Value="public bool IsCurrentProcess { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCurrentProcess" />
+      <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInProcess.IsCurrentProcess" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the current <see cref="T:System.AddIn.Hosting.AddInProcess" /> object represents the host application process.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.AddIn.Hosting.AddInProcess" /> object corresponds to the current process; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of this property is `true`, the add-in is running in-process with the host application. In that case, using the <xref:System.AddIn.Hosting.AddInProcess.Start%2A> or <xref:System.AddIn.Hosting.AddInProcess.Shutdown%2A> method throws an <xref:System.InvalidOperationException>.  
+  
+> [!NOTE]
+>  The <xref:System.AddIn.Hosting.AddInEnvironment.Process%2A?displayProperty=fullName> property returns an <xref:System.AddIn.Hosting.AddInProcess> object that represents the host application process if the add-in is running in-process.  
+  
+   
+  
+## Examples  
+ The following example activates an add-in in an external process and uses the <xref:System.AddIn.Hosting.AddInProcess.IsCurrentProcess%2A> property to determine whether the add-in is in the same process as the host application process.  
+  
+ [!code-csharp[AddInP3Host#10](~/samples/snippets/csharp/VS_Snippets_CLR/addinP3Host/cs/P3Host.cs#10)]
+ [!code-vb[AddInP3Host#10](~/samples/snippets/visualbasic/VS_Snippets_CLR/addinP3Host/vb/p3host.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeepAlive">
+      <MemberSignature Language="C#" Value="public bool KeepAlive { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool KeepAlive" />
+      <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInProcess.KeepAlive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to keep the external process alive.</summary>
+        <value>
+          <see langword="true" /> if the external process should be kept alive; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set this property to `false` to aggressively shut down the external process after the last add-in inside the process has been shut down.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Platform">
+      <MemberSignature Language="C#" Value="public System.AddIn.Hosting.Platform Platform { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.AddIn.Hosting.Platform Platform" />
+      <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInProcess.Platform" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Hosting.Platform</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the bits-per-word of the process in which the out-of-process add-in is run.</summary>
+        <value>The bits-per-word of the process that runs the add-in.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The bits-per-word is set when the <xref:System.AddIn.Hosting.AddInProcess> object is initialized, and cannot be changed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessId">
+      <MemberSignature Language="C#" Value="public int ProcessId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ProcessId" />
+      <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInProcess.ProcessId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the process ID of the external process.</summary>
+        <value>The process ID, or -1 if the external process has not started.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property for debugging.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Shutdown">
+      <MemberSignature Language="C#" Value="public bool Shutdown ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Shutdown() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInProcess.Shutdown" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Forcibly shuts down the external process.</summary>
+        <returns>
+          <see langword="true" /> if the external process was running and is successfully shut down; <see langword="false" /> if there is no active process associated with the <see cref="T:System.AddIn.Hosting.AddInProcess" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The add-in is running in-process with the host application. Starting and stopping the process is allowed only for external processes, not for the host process.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ShuttingDown">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ComponentModel.CancelEventArgs&gt; ShuttingDown;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ComponentModel.CancelEventArgs&gt; ShuttingDown" />
+      <MemberSignature Language="DocId" Value="E:System.AddIn.Hosting.AddInProcess.ShuttingDown" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.ComponentModel.CancelEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the process represented by the <see cref="T:System.AddIn.Hosting.AddInProcess" /> object is about to be shut down.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public bool Start ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Start() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInProcess.Start" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Starts the external process.</summary>
+        <returns>
+          <see langword="true" /> if the process is successfully started; <see langword="false" /> if the process is already running.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The add-in is running in-process with the host application. Starting and stopping the process is allowed only for external processes, not for the host process.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartupTimeout">
+      <MemberSignature Language="C#" Value="public TimeSpan StartupTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan StartupTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInProcess.StartupTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of seconds to allow for the process to start.</summary>
+        <value>The number of seconds to allow for process startup.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is 10 seconds. This property is usually used during debugging, to increase the startup time for the process that runs the out-of-process add-in.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The process is already running.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The assigned value is less than 0 (zero).</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

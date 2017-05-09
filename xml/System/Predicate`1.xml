@@ -1,0 +1,70 @@
+<Type Name="Predicate&lt;T&gt;" FullName="System.Predicate&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public delegate bool Predicate&lt;in T&gt;(T obj);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Predicate`1&lt;- T&gt; extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Predicate`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="obj" Type="T" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <typeparam name="T">The type of the object to compare.</typeparam>
+    <param name="obj">The object to compare against the criteria defined within the method represented by this delegate.</param>
+    <summary>Represents the method that defines a set of criteria and determines whether the specified object meets those criteria.</summary>
+    <returns>
+      <see langword="true" /> if <paramref name="obj" /> meets the criteria defined within the method represented by this delegate; otherwise, <see langword="false" />.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This delegate is used by several methods of the <xref:System.Array> and <xref:System.Collections.Generic.List%601> classes to search for elements in the collection.  
+  
+ Typically, the <xref:System.Predicate%601> delegate is represented by a lambda expression. Because locally scoped variables are available to the lambda expression, it is easy to test for a condition that is not precisely known at compile time. This is simulated in the following example, which defines a `HockeyTeam` class that contains information about a National Hockey League team and the year in which it was founded. The example defines an array of integer values that represent years, and randomly assigns one element of the array to `foundedBeforeYear`, which is a variable that is locally scoped to the example's `Main` method. Because locally scoped variables are available to a lambda expression, the lambda expression passed to the <xref:System.Collections.Generic.List%601.FindAll%2A?displayProperty=fullName> method is able to return a `HockeyTeam` object for each team founded on or before that year.  
+  
+ [!code-csharp[System.Predicate\`1#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Predicate`1/cs/predicate1.cs#3)]
+ [!code-vb[System.Predicate\`1#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Predicate`1/vb/predicate1.vb#3)]  
+  
+   
+  
+## Examples  
+ The following code example uses a <xref:System.Predicate%601> delegate with the <xref:System.Array.Find%2A?displayProperty=fullName> method to search an array of <xref:System.Drawing.Point> structures. The example explicitly defines a <xref:System.Predicate%601> delegate named `predicate` and assigns it a method named `FindPoints` that returns `true` if the product of the <xref:System.Drawing.Point.X%2A?displayProperty=fullName> and <xref:System.Drawing.Point.Y%2A?displayProperty=fullName> fields is greater than 100,000. Note that it is customary to use a lambda expression rather than to explicitly define a delegate of type <xref:System.Predicate%601>, as the second example illustrates.  
+  
+ [!code-csharp[System.Predicate\`1#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Predicate`1/cs/predicateex2.cs#4)]
+ [!code-vb[System.Predicate\`1#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Predicate`1/vb/predicateex2.vb#4)]  
+  
+ The following example is identical to the previous example, except that it uses a lambda expression to represent the <xref:System.Predicate%601> delegate.  Each element of the `points` array is passed to the lambda expression until the expression finds an element that meets the search criteria. In this case, the lambda expression returns `true` if the product of the X and Y fields is greater than 100,000.  
+  
+ [!code-csharp[System.Predicate\`1#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Predicate`1/cs/predicateex1.cs#2)]
+ [!code-vb[System.Predicate\`1#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Predicate`1/vb/predicateex1.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,65 @@
+<Type Name="ListViewCancelMode" FullName="System.Web.UI.WebControls.ListViewCancelMode">
+  <TypeSignature Language="C#" Value="public enum ListViewCancelMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ListViewCancelMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewCancelMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Determines the type of operation that the user was performing when the **Cancel** button was clicked in a <see cref="T:System.Web.UI.WebControls.ListView" /> item.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ListViewCancelMode> enumeration is used to represent the type of operation that the user was performing when the **Cancel** button was clicked in a <xref:System.Web.UI.WebControls.ListView> item. (A Cancel button is a button whose `CommandName` property set to "Cancel".)  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewCancelMode> enumeration to check which operation is being canceled in a <xref:System.Web.UI.WebControls.ListView> item.  
+  
+ [!code-csharp[System.Web.UI.WebControls.ListView.ItemCanceling#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemCanceling/CS/ListViewItemCancelingCS.aspx#2)]
+ [!code-vb[System.Web.UI.WebControls.ListView.ItemCanceling#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemCanceling/VB/ListViewItemCancelingVB.aspx#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CancelingEdit">
+      <MemberSignature Language="C#" Value="CancelingEdit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ListViewCancelMode CancelingEdit = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListViewCancelMode.CancelingEdit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ListViewCancelMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The user canceled an edit operation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelingInsert">
+      <MemberSignature Language="C#" Value="CancelingInsert" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ListViewCancelMode CancelingInsert = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListViewCancelMode.CancelingInsert" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ListViewCancelMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The user canceled an insert operation.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

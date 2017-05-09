@@ -1,0 +1,301 @@
+<Type Name="XmlSerializerNamespaces" FullName="System.Xml.Serialization.XmlSerializerNamespaces">
+  <TypeSignature Language="C#" Value="public class XmlSerializerNamespaces" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSerializerNamespaces extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSerializerNamespaces" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains the XML namespaces and prefixes that the <see cref="T:System.Xml.Serialization.XmlSerializer" /> uses to generate qualified names in an XML-document instance.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Serialization.XmlSerializerNamespaces> contains a collection of XML namespaces, each with an associated prefix. The <xref:System.Xml.Serialization.XmlSerializer> uses an instance of the <xref:System.Xml.Serialization.XmlSerializerNamespaces> class to create qualified names in an XML document.  
+  
+ XML namespaces contained by the <xref:System.Xml.Serialization.XmlSerializerNamespaces> must conform to the www.w3.org specification named `Namespaces in XML`.  
+  
+ XML namespaces provide a way to qualify the names of XML elements and attributes in XML documents. A qualified name consists of a prefix and a local name, separated by a colon. The prefix functions only as a placeholder; it is mapped to a URI that specifies a namespace. The combination of the universally-managed URI namespace and the local name produces a name that is guaranteed to be universally unique.  
+  
+ To create qualified names in an XML document:  
+  
+1.  Create an <xref:System.Xml.Serialization.XmlSerializerNamespaces> instance.  
+  
+2.  <xref:System.Xml.Serialization.XmlSerializerNamespaces.Add%2A> each prefix and namespace pair that you want to the instance.  
+  
+3.  Apply the appropriate.NET attribute to each property or class that the <xref:System.Xml.Serialization.XmlSerializer> serializes into an XML document. The available attributes are:  
+  
+-   <xref:System.Xml.Serialization.XmlArrayAttribute>  
+  
+-   <xref:System.Xml.Serialization.XmlArrayItemAttribute>  
+  
+-   <xref:System.Xml.Serialization.XmlAttributeAttribute>  
+  
+-   <xref:System.Xml.Serialization.XmlElementAttribute>  
+  
+-   <xref:System.Xml.Serialization.XmlRootAttribute>  
+  
+-   <xref:System.Xml.Serialization.XmlTypeAttribute>  
+  
+1.  Set the `Namespace` property of each attribute to one of the namespace values from the <xref:System.Xml.Serialization.XmlSerializerNamespaces> object.  
+  
+2.  Pass the <xref:System.Xml.Serialization.XmlSerializerNamespaces> to the <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> method of the <xref:System.Xml.Serialization.XmlSerializer>.  
+  
+> [!NOTE]
+>  The creation of an empty namespace and prefix pair is not supported. That is, you cannot create a pair using the following code:  
+  
+```csharp  
+XmlSerializerNamespaces ns = new XmlSerializerNamespaces();   
+ns.Add("", "");  
+```  
+  
+```vb  
+Dim ns As XmlSerializerNamespaces ns = New XmlSerializerNamespaces()  
+ns.Add("", "")  
+```  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Xml.Serialization.XmlSerializerNamespaces> object, and adds two prefix and namespace pairs to it. The example then passes the <xref:System.Xml.Serialization.XmlSerializerNamespaces> to the <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> method, which serializes a `Books` object into an XML document. Using the <xref:System.Xml.Serialization.XmlSerializerNamespaces> object, the <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> method qualifies each XML element and attribute with one of the two namespaces.  
+  
+ [!code-cpp[Classic XmlSerializerNamespaces Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlSerializerNamespaces Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlSerializerNamespaces Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlSerializerNamespaces Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSerializerNamespaces ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerNamespaces.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlSerializerNamespaces" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an instance of the <xref:System.Xml.Serialization.XmlSerializerNamespaces> class, and adds a prefix and namespace pair to the object.  
+  
+ [!code-cpp[XmlSerializerNameSpaces_Constructor#1](~/samples/snippets/cpp/VS_Snippets_Remoting/XmlSerializerNameSpaces_Constructor/CPP/xmlserializernamespaces_constructor.cpp#1)]
+ [!code-csharp[XmlSerializerNameSpaces_Constructor#1](~/samples/snippets/csharp/VS_Snippets_Remoting/XmlSerializerNameSpaces_Constructor/CS/xmlserializernamespaces_constructor.cs#1)]
+ [!code-vb[XmlSerializerNameSpaces_Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/XmlSerializerNameSpaces_Constructor/VB/xmlserializernamespaces_constructor.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSerializerNamespaces (System.Xml.Serialization.XmlSerializerNamespaces namespaces);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Serialization.XmlSerializerNamespaces namespaces) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerNamespaces.#ctor(System.Xml.Serialization.XmlSerializerNamespaces)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="namespaces" Type="System.Xml.Serialization.XmlSerializerNamespaces" />
+      </Parameters>
+      <Docs>
+        <param name="namespaces">An instance of the <see cref="T:System.Xml.Serialization.XmlSerializerNamespaces" />containing the namespace and prefix pairs.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlSerializerNamespaces" /> class, using the specified instance of <see langword="XmlSerializerNamespaces" /> containing the collection of prefix and namespace pairs.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates two <xref:System.Xml.XmlQualifiedName> objects, and creates a new <xref:System.Xml.Serialization.XmlSerializerNamespaces> instance from them.  
+  
+ [!code-cpp[Classic XmlSerializerNamespaces.XmlSerializerNamespaces1 Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.XmlSerializerNamespaces1 Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlSerializerNamespaces.XmlSerializerNamespaces1 Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.XmlSerializerNamespaces1 Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlSerializerNamespaces.XmlSerializerNamespaces1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.XmlSerializerNamespaces1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSerializerNamespaces (System.Xml.XmlQualifiedName[] namespaces);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlQualifiedName[] namespaces) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerNamespaces.#ctor(System.Xml.XmlQualifiedName[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="namespaces" Type="System.Xml.XmlQualifiedName[]" />
+      </Parameters>
+      <Docs>
+        <param name="namespaces">An array of <see cref="T:System.Xml.XmlQualifiedName" /> objects.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlSerializerNamespaces" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string prefix, string ns);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string prefix, string ns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerNamespaces.Add(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The prefix associated with an XML namespace.</param>
+        <param name="ns">An XML namespace.</param>
+        <summary>Adds a prefix and namespace pair to an <see cref="T:System.Xml.Serialization.XmlSerializerNamespaces" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you want the <xref:System.Xml.Serialization.XmlSerializer> to qualify the element and attribute names in an XML document, you must <xref:System.Xml.Serialization.XmlSerializerNamespaces.Add%2A> the prefix and namespace pairs to an <xref:System.Xml.Serialization.XmlSerializerNamespaces> object.  
+  
+ Any namespaces that you add must conform to the www.w3.org specification `Namespaces in XML`.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Xml.Serialization.XmlSerializerNamespaces> object, and adds three prefix and namespace pairs to it by calling the <xref:System.Xml.Serialization.XmlSerializerNamespaces.Add%2A> method.  
+  
+ [!code-cpp[Classic XmlSerializerNamespaces.Add Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.Add Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlSerializerNamespaces.Add Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.Add Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlSerializerNamespaces.Add Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.Add Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializerNamespaces.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of prefix and namespace pairs in the collection.</summary>
+        <value>The number of prefix and namespace pairs in the collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToArray">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlQualifiedName[] ToArray ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlQualifiedName[] ToArray() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerNamespaces.ToArray" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlQualifiedName[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the array of prefix and namespace pairs in an <see cref="T:System.Xml.Serialization.XmlSerializerNamespaces" /> object.</summary>
+        <returns>An array of <see cref="T:System.Xml.XmlQualifiedName" /> objects that are used as qualified names in an XML document.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example prints each <xref:System.Xml.XmlQualifiedName.Name%2A> and <xref:System.Xml.XmlQualifiedName.Namespace%2A> in an <xref:System.Xml.Serialization.XmlSerializerNamespaces> object.  
+  
+ [!code-cpp[Classic XmlSerializerNamespaces.ToArray Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.ToArray Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlSerializerNamespaces.ToArray Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.ToArray Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlSerializerNamespaces.ToArray Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlSerializerNamespaces.ToArray Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

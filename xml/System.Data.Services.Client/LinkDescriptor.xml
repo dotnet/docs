@@ -1,0 +1,97 @@
+<Type Name="LinkDescriptor" FullName="System.Data.Services.Client.LinkDescriptor">
+  <TypeSignature Language="C#" Value="public sealed class LinkDescriptor : System.Data.Services.Client.Descriptor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LinkDescriptor extends System.Data.Services.Client.Descriptor" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.LinkDescriptor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services.Client</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Services.Client.Descriptor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("State = {state}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a description of modifications done to entities by operations returned in a <see cref="T:System.Data.Services.Client.DataServiceResponse" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> method returns a <xref:System.Data.Services.Client.DataServiceResponse> object that contains a series of <xref:System.Data.Services.Client.OperationResponse> objects, each of which contains a sequence of <xref:System.Data.Services.Client.EntityDescriptor> or <xref:System.Data.Services.Client.LinkDescriptor> instances that represent persisted changes.  
+  
+ For successful operations, the <xref:System.Data.Services.Client.EntityDescriptor.State%2A> property of the descriptor is set to unchanged and the new values for insert and update operations are merged according to the merge settings.  
+  
+ For operations with errors, the <xref:System.Data.Services.Client.EntityDescriptor.State%2A> of the descriptor will remain the same as they were before <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> was called.  
+  
+ If an error occurred and processing stopped during an operation, the <xref:System.Data.Services.Client.EntityDescriptor.State%2A> will remain unchanged.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public object Source { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Source" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.LinkDescriptor.Source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A source entity in a link returned by a <see cref="T:System.Data.Services.Client.DataServiceResponse" />.</summary>
+        <value>
+          <see cref="T:System.Object" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceProperty">
+      <MemberSignature Language="C#" Value="public string SourceProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.LinkDescriptor.SourceProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The identifier property of the source entity in a link returned by a <see cref="T:System.Data.Services.Client.DataServiceResponse" />.</summary>
+        <value>The string identifier of an identity property in a source entity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public object Target { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Target" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.LinkDescriptor.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The source entity in a link returned by a <see cref="T:System.Data.Services.Client.DataServiceResponse" />.</summary>
+        <value>
+          <see cref="T:System.Object" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

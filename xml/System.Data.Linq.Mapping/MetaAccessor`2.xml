@@ -1,0 +1,148 @@
+<Type Name="MetaAccessor&lt;TEntity,TMember&gt;" FullName="System.Data.Linq.Mapping.MetaAccessor&lt;TEntity,TMember&gt;">
+  <TypeSignature Language="C#" Value="public abstract class MetaAccessor&lt;TEntity,TMember&gt; : System.Data.Linq.Mapping.MetaAccessor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MetaAccessor`2&lt;TEntity, TMember&gt; extends System.Data.Linq.Mapping.MetaAccessor" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.MetaAccessor`2" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TEntity" />
+    <TypeParameter Name="TMember" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Data.Linq.Mapping.MetaAccessor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TEntity">The type of the source.</typeparam>
+    <typeparam name="TMember">The type of the member of that source.</typeparam>
+    <summary>A strongly typed version of the <see cref="T:System.Data.Linq.Mapping.MetaAccessor" /> class.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MetaAccessor ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaAccessor`2.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.Mapping.MetaAccessor`2" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBoxedValue">
+      <MemberSignature Language="C#" Value="public override object GetBoxedValue (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetBoxedValue(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaAccessor`2.GetBoxedValue(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The instance from which to get the value or on which to set the value.</param>
+        <summary>Specifies an object on which to set a value or from which to get a value.</summary>
+        <returns>The boxed value of this instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public abstract TMember GetValue (TEntity instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TMember GetValue(!TEntity instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaAccessor`2.GetValue(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TMember</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="TEntity" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The instance from which to get the value.</param>
+        <summary>Specifies the strongly typed value.</summary>
+        <returns>The value of this instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBoxedValue">
+      <MemberSignature Language="C#" Value="public override void SetBoxedValue (ref object instance, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetBoxedValue(object instance, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaAccessor`2.SetBoxedValue(System.Object@,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The instance into which to set the boxed value.</param>
+        <param name="value">The value to set.</param>
+        <summary>Specifies an instance on which to set the boxed value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public abstract void SetValue (ref TEntity instance, TMember value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetValue(!TEntity instance, !TMember value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaAccessor`2.SetValue(`0@,`1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="TEntity&amp;" RefType="ref" />
+        <Parameter Name="value" Type="TMember" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The instance into which to set the value.</param>
+        <param name="value">The strongly typed value to set.</param>
+        <summary>Specifies an instance on which to set the strongly typed value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public override Type Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaAccessor`2.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the member accessed by this accessor.</summary>
+        <value>The member type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

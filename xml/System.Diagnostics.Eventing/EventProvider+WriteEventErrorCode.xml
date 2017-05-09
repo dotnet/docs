@@ -1,0 +1,75 @@
+<Type Name="EventProvider+WriteEventErrorCode" FullName="System.Diagnostics.Eventing.EventProvider+WriteEventErrorCode">
+  <TypeSignature Language="C#" Value="public enum EventProvider.WriteEventErrorCode" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed EventProvider/WriteEventErrorCode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.EventProvider.WriteEventErrorCode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines the possible states of the last write operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To get an instance of this enumeration, call the <xref:System.Diagnostics.Eventing.EventProvider.GetLastWriteEventError%2A?displayProperty=fullName> method.  
+  
+ The <xref:System.Diagnostics.Eventing.EventProvider.WriteEvent%2A?displayProperty=fullName>, <xref:System.Diagnostics.Eventing.EventProvider.WriteMessageEvent%2A?displayProperty=fullName>, and <xref:System.Diagnostics.Eventing.EventProvider.WriteTransferEvent%2A?displayProperty=fullName> methods set this value if they fail to write the event.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EventTooBig">
+      <MemberSignature Language="C#" Value="EventTooBig" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.EventProvider/WriteEventErrorCode EventTooBig = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.EventProvider.WriteEventErrorCode.EventTooBig" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.EventProvider+WriteEventErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The event is larger than the session buffer size; events cannot span buffers.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoError">
+      <MemberSignature Language="C#" Value="NoError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.EventProvider/WriteEventErrorCode NoError = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.EventProvider.WriteEventErrorCode.NoError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.EventProvider+WriteEventErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The write was successful.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoFreeBuffers">
+      <MemberSignature Language="C#" Value="NoFreeBuffers" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.EventProvider/WriteEventErrorCode NoFreeBuffers = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.EventProvider.WriteEventErrorCode.NoFreeBuffers" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.EventProvider+WriteEventErrorCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The session ran out of free buffers to write to. This can occur during high event rates because the disk subsystem is overloaded or the number of buffers is too small. Rather than blocking until more buffers become available, the event is dropped. Consider increasing the number and size of the buffers for the session, or reducing the number of events written or the size of the events.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,114 @@
+<Type Name="HelpContextType" FullName="System.ComponentModel.Design.HelpContextType">
+  <TypeSignature Language="C#" Value="public enum HelpContextType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HelpContextType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.HelpContextType" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines identifiers that indicate information about the context in which a request for Help information originated.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ComponentModel.Design.HelpContextType> defines identifiers that are used by the Help system to determine the context in which a Help request was initiated.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Ambient">
+      <MemberSignature Language="C#" Value="Ambient" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.HelpContextType Ambient = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.HelpContextType.Ambient" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.HelpContextType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A general context.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Selection">
+      <MemberSignature Language="C#" Value="Selection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.HelpContextType Selection = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.HelpContextType.Selection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.HelpContextType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A selection.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolWindowSelection">
+      <MemberSignature Language="C#" Value="ToolWindowSelection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.HelpContextType ToolWindowSelection = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.HelpContextType.ToolWindowSelection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.HelpContextType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A tool window selection.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Window">
+      <MemberSignature Language="C#" Value="Window" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.HelpContextType Window = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.HelpContextType.Window" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.HelpContextType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A window.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

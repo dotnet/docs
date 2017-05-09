@@ -1,0 +1,722 @@
+<Type Name="HtmlTextWriterStyle" FullName="System.Web.UI.HtmlTextWriterStyle">
+  <TypeSignature Language="C#" Value="public enum HtmlTextWriterStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HtmlTextWriterStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlTextWriterStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the HTML styles available to an <see cref="T:System.Web.UI.HtmlTextWriter" /> or <see cref="T:System.Web.UI.Html32TextWriter" /> object output stream.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.UI.HtmlTextWriter> and <xref:System.Web.UI.Html32TextWriter> objects use these enumeration values to register HTML strings to the proper HTML style.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Web.UI.HtmlTextWriterStyle> enumeration with the <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A> method to add a `color` style attribute to an HTML element and sets its value.  
+  
+ [!code-cpp[System.Web.UI.HtmlTextWriter#2](~/samples/snippets/cpp/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/CPP/htmltextwriter.cpp#2)]
+ [!code-csharp[System.Web.UI.HtmlTextWriter#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/CS/htmltextwriter.cs#2)]
+ [!code-vb[System.Web.UI.HtmlTextWriter#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.HtmlTextWriter/VB/htmltextwriter.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BackgroundColor">
+      <MemberSignature Language="C#" Value="BackgroundColor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle BackgroundColor = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.BackgroundColor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="backgroundcolor" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BackgroundImage">
+      <MemberSignature Language="C#" Value="BackgroundImage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle BackgroundImage = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.BackgroundImage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="backgroundimage" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderCollapse">
+      <MemberSignature Language="C#" Value="BorderCollapse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle BorderCollapse = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.BorderCollapse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="bordercollapse" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderColor">
+      <MemberSignature Language="C#" Value="BorderColor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle BorderColor = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.BorderColor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="bordercolor" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderStyle">
+      <MemberSignature Language="C#" Value="BorderStyle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle BorderStyle = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.BorderStyle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="borderstyle" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderWidth">
+      <MemberSignature Language="C#" Value="BorderWidth" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle BorderWidth = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.BorderWidth" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="borderwidth" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Color">
+      <MemberSignature Language="C#" Value="Color" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Color = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Color" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="color" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cursor">
+      <MemberSignature Language="C#" Value="Cursor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Cursor = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Cursor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="cursor" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Direction">
+      <MemberSignature Language="C#" Value="Direction" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Direction = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Direction" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="direction" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Display">
+      <MemberSignature Language="C#" Value="Display" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Display = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Display" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="display" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="Filter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Filter = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Filter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="filter" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FontFamily">
+      <MemberSignature Language="C#" Value="FontFamily" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle FontFamily = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.FontFamily" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="fontfamily" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FontSize">
+      <MemberSignature Language="C#" Value="FontSize" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle FontSize = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.FontSize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="fontsize" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FontStyle">
+      <MemberSignature Language="C#" Value="FontStyle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle FontStyle = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.FontStyle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="fontstyle" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FontVariant">
+      <MemberSignature Language="C#" Value="FontVariant" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle FontVariant = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.FontVariant" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="fontvariant" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FontWeight">
+      <MemberSignature Language="C#" Value="FontWeight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle FontWeight = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.FontWeight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="fontheight" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="Height" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Height = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Height" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="height" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="Left" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Left = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Left" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="left" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ListStyleImage">
+      <MemberSignature Language="C#" Value="ListStyleImage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle ListStyleImage = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.ListStyleImage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="liststyleimage" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ListStyleType">
+      <MemberSignature Language="C#" Value="ListStyleType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle ListStyleType = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.ListStyleType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="liststyletype" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Margin">
+      <MemberSignature Language="C#" Value="Margin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Margin = int32(22)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Margin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="margin" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MarginBottom">
+      <MemberSignature Language="C#" Value="MarginBottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle MarginBottom = int32(23)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.MarginBottom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="marginbottom" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MarginLeft">
+      <MemberSignature Language="C#" Value="MarginLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle MarginLeft = int32(24)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.MarginLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="marginleft" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MarginRight">
+      <MemberSignature Language="C#" Value="MarginRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle MarginRight = int32(25)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.MarginRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="marginright" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MarginTop">
+      <MemberSignature Language="C#" Value="MarginTop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle MarginTop = int32(26)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.MarginTop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="margintop" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Overflow">
+      <MemberSignature Language="C#" Value="Overflow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Overflow = int32(27)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Overflow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="overflow" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OverflowX">
+      <MemberSignature Language="C#" Value="OverflowX" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle OverflowX = int32(28)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.OverflowX" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="overflowx" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OverflowY">
+      <MemberSignature Language="C#" Value="OverflowY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle OverflowY = int32(29)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.OverflowY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="overflowy" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Padding">
+      <MemberSignature Language="C#" Value="Padding" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Padding = int32(30)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Padding" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="padding" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PaddingBottom">
+      <MemberSignature Language="C#" Value="PaddingBottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle PaddingBottom = int32(31)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.PaddingBottom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="paddingbottom" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PaddingLeft">
+      <MemberSignature Language="C#" Value="PaddingLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle PaddingLeft = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.PaddingLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="paddingleft" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PaddingRight">
+      <MemberSignature Language="C#" Value="PaddingRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle PaddingRight = int32(33)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.PaddingRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="paddingright" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PaddingTop">
+      <MemberSignature Language="C#" Value="PaddingTop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle PaddingTop = int32(34)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.PaddingTop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="paddingtop" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Position">
+      <MemberSignature Language="C#" Value="Position" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Position = int32(35)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Position" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="position" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TextAlign">
+      <MemberSignature Language="C#" Value="TextAlign" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle TextAlign = int32(36)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.TextAlign" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="textalign" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TextDecoration">
+      <MemberSignature Language="C#" Value="TextDecoration" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle TextDecoration = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.TextDecoration" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="textdecoration" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TextOverflow">
+      <MemberSignature Language="C#" Value="TextOverflow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle TextOverflow = int32(38)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.TextOverflow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="textoverflow" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="Top" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Top = int32(39)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Top" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="top" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalAlign">
+      <MemberSignature Language="C#" Value="VerticalAlign" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle VerticalAlign = int32(37)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.VerticalAlign" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="verticalalign" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Visibility">
+      <MemberSignature Language="C#" Value="Visibility" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Visibility = int32(40)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Visibility" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="visibility" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WhiteSpace">
+      <MemberSignature Language="C#" Value="WhiteSpace" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle WhiteSpace = int32(41)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.WhiteSpace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="whitespace" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="Width" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Width = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Width" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="width" /> style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ZIndex">
+      <MemberSignature Language="C#" Value="ZIndex" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle ZIndex = int32(42)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.ZIndex" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the HTML <see langword="zindex" /> style.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

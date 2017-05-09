@@ -1,0 +1,94 @@
+<Type Name="ForestTrustRelationshipInformation" FullName="System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipInformation">
+  <TypeSignature Language="C#" Value="public class ForestTrustRelationshipInformation : System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ForestTrustRelationshipInformation extends System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipInformation" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.ActiveDirectory.TrustRelationshipInformation</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipInformation" /> class contains information about a trust relationship between two <see cref="T:System.DirectoryServices.ActiveDirectory.Forest" /> objects.</summary>
+    <remarks>To be added.</remarks>
+    <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" /></permission>
+  </Docs>
+  <Members>
+    <Member MemberName="ExcludedTopLevelNames">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection ExcludedTopLevelNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection ExcludedTopLevelNames" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipInformation.ExcludedTopLevelNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the excluded top-level names in the <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipInformation" /> object.</summary>
+        <value>A read/write <see cref="T:System.Collections.Specialized.StringCollection" /> that contains the excluded top-level names in the current object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public void Save ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipInformation.Save" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Commits any changes to the <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipInformation" /> properties to the Active Directory Domain Services store.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryOperationException">A call to the underlying directory service resulted in an error.</exception>
+        <exception cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustCollisionException">A collision occurred with an existing trust relationship.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TopLevelNames">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.TopLevelNameCollection TopLevelNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.TopLevelNameCollection TopLevelNames" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipInformation.TopLevelNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.TopLevelNameCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the top-level names in the <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipInformation" /> object.</summary>
+        <value>A read-only <see cref="T:System.DirectoryServices.ActiveDirectory.TopLevelNameCollection" /> object that contains the top-level names in the current object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrustedDomainInformation">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ForestTrustDomainInfoCollection TrustedDomainInformation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.ForestTrustDomainInfoCollection TrustedDomainInformation" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipInformation.TrustedDomainInformation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ForestTrustDomainInfoCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the trusted domain information for this <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation" /> object.</summary>
+        <value>A read-only <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustDomainInfoCollection" /> object that contains the <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustDomainInformation" /> object  for the current object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

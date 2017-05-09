@@ -1,0 +1,219 @@
+<Type Name="SplashScreen" FullName="System.Windows.SplashScreen">
+  <TypeSignature Language="C#" Value="public class SplashScreen" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SplashScreen extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.SplashScreen" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical(System.Security.SecurityCriticalScope.Everything)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a startup screen for a Windows Presentation Foundation (WPF) application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.SplashScreen> class to show an image in a startup window, or *splash screen*, when a WPF application starts. Call the <xref:System.Windows.SplashScreen.Show%2A> method to display the splash screen. Call the <xref:System.Windows.SplashScreen.Close%2A> method to close the splash screen. Specify the image to use in the <xref:System.Windows.SplashScreen> constructor.  
+  
+ The <xref:System.Windows.SplashScreen> class can display any image format that is supported by the Windows Imaging Component (WIC). For example, you can use the BMP, GIF, JPEG, PNG, or TIFF format. If the image is a PNG file and it includes an alpha channel, the image is rendered using the transparency defined in the alpha channel.  
+  
+ You cannot include placeholder text in the splash screen that is later added by your code. If you want to include text in the splash screen, you must add it to the image file.  
+  
+> [!NOTE]
+>  It is not necessary to write any code to display a splash screen. Starting in [!INCLUDE[vs_orcas_long](~/includes/vs-orcas-long-md.md)] SP1, you can quickly configure a splash screen with default settings. For more information, see [How to: Add a Splash Screen to a WPF Application](~/docs/framework/wpf/app-development/how-to-add-a-splash-screen-to-a-wpf-application.md).  
+  
+ The <xref:System.Windows.SplashScreen> class displays the splash screen as soon as possible after the application is started. The splash screen is displayed by using native code, before the WPF application instance is created. The splash screen is displayed in the center of the screen. When the application is loaded, the splash screen fades.  
+  
+ When your application is compiled, the image is embedded as a managed resource in the assembly. If the application is localized, the image is embedded in the localized satellite DLL.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.SplashScreen> class is not available in partial trust.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.SplashScreen> class cannot be used in XAML Browser Applications (XBAPs), because they use a different startup architecture.  
+  
+   
+  
+## Examples  
+ The following code example shows how to create and display a startup window by using the <xref:System.Windows.SplashScreen> class.  
+  
+ [!code-csharp[System.Windows.SplashScreen#2](~/samples/snippets/csharp/VS_Snippets_Wpf/System.Windows.SplashScreen/CS/App.xaml.cs#2)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SplashScreen (string resourceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string resourceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.SplashScreen.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="resourceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="resourceName">The name of the embedded resource.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.SplashScreen" /> class with the specified resource.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `resourceName` parameter follows the usual rules for embedded resources. For more information, see the <xref:System.Resources.ResourceManager> class. The `resourceName` parameter specifies the name of the resource file, and not a URI.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged resources. Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SplashScreen (System.Reflection.Assembly resourceAssembly, string resourceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Assembly resourceAssembly, string resourceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.SplashScreen.#ctor(System.Reflection.Assembly,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="resourceAssembly" Type="System.Reflection.Assembly" />
+        <Parameter Name="resourceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="resourceAssembly">The assembly that contains the embedded resource.</param>
+        <param name="resourceName">The name of the embedded resource.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.SplashScreen" /> class with the specified resource assembly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `resourceAssembly` and `resourceName` parameters follow the usual rules for embedded resources. For more information, see the <xref:System.Resources.ResourceManager> class. The `resourceName` parameter specifies the name of the resource file, and not a URI.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close (TimeSpan fadeoutDuration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close(valuetype System.TimeSpan fadeoutDuration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.SplashScreen.Close(System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fadeoutDuration" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="fadeoutDuration">A <see cref="T:System.TimeSpan" /> that specifies how long it will take for the splash screen to fade after the close operation has been initiated.</param>
+        <summary>Closes the splash screen.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you called the <xref:System.Windows.SplashScreen.Show%2A> method with the `autoClose` parameter set to `true`, you do not have to call the <xref:System.Windows.SplashScreen.Close%2A> method. The splash screen will close automatically after the application is loaded. When the splash screen closes, the length of time it will take for it to fade is determined by the default value for the `fadeoutDuration` parameter, which is 300 milliseconds.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public void Show (bool autoClose);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Show(bool autoClose) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.SplashScreen.Show(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="autoClose" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="autoClose">
+          <see langword="true" /> to automatically close the splash screen; <see langword="false" /> to close the splash screen manually.</param>
+        <summary>Displays the splash screen.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you call the <xref:System.Windows.SplashScreen.Show%2A> method with `autoClose` set to `true`, you do not have to call the <xref:System.Windows.SplashScreen.Close%2A> method. The splash screen will close automatically after the application is loaded. When the splash screen closes, the length of time it will take for it to fade is determined by the default value for the `fadeoutDuration` parameter, which is 300 milliseconds.  
+  
+ Call the <xref:System.Windows.SplashScreen.Show%2A> method with `autoClose` set to `false` when you want to provide a non-default value for the fade duration. You will have to call the <xref:System.Windows.SplashScreen.Close%2A> method to close the splash screen.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IO.IOException">The resource specified in the constructor could not be found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public void Show (bool autoClose, bool topMost);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Show(bool autoClose, bool topMost) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.SplashScreen.Show(System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="autoClose" Type="System.Boolean" />
+        <Parameter Name="topMost" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="autoClose">
+          <see langword="true" /> to automatically close the splash screen; <see langword="false" /> to close the splash screen manually.</param>
+        <param name="topMost">
+          <see langword="true" /> if the splash screen window should use the WS_EX_TOPMOST style; otherwise <see langword="false" />.</param>
+        <summary>Displays the splash screen.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

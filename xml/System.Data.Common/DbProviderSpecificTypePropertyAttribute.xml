@@ -1,0 +1,85 @@
+<Type Name="DbProviderSpecificTypePropertyAttribute" FullName="System.Data.Common.DbProviderSpecificTypePropertyAttribute">
+  <TypeSignature Language="C#" Value="public sealed class DbProviderSpecificTypePropertyAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DbProviderSpecificTypePropertyAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.DbProviderSpecificTypePropertyAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property, AllowMultiple=false, Inherited=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Identifies which provider-specific property in the strongly typed parameter classes is to be used when setting a provider-specific type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Common.DbProviderSpecificTypePropertyAttribute> is used by a provider writer to designate a provider-specific type parameter property which is not inherited from the <xref:System.Data.Common.DbParameter> base class. The <xref:System.Data.SqlClient.SqlParameter.SqlDbType%2A> property of a <xref:System.Data.SqlClient.SqlParameter> is an example of a provider-specific type property not found in `DbParameter`.  
+  
+ A provider writer can apply `DbProviderSpecificTypePropertyAttribute(true)` to indicate a provider-specific data type parameter property. This allows for its discovery using reflection, which enables code generation tools, such as those used in Visual Studio, to generate code geared to a specific provider. The <xref:System.Data.Common.DbProviderSpecificTypePropertyAttribute.IsProviderSpecificTypeProperty%2A> property returns `true` if the property has been set, otherwise `false`.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DbProviderSpecificTypePropertyAttribute (bool isProviderSpecificTypeProperty);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isProviderSpecificTypeProperty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderSpecificTypePropertyAttribute.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="isProviderSpecificTypeProperty" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="isProviderSpecificTypeProperty">Specifies whether this property is a provider-specific property.</param>
+        <summary>Initializes a new instance of a <see cref="T:System.Data.Common.DbProviderSpecificTypePropertyAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsProviderSpecificTypeProperty">
+      <MemberSignature Language="C#" Value="public bool IsProviderSpecificTypeProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsProviderSpecificTypeProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.DbProviderSpecificTypePropertyAttribute.IsProviderSpecificTypeProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the attributed property is a provider-specific type.</summary>
+        <value>
+          <see langword="true" /> if the property that this attribute is applied to is a provider-specific type property; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

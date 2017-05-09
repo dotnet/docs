@@ -1,0 +1,75 @@
+<Type Name="DockingBehavior" FullName="System.Windows.Forms.DockingBehavior">
+  <TypeSignature Language="C#" Value="public enum DockingBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DockingBehavior extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DockingBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how a control should be docked by default when added through a designer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DockingBehavior> enumeration is used by the <xref:System.Windows.Forms.DockingAttribute?displayProperty=fullName> class.  
+  
+ The <xref:System.Windows.Forms.SplitContainer> and <xref:System.Windows.Forms.WebBrowser> controls are set to AutoDock. The <xref:System.Windows.Forms.DataGridView> control is set to Ask.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Ask">
+      <MemberSignature Language="C#" Value="Ask" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DockingBehavior Ask = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DockingBehavior.Ask" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DockingBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Prompt the user for the desired docking behavior.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoDock">
+      <MemberSignature Language="C#" Value="AutoDock" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DockingBehavior AutoDock = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DockingBehavior.AutoDock" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DockingBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Set the control's <see cref="P:System.Windows.Forms.Control.Dock" /> property to <see cref="F:System.Windows.Forms.DockStyle.Fill" /> when it is dropped into a container with no other child controls.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Never">
+      <MemberSignature Language="C#" Value="Never" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DockingBehavior Never = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DockingBehavior.Never" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DockingBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Do not prompt the user for the desired docking behavior.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

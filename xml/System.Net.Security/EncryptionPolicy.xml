@@ -1,0 +1,114 @@
+<Type Name="EncryptionPolicy" FullName="System.Net.Security.EncryptionPolicy">
+  <TypeSignature Language="C#" Value="public enum EncryptionPolicy" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EncryptionPolicy extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Security.EncryptionPolicy" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Security</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>The EncryptionPolicy to use.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Security.EncryptionPolicy> can be set to require, allow, or prevent encryption.  
+  
+   
+  
+## Examples  
+ The <xref:System.Net.Security.EncryptionPolicy> will be applied to an SSL/TLS session.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllowNoEncryption">
+      <MemberSignature Language="C#" Value="AllowNoEncryption" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Security.EncryptionPolicy AllowNoEncryption = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Security.EncryptionPolicy.AllowNoEncryption" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Security.EncryptionPolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Prefer that full encryption be used, but allow a NULL cipher (no encryption) if the server agrees.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoEncryption">
+      <MemberSignature Language="C#" Value="NoEncryption" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Security.EncryptionPolicy NoEncryption = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Security.EncryptionPolicy.NoEncryption" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Security.EncryptionPolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Allow no encryption and request that a NULL cipher be used if the other endpoint can handle a NULL cipher.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RequireEncryption">
+      <MemberSignature Language="C#" Value="RequireEncryption" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Security.EncryptionPolicy RequireEncryption = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Security.EncryptionPolicy.RequireEncryption" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Security.EncryptionPolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Require encryption and never allow a NULL cipher.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

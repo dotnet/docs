@@ -1,0 +1,1915 @@
+<Type Name="ConnectionsZone" FullName="System.Web.UI.WebControls.WebParts.ConnectionsZone">
+  <TypeSignature Language="C#" Value="public class ConnectionsZone : System.Web.UI.WebControls.WebParts.ToolZone" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConnectionsZone extends System.Web.UI.WebControls.WebParts.ToolZone" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.WebParts.ToolZone</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.WebParts.ConnectionsZoneDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.SupportsEventValidation</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a user interface (UI) that enables users to form connections between <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> and other server controls that reside in <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" /> zones.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using the Web Parts control set, you can enable two server controls to form a connection and share data, with one control acting as the provider, and the other acting as the consumer of the data. The two controls can be <xref:System.Web.UI.WebControls.WebParts.WebPart> controls or any other type of server control, provided that they are designed to handle connections, and that they are residing in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone. To learn more about Web Parts connections, see the <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> and <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint> class overviews, as well as [Web Parts Connections Overview](http://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b).  
+  
+ Provided that the requisite controls and conditions exist to form a Web Parts connection, it is still necessary to actually connect the controls. There are three ways to form a connection between server controls: declaring a connection in a Web page, creating a connection in code, or adding a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control to the page so that users can connect the controls on demand. The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control generates a UI that enables users to connect or disconnect any server controls on a page that meet the conditions necessary to form a connection. It is an optional control that is not necessary to form connections, but is useful in the case where you want to give users control over which server controls are connected or disconnected.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control is one of the Web Parts tool zone controls that inherit from the <xref:System.Web.UI.WebControls.WebParts.ToolZone> base class. As a tool zone, the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control is designed to be visible only when its Web page is in a certain display mode. In this case, the display mode is named connect mode (a page is in this mode when the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control on the page has its <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayMode%2A> property value set to <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectDisplayMode>). After users switch a page into connect mode, they must click a connect verb on the verbs menu of one of the server controls, and then the connection UI becomes visible.  
+  
+ As a Web Parts zone control, the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control is a type of <xref:System.Web.UI.WebControls.WebParts.WebZone> zone (which inherits from the <xref:System.Web.UI.WebControls.CompositeControl> class) designed to contain other controls. In general, a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> zone has most of the same elements as other Web Parts tool zones: a header, a body or contents area, and a footer. For a complete discussion of what a Web Parts zone is, and the different parts of a zone, see the <xref:System.Web.UI.WebControls.WebParts.WebZone> class overview.  
+  
+> [!IMPORTANT]
+>  Unlike most other Web Parts zones, it is important to note that a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> zone does not contain a unique type of server control associated with it. For a list of zones and the associated controls they contain, see the chart in the <xref:System.Web.UI.WebControls.WebParts.WebZone> class overview. But the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> zone does not contain <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> controls. Instead, it serves a very limited purpose of providing a UI for users to connect or disconnect server controls that exist in some <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone on the page. The only controls contained in a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control are the standard ASP.NET server controls that it generates as part of its UI for forming connections.  
+  
+ When the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control is rendered, it generates a UI based on the server controls on the page that are capable of forming connections. The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control determines which server controls in the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone on the page are providers, which are consumers, which connection points are available, and whether the server controls are currently connected or disconnected, and then it generates the UI accordingly.  
+  
+ For example, suppose there is one <xref:System.Web.UI.WebControls.WebParts.WebPart> control capable of being a provider, one <xref:System.Web.UI.WebControls.WebParts.WebPart> control capable of being a consumer, they are declared in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> on the page, and they are currently disconnected. When a user switches the page to connect mode and clicks the connect verb on one of the controls, the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control generates a UI with a link that, when clicked, displays a form in which users can choose options to create a connection. (If the controls were previously connected, the initial view instead presents users with a button to disconnect the controls). In the connection UI for creating new connections, users are shown which control is a provider, and which control is a consumer. A drop-down list control appears below each server control, listing the available <xref:System.Web.UI.WebControls.WebParts.ConnectionPoint> objects for the control. From the respective drop-down lists, users must select one <xref:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint> object for the provider (to determine what interface and data will be shared with consumers), and one <xref:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint> object for each consumer (to determine what interface and data the consumer will consume) that will be connected to the provider.  
+  
+> [!NOTE]
+>  In the Web Parts control set default implementation, one provider can connect to many consumers, but a consumer can have only one provider.  
+  
+ To use the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control, you can declare it within the `<form>` element on a Web page (but not nested within another Web Parts zone element), using the `<asp:connectionszone>` element, or you can add it to the page programmatically. If you declare the element in a page, unlike the other Web Parts zones, you cannot declare any other type of server controls between the tags of the `<asp:connectionszone>` element. You can declare elements within it that relate to its own properties and style details, but it is a standalone element and is not a template control within which other server controls can be declared.  
+  
+> [!NOTE]
+>  To improve accessibility, the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control is rendered within a `<fieldset>` element. The `<fieldset>` element groups the related set of controls used for establishing connections in the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control, and it facilitates tabbed navigation among those controls for both visual user agents (such as ordinary Web browsers) and speech-oriented user agents (such as screen-reading software).  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control has a number of properties it uses for rendering the connection UI. One set of properties includes several verbs--used only in relation to connections--that carry out actions in the UI: <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConfigureVerb%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectVerb%2A>, and <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.DisconnectVerb%2A>. A large set of properties, used especially for the connections zone UI, consists of text strings displayed at various places (or in certain situations, such as when errors occur) in the UI: <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConfigureConnectionTitle%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerInstructionText%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerText%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerTitle%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderInstructionText%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderText%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderTitle%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersInstructionText%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersTitle%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ExistingConnectionErrorMessage%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetFromText%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetText%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionTitle%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.NewConnectionErrorMessage%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.NoExistingConnectionInstructionText%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.NoExistingConnectionTitle%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersInstructionText%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersTitle%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.SendText%2A>, and <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.SendToText%2A>. The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class also contains a number of common properties found in other Web Parts zones: <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.CancelVerb%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.CloseVerb%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.Display%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.EmptyZoneText%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.HeaderText%2A>, <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionText%2A>, and <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.PartChromeType%2A>. Finally, the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.WebPartToConnect%2A> property is unique to the class, referencing the control that initiates the connection (this is the control on which the user clicks the connect verb in its verbs menu, which is also the control referenced in the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control's <xref:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPart%2A> property).  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class also has a number of methods, all of which are inherited and overridden from base classes, and most of them come from the base Web Parts zone classes. For details, see the individual methods.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control on a Web Parts page. The example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection.  
+  
+-   A Web page that hosts all the controls, demonstrates how to declare an `<asp:connectionszone>` element, and sets a number of properties on the connections zone declaratively and programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The first part of this code example is the user control that enables users to switch display modes on a Web page. For details about display modes and a description of the source code in this control, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#6](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/displaymodemenucs.ascx#6)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/DisplayModeMenuVB.ascx#6)]  -->  
+  
+ The second part of the example is the source file with the interface and custom controls. Notice that the `ZipCodeWebPart` control implements the `IZipCode` interface, adding a `ConnectionProvider` attribute so that the control can act as a provider for a connection. The `WeatherWebPart` control has a method marked with a `ConnectionConsumer` attribute, where it consumes the `IZipCode` interface, so it can act as a consumer in a connection.  
+  
+ For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_ConnectionZone_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/ZipCodeComponent.cs#2)]
+ [!code-vb[WebParts_ConnectionZone_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/ZipCodeComponent.vb#2)]  
+  
+ The third part of the example code is the Web page. Near the top are `Register` directives for the user control and the custom controls used in the connection. An <`asp:connectionszone>` element is declared in the page as an example of using the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control declaratively. Within the element, a number of properties are set declaratively. Other properties on the connections zone are set programmatically in the `<script>` section of the page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the Web page in a browser. Use the **Display Mode** drop-down list control to switch the page to connect mode. On the verbs menu of the **ZIP Code Provider** control (the verbs menu is indicated by the downward arrow in the control's title bar), click the connect verb. A <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control appears. Note that in the connection UI, an **End Connection** button appears; the connection has already been declared in the markup of the page, so the controls are already connected. Click **End Connection**, and then use the **Display Mode** control again to return the page to browse mode. Next, return the page to connect mode again, click the connect verb on one of the controls, and note that the connection UI now displays a hyperlink that enables you to form a connection between the controls. Click the link, and use the connection UI to select connection points and establish the connection.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>The <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" /> class can be extended, if developers want to change its behavior or the default UI that it provides for working with connections.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConnectionsZone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This default constructor is called when you declare the `<asp:connectionszone>` element in an ASP.NET page. You do not need to implicitly call this constructor, except in cases where you are adding the control to the page programmatically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.%23ctor%2A> constructor to create a new instance of a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control to add to a Web page programmatically. The example contains only the code for the Web page that demonstrates use of the constructor; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls and, in its `Page_Init` method, uses the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.%23ctor%2A> constructor to create a new instance of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control and add it to the page.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ On the Web page, in the `Page_Init` method, a new <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control is created (using the constructor) and added to the page. When a user sets the page to connect mode and clicks the connect verb on one of the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control appears.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_ctor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_ctor/CS/connectionZoneCtorCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_ctor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_ctor/VB/connectionZoneCtorVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. The connection UI appears, and the controls are already connected because the connection was declared in the markup of the page.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelVerb">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.WebPartVerb CancelVerb { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb CancelVerb" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.CancelVerb" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPartVerb</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> object that enables end users to cancel the process of establishing a connection.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> that enables end users to cancel the process of connecting two controls.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The cancel verb, as used with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control, is a zone-level verb that appears in the connection user interface (UI) as part of the view in which users select connection points for the controls. When users click the cancel verb, it cancels the process of selecting connection points, and returns the connections zone view to the hyperlinks that users can click to establish a new connection.  
+  
+ Use the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.CancelVerb%2A> property to get a reference to the corresponding <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> object in the UI. Although the property itself is read-only, after you have a reference to the verb, you can change its property values as needed.  
+  
+ You can set the property values of the cancel verb declaratively, by declaring the `<cancelverb>` element within the tags of an `<asp:connectionszone>` element. The properties of the verb can be set declaratively in the form `Property-Subproperty`, where `Subproperty` is a property of the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> object (for example, `CancelVerb-Text`). You can also set the properties programmatically in the form `Property.Subproperty` (for example, `CancelVerb.Text`).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.CancelVerb%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property declaratively and programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element, and within the element, it declares a `<cancelverb>` element and sets some properties using attributes. Also, in the `Page_PreRender` method, the code sets some properties on the cancel verb for the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. Click the **End Connection** button to disconnect the controls that are already connected due to the declarative connection on the page. Click the **Select a consumer for the provider to connect with** hyperlink, and notice the effect of setting the various properties. If you position your mouse pointer over the **Terminate** button, the custom description text appears in a ToolTip.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="protected override void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Closes the connection user interface (UI) created by the <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.Close%2A> method is called when a user clicks the zone-level close verb in the connection UI. After the method executes, the connection UI is hidden, the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.WebPartToConnect%2A> property value is `null`, and the page remains in the connect display mode. At this point users can either select a control by clicking the connect verb on the control's verbs menu, or switch the page to another display mode.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseVerb">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.WebPartVerb CloseVerb { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb CloseVerb" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.CloseVerb" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPartVerb</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> object that enables end users to close the connection user interface (UI) created by the <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" /> control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> that allows an end user to close the connection UI.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The close verb, as used with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control, is a zone-level verb that appears at the bottom (the footer) of the connection UI. When users click the close verb, it cancels the connection process and closes the connection UI, but leaves the page in connect display mode. At this point, the user can either return the page to browse mode or click the connect verb on another server control to reopen the connection UI.  
+  
+ The close verb should be distinguished from the header close verb (for details, see the <xref:System.Web.UI.WebControls.WebParts.ToolZone.HeaderCloseVerb%2A> property). Both verbs perform the identical action of closing the connection UI, but the header close verb appears at the top of the UI and is represented by a hyperlink by default, whereas the close verb appears at the bottom of the UI, and is represented by a button by default.  
+  
+ Use the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.CloseVerb%2A> property to get a reference to the corresponding <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> object in the UI. Although the property itself is read-only, after you have a reference to the verb, you can change its property values as needed.  
+  
+ You can set the property values of the close verb declaratively, by declaring the `<closeverb>` element within the tags of an `<asp:connectionszone>` element. The properties of the verb can be set declaratively in the form `Property-Subproperty`, where `Subproperty` is a property of the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> object (for example, `CloseVerb-Text`). You can also set the properties programmatically in the form `Property.Subproperty` (for example, `CloseVerb.Text`).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.CloseVerb%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property declaratively and programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element, and within the element, it declares a `<closeverb>` element and sets a property using attributes. Also, in the `Page_PreRender` method, the code sets a property on the close verb for the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. Click the **End Connection** button to disconnect the controls that are already connected due to the declarative connection on the page. Click the **Select a consumer for the provider to connect with** hyperlink, and notice the effect of setting the various properties. If you position your mouse pointer over the **Close Zone** button at the bottom of the connection UI, the custom description text appears in a ToolTip. Notice that the header close verb at the top of the connections zone is represented by a hyperlink, and your property assignments on the close verb have no effect on the header close verb.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigureConnectionTitle">
+      <MemberSignature Language="C#" Value="public virtual string ConfigureConnectionTitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConfigureConnectionTitle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConfigureConnectionTitle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text displayed as the title of a subsection of the connection user interface (UI) created by a <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" /> control.</summary>
+        <value>A string containing the title for the Configure Connections section. The default title is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConfigureConnectionTitle%2A> property to use a custom value for the title of this section of the connection UI. The Configure Connections section of the UI appears when a user has displayed the connection UI with an existing connection, and clicks the configure verb (by default, this is represented by a **Configure** button in the connection UI).  
+  
+ You can set the property value declaratively, by assigning a string to the `configureconnectiontitle` attribute on the `<asp:connectionszone>` tag in a Web page. Or you can assign a string to the property programmatically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConfigureConnectionTitle%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element, and in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConfigureConnectionTitle%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. Because the connection already exists, you now see an **End Connection** button, and a **Configure** button, which represents the configure verb. If your connection were configurable (it is not in this code example), the **Configure** button would be enabled; you could click it to open the Configure Connections section, and the title would be the value the code assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConfigureConnectionTitle%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigureVerb">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.WebPartVerb ConfigureVerb { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb ConfigureVerb" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConfigureVerb" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPartVerb</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> object used to open the configuration view in the connection user interface (UI).</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> used to open the Configure Connections section in the connection UI.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The configure verb appears in the Manage Connections section of the connection UI, when a connection already exists and a user has opened the connection UI. The UI presents users with an **End Connection** button to end the connection, and a **Configure** button (which represents the configure verb) to configure the connection. If a user clicks the **Configure** button, the Configure Connections section of the UI appears, enabling users to configure the connection. This option to configure a connection (and hence the **Configure** button) is enabled only when the connection uses a transformer, and the transformer includes a configuration wizard control (<xref:System.Web.UI.WebControls.Wizard>) that enables it to be configured by users. For details, see the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> class.  
+  
+ Use the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConfigureVerb%2A> property to get a reference to the corresponding <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> object in the UI. Although the property itself is read-only, after you have a reference to the verb, you can change its property values as needed.  
+  
+ You can set the property values of the configure verb declaratively, by declaring the `<configureverb>` element within the tags of an `<asp:connectionszone>` element. The properties of the verb can be set declaratively in the form `Property-Subproperty`, where `Subproperty` is a property of the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> object (for example, `ConfigureVerb-Text`). You can also set the properties programmatically in the form `Property.Subproperty` (for example, `ConfigureVerb.Text`).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConfigureVerb%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property declaratively and programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element, and within the element, it declares a `<configureverb>` element and sets a property using attributes. Also, in the `Page_PreRender` method, the code sets a property on the configure verb for the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. Notice that there is an **End Connection** button to disconnect the controls that are already connected, and a disabled **Configure** button. If your code example used a transformer that included a configuration wizard, the **Configure** button would be enabled, and users could click it to configure the connection. If you position your mouse pointer over the **Configure** button in the connection UI, the custom description text appears in a ToolTip.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectToConsumerInstructionText">
+      <MemberSignature Language="C#" Value="public virtual string ConnectToConsumerInstructionText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectToConsumerInstructionText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerInstructionText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the instructional text displayed in the section of the connection user interface (UI) where users select a consumer connection point that the provider will connect to.</summary>
+        <value>A string containing the instructions for creating a consumer connection to the provider. The default text is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerInstructionText%2A> property takes effect in a specific connection scenario. When a user clicks the connect verb on a provider control, the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control displays a portion of the connection UI that enables users to select a consumer. If the user clicked a connect verb on the consumer, then the connection UI would do the reverse, and display information about connecting to a provider.  
+  
+ The text in the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerInstructionText%2A> property is displayed just above the drop-down list controls that contain the available consumer connection points to which a provider can be connected.  
+  
+ You can set this property declaratively, by using the `ConnectToConsumerInstructionText` attribute in the opening tag of the `<asp:connectionszone>` element in a page, or you can set the property programmatically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerInstructionText%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerInstructionText%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. Click the **End Connection** button to end the connection, and then click the **Select a consumer for the provider to connect with** hyperlink. The consumer connection UI appears, and the custom text assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerInstructionText%2A> property appears just above the area with the control that allows you to select a connection point on the consumer for connecting with the provider.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectToConsumerText">
+      <MemberSignature Language="C#" Value="public virtual string ConnectToConsumerText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectToConsumerText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text of a hyperlink that users click to open a view in which they can choose a consumer control for a connection.</summary>
+        <value>A string displayed as the text of a hyperlink that opens the view where users select consumers. The default text is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerText%2A> property takes effect in a specific connection scenario. When a user clicks the connect verb on a provider control, and no connection exists, the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control displays a hyperlink with the text **Select a consumer for the provider to connect with**. When users click the hyperlink, it opens a view in which they can select an available consumer to connect with the provider.  
+  
+ You can set this property declaratively, by using the `ConnectToConsumerText` attribute in the opening tag of the `<asp:connectionszone>` element in a page, or you can set the property programmatically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerText%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerText%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. Click the **End Connection** button to end the connection, and then notice that the hyperlink appears with the custom text assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerText%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectToConsumerTitle">
+      <MemberSignature Language="C#" Value="public virtual string ConnectToConsumerTitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectToConsumerTitle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerTitle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the title text of the section in the connection user interface (UI) in which users can select a specific consumer to connect with.</summary>
+        <value>A string serving as the title of the section where users select consumers. The default title is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerTitle%2A> property takes effect in a specific connection scenario. When users click the connect verb on a provider control, and no connection exists, they eventually arrive at a view in which they can select a consumer to connect with the previously selected provider. The title of this view is supplied by the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerTitle%2A> property.  
+  
+ You can set this property declaratively, by using the `ConnectToConsumerTitle` attribute in the opening tag of the `<asp:connectionszone>` element in a page, or you can set the property programmatically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerTitle%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerTitle%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. Click the **End Connection** button to end the connection, and then click the link to select a consumer. In the view for selecting a consumer, note that the title text of the section is the text that the code assigns to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToConsumerTitle%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectToProviderInstructionText">
+      <MemberSignature Language="C#" Value="public virtual string ConnectToProviderInstructionText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectToProviderInstructionText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderInstructionText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the instructional text displayed in the section of the connection user interface (UI) where users select a provider connection point that the consumer will connect to.</summary>
+        <value>A string containing the instructions on creating a provider connection to the consumer. The default text is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderInstructionText%2A> property takes effect in a specific connection scenario. When a user clicks the connect verb on a consumer control, the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control displays a portion of the connection UI that enables users to select a provider. If the user clicked a connect verb on the provider, then the connection UI would do the reverse, and display information about connecting to a consumer.  
+  
+ The text in the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderInstructionText%2A> property is displayed just above the drop-down list controls that contain the available provider connection points to which a consumer can be connected.  
+  
+ You can set this property declaratively, by using the `ConnectToProviderInstructionText` attribute in the opening tag of the `<asp:connectionszone>` element in a page, or you can set the property programmatically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderInstructionText%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderInstructionText%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. Click the **End Connection** button to end the connection, and then click the **Select a provider for the consumer to connect with** hyperlink. The provider connection UI appears, and the custom text assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderInstructionText%2A> property appears just above the area with the control that allows you to select a connection point on the provider for connecting with the consumer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectToProviderText">
+      <MemberSignature Language="C#" Value="public virtual string ConnectToProviderText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectToProviderText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text of a hyperlink that users click to open a view in which they can choose a provider control for a connection.</summary>
+        <value>A string displayed as the text of a hyperlink that opens the view where users select providers. The default text is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderText%2A> property takes effect in a specific connection scenario. When a user clicks the connect verb on a consumer control, and no connection exists, the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control displays a hyperlink with the text **Select a provider for the consumer to connect with**. When users click the hyperlink, it opens a view in which they can select an available provider to connect with the consumer.  
+  
+ You can set this property declaratively, by using the `ConnectToProviderText` attribute in the opening tag of the `<asp:connectionszone>` element in a page, or you can set the property programmatically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderText%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderText%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. Click the **End Connection** button to end the connection, and then notice that the hyperlink appears with the custom text assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderText%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectToProviderTitle">
+      <MemberSignature Language="C#" Value="public virtual string ConnectToProviderTitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectToProviderTitle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderTitle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the title text of the section in the connection user interface (UI) in which users can select a specific provider to connect with.</summary>
+        <value>A string serving as the title of the section where users select providers. The default title is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderTitle%2A> property takes effect in a specific connection scenario. When users click the connect verb on a consumer control, and no connection exists, they eventually arrive at a view in which they can select a provider to connect with the previously selected consumer. The title of this view is supplied by the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderTitle%2A> property.  
+  
+ You can set this property declaratively, by using the `ConnectToProviderTitle` attribute in the opening tag of the `<asp:connectionszone>` element in a page, or you can set the property programmatically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderTitle%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderTitle%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. Click the **End Connection** button to end the connection, and then click the link to select a provider. In the view for selecting a provider, note that the title text of the section is the text that the code assigns to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectToProviderTitle%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectVerb">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.WebPartVerb ConnectVerb { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb ConnectVerb" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectVerb" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPartVerb</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> object that enables two <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls to establish a connection.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> that enables two controls to establish a connection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The connect verb, as used with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control, is a zone-level verb that appears in the connection user interface (UI) as part of the view in which users finalize a connection between two controls. In the part of the UI where users can select connection points, if two controls are able to connect, the connect verb is enabled near the bottom of the UI. After users select a connection point, they can click the connect verb to create the connection.  
+  
+> [!NOTE]
+>  The zone-level connect verb discussed in this topic actually establishes a connection between controls, and is different from the verb that appears on the verbs menu of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control. When a user switches a Web page to connect display mode, if a control can form connections, a <xref:System.Web.UI.WebControls.WebParts.WebPart> connect verb appears on its verbs menu. This <xref:System.Web.UI.WebControls.WebParts.WebPart> connect verb simply opens the connection UI created by the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. In contrast, the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectVerb%2A> verb discussed in this topic, which operates at the zone level, actually creates a connection.  
+  
+ Use the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectVerb%2A> property to get a reference to the corresponding <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> object in the UI. Although the property itself is read-only, after you have a reference to the verb, you can change its property values as needed.  
+  
+ You can set the property values of the connect verb declaratively, by declaring the `<connectverb>` element between the opening and closing tags of an `<asp:connectionszone>` element. The properties of the verb can also be set declaratively within the opening tag of the `<asp:connectionszone>` element, by adding an attribute in the form `Property-Subproperty`, where `Subproperty` is a property of the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> object (for example, `ConnectVerb-Text`). You can also set the properties programmatically in the form `Property.Subproperty` (for example, `ConnectVerb.Text`).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConnectVerb%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property declaratively and programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element and, within the element tags, it declares a `<connectverb>` element and sets some properties using attributes. Also, in the `Page_PreRender` method, the code sets some properties on the connect verb for the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. Click the **End Connection** button to disconnect the controls that are already connected due to the declarative connection on the page. Click the **Select a consumer for the provider to connect with** hyperlink, and notice the effect of setting the various properties. If you position your mouse pointer over the **Connect Controls** button, the custom description text appears in a ToolTip.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConsumersInstructionText">
+      <MemberSignature Language="C#" Value="public virtual string ConsumersInstructionText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConsumersInstructionText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersInstructionText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the instructional text shown in the consumers section of the connection user interface (UI), when a connection already exists.</summary>
+        <value>A string serving as the instructional text for consumers participating in a connection. The default text is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersInstructionText%2A> property takes effect in a specific connection scenario. When a user clicks the connect verb on a provider control, and a connection already exists, the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control displays a view that enables users to disconnect the connection. The view also shows any consumers participating in the connection. Just above the list of consumers is the consumers instruction text, which by default is more of a description of what consumer controls do in a connection.  
+  
+ You can set the value of this property declaratively within the opening tag of the `<asp:connectionszone>` element, by adding an attribute named `ConsumersInstructionText` and assigning it a value. You can also set the property value programmatically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersInstructionText%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersInstructionText%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. In the view that opens for the existing connection, look in the consumers section for the custom text assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersInstructionText%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConsumersTitle">
+      <MemberSignature Language="C#" Value="public virtual string ConsumersTitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConsumersTitle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersTitle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the title shown above the consumers section of the connection user interface (UI), when a connection already exists.</summary>
+        <value>A string serving as the title text for consumers participating in a connection. The default title is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersTitle%2A> property takes effect in a specific connection scenario. When a user clicks the connect verb on a provider control, and a connection already exists, the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control displays a view that enables users to disconnect the connection. The view also shows any consumers participating in the connection. Just above the list of consumers is the consumers instruction text, and above that is the title of the consumers section, for which the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersTitle%2A> property supplies the text.  
+  
+ You can set the value of this property declaratively within the opening tag of the `<asp:connectionszone>` element, by adding an attribute named `ConsumersTitle` and assigning it a value. You can also set the property value programmatically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersTitle%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersTitle%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. In the view that opens for the existing connection, look in the consumers section for the custom text assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ConsumersTitle%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChildControls">
+      <MemberSignature Language="C#" Value="protected override void CreateChildControls ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void CreateChildControls() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.CreateChildControls" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates all child controls contained in a <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" /> control in preparation for posting back to the server or rendering.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides the base <xref:System.Web.UI.Control.CreateChildControls%2A?displayProperty=fullName> method. It prepares all connection-related objects needed for connections (for example, it retrieves the connection point objects from the available consumer and provider controls), and it creates the various user interface (UI) controls that users interact with in the connection UI to establish a connection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisconnectVerb">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.WebPartVerb DisconnectVerb { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb DisconnectVerb" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.DisconnectVerb" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPartVerb</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> object that enables a user to disconnect two connected <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> that disconnects two connected <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The disconnect verb, as used with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control, is a zone-level verb that appears in the connection user interface (UI) as part of the view in which users manage an existing connection between two controls. After users have clicked the <xref:System.Web.UI.WebControls.WebParts.WebPart> connect verb on the verbs menu of a control, and the connection UI appears, if there is already a connection between two controls, the disconnect verb appears activated near the bottom of the UI.  
+  
+ Use the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.DisconnectVerb%2A> property to get a reference to the corresponding <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> object in the UI. Although the property itself is read-only, after you have a reference to the verb, you can change its property values as needed.  
+  
+ You can set the property values of the disconnect verb declaratively, by declaring the `<disconnectverb>` element between the opening and closing tags of an `<asp:connectionszone>` element. The properties of the verb can also be set declaratively within the opening tag of the `<asp:connectionszone>` element, by adding an attribute in the form `Property-Subproperty`, where `Subproperty` is a property of the <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> object (for example, `DisconnectVerb-Text`). You can also set the properties programmatically in the form `Property.Subproperty` (for example, `DisconnectVerb.Text`).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.DisconnectVerb%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property declaratively and programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element and, within the element tags, declares a `<disconnectverb>` element and sets some properties using attributes. Also, in the `Page_PreRender` method, the code sets some properties on the disconnect verb for the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Provider** control, and click the connect verb. Note the effect of the property values that were set on the disconnect verb. If you position your mouse pointer over the **End Connection** button, the custom description text appears in a ToolTip. Click the **End Connection** button to disconnect the controls that are already connected due to the declarative connection on the page.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Display">
+      <MemberSignature Language="C#" Value="protected override bool Display { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Display" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.Display" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> control is currently displayed.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> is currently displayed; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmptyZoneText">
+      <MemberSignature Language="C#" Value="public override string EmptyZoneText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EmptyZoneText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.EmptyZoneText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a text message that is displayed in an empty <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" /> control if there are insufficient controls on a Web page to establish a connection.</summary>
+        <value>A <see cref="T:System.String" /> that contains the message for an empty zone. The default text is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExistingConnectionErrorMessage">
+      <MemberSignature Language="C#" Value="public virtual string ExistingConnectionErrorMessage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExistingConnectionErrorMessage" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ExistingConnectionErrorMessage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text of a message displayed in the connection user interface (UI) when there is an error or warning on an existing connection.</summary>
+        <value>A <see cref="T:System.String" /> that contains the text of the message. The default text is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFromText">
+      <MemberSignature Language="C#" Value="public virtual string GetFromText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GetFromText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetFromText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text shown in the section of the connection user interface (UI) that precedes the named provider from which a consumer will retrieve data.</summary>
+        <value>A string that prefaces the named provider that the consumer will get data from. The default text is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetFromText%2A> property takes effect in a specific connection scenario. When a user clicks the connect verb on a consumer control, the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control displays a view that enables users to establish a connection to a provider. In the part of the UI that instructs users to choose a provider connection point, there is some text that precedes the drop-down list control in which users can select which connection point the consumer will get its data from. This text that precedes the drop-down control is the text in the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetFromText%2A> property. By default, the text value is **From**.  
+  
+ You can set the value of this property declaratively within the opening tag of the `<asp:connectionszone>` element, by adding an attribute named `GetFromText` and assigning it a value. You can also set the property value programmatically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetFromText%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetFromText%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. In the view that opens for the existing connection, look in the providers section for the text that precedes the named provider. This is the text assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetFromText%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetText">
+      <MemberSignature Language="C#" Value="public virtual string GetText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GetText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text shown in the section of the connection user interface (UI) that precedes the named consumer that will receive data from a provider.</summary>
+        <value>A string that prefaces the named consumer in the connection. The default text is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetText%2A> property takes effect in a specific connection scenario. When a user clicks the connect verb on a consumer control, the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control displays a view that enables users to establish a connection to a provider. In the part of the UI that instructs users to choose a provider connection point, there is some text that precedes the named consumer that will participate in the connection. This text that precedes the consumer is the text in the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetText%2A> property. By default, the text value is **Get**.  
+  
+ You can set the value of this property declaratively within the opening tag of the `<asp:connectionszone>` element, by adding an attribute named `GetText` and assigning it a value. You can also set the property value programmatically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetText%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetText%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. In the view that opens for the existing connection, look in the providers section for the text that precedes the named consumer. This is the text assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.GetText%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderText">
+      <MemberSignature Language="C#" Value="public override string HeaderText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HeaderText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.HeaderText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the header text that appears at the top of the connection user interface (UI) created by the <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" /> control.</summary>
+        <value>A string that contains the header text for the connection UI. The default text is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The text contained in the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.HeaderText%2A> property is visible whenever the connection UI is displayed. When a user clicks the connect verb on the verbs menu of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, the connection UI appears, and the header text serves as a label at the very top of the connection UI. The default text is **Connections Zone**.  
+  
+ This property overrides the base <xref:System.Web.UI.WebControls.WebParts.WebZone.HeaderText%2A> property from the <xref:System.Web.UI.WebControls.WebParts.WebZone> class, so that the default connections zone header text can be assigned to the property.  
+  
+ You can set the value of this property declaratively within the opening tag of the `<asp:connectionszone>` element, by adding an attribute named `HeaderText` and assigning it a value. You can also set the property value programmatically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.HeaderText%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.HeaderText%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. In the view that opens for the existing connection, note that the header text at the top of the connections zone is the value assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.HeaderText%2A> property in the code example.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstructionText">
+      <MemberSignature Language="C#" Value="public override string InstructionText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InstructionText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or set the text that is used for general instructions about the selected control in the section of the connection user interface (UI) for managing existing connections.</summary>
+        <value>A string that contains the instruction text for the connection UI. The default text is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The text contained in the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionText%2A> property is visible whenever the connection UI is displayed and a connection already exists. Just below the header text (contained in the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.HeaderText%2A> property), which is found at the top of the connection UI, is the instruction title, and just below that is the instruction text. The instruction text informs users what type of action can be performed on the currently selected <xref:System.Web.UI.WebControls.WebParts.WebPart> control (the selected control is the one for which the user clicked a connect verb on the control's verbs menu). By default, the instruction text is **Manage the connections for the current Web part**.  
+  
+ This property overrides the base <xref:System.Web.UI.WebControls.WebParts.ToolZone.InstructionText%2A> property from the <xref:System.Web.UI.WebControls.WebParts.ToolZone> class, so that the default connections zone instruction text can be assigned to the property.  
+  
+ You can set the value of this property declaratively within the opening tag of the `<asp:connectionszone>` element, by adding an attribute named `InstructionText` and assigning it a value. You can also set the property value programmatically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionText%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionText%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. In the view that opens for the existing connection, note that the instruction text near the top of the connections zone is the value assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionText%2A> property in the code example.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstructionTitle">
+      <MemberSignature Language="C#" Value="public virtual string InstructionTitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InstructionTitle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionTitle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text that is used for a general description of the action that can be performed on the consumer or provider control, within the connection user interface (UI) for managing existing connections.</summary>
+        <value>A string that contains the instruction title for the connection UI. The default text is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The text contained in the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionTitle%2A> property is visible whenever the connection UI is displayed and a connection already exists. The instruction title text is just below the header text (contained in the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.HeaderText%2A> property), which is found at the top of the connection UI. The instruction title is a general description that informs users what type of action can be performed on the consumer or provider <xref:System.Web.UI.WebControls.WebParts.WebPart> control that is participating in an existing connection. By default, the instruction title begins with **Manage the connections for**, and ends with the name of the consumer or provider control that the user selected by clicking the connect verb on its verbs menu.  
+  
+> [!NOTE]
+>  When you assign a custom value to this property, remember that you cannot know at design time whether the user will select a provider or consumer control on which to manage the connection, so the custom instruction title must be general enough to refer to a consumer or a provider control. In contrast, the default value of the property is rendered in such a way that it dynamically appends the name of whatever consumer or provider control that the user selects. If you want to supply a custom value for the property that mimics this behavior, you must inherit from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class, and override this property or the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.RenderBody%2A> method.  
+  
+ You can set the value of this property declaratively within the opening tag of the `<asp:connectionszone>` element, by adding an attribute named `InstructionTitle` and assigning it a value. You can also set the property value programmatically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionTitle%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionTitle%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. In the view that opens for the existing connection, note that the instruction title just below the header text, near the top of the connections zone, is the value assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.InstructionTitle%2A> property in the code example.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadControlState">
+      <MemberSignature Language="C#" Value="protected override void LoadControlState (object savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void LoadControlState(object savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.LoadControlState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An <see cref="T:System.Object" /> that represents the control state to be restored.</param>
+        <summary>Restores control state information from a previous page request that was saved by the <see cref="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.SaveControlState" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this method is invoked, it determines whether control state was previously saved for the control and, if so, sets the control state to the saved value.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The length of <paramref name="savedState" /> does not equal the length of the array created by the <see cref="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.SaveControlState" /> method.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadViewState">
+      <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.LoadViewState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An <see cref="T:System.Object" /> that contains the view state to be restored.</param>
+        <summary>Restores view-state information from a previous page request that was saved by the <see cref="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.SaveViewState" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+  
+ When this method is invoked, it determines whether view state was previously saved for the control and, if so, sets the view state to the saved value. The method overrides the <xref:System.Web.UI.WebControls.WebParts.ToolZone.LoadViewState%2A> method inherited from the <xref:System.Web.UI.WebControls.WebParts.ToolZone> class, so that it can add to the base implementation and restore state for the several zone-level verbs used in the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The length of <paramref name="savedState" /> does not equal the length of the array created by the <see cref="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.SaveViewState" /> method.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NewConnectionErrorMessage">
+      <MemberSignature Language="C#" Value="public virtual string NewConnectionErrorMessage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NewConnectionErrorMessage" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.NewConnectionErrorMessage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text of a message displayed in the connection user interface (UI) when there is an error or warning on a new connection that a user tries to create.</summary>
+        <value>A <see cref="T:System.String" /> that contains the text of the message. The default text is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoExistingConnectionInstructionText">
+      <MemberSignature Language="C#" Value="public virtual string NoExistingConnectionInstructionText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NoExistingConnectionInstructionText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.NoExistingConnectionInstructionText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the instruction text that appears in the body of the connection user interface (UI) when a Web Parts control has no existing connection.</summary>
+        <value>A string that contains the text message for the case where there is no existing connection. The default text is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The text contained in the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.NoExistingConnectionInstructionText%2A> property is visible whenever the connection UI is displayed and no connection exists. After a user switches a page into connect display mode and clicks a connect verb on the verbs menu of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, the main connection UI is displayed. If there is no current connection, the text from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.NoExistingConnectionInstructionText%2A> property is displayed near the bottom of the connection UI, just above the close verb in the zone's footer area. The text describes the fact that there are no existing connections and gives users basic instructions for creating a connection within the UI.  
+  
+ You can set the value of this property declaratively within the opening tag of the `<asp:connectionszone>` element, by adding an attribute named `NoExistingConnectionInstructionText` and assigning it a value. You can also set the property value programmatically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.NoExistingConnectionInstructionText%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.NoExistingConnectionInstructionText%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. In the view that opens for the existing connection, click the **End Connection** button. Note that the instruction text for no existing connections appears near the bottom of the connection UI, just above the close verb in the zone's footer area.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoExistingConnectionTitle">
+      <MemberSignature Language="C#" Value="public virtual string NoExistingConnectionTitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NoExistingConnectionTitle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.NoExistingConnectionTitle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the title text that appears in the body of the connection user interface (UI) when a Web Parts control has no existing connection.</summary>
+        <value>A string that contains the title text for the case where there is no existing connection. The default text is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The text contained in the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.NoExistingConnectionTitle%2A> property is visible whenever the connection UI is displayed and no connection exists. After a user switches a page into connect display mode and clicks a connect verb on the verbs menu of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, the main connection UI is displayed. If there is no current connection, the text from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.NoExistingConnectionTitle%2A> property is displayed near the top of the body of the connection UI, just below the link that users can click to create a new connection. The title summarizes the fact that no connections exist, and the default title is **No active connections**.  
+  
+ You can set the value of this property declaratively within the opening tag of the `<asp:connectionszone>` element, by adding an attribute named `NoExistingConnectionTitle` and assigning it a value. You can also set the property value programmatically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.NoExistingConnectionTitle%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.NoExistingConnectionTitle%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. In the view that opens for the existing connection, click the **End Connection** button. Note that the instruction title for no existing connections occurs just below the link that enables users to create a new connection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDisplayModeChanged">
+      <MemberSignature Language="C#" Value="protected override void OnDisplayModeChanged (object sender, System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDisplayModeChanged(object sender, class System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.OnDisplayModeChanged(System.Object,System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The sender of the event.</param>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModeChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method raises the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModeChanged> event and provides a custom handler for it. After a Web page enters or exits the connect display mode, this method carries out several steps unique to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The method cancels any connection activity that is pending at this point, ensures that no child controls from the connection user interface (UI) are displayed by setting the <xref:System.Web.UI.Control.ChildControlsCreated%2A> property to `false`, and sets the connection UI to a mode in which it can display information about existing connections, if a user proceeds with the process of creating a connection.  
+  
+ To add specialized handling to the handling provided in the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.OnDisplayModeChanged%2A> method, developers can inherit from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class and override this method. As an alternative, developers can also provide a handler for the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayModeChanged> event on the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control by adding an `OnDisplayModeChanged` attribute to the `<asp:webpartmanager>` element in a Web page, and assigning to it the value of a custom method to handle the event. In this method, developers can check the current value of the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayMode%2A> property, and if it is <xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectDisplayMode>, they can carry out the desired changes to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInit">
+      <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.OnInit(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.Init" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method calls the base <xref:System.Web.UI.WebControls.WebParts.ToolZone.OnInit%2A?displayProperty=fullName> method, and adds custom handling to prepare the Web page to display the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSelectedWebPartChanged">
+      <MemberSignature Language="C#" Value="protected override void OnSelectedWebPartChanged (object sender, System.Web.UI.WebControls.WebParts.WebPartEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSelectedWebPartChanged(object sender, class System.Web.UI.WebControls.WebParts.WebPartEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.OnSelectedWebPartChanged(System.Object,System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="System.Web.UI.WebControls.WebParts.WebPartEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">An <see cref="T:System.Object" /> that identifies the sender of the event.</param>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPartChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides the <xref:System.Web.UI.WebControls.WebParts.ToolZone> implementation to reset the connection user interface (UI) for the fact that the child controls will have to be recreated. This is necessary because, when the selected control changes, several options in the connection UI will change, depending on whether the selected control is a consumer or provider, what connection points the controls has (the connection points are listed in drop-down list controls), and other details.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PartChromeType">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.WebParts.PartChromeType PartChromeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.WebParts.PartChromeType PartChromeType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.PartChromeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.PartChromeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of border that frames the server controls contained in a <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" /> control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.PartChromeType" /> that determines the type of border that frames the controls contained in the connections zone.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvidersInstructionText">
+      <MemberSignature Language="C#" Value="public virtual string ProvidersInstructionText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProvidersInstructionText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersInstructionText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the instructional text shown in the providers section of the connection user interface (UI), when a connection already exists.</summary>
+        <value>A string serving as the instructional text for providers participating in a connection. The default text is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersInstructionText%2A> property takes effect in a specific connection scenario. When a user clicks the connect verb on a consumer control, and a connection already exists, the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control displays a view that enables users to disconnect the connection. The view also shows any providers participating in the connection. Just above the list of providers is the providers instruction text, which by default is more of a description of what provider controls do in a connection.  
+  
+ You can set the value of this property declaratively within the opening tag of the `<asp:connectionszone>` element, by adding an attribute named `ProvidersInstructionText` and assigning it a value. You can also set the property value programmatically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersInstructionText%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersInstructionText%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. In the view that opens for the existing connection, look in the providers section for the custom text assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersInstructionText%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvidersTitle">
+      <MemberSignature Language="C#" Value="public virtual string ProvidersTitle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProvidersTitle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersTitle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the title shown above the providers section of the connection user interface (UI), when a connection already exists.</summary>
+        <value>A string serving as the title text for providers participating in a connection. The default title is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersTitle%2A> property takes effect in a specific connection scenario. When a user clicks the connect verb on a consumer control, and a connection already exists, the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control displays a view that enables users to disconnect the connection. The view also shows any providers participating in the connection. Just above the list of providers is the providers instruction text, and above that is the title of the providers section, for which the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersTitle%2A> property supplies the text.  
+  
+ You can set the value of this property declaratively within the opening tag of the `<asp:connectionszone>` element, by adding an attribute named `ProvidersTitle` and assigning it a value. You can also set the property value programmatically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersTitle%2A> property with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. The example contains only the code for the Web page that demonstrates use of the property; for the other two code files needed to run the example, see the Example section of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview. The code example has four parts:  
+  
+-   A user control that enables you to switch display modes on the Web page. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A source file that contains the code for a ZIP Code interface, and two <xref:System.Web.UI.WebControls.WebParts.WebPart> controls acting as the provider and the consumer for a connection. Obtain this code from the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> class overview.  
+  
+-   A Web page that hosts all the controls, declares an `<asp:connectionszone>` element, and shows how to use the property programmatically.  
+  
+-   An explanation of how the example works in a browser.  
+  
+ The Web page declares an `<asp:connectionszone>` element and, in the `Page_PreRender` method, the code assigns a value to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersTitle%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ConnectionZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/CS/connectionZoneCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ConnectionZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ConnectionZone_Overview/VB/connectionZoneVB.aspx#1)]  -->  
+  
+ Load the page in a browser. Switch to connect mode, using the **Display Mode** control. Click the verbs menu arrow on the **ZIP Code Consumer** control, and click the connect verb. In the view that opens for the existing connection, look in the providers section for the custom text assigned to the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.ProvidersTitle%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaisePostBackEvent">
+      <MemberSignature Language="C#" Value="protected override void RaisePostBackEvent (string eventArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RaisePostBackEvent(string eventArgument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.RaisePostBackEvent(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgument" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgument">A <see cref="T:System.String" /> that contains the argument data for the event.</param>
+        <summary>Raises an event for the <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" /> control when the form that contains it posts back to the server.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.RaisePostBackEvent%2A> method handles the several possible outcomes that can occur when a form containing a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control is posted back to the server. First, if the value of the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.WebPartToConnect%2A> property is `null`, there is no further connections-related action to take, so any pending connections are canceled and the method returns. Second, if the connection user interface (UI) is actually visible and the user is in the process of creating a connection, the method handles the possible scenarios: the user clicked a connect verb, the user clicked a disconnect verb, the transformer UI is being displayed, the zone is being closed, a connection to a provider is being created, or a connection to a consumer is being created. In each case, the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.RaisePostBackEvent%2A> method takes the `eventArgument` parameter being passed and updates the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control accordingly. Finally, if none of the above cases apply, the method calls the base method in the <xref:System.Web.UI.WebControls.WebParts.ToolZone> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the Web Parts control content.</param>
+        <summary>Renders the contents of the <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" /> control to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.Render%2A> method updates the connection user interface (UI) with any changes that occurred since the child controls were created or during the prerendering stage, and then calls the base <xref:System.Web.UI.WebControls.CompositeControl.Render%2A?displayProperty=fullName> method to write the contents of the zone to the Web page.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderBody">
+      <MemberSignature Language="C#" Value="protected override void RenderBody (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderBody(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.RenderBody(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the control's body content.</param>
+        <summary>Sends the content of a <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" /> control's body area to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object, which writes the content to the Web page.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The body of a Web Parts control is the portion between its header and footer areas. The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.RenderBody%2A> method overrides the rendering of the body region that is done by the base <xref:System.Web.UI.WebControls.WebParts.WebZone.RenderBody%2A?displayProperty=fullName> method.  
+  
+ This method adds to the base rendering unique style attributes that apply to a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control, and it also renders the appropriate content for the child controls in the connection user interface (UI), based on previous selections made by a user in the UI.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderVerbs">
+      <MemberSignature Language="C#" Value="protected override void RenderVerbs (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderVerbs(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.RenderVerbs(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the content of the verbs to render in a connections zone.</param>
+        <summary>Renders the zone-level verbs for a <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method renders the several zone-level verbs that are included with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control. As a part of this method, the <xref:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerb%2A?displayProperty=fullName> method is also called to render the individual details of each verb.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveControlState">
+      <MemberSignature Language="C#" Value="protected override object SaveControlState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object SaveControlState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.SaveControlState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves any Web Parts control state changes that occurred since the last time the page was posted back to the server.</summary>
+        <returns>Returns the Web Parts control's current state. If no state is associated with the control, this method returns <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control is visible in any of its modes except the mode that displays existing connections details, and if it has control state data about connection details associated with it, the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.SaveControlState%2A> method saves the data so that it can be persisted across round trips to the server.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveViewState">
+      <MemberSignature Language="C#" Value="protected override object SaveViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.SaveViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves a <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" /> control's view-state changes that occurred since the page was last posted back to the server.</summary>
+        <returns>Returns an <see cref="T:System.Object" /> containing the control's current view state. If no view state is associated with the control, this method returns <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ View state is the accumulation of the values of a Web Parts control's properties. These values are automatically placed in the control's <xref:System.Web.UI.Control.ViewState%2A> property, which is an instance of the <xref:System.Web.UI.StateBag> class. This property's value is then persisted to a string object after the save state stage of the control's life cycle.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.SaveViewState%2A> method adds to the base implementation the ability to save view state for the various verbs in a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendText">
+      <MemberSignature Language="C#" Value="public virtual string SendText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SendText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.SendText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text shown in the section of the connection user interface (UI) that precedes the named provider that will send data to a consumer.</summary>
+        <value>A string that prefaces the named provider in the connection. The default text is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.SendText%2A> property takes effect in a specific connection scenario. When a user clicks the connect verb on a provider control, the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control displays a view that enables users to establish a connection to a consumer. In the part of the UI that instructs users to choose a consumer connection point, there is some text that precedes the named provider that will participate in the connection. This text that precedes the provider is the text in the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.SendText%2A> property. By default, the text value is **Send**.  
+  
+ You can set the value of this property declaratively within the opening tag of the `<asp:connectionszone>` element, by adding an attribute named `SendText` and assigning it a value. You can also set the property value programmatically.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendToText">
+      <MemberSignature Language="C#" Value="public virtual string SendToText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SendToText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.SendToText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text shown in the section of the connection user interface (UI) that precedes the named consumer to which a provider will send data.</summary>
+        <value>A string that prefaces the named consumer that the provider will send data to. The default text is a culture-specific string supplied by the .NET Framework.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.SendToText%2A> property takes effect in a specific connection scenario. When a user clicks the connect verb on a provider control, the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control displays a view that enables users to establish a connection to a consumer. In the part of the UI that instructs users to choose a consumer connection point, there is some text that precedes the drop-down list control in which users can select which connection point the provider will send its data to. This text that precedes the drop-down control is the text in the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.SendToText%2A> property. By default, the text value is **To**.  
+  
+ You can set the value of this property declaratively within the opening tag of the `<asp:connectionszone>` element, by adding an attribute named `SendToText` and assigning it a value. You can also set the property value programmatically.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackViewState">
+      <MemberSignature Language="C#" Value="protected override void TrackViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TrackViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionsZone.TrackViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Tracks view-state changes to the <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionsZone" /> control so the changes can be stored in the control's <see cref="T:System.Web.UI.StateBag" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method calls the base method in the <xref:System.Web.UI.WebControls.WebParts.ToolZone> class and also triggers view-state tracking for the verbs associated with a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebPartToConnect">
+      <MemberSignature Language="C#" Value="protected System.Web.UI.WebControls.WebParts.WebPart WebPartToConnect { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPart WebPartToConnect" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionsZone.WebPartToConnect" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPart</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the currently selected <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control to connect to.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a user switches a Web page into connect display mode, and clicks the connect verb on the verbs menu of a <xref:System.Web.UI.WebControls.WebParts.WebPart> control that is enabled for connections, the connection user interface (UI) opens, and the control is now referenced by the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.WebPartToConnect%2A> property.  
+  
+> [!NOTE]
+>  The control referenced by the <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone.WebPartToConnect%2A> property gets its value from the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.SelectedWebPart%2A> property of the current <xref:System.Web.UI.WebControls.WebParts.WebPartManager> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

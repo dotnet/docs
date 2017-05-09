@@ -1,0 +1,53 @@
+<Type Name="DirectoryVirtualListViewContext" FullName="System.DirectoryServices.DirectoryVirtualListViewContext">
+  <TypeSignature Language="C#" Value="public class DirectoryVirtualListViewContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DirectoryVirtualListViewContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectoryVirtualListViewContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies how to construct directory virtual list view response.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DirectoryVirtualListViewContext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryVirtualListViewContext.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="M:System.DirectoryServices.DirectoryVirtualListViewContext.#ctor" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.DirectoryVirtualListViewContext Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.DirectoryVirtualListViewContext Copy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryVirtualListViewContext.Copy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.DirectoryVirtualListViewContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a copy of the current <see cref="T:System.DirectoryServices.DirectoryVirtualListViewContext" /> instance.</summary>
+        <returns>Returns a <see cref="T:System.DirectoryServices.DirectoryVirtualListViewContext" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

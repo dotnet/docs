@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "ActiveX controls, adding to Toolbox"
 ms.assetid: ec675027-866f-4c05-aaf2-92fca5200f9a
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

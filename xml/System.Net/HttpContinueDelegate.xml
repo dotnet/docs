@@ -1,0 +1,44 @@
+<Type Name="HttpContinueDelegate" FullName="System.Net.HttpContinueDelegate">
+  <TypeSignature Language="C#" Value="public delegate void HttpContinueDelegate(int StatusCode, WebHeaderCollection httpHeaders);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpContinueDelegate extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Net.HttpContinueDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="StatusCode" Type="System.Int32" />
+    <Parameter Name="httpHeaders" Type="System.Net.WebHeaderCollection" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="StatusCode">The numeric value of the HTTP status from the server.</param>
+    <param name="httpHeaders">The headers returned with the 100-continue response from the server.</param>
+    <summary>Represents the method that notifies callers when a continue response is received by the client.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Net.HttpContinueDelegate> to specify the callback method to be called when an HTTP 100-continue response is received from the server. When set, the delegate is called whenever the first protocol response of type <xref:System.Net.HttpStatusCode?displayProperty=fullName> is received. This is a change from the behavior of the version 1.1 Framework.  
+  
+ Your event handler must declare the same parameters as the <xref:System.Net.HttpContinueDelegate>.  
+  
+> [!NOTE]
+>  `StatusCode` is always <xref:System.Net.HttpStatusCode?displayProperty=fullName>.  
+  
+ This is useful when the client wants to display the status of data being received from the server.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

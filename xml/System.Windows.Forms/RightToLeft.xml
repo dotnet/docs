@@ -1,0 +1,78 @@
+<Type Name="RightToLeft" FullName="System.Windows.Forms.RightToLeft">
+  <TypeSignature Language="C#" Value="public enum RightToLeft" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RightToLeft extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RightToLeft" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies a value indicating whether the text appears from right to left, such as when using Hebrew or Arabic fonts.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by <xref:System.Windows.Forms.ContextMenu>, <xref:System.Windows.Forms.MainMenu>, <xref:System.Windows.Forms.ProgressBar>, <xref:System.Text.RegularExpressions.Regex> and <xref:System.Windows.Forms.Control>.  
+  
+ When you retrieve the value of the `RightToLeft` property from <xref:System.Windows.Forms.ContextMenu>, <xref:System.Windows.Forms.MainMenu>, and <xref:System.Windows.Forms.ProgressBar> you will get the value of <xref:System.Windows.Forms.RightToLeft> you assigned. In contrast, if you are deriving your own class from <xref:System.Windows.Forms.Control>, and you assign a value of `Inherit` to the <xref:System.Windows.Forms.Control.RightToLeft%2A> property, the value returned will be the setting of the <xref:System.Windows.Forms.Control.RightToLeft%2A> property of the parent control. If there is no parent control, it will return a value of `No`. Otherwise, it will return a value of `Yes` or `No`, depending on the value that you assigned to the <xref:System.Windows.Forms.Control.RightToLeft%2A> property of your derived class.  
+  
+> [!NOTE]
+>  For more information about how enabling right-to-left alignment affects Windows Forms controls, see the <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Inherit">
+      <MemberSignature Language="C#" Value="Inherit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RightToLeft Inherit = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RightToLeft.Inherit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.RightToLeft</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The direction the text read is inherited from the parent control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="No">
+      <MemberSignature Language="C#" Value="No" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RightToLeft No = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RightToLeft.No" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.RightToLeft</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The text reads from left to right. This is the default.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Yes">
+      <MemberSignature Language="C#" Value="Yes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RightToLeft Yes = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RightToLeft.Yes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.RightToLeft</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The text reads from right to left.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

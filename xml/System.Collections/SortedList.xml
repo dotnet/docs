@@ -1,0 +1,1895 @@
+<Type Name="SortedList" FullName="System.Collections.SortedList">
+  <TypeSignature Language="C#" Value="public class SortedList : ICloneable, System.Collections.IDictionary" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SortedList extends System.Object implements class System.Collections.ICollection, class System.Collections.IDictionary, class System.Collections.IEnumerable, class System.ICloneable" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.SortedList" />
+  <AssemblyInfo>
+    <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IDictionary</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.SortedList/SortedListDebugView))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a collection of key/value pairs that are sorted by the keys and are accessible by key and by index.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the generic version of this collection, see <xref:System.Collections.Generic.SortedList%602?displayProperty=fullName>.  
+  
+ A <xref:System.Collections.SortedList> element can be accessed by its key, like an element in any <xref:System.Collections.IDictionary> implementation, or by its index, like an element in any <xref:System.Collections.IList> implementation.  
+  
+ A <xref:System.Collections.SortedList> object internally maintains two arrays to store the elements of the list; that is, one array for the keys and another array for the associated values. Each element is a key/value pair that can be accessed as a <xref:System.Collections.DictionaryEntry> object. A key cannot be `null`, but a value can be.  
+  
+ The capacity of a <xref:System.Collections.SortedList> object is the number of elements the <xref:System.Collections.SortedList> can hold. As elements are added to a <xref:System.Collections.SortedList>, the capacity is automatically increased as required through reallocation. The capacity can be decreased by calling <xref:System.Collections.SortedList.TrimToSize%2A> or by setting the <xref:System.Collections.SortedList.Capacity%2A> property explicitly.  
+  
+ For very large <xref:System.Collections.SortedList> objects, you can increase the maximum capacity to 2 billion elements on a 64-bit system by setting the `enabled` attribute of the  configuration element to `true` in the run-time environment.  
+  
+ The elements of a <xref:System.Collections.SortedList> object are sorted by the keys either according to a specific <xref:System.Collections.IComparer> implementation specified when the <xref:System.Collections.SortedList> is created or according to the <xref:System.IComparable> implementation provided by the keys themselves. In either case, a <xref:System.Collections.SortedList> does not allow duplicate keys.  
+  
+ The index sequence is based on the sort sequence. When an element is added, it is inserted into <xref:System.Collections.SortedList> in the correct sort order, and the indexing adjusts accordingly. When an element is removed, the indexing also adjusts accordingly. Therefore, the index of a specific key/value pair might change as elements are added or removed from the <xref:System.Collections.SortedList> object.  
+  
+ Operations on a <xref:System.Collections.SortedList> object tend to be slower than operations on a <xref:System.Collections.Hashtable> object because of the sorting. However, the <xref:System.Collections.SortedList> offers more flexibility by allowing access to the values either through the associated keys or through the indexes.  
+  
+ Elements in this collection can be accessed using an integer index.  Indexes in this collection are zero-based.  
+  
+ The `foreach` statement of the C# language (`for each` in Visual Basic) returns an object of the type of the elements in the collection. Since each element of the <xref:System.Collections.SortedList> object is a key/value pair, the element type is not the type of the key or the type of the value. Rather, the element type is <xref:System.Collections.DictionaryEntry>. For example:  
+  
+ [!code-cpp[Classic SortedList Example#2](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList Example/CPP/remarks.cpp#2)]
+ [!code-csharp[Classic SortedList Example#2](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList Example/CS/remarks.cs#2)]
+ [!code-vb[Classic SortedList Example#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList Example/VB/remarks.vb#2)]  
+  
+ The `foreach` statement is a wrapper around the enumerator, which allows only reading from, not writing to, the collection.  
+  
+   
+  
+## Examples  
+ The following code example shows how to create and initialize a <xref:System.Collections.SortedList> object and how to print out its keys and values.  
+  
+ [!code-cpp[Classic SortedList Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SortedList Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList Example/CS/source.cs#1)]
+ [!code-vb[Classic SortedList Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>Public static (<see langword="Shared" /> in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe.  
+  
+ A <see cref="T:System.Collections.SortedList" /> object can support multiple readers concurrently, as long as the collection is not modified. To guarantee the thread safety of the <see cref="T:System.Collections.SortedList" />, all operations must be done through the wrapper returned by the <see cref="M:System.Collections.SortedList.Synchronized(System.Collections.SortedList)" /> method.  
+  
+ Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SortedList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.SortedList" /> class that is empty, has the default initial capacity, and is sorted according to the <see cref="T:System.IComparable" /> interface implemented by each key added to the <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each key must implement the <xref:System.IComparable> interface to be capable of comparisons with every other key in the <xref:System.Collections.SortedList> object. The elements are sorted according to the <xref:System.IComparable> implementation of each key added to the <xref:System.Collections.SortedList>.  
+  
+ The capacity of a <xref:System.Collections.SortedList> object is the number of elements that the <xref:System.Collections.SortedList> can hold. As elements are added to a <xref:System.Collections.SortedList>, the capacity is automatically increased as required by reallocating the internal array.  
+  
+ If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.SortedList> object.  
+  
+ This constructor is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example creates collections using different <xref:System.Collections.SortedList> constructors and demonstrates the differences in the behavior of the collections.  
+  
+ [!code-cpp[System.Collections.SortedList_ctor#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.SortedList_ctor/CPP/sortedlist_ctor.cpp#1)]
+ [!code-csharp[System.Collections.SortedList_ctor#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.SortedList_ctor/CS/sortedlist_ctor.cs#1)]
+ [!code-vb[System.Collections.SortedList_ctor#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.SortedList_ctor/VB/sortedlist_ctor.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SortedList (System.Collections.IComparer comparer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.IComparer comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.#ctor(System.Collections.IComparer)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.IComparer" />
+      </Parameters>
+      <Docs>
+        <param name="comparer">The <see cref="T:System.Collections.IComparer" /> implementation to use when comparing keys.  
+  
+ -or-  
+  
+ <see langword="null" /> to use the <see cref="T:System.IComparable" /> implementation of each key.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.SortedList" /> class that is empty, has the default initial capacity, and is sorted according to the specified <see cref="T:System.Collections.IComparer" /> interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The elements are sorted according to the specified <xref:System.Collections.IComparer> implementation. If the `comparer` parameter is `null`, the <xref:System.IComparable> implementation of each key is used; therefore, each key must implement the <xref:System.IComparable> interface to be capable of comparisons with every other key in the <xref:System.Collections.SortedList> object.  
+  
+ The capacity of a <xref:System.Collections.SortedList> object is the number of elements that the <xref:System.Collections.SortedList> can hold. As elements are added to a <xref:System.Collections.SortedList>, the capacity is automatically increased as required by reallocating the internal array.  
+  
+ If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.SortedList> object.  
+  
+ This constructor is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example creates collections using different <xref:System.Collections.SortedList> constructors and demonstrates the differences in the behavior of the collections.  
+  
+ [!code-cpp[System.Collections.SortedList_ctor#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.SortedList_ctor/CPP/sortedlist_ctor.cpp#1)]
+ [!code-csharp[System.Collections.SortedList_ctor#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.SortedList_ctor/CS/sortedlist_ctor.cs#1)]
+ [!code-vb[System.Collections.SortedList_ctor#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.SortedList_ctor/VB/sortedlist_ctor.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SortedList (System.Collections.IDictionary d);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.IDictionary d) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.#ctor(System.Collections.IDictionary)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="d" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="d">The <see cref="T:System.Collections.IDictionary" /> implementation to copy to a new <see cref="T:System.Collections.SortedList" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.SortedList" /> class that contains elements copied from the specified dictionary, has the same initial capacity as the number of elements copied, and is sorted according to the <see cref="T:System.IComparable" /> interface implemented by each key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each key must implement the <xref:System.IComparable> interface to be capable of comparisons with every other key in the <xref:System.Collections.SortedList> object. The elements are sorted according to the <xref:System.IComparable> implementation of each key added to the <xref:System.Collections.SortedList>.  
+  
+ A <xref:System.Collections.Hashtable> object is an example of an <xref:System.Collections.IDictionary> implementation that can be passed to this constructor. The new <xref:System.Collections.SortedList> object contains a copy of the keys and values stored in the <xref:System.Collections.Hashtable>.  
+  
+ The capacity of a <xref:System.Collections.SortedList> object is the number of elements that the <xref:System.Collections.SortedList> can hold. As elements are added to a <xref:System.Collections.SortedList>, the capacity is automatically increased as required by reallocating the internal array.  
+  
+ If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.SortedList> object.  
+  
+ This constructor is an O(`n`) operation, where `n` is the number of elements in `d`.  
+  
+   
+  
+## Examples  
+ The following code example creates collections using different <xref:System.Collections.SortedList> constructors and demonstrates the differences in the behavior of the collections.  
+  
+ [!code-cpp[System.Collections.SortedList_ctorDictionary#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.SortedList_ctorDictionary/CPP/sortedlist_ctordictionary.cpp#1)]
+ [!code-csharp[System.Collections.SortedList_ctorDictionary#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.SortedList_ctorDictionary/CS/sortedlist_ctordictionary.cs#1)]
+ [!code-vb[System.Collections.SortedList_ctorDictionary#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.SortedList_ctorDictionary/VB/sortedlist_ctordictionary.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="d" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidCastException">One or more elements in <paramref name="d" /> do not implement the <see cref="T:System.IComparable" /> interface.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SortedList (int initialCapacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 initialCapacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="initialCapacity" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="initialCapacity">The initial number of elements that the <see cref="T:System.Collections.SortedList" /> object can contain.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.SortedList" /> class that is empty, has the specified initial capacity, and is sorted according to the <see cref="T:System.IComparable" /> interface implemented by each key added to the <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each key must implement the <xref:System.IComparable> interface to be capable of comparisons with every other key in the <xref:System.Collections.SortedList> object. The elements are sorted according to the <xref:System.IComparable> implementation of each key added to the <xref:System.Collections.SortedList>.  
+  
+ The capacity of a <xref:System.Collections.SortedList> object is the number of elements that the <xref:System.Collections.SortedList> can hold. As elements are added to a <xref:System.Collections.SortedList>, the capacity is automatically increased as required by reallocating the internal array.  
+  
+ If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.SortedList> object.  
+  
+ This constructor is an O(`n`) operation, where `n` is `initialCapacity`.  
+  
+   
+  
+## Examples  
+ The following code example creates collections using different <xref:System.Collections.SortedList> constructors and demonstrates the differences in the behavior of the collections.  
+  
+ [!code-cpp[System.Collections.SortedList_ctorInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.SortedList_ctorInt/CPP/sortedlist_ctorint.cpp#1)]
+ [!code-csharp[System.Collections.SortedList_ctorInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.SortedList_ctorInt/CS/sortedlist_ctorint.cs#1)]
+ [!code-vb[System.Collections.SortedList_ctorInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.SortedList_ctorInt/VB/sortedlist_ctorint.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="initialCapacity" /> is less than zero.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough available memory to create a <see cref="T:System.Collections.SortedList" /> object with the specified <paramref name="initialCapacity" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SortedList (System.Collections.IComparer comparer, int capacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.IComparer comparer, int32 capacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.#ctor(System.Collections.IComparer,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.IComparer" />
+        <Parameter Name="capacity" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="comparer">The <see cref="T:System.Collections.IComparer" /> implementation to use when comparing keys.  
+  
+ -or-  
+  
+ <see langword="null" /> to use the <see cref="T:System.IComparable" /> implementation of each key.</param>
+        <param name="capacity">The initial number of elements that the <see cref="T:System.Collections.SortedList" /> object can contain.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.SortedList" /> class that is empty, has the specified initial capacity, and is sorted according to the specified <see cref="T:System.Collections.IComparer" /> interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The elements are sorted according to the specified <xref:System.Collections.IComparer> implementation. If the `comparer` parameter is `null`, the <xref:System.IComparable> implementation of each key is used; therefore, each key must implement the <xref:System.IComparable> interface to be capable of comparisons with every other key in the <xref:System.Collections.SortedList> object.  
+  
+ The capacity of a <xref:System.Collections.SortedList> object is the number of elements that the <xref:System.Collections.SortedList> can hold. As elements are added to a <xref:System.Collections.SortedList>, the capacity is automatically increased as required by reallocating the internal array.  
+  
+ If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.SortedList> object.  
+  
+ This constructor is an O(`n`) operation, where `n` is `capacity`.  
+  
+   
+  
+## Examples  
+ The following code example creates collections using different <xref:System.Collections.SortedList> constructors and demonstrates the differences in the behavior of the collections.  
+  
+ [!code-cpp[System.Collections.SortedList_ctorInt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.SortedList_ctorInt/CPP/sortedlist_ctorint.cpp#1)]
+ [!code-csharp[System.Collections.SortedList_ctorInt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.SortedList_ctorInt/CS/sortedlist_ctorint.cs#1)]
+ [!code-vb[System.Collections.SortedList_ctorInt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.SortedList_ctorInt/VB/sortedlist_ctorint.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="capacity" /> is less than zero.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough available memory to create a <see cref="T:System.Collections.SortedList" /> object with the specified <paramref name="capacity" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SortedList (System.Collections.IDictionary d, System.Collections.IComparer comparer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.IDictionary d, class System.Collections.IComparer comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.#ctor(System.Collections.IDictionary,System.Collections.IComparer)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="d" Type="System.Collections.IDictionary" />
+        <Parameter Name="comparer" Type="System.Collections.IComparer" />
+      </Parameters>
+      <Docs>
+        <param name="d">The <see cref="T:System.Collections.IDictionary" /> implementation to copy to a new <see cref="T:System.Collections.SortedList" /> object.</param>
+        <param name="comparer">The <see cref="T:System.Collections.IComparer" /> implementation to use when comparing keys.  
+  
+ -or-  
+  
+ <see langword="null" /> to use the <see cref="T:System.IComparable" /> implementation of each key.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.SortedList" /> class that contains elements copied from the specified dictionary, has the same initial capacity as the number of elements copied, and is sorted according to the specified <see cref="T:System.Collections.IComparer" /> interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The elements are sorted according to the specified <xref:System.Collections.IComparer> implementation. If the `comparer` parameter is `null`, the <xref:System.IComparable> implementation of each key is used; therefore, each key must implement the <xref:System.IComparable> interface to be capable of comparisons with every other key in the <xref:System.Collections.SortedList> object.  
+  
+ A <xref:System.Collections.Hashtable> object is an example of an <xref:System.Collections.IDictionary> implementation that can be passed to this constructor. The new <xref:System.Collections.SortedList> object contains a copy of the keys and values stored in the <xref:System.Collections.Hashtable>.  
+  
+ The capacity of a <xref:System.Collections.SortedList> object is the number of elements that the <xref:System.Collections.SortedList> can hold. As elements are added to a <xref:System.Collections.SortedList>, the capacity is automatically increased as required by reallocating the internal array.  
+  
+ If the size of the collection can be estimated, specifying the initial capacity eliminates the need to perform a number of resizing operations while adding elements to the <xref:System.Collections.SortedList> object.  
+  
+ This constructor is an O(`n`) operation, where `n` is the number of elements in `d`.  
+  
+   
+  
+## Examples  
+ The following code example creates collections using different <xref:System.Collections.SortedList> constructors and demonstrates the differences in the behavior of the collections.  
+  
+ [!code-cpp[System.Collections.SortedList_ctorDictionary#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.SortedList_ctorDictionary/CPP/sortedlist_ctordictionary.cpp#1)]
+ [!code-csharp[System.Collections.SortedList_ctorDictionary#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.SortedList_ctorDictionary/CS/sortedlist_ctordictionary.cs#1)]
+ [!code-vb[System.Collections.SortedList_ctorDictionary#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.SortedList_ctorDictionary/VB/sortedlist_ctordictionary.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="d" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidCastException">
+          <paramref name="comparer" /> is <see langword="null" />, and one or more elements in <paramref name="d" /> do not implement the <see cref="T:System.IComparable" /> interface.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public virtual void Add (object key, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(object key, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.Add(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the element to add.</param>
+        <param name="value">The value of the element to add. The value can be <see langword="null" />.</param>
+        <summary>Adds an element with the specified key and value to a <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The insertion point is determined based on the comparer selected, either explicitly or by default, when the <xref:System.Collections.SortedList> object was created.  
+  
+ If <xref:System.Collections.SortedList.Count%2A> already equals <xref:System.Collections.SortedList.Capacity%2A>, the capacity of the <xref:System.Collections.SortedList> object is increased by automatically reallocating the internal array, and the existing elements are copied to the new array before the new element is added.  
+  
+ You can also use the <xref:System.Collections.SortedList.Item%2A> property to add new elements by setting the value of a key that does not exist in the <xref:System.Collections.SortedList> object (for example, `myCollection["myNonexistentKey"] = myValue`). However, if the specified key already exists in the <xref:System.Collections.SortedList>, setting the <xref:System.Collections.SortedList.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.SortedList.Add%2A> method does not modify existing elements.  
+  
+ The elements of a <xref:System.Collections.SortedList> object are sorted by the keys either according to a specific <xref:System.Collections.IComparer> implementation specified when the <xref:System.Collections.SortedList> is created or according to the <xref:System.IComparable> implementation provided by the keys themselves.  
+  
+ A key cannot be `null`, but a value can be.  
+  
+ This method is an O(`n`) operation for unsorted data, where `n` is <xref:System.Collections.SortedList.Count%2A>. It is an O(log `n`) operation if the new element is added at the end of the list. If insertion causes a resize, the operation is O(`n`).  
+  
+   
+  
+## Examples  
+ The following code example shows how to add elements to a <xref:System.Collections.SortedList> object.  
+  
+ [!code-cpp[Classic SortedList.Add Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList.Add Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SortedList.Add Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList.Add Example/CS/source.cs#1)]
+ [!code-vb[Classic SortedList.Add Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList.Add Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">An element with the specified <paramref name="key" /> already exists in the <see cref="T:System.Collections.SortedList" /> object.  
+  
+ -or-  
+  
+ The <see cref="T:System.Collections.SortedList" /> is set to use the <see cref="T:System.IComparable" /> interface, and <paramref name="key" /> does not implement the <see cref="T:System.IComparable" /> interface.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.SortedList" /> is read-only.  
+  
+ -or-  
+  
+ The <see cref="T:System.Collections.SortedList" /> has a fixed size.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough available memory to add the element to the <see cref="T:System.Collections.SortedList" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The comparer throws an exception.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Capacity">
+      <MemberSignature Language="C#" Value="public virtual int Capacity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Capacity" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.SortedList.Capacity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the capacity of a <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <value>The number of elements that the <see cref="T:System.Collections.SortedList" /> object can contain.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Collections.SortedList.Capacity%2A> is the number of elements that the <xref:System.Collections.SortedList> object can store. <xref:System.Collections.SortedList.Count%2A> is the number of elements that are actually in the <xref:System.Collections.SortedList>.  
+  
+ <xref:System.Collections.SortedList.Capacity%2A> is always greater than or equal to <xref:System.Collections.SortedList.Count%2A>. If <xref:System.Collections.SortedList.Count%2A> exceeds <xref:System.Collections.SortedList.Capacity%2A> while adding elements, the capacity is automatically increased by reallocating the internal array before copying the old elements and adding the new elements.  
+  
+ The capacity can be decreased by calling <xref:System.Collections.SortedList.TrimToSize%2A> or by setting the <xref:System.Collections.SortedList.Capacity%2A> property explicitly. When the value of <xref:System.Collections.SortedList.Capacity%2A> is set explicitly, the internal array is also reallocated to accommodate the specified capacity.  
+  
+ Retrieving the value of this property is an O(1) operation; setting the property is an O(`n`) operation, where `n` is the new capacity.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value assigned is less than the current number of elements in the <see cref="T:System.Collections.SortedList" /> object.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory available on the system.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public virtual void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all elements from a <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Collections.SortedList.Count%2A> is set to zero and references to other objects from elements of the collection are also released.  
+  
+ <xref:System.Collections.SortedList.Capacity%2A> remains unchanged. To reset the capacity of the <xref:System.Collections.SortedList> object, call <xref:System.Collections.SortedList.TrimToSize%2A> or set the <xref:System.Collections.SortedList.Capacity%2A> property directly. Trimming an empty <xref:System.Collections.SortedList> sets the capacity of the <xref:System.Collections.SortedList> to the default capacity.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.SortedList.Count%2A>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to trim the unused portions of a <xref:System.Collections.SortedList> object and how to clear the values of the <xref:System.Collections.SortedList>.  
+  
+ [!code-cpp[Classic SortedList.Clear Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList.Clear Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SortedList.Clear Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList.Clear Example/CS/source.cs#1)]
+ [!code-vb[Classic SortedList.Clear Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList.Clear Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.SortedList" /> object is read-only.  
+  
+ -or-  
+  
+ The <see cref="T:System.Collections.SortedList" /> has a fixed size.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public virtual object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a shallow copy of a <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <returns>A shallow copy of the <see cref="T:System.Collections.SortedList" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A shallow copy of a collection copies only the elements of the collection, whether they are reference types or value types, but does not copy the objects that the references refer to. The references in the new collection point to the same objects that the references in the original collection point to.  
+  
+ In contrast, a deep copy of a collection copies the elements and everything directly or indirectly referenced by the elements.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.SortedList.Count%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public virtual bool Contains (object key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(object key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.Contains(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to locate in the <see cref="T:System.Collections.SortedList" /> object.</param>
+        <summary>Determines whether a <see cref="T:System.Collections.SortedList" /> object contains a specific key.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Collections.SortedList" /> object contains an element with the specified <paramref name="key" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The elements of a <xref:System.Collections.SortedList> object are sorted by the keys either according to a specific <xref:System.Collections.IComparer> implementation specified when the <xref:System.Collections.SortedList> is created or according to the <xref:System.IComparable> implementation provided by the keys themselves.  
+  
+ <xref:System.Collections.SortedList.Contains%2A> implements <xref:System.Collections.IDictionary.Contains%2A?displayProperty=fullName>. It behaves exactly as <xref:System.Collections.SortedList.ContainsKey%2A>.  
+  
+ This method uses a binary search algorithm; therefore, this method is an O(log `n`) operation, where `n` is <xref:System.Collections.SortedList.Count%2A>.  
+  
+ Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `item` to determine whether item exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
+  
+   
+  
+## Examples  
+ The following code example shows how to determine whether a <xref:System.Collections.SortedList> object contains a specific element.  
+  
+ [!code-cpp[Classic SortedList.Contains Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList.Contains Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SortedList.Contains Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList.Contains Example/CS/source.cs#1)]
+ [!code-vb[Classic SortedList.Contains Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList.Contains Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The comparer throws an exception.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsKey">
+      <MemberSignature Language="C#" Value="public virtual bool ContainsKey (object key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsKey(object key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.ContainsKey(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to locate in the <see cref="T:System.Collections.SortedList" /> object.</param>
+        <summary>Determines whether a <see cref="T:System.Collections.SortedList" /> object contains a specific key.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Collections.SortedList" /> object contains an element with the specified <paramref name="key" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The elements of a <xref:System.Collections.SortedList> object are sorted by the keys either according to a specific <xref:System.Collections.IComparer> implementation specified when the <xref:System.Collections.SortedList> is created or according to the <xref:System.IComparable> implementation provided by the keys themselves.  
+  
+ This method behaves exactly as the <xref:System.Collections.SortedList.Contains%2A> method.  
+  
+ This method uses a binary search algorithm; therefore, this method is an O(log `n`) operation, where `n` is <xref:System.Collections.SortedList.Count%2A>.  
+  
+ Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `item` to determine whether item exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
+  
+   
+  
+## Examples  
+ The following code example shows how to determine whether a <xref:System.Collections.SortedList> object contains a specific element.  
+  
+ [!code-cpp[Classic SortedList.Contains Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList.Contains Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SortedList.Contains Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList.Contains Example/CS/source.cs#1)]
+ [!code-vb[Classic SortedList.Contains Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList.Contains Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The comparer throws an exception.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsValue">
+      <MemberSignature Language="C#" Value="public virtual bool ContainsValue (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsValue(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.ContainsValue(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to locate in the <see cref="T:System.Collections.SortedList" /> object. The value can be <see langword="null" />.</param>
+        <summary>Determines whether a <see cref="T:System.Collections.SortedList" /> object contains a specific value.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Collections.SortedList" /> object contains an element with the specified <paramref name="value" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The values of the elements of the <xref:System.Collections.SortedList> object are compared to the specified value using the <xref:System.Object.Equals%2A> method.  
+  
+ This method performs a linear search; therefore, the average execution time is proportional to <xref:System.Collections.SortedList.Count%2A>. That is, this method is an O(`n`) operation, where `n` is <xref:System.Collections.SortedList.Count%2A>.  
+  
+ Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `item` to determine whether item exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
+  
+   
+  
+## Examples  
+ The following code example shows how to determine whether a <xref:System.Collections.SortedList> object contains a specific element.  
+  
+ [!code-cpp[Classic SortedList.Contains Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList.Contains Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SortedList.Contains Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList.Contains Example/CS/source.cs#1)]
+ [!code-vb[Classic SortedList.Contains Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList.Contains Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public virtual void CopyTo (Array array, int arrayIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 arrayIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="arrayIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> object that is the destination of the <see cref="T:System.Collections.DictionaryEntry" /> objects copied from <see cref="T:System.Collections.SortedList" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
+        <param name="arrayIndex">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies <see cref="T:System.Collections.SortedList" /> elements to a one-dimensional <see cref="T:System.Array" /> object, starting at the specified index in the array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The key/value pairs are copied to the <xref:System.Array> object in the same order in which the enumerator iterates through the <xref:System.Collections.SortedList> object.  
+  
+ To copy only the keys in the <xref:System.Collections.SortedList>, use `SortedList.Keys.CopyTo`.  
+  
+ To copy only the values in the <xref:System.Collections.SortedList>, use `SortedList.Values.CopyTo`.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.SortedList.Count%2A>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to copy the values in a <xref:System.Collections.SortedList> object into a one-dimensional <xref:System.Array> object.  
+  
+ [!code-cpp[Classic SortedList.CopyTo Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList.CopyTo Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SortedList.CopyTo Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList.CopyTo Example/CS/source.cs#1)]
+ [!code-vb[Classic SortedList.CopyTo Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList.CopyTo Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="arrayIndex" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="array" /> is multidimensional.  
+  
+ -or-  
+  
+ The number of elements in the source <see cref="T:System.Collections.SortedList" /> object is greater than the available space from <paramref name="arrayIndex" /> to the end of the destination <paramref name="array" />.</exception>
+        <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.Collections.SortedList" /> cannot be cast automatically to the type of the destination <paramref name="array" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public virtual int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.SortedList.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of elements contained in a <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <value>The number of elements contained in the <see cref="T:System.Collections.SortedList" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each element is a key/value pair that can be accessed as a <xref:System.Collections.DictionaryEntry> object.  
+  
+ <xref:System.Collections.SortedList.Capacity%2A> is the number of elements that the <xref:System.Collections.SortedList> object can store. <xref:System.Collections.SortedList.Count%2A> is the number of elements that are actually in the <xref:System.Collections.SortedList>.  
+  
+ <xref:System.Collections.SortedList.Capacity%2A> is always greater than or equal to <xref:System.Collections.SortedList.Count%2A>. If <xref:System.Collections.SortedList.Count%2A> exceeds <xref:System.Collections.SortedList.Capacity%2A> while adding elements, the capacity is automatically increased by reallocating the internal array before copying the old elements and adding the new elements.  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetByIndex">
+      <MemberSignature Language="C#" Value="public virtual object GetByIndex (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetByIndex(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.GetByIndex(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the value to get.</param>
+        <summary>Gets the value at the specified index of a <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <returns>The value at the specified index of the <see cref="T:System.Collections.SortedList" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The index sequence is based on the sort sequence. When an element is added, it is inserted into <xref:System.Collections.SortedList> in the correct sort order, and the indexing adjusts accordingly. When an element is removed, the indexing also adjusts accordingly. Therefore, the index of a specific key/value pair might change as elements are added or removed from the <xref:System.Collections.SortedList> object.  
+  
+ This method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example shows how to get one or all the keys or values in a <xref:System.Collections.SortedList> object.  
+  
+ [!code-cpp[Classic SortedList.GetByIndex Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList.GetByIndex Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SortedList.GetByIndex Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList.GetByIndex Example/CS/source.cs#1)]
+ [!code-vb[Classic SortedList.GetByIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList.GetByIndex Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is outside the range of valid indexes for the <see cref="T:System.Collections.SortedList" /> object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.IDictionaryEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IDictionaryEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IDictionaryEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:System.Collections.IDictionaryEnumerator" /> object that iterates through a <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <returns>An <see cref="T:System.Collections.IDictionaryEnumerator" /> object for the <see cref="T:System.Collections.SortedList" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+  
+ Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+  
+ Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position.  At this position, <xref:System.Collections.IEnumerator.Current%2A> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+  
+ <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
+  
+ If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+  
+ The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+  
+ This method is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetKey">
+      <MemberSignature Language="C#" Value="public virtual object GetKey (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetKey(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.GetKey(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the key to get.</param>
+        <summary>Gets the key at the specified index of a <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <returns>The key at the specified index of the <see cref="T:System.Collections.SortedList" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The index sequence is based on the sort sequence. When an element is added, it is inserted into <xref:System.Collections.SortedList> in the correct sort order, and the indexing adjusts accordingly. When an element is removed, the indexing also adjusts accordingly. Therefore, the index of a specific key/value pair might change as elements are added or removed from the <xref:System.Collections.SortedList> object.  
+  
+ This method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example shows how to get one or all the keys or values in a <xref:System.Collections.SortedList> object.  
+  
+ [!code-cpp[Classic SortedList.GetByIndex Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList.GetByIndex Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SortedList.GetByIndex Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList.GetByIndex Example/CS/source.cs#1)]
+ [!code-vb[Classic SortedList.GetByIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList.GetByIndex Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is outside the range of valid indexes for the <see cref="T:System.Collections.SortedList" /> object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetKeyList">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.IList GetKeyList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IList GetKeyList() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.GetKeyList" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the keys in a <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <returns>An <see cref="T:System.Collections.IList" /> object containing the keys in the <see cref="T:System.Collections.SortedList" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned <xref:System.Collections.IList> object is a read-only view of the keys of the <xref:System.Collections.SortedList> object. Modifications made to the underlying <xref:System.Collections.SortedList> are immediately reflected in the <xref:System.Collections.IList>.  
+  
+ The elements of the returned <xref:System.Collections.IList> are sorted in the same order as the keys of the <xref:System.Collections.SortedList>.  
+  
+ This method is similar to the <xref:System.Collections.SortedList.Keys%2A> property, but returns an <xref:System.Collections.IList> object instead of an <xref:System.Collections.ICollection> object.  
+  
+ This method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example shows how to get one or all the keys or values in a <xref:System.Collections.SortedList> object.  
+  
+ [!code-cpp[Classic SortedList.GetByIndex Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList.GetByIndex Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SortedList.GetByIndex Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList.GetByIndex Example/CS/source.cs#1)]
+ [!code-vb[Classic SortedList.GetByIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList.GetByIndex Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValueList">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.IList GetValueList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IList GetValueList() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.GetValueList" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the values in a <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <returns>An <see cref="T:System.Collections.IList" /> object containing the values in the <see cref="T:System.Collections.SortedList" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned <xref:System.Collections.IList> object is a read-only view of the values of the <xref:System.Collections.SortedList> object. Modifications made to the underlying <xref:System.Collections.SortedList> are immediately reflected in the <xref:System.Collections.IList>.  
+  
+ The elements of the returned <xref:System.Collections.IList> are sorted in the same order as the values of the <xref:System.Collections.SortedList>.  
+  
+ This method is similar to the <xref:System.Collections.SortedList.Values%2A> property, but returns an <xref:System.Collections.IList> object instead of an <xref:System.Collections.ICollection> object.  
+  
+ This method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example shows how to get one or all the keys or values in a <xref:System.Collections.SortedList> object.  
+  
+ [!code-cpp[Classic SortedList.GetByIndex Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList.GetByIndex Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SortedList.GetByIndex Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList.GetByIndex Example/CS/source.cs#1)]
+ [!code-vb[Classic SortedList.GetByIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList.GetByIndex Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOfKey">
+      <MemberSignature Language="C#" Value="public virtual int IndexOfKey (object key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOfKey(object key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.IndexOfKey(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to locate in the <see cref="T:System.Collections.SortedList" /> object.</param>
+        <summary>Returns the zero-based index of the specified key in a <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <returns>The zero-based index of the <paramref name="key" /> parameter, if <paramref name="key" /> is found in the <see cref="T:System.Collections.SortedList" /> object; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The elements of a <xref:System.Collections.SortedList> object are sorted by the keys either according to a specific <xref:System.Collections.IComparer> implementation specified when the <xref:System.Collections.SortedList> is created, or according to the <xref:System.IComparable> implementation provided by the keys themselves.  
+  
+ The index sequence is based on the sort sequence. When an element is added, it is inserted into <xref:System.Collections.SortedList> in the correct sort order, and the indexing adjusts accordingly. When an element is removed, the indexing also adjusts accordingly. Therefore, the index of a specific key/value pair might change as elements are added or removed from the <xref:System.Collections.SortedList>.  
+  
+ This method uses a binary search algorithm; therefore, this method is an O(log `n`) operation, where `n` is <xref:System.Collections.SortedList.Count%2A>.  
+  
+ Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `item` to determine whether item exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
+  
+   
+  
+## Examples  
+ The following code example shows how to determine the index of a key or a value in a <xref:System.Collections.SortedList> object.  
+  
+ [!code-cpp[Classic SortedList.IndexOfKey Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList.IndexOfKey Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SortedList.IndexOfKey Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList.IndexOfKey Example/CS/source.cs#1)]
+ [!code-vb[Classic SortedList.IndexOfKey Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList.IndexOfKey Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The comparer throws an exception.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOfValue">
+      <MemberSignature Language="C#" Value="public virtual int IndexOfValue (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOfValue(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.IndexOfValue(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value to locate in the <see cref="T:System.Collections.SortedList" /> object. The value can be <see langword="null" />.</param>
+        <summary>Returns the zero-based index of the first occurrence of the specified value in a <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <returns>The zero-based index of the first occurrence of the <paramref name="value" /> parameter, if <paramref name="value" /> is found in the <see cref="T:System.Collections.SortedList" /> object; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The index sequence is based on the sort sequence. When an element is added, it is inserted into <xref:System.Collections.SortedList> in the correct sort order, and the indexing adjusts accordingly. When an element is removed, the indexing also adjusts accordingly. Therefore, the index of a specific key/value pair might change as elements are added or removed from the <xref:System.Collections.SortedList> object.  
+  
+ The values of the elements of the <xref:System.Collections.SortedList> are compared to the specified value using the <xref:System.Object.Equals%2A> method.  
+  
+ This method uses a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.SortedList.Count%2A>.  
+  
+ Starting with the .NET Framework 2.0, this method uses the collection’s objects’ <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods on `item` to determine whether item exists. In the earlier versions of the .NET Framework, this determination was made by using the <xref:System.Object.Equals%2A> and <xref:System.IComparable.CompareTo%2A> methods of the `item` parameter on the objects in the collection.  
+  
+   
+  
+## Examples  
+ The following code example shows how to determine the index of a key or a value in a <xref:System.Collections.SortedList> object.  
+  
+ [!code-cpp[Classic SortedList.IndexOfKey Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList.IndexOfKey Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SortedList.IndexOfKey Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList.IndexOfKey Example/CS/source.cs#1)]
+ [!code-vb[Classic SortedList.IndexOfKey Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList.IndexOfKey Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFixedSize">
+      <MemberSignature Language="C#" Value="public virtual bool IsFixedSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFixedSize" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.SortedList.IsFixedSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether a <see cref="T:System.Collections.SortedList" /> object has a fixed size.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.SortedList" /> object has a fixed size; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A collection with a fixed size does not allow the addition or removal of elements after the collection is created, but does allow the modification of existing elements.  
+  
+ A collection with a fixed size is simply a collection with a wrapper that prevents adding and removing elements; therefore, if changes are made to the underlying collection, including the addition or removal of elements, the fixed-size collection reflects those changes.  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public virtual bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.SortedList.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether a <see cref="T:System.Collections.SortedList" /> object is read-only.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Collections.SortedList" /> object is read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
+  
+ A collection that is read-only is simply a collection with a wrapper that prevents modifying the collection; therefore, if changes are made to the underlying collection, the read-only collection reflects those changes.  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="public virtual bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.SortedList.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether access to a <see cref="T:System.Collections.SortedList" /> object is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Collections.SortedList" /> object is synchronized (thread safe); otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To guarantee the thread safety of a <xref:System.Collections.SortedList> object, all operations must be done through the wrapper returned by the <xref:System.Collections.SortedList.Synchronized%2A> method.  
+  
+ Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+  
+   
+  
+## Examples  
+ The following code example shows how to lock a collection using the <xref:System.Collections.SortedList.SyncRoot%2A> property during the entire enumeration.  
+  
+ [!code-cpp[Classic SortedList.IsSynchronized Example#2](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList.IsSynchronized Example/CPP/source2.cpp#2)]
+ [!code-csharp[Classic SortedList.IsSynchronized Example#2](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList.IsSynchronized Example/CS/source2.cs#2)]
+ [!code-vb[Classic SortedList.IsSynchronized Example#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList.IsSynchronized Example/VB/source2.vb#2)]  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ The following code example shows how to synchronize a <xref:System.Collections.SortedList> object, determine whether a <xref:System.Collections.SortedList> is synchronized, and use a synchronized <xref:System.Collections.SortedList>.  
+  
+ [!code-cpp[Classic SortedList.IsSynchronized Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList.IsSynchronized Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SortedList.IsSynchronized Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList.IsSynchronized Example/CS/source.cs#1)]
+ [!code-vb[Classic SortedList.IsSynchronized Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList.IsSynchronized Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public virtual object this[object key] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(object)" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.SortedList.Item(System.Object)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key associated with the value to get or set.</param>
+        <summary>Gets and sets the value associated with a specific key in a <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <value>The value associated with the <paramref name="key" /> parameter in the <see cref="T:System.Collections.SortedList" /> object, if <paramref name="key" /> is found; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Collections.SortedList.Item%2A> property to access a specific element in a collection by specifying the following syntax: `myCollection[key]`.  
+  
+ You can also use this property to add new elements by setting the value of a key that does not exist in the <xref:System.Collections.SortedList> object (for example, `myCollection["myNonexistentKey"] = myValue)`. However, if the specified key already exists in the <xref:System.Collections.SortedList>, setting the <xref:System.Collections.SortedList.Item%2A> property overwrites the old value. In contrast, the <xref:System.Collections.SortedList.Add%2A> method does not modify existing elements.  
+  
+ A key cannot be `null`, but a value can be. To distinguish between `null` that is returned because the specified key is not found and `null` that is returned because the value of the specified key is `null`, use the <xref:System.Collections.SortedList.Contains%2A> method or the <xref:System.Collections.SortedList.ContainsKey%2A> method to determine if the key exists in the list.  
+  
+ The elements of a <xref:System.Collections.SortedList> are sorted by the keys either according to a specific <xref:System.Collections.IComparer> implementation specified when the <xref:System.Collections.SortedList> is created or according to the <xref:System.IComparable> implementation provided by the keys themselves.  
+  
+ The C# language uses the  keyword to define the indexers instead of implementing the <xref:System.Collections.SortedList.Keys%2A>property. Visual Basic implements <xref:System.Collections.SortedList.Item%2A> as a default property, which provides the same indexing functionality.  
+  
+ Retrieving the value of this property is an O(log `n`) operation, where `n` is <xref:System.Collections.SortedList.Count%2A>. Setting the property is an O(log `n`) operation if the key is already in the <xref:System.Collections.SortedList>. If the key is not in the list, setting the property is an O(`n`) operation for unsorted data, or O(log `n`) if the new element is added at the end of the list. If insertion causes a resize, the operation is O(`n`).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The property is set and the <see cref="T:System.Collections.SortedList" /> object is read-only.  
+  
+ -or-  
+  
+ The property is set, <paramref name="key" /> does not exist in the collection, and the <see cref="T:System.Collections.SortedList" /> has a fixed size.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough available memory to add the element to the <see cref="T:System.Collections.SortedList" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The comparer throws an exception.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Keys">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.ICollection Keys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Keys" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.SortedList.Keys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the keys in a <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <value>An <see cref="T:System.Collections.ICollection" /> object containing the keys in the <see cref="T:System.Collections.SortedList" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Collections.ICollection> object is a read-only view of the keys of the <xref:System.Collections.SortedList> object. Modifications made to the underlying <xref:System.Collections.SortedList> are immediately reflected in the <xref:System.Collections.ICollection>.  
+  
+ The elements of the <xref:System.Collections.ICollection> are sorted in the same order as the keys of the <xref:System.Collections.SortedList>.  
+  
+ This property is similar to the <xref:System.Collections.SortedList.GetKeyList%2A> method, but returns an <xref:System.Collections.ICollection> object instead of an <xref:System.Collections.IList> object.  
+  
+ This method is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public virtual void Remove (object key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(object key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.Remove(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the element to remove.</param>
+        <summary>Removes the element with the specified key from a <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Collections.SortedList> object does not contain an element with the specified key, the <xref:System.Collections.SortedList> remains unchanged. No exception is thrown.  
+  
+ In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.SortedList.Count%2A>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to remove elements from a <xref:System.Collections.SortedList> object.  
+  
+ [!code-cpp[Classic SortedList.RemoveAt Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList.RemoveAt Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SortedList.RemoveAt Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList.RemoveAt Example/CS/source.cs#1)]
+ [!code-vb[Classic SortedList.RemoveAt Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList.RemoveAt Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.SortedList" /> object is read-only.  
+  
+ -or-  
+  
+ The <see cref="T:System.Collections.SortedList" /> has a fixed size.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public virtual void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to remove.</param>
+        <summary>Removes the element at the specified index of a <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The index sequence is based on the sort sequence. When an element is added, it is inserted into <xref:System.Collections.SortedList> in the correct sort order, and the indexing adjusts accordingly. When an element is removed, the indexing also adjusts accordingly. Therefore, the index of a specific key/value pair might change as elements are added or removed from the <xref:System.Collections.SortedList> object.  
+  
+ In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped into buckets, such as a hash table.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.SortedList.Count%2A>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to remove elements from a <xref:System.Collections.SortedList> object.  
+  
+ [!code-cpp[Classic SortedList.RemoveAt Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList.RemoveAt Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SortedList.RemoveAt Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList.RemoveAt Example/CS/source.cs#1)]
+ [!code-vb[Classic SortedList.RemoveAt Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList.RemoveAt Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is outside the range of valid indexes for the <see cref="T:System.Collections.SortedList" /> object.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.SortedList" /> is read-only.  
+  
+ -or-  
+  
+ The <see cref="T:System.Collections.SortedList" /> has a fixed size.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetByIndex">
+      <MemberSignature Language="C#" Value="public virtual void SetByIndex (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetByIndex(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.SetByIndex(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which to save <c>value</c>.</param>
+        <param name="value">The <see cref="T:System.Object" /> to save into the <see cref="T:System.Collections.SortedList" /> object. The value can be <see langword="null" />.</param>
+        <summary>Replaces the value at a specific index in a <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The index sequence is based on the sort sequence. When an element is added, it is inserted into <xref:System.Collections.SortedList> in the correct sort order, and the indexing adjusts accordingly. When an element is removed, the indexing also adjusts accordingly. Therefore, the index of a specific key/value pair might change as elements are added or removed from the <xref:System.Collections.SortedList> object.  
+  
+ This method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example shows how to replace the value of an existing element in a <xref:System.Collections.SortedList> object.  
+  
+ [!code-cpp[Classic SortedList.SetByIndex Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList.SetByIndex Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SortedList.SetByIndex Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList.SetByIndex Example/CS/source.cs#1)]
+ [!code-vb[Classic SortedList.SetByIndex Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList.SetByIndex Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is outside the range of valid indexes for the <see cref="T:System.Collections.SortedList" /> object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Synchronized">
+      <MemberSignature Language="C#" Value="public static System.Collections.SortedList Synchronized (System.Collections.SortedList list);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.SortedList Synchronized(class System.Collections.SortedList list) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.Synchronized(System.Collections.SortedList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.SortedList</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="list" Type="System.Collections.SortedList" />
+      </Parameters>
+      <Docs>
+        <param name="list">The <see cref="T:System.Collections.SortedList" /> object to synchronize.</param>
+        <summary>Returns a synchronized (thread-safe) wrapper for a <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <returns>A synchronized (thread-safe) wrapper for the <see cref="T:System.Collections.SortedList" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To guarantee the thread safety of a <xref:System.Collections.SortedList> object, all operations must be done through this wrapper only.  
+  
+ Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+  
+   
+  
+## Examples  
+ The following code example shows how to lock the collection using the <xref:System.Collections.SortedList.SyncRoot%2A> property during the entire enumeration.  
+  
+ [!code-cpp[Classic SortedList.IsSynchronized Example#2](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList.IsSynchronized Example/CPP/source2.cpp#2)]
+ [!code-csharp[Classic SortedList.IsSynchronized Example#2](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList.IsSynchronized Example/CS/source2.cs#2)]
+ [!code-vb[Classic SortedList.IsSynchronized Example#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList.IsSynchronized Example/VB/source2.vb#2)]  
+  
+ This method is an O(1) operation.  
+  
+ The following code example shows how to synchronize a <xref:System.Collections.SortedList> object, determine whether a <xref:System.Collections.SortedList> is synchronized, and use a synchronized <xref:System.Collections.SortedList>.  
+  
+ [!code-cpp[Classic SortedList.IsSynchronized Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList.IsSynchronized Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SortedList.IsSynchronized Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList.IsSynchronized Example/CS/source.cs#1)]
+ [!code-vb[Classic SortedList.IsSynchronized Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList.IsSynchronized Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="list" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="public virtual object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.SortedList.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to a <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Collections.SortedList" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To create a synchronized version of the <xref:System.Collections.SortedList> object, use the <xref:System.Collections.SortedList.Synchronized%2A> method. However, derived classes can provide their own synchronized version of the <xref:System.Collections.SortedList> using the <xref:System.Collections.SortedList.SyncRoot%2A> property. The synchronizing code must perform operations on the <xref:System.Collections.SortedList.SyncRoot%2A> of the <xref:System.Collections.SortedList>, not directly on the <xref:System.Collections.SortedList>. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the <xref:System.Collections.SortedList> object.  
+  
+ Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+  
+   
+  
+## Examples  
+ The following code example shows how to lock the collection using the <xref:System.Collections.SortedList.SyncRoot%2A> property during the entire enumeration.  
+  
+ [!code-cpp[Classic SortedList.IsSynchronized Example#2](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList.IsSynchronized Example/CPP/source2.cpp#2)]
+ [!code-csharp[Classic SortedList.IsSynchronized Example#2](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList.IsSynchronized Example/CS/source2.cs#2)]
+ [!code-vb[Classic SortedList.IsSynchronized Example#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList.IsSynchronized Example/VB/source2.vb#2)]  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:System.Collections.IEnumerator" /> that iterates through the <see cref="T:System.Collections.SortedList" />.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Collections.SortedList" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [Visual Basic, C#]  
+  
+ The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended, instead of directly manipulating the enumerator.  
+  
+ Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+  
+ Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position. At this position, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+  
+ <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
+  
+ If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, calling <xref:System.Collections.IEnumerator.Current%2A> throws an exception. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and the next call to <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> throws an <xref:System.InvalidOperationException>. If the collection is modified between <xref:System.Collections.IEnumerator.MoveNext%2A> and <xref:System.Collections.IEnumerator.Current%2A>, <xref:System.Collections.IEnumerator.Current%2A> returns the element that it is set to, even if the enumerator is already invalidated.  
+  
+ The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.  
+  
+ This method is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimToSize">
+      <MemberSignature Language="C#" Value="public virtual void TrimToSize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TrimToSize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.SortedList.TrimToSize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the capacity to the actual number of elements in a <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be used to minimize a collection's memory overhead if no new elements will be added to the collection.  
+  
+ To reset a <xref:System.Collections.SortedList> object to its initial state, call the <xref:System.Collections.SortedList.Clear%2A> method before calling <xref:System.Collections.SortedList.TrimToSize%2A>. Trimming an empty <xref:System.Collections.SortedList> sets the capacity of the <xref:System.Collections.SortedList> to the default capacity.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.SortedList.Count%2A>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to trim the unused portions of a <xref:System.Collections.SortedList> object and how to clear its values.  
+  
+ [!code-cpp[Classic SortedList.Clear Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic SortedList.Clear Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic SortedList.Clear Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic SortedList.Clear Example/CS/source.cs#1)]
+ [!code-vb[Classic SortedList.Clear Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic SortedList.Clear Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.SortedList" /> object is read-only.  
+  
+ -or-  
+  
+ The <see cref="T:System.Collections.SortedList" /> has a fixed size.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.ICollection Values { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Values" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.SortedList.Values" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the values in a <see cref="T:System.Collections.SortedList" /> object.</summary>
+        <value>An <see cref="T:System.Collections.ICollection" /> object containing the values in the <see cref="T:System.Collections.SortedList" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Collections.ICollection> object is a read-only view of the values of the <xref:System.Collections.SortedList> object. Modifications made to the underlying <xref:System.Collections.SortedList> are immediately reflected in the <xref:System.Collections.ICollection>.  
+  
+ The elements of the <xref:System.Collections.ICollection> are sorted in the same order as the values of the <xref:System.Collections.SortedList>.  
+  
+ This property is similar to the <xref:System.Collections.SortedList.GetValueList%2A> method, but returns an <xref:System.Collections.ICollection> object instead of an <xref:System.Collections.IList> object.  
+  
+ This method is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

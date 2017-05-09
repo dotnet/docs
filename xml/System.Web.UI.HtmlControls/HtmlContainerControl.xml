@@ -1,0 +1,354 @@
+<Type Name="HtmlContainerControl" FullName="System.Web.UI.HtmlControls.HtmlContainerControl">
+  <TypeSignature Language="C#" Value="public abstract class HtmlContainerControl : System.Web.UI.HtmlControls.HtmlControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HtmlContainerControl extends System.Web.UI.HtmlControls.HtmlControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlContainerControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.HtmlControls.HtmlControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Serves as the abstract base class for HTML server controls that map to HTML elements that are required to have an opening and a closing tag.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The most common controls with a closing tag are the `<form>`, `<table>`, `<tr>`, `<td>`, `<a>`, and `<span>` elements.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerText%2A> and <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> properties allow you to manipulate the content between the opening and closing tags of <xref:System.Web.UI.HtmlControls.HtmlContainerControl>-derived controls.  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlContainerControl>, see the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.%23ctor%2A> constructor.  
+  
+ A new instance of this class is not created directly.  
+  
+> [!CAUTION]
+>  If you use the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property to specify the text between the opening and closing tags of an HTML server control, the text is not HTML encoded. This makes it possible to embed script within HTML tags in the text. When using the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property, be sure to validate the value to reduce security vulnerabilities. Otherwise, consider using the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerText%2A> property instead.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property of this class to dynamically generate a message on a Web page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlContainerControl Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlContainerControl Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlContainerControl Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlContainerControl Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected HtmlContainerControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlContainerControl.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlContainerControl" /> class using default values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlContainerControl> class using default values.  
+  
+> [!NOTE]
+>  An instance of this class is not created directly. This constructor is called from the constructor of other HTML control classes to initialize properties defined in this class.  
+  
+ The following table shows initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlContainerControl>.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A>|The "span" literal string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HtmlContainerControl (string tag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string tag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlContainerControl.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="tag" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="tag">A string that specifies the tag name of the control.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlContainerControl" /> class using the specified tag name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlContainerControl> class using the specified tag.  
+  
+> [!NOTE]
+>  An instance of this class is not created directly. This constructor is called from the constructor of other HTML control classes to initialize properties defined in this class.  
+  
+ The following table shows initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlContainerControl>.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A>|The value specified by the `tag` parameter.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateControlCollection">
+      <MemberSignature Language="C#" Value="protected override System.Web.UI.ControlCollection CreateControlCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.ControlCollection CreateControlCollection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlContainerControl.CreateControlCollection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ControlCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Web.UI.ControlCollection" /> object to hold the child controls (both literal and server) of the server control.</summary>
+        <returns>A <see cref="T:System.Web.UI.ControlCollection" /> that contains the <see cref="T:System.Web.UI.HtmlControls.HtmlControl" /> child server controls.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InnerHtml">
+      <MemberSignature Language="C#" Value="public virtual string InnerHtml { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InnerHtml" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the content found between the opening and closing tags of the specified HTML server control.</summary>
+        <value>The HTML content between opening and closing tags of an HTML server control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property to programmatically modify the contents between the opening and closing tags of an HTML server control.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property does not automatically encode special characters to and from HTML entities. HTML entities allow you to display special characters, such as the `<` character, that a browser would ordinarily interpret as having special meaning. The `<` character would be interpreted as the start of a tag and is not displayed on the page. To display the `<` character, you would need to use the entity `&lt;`.  
+  
+ For example, if the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property is set to `"<b> Hello </b>"`, the `<` and `>` characters are not converted to `&lt;` and `&gt;`, respectively. The rendered output would still be: \<b> Hello \</b>. The browser will detect the `<b>` tags and display the text, Hello, in a bold font.  
+  
+> [!CAUTION]
+>  Because the text is not HTML encoded, it possible to embed script within HTML tags in the text. If this property is set dynamically using user input, be sure to validate the value to reduce security vulnerabilities. For more information, see [Security and User Input](~/docs/standard/security/security-and-user-input.md).  
+  
+ To provide automatic HTML encoding and decoding, use the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerText%2A> property.  
+  
+> [!NOTE]
+>  If there are no child controls, the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property contains the value <xref:System.String.Empty?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property to dynamically set a text message.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlContainerControl Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlContainerControl Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlContainerControl Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlContainerControl Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">There is more than one HTML server control.  
+  
+ \- or -  
+  
+ The HTML server control is not a <see cref="T:System.Web.UI.LiteralControl" /> or a <see cref="T:System.Web.UI.DataBoundLiteralControl" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InnerText">
+      <MemberSignature Language="C#" Value="public virtual string InnerText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InnerText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlContainerControl.InnerText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text between the opening and closing tags of the specified HTML server control.</summary>
+        <value>The text between the opening and closing tags of an HTML server control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerText%2A> property to programmatically modify the text between the opening and closing tags of an HTML server control.  
+  
+ Unlike the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property, the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerText%2A> property automatically encodes special characters to and from HTML entities. HTML entities allow you to display special characters, such as the `<` character, that a browser would ordinarily interpret as having special meaning. The `<` character would be interpreted as the start of a tag and is not displayed on the page. To display the `<` character, you would need to use the entity `&lt;`.  
+  
+ For example, if the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerText%2A> property is set to `"<b> Hello </b>"`, the `<` and `>` symbols are converted to `&lt;` and `&gt;`, respectively. The rendered output would be: &lt; b &gt; Hello &lt; /b &gt;. The `&lt;` and `&gt;` entities would indicate to the browser that these characters are to be displayed on the page. The browser will not detect the `<b>` tags and display the text in a bold font. The text displayed on the page is: \<b> Hello \</b>.  
+  
+ To prevent automatic HTML encoding and decoding, use the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property.  
+  
+> [!NOTE]
+>  If there are no child controls, the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property contains the value <xref:System.String.Empty?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the HTML encoding service available through the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerText%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlContainerControl.InnerText Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlContainerControl.InnerText Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlContainerControl.InnerText Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlContainerControl.InnerText Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">There is more than one HTML server control.  
+  
+ \- or -  
+  
+ The HTML server control is not a <see cref="T:System.Web.UI.LiteralControl" /> or a <see cref="T:System.Web.UI.DataBoundLiteralControl" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadViewState">
+      <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlContainerControl.LoadViewState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An <see cref="T:System.Object" /> that represents the control state to be restored.</param>
+        <summary>Restores the <see cref="T:System.Web.UI.HtmlControls.HtmlContainerControl" /> control's view state from a previous page request that was saved by the <see cref="M:System.Web.UI.Control.SaveViewState" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlContainerControl.LoadViewState%2A> method calls the base class's <xref:System.Web.UI.Control.LoadViewState%2A> method. In addition, the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.LoadViewState%2A> method sets the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlContainerControl.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the <see cref="T:System.Web.UI.HtmlControls.HtmlContainerControl" /> content.</param>
+        <summary>Renders the <see cref="T:System.Web.UI.HtmlControls.HtmlContainerControl" /> control to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlContainerControl.Render%2A> method overrides the <xref:System.Web.UI.HtmlControls.HtmlControl.Render%2A?displayProperty=fullName> method to render the opening tag, child controls, and closing tag of the <xref:System.Web.UI.HtmlControls.HtmlContainerControl> control.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlContainerControl.Render%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlContainerControl> control.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlContainerControl.Render(System.Web.UI.HtmlTextWriter)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlControl.Render(System.Web.UI.HtmlTextWriter)" /> method so that the <see cref="T:System.Web.UI.HtmlControls.HtmlContainerControl" /> control is correctly rendered.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderAttributes">
+      <MemberSignature Language="C#" Value="protected override void RenderAttributes (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderAttributes(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlContainerControl.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> instance that receives the rendered content.</param>
+        <summary>Renders the <see cref="T:System.Web.UI.HtmlControls.HtmlContainerControl" /> control's attributes to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderEndTag">
+      <MemberSignature Language="C#" Value="protected virtual void RenderEndTag (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderEndTag(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlContainerControl.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the rendered content.</param>
+        <summary>Renders the closing tag for the <see cref="T:System.Web.UI.HtmlControls.HtmlContainerControl" /> control to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlContainerControl.RenderEndTag%2A> method is called by the <xref:System.Web.UI.HtmlControls.HtmlContainerControl.Render%2A> method to render the closing tag of the <xref:System.Web.UI.HtmlControls.HtmlContainerControl> control.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlContainerControl.RenderEndTag%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlContainerControl> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

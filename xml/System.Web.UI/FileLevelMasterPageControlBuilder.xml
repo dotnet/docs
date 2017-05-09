@@ -1,0 +1,41 @@
+<Type Name="FileLevelMasterPageControlBuilder" FullName="System.Web.UI.FileLevelMasterPageControlBuilder">
+  <TypeSignature Language="C#" Value="public class FileLevelMasterPageControlBuilder : System.Web.UI.FileLevelPageControlBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileLevelMasterPageControlBuilder extends System.Web.UI.FileLevelPageControlBuilder" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.FileLevelMasterPageControlBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.FileLevelPageControlBuilder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Parses master page files.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileLevelMasterPageControlBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.FileLevelMasterPageControlBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.FileLevelMasterPageControlBuilder" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.FileLevelMasterPageControlBuilder.%23ctor%2A> constructor is used by ASP.NET when parsing a master page and is not intended for use in your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

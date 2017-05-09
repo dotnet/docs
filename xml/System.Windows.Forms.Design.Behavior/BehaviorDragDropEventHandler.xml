@@ -1,0 +1,32 @@
+<Type Name="BehaviorDragDropEventHandler" FullName="System.Windows.Forms.Design.Behavior.BehaviorDragDropEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void BehaviorDragDropEventHandler(object sender, BehaviorDragDropEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BehaviorDragDropEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.BehaviorDragDropEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Forms.Design.Behavior.BehaviorDragDropEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorDragDropEventArgs" /> that contains the event data.</param>
+    <summary>Represents the methods that will handle the <see cref="E:System.Windows.Forms.Design.Behavior.BehaviorService.BeginDrag" /> and <see cref="E:System.Windows.Forms.Design.Behavior.BehaviorService.EndDrag" /> events of a <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.Windows.Forms.Design.Behavior.BehaviorDragDropEventHandler> delegate, you identify a method to handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

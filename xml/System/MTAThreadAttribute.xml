@@ -1,0 +1,94 @@
+<Type Name="MTAThreadAttribute" FullName="System.MTAThreadAttribute">
+  <TypeSignature Language="C#" Value="public sealed class MTAThreadAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MTAThreadAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.MTAThreadAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Method)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates that the COM threading model for an application is multithreaded apartment (MTA).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Apply this attribute to the entry point method (the `Main()` method in C# and Visual Basic). It has no effect on other methods. To set the apartment state of threads you start in your code, use the <xref:System.Threading.Thread.SetApartmentState%2A?displayProperty=fullName> or <xref:System.Threading.Thread.TrySetApartmentState%2A?displayProperty=fullName> method before starting the thread.  
+  
+> [!NOTE]
+>  For an overview of COM threading models, see [Understanding and Using COM Threading Models](http://msdn.microsoft.com/library/ms809971.aspx).  
+  
+ COM threading models only apply to applications that use COM interop. The COM threading model can be set to single-threaded apartment or multithreaded apartment. The application thread is only initialized for COM interop if the thread actually makes a call to a COM component. If COM interop is not used, then the thread is not initialized, and the <xref:System.MTAThreadAttribute> attribute, if it is present, has no effect.  
+  
+ Starting with the .NET Framework version 2.0, the default threading model for COM interop depends on the language in which you are developing your application, as the following table shows.  
+  
+|Language|COM apartment model|  
+|--------------|-------------------------|  
+|C#|Multithreaded apartment|  
+|C++|Multithreaded apartment|  
+|Visual Basic|Single-threaded apartment|  
+  
+ To change these defaults, you use the <xref:System.MTAThreadAttribute> attribute to set the threading model for the application, or call the <xref:System.Threading.Thread.SetApartmentState%2A?displayProperty=fullName> or <xref:System.Threading.Thread.TrySetApartmentState%2A?displayProperty=fullName> method before starting the thread to set the threading model for a particular thread. In C++, you can also use the [/CLRTHREADATTRIBUTE (Set CLR Thread Attribute)](http://msdn.microsoft.com/library/4907e9ef-5031-446c-aecf-0a0b32fae1e8) linker option to specify the apartment model.  
+  
+ Some of the cases in which you want to use the <xref:System.MTAThreadAttribute> attribute to explicitly set the threading model to multithreaded apartment include the following:  
+  
+-   You're developing a Visual Basic app that calls to a C# library that in turn relies on COM interop. Because the multithreaded apartment model is the default for C#, you should change your app's threading model to multithreaded by using the <xref:System.MTAThreadAttribute> attribute.  
+  
+-   Your application makes calls to COM components that use the multithreaded apartment model.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MTAThreadAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.MTAThreadAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.MTAThreadAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

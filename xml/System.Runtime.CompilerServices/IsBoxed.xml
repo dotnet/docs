@@ -1,0 +1,51 @@
+<Type Name="IsBoxed" FullName="System.Runtime.CompilerServices.IsBoxed">
+  <TypeSignature Language="C#" Value="public static class IsBoxed" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit IsBoxed extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.IsBoxed" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.CompilerServices.VisualC</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Indicates that the modified reference type is a boxed value type. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Microsoft C++ compiler supports boxed value types directly in the language.  Information about boxed value types is emitted into metadata as a custom modifier, where the modifier decorates a reference to the value type being boxed.  
+  
+ Compilers emit custom modifiers within metadata to change the way that the just-in-time (JIT) compiler handles values when the default behavior is not appropriate.  When the JIT compiler encounters a custom modifier, it handles the value in the way that the modifier specifies.  Compilers can apply custom modifiers to methods, parameters, and return values.  The JIT compiler must respond to required modifiers but can ignore optional modifiers.  
+  
+ You can emit custom modifiers into metadata using one of the following techniques:  
+  
+-   Using methods in the <xref:System.Reflection.Emit.TypeBuilder> class such as <xref:System.Reflection.Emit.TypeBuilder.DefineMethod%2A>, <xref:System.Reflection.Emit.TypeBuilder.DefineField%2A>, <xref:System.Reflection.Emit.TypeBuilder.DefineConstructor%2A>, and <xref:System.Reflection.Emit.TypeBuilder.DefineProperty%2A>.  
+  
+-   Generating a Microsoft intermediate language (MSIL) instruction file that contains calls to `modopt` and `modreq`, and assembling the file with the [Ilasm.exe (IL Assembler)](~/docs/framework/tools/ilasm-exe-il-assembler.md).  
+  
+-   Using the unmanaged reflection API.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to emit an <xref:System.Runtime.CompilerServices.IsBoxed> object into an assembly using reflection.  
+  
+ [!code-cpp[Runtime.CompilerServices.IsBoxed#1](~/samples/snippets/cpp/VS_Snippets_CLR/Runtime.CompilerServices.IsBoxed/cpp/sample.cpp#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

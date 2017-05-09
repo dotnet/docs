@@ -1,0 +1,133 @@
+<Type Name="SecurityZone" FullName="System.Security.SecurityZone">
+  <TypeSignature Language="C#" Value="public enum SecurityZone" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed SecurityZone extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.SecurityZone" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the integer values corresponding to security zones used by security policy.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To configure zones, use the Security tab on the Microsoft Internet Explorer options panel.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Internet">
+      <MemberSignature Language="C#" Value="Internet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.SecurityZone Internet = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.SecurityZone.Internet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityZone</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Internet zone is used for the Web sites on the Internet that do not belong to another zone.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Intranet">
+      <MemberSignature Language="C#" Value="Intranet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.SecurityZone Intranet = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.SecurityZone.Intranet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityZone</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The local intranet zone is used for content located on a company's intranet. Because the servers and information would be within a company's firewall, a user or company could assign a higher trust level to the content on the intranet.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MyComputer">
+      <MemberSignature Language="C#" Value="MyComputer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.SecurityZone MyComputer = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.SecurityZone.MyComputer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityZone</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The local computer zone is an implicit zone used for content that exists on the user's computer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoZone">
+      <MemberSignature Language="C#" Value="NoZone" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.SecurityZone NoZone = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.SecurityZone.NoZone" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityZone</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No zone is specified.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Trusted">
+      <MemberSignature Language="C#" Value="Trusted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.SecurityZone Trusted = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.SecurityZone.Trusted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityZone</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The trusted sites zone is used for content located on Web sites considered more reputable or trustworthy than other sites on the Internet. Users can use this zone to assign a higher trust level to these sites to minimize the number of authentication requests. The URLs of these trusted Web sites need to be mapped into this zone by the user.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Untrusted">
+      <MemberSignature Language="C#" Value="Untrusted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.SecurityZone Untrusted = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.SecurityZone.Untrusted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityZone</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The restricted sites zone is used for Web sites with content that could cause, or could have caused, problems when downloaded. The URLs of these untrusted Web sites need to be mapped into this zone by the user.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

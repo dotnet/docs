@@ -1,0 +1,94 @@
+<Type Name="IFieldInfo" FullName="System.Runtime.Serialization.Formatters.IFieldInfo">
+  <TypeSignature Language="C#" Value="public interface IFieldInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFieldInfo" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Formatters.IFieldInfo" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Allows access to field names and field types of objects that support the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FieldNames">
+      <MemberSignature Language="C#" Value="public string[] FieldNames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] FieldNames" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.IFieldInfo.FieldNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the field names of serialized objects.</summary>
+        <value>The field names of serialized objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a name is `null`, a default parameter name is used.  
+  
+ This property's `get` and `set` accessors are protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> specified.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldTypes">
+      <MemberSignature Language="C#" Value="public Type[] FieldTypes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type[] FieldTypes" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Formatters.IFieldInfo.FieldTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Type[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the field types of the serialized objects.</summary>
+        <value>The field types of the serialized objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property's `get` and `set` accessors are protected by a <xref:System.Security.Permissions.SecurityAction?displayProperty=fullName> for the <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> specified.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

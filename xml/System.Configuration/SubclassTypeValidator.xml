@@ -1,0 +1,115 @@
+<Type Name="SubclassTypeValidator" FullName="System.Configuration.SubclassTypeValidator">
+  <TypeSignature Language="C#" Value="public sealed class SubclassTypeValidator : System.Configuration.ConfigurationValidatorBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SubclassTypeValidator extends System.Configuration.ConfigurationValidatorBase" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.SubclassTypeValidator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationValidatorBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Validates that an object is a derived class of a specified type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SubclassTypeValidator> class is used to ensure that an object meets specific criteria. The criteria for validation is established when an instance of the <xref:System.Configuration.SubclassTypeValidator> class is created.  
+  
+ The <xref:System.Configuration.SubclassTypeValidator.CanValidate%2A> method determines whether the type of the object being validated is in fact a <xref:System.Type>. The object being validated is passed as a parameter of the <xref:System.Configuration.SubclassTypeValidator.Validate%2A> method. This method first verifies that the object to validate is not `null`, and then verifies that the object is a derived class of the expected type.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SubclassTypeValidator (Type baseClass);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type baseClass) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SubclassTypeValidator.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseClass" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="baseClass">The base class to validate against.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.SubclassTypeValidator" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The criteria for validation is based on the `baseClass` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="baseClass" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CanValidate">
+      <MemberSignature Language="C#" Value="public override bool CanValidate (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanValidate(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SubclassTypeValidator.CanValidate(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The object type.</param>
+        <summary>Determines whether an object can be validated based on type.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="type" /> parameter matches a type that can be validated; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SubclassTypeValidator.CanValidate%2A> method determines whether the type of the object being validated is in fact a <xref:System.Type>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public override void Validate (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Validate(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SubclassTypeValidator.Validate(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object value.</param>
+        <summary>Determines whether the value of an object is valid.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an instance of the <xref:System.Configuration.SubclassTypeValidator> class is created, the base class is provided and used as evaluation criteria. The object to validate is passed as a parameter of the <xref:System.Configuration.SubclassTypeValidator.Validate%2A> method. This method performs the validation check between the base class and the parameter object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is not of a <see cref="T:System.Type" /> that can be derived from <paramref name="baseClass" /> as defined in the constructor.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,53 @@
+<Type Name="DbQueryCommandTree" FullName="System.Data.Common.CommandTrees.DbQueryCommandTree">
+  <TypeSignature Language="C#" Value="public sealed class DbQueryCommandTree : System.Data.Common.CommandTrees.DbCommandTree" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DbQueryCommandTree extends System.Data.Common.CommandTrees.DbCommandTree" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbQueryCommandTree" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Common.CommandTrees.DbCommandTree</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a query operation expressed as a command tree. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Common.CommandTrees.DbQueryCommandTree> describes a query.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Query">
+      <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbExpression Query { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.CommandTrees.DbExpression Query" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbQueryCommandTree.Query" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that defines the logic of the query operation.</summary>
+        <value>An <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that defines the logic of the query operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Common.CommandTrees.DbQueryCommandTree.Query%2A> property describes the root of the expression tree that defines the query. The <xref:System.Data.Common.CommandTrees.DbCommandTree> is in an invalid state until the <xref:System.Data.Common.CommandTrees.DbQueryCommandTree.Query%2A> property is set to a valid value.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The expression is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The expression is associated with a different command tree.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

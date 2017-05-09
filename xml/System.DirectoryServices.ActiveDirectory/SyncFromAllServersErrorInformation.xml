@@ -1,0 +1,109 @@
+<Type Name="SyncFromAllServersErrorInformation" FullName="System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorInformation">
+  <TypeSignature Language="C#" Value="public class SyncFromAllServersErrorInformation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SyncFromAllServersErrorInformation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorInformation" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains information about a <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException" /> exception.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ErrorCategory">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorCategory ErrorCategory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorCategory ErrorCategory" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorInformation.ErrorCategory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorCategory</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the category of the <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException" /> exception.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorCategory" /> enumeration value that indicates the category of the error.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorCode">
+      <MemberSignature Language="C#" Value="public int ErrorCode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ErrorCode" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorInformation.ErrorCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the error code for the <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException" /> exception.</summary>
+        <value>A value that identifies the <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException" /> exception error.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorMessage">
+      <MemberSignature Language="C#" Value="public string ErrorMessage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ErrorMessage" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorInformation.ErrorMessage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the message that describes the <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException" /> exception.</summary>
+        <value>A message that describes the <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException" /> exception.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceServer">
+      <MemberSignature Language="C#" Value="public string SourceServer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceServer" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorInformation.SourceServer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the source server for which the <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException" /> exception occurred.</summary>
+        <value>The name of the source server that is involved in the <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException" /> exception.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetServer">
+      <MemberSignature Language="C#" Value="public string TargetServer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetServer" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.SyncFromAllServersErrorInformation.TargetServer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the target server for which the <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException" /> exception occurred.</summary>
+        <value>The name of the target server that is involved in the <see cref="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException" /> exception.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

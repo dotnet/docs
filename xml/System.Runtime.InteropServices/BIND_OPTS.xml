@@ -1,0 +1,134 @@
+<Type Name="BIND_OPTS" FullName="System.Runtime.InteropServices.BIND_OPTS">
+  <TypeSignature Language="C#" Value="public struct BIND_OPTS" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit BIND_OPTS extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.BIND_OPTS" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.BIND_OPTS" /> instead.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `BIND_OPTS` in the com subfolder of the MSDN library.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="cbStruct">
+      <MemberSignature Language="C#" Value="public int cbStruct;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 cbStruct" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.BIND_OPTS.cbStruct" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the size of the <see langword="BIND_OPTS" /> structure in bytes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `BIND_OPTS` in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="dwTickCountDeadline">
+      <MemberSignature Language="C#" Value="public int dwTickCountDeadline;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 dwTickCountDeadline" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.BIND_OPTS.dwTickCountDeadline" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the amount of time (clock time in milliseconds, as returned by the <see langword="GetTickCount" /> function) the caller specified to complete the binding operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member lets the caller limit the execution time of an operation when speed is of primary importance.  
+  
+ For more information, please see the existing documentation for `BIND_OPTS` in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="grfFlags">
+      <MemberSignature Language="C#" Value="public int grfFlags;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 grfFlags" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.BIND_OPTS.grfFlags" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Controls aspects of moniker binding operations.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `BIND_OPTS` in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="grfMode">
+      <MemberSignature Language="C#" Value="public int grfMode;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 grfMode" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.BIND_OPTS.grfMode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Flags that should be used when opening the file that contains the object identified by the moniker.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `BIND_OPTS` in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

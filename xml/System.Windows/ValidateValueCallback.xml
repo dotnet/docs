@@ -1,0 +1,42 @@
+<Type Name="ValidateValueCallback" FullName="System.Windows.ValidateValueCallback">
+  <TypeSignature Language="C#" Value="public delegate bool ValidateValueCallback(object value);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ValidateValueCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.ValidateValueCallback" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="value" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Boolean</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="value">The value to be validated.</param>
+    <summary>Represents a method used as a callback that validates the effective value of a  dependency property.</summary>
+    <returns>
+      <see langword="true" /> if the value was validated; <see langword="false" /> if the submitted value was invalid.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Callbacks based on this delegate are used by certain signatures of <xref:System.Windows.DependencyProperty.Register%2A?displayProperty=fullName> and related methods, such as <xref:System.Windows.DependencyProperty.RegisterAttached%2A> and read-only equivalents. You should use signatures that take the `validateValueCallback` parameter if you want specific validation of the property value each time that its effective is set. You should then implement this callback such that it performs the actual validation of the proposed value. The callback should return `true` if the value submitted to the callback is valid, and `false` otherwise. A `false` value will produce an exception in the specific portion of the property system where the invalid property set was attempted, so your application should be prepared to handle these exceptions.  
+  
+ Validation callbacks are stored on dependency property identifiers, rather than dependency property metadata. Your validation callback does not have access to a specific instance of a <xref:System.Windows.DependencyObject> on which the property is set, and can only influence what values are accepted for the property in general. If you need a callback that can change property values based on a specific instance, you should use a combination of a <xref:System.Windows.CoerceValueCallback> and <xref:System.Windows.PropertyChangedCallback> callbacks as applied to the property metadata of your property. You might also apply these callbacks to related properties that should influence your property's value. For details, see [Dependency Property Callbacks and Validation](~/docs/framework/wpf/advanced/dependency-property-callbacks-and-validation.md).  
+  
+   
+  
+## Examples  
+ The following example includes an implementation of this callback to validate a range of values for a custom dependency property. In this case the property value expects an enumeration, and the validation assures that the provided value evaluates to a member of that enumeration.  
+  
+ [!code-csharp[DPCustom#ValidateValueCallback](~/samples/snippets/csharp/VS_Snippets_Wpf/DPCustom/CSharp/default.xaml.cs#validatevaluecallback)]
+ [!code-vb[DPCustom#ValidateValueCallback](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DPCustom/visualbasic/default.xaml.vb#validatevaluecallback)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

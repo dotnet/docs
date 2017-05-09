@@ -1,0 +1,4 @@
+---
+uid: XamlGeneratedNamespace
+manager: "ghogen"
+---

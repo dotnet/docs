@@ -1,0 +1,381 @@
+<Type Name="ServiceEndpoint" FullName="System.ServiceModel.Description.ServiceEndpoint">
+  <TypeSignature Language="C#" Value="public class ServiceEndpoint" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceEndpoint extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceEndpoint" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("Name={name}")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("Address={address}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the endpoint for a service that allows clients of the service to find and communicate with the service.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The service endpoint contains the information about the address, binding, contract, and behavior required by a client to find and interact with the service at this endpoint.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ServiceEndpoint#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/program.cs#0)]
+ [!code-vb[S_UE_ServiceEndpoint#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/program.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceEndpoint (System.ServiceModel.Description.ContractDescription contract);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ContractDescription contract) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceEndpoint.#ctor(System.ServiceModel.Description.ContractDescription)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="contract" Type="System.ServiceModel.Description.ContractDescription" />
+      </Parameters>
+      <Docs>
+        <param name="contract">The <see cref="T:System.ServiceModel.Description.ContractDescription" /> for the service endpoint.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> class for a specified contract.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor when the binding and address for the endpoint are provided in configuration.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ServiceEndpoint#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/program.cs#1)]
+ [!code-vb[S_UE_ServiceEndpoint#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/program.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceEndpoint (System.ServiceModel.Description.ContractDescription contract, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress address);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ContractDescription contract, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceEndpoint.#ctor(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="contract" Type="System.ServiceModel.Description.ContractDescription" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
+      </Parameters>
+      <Docs>
+        <param name="contract">The <see cref="T:System.ServiceModel.Description.ContractDescription" /> for the service endpoint.</param>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> that specifies how the service endpoint communicates with the world.</param>
+        <param name="address">The <see cref="T:System.ServiceModel.EndpointAddress" /> for the service endpoint.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> class with a specified contract, binding, and address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to specify a service endpoint imperatively in code.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ServiceEndpoint#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/snippet.cs#2)]
+ [!code-vb[S_UE_ServiceEndpoint#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/snippet.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Address">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress Address { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress Address" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceEndpoint.Address" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the endpoint address for the service endpoint.</summary>
+        <value>The <see cref="T:System.ServiceModel.EndpointAddress" /> that specifies the location of the service endpoint.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of <xref:System.ServiceModel.Description.ServiceEndpoint.ListenUri%2A> at which the service endpoint listens is provided by <xref:System.ServiceModel.EndpointAddress.Uri%2A> of the <xref:System.ServiceModel.EndpointAddress> returned by <xref:System.ServiceModel.Description.ServiceEndpoint.Address%2A>.  
+  
+   
+  
+## Examples  
+ The following example shows how to add a <xref:System.ServiceModel.Description.ServiceEndpoint> to an existing <xref:System.ServiceModel.ServiceHost> and display the address property:  
+  
+ [!code-csharp[S_UE_ServiceEndpoint#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/program.cs#3)]
+ [!code-vb[S_UE_ServiceEndpoint#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/program.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Behaviors">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.KeyedByTypeCollection&lt;System.ServiceModel.Description.IEndpointBehavior&gt; Behaviors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.KeyedByTypeCollection`1&lt;class System.ServiceModel.Description.IEndpointBehavior&gt; Behaviors" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceEndpoint.Behaviors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.KeyedByTypeCollection&lt;System.ServiceModel.Description.IEndpointBehavior&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the behaviors for the service endpoint.</summary>
+        <value>The <see cref="T:System.Collections.Generic.KeyedByTypeCollection`1" /> of type <see cref="T:System.ServiceModel.Description.IEndpointBehavior" /> that contains the behaviors specified for the service endpoint.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type of behavior that is accessible from the description hierarchy is scoped to the specific level. From the <xref:System.ServiceModel.Description.ServiceEndpoint> the <xref:System.ServiceModel.Description.IEndpointBehavior> is accessible.  
+  
+ If you want access to the <xref:System.ServiceModel.Description.IContractBehavior> associated with an endpoint, you can obtain the contact for the endpoint using the <xref:System.ServiceModel.Description.ServiceEndpoint.Contract%2A> property. Then call the <xref:System.ServiceModel.Description.ContractDescription.Behaviors%2A> property to obtain the <xref:System.Collections.Generic.KeyedByTypeCollection%601> of the <xref:System.ServiceModel.Description.IContractBehavior> objects associated with the endpoint.  
+  
+   
+  
+## Examples  
+ The following code demonstrates how to add a custom endpoint behavior and then access that behavior.  
+  
+ [!code-csharp[S_UE_ServiceEndpoint#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/snippet.cs#4)]
+ [!code-vb[S_UE_ServiceEndpoint#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/snippet.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Binding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Binding Binding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.Binding Binding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceEndpoint.Binding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Binding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the binding for the service endpoint.</summary>
+        <value>The <see cref="T:System.ServiceModel.Channels.Binding" /> for the service endpoint.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The binding for an endpoint can also be specified in the configuration file in the [\&lt;bindings\&gt;](~/docs/framework/configure-apps/file-schema/wcf/bindings.md) element.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ServiceEndpoint#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/snippet.cs#5)]
+ [!code-vb[S_UE_ServiceEndpoint#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/snippet.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contract">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ContractDescription Contract { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Description.ContractDescription Contract" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceEndpoint.Contract" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.ContractDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the contract for the service endpoint.</summary>
+        <value>The <see cref="T:System.ServiceModel.Description.ContractDescription" /> that specifies the contract for the service endpoint.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each service endpoint has a unique contract. From the <xref:System.ServiceModel.Description.ContractDescription>, the <xref:System.ServiceModel.Description.OperationDescriptionCollection> for the methods contained in the contract can be accessed using the <xref:System.ServiceModel.Description.ContractDescription.Operations%2A> property.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ServiceEndpoint#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/snippet.cs#5)]
+ [!code-vb[S_UE_ServiceEndpoint#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/snippet.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndpointBehaviors">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.KeyedCollection&lt;Type,System.ServiceModel.Description.IEndpointBehavior&gt; EndpointBehaviors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.KeyedCollection`2&lt;class System.Type, class System.ServiceModel.Description.IEndpointBehavior&gt; EndpointBehaviors" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceEndpoint.EndpointBehaviors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.KeyedCollection&lt;System.Type,System.ServiceModel.Description.IEndpointBehavior&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the endpoint behaviors for the service.</summary>
+        <value>The endpoint behaviors for the service.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSystemEndpoint">
+      <MemberSignature Language="C#" Value="public bool IsSystemEndpoint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSystemEndpoint" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceEndpoint.IsSystemEndpoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether the service endpoint is generated by the system as opposed to being user-defined.</summary>
+        <value>
+          <see langword="true" /> if the service endpoint is generated by the system; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListenUri">
+      <MemberSignature Language="C#" Value="public Uri ListenUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ListenUri" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceEndpoint.ListenUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URI at which the service endpoint listens.</summary>
+        <value>The <see cref="T:System.Uri" /> at which the service endpoint listens. The default value is provided by <see cref="P:System.ServiceModel.EndpointAddress.Uri" /> of the <see cref="T:System.ServiceModel.EndpointAddress" /> returned by <see cref="P:System.ServiceModel.Description.ServiceEndpoint.Address" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value can also be set using the <xref:System.ServiceModel.Configuration.ServiceEndpointElement.ListenUri%2A> property.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ServiceEndpoint#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/snippet.cs#5)]
+ [!code-vb[S_UE_ServiceEndpoint#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/snippet.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListenUriMode">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ListenUriMode ListenUriMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Description.ListenUriMode ListenUriMode" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceEndpoint.ListenUriMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.ListenUriMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets how the transport handles the URI that is provided for the service to listen on.</summary>
+        <value>The <see cref="T:System.ServiceModel.Description.ListenUriMode" /> for the service endpoint. The default value is <see cref="F:System.ServiceModel.Description.ListenUriMode.Explicit" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.ServiceModel.Description.ListenUriMode> is used to determine how the transport handles the <xref:System.ServiceModel.Description.ServiceEndpoint.ListenUri%2A>.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ServiceEndpoint#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/snippet.cs#5)]
+ [!code-vb[S_UE_ServiceEndpoint#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/snippet.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceEndpoint.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the service endpoint.</summary>
+        <value>The name the service endpoint. The default value is the concatenation of the binding name and the contract description name. For example, <see cref="P:System.ServiceModel.Channels.Binding.Name" /> +'_' + <see cref="P:System.ServiceModel.Description.ContractDescription.Name" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Services may have multiple endpoints, so the endpoint <xref:System.ServiceModel.Description.ServiceEndpoint.Name%2A> is distinct from the name of the service. The service name is accessed using the <xref:System.ServiceModel.Description.ServiceDescription.Name%2A> property.  
+  
+> [!NOTE]
+>  When accessed from the service, this property is populated by the <endpoint name="`endpointName`"\> configuration element. When accessed on the client, this property is `null`. When the property getter is called (again on the client) it populates this property with a default value based on the contract and binding.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UE_ServiceEndpoint#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ue_serviceendpoint/cs/snippet.cs#5)]
+ [!code-vb[S_UE_ServiceEndpoint#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ue_serviceendpoint/vb/snippet.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

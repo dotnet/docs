@@ -1,0 +1,125 @@
+<Type Name="INavigateUIData" FullName="System.Web.UI.INavigateUIData">
+  <TypeSignature Language="C#" Value="public interface INavigateUIData" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INavigateUIData" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.INavigateUIData" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an interface that classes implement to provide navigation user interface data and values to navigation controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.INavigateUIData> interface allows navigation controls, such as the <xref:System.Web.UI.WebControls.TreeView> and <xref:System.Web.UI.WebControls.Menu> controls, to automatically render data from a data source that represents hierarchical site navigation data. The <xref:System.Web.UI.INavigateUIData> interface is implemented by the <xref:System.Web.SiteMapNode> type that is returned from the <xref:System.Web.UI.WebControls.SiteMapDataSource> control so that navigation controls can render data automatically without a page developer explicitly defining the data binding associations to the properties of <xref:System.Web.SiteMapNode>. For example, the <xref:System.Web.UI.WebControls.SiteMapDataSource> control enables declarative data binding so that a page developer does not have to populate the <xref:System.Web.UI.WebControls.TreeView.DataBindings%2A?displayProperty=fullName> or <xref:System.Web.UI.WebControls.Menu.DataBindings%2A?displayProperty=fullName> properties explicitly for the <xref:System.Web.UI.WebControls.TreeView> and <xref:System.Web.UI.WebControls.Menu> controls, respectively.  
+  
+ The <xref:System.Web.UI.INavigateUIData> interface can also be implemented on objects that are returned by an <xref:System.Web.UI.WebControls.ObjectDataSource> control in order to enable automatic rendering of navigation control without explicit data binding.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.INavigateUIData.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets text that represents the description of a navigation node of a navigation control.</summary>
+        <value>Text that is the description of a node of a navigation control; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.INavigateUIData.Description%2A> property is rendered as the ToolTip text of the <xref:System.Web.UI.WebControls.TreeNode> and <xref:System.Web.UI.WebControls.MenuItem> controls.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.INavigateUIData.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the text that represents the name of a navigation node of a navigation control.</summary>
+        <value>Text that represents the name of a node of a navigation control; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.INavigateUIData.Name%2A> property is rendered as the <xref:System.Web.UI.WebControls.TreeNode.Text%2A?displayProperty=fullName> property of a <xref:System.Web.UI.WebControls.TreeNode> control and the <xref:System.Web.UI.WebControls.MenuItem.Text%2A?displayProperty=fullName> property of a <xref:System.Web.UI.WebControls.MenuItem> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NavigateUrl">
+      <MemberSignature Language="C#" Value="public string NavigateUrl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NavigateUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.INavigateUIData.NavigateUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URL to navigate to when the navigation node is clicked.</summary>
+        <value>The URL to navigate to when the node is clicked; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.INavigateUIData.NavigateUrl%2A> property represents the URL to navigate to when a navigation node, such as <xref:System.Web.UI.WebControls.TreeNode> or <xref:System.Web.UI.WebControls.MenuItem> control, is clicked.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.INavigateUIData.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a non-displayed value that is used to store any additional data about the navigation node.</summary>
+        <value>A value that is not displayed and is used to store additional data about the navigation node; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.INavigateUIData.Value%2A> property represents any additional data that is used by a navigation node, such as a <xref:System.Web.UI.WebControls.TreeNode> or <xref:System.Web.UI.WebControls.MenuItem> control, that is rendered as an HTML `value` attribute for the node.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

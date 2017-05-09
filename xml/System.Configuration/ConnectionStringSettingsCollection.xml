@@ -1,0 +1,411 @@
+<Type Name="ConnectionStringSettingsCollection" FullName="System.Configuration.ConnectionStringSettingsCollection">
+  <TypeSignature Language="C#" Value="public sealed class ConnectionStringSettingsCollection : System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConnectionStringSettingsCollection extends System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.ConnectionStringSettingsCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElementCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Configuration.ConfigurationCollection(typeof(System.Configuration.ConnectionStringSettings), CollectionType=System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMap)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains a collection of <see cref="T:System.Configuration.ConnectionStringSettings" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Configuration.ConnectionStringSettingsCollection> object contains a collection of <xref:System.Configuration.ConnectionStringSettings> objects. Each <xref:System.Configuration.ConnectionStringSettings> object represents a single entry in the `<connectionStrings>` configuration-file section.  
+  
+   
+  
+## Examples  
+ The following example shows how to access the <xref:System.Configuration.ConnectionStringSettingsCollection>.  
+  
+ [!code-csharp[System.Configuration.ConnectionStrings#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/CS/ConnectionStrings.cs#2)]
+ [!code-vb[System.Configuration.ConnectionStrings#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/VB/ConnectionStrings.vb#2)]  
+  
+ The following example is an excerpt from the configuration file used by the previous example.  
+  
+```  
+<?xml version="1.0" encoding="utf-8"?>  
+<configuration>  
+  <connectionStrings>  
+    <add name="ConnStr1" connectionString="LocalSqlServer: data source=127.0.0.1;Integrated Security=SSPI;Initial Catalog=aspnetdb"  
+      providerName="System.Data.SqlClient" />  
+  </connectionStrings>  
+</configuration>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConnectionStringSettingsCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConnectionStringSettingsCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Configuration.ConnectionStringSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Configuration.ConnectionStringSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.Add(System.Configuration.ConnectionStringSettings)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="settings" Type="System.Configuration.ConnectionStringSettings" />
+      </Parameters>
+      <Docs>
+        <param name="settings">A <see cref="T:System.Configuration.ConnectionStringSettings" /> object to add to the collection.</param>
+        <summary>Adds a <see cref="T:System.Configuration.ConnectionStringSettings" /> object to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to add a <xref:System.Configuration.ConnectionStringSettings> object to a <xref:System.Configuration.ConnectionStringSettingsCollection> collection.  
+  
+ [!code-csharp[System.Configuration.ConnectionStrings#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/CS/ConnectionStrings.cs#7)]
+ [!code-vb[System.Configuration.ConnectionStrings#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/VB/ConnectionStrings.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseAdd">
+      <MemberSignature Language="C#" Value="protected override void BaseAdd (int index, System.Configuration.ConfigurationElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void BaseAdd(int32 index, class System.Configuration.ConfigurationElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.BaseAdd(System.Int32,System.Configuration.ConfigurationElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="element" Type="System.Configuration.ConfigurationElement" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all the <see cref="T:System.Configuration.ConnectionStringSettings" /> objects from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ConnectionStringSettingsCollection.Clear%2A> method removes all the connection strings from the configuration file at the current configuration hierarchy level and writes a `<clear>` tag in the file. The `<clear>` tag signifies that all the connection strings defined in the parent configuration files are disregarded by the system.  
+  
+   
+  
+## Examples  
+ The following example shows how to remove all the <xref:System.Configuration.ConnectionStringSettings> objects from the <xref:System.Configuration.ConnectionStringSettingsCollection> collection.  
+  
+ [!code-csharp[System.Configuration.ConnectionStrings#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/CS/ConnectionStrings.cs#9)]
+ [!code-vb[System.Configuration.ConnectionStrings#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/VB/ConnectionStrings.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNewElement">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.CreateNewElement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementKey">
+      <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Configuration.ConfigurationElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Configuration.ConnectionStringSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Configuration.ConnectionStringSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.IndexOf(System.Configuration.ConnectionStringSettings)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="settings" Type="System.Configuration.ConnectionStringSettings" />
+      </Parameters>
+      <Docs>
+        <param name="settings">A <see cref="T:System.Configuration.ConnectionStringSettings" /> object in the collection.</param>
+        <summary>Returns the collection index of the passed <see cref="T:System.Configuration.ConnectionStringSettings" /> object.</summary>
+        <returns>The collection index of the specified <see cref="T:System.Configuration.ConnectionStringSettingsCollection" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to get the index of the specified <xref:System.Configuration.ConnectionStringSettings> object.  
+  
+ [!code-csharp[System.Configuration.ConnectionStrings#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/CS/ConnectionStrings.cs#10)]
+ [!code-vb[System.Configuration.ConnectionStrings#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/VB/ConnectionStrings.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Configuration.ConnectionStringSettings this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConnectionStringSettings Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConnectionStringSettingsCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConnectionStringSettings</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of a <see cref="T:System.Configuration.ConnectionStringSettings" /> object in the collection.</param>
+        <summary>Gets or sets the connection string at the specified index in the collection.</summary>
+        <value>The <see cref="T:System.Configuration.ConnectionStringSettings" /> object at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In C#, this property is the indexer for the <xref:System.Configuration.ConnectionStringSettingsCollection> class.  
+  
+   
+  
+## Examples  
+ The following example shows how to access a <xref:System.Configuration.ConnectionStringSettings> object at a given index in a <xref:System.Configuration.ConnectionStringSettingsCollection> collection.  
+  
+ [!code-csharp[System.Configuration.ConnectionStrings#14](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/CS/ConnectionStrings.cs#14)]
+ [!code-vb[System.Configuration.ConnectionStrings#14](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/VB/ConnectionStrings.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Configuration.ConnectionStringSettings this[string Name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConnectionStringSettings Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConnectionStringSettingsCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConnectionStringSettings</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Name">To be added.</param>
+        <summary>Gets or sets the <see cref="T:System.Configuration.ConnectionStringSettings" /> object with the specified name in the collection.</summary>
+        <value>The <see cref="T:System.Configuration.ConnectionStringSettings" /> object with the specified name; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In C#, this property is the indexer for the <xref:System.Configuration.ConnectionStringSettingsCollection> class.  
+  
+   
+  
+## Examples  
+ The following example shows how to access a named <xref:System.Configuration.ConnectionStringSettings> object in a <xref:System.Configuration.ConnectionStringSettingsCollection> collection.  
+  
+ [!code-csharp[System.Configuration.ConnectionStrings#15](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/CS/ConnectionStrings.cs#15)]
+ [!code-vb[System.Configuration.ConnectionStrings#15](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/VB/ConnectionStrings.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConnectionStringSettingsCollection.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Configuration.ConnectionStringSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Configuration.ConnectionStringSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.Remove(System.Configuration.ConnectionStringSettings)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="settings" Type="System.Configuration.ConnectionStringSettings" />
+      </Parameters>
+      <Docs>
+        <param name="settings">A <see cref="T:System.Configuration.ConnectionStringSettings" /> object in the collection.</param>
+        <summary>Removes the specified <see cref="T:System.Configuration.ConnectionStringSettings" /> object from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to remove the specified <xref:System.Configuration.ConnectionStringSettings> object from the collection.  
+  
+ [!code-csharp[System.Configuration.ConnectionStrings#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/CS/ConnectionStrings.cs#11)]
+ [!code-vb[System.Configuration.ConnectionStrings#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/VB/ConnectionStrings.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of a <see cref="T:System.Configuration.ConnectionStringSettings" /> object in the collection.</param>
+        <summary>Removes the specified <see cref="T:System.Configuration.ConnectionStringSettings" /> object from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to remove the <xref:System.Configuration.ConnectionStringSettings> object with the specified name from the collection.  
+  
+ [!code-csharp[System.Configuration.ConnectionStrings#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/CS/ConnectionStrings.cs#12)]
+ [!code-vb[System.Configuration.ConnectionStrings#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/VB/ConnectionStrings.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConnectionStringSettingsCollection.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of a <see cref="T:System.Configuration.ConnectionStringSettings" /> object in the collection.</param>
+        <summary>Removes the <see cref="T:System.Configuration.ConnectionStringSettings" /> object at the specified index in the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to remove the <xref:System.Configuration.ConnectionStringSettings> object at the specified index in the collection.  
+  
+ [!code-csharp[System.Configuration.ConnectionStrings#13](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/CS/ConnectionStrings.cs#13)]
+ [!code-vb[System.Configuration.ConnectionStrings#13](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConnectionStrings/VB/ConnectionStrings.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

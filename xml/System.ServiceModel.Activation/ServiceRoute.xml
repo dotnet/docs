@@ -1,0 +1,48 @@
+<Type Name="ServiceRoute" FullName="System.ServiceModel.Activation.ServiceRoute">
+  <TypeSignature Language="C#" Value="public class ServiceRoute : System.Web.Routing.Route" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceRoute extends System.Web.Routing.Route" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.ServiceRoute" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Activation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Routing.Route</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Enables the creation of service routes over HTTP for WCF Services with support for extension-less base addresses.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ServiceModel.Activation.ServiceRoute> is derived from <xref:System.Web.Routing.Route>. When the <xref:System.ServiceModel.Activation.ServiceRoute> constructor is called, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] will add the corresponding route prefix (url pattern) and a (hidden) route handler to the ASP.NET <xref:System.Web.Routing.RouteCollection>, and   cache the corresponding route prefix, service host factory and service type info into an internal hash table for future service activation.Note: if developers directly manipulate the route collection on a <xref:System.ServiceModel.Activation.ServiceRoute> which has been added to the collection, the change may not be granted by [!INCLUDE[indigo2](~/includes/indigo2-md.md)]. [!INCLUDE[crabout](~/includes/crabout-md.md)] changing elements in a route collection, see <xref:System.Web.Routing.RouteCollection>. It is recommended that developers define all <xref:System.ServiceModel.Activation.ServiceRoute> in the global.asax file and do not remove a <xref:System.ServiceModel.Activation.ServiceRoute> from the <xref:System.Web.Routing.RouteCollection> dynamically.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceRoute (string routePrefix, System.ServiceModel.Activation.ServiceHostFactoryBase serviceHostFactory, Type serviceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string routePrefix, class System.ServiceModel.Activation.ServiceHostFactoryBase serviceHostFactory, class System.Type serviceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.ServiceRoute.#ctor(System.String,System.ServiceModel.Activation.ServiceHostFactoryBase,System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="routePrefix" Type="System.String" />
+        <Parameter Name="serviceHostFactory" Type="System.ServiceModel.Activation.ServiceHostFactoryBase" />
+        <Parameter Name="serviceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="routePrefix">The route prefix.</param>
+        <param name="serviceHostFactory">An instance of the <see cref="T:System.ServiceModel.Activation.ServiceHostFactory" /> class.</param>
+        <param name="serviceType">The service type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activation.ServiceRoute" /> class with the specified route prefix, service host factory, and service type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

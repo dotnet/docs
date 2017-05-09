@@ -1,0 +1,706 @@
+<Type Name="SystemColors" FullName="System.Drawing.SystemColors">
+  <TypeSignature Language="C#" Value="public sealed class SystemColors" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SystemColors extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.SystemColors" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Each property of the <see cref="T:System.Drawing.SystemColors" /> class is a <see cref="T:System.Drawing.Color" /> structure that is the color of a Windows display element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Better performance is achieved by using the properties of the <xref:System.Drawing.SystemPens> or <xref:System.Drawing.SystemBrushes> classes rather than creating a new pen or brush based on a value from <xref:System.Drawing.SystemColors>. For example, if you wanted to get a brush for the face color of a 3-D element, use the <xref:System.Drawing.SystemBrushes.Control%2A?displayProperty=fullName> property because it gets a brush that already exists, whereas calling the <xref:System.Drawing.SolidBrush.%23ctor%2A> constructor with a parameter value of <xref:System.Drawing.SystemColors.Control%2A?displayProperty=fullName> will create a new brush.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the <xref:System.Drawing.Color.op_Equality%2A> operator and the <xref:System.Drawing.SystemColors> class. This example is designed to be used with a Windows Form that contains a button named `Button1`. Paste the following code into your form and associate the `Button1_Click` method with the button's `Click` event.  
+  
+ [!code-cpp[System.Drawing.CharacterRangeExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.CharacterRangeExample/CPP/form1.cpp#2)]
+ [!code-csharp[System.Drawing.CharacterRangeExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.CharacterRangeExample/CS/form1.cs#2)]
+ [!code-vb[System.Drawing.CharacterRangeExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.CharacterRangeExample/VB/form1.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActiveBorder">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ActiveBorder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ActiveBorder" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.ActiveBorder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color of the active window's border.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color of the active window's border.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveCaption">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ActiveCaption { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ActiveCaption" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.ActiveCaption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color of the background of the active window's title bar.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color of the active window's title bar.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveCaptionText">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ActiveCaptionText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ActiveCaptionText" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.ActiveCaptionText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color of the text in the active window's title bar.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color of the text in the active window's title bar.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppWorkspace">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color AppWorkspace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color AppWorkspace" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.AppWorkspace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color of the application workspace.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color of the application workspace.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The application workspace is the area in a multiple-document view that is not being occupied by documents.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonFace">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ButtonFace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ButtonFace" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.ButtonFace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the face color of a 3-D element.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the face color of a 3-D element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonHighlight">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ButtonHighlight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ButtonHighlight" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.ButtonHighlight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the highlight color of a 3-D element.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the highlight color of a 3-D element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This color is applied to parts of a 3-D element that face the light source.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonShadow">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ButtonShadow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ButtonShadow" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.ButtonShadow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the shadow color of a 3-D element.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the shadow color of a 3-D element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This color is applied to parts of a 3-D element that face away from the light source.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Control">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color Control { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color Control" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.Control" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the face color of a 3-D element.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the face color of a 3-D element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlDark">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ControlDark { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ControlDark" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.ControlDark" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the shadow color of a 3-D element.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the shadow color of a 3-D element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This color is applied to parts of a 3-D element that face away from the light source.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlDarkDark">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ControlDarkDark { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ControlDarkDark" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.ControlDarkDark" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the dark shadow color of a 3-D element.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the dark shadow color of a 3-D element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This color is applied to the parts of a 3-D element that are the darkest color.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlLight">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ControlLight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ControlLight" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.ControlLight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the light color of a 3-D element.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the light color of a 3-D element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This color is applied to parts of a 3-D element that face the light source.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlLightLight">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ControlLightLight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ControlLightLight" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.ControlLightLight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the highlight color of a 3-D element.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the highlight color of a 3-D element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This color is applied to the parts of a 3-D element that are the lightest color.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlText">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ControlText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ControlText" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.ControlText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color of text in a 3-D element.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color of text in a 3-D element.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Desktop">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color Desktop { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color Desktop" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.Desktop" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color of the desktop.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color of the desktop.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GradientActiveCaption">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color GradientActiveCaption { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color GradientActiveCaption" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.GradientActiveCaption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the lightest color in the color gradient of an active window's title bar.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the lightest color in the color gradient of an active window's title bar.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GradientInactiveCaption">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color GradientInactiveCaption { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color GradientInactiveCaption" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.GradientInactiveCaption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the lightest color in the color gradient of an inactive window's title bar.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the lightest color in the color gradient of an inactive window's title bar.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GrayText">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color GrayText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color GrayText" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.GrayText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color of dimmed text.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color of dimmed text.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Items in a list that are disabled are displayed in dimmed text.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Highlight">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color Highlight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color Highlight" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.Highlight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color of the background of selected items.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color of the background of selected items.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Selected items may include menu items as well as selected text. For example, the <xref:System.Drawing.Color> structure may be the color used for the background of selected items in a list box.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HighlightText">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color HighlightText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color HighlightText" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.HighlightText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color of the text of selected items.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color of the text of selected items.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For example, this color is used for the text of selected items in a list box.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HotTrack">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color HotTrack { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color HotTrack" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.HotTrack" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color used to designate a hot-tracked item.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color used to designate a hot-tracked item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Single-clicking a hot-tracked item executes the item.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InactiveBorder">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color InactiveBorder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color InactiveBorder" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.InactiveBorder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color of an inactive window's border.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color of an inactive window's border.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InactiveCaption">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color InactiveCaption { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color InactiveCaption" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.InactiveCaption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color of the background of an inactive window's title bar.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color of the background of an inactive window's title bar.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InactiveCaptionText">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color InactiveCaptionText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color InactiveCaptionText" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.InactiveCaptionText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color of the text in an inactive window's title bar.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color of the text in an inactive window's title bar.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Info">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color Info { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color Info" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.Info" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color of the background of a ToolTip.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color of the background of a ToolTip.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InfoText">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color InfoText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color InfoText" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.InfoText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color of the text of a ToolTip.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color of the text of a ToolTip.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Menu">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color Menu { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color Menu" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.Menu" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color of a menu's background.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color of a menu's background.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuBar">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color MenuBar { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color MenuBar" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.MenuBar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color of the background of a menu bar.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color of the background of a menu bar.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuHighlight">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color MenuHighlight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color MenuHighlight" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.MenuHighlight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color used to highlight menu items when the menu appears as a flat menu.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color used to highlight menu items when the menu appears as a flat menu.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuText">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color MenuText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color MenuText" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.MenuText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color of a menu's text.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color of a menu's text.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollBar">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ScrollBar { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ScrollBar" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.ScrollBar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color of the background of a scroll bar.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color of the background of a scroll bar.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Window">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color Window { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color Window" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.Window" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color of the background in the client area of a window.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color of the background in the client area of a window.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowFrame">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color WindowFrame { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color WindowFrame" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.WindowFrame" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color of a window frame.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color of a window frame.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowText">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color WindowText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color WindowText" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.SystemColors.WindowText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Drawing.Color" /> structure that is the color of the text in the client area of a window.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color of the text in the client area of a window.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

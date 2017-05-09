@@ -1,0 +1,411 @@
+<Type Name="CodeTypeDeclarationCollection" FullName="System.CodeDom.CodeTypeDeclarationCollection">
+  <TypeSignature Language="C#" Value="public class CodeTypeDeclarationCollection : System.Collections.CollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeTypeDeclarationCollection extends System.Collections.CollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeTypeDeclarationCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.CollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.CodeDom.CodeTypeDeclaration" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.CodeDom.CodeTypeDeclarationCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeTypeDeclaration> objects.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.CodeDom.CodeTypeDeclarationCollection> class. The example creates a new instance of the class and uses several methods to add statements to the collection, return their index, and add or remove attributes at a specific index point.  
+  
+ [!code-cpp[CodeTypeDeclarationCollectionExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/CPP/class1.cpp#1)]
+ [!code-csharp[CodeTypeDeclarationCollectionExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/CS/class1.cs#1)]
+ [!code-vb[CodeTypeDeclarationCollectionExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/VB/class1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeTypeDeclarationCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeDeclarationCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeDeclarationCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create an empty instance of the <xref:System.CodeDom.CodeTypeDeclarationCollection> class.  
+  
+ [!code-cpp[CodeTypeDeclarationCollectionExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/CPP/class1.cpp#2)]
+ [!code-csharp[CodeTypeDeclarationCollectionExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/CS/class1.cs#2)]
+ [!code-vb[CodeTypeDeclarationCollectionExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/VB/class1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeTypeDeclarationCollection (System.CodeDom.CodeTypeDeclaration[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeTypeDeclaration[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeDeclarationCollection.#ctor(System.CodeDom.CodeTypeDeclaration[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeTypeDeclaration[]" />
+      </Parameters>
+      <Docs>
+        <param name="value">An array of <see cref="T:System.CodeDom.CodeTypeDeclaration" /> objects with which to initialize the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeDeclarationCollection" /> class that contains the specified array of <see cref="T:System.CodeDom.CodeTypeDeclaration" /> objects.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeTypeDeclarationCollection (System.CodeDom.CodeTypeDeclarationCollection value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeTypeDeclarationCollection value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeDeclarationCollection.#ctor(System.CodeDom.CodeTypeDeclarationCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeTypeDeclarationCollection" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.CodeDom.CodeTypeDeclarationCollection" /> object with which to initialize the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeDeclarationCollection" /> class that contains the elements of the specified source collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public int Add (System.CodeDom.CodeTypeDeclaration value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.CodeDom.CodeTypeDeclaration value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeDeclarationCollection.Add(System.CodeDom.CodeTypeDeclaration)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeTypeDeclaration" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.CodeDom.CodeTypeDeclaration" /> object to add.</param>
+        <summary>Adds the specified <see cref="T:System.CodeDom.CodeTypeDeclaration" /> object to the collection.</summary>
+        <returns>The index at which the new element was inserted.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.CodeDom.CodeTypeDeclarationCollection.Add%2A> method to add a <xref:System.CodeDom.CodeTypeDeclaration> object to a <xref:System.CodeDom.CodeTypeDeclarationCollection>.  
+  
+ [!code-cpp[CodeTypeDeclarationCollectionExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/CPP/class1.cpp#3)]
+ [!code-csharp[CodeTypeDeclarationCollectionExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/CS/class1.cs#3)]
+ [!code-vb[CodeTypeDeclarationCollectionExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/VB/class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public void AddRange (System.CodeDom.CodeTypeDeclaration[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.CodeDom.CodeTypeDeclaration[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeDeclarationCollection.AddRange(System.CodeDom.CodeTypeDeclaration[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeTypeDeclaration[]" />
+      </Parameters>
+      <Docs>
+        <param name="value">An array of type <see cref="T:System.CodeDom.CodeTypeDeclaration" /> that contains the objects to add to the collection.</param>
+        <summary>Copies the elements of the specified array to the end of the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.CodeDom.CodeTypeDeclarationCollection.AddRange%28System.CodeDom.CodeTypeDeclaration%5B%5D%29> method overload to add an array of <xref:System.CodeDom.CodeTypeDeclaration> objects to a <xref:System.CodeDom.CodeTypeDeclarationCollection>.  
+  
+ [!code-cpp[CodeTypeDeclarationCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/CPP/class1.cpp#4)]
+ [!code-csharp[CodeTypeDeclarationCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/CS/class1.cs#4)]
+ [!code-vb[CodeTypeDeclarationCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/VB/class1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public void AddRange (System.CodeDom.CodeTypeDeclarationCollection value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.CodeDom.CodeTypeDeclarationCollection value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeDeclarationCollection.AddRange(System.CodeDom.CodeTypeDeclarationCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeTypeDeclarationCollection" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.CodeDom.CodeTypeDeclarationCollection" /> object that contains the objects to add to the collection.</param>
+        <summary>Adds the contents of another <see cref="T:System.CodeDom.CodeTypeDeclarationCollection" /> object to the end of the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.CodeDom.CodeTypeDeclarationCollection.AddRange%28System.CodeDom.CodeTypeDeclarationCollection%29> method overload to add <xref:System.CodeDom.CodeTypeDeclaration> objects from one <xref:System.CodeDom.CodeTypeDeclarationCollection> to another <xref:System.CodeDom.CodeTypeDeclarationCollection>.  
+  
+ [!code-cpp[CodeTypeDeclarationCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/CPP/class1.cpp#4)]
+ [!code-csharp[CodeTypeDeclarationCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/CS/class1.cs#4)]
+ [!code-vb[CodeTypeDeclarationCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/VB/class1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.CodeDom.CodeTypeDeclaration value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.CodeDom.CodeTypeDeclaration value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeDeclarationCollection.Contains(System.CodeDom.CodeTypeDeclaration)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeTypeDeclaration" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.CodeDom.CodeTypeDeclaration" /> object to search for in the collection.</param>
+        <summary>Gets a value that indicates whether the collection contains the specified <see cref="T:System.CodeDom.CodeTypeDeclaration" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the collection contains the specified object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.CodeDom.CodeTypeDeclarationCollection.Contains%2A> method to find a <xref:System.CodeDom.CodeTypeDeclaration> object in a <xref:System.CodeDom.CodeTypeDeclarationCollection>.  
+  
+ [!code-cpp[CodeTypeDeclarationCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/CPP/class1.cpp#5)]
+ [!code-csharp[CodeTypeDeclarationCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/CS/class1.cs#5)]
+ [!code-vb[CodeTypeDeclarationCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/VB/class1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.CodeDom.CodeTypeDeclaration[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.CodeDom.CodeTypeDeclaration[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeDeclarationCollection.CopyTo(System.CodeDom.CodeTypeDeclaration[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.CodeDom.CodeTypeDeclaration[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the values copied from the collection.</param>
+        <param name="index">The index of the array at which to begin inserting.</param>
+        <summary>Copies the elements in the <see cref="T:System.CodeDom.CodeTypeDeclarationCollection" /> object to a one-dimensional <see cref="T:System.Array" /> instance, starting at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.CodeDom.CodeTypeDeclarationCollection.CopyTo%2A> method to copy the contents of a <xref:System.CodeDom.CodeTypeDeclarationCollection> object to an array, starting at the specified index value.  
+  
+ [!code-cpp[CodeTypeDeclarationCollectionExample#6](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/CPP/class1.cpp#6)]
+ [!code-csharp[CodeTypeDeclarationCollectionExample#6](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/CS/class1.cs#6)]
+ [!code-vb[CodeTypeDeclarationCollectionExample#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/VB/class1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The destination array is multidimensional.  
+  
+ -or-  
+  
+ The number of elements in the <see cref="T:System.CodeDom.CodeTypeDeclarationCollection" /> is greater than the available space between the index of the target array specified by the <paramref name="index" /> parameter and the end of the target array.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="array" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than the target array's minimum index.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.CodeDom.CodeTypeDeclaration value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.CodeDom.CodeTypeDeclaration value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeDeclarationCollection.IndexOf(System.CodeDom.CodeTypeDeclaration)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeTypeDeclaration" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.CodeDom.CodeTypeDeclaration" /> to locate in the collection.</param>
+        <summary>Gets the index of the specified <see cref="T:System.CodeDom.CodeTypeDeclaration" /> object in the <see cref="T:System.CodeDom.CodeTypeDeclarationCollection" />, if it exists in the collection.</summary>
+        <returns>The index of the specified object, if it is found, in the collection; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example retrieves <xref:System.CodeDom.CodeTypeDeclaration> entries from a <xref:System.CodeDom.CodeTypeDeclarationCollection> object and displays their names and indexes returned by the <xref:System.CodeDom.CodeTypeDeclarationCollection.IndexOf%2A> method.  
+  
+ [!code-cpp[CodeTypeDeclarationCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/CPP/class1.cpp#5)]
+ [!code-csharp[CodeTypeDeclarationCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/CS/class1.cs#5)]
+ [!code-vb[CodeTypeDeclarationCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/VB/class1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, System.CodeDom.CodeTypeDeclaration value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.CodeDom.CodeTypeDeclaration value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeDeclarationCollection.Insert(System.Int32,System.CodeDom.CodeTypeDeclaration)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.CodeDom.CodeTypeDeclaration" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index where the specified object should be inserted.</param>
+        <param name="value">The <see cref="T:System.CodeDom.CodeTypeDeclaration" /> object to insert.</param>
+        <summary>Inserts the specified <see cref="T:System.CodeDom.CodeTypeDeclaration" /> object into the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.CodeDom.CodeTypeDeclarationCollection.Insert%2A> method to insert a <xref:System.CodeDom.CodeTypeDeclaration> object into a <xref:System.CodeDom.CodeTypeDeclarationCollection>.  
+  
+ [!code-cpp[CodeTypeDeclarationCollectionExample#8](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/CPP/class1.cpp#8)]
+ [!code-csharp[CodeTypeDeclarationCollectionExample#8](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/CS/class1.cs#8)]
+ [!code-vb[CodeTypeDeclarationCollectionExample#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/VB/class1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeDeclaration this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeDeclaration Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeDeclarationCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeTypeDeclaration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the collection to access.</param>
+        <summary>Gets or sets the <see cref="T:System.CodeDom.CodeTypeDeclaration" /> object at the specified index in the collection.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeTypeDeclaration" /> at each valid index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is an indexer that can be used to access the collection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is outside the valid range of indexes for the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.CodeDom.CodeTypeDeclaration value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.CodeDom.CodeTypeDeclaration value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeDeclarationCollection.Remove(System.CodeDom.CodeTypeDeclaration)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeTypeDeclaration" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.CodeDom.CodeTypeDeclaration" /> to remove from the collection.</param>
+        <summary>Removes the specified <see cref="T:System.CodeDom.CodeTypeDeclaration" /> object from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.CodeDom.CodeTypeDeclarationCollection.Remove%2A> method to delete a <xref:System.CodeDom.CodeTypeDeclaration> object from a <xref:System.CodeDom.CodeTypeDeclarationCollection>.  
+  
+ [!code-cpp[CodeTypeDeclarationCollectionExample#9](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/CPP/class1.cpp#9)]
+ [!code-csharp[CodeTypeDeclarationCollectionExample#9](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/CS/class1.cs#9)]
+ [!code-vb[CodeTypeDeclarationCollectionExample#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeDeclarationCollectionExample/VB/class1.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

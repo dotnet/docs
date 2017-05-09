@@ -1,0 +1,488 @@
+<Type Name="DataPoint" FullName="System.Web.UI.DataVisualization.Charting.DataPoint">
+  <TypeSignature Language="C#" Value="public class DataPoint : System.Web.UI.DataVisualization.Charting.DataPointCustomProperties" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataPoint extends System.Web.UI.DataVisualization.Charting.DataPointCustomProperties" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.DataPoint" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.DataVisualization.Charting.DataPointCustomProperties</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("YValues")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter("System.Web.UI.Design.DataVisualization.Charting.DataPointConverter, System.Web.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a data point that is stored in the <see cref="T:System.Web.UI.DataVisualization.Charting.DataPointCollection" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.DataPoint> class stores properties associated with data as well as data point values. For example, a data point has a value, but it also has a color property, background image property, background gradient property, and so forth. For more information about data point properties, see the <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties> class overview topic.  
+  
+ Each data point consists of an X-value and one or more Y-values. The X-value can be zero, or you can set this explicitly.  
+  
+ Only one Y-value per point is required for all chart types except bubble, candlestick and stock charts. These chart types require more than one Y-value because one data point consists of multiple values. For example, to plot one stock chart column, four values are required: high, low, open and close values.  
+  
+ Data can be added at either design time or run time; you can also use data-binding at run time.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataPoint ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPoint.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.DataPoint" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor can be used to create and initialize a new instance of the <xref:System.Web.UI.DataVisualization.Charting.DataPoint> class.  
+  
+ However, it is highly recommended that you instead add data points at run time, using the <xref:System.Web.UI.DataVisualization.Charting.Series.Points%2A> collection property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataPoint (System.Web.UI.DataVisualization.Charting.Series series);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.DataVisualization.Charting.Series series) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPoint.#ctor(System.Web.UI.DataVisualization.Charting.Series)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="series" Type="System.Web.UI.DataVisualization.Charting.Series" />
+      </Parameters>
+      <Docs>
+        <param name="series">The <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> object that the data point belongs to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.DataPoint" /> class, and sets the <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> that the data point belongs to.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor can be used to create and initialize a new instance of the <xref:System.Web.UI.DataVisualization.Charting.DataPoint> class.  
+  
+ However, it is highly recommended that you instead add data points at run time, using the <xref:System.Web.UI.DataVisualization.Charting.Series.Points%2A> collection property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataPoint (double xValue, double yValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 xValue, float64 yValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPoint.#ctor(System.Double,System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="xValue" Type="System.Double" />
+        <Parameter Name="yValue" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="xValue">The X-value of the data point.</param>
+        <param name="yValue">The Y-value of the data point.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.DataPoint" /> class with the specified X and Y-value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor can be used to create and initialize a new instance of the <xref:System.Web.UI.DataVisualization.Charting.DataPoint> class.  
+  
+ However, it is highly recommended that you instead add data points at run time, using the <xref:System.Web.UI.DataVisualization.Charting.Series.Points%2A> collection property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataPoint (double xValue, double[] yValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 xValue, float64[] yValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPoint.#ctor(System.Double,System.Double[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="xValue" Type="System.Double" />
+        <Parameter Name="yValues" Type="System.Double[]" />
+      </Parameters>
+      <Docs>
+        <param name="xValue">The X-value.</param>
+        <param name="yValues">An array of Y-values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.DataPoint" /> class with the specified X-value and an array of Y-values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor can be used to create and initialize a new instance of the <xref:System.Web.UI.DataVisualization.Charting.DataPoint> class.  
+  
+ However, it is highly recommended that you instead add data points at run time, using the <xref:System.Web.UI.DataVisualization.Charting.Series.Points%2A> collection property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataPoint (double xValue, string yValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 xValue, string yValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPoint.#ctor(System.Double,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="xValue" Type="System.Double" />
+        <Parameter Name="yValues" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xValue">The X-value of the data point.</param>
+        <param name="yValues">A <see langword="string" /> of Y-values separated by commas.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.DataPoint" /> class with the specified X-value and Y-values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor can be used to create and initialize a new instance of the <xref:System.Web.UI.DataVisualization.Charting.DataPoint> class.  
+  
+ However, it is highly recommended that you instead add data points at run time, using the <xref:System.Web.UI.DataVisualization.Charting.Series.Points%2A> collection property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.DataPoint Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.DataPoint Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPoint.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.DataPoint</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an exact copy of the data point.</summary>
+        <returns>A cloned <see cref="T:System.Web.UI.DataVisualization.Charting.DataPoint" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.DataVisualization.Charting.DataPoint.Clone%2A> method to obtain an exact copy of the data point.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValueByName">
+      <MemberSignature Language="C#" Value="public double GetValueByName (string valueName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 GetValueByName(string valueName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPoint.GetValueByName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="valueName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="valueName">Point value names. X, Y, Y2...</param>
+        <summary>Returns a data point that is specified by its name. This is a helper function.</summary>
+        <returns>A <see langword="string" /> value that represents a data point.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEmpty">
+      <MemberSignature Language="C#" Value="public bool IsEmpty { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPoint.IsEmpty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag that indicates whether a data point is marked as empty.</summary>
+        <value>
+          <see langword="true" /> if the point is marked as an empty point; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Set this property to `true` to mark a data point as an empty point.  
+  
+ Alternatively one of the `InsertEmptyPoints` methods in the <xref:System.Web.UI.DataVisualization.Charting.DataManipulator> class can be used to mark missing data as empty points.  
+  
+ The <xref:System.Web.UI.DataVisualization.Charting.Series.EmptyPointStyle%2A> property determines how empty points are displayed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPoint.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the data point.</summary>
+        <value>A <see langword="string" /> value that represents the name of the data point.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValueXY">
+      <MemberSignature Language="C#" Value="public void SetValueXY (object xValue, object[] yValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValueXY(object xValue, object[] yValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPoint.SetValueXY(System.Object,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xValue" Type="System.Object" />
+        <Parameter Name="yValue" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="xValue">The X-value of the data point.</param>
+        <param name="yValue">A list of Y-values of the data point.</param>
+        <summary>Sets the X-value and one or more Y-values of the data point.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.DataVisualization.Charting.DataPoint.SetValueXY%2A> method to set the value(s) of a data point at run-time.  
+  
+ Note that if you set the X-value to a value other than zero (0), a scatter plot will be generated. For further details, see the Remarks section of the <xref:System.Web.UI.DataVisualization.Charting.DataPoint.XValue%2A> property.  
+  
+ Refer to the following table for a complete listing of valid .NET Framework types that can be used for the object type parameter.  
+  
+||||  
+|-|-|-|  
+|String|DateTime|Double|  
+|Decimal|Single|Int32|  
+|UInt32|Int64|UInt64|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValueY">
+      <MemberSignature Language="C#" Value="public void SetValueY (object[] yValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValueY(object[] yValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.DataPoint.SetValueY(System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="yValue" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="yValue">The Y-value(s) of a <see cref="T:System.Web.UI.DataVisualization.Charting.DataPoint" /> object in the collection. Formatted as one or more values separated by commas.</param>
+        <summary>Sets the Y-value(s) of a single data point.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.DataPoint.SetValueY%2A> property is used to set the Y-value(s) of a data point at run time.  
+  
+ Only one Y-value per point is required for all chart types except for bubble, candlestick and stock charts. These chart types require more than one Y-value because one data point consists of multiple values. For example, to plot one stock chart column, four values are required: high, low, open and close values.  
+  
+ This property returns an array of `double` values when used to retrieve multiple Y-values.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Web.UI.DataVisualization.Charting.Series.YValuesPerPoint%2A> property determines the maximum number of Y-values that all data points in a <xref:System.Web.UI.DataVisualization.Charting.Series> can have. If you specify more than the allowable number of Y-values, an exception will be raised.  
+>   
+>  Refer to the following table for a complete listing of valid .NET Framework types that can be used for the object type parameter:  
+  
+||||  
+|-|-|-|  
+|String|DateTime|Double|  
+|Decimal|Single|Int32|  
+|UInt32|Int64|UInt64|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XValue">
+      <MemberSignature Language="C#" Value="public double XValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 XValue" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPoint.XValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Double), "0.0")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.DataVisualization.Charting.DataPointValueConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the X-value of a data point.</summary>
+        <value>A <see langword="double" /> that represents the X-value of a data point.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All chart types can be displayed as either scatter plots or as non-scatter plots, because both X-values and Y-values can be set. Setting an X-value will result in a scatter plot, whereas not setting this property—which is equivalent to setting it to zero—will result in a non-scatter plot. For example, to draw a point chart type, add data points that have X-values of zero. To display a traditional scatter chart, add data points that have X-values other than zero.  
+  
+ The X-values of data points are not required to be set. If they are not set, data points are plotted sequentially, using their index values from the <xref:System.Web.UI.DataVisualization.Charting.DataPointCollection>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="YValues">
+      <MemberSignature Language="C#" Value="public double[] YValues { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64[] YValues" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.DataPoint.YValues" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor(typeof(System.Drawing.Design.UITypeEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.DataVisualization.Charting.DoubleArrayConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.Attribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Y-value(s) of a data point.</summary>
+        <value>An array of <see langword="double" /> values that represent the Y-value(s) of a data point.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.DataPoint.YValues%2A> property is used to set the Y-values of data points.  
+  
+ Only one Y-value per point is required for all chart types except bubble, candlestick and stock charts. These chart types require more than one Y-value because one data point consists of multiple values. For example, to plot one stock chart column, four values are required: high, low, open and close values.  
+  
+ The <xref:System.Web.UI.DataVisualization.Charting.DataPoint.YValues%2A> property returns an array of `double` values when used to retrieve the Y-values.  
+  
+ **Important** The <xref:System.Web.UI.DataVisualization.Charting.Series.YValuesPerPoint%2A> property determines the maximum number of Y-values that all data points in a <xref:System.Web.UI.DataVisualization.Charting.Series> can have. If you specify more than the allowable number of Y-values, an exception will be raised.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

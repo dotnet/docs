@@ -1,0 +1,167 @@
+<Type Name="ISecurityCapabilities" FullName="System.ServiceModel.Channels.ISecurityCapabilities">
+  <TypeSignature Language="C#" Value="public interface ISecurityCapabilities" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISecurityCapabilities" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ISecurityCapabilities" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the contract for specifying the security capabilities for bindings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ For a full implementation see the [NetHttpBinding](http://msdn.microsoft.com/en-us/1f2bb9b2-e0c5-4e8e-a9d3-703575bb159c) sample  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SupportedRequestProtectionLevel">
+      <MemberSignature Language="C#" Value="public System.Net.Security.ProtectionLevel SupportedRequestProtectionLevel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.ProtectionLevel SupportedRequestProtectionLevel" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ISecurityCapabilities.SupportedRequestProtectionLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Security.ProtectionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the protection level requests supported by the binding.</summary>
+        <value>The <see cref="T:System.Net.Security.ProtectionLevel" /> that specifies the protection level requests supported by the binding.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code snippet illustrates how to implement this property:  
+  
+<!-- TODO: review snippet reference  [!CODE [S_UE_NetHttpBinding#0](S_UE_NetHttpBinding#0)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportedResponseProtectionLevel">
+      <MemberSignature Language="C#" Value="public System.Net.Security.ProtectionLevel SupportedResponseProtectionLevel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.ProtectionLevel SupportedResponseProtectionLevel" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ISecurityCapabilities.SupportedResponseProtectionLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Security.ProtectionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the protection level responses supported by the binding.</summary>
+        <value>The <see cref="T:System.Net.Security.ProtectionLevel" /> that specifies the protection level responses supported by the binding.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code snippet illustrates how to implement this property:  
+  
+<!-- TODO: review snippet reference  [!CODE [S_UE_NetHttpBinding#1](S_UE_NetHttpBinding#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsClientAuthentication">
+      <MemberSignature Language="C#" Value="public bool SupportsClientAuthentication { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsClientAuthentication" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientAuthentication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the binding supports client authentication.</summary>
+        <value>
+          <see langword="true" /> if the binding can support client authentication; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code snippet illustrates how to implement this property:  
+  
+<!-- TODO: review snippet reference  [!CODE [S_UE_NetHttpBinding#2](S_UE_NetHttpBinding#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsClientWindowsIdentity">
+      <MemberSignature Language="C#" Value="public bool SupportsClientWindowsIdentity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsClientWindowsIdentity" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ISecurityCapabilities.SupportsClientWindowsIdentity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the binding supports client Windows identity.</summary>
+        <value>
+          <see langword="true" /> if the binding can support client Windows identity; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code snippet illustrates how to implement this property:  
+  
+<!-- TODO: review snippet reference  [!CODE [S_UE_NetHttpBinding#3](S_UE_NetHttpBinding#3)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsServerAuthentication">
+      <MemberSignature Language="C#" Value="public bool SupportsServerAuthentication { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsServerAuthentication" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ISecurityCapabilities.SupportsServerAuthentication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the binding supports server authentication.</summary>
+        <value>
+          <see langword="true" /> if the binding can support server authentication; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code snippet illustrates how to implement this property:  
+  
+<!-- TODO: review snippet reference  [!CODE [S_UE_NetHttpBinding#4](S_UE_NetHttpBinding#4)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

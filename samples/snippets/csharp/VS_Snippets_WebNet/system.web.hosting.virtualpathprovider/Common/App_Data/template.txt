@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>File name: %file%</title>
+  </head>
+
+  <body>
+    <h1>%file%</h1>
+    <p>%content%</p>
+    <p>Page timestamp: %pageTimestamp%<br>
+       Data timestamp: %dataTimestamp%<br>
+       Template timestamp: %templateTimestamp%</p>
+  </body>
+</html>

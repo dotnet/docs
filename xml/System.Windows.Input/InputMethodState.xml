@@ -1,0 +1,66 @@
+<Type Name="InputMethodState" FullName="System.Windows.Input.InputMethodState">
+  <TypeSignature Language="C#" Value="public enum InputMethodState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InputMethodState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputMethodState" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the state of an <see cref="T:System.Windows.Input.InputMethod" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DoNotCare">
+      <MemberSignature Language="C#" Value="DoNotCare" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.InputMethodState DoNotCare = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputMethodState.DoNotCare" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.InputMethodState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input method is in an indeterminate state.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Off">
+      <MemberSignature Language="C#" Value="Off" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.InputMethodState Off = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputMethodState.Off" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.InputMethodState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input method is off.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="On">
+      <MemberSignature Language="C#" Value="On" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.InputMethodState On = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputMethodState.On" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.InputMethodState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The input method is on.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

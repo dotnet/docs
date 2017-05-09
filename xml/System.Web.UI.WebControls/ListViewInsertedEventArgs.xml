@@ -1,0 +1,252 @@
+<Type Name="ListViewInsertedEventArgs" FullName="System.Web.UI.WebControls.ListViewInsertedEventArgs">
+  <TypeSignature Language="C#" Value="public class ListViewInsertedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListViewInsertedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewInsertedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.ListView.ItemInserted" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ListView> control raises the <xref:System.Web.UI.WebControls.ListView.ItemInserted> event when an Insert button in the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template is clicked, and after the <xref:System.Web.UI.WebControls.ListView> control updates the record at the data source. (An Insert button is a button whose `CommandName` property is set to "Insert".) The <xref:System.Web.UI.WebControls.ListView.ItemInserted> event enables you to perform a custom action, such as retrieving auto-generated values from the database for the inserted item.  
+  
+ A <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs> object is passed to the event-handling method, which enables you to determine the number of items inserted and any exceptions that might have occurred. To determine the number of items affected by the insert operation, use the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.AffectedRows%2A> property. Use the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.Exception%2A> property to determine whether an exception occurred. You can also indicate whether the exception was handled in the event-handling method by setting the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.ExceptionHandled%2A> property. If you have to access the field values of the inserted item that were sent to the data source, use the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.Values%2A> property.  
+  
+ By default, the <xref:System.Web.UI.WebControls.ListView> control clears the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template after an insert operation, which enables users to add values for a new item to be inserted. If an exception occurs during the insert operation, you can keep the <xref:System.Web.UI.WebControls.ListView> control in insert mode by setting the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.KeepInInsertMode%2A> property to `true`. This rebinds the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template to the values from the previous attempt to insert an item.  
+  
+ For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs> class, see the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs> object that is passed to the handler for the <xref:System.Web.UI.WebControls.ListView.ItemInserted> event.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemInserted#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemInserted#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewInsertedEventArgs (int affectedRows, Exception exception);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 affectedRows, class System.Exception exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewInsertedEventArgs.#ctor(System.Int32,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="affectedRows" Type="System.Int32" />
+        <Parameter Name="exception" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="affectedRows">The number of rows affected by the insert operation.</param>
+        <param name="exception">The exception that is raised when the insert operation was performed, if any. If no exception was raised, use <see langword="null" /> for this parameter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ListViewInsertedEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs> class.  
+  
+> [!NOTE]
+>  This constructor is primarily used by control developers when raising events.  
+  
+ The following table shows the initial property values for an instance of the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs> class.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.AffectedRows%2A>|The value of the `affectedRows` parameter.|  
+|<xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.Exception%2A>|The <xref:System.Exception?displayProperty=fullName> object that is contained in the `e` parameter.|  
+|<xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.ExceptionHandled%2A>|Initialized to `false`.|  
+|<xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.KeepInInsertMode%2A>|Initialized to `false`.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AffectedRows">
+      <MemberSignature Language="C#" Value="public int AffectedRows { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AffectedRows" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.AffectedRows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of rows affected by the insert operation.</summary>
+        <value>The number of rows affected by the insert operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.AffectedRows%2A> property to determine the number of records that were affected by the insert operation, as returned by the data source control. This property is typically used in the following scenarios:  
+  
+-   To verify that only a single record was inserted. Sometimes an incorrectly written insert statement can insert multiple records.  
+  
+-   To verify that a record was not inserted because an error occurred during the insert operation, but an exception was not raised.  
+  
+-   To verify that a record was inserted when a data source control that supports conflict detection (optimistic concurrency) has its <xref:System.Web.UI.WebControls.SqlDataSource.ConflictDetection%2A> property set to the `ConflictOptions.CompareAllValues` enumeration value. Controls that supports this property include the <xref:System.Web.UI.WebControls.SqlDataSource> and <xref:System.Web.UI.WebControls.ObjectDataSource> controls. When the property has this value, a record might not be inserted if it has the same key value as a record inserted by another user.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs> object that is passed to a handler for the <xref:System.Web.UI.WebControls.ListView.ItemInserted> event to determine whether an exception was raised during the insert operation. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs> class.  
+  
+ [!code-csharp[System.Web.UI.WebControls.ListView.ItemInserted#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#3)]
+ [!code-vb[System.Web.UI.WebControls.ListView.ItemInserted#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Exception">
+      <MemberSignature Language="C#" Value="public Exception Exception { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.Exception" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the exception (if any) that was raised during the insert operation.</summary>
+        <value>The exception that was raised during the insert operation, or <see langword="null" /> if no exception was raised.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an exception was raised and you handle the exception in the event handler, set the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.ExceptionHandled%2A> property to `true`. Otherwise, the <xref:System.Web.UI.WebControls.ListView> control re-throws the exception.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs> object that is passed to a handler for the <xref:System.Web.UI.WebControls.ListView.ItemInserted> event to determine whether an exception was raised during the insert operation. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs> class.  
+  
+ [!code-csharp[System.Web.UI.WebControls.ListView.ItemInserted#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#3)]
+ [!code-vb[System.Web.UI.WebControls.ListView.ItemInserted#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExceptionHandled">
+      <MemberSignature Language="C#" Value="public bool ExceptionHandled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExceptionHandled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.ExceptionHandled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a that indicates whether an exception that was raised during the insert operation was handled in the event handler.</summary>
+        <value>
+          <see langword="true" /> if the exception was handled in the event handler; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an exception is raised during the insert operation, use the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.ExceptionHandled%2A> property to indicate whether the exception was handled in the event handler. When this property is set to `true`, the exception is considered handled and is not re-thrown. If this property is set to `false`, the <xref:System.Web.UI.WebControls.ListView> control re-throws the exception. To determine which exception was raised, use the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.Exception%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs> object that is passed to the handler for the <xref:System.Web.UI.WebControls.ListView.ItemInserted> event to determine whether an exception was raised during the insert operation. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs> class.  
+  
+ [!code-csharp[System.Web.UI.WebControls.ListView.ItemInserted#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#3)]
+ [!code-vb[System.Web.UI.WebControls.ListView.ItemInserted#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeepInInsertMode">
+      <MemberSignature Language="C#" Value="public bool KeepInInsertMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool KeepInInsertMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.KeepInInsertMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the user's input values are preserved for the controls inside the <see cref="P:System.Web.UI.WebControls.ListView.InsertItemTemplate" /> template.</summary>
+        <value>
+          <see langword="true" /> if the user's input values are preserved for the controls inside the <see cref="P:System.Web.UI.WebControls.ListView.InsertItemTemplate" /> template; <see langword="false" /> if the user's input values are replaced with the default values for the controls. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the <xref:System.Web.UI.WebControls.ListView> control resets the control's values from the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template to their default values after an insert operation. This enables users to add values for a new item to be inserted. If an exception is raised during the insert operation, you can keep the <xref:System.Web.UI.WebControls.ListView> control in insert mode by setting the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.KeepInInsertMode%2A> property to `true`. This maintains the values from the previous attempt to insert an item for the controls inside the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.KeepInInsertMode%2A> property to preserve the values entered by the user when an error occurs during the insert operation. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs> class.  
+  
+ [!code-csharp[System.Web.UI.WebControls.ListView.ItemInserted#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#3)]
+ [!code-vb[System.Web.UI.WebControls.ListView.ItemInserted#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary Values { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary Values" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewInsertedEventArgs.Values" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.IOrderedDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets field name/value pairs for the inserted record.</summary>
+        <value>The field name/value pairs for the inserted record.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.Values%2A> property to access the values of the fields for the inserted record. For example, you can use these values to keep a log of inserted records.  
+  
+ The <xref:System.Web.UI.WebControls.ListViewInsertedEventArgs.Values%2A> property returns an <xref:System.Collections.Specialized.OrderedDictionary> object that implements the <xref:System.Collections.Specialized.IOrderedDictionary> interface. The <xref:System.Collections.Specialized.OrderedDictionary> object contains <xref:System.Collections.DictionaryEntry> objects that represent the fields of the inserted record. To access the field names, use the <xref:System.Collections.Specialized.OrderedDictionary.Keys%2A?displayProperty=fullName> property of the <xref:System.Collections.Specialized.OrderedDictionary> object. Similarly, you can access the field values by using the <xref:System.Collections.Specialized.OrderedDictionary.Values%2A?displayProperty=fullName> property.  
+  
+> [!NOTE]
+>  As a shortcut, you can also use the indexer of the <xref:System.Collections.Specialized.OrderedDictionary> object to access the field values directly. The advantage in using the indexer is that it returns field values directly. Data source controls that rely on the field order (such as <xref:System.Web.UI.WebControls.AccessDataSource>) can access field values only by index.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

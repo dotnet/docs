@@ -1,0 +1,189 @@
+<Type Name="DirSyncRequestControl" FullName="System.DirectoryServices.Protocols.DirSyncRequestControl">
+  <TypeSignature Language="C#" Value="public class DirSyncRequestControl : System.DirectoryServices.Protocols.DirectoryControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DirSyncRequestControl extends System.DirectoryServices.Protocols.DirectoryControl" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DirSyncRequestControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.Protocols.DirectoryControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DirSyncRequestControl" /> class is a directory control that enables the application to search the directory for objects that have changed since a previous state.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DirSyncRequestControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirSyncRequestControl.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirSyncRequestControl.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DirSyncRequestControl" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DirSyncRequestControl (byte[] cookie);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] cookie) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirSyncRequestControl.#ctor(System.Byte[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="cookie" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="cookie">An opaque structure used by the server. It is updated by the directory during each <see cref="T:System.DirectoryServices.Protocols.SearchRequest" />, which enables the control to incrementally read changes from the directory.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirSyncRequestControl.#ctor(System.Byte[])" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DirSyncRequestControl" /> class using the specified parameter.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DirSyncRequestControl (byte[] cookie, System.DirectoryServices.Protocols.DirectorySynchronizationOptions option);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] cookie, valuetype System.DirectoryServices.Protocols.DirectorySynchronizationOptions option) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirSyncRequestControl.#ctor(System.Byte[],System.DirectoryServices.Protocols.DirectorySynchronizationOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="cookie" Type="System.Byte[]" />
+        <Parameter Name="option" Type="System.DirectoryServices.Protocols.DirectorySynchronizationOptions" />
+      </Parameters>
+      <Docs>
+        <param name="cookie">An opaque structure used by the server. It is updated by the directory during each <see cref="T:System.DirectoryServices.Protocols.SearchRequest" />, which enables the control to incrementally read changes from the directory.</param>
+        <param name="option">Specifies the behavior of the search. This parameter can be zero or a combination of one or more of the values of <see cref="T:System.DirectoryServices.Protocols.DirectorySynchronizationOptions" />.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirSyncRequestControl.#ctor(System.Byte[],System.DirectoryServices.Protocols.DirectorySynchronizationOptions)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DirSyncRequestControl" /> class using the specified parameters.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DirSyncRequestControl (byte[] cookie, System.DirectoryServices.Protocols.DirectorySynchronizationOptions option, int attributeCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] cookie, valuetype System.DirectoryServices.Protocols.DirectorySynchronizationOptions option, int32 attributeCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirSyncRequestControl.#ctor(System.Byte[],System.DirectoryServices.Protocols.DirectorySynchronizationOptions,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="cookie" Type="System.Byte[]" />
+        <Parameter Name="option" Type="System.DirectoryServices.Protocols.DirectorySynchronizationOptions" />
+        <Parameter Name="attributeCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="cookie">An opaque structure used by the server. It is updated by the directory during each <see cref="T:System.DirectoryServices.Protocols.SearchRequest" />, which enables the control to incrementally read changes from the directory.</param>
+        <param name="option">Specifies the behavior of the search. This parameter can be zero or a combination of one or more of the values of <see cref="T:System.DirectoryServices.Protocols.DirectorySynchronizationOptions" />.</param>
+        <param name="attributeCount">The maximum number of attributes to return. The default is 1048576.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirSyncRequestControl.#ctor(System.Byte[],System.DirectoryServices.Protocols.DirectorySynchronizationOptions,System.Int32)" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DirSyncRequestControl" /> class using the specified parameters.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttributeCount">
+      <MemberSignature Language="C#" Value="public int AttributeCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AttributeCount" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirSyncRequestControl.AttributeCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirSyncRequestControl.AttributeCount" /> property specifies the maximum number of attributes to return.</summary>
+        <value>The maximum number of attributes to return.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of this property is 1048576.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">There was an attempt to set a value less than zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Cookie">
+      <MemberSignature Language="C#" Value="public byte[] Cookie { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Cookie" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirSyncRequestControl.Cookie" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirSyncRequestControl.Cookie" /> property contains an opaque structure used by the server.</summary>
+        <value>An opaque structure used by the server.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is updated by the directory during each <xref:System.DirectoryServices.Protocols.SearchRequest>, which enables the control to incrementally read changes from the directory.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public override byte[] GetValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] GetValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirSyncRequestControl.GetValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirSyncRequestControl.GetValue" /> method returns the data associated with this control.</summary>
+        <returns>The data associated with this control.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Option">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.DirectorySynchronizationOptions Option { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.Protocols.DirectorySynchronizationOptions Option" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirSyncRequestControl.Option" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.DirectorySynchronizationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DirSyncRequestControl.Option" /> property specifies the behavior of the search.</summary>
+        <value>The behavior of the search.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be zero or a combination of one or more of the values of <xref:System.DirectoryServices.Protocols.DirectorySynchronizationOptions>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

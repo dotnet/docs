@@ -1,0 +1,1 @@
+XAML Browser Application (WPF)

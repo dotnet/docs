@@ -1,0 +1,190 @@
+<Type Name="TraceWebEventProvider" FullName="System.Web.Management.TraceWebEventProvider">
+  <TypeSignature Language="C#" Value="public sealed class TraceWebEventProvider : System.Web.Management.WebEventProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TraceWebEventProvider extends System.Web.Management.WebEventProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Management.TraceWebEventProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Management.WebEventProvider</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Implements an event provider that sends ASP.NET health-monitoring events as trace messages.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management?displayProperty=fullName> namespace contains the health event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+  
+ This provider passes events to the <xref:System.Diagnostics.Trace> object. It passes events that derive from the <xref:System.Web.Management.WebBaseErrorEvent> class as trace errors and passes all other events as trace information.  
+  
+> [!NOTE]
+>  The <xref:System.Web.Management.TraceWebEventProvider> object does not provide event buffering.  
+  
+> [!NOTE]
+>  In most cases you will be able to use the ASP.NET health-monitoring types as implemented, and you will control the health-monitoring system by specifying values in the `healthMonitoring` configuration section. You can also derive from the health-monitoring types to create your own custom events and providers. For an example of creating a custom provider, see [How to: Implement the Health Monitoring Custom Provider Example](http://msdn.microsoft.com/library/bbb1c959-e6e4-42b2-be62-49b7ca5ab72c).  
+  
+   
+  
+## Examples  
+ The following configuration file excerpt shows how to specify a provider of type <xref:System.Web.Management.TraceWebEventProvider> in the `healthMonitoring` section. The `add` element in the `rules` section specifies that the provider will handle request-processing events.  
+  
+```  
+<healthMonitoring  
+    enabled="true"  
+    heartBeatInterval="0">  
+    <providers>  
+        <add name="TraceEventProvider"  
+            type="System.Web.Management.TraceWebEventProvider,   
+              System.Web"  
+            buffer="false"  
+            bufferMode=""  
+            maxEventLength="4096"  
+            maxSize="4096"  
+            maxMessagesPerNotification="1"  
+        />  
+    </providers>  
+    <eventMappings>  
+        <add name="Request Processing Events"  
+            type="System.Web.Management.WebRequestEvent, System.Web"   
+        />  
+    </eventMappings>  
+    <profiles>  
+        <add name="Trace"  
+            minInstances="1"  
+            maxLimit="Infinite"  
+            minInterval="00:00:00"  
+        />  
+    </profiles>  
+    <rules>  
+        <add name="Trace Request Processing"  
+            eventName="Request Processing Events"  
+            provider="TraceEventProvider"  
+            profile="Trace"  
+        />  
+   </rules>  
+</healthMonitoring>   
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Flush">
+      <MemberSignature Language="C#" Value="public override void Flush ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Flush() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.TraceWebEventProvider.Flush" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all events from the provider's buffer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not intended to be used directly from your code. It is called by the ASP.NET health-monitoring system.  
+  
+> [!NOTE]
+>  The <xref:System.Web.Management.WebEventProvider> object does not provide event buffering.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public override void Initialize (string name, System.Collections.Specialized.NameValueCollection config);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(string name, class System.Collections.Specialized.NameValueCollection config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.TraceWebEventProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="config" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name used in the configuration file to identify this provider.</param>
+        <param name="config">A <see cref="T:System.Collections.Specialized.NameValueCollection" /> that specifies the attributes assigned for this provider in the configuration file.</param>
+        <summary>Sets the initial values for this object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET calls the <xref:System.Web.Management.TraceWebEventProvider.Initialize%2A> method to initialize the <xref:System.Web.Management.TraceWebEventProvider> with the configuration settings and name as specified in the configuration file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessEvent">
+      <MemberSignature Language="C#" Value="public override void ProcessEvent (System.Web.Management.WebBaseEvent eventRaised);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ProcessEvent(class System.Web.Management.WebBaseEvent eventRaised) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.TraceWebEventProvider.ProcessEvent(System.Web.Management.WebBaseEvent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventRaised" Type="System.Web.Management.WebBaseEvent" />
+      </Parameters>
+      <Docs>
+        <param name="eventRaised">The <see cref="T:System.Web.Management.WebBaseEvent" /> object to process.</param>
+        <summary>Processes the event passed to the provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not intended to be used directly from your code. It is called by the ASP.NET health-monitoring system.  
+  
+> [!NOTE]
+>  The <xref:System.Web.Management.WebEventProvider> object does not do event buffering.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shutdown">
+      <MemberSignature Language="C#" Value="public override void Shutdown ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Shutdown() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.TraceWebEventProvider.Shutdown" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Performs tasks associated with shutting down the provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET calls the <xref:System.Web.Management.TraceWebEventProvider.Shutdown%2A> method when the application domain hosting the Web application terminates. The method is called to perform tasks that will allow the application to end gracefully.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

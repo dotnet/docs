@@ -1,0 +1,60 @@
+<Type Name="ReceiveAndSendReplyFactory" FullName="System.ServiceModel.Activities.Presentation.Factories.ReceiveAndSendReplyFactory">
+  <TypeSignature Language="C#" Value="public sealed class ReceiveAndSendReplyFactory : System.Activities.Presentation.IActivityTemplateFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReceiveAndSendReplyFactory extends System.Object implements class System.Activities.Presentation.IActivityTemplateFactory" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Presentation.Factories.ReceiveAndSendReplyFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Activities.Presentation.IActivityTemplateFactory</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Creates a configured instance of <see cref="T:System.ServiceModel.Activities.Receive" /> and <see cref="T:System.ServiceModel.Activities.SendReply" /> activity pairs.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReceiveAndSendReplyFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Presentation.Factories.ReceiveAndSendReplyFactory.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.Presentation.Factories.ReceiveAndSendReplyFactory" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public System.Activities.Activity Create (System.Windows.DependencyObject target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Activities.Activity Create(class System.Windows.DependencyObject target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Presentation.Factories.ReceiveAndSendReplyFactory.Create(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="target">The workflow UI element that is the visual container of the new activity.</param>
+        <summary>Creates a new <see cref="T:System.Activities.Statements.Sequence" /> activity composed of a <see cref="T:System.ServiceModel.Activities.Receive" /> and a <see cref="T:System.ServiceModel.Activities.SendReply" /> pair.</summary>
+        <returns>A new <see cref="T:System.Activities.Statements.Sequence" /> activity composed of a <see cref="T:System.ServiceModel.Activities.Receive" /> and a <see cref="T:System.ServiceModel.Activities.SendReply" /> pair.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

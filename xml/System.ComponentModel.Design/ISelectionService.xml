@@ -1,0 +1,304 @@
+<Type Name="ISelectionService" FullName="System.ComponentModel.Design.ISelectionService">
+  <TypeSignature Language="C#" Value="public interface ISelectionService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISelectionService" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ISelectionService" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides an interface for a designer to select components.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a component is selected, its viewable or editable properties are shown in the Properties window.  
+  
+   
+  
+## Examples  
+ The following example demonstrates use of the <xref:System.ComponentModel.Design.ISelectionService> to handle the <xref:System.ComponentModel.Design.ISelectionService.SelectionChanged> and <xref:System.ComponentModel.Design.ISelectionService.SelectionChanging> events.  
+  
+ [!code-cpp[ISelectionServiceSample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ISelectionServiceSample/CPP/selectioncomponent.cpp#1)]
+ [!code-csharp[ISelectionServiceSample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ISelectionServiceSample/CS/selectioncomponent.cs#1)]
+ [!code-vb[ISelectionServiceSample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ISelectionServiceSample/VB/selectioncomponent.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetComponentSelected">
+      <MemberSignature Language="C#" Value="public bool GetComponentSelected (object component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetComponentSelected(object component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ISelectionService.GetComponentSelected(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component to test.</param>
+        <summary>Gets a value indicating whether the specified component is currently selected.</summary>
+        <returns>
+          <see langword="true" /> if the component is part of the user's current selection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be used to check whether a specific component is currently selected. This process is generally quicker than getting and parsing the entire list of selected components.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSelectedComponents">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection GetSelectedComponents ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ICollection GetSelectedComponents() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ISelectionService.GetSelectedComponents" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a collection of components that are currently selected.</summary>
+        <returns>A collection that represents the current set of components that are selected.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrimarySelection">
+      <MemberSignature Language="C#" Value="public object PrimarySelection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object PrimarySelection" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ISelectionService.PrimarySelection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object that is currently the primary selected object.</summary>
+        <value>The object that is currently the primary selected object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When multiple components are selected at design time, one of the objects is the primary selected object. Some operations behave differently depending on which selected component is the primary selected object. The primary selected object is typically the last object that was selected, but the primary object of a multiple component selection can be changed to any of the selected components. The primary selected object has a selection border that is distinct in appearance from the other selected objects. The specific type of visual distinction depends on the development environment's implementation of a selection user interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler SelectionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectionChanged" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.ISelectionService.SelectionChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the current selection changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Minimize processing when handling this event, because processing that occurs within this event handler can significantly affect the overall performance of the form designer.  
+  
+   
+  
+## Examples  
+ The following example illustrates how to use the <xref:System.ComponentModel.Design.ISelectionService.SelectionChanged> event.  
+  
+ [!code-cpp[ISelectionService#2](~/samples/snippets/cpp/VS_Snippets_Winforms/ISelectionService/CPP/csiselectionserviceexample.cpp#2)]
+ [!code-csharp[ISelectionService#2](~/samples/snippets/csharp/VS_Snippets_Winforms/ISelectionService/CS/csiselectionserviceexample.cs#2)]
+ [!code-vb[ISelectionService#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ISelectionService/VB/csiselectionserviceexample.vb#2)]  
+[!code-cpp[ISelectionService#3](~/samples/snippets/cpp/VS_Snippets_Winforms/ISelectionService/CPP/csiselectionserviceexample.cpp#3)]
+[!code-csharp[ISelectionService#3](~/samples/snippets/csharp/VS_Snippets_Winforms/ISelectionService/CS/csiselectionserviceexample.cs#3)]
+[!code-vb[ISelectionService#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ISelectionService/VB/csiselectionserviceexample.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionChanging">
+      <MemberSignature Language="C#" Value="public event EventHandler SelectionChanging;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectionChanging" />
+      <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.ISelectionService.SelectionChanging" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the current selection is about to change.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Minimize processing when handling this event, because processing that occurs within this event handler can significantly affect the overall performance of the form designer.  
+  
+   
+  
+## Examples  
+ The following example illustrates how to use the <xref:System.ComponentModel.Design.ISelectionService.SelectionChanging> event.  
+  
+ [!code-cpp[ISelectionService#4](~/samples/snippets/cpp/VS_Snippets_Winforms/ISelectionService/CPP/csiselectionserviceexample.cpp#4)]
+ [!code-csharp[ISelectionService#4](~/samples/snippets/csharp/VS_Snippets_Winforms/ISelectionService/CS/csiselectionserviceexample.cs#4)]
+ [!code-vb[ISelectionService#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ISelectionService/VB/csiselectionserviceexample.vb#4)]  
+[!code-cpp[ISelectionService#5](~/samples/snippets/cpp/VS_Snippets_Winforms/ISelectionService/CPP/csiselectionserviceexample.cpp#5)]
+[!code-csharp[ISelectionService#5](~/samples/snippets/csharp/VS_Snippets_Winforms/ISelectionService/CS/csiselectionserviceexample.cs#5)]
+[!code-vb[ISelectionService#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ISelectionService/VB/csiselectionserviceexample.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionCount">
+      <MemberSignature Language="C#" Value="public int SelectionCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SelectionCount" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ISelectionService.SelectionCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the count of selected objects.</summary>
+        <value>The number of selected objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSelectedComponents">
+      <MemberSignature Language="C#" Value="public void SetSelectedComponents (System.Collections.ICollection components);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSelectedComponents(class System.Collections.ICollection components) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ISelectionService.SetSelectedComponents(System.Collections.ICollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="components" Type="System.Collections.ICollection" />
+      </Parameters>
+      <Docs>
+        <param name="components">The collection of components to select.</param>
+        <summary>Selects the specified collection of components.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the array is `null` or does not contain any components, <xref:System.ComponentModel.Design.ISelectionService.SetSelectedComponents%2A> selects the top-level component in the designer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSelectedComponents">
+      <MemberSignature Language="C#" Value="public void SetSelectedComponents (System.Collections.ICollection components, System.ComponentModel.Design.SelectionTypes selectionType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSelectedComponents(class System.Collections.ICollection components, valuetype System.ComponentModel.Design.SelectionTypes selectionType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ISelectionService.SetSelectedComponents(System.Collections.ICollection,System.ComponentModel.Design.SelectionTypes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="components" Type="System.Collections.ICollection" />
+        <Parameter Name="selectionType" Type="System.ComponentModel.Design.SelectionTypes" />
+      </Parameters>
+      <Docs>
+        <param name="components">The collection of components to select.</param>
+        <param name="selectionType">A value from the <see cref="T:System.ComponentModel.Design.SelectionTypes" /> enumeration. The default is <see cref="F:System.ComponentModel.Design.SelectionTypes.Normal" />.</param>
+        <summary>Selects the components from within the specified collection of components that match the specified selection type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the array is `null` or does not contain any components, <xref:System.ComponentModel.Design.ISelectionService.SetSelectedComponents%2A> selects the top-level component in the designer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

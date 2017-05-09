@@ -1,0 +1,348 @@
+<Type Name="ControlCachePolicy" FullName="System.Web.UI.ControlCachePolicy">
+  <TypeSignature Language="C#" Value="public sealed class ControlCachePolicy" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ControlCachePolicy extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ControlCachePolicy" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides programmatic access to an ASP.NET user control's output cache settings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ControlCachePolicy> class is used by developers in programmatic user control scenarios to specify output caching settings for user controls (.ascx files). ASP.NET embeds user controls within a <xref:System.Web.UI.BasePartialCachingControl> instance. The <xref:System.Web.UI.BasePartialCachingControl> class represents a user control that has output caching enabled. When you access the <xref:System.Web.UI.BasePartialCachingControl.CachePolicy%2A?displayProperty=fullName> property of a <xref:System.Web.UI.PartialCachingControl> control, you will always receive a valid <xref:System.Web.UI.ControlCachePolicy> object. However, if you access the <xref:System.Web.UI.UserControl.CachePolicy%2A?displayProperty=fullName> property of a <xref:System.Web.UI.UserControl> control, you receive a valid <xref:System.Web.UI.ControlCachePolicy> object only if the user control is already wrapped by a <xref:System.Web.UI.BasePartialCachingControl> control. If it is not wrapped, the <xref:System.Web.UI.ControlCachePolicy> object returned by the property will throw exceptions when you attempt to manipulate it because it does not have an associated <xref:System.Web.UI.BasePartialCachingControl>. To determine whether a <xref:System.Web.UI.UserControl> instance supports caching without generating exceptions, inspect the <xref:System.Web.UI.ControlCachePolicy.SupportsCaching%2A> property.  
+  
+ Using the <xref:System.Web.UI.ControlCachePolicy> class is one of several ways you can enable output caching. The following list describes methods you can use to enable output caching:  
+  
+-   Use the  directive to enable output caching in declarative scenarios.  
+  
+-   Use the <xref:System.Web.UI.PartialCachingAttribute> attribute to enable caching for a user control in a code-behind file.  
+  
+-   Use the <xref:System.Web.UI.ControlCachePolicy> class to specify cache settings in programmatic scenarios in which you are working with <xref:System.Web.UI.BasePartialCachingControl> instances that have been cache-enabled using one of the previous methods and dynamically loaded using the <xref:System.Web.UI.TemplateControl.LoadControl%2A?displayProperty=fullName> method. A <xref:System.Web.UI.ControlCachePolicy> instance can be successfully manipulated only between the `Init` and `PreRender` stages of the control life cycle. If you modify a <xref:System.Web.UI.ControlCachePolicy> object after the `PreRender` phase, ASP.NET throws an exception, because any changes made after the control is rendered cannot actually affect cache settings (a control is cached during the `Render` stage). Finally, a user control instance (and therefore its <xref:System.Web.UI.ControlCachePolicy> object) is only available for programmatic manipulation when it is actually rendered.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how a user control can be loaded dynamically and manipulated programmatically at run time. The <xref:System.Web.UI.PartialCachingAttribute> attribute is applied to a user control named `SimpleControl`, which means the user control is wrapped by a <xref:System.Web.UI.PartialCachingControl> control at run time. The `SimpleControl` object's caching settings can be programmatically manipulated through its associated <xref:System.Web.UI.ControlCachePolicy> object, which is available through a reference to the <xref:System.Web.UI.PartialCachingControl> control that wraps it. In this example, the <xref:System.Web.UI.ControlCachePolicy.Duration%2A> property is examined during page initialization and changed using the <xref:System.Web.UI.ControlCachePolicy.SetSlidingExpiration%2A> and <xref:System.Web.UI.ControlCachePolicy.SetExpires%2A> methods if some conditions are met.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ControlCachePolicy_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCachePolicy_2/CS/Default2.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ControlCachePolicy_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCachePolicy_2/VB/Default2.aspx#1)]  -->  
+  
+ The following code example demonstrates using the `SimpleControl` user control from a Web Forms page. To run this example successfully, make sure the user control file (.ascx), its code-behind file (.cs or .vb), and the Web Forms page that hosts the user control (.aspx) are in the same directory.  
+  
+ [!code-csharp[System.Web.UI.ControlCachePolicy_2#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCachePolicy_2/CS/SimpleControl.ascx.cs#2)]
+ [!code-vb[System.Web.UI.ControlCachePolicy_2#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCachePolicy_2/VB/SimpleControl.ascx.vb#2)]  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ControlCachePolicy_2#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCachePolicy_2/CS/SimpleControl.ascx#3)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ControlCachePolicy_2#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCachePolicy_2/VB/SimpleControl.ascx#3)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cached">
+      <MemberSignature Language="C#" Value="public bool Cached { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Cached" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCachePolicy.Cached" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether fragment caching is enabled for the user control.</summary>
+        <value>
+          <see langword="true" /> if the user control's output is cached; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Web.HttpException">The user control is not associated with a <see cref="T:System.Web.UI.BasePartialCachingControl" /> and is not cacheable.  
+  
+ \- or -  
+  
+ The <see cref="P:System.Web.UI.ControlCachePolicy.Cached" /> property is set outside of the initialization and rendering stages of the control.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dependency">
+      <MemberSignature Language="C#" Value="public System.Web.Caching.CacheDependency Dependency { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Caching.CacheDependency Dependency" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCachePolicy.Dependency" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Caching.CacheDependency</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an instance of the <see cref="T:System.Web.Caching.CacheDependency" /> class associated with the cached user control output.</summary>
+        <value>The <see cref="T:System.Web.Caching.CacheDependency" /> associated with the control. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ControlCachePolicy.Dependency%2A> property delegates to the <xref:System.Web.UI.BasePartialCachingControl.Dependency%2A> property of the <xref:System.Web.UI.BasePartialCachingControl> control that wraps the user control. When the <xref:System.Web.Caching.CacheDependency> instance is invalidated, the user control is removed from the cache.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The user control is not associated with a <see cref="T:System.Web.UI.BasePartialCachingControl" /> and is not cacheable.  
+  
+ \- or -  
+  
+ The <see cref="P:System.Web.UI.ControlCachePolicy.Dependency" /> property is set outside of the initialization and rendering stages of the control.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Duration">
+      <MemberSignature Language="C#" Value="public TimeSpan Duration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Duration" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCachePolicy.Duration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount of time that cached items are to remain in the output cache.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> that represents the amount of time a user control is to remain in the output cache. The default is <see cref="F:System.TimeSpan.Zero" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an absolute expiration policy is set using the <xref:System.Web.UI.ControlCachePolicy.SetSlidingExpiration%2A> method, the <xref:System.Web.UI.ControlCachePolicy.Duration%2A> property returns the amount of time remaining until cache entry expiration.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how a user control can be loaded dynamically and manipulated programmatically at run time. The <xref:System.Web.UI.PartialCachingAttribute> attribute is applied to a user control named `SimpleControl`, which means it is wrapped by a <xref:System.Web.UI.PartialCachingControl> control at run time. The `SimpleControl` object's caching settings can be programmatically manipulated through its associated <xref:System.Web.UI.ControlCachePolicy> object, which is available through a reference to the <xref:System.Web.UI.PartialCachingControl> control that wraps it. In this example, the <xref:System.Web.UI.ControlCachePolicy.Duration%2A> property is examined during page initialization and cache expiration is changed if some conditions are met. This example is part of a larger example provided for the <xref:System.Web.UI.ControlCachePolicy> class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ControlCachePolicy_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCachePolicy_2/CS/Default2.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ControlCachePolicy_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCachePolicy_2/VB/Default2.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The user control is not associated with a <see cref="T:System.Web.UI.BasePartialCachingControl" /> and is not cacheable.  
+  
+ \- or -  
+  
+ The <see cref="P:System.Web.UI.ControlCachePolicy.Duration" /> property is set outside of the initialization and rendering stages of the control.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderName">
+      <MemberSignature Language="C#" Value="public string ProviderName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProviderName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCachePolicy.ProviderName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the output-cache provider that is associated with a control instance.</summary>
+        <value>The name of the provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ControlCachePolicy.ProviderName%2A> property enables you to specify the current output-cache provider that is associated with a control, by using the <xref:System.Web.UI.ControlCachePolicy> instance. This property can be set only before the <xref:System.Web.UI.Control.PreRender> event occurs in the control life cycle.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.Provider.ProviderException">The provider name was not found.</exception>
+        <exception cref="T:System.Web.HttpException">An attempt was made to set the <see cref="P:System.Web.UI.ControlCachePolicy.ProviderName" /> property during or after the <see cref="E:System.Web.UI.Control.PreRender" /> event.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetExpires">
+      <MemberSignature Language="C#" Value="public void SetExpires (DateTime expirationTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetExpires(valuetype System.DateTime expirationTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCachePolicy.SetExpires(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expirationTime" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="expirationTime">A <see cref="T:System.DateTime" /> after which the cached entry expires.</param>
+        <summary>Instructs the <see cref="T:System.Web.UI.BasePartialCachingControl" /> control that wraps the user control to expire the cache entry at the specified date and time.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.ControlCachePolicy.SetExpires%2A> and <xref:System.Web.UI.ControlCachePolicy.SetSlidingExpiration%2A> methods (passing `true`) to instruct the <xref:System.Web.UI.BasePartialCachingControl> control that wraps the user control to use a sliding expiration caching policy instead of an absolute expiration policy. Use the <xref:System.Web.UI.ControlCachePolicy.SetExpires%2A> method and the <xref:System.Web.UI.ControlCachePolicy.SetSlidingExpiration%2A> method (passing `false`) to specify an absolute expiration policy.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how a user control can be loaded dynamically and manipulated programmatically at run time. The <xref:System.Web.UI.PartialCachingAttribute> attribute is applied to a user control named `SimpleControl`, which means the user control is wrapped by a <xref:System.Web.UI.PartialCachingControl> control at run time. The `SimpleControl` object's caching settings can be programmatically manipulated through its associated <xref:System.Web.UI.ControlCachePolicy> object, which is available through a reference to the <xref:System.Web.UI.PartialCachingControl> control that wraps it. In this example, the <xref:System.Web.UI.ControlCachePolicy.Duration%2A> property is examined during page initialization and changed using the <xref:System.Web.UI.ControlCachePolicy.SetSlidingExpiration%2A> and <xref:System.Web.UI.ControlCachePolicy.SetExpires%2A> methods if some conditions are met. This example is part of a larger example provided for the <xref:System.Web.UI.ControlCachePolicy> class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ControlCachePolicy_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCachePolicy_2/CS/Default2.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ControlCachePolicy_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCachePolicy_2/VB/Default2.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The user control is not associated with a <see cref="T:System.Web.UI.BasePartialCachingControl" /> and is not cacheable.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSlidingExpiration">
+      <MemberSignature Language="C#" Value="public void SetSlidingExpiration (bool useSlidingExpiration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSlidingExpiration(bool useSlidingExpiration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCachePolicy.SetSlidingExpiration(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="useSlidingExpiration" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="useSlidingExpiration">
+          <see langword="true" /> to use sliding cache expiration instead of absolute expiration; otherwise, <see langword="false" />.</param>
+        <summary>Instructs the <see cref="T:System.Web.UI.BasePartialCachingControl" /> control that wraps the user control to set the user control's cache entry to use sliding or absolute expiration.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.ControlCachePolicy.SetExpires%2A> and <xref:System.Web.UI.ControlCachePolicy.SetSlidingExpiration%2A> methods (passing `true`) to instruct the <xref:System.Web.UI.BasePartialCachingControl> control that wraps the user control to use a sliding expiration caching policy instead of an absolute expiration policy. Use the <xref:System.Web.UI.ControlCachePolicy.SetExpires%2A> method and the <xref:System.Web.UI.ControlCachePolicy.SetSlidingExpiration%2A> method (passing `false`) to specify an absolute expiration policy.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how a user control can be loaded dynamically and manipulated programmatically at run time. A user control named `SimpleControl` is decorated with a <xref:System.Web.UI.PartialCachingAttribute> attribute, which means it is wrapped by a <xref:System.Web.UI.PartialCachingControl> control at run time. The `SimpleControl` object's caching settings can be programmatically manipulated through its associated <xref:System.Web.UI.ControlCachePolicy> object, which is available through a reference to the <xref:System.Web.UI.PartialCachingControl> control that wraps it. In this example, caching settings are examined during page initialization and changed if some conditions are met. This example is part of a larger example provided for the <xref:System.Web.UI.ControlCachePolicy> class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.ControlCachePolicy_2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ControlCachePolicy_2/CS/Default2.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.ControlCachePolicy_2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ControlCachePolicy_2/VB/Default2.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The user control is not associated with a <see cref="T:System.Web.UI.BasePartialCachingControl" /> and is not cacheable.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetVaryByCustom">
+      <MemberSignature Language="C#" Value="public void SetVaryByCustom (string varyByCustom);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetVaryByCustom(string varyByCustom) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlCachePolicy.SetVaryByCustom(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="varyByCustom" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="varyByCustom">The list of custom strings.</param>
+        <summary>Sets a list of custom strings that the output cache will use to vary the user control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you pass "browser" as the `varyByCustom` parameter, the user control will be varied by browser type and major version number. If another custom string is entered, you must override the <xref:System.Web.HttpApplication.GetVaryByCustomString%2A> method in your application's Global.asax file.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The user control is not associated with a <see cref="T:System.Web.UI.BasePartialCachingControl" /> and is not cacheable.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsCaching">
+      <MemberSignature Language="C#" Value="public bool SupportsCaching { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsCaching" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCachePolicy.SupportsCaching" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the user control supports caching.</summary>
+        <value>
+          <see langword="true" /> if the user control supports caching; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A user control supports caching if it is associated with a <xref:System.Web.UI.BasePartialCachingControl> instance, which signals that either an  directive was parsed by the ASP.NET parser or the user control was decorated with a <xref:System.Web.UI.PartialCachingAttribute> attribute.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VaryByControl">
+      <MemberSignature Language="C#" Value="public string VaryByControl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string VaryByControl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCachePolicy.VaryByControl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a list of control identifiers to vary the cached output by.</summary>
+        <value>A semicolon-separated list of strings used to vary a user control's output cache. These strings represent the <see cref="P:System.Web.UI.Control.ID" /> property values of ASP.NET server controls declared in the user control.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Web.HttpException">The user control is not associated with a <see cref="T:System.Web.UI.BasePartialCachingControl" /> and is not cacheable.  
+  
+ \- or -  
+  
+ The <see cref="P:System.Web.UI.ControlCachePolicy.VaryByControl" /> property is set outside of the initialization and rendering stages of the control.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="VaryByParams">
+      <MemberSignature Language="C#" Value="public System.Web.HttpCacheVaryByParams VaryByParams { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpCacheVaryByParams VaryByParams" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlCachePolicy.VaryByParams" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpCacheVaryByParams</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a list of <see langword="GET" /> or <see langword="POST" /> parameter names to vary the cached output by.</summary>
+        <value>A semicolon-separated list of strings used to vary the output cache.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, these strings correspond to a query string value sent with the GET method or to a parameter sent using the POST method. When the <xref:System.Web.UI.ControlCachePolicy.VaryByParams%2A> property is set to multiple parameters, the output cache contains a different version of the requested document for each specified parameter. Possible values include "none", "*", and any valid query string or POST parameter name.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The user control is not associated with a <see cref="T:System.Web.UI.BasePartialCachingControl" /> and is not cacheable.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,168 @@
+<Type Name="GetInstalledSDKLocations" FullName="Microsoft.Build.Tasks.GetInstalledSDKLocations">
+  <TypeSignature Language="C#" Value="public class GetInstalledSDKLocations : Microsoft.Build.Tasks.TaskExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GetInstalledSDKLocations extends Microsoft.Build.Tasks.TaskExtension" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.GetInstalledSDKLocations" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Build.Tasks.TaskExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Gathers the list of installed SDKS in the registry and on disk and outputs them into the project so they can be used during SDK reference resolution and RAR for single files.  
+  
+ GetInstalledSDKLocations doesn't recognize a version folder if “v” appears in its name.  For example, an SDK that's located at C:\Windows\Program Files\Microsoft SDKs\Windows\8.0\SDKFolders\3rdPartySDK\2.5\will be located correctly. However, the same SDK located atC:\Windows\Program Files\Microsoft SDKs\Windows\8.0\SDKFolders\3rdPartySDK\v2.5\won't be located and will be ignored. If an SDK is ignored, the failure won't be recorded in the log, and no error will be thrown.  
+  
+ Version folder names need to be formed as major.minor[.build[.revision]]. For more information, see <see cref="M:System.Version.TryParse(System.String,System.Version@)" />.  
+  
+ To find an SDK with a particular version, the version sought must match the version requested. For example, if the SDK has a folder version name 8.0.0 and the customer requested the SDK with version 8.0, there is no match, and the SDK won't be found.  
+  
+ For more information on version matching, see <see cref="M:System.Version.CompareTo(System.Version)" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GetInstalledSDKLocations ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GetInstalledSDKLocations.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of GetInstalledSDKLocations.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public override bool Execute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GetInstalledSDKLocations.Execute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Get the SDKs.</summary>
+        <returns>Returns <see langword="true" /> if the method succeeds; otherwise, returns <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstalledSDKs">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] InstalledSDKs { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] InstalledSDKs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetInstalledSDKLocations.InstalledSDKs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the set of items that represent all of the installed SDKs found in the SDKDirectory and SDKRegistry roots.  
+  
+ The itemspec is the SDK install location. There is a piece of metadata called SDKName which contains the name of the SDK.</summary>
+        <value>Returns the set of all installed SDKs found.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SDKDirectoryRoots">
+      <MemberSignature Language="C#" Value="public string[] SDKDirectoryRoots { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] SDKDirectoryRoots" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetInstalledSDKLocations.SDKDirectoryRoots" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the root directory on disk in which to look for SDKs.</summary>
+        <value>Returns the root directory.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SDKRegistryRoot">
+      <MemberSignature Language="C#" Value="public string SDKRegistryRoot { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SDKRegistryRoot" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetInstalledSDKLocations.SDKRegistryRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the root registry root in which to look for SDKs.</summary>
+        <value>Returns the registry root.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetPlatformIdentifier">
+      <MemberSignature Language="C#" Value="public string TargetPlatformIdentifier { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetPlatformIdentifier" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetInstalledSDKLocations.TargetPlatformIdentifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Required</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the platform identifier we are targeting.</summary>
+        <value>Returns the target platform identifier.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetPlatformVersion">
+      <MemberSignature Language="C#" Value="public string TargetPlatformVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TargetPlatformVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetInstalledSDKLocations.TargetPlatformVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Required</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the platform version we are targeting.</summary>
+        <value>Returns the target platform version.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

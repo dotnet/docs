@@ -1,0 +1,196 @@
+<Type Name="ProfileInfo" FullName="System.Web.Profile.ProfileInfo">
+  <TypeSignature Language="C#" Value="public class ProfileInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ProfileInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides information about a user profile.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Profile.ProfileInfo> class is used to represent information about a user profile from the data store, including the last date and time when profile properties were retrieved or updated, the user name associated with the profile, and whether the profile is for an anonymous or authenticated user.  
+  
+ <xref:System.Web.Profile.ProfileInfo> objects are constructed and returned as part of a <xref:System.Web.Profile.ProfileInfoCollection> by the <xref:System.Web.Profile.ProfileProvider.GetAllProfiles%2A>, <xref:System.Web.Profile.ProfileProvider.GetAllInactiveProfiles%2A>, <xref:System.Web.Profile.ProfileProvider.FindProfilesByUserName%2A>, and <xref:System.Web.Profile.ProfileProvider.FindInactiveProfilesByUserName%2A> methods of a <xref:System.Web.Profile.ProfileProvider>.  
+  
+   
+  
+## Examples  
+ For an example of a <xref:System.Web.Profile.ProfileProvider> implementation that creates a <xref:System.Web.Profile.ProfileInfoCollection> of <xref:System.Web.Profile.ProfileInfo> objects for user profiles in a data store, see [Implementing a Profile Provider](http://msdn.microsoft.com/library/58de6e99-31a7-41b9-93ed-51b9b4a67e98).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ProfileInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileInfo.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates an instance of the <see cref="T:System.Web.Profile.ProfileInfo" /> object for a class that inherits the <see cref="T:System.Web.Profile.ProfileInfo" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.Web.Profile.ProfileInfo?displayProperty=fullName> constructor is not intended to be used from your code. Instead, use the <xref:System.Web.Profile.ProfileInfo.%23ctor%2A?displayProperty=fullName>.  
+  
+ <xref:System.Web.Profile.ProfileInfo> objects are constructed and returned as part of a <xref:System.Web.Profile.ProfileInfoCollection> by the <xref:System.Web.Profile.ProfileProvider.GetAllProfiles%2A>, <xref:System.Web.Profile.ProfileProvider.GetAllInactiveProfiles%2A>, <xref:System.Web.Profile.ProfileProvider.FindProfilesByUserName%2A>, and <xref:System.Web.Profile.ProfileProvider.FindInactiveProfilesByUserName%2A> methods of a <xref:System.Web.Profile.ProfileProvider>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProfileInfo (string username, bool isAnonymous, DateTime lastActivityDate, DateTime lastUpdatedDate, int size);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string username, bool isAnonymous, valuetype System.DateTime lastActivityDate, valuetype System.DateTime lastUpdatedDate, int32 size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileInfo.#ctor(System.String,System.Boolean,System.DateTime,System.DateTime,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="isAnonymous" Type="System.Boolean" />
+        <Parameter Name="lastActivityDate" Type="System.DateTime" />
+        <Parameter Name="lastUpdatedDate" Type="System.DateTime" />
+        <Parameter Name="size" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="username">The user name for the profile.</param>
+        <param name="isAnonymous">
+          <see langword="true" /> to indicate the profile is for an anonymous user; <see langword="false" /> to indicate the profile is for an authenticated user.</param>
+        <param name="lastActivityDate">The last date and time when the profile was read or updated.</param>
+        <param name="lastUpdatedDate">The last date and time when the profile was updated.</param>
+        <param name="size">The size of the profile information and values stored in the data source.</param>
+        <summary>Creates an instance of the <see cref="T:System.Web.Profile.ProfileInfo" /> class with the specified property values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Profile.ProfileInfo> object is used to represent information about a user profile from the data store, including the last date and time when profile properties were retrieved or updated, the user name associated with the profile, and whether the profile is for an anonymous or authenticated user.  
+  
+ <xref:System.Web.Profile.ProfileInfo> objects are constructed and returned as a <xref:System.Web.Profile.ProfileInfoCollection> by the <xref:System.Web.Profile.ProfileProvider.GetAllProfiles%2A>, <xref:System.Web.Profile.ProfileProvider.GetAllInactiveProfiles%2A>, <xref:System.Web.Profile.ProfileProvider.FindProfilesByUserName%2A>, and <xref:System.Web.Profile.ProfileProvider.FindInactiveProfilesByUserName%2A> methods of a <xref:System.Web.Profile.ProfileProvider>.  
+  
+   
+  
+## Examples  
+ For an example of a <xref:System.Web.Profile.ProfileProvider> implementation that creates a <xref:System.Web.Profile.ProfileInfoCollection> of <xref:System.Web.Profile.ProfileInfo> objects for user profiles in a data store, see [Implementing a Profile Provider](http://msdn.microsoft.com/library/58de6e99-31a7-41b9-93ed-51b9b4a67e98).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAnonymous">
+      <MemberSignature Language="C#" Value="public virtual bool IsAnonymous { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAnonymous" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileInfo.IsAnonymous" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets whether the user name for the profile is anonymous.</summary>
+        <value>
+          <see langword="true" /> if the user name for the profile is anonymous; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastActivityDate">
+      <MemberSignature Language="C#" Value="public virtual DateTime LastActivityDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastActivityDate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileInfo.LastActivityDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the last date and time when the profile was read or updated.</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the last date and time when the profile was read or updated.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastUpdatedDate">
+      <MemberSignature Language="C#" Value="public virtual DateTime LastUpdatedDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastUpdatedDate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileInfo.LastUpdatedDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the last date and time when the profile was updated.</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the last date and time when the profile was updated.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="public virtual int Size { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Size" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileInfo.Size" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the profile property names and values stored in the data source.</summary>
+        <value>The size of the profile property names and values stored in the data source.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Profile.SqlProfileProvider> calculates the size of the profile as the total size of the string and binary columns that store the profile property values and the column that stores the profile property names. The size of the columns is determined using the SQL Server DATALENGTH function.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserName">
+      <MemberSignature Language="C#" Value="public virtual string UserName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UserName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileInfo.UserName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the user name for the profile.</summary>
+        <value>The user name for the profile.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

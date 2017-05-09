@@ -1,0 +1,119 @@
+<Type Name="TextElementEditingBehaviorAttribute" FullName="System.Windows.Documents.TextElementEditingBehaviorAttribute">
+  <TypeSignature Language="C#" Value="public sealed class TextElementEditingBehaviorAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TextElementEditingBehaviorAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Documents.TextElementEditingBehaviorAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies how a <see cref="T:System.Windows.Controls.RichTextBox" /> should handle a custom text element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a custom text element, you can use the <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute> attribute to specify that the element should be treated as a single, unbreakable entity.  When the <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute.IsMergeable%2A> and <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute.IsTypographicOnly%2A> properties are set to `false`, a <xref:System.Windows.Controls.RichTextBox> preserves the boundaries and content of the element when the user edits the <xref:System.Windows.Controls.RichTextBox>.  In general, the custom element behaves similar to a <xref:System.Windows.Documents.Hyperlink>.  The following behavior occurs when you use this class and set both of its properties to `false`:  
+  
+-   When a user copies and pastes a part of the content in a custom element, the formatting of the copied text is not preserved.  
+  
+-   When a user types before or after the content of the custom element, the new content does not acquire the custom element's formatting information.  
+  
+-   The user cannot insert a line break in the custom element.  
+  
+ When you create a custom element, use the <xref:System.Windows.Documents.TextRange.Save%28System.IO.Stream%2CSystem.String%2CSystem.Boolean%29?displayProperty=fullName> method and set `preserveTextElements` to `true` to preserve the custom element and property values when you serialize it to the disk or clipboard.  
+  
+ <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TextElementEditingBehaviorAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextElementEditingBehaviorAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.TextElementEditingBehaviorAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMergeable">
+      <MemberSignature Language="C#" Value="public bool IsMergeable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsMergeable" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElementEditingBehaviorAttribute.IsMergeable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Controls.RichTextBox" /> can merge two adjacent text elements.</summary>
+        <value>
+          <see langword="true" /> if a <see cref="T:System.Windows.Controls.RichTextBox" /> is free to merge adjacent custom text elements that have identical property values; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute.IsMergeable%2A> is `true`, the decision to combine adjacent text elements that have identical property values is left up to the <xref:System.Windows.Controls.RichTextBox>.  When <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute.IsMergeable%2A> is `false`, a <xref:System.Windows.Controls.RichTextBox> does not combine two adjacent text elements.  
+  
+ <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTypographicOnly">
+      <MemberSignature Language="C#" Value="public bool IsTypographicOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTypographicOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextElementEditingBehaviorAttribute.IsTypographicOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the text element provides formatting on a character basis, or if the formatting applies to the entire element.</summary>
+        <value>
+          <see langword="true" /> if formatting should apply to the individual characters; <see langword="false" /> if the formatting should apply to the entire element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute.IsTypographicOnly%2A> is `true` and the user copies and pastes part of the content of a custom text element, the formatting is preserved.  When <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute.IsTypographicOnly%2A> is `false`, the formatting is preserved only if the user copies and pastes all of the content of the custom text element.  
+  
+ <xref:System.Windows.Documents.TextElementEditingBehaviorAttribute> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

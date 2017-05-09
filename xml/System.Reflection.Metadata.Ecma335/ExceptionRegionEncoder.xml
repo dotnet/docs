@@ -1,0 +1,251 @@
+<Type Name="ExceptionRegionEncoder" FullName="System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder">
+  <TypeSignature Language="C#" Value="public struct ExceptionRegionEncoder" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ExceptionRegionEncoder extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder Add (System.Reflection.Metadata.ExceptionRegionKind kind, int tryOffset, int tryLength, int handlerOffset, int handlerLength, System.Reflection.Metadata.EntityHandle catchType = null, int filterOffset = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder Add(valuetype System.Reflection.Metadata.ExceptionRegionKind kind, int32 tryOffset, int32 tryLength, int32 handlerOffset, int32 handlerLength, valuetype System.Reflection.Metadata.EntityHandle catchType, int32 filterOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder.Add(System.Reflection.Metadata.ExceptionRegionKind,System.Int32,System.Int32,System.Int32,System.Int32,System.Reflection.Metadata.EntityHandle,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="kind" Type="System.Reflection.Metadata.ExceptionRegionKind" />
+        <Parameter Name="tryOffset" Type="System.Int32" />
+        <Parameter Name="tryLength" Type="System.Int32" />
+        <Parameter Name="handlerOffset" Type="System.Int32" />
+        <Parameter Name="handlerLength" Type="System.Int32" />
+        <Parameter Name="catchType" Type="System.Reflection.Metadata.EntityHandle" />
+        <Parameter Name="filterOffset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="kind">To be added.</param>
+        <param name="tryOffset">To be added.</param>
+        <param name="tryLength">To be added.</param>
+        <param name="handlerOffset">To be added.</param>
+        <param name="handlerLength">To be added.</param>
+        <param name="catchType">To be added.</param>
+        <param name="filterOffset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCatch">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder AddCatch (int tryOffset, int tryLength, int handlerOffset, int handlerLength, System.Reflection.Metadata.EntityHandle catchType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder AddCatch(int32 tryOffset, int32 tryLength, int32 handlerOffset, int32 handlerLength, valuetype System.Reflection.Metadata.EntityHandle catchType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder.AddCatch(System.Int32,System.Int32,System.Int32,System.Int32,System.Reflection.Metadata.EntityHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tryOffset" Type="System.Int32" />
+        <Parameter Name="tryLength" Type="System.Int32" />
+        <Parameter Name="handlerOffset" Type="System.Int32" />
+        <Parameter Name="handlerLength" Type="System.Int32" />
+        <Parameter Name="catchType" Type="System.Reflection.Metadata.EntityHandle" />
+      </Parameters>
+      <Docs>
+        <param name="tryOffset">To be added.</param>
+        <param name="tryLength">To be added.</param>
+        <param name="handlerOffset">To be added.</param>
+        <param name="handlerLength">To be added.</param>
+        <param name="catchType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddFault">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder AddFault (int tryOffset, int tryLength, int handlerOffset, int handlerLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder AddFault(int32 tryOffset, int32 tryLength, int32 handlerOffset, int32 handlerLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder.AddFault(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tryOffset" Type="System.Int32" />
+        <Parameter Name="tryLength" Type="System.Int32" />
+        <Parameter Name="handlerOffset" Type="System.Int32" />
+        <Parameter Name="handlerLength" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="tryOffset">To be added.</param>
+        <param name="tryLength">To be added.</param>
+        <param name="handlerOffset">To be added.</param>
+        <param name="handlerLength">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddFilter">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder AddFilter (int tryOffset, int tryLength, int handlerOffset, int handlerLength, int filterOffset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder AddFilter(int32 tryOffset, int32 tryLength, int32 handlerOffset, int32 handlerLength, int32 filterOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder.AddFilter(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tryOffset" Type="System.Int32" />
+        <Parameter Name="tryLength" Type="System.Int32" />
+        <Parameter Name="handlerOffset" Type="System.Int32" />
+        <Parameter Name="handlerLength" Type="System.Int32" />
+        <Parameter Name="filterOffset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="tryOffset">To be added.</param>
+        <param name="tryLength">To be added.</param>
+        <param name="handlerOffset">To be added.</param>
+        <param name="handlerLength">To be added.</param>
+        <param name="filterOffset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddFinally">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder AddFinally (int tryOffset, int tryLength, int handlerOffset, int handlerLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder AddFinally(int32 tryOffset, int32 tryLength, int32 handlerOffset, int32 handlerLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder.AddFinally(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tryOffset" Type="System.Int32" />
+        <Parameter Name="tryLength" Type="System.Int32" />
+        <Parameter Name="handlerOffset" Type="System.Int32" />
+        <Parameter Name="handlerLength" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="tryOffset">To be added.</param>
+        <param name="tryLength">To be added.</param>
+        <param name="handlerOffset">To be added.</param>
+        <param name="handlerLength">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Builder">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobBuilder Builder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Metadata.BlobBuilder Builder" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder.Builder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.BlobBuilder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasSmallFormat">
+      <MemberSignature Language="C#" Value="public bool HasSmallFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasSmallFormat" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder.HasSmallFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSmallExceptionRegion">
+      <MemberSignature Language="C#" Value="public static bool IsSmallExceptionRegion (int startOffset, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSmallExceptionRegion(int32 startOffset, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder.IsSmallExceptionRegion(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startOffset" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="startOffset">To be added.</param>
+        <param name="length">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSmallRegionCount">
+      <MemberSignature Language="C#" Value="public static bool IsSmallRegionCount (int exceptionRegionCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSmallRegionCount(int32 exceptionRegionCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ExceptionRegionEncoder.IsSmallRegionCount(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exceptionRegionCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="exceptionRegionCount">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

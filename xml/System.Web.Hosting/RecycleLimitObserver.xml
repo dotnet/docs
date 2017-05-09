@@ -1,0 +1,98 @@
+<Type Name="RecycleLimitObserver" FullName="System.Web.Hosting.RecycleLimitObserver">
+  <TypeSignature Language="C#" Value="public class RecycleLimitObserver : IObserver&lt;System.Web.Hosting.RecycleLimitInfo&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RecycleLimitObserver extends System.Object implements class System.IObserver`1&lt;class System.Web.Hosting.RecycleLimitInfo&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Hosting.RecycleLimitObserver" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IObserver&lt;System.Web.Hosting.RecycleLimitInfo&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>An observer that implements ASP.NET's default reaction to <see cref="T:System.Web.Hosting.RecycleLimitInfo" /> events raised by the application's recycle limit monitor.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RecycleLimitObserver ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitObserver.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Hosting.RecycleLimitObserver" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCompleted">
+      <MemberSignature Language="C#" Value="public void OnCompleted ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnCompleted() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitObserver.OnCompleted" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Has no effect in the <see cref="T:System.Web.Hosting.RecycleLimitObserver" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnError">
+      <MemberSignature Language="C#" Value="public void OnError (Exception error);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnError(class System.Exception error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitObserver.OnError(System.Exception)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="error" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="error">To be added.</param>
+        <summary>Has no effect in the <see cref="T:System.Web.Hosting.RecycleLimitObserver" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnNext">
+      <MemberSignature Language="C#" Value="public void OnNext (System.Web.Hosting.RecycleLimitInfo recycleLimitInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnNext(class System.Web.Hosting.RecycleLimitInfo recycleLimitInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.RecycleLimitObserver.OnNext(System.Web.Hosting.RecycleLimitInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recycleLimitInfo" Type="System.Web.Hosting.RecycleLimitInfo" />
+      </Parameters>
+      <Docs>
+        <param name="recycleLimitInfo">The recycle limit information.</param>
+        <summary>Provides the observer with new data.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

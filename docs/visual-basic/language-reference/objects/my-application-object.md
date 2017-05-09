@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "My.Application object"
 ms.assetid: a0ecfccf-acf7-49ec-a08b-72e6458c5c8d
 caps.latest.revision: 26
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

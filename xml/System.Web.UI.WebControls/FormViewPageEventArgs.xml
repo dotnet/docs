@@ -1,0 +1,123 @@
+<Type Name="FormViewPageEventArgs" FullName="System.Web.UI.WebControls.FormViewPageEventArgs">
+  <TypeSignature Language="C#" Value="public class FormViewPageEventArgs : System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormViewPageEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewPageEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.CancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.FormView.PageIndexChanging" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.FormView> control raises the <xref:System.Web.UI.WebControls.FormView.PageIndexChanging> event when a pager button (a button with its `CommandName` property set to "Page") within the control is clicked, but before the <xref:System.Web.UI.WebControls.FormView> control handles the paging operation. You can also set the `CommandArgument` property of a pager button to specify the type of paging operation to perform. The following table lists the supported operations.  
+  
+|CommandArgument value|Description|  
+|---------------------------|-----------------|  
+|"Next"|Navigates to the next page.|  
+|"Prev"|Navigates to the previous page.|  
+|"First"|Navigates to the first page.|  
+|"Last"|Navigates to the last page.|  
+|An integer value|Navigates to the specified page.|  
+  
+ This allows you to provide an event-handling method that performs a custom routine, such as canceling the paging operation, whenever this event occurs.  
+  
+> [!NOTE]
+>  Pager buttons are usually located in the pager row of a <xref:System.Web.UI.WebControls.FormView> control.  
+  
+ A <xref:System.Web.UI.WebControls.FormViewPageEventArgs> object is passed to the event-handling method, which allows you to determine the index of the page selected by the user and to indicate whether the paging operation should be canceled. To determine the index of the page selected by the user, use the <xref:System.Web.UI.WebControls.FormViewPageEventArgs.NewPageIndex%2A> property. To cancel the paging operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A?displayProperty=fullName> property of the <xref:System.Web.UI.WebControls.FormViewPageEventArgs> object to `true`.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.FormViewPageEventArgs> class, see the <xref:System.Web.UI.WebControls.FormViewPageEventArgs.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewPageEventArgs> object passed to the event-handling method for the <xref:System.Web.UI.WebControls.FormView.PageIndexChanging> event to cancel a paging operation when the user attempts to navigate to another page while the <xref:System.Web.UI.WebControls.FormView> control is in edit mode.  
+  
+> [!IMPORTANT]
+>  The control in this example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[FormViewPageEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPageEventArgs/CS/formviewmodeeventargscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[FormViewPageEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPageEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FormViewPageEventArgs (int newPageIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 newPageIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormViewPageEventArgs.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="newPageIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="newPageIndex">The index of the new page to display.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.FormViewPageEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.FormViewPageEventArgs> class.  
+  
+ The following table shows the initial property value for an instance of <xref:System.Web.UI.WebControls.FormViewPageEventArgs>.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.FormViewPageEventArgs.NewPageIndex%2A>|The value of the `newPageIndex` parameter.|  
+  
+> [!NOTE]
+>  This constructor is used primarily by control developers when raising events.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewPageIndex">
+      <MemberSignature Language="C#" Value="public int NewPageIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NewPageIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewPageEventArgs.NewPageIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the index of the new page to display in the <see cref="T:System.Web.UI.WebControls.FormView" /> control.</summary>
+        <value>The index of the new page to display in the <see cref="T:System.Web.UI.WebControls.FormView" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the <xref:System.Web.UI.WebControls.FormView.PageIndexChanging> event occurs before the <xref:System.Web.UI.WebControls.FormView> control performs the paging operation, the <xref:System.Web.UI.WebControls.FormView.PageIndex%2A> property of the control contains the index of the previously displayed page and cannot be used to determine the index of the page selected by the user. Use the <xref:System.Web.UI.WebControls.FormViewPageEventArgs.NewPageIndex%2A> property to determine the page index. You can also use this property to programmatically override the page index selected by the user by setting it to another value.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewPageEventArgs.NewPageIndex%2A> property to determine the index of the page selected by the user.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[FormViewPageEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewPageEventArgs/CS/formviewmodeeventargscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[FormViewPageEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewPageEventArgs/VB/formviewmodeeventargsvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

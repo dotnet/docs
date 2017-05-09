@@ -1,0 +1,59 @@
+<Type Name="ITransactionPromoter" FullName="System.Transactions.ITransactionPromoter">
+  <TypeSignature Language="C#" Value="public interface ITransactionPromoter" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITransactionPromoter" />
+  <TypeSignature Language="DocId" Value="T:System.Transactions.ITransactionPromoter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Transactions</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Describes a delegated transaction for an existing transaction that can be escalated to be managed by the MSDTC when needed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you want to implement a resource manager, you should not implement the <xref:System.Transactions.ITransactionPromoter> interface directly. Instead, you should implement <xref:System.Transactions.ISinglePhaseNotification> inteface which inherits the single <xref:System.Transactions.ITransactionPromoter.Promote%2A> method of this interface. For more information on implementing a resource manager, see [Implementing A Resource Manager](http://msdn.microsoft.com/en-us/81509719-d579-4530-831e-42e1acdef63e).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Promote">
+      <MemberSignature Language="C#" Value="public byte[] Promote ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] Promote() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.ITransactionPromoter.Promote" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Notifies an enlisted object that an escalation of the delegated transaction has been requested.</summary>
+        <returns>A transmitter/receiver propagation token that marshals a distributed transaction. For more information, see <see cref="M:System.Transactions.TransactionInterop.GetTransactionFromTransmitterPropagationToken(System.Byte[])" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Transactions.TransactionPromotionException> should be thrown by an implementation of <xref:System.Transactions.IPromotableSinglePhaseNotification> interface to indicate that a call to <xref:System.Transactions.ITransactionPromoter.Promote%2A> has failed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

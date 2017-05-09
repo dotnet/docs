@@ -1,0 +1,929 @@
+<Type Name="Installer" FullName="System.Configuration.Install.Installer">
+  <TypeSignature Language="C#" Value="public class Installer : System.ComponentModel.Component" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Installer extends System.ComponentModel.Component" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.Install.Installer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration.Install</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.Component</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("AfterInstall")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides the foundation for custom installations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the base class for all custom installers in the .NET Framework. Installers are components that help install applications on a computer.  
+  
+ There are several steps you must follow to use an <xref:System.Configuration.Install.Installer>:  
+  
+-   Inherit the <xref:System.Configuration.Install.Installer> class.  
+  
+-   Override the <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, and <xref:System.Configuration.Install.Installer.Uninstall%2A> methods.  
+  
+-   Add the <xref:System.ComponentModel.RunInstallerAttribute> to your derived class and set it to `true`.  
+  
+-   Put your derived class in the assembly with your application to install.  
+  
+-   Invoke the installers. For example, use the InstallUtil.exe to invoke the installers.  
+  
+ The <xref:System.Configuration.Install.Installer.Installers%2A> property contains a collection of installers. If this instance of <xref:System.Configuration.Install.Installer> is part of an installer collection, the <xref:System.Configuration.Install.Installer.Parent%2A> property is set to the <xref:System.Configuration.Install.Installer> instance that contains the collection. For an example of the use of the <xref:System.Configuration.Install.Installer.Installers%2A> collection, see the <xref:System.Configuration.Install.AssemblyInstaller> class.  
+  
+ The <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, and <xref:System.Configuration.Install.Installer.Uninstall%2A> methods of the <xref:System.Configuration.Install.Installer> class go through the collection of installers stored in the <xref:System.Configuration.Install.Installer.Installers%2A> property, and invokes the corresponding method of each installer.  
+  
+ The <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, and <xref:System.Configuration.Install.Installer.Uninstall%2A> methods are not always called on the same <xref:System.Configuration.Install.Installer> instance. For example, one <xref:System.Configuration.Install.Installer> instance might be used while installing and committing an application, and then the reference to that instance is released. Later, uninstalling the application creates a reference to a new <xref:System.Configuration.Install.Installer> instance, meaning that the <xref:System.Configuration.Install.Installer.Uninstall%2A> method is called by a different instance of <xref:System.Configuration.Install.Installer>. For this reason, in your derived class, do not save the state of a computer in an installer. Instead, use an <xref:System.Collections.IDictionary> that is preserved across calls and passed into your <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, and <xref:System.Configuration.Install.Installer.Uninstall%2A> methods.  
+  
+ Two situations illustrate the need to save information in the state-saver <xref:System.Collections.IDictionary>. First, suppose that your installer sets a registry key. It should save the key's original value in the <xref:System.Collections.IDictionary>. If the installation is rolled back, the original value can be restored. Second, suppose the installer replaces an existing file. Save the existing file in a temporary directory and the location of the new location of the file in the <xref:System.Collections.IDictionary>. If the installation is rolled back, the newer file is deleted and replaced by the original from the temporary location.  
+  
+ The <xref:System.Configuration.Install.Installer.Context%2A?displayProperty=fullName> property contains information about the installation. For example, information about the location of the log file for the installation, the location of the file to save information required by the <xref:System.Configuration.Install.Installer.Uninstall%2A> method, and the command line that was entered when the installation executable was run.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the <xref:System.Configuration.Install.Installer> class. It creates a class which inherits from <xref:System.Configuration.Install.Installer>. When <xref:System.Configuration.Install.Installer.Commit%2A> is about to complete, <xref:System.Configuration.Install.Installer.Committing> event occurs and a message is displayed. To use the <xref:System.Configuration.Install.Installer> class, you must reference the **System.Configuration.Install** assembly in your project.  
+  
+ [!code-cpp[Installer#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer/CPP/installer.cpp#1)]
+ [!code-csharp[Installer#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer/CS/installer.cs#1)]
+ [!code-vb[Installer#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer/VB/installer.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Installer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Install.Installer" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AfterInstall">
+      <MemberSignature Language="C#" Value="public event System.Configuration.Install.InstallEventHandler AfterInstall;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Configuration.Install.InstallEventHandler AfterInstall" />
+      <MemberSignature Language="DocId" Value="E:System.Configuration.Install.Installer.AfterInstall" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Install.InstallEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs after the <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> methods of all the installers in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property have run.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.Installer.AfterInstall> event. It is raised by the <xref:System.Configuration.Install.Installer.OnAfterInstall%2A> method.  
+  
+ [!code-cpp[Installer_AfterInstall#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_AfterInstall/CPP/installer_afterinstall.cpp#1)]
+ [!code-csharp[Installer_AfterInstall#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_AfterInstall/CS/installer_afterinstall.cs#1)]
+ [!code-vb[Installer_AfterInstall#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_AfterInstall/VB/installer_afterinstall.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AfterRollback">
+      <MemberSignature Language="C#" Value="public event System.Configuration.Install.InstallEventHandler AfterRollback;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Configuration.Install.InstallEventHandler AfterRollback" />
+      <MemberSignature Language="DocId" Value="E:System.Configuration.Install.Installer.AfterRollback" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Install.InstallEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs after the installations of all the installers in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property are rolled back.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.Installer.AfterRollback> event. It overrides the <xref:System.Configuration.Install.Installer.Install%2A> method and explicitly throws an <xref:System.ArgumentException> so that the <xref:System.Configuration.Install.Installer.Rollback%2A> method is called. When the <xref:System.Configuration.Install.Installer.Rollback%2A> is completed, the <xref:System.Configuration.Install.Installer.AfterRollback> event occurs and a message is displayed.  
+  
+ [!code-cpp[Installer_AfterRollback#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_AfterRollback/CPP/installer_afterrollback.cpp#1)]
+ [!code-csharp[Installer_AfterRollback#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_AfterRollback/CS/installer_afterrollback.cs#1)]
+ [!code-vb[Installer_AfterRollback#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_AfterRollback/VB/installer_afterrollback.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AfterUninstall">
+      <MemberSignature Language="C#" Value="public event System.Configuration.Install.InstallEventHandler AfterUninstall;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Configuration.Install.InstallEventHandler AfterUninstall" />
+      <MemberSignature Language="DocId" Value="E:System.Configuration.Install.Installer.AfterUninstall" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Install.InstallEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs after all the installers in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property perform their uninstallation operations.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.Installer.AfterUninstall> event. It is raised by the <xref:System.Configuration.Install.Installer.OnAfterUninstall%2A> method.  
+  
+ [!code-cpp[Installer_AfterUninstall#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_AfterUninstall/CPP/installer_afteruninstall.cpp#1)]
+ [!code-csharp[Installer_AfterUninstall#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_AfterUninstall/CS/installer_afteruninstall.cs#1)]
+ [!code-vb[Installer_AfterUninstall#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_AfterUninstall/VB/installer_afteruninstall.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforeInstall">
+      <MemberSignature Language="C#" Value="public event System.Configuration.Install.InstallEventHandler BeforeInstall;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Configuration.Install.InstallEventHandler BeforeInstall" />
+      <MemberSignature Language="DocId" Value="E:System.Configuration.Install.Installer.BeforeInstall" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Install.InstallEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs before the <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> method of each installer in the installer collection has run.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.Installer.BeforeInstall> event. It is raised by the <xref:System.Configuration.Install.Installer.OnBeforeInstall%2A> method.  
+  
+ [!code-cpp[Installer_BeforeInstall#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_BeforeInstall/CPP/installer_beforeinstall.cpp#1)]
+ [!code-csharp[Installer_BeforeInstall#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_BeforeInstall/CS/installer_beforeinstall.cs#1)]
+ [!code-vb[Installer_BeforeInstall#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_BeforeInstall/VB/installer_beforeinstall.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforeRollback">
+      <MemberSignature Language="C#" Value="public event System.Configuration.Install.InstallEventHandler BeforeRollback;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Configuration.Install.InstallEventHandler BeforeRollback" />
+      <MemberSignature Language="DocId" Value="E:System.Configuration.Install.Installer.BeforeRollback" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Install.InstallEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs before the installers in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property are rolled back.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.Installer.BeforeRollback> event. It overrides the <xref:System.Configuration.Install.Installer.Install%2A> method and explicitly throws an <xref:System.ArgumentException> so that the <xref:System.Configuration.Install.Installer.Rollback%2A> method is called. When the <xref:System.Configuration.Install.Installer.Rollback%2A> is complete, the <xref:System.Configuration.Install.Installer.BeforeRollback> event occurs and a message is displayed.  
+  
+ [!code-cpp[Installer_BeforeRollback#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_BeforeRollback/CPP/installer_beforerollback.cpp#1)]
+ [!code-csharp[Installer_BeforeRollback#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_BeforeRollback/CS/installer_beforerollback.cs#1)]
+ [!code-vb[Installer_BeforeRollback#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_BeforeRollback/VB/installer_beforerollback.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforeUninstall">
+      <MemberSignature Language="C#" Value="public event System.Configuration.Install.InstallEventHandler BeforeUninstall;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Configuration.Install.InstallEventHandler BeforeUninstall" />
+      <MemberSignature Language="DocId" Value="E:System.Configuration.Install.Installer.BeforeUninstall" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Install.InstallEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs before the installers in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property perform their uninstall operations.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.Installer.BeforeUninstall> event. It is raised by the <xref:System.Configuration.Install.Installer.OnBeforeUninstall%2A> method.  
+  
+ [!code-cpp[Installer_BeforeUninstall#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_BeforeUninstall/CPP/installer_beforeuninstall.cpp#1)]
+ [!code-csharp[Installer_BeforeUninstall#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_BeforeUninstall/CS/installer_beforeuninstall.cs#1)]
+ [!code-vb[Installer_BeforeUninstall#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_BeforeUninstall/VB/installer_beforeuninstall.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Commit">
+      <MemberSignature Language="C#" Value="public virtual void Commit (System.Collections.IDictionary savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Commit(class System.Collections.IDictionary savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An <see cref="T:System.Collections.IDictionary" /> that contains the state of the computer after all the installers in the collection have run.</param>
+        <summary>When overridden in a derived class, completes the install transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.Installer.Commit%2A> method of the <xref:System.Configuration.Install.Installer> class. A class is derived from the <xref:System.Configuration.Install.Installer> base class and the <xref:System.Configuration.Install.Installer.Commit%2A> method are overridden.  
+  
+ [!code-cpp[Installer_Install#2](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Install/CPP/installer_install.cpp#2)]
+ [!code-csharp[Installer_Install#2](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Install/CS/installer_install.cs#2)]
+ [!code-vb[Installer_Install#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Install/VB/installer_install.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="savedState" /> parameter is <see langword="null" />.  
+  
+ -or-  
+  
+ The saved-state <see cref="T:System.Collections.IDictionary" /> might have been corrupted.</exception>
+        <exception cref="T:System.Configuration.Install.InstallException">An exception occurred during the <see cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" /> phase of the installation. This exception is ignored and the installation continues. However, the application might not function correctly after the installation is complete.</exception>
+        <block subset="none" type="overrides">
+          <para>If you override the <see cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" /> method first in your derived method. The <see cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" /> method is called only if the <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> method of each installer in this instance's <see cref="T:System.Configuration.Install.InstallerCollection" /> succeeds. The <see cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" /> method stores information needed to do a correct uninstallation, and calls the <see cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" /> method of each installer in the collection.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Committed">
+      <MemberSignature Language="C#" Value="public event System.Configuration.Install.InstallEventHandler Committed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Configuration.Install.InstallEventHandler Committed" />
+      <MemberSignature Language="DocId" Value="E:System.Configuration.Install.Installer.Committed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Install.InstallEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs after all the installers in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property have committed their installations.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.Installer.Committed> event. It is raised by the <xref:System.Configuration.Install.Installer.OnCommitted%2A> method.  
+  
+ [!code-cpp[Installer_Committed1#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Committed1/CPP/installer_committed.cpp#1)]
+ [!code-csharp[Installer_Committed1#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Committed1/CS/installer_committed.cs#1)]
+ [!code-vb[Installer_Committed1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Committed1/VB/installer_committed.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Committing">
+      <MemberSignature Language="C#" Value="public event System.Configuration.Install.InstallEventHandler Committing;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Configuration.Install.InstallEventHandler Committing" />
+      <MemberSignature Language="DocId" Value="E:System.Configuration.Install.Installer.Committing" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Install.InstallEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs before the installers in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property committ their installations.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.Installer.Committing> event. It is raised by the <xref:System.Configuration.Install.Installer.OnCommitting%2A> method.  
+  
+ [!code-cpp[Installer_Committing#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Committing/CPP/installer_committing.cpp#1)]
+ [!code-csharp[Installer_Committing#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Committing/CS/installer_committing.cs#1)]
+ [!code-vb[Installer_Committing#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Committing/VB/installer_committing.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public System.Configuration.Install.InstallContext Context { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.Install.InstallContext Context" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Install.Installer.Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Install.InstallContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets information about the current installation.</summary>
+        <value>An <see cref="T:System.Configuration.Install.InstallContext" /> that contains information about the current installation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.Install.Installer.Context%2A> property contains installation information. For example, information about the location of the log file for the installation, the location of the file to save information required by the <xref:System.Configuration.Install.Installer.Uninstall%2A> method, and the command line that was entered when the installation executable was run.  
+  
+ The program that calls the <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, or <xref:System.Configuration.Install.Installer.Uninstall%2A> methods sets the <xref:System.Configuration.Install.Installer.Context%2A> property with information that the methods need.  
+  
+ If an installer belongs to an installer collection, the parent installer sets the <xref:System.Configuration.Install.Installer.Context%2A> property before calling any of these methods. The parent installer can be accessed through the <xref:System.Configuration.Install.Installer.Parent%2A> property.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.Installer.Context%2A> property of the <xref:System.Configuration.Install.Installer> class. The contents of the <xref:System.Configuration.Install.Installer.Context%2A> property contain information about the location of the log file for the installation, the location of the file to save information required by the <xref:System.Configuration.Install.Installer.Uninstall%2A> method, and the command line that was entered when the installation executable was run. These contents are then displayed on the console.  
+  
+ [!code-cpp[Installer_Context#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Context/CPP/installer_context.cpp#1)]
+ [!code-csharp[Installer_Context#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Context/CS/installer_context.cs#1)]
+ [!code-vb[Installer_Context#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Context/VB/installer_context.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpText">
+      <MemberSignature Language="C#" Value="public virtual string HelpText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HelpText" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Install.Installer.HelpText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the help text for all the installers in the installer collection.</summary>
+        <value>The help text for all the installers in the installer collection, including the description of what the installer does and the command line options for the installation executable, such as the InstallUtil.exe utility, that can be passed to and understood by this installer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.Installer.HelpText%2A> property. This property is defined in the <xref:System.Configuration.Install.Installer> class, which, when called, returns the description of the <xref:System.Configuration.Install.Installer> and the command line options for the installation executable, such as the Installutil.exe utility, that can be passed to and understood by the <xref:System.Configuration.Install.Installer>.  
+  
+ [!code-cpp[Installer_HelpText#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_HelpText/CPP/installer_helptext.cpp#1)]
+ [!code-csharp[Installer_HelpText#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_HelpText/CS/installer_helptext.cs#1)]
+ [!code-vb[Installer_HelpText#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_HelpText/VB/installer_helptext.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NullReferenceException">One of the installers in the installer collection specifies a null reference instead of help text. A likely cause for this exception is that a field to contain the help text is defined but not initialized.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Install">
+      <MemberSignature Language="C#" Value="public virtual void Install (System.Collections.IDictionary stateSaver);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Install(class System.Collections.IDictionary stateSaver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stateSaver" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="stateSaver">An <see cref="T:System.Collections.IDictionary" /> used to save information needed to perform a commit, rollback, or uninstall operation.</param>
+        <summary>When overridden in a derived class, performs the installation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.Installer.Install%2A> method of the <xref:System.Configuration.Install.Installer> class. A class is derived from the <xref:System.Configuration.Install.Installer> base class and the <xref:System.Configuration.Install.Installer.Install%2A> method is overridden.  
+  
+ [!code-cpp[Installer_Install#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Install/CPP/installer_install.cpp#1)]
+ [!code-csharp[Installer_Install#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Install/CS/installer_install.cs#1)]
+ [!code-vb[Installer_Install#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Install/VB/installer_install.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="stateSaver" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Exception">An exception occurred in the <see cref="E:System.Configuration.Install.Installer.BeforeInstall" /> event handler of one of the installers in the collection.  
+  
+ -or-  
+  
+ An exception occurred in the <see cref="E:System.Configuration.Install.Installer.AfterInstall" /> event handler of one of the installers in the collection.</exception>
+        <block subset="none" type="overrides">
+          <para>-   If you override the <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> method first in your derived method. The <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> method calls the <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> method of each installer contained in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property of this instance. After the contained installers run, this method updates the <see cref="T:System.Collections.IDictionary" /> object (specified through the <paramref name="stateSaver" /> parameter) to reflect the status of the installation. The <see cref="T:System.Collections.IDictionary" /> should be empty when passed to the <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> method. If all the <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> methods succeed, the <see cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" /> method is called. Otherwise, the <see cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" /> method is called.  
+  
+-   If you need to add installer instances to the <see cref="P:System.Configuration.Install.Installer.Installers" /> collection in the <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> method, be sure to perform the same additions to the collection in the <see cref="M:System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)" /> method. However, you can avoid maintaining the collection in both methods if you add installer instances to the <see cref="P:System.Configuration.Install.Installer.Installers" /> collection in the class constructor for your custom installer.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Installers">
+      <MemberSignature Language="C#" Value="public System.Configuration.Install.InstallerCollection Installers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.Install.InstallerCollection Installers" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Install.Installer.Installers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Install.InstallerCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of installers that this installer contains.</summary>
+        <value>An <see cref="T:System.Configuration.Install.InstallerCollection" /> containing the collection of installers associated with this installer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.Install.Installer.Installers%2A> property contains a collection of installers that install objects needed by this <xref:System.Configuration.Install.Installer> instance to correctly install the component. The <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, and <xref:System.Configuration.Install.Installer.Uninstall%2A> methods of the <xref:System.Configuration.Install.Installer> class go through the collection of installers and invokes the corresponding method of each installer.  
+  
+ If this instance of <xref:System.Configuration.Install.Installer> is contained in an installer collection, the <xref:System.Configuration.Install.Installer.Parent%2A> property is the <xref:System.Configuration.Install.Installer> instance that contains the collection. For an example of the use of the <xref:System.Configuration.Install.Installer.Installers%2A> collection, see the <xref:System.Configuration.Install.AssemblyInstaller> class.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.Installer.Installers%2A> and <xref:System.Configuration.Install.Installer.Parent%2A> properties. The <xref:System.Configuration.Install.Installer.Installers%2A> property shows the <xref:System.Configuration.Install.InstallerCollection> associated with an <xref:System.Configuration.Install.Installer>.  
+  
+ [!code-cpp[Installer_Installers#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Installers/CPP/installer_installers.cpp#1)]
+ [!code-csharp[Installer_Installers#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Installers/CS/installer_installers.cs#1)]
+ [!code-vb[Installer_Installers#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Installers/VB/installer_installers.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAfterInstall">
+      <MemberSignature Language="C#" Value="protected virtual void OnAfterInstall (System.Collections.IDictionary savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAfterInstall(class System.Collections.IDictionary savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.OnAfterInstall(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An <see cref="T:System.Collections.IDictionary" /> that contains the state of the computer after all the installers contained in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property have completed their installations.</param>
+        <summary>Raises the <see cref="E:System.Configuration.Install.Installer.AfterInstall" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called after the <xref:System.Configuration.Install.Installer.Install%2A> methods of all the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> run.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Configuration.Install.Installer.OnAfterInstall%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.Installer.OnAfterInstall%2A> method. This method is overridden in the derived class. Space is provided to add steps to be done after the installation in the <xref:System.Configuration.Install.Installer.OnAfterInstall%2A> method.  
+  
+ [!code-cpp[Installer_OnInstall#2](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_OnInstall/CPP/installer_oninstall.cpp#2)]
+ [!code-csharp[Installer_OnInstall#2](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_OnInstall/CS/installer_oninstall.cs#2)]
+ [!code-vb[Installer_OnInstall#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_OnInstall/VB/installer_oninstall.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Configuration.Install.Installer.OnAfterInstall(System.Collections.IDictionary)" /> in a derived class, be sure to call the base class's <see cref="M:System.Configuration.Install.Installer.OnAfterInstall(System.Collections.IDictionary)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAfterRollback">
+      <MemberSignature Language="C#" Value="protected virtual void OnAfterRollback (System.Collections.IDictionary savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAfterRollback(class System.Collections.IDictionary savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.OnAfterRollback(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An <see cref="T:System.Collections.IDictionary" /> that contains the state of the computer after the installers contained in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property are rolled back.</param>
+        <summary>Raises the <see cref="E:System.Configuration.Install.Installer.AfterRollback" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called after the <xref:System.Configuration.Install.Installer.Rollback%2A> methods of all the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> have run.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Configuration.Install.Installer.OnAfterRollback%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Configuration.Install.Installer.OnAfterRollback(System.Collections.IDictionary)" /> in a derived class, be sure to call the base class's <see cref="M:System.Configuration.Install.Installer.OnAfterRollback(System.Collections.IDictionary)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAfterUninstall">
+      <MemberSignature Language="C#" Value="protected virtual void OnAfterUninstall (System.Collections.IDictionary savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAfterUninstall(class System.Collections.IDictionary savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.OnAfterUninstall(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An <see cref="T:System.Collections.IDictionary" /> that contains the state of the computer after all the installers contained in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property are uninstalled.</param>
+        <summary>Raises the <see cref="E:System.Configuration.Install.Installer.AfterUninstall" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called after the <xref:System.Configuration.Install.Installer.Uninstall%2A> methods of all the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> have run.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Configuration.Install.Installer.OnAfterUninstall%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Configuration.Install.Installer.OnAfterUninstall(System.Collections.IDictionary)" /> in a derived class, be sure to call the base class's <see cref="M:System.Configuration.Install.Installer.OnAfterUninstall(System.Collections.IDictionary)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBeforeInstall">
+      <MemberSignature Language="C#" Value="protected virtual void OnBeforeInstall (System.Collections.IDictionary savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBeforeInstall(class System.Collections.IDictionary savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.OnBeforeInstall(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An <see cref="T:System.Collections.IDictionary" /> that contains the state of the computer before the installers in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property are installed. This <see cref="T:System.Collections.IDictionary" /> object should be empty at this point.</param>
+        <summary>Raises the <see cref="E:System.Configuration.Install.Installer.BeforeInstall" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called before the <xref:System.Configuration.Install.Installer.Install%2A> methods of the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> are called.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Configuration.Install.Installer.OnBeforeInstall%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.Installer.OnBeforeInstall%2A> method. This method is overridden in the derived class. Space is provided to add steps to be done before the installation in the <xref:System.Configuration.Install.Installer.OnBeforeInstall%2A> method.  
+  
+ [!code-cpp[Installer_OnInstall#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_OnInstall/CPP/installer_oninstall.cpp#1)]
+ [!code-csharp[Installer_OnInstall#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_OnInstall/CS/installer_oninstall.cs#1)]
+ [!code-vb[Installer_OnInstall#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_OnInstall/VB/installer_oninstall.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Configuration.Install.Installer.OnBeforeInstall(System.Collections.IDictionary)" /> in a derived class, be sure to call the base class's <see cref="M:System.Configuration.Install.Installer.OnBeforeInstall(System.Collections.IDictionary)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBeforeRollback">
+      <MemberSignature Language="C#" Value="protected virtual void OnBeforeRollback (System.Collections.IDictionary savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBeforeRollback(class System.Collections.IDictionary savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.OnBeforeRollback(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An <see cref="T:System.Collections.IDictionary" /> that contains the state of the computer before the installers in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property are rolled back.</param>
+        <summary>Raises the <see cref="E:System.Configuration.Install.Installer.BeforeRollback" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called before the <xref:System.Configuration.Install.Installer.Rollback%2A> methods of the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> are called.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Configuration.Install.Installer.OnBeforeRollback%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Configuration.Install.Installer.OnBeforeRollback(System.Collections.IDictionary)" /> in a derived class, be sure to call the base class's <see cref="M:System.Configuration.Install.Installer.OnBeforeRollback(System.Collections.IDictionary)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBeforeUninstall">
+      <MemberSignature Language="C#" Value="protected virtual void OnBeforeUninstall (System.Collections.IDictionary savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBeforeUninstall(class System.Collections.IDictionary savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.OnBeforeUninstall(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An <see cref="T:System.Collections.IDictionary" /> that contains the state of the computer before the installers in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property uninstall their installations.</param>
+        <summary>Raises the <see cref="E:System.Configuration.Install.Installer.BeforeUninstall" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called before the <xref:System.Configuration.Install.Installer.Uninstall%2A> methods of the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> are uninstalled.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Configuration.Install.Installer.OnBeforeUninstall%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Configuration.Install.Installer.OnBeforeUninstall(System.Collections.IDictionary)" /> in a derived class, be sure to call the base class's <see cref="M:System.Configuration.Install.Installer.OnBeforeUninstall(System.Collections.IDictionary)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCommitted">
+      <MemberSignature Language="C#" Value="protected virtual void OnCommitted (System.Collections.IDictionary savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCommitted(class System.Collections.IDictionary savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.OnCommitted(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An <see cref="T:System.Collections.IDictionary" /> that contains the state of the computer after all the installers in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property run.</param>
+        <summary>Raises the <see cref="E:System.Configuration.Install.Installer.Committed" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called after the <xref:System.Configuration.Install.Installer.Commit%2A> methods of all the installers contained in this instance's installer collection run.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Configuration.Install.Installer.OnCommitted%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.Installer.OnCommitted%2A> method of the <xref:System.Configuration.Install.Installer> class. The <xref:System.Configuration.Install.Installer.OnCommitted%2A> method is overridden in the derived class. Space is provided for the user to add the steps to be performed before committing and after committing.  
+  
+ [!code-cpp[Installer_Committed#2](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Committed/CPP/installer_committed.cpp#2)]
+ [!code-csharp[Installer_Committed#2](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Committed/CS/installer_committed.cs#2)]
+ [!code-vb[Installer_Committed#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Committed/VB/installer_committed.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Configuration.Install.Installer.OnCommitted(System.Collections.IDictionary)" /> in a derived class, be sure to call the base class's <see cref="M:System.Configuration.Install.Installer.OnCommitted(System.Collections.IDictionary)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCommitting">
+      <MemberSignature Language="C#" Value="protected virtual void OnCommitting (System.Collections.IDictionary savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCommitting(class System.Collections.IDictionary savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.OnCommitting(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An <see cref="T:System.Collections.IDictionary" /> that contains the state of the computer before the installers in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property are committed.</param>
+        <summary>Raises the <see cref="E:System.Configuration.Install.Installer.Committing" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called before the <xref:System.Configuration.Install.Installer.Commit%2A> methods of the installers in this instance's <xref:System.Configuration.Install.InstallerCollection> run.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Configuration.Install.Installer.OnCommitting%2A> method allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.Installer.OnCommitting%2A> method of the <xref:System.Configuration.Install.Installer> class. The <xref:System.Configuration.Install.Installer.OnCommitting%2A> method is overridden in the derived class. Space is provided for the user to add the steps to be performed before committing and after committing.  
+  
+ [!code-cpp[Installer_Committed#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Committed/CPP/installer_committed.cpp#1)]
+ [!code-csharp[Installer_Committed#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Committed/CS/installer_committed.cs#1)]
+ [!code-vb[Installer_Committed#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Committed/VB/installer_committed.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Configuration.Install.Installer.OnCommitting(System.Collections.IDictionary)" /> in a derived class, be sure to call the base class's <see cref="M:System.Configuration.Install.Installer.OnCommitting(System.Collections.IDictionary)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public System.Configuration.Install.Installer Parent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.Install.Installer Parent" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Install.Installer.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Install.Installer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the installer containing the collection that this installer belongs to.</summary>
+        <value>An <see cref="T:System.Configuration.Install.Installer" /> containing the collection that this instance belongs to, or <see langword="null" /> if this instance does not belong to a collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this instance of <xref:System.Configuration.Install.Installer> is part of an installer collection, the <xref:System.Configuration.Install.Installer.Parent%2A> property is set to the <xref:System.Configuration.Install.Installer> instance that contains the collection. For an example of the use of the <xref:System.Configuration.Install.Installer.Installers%2A> collection, see the <xref:System.Configuration.Install.AssemblyInstaller> class.  
+  
+ The <xref:System.Configuration.Install.Installer.Installers%2A> property contains a collection of installers. The <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, and <xref:System.Configuration.Install.Installer.Uninstall%2A> methods of the <xref:System.Configuration.Install.Installer> class go through the collection of installers and invokes the corresponding method of each installer.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.Installer.Parent%2A> property. The <xref:System.Configuration.Install.Installer.Parent%2A> property gets the <xref:System.Configuration.Install.Installer> containing the collection that this <xref:System.Configuration.Install.Installer> belongs to.  
+  
+ [!code-cpp[Installer_Installers#2](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Installers/CPP/installer_installers.cpp#2)]
+ [!code-csharp[Installer_Installers#2](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Installers/CS/installer_installers.cs#2)]
+ [!code-vb[Installer_Installers#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Installers/VB/installer_installers.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rollback">
+      <MemberSignature Language="C#" Value="public virtual void Rollback (System.Collections.IDictionary savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Rollback(class System.Collections.IDictionary savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An <see cref="T:System.Collections.IDictionary" /> that contains the pre-installation state of the computer.</param>
+        <summary>When overridden in a derived class, restores the pre-installation state of the computer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.Installer.Rollback%2A> method of <xref:System.Configuration.Install.Installer>. The <xref:System.Configuration.Install.Installer.Rollback%2A> method is overridden in the derived class of <xref:System.Configuration.Install.Installer>. An exception is generated to force an installation rollback.  
+  
+ [!code-cpp[Installer_Rollback#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Rollback/CPP/installer_rollback.cpp#1)]
+ [!code-csharp[Installer_Rollback#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Rollback/CS/installer_rollback.cs#1)]
+ [!code-vb[Installer_Rollback#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Rollback/VB/installer_rollback.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="savedState" /> parameter is <see langword="null" />.  
+  
+ -or-  
+  
+ The saved-state <see cref="T:System.Collections.IDictionary" /> might have been corrupted.</exception>
+        <exception cref="T:System.Configuration.Install.InstallException">An exception occurred during the <see cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" /> phase of the installation. This exception is ignored and the rollback continues. However, the computer might not be fully reverted to its initial state after the rollback completes.</exception>
+        <block subset="none" type="overrides">
+          <para>When you override the <see cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" /> method first in your derived method. A rollback operation restores the computer to the state it was in before the installations occurred. The <see cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" /> method is called if the <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> method of this instance of <see cref="T:System.Configuration.Install.Installer" />, or any installer in the installer collection, fail to run correctly. Any exceptions generated by calling the <see cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" /> methods of the installers in the installer collection are ignored and the rollback of the other installers continues.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Uninstall">
+      <MemberSignature Language="C#" Value="public virtual void Uninstall (System.Collections.IDictionary savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Uninstall(class System.Collections.IDictionary savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An <see cref="T:System.Collections.IDictionary" /> that contains the state of the computer after the installation was complete.</param>
+        <summary>When overridden in a derived class, removes an installation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.Installer.Uninstall%2A> method of <xref:System.Configuration.Install.Installer>. The <xref:System.Configuration.Install.Installer.Uninstall%2A> method is overridden in the derived class of <xref:System.Configuration.Install.Installer>.  
+  
+ [!code-cpp[Installer_Uninstall#1](~/samples/snippets/cpp/VS_Snippets_CLR/Installer_Uninstall/CPP/installer_uninstall.cpp#1)]
+ [!code-csharp[Installer_Uninstall#1](~/samples/snippets/csharp/VS_Snippets_CLR/Installer_Uninstall/CS/installer_uninstall.cs#1)]
+ [!code-vb[Installer_Uninstall#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Installer_Uninstall/VB/installer_uninstall.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The saved-state <see cref="T:System.Collections.IDictionary" /> might have been corrupted.</exception>
+        <exception cref="T:System.Configuration.Install.InstallException">An exception occurred while uninstalling. This exception is ignored and the uninstall continues. However, the application might not be fully uninstalled after the uninstallation completes.</exception>
+        <block subset="none" type="overrides">
+          <para>-   If you override the <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> method first in your derived method. The <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> method calls the <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> method of each installer contained in the <see cref="P:System.Configuration.Install.Installer.Installers" /> property of this instance. After the contained installers run, this method updates the <see cref="T:System.Collections.IDictionary" /> object (specified through the <paramref name="stateSaver" /> parameter) to reflect the status of the installation. The <see cref="T:System.Collections.IDictionary" /> should be empty when passed to the <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> method. If all the <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> methods succeed, the <see cref="M:System.Configuration.Install.Installer.Commit(System.Collections.IDictionary)" /> method is called. Otherwise, the <see cref="M:System.Configuration.Install.Installer.Rollback(System.Collections.IDictionary)" /> method is called.  
+  
+-   If you need to add installer instances to the <see cref="P:System.Configuration.Install.Installer.Installers" /> collection in the <see cref="M:System.Configuration.Install.Installer.Install(System.Collections.IDictionary)" /> method, be sure to perform the same additions to the collection in the <see cref="M:System.Configuration.Install.Installer.Uninstall(System.Collections.IDictionary)" /> method. However, you can avoid maintaining the collection in both methods if you add installer instances to the <see cref="P:System.Configuration.Install.Installer.Installers" /> collection in the class constructor for your custom installer.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,83 @@
+<Type Name="EnlistmentOptions" FullName="System.Transactions.EnlistmentOptions">
+  <TypeSignature Language="C#" Value="public enum EnlistmentOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EnlistmentOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Transactions.EnlistmentOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Transactions</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Determines whether the object should be enlisted during the prepare phase.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is passed into the <xref:System.Transactions.Transaction.EnlistVolatile%2A> and <xref:System.Transactions.Transaction.EnlistDurable%2A> and methods to notify the transaction manager whether the resource manager needs to create another enlistment during the Prepare phase. For more information on enlistment, see [Enlisting Resources as Participants in a Transaction](http://msdn.microsoft.com/en-us/7bf66ce7-4190-4910-89d7-df4ad43e9f31).  
+  
+ If EnlistDuringPrepareRequired is specified during enlistment, the resource manager indicates that it wants to receive a Prepare notification while new enlistments are still allowed for the transaction. A resource manager who acts as a cache for another durable resource, such as a backend database, would probably use this option during enlistment. When the caching resource gets its Prepare notification, it transfers its content to the durable resource. By doing so, the durable resource enlists on the transaction to become a participant of the 2 Phase Commit (2PC) protocol. Before this happens, only the caching resource (not the durable resource) was enlisted.  
+  
+ If None is specified, the enlistment indicates that it will not receive a Prepare notification until it is too late to create new enlistments in 2PC. In our preceding scenario, if a caching resource specifies this option during enlistment, and attempts to flush its cache during the Prepare notification, the durable resource gets an exception when it attempts on enlisting since it is too late.  
+  
+ None should be used as a default.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EnlistDuringPrepareRequired">
+      <MemberSignature Language="C#" Value="EnlistDuringPrepareRequired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Transactions.EnlistmentOptions EnlistDuringPrepareRequired = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Transactions.EnlistmentOptions.EnlistDuringPrepareRequired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Transactions.EnlistmentOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The object must enlist during the initial phase of the commitment process.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Transactions.EnlistmentOptions None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Transactions.EnlistmentOptions.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Transactions.EnlistmentOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The object does not require enlistment during the initial phase of the commitment process.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

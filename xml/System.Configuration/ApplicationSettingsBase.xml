@@ -1,0 +1,856 @@
+<Type Name="ApplicationSettingsBase" FullName="System.Configuration.ApplicationSettingsBase">
+  <TypeSignature Language="C#" Value="public abstract class ApplicationSettingsBase : System.Configuration.SettingsBase, System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ApplicationSettingsBase extends System.Configuration.SettingsBase implements class System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.ApplicationSettingsBase" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.SettingsBase</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.INotifyPropertyChanged</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Acts as a base class for deriving concrete wrapper classes to implement the application settings feature in Window Forms applications.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Configuration.ApplicationSettingsBase> adds the following functionality to the <xref:System.Configuration.SettingsBase> class, which is used by Web-based applications:  
+  
+-   The ability to detect attributes on a derived, settings wrapper class. <xref:System.Configuration.ApplicationSettingsBase> supports the declarative model used for wrapper class properties, as described later.  
+  
+-   Higher-level <xref:System.Configuration.ApplicationSettingsBase.Save%2A> and <xref:System.Configuration.ApplicationSettingsBase.Reload%2A> methods.  
+  
+-   Additional validation events that you can handle to ensure the correctness of individual settings.  
+  
+ In the application settings architecture, to access a group of settings properties you need to derive a concrete wrapper class from <xref:System.Configuration.ApplicationSettingsBase>. The wrapper class customizes <xref:System.Configuration.ApplicationSettingsBase> in the following ways:  
+  
+-   For every settings property to be accessed, a corresponding strongly typed public property is added to the wrapper class. This property has `get` and `set` accessors for read/write application settings, but only a `get` accessor for read-only settings.  
+  
+-   Appropriated attributes must be applied to the wrapper class's public properties to indicate characteristics of the settings property, such as the setting's scope (application or user), whether the setting should support roaming, the default value for the setting, the settings provider to be used, and so on. Each property is required to specify its scope, using either <xref:System.Configuration.ApplicationScopedSettingAttribute> or <xref:System.Configuration.UserScopedSettingAttribute>. Application-scoped settings are read-only if the default <xref:System.Configuration.LocalFileSettingsProvider> is used.  
+  
+ The <xref:System.Configuration.ApplicationSettingsBase> class uses reflection to detect these attributes at run time. Most of this information gets passed to the settings provider layer, which is responsible for storage, persistence format, and so on.  
+  
+ When an application has multiple settings wrapper classes, each class defines a *settings group*. Each group has the following characteristics:  
+  
+-   A group can contain any number or type of property settings.  
+  
+-   If the group name is not explicitly set by the decorating the wrapper class with a <xref:System.Configuration.SettingsGroupNameAttribute>, then a name is automatically generated.  
+  
+ By default, all client-based applications use the <xref:System.Configuration.LocalFileSettingsProvider> to provide storage. If an alternate settings provider is desired, then the wrapper class or property must be decorated with a corresponding <xref:System.Configuration.SettingsProviderAttribute>.  
+  
+ For more information about using application settings, see [Application Settings for Windows Forms](~/docs/framework/winforms/advanced/application-settings-for-windows-forms.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of application settings to persist the following attributes of the main form: location, size, background color, and title bar text. All of these attributes are persisted as single application settings properties in the `FormSettings` class, named `FormLocation`, `FormSize`, `FormBackColor` and `FormText`, respectively. All except for `FormText` and `Size` are data bound to their associated form properties and have a default setting value applied using <xref:System.Configuration.DefaultSettingValueAttribute>.  
+  
+ The form contains four child controls that have the following names and functions:  
+  
+-   A button named `btnBackColor` used to display the **Color** common dialog box.  
+  
+-   A button named `btnReload` used to <xref:System.Configuration.ApplicationSettingsBase.Reload%2A> the application settings.  
+  
+-   A button named `btnReset` used to <xref:System.Configuration.ApplicationSettingsBase.Reset%2A> the application settings.  
+  
+-   A textbox named `tbStatus` used to display status information about the program.  
+  
+ Notice that after every execution of the application, an additional period character is appended to the title text of the form.  
+  
+ This code example requires a Form with a <xref:System.Windows.Forms.ColorDialog> class named `colorDialog1`, and a <xref:System.Windows.Forms.StatusStrip> control with a <xref:System.Windows.Forms.ToolStripStatusLabel> named `tbStatus`. Additionally, it requires three <xref:System.Windows.Forms.Button> objects named `btnReload`, `btnReset`, and `btnBackColor`.  
+  
+ [!code-cpp[AppSettingsSample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/AppSettingsSample/cpp/AppSettingsSample.cpp#1)]
+ [!code-csharp[AppSettingsSample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/AppSettingsSample/CS/AppSettingsSample.cs#1)]
+ [!code-vb[AppSettingsSample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/AppSettingsSample/VB/Form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ApplicationSettingsBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.Configuration.ApplicationSettingsBase" /> class to its default state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default constructor was designed to work under the assumption that there is no component associated with the current settings wrapper class, which derives from <xref:System.Configuration.ApplicationSettingsBase>.  
+  
+ When an instance of a wrapper class is created, inherited code will automatically perform the following actions:  
+  
+1.  Reflect over the class.  
+  
+2.  For each property on the wrapper marked with either `[UserScopedSettingAttribute]` or `[ApplicationScopedSettingAttribute]`, a corresponding <xref:System.Configuration.SettingsProperty> is created.  
+  
+3.  Each <xref:System.Configuration.SettingsProperty> has some of its properties set based on other attributes that are optionally present on the wrapper's properties, such as the default value or the settings provider.  
+  
+4.  All other attributes are simply put into an attribute bag, the <xref:System.Configuration.SettingsProperty.Attributes%2A> property of the <xref:System.Configuration.SettingsProperty> class.  
+  
+5.  All <xref:System.Configuration.SettingsProperty> objects are added to a <xref:System.Configuration.SettingsPropertyCollection> represented by the <xref:System.Configuration.ApplicationSettingsBase.Properties%2A> property of the <xref:System.Configuration.ApplicationSettingsBase> class. This collection is then passed to the <xref:System.Configuration.SettingsBase.Initialize%2A> method.  
+  
+ As implied by step 3 mentioned previously, <xref:System.Configuration.ApplicationSettingsBase> natively works with several property attributes, specifically the following: <xref:System.Configuration.SettingsProviderAttribute>, <xref:System.Configuration.DefaultSettingValueAttribute>, and <xref:System.Configuration.SettingsSerializeAsAttribute>. All other settings attributes are simply passed through to the appropriate underlying provider.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ApplicationSettingsBase (System.ComponentModel.IComponent owner);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.IComponent owner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.#ctor(System.ComponentModel.IComponent)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.ComponentModel.IComponent" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The component that will act as the owner of the application settings object.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Configuration.ApplicationSettingsBase" /> class using the supplied owner component.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is exactly equivalent to the <xref:System.Configuration.ApplicationSettingsBase.%23ctor%28System.ComponentModel.IComponent%2CSystem.String%29> constructor using the invocation:  
+  
+ `ApplicationSettingsBase(owner, String.Empty)`  
+  
+ For information about how reflection is used during the instantiation of a wrapper class, see the default <xref:System.Configuration.ApplicationSettingsBase.%23ctor> constructor.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="owner" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ApplicationSettingsBase (string settingsKey);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string settingsKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="settingsKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="settingsKey">A <see cref="T:System.String" /> that uniquely identifies separate instances of the wrapper class.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Configuration.ApplicationSettingsBase" /> class using the supplied settings key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Configuration.ApplicationSettingsBase.SettingsKey%2A> property to the value of the `settingsKey` parameter. This property is useful in disambiguating different instances of the settings wrapper class in the same application domain.  
+  
+ For information about how reflection is used during the instantiation of a wrapper class, see the default <xref:System.Configuration.ApplicationSettingsBase.%23ctor> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ApplicationSettingsBase (System.ComponentModel.IComponent owner, string settingsKey);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.IComponent owner, string settingsKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.#ctor(System.ComponentModel.IComponent,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="settingsKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The component that will act as the owner of the application settings object.</param>
+        <param name="settingsKey">A <see cref="T:System.String" /> that uniquely identifies separate instances of the wrapper class.</param>
+        <summary>Initializes an instance of the <see cref="T:System.Configuration.ApplicationSettingsBase" /> class using the supplied owner component and settings key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.IComponent> object specified by the `owner` parameter acts as the owner of the current instance of this applications settings class. During the initialization of the settings wrapper class derived from <xref:System.Configuration.ApplicationSettingsBase>, the owner's site is queried for a <xref:System.Configuration.ISettingsProviderService>. If one exists, it is used in preference to native settings provider for all the properties of the wrapper class, as specified by the <xref:System.Configuration.SettingsProviderAttribute>.  
+  
+ This constructor initializes the <xref:System.Configuration.ApplicationSettingsBase.SettingsKey%2A> property to the value of the `settingsKey` parameter. This property is useful in disambiguating different instances of the wrapper class in the same application domain.  
+  
+ For information about how reflection is used during the instantiation of a wrapper class, see the default <xref:System.Configuration.ApplicationSettingsBase.%23ctor> constructor.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="owner" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public override System.Configuration.SettingsContext Context { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.SettingsContext Context" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ApplicationSettingsBase.Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Configuration.SettingsContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the application settings context associated with the settings group.</summary>
+        <value>A <see cref="T:System.Configuration.SettingsContext" /> associated with the settings group.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each settings wrapper class derived from <xref:System.Configuration.ApplicationSettingsBase> has a context associated with it. The context is passed to the settings provider for each property to identify how the property is used. Context therefore acts as a hint to help the settings provider determine how best to persist the associated application settings values.  
+  
+ In contrast, the <xref:System.Configuration.ApplicationSettingsBase.SettingsKey%2A> property enables the settings provider to disambiguate multiple instances of the same wrapper class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPreviousVersion">
+      <MemberSignature Language="C#" Value="public object GetPreviousVersion (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetPreviousVersion(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.GetPreviousVersion(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">A <see cref="T:System.String" /> containing the name of the settings property whose value is to be returned.</param>
+        <summary>Returns the value of the named settings property for the previous version of the same application.</summary>
+        <returns>An <see cref="T:System.Object" /> containing the value of the specified <see cref="T:System.Configuration.SettingsProperty" /> if found; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ApplicationSettingsBase.GetPreviousVersion%2A> method is often used in conjunction with the <xref:System.Configuration.ApplicationSettingsBase.Upgrade%2A> method when migrating application settings during the installation of a new version of an application.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.SettingsPropertyNotFoundException">The property does not exist. The property count is zero or the property cannot be found in the data store.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public override object this[string propertyName] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ApplicationSettingsBase.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.MonoTODO</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">A <see cref="T:System.String" /> containing the name of the property to access.</param>
+        <summary>Gets or sets the value of the specified application settings property.</summary>
+        <value>If found, the value of the named settings property; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ApplicationSettingsBase.Item%2A> property, also known as the indexer, is routinely used in the settings wrapper class derived from <xref:System.Configuration.ApplicationSettingsBase>. <xref:System.Configuration.ApplicationSettingsBase.Item%2A> binds the public property of the wrapper class to the corresponding settings property.  
+  
+ <xref:System.Configuration.ApplicationSettingsBase.Item%2A> raises several events depending on the operation being performed:  
+  
+-   The first time a property is retrieved, the <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded> event is raised.  
+  
+-   When a property is set, the <xref:System.Configuration.ApplicationSettingsBase.OnSettingChanging%2A> event is raised. If the handler does not cancel the event, then the property value is set and the <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged> event is raised.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.SettingsPropertyNotFoundException">There are no properties associated with the current wrapper or the specified property could not be found.</exception>
+        <exception cref="T:System.Configuration.SettingsPropertyIsReadOnlyException">An attempt was made to set a read-only property.</exception>
+        <exception cref="T:System.Configuration.SettingsPropertyWrongTypeException">The value supplied is of a type incompatible with the settings property, during a set operation.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The configuration file could not be parsed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanged (object sender, System.ComponentModel.PropertyChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyChanged(object sender, class System.ComponentModel.PropertyChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.OnPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="System.ComponentModel.PropertyChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The source of the event.</param>
+        <param name="e">A <see cref="T:System.ComponentModel.PropertyChangedEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Configuration.ApplicationSettingsBase.PropertyChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Configuration.ApplicationSettingsBase.OnPropertyChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Configuration.ApplicationSettingsBase.OnPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Configuration.ApplicationSettingsBase.OnPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSettingChanging">
+      <MemberSignature Language="C#" Value="protected virtual void OnSettingChanging (object sender, System.Configuration.SettingChangingEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSettingChanging(object sender, class System.Configuration.SettingChangingEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.OnSettingChanging(System.Object,System.Configuration.SettingChangingEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="System.Configuration.SettingChangingEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The source of the event.</param>
+        <param name="e">A <see cref="T:System.Configuration.SettingChangingEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Configuration.ApplicationSettingsBase.SettingChanging" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Configuration.ApplicationSettingsBase.OnSettingChanging%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Configuration.ApplicationSettingsBase.OnSettingChanging(System.Object,System.Configuration.SettingChangingEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Configuration.ApplicationSettingsBase.OnSettingChanging(System.Object,System.Configuration.SettingChangingEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSettingsLoaded">
+      <MemberSignature Language="C#" Value="protected virtual void OnSettingsLoaded (object sender, System.Configuration.SettingsLoadedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSettingsLoaded(object sender, class System.Configuration.SettingsLoadedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.OnSettingsLoaded(System.Object,System.Configuration.SettingsLoadedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="System.Configuration.SettingsLoadedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The source of the event.</param>
+        <param name="e">A <see cref="T:System.Configuration.SettingsLoadedEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Configuration.ApplicationSettingsBase.SettingsLoaded" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Configuration.ApplicationSettingsBase.OnSettingsLoaded%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Configuration.ApplicationSettingsBase.OnSettingsLoaded(System.Object,System.Configuration.SettingsLoadedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Configuration.ApplicationSettingsBase.OnSettingsLoaded(System.Object,System.Configuration.SettingsLoadedEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSettingsSaving">
+      <MemberSignature Language="C#" Value="protected virtual void OnSettingsSaving (object sender, System.ComponentModel.CancelEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSettingsSaving(object sender, class System.ComponentModel.CancelEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.OnSettingsSaving(System.Object,System.ComponentModel.CancelEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="System.ComponentModel.CancelEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The source of the event.</param>
+        <param name="e">A <see cref="T:System.ComponentModel.CancelEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Configuration.ApplicationSettingsBase.SettingsSaving" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Configuration.ApplicationSettingsBase.OnSettingsSaving%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Configuration.ApplicationSettingsBase.OnSettingsSaving(System.Object,System.ComponentModel.CancelEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Configuration.ApplicationSettingsBase.OnSettingsSaving(System.Object,System.ComponentModel.CancelEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public override System.Configuration.SettingsPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.SettingsPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ApplicationSettingsBase.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Configuration.SettingsPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of settings properties in the wrapper.</summary>
+        <value>A <see cref="T:System.Configuration.SettingsPropertyCollection" /> containing all the <see cref="T:System.Configuration.SettingsProperty" /> objects used in the current wrapper.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `get` accessor of the <xref:System.Configuration.ApplicationSettingsBase.Properties%2A> property reflects over the metadata of the settings wrapper class, which is derived from <xref:System.Configuration.ApplicationSettingsBase>, to dynamically determine the set of available application settings properties.  
+  
+ The <xref:System.Configuration.ApplicationSettingsBase> class natively recognizes certain characteristics of an application setting, such as its name, property type, settings provider, default value, read only status, and a serialization preference. These characteristics are mirrored as properties in the <xref:System.Configuration.SettingsProperty> class. All other attributes of the settings property are just passed through to its associated settings provider.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The associated settings provider could not be found or its instantiation failed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyChanged">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Configuration.ApplicationSettingsBase.PropertyChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs after the value of an application settings property is changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged> event is raised when a settings property is changed through the `set` accessor of the <xref:System.Configuration.ApplicationSettingsBase.Item%2A> method, or for every property that is restored when a call is made to the <xref:System.Configuration.ApplicationSettingsBase.Reload%2A> or <xref:System.Configuration.ApplicationSettingsBase.Reset%2A> methods.  
+  
+ There is no corresponding `PropertyChanging` event for this class; instead, see the <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyValues">
+      <MemberSignature Language="C#" Value="public override System.Configuration.SettingsPropertyValueCollection PropertyValues { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.SettingsPropertyValueCollection PropertyValues" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ApplicationSettingsBase.PropertyValues" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Configuration.SettingsPropertyValueCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of property values.</summary>
+        <value>A <see cref="T:System.Configuration.SettingsPropertyValueCollection" /> of property values.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Providers">
+      <MemberSignature Language="C#" Value="public override System.Configuration.SettingsProviderCollection Providers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.SettingsProviderCollection Providers" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ApplicationSettingsBase.Providers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Configuration.SettingsProviderCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of application settings providers used by the wrapper.</summary>
+        <value>A <see cref="T:System.Configuration.SettingsProviderCollection" /> containing all the <see cref="T:System.Configuration.SettingsProvider" /> objects used by the settings properties of the current settings wrapper.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SettingsProviderAttribute> determines what setting provider is used by a settings wrapper class or an individual setting property. If this attribute is not specified, a client application will use the <xref:System.Configuration.LocalFileSettingsProvider>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reload">
+      <MemberSignature Language="C#" Value="public void Reload ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reload() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.Reload" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Refreshes the application settings property values from persistent storage.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ApplicationSettingsBase.Reload%2A> method clears the currently cached property values, causing a reload of these values from persistent storage when they are subsequently accessed. This method performs the following actions:  
+  
+-   It clears the currently cached properties by clearing the collection represented by the <xref:System.Configuration.SettingsBase.PropertyValues%2A> property.  
+  
+-   It raises the <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged> event for every member of the <xref:System.Configuration.ApplicationSettingsBase.Properties%2A> collection.  
+  
+ <xref:System.Configuration.ApplicationSettingsBase.Reload%2A> contrasts with <xref:System.Configuration.ApplicationSettingsBase.Reset%2A> in that the former will load the last set of saved application settings values, whereas the latter will load the saved default values.  
+  
+   
+  
+## Examples  
+ The following code example shows the <xref:System.Configuration.ApplicationSettingsBase.Reload%2A> method being invoked in the body of the <xref:System.Windows.Forms.Control.Click> event handler for a button named `btnReload`. As a result of this call, the currently stored values for the application settings are reloaded into their corresponding properties. The full code example is listed in the <xref:System.Configuration.ApplicationSettingsBase> class overview.  
+  
+ [!code-cpp[AppSettingsSample#6](~/samples/snippets/cpp/VS_Snippets_Winforms/AppSettingsSample/cpp/AppSettingsSample.cpp#6)]
+ [!code-csharp[AppSettingsSample#6](~/samples/snippets/csharp/VS_Snippets_Winforms/AppSettingsSample/CS/AppSettingsSample.cs#6)]
+ [!code-vb[AppSettingsSample#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/AppSettingsSample/VB/Form1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.Reset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Restores the persisted application settings values to their corresponding default properties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ApplicationSettingsBase.Reset%2A> method overwrites the user-scoped settings properties by restoring the currently persisted value of each application settings. This method performs the following actions:  
+  
+-   It calls the <xref:System.Configuration.IApplicationSettingsProvider.Reset%2A?displayProperty=fullName> method on every settings provider that supports this optional method.  
+  
+-   It calls the <xref:System.Configuration.ApplicationSettingsBase.Reload%2A> method to force a refresh of the settings property values.  
+  
+ <xref:System.Configuration.ApplicationSettingsBase.Reload%2A> contrasts with <xref:System.Configuration.ApplicationSettingsBase.Reset%2A> in that the former will load the last set of saved application settings values, whereas the latter will load the saved default values.  
+  
+   
+  
+## Examples  
+ The following code example shows the <xref:System.Configuration.ApplicationSettingsBase.Reset%2A> method being invoked in the body of the <xref:System.Windows.Forms.Control.Click> event handler for a button named `btnReset`. As a result of this call, the stored default values for the application settings are reloaded into their corresponding properties. The full code example is listed in the <xref:System.Configuration.ApplicationSettingsBase> class overview.  
+  
+ [!code-cpp[AppSettingsSample#5](~/samples/snippets/cpp/VS_Snippets_Winforms/AppSettingsSample/cpp/AppSettingsSample.cpp#5)]
+ [!code-csharp[AppSettingsSample#5](~/samples/snippets/csharp/VS_Snippets_Winforms/AppSettingsSample/CS/AppSettingsSample.cs#5)]
+ [!code-vb[AppSettingsSample#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/AppSettingsSample/VB/Form1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The configuration file could not be parsed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public override void Save ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Save() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.Save" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Stores the current values of the application settings properties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ApplicationSettingsBase.Save%2A> method writes the current value of each settings property to its associated data store. For each property, this method calls the <xref:System.Configuration.SettingsProvider.SetPropertyValues%2A> method on the associated settings provider.  
+  
+ This method differs from the base class implementation in that it raises the <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving> event before the values are written.  
+  
+ If the only settings defined are application-scoped settings, <xref:System.Configuration.ApplicationSettingsBase.Save%2A> will have no effect and return no error if called with the default <xref:System.Configuration.LocalFileSettingsProvider>. <xref:System.Configuration.LocalFileSettingsProvider> only saves user-scoped settings.  
+  
+> [!IMPORTANT]
+>  There is no corresponding Load method because the values of application settings are automatically loaded during wrapper class initialization. In contrast, these values are not automatically saved when an application ends. Therefore, you must explicitly call the <xref:System.Configuration.ApplicationSettingsBase.Save%2A> method to persist the current values of the application settings. This is typically performed in the <xref:System.Windows.Forms.Form.Closing> event handler of the primary or containing <xref:System.Windows.Forms.Form>.  
+  
+   
+  
+## Examples  
+ The following code example shows the <xref:System.Configuration.ApplicationSettingsBase.Save%2A> method being called from the <xref:System.Windows.Forms.Form.Closing> event handler for the primary form. This method also appends an extra period to the settings property that is associated with the form's <xref:System.Windows.Forms.Control.Text%2A> property.  
+  
+ The full code example is listed in the <xref:System.Configuration.ApplicationSettingsBase> class overview.  
+  
+ [!code-cpp[AppSettingsSample#3](~/samples/snippets/cpp/VS_Snippets_Winforms/AppSettingsSample/cpp/AppSettingsSample.cpp#3)]
+ [!code-csharp[AppSettingsSample#3](~/samples/snippets/csharp/VS_Snippets_Winforms/AppSettingsSample/CS/AppSettingsSample.cs#3)]
+ [!code-vb[AppSettingsSample#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/AppSettingsSample/VB/Form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SettingChanging">
+      <MemberSignature Language="C#" Value="public event System.Configuration.SettingChangingEventHandler SettingChanging;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Configuration.SettingChangingEventHandler SettingChanging" />
+      <MemberSignature Language="DocId" Value="E:System.Configuration.ApplicationSettingsBase.SettingChanging" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.SettingChangingEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs before the value of an application settings property is changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> event occurs before an application setting value property is changed through the <xref:System.Configuration.ApplicationSettingsBase.Item%2A> method. This event is not raised when the <xref:System.Configuration.ApplicationSettingsBase.Reload%2A> or <xref:System.Configuration.ApplicationSettingsBase.Reset%2A> methods are called. <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> can be canceled through the <xref:System.Configuration.SettingChangingEventArgs> event data class.  
+  
+ You typically use the <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> event to handle immediate validation of an individual settings property. For more information about validation, see [How to: Validate Application Settings](~/docs/framework/winforms/advanced/how-to-validate-application-settings.md).  
+  
+ There is no corresponding `SettingChanged` event for this class; instead, see the <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged> event.  
+  
+   
+  
+## Examples  
+ The following code example shows the <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> event handler for object of type `FormSettings`, which is a wrapper class derived from <xref:System.Configuration.ApplicationSettingsBase>. The handler displays the event information in a textbox named `tbStatus`. The full code example is listed in the <xref:System.Configuration.ApplicationSettingsBase> class overview.  
+  
+ [!code-cpp[AppSettingsSample#7](~/samples/snippets/cpp/VS_Snippets_Winforms/AppSettingsSample/cpp/AppSettingsSample.cpp#7)]
+ [!code-csharp[AppSettingsSample#7](~/samples/snippets/csharp/VS_Snippets_Winforms/AppSettingsSample/CS/AppSettingsSample.cs#7)]
+ [!code-vb[AppSettingsSample#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/AppSettingsSample/VB/Form1.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SettingsKey">
+      <MemberSignature Language="C#" Value="public string SettingsKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SettingsKey" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ApplicationSettingsBase.SettingsKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the settings key for the application settings group.</summary>
+        <value>A <see cref="T:System.String" /> containing the settings key for the current settings group.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ApplicationSettingsBase.SettingsKey%2A> property is provided to enable client code, and in particular the settings provider, to disambiguate between multiple instances of the same application settings class.  
+  
+ Unless the settings wrapper class is designed using the singleton pattern, there can be multiple instances of the same application settings class in a single application. The value of <xref:System.Configuration.ApplicationSettingsBase.SettingsKey%2A> should be set according to how the property values are intended to be shared.  
+  
+-   If the settings properties of the wrapper are intended to be shared across all instances of the wrapper in the same application, then <xref:System.Configuration.ApplicationSettingsBase.SettingsKey%2A> should have the same value in all of the instances. This is the default behavior of the <xref:System.Configuration.ApplicationSettingsBase> class.  
+  
+-   If the settings properties of the wrapper are intended to be per instance, then <xref:System.Configuration.ApplicationSettingsBase.SettingsKey%2A> should have a unique value for every instance. The <xref:System.Configuration.ApplicationSettingsBase.%23ctor%28System.String%29> version of the constructor enables you to initialize <xref:System.Configuration.ApplicationSettingsBase.SettingsKey%2A> to a unique string.  
+  
+ In contrast, the <xref:System.Configuration.ApplicationSettingsBase.Context%2A> property provides hints to the settings provider to enable it to persist values in an efficient and orderly manner.  
+  
+ The <xref:System.Configuration.SettingChangingEventArgs> class contains a similar <xref:System.Configuration.SettingChangingEventArgs.SettingKey%2A> property that helps identify the source of the <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SettingsLoaded">
+      <MemberSignature Language="C#" Value="public event System.Configuration.SettingsLoadedEventHandler SettingsLoaded;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Configuration.SettingsLoadedEventHandler SettingsLoaded" />
+      <MemberSignature Language="DocId" Value="E:System.Configuration.ApplicationSettingsBase.SettingsLoaded" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.SettingsLoadedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs after the application settings are retrieved from storage.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded> event occurs only after the initial `get` access of the first configuration property used, typically through the <xref:System.Configuration.ApplicationSettingsBase.Item%2A> method. Subsequent accesses use values for the settings property that are cached locally. The <xref:System.Configuration.ApplicationSettingsBase.Reset%2A> and <xref:System.Configuration.ApplicationSettingsBase.Reload%2A> methods will clear all cached values so this event will be raised again upon subsequent property access.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SettingsSaving">
+      <MemberSignature Language="C#" Value="public event System.Configuration.SettingsSavingEventHandler SettingsSaving;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Configuration.SettingsSavingEventHandler SettingsSaving" />
+      <MemberSignature Language="DocId" Value="E:System.Configuration.ApplicationSettingsBase.SettingsSaving" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.SettingsSavingEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs before values are saved to the data store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving> event is raised by the <xref:System.Configuration.ApplicationSettingsBase.Save%2A> method before it stores the application settings properties to their associated data store. The associated event handler can cancel this event.  
+  
+   
+  
+## Examples  
+ The following code example shows the <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving> event handler for object of type `FormSettings`, which is a wrapper class derived from <xref:System.Configuration.ApplicationSettingsBase>. The handler queries the user to save the current application settings property values. The full code example is listed in the <xref:System.Configuration.ApplicationSettingsBase> class overview.  
+  
+ [!code-cpp[AppSettingsSample#8](~/samples/snippets/cpp/VS_Snippets_Winforms/AppSettingsSample/cpp/AppSettingsSample.cpp#8)]
+ [!code-csharp[AppSettingsSample#8](~/samples/snippets/csharp/VS_Snippets_Winforms/AppSettingsSample/CS/AppSettingsSample.cs#8)]
+ [!code-vb[AppSettingsSample#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/AppSettingsSample/VB/Form1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Upgrade">
+      <MemberSignature Language="C#" Value="public virtual void Upgrade ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Upgrade() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.Upgrade" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Updates application settings to reflect a more recent installation of the application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ApplicationSettingsBase.Upgrade%2A> method performs two actions to assure smooth transition to a new version of an application:  
+  
+-   It notifies all of the corresponding settings providers of the existence of the upgraded application through a call to their <xref:System.Configuration.IApplicationSettingsProvider.Upgrade%2A?displayProperty=fullName> method, assuming they have implemented the <xref:System.Configuration.IApplicationSettingsProvider> interface. This action is not performed if the settings wrapper class is marked with <xref:System.Configuration.NoSettingsVersionUpgradeAttribute>.  
+  
+-   It reloads the values for all of the application settings.  
+  
+ You can override the default behavior of <xref:System.Configuration.ApplicationSettingsBase.Upgrade%2A> to implement custom upgrading or merging behavior. Use the <xref:System.Configuration.ApplicationSettingsBase.GetPreviousVersion%2A> method to retrieve individual values for a setting for the previous version of the application. Examples of custom upgrade behavior include:  
+  
+-   Using new policy defaults that override one or more of the previous user-specified values or previous defaults.  
+  
+-   Special translation of old values to be compatible with newer ranges, a different settings property group, and so on.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The configuration file could not be parsed.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

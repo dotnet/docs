@@ -1,0 +1,82 @@
+<Type Name="DebugController" FullName="System.Workflow.Runtime.DebugEngine.DebugController">
+  <TypeSignature Language="C#" Value="public sealed class DebugController : MarshalByRefObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DebugController extends System.MarshalByRefObject" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.DebugEngine.DebugController" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.MarshalByRefObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Relays workflow instance creation, execution and termination events to the debugger process. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ An instance of this class runs in the workflow host application. It is created by <xref:System.Workflow.Runtime.WorkflowRuntime> if workflow debugging is enabled.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AttachToConduit">
+      <MemberSignature Language="C#" Value="public void AttachToConduit (Uri url);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AttachToConduit(class System.Uri url) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.DebugController.AttachToConduit(System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="url">A <see cref="T:System.Uri" /> of the remoting object running in the debugger process with which the <see cref="T:System.Workflow.Runtime.DebugEngine.DebugController" /> communicates.</param>
+        <summary>Establishes the communication channel between the <see cref="T:System.Workflow.Runtime.DebugEngine.DebugController" /> object running in the workflow host application and the debugger process.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeLifetimeService">
+      <MemberSignature Language="C#" Value="public override object InitializeLifetimeService ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object InitializeLifetimeService() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.DebugController.InitializeLifetimeService" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Establishes a lifetime lease for the <see cref="T:System.Workflow.Runtime.DebugEngine.DebugController" /> object.</summary>
+        <returns>An <see cref="T:System.Object" /> that implements <see cref="T:System.Runtime.Remoting.Lifetime.ILease" /> and is used to control the lifetime policy for the <see cref="T:System.Workflow.Runtime.DebugEngine.DebugController" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value is set to `null` unless this method is overridden in a derived class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

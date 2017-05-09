@@ -1,0 +1,169 @@
+<Type Name="PreparingEnlistment" FullName="System.Transactions.PreparingEnlistment">
+  <TypeSignature Language="C#" Value="public class PreparingEnlistment : System.Transactions.Enlistment" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PreparingEnlistment extends System.Transactions.Enlistment" />
+  <TypeSignature Language="DocId" Value="T:System.Transactions.PreparingEnlistment" />
+  <AssemblyInfo>
+    <AssemblyName>System.Transactions</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Transactions.Enlistment</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Facilitates communication between an enlisted transaction participant and the transaction manager during the Prepare phase of the transaction.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ During the initial (prepare) phase of the transaction, the transaction manager passes this type to the resource manager by calling the <xref:System.Transactions.IEnlistmentNotification.Prepare%2A> method to obtain a resource's vote on the transaction. Depending on whether it votes to commit or roll back, your implementation of the resource manager should call the <xref:System.Transactions.PreparingEnlistment.Prepared%2A> or <xref:System.Transactions.PreparingEnlistment.ForceRollback%2A> methods of this type.  
+  
+ The resource manager can also call the <xref:System.Transactions.Enlistment.Done%2A> method at anytime before it has called the <xref:System.Transactions.PreparingEnlistment.Prepared%2A> method. By doing so, the enlistment is casting a read only vote, meaning that it votes commit on the transaction but does not need to receive the final outcome.  
+  
+ Durable resource managers can retrieve the information that is be needed by the transaction manager for re-enlistment from the <xref:System.Transactions.PreparingEnlistment.RecoveryInformation%2A> property. For more information on recovery, see [Performing Recovery](http://msdn.microsoft.com/en-us/d342c5c7-da64-4a4c-8e63-b52f4fbf2691).  
+  
+   
+  
+## Examples  
+ [!code-csharp[Tx_Enlist#2](~/samples/snippets/csharp/VS_Snippets_CFX/tx_enlist/cs/enlist.cs#2)]
+ [!code-vb[Tx_Enlist#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/tx_enlist/vb/enlist.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>This type is thread safe.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName="ForceRollback">
+      <MemberSignature Language="C#" Value="public void ForceRollback ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceRollback() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.PreparingEnlistment.ForceRollback" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates that the transaction should be rolled back.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An implementation of the <xref:System.Transactions.IEnlistmentNotification.Prepare%2A> method of the <xref:System.Transactions.IEnlistmentNotification> interface calls this method to indicate that the transaction must be rolled back.  
+  
+   
+  
+## Examples  
+ [!code-csharp[Tx_Enlist#2](~/samples/snippets/csharp/VS_Snippets_CFX/tx_enlist/cs/enlist.cs#2)]
+ [!code-vb[Tx_Enlist#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/tx_enlist/vb/enlist.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForceRollback">
+      <MemberSignature Language="C#" Value="public void ForceRollback (Exception ex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ForceRollback(class System.Exception ex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.PreparingEnlistment.ForceRollback(System.Exception)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="ex">To be added.</param>
+        <summary>Indicates that the transaction should be rolled back.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Prepared">
+      <MemberSignature Language="C#" Value="public void Prepared ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Prepared() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.PreparingEnlistment.Prepared" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates that the transaction can be committed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the first (prepare) phase of a two phase commit, a resource manager implementing the <xref:System.Transactions.IEnlistmentNotification.Prepare%2A> method of the <xref:System.Transactions.IEnlistmentNotification> interface, calls this method to indicate that the transaction can be committed.  
+  
+ The resource manager can call the <xref:System.Transactions.Enlistment.Done%2A> method at anytime before it has called this method.  By doing so, the enlistment is casting a read only vote, meaning that it votes commit on the transaction but does not need to receive the final outcome.  
+  
+ Once this method is called by an enlistment and before it returns, it is possible that another thread or this same thread could make a call into the same enlistment method such as <xref:System.Transactions.IEnlistmentNotification.Rollback%2A> to perform a rollback. This can result in a deadlock situation if the resource manager implementation does not release resource locks until after this method returns.  
+  
+   
+  
+## Examples  
+ [!code-csharp[Tx_Enlist#2](~/samples/snippets/csharp/VS_Snippets_CFX/tx_enlist/cs/enlist.cs#2)]
+ [!code-vb[Tx_Enlist#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/tx_enlist/vb/enlist.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecoveryInformation">
+      <MemberSignature Language="C#" Value="public byte[] RecoveryInformation ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] RecoveryInformation() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Transactions.PreparingEnlistment.RecoveryInformation" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the recovery information of an enlistment.</summary>
+        <returns>The recovery information of an enlistment.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">An attempt to get recovery information inside a volatile enlistment, which does not generate any recovery information.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

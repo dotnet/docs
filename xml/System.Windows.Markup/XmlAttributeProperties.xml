@@ -1,0 +1,350 @@
+<Type Name="XmlAttributeProperties" FullName="System.Windows.Markup.XmlAttributeProperties">
+  <TypeSignature Language="C#" Value="public sealed class XmlAttributeProperties" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlAttributeProperties extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XmlAttributeProperties" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Encapsulates the XML language-related attributes of a <see cref="T:System.Windows.DependencyObject" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class implements attached property support for <xref:System.Windows.Markup.XmlAttributeProperties.XmlNamespaceMaps%2A>, <xref:System.Windows.Markup.XmlAttributeProperties.XmlnsDefinition%2A>, and <xref:System.Windows.Markup.XmlAttributeProperties.XmlnsDictionary%2A> and <xref:System.Windows.Markup.XmlAttributeProperties.XmlSpace%2A>.  
+  
+ These properties are generally only used by the WPF XAML parser implementation for [!INCLUDE[net_v30_short](~/includes/net-v30-short-md.md)] and [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)]. Actual user code attached property calls from XAML markup is not the primary scenario. The properties are implemented as attached properties primarily so that the properties can better support the property inheritance concept for dependency properties through all possible object graphs. As such, this is really an infrastructure support class. For more information, see [Property Value Inheritance](~/docs/framework/wpf/advanced/property-value-inheritance.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetXmlNamespaceMaps">
+      <MemberSignature Language="C#" Value="public static string GetXmlNamespaceMaps (System.Windows.DependencyObject dependencyObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetXmlNamespaceMaps(class System.Windows.DependencyObject dependencyObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlAttributeProperties.GetXmlNamespaceMaps(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.AttachedPropertyBrowsableForType(typeof(System.Windows.DependencyObject))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyObject">The object to obtain the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlNamespaceMaps" /> property from.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlNamespaceMaps" /> attached property of the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <returns>The value of the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlNamespaceMaps" /> property for the specified object.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dependencyObject" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetXmlnsDefinition">
+      <MemberSignature Language="C#" Value="public static string GetXmlnsDefinition (System.Windows.DependencyObject dependencyObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetXmlnsDefinition(class System.Windows.DependencyObject dependencyObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlAttributeProperties.GetXmlnsDefinition(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.AttachedPropertyBrowsableForType(typeof(System.Windows.DependencyObject))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Markup.DesignerSerializationOptions(System.Windows.Markup.DesignerSerializationOptions.SerializeAsAttribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyObject">The object to obtain the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlnsDefinition" /> attached property value from.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlnsDefinition" /> attached property of the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <returns>The value of the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlnsDefinition" /> attached property for the specified object.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dependencyObject" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetXmlnsDictionary">
+      <MemberSignature Language="C#" Value="public static System.Windows.Markup.XmlnsDictionary GetXmlnsDictionary (System.Windows.DependencyObject dependencyObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Markup.XmlnsDictionary GetXmlnsDictionary(class System.Windows.DependencyObject dependencyObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlAttributeProperties.GetXmlnsDictionary(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.AttachedPropertyBrowsableForType(typeof(System.Windows.DependencyObject))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Markup.XmlnsDictionary</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyObject">The object to obtain the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlnsDictionary" /> attached property value from.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlnsDictionary" /> attached property of the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <returns>The value of the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlnsDictionary" /> attached property for the specified object.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dependencyObject" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetXmlSpace">
+      <MemberSignature Language="C#" Value="public static string GetXmlSpace (System.Windows.DependencyObject dependencyObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetXmlSpace(class System.Windows.DependencyObject dependencyObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlAttributeProperties.GetXmlSpace(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.AttachedPropertyBrowsableForType(typeof(System.Windows.DependencyObject))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Markup.DesignerSerializationOptions(System.Windows.Markup.DesignerSerializationOptions.SerializeAsAttribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyObject">The object to obtain the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlSpace" /> attached property value from.</param>
+        <summary>Gets the value of the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlSpace" /> attached property of the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <returns>The value of the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlSpace" /> attached property for the specified object.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dependencyObject" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetXmlNamespaceMaps">
+      <MemberSignature Language="C#" Value="public static void SetXmlNamespaceMaps (System.Windows.DependencyObject dependencyObject, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetXmlNamespaceMaps(class System.Windows.DependencyObject dependencyObject, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlAttributeProperties.SetXmlNamespaceMaps(System.Windows.DependencyObject,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyObject">The object on which to set the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlNamespaceMaps" /> attached property.</param>
+        <param name="value">The string value to set.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlNamespaceMaps" /> attached property of the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dependencyObject" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetXmlnsDefinition">
+      <MemberSignature Language="C#" Value="public static void SetXmlnsDefinition (System.Windows.DependencyObject dependencyObject, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetXmlnsDefinition(class System.Windows.DependencyObject dependencyObject, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlAttributeProperties.SetXmlnsDefinition(System.Windows.DependencyObject,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyObject">The object on which to set the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlnsDefinition" /> property.</param>
+        <param name="value">The XML namespace definition in string form.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlnsDefinition" /> attached property of the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dependencyObject" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetXmlnsDictionary">
+      <MemberSignature Language="C#" Value="public static void SetXmlnsDictionary (System.Windows.DependencyObject dependencyObject, System.Windows.Markup.XmlnsDictionary value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetXmlnsDictionary(class System.Windows.DependencyObject dependencyObject, class System.Windows.Markup.XmlnsDictionary value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlAttributeProperties.SetXmlnsDictionary(System.Windows.DependencyObject,System.Windows.Markup.XmlnsDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Windows.Markup.XmlnsDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyObject">The object on which to set the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlnsDictionary" /> attached property.</param>
+        <param name="value">The <see langword="xmlns" /> dictionary in string form.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlnsDictionary" /> attached property of the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dependencyObject" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetXmlSpace">
+      <MemberSignature Language="C#" Value="public static void SetXmlSpace (System.Windows.DependencyObject dependencyObject, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetXmlSpace(class System.Windows.DependencyObject dependencyObject, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlAttributeProperties.SetXmlSpace(System.Windows.DependencyObject,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyObject">The object on which to set the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlSpace" /> attached property.</param>
+        <param name="value">The string to use for an XML space.</param>
+        <summary>Sets the value of the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlSpace" /> attached property of the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dependencyObject" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlNamespaceMapsProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty XmlNamespaceMapsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty XmlNamespaceMapsProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Markup.XmlAttributeProperties.XmlNamespaceMapsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlNamespaceMaps" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlnsDefinitionProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty XmlnsDefinitionProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty XmlnsDefinitionProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Markup.XmlAttributeProperties.XmlnsDefinitionProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlnsDefinition" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlnsDictionaryProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty XmlnsDictionaryProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty XmlnsDictionaryProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Markup.XmlAttributeProperties.XmlnsDictionaryProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlnsDictionary" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlSpaceProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty XmlSpaceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty XmlSpaceProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Markup.XmlAttributeProperties.XmlSpaceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.NeverLocalize)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Markup.XmlAttributeProperties.XmlSpace" /> attached property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -2,7 +2,7 @@
 title: "Perform custom join operations"
 description: How to perform custom join operations.
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

@@ -1,0 +1,47 @@
+<Type Name="GridViewUpdatedEventHandler" FullName="System.Web.UI.WebControls.GridViewUpdatedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void GridViewUpdatedEventHandler(object sender, GridViewUpdatedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GridViewUpdatedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewUpdatedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.GridViewUpdatedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Web.UI.WebControls.GridViewUpdatedEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Web.UI.WebControls.GridView.RowUpdated" /> event of a <see cref="T:System.Web.UI.WebControls.GridView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.GridView> control raises the <xref:System.Web.UI.WebControls.GridView.RowUpdated> event when an Update button (a button with its `CommandName` property set to "Update") within the control is clicked, but after the <xref:System.Web.UI.WebControls.GridView> control updates the record. This allows you to provide an event-handling method that performs a custom routine, such as checking the results of an update operation, whenever this event occurs.  
+  
+ When you create a <xref:System.Web.UI.WebControls.GridViewUpdatedEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.GridViewUpdatedEventHandler> delegate to the <xref:System.Web.UI.WebControls.GridView.RowUpdated> event of a <xref:System.Web.UI.WebControls.GridView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[GridViewUpdatedEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewUpdatedEventHandler/CS/gridviewupdatedeventhandlercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[GridViewUpdatedEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewUpdatedEventHandler/VB/gridviewupdatedeventhandlervb.aspx#1)]  -->  
+  
+ The following example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.GridViewUpdatedEventHandler> delegate to the <xref:System.Web.UI.WebControls.GridView.RowUpdated> event of a <xref:System.Web.UI.WebControls.GridView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[GridViewRowUpdated#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewRowUpdated/CS/gridviewrowupdatedcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[GridViewRowUpdated#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewRowUpdated/VB/gridviewrowupdatedvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

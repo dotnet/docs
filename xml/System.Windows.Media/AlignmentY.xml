@@ -1,0 +1,66 @@
+<Type Name="AlignmentY" FullName="System.Windows.Media.AlignmentY">
+  <TypeSignature Language="C#" Value="public enum AlignmentY" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AlignmentY extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.AlignmentY" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes how content is positioned vertically in a container.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bottom">
+      <MemberSignature Language="C#" Value="Bottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.AlignmentY Bottom = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.AlignmentY.Bottom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.AlignmentY</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The contents align toward the lower edge of the container.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Center">
+      <MemberSignature Language="C#" Value="Center" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.AlignmentY Center = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.AlignmentY.Center" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.AlignmentY</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The contents align toward the center of the container.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="Top" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.AlignmentY Top = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.AlignmentY.Top" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.AlignmentY</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The contents align toward the upper edge of the container.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

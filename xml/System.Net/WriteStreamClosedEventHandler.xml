@@ -1,0 +1,31 @@
+<Type Name="WriteStreamClosedEventHandler" FullName="System.Net.WriteStreamClosedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void WriteStreamClosedEventHandler(object sender, WriteStreamClosedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WriteStreamClosedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Net.WriteStreamClosedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Net.WriteStreamClosedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">To be added.</param>
+    <param name="e">To be added.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Net.WebClient.WriteStreamClosed" /> event of a <see cref="T:System.Net.WebClient" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

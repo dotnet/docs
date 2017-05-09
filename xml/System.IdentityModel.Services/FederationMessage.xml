@@ -1,0 +1,370 @@
+<Type Name="FederationMessage" FullName="System.IdentityModel.Services.FederationMessage">
+  <TypeSignature Language="C#" Value="public abstract class FederationMessage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FederationMessage extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.FederationMessage" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the base class from which all federation message classes derive.</summary>
+    <remarks>To be added.</remarks>
+    <block subset="none" type="overrides">
+      <para>At a minimum, you must override the <see cref="P:System.IdentityModel.Services.FederationMessage.ProviderIdentifier" /> property and the <see cref="M:System.IdentityModel.Services.FederationMessage.Write(System.IO.TextWriter)" /> method in derived classes.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected FederationMessage (Uri baseUrl);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationMessage.#ctor(System.Uri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseUrl" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="baseUrl">The base URL to which the federation message applies. Initializes the <see cref="P:System.IdentityModel.Services.FederationMessage.BaseUri" /> property.</param>
+        <summary>Called from constructors in derived classes to initialize the <see cref="T:System.IdentityModel.Services.FederationMessage" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="baseUri" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IdentityModel.Services.WSFederationMessageException">
+          <paramref name="baseUri" /> is not a valid, absolute URI.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseUri">
+      <MemberSignature Language="C#" Value="public Uri BaseUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri BaseUri" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.FederationMessage.BaseUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the base URL to which the message applies.</summary>
+        <value>A <see cref="T:System.Uri" /> that contains the base URL.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt to set a value that is <see langword="null" /> occurs.</exception>
+        <exception cref="T:System.IdentityModel.Services.WSFederationMessageException">An attempt to set a value that is not a valid URI occurs.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBaseUrl">
+      <MemberSignature Language="C#" Value="public static Uri GetBaseUrl (Uri uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Uri GetBaseUrl(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationMessage.GetBaseUrl(System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The URI from which to extract the base URL.</param>
+        <summary>Helper method that extracts the base URL from the specified URI.</summary>
+        <returns>The base URL that was extracted.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The URL returned is the original URL without the query string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParameter">
+      <MemberSignature Language="C#" Value="public string GetParameter (string parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetParameter(string parameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationMessage.GetParameter(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">The parameter for which to search.</param>
+        <summary>Returns the specified parameter value from the parameters dictionary.</summary>
+        <returns>The value of the parameter or <see langword="null" /> if the parameter does not exist.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The parameters dictionary is accessed through the <xref:System.IdentityModel.Services.FederationMessage.Parameters%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="parameter" /> is <see langword="null" /> or an empty string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Parameters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; Parameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; Parameters" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.FederationMessage.Parameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the message parameters as a dictionary.</summary>
+        <value>A dictionary that contains the message parameters.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A dictionary of name and value pairs that contains the parameters in the message. The parameters are keyed by the parameter name. For example, to retrieve the value of the wattr parameter, use “wattr”.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseQueryString">
+      <MemberSignature Language="C#" Value="public static System.Collections.Specialized.NameValueCollection ParseQueryString (Uri data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Specialized.NameValueCollection ParseQueryString(class System.Uri data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationMessage.ParseQueryString(System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="data">The URI to parse.</param>
+        <summary>Helper method that parses the query string in the specified URI into a <see cref="T:System.Collections.Specialized.NameValueCollection" />.</summary>
+        <returns>A <see cref="T:System.Collections.Specialized.NameValueCollection" /> that contains the parameters in the query string.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveParameter">
+      <MemberSignature Language="C#" Value="public void RemoveParameter (string parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveParameter(string parameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationMessage.RemoveParameter(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">The name of the parameter to remove.</param>
+        <summary>Removes a parameter from the parameters dictionary.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The parameters dictionary is accessed through the <xref:System.IdentityModel.Services.FederationMessage.Parameters%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="parameter" /> is <see langword="null" /> or an empty string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetParameter">
+      <MemberSignature Language="C#" Value="public void SetParameter (string parameter, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetParameter(string parameter, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationMessage.SetParameter(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">The name of the parameter to set.</param>
+        <param name="value">The value to be assigned to the parameter.</param>
+        <summary>Sets the value of a parameter in the parameters dictionary.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the parameter does not exist in the dictionary, it is added to it. The parameters dictionary is accessed through the <xref:System.IdentityModel.Services.FederationMessage.Parameters%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="parameter" /> is <see langword="null" /> or an empty string.  
+  
+ -or-  
+  
+ <paramref name="value" /> is <see langword="null" /> or an empty string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetUriParameter">
+      <MemberSignature Language="C#" Value="public void SetUriParameter (string parameter, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetUriParameter(string parameter, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationMessage.SetUriParameter(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">The parameter name.</param>
+        <param name="value">The parameter value.</param>
+        <summary>Sets the value of a parameter in the parameters dictionary. The value must be an absolute URI.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the parameter does not exist in the dictionary, it is added. The parameters dictionary is accessed through the <xref:System.IdentityModel.Services.FederationMessage.Parameters%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="parameter" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="value" /> is <see langword="null" /> or not an absolute URI.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="protected virtual void Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Validate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationMessage.Validate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Validates the message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation checks whether the <xref:System.IdentityModel.Services.FederationMessage.BaseUri%2A> property contains an absolute URI.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IdentityModel.Services.WSFederationMessageException">The value of the <see cref="P:System.IdentityModel.Services.FederationMessage.BaseUri" /> property is <see langword="null" /> or is not an absolute URI.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public abstract void Write (System.IO.TextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(class System.IO.TextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationMessage.Write(System.IO.TextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.IO.TextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The text writer to which the message is written out.</param>
+        <summary>When overridden in a derived class, writes the message to the output stream.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>You must override this method in derived classes. Your implementation should validate the message and throw an appropriate exception before writing it.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteFormPost">
+      <MemberSignature Language="C#" Value="public virtual string WriteFormPost ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string WriteFormPost() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationMessage.WriteFormPost" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Serializes the message as a form post and returns the resulting Form together with its Javascript as a string.</summary>
+        <returns>A string representation of the message as a Form together with its associated Javascript.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteQueryString">
+      <MemberSignature Language="C#" Value="public virtual string WriteQueryString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string WriteQueryString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.FederationMessage.WriteQueryString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string representation of the message in query-string format.</summary>
+        <returns>The message in query-string format.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creates a message that is composed of the URL specified in the <xref:System.IdentityModel.Services.FederationMessage.BaseUri%2A> property followed by a query string that is created from the parameters dictionary. The parameters dictionary is accessed through the <xref:System.IdentityModel.Services.FederationMessage.Parameters%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

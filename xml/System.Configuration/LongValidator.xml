@@ -1,0 +1,206 @@
+<Type Name="LongValidator" FullName="System.Configuration.LongValidator">
+  <TypeSignature Language="C#" Value="public class LongValidator : System.Configuration.ConfigurationValidatorBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LongValidator extends System.Configuration.ConfigurationValidatorBase" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.LongValidator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationValidatorBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides validation of an <see cref="T:System.Int64" /> value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.LongValidator> is used to ensure a `long` (a 64-bit signed integer) meets specific criteria. The criteria for validation is established when an instance of the <xref:System.Configuration.LongValidator> class is created. The <xref:System.Configuration.LongValidator.%23ctor%28System.Int64%2CSystem.Int64%29> constructor ensures that the `long` value that is being validated adheres to both a minimum and a maximum length. The <xref:System.Configuration.LongValidator.%23ctor%28System.Int64%2CSystem.Int64%2CSystem.Boolean%29> constructor checks both the minimum and maximum <xref:System.Int64> values, as well as whether the validation range is exclusive. The <xref:System.Configuration.LongValidator.%23ctor%28System.Int64%2CSystem.Int64%2CSystem.Boolean%2CSystem.Int64%29> constructor checks the previous three parameters and also checks whether the <xref:System.Int64> value is equal to a specific resolution value.  
+  
+ The <xref:System.Configuration.LongValidator.CanValidate%2A> method determines whether the object type being validated matches the expected type. The object being validated is passed as a parameter of the <xref:System.Configuration.LongValidator.Validate%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.LongValidator> type.  
+  
+ [!code-csharp[System.Configuration.LongValidator#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.LongValidator/CS/LongValidator.cs#1)]
+ [!code-vb[System.Configuration.LongValidator#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.LongValidator/VB/LongValidator.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LongValidator (long minValue, long maxValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 minValue, int64 maxValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.LongValidator.#ctor(System.Int64,System.Int64)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="minValue" Type="System.Int64" />
+        <Parameter Name="maxValue" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="minValue">An <see cref="T:System.Int64" /> value that specifies the minimum length of the <see langword="long" /> value.</param>
+        <param name="maxValue">An <see cref="T:System.Int64" /> value that specifies the maximum length of the <see langword="long" /> value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.LongValidator" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.LongValidator.%23ctor%2A> constructor ensures that the long value being verified adheres to both a minimum and a maximum length.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LongValidator (long minValue, long maxValue, bool rangeIsExclusive);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 minValue, int64 maxValue, bool rangeIsExclusive) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.LongValidator.#ctor(System.Int64,System.Int64,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="minValue" Type="System.Int64" />
+        <Parameter Name="maxValue" Type="System.Int64" />
+        <Parameter Name="rangeIsExclusive" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="minValue">An <see cref="T:System.Int64" /> value that specifies the minimum length of the <see langword="long" /> value.</param>
+        <param name="maxValue">An <see cref="T:System.Int64" /> value that specifies the maximum length of the <see langword="long" /> value.</param>
+        <param name="rangeIsExclusive">A <see cref="T:System.Boolean" /> value that specifies whether the validation range is exclusive.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.LongValidator" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Configuration.LongValidator.%23ctor%2A> constructor is used, it checks both the minimum and maximum <xref:System.Int64> values, as well as whether the validation range is exclusive. When the `rangeIsExclusive` parameter is set to `true`, the <xref:System.Int64> value must not be between `minValue` and `maxValue`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.LongValidator.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Configuration.LongValidator> class.  
+  
+ [!code-csharp[System.Configuration.LongValidator#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.LongValidator/CS/LongValidator.cs#2)]
+ [!code-vb[System.Configuration.LongValidator#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.LongValidator/VB/LongValidator.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LongValidator (long minValue, long maxValue, bool rangeIsExclusive, long resolution);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 minValue, int64 maxValue, bool rangeIsExclusive, int64 resolution) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.LongValidator.#ctor(System.Int64,System.Int64,System.Boolean,System.Int64)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="minValue" Type="System.Int64" />
+        <Parameter Name="maxValue" Type="System.Int64" />
+        <Parameter Name="rangeIsExclusive" Type="System.Boolean" />
+        <Parameter Name="resolution" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="minValue">An <see cref="T:System.Int64" /> value that specifies the minimum length of the <see langword="long" /> value.</param>
+        <param name="maxValue">An <see cref="T:System.Int64" /> value that specifies the maximum length of the <see langword="long" /> value.</param>
+        <param name="rangeIsExclusive">A <see cref="T:System.Boolean" /> value that specifies whether the validation range is exclusive.</param>
+        <param name="resolution">An <see cref="T:System.Int64" /> value that specifies a specific value that must be matched.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.LongValidator" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you specify the `resolution`, the <xref:System.Int64> value being validated must be equal to that value in order to pass validation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="resolution" /> is equal to or less than <see langword="0" />.  
+  
+ \- or -  
+  
+ <paramref name="maxValue" /> is less than <paramref name="minValue" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CanValidate">
+      <MemberSignature Language="C#" Value="public override bool CanValidate (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanValidate(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.LongValidator.CanValidate(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of object.</param>
+        <summary>Determines whether the type of the object can be validated.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="type" /> parameter matches an <see cref="T:System.Int64" /> value; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.LongValidator.CanValidate%2A> method. This code example is part of a larger example provided for the <xref:System.Configuration.LongValidator> class.  
+  
+ [!code-csharp[System.Configuration.LongValidator#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.LongValidator/CS/LongValidator.cs#3)]
+ [!code-vb[System.Configuration.LongValidator#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.LongValidator/VB/LongValidator.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public override void Validate (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Validate(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.LongValidator.Validate(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value of an object.</param>
+        <summary>Determines whether the value of an object is valid.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.LongValidator> class contains the rules necessary to validate an <xref:System.Int64> object. The rules are established when an instance of the <xref:System.Configuration.LongValidator> class is created. The object to validate is passed as a parameter of the <xref:System.Configuration.LongValidator.Validate%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.LongValidator.Validate%2A> method. This code example is part of a larger example provided for the <xref:System.Configuration.LongValidator> class.  
+  
+ [!code-csharp[System.Configuration.LongValidator#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.LongValidator/CS/LongValidator.cs#4)]
+ [!code-vb[System.Configuration.LongValidator#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.LongValidator/VB/LongValidator.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

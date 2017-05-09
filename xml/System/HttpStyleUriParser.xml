@@ -1,0 +1,51 @@
+<Type Name="HttpStyleUriParser" FullName="System.HttpStyleUriParser">
+  <TypeSignature Language="C#" Value="public class HttpStyleUriParser : UriParser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpStyleUriParser extends System.UriParser" />
+  <TypeSignature Language="DocId" Value="T:System.HttpStyleUriParser" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.UriParser</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A customizable parser based on the HTTP scheme.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpStyleUriParser ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.HttpStyleUriParser.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Create a customizable parser based on the HTTP scheme.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor as an argument to <xref:System.UriParser.Register%28System.UriParser%2CSystem.String%2CSystem.Int32%29?displayProperty=fullName>  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

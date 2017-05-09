@@ -1,0 +1,156 @@
+<Type Name="ManagedToNativeComInteropStubAttribute" FullName="System.Runtime.InteropServices.ManagedToNativeComInteropStubAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ManagedToNativeComInteropStubAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ManagedToNativeComInteropStubAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ManagedToNativeComInteropStubAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Method, AllowMultiple=false, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides support for user customization of interop stubs in managed-to-COM interop scenarios.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute enables interop developers who have knowledge about marshaling and the inner workings of interop calls to do the following:  
+  
+-   Take advantage of customized interop stubs at build time instead of run time.  
+  
+-   Debug customized interop stubs.  
+  
+-   Provide marshaling capabilities within a stub that the runtime does not provide.  
+  
+-   Provide user-specific method dispatch capabilities.  
+  
+ You apply the attribute on a method in an interface to specify a corresponding stub method for managed-to-native COM interop.  
+  
+ If this attribute is encountered during run time, the common language runtime does not dynamically generate an interop stub. Instead, it invokes the custom stub that was created at build time.  
+  
+ The <xref:System.Runtime.InteropServices.ManagedToNativeComInteropStubAttribute> attribute has the following characteristics:  
+  
+-   The attribute can be used only on methods from interfaces that are marked `[ComImport]`. If the attribute is applied to non-interface types, it is ignored by the runtime.  
+  
+-   The attribute can be used only once on the same method in an interface. If it is used more than once, the compiler generates a duplicated attribute error.  
+  
+-   The attribute is not inheritable from a base interface. Derived interfaces must explicitly assign the attribute.  
+  
+-   The assembly that contains the attributed method must also contain the customized stub.  
+  
+ Overloaded stub methods are valid. Although you specify only the type and the name of the stub method, the runtime will discover the corresponding stub. It does this by examining all the arguments on the interface method, and then performing full signature matching by using an explicit `this` pointer.  
+  
+ It is also possible for multiple methods in an interface to share the same stub method; however, you should be careful when you use shared stubs.  
+  
+> [!NOTE]
+>  Stub methods must be static.  
+  
+ You could inform the runtime to use a customized interop stub at build time instead of run time with the following C# code:  
+  
+```  
+[ComImport]  
+interface IMyInterface  
+{  
+    [ManagedToNativeComInteropStubAttribute(typeof(TestStubClass),  
+              "ForwardTestStub")]  
+    void GetString (string arg);  
+}  
+```  
+  
+ You could then use the following code to declare the corresponding stub method:  
+  
+```  
+class TestStubClass  
+{  
+    internal static void ForwardTestStub(IMyInterface thisObject,  
+             string arg) {…}  
+}  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManagedToNativeComInteropStubAttribute (Type classType, string methodName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type classType, string methodName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ManagedToNativeComInteropStubAttribute.#ctor(System.Type,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="classType" Type="System.Type" />
+        <Parameter Name="methodName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="classType">The class that contains the required stub method.</param>
+        <param name="methodName">The name of the stub method.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.ManagedToNativeComInteropStubAttribute" /> class with the specified class type and method name.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="methodName" /> cannot be found.  
+  
+ -or-  
+  
+ The method is not static or non-generic.  
+  
+ -or-  
+  
+ The method's parameter list does not match the expected parameter list for the stub.</exception>
+        <exception cref="T:System.MethodAccessException">The interface that contains the managed interop method has no access to the stub method, because the stub method has private or protected accessibility, or because of a security issue.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassType">
+      <MemberSignature Language="C#" Value="public Type ClassType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ClassType" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ManagedToNativeComInteropStubAttribute.ClassType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the class that contains the required stub method.</summary>
+        <value>The class that contains the customized interop stub.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MethodName">
+      <MemberSignature Language="C#" Value="public string MethodName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MethodName" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ManagedToNativeComInteropStubAttribute.MethodName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the stub method.</summary>
+        <value>The name of a customized interop stub.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

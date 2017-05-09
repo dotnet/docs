@@ -1,0 +1,814 @@
+<Type Name="DataRelation" FullName="System.Data.DataRelation">
+  <TypeSignature Language="C#" Value="public class DataRelation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataRelation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.DataRelation" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("RelationName")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DataRelationEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Data.RelationshipConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a parent/child relationship between two <see cref="T:System.Data.DataTable" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Data.DataRelation> is used to relate two <xref:System.Data.DataTable> objects to each other through <xref:System.Data.DataColumn> objects. For example, in a Customer/Orders relationship, the Customers table is the parent and the Orders table is the child of the relationship. This is similar to a primary key/foreign key relationship. For more information, see [Navigating DataRelations](~/docs/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations.md).  
+  
+ Relationships are created between matching columns in the parent and child tables. That is, the <xref:System.Data.DataColumn.DataType%2A> value for both columns must be identical.  
+  
+ Relationships can also cascade various changes from the parent <xref:System.Data.DataRow> to its child rows. To control how values are changed in child rows, add a <xref:System.Data.ForeignKeyConstraint> to the <xref:System.Data.ConstraintCollection> of the <xref:System.Data.DataTable> object. The <xref:System.Data.ConstraintCollection> determines what action to take when a value in a parent table is deleted or updated.  
+  
+ When a <xref:System.Data.DataRelation> is created, it first verifies that the relationship can be established. After it is added to the <xref:System.Data.DataRelationCollection>, the relationship is maintained by disallowing any changes that would invalidate it. Between the period when a <xref:System.Data.DataRelation> is created and added to the <xref:System.Data.DataRelationCollection>, it is possible for additional changes to be made to the parent or child rows. An exception is generated if this causes a relationship that is no longer valid.  
+  
+> [!NOTE]
+>  Data corruption can occur if a bi-directional relation is defined between two tables. A bi-directional relation consists of two `DataRelation` objects that use the same columns, with the parent-child roles switched. No exception is raised when the `DataRelation` objects are saved; however, data corruption can occur.  
+  
+ <xref:System.Data.DataRelation> objects are contained in a <xref:System.Data.DataRelationCollection>, which you can access through the <xref:System.Data.DataSet.Relations%2A> property of the <xref:System.Data.DataSet>, and the <xref:System.Data.DataTable.ChildRelations%2A> and <xref:System.Data.DataTable.ParentRelations%2A> properties of the <xref:System.Data.DataTable>.  
+  
+   
+  
+## Examples  
+ The following example creates a new <xref:System.Data.DataRelation> and adds it to the <xref:System.Data.DataRelationCollection> of a <xref:System.Data.DataSet>.  
+  
+ [!code-csharp[Classic WebData DataRelation Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRelation Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataRelation Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRelation Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>This type is safe for multithreaded read operations. You must synchronize any write operations.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataRelation (string relationName, System.Data.DataColumn parentColumn, System.Data.DataColumn childColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string relationName, class System.Data.DataColumn parentColumn, class System.Data.DataColumn childColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataRelation.#ctor(System.String,System.Data.DataColumn,System.Data.DataColumn)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="relationName" Type="System.String" />
+        <Parameter Name="parentColumn" Type="System.Data.DataColumn" />
+        <Parameter Name="childColumn" Type="System.Data.DataColumn" />
+      </Parameters>
+      <Docs>
+        <param name="relationName">The name of the <see cref="T:System.Data.DataRelation" />. If <see langword="null" /> or an empty string (""), a default name will be given when the created object is added to the <see cref="T:System.Data.DataRelationCollection" />.</param>
+        <param name="parentColumn">The parent <see cref="T:System.Data.DataColumn" /> in the relationship.</param>
+        <param name="childColumn">The child <see cref="T:System.Data.DataColumn" /> in the relationship.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.DataRelation" /> class using the specified <see cref="T:System.Data.DataRelation" /> name, and parent and child <see cref="T:System.Data.DataColumn" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a new <xref:System.Data.DataRelation> and adds it to the <xref:System.Data.DataRelationCollection> of a <xref:System.Data.DataSet>.  
+  
+ [!code-csharp[Classic WebData DataRelation.DataRelation#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRelation.DataRelation/CS/datarelation.cs#1)]
+ [!code-vb[Classic WebData DataRelation.DataRelation#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRelation.DataRelation/VB/datarelation.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or both of the <see cref="T:System.Data.DataColumn" /> objects contains <see langword="null" />.</exception>
+        <exception cref="T:System.Data.InvalidConstraintException">The columns have different data types  
+  
+ -Or-  
+  
+ The tables do not belong to the same <see cref="T:System.Data.DataSet" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataRelation (string relationName, System.Data.DataColumn[] parentColumns, System.Data.DataColumn[] childColumns);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string relationName, class System.Data.DataColumn[] parentColumns, class System.Data.DataColumn[] childColumns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataRelation.#ctor(System.String,System.Data.DataColumn[],System.Data.DataColumn[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="relationName" Type="System.String" />
+        <Parameter Name="parentColumns" Type="System.Data.DataColumn[]" />
+        <Parameter Name="childColumns" Type="System.Data.DataColumn[]" />
+      </Parameters>
+      <Docs>
+        <param name="relationName">The name of the relation. If <see langword="null" /> or an empty string (""), a default name will be given when the created object is added to the <see cref="T:System.Data.DataRelationCollection" />.</param>
+        <param name="parentColumns">An array of parent <see cref="T:System.Data.DataColumn" /> objects.</param>
+        <param name="childColumns">An array of child <see cref="T:System.Data.DataColumn" /> objects.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.DataRelation" /> class using the specified <see cref="T:System.Data.DataRelation" /> name and matched arrays of parent and child <see cref="T:System.Data.DataColumn" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a new <xref:System.Data.DataRelation> and adds it to the <xref:System.Data.DataRelationCollection> of a <xref:System.Data.DataSet>.  
+  
+ [!code-vb[Classic WebData DataRelation.DataRelation2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRelation.DataRelation2 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or both of the <see cref="T:System.Data.DataColumn" /> objects contains <see langword="null" />.</exception>
+        <exception cref="T:System.Data.InvalidConstraintException">The <see cref="T:System.Data.DataColumn" /> objects have different data types  
+  
+ -Or-  
+  
+ One or both of the arrays are not composed of distinct columns from the same table.  
+  
+ -Or-  
+  
+ The tables do not belong to the same <see cref="T:System.Data.DataSet" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataRelation (string relationName, System.Data.DataColumn parentColumn, System.Data.DataColumn childColumn, bool createConstraints);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string relationName, class System.Data.DataColumn parentColumn, class System.Data.DataColumn childColumn, bool createConstraints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataRelation.#ctor(System.String,System.Data.DataColumn,System.Data.DataColumn,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="relationName" Type="System.String" />
+        <Parameter Name="parentColumn" Type="System.Data.DataColumn" />
+        <Parameter Name="childColumn" Type="System.Data.DataColumn" />
+        <Parameter Name="createConstraints" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="relationName">The name of the relation. If <see langword="null" /> or an empty string (""), a default name will be given when the created object is added to the <see cref="T:System.Data.DataRelationCollection" />.</param>
+        <param name="parentColumn">The parent <see cref="T:System.Data.DataColumn" /> in the relation.</param>
+        <param name="childColumn">The child <see cref="T:System.Data.DataColumn" /> in the relation.</param>
+        <param name="createConstraints">A value that indicates whether constraints are created. <see langword="true" />, if constraints are created. Otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.DataRelation" /> class using the specified name, parent and child <see cref="T:System.Data.DataColumn" /> objects, and a value that indicates whether to create constraints.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a new <xref:System.Data.DataRelation> and adds it to the <xref:System.Data.DataRelationCollection> of a <xref:System.Data.DataSet>.  
+  
+ [!code-vb[Classic WebData DataRelation.DataRelation1 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRelation.DataRelation1 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or both of the <see cref="T:System.Data.DataColumn" /> objects contains <see langword="null" />.</exception>
+        <exception cref="T:System.Data.InvalidConstraintException">The columns have different data types  
+  
+ -Or-  
+  
+ The tables do not belong to the same <see cref="T:System.Data.DataSet" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataRelation (string relationName, System.Data.DataColumn[] parentColumns, System.Data.DataColumn[] childColumns, bool createConstraints);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string relationName, class System.Data.DataColumn[] parentColumns, class System.Data.DataColumn[] childColumns, bool createConstraints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataRelation.#ctor(System.String,System.Data.DataColumn[],System.Data.DataColumn[],System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="relationName" Type="System.String" />
+        <Parameter Name="parentColumns" Type="System.Data.DataColumn[]" />
+        <Parameter Name="childColumns" Type="System.Data.DataColumn[]" />
+        <Parameter Name="createConstraints" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="relationName">The name of the relation. If <see langword="null" /> or an empty string (""), a default name will be given when the created object is added to the <see cref="T:System.Data.DataRelationCollection" />.</param>
+        <param name="parentColumns">An array of parent <see cref="T:System.Data.DataColumn" /> objects.</param>
+        <param name="childColumns">An array of child <see cref="T:System.Data.DataColumn" /> objects.</param>
+        <param name="createConstraints">A value that indicates whether to create constraints. <see langword="true" />, if constraints are created. Otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.DataRelation" /> class using the specified name, matched arrays of parent and child <see cref="T:System.Data.DataColumn" /> objects, and value that indicates whether to create constraints.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a new <xref:System.Data.DataRelation> and adds it to the <xref:System.Data.DataRelationCollection> of a <xref:System.Data.DataSet>.  
+  
+ [!code-vb[Classic WebData DataRelation.DataRelation3 Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRelation.DataRelation3 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">One or both of the <see cref="T:System.Data.DataColumn" /> objects is <see langword="null" />.</exception>
+        <exception cref="T:System.Data.InvalidConstraintException">The columns have different data types  
+  
+ -Or-  
+  
+ The tables do not belong to the same <see cref="T:System.Data.DataSet" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataRelation (string relationName, string parentTableName, string childTableName, string[] parentColumnNames, string[] childColumnNames, bool nested);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string relationName, string parentTableName, string childTableName, string[] parentColumnNames, string[] childColumnNames, bool nested) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataRelation.#ctor(System.String,System.String,System.String,System.String[],System.String[],System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="relationName" Type="System.String" />
+        <Parameter Name="parentTableName" Type="System.String" />
+        <Parameter Name="childTableName" Type="System.String" />
+        <Parameter Name="parentColumnNames" Type="System.String[]" />
+        <Parameter Name="childColumnNames" Type="System.String[]" />
+        <Parameter Name="nested" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="relationName">The name of the relation. If <see langword="null" /> or an empty string (""), a default name will be given when the created object is added to the <see cref="T:System.Data.DataRelationCollection" />.</param>
+        <param name="parentTableName">The name of the <see cref="T:System.Data.DataTable" /> that is the parent table of the relation.</param>
+        <param name="childTableName">The name of the <see cref="T:System.Data.DataTable" /> that is the child table of the relation.</param>
+        <param name="parentColumnNames">An array of <see cref="T:System.Data.DataColumn" /> object names in the parent <see cref="T:System.Data.DataTable" /> of the relation.</param>
+        <param name="childColumnNames">An array of <see cref="T:System.Data.DataColumn" /> object names in the child <see cref="T:System.Data.DataTable" /> of the relation.</param>
+        <param name="nested">A value that indicates whether relationships are nested.</param>
+        <summary>This constructor is provided for design time support in the Visual Studio environment.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any <xref:System.Data.DataRelation> object created by using this constructor must be added to the collection with the <xref:System.Data.DataRelationCollection.AddRange%2A> method inside of a <xref:System.Data.DataTable.BeginInit%2A> and <xref:System.Data.DataTable.EndInit%2A> block. If this constructor is not called between <xref:System.Data.DataTable.BeginInit%2A> and <xref:System.Data.DataTable.EndInit%2A> a <xref:System.NullReferenceException> will occur. In addition, the tables and columns with the specified names must exist at the time the constructor is called.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataRelation (string relationName, string parentTableName, string parentTableNamespace, string childTableName, string childTableNamespace, string[] parentColumnNames, string[] childColumnNames, bool nested);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string relationName, string parentTableName, string parentTableNamespace, string childTableName, string childTableNamespace, string[] parentColumnNames, string[] childColumnNames, bool nested) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataRelation.#ctor(System.String,System.String,System.String,System.String,System.String,System.String[],System.String[],System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="relationName" Type="System.String" />
+        <Parameter Name="parentTableName" Type="System.String" />
+        <Parameter Name="parentTableNamespace" Type="System.String" />
+        <Parameter Name="childTableName" Type="System.String" />
+        <Parameter Name="childTableNamespace" Type="System.String" />
+        <Parameter Name="parentColumnNames" Type="System.String[]" />
+        <Parameter Name="childColumnNames" Type="System.String[]" />
+        <Parameter Name="nested" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="relationName">The name of the <see cref="T:System.Data.DataRelation" />. If <see langword="null" /> or an empty string (""), a default name will be given when the created object is added to the <see cref="T:System.Data.DataRelationCollection" />.</param>
+        <param name="parentTableName">The name of the <see cref="T:System.Data.DataTable" /> that is the parent table of the relation.</param>
+        <param name="parentTableNamespace">The name of the parent table namespace.</param>
+        <param name="childTableName">The name of the <see cref="T:System.Data.DataTable" /> that is the child table of the relation.</param>
+        <param name="childTableNamespace">The name of the child table namespace.</param>
+        <param name="parentColumnNames">An array of <see cref="T:System.Data.DataColumn" /> object names in the parent <see cref="T:System.Data.DataTable" /> of the relation.</param>
+        <param name="childColumnNames">An array of <see cref="T:System.Data.DataColumn" /> object names in the child <see cref="T:System.Data.DataTable" /> of the relation.</param>
+        <param name="nested">A value that indicates whether relationships are nested.</param>
+        <summary>This constructor is provided for design time support in the Visual Studio environment.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any <xref:System.Data.DataRelation> object created by using this constructor must then be added to the collection with <xref:System.Data.DataRelationCollection.AddRange%2A>. Tables and columns with the specified names must exist at the time the method is called, or if <xref:System.Data.DataTable.BeginInit%2A> has been called before calling this constructor, the tables and columns with the specified names must exist at the time that <xref:System.Data.DataTable.EndInit%2A> is called.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckStateForProperty">
+      <MemberSignature Language="C#" Value="protected void CheckStateForProperty ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CheckStateForProperty() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataRelation.CheckStateForProperty" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Data.DataException">The parent and child tables belong to different <see cref="T:System.Data.DataSet" /> objects.  
+  
+ -Or-  
+  
+ One or more pairs of parent and child <see cref="T:System.Data.DataColumn" /> objects have mismatched data types.  
+  
+ -Or-  
+  
+ The parent and child <see cref="T:System.Data.DataColumn" /> objects are identical.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildColumns">
+      <MemberSignature Language="C#" Value="public virtual System.Data.DataColumn[] ChildColumns { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataColumn[] ChildColumns" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataRelation.ChildColumns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataColumn[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the child <see cref="T:System.Data.DataColumn" /> objects of this relation.</summary>
+        <value>An array of <see cref="T:System.Data.DataColumn" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example gets the child <xref:System.Data.DataColumn> objects of a <xref:System.Data.DataRelation>.  
+  
+ [!code-vb[Classic WebData DataRelation.ChildColumns Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRelation.ChildColumns Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildKeyConstraint">
+      <MemberSignature Language="C#" Value="public virtual System.Data.ForeignKeyConstraint ChildKeyConstraint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.ForeignKeyConstraint ChildKeyConstraint" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataRelation.ChildKeyConstraint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.ForeignKeyConstraint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Data.ForeignKeyConstraint" /> for the relation.</summary>
+        <value>A <see langword="ForeignKeyConstraint" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no associated <xref:System.Data.ForeignKeyConstraint> exists for this relationship, it will be created automatically, and pointed to by the `ChildKeyConstraint`, when the relation is added to the collection of relations.  
+  
+   
+  
+## Examples  
+ The following example sets the `UpdateRule`, `DeleteRule`, and `AcceptReject` rule for the `ForeignKeyConstraint` associated with the `DataRelation`.  
+  
+ [!code-vb[Classic WebData DataRelation.ChildKeyConstraint Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRelation.ChildKeyConstraint Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildTable">
+      <MemberSignature Language="C#" Value="public virtual System.Data.DataTable ChildTable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataTable ChildTable" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataRelation.ChildTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the child table of this relation.</summary>
+        <value>A <see cref="T:System.Data.DataTable" /> that is the child table of the relation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example gets the child <xref:System.Data.DataTable> of a <xref:System.Data.DataRelation>.  
+  
+ [!code-vb[Classic WebData DataRelation.ChildTable Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRelation.ChildTable Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSet">
+      <MemberSignature Language="C#" Value="public virtual System.Data.DataSet DataSet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataSet DataSet" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataRelation.DataSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.DataSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Data.DataSet" /> to which the <see cref="T:System.Data.DataRelation" /> belongs.</summary>
+        <value>A <see cref="T:System.Data.DataSet" /> to which the <see cref="T:System.Data.DataRelation" /> belongs.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.DataRelationCollection> associated with a <xref:System.Data.DataSet> is accessed through the <xref:System.Data.DataSet.Relations%2A> property of the <xref:System.Data.DataSet> object.  
+  
+   
+  
+## Examples  
+ The following example gets the <xref:System.Data.DataSet> of a <xref:System.Data.DataRelation>.  
+  
+ [!code-vb[Classic WebData DataRelation.DataSet Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRelation.DataSet Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtendedProperties">
+      <MemberSignature Language="C#" Value="public System.Data.PropertyCollection ExtendedProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.PropertyCollection ExtendedProperties" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataRelation.ExtendedProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.PropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection that stores customized properties.</summary>
+        <value>A <see cref="T:System.Data.PropertyCollection" /> that contains customized properties.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Data.DataRelation.ExtendedProperties%2A> to add custom information to a <xref:System.Data.DataRelation> object. Add information with the Add method. Retrieve information with the Item method.  
+  
+ Extended properties must be of type <xref:System.String>. Properties that are not of type String are not persisted when the <xref:System.Data.DataRelation> is written as XML.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Nested">
+      <MemberSignature Language="C#" Value="public virtual bool Nested { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Nested" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataRelation.Nested" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether <see cref="T:System.Data.DataRelation" /> objects are nested.</summary>
+        <value>
+          <see langword="true" />, if <see cref="T:System.Data.DataRelation" /> objects are nested; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use <xref:System.Data.DataRelation> objects to define hierarchical relationships, such as those specified in XML. For more information, see [Nesting DataRelations](~/docs/framework/data/adonet/dataset-datatable-dataview/nesting-datarelations.md).  
+  
+> [!NOTE]
+>  If the <xref:System.Data.DataTable.TableName%2A> of the child table in the relation matches the <xref:System.Data.DataColumn.ColumnName%2A> of a column in the parent table in the relation, the <xref:System.Data.DataRelation.Nested%2A> property must be false. This was not required with the .NET Framework version 1.0.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyChanging">
+      <MemberSignature Language="C#" Value="protected void OnPropertyChanging (System.ComponentModel.PropertyChangedEventArgs pcevent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void OnPropertyChanging(class System.ComponentModel.PropertyChangedEventArgs pcevent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataRelation.OnPropertyChanging(System.ComponentModel.PropertyChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pcevent" Type="System.ComponentModel.PropertyChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="pcevent">Parameter reference.</param>
+        <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentColumns">
+      <MemberSignature Language="C#" Value="public virtual System.Data.DataColumn[] ParentColumns { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataColumn[] ParentColumns" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataRelation.ParentColumns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataColumn[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an array of <see cref="T:System.Data.DataColumn" /> objects that are the parent columns of this <see cref="T:System.Data.DataRelation" />.</summary>
+        <value>An array of <see cref="T:System.Data.DataColumn" /> objects that are the parent columns of this <see cref="T:System.Data.DataRelation" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example gets the array of <xref:System.Data.DataColumn> objects that function as parent columns for the relation.  
+  
+ [!code-vb[Classic WebData DataRelation.ParentColumns Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRelation.ParentColumns Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentKeyConstraint">
+      <MemberSignature Language="C#" Value="public virtual System.Data.UniqueConstraint ParentKeyConstraint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.UniqueConstraint ParentKeyConstraint" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataRelation.ParentKeyConstraint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.UniqueConstraint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Data.UniqueConstraint" /> that guarantees that values in the parent column of a <see cref="T:System.Data.DataRelation" /> are unique.</summary>
+        <value>A <see cref="T:System.Data.UniqueConstraint" /> that makes sure that values in a parent column are unique.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example gets the <xref:System.Data.DataRelation.ParentKeyConstraint%2A> of a <xref:System.Data.DataRelation> object.  
+  
+ [!code-vb[Classic WebData DataRelation.ParentKeyConstraint Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRelation.ParentKeyConstraint Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentTable">
+      <MemberSignature Language="C#" Value="public virtual System.Data.DataTable ParentTable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataTable ParentTable" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataRelation.ParentTable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the parent <see cref="T:System.Data.DataTable" /> of this <see cref="T:System.Data.DataRelation" />.</summary>
+        <value>A <see cref="T:System.Data.DataTable" /> that is the parent table of this relation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example gets the parent <xref:System.Data.DataTable> of a <xref:System.Data.DataRelation>.  
+  
+ [!code-vb[Classic WebData DataRelation.ParentTable Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRelation.ParentTable Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaisePropertyChanging">
+      <MemberSignature Language="C#" Value="protected void RaisePropertyChanging (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void RaisePropertyChanging(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataRelation.RaisePropertyChanging(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Parameter reference.</param>
+        <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelationName">
+      <MemberSignature Language="C#" Value="public virtual string RelationName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RelationName" />
+      <MemberSignature Language="DocId" Value="P:System.Data.DataRelation.RelationName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name used to retrieve a <see cref="T:System.Data.DataRelation" /> from the <see cref="T:System.Data.DataRelationCollection" />.</summary>
+        <value>The name of the a <see cref="T:System.Data.DataRelation" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Data.DataRelation.RelationName%2A> property to retrieve a <xref:System.Data.DataRelation> from the <xref:System.Data.DataRelationCollection>.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Data.DataRelation.RelationName%2A> property to retrieve a <xref:System.Data.DataRelation> from a <xref:System.Data.DataRelationCollection>.  
+  
+ [!code-vb[Classic WebData DataRelation.RelationName Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRelation.RelationName Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <see langword="null" /> or empty string ("") was passed into a <see cref="T:System.Data.DataColumn" /> that is a <see cref="T:System.Data.DataRelation" />.</exception>
+        <exception cref="T:System.Data.DuplicateNameException">The <see cref="T:System.Data.DataRelation" /> belongs to a collection that already contains a <see cref="T:System.Data.DataRelation" /> with the same name.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.DataRelation.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the <see cref="P:System.Data.DataRelation.RelationName" />, if one exists.</summary>
+        <returns>The value of the <see cref="P:System.Data.DataRelation.RelationName" /> property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses the <xref:System.Data.DataColumn.ToString%2A> property to return the name of the <xref:System.Data.DataRelation> object.  
+  
+ [!code-csharp[Classic WebData DataRelation.ToString Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRelation.ToString Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData DataRelation.ToString Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRelation.ToString Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

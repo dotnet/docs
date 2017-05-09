@@ -1,0 +1,117 @@
+<Type Name="ListItemsCollectionEditor" FullName="System.Web.UI.Design.WebControls.ListItemsCollectionEditor">
+  <TypeSignature Language="C#" Value="public class ListItemsCollectionEditor : System.ComponentModel.Design.CollectionEditor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListItemsCollectionEditor extends System.ComponentModel.Design.CollectionEditor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.ListItemsCollectionEditor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.Design.CollectionEditor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a component editor for <see cref="T:System.Web.UI.WebControls.ListItemCollection" /> objects in a control that is derived from the <see cref="T:System.Web.UI.WebControls.ListControl" /> or a similar control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ListItemsCollectionEditor> class provides a user interface for editing the <xref:System.Web.UI.WebControls.ListItem> elements of the <xref:System.Web.UI.WebControls.ListItemCollection> object within a control that is derived from the <xref:System.Web.UI.WebControls.ListControl> or a similar control.  
+  
+ The <xref:System.Web.UI.Design.WebControls.ListItemsCollectionEditor> is invoked by selecting the ellipsis (**…**) button on the **ListItems** property in the **Properties** grid of the visual designer.  
+  
+ The <xref:System.Web.UI.Design.WebControls.ListItemsCollectionEditor.CanSelectMultipleInstances%2A> method always returns `false` to indicate that only one object can be selected at a time in the editor. The <xref:System.Web.UI.Design.WebControls.ListItemsCollectionEditor.HelpTopic%2A> property returns the name of the Help topic that the editor displays.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.ComponentModel.EditorAttribute> class to associate the <xref:System.Web.UI.Design.WebControls.ListItemsCollectionEditor> class and the <xref:System.Drawing.Design.UITypeEditor> class (the collection editor's base class) with a custom `ListItems` property.  
+  
+ [!code-csharp[Design.WebControls_CollectionEditorSamples#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Design.WebControls_CollectionEditorSamples/CS/WebControlDesignerCollectionEditors.cs#3)]
+ [!code-vb[Design.WebControls_CollectionEditorSamples#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Design.WebControls_CollectionEditorSamples/VB/webcontroldesignercollectioneditors.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListItemsCollectionEditor (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListItemsCollectionEditor.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The <see cref="T:System.Type" /> of the collection to edit.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.ListItemsCollectionEditor" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.ListItemsCollectionEditor> class when you select the ellipsis (**…**) button on the **ListItems** property in the **Properties** grid of the visual designer, when designing a control that is derived from the <xref:System.Web.UI.WebControls.ListControl> class or other control that encapsulates a <xref:System.Web.UI.WebControls.ListItemCollection> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanSelectMultipleInstances">
+      <MemberSignature Language="C#" Value="protected override bool CanSelectMultipleInstances ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool CanSelectMultipleInstances() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListItemsCollectionEditor.CanSelectMultipleInstances" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value indicating whether multiple <see cref="T:System.Web.UI.WebControls.ListItem" /> elements can be selected at one time.</summary>
+        <returns>Always <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ListItemsCollectionEditor.CanSelectMultipleInstances%2A> method always returns `false`; thus, only one <xref:System.Web.UI.WebControls.ListItem> object can be selected at a time in the <xref:System.Web.UI.Design.WebControls.ListItemsCollectionEditor> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpTopic">
+      <MemberSignature Language="C#" Value="protected override string HelpTopic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HelpTopic" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ListItemsCollectionEditor.HelpTopic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Help topic to display for the <see cref="T:System.Web.UI.Design.WebControls.ListItemsCollectionEditor" /> object.</summary>
+        <value>A <see cref="T:System.String" /> that specifies the Help topic to display.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ListItemsCollectionEditor.HelpTopic%2A> property gets the name of the Help topic to display when the <xref:System.Web.UI.Design.WebControls.ListItemsCollectionEditor> dialog box **Help** button is clicked or when the **F1** key is pressed.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Override the <see cref="P:System.Web.UI.Design.WebControls.ListItemsCollectionEditor.HelpTopic" /> property to display a different Help topic.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

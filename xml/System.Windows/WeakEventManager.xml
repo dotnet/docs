@@ -1,0 +1,519 @@
+<Type Name="WeakEventManager" FullName="System.Windows.WeakEventManager">
+  <TypeSignature Language="C#" Value="public abstract class WeakEventManager : System.Windows.Threading.DispatcherObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract WeakEventManager extends System.Windows.Threading.DispatcherObject" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.WeakEventManager" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Threading.DispatcherObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a base class for the event manager that is used in the *weak event pattern*. The manager adds and removes listeners for events (or callbacks) that also use the pattern.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You typically use the weak event pattern when the event source has an object lifetime that is independent of the event listeners. Using the central event dispatching capability of a <xref:System.Windows.WeakEventManager> allows the listener's handlers to be garbage collected even if the source object persists. By contrast, a regular event hookup using the `+=` operator causes the potentially disconnected source to hold a reference to the listeners. This prevents the receiver from being garbage collected in a timely fashion.  
+  
+ One common situation where the lifetime relationships between sources and listeners should use of the weak event pattern is the handling of update events coming from data bindings.  
+  
+ The weak event pattern can also be used for callbacks and regular events.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>For an example of a custom <see cref="T:System.Windows.WeakEventManager" />, see [Weak Event Patterns](~/docs/framework/wpf/advanced/weak-event-patterns.md).</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WeakEventManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes base class values when it is used as the initializer by the constructor of a derived class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeliverEvent">
+      <MemberSignature Language="C#" Value="protected void DeliverEvent (object sender, EventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void DeliverEvent(object sender, class System.EventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.DeliverEvent(System.Object,System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="args" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The object on which the event is being handled.</param>
+        <param name="args">An <see cref="T:System.EventArgs" /> that contains the event data for the event to deliver.</param>
+        <summary>Delivers the event being managed to each listener.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call the <xref:System.Windows.WeakEventManager.DeliverEvent%2A> method from within the event handlers that are added or removed by the <xref:System.Windows.WeakEventManager.StartListening%2A> and <xref:System.Windows.WeakEventManager.StopListening%2A> implementations of subclasses.  
+  
+ If you call the <xref:System.Windows.WeakEventManager.ProtectedAddListener%2A> method in your `AddListener` implementation of your class, the list of listeners receiving the event is kept in an underlying collection. (`AddListener` is not part of an interface or class contract. `AddListener` is the suggested name for the method of your manager class that calls <xref:System.Windows.WeakEventManager.ProtectedAddListener%2A> and adds weak event pattern listeners for the event.)  
+  
+ <xref:System.Windows.WeakEventManager.ProtectedAddListener%2A> adds listeners to a single list. If your manager implementation maintains more than one list of listeners per event, do not use <xref:System.Windows.WeakEventManager.DeliverEvent%2A> or <xref:System.Windows.WeakEventManager.ProtectedAddListener%2A>. Instead, your implementation should create its own <xref:System.Windows.WeakEventManager.ListenerList> instances, `AddListener` should add listeners to the appropriate list, and events should be delivered to the appropriate listener list by calling <xref:System.Windows.WeakEventManager.DeliverEventToList%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeliverEventToList">
+      <MemberSignature Language="C#" Value="protected void DeliverEventToList (object sender, EventArgs args, System.Windows.WeakEventManager.ListenerList list);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void DeliverEventToList(object sender, class System.EventArgs args, class System.Windows.WeakEventManager/ListenerList list) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.DeliverEventToList(System.Object,System.EventArgs,System.Windows.WeakEventManager.ListenerList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="args" Type="System.EventArgs" />
+        <Parameter Name="list" Type="System.Windows.WeakEventManager+ListenerList" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The object on which the event is being handled.</param>
+        <param name="args">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <param name="list">The provided <see cref="T:System.Windows.WeakEventManager.ListenerList" />.</param>
+        <summary>Delivers the event being managed to each listener in the provided list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is necessary if your manager implementation maintains separate listeners lists based on information that is captured in the event data. If you use this advanced technique, you must create and maintain the separate lists as part of your manager implementation, and you must provide a way to add listeners to a specific list. Your handler implementation that listens to the raw event must act upon the condition that you use to differentiate the lists, and deliver the event only to the appropriate list or lists.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentManager">
+      <MemberSignature Language="C#" Value="protected static System.Windows.WeakEventManager GetCurrentManager (Type managerType);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Windows.WeakEventManager GetCurrentManager(class System.Type managerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.GetCurrentManager(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.WeakEventManager</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="managerType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="managerType">The type to obtain the <see cref="T:System.Windows.WeakEventManager" /> for.</param>
+        <summary>Returns the <see cref="T:System.Windows.WeakEventManager" /> implementation that is used for the provided type.</summary>
+        <returns>The matching <see cref="T:System.Windows.WeakEventManager" /> implementation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.IWeakEventListener.ReceiveWeakEvent%2A> implementations call this method using their passed `managerType`. The returned <xref:System.Windows.WeakEventManager> is then used as the differentiator that determines which event was received, and which private class handler to invoke.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="protected object this[object source] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(object)" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.WeakEventManager.Item(System.Object)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="source">The zero-based index of the requested source.</param>
+        <summary>Gets or sets the data being stored for the specified source.</summary>
+        <value>Data being stored by the manager for this source.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Derived classes can choose what data and type to store in this indexer. Typically this is implemented as a <xref:System.Windows.WeakEventManager.ListenerList>, which is a list of weak references to listeners. You would only have to change this type if the <xref:System.Windows.WeakEventManager.ListenerList> type cannot contain your required information. If so, you will have to override the <xref:System.Windows.WeakEventManager.Purge%2A> method so that all cleanup of the underlying type is performed correctly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewListenerList">
+      <MemberSignature Language="C#" Value="protected virtual System.Windows.WeakEventManager.ListenerList NewListenerList ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Windows.WeakEventManager/ListenerList NewListenerList() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.NewListenerList" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.WeakEventManager+ListenerList</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a new object to contain listeners to an event.</summary>
+        <returns>A new object to contain listeners to an event.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtectedAddHandler">
+      <MemberSignature Language="C#" Value="protected void ProtectedAddHandler (object source, Delegate handler);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ProtectedAddHandler(object source, class System.Delegate handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ProtectedAddHandler(System.Object,System.Delegate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+        <Parameter Name="handler" Type="System.Delegate" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source object that the handler delegate subscribes to.</param>
+        <param name="handler">The delegate that handles the event that is raised by <c>source</c>.</param>
+        <summary>Adds the specified delegate as an event handler of the specified source.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtectedAddListener">
+      <MemberSignature Language="C#" Value="protected void ProtectedAddListener (object source, System.Windows.IWeakEventListener listener);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ProtectedAddListener(object source, class System.Windows.IWeakEventListener listener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ProtectedAddListener(System.Object,System.Windows.IWeakEventListener)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+        <Parameter Name="listener" Type="System.Windows.IWeakEventListener" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source to attach listeners to.</param>
+        <param name="listener">The listening class (which must implement <see cref="T:System.Windows.IWeakEventListener" />).</param>
+        <summary>Adds the provided listener to the provided source for the event being managed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method within your manager class `AddListener` methods on <xref:System.Windows.WeakEventManager> implementations. `AddListener` is the suggested name for the static method you define on your manager class to enable other classes to add a listener for your weak event pattern. `AddListener` should take two parameters: the `source` where the listener is attached, and the `listener` instance. For your `AddListener` implementation, call the <xref:System.Windows.WeakEventManager.ProtectedAddListener%2A> method on the current manager and pass the same two parameters.  
+  
+ If the list of listeners was previously empty, <xref:System.Windows.WeakEventManager.ProtectedAddListener%2A> calls the <xref:System.Windows.WeakEventManager.StartListening%2A> method internally, which will call your specific <xref:System.Windows.WeakEventManager.StartListening%2A> override through polymorphism.  
+  
+ <xref:System.Windows.WeakEventManager.ProtectedAddListener%2A> adds listeners to a single internal <xref:System.Windows.WeakEventManager.ListenerList> per `source`. If your manager implementation maintains more than one list of listeners for each event-source combination, do not use <xref:System.Windows.WeakEventManager.ProtectedAddListener%2A>. Instead, your implementation should create its own <xref:System.Windows.WeakEventManager.ListenerList> instances, `AddListener` should add listeners to the appropriate list, and events should be delivered to the appropriate listener list by calling the <xref:System.Windows.WeakEventManager.DeliverEventToList%2A> event instead of the <xref:System.Windows.WeakEventManager.DeliverEvent%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtectedRemoveHandler">
+      <MemberSignature Language="C#" Value="protected void ProtectedRemoveHandler (object source, Delegate handler);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ProtectedRemoveHandler(object source, class System.Delegate handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ProtectedRemoveHandler(System.Object,System.Delegate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+        <Parameter Name="handler" Type="System.Delegate" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source to remove the handler from.</param>
+        <param name="handler">The delegate to remove from <c>source</c>.</param>
+        <summary>Removes the previously added handler from the specified source.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtectedRemoveListener">
+      <MemberSignature Language="C#" Value="protected void ProtectedRemoveListener (object source, System.Windows.IWeakEventListener listener);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ProtectedRemoveListener(object source, class System.Windows.IWeakEventListener listener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ProtectedRemoveListener(System.Object,System.Windows.IWeakEventListener)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+        <Parameter Name="listener" Type="System.Windows.IWeakEventListener" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source to remove listeners from.</param>
+        <param name="listener">The listening class (which must implement <see cref="T:System.Windows.IWeakEventListener" />).</param>
+        <summary>Removes a previously added listener from the provided source.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method within your manager class `RemoveListener` methods on <xref:System.Windows.WeakEventManager> implementations. `RemoveListener` is the suggested name for the static method you define on your manager class to enable other classes to remove a listener for your weak event pattern. `RemoveListener` should take two parameters: the `source` where the listener is removed, and the `listener` class. For your `RemoveListener` implementation, call the <xref:System.Windows.WeakEventManager.ProtectedRemoveListener%2A> method on the current manager and pass the same two parameters.  
+  
+ If a call to <xref:System.Windows.WeakEventManager.ProtectedRemoveListener%2A> removes the last listener in the list, <xref:System.Windows.WeakEventManager.ProtectedRemoveListener%2A> calls the <xref:System.Windows.WeakEventManager.StopListening%2A> method internally, which will call your specific <xref:System.Windows.WeakEventManager.StopListening%2A> override through polymorphism.  
+  
+ <xref:System.Windows.WeakEventManager.ProtectedRemoveListener%2A> removes listeners from a single internal <xref:System.Windows.WeakEventManager.ListenerList> per `source`. If your manager implementation maintains more than one list of listeners for each event-source combination, do not use <xref:System.Windows.WeakEventManager.ProtectedRemoveListener%2A>. Instead, your implementation should create its own <xref:System.Windows.WeakEventManager.ListenerList> instances, `RemoveListener` should remove listeners from the appropriate list, and events should be delivered to the appropriate listener list by calling the <xref:System.Windows.WeakEventManager.DeliverEventToList%2A> method instead of the <xref:System.Windows.WeakEventManager.DeliverEvent%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Purge">
+      <MemberSignature Language="C#" Value="protected virtual bool Purge (object source, object data, bool purgeAll);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool Purge(object source, object data, bool purgeAll) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.Purge(System.Object,System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+        <Parameter Name="data" Type="System.Object" />
+        <Parameter Name="purgeAll" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source for events being listened to.</param>
+        <param name="data">The data to check. This object is expected to be a <see cref="T:System.Windows.WeakEventManager.ListenerList" /> implementation.</param>
+        <param name="purgeAll">
+          <see langword="true" /> to stop listening to <c>source</c>, and completely remove all entries from <c>data</c>.</param>
+        <summary>Removes inactive listener entries from the data list for the provided source. Returns <see langword="true" /> if some entries were actually removed from the list.</summary>
+        <returns>
+          <see langword="true" /> if some entries were actually removed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.WeakEventManager.Purge%2A> method has a default implementation that will remove all entries when data is a <xref:System.Windows.WeakEventManager.ListenerList>.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>If the underlying type for the <see cref="P:System.Windows.WeakEventManager.Item(System.Object)" /> is something other than <see cref="T:System.Windows.WeakEventManager.ListenerList" />, or contains data beyond a <see cref="T:System.Windows.WeakEventManager.ListenerList" />, you must override the <see cref="M:System.Windows.WeakEventManager.Purge(System.Object,System.Object,System.Boolean)" /> method. The override should provide purge behavior for the alternate type items list. Generally, the override should provide behavior without calling the base implementation. If a specific <see cref="T:System.Windows.WeakEventManager.ListenerList" /> still needs clearing, call <see cref="M:System.Windows.WeakEventManager.ListenerList.Purge" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadLock">
+      <MemberSignature Language="C#" Value="protected IDisposable ReadLock { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IDisposable ReadLock" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.WeakEventManager.ReadLock" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IDisposable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Establishes a read-lock on the underlying data table, and returns an <see cref="T:System.IDisposable" />.</summary>
+        <value>An object that can be used to establish a lock on the data table members and then be appropriately disposed with a <see langword="using" /> construct.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In derived classes, queries to the table contained in <xref:System.Windows.WeakEventManager.Item%2A> should always occur within a `using (ReadLock) { ... }` clause, except for queries that are already within a write lock. These queries may be necessary if your class supports a more sophisticated `AddListener` implementation that requires more data beyond the `source` and the `listener`, and uses the <xref:System.Windows.WeakEventManager.Item%2A> collection to store the extra information.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="protected void Remove (object source);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Remove(object source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.Remove(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source to remove listener information for.</param>
+        <summary>Removes all listeners for the specified source.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScheduleCleanup">
+      <MemberSignature Language="C#" Value="protected void ScheduleCleanup ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ScheduleCleanup() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.ScheduleCleanup" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Requests that a purge of unused entries in the underlying listener list be performed on a lower priority thread.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling the <xref:System.Windows.WeakEventManager.ScheduleCleanup%2A> method is similar to calling the <xref:System.Windows.WeakEventManager.Purge%2A> method on the current manager's list, at lower thread priority, with the `purgeAll` parameter set to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCurrentManager">
+      <MemberSignature Language="C#" Value="protected static void SetCurrentManager (Type managerType, System.Windows.WeakEventManager manager);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig void SetCurrentManager(class System.Type managerType, class System.Windows.WeakEventManager manager) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.SetCurrentManager(System.Type,System.Windows.WeakEventManager)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="managerType" Type="System.Type" />
+        <Parameter Name="manager" Type="System.Windows.WeakEventManager" />
+      </Parameters>
+      <Docs>
+        <param name="managerType">The type to set the new event manager.</param>
+        <param name="manager">The new event manager.</param>
+        <summary>Sets the current manager for the specified manager type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call the <xref:System.Windows.WeakEventManager.SetCurrentManager%2A> method to initialize a manager, if that is required by a call to your `CurrentManager` property on a <xref:System.Windows.WeakEventManager> implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartListening">
+      <MemberSignature Language="C#" Value="protected abstract void StartListening (object source);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void StartListening(object source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.StartListening(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source to begin listening on.</param>
+        <summary>When overridden in a derived class, starts listening for the event being managed. After the <see cref="M:System.Windows.WeakEventManager.StartListening(System.Object)" /> method is first called, the manager should be in the state of calling <see cref="M:System.Windows.WeakEventManager.DeliverEvent(System.Object,System.EventArgs)" /> or <see cref="M:System.Windows.WeakEventManager.DeliverEventToList(System.Object,System.EventArgs,System.Windows.WeakEventManager.ListenerList)" /> whenever the relevant event from the provided source is handled.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see cref="M:System.Windows.WeakEventManager.StartListening(System.Object)" /> overrides should add a handler to the provided <paramref name="source" />. The handler is declared by the manager itself. The class handler should not be public, and it should only be called in response to the event being managed. The class handler should call the <see cref="M:System.Windows.WeakEventManager.DeliverEvent(System.Object,System.EventArgs)" /> method or the <see cref="M:System.Windows.WeakEventManager.DeliverEventToList(System.Object,System.EventArgs,System.Windows.WeakEventManager.ListenerList)" /> method appropriately.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="StopListening">
+      <MemberSignature Language="C#" Value="protected abstract void StopListening (object source);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void StopListening(object source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.WeakEventManager.StopListening(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source to stop listening on.</param>
+        <summary>When overridden in a derived class, stops listening on the provided source for the event being managed.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see cref="M:System.Windows.WeakEventManager.StopListening(System.Object)" /> implementations should remove the class handler as added by the <see cref="M:System.Windows.WeakEventManager.StartListening(System.Object)" /> method. Removing a listener should not clear the listener list. Instead, it should only disconnect the class handler (perhaps temporarily). Other methods are available for clearing the entire list, such as the <see cref="M:System.Windows.WeakEventManager.Purge(System.Object,System.Object,System.Boolean)" /> method with the <paramref name="purgeAll" /> parameter set to <see langword="true" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLock">
+      <MemberSignature Language="C#" Value="protected IDisposable WriteLock { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IDisposable WriteLock" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.WeakEventManager.WriteLock" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IDisposable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Establishes a write-lock on the underlying data table, and returns an<see cref="T:System.IDisposable" />.</summary>
+        <value>An object that can be used to establish a lock on the data table members and then be appropriately disposed with a <see langword="using" /> construct.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In derived classes, all modifications to the underlying data table should occur within a `using (WriteLock) { ... }` clause. These modifications may be necessary if your class supports a more sophisticated `AddListener` implementation that requires more data beyond the `source` and the `listener`, and uses the <xref:System.Windows.WeakEventManager.Item%2A> collection to store the extra information.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

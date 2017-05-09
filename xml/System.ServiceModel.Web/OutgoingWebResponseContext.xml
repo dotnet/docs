@@ -1,0 +1,361 @@
+<Type Name="OutgoingWebResponseContext" FullName="System.ServiceModel.Web.OutgoingWebResponseContext">
+  <TypeSignature Language="C#" Value="public class OutgoingWebResponseContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OutgoingWebResponseContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Web.OutgoingWebResponseContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides programmatic access to the context of the outgoing Web response.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BindingWriteEncoding">
+      <MemberSignature Language="C#" Value="public System.Text.Encoding BindingWriteEncoding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding BindingWriteEncoding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.OutgoingWebResponseContext.BindingWriteEncoding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.Encoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the encoding set on the binding.</summary>
+        <value>The encoding.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentLength">
+      <MemberSignature Language="C#" Value="public long ContentLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 ContentLength" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.OutgoingWebResponseContext.ContentLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the content length header from the outgoing Web response.</summary>
+        <value>The content length header of the outgoing Web response.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public string ContentType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.OutgoingWebResponseContext.ContentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the content type header from the outgoing Web response.</summary>
+        <value>The content type header of the outgoing Web response.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ETag">
+      <MemberSignature Language="C#" Value="public string ETag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ETag" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.OutgoingWebResponseContext.ETag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the etag header from the outgoing Web response.</summary>
+        <value>The etag header of the outgoing Web response.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Format">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.ServiceModel.Web.WebMessageFormat&gt; Format { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.ServiceModel.Web.WebMessageFormat&gt; Format" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.OutgoingWebResponseContext.Format" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.ServiceModel.Web.WebMessageFormat&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the web message format</summary>
+        <value>The web message format.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Headers">
+      <MemberSignature Language="C#" Value="public System.Net.WebHeaderCollection Headers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.WebHeaderCollection Headers" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.OutgoingWebResponseContext.Headers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebHeaderCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the headers from the outgoing Web response.</summary>
+        <value>A <see cref="T:System.Net.WebHeaderCollection" /> instance that contains the headers from the outgoing Web response.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastModified">
+      <MemberSignature Language="C#" Value="public DateTime LastModified { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastModified" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.OutgoingWebResponseContext.LastModified" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the last modified header of the outgoing Web response.</summary>
+        <value>A <see cref="T:System.DateTime" /> instance that contains the time the requested resource was last modified.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="public string Location { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Location" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.OutgoingWebResponseContext.Location" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the location header from the outgoing Web response.</summary>
+        <value>The location header from the outgoing Web response.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetETag">
+      <MemberSignature Language="C#" Value="public void SetETag (Guid entityTag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetETag(valuetype System.Guid entityTag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.OutgoingWebResponseContext.SetETag(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entityTag" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="entityTag">The ETag to set.</param>
+        <summary>Sets the specified ETag.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetETag">
+      <MemberSignature Language="C#" Value="public void SetETag (int entityTag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetETag(int32 entityTag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.OutgoingWebResponseContext.SetETag(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entityTag" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="entityTag">The ETag to set.</param>
+        <summary>Sets the specified ETag.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetETag">
+      <MemberSignature Language="C#" Value="public void SetETag (long entityTag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetETag(int64 entityTag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.OutgoingWebResponseContext.SetETag(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entityTag" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="entityTag">The ETag to set.</param>
+        <summary>Sets the specified ETag.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetETag">
+      <MemberSignature Language="C#" Value="public void SetETag (string entityTag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetETag(string entityTag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.OutgoingWebResponseContext.SetETag(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entityTag" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="entityTag">The ETag to set.</param>
+        <summary>Sets the specified ETag.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetStatusAsCreated">
+      <MemberSignature Language="C#" Value="public void SetStatusAsCreated (Uri locationUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetStatusAsCreated(class System.Uri locationUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.OutgoingWebResponseContext.SetStatusAsCreated(System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="locationUri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="locationUri">The <see cref="T:System.Uri" /> instance to the requested resource.</param>
+        <summary>Sets the HTTP status code of the outgoing Web response to <see cref="F:System.Net.HttpStatusCode.Created" /> and sets the Location header to the provided URI.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetStatusAsNotFound">
+      <MemberSignature Language="C#" Value="public void SetStatusAsNotFound ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetStatusAsNotFound() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.OutgoingWebResponseContext.SetStatusAsNotFound" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the HTTP status code of the outgoing Web response to <see cref="F:System.Net.HttpStatusCode.NotFound" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetStatusAsNotFound">
+      <MemberSignature Language="C#" Value="public void SetStatusAsNotFound (string description);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetStatusAsNotFound(string description) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.OutgoingWebResponseContext.SetStatusAsNotFound(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="description" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="description">The description of status.</param>
+        <summary>Sets the HTTP status code of the outgoing Web response to <see cref="F:System.Net.HttpStatusCode.NotFound" /> with the specified description.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusCode">
+      <MemberSignature Language="C#" Value="public System.Net.HttpStatusCode StatusCode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.HttpStatusCode StatusCode" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.OutgoingWebResponseContext.StatusCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.HttpStatusCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the status code of the outgoing Web response.</summary>
+        <value>An <see cref="T:System.Net.HttpStatusCode" /> instance that contains the status code of the outgoing Web response.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusDescription">
+      <MemberSignature Language="C#" Value="public string StatusDescription { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StatusDescription" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.OutgoingWebResponseContext.StatusDescription" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the status description of the outgoing Web response.</summary>
+        <value>The status description of the outgoing Web response.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuppressEntityBody">
+      <MemberSignature Language="C#" Value="public bool SuppressEntityBody { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SuppressEntityBody" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.OutgoingWebResponseContext.SuppressEntityBody" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets a value that indicates whether [!INCLUDE[indigo1](~/includes/indigo1-md.md)] omits data that is normally written to the entity body of the response and forces an empty response to be returned.</summary>
+        <value>If <see langword="true" />, [!INCLUDE[indigo2](~/includes/indigo2-md.md)] omits any data that is normally written to the entity body of the response and forces an empty response to be returned. The default value is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

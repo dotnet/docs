@@ -1,0 +1,76 @@
+<Type Name="MediaEntryAttribute" FullName="System.Data.Services.Client.MediaEntryAttribute">
+  <TypeSignature Language="C#" Value="public sealed class MediaEntryAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MediaEntryAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.MediaEntryAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services.Client</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false, Inherited=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Signifies that the specified class is to be treated as a media link entry.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The class is treated as a media link entry, which is an AtomPub protocol for handling binary data and metadata about that binary data.  
+  
+ A type marked with this attribute has altered behavior when <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> is called. The media property is also called a Media resource. On saving, the media property of the type denoted by the <xref:System.Data.Services.Client.MediaEntryAttribute.MediaMemberName%2A> property, is inserted by a POST request to the URI `/<EntitySet>/$value`.  
+  
+ After the `POST`, a `PUT` request with all the properties on the type other than the <xref:System.Data.Services.Client.MediaEntryAttribute.MediaMemberName%2A> property, which is binary content, are sent to the URI `/<EntitySet>(<key>)`.  
+  
+ For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MediaEntryAttribute (string mediaMemberName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string mediaMemberName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.MediaEntryAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="mediaMemberName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="mediaMemberName">A string value that identifies the property that holds media data.</param>
+        <summary>Creates a new instance of <see cref="T:System.Data.Services.Client.MediaEntryAttribute" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediaMemberName">
+      <MemberSignature Language="C#" Value="public string MediaMemberName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MediaMemberName" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.MediaEntryAttribute.MediaMemberName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of the property on the class that holds the media, usually binary data.</summary>
+        <value>A string value that identifies the property that holds media data.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,153 @@
+<Type Name="TextEffectTarget" FullName="System.Windows.Documents.TextEffectTarget">
+  <TypeSignature Language="C#" Value="public class TextEffectTarget" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextEffectTarget extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Documents.TextEffectTarget" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Result from using <see cref="T:System.Windows.Documents.TextEffectResolver" /> to set an effect on text. This consists of the <see cref="T:System.Windows.Media.TextEffect" /> created and the <see cref="T:System.Windows.DependencyObject" /> to which the <see cref="T:System.Windows.Media.TextEffect" /> should be set.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to apply a <xref:System.Windows.Media.TranslateTransform>, <xref:System.Windows.Media.ScaleTransform>, and <xref:System.Windows.Media.RotateTransform> text effect to text. Below is the XAML for the example.  
+  
+ [!code-xml[FlowMiscSnippets_snip#TextEffectTargetExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml#texteffecttargetexamplewholepage)]  
+  
+ Below is the code behind for the example.  
+  
+ [!code-csharp[FlowMiscSnippets_snip#TextEffectTargetCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml.cs#texteffecttargetcodeexamplewholepage)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Disable">
+      <MemberSignature Language="C#" Value="public void Disable ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Disable() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextEffectTarget.Disable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Disables the <see cref="T:System.Windows.Media.TextEffect" /> on the effect target.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to apply a <xref:System.Windows.Media.TranslateTransform>, <xref:System.Windows.Media.ScaleTransform>, and <xref:System.Windows.Media.RotateTransform> text effect to text. Below is the XAML for the example.  
+  
+ [!code-xml[FlowMiscSnippets_snip#TextEffectTargetExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml#texteffecttargetexamplewholepage)]  
+  
+ Below is the code behind for the example.  
+  
+ [!code-csharp[FlowMiscSnippets_snip#TextEffectTargetCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml.cs#texteffecttargetcodeexamplewholepage)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Element">
+      <MemberSignature Language="C#" Value="public System.Windows.DependencyObject Element { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyObject Element" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextEffectTarget.Element" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.DependencyObject" /> that the <see cref="T:System.Windows.Media.TextEffect" /> is targeting.</summary>
+        <value>The <see cref="T:System.Windows.DependencyObject" /> that the <see cref="T:System.Windows.Media.TextEffect" /> is targeting.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enable">
+      <MemberSignature Language="C#" Value="public void Enable ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Enable() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextEffectTarget.Enable" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Enables the <see cref="T:System.Windows.Media.TextEffect" /> on the target text.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Media.TextEffect> is already enabled, the method will be a no-op (no operation).  
+  
+   
+  
+## Examples  
+ The following example shows how to apply a <xref:System.Windows.Media.TranslateTransform>, <xref:System.Windows.Media.ScaleTransform>, and <xref:System.Windows.Media.RotateTransform> text effect to text. Below is the XAML for the example.  
+  
+ [!code-xml[FlowMiscSnippets_snip#TextEffectTargetExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml#texteffecttargetexamplewholepage)]  
+  
+ Below is the code behind for the example.  
+  
+ [!code-csharp[FlowMiscSnippets_snip#TextEffectTargetCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml.cs#texteffecttargetcodeexamplewholepage)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public bool IsEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextEffectTarget.IsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that determines whether the text effect is enabled on the target element</summary>
+        <value>**true** if the <see cref="T:System.Windows.Media.TextEffect" />is enabled on the target; otherwise, **false**.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextEffect">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.TextEffect TextEffect { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.TextEffect TextEffect" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.TextEffectTarget.TextEffect" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextEffect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Media.TextEffect" /> of the <see cref="T:System.Windows.Documents.TextEffectTarget" />.</summary>
+        <value>The <see cref="T:System.Windows.Media.TextEffect" /> of the <see cref="T:System.Windows.Documents.TextEffectTarget" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

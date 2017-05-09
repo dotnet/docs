@@ -1,0 +1,292 @@
+<Type Name="CipherAlgorithmType" FullName="System.Security.Authentication.CipherAlgorithmType">
+  <TypeSignature Language="C#" Value="public enum CipherAlgorithmType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CipherAlgorithmType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Authentication.CipherAlgorithmType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Primitives</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines the possible cipher algorithms for the <see cref="T:System.Net.Security.SslStream" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration specifies valid values for the <xref:System.Net.Security.SslStream.CipherAlgorithm?displayProperty=fullName> property.  
+  
+   
+  
+## Examples  
+ The following example displays the properties of an <xref:System.Net.Security.SslStream>.  
+  
+ [!code-cpp[NCLSslClientAsync#3](~/samples/snippets/cpp/VS_Snippets_Remoting/NclSslClientAsync/CPP/NclSslClientAsync.cpp#3)]
+ [!code-csharp[NCLSslClientAsync#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NclSslClientAsync/CS/clientasync.cs#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Aes">
+      <MemberSignature Language="C#" Value="Aes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.CipherAlgorithmType Aes = int32(26129)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Authentication.CipherAlgorithmType.Aes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Authentication.CipherAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Advanced Encryption Standard (AES) algorithm.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Aes128">
+      <MemberSignature Language="C#" Value="Aes128" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.CipherAlgorithmType Aes128 = int32(26126)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Authentication.CipherAlgorithmType.Aes128" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Authentication.CipherAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Advanced Encryption Standard (AES) algorithm with a 128 bit key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Aes192">
+      <MemberSignature Language="C#" Value="Aes192" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.CipherAlgorithmType Aes192 = int32(26127)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Authentication.CipherAlgorithmType.Aes192" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Authentication.CipherAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Advanced Encryption Standard (AES) algorithm with a 192 bit key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Aes256">
+      <MemberSignature Language="C#" Value="Aes256" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.CipherAlgorithmType Aes256 = int32(26128)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Authentication.CipherAlgorithmType.Aes256" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Authentication.CipherAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Advanced Encryption Standard (AES) algorithm with a 256 bit key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Des">
+      <MemberSignature Language="C#" Value="Des" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.CipherAlgorithmType Des = int32(26113)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Authentication.CipherAlgorithmType.Des" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Authentication.CipherAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Data Encryption Standard (DES) algorithm.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.CipherAlgorithmType None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Authentication.CipherAlgorithmType.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Authentication.CipherAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No encryption algorithm is used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Null">
+      <MemberSignature Language="C#" Value="Null" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.CipherAlgorithmType Null = int32(24576)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Authentication.CipherAlgorithmType.Null" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Authentication.CipherAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No encryption is used with a Null cipher algorithm.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rc2">
+      <MemberSignature Language="C#" Value="Rc2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.CipherAlgorithmType Rc2 = int32(26114)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Authentication.CipherAlgorithmType.Rc2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Authentication.CipherAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Rivest's Code 2 (RC2) algorithm.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rc4">
+      <MemberSignature Language="C#" Value="Rc4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.CipherAlgorithmType Rc4 = int32(26625)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Authentication.CipherAlgorithmType.Rc4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Authentication.CipherAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Rivest's Code 4 (RC4) algorithm.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TripleDes">
+      <MemberSignature Language="C#" Value="TripleDes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.CipherAlgorithmType TripleDes = int32(26115)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Authentication.CipherAlgorithmType.TripleDes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Authentication.CipherAlgorithmType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Triple Data Encryption Standard (3DES) algorithm.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

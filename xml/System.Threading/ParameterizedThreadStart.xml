@@ -1,0 +1,78 @@
+<Type Name="ParameterizedThreadStart" FullName="System.Threading.ParameterizedThreadStart">
+  <TypeSignature Language="C#" Value="public delegate void ParameterizedThreadStart(object obj);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ParameterizedThreadStart extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.ParameterizedThreadStart" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Thread</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="obj" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="obj">An object that contains data for the thread procedure.</param>
+    <summary>Represents the method that executes on a <see cref="T:System.Threading.Thread" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a managed thread is created, the method that executes on the thread is represented by:  
+  
+-   A <xref:System.Threading.ThreadStart> delegate that is passed to the <xref:System.Threading.Thread.%23ctor%28System.Threading.ThreadStart%29?displayProperty=fullName> constructor.  Any method that has no parameters and that returns `void` in C# or is a `Sub` procedure in Visual Basic can represent the delegate.  
+  
+-   A <xref:System.Threading.ParameterizedThreadStart> delegate that is passed to the <xref:System.Threading.Thread.%23ctor%28System.Threading.ParameterizedThreadStart%2CSystem.Int32%29?displayProperty=fullName> constructor. Any method that has a single parameter of type <xref:System.Object> and that returns void in C# or is a Sub procedure in Visual Basic can represent the delegate.  
+  
+ The thread does not begin executing until the <xref:System.Threading.Thread.Start%2A?displayProperty=fullName> method is called. The <xref:System.Threading.ThreadStart> or <xref:System.Threading.ParameterizedThreadStart> delegate is invoked on the thread, and execution begins at the first line of the method represented by the delegate. In the case of the <xref:System.Threading.ParameterizedThreadStart> delegate, the object that is passed to the <xref:System.Threading.Thread.Start%28System.Object%29> method is passed to the delegate.  
+  
+> [!NOTE]
+>  Visual Basic and C# users can omit the <xref:System.Threading.ThreadStart> or <xref:System.Threading.ParameterizedThreadStart> delegate constructor when creating a thread. In Visual Basic, use the `AddressOf` operator when passing your method to the <xref:System.Threading.Thread.%23ctor%2A> constructor; for example, `Dim t As New Thread(AddressOf ThreadProc)`. In C#, simply specify the name of the thread procedure. The compiler selects the correct delegate constructor.  
+  
+> [!NOTE]
+>  When you create a <xref:System.Threading.ParameterizedThreadStart> delegate for an instance method in C++, the first parameter of the constructor is the instance variable. For a static method, the first parameter of the constructor is zero. For a static method, the delegate constructor requires only one parameter: the address of the callback method, qualified by the class name.  
+  
+ The <xref:System.Threading.ParameterizedThreadStart> delegate and the <xref:System.Threading.Thread.Start%28System.Object%29?displayProperty=fullName> method overload make it easy to pass data to a thread procedure, but this technique is not type safe because any object can be passed to <xref:System.Threading.Thread.Start%28System.Object%29?displayProperty=fullName>. A more robust way to pass data to a thread procedure is to put both the thread procedure and the data fields into a worker object. For more information, see [Creating Threads and Passing Data at Start Time](~/docs/standard/threading/creating-threads-and-passing-data-at-start-time.md).  
+  
+ The <xref:System.Threading.ParameterizedThreadStart> delegate supports only a single parameter. You can pass multiple data items to the <xref:System.Threading.ParameterizedThreadStart> by making that parameter one of the following:  
+  
+-   An array.  
+  
+-   A collection type, if all of the data items are of the same type.  
+  
+-   A tuple type, such as <xref:System.Tuple%602> or <xref:System.Tuple%604>.  
+  
+   
+  
+## Examples  
+ The following code example uses a <xref:System.Threading.ParameterizedThreadStart> delegate with to execute a static method and an instance method. The first <xref:System.Threading.ParameterizedThreadStart> delegate is represented by the static `DoWork` method and the second is represented by the instance `DoMoreWork` method. Both methods match the <xref:System.Threading.ParameterizedThreadStart> delegate signature; that is, they have a single parameter of type <xref:System.Object> and don't return a value.  
+  
+> [!NOTE]
+>  The Visual Basic and C# compilers infer the <xref:System.Threading.ParameterizedThreadStart> delegate from the signatures of the `DoWork` and `DoMoreWork` methods, and call the correct constructor. Thus, there is no explicit constructor call in the code.  
+  
+ [!code-cpp[System.Threading.ParameterizedThreadStart#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.ParameterizedThreadStart/CPP/source.cpp#1)]
+ [!code-csharp[System.Threading.ParameterizedThreadStart#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.ParameterizedThreadStart/CS/source.cs#1)]
+ [!code-vb[System.Threading.ParameterizedThreadStart#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.ParameterizedThreadStart/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

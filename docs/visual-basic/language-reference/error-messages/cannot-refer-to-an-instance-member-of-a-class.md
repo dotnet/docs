@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "BC30369"
 ms.assetid: 39d9466b-c1f3-4406-91a5-3d6c52d23a3d
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

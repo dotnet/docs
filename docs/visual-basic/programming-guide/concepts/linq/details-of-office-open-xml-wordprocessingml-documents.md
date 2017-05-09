@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 6b1e155c-7174-4244-a6de-0fddf9a0b0d7
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Details of Office Open XML WordprocessingML Documents (Visual Basic)

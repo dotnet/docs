@@ -1,0 +1,363 @@
+<Type Name="ContainerConfiguration" FullName="System.Composition.Hosting.ContainerConfiguration">
+  <TypeSignature Language="C#" Value="public class ContainerConfiguration" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerConfiguration extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.ContainerConfiguration" />
+  <AssemblyInfo>
+    <AssemblyName>System.Composition.TypedParts</AssemblyName>
+    <AssemblyVersion>1.0.31.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Composition.Debugging.ContainerConfigurationDebuggerProxy))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContainerConfiguration ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.TypedParts</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateContainer">
+      <MemberSignature Language="C#" Value="public System.Composition.Hosting.CompositionHost CreateContainer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.CompositionHost CreateContainer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.CreateContainer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.TypedParts</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Hosting.CompositionHost</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithAssemblies">
+      <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithAssemblies (System.Collections.Generic.IEnumerable&lt;System.Reflection.Assembly&gt; assemblies);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithAssemblies(class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.Assembly&gt; assemblies) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithAssemblies(System.Collections.Generic.IEnumerable{System.Reflection.Assembly})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.TypedParts</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblies" Type="System.Collections.Generic.IEnumerable&lt;System.Reflection.Assembly&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="assemblies">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithAssemblies">
+      <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithAssemblies (System.Collections.Generic.IEnumerable&lt;System.Reflection.Assembly&gt; assemblies, System.Composition.Convention.AttributedModelProvider conventions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithAssemblies(class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.Assembly&gt; assemblies, class System.Composition.Convention.AttributedModelProvider conventions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithAssemblies(System.Collections.Generic.IEnumerable{System.Reflection.Assembly},System.Composition.Convention.AttributedModelProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.TypedParts</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblies" Type="System.Collections.Generic.IEnumerable&lt;System.Reflection.Assembly&gt;" />
+        <Parameter Name="conventions" Type="System.Composition.Convention.AttributedModelProvider" />
+      </Parameters>
+      <Docs>
+        <param name="assemblies">To be added.</param>
+        <param name="conventions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithAssembly">
+      <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithAssembly (System.Reflection.Assembly assembly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithAssembly(class System.Reflection.Assembly assembly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithAssembly(System.Reflection.Assembly)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.TypedParts</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithAssembly">
+      <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithAssembly (System.Reflection.Assembly assembly, System.Composition.Convention.AttributedModelProvider conventions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithAssembly(class System.Reflection.Assembly assembly, class System.Composition.Convention.AttributedModelProvider conventions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithAssembly(System.Reflection.Assembly,System.Composition.Convention.AttributedModelProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.TypedParts</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+        <Parameter Name="conventions" Type="System.Composition.Convention.AttributedModelProvider" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">To be added.</param>
+        <param name="conventions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithDefaultConventions">
+      <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithDefaultConventions (System.Composition.Convention.AttributedModelProvider conventions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithDefaultConventions(class System.Composition.Convention.AttributedModelProvider conventions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithDefaultConventions(System.Composition.Convention.AttributedModelProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.TypedParts</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conventions" Type="System.Composition.Convention.AttributedModelProvider" />
+      </Parameters>
+      <Docs>
+        <param name="conventions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithPart">
+      <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithPart (Type partType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithPart(class System.Type partType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithPart(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.TypedParts</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="partType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="partType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithPart">
+      <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithPart (Type partType, System.Composition.Convention.AttributedModelProvider conventions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithPart(class System.Type partType, class System.Composition.Convention.AttributedModelProvider conventions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithPart(System.Type,System.Composition.Convention.AttributedModelProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.TypedParts</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="partType" Type="System.Type" />
+        <Parameter Name="conventions" Type="System.Composition.Convention.AttributedModelProvider" />
+      </Parameters>
+      <Docs>
+        <param name="partType">To be added.</param>
+        <param name="conventions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithPart&lt;TPart&gt;">
+      <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithPart&lt;TPart&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithPart&lt;TPart&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithPart``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.TypedParts</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TPart" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="TPart">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithPart&lt;TPart&gt;">
+      <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithPart&lt;TPart&gt; (System.Composition.Convention.AttributedModelProvider conventions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithPart&lt;TPart&gt;(class System.Composition.Convention.AttributedModelProvider conventions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithPart``1(System.Composition.Convention.AttributedModelProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.TypedParts</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TPart" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="conventions" Type="System.Composition.Convention.AttributedModelProvider" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TPart">To be added.</typeparam>
+        <param name="conventions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithParts">
+      <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithParts (System.Collections.Generic.IEnumerable&lt;Type&gt; partTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithParts(class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; partTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithParts(System.Collections.Generic.IEnumerable{System.Type})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.TypedParts</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="partTypes" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="partTypes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithParts">
+      <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithParts (Type[] partTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithParts(class System.Type[] partTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithParts(System.Type[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.TypedParts</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="partTypes" Type="System.Type[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="partTypes">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithParts">
+      <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithParts (System.Collections.Generic.IEnumerable&lt;Type&gt; partTypes, System.Composition.Convention.AttributedModelProvider conventions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithParts(class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; partTypes, class System.Composition.Convention.AttributedModelProvider conventions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithParts(System.Collections.Generic.IEnumerable{System.Type},System.Composition.Convention.AttributedModelProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.TypedParts</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="partTypes" Type="System.Collections.Generic.IEnumerable&lt;System.Type&gt;" />
+        <Parameter Name="conventions" Type="System.Composition.Convention.AttributedModelProvider" />
+      </Parameters>
+      <Docs>
+        <param name="partTypes">To be added.</param>
+        <param name="conventions">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WithProvider">
+      <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithProvider (System.Composition.Hosting.Core.ExportDescriptorProvider exportDescriptorProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithProvider(class System.Composition.Hosting.Core.ExportDescriptorProvider exportDescriptorProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithProvider(System.Composition.Hosting.Core.ExportDescriptorProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Composition.TypedParts</AssemblyName>
+        <AssemblyVersion>1.0.31.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Composition.Hosting.ContainerConfiguration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exportDescriptorProvider" Type="System.Composition.Hosting.Core.ExportDescriptorProvider" />
+      </Parameters>
+      <Docs>
+        <param name="exportDescriptorProvider">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

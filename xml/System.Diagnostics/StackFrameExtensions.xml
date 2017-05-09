@@ -1,0 +1,184 @@
+<Type Name="StackFrameExtensions" FullName="System.Diagnostics.StackFrameExtensions">
+  <TypeSignature Language="C#" Value="public static class StackFrameExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StackFrameExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.StackFrameExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetNativeImageBase">
+      <MemberSignature Language="C#" Value="public static IntPtr GetNativeImageBase (this System.Diagnostics.StackFrame stackFrame);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetNativeImageBase(class System.Diagnostics.StackFrame stackFrame) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrameExtensions.GetNativeImageBase(System.Diagnostics.StackFrame)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stackFrame" Type="System.Diagnostics.StackFrame" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stackFrame">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNativeIP">
+      <MemberSignature Language="C#" Value="public static IntPtr GetNativeIP (this System.Diagnostics.StackFrame stackFrame);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetNativeIP(class System.Diagnostics.StackFrame stackFrame) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrameExtensions.GetNativeIP(System.Diagnostics.StackFrame)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stackFrame" Type="System.Diagnostics.StackFrame" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stackFrame">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasILOffset">
+      <MemberSignature Language="C#" Value="public static bool HasILOffset (this System.Diagnostics.StackFrame stackFrame);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasILOffset(class System.Diagnostics.StackFrame stackFrame) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrameExtensions.HasILOffset(System.Diagnostics.StackFrame)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stackFrame" Type="System.Diagnostics.StackFrame" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stackFrame">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasMethod">
+      <MemberSignature Language="C#" Value="public static bool HasMethod (this System.Diagnostics.StackFrame stackFrame);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasMethod(class System.Diagnostics.StackFrame stackFrame) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrameExtensions.HasMethod(System.Diagnostics.StackFrame)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stackFrame" Type="System.Diagnostics.StackFrame" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stackFrame">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasNativeImage">
+      <MemberSignature Language="C#" Value="public static bool HasNativeImage (this System.Diagnostics.StackFrame stackFrame);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasNativeImage(class System.Diagnostics.StackFrame stackFrame) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrameExtensions.HasNativeImage(System.Diagnostics.StackFrame)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stackFrame" Type="System.Diagnostics.StackFrame" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stackFrame">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasSource">
+      <MemberSignature Language="C#" Value="public static bool HasSource (this System.Diagnostics.StackFrame stackFrame);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasSource(class System.Diagnostics.StackFrame stackFrame) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrameExtensions.HasSource(System.Diagnostics.StackFrame)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stackFrame" Type="System.Diagnostics.StackFrame" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stackFrame">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

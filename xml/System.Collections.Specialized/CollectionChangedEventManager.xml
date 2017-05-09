@@ -1,0 +1,179 @@
+<Type Name="CollectionChangedEventManager" FullName="System.Collections.Specialized.CollectionChangedEventManager">
+  <TypeSignature Language="C#" Value="public class CollectionChangedEventManager : System.Windows.WeakEventManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CollectionChangedEventManager extends System.Windows.WeakEventManager" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.CollectionChangedEventManager" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.WeakEventManager</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a <see cref="T:System.Windows.WeakEventManager" /> implementation so that you can use the "weak event listener" pattern to attach listeners for the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In order to be listeners in this pattern, your listener objects must implement <xref:System.Windows.IWeakEventListener>. You do not need to implement <xref:System.Windows.IWeakEventListener> on the class that is the source of the events.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddHandler">
+      <MemberSignature Language="C#" Value="public static void AddHandler (System.Collections.Specialized.INotifyCollectionChanged source, EventHandler&lt;System.Collections.Specialized.NotifyCollectionChangedEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddHandler(class System.Collections.Specialized.INotifyCollectionChanged source, class System.EventHandler`1&lt;class System.Collections.Specialized.NotifyCollectionChangedEventArgs&gt; handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.CollectionChangedEventManager.AddHandler(System.Collections.Specialized.INotifyCollectionChanged,System.EventHandler{System.Collections.Specialized.NotifyCollectionChangedEventArgs})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Collections.Specialized.INotifyCollectionChanged" />
+        <Parameter Name="handler" Type="System.EventHandler&lt;System.Collections.Specialized.NotifyCollectionChangedEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source object that the raises the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event.</param>
+        <param name="handler">The delegate that handles the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event.</param>
+        <summary>Adds the specified event handler, which is called when specified source raises the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddListener">
+      <MemberSignature Language="C#" Value="public static void AddListener (System.Collections.Specialized.INotifyCollectionChanged source, System.Windows.IWeakEventListener listener);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddListener(class System.Collections.Specialized.INotifyCollectionChanged source, class System.Windows.IWeakEventListener listener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.CollectionChangedEventManager.AddListener(System.Collections.Specialized.INotifyCollectionChanged,System.Windows.IWeakEventListener)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Collections.Specialized.INotifyCollectionChanged" />
+        <Parameter Name="listener" Type="System.Windows.IWeakEventListener" />
+      </Parameters>
+      <Docs>
+        <param name="source">The object with the event.</param>
+        <param name="listener">The object to add as a listener.</param>
+        <summary>Adds the specified listener to the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event of the specified source.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewListenerList">
+      <MemberSignature Language="C#" Value="protected override System.Windows.WeakEventManager.ListenerList NewListenerList ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.WeakEventManager/ListenerList NewListenerList() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.CollectionChangedEventManager.NewListenerList" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.WeakEventManager+ListenerList</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a new object to contain listeners to the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event.</summary>
+        <returns>A new object to contain listeners to the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveHandler">
+      <MemberSignature Language="C#" Value="public static void RemoveHandler (System.Collections.Specialized.INotifyCollectionChanged source, EventHandler&lt;System.Collections.Specialized.NotifyCollectionChangedEventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveHandler(class System.Collections.Specialized.INotifyCollectionChanged source, class System.EventHandler`1&lt;class System.Collections.Specialized.NotifyCollectionChangedEventArgs&gt; handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.CollectionChangedEventManager.RemoveHandler(System.Collections.Specialized.INotifyCollectionChanged,System.EventHandler{System.Collections.Specialized.NotifyCollectionChangedEventArgs})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Collections.Specialized.INotifyCollectionChanged" />
+        <Parameter Name="handler" Type="System.EventHandler&lt;System.Collections.Specialized.NotifyCollectionChangedEventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source object that the raises the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event.</param>
+        <param name="handler">The delegate that handles the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event.</param>
+        <summary>Removes the specified event handler from the specified source.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveListener">
+      <MemberSignature Language="C#" Value="public static void RemoveListener (System.Collections.Specialized.INotifyCollectionChanged source, System.Windows.IWeakEventListener listener);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveListener(class System.Collections.Specialized.INotifyCollectionChanged source, class System.Windows.IWeakEventListener listener) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.CollectionChangedEventManager.RemoveListener(System.Collections.Specialized.INotifyCollectionChanged,System.Windows.IWeakEventListener)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Collections.Specialized.INotifyCollectionChanged" />
+        <Parameter Name="listener" Type="System.Windows.IWeakEventListener" />
+      </Parameters>
+      <Docs>
+        <param name="source">The object with the event.</param>
+        <param name="listener">The listener to remove.</param>
+        <summary>Removes the specified listener from the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event of the specified source.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartListening">
+      <MemberSignature Language="C#" Value="protected override void StartListening (object source);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void StartListening(object source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.CollectionChangedEventManager.StartListening(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="source">The object with the event.</param>
+        <summary>Begins listening for the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event on the specified source.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopListening">
+      <MemberSignature Language="C#" Value="protected override void StopListening (object source);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void StopListening(object source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.CollectionChangedEventManager.StopListening(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="source">The object with the event.</param>
+        <summary>Stops listening for the <see cref="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" /> event on the specified source.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

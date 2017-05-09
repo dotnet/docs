@@ -2,8 +2,8 @@
 title: Structs | C# Guide
 description: Learn about the struct type and how you create them
 keywords: .NET, .NET Core, C#
-author:  stevehoag
-ms.author: shoag
+author: BillWagner
+ms.author: wiwagn
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod: .net

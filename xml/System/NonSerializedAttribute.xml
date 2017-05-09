@@ -1,0 +1,94 @@
+<Type Name="NonSerializedAttribute" FullName="System.NonSerializedAttribute">
+  <TypeSignature Language="C#" Value="public sealed class NonSerializedAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NonSerializedAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.NonSerializedAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates that a field of a serializable class should not be serialized. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When using the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> or <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> classes to serialize an object, use the <xref:System.NonSerializedAttribute> attribute to prevent a field from being serialized. For example, you can use this attribute to prevent the serialization of sensitive data.  
+  
+ The target objects for the <xref:System.NonSerializedAttribute> attribute are public and private fields of a serializable class. By default, classes are not serializable unless they are marked with <xref:System.SerializableAttribute>. During the serialization process all the public and private fields of a class are serialized by default. Fields marked with <xref:System.NonSerializedAttribute> are excluded during serialization. If you are using the <xref:System.Xml.Serialization.XmlSerializer> class to serialize an object, use the <xref:System.Xml.Serialization.XmlIgnoreAttribute> class to get the same functionality. Alternatively, implement the <xref:System.Runtime.Serialization.ISerializable> interface to explicitly control the serialization process. Note that classes that implement <xref:System.Runtime.Serialization.ISerializable> must still be marked with <xref:System.SerializableAttribute>.  
+  
+ To apply the <xref:System.NonSerializedAttribute> class to an event, set the attribute location to field, as shown in the following C# code.  
+  
+```  
+[field:NonSerializedAttribute()]   
+public event ChangedEventHandler Changed;  
+```  
+  
+ If a field is not serialized, but it still requires a default value that must be supplied after deserialization, you can create a method that supplies the field with a value, then apply the <xref:System.Runtime.Serialization.OnDeserializedAttribute> to the method.  
+  
+ For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+  
+   
+  
+## Examples  
+ The following example demonstrates serialization of an object marked with the <xref:System.SerializableAttribute> attribute, and the behavior of a field marked with the <xref:System.NonSerializedAttribute> in the serialized object.  
+  
+> [!NOTE]
+>  The code uses the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> class to serialize the object. The class is found in the system.runtime.serialization.formatters.soap.dll, which is not loaded by default into a project. To run the code, you must add a reference to the DLL to your project.  
+  
+ [!code-cpp[SerializationAttributes#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SerializationAttributes/CPP/s.cpp#1)]
+ [!code-csharp[SerializationAttributes#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SerializationAttributes/CS/s.cs#1)]
+ [!code-vb[SerializationAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SerializationAttributes/VB/s.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NonSerializedAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.NonSerializedAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.NonSerializedAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

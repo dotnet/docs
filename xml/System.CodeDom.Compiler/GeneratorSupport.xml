@@ -1,0 +1,455 @@
+<Type Name="GeneratorSupport" FullName="System.CodeDom.Compiler.GeneratorSupport">
+  <TypeSignature Language="C#" Value="public enum GeneratorSupport" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed GeneratorSupport extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.GeneratorSupport" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines identifiers used to determine whether a code generator supports certain types of code elements.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These identifiers are used when calling the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method of a code generator to determine whether the code generator supports generating certain types of code.  
+  
+   
+  
+## Examples  
+ The following example illustrates using <xref:System.CodeDom.Compiler.CompilerParameters> to specify various compiler settings and options.  
+  
+ [!code-cpp[CompilerParametersExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CompilerParametersExample/CPP/source.cpp#2)]
+ [!code-csharp[CompilerParametersExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CompilerParametersExample/CS/source.cs#2)]
+ [!code-vb[CompilerParametersExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CompilerParametersExample/VB/source.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ArraysOfArrays">
+      <MemberSignature Language="C#" Value="ArraysOfArrays" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport ArraysOfArrays = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.ArraysOfArrays" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports arrays of arrays.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyAttributes">
+      <MemberSignature Language="C#" Value="AssemblyAttributes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport AssemblyAttributes = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.AssemblyAttributes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports assembly attributes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ChainedConstructorArguments">
+      <MemberSignature Language="C#" Value="ChainedConstructorArguments" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport ChainedConstructorArguments = int32(32768)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.ChainedConstructorArguments" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports chained constructor arguments.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ComplexExpressions">
+      <MemberSignature Language="C#" Value="ComplexExpressions" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport ComplexExpressions = int32(524288)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.ComplexExpressions" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports complex expressions.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeclareDelegates">
+      <MemberSignature Language="C#" Value="DeclareDelegates" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport DeclareDelegates = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.DeclareDelegates" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports delegate declarations.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeclareEnums">
+      <MemberSignature Language="C#" Value="DeclareEnums" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport DeclareEnums = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.DeclareEnums" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports enumeration declarations.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeclareEvents">
+      <MemberSignature Language="C#" Value="DeclareEvents" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport DeclareEvents = int32(2048)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.DeclareEvents" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports event declarations.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeclareIndexerProperties">
+      <MemberSignature Language="C#" Value="DeclareIndexerProperties" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport DeclareIndexerProperties = int32(33554432)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.DeclareIndexerProperties" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports the declaration of indexer properties.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeclareInterfaces">
+      <MemberSignature Language="C#" Value="DeclareInterfaces" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport DeclareInterfaces = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.DeclareInterfaces" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports interface declarations.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DeclareValueTypes">
+      <MemberSignature Language="C#" Value="DeclareValueTypes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport DeclareValueTypes = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.DeclareValueTypes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports value type declarations.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EntryPointMethod">
+      <MemberSignature Language="C#" Value="EntryPointMethod" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport EntryPointMethod = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.EntryPointMethod" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports a program entry point method designation. This is used when building executables.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericTypeDeclaration">
+      <MemberSignature Language="C#" Value="GenericTypeDeclaration" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport GenericTypeDeclaration = int32(16777216)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.GenericTypeDeclaration" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports generic type declarations.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericTypeReference">
+      <MemberSignature Language="C#" Value="GenericTypeReference" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport GenericTypeReference = int32(8388608)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.GenericTypeReference" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports generic type references.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GotoStatements">
+      <MemberSignature Language="C#" Value="GotoStatements" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport GotoStatements = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.GotoStatements" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports goto statements.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MultidimensionalArrays">
+      <MemberSignature Language="C#" Value="MultidimensionalArrays" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport MultidimensionalArrays = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.MultidimensionalArrays" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports referencing multidimensional arrays. Currently, the CodeDom cannot be used to instantiate multidimensional arrays.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MultipleInterfaceMembers">
+      <MemberSignature Language="C#" Value="MultipleInterfaceMembers" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport MultipleInterfaceMembers = int32(131072)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.MultipleInterfaceMembers" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports the declaration of members that implement multiple interfaces.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NestedTypes">
+      <MemberSignature Language="C#" Value="NestedTypes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport NestedTypes = int32(65536)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.NestedTypes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports the declaration of nested types.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterAttributes">
+      <MemberSignature Language="C#" Value="ParameterAttributes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport ParameterAttributes = int32(8192)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.ParameterAttributes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports parameter attributes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PartialTypes">
+      <MemberSignature Language="C#" Value="PartialTypes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport PartialTypes = int32(4194304)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.PartialTypes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports partial type declarations.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PublicStaticMembers">
+      <MemberSignature Language="C#" Value="PublicStaticMembers" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport PublicStaticMembers = int32(262144)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.PublicStaticMembers" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports public static members.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferenceParameters">
+      <MemberSignature Language="C#" Value="ReferenceParameters" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport ReferenceParameters = int32(16384)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.ReferenceParameters" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports reference and out parameters.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Resources">
+      <MemberSignature Language="C#" Value="Resources" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport Resources = int32(2097152)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.Resources" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports compilation with .NET Framework resources. These can be default resources compiled directly into an assembly, or resources referenced in a satellite assembly.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnTypeAttributes">
+      <MemberSignature Language="C#" Value="ReturnTypeAttributes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport ReturnTypeAttributes = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.ReturnTypeAttributes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports return type attribute declarations.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StaticConstructors">
+      <MemberSignature Language="C#" Value="StaticConstructors" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport StaticConstructors = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.StaticConstructors" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports static constructors.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TryCatchStatements">
+      <MemberSignature Language="C#" Value="TryCatchStatements" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport TryCatchStatements = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.TryCatchStatements" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports <see langword="try...catch" /> statements.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Win32Resources">
+      <MemberSignature Language="C#" Value="Win32Resources" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.GeneratorSupport Win32Resources = int32(1048576)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.GeneratorSupport.Win32Resources" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.GeneratorSupport</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the generator supports compilation with Win32 resources.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

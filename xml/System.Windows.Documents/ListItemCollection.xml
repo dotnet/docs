@@ -1,0 +1,65 @@
+<Type Name="ListItemCollection" FullName="System.Windows.Documents.ListItemCollection">
+  <TypeSignature Language="C#" Value="public class ListItemCollection : System.Windows.Documents.TextElementCollection&lt;System.Windows.Documents.ListItem&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListItemCollection extends System.Windows.Documents.TextElementCollection`1&lt;class System.Windows.Documents.ListItem&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Documents.ListItemCollection" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Documents.TextElementCollection&lt;System.Windows.Documents.ListItem&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TextElementType">System.Windows.Documents.ListItem</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Windows.Documents.ListItem" /> elements. <see cref="T:System.Windows.Documents.ListItemCollection" /> defines the allowable child content of a <see cref="T:System.Windows.Documents.List" /> element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Documents.ListItemCollection> creation is only permitted inside a <xref:System.Windows.Documents.List> object. As such, a <xref:System.Windows.Documents.ListItemCollection> cannot be instantiated directly and has no default or overloaded constructor.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FirstListItem">
+      <MemberSignature Language="C#" Value="public System.Windows.Documents.ListItem FirstListItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.ListItem FirstListItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.ListItemCollection.FirstListItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.ListItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the first <see cref="T:System.Windows.Documents.ListItem" /> element within this instance of <see cref="T:System.Windows.Documents.ListItemCollection" />.</summary>
+        <value>The first <see cref="T:System.Windows.Documents.ListItem" /> element within this instance of <see cref="T:System.Windows.Documents.ListItemCollection" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastListItem">
+      <MemberSignature Language="C#" Value="public System.Windows.Documents.ListItem LastListItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.ListItem LastListItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.ListItemCollection.LastListItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.ListItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the last <see cref="T:System.Windows.Documents.ListItem" /> element within this instance of <see cref="T:System.Windows.Documents.ListItemCollection" />.</summary>
+        <value>The last <see cref="T:System.Windows.Documents.ListItem" /> element within this instance of <see cref="T:System.Windows.Documents.ListItemCollection" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

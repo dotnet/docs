@@ -1,0 +1,51 @@
+<Type Name="IsLong" FullName="System.Runtime.CompilerServices.IsLong">
+  <TypeSignature Language="C#" Value="public static class IsLong" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit IsLong extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.IsLong" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.CompilerServices.VisualC</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Indicates that a modified integer is a standard C++ <see langword="long" /> value. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The C++ standard indicates that a `long` value and an integer value are distinct types.  However, they are both represented using `ELEMENT_TYPE_I4` in an assembly.  To distinguish a `long` from an integer in C++, the Microsoft C++ compiler adds the <xref:System.Runtime.CompilerServices.IsLong> modifier to any instance of a `long` when the instance is emited.  This process is critically important for maintaining language-level type safety.  
+  
+ Compilers emit custom modifiers within metadata to change the way that the just-in-time (JIT) compiler handles values when the default behavior is not appropriate.  When the JIT compiler encounters a custom modifier, it handles the value in the way that the modifier specifies.  Compilers can apply custom modifiers to methods, parameters, and return values.  The JIT compiler must respond to required modifiers but can ignore optional modifiers.  
+  
+ You can emit custom modifiers into metadata using one of the following techniques:  
+  
+-   Using methods in the <xref:System.Reflection.Emit.TypeBuilder> class such as <xref:System.Reflection.Emit.TypeBuilder.DefineMethod%2A>, <xref:System.Reflection.Emit.TypeBuilder.DefineField%2A>, <xref:System.Reflection.Emit.TypeBuilder.DefineConstructor%2A>, and <xref:System.Reflection.Emit.TypeBuilder.DefineProperty%2A>.  
+  
+-   Generating a Microsoft intermediate language (MSIL) instruction file that contains calls to `modopt` and `modreq`, and assembling the file with the [Ilasm.exe (IL Assembler)](~/docs/framework/tools/ilasm-exe-il-assembler.md).  
+  
+-   Using the unmanaged reflection API.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to emit an <xref:System.Runtime.CompilerServices.IsLong> object into an assembly using reflection.  
+  
+ [!code-cpp[Runtime.CompilerServices.IsLong#1](~/samples/snippets/cpp/VS_Snippets_CLR/Runtime.CompilerServices.IsLong/cpp/sample.cpp#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

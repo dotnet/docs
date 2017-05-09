@@ -1,0 +1,118 @@
+<Type Name="DataTemplateSelector" FullName="System.Windows.Controls.DataTemplateSelector">
+  <TypeSignature Language="C#" Value="public class DataTemplateSelector" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataTemplateSelector extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataTemplateSelector" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a way to choose a <see cref="T:System.Windows.DataTemplate" /> based on the data object and the data-bound element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, you create a <xref:System.Windows.Controls.DataTemplateSelector> when you have more than one <xref:System.Windows.DataTemplate> for the same type of objects and you want to supply your own logic to choose a <xref:System.Windows.DataTemplate> to apply based on the properties of each data object. Note that if you have objects of different types you can set the <xref:System.Windows.DataTemplate.DataType%2A> property on the <xref:System.Windows.DataTemplate>. If you do that then there is no need to create a <xref:System.Windows.Controls.DataTemplateSelector>. Furthermore, if you have objects of the same type but with different properties, you can also consider using a <xref:System.Windows.DataTrigger> or a data converter. For more information, see [Data Templating Overview](~/docs/framework/wpf/data/data-templating-overview.md).  
+  
+ To create a template selector, create a class that inherits from <xref:System.Windows.Controls.DataTemplateSelector> and override the <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> method. Once your class is defined you can assign an instance of the class to the template selector property of your element.  
+  
+   
+  
+## Examples  
+ In this example, the binding source is a list of `Task` objects. One of the properties of a `Task` object is `Priority`. There are two data templates defined, `myTaskTemplate` and `importantTaskTemplate`.  
+  
+ To supply logic to choose which <xref:System.Windows.DataTemplate> to use based on the `Priority` value of the data object, create a subclass of <xref:System.Windows.Controls.DataTemplateSelector> and override the <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> method. In the following example, the <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> method provides logic to return the appropriate template based on the value of the `Priority` property. The template to return is found in the resources of the enveloping <xref:System.Windows.Window> element.  
+  
+ [!code-csharp[DataTemplatingIntro_snip#DTSClass](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/TaskListDataTemplateSelector.cs#dtsclass)]
+ [!code-vb[DataTemplatingIntro_snip#DTSClass](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DataTemplatingIntro_snip/visualbasic/tasklistdatatemplateselector.vb#dtsclass)]  
+  
+ We can then declare the `TaskListDataTemplateSelector` as a resource:  
+  
+ [!code-xml[DataTemplatingIntro_snip#R1](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#r1)]  
+[!code-xml[DataTemplatingIntro_snip#DTS](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#dts)]  
+[!code-xml[DataTemplatingIntro_snip#R2](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#r2)]  
+  
+ To use the template selector resource, assign it to the <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> property of the <xref:System.Windows.Controls.ListBox>. The <xref:System.Windows.Controls.ListBox> calls the <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> method of the `TaskListDataTemplateSelector` for each of the items in the underlying collection. The call passes the data object as the item parameter. The <xref:System.Windows.DataTemplate> that is returned by the method is then applied to that data object.  
+  
+ [!code-xml[DataTemplatingIntro_snip#ItemTemplateSelector](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#itemtemplateselector)]  
+  
+ For the complete sample, see [Introduction to Data Templating Sample](http://go.microsoft.com/fwlink/?LinkID=160009).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataTemplateSelector ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataTemplateSelector.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataTemplateSelector" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectTemplate">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.DataTemplate SelectTemplate (object item, System.Windows.DependencyObject container);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.DataTemplate SelectTemplate(object item, class System.Windows.DependencyObject container) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataTemplateSelector.SelectTemplate(System.Object,System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+        <Parameter Name="container" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="item">The data object for which to select the template.</param>
+        <param name="container">The data-bound object.</param>
+        <summary>When overridden in a derived class, returns a <see cref="T:System.Windows.DataTemplate" /> based on custom logic.</summary>
+        <returns>Returns a <see cref="T:System.Windows.DataTemplate" /> or <see langword="null" />. The default value is <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, you use a template selector when you have more than one data template defined for the same type of objects. For example, if your binding source is list a list of student objects and you want to apply a particular template to the part-time students. You can do this by creating a class that inherits from <xref:System.Windows.Controls.DataTemplateSelector> and overriding the <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> method. Once your class is defined you can assign an instance of the class to the template selector property of your element.  
+  
+   
+  
+## Examples  
+ In this example, the binding source is a list of `Task` objects. One of the properties of a `Task` object is `Priority`. There are two data templates defined, `myTaskTemplate` and `importantTaskTemplate`.  
+  
+ To supply logic to choose which <xref:System.Windows.DataTemplate> to use based on the `Priority` value of the data object, create a subclass of <xref:System.Windows.Controls.DataTemplateSelector> and override the <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> method. In the following example, the <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> method provides logic to return the appropriate template based on the value of the `Priority` property. The template to return is found in the resources of the enveloping <xref:System.Windows.Window> element.  
+  
+ [!code-csharp[DataTemplatingIntro_snip#DTSClass](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/TaskListDataTemplateSelector.cs#dtsclass)]
+ [!code-vb[DataTemplatingIntro_snip#DTSClass](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DataTemplatingIntro_snip/visualbasic/tasklistdatatemplateselector.vb#dtsclass)]  
+  
+ We can then declare the `TaskListDataTemplateSelector` as a resource:  
+  
+ [!code-xml[DataTemplatingIntro_snip#R1](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#r1)]  
+[!code-xml[DataTemplatingIntro_snip#DTS](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#dts)]  
+[!code-xml[DataTemplatingIntro_snip#R2](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#r2)]  
+  
+ To use the template selector resource, assign it to the <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A> property of the <xref:System.Windows.Controls.ListBox>. The <xref:System.Windows.Controls.ListBox> calls the <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> method of the `TaskListDataTemplateSelector` for each of the items in the underlying collection. The call passes the data object as the item parameter. The <xref:System.Windows.DataTemplate> that is returned by the method is then applied to that data object.  
+  
+ [!code-xml[DataTemplatingIntro_snip#ItemTemplateSelector](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#itemtemplateselector)]  
+  
+ For the complete sample, see [Introduction to Data Templating Sample](http://go.microsoft.com/fwlink/?LinkID=160009).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

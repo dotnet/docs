@@ -1,0 +1,102 @@
+<Type Name="AssemblyVersionCompatibility" FullName="System.Configuration.Assemblies.AssemblyVersionCompatibility">
+  <TypeSignature Language="C#" Value="public enum AssemblyVersionCompatibility" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed AssemblyVersionCompatibility extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.Assemblies.AssemblyVersionCompatibility" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the different types of assembly version compatibility. This feature is not available in version 1.0 of the .NET Framework.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `AssemblyVersionCompatibility` defines the compatibility of an assembly with other versions of the same assembly, indicating if it cannot execute side-by-side with other versions (for example, due to conflicts over a device driver).  
+  
+ If no compatibility is specified, an assembly is side-by-side compatible in all scopes.  
+  
+ An assembly cannot be more specific with regard to exactly which previous versions it is not side-by-side compatible with. Therefore, if the `AssemblyVersionCompatibility` is specified, it means the assembly is non side-by-side with all know versions. If not specified, it means it is side-by-side with all known versions.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SameDomain">
+      <MemberSignature Language="C#" Value="SameDomain" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.Assemblies.AssemblyVersionCompatibility SameDomain = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.Assemblies.AssemblyVersionCompatibility.SameDomain" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Assemblies.AssemblyVersionCompatibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The assembly cannot execute with other versions if they are executing in the same application domain.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SameMachine">
+      <MemberSignature Language="C#" Value="SameMachine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.Assemblies.AssemblyVersionCompatibility SameMachine = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.Assemblies.AssemblyVersionCompatibility.SameMachine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Assemblies.AssemblyVersionCompatibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The assembly cannot execute with other versions if they are executing on the same machine.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SameProcess">
+      <MemberSignature Language="C#" Value="SameProcess" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.Assemblies.AssemblyVersionCompatibility SameProcess = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.Assemblies.AssemblyVersionCompatibility.SameProcess" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Assemblies.AssemblyVersionCompatibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The assembly cannot execute with other versions if they are executing in the same process.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

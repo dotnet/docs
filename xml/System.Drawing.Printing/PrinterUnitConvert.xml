@@ -1,0 +1,268 @@
+<Type Name="PrinterUnitConvert" FullName="System.Drawing.Printing.PrinterUnitConvert">
+  <TypeSignature Language="C#" Value="public sealed class PrinterUnitConvert" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrinterUnitConvert extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrinterUnitConvert" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies a series of conversion methods that are useful when interoperating with the Win32 printing API. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, this class is not called directly.  
+  
+ For more information on printing, see the <xref:System.Drawing.Printing> namespace overview.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public static double Convert (double value, System.Drawing.Printing.PrinterUnit fromUnit, System.Drawing.Printing.PrinterUnit toUnit);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 Convert(float64 value, valuetype System.Drawing.Printing.PrinterUnit fromUnit, valuetype System.Drawing.Printing.PrinterUnit toUnit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterUnitConvert.Convert(System.Double,System.Drawing.Printing.PrinterUnit,System.Drawing.Printing.PrinterUnit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+        <Parameter Name="fromUnit" Type="System.Drawing.Printing.PrinterUnit" />
+        <Parameter Name="toUnit" Type="System.Drawing.Printing.PrinterUnit" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Drawing.Point" /> being converted.</param>
+        <param name="fromUnit">The unit to convert from.</param>
+        <param name="toUnit">The unit to convert to.</param>
+        <summary>Converts a double-precision floating-point number from one <see cref="T:System.Drawing.Printing.PrinterUnit" /> type to another <see cref="T:System.Drawing.Printing.PrinterUnit" /> type.</summary>
+        <returns>A double-precision floating-point number that represents the converted <see cref="T:System.Drawing.Printing.PrinterUnit" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the <xref:System.Drawing.Printing.PrinterUnit> values.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|`Display`|The default unit (0.01 in.).|  
+|`ThousandthsOfAnInch`|One-thousandth of an inch (0.001 in.).|  
+|`HundredthsOfAMillimeter`|One-hundredth of a millimeter (0.01 mm).|  
+|`TenthsOfAMillimeter`|One-tenth of a millimeter (0.1 mm).|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Point Convert (System.Drawing.Point value, System.Drawing.Printing.PrinterUnit fromUnit, System.Drawing.Printing.PrinterUnit toUnit);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Point Convert(valuetype System.Drawing.Point value, valuetype System.Drawing.Printing.PrinterUnit fromUnit, valuetype System.Drawing.Printing.PrinterUnit toUnit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterUnitConvert.Convert(System.Drawing.Point,System.Drawing.Printing.PrinterUnit,System.Drawing.Printing.PrinterUnit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Drawing.Point" />
+        <Parameter Name="fromUnit" Type="System.Drawing.Printing.PrinterUnit" />
+        <Parameter Name="toUnit" Type="System.Drawing.Printing.PrinterUnit" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Drawing.Point" /> being converted.</param>
+        <param name="fromUnit">The unit to convert from.</param>
+        <param name="toUnit">The unit to convert to.</param>
+        <summary>Converts a <see cref="T:System.Drawing.Point" /> from one <see cref="T:System.Drawing.Printing.PrinterUnit" /> type to another <see cref="T:System.Drawing.Printing.PrinterUnit" /> type.</summary>
+        <returns>A <see cref="T:System.Drawing.Point" /> that represents the converted <see cref="T:System.Drawing.Printing.PrinterUnit" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the <xref:System.Drawing.Printing.PrinterUnit> values.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|`Display`|The default unit (0.01 in.).|  
+|`ThousandthsOfAnInch`|One-thousandth of an inch (0.001 in.).|  
+|`HundredthsOfAMillimeter`|One-hundredth of a millimeter (0.01 mm).|  
+|`TenthsOfAMillimeter`|One-tenth of a millimeter (0.1 mm).|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Printing.Margins Convert (System.Drawing.Printing.Margins value, System.Drawing.Printing.PrinterUnit fromUnit, System.Drawing.Printing.PrinterUnit toUnit);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Drawing.Printing.Margins Convert(class System.Drawing.Printing.Margins value, valuetype System.Drawing.Printing.PrinterUnit fromUnit, valuetype System.Drawing.Printing.PrinterUnit toUnit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterUnitConvert.Convert(System.Drawing.Printing.Margins,System.Drawing.Printing.PrinterUnit,System.Drawing.Printing.PrinterUnit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.Margins</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Drawing.Printing.Margins" />
+        <Parameter Name="fromUnit" Type="System.Drawing.Printing.PrinterUnit" />
+        <Parameter Name="toUnit" Type="System.Drawing.Printing.PrinterUnit" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Drawing.Printing.Margins" /> being converted.</param>
+        <param name="fromUnit">The unit to convert from.</param>
+        <param name="toUnit">The unit to convert to.</param>
+        <summary>Converts a <see cref="T:System.Drawing.Printing.Margins" /> from one <see cref="T:System.Drawing.Printing.PrinterUnit" /> type to another <see cref="T:System.Drawing.Printing.PrinterUnit" /> type.</summary>
+        <returns>A <see cref="T:System.Drawing.Printing.Margins" /> that represents the converted <see cref="T:System.Drawing.Printing.PrinterUnit" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the <xref:System.Drawing.Printing.PrinterUnit> values.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|`Display`|The default unit (0.01 in.).|  
+|`ThousandthsOfAnInch`|One-thousandth of an inch (0.001 in.).|  
+|`HundredthsOfAMillimeter`|One-hundredth of a millimeter (0.01 mm).|  
+|`TenthsOfAMillimeter`|One-tenth of a millimeter (0.1 mm).|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Rectangle Convert (System.Drawing.Rectangle value, System.Drawing.Printing.PrinterUnit fromUnit, System.Drawing.Printing.PrinterUnit toUnit);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Rectangle Convert(valuetype System.Drawing.Rectangle value, valuetype System.Drawing.Printing.PrinterUnit fromUnit, valuetype System.Drawing.Printing.PrinterUnit toUnit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterUnitConvert.Convert(System.Drawing.Rectangle,System.Drawing.Printing.PrinterUnit,System.Drawing.Printing.PrinterUnit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Drawing.Rectangle" />
+        <Parameter Name="fromUnit" Type="System.Drawing.Printing.PrinterUnit" />
+        <Parameter Name="toUnit" Type="System.Drawing.Printing.PrinterUnit" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Drawing.Rectangle" /> being converted.</param>
+        <param name="fromUnit">The unit to convert from.</param>
+        <param name="toUnit">The unit to convert to.</param>
+        <summary>Converts a <see cref="T:System.Drawing.Rectangle" /> from one <see cref="T:System.Drawing.Printing.PrinterUnit" /> type to another <see cref="T:System.Drawing.Printing.PrinterUnit" /> type.</summary>
+        <returns>A <see cref="T:System.Drawing.Rectangle" /> that represents the converted <see cref="T:System.Drawing.Printing.PrinterUnit" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the <xref:System.Drawing.Printing.PrinterUnit> values.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|`Display`|The default unit (0.01 in.).|  
+|`ThousandthsOfAnInch`|One-thousandth of an inch (0.001 in.).|  
+|`HundredthsOfAMillimeter`|One-hundredth of a millimeter (0.01 mm).|  
+|`TenthsOfAMillimeter`|One-tenth of a millimeter (0.1 mm).|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Size Convert (System.Drawing.Size value, System.Drawing.Printing.PrinterUnit fromUnit, System.Drawing.Printing.PrinterUnit toUnit);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size Convert(valuetype System.Drawing.Size value, valuetype System.Drawing.Printing.PrinterUnit fromUnit, valuetype System.Drawing.Printing.PrinterUnit toUnit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterUnitConvert.Convert(System.Drawing.Size,System.Drawing.Printing.PrinterUnit,System.Drawing.Printing.PrinterUnit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Drawing.Size" />
+        <Parameter Name="fromUnit" Type="System.Drawing.Printing.PrinterUnit" />
+        <Parameter Name="toUnit" Type="System.Drawing.Printing.PrinterUnit" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Drawing.Size" /> being converted.</param>
+        <param name="fromUnit">The unit to convert from.</param>
+        <param name="toUnit">The unit to convert to.</param>
+        <summary>Converts a <see cref="T:System.Drawing.Size" /> from one <see cref="T:System.Drawing.Printing.PrinterUnit" /> type to another <see cref="T:System.Drawing.Printing.PrinterUnit" /> type.</summary>
+        <returns>A <see cref="T:System.Drawing.Size" /> that represents the converted <see cref="T:System.Drawing.Printing.PrinterUnit" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the <xref:System.Drawing.Printing.PrinterUnit> values.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|`Display`|The default unit (0.01 in.).|  
+|`ThousandthsOfAnInch`|One-thousandth of an inch (0.001 in.).|  
+|`HundredthsOfAMillimeter`|One-hundredth of a millimeter (0.01 mm).|  
+|`TenthsOfAMillimeter`|One-tenth of a millimeter (0.1 mm).|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public static int Convert (int value, System.Drawing.Printing.PrinterUnit fromUnit, System.Drawing.Printing.PrinterUnit toUnit);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Convert(int32 value, valuetype System.Drawing.Printing.PrinterUnit fromUnit, valuetype System.Drawing.Printing.PrinterUnit toUnit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterUnitConvert.Convert(System.Int32,System.Drawing.Printing.PrinterUnit,System.Drawing.Printing.PrinterUnit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32" />
+        <Parameter Name="fromUnit" Type="System.Drawing.Printing.PrinterUnit" />
+        <Parameter Name="toUnit" Type="System.Drawing.Printing.PrinterUnit" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value being converted.</param>
+        <param name="fromUnit">The unit to convert from.</param>
+        <param name="toUnit">The unit to convert to.</param>
+        <summary>Converts a 32-bit signed integer from one <see cref="T:System.Drawing.Printing.PrinterUnit" /> type to another <see cref="T:System.Drawing.Printing.PrinterUnit" /> type.</summary>
+        <returns>A 32-bit signed integer that represents the converted <see cref="T:System.Drawing.Printing.PrinterUnit" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the <xref:System.Drawing.Printing.PrinterUnit> values.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|`Display`|The default unit (0.01 in.).|  
+|`ThousandthsOfAnInch`|One-thousandth of an inch (0.001 in.).|  
+|`HundredthsOfAMillimeter`|One-hundredth of a millimeter (0.01 mm).|  
+|`TenthsOfAMillimeter`|One-tenth of a millimeter (0.1 mm).|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

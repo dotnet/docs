@@ -1,0 +1,456 @@
+<Type Name="HttpEncoder" FullName="System.Web.Util.HttpEncoder">
+  <TypeSignature Language="C#" Value="public class HttpEncoder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi HttpEncoder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Util.HttpEncoder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides encoding and decoding logic.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The class contains encoding and decoding logic that is used by methods in classes such as <xref:System.Web.HttpUtility>, <xref:System.Web.HttpServerUtility>, and <xref:System.Net.HttpResponseHeader>.  
+  
+ You can inherit from the <xref:System.Web.Util.HttpEncoder> class and override its behavior to customize the default encoding and decoding behavior of ASP.NET. You then set the <xref:System.Web.Configuration.HttpRuntimeSection.EncoderType%2A> property of the <xref:System.Web.Configuration.HttpRuntimeSection> class to configure your custom class.  
+  
+ A custom class for encoding and decoding that derives from <xref:System.Web.Util.HttpEncoder> can override the built-in ASP.NET encoding and decoding behavior or change only selected aspects of it.  
+  
+ You can configure the custom encoding type for in ASP.NET to replace or supplement the following encoding behavior:  
+  
+-   HTML encoding  
+  
+-   HTML attribute encoding  
+  
+-   URL encoding  
+  
+-   URL path encoding  
+  
+-   HTTP header name and header value encoding  
+  
+ By default, ASP.NET applications are configured to use the <xref:System.Web.Security.AntiXss.AntiXssEncoder> type for all output encoding.  
+  
+ The following example from an application-level Web.config file shows how the <xref:System.Web.Security.AntiXss.AntiXssEncoder> type is set for an ASP.NET application:  
+  
+ `<httpRuntime requestValidationMode="4.5" encoderType="System.Web.Security.AntiXss.AntiXssEncoder, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>`  
+  
+ The configuration setting in the example sets the <xref:System.Web.Security.AntiXss.AntiXssEncoder> class to perform all output encoding in the application. For more information, see the <xref:System.Web.Security.AntiXss.AntiXssEncoder> class overview.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you create a custom encoder class and override the base methods of the base class, the derived encoder might throw an exception from any of the overridden methods. However, in the following cases throwing such an exception could lead to unexpected behavior in ASP.NET:  
+  
+-   If ASP.NET is rendering an error page that is caused by an unhandled exception that was thrown from a custom encoder, ASP.NET does not attempt to encode its error output by calling into the custom encoder. This avoids recursive error conditions.  
+  
+-   When ASP.NET is sending HTTP headers to IIS, ASP.NET has no provision for unhandled exceptions. Therefore, the standard ASP.NET error page will be rendered (if configuration settings allows this page to be displayed).</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpEncoder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Util.HttpEncoder" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public static System.Web.Util.HttpEncoder Current { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Web.Util.HttpEncoder Current" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Util.HttpEncoder.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Util.HttpEncoder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or set the <see cref="T:System.Web.Util.HttpEncoder" /> type that will be used in an application.</summary>
+        <value>A reference to the encoder/decoder type that will be used.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a derived <xref:System.Web.Util.HttpEncoder> type is specified in the configuration file, the <xref:System.Web.Util.HttpEncoder.Current%2A> property returns a reference to the custom type. However, if no custom encoder is used, the property returns a reference to the default ASP.NET <xref:System.Web.Util.HttpEncoder> instance.  
+  
+ The <xref:System.Web.Util.HttpEncoder.Current%2A> property is not thread-safe. Set this property only in the application's `Application_Start` method, because `Application_Start` runs on a single thread.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The encoder instance that is being assigned to this property is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static System.Web.Util.HttpEncoder Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Web.Util.HttpEncoder Default" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Util.HttpEncoder.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Util.HttpEncoder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the default encoder for ASP.NET.</summary>
+        <value>A reference to the default encoder.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A common encoding issue is that the default ASP.NET <xref:System.Web.Util.HttpEncoder.UrlEncode%2A> behavior converts spaces into the "+" character. Historically, the "+" character has been an Internet convention for encoding space characters in a URL into a more human-readable manner. However, according to standards, the space character is supposed to be encoded as "%20" and instead of as the "+" character. ASP.NET lets you implement a more standards compliant encoding algorithm.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderNameValueEncode">
+      <MemberSignature Language="C#" Value="protected virtual void HeaderNameValueEncode (string headerName, string headerValue, out string encodedHeaderName, out string encodedHeaderValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void HeaderNameValueEncode(string headerName, string headerValue, string encodedHeaderName, string encodedHeaderValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.HeaderNameValueEncode(System.String,System.String,System.String@,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="headerName" Type="System.String" />
+        <Parameter Name="headerValue" Type="System.String" />
+        <Parameter Name="encodedHeaderName" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="encodedHeaderValue" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="headerName">The HTTP header name to encode.</param>
+        <param name="headerValue">The HTTP header value to encode.</param>
+        <param name="encodedHeaderName">When this method returns, contains the encoded name to use for an HTTP header. This parameter is passed uninitialized.</param>
+        <param name="encodedHeaderValue">When this method returns, contains the encoded value to use for an HTTP header. This parameter is passed uninitialized.</param>
+        <summary>Encodes a header name and value into a string that can be used as an HTTP header.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Util.HttpEncoder.HeaderNameValueEncode%2A> method takes input strings from the `headerName` and `headerValue` parameters and encodes them. The encoded values are returned as out parameters.  
+  
+ The <xref:System.Web.Util.HttpEncoder.HeaderNameValueEncode%2A> method uses the following logic to encode header names and values:  
+  
+-   All characters whose Unicode value is less than ASCII character 32, except ASCII character 9, are URL-encoded into a format of `%NN` where the `N` characters represent hexadecimal values.  
+  
+-   ASCII character 9 (the horizontal tab character) is not URL-encoded.  
+  
+-   ASCII character 127 is encoded as `%7F`.  
+  
+-   All other characters are not encoded.  
+  
+    > [!NOTE]
+    >  Although this method can be used for Unicode values, it is typically used for values in the ASCII range.  
+  
+ The default implementation of the <xref:System.Web.Util.HttpEncoder.HeaderNameValueEncode%2A> method returns the value of `headerValue` in `encodedHeaderValue` if `headerValue` is `null` or is an empty string. Similarly, the default implementation returns the value of `headerName` in `encodedHeaderName` if `headerName` is `null` or is an empty string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HtmlAttributeEncode">
+      <MemberSignature Language="C#" Value="protected virtual void HtmlAttributeEncode (string value, System.IO.TextWriter output);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void HtmlAttributeEncode(string value, class System.IO.TextWriter output) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.HtmlAttributeEncode(System.String,System.IO.TextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="output" Type="System.IO.TextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="value">The string to encode.</param>
+        <param name="output">The text writer to write the encoded value to.</param>
+        <summary>Encodes an incoming value into a string that can be inserted into an HTML attribute that is delimited by using single or double quotation marks.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Util.HttpEncoder.HtmlAttributeEncode%2A> method encodes characters by using the standard HTML entities. For example, the `<` (left angle bracket) is encoded as `&lt;` and the `\` (backslash) is encoded as `&#92;`.  
+  
+ It is safe to use <xref:System.Web.Util.HttpEncoder.HtmlAttributeEncode%2A> within single-quoted and double-quoted attributes. The values must be quoted.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="output" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HtmlDecode">
+      <MemberSignature Language="C#" Value="protected virtual void HtmlDecode (string value, System.IO.TextWriter output);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void HtmlDecode(string value, class System.IO.TextWriter output) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.HtmlDecode(System.String,System.IO.TextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="output" Type="System.IO.TextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="value">The string to decode.</param>
+        <param name="output">The text writer to write the decoded value to.</param>
+        <summary>Decodes a value from an HTML-encoded string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table lists the character sequences that the ASP.NET decoding logic can decode.  
+  
+|Character sequence|Rule|  
+|------------------------|----------|  
+|`&#NNN;` (decimal codes for ASCII characters).|Decoded as the specified ASCII character. The character sequence starts at the first digit after the # character and finishes at the semicolon.|  
+|`&#xZZ;` (hexadecimal codes for ASCII characters).|Decoded as the specified ASCII character. The encoded form specifies the character by using hexadecimal characters instead of a decimal value. The character sequence starts at the first digit after the # character and finishes at the semicolon.|  
+|Named HTML entities.|Decoded as the equivalent ASCII character.|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="output" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HtmlEncode">
+      <MemberSignature Language="C#" Value="protected virtual void HtmlEncode (string value, System.IO.TextWriter output);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void HtmlEncode(string value, class System.IO.TextWriter output) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.HtmlEncode(System.String,System.IO.TextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="output" Type="System.IO.TextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="value">The string to encode.</param>
+        <param name="output">The text writer to write the encoded value to.</param>
+        <summary>Encodes a string into an HTML-encoded string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table lists the character sequences that the ASP.NET encoding logic can decode.  
+  
+|Character|Encoded as|  
+|---------------|----------------|  
+|`<` (left angle bracket)|`&lt;`|  
+|`>` (right angle bracket)|`&gt;`|  
+|`"` (double quotation marks)|`&quot;`|  
+|`&` (ampersand)|`&amp;`|  
+|`\` (backslash)|`&#92;`|  
+|ASCII characters from 160 to 255|`&#NNN;`, where `NNN` is the three-digit decimal character code|  
+  
+ If you override the <xref:System.Web.Util.HttpEncoder.HtmlEncode%2A> method, you must produce output that is also safe within double-quoted or single-quoted HTML attributes. This accommodates parsing by the Razor engine, where markup and code can be combined, such as \<tag attr="@value">. In addition, the @ operator is not context-aware when processed by the Razor engine, therefore it calls <xref:System.Web.Util.HttpEncoder.HtmlEncode%2A> rather than <xref:System.Web.Util.HttpEncoder.HtmlAttributeEncode%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="output" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="JavaScriptStringEncode">
+      <MemberSignature Language="C#" Value="protected virtual string JavaScriptStringEncode (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance string JavaScriptStringEncode(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.JavaScriptStringEncode(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">The string to encode.</param>
+        <summary>Encodes a string.</summary>
+        <returns>An encoded string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ URL encoding makes sure that all browsers correctly transmit text in URL strings. Characters such as a question mark (?), ampersand (&), slash (/), and spaces might be truncated or corrupted by some browsers. Therefore, these characters must be encoded.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UrlEncode">
+      <MemberSignature Language="C#" Value="protected virtual byte[] UrlEncode (byte[] bytes, int offset, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance unsigned int8[] UrlEncode(unsigned int8[] bytes, int32 offset, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.UrlEncode(System.Byte[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bytes" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="bytes">An array of bytes to encode.</param>
+        <param name="offset">The position in the <c>bytes</c> array at which to begin encoding.</param>
+        <param name="count">The number of items in the <c>bytes</c> array to encode.</param>
+        <summary>Encodes an array of characters that are not allowed in a URL into a hexadecimal character-entity equivalent.</summary>
+        <returns>An array of encoded characters.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Util.HttpEncoder.UrlEncode%2A> method is called by several URL encoding methods in the <xref:System.Web.HttpUtility> class.  
+  
+ The <xref:System.Web.Util.HttpEncoder.UrlEncode%2A> method URL-encodes any character that is not in the set of ASCII characters that is considered to be URL-safe. Spaces are encoded as the ASCII "`+"` character. URL-safe ASCII characters include the ASCI characters (A to Z and a to z), numerals (0 to 9), and some punctuation marks. The following table lists the punctuation marks that are considered URL-safe ASCII characters.  
+  
+|Character|Description|  
+|---------------|-----------------|  
+|-|Hyphen|  
+|_|Underscore|  
+|.|Period (dot)|  
+|!|Exclamation mark|  
+|*|Asterisk (star)|  
+|(|Opening parenthesis|  
+|)|Closing parenthesis|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="offset" /> is less than zero or greater than the length of the <paramref name="bytes" /> array.  
+  
+ -or-  
+  
+ <paramref name="count" /> is less than zero or <paramref name="count" /> plus <paramref name="offset" /> is greater than the length of the <paramref name="bytes" /> array.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="bytes" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UrlPathEncode">
+      <MemberSignature Language="C#" Value="protected virtual string UrlPathEncode (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance string UrlPathEncode(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Util.HttpEncoder.UrlPathEncode(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">The string to encode.</param>
+        <summary>Encodes a subsection of a URL.</summary>
+        <returns>A URL-encoded string.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Util.HttpEncoder.UrlPathEncode%2A> method is called by the <xref:System.Web.HttpUtility.UrlPathEncode%2A> method. The <xref:System.Web.HttpUtility.UrlPathEncode%2A> method performs the following steps:  
+  
+-   Applies the encoding logic of the <xref:System.Web.Util.HttpEncoder.UrlPathEncode%2A> method to only the path part of the URL (which excludes the query string). The method assumes that the URL is encoded as a UTF-8 string.  
+  
+-   Encodes non-spaces so that only a subset of the first 128 ASCII characters is used in the resulting encoded string. Any characters at Unicode value 128 and greater, or 32 and less, are URL-encoded.  
+  
+-   Encodes spaces as %20.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

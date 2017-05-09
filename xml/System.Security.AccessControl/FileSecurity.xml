@@ -1,0 +1,146 @@
+<Type Name="FileSecurity" FullName="System.Security.AccessControl.FileSecurity">
+  <TypeSignature Language="C#" Value="public sealed class FileSecurity : System.Security.AccessControl.FileSystemSecurity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileSecurity extends System.Security.AccessControl.FileSystemSecurity" />
+  <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.FileSecurity" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.AccessControl.FileSystemSecurity</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the access control and audit security for a file. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.AccessControl.FileSecurity> class specifies the access rights for a system file and how access attempts are audited.  This class represents access and audit rights as a set of rules. Each access rule is represented by a <xref:System.Security.AccessControl.FileSystemAccessRule> object, while each audit rule is represented by a <xref:System.Security.AccessControl.FileSystemAuditRule> object.  
+  
+ The <xref:System.Security.AccessControl.FileSecurity> class is an abstraction of the underlying Microsoft Windows file security system. In this system, each file has a discretionary access control list (DACL), which controls access to the file, and a system access control list (SACL), which specifies the access control attempts that are audited.  The <xref:System.Security.AccessControl.FileSystemAccessRule> and <xref:System.Security.AccessControl.FileSystemAuditRule> classes are abstractions of the access control entries (ACEs) that comprise DACLs and SACLs.  
+  
+ The <xref:System.Security.AccessControl.FileSecurity> class hides many of the details of DACLs and SACLs; you do not have to worry about ACE ordering or null DACLS.  
+  
+ Use the <xref:System.Security.AccessControl.FileSecurity> class to retrieve, add, or change the access rules that represent the DACL and SACL of a file.  
+  
+ To persist new or changed access or audit rules to a file, use the <xref:System.IO.FileInfo.SetAccessControl%2A> method. To retrieve access or audit rules from an existing file, use the <xref:System.IO.FileInfo.GetAccessControl%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Security.AccessControl.FileSecurity> class to add and then remove an access control list (ACL) entry from a file.  You must supply a valid user or group account to run this example.  
+  
+ [!code-cpp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/cpp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/cpp/sample.cpp#1)]
+ [!code-csharp[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/csharp/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/CS/sample.cs#1)]
+ [!code-vb[IO.File.GetAccessControl-SetAccessControl#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/IO.File.GetAccessControl-SetAccessControl/VB/sample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileSecurity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSecurity.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.FileSecurity" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor when you want to create an empty <xref:System.Security.AccessControl.FileSecurity> object that is not based on an existing file.  You can then populate the object with access control information and apply it to a file.  
+  
+ You can add access or audit rules to the <xref:System.Security.AccessControl.FileSecurity> object using the <xref:System.Security.AccessControl.FileSystemSecurity.AddAccessRule%2A> method. You can remove access or audit rules using the <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRule%2A> method.  
+  
+ To persist new or changed access or audit rules to a file, use the <xref:System.IO.File.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  To retrieve access or audit rules from an existing file, use the <xref:System.IO.File.GetAccessControl%2A> or <xref:System.IO.FileInfo.GetAccessControl%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">The current operating system is not Microsoft Windows 2000 or later.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileSecurity (string fileName, System.Security.AccessControl.AccessControlSections includeSections);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, valuetype System.Security.AccessControl.AccessControlSections includeSections) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSecurity.#ctor(System.String,System.Security.AccessControl.AccessControlSections)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+        <Parameter Name="includeSections" Type="System.Security.AccessControl.AccessControlSections" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">The location of a file to create a <see cref="T:System.Security.AccessControl.FileSecurity" /> object from.</param>
+        <param name="includeSections">One of the <see cref="T:System.Security.AccessControl.AccessControlSections" /> values that specifies the type of access control list (ACL) information to retrieve.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.FileSecurity" /> class from a specified file using the specified values of the <see cref="T:System.Security.AccessControl.AccessControlSections" /> enumeration.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor retrieves the access control information for the specified file and then creates a <xref:System.Security.AccessControl.FileSecurity> object that encapsulates that information.  You can then inspect, add, or delete the access control information for the specified file.  
+  
+ You can add access or audit rules to the <xref:System.Security.AccessControl.FileSecurity> object using the <xref:System.Security.AccessControl.FileSystemSecurity.AddAccessRule%2A> method. You can remove access or audit rules using the <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRule%2A> method.  
+  
+ To persist new or changed access or audit rules to a file, use the <xref:System.IO.File.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  To retrieve access or audit rules from an existing file, use the <xref:System.IO.File.GetAccessControl%2A> or <xref:System.IO.FileInfo.GetAccessControl%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="fileName" /> parameter is a zero-length string, contains only white space, or contains one or more invalid characters as defined by <see cref="F:System.IO.Path.InvalidPathChars" />.</exception>
+        <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, (for example, it is on an unmapped drive).</exception>
+        <exception cref="T:System.IO.FileNotFoundException">The file specified in the <paramref name="fileName" /> parameter was not found.</exception>
+        <exception cref="T:System.IO.IOException">An I/O error occurred while opening the file.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="path" /> is in an invalid format.</exception>
+        <exception cref="T:System.Runtime.InteropServices.SEHException">The <paramref name="fileName" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">The current operating system is not Microsoft Windows 2000 or later.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length. For example, on Windows-based platforms, paths must be less than 248 characters, and file names must be less than 260 characters.</exception>
+        <exception cref="T:System.Security.AccessControl.PrivilegeNotHeldException">The current system account does not have administrative privileges.</exception>
+        <exception cref="T:System.SystemException">The file could not be found.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The <paramref name="fileName" /> parameter specified a file that is read-only.  
+  
+ -or-  
+  
+ This operation is not supported on the current platform.  
+  
+ -or-  
+  
+ The <paramref name="fileName" /> parameter specified a directory.  
+  
+ -or-  
+  
+ The caller does not have the required permission.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">for permission to access the file specified by the <paramref name="name" /> parameter. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.NoAccess" /> , <see cref="F:System.Security.AccessControl.AccessControlActions.View" />  
+  
+ Security action: Demand</permission>
+        <block subset="none" type="usage">
+          <para>The <see cref="M:System.Security.AccessControl.FileSecurity.#ctor(System.String,System.Security.AccessControl.AccessControlSections)" /> constructor requires the current account to have administrative privileges. To create a new instance of the <see cref="T:System.Security.AccessControl.FileSecurity" /> class for a specific file using an account that does not have administrative privileges, use the <see cref="M:System.IO.FileStream.GetAccessControl" /> method.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

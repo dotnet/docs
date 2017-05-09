@@ -1,0 +1,146 @@
+<Type Name="DisplayMode" FullName="System.ComponentModel.Design.DisplayMode">
+  <TypeSignature Language="C#" Value="public enum DisplayMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DisplayMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DisplayMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines identifiers that indicate the display modes used by <see cref="T:System.ComponentModel.Design.ByteViewer" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DisplayMode> identifiers are used to indicate the display mode used to display each byte sequence.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use <xref:System.ComponentModel.Design.DisplayMode> identifiers. This code example is part of a larger example provided for the <xref:System.ComponentModel.Design.ByteViewer> class.  
+  
+ [!code-cpp[ByteViewerExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ByteViewerExample/CPP/form1.cpp#1)]
+ [!code-csharp[ByteViewerExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ByteViewerExample/CS/form1.cs#1)]
+ [!code-vb[ByteViewerExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ByteViewerExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Ansi">
+      <MemberSignature Language="C#" Value="Ansi" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.DisplayMode Ansi = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.DisplayMode.Ansi" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DisplayMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An ANSI format display.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use <xref:System.ComponentModel.Design.DisplayMode> identifiers. This code example is part of a larger example provided for the <xref:System.ComponentModel.Design.ByteViewer> class.  
+  
+ [!code-cpp[ByteViewerExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ByteViewerExample/CPP/form1.cpp#1)]
+ [!code-csharp[ByteViewerExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ByteViewerExample/CS/form1.cs#1)]
+ [!code-vb[ByteViewerExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ByteViewerExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Auto">
+      <MemberSignature Language="C#" Value="Auto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.DisplayMode Auto = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.DisplayMode.Auto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DisplayMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A display mode that automatically selects a display mode. In this mode, the bytes are examined to determine if they are hexadecimal or printable. If the bytes are in hexadecimal format, the <see cref="F:System.ComponentModel.Design.DisplayMode.Hexdump" /> mode is selected. If the characters match a printable character set, a test is run to automatically select either the <see cref="F:System.ComponentModel.Design.DisplayMode.Ansi" /> or <see cref="F:System.ComponentModel.Design.DisplayMode.Unicode" /> display mode.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use <xref:System.ComponentModel.Design.DisplayMode> identifiers. This code example is part of a larger example provided for the <xref:System.ComponentModel.Design.ByteViewer> class.  
+  
+ [!code-cpp[ByteViewerExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ByteViewerExample/CPP/form1.cpp#1)]
+ [!code-csharp[ByteViewerExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ByteViewerExample/CS/form1.cs#1)]
+ [!code-vb[ByteViewerExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ByteViewerExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hexdump">
+      <MemberSignature Language="C#" Value="Hexdump" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.DisplayMode Hexdump = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.DisplayMode.Hexdump" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DisplayMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A hexadecimal format display.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use <xref:System.ComponentModel.Design.DisplayMode> identifiers. This code example is part of a larger example provided for the <xref:System.ComponentModel.Design.ByteViewer> class.  
+  
+ [!code-cpp[ByteViewerExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ByteViewerExample/CPP/form1.cpp#1)]
+ [!code-csharp[ByteViewerExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ByteViewerExample/CS/form1.cs#1)]
+ [!code-vb[ByteViewerExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ByteViewerExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unicode">
+      <MemberSignature Language="C#" Value="Unicode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.DisplayMode Unicode = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.DisplayMode.Unicode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DisplayMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A Unicode format display.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use <xref:System.ComponentModel.Design.DisplayMode> identifiers. This code example is part of a larger example provided for the <xref:System.ComponentModel.Design.ByteViewer> class.  
+  
+ [!code-cpp[ByteViewerExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ByteViewerExample/CPP/form1.cpp#1)]
+ [!code-csharp[ByteViewerExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ByteViewerExample/CS/form1.cs#1)]
+ [!code-vb[ByteViewerExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ByteViewerExample/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

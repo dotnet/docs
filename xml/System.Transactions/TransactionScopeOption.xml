@@ -1,0 +1,93 @@
+<Type Name="TransactionScopeOption" FullName="System.Transactions.TransactionScopeOption">
+  <TypeSignature Language="C#" Value="public enum TransactionScopeOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TransactionScopeOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Transactions.TransactionScopeOption" />
+  <AssemblyInfo>
+    <AssemblyName>System.Transactions</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Provides additional options for creating a transaction scope.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Transactions.TransactionScopeOption> enumeration is passed to the various constructors of the <xref:System.Transactions.TransactionScope> class to define the transactional behavior of the scope. For more information on how this enumeration is used, see the "Managing Transaction Flow using TransactionScopeOption" section in [Implementing An Implicit Transaction Using Transaction Scope](http://msdn.microsoft.com/en-us/1ddba95e-7587-48b2-8838-708c275e7199).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Required">
+      <MemberSignature Language="C#" Value="Required" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Transactions.TransactionScopeOption Required = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Transactions.TransactionScopeOption.Required" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Transactions.TransactionScopeOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A transaction is required by the scope. It uses an ambient transaction if one already exists. Otherwise, it creates a new transaction before entering the scope. This is the default value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RequiresNew">
+      <MemberSignature Language="C#" Value="RequiresNew" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Transactions.TransactionScopeOption RequiresNew = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Transactions.TransactionScopeOption.RequiresNew" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Transactions.TransactionScopeOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A new transaction is always created for the scope.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Suppress">
+      <MemberSignature Language="C#" Value="Suppress" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Transactions.TransactionScopeOption Suppress = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Transactions.TransactionScopeOption.Suppress" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Transactions.TransactionScopeOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ambient transaction context is suppressed when creating the scope. All operations within the scope are done without an ambient transaction context.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,157 @@
+<Type Name="IRowsetNotify" FullName="Microsoft.VisualBasic.Compatibility.VB6.IRowsetNotify">
+  <TypeSignature Language="C#" Value="public interface IRowsetNotify" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRowsetNotify" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IRowsetNotify" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0c733a83-2a1c-11ce-ade5-00aa0044773d")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides an implementation of the OLE DB <see langword="IRowsetNotify" /> interface for use by applications upgraded from Visual Basic 6.0.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="OnFieldChange">
+      <MemberSignature Language="C#" Value="public int OnFieldChange (Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, int hRow, int cColumns, int[] rgColumns, int dbReason, int eventPhase, int fCantDeny);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 OnFieldChange(class Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, int32 hRow, int32 cColumns, int32[] rgColumns, int32 dbReason, int32 eventPhase, int32 fCantDeny) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetNotify.OnFieldChange(Microsoft.VisualBasic.Compatibility.VB6.IRowset,System.Int32,System.Int32,System.Int32[],System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowset" Type="Microsoft.VisualBasic.Compatibility.VB6.IRowset" />
+        <Parameter Name="hRow" Type="System.Int32" />
+        <Parameter Name="cColumns" Type="System.Int32" />
+        <Parameter Name="rgColumns" Type="System.Int32[]" />
+        <Parameter Name="dbReason" Type="System.Int32" />
+        <Parameter Name="eventPhase" Type="System.Int32" />
+        <Parameter Name="fCantDeny" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowset">A pointer to the rowset, because the consumer may be receiving notifications from multiple rowsets and this identifies which one is calling.</param>
+        <param name="hRow">The handle of the row in which the column value was changed.</param>
+        <param name="cColumns">The count of columns in <c>rgColumns</c>.</param>
+        <param name="rgColumns">An array of columns in the row for which the value was changed.</param>
+        <param name="dbReason">The reason for the change, as indicated by the value of <see langword="DBREASON" />.</param>
+        <param name="eventPhase">The phase of this notification.</param>
+        <param name="fCantDeny">When this flag is set to <see langword="true" />, the consumer cannot veto the event by returning <see langword="S_FALSE" /> because the provider cannot undo the event.</param>
+        <summary>Notifies the consumer of any change to the value of a column.</summary>
+        <returns>An <see langword="Integer" /> representing the result.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRowChange">
+      <MemberSignature Language="C#" Value="public int OnRowChange (Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, int cRows, int[] rghRows, int dbReason, int eventPhase, int fCantDeny);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 OnRowChange(class Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, int32 cRows, int32[] rghRows, int32 dbReason, int32 eventPhase, int32 fCantDeny) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetNotify.OnRowChange(Microsoft.VisualBasic.Compatibility.VB6.IRowset,System.Int32,System.Int32[],System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowset" Type="Microsoft.VisualBasic.Compatibility.VB6.IRowset" />
+        <Parameter Name="cRows" Type="System.Int32" />
+        <Parameter Name="rghRows" Type="System.Int32[]" />
+        <Parameter Name="dbReason" Type="System.Int32" />
+        <Parameter Name="eventPhase" Type="System.Int32" />
+        <Parameter Name="fCantDeny" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowset">A pointer to the rowset, because the consumer may be receiving notifications from multiple rowsets and this identifies which one is calling.</param>
+        <param name="cRows">The count of row handles in <c>rghRows</c>.</param>
+        <param name="rghRows">An array of handles of rows that are changing.</param>
+        <param name="dbReason">The reason for the change, as indicated by the value of <see langword="DBREASON" />.</param>
+        <param name="eventPhase">The phase of this notification.</param>
+        <param name="fCantDeny">When this flag is set to <see langword="true" />, the consumer cannot veto the event by returning <see langword="S_FALSE" /> because the provider cannot undo the event.</param>
+        <summary>Notifies the consumer of the first change to a row or of any change that affects the entire row.</summary>
+        <returns>An <see langword="Integer" /> representing the result.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRowsetChange">
+      <MemberSignature Language="C#" Value="public int OnRowsetChange (Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, int dbReason, int eventPhase, int fCantDeny);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 OnRowsetChange(class Microsoft.VisualBasic.Compatibility.VB6.IRowset rowset, int32 dbReason, int32 eventPhase, int32 fCantDeny) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetNotify.OnRowsetChange(Microsoft.VisualBasic.Compatibility.VB6.IRowset,System.Int32,System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rowset" Type="Microsoft.VisualBasic.Compatibility.VB6.IRowset" />
+        <Parameter Name="dbReason" Type="System.Int32" />
+        <Parameter Name="eventPhase" Type="System.Int32" />
+        <Parameter Name="fCantDeny" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowset">A pointer to the rowset, because the consumer may be receiving notifications from multiple rowsets and this identifies which one is calling.</param>
+        <param name="dbReason">The reason for the change, as indicated by the value of <see langword="DBREASON" />.</param>
+        <param name="eventPhase">The phase of this notification.</param>
+        <param name="fCantDeny">When this flag is set to <see langword="true" />, the consumer cannot veto the event by returning <see langword="S_FALSE" /> because the provider cannot undo the event.</param>
+        <summary>Notifies the consumer of any change affecting the entire rowset.</summary>
+        <returns>An <see langword="Integer" /> representing the result.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

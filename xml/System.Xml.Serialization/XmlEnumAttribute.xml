@@ -1,0 +1,193 @@
+<Type Name="XmlEnumAttribute" FullName="System.Xml.Serialization.XmlEnumAttribute">
+  <TypeSignature Language="C#" Value="public class XmlEnumAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlEnumAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlEnumAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Controls how the <see cref="T:System.Xml.Serialization.XmlSerializer" /> serializes an enumeration member.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.Serialization.XmlEnumAttribute> belongs to a family of attributes that controls how the <xref:System.Xml.Serialization.XmlSerializer> serializes or deserializes an object. For a complete list of similar attributes, see [Attributes That Control XML Serialization](~/docs/framework/serialization/attributes-that-control-xml-serialization.md).  
+  
+ Use the <xref:System.Xml.Serialization.XmlEnumAttribute> to change the enumeration that the <xref:System.Xml.Serialization.XmlSerializer> generates or recognizes (when it serializes or deserializes a class, respectively). For example, if an enumeration contains a member named `One`, but you prefer that the XML output be named `Single`, apply the <xref:System.Xml.Serialization.XmlEnumAttribute> to the enumeration member and set the <xref:System.Xml.Serialization.XmlEnumAttribute.Name%2A> property to "Single".  
+  
+ You can override the <xref:System.Xml.Serialization.XmlEnumAttribute.Name%2A> property value of an <xref:System.Xml.Serialization.XmlEnumAttribute> by creating an instance of the <xref:System.Xml.Serialization.XmlEnumAttribute> class and assigning it to the <xref:System.Xml.Serialization.XmlAttributes.XmlEnum%2A> property of an <xref:System.Xml.Serialization.XmlAttributes> object. For details, see the <xref:System.Xml.Serialization.XmlAttributeOverrides> class.  
+  
+> [!NOTE]
+>  You can use the word `XmlEnum` in your code instead of the longer <xref:System.Xml.Serialization.XmlEnumAttribute>.  
+  
+   
+  
+## Examples  
+ The following example applies the <xref:System.Xml.Serialization.XmlEnumAttribute> to the members of an enumeration. When the <xref:System.Xml.Serialization.XmlSerializer> generates XML data for this enumeration, the data conforms to the values of the <xref:System.Xml.Serialization.XmlEnumAttribute.Name%2A> properties.  
+  
+ [!code-cpp[Classic XmlEnumAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlEnumAttribute Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlEnumAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlEnumAttribute Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlEnumAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlEnumAttribute Example/VB/source.vb#1)]  
+  
+> [!NOTE]
+>  You can use the word `XmlEnum` in your code instead of the longer <xref:System.Xml.Serialization.XmlEnumAttribute>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlEnumAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlEnumAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlEnumAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Xml.Serialization.XmlEnumAttribute.%23ctor%2A> to override an existing enumeration.  
+  
+> [!NOTE]
+>  You can use the word `XmlEnum` in your code instead of the longer <xref:System.Xml.Serialization.XmlEnumAttribute>.  
+  
+   
+  
+## Examples  
+ The following example serializes two classes named `Food` and `FoodType`. The `FoodType` class contains two enumerations that are overridden and, for each enumeration, the example creates an <xref:System.Xml.Serialization.XmlEnumAttribute> object that is assigned to the <xref:System.Xml.Serialization.XmlAttributes.XmlEnum%2A> property of an <xref:System.Xml.Serialization.XmlAttributes> object. The example then adds the <xref:System.Xml.Serialization.XmlAttributes> object to an <xref:System.Xml.Serialization.XmlAttributeOverrides> object, which is used to create an <xref:System.Xml.Serialization.XmlSerializer>.  
+  
+ [!code-cpp[Classic XmlEnumAttribute.XmlEnumAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlEnumAttribute.XmlEnumAttribute Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlEnumAttribute.XmlEnumAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlEnumAttribute.XmlEnumAttribute Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlEnumAttribute.XmlEnumAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlEnumAttribute.XmlEnumAttribute Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlEnumAttribute (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlEnumAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The overriding name of the enumeration member.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlEnumAttribute" /> class, and specifies the XML value that the <see cref="T:System.Xml.Serialization.XmlSerializer" /> generates or recognizes (when it serializes or deserializes the enumeration, respectively).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  You can use the word `XmlEnum` in your code instead of the longer <xref:System.Xml.Serialization.XmlEnumAttribute>.  
+  
+   
+  
+## Examples  
+ The following example applies the <xref:System.Xml.Serialization.XmlEnumAttribute> to the members of an enumeration. When the <xref:System.Xml.Serialization.XmlSerializer> generates XML data for this enumeration, the data conforms to the values of the <xref:System.Xml.Serialization.XmlEnumAttribute.Name%2A> properties.  
+  
+ [!code-cpp[Classic XmlEnumAttribute.Name Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlEnumAttribute.Name Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlEnumAttribute.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlEnumAttribute.Name Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlEnumAttribute.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlEnumAttribute.Name Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlEnumAttribute.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlSerializer</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value generated in an XML-document instance when the <see cref="T:System.Xml.Serialization.XmlSerializer" /> serializes an enumeration, or the value recognized when it deserializes the enumeration member.</summary>
+        <value>The value generated in an XML-document instance when the <see cref="T:System.Xml.Serialization.XmlSerializer" /> serializes the enumeration, or the value recognized when it is deserializes the enumeration member.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specify the <xref:System.Xml.Serialization.XmlEnumAttribute.Name%2A> when you want the generated XML data to differ from the enumeration identifier.  
+  
+> [!NOTE]
+>  You can use the word `XmlEnum` in your code instead of the longer <xref:System.Xml.Serialization.XmlEnumAttribute>.  
+  
+   
+  
+## Examples  
+ The following example applies the <xref:System.Xml.Serialization.XmlEnumAttribute> attribute to members of an enumeration. The generated XML data conforms to the values set for the <xref:System.Xml.Serialization.XmlEnumAttribute.Name%2A> property.  
+  
+ [!code-cpp[Classic XmlEnumAttribute.Name Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic XmlEnumAttribute.Name Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic XmlEnumAttribute.Name Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic XmlEnumAttribute.Name Example/CS/source.cs#1)]
+ [!code-vb[Classic XmlEnumAttribute.Name Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Classic XmlEnumAttribute.Name Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

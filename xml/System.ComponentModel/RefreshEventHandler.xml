@@ -1,0 +1,50 @@
+<Type Name="RefreshEventHandler" FullName="System.ComponentModel.RefreshEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void RefreshEventHandler(RefreshEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RefreshEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.RefreshEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="e" Type="System.ComponentModel.RefreshEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="e">A <see cref="T:System.ComponentModel.RefreshEventArgs" /> that contains the component or <see cref="T:System.Type" /> that changed.</param>
+    <summary>Represents the method that handles the <see cref="E:System.ComponentModel.TypeDescriptor.Refreshed" /> event raised when a <see cref="T:System.Type" /> or component is changed during design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.ComponentModel.RefreshEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following sample demonstrates how to use a <xref:System.ComponentModel.RefreshEventHandler> delegate to handle the <xref:System.ComponentModel.TypeDescriptor.Refreshed> event when a type or component changes. In the code, the `OnRefreshed` event handles the event and displays the component being changed.  
+  
+ The code assumes that a `TextBox` control is already sited on the form.  
+  
+ [!code-cpp[RefreshEventHandler#1](~/samples/snippets/cpp/VS_Snippets_Winforms/RefreshEventHandler/CPP/refreshevent.cpp#1)]
+ [!code-csharp[RefreshEventHandler#1](~/samples/snippets/csharp/VS_Snippets_Winforms/RefreshEventHandler/CS/refreshevent.cs#1)]
+ [!code-vb[RefreshEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/RefreshEventHandler/VB/refreshevent.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

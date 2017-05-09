@@ -1,0 +1,135 @@
+<Type Name="GroupByBehavior" FullName="System.Data.Common.GroupByBehavior">
+  <TypeSignature Language="C#" Value="public enum GroupByBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GroupByBehavior extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.GroupByBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the relationship between the columns in a GROUP BY clause and the non-aggregated columns in the select-list of a SELECT statement.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Common.GroupByBehavior> values are mutually exclusive.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ExactMatch">
+      <MemberSignature Language="C#" Value="ExactMatch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.GroupByBehavior ExactMatch = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.GroupByBehavior.ExactMatch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.GroupByBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The GROUP BY clause must contain all nonaggregated columns in the select list, and must not contain other columns not in the select list.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MustContainAll">
+      <MemberSignature Language="C#" Value="MustContainAll" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.GroupByBehavior MustContainAll = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.GroupByBehavior.MustContainAll" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.GroupByBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The GROUP BY clause must contain all nonaggregated columns in the select list, and can contain other columns not in the select list.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotSupported">
+      <MemberSignature Language="C#" Value="NotSupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.GroupByBehavior NotSupported = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.GroupByBehavior.NotSupported" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.GroupByBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The GROUP BY clause is not supported.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.GroupByBehavior Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.GroupByBehavior.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.GroupByBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The support for the GROUP BY clause is unknown.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unrelated">
+      <MemberSignature Language="C#" Value="Unrelated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.GroupByBehavior Unrelated = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.GroupByBehavior.Unrelated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.GroupByBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>There is no relationship between the columns in the GROUP BY clause and the nonaggregated columns in the SELECT list. You may group by any column.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

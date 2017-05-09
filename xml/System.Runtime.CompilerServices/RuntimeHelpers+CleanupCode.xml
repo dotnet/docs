@@ -1,0 +1,38 @@
+<Type Name="RuntimeHelpers+CleanupCode" FullName="System.Runtime.CompilerServices.RuntimeHelpers+CleanupCode">
+  <TypeSignature Language="C#" Value="public delegate void RuntimeHelpers.CleanupCode(object userData, bool exceptionThrown);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed RuntimeHelpers/CleanupCode extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.RuntimeHelpers.CleanupCode" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="userData" Type="System.Object" />
+    <Parameter Name="exceptionThrown" Type="System.Boolean" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="userData">Data to pass to the delegate.</param>
+    <param name="exceptionThrown">
+      <see langword="true" /> to express that an exception was thrown; otherwise, <see langword="false" />.</param>
+    <summary>Represents a method to run when an exception occurs.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Runtime.CompilerServices.RuntimeHelpers.CleanupCode> delegate with the <xref:System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup%2A> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

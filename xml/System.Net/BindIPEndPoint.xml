@@ -1,0 +1,46 @@
+<Type Name="BindIPEndPoint" FullName="System.Net.BindIPEndPoint">
+  <TypeSignature Language="C#" Value="public delegate System.Net.IPEndPoint BindIPEndPoint(ServicePoint servicePoint, IPEndPoint remoteEndPoint, int retryCount);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BindIPEndPoint extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Net.BindIPEndPoint" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="servicePoint" Type="System.Net.ServicePoint" />
+    <Parameter Name="remoteEndPoint" Type="System.Net.IPEndPoint" />
+    <Parameter Name="retryCount" Type="System.Int32" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Net.IPEndPoint</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="servicePoint">The <see cref="T:System.Net.ServicePoint" /> associated with the connection to be created.</param>
+    <param name="remoteEndPoint">The remote <see cref="T:System.Net.IPEndPoint" /> that specifies the remote host.</param>
+    <param name="retryCount">The number of times this delegate was called for a specified connection.</param>
+    <summary>Represents the method that specifies a local Internet Protocol address and port number for a <see cref="T:System.Net.ServicePoint" />.</summary>
+    <returns>The local <see cref="T:System.Net.IPEndPoint" /> to which the <see cref="T:System.Net.ServicePoint" /> is bound.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specify that the <xref:System.Net.BindIPEndPoint> delegate is used by a <xref:System.Net.ServicePoint> by setting the <xref:System.Net.ServicePoint.BindIPEndPointDelegate%2A?displayProperty=fullName> property with the delegate as an argument. This delegate should specify a local IP address and port number in the returned <xref:System.Net.IPEndPoint>.  
+  
+ If the .NET Framework cannot bind the returned <xref:System.Net.IPEndPoint> to the <xref:System.Net.ServicePoint> after <xref:System.Int32.MaxValue?displayProperty=fullName> attempts, an <xref:System.OverflowException> is thrown.  
+  
+ If you want the delegate to give the service point control of the connection binding, the delegate should return `null`. If you want to abort the connection, the delegate must throw an exception.  
+  
+ ]]></format>
+    </remarks>
+    <exception cref="T:System.OverflowException">
+      <paramref name="retryCount" /> is equal to <see cref="F:System.Int32.MaxValue" /></exception>
+  </Docs>
+</Type>

@@ -1,0 +1,164 @@
+<Type Name="PixelFormatChannelMask" FullName="System.Windows.Media.PixelFormatChannelMask">
+  <TypeSignature Language="C#" Value="public struct PixelFormatChannelMask" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit PixelFormatChannelMask extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.PixelFormatChannelMask" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the bit mask and shift for a specific pixel formats</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.PixelFormatChannelMask.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The <see cref="T:System.Object" /> to compare with the current mask.</param>
+        <summary>Determines whether the specified object is equal to the current object.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Windows.Media.PixelFormatChannelMask" /> is equal to <paramref name="obj" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public static bool Equals (System.Windows.Media.PixelFormatChannelMask left, System.Windows.Media.PixelFormatChannelMask right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(valuetype System.Windows.Media.PixelFormatChannelMask left, valuetype System.Windows.Media.PixelFormatChannelMask right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.PixelFormatChannelMask.Equals(System.Windows.Media.PixelFormatChannelMask,System.Windows.Media.PixelFormatChannelMask)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.Media.PixelFormatChannelMask" />
+        <Parameter Name="right" Type="System.Windows.Media.PixelFormatChannelMask" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first mask to compare.</param>
+        <param name="right">The second mask to compare.</param>
+        <summary>Determines if two pixel format channel masks are equal.</summary>
+        <returns>
+          <see langword="true" /> if the masks are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.PixelFormatChannelMask.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a hash code for the mask.</summary>
+        <returns>A mask's hash code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mask">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;byte&gt; Mask { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;unsigned int8&gt; Mask" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormatChannelMask.Mask" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the bitmask for a color channel. The value will never be greater then 0xffffffff</summary>
+        <value>The bitmask for a color channel.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_Mask"></a>   
+## XAML Text Usage  
+ You cannot use this property in XAML.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Media.PixelFormatChannelMask left, System.Windows.Media.PixelFormatChannelMask right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Media.PixelFormatChannelMask left, valuetype System.Windows.Media.PixelFormatChannelMask right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.PixelFormatChannelMask.op_Equality(System.Windows.Media.PixelFormatChannelMask,System.Windows.Media.PixelFormatChannelMask)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.Media.PixelFormatChannelMask" />
+        <Parameter Name="right" Type="System.Windows.Media.PixelFormatChannelMask" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first mask to compare.</param>
+        <param name="right">The second mask to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Media.PixelFormatChannelMask" /> instances for equality.</summary>
+        <returns>
+          <see langword="true" /> if the two masks are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Media.PixelFormatChannelMask left, System.Windows.Media.PixelFormatChannelMask right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Media.PixelFormatChannelMask left, valuetype System.Windows.Media.PixelFormatChannelMask right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.PixelFormatChannelMask.op_Inequality(System.Windows.Media.PixelFormatChannelMask,System.Windows.Media.PixelFormatChannelMask)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.Media.PixelFormatChannelMask" />
+        <Parameter Name="right" Type="System.Windows.Media.PixelFormatChannelMask" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first mask to compare.</param>
+        <param name="right">The second mask to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Media.PixelFormatChannelMask" /> instances for inequality.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Windows.Media.PixelFormatChannelMask" /> objects are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,142 @@
+<Type Name="SoapServerProtocol" FullName="System.Web.Services.Protocols.SoapServerProtocol">
+  <TypeSignature Language="C#" Value="public class SoapServerProtocol : System.Web.Services.Protocols.ServerProtocol" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SoapServerProtocol extends System.Web.Services.Protocols.ServerProtocol" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapServerProtocol" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Protocols.ServerProtocol</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The .NET Framework creates an instance of the <see cref="T:System.Web.Services.Protocols.SoapServerProtocol" /> class to process XML Web service requests.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can override the <xref:System.Web.Services.Protocols.SoapServerProtocol.RouteRequest%2A> method to process XML Web service requests that are not explicitly declared and handled by users through a method in their XML Web service marked with `WebMethodAttribute`.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SoapServerProtocol ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapServerProtocol.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Web.Services.Protocols.SoapServerProtocol" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReaderForMessage">
+      <MemberSignature Language="C#" Value="protected virtual System.Xml.XmlReader GetReaderForMessage (System.Web.Services.Protocols.SoapServerMessage message, int bufferSize);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xml.XmlReader GetReaderForMessage(class System.Web.Services.Protocols.SoapServerMessage message, int32 bufferSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapServerProtocol.GetReaderForMessage(System.Web.Services.Protocols.SoapServerMessage,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.Web.Services.Protocols.SoapServerMessage" />
+        <Parameter Name="bufferSize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="message">The <see cref="T:System.Web.Services.Protocols.SoapServerMessage" /> with which to initialize the <see cref="T:System.Xml.XmlTextReader" />.</param>
+        <param name="bufferSize">The buffer size with which to initialize the <see cref="T:System.Xml.XmlTextReader" />.</param>
+        <summary>Returns an <see cref="T:System.Xml.XmlTextReader" /> initialized with the specified <see cref="T:System.Web.Services.Protocols.SoapServerMessage" /> and buffer size.</summary>
+        <returns>A <see cref="T:System.Xml.XmlTextReader" /> initialized with the <see cref="T:System.Web.Services.Protocols.SoapServerMessage" /> specified by <paramref name="message" /> and the buffer size specified by <paramref name="bufferSize" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWriterForMessage">
+      <MemberSignature Language="C#" Value="protected virtual System.Xml.XmlWriter GetWriterForMessage (System.Web.Services.Protocols.SoapServerMessage message, int bufferSize);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xml.XmlWriter GetWriterForMessage(class System.Web.Services.Protocols.SoapServerMessage message, int32 bufferSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapServerProtocol.GetWriterForMessage(System.Web.Services.Protocols.SoapServerMessage,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlWriter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.Web.Services.Protocols.SoapServerMessage" />
+        <Parameter Name="bufferSize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="message">The <see cref="T:System.Web.Services.Protocols.SoapServerMessage" /> with which to initialize the <see cref="T:System.Xml.XmlTextWriter" />.</param>
+        <param name="bufferSize">The buffer size with which to initialize the <see cref="T:System.Xml.XmlTextWriter" />.</param>
+        <summary>Returns an <see cref="T:System.Xml.XmlTextWriter" /> initialized with the specified <see cref="T:System.Web.Services.Protocols.SoapServerMessage" /> and buffer size.</summary>
+        <returns>A <see cref="T:System.Xml.XmlTextWriter" /> initialized with the <see cref="T:System.Web.Services.Protocols.SoapServerMessage" /> specified by <paramref name="message" /> and the buffer size specified by <paramref name="bufferSize" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModifyInitializedExtensions">
+      <MemberSignature Language="C#" Value="protected virtual System.Web.Services.Protocols.SoapExtension[] ModifyInitializedExtensions (System.Web.Services.Configuration.PriorityGroup group, System.Web.Services.Protocols.SoapExtension[] extensions);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.Services.Protocols.SoapExtension[] ModifyInitializedExtensions(valuetype System.Web.Services.Configuration.PriorityGroup group, class System.Web.Services.Protocols.SoapExtension[] extensions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapServerProtocol.ModifyInitializedExtensions(System.Web.Services.Configuration.PriorityGroup,System.Web.Services.Protocols.SoapExtension[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Protocols.SoapExtension[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="group" Type="System.Web.Services.Configuration.PriorityGroup" />
+        <Parameter Name="extensions" Type="System.Web.Services.Protocols.SoapExtension[]" />
+      </Parameters>
+      <Docs>
+        <param name="group">A <see cref="T:System.Web.Services.Configuration.PriorityGroup" /> that specifies the priority and group attributes to be applied to the SOAP extensions contained in <c>extensions</c>.</param>
+        <param name="extensions">An array of type <see cref="T:System.Web.Services.Protocols.SoapExtension" /> to which to apply the priority and group attributes specified by <c>group</c>.</param>
+        <summary>Applies the specified priority and group attributes to the SOAP extensions contained in the specified array of type <see cref="T:System.Web.Services.Protocols.SoapExtension" />.</summary>
+        <returns>An array of type <see cref="T:System.Web.Services.Protocols.SoapExtension" /> with the priority and group attributes specified by <paramref name="group" /> applied.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RouteRequest">
+      <MemberSignature Language="C#" Value="protected virtual System.Web.Services.Protocols.SoapServerMethod RouteRequest (System.Web.Services.Protocols.SoapServerMessage message);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.Services.Protocols.SoapServerMethod RouteRequest(class System.Web.Services.Protocols.SoapServerMessage message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapServerProtocol.RouteRequest(System.Web.Services.Protocols.SoapServerMessage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Protocols.SoapServerMethod</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.Web.Services.Protocols.SoapServerMessage" />
+      </Parameters>
+      <Docs>
+        <param name="message">The <see cref="T:System.Web.Services.Protocols.SoapServerMessage" /> sent to the XML Web service.</param>
+        <summary>Returns the <see cref="T:System.Web.Services.Protocols.SoapServerMethod" /> to which the specified <see cref="T:System.Web.Services.Protocols.SoapServerMessage" /> should be routed.</summary>
+        <returns>The <see cref="T:System.Web.Services.Protocols.SoapServerMethod" /> to which the <see cref="T:System.Web.Services.Protocols.SoapServerMessage" /> specified by <paramref name="message" /> should be routed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can override the <xref:System.Web.Services.Protocols.SoapServerProtocol.RouteRequest%2A> method to process XML Web service requests that are not explicitly declared and handled by users through a method in their XML Web service marked with `WebMethodAttribute`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

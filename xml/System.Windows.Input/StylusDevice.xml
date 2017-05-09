@@ -1,0 +1,624 @@
+<Type Name="StylusDevice" FullName="System.Windows.Input.StylusDevice">
+  <TypeSignature Language="C#" Value="public sealed class StylusDevice : System.Windows.Input.InputDevice" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StylusDevice extends System.Windows.Input.InputDevice" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusDevice" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Input.InputDevice</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a tablet pen used with a Tablet PC.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to retrieve a reference to the default stylus device.  
+  
+ [!code-csharp[StylusSnippets#1](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[StylusSnippets#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActiveSource">
+      <MemberSignature Language="C#" Value="public override System.Windows.PresentationSource ActiveSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.PresentationSource ActiveSource" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusDevice.ActiveSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.PresentationSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.PresentationSource" /> that reports current input for the stylus.</summary>
+        <value>The <see cref="T:System.Windows.PresentationSource" /> that reports current input for the stylus.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Input.StylusDevice.ActiveSource%2A> property.  
+  
+ [!code-csharp[StylusSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[StylusSnippets#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">for applications to read this property. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Capture">
+      <MemberSignature Language="C#" Value="public bool Capture (System.Windows.IInputElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Capture(class System.Windows.IInputElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusDevice.Capture(System.Windows.IInputElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.IInputElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element to which the stylus is bound.</param>
+        <summary>Binds input from the stylus to the specified element.</summary>
+        <returns>
+          <see langword="true" /> if the input element is captured successfully; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Input.StylusDevice.Capture%28System.Windows.IInputElement%29> method.  
+  
+ [!code-csharp[StylusSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[StylusSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="element" /> is neither <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.FrameworkContentElement" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Capture">
+      <MemberSignature Language="C#" Value="public bool Capture (System.Windows.IInputElement element, System.Windows.Input.CaptureMode captureMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Capture(class System.Windows.IInputElement element, valuetype System.Windows.Input.CaptureMode captureMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusDevice.Capture(System.Windows.IInputElement,System.Windows.Input.CaptureMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.IInputElement" />
+        <Parameter Name="captureMode" Type="System.Windows.Input.CaptureMode" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element to which the stylus is bound.</param>
+        <param name="captureMode">One of the <see cref="T:System.Windows.Input.CaptureMode" /> values.</param>
+        <summary>Binds the stylus to the specified element.</summary>
+        <returns>
+          <see langword="true" /> if the input element is captured successfully; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Input.StylusDevice.Capture%28System.Windows.IInputElement%2CSystem.Windows.Input.CaptureMode%29> method.  
+  
+ [!code-csharp[StylusSnippets#5](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#5)]
+ [!code-vb[StylusSnippets#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> or <paramref name="captureMode" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="element" /> is neither <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.FrameworkContentElement" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Captured">
+      <MemberSignature Language="C#" Value="public System.Windows.IInputElement Captured { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IInputElement Captured" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusDevice.Captured" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.IInputElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the element that captured the stylus.</summary>
+        <value>The <see cref="T:System.Windows.IInputElement" /> that captured the stylus.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Input.StylusDevice.Captured%2A> property.  
+  
+ [!code-csharp[StylusSnippets#4](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#4)]
+ [!code-vb[StylusSnippets#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DirectlyOver">
+      <MemberSignature Language="C#" Value="public System.Windows.IInputElement DirectlyOver { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IInputElement DirectlyOver" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusDevice.DirectlyOver" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.IInputElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.IInputElement" /> that the pointer is positioned over.</summary>
+        <value>The element the pointer is over.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Input.StylusDevice.DirectlyOver%2A> property.  
+  
+ [!code-csharp[StylusSnippets#6](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#6)]
+ [!code-vb[StylusSnippets#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPosition">
+      <MemberSignature Language="C#" Value="public System.Windows.Point GetPosition (System.Windows.IInputElement relativeTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Point GetPosition(class System.Windows.IInputElement relativeTo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusDevice.GetPosition(System.Windows.IInputElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relativeTo" Type="System.Windows.IInputElement" />
+      </Parameters>
+      <Docs>
+        <param name="relativeTo">The <see cref="T:System.Windows.IInputElement" /> to which the (<c>x,y</c>) coordinates are mapped.</param>
+        <summary>Gets the position of the stylus.</summary>
+        <returns>A <see cref="T:System.Windows.Point" /> that represents the position of the stylus, in relation to <paramref name="relativeTo" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Input.StylusDevice.GetPosition%2A> method.  
+  
+ [!code-csharp[StylusSnippets#8](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#8)]
+ [!code-vb[StylusSnippets#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="relativeTo" /> is neither <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.FrameworkContentElement" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStylusPoints">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.StylusPointCollection GetStylusPoints (System.Windows.IInputElement relativeTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.StylusPointCollection GetStylusPoints(class System.Windows.IInputElement relativeTo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusDevice.GetStylusPoints(System.Windows.IInputElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.StylusPointCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relativeTo" Type="System.Windows.IInputElement" />
+      </Parameters>
+      <Docs>
+        <param name="relativeTo">The <see cref="T:System.Windows.IInputElement" /> to which the (<c>x,y</c>) coordinates in the <see cref="T:System.Windows.Input.StylusPointCollection" /> are mapped.</param>
+        <summary>Returns a <see cref="T:System.Windows.Input.StylusPointCollection" /> that contains <see cref="T:System.Windows.Input.StylusPoint" /> objects collected from the stylus.</summary>
+        <returns>A <see cref="T:System.Windows.Input.StylusPointCollection" /> that contains <see cref="T:System.Windows.Input.StylusPoint" /> objects that the stylus collected.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to get the <xref:System.Windows.Input.StylusPointCollection> from the <xref:System.Windows.Input.StylusDevice>.  
+  
+ [!code-csharp[StylusSnippets#7](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#7)]
+ [!code-vb[StylusSnippets#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="relativeTo" /> is neither <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.FrameworkContentElement" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStylusPoints">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.StylusPointCollection GetStylusPoints (System.Windows.IInputElement relativeTo, System.Windows.Input.StylusPointDescription subsetToReformatTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.StylusPointCollection GetStylusPoints(class System.Windows.IInputElement relativeTo, class System.Windows.Input.StylusPointDescription subsetToReformatTo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusDevice.GetStylusPoints(System.Windows.IInputElement,System.Windows.Input.StylusPointDescription)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.StylusPointCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relativeTo" Type="System.Windows.IInputElement" />
+        <Parameter Name="subsetToReformatTo" Type="System.Windows.Input.StylusPointDescription" />
+      </Parameters>
+      <Docs>
+        <param name="relativeTo">The <see cref="T:System.Windows.IInputElement" /> to which the (<c>x y</c>) coordinates in the <see cref="T:System.Windows.Input.StylusPointCollection" /> are mapped.</param>
+        <param name="subsetToReformatTo">The <see cref="T:System.Windows.Input.StylusPointDescription" /> to be used by the <see cref="T:System.Windows.Input.StylusPointCollection" />.</param>
+        <summary>Returns a <see cref="T:System.Windows.Input.StylusPointCollection" /> that contains <see cref="T:System.Windows.Input.StylusPoint" /> objects collected from the stylus. Uses the specified <see cref="T:System.Windows.Input.StylusPointDescription" />.</summary>
+        <returns>A <see cref="T:System.Windows.Input.StylusPointCollection" /> that contains <see cref="T:System.Windows.Input.StylusPoint" /> objects collected from the stylus.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `subsetToReformatTo` must be compatible with the <xref:System.Windows.Input.StylusPointCollection.Description%2A> property of the <xref:System.Windows.Input.StylusPointCollection> used by the <xref:System.Windows.Input.StylusDevice.GetStylusPoints%28System.Windows.IInputElement%29> method. Use the <xref:System.Windows.Input.StylusPointDescription.GetCommonDescription%2A> method to get a <xref:System.Windows.Input.StylusPointDescription> before calling the <xref:System.Windows.Input.StylusDevice.GetStylusPoints%28System.Windows.IInputElement%2CSystem.Windows.Input.StylusPointDescription%29> method.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to get <xref:System.Windows.Input.StylusPoint> objects from the current <xref:System.Windows.Input.StylusDevice>.  
+  
+ [!code-csharp[PacketSpy#26](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#26)]
+ [!code-vb[PacketSpy#26](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#26)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="relativeTo" /> is neither <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.FrameworkContentElement" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public int Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Id" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusDevice.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the identifier for the stylus device.</summary>
+        <value>The identifier for the stylus device.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Input.StylusDevice.Id%2A> property.  
+  
+ [!code-csharp[StylusSnippets#9](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#9)]
+ [!code-vb[StylusSnippets#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InAir">
+      <MemberSignature Language="C#" Value="public bool InAir { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InAir" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusDevice.InAir" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets whether the tablet pen is positioned above, yet not in contact with, the digitizer.</summary>
+        <value>
+          <see langword="true" /> if the pen is positioned above, yet not in contact with, the digitizer; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Input.StylusDevice.InAir%2A> property.  
+  
+ [!code-csharp[StylusSnippets#10](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#10)]
+ [!code-vb[StylusSnippets#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InRange">
+      <MemberSignature Language="C#" Value="public bool InRange { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InRange" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusDevice.InRange" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the tablet pen is in range of the digitizer.</summary>
+        <value>
+          <see langword="true" /> if the pen is within range of the digitizer; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Input.StylusDevice.InRange%2A> property.  
+  
+ [!code-csharp[StylusSnippets#11](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#11)]
+ [!code-vb[StylusSnippets#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Inverted">
+      <MemberSignature Language="C#" Value="public bool Inverted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Inverted" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusDevice.Inverted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the secondary tip of the stylus is in use.</summary>
+        <value>
+          <see langword="true" /> if the secondary tip of the stylus is in use; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Input.StylusDevice.Inverted%2A> property.  
+  
+ [!code-csharp[StylusSnippets#12](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#12)]
+ [!code-vb[StylusSnippets#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValid">
+      <MemberSignature Language="C#" Value="public bool IsValid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsValid" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusDevice.IsValid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a stylus device is valid.</summary>
+        <value>
+          <see langword="true" /> to indicate a stylus is valid; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusDevice.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the stylus.</summary>
+        <value>The name of the stylus.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Input.StylusDevice.Name%2A> property.  
+  
+ [!code-csharp[StylusSnippets#13](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#13)]
+ [!code-vb[StylusSnippets#13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylusButtons">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.StylusButtonCollection StylusButtons { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.StylusButtonCollection StylusButtons" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusDevice.StylusButtons" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.StylusButtonCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the stylus buttons on the stylus.</summary>
+        <value>A reference to a <see cref="T:System.Windows.Input.StylusButtonCollection" /> object representing all of the buttons on the stylus.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Input.StylusDevice.StylusButtons%2A> property.  
+  
+ [!code-csharp[StylusSnippets#14](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#14)]
+ [!code-vb[StylusSnippets#14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Synchronize">
+      <MemberSignature Language="C#" Value="public void Synchronize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Synchronize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusDevice.Synchronize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Synchronizes the cursor and the user interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Applications may need to locate the element that the cursor is positioned over. If the application uses animation, the <xref:System.Windows.Input.StylusDevice.DirectlyOver%2A> method might return an element that has moved out from under the cursor. Call <xref:System.Windows.Input.StylusDevice.Synchronize%2A> to be sure that <xref:System.Windows.Input.StylusDevice.DirectlyOver%2A> returns the proper element.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to return an element that is under the cursor.  Calling <xref:System.Windows.Input.StylusDevice.Synchronize%2A> ensures that <xref:System.Windows.Input.StylusDevice.DirectlyOver%2A> returns the correct element.  
+  
+ [!code-csharp[StylusSamples#24](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window2.xaml.cs#24)]
+ [!code-vb[StylusSamples#24](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window2.xaml.vb#24)]  
+[!code-csharp[StylusSamples#26](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSamples/CSharp/Window2.xaml.cs#26)]
+[!code-vb[StylusSamples#26](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSamples/VisualBasic/Window2.xaml.vb#26)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabletDevice">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.TabletDevice TabletDevice { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.TabletDevice TabletDevice" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusDevice.TabletDevice" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.TabletDevice</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Input.TabletDevice" /> representing the digitizer associated with the current <see cref="T:System.Windows.Input.StylusDevice" />.</summary>
+        <value>The <see cref="T:System.Windows.Input.TabletDevice" /> represents the digitizer associated with the current <see cref="T:System.Windows.Input.StylusDevice" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Input.StylusDevice.TabletDevice%2A> property.  
+  
+ [!code-csharp[StylusSnippets#15](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#15)]
+ [!code-vb[StylusSnippets#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public override System.Windows.IInputElement Target { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IInputElement Target" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusDevice.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.IInputElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the element that receives input.</summary>
+        <value>The <see cref="T:System.Windows.IInputElement" /> object that receives input.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Input.StylusDevice.Target%2A> property.  
+  
+ [!code-csharp[StylusSnippets#16](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#16)]
+ [!code-vb[StylusSnippets#16](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#16)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusDevice.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the name of the stylus device.</summary>
+        <returns>The name of the <see cref="T:System.Windows.Input.StylusDevice" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Windows.Input.StylusDevice.ToString%2A> method.  
+  
+ [!code-csharp[StylusSnippets#17](~/samples/snippets/csharp/VS_Snippets_Wpf/StylusSnippets/CSharp/Window1.xaml.cs#17)]
+ [!code-vb[StylusSnippets#17](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StylusSnippets/VisualBasic/Window1.xaml.vb#17)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

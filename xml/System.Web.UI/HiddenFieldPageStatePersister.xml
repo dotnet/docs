@@ -1,0 +1,133 @@
+<Type Name="HiddenFieldPageStatePersister" FullName="System.Web.UI.HiddenFieldPageStatePersister">
+  <TypeSignature Language="C#" Value="public class HiddenFieldPageStatePersister : System.Web.UI.PageStatePersister" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HiddenFieldPageStatePersister extends System.Web.UI.PageStatePersister" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.HiddenFieldPageStatePersister" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.PageStatePersister</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stores ASP.NET page view state on the Web client in a hidden HTML element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET pages can store <xref:System.Web.UI.Page> state between the inherently stateless HTTP request and response required to process and serve any Web page. This state is called "view state". The default mechanism used to store view state for a page and its controls is in one or more `<hidden>` HTML fields included in the page that is served to a client from a Web server. The <xref:System.Web.UI.Page> class can use the <xref:System.Web.UI.HiddenFieldPageStatePersister> class to do this work. <xref:System.Web.UI.HiddenFieldPageStatePersister> implements the <xref:System.Web.UI.HiddenFieldPageStatePersister.Save%2A> and <xref:System.Web.UI.HiddenFieldPageStatePersister.Load%2A> methods of the <xref:System.Web.UI.PageStatePersister> class so that the <xref:System.Web.UI.Page> can store state in a `<hidden>` HTML element named "__VIEWSTATE" on a Web client. When the client requests the same page from the Web server (a postback), the `<hidden>` element is parsed and converted to state information by ASP.NET.  
+  
+ If the <xref:System.Web.UI.Page> instance that is requested has an associated <xref:System.Web.UI.Adapters.PageAdapter> class, it retrieves the <xref:System.Web.UI.PageStatePersister> object from this adapter using the <xref:System.Web.UI.Adapters.PageAdapter.GetStatePersister%2A> method. Adapters can override the <xref:System.Web.UI.Adapters.PageAdapter.GetStatePersister%2A> method to return a <xref:System.Web.UI.PageStatePersister> object that stores page and control state in some way that a specific client supports. For example, the <xref:System.Web.UI.SessionPageStatePersister> class stores page and controls' state on the Web server, instead of the client, to decrease the amount of information that must be sent and stored on a client that has potentially limited memory and bandwidth.  
+  
+ The maximum size of the "_VIEWSTATE" `<hidden>` HTML element can be set through the <xref:System.Web.UI.Page.MaxPageStateFieldLength%2A> property or through the <xref:System.Web.Configuration.PagesSection.MaxPageStateFieldLength%2A> configuration setting. When this value is set and the length of the "_VIEWSTATE" element would exceed the maximum length, the content is divided into multiple "_VIEWSTATE" elements.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to bind a <xref:System.Web.UI.WebControls.ListBox> control to data in a database with a <xref:System.Web.UI.WebControls.SqlDataSource> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_1sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1sql/CS/sql1cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_1sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1sql/VB/sql1vb.aspx#1)]  -->  
+  
+ When the example page is viewed, any view state is stored by the <xref:System.Web.UI.HiddenFieldPageStatePersister> class in a `<hidden>` HTML element named "__VIEWSTATE".  
+  
+```  
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">  
+<HTML>  
+  <BODY>  
+    <form name="_ctl0" method="post" action="sample.aspx" id="_ctl0">  
+  
+      <input type="hidden" name="__VIEWSTATE" value="MgAwADkANgAwADkAOQA3ADgAMQD/AQ8QBQoxMTU2NDc1NjE0EGRkFgICAQ9kFgICAw8PZBAVDQVhc2RhcwhCdWNoYW5hbghDYWxsYWhhbgdEYXZvbGlvCURvZHN3b3J0aAZGdWxsZXIES2luZwhLcmF3YXJpawlMZXZlcmxpbmcETWFyeQdQZWFjb2NrBlN1eWFtYQx0ZXN0IHJlZnJlc2gVDQVhc2RhcwhCdWNoYW5hbghDYWxsYWhhbgdEYXZvbGlvCURvZHN3b3J0aAZGdWxsZXIES2luZwhLcmF3YXJpawlMZXZlcmxpbmcETWFyeQdQZWFjb2NrBlN1eWFtYQx0ZXN0IHJlZnJlc2gUKgMNZ2dnZ2dnZ2dnZ2dnZ2RkZPdhi6U7jBPqVZbj0W8AYFSJ6oiq" />  
+  
+      <select size="4" name="ListBox1" id="ListBox1">      
+        <option value="Buchanan">Buchanan</option>  
+        <option value="Callahan">Callahan</option>  
+        <option value="Davolio">Davolio</option>  
+        <option value="Dodsworth">Dodsworth</option>  
+        <option value="Fuller">Fuller</option>  
+        <option value="King">King</option>  
+        <option value="Leverling">Leverling</option>  
+        <option value="Suyama">Suyama</option>  
+      </select>  
+  
+    </form>  
+  </BODY>  
+</HTML>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HiddenFieldPageStatePersister (System.Web.UI.Page page);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Page page) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HiddenFieldPageStatePersister.#ctor(System.Web.UI.Page)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="page" Type="System.Web.UI.Page" />
+      </Parameters>
+      <Docs>
+        <param name="page">The <see cref="T:System.Web.UI.Page" /> that the view state persistence mechanism is created for.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HiddenFieldPageStatePersister" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public override void Load ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Load() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HiddenFieldPageStatePersister.Load" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Deserializes and loads persisted state information from an <see cref="T:System.Web.HttpRequest" /> object when a <see cref="T:System.Web.UI.Page" /> object initializes its control hierarchy.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HiddenFieldPageStatePersister> class implements the <xref:System.Web.UI.HiddenFieldPageStatePersister.Load%2A> method to load page and control state information from an incoming request to the Web server. The <xref:System.Web.UI.ObjectStateFormatter> object accessed by the <xref:System.Web.UI.PageStatePersister.StateFormatter%2A> property is used to deserialize the data.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The <see cref="M:System.Web.UI.HiddenFieldPageStatePersister.Load" /> method could not successfully deserialize the state information contained in the request to the Web server.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public override void Save ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Save() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HiddenFieldPageStatePersister.Save" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Serializes any object state contained in the <see cref="P:System.Web.UI.PageStatePersister.ViewState" /> or <see cref="P:System.Web.UI.PageStatePersister.ControlState" /> property and writes the state to the response stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HiddenFieldPageStatePersister> implements the <xref:System.Web.UI.HiddenFieldPageStatePersister.Save%2A> method to persist page and control state to a client by writing it to a `<hidden>` HTML element in the outgoing response to the client. The <xref:System.Web.UI.ObjectStateFormatter> object accessed by the <xref:System.Web.UI.PageStatePersister.StateFormatter%2A> property is used to deserialize the data.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

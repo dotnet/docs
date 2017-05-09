@@ -1,0 +1,411 @@
+<Type Name="CodeTypeMemberCollection" FullName="System.CodeDom.CodeTypeMemberCollection">
+  <TypeSignature Language="C#" Value="public class CodeTypeMemberCollection : System.Collections.CollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeTypeMemberCollection extends System.Collections.CollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeTypeMemberCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.CollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.CodeDom.CodeTypeMember" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.CodeDom.CodeTypeMemberCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeTypeMember> objects.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.CodeDom.CodeTypeMemberCollection> class. The example creates a new instance of the class and uses several methods to add statements to the collection, return their index, and add or remove attributes at a specific index point.  
+  
+ [!code-cpp[CodeTypeMemberCollectionExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#1)]
+ [!code-csharp[CodeTypeMemberCollectionExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#1)]
+ [!code-vb[CodeTypeMemberCollectionExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeTypeMemberCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeMemberCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeMemberCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to create an empty instance of the <xref:System.CodeDom.CodeTypeMemberCollection> class.  
+  
+ [!code-cpp[CodeTypeMemberCollectionExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#2)]
+ [!code-csharp[CodeTypeMemberCollectionExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#2)]
+ [!code-vb[CodeTypeMemberCollectionExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeTypeMemberCollection (System.CodeDom.CodeTypeMember[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeTypeMember[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeMemberCollection.#ctor(System.CodeDom.CodeTypeMember[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeTypeMember[]" />
+      </Parameters>
+      <Docs>
+        <param name="value">An array of <see cref="T:System.CodeDom.CodeTypeMember" /> objects with which to initialize the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeMemberCollection" /> class containing the specified array of <see cref="T:System.CodeDom.CodeTypeMember" /> objects.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeTypeMemberCollection (System.CodeDom.CodeTypeMemberCollection value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeTypeMemberCollection value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeMemberCollection.#ctor(System.CodeDom.CodeTypeMemberCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeTypeMemberCollection" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.CodeDom.CodeTypeMemberCollection" /> with which to initialize the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeMemberCollection" /> class containing the elements of the specified source collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public int Add (System.CodeDom.CodeTypeMember value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.CodeDom.CodeTypeMember value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeMemberCollection.Add(System.CodeDom.CodeTypeMember)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeTypeMember" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.CodeDom.CodeTypeMember" /> to add.</param>
+        <summary>Adds a <see cref="T:System.CodeDom.CodeTypeMember" /> with the specified value to the collection.</summary>
+        <returns>The index at which the new element was inserted.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to add a <xref:System.CodeDom.CodeTypeMember> object to a <xref:System.CodeDom.CodeTypeMemberCollection> instance.  
+  
+ [!code-cpp[CodeTypeMemberCollectionExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#3)]
+ [!code-csharp[CodeTypeMemberCollectionExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#3)]
+ [!code-vb[CodeTypeMemberCollectionExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public void AddRange (System.CodeDom.CodeTypeMember[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.CodeDom.CodeTypeMember[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeMemberCollection.AddRange(System.CodeDom.CodeTypeMember[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeTypeMember[]" />
+      </Parameters>
+      <Docs>
+        <param name="value">An array of type <see cref="T:System.CodeDom.CodeTypeMember" /> containing the objects to add to the collection.</param>
+        <summary>Copies the elements of the specified <see cref="T:System.CodeDom.CodeTypeMember" /> array to the end of the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the two <xref:System.CodeDom.CodeTypeMemberCollection.AddRange%2A> method overloads to add the members of an array to a <xref:System.CodeDom.CodeTypeMemberCollection> object, and to add the members of one <xref:System.CodeDom.CodeTypeMemberCollection> to another.  
+  
+ [!code-cpp[CodeTypeMemberCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#4)]
+ [!code-csharp[CodeTypeMemberCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#4)]
+ [!code-vb[CodeTypeMemberCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public void AddRange (System.CodeDom.CodeTypeMemberCollection value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.CodeDom.CodeTypeMemberCollection value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeMemberCollection.AddRange(System.CodeDom.CodeTypeMemberCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeTypeMemberCollection" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.CodeDom.CodeTypeMemberCollection" /> containing the objects to add to the collection.</param>
+        <summary>Adds the contents of another <see cref="T:System.CodeDom.CodeTypeMemberCollection" /> to the end of the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the two <xref:System.CodeDom.CodeTypeMemberCollection.AddRange%2A> method overloads to add the members of an array to a <xref:System.CodeDom.CodeTypeMemberCollection> object, and to add the members of one <xref:System.CodeDom.CodeTypeMemberCollection> to another.  
+  
+ [!code-cpp[CodeTypeMemberCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#4)]
+ [!code-csharp[CodeTypeMemberCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#4)]
+ [!code-vb[CodeTypeMemberCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.CodeDom.CodeTypeMember value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.CodeDom.CodeTypeMember value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeMemberCollection.Contains(System.CodeDom.CodeTypeMember)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeTypeMember" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.CodeDom.CodeTypeMember" /> to search for in the collection.</param>
+        <summary>Gets a value indicating whether the collection contains the specified <see cref="T:System.CodeDom.CodeTypeMember" />.</summary>
+        <returns>
+          <see langword="true" /> if the collection contains the specified object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example uses the <xref:System.CodeDom.CodeTypeMemberCollection.Contains%2A> method to search for the presence of a specific <xref:System.CodeDom.CodeTypeMember> object and retrieve the index value at which it was found.  
+  
+ [!code-cpp[CodeTypeMemberCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#5)]
+ [!code-csharp[CodeTypeMemberCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#5)]
+ [!code-vb[CodeTypeMemberCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.CodeDom.CodeTypeMember[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.CodeDom.CodeTypeMember[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeMemberCollection.CopyTo(System.CodeDom.CodeTypeMember[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.CodeDom.CodeTypeMember[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the values copied from the collection.</param>
+        <param name="index">The index of the array at which to begin inserting.</param>
+        <summary>Copies the collection objects to a one-dimensional <see cref="T:System.Array" /> instance, beginning at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to copy the contents of a <xref:System.CodeDom.CodeTypeMemberCollection> to an array, beginning at the specified index value.  
+  
+ [!code-cpp[CodeTypeMemberCollectionExample#6](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#6)]
+ [!code-csharp[CodeTypeMemberCollectionExample#6](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#6)]
+ [!code-vb[CodeTypeMemberCollectionExample#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The destination array is multidimensional.  
+  
+ -or-  
+  
+ The number of elements in the <see cref="T:System.CodeDom.CodeTypeMemberCollection" /> is greater than the available space between the index of the target array specified by the <paramref name="index" /> parameter and the end of the target array.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="array" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than the target array's minimum index.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.CodeDom.CodeTypeMember value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.CodeDom.CodeTypeMember value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeMemberCollection.IndexOf(System.CodeDom.CodeTypeMember)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeTypeMember" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.CodeDom.CodeTypeMember" /> to locate in the collection.</param>
+        <summary>Gets the index in the collection of the specified <see cref="T:System.CodeDom.CodeTypeMember" />, if it exists in the collection.</summary>
+        <returns>The index in the collection of the specified object, if found; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example searches for the presence of a specific <xref:System.CodeDom.CodeTypeMember> object and uses the <xref:System.CodeDom.CodeTypeMemberCollection.IndexOf%2A> method to retrieve the index value at which it was found.  
+  
+ [!code-cpp[CodeTypeMemberCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#5)]
+ [!code-csharp[CodeTypeMemberCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#5)]
+ [!code-vb[CodeTypeMemberCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, System.CodeDom.CodeTypeMember value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.CodeDom.CodeTypeMember value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeMemberCollection.Insert(System.Int32,System.CodeDom.CodeTypeMember)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.CodeDom.CodeTypeMember" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index where the specified object should be inserted.</param>
+        <param name="value">The <see cref="T:System.CodeDom.CodeTypeMember" /> to insert.</param>
+        <summary>Inserts the specified <see cref="T:System.CodeDom.CodeTypeMember" /> into the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.CodeDom.CodeTypeMemberCollection.Insert%2A> method to add a <xref:System.CodeDom.CodeTypeMember> object to a <xref:System.CodeDom.CodeTypeMemberCollection>.  
+  
+ [!code-cpp[CodeTypeMemberCollectionExample#8](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#8)]
+ [!code-csharp[CodeTypeMemberCollectionExample#8](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#8)]
+ [!code-vb[CodeTypeMemberCollectionExample#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeMember this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeMember Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeMemberCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeTypeMember</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the collection to access.</param>
+        <summary>Gets or sets the <see cref="T:System.CodeDom.CodeTypeMember" /> at the specified index in the collection.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeTypeMember" /> at each valid index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is an indexer that can be used to access the collection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is outside the valid range of indexes for the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.CodeDom.CodeTypeMember value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.CodeDom.CodeTypeMember value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeMemberCollection.Remove(System.CodeDom.CodeTypeMember)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeTypeMember" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.CodeDom.CodeTypeMember" /> to remove from the collection.</param>
+        <summary>Removes a specific <see cref="T:System.CodeDom.CodeTypeMember" /> from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.CodeDom.CodeTypeMemberCollection.Remove%2A> method to delete a <xref:System.CodeDom.CodeTypeMember> object from a <xref:System.CodeDom.CodeTypeMemberCollection>.  
+  
+ [!code-cpp[CodeTypeMemberCollectionExample#9](~/samples/snippets/cpp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CPP/class1.cpp#9)]
+ [!code-csharp[CodeTypeMemberCollectionExample#9](~/samples/snippets/csharp/VS_Snippets_CLR/CodeTypeMemberCollectionExample/CS/class1.cs#9)]
+ [!code-vb[CodeTypeMemberCollectionExample#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeTypeMemberCollectionExample/VB/class1.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

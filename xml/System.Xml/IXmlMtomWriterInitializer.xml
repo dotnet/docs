@@ -1,0 +1,53 @@
+<Type Name="IXmlMtomWriterInitializer" FullName="System.Xml.IXmlMtomWriterInitializer">
+  <TypeSignature Language="C#" Value="public interface IXmlMtomWriterInitializer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXmlMtomWriterInitializer" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.IXmlMtomWriterInitializer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>When implemented by an MTOM writer, this interface ensures initialization for an MTOM writer.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SetOutput">
+      <MemberSignature Language="C#" Value="public void SetOutput (System.IO.Stream stream, System.Text.Encoding encoding, int maxSizeInBytes, string startInfo, string boundary, string startUri, bool writeMessageHeaders, bool ownsStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetOutput(class System.IO.Stream stream, class System.Text.Encoding encoding, int32 maxSizeInBytes, string startInfo, string boundary, string startUri, bool writeMessageHeaders, bool ownsStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.IXmlMtomWriterInitializer.SetOutput(System.IO.Stream,System.Text.Encoding,System.Int32,System.String,System.String,System.String,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="encoding" Type="System.Text.Encoding" />
+        <Parameter Name="maxSizeInBytes" Type="System.Int32" />
+        <Parameter Name="startInfo" Type="System.String" />
+        <Parameter Name="boundary" Type="System.String" />
+        <Parameter Name="startUri" Type="System.String" />
+        <Parameter Name="writeMessageHeaders" Type="System.Boolean" />
+        <Parameter Name="ownsStream" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The stream to write to.</param>
+        <param name="encoding">The character encoding of the stream.</param>
+        <param name="maxSizeInBytes">The maximum number of bytes that are buffered in the writer.</param>
+        <param name="startInfo">An attribute in the ContentType SOAP header, set to "Application/soap+xml".</param>
+        <param name="boundary">The MIME boundary string.</param>
+        <param name="startUri">The URI for MIME section.</param>
+        <param name="writeMessageHeaders">If <see langword="true" />, write message headers.</param>
+        <param name="ownsStream">If <see langword="true" />, the stream is closed by the writer when done; otherwise <see langword="false" />.</param>
+        <summary>When implemented by an MTOM writer, initializes an MTOM writer.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

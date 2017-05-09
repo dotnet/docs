@@ -1,0 +1,99 @@
+<Type Name="XmlSchemaKeyref" FullName="System.Xml.Schema.XmlSchemaKeyref">
+  <TypeSignature Language="C#" Value="public class XmlSchemaKeyref : System.Xml.Schema.XmlSchemaIdentityConstraint" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaKeyref extends System.Xml.Schema.XmlSchemaIdentityConstraint" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaKeyref" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xml.Schema.XmlSchemaIdentityConstraint</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>This class represents the <see langword="keyref" /> element from XMLSchema as specified by the World Wide Web Consortium (W3C).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specifies that an attribute or element value (or set of values) has a correspondence with those of the specified `key` or `unique` element. The constraint name must be unique within a schema.  
+  
+   
+  
+## Examples  
+ The following example creates a `key` element.  
+  
+ [!code-cpp[Classic Webdata XmlSchemaKeyRef Example#1](~/samples/snippets/cpp/VS_Snippets_Data/Classic Webdata XmlSchemaKeyRef Example/CPP/key_sample.cpp#1)]
+ [!code-csharp[Classic Webdata XmlSchemaKeyRef Example#1](~/samples/snippets/csharp/VS_Snippets_Data/Classic Webdata XmlSchemaKeyRef Example/CS/key_sample.cs#1)]
+ [!code-vb[Classic Webdata XmlSchemaKeyRef Example#1](~/samples/snippets/visualbasic/VS_Snippets_Data/Classic Webdata XmlSchemaKeyRef Example/VB/key_sample.vb#1)]  
+  
+ The following XML file is generated for the preceding code example.  
+  
+ [!code-xml[Classic Webdata XmlSchemaKeyRef Example#2](~/samples/snippets/xml/VS_Snippets_Data/Classic Webdata XmlSchemaKeyRef Example/XML/key_sample.xsd#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlSchemaKeyref ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaKeyref.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaKeyref" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refer">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlQualifiedName Refer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlQualifiedName Refer" />
+      <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaKeyref.Refer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("refer")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the key that this constraint refers to in another simple or complex type.</summary>
+        <value>The QName of the key that this constraint refers to.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Name of a `key` or `unique` element defined in this schema (or another schema indicated by the specified namespace). The `Refer` value must be a QName. The `Refer` value can include a namespace prefix.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

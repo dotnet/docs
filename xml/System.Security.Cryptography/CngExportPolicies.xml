@@ -1,0 +1,164 @@
+<Type Name="CngExportPolicies" FullName="System.Security.Cryptography.CngExportPolicies">
+  <TypeSignature Language="C#" Value="public enum CngExportPolicies" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CngExportPolicies extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CngExportPolicies" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the key export policies for a key.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used by the <xref:System.Security.Cryptography.CngKey.ExportPolicy%2A> property and the <xref:System.Security.Cryptography.CngKeyCreationParameters> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllowArchiving">
+      <MemberSignature Language="C#" Value="AllowArchiving" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CngExportPolicies AllowArchiving = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngExportPolicies.AllowArchiving" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.CngExportPolicies</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The private key can be exported one time for archiving purposes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowExport">
+      <MemberSignature Language="C#" Value="AllowExport" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CngExportPolicies AllowExport = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngExportPolicies.AllowExport" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.CngExportPolicies</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The private key can be exported multiple times.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowPlaintextArchiving">
+      <MemberSignature Language="C#" Value="AllowPlaintextArchiving" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CngExportPolicies AllowPlaintextArchiving = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngExportPolicies.AllowPlaintextArchiving" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.CngExportPolicies</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The private key can be exported one time as plaintext.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowPlaintextExport">
+      <MemberSignature Language="C#" Value="AllowPlaintextExport" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CngExportPolicies AllowPlaintextExport = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngExportPolicies.AllowPlaintextExport" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.CngExportPolicies</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The private key can be exported multiple times as plaintext.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CngExportPolicies None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngExportPolicies.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.CngExportPolicies</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No export policies are established. Key export is allowed without restriction.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

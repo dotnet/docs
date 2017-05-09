@@ -1,0 +1,57 @@
+<Type Name="FieldType" FullName="Microsoft.VisualBasic.FileIO.FieldType">
+  <TypeSignature Language="C#" Value="public enum FieldType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FieldType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileIO.FieldType" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates whether text fields are delimited or fixed width.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used with the <xref:Microsoft.VisualBasic.FileIO.TextFieldParser> object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Delimited">
+      <MemberSignature Language="C#" Value="Delimited" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FileIO.FieldType Delimited = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileIO.FieldType.Delimited" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.FileIO.FieldType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the fields are delimited.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FixedWidth">
+      <MemberSignature Language="C#" Value="FixedWidth" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FileIO.FieldType FixedWidth = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileIO.FieldType.FixedWidth" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.FileIO.FieldType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the fields are fixed width.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

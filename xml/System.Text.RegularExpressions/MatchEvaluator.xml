@@ -1,0 +1,52 @@
+<Type Name="MatchEvaluator" FullName="System.Text.RegularExpressions.MatchEvaluator">
+  <TypeSignature Language="C#" Value="public delegate string MatchEvaluator(Match match);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed MatchEvaluator extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.MatchEvaluator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="match" Type="System.Text.RegularExpressions.Match" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.String</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="match">The <see cref="T:System.Text.RegularExpressions.Match" /> object that represents a single regular expression match during a <see cref="Overload:System.Text.RegularExpressions.Regex.Replace" /> method operation.</param>
+    <summary>Represents the method that is called each time a regular expression match is found during a <see cref="Overload:System.Text.RegularExpressions.Regex.Replace" /> method operation.</summary>
+    <returns>A string returned by the method that is represented by the <see cref="T:System.Text.RegularExpressions.MatchEvaluator" /> delegate.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use a <xref:System.Text.RegularExpressions.MatchEvaluator> delegate method to perform a custom verification or manipulation operation for each match found by a replacement method such as <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.Text.RegularExpressions.MatchEvaluator%29?displayProperty=fullName>. For each matched string, the <xref:System.Text.RegularExpressions.Regex.Replace%2A> method calls the <xref:System.Text.RegularExpressions.MatchEvaluator> delegate method with a <xref:System.Text.RegularExpressions.Match> object that represents the match. The delegate method performs whatever processing you prefer and returns a string that the <xref:System.Text.RegularExpressions.Regex.Replace%2A> method substitutes for the matched string.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Text.RegularExpressions.MatchEvaluator> delegate to replace every matched group of characters with the number of the match occurrence.  
+  
+ [!code-cpp[System.Text.RegularExpressions.MatchEvaluator#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.text.regularexpressions.MatchEvaluator/CPP/regexreplace.cpp#1)]
+ [!code-csharp[System.Text.RegularExpressions.MatchEvaluator#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.MatchEvaluator/CS/regexreplace.cs#1)]
+ [!code-vb[System.Text.RegularExpressions.MatchEvaluator#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.MatchEvaluator/VB/regexreplace.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

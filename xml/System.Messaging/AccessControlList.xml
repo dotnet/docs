@@ -1,0 +1,212 @@
+<Type Name="AccessControlList" FullName="System.Messaging.AccessControlList">
+  <TypeSignature Language="C#" Value="public class AccessControlList : System.Collections.CollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AccessControlList extends System.Collections.CollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.Messaging.AccessControlList" />
+  <AssemblyInfo>
+    <AssemblyName>System.Messaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.CollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains a list of access control entries, specifying access rights for one or more trustees.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Messaging.AccessControlList> class to specify multiple trustees and access rights to add with a single call when setting permissions. Construct your access control list by adding an access control entry for each trustee and access rights combination.  
+  
+ A <xref:System.Messaging.AccessControlList> identifies the trustees that are allowed or denied access to a securable object. When a process tries to access a securable object, the system checks the access control entries in the object's access control list to determine whether to grant access to it. If the object does not have an access control list, the system grants full access to everything. If the object's access control list has no entries, the system denies all attempts to access the object.  
+  
+ The system checks the access control entries in sequence until it finds one or more that allow all the requested access rights or until any of the requested access rights are denied.  
+  
+ The system examines each <xref:System.Messaging.AccessControlEntry> in sequence until one of the following events occurs:  
+  
+-   An access-denied <xref:System.Messaging.AccessControlEntry> explicitly denies any of the requested access rights to one of the trustees listed in the thread's access token.  
+  
+-   One or more access-allowed <xref:System.Messaging.AccessControlEntry> items for trustees listed in the thread's access token explicitly grant all the requested access rights.  
+  
+-   All <xref:System.Messaging.AccessControlEntry> items have been checked and there is still at least one requested access right that has not been explicitly allowed, in which case, access is implicitly denied.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AccessControlList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.AccessControlList.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.AccessControlList" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public int Add (System.Messaging.AccessControlEntry entry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Messaging.AccessControlEntry entry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.AccessControlList.Add(System.Messaging.AccessControlEntry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entry" Type="System.Messaging.AccessControlEntry" />
+      </Parameters>
+      <Docs>
+        <param name="entry">A <see cref="T:System.Messaging.AccessControlEntry" /> to append to the end of the access control list.</param>
+        <summary>Appends an access control entry to the access control list.</summary>
+        <returns>The position into which the new access control entry was inserted.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="entry" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.Messaging.AccessControlEntry entry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Messaging.AccessControlEntry entry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.AccessControlList.Contains(System.Messaging.AccessControlEntry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entry" Type="System.Messaging.AccessControlEntry" />
+      </Parameters>
+      <Docs>
+        <param name="entry">The <see cref="T:System.Messaging.AccessControlEntry" /> to locate in the access control list.</param>
+        <summary>Determines whether the access control list contains a specific access control entry.</summary>
+        <returns>
+          <see langword="true" /> if the access control entry is found in the access control list; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Messaging.AccessControlEntry[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Messaging.AccessControlEntry[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.AccessControlList.CopyTo(System.Messaging.AccessControlEntry[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Messaging.AccessControlEntry[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">An array of type <see cref="T:System.Messaging.AccessControlEntry" /> to which the access control list entries will be copied. The array must have zero-based indexing.</param>
+        <param name="index">The index in the array at which to begin copying the access control list entries.</param>
+        <summary>Copies the entire access control list to a compatible one-dimensional array of access control entries, starting at the specified index of the target array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="array" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="index" /> parameter is greater than or equal to the length of the <paramref name="array" /> parameter.  
+  
+ -or-  
+  
+ The number of elements in the source access control list is greater than the available space from <paramref name="index" /> to the end of the destination array of access control entries.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Messaging.AccessControlEntry entry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Messaging.AccessControlEntry entry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.AccessControlList.IndexOf(System.Messaging.AccessControlEntry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entry" Type="System.Messaging.AccessControlEntry" />
+      </Parameters>
+      <Docs>
+        <param name="entry">The <see cref="T:System.Messaging.AccessControlEntry" /> to locate in the access control list.</param>
+        <summary>Determines the specific index of an access control entry in the access control list.</summary>
+        <returns>The index of the entry if it was found in the list; otherwise, -1</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, System.Messaging.AccessControlEntry entry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Messaging.AccessControlEntry entry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.AccessControlList.Insert(System.Int32,System.Messaging.AccessControlEntry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="entry" Type="System.Messaging.AccessControlEntry" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which the access control entry should be inserted.</param>
+        <param name="entry">A <see cref="T:System.Messaging.AccessControlEntry" /> to insert into the access control list.</param>
+        <summary>Inserts an access control entry into the access control list at the specified position.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `index` parameter equals the number of items in the access control list, then the entry is appended to the end. Otherwise, the entries after the insertion point move down to accommodate the new item in the list.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is not a valid index in this access control list.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="entry" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Messaging.AccessControlEntry entry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Messaging.AccessControlEntry entry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.AccessControlList.Remove(System.Messaging.AccessControlEntry)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entry" Type="System.Messaging.AccessControlEntry" />
+      </Parameters>
+      <Docs>
+        <param name="entry">The <see cref="T:System.Messaging.AccessControlEntry" /> to remove from the access control list.</param>
+        <summary>Removes the first occurrence of a specific access control entry from the access control list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The access control entries that follow the removed item move up to occupy the vacated spot.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="entry" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

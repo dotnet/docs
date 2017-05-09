@@ -1,0 +1,85 @@
+<Type Name="NextPrevFormat" FullName="System.Web.UI.WebControls.NextPrevFormat">
+  <TypeSignature Language="C#" Value="public enum NextPrevFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NextPrevFormat extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.NextPrevFormat" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Represents the display format for the previous and next month navigation controls within the <see cref="T:System.Web.UI.WebControls.Calendar" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.NextPrevFormat> enumeration represents the different styles for the next and previous month buttons on the <xref:System.Web.UI.WebControls.Calendar>.  
+  
+ CustomText allows the programmer to specify custom text for the navigation controls.  
+  
+ ShortMonth displays a three-letter abbreviation for the month.  
+  
+ FullMonth displays the entire month name.  
+  
+   
+  
+## Examples  
+ <!-- TODO: review snippet reference [!code-csharp[CalendarNextPrevFormat#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarNextPrevFormat/CS/calendarnextprevformatcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CalendarNextPrevFormat#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarNextPrevFormat/VB/calendarnextprevformatvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CustomText">
+      <MemberSignature Language="C#" Value="CustomText" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.NextPrevFormat CustomText = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.NextPrevFormat.CustomText" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.NextPrevFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Custom text format for the month navigation controls on the <see cref="T:System.Web.UI.WebControls.Calendar" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FullMonth">
+      <MemberSignature Language="C#" Value="FullMonth" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.NextPrevFormat FullMonth = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.NextPrevFormat.FullMonth" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.NextPrevFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Full month name format for the month navigation controls on the <see cref="T:System.Web.UI.WebControls.Calendar" />. For example, "January".</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShortMonth">
+      <MemberSignature Language="C#" Value="ShortMonth" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.NextPrevFormat ShortMonth = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.NextPrevFormat.ShortMonth" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.NextPrevFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Abbreviated month name format for the month navigation controls on the <see cref="T:System.Web.UI.WebControls.Calendar" />. For example, "Jan".</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,89 @@
+<Type Name="ConfigurationAllowDefinition" FullName="System.Configuration.ConfigurationAllowDefinition">
+  <TypeSignature Language="C#" Value="public enum ConfigurationAllowDefinition" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ConfigurationAllowDefinition extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationAllowDefinition" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the locations within the configuration-file hierarchy that can set or override the properties contained within a <see cref="T:System.Configuration.ConfigurationSection" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The values in this enumeration are optionally used when creating a new instance of the <xref:System.Configuration.ConfigurationSection> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Everywhere">
+      <MemberSignature Language="C#" Value="Everywhere" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationAllowDefinition Everywhere = int32(300)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationAllowDefinition.Everywhere" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationAllowDefinition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Configuration.ConfigurationSection" /> can be defined anywhere.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MachineOnly">
+      <MemberSignature Language="C#" Value="MachineOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationAllowDefinition MachineOnly = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationAllowDefinition.MachineOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationAllowDefinition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Configuration.ConfigurationSection" /> can be defined only in the Machine.config file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MachineToApplication">
+      <MemberSignature Language="C#" Value="MachineToApplication" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationAllowDefinition MachineToApplication = int32(200)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationAllowDefinition.MachineToApplication" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationAllowDefinition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Configuration.ConfigurationSection" /> can be defined in either the Machine.config file, the machine-level Web.config file found in the same directory as Machine.config, or the top-level application Web.config file found in the virtual-directory root, but not in subdirectories of a virtual root.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MachineToWebRoot">
+      <MemberSignature Language="C#" Value="MachineToWebRoot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationAllowDefinition MachineToWebRoot = int32(100)" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationAllowDefinition.MachineToWebRoot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationAllowDefinition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Configuration.ConfigurationSection" /> can be defined in either the Machine.config file or the machine-level Web.config file found in the same directory as Machine.config, but not in application Web.config files.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

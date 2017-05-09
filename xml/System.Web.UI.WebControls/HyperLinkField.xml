@@ -1,0 +1,689 @@
+<Type Name="HyperLinkField" FullName="System.Web.UI.WebControls.HyperLinkField">
+  <TypeSignature Language="C#" Value="public class HyperLinkField : System.Web.UI.WebControls.DataControlField" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HyperLinkField extends System.Web.UI.WebControls.DataControlField" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.HyperLinkField" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.DataControlField</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a field that is displayed as a hyperlink in a data-bound control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.HyperLinkField> class is used by data-bound controls (such as <xref:System.Web.UI.WebControls.GridView> and <xref:System.Web.UI.WebControls.DetailsView>) to display a hyperlink for each record displayed. When the user clicks a hyperlink, he or she is directed to the Web page associated with the hyperlink. The <xref:System.Web.UI.WebControls.HyperLinkField> object is displayed differently depending on the data-bound control in which it is used. For example, the <xref:System.Web.UI.WebControls.GridView> control displays a <xref:System.Web.UI.WebControls.HyperLinkField> object as a column, while the <xref:System.Web.UI.WebControls.DetailsView> control displays it as a row.  
+  
+ To specify the caption to display for the hyperlinks, use the <xref:System.Web.UI.WebControls.HyperLinkField.Text%2A> property. Use the <xref:System.Web.UI.WebControls.HyperLinkField.NavigateUrl%2A> property to specify the URL to navigate to when a hyperlink is clicked. If you want to display the linked content in a specific window or frame, set the <xref:System.Web.UI.WebControls.HyperLinkField.Target%2A> property.  
+  
+> [!NOTE]
+>  When the <xref:System.Web.UI.WebControls.HyperLinkField.Text%2A> and <xref:System.Web.UI.WebControls.HyperLinkField.NavigateUrl%2A> properties are set, all hyperlinks in the <xref:System.Web.UI.WebControls.HyperLinkField> object share the same caption and navigation URL. Likewise, the <xref:System.Web.UI.WebControls.HyperLinkField.Target%2A> property also applies to all hyperlinks.  
+  
+ Alternatively, you can bind the <xref:System.Web.UI.WebControls.HyperLinkField> object to fields in a data source. This allows you to display a different caption for each hyperlink in the <xref:System.Web.UI.WebControls.HyperLinkField> object and to have each hyperlink navigate to a different location. To bind a field to a caption, set the <xref:System.Web.UI.WebControls.HyperLinkField.DataTextField%2A> property. To create a URL for navigation, set the <xref:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFields%2A> property to a comma-separated list of fields to use to create the URL.  
+  
+ You can specify a custom format for the captions and navigation URLs by setting the <xref:System.Web.UI.WebControls.HyperLinkField.DataTextFormatString%2A> and <xref:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFormatString%2A> properties, respectively.  
+  
+ You can hide a <xref:System.Web.UI.WebControls.HyperLinkField> object in a data-bound control by setting the <xref:System.Web.UI.WebControls.DataControlField.Visible%2A> property to `false`.  
+  
+ You can customize the header and footer sections of a <xref:System.Web.UI.WebControls.HyperLinkField> object. To display a caption in the header or footer sections, set the <xref:System.Web.UI.WebControls.DataControlField.HeaderText%2A> or <xref:System.Web.UI.WebControls.DataControlField.FooterText%2A> properties, respectively. To display an image in the header section instead of text, set the <xref:System.Web.UI.WebControls.DataControlField.HeaderImageUrl%2A> property. The header section can be hidden in the <xref:System.Web.UI.WebControls.HyperLinkField> object by setting the <xref:System.Web.UI.WebControls.DataControlField.ShowHeader%2A> property to `false`.  
+  
+> [!NOTE]
+>  Some data-bound controls (such as the <xref:System.Web.UI.WebControls.GridView> control) can show or hide only the entire header section of the control. These data-bound controls do not support the <xref:System.Web.UI.WebControls.DataControlField.ShowHeader%2A> property for an individual bound field. To show or hide the entire header section of a data-bound control, use the control's `ShowHeader` property (if available).  
+  
+ You also can customize the appearance of the <xref:System.Web.UI.WebControls.HyperLinkField> object (font color, background color, and so on) by setting the style properties for the different parts of the field. The following table lists the different style properties.  
+  
+|Style property|Description|  
+|--------------------|-----------------|  
+|<xref:System.Web.UI.WebControls.DataControlField.ControlStyle%2A>|The style settings for the child Web server controls of the <xref:System.Web.UI.WebControls.HyperLinkField> object.|  
+|<xref:System.Web.UI.WebControls.DataControlField.FooterStyle%2A>|The style settings for the footer section of the <xref:System.Web.UI.WebControls.HyperLinkField> object.|  
+|<xref:System.Web.UI.WebControls.DataControlField.HeaderStyle%2A>|The style settings for the header section of the <xref:System.Web.UI.WebControls.HyperLinkField> object.|  
+|<xref:System.Web.UI.WebControls.DataControlField.ItemStyle%2A>|The style settings for the data items in the <xref:System.Web.UI.WebControls.HyperLinkField> object.|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use a <xref:System.Web.UI.WebControls.HyperLinkField> object to display a column of static hyperlinks in a <xref:System.Web.UI.WebControls.GridView> control. Each hyperlink in the <xref:System.Web.UI.WebControls.HyperLinkField> object shares the same caption and navigation URL specified by the <xref:System.Web.UI.WebControls.HyperLinkField.Text%2A> and <xref:System.Web.UI.WebControls.HyperLinkField.NavigateUrl%2A> properties, respectively.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkField/CS/hyperlinkfieldcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkField/VB/hyperlinkfieldvb.aspx#1)]  -->  
+  
+ The following code example demonstrates how to bind a <xref:System.Web.UI.WebControls.HyperLinkField> object to fields in a data source. The <xref:System.Web.UI.WebControls.HyperLinkField.DataTextField%2A> and <xref:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFields%2A> properties are used to specify the fields to bind to the caption and the navigation URL, respectively, of each hyperlink displayed in the <xref:System.Web.UI.WebControls.HyperLinkField> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkFieldDataTextFormatString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkFieldDataTextFormatString/CS/hyperlinkfielddatatextformatstringcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkFieldDataTextFormatString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkFieldDataTextFormatString/VB/hyperlinkfielddatatextformatstringvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HyperLinkField ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLinkField.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.HyperLinkField" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.HyperLinkField> class. This constructor is commonly used when adding fields to a dynamically created data-bound control.  
+  
+ To dynamically add a <xref:System.Web.UI.WebControls.HyperLinkField> object to a data-bound control, create a new <xref:System.Web.UI.WebControls.HyperLinkField> object, set its properties, and then add it to the data-bound control's field collection. For example, if you are using the <xref:System.Web.UI.WebControls.GridView> control, add the <xref:System.Web.UI.WebControls.HyperLinkField> object to the <xref:System.Web.UI.WebControls.GridView.Columns%2A> collection.  
+  
+> [!NOTE]
+>  Although you can dynamically add fields to a data-bound control, it is strongly recommended that fields be statically declared and then shown or hidden, as appropriate. Statically declaring all your fields reduces the size of the view state for the parent data-bound control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the constructor to dynamically add a <xref:System.Web.UI.WebControls.HyperLinkField> object to a <xref:System.Web.UI.WebControls.GridView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkFieldCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkFieldCtor/CS/hyperlinkfieldctorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkFieldCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkFieldCtor/VB/hyperlinkfieldctorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyProperties">
+      <MemberSignature Language="C#" Value="protected override void CopyProperties (System.Web.UI.WebControls.DataControlField newField);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CopyProperties(class System.Web.UI.WebControls.DataControlField newField) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLinkField.CopyProperties(System.Web.UI.WebControls.DataControlField)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newField" Type="System.Web.UI.WebControls.DataControlField" />
+      </Parameters>
+      <Docs>
+        <param name="newField">The <see cref="T:System.Web.UI.WebControls.DataControlField" />-derived object that receives the copy.</param>
+        <summary>Copies the properties of the current <see cref="T:System.Web.UI.WebControls.HyperLinkField" /> object to the specified object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.HyperLinkField.CopyProperties%2A> method is called by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=fullName> method to copy the properties of the current <xref:System.Web.UI.WebControls.HyperLinkField> object to another.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateField">
+      <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.DataControlField CreateField ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.DataControlField CreateField() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLinkField.CreateField" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataControlField</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a new instance of the <see cref="T:System.Web.UI.WebControls.HyperLinkField" /> class.</summary>
+        <returns>A new instance of <see cref="T:System.Web.UI.WebControls.HyperLinkField" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.HyperLinkField.CreateField%2A> method is called by the <xref:System.Web.UI.WebControls.DataControlField.CloneField%2A?displayProperty=fullName> method to create a new instance of the <xref:System.Web.UI.WebControls.HyperLinkField> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataNavigateUrlFields">
+      <MemberSignature Language="C#" Value="public virtual string[] DataNavigateUrlFields { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] DataNavigateUrlFields" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFields" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.WebControls.DataFieldEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.WebControls.StringArrayConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the names of the fields from the data source used to construct the URLs for the hyperlinks in the <see cref="T:System.Web.UI.WebControls.HyperLinkField" /> object.</summary>
+        <value>An array containing the names of the fields from the data source used to construct the URLs for the hyperlinks in the <see cref="T:System.Web.UI.WebControls.HyperLinkField" />. The default is an empty array, indicating that <see cref="P:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFields" /> is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFields%2A> property when the data source contains multiple fields that must be combined to create the hyperlinks for the <xref:System.Web.UI.WebControls.HyperLinkField> object. The fields specified in the <xref:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFields%2A> property are combined with the format string in the <xref:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFormatString%2A> property to construct the hyperlinks in the <xref:System.Web.UI.WebControls.HyperLinkField> object.  
+  
+> [!NOTE]
+>  When you set the <xref:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFields%2A> property with declarative code in an .aspx file, use a comma-separated list of field names.  
+  
+ Instead of using this property to bind the URLs of the hyperlinks to a field, you can use the <xref:System.Web.UI.WebControls.HyperLinkField.NavigateUrl%2A> property to set the hyperlinks' URL to a static value. With this option, each hyperlink shares the same URL.  
+  
+> [!NOTE]
+>  If the <xref:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFields%2A> and the <xref:System.Web.UI.WebControls.HyperLinkField.NavigateUrl%2A> properties are both set, the <xref:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFields%2A> property takes precedence.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataNavigateUrlFormatString">
+      <MemberSignature Language="C#" Value="public virtual string DataNavigateUrlFormatString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataNavigateUrlFormatString" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFormatString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string that specifies the format in which the URLs for the hyperlinks in a <see cref="T:System.Web.UI.WebControls.HyperLinkField" /> object are rendered.</summary>
+        <value>A string that specifies the format in which the URLs for the hyperlinks in a <see cref="T:System.Web.UI.WebControls.HyperLinkField" /> are rendered. The default is an empty string (""), which indicates that no special formatting is applied to the URL values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFormatString%2A> property to specify a custom format for the URLs of the hyperlinks in a <xref:System.Web.UI.WebControls.HyperLinkField> object. If the <xref:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFormatString%2A> property is not set, the hyperlinks' URLs do not get any special formatting.  
+  
+> [!NOTE]
+>  The format string is applied only when the <xref:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFields%2A> property is set.  
+  
+ The format string can be any literal string and usually includes a placeholder for the field's value. For example, in the format string "Item Value: {0}", the {0} placeholder is replaced with the field's value in the <xref:System.Web.UI.WebControls.HyperLinkField> object. The rest of the format string is displayed as literal text.  
+  
+> [!NOTE]
+>  If the format string does not include a placeholder, the field's value from the data source is not included in the final display text.  
+  
+ The placeholder consists of two parts, separated by a colon and wrapped in braces, in the form {`A`:`Bxx`}. The value before the colon (`A` in the general example) specifies the field value's index in a zero-based list of parameters.  
+  
+> [!NOTE]
+>  This parameter is part of the formatting syntax. Because there is only one field value in each cell, this value can only be set to 0.  
+  
+ The colon and the values after the colon are optional. The character after the colon (`B` in the general example) specifies the format in which to display the value. The following table lists the common formats.  
+  
+|Format character|Description|  
+|----------------------|-----------------|  
+|`C`|Displays numeric values in currency format.|  
+|`D`|Displays numeric values in decimal format.|  
+|`E`|Displays numeric values in scientific (exponential) format.|  
+|`F`|Displays numeric values in fixed format.|  
+|`G`|Displays numeric values in general format.|  
+|`N`|Displays numeric values in number format.|  
+|`X`|Displays numeric values in hexadecimal format.|  
+  
+> [!NOTE]
+>  The format characters are not case-sensitive, except for `X`, which displays the hexadecimal characters in the case specified.  
+  
+ The value after the format character (`xx` in the general example) specifies the number of significant digits or decimal places to display. For example, the format string "{0:F2}" displays a fixed-point number with two decimal places.  
+  
+ For more information on formatting strings, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFormatString%2A> property to specify a custom format to apply to the navigation URLs of the hyperlinks displayed in a <xref:System.Web.UI.WebControls.HyperLinkField> object. The value of the field specified by the <xref:System.Web.UI.WebControls.HyperLinkField.DataTextField%2A> property is passed as a query string to a Web page specified in the format string.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkFieldDataTextFormatString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkFieldDataTextFormatString/CS/hyperlinkfielddatatextformatstringcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkFieldDataTextFormatString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkFieldDataTextFormatString/VB/hyperlinkfielddatatextformatstringvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataTextField">
+      <MemberSignature Language="C#" Value="public virtual string DataTextField { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataTextField" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLinkField.DataTextField" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter("System.Web.UI.Design.DataSourceViewSchemaConverter, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the field from the data source containing the text to display for the hyperlink captions in the <see cref="T:System.Web.UI.WebControls.HyperLinkField" /> object.</summary>
+        <value>The name of the field from the data source containing the values to display for the hyperlink captions in the <see cref="T:System.Web.UI.WebControls.HyperLinkField" />. The default is an empty string (""), which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.HyperLinkField.DataTextField%2A> property to specify the name of the field that contains the text to display for the hyperlink captions in the <xref:System.Web.UI.WebControls.HyperLinkField> object.  
+  
+ Instead of using this property to bind the hyperlink captions to a field, you can use the <xref:System.Web.UI.WebControls.HyperLinkField.Text%2A> property to set the hyperlink captions to a static value. With this option, each hyperlink shares the same caption.  
+  
+> [!NOTE]
+>  If the <xref:System.Web.UI.WebControls.HyperLinkField.DataTextField%2A> and <xref:System.Web.UI.WebControls.HyperLinkField.Text%2A> properties are both set, the <xref:System.Web.UI.WebControls.HyperLinkField.DataTextField%2A> property takes precedence.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.HyperLinkField.DataTextField%2A> property to specify a field from the data source to bind to the hyperlink captions displayed in a <xref:System.Web.UI.WebControls.HyperLinkField> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkFieldDataBind#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkFieldDataBind/CS/hyperlinkfielddatabindcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkFieldDataBind#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkFieldDataBind/VB/hyperlinkfielddatabindvb.aspx#1)]  -->  
+  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.HyperLinkField.DataTextFormatString%2A> property to format the values bound to the hyperlink captions displayed in a <xref:System.Web.UI.WebControls.HyperLinkField> object. The values are formatted as currency.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkFieldDataTextFormatString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkFieldDataTextFormatString/CS/hyperlinkfielddatatextformatstringcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkFieldDataTextFormatString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkFieldDataTextFormatString/VB/hyperlinkfielddatatextformatstringvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataTextFormatString">
+      <MemberSignature Language="C#" Value="public virtual string DataTextFormatString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataTextFormatString" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLinkField.DataTextFormatString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or sets the string that specifies the format in which the hyperlink captions in a <see cref="T:System.Web.UI.WebControls.HyperLinkField" /> object are displayed.</summary>
+        <value>A string that specifies the format in which the hyperlink captions in a <see cref="T:System.Web.UI.WebControls.HyperLinkField" /> are displayed. The default is an empty string (""), which indicates that no special formatting is applied to the hyperlink captions.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.HyperLinkField.DataTextFormatString%2A> property to specify a custom display format for the captions displayed in the <xref:System.Web.UI.WebControls.HyperLinkField> object. If the <xref:System.Web.UI.WebControls.HyperLinkField.DataTextFormatString%2A> property is not set, the field's value is displayed without any special formatting.  
+  
+> [!NOTE]
+>  The format string is applied only when the <xref:System.Web.UI.WebControls.HyperLinkField.DataTextField%2A> property is set.  
+  
+ The format string can be any literal string and usually includes a placeholder for the field's value. For example, in the format string "Item Value: {0}", the {0} placeholder is replaced with the field's value when it is displayed in the <xref:System.Web.UI.WebControls.HyperLinkField> object. The rest of the format string is displayed as literal text.  
+  
+> [!NOTE]
+>  If the format string does not include a placeholder, the field's value from the data source is not included in the final display text.  
+  
+ The placeholder consists of two parts, separated by a colon and wrapped in braces, in the form {`A`:`Bxx`}. The value before the colon (`A` in the general example) specifies the field value's index in a zero-based list of parameters.  
+  
+> [!NOTE]
+>  This parameter is part of the formatting syntax. Because there is only one field value in each cell, this value can only be set to 0.  
+  
+ The colon and the values after the colon are optional. The character after the colon (`B` in the general example) specifies the format in which to display the value. The following table lists the common formats.  
+  
+|Format character|Description|  
+|----------------------|-----------------|  
+|`C`|Displays numeric values in currency format.|  
+|`D`|Displays numeric values in decimal format.|  
+|`E`|Displays numeric values in scientific (exponential) format.|  
+|`F`|Displays numeric values in fixed format.|  
+|`G`|Displays numeric values in general format.|  
+|`N`|Displays numeric values in number format.|  
+|`X`|Displays numeric values in hexadecimal format.|  
+  
+> [!NOTE]
+>  The format characters are not case-sensitive, except for `X`, which displays the hexadecimal characters in the case specified.  
+  
+ The value after the format character (`xx` in the general example) specifies the number of significant digits or decimal places to display. For example, the format string "{0:F2}" displays a fixed-point number with two decimal places.  
+  
+ For more information on formatting strings, see [Formatting Types](~/docs/standard/base-types/formatting-types.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.HyperLinkField.DataTextFormatString%2A> property to format the values bound to the hyperlink captions displayed in a <xref:System.Web.UI.WebControls.HyperLinkField> object. The values are formatted as currency.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkFieldDataTextFormatString#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkFieldDataTextFormatString/CS/hyperlinkfielddatatextformatstringcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkFieldDataTextFormatString#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkFieldDataTextFormatString/VB/hyperlinkfielddatatextformatstringvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatDataNavigateUrlValue">
+      <MemberSignature Language="C#" Value="protected virtual string FormatDataNavigateUrlValue (object[] dataUrlValues);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string FormatDataNavigateUrlValue(object[] dataUrlValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLinkField.FormatDataNavigateUrlValue(System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataUrlValues" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="dataUrlValues">An array of values to combine with the format string.</param>
+        <summary>Formats the navigation URL using the format string specified by the <see cref="P:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFormatString" /> property.</summary>
+        <returns>The formatted URL value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.HyperLinkField.FormatDataNavigateUrlValue%2A> method is a helper method used to format the URL of a hyperlink in a <xref:System.Web.UI.WebControls.HyperLinkField> object with the format string specified by the <xref:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFormatString%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatDataTextValue">
+      <MemberSignature Language="C#" Value="protected virtual string FormatDataTextValue (object dataTextValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string FormatDataTextValue(object dataTextValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLinkField.FormatDataTextValue(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataTextValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="dataTextValue">The text value to format.</param>
+        <summary>Formats the caption text using the format string specified by the <see cref="P:System.Web.UI.WebControls.HyperLinkField.DataTextFormatString" /> property.</summary>
+        <returns>The formatted text value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.HyperLinkField.FormatDataTextValue%2A> method is a helper method used to format the caption text of a hyperlink in a <xref:System.Web.UI.WebControls.HyperLinkField> object with the format string specified by the <xref:System.Web.UI.WebControls.HyperLinkField.DataTextFormatString%2A> property.  
+  
+> [!NOTE]
+>  This method is used primarily by control developers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public override bool Initialize (bool enableSorting, System.Web.UI.Control control);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Initialize(bool enableSorting, class System.Web.UI.Control control) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLinkField.Initialize(System.Boolean,System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="enableSorting" Type="System.Boolean" />
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="enableSorting">
+          <see langword="true" /> if sorting is supported; otherwise, <see langword="false" />.</param>
+        <param name="control">The data control that acts as the parent for the <see cref="T:System.Web.UI.WebControls.HyperLinkField" />.</param>
+        <summary>Initializes the <see cref="T:System.Web.UI.WebControls.HyperLinkField" /> object.</summary>
+        <returns>Always returns <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeCell">
+      <MemberSignature Language="C#" Value="public override void InitializeCell (System.Web.UI.WebControls.DataControlFieldCell cell, System.Web.UI.WebControls.DataControlCellType cellType, System.Web.UI.WebControls.DataControlRowState rowState, int rowIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InitializeCell(class System.Web.UI.WebControls.DataControlFieldCell cell, valuetype System.Web.UI.WebControls.DataControlCellType cellType, valuetype System.Web.UI.WebControls.DataControlRowState rowState, int32 rowIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLinkField.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cell" Type="System.Web.UI.WebControls.DataControlFieldCell" />
+        <Parameter Name="cellType" Type="System.Web.UI.WebControls.DataControlCellType" />
+        <Parameter Name="rowState" Type="System.Web.UI.WebControls.DataControlRowState" />
+        <Parameter Name="rowIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="cell">A <see cref="T:System.Web.UI.WebControls.DataControlFieldCell" /> that contains the text or controls of the <see cref="T:System.Web.UI.WebControls.HyperLinkField" />.</param>
+        <param name="cellType">One of the <see cref="T:System.Web.UI.WebControls.DataControlCellType" /> values.</param>
+        <param name="rowState">One of the <see cref="T:System.Web.UI.WebControls.DataControlRowState" /> values that specifies the state of the row containing the <see cref="T:System.Web.UI.WebControls.HyperLinkField" />.</param>
+        <param name="rowIndex">The index of the row in the table.</param>
+        <summary>Initializes a cell in a <see cref="T:System.Web.UI.WebControls.HyperLinkField" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.HyperLinkField.InitializeCell%2A> method is called by the data-bound control that contains the <xref:System.Web.UI.WebControls.HyperLinkField> object to initialize a <xref:System.Web.UI.WebControls.HyperLink> control with the text and URL of the link.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NavigateUrl">
+      <MemberSignature Language="C#" Value="public virtual string NavigateUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NavigateUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLinkField.NavigateUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.UrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL to navigate to when a hyperlink in a <see cref="T:System.Web.UI.WebControls.HyperLinkField" /> object is clicked.</summary>
+        <value>The URL to navigate to when a hyperlink in a <see cref="T:System.Web.UI.WebControls.HyperLinkField" /> is clicked. The default is an empty string (""), which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.HyperLinkField.NavigateUrl%2A> property to specify the URL to navigate to when a hyperlink in a <xref:System.Web.UI.WebControls.HyperLinkField> object is clicked. When this property is set, each hyperlink shares the same navigation URL.  
+  
+ Instead of using this property to set the URL for the hyperlinks, you can use the <xref:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFields%2A> property to bind the URLs of the hyperlinks to a field in a data source. This allows you to have a different URL for each hyperlink.  
+  
+> [!NOTE]
+>  If the <xref:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFields%2A> and <xref:System.Web.UI.WebControls.HyperLinkField.NavigateUrl%2A> properties are both set, the <xref:System.Web.UI.WebControls.HyperLinkField.DataNavigateUrlFields%2A> property takes precedence.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.HyperLinkField.NavigateUrl%2A> property to specify a static Web page to navigate to when a hyperlink in a <xref:System.Web.UI.WebControls.HyperLinkField> object is clicked.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkField/CS/hyperlinkfieldcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkField/VB/hyperlinkfieldvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public virtual string Target { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Target" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLinkField.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.WebControls.TargetConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the target window or frame in which to display the Web page linked to when a hyperlink in a <see cref="T:System.Web.UI.WebControls.HyperLinkField" /> object is clicked.</summary>
+        <value>The target window or frame in which to load the Web page linked to when a hyperlink in a <see cref="T:System.Web.UI.WebControls.HyperLinkField" /> is clicked. The default is an empty string (""), which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.HyperLinkField.Target%2A> property to specify the window or frame in which to display the Web content linked to a hyperlink when that hyperlink is clicked.  
+  
+ Values must begin with a letter in the range of A through Z (case-insensitive), except for the special values listed in the following table, each of which begins with an underscore.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|`_blank`|Renders the content in a new window without frames.|  
+|`_parent`|Renders the content in the immediate frameset parent.|  
+|`_search`|Renders the content in the search pane.|  
+|`_self`|Renders the content in the frame with focus.|  
+|`_top`|Renders the content in the full window without frames.|  
+  
+> [!NOTE]
+>  Check your browser documentation to determine whether the `_search` value is supported. For example, Microsoft Internet Explorer 5.0 and later versions support the `_search` target value.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.HyperLinkField.Target%2A> property is rendered as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.HyperLinkField.Target%2A> property if the rendered output for the <xref:System.Web.UI.WebControls.HyperLinkField> object must be XHTML 1.1-compliant. For more information, refer to the topic [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
+>   
+>  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.HyperLinkField.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/en-us/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.HyperLinkField.Target%2A> property to specify a target window in which to display the contents of the Web page associated with a hyperlink in a <xref:System.Web.UI.WebControls.HyperLinkField> object. The linked Web page is displayed in a new window when the hyperlink is clicked.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkField/CS/hyperlinkfieldcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkField/VB/hyperlinkfieldvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public virtual string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLinkField.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text to display for each hyperlink in the <see cref="T:System.Web.UI.WebControls.HyperLinkField" /> object.</summary>
+        <value>The text to display for each hyperlink in the <see cref="T:System.Web.UI.WebControls.HyperLinkField" />. The default is an empty string (""), which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.HyperLinkField.Text%2A> property to specify the caption to display for the hyperlinks in a <xref:System.Web.UI.WebControls.HyperLinkField> object. When this property is set, each hyperlink shares the same caption.  
+  
+ Instead of using this property to set the hyperlink captions, you can use the <xref:System.Web.UI.WebControls.HyperLinkField.DataTextField%2A> property to bind the hyperlink captions to a field in a data source. This allows you to display a different caption for each hyperlink.  
+  
+> [!NOTE]
+>  If the <xref:System.Web.UI.WebControls.HyperLinkField.DataTextField%2A> and <xref:System.Web.UI.WebControls.HyperLinkField.Text%2A> properties are both set, the <xref:System.Web.UI.WebControls.HyperLinkField.DataTextField%2A> property takes precedence.  
+  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.HyperLinkField.Text%2A> property to specify a static caption to display for the hyperlinks in a <xref:System.Web.UI.WebControls.HyperLinkField> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkField#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkField/CS/hyperlinkfieldcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkField#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkField/VB/hyperlinkfieldvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateSupportsCallback">
+      <MemberSignature Language="C#" Value="public override void ValidateSupportsCallback ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ValidateSupportsCallback() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLinkField.ValidateSupportsCallback" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates that the controls contained by the <see cref="T:System.Web.UI.WebControls.HyperLinkField" /> object support callbacks.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.HyperLinkField.ValidateSupportsCallback%2A> method overrides the default <xref:System.Web.UI.WebControls.DataControlField.ValidateSupportsCallback%2A?displayProperty=fullName> method to indicate that controls contained in the <xref:System.Web.UI.WebControls.HyperLinkField> object support callbacks.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

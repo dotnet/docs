@@ -1,0 +1,92 @@
+<Type Name="SendMessageRecord" FullName="System.ServiceModel.Activities.Tracking.SendMessageRecord">
+  <TypeSignature Language="C#" Value="public class SendMessageRecord : System.Activities.Tracking.CustomTrackingRecord" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SendMessageRecord extends System.Activities.Tracking.CustomTrackingRecord" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Tracking.SendMessageRecord" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.Tracking.CustomTrackingRecord</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains the tracking record sent to a tracking participant by the run-time tracking infrastructure when a message is sent by a workflow service instance.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SendMessageRecord (System.ServiceModel.Activities.Tracking.SendMessageRecord record);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Activities.Tracking.SendMessageRecord record) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.SendMessageRecord.#ctor(System.ServiceModel.Activities.Tracking.SendMessageRecord)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="record" Type="System.ServiceModel.Activities.Tracking.SendMessageRecord" />
+      </Parameters>
+      <Docs>
+        <param name="record">The tracking information.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.Tracking.SendMessageRecord" /> class using the specified <see cref="T:System.ServiceModel.Activities.Tracking.SendMessageRecord" /> instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SendMessageRecord (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.SendMessageRecord.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the tracking record.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.Tracking.SendMessageRecord" /> class using the specified name.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="protected override System.Activities.Tracking.TrackingRecord Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Activities.Tracking.TrackingRecord Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.SendMessageRecord.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Tracking.TrackingRecord</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a copy of the <see cref="T:System.ServiceModel.Activities.Tracking.SendMessageRecord" />.</summary>
+        <returns>A copy of the <see cref="T:System.ServiceModel.Activities.Tracking.SendMessageRecord" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="E2EActivityId">
+      <MemberSignature Language="C#" Value="public Guid E2EActivityId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid E2EActivityId" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.SendMessageRecord.E2EActivityId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the sending end-to-end activity ID associated with this record.</summary>
+        <value>The end-to-end activity ID.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

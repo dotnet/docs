@@ -1,0 +1,96 @@
+<Type Name="ProgIdAttribute" FullName="System.Runtime.InteropServices.ProgIdAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ProgIdAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProgIdAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ProgIdAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Allows the user to specify the ProgID of a class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can apply this attribute to classes.  
+  
+ ProgIDs are automatically generated for a class by combining the namespace with the type name. This can produce an invalid ProgID however, as ProgIDs are limited to 39 characters and can contain no punctuation other than a period. In such case, a ProgID can be manually assigned to the class using <xref:System.Runtime.InteropServices.ProgIdAttribute>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to apply `ProgIdAttribute` on a class. The application then gets all attributes of `MyClass`, and prints the <xref:System.Runtime.InteropServices.ProgIdAttribute.Value%2A> property of `ProgIdAttribute`.  
+  
+ [!code-cpp[ProgIdAttribute_Value#1](~/samples/snippets/cpp/VS_Snippets_CLR/ProgIdAttribute_Value/CPP/progidattribute_value.cpp#1)]
+ [!code-csharp[ProgIdAttribute_Value#1](~/samples/snippets/csharp/VS_Snippets_CLR/ProgIdAttribute_Value/CS/progidattribute_value.cs#1)]
+ [!code-vb[ProgIdAttribute_Value#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ProgIdAttribute_Value/VB/progidattribute_value.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProgIdAttribute (string progId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string progId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ProgIdAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="progId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="progId">The ProgID to be assigned to the class.</param>
+        <summary>Initializes a new instance of the <see langword="ProgIdAttribute" /> with the specified ProgID.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ProgIdAttribute.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the ProgID of the class.</summary>
+        <value>The ProgID of the class.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

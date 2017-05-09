@@ -1,0 +1,339 @@
+<Type Name="EndpointAddressBuilder" FullName="System.ServiceModel.EndpointAddressBuilder">
+  <TypeSignature Language="C#" Value="public class EndpointAddressBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EndpointAddressBuilder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.EndpointAddressBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A factory for producing new (immutable) endpoint addresses with specific property values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The new endpoint address can have its property values initialized from the property values of an existing endpoint address using the <xref:System.ServiceModel.EndpointAddressBuilder.%23ctor%28System.ServiceModel.EndpointAddress%29> constructor.  
+  
+ The endpoint addresses created can have their URI and identity values set using the <xref:System.ServiceModel.EndpointAddressBuilder.Uri%2A> and <xref:System.ServiceModel.EndpointAddressBuilder.Identity%2A> properties of the endpoint address builder. Note that <xref:System.ServiceModel.EndpointAddress> is an immutable class.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UEEndpointAddressBuilder#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#0)]
+ [!code-vb[S_UEEndpointAddressBuilder#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EndpointAddressBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddressBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.EndpointAddressBuilder" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UEEndpointAddressBuilder#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#1)]
+ [!code-vb[S_UEEndpointAddressBuilder#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EndpointAddressBuilder (System.ServiceModel.EndpointAddress address);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.EndpointAddress address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddressBuilder.#ctor(System.ServiceModel.EndpointAddress)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
+      </Parameters>
+      <Docs>
+        <param name="address">The <see cref="T:System.ServiceModel.EndpointAddress" /> whose property values are used to initialize the property values of this instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.EndpointAddressBuilder" /> class from an existing endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The values initialized for the endpoint builder from the endpoint address are the endpoint address itself and the identity, the headers, and the URI.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UEEndpointAddressBuilder#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#2)]
+ [!code-vb[S_UEEndpointAddressBuilder#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="address" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReaderAtExtensions">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryReader GetReaderAtExtensions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDictionaryReader GetReaderAtExtensions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddressBuilder.GetReaderAtExtensions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryReader</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the XML dictionary reader that contains the extensions of the endpoint address.</summary>
+        <returns>The <see cref="T:System.Xml.XmlDictionaryReader" /> that reads the extensions of the endpoint address.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The reader provides access to the information that is not contained in the model of the endpoint reference defined by WS-Addressing.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UEEndpointAddressBuilder#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#5)]
+ [!code-vb[S_UEEndpointAddressBuilder#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReaderAtMetadata">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryReader GetReaderAtMetadata ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDictionaryReader GetReaderAtMetadata() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddressBuilder.GetReaderAtMetadata" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryReader</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the reader that contains the metadata associated with the endpoint address.</summary>
+        <returns>The <see cref="T:System.Xml.XmlDictionaryReader" /> that reads the metadata associated the endpoint address if there is some; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UEEndpointAddressBuilder#8](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#8)]
+ [!code-vb[S_UEEndpointAddressBuilder#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Headers">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Channels.AddressHeader&gt; Headers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Channels.AddressHeader&gt; Headers" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.EndpointAddressBuilder.Headers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Channels.AddressHeader&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of address headers for the endpoints that the builder can create.</summary>
+        <value>The <see cref="T:System.Collections.Generic.List`1" /> of type <see cref="T:System.ServiceModel.Channels.AddressHeader" /> that contains the address headers for the endpoints that the builder can create.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Address headers for the endpoints can be set using the <xref:System.ServiceModel.EndpointAddressBuilder.%23ctor%28System.ServiceModel.EndpointAddress%29> constructor.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UEEndpointAddressBuilder#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#3)]
+ [!code-vb[S_UEEndpointAddressBuilder#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Identity">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointIdentity Identity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointIdentity Identity" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.EndpointAddressBuilder.Identity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.EndpointIdentity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the identity for the endpoints that the builder can create.</summary>
+        <value>The <see cref="T:System.ServiceModel.EndpointIdentity" /> for the endpoint.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identity is used by an endpoint to authenticate other endpoints when exchanging messages with them.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UEEndpointAddressBuilder#4](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#4)]
+ [!code-vb[S_UEEndpointAddressBuilder#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetExtensionReader">
+      <MemberSignature Language="C#" Value="public void SetExtensionReader (System.Xml.XmlDictionaryReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetExtensionReader(class System.Xml.XmlDictionaryReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddressBuilder.SetExtensionReader(System.Xml.XmlDictionaryReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The <see cref="T:System.Xml.XmlDictionaryReader" /> that reads the extensions of the endpoint.</param>
+        <summary>Specifies the XML dictionary reader that contains the extensions of the endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UEEndpointAddressBuilder#6](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#6)]
+ [!code-vb[S_UEEndpointAddressBuilder#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMetadataReader">
+      <MemberSignature Language="C#" Value="public void SetMetadataReader (System.Xml.XmlDictionaryReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetMetadataReader(class System.Xml.XmlDictionaryReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddressBuilder.SetMetadataReader(System.Xml.XmlDictionaryReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The <see cref="T:System.Xml.XmlDictionaryReader" /> that reads the metadata associated with the endpoint.</param>
+        <summary>Specifies the XML dictionary reader that contains the metadata associated with the endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[S_UEEndpointAddressBuilder#9](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#9)]
+ [!code-vb[S_UEEndpointAddressBuilder#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToEndpointAddress">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress ToEndpointAddress ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.EndpointAddress ToEndpointAddress() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddressBuilder.ToEndpointAddress" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new endpoint address initialized with the property values of the current endpoint address builder.</summary>
+        <returns>The <see cref="T:System.ServiceModel.EndpointAddress" /> whose property are initialized with the values of the current endpoint address builder.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The values initialized from the endpoint address are the identity, the address header collection, the URI, and the extension buffer.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UEEndpointAddressBuilder#7](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#7)]
+ [!code-vb[S_UEEndpointAddressBuilder#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Uri">
+      <MemberSignature Language="C#" Value="public Uri Uri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Uri" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.EndpointAddressBuilder.Uri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URI for the endpoints that the builder can create.</summary>
+        <value>The <see cref="T:System.Uri" /> that specifies the endpoint address.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Allows the programmer to set or get the URI associated with the endpoint address.  
+  
+   
+  
+## Examples  
+ [!code-csharp[S_UEEndpointAddressBuilder#3](~/samples/snippets/csharp/VS_Snippets_CFX/s_ueendpointaddressbuilder/cs/program.cs#3)]
+ [!code-vb[S_UEEndpointAddressBuilder#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_ueendpointaddressbuilder/vb/module1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

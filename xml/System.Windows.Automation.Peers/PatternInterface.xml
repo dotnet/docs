@@ -1,0 +1,354 @@
+<Type Name="PatternInterface" FullName="System.Windows.Automation.Peers.PatternInterface">
+  <TypeSignature Language="C#" Value="public enum PatternInterface" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PatternInterface extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.PatternInterface" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the control pattern that <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" /> returns.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Dock">
+      <MemberSignature Language="C#" Value="Dock" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.PatternInterface Dock = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.PatternInterface.Dock" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IDockProvider" /> control pattern interface.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandCollapse">
+      <MemberSignature Language="C#" Value="ExpandCollapse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.PatternInterface ExpandCollapse = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.PatternInterface.ExpandCollapse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IExpandCollapseProvider" /> control pattern interface.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Grid">
+      <MemberSignature Language="C#" Value="Grid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.PatternInterface Grid = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.PatternInterface.Grid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IGridProvider" /> control pattern interface.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GridItem">
+      <MemberSignature Language="C#" Value="GridItem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.PatternInterface GridItem = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.PatternInterface.GridItem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IGridItemProvider" /> control pattern interface.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Invoke">
+      <MemberSignature Language="C#" Value="Invoke" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.PatternInterface Invoke = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.PatternInterface.Invoke" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IInvokeProvider" /> control pattern interface.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemContainer">
+      <MemberSignature Language="C#" Value="ItemContainer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.PatternInterface ItemContainer = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.PatternInterface.ItemContainer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IItemContainerProvider" /> control pattern interface.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MultipleView">
+      <MemberSignature Language="C#" Value="MultipleView" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.PatternInterface MultipleView = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.PatternInterface.MultipleView" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IMultipleViewProvider" /> control pattern interface.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeValue">
+      <MemberSignature Language="C#" Value="RangeValue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.PatternInterface RangeValue = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.PatternInterface.RangeValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IRangeValueProvider" /> control pattern interface.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Scroll">
+      <MemberSignature Language="C#" Value="Scroll" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.PatternInterface Scroll = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.PatternInterface.Scroll" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IScrollProvider" /> control pattern interface.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollItem">
+      <MemberSignature Language="C#" Value="ScrollItem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.PatternInterface ScrollItem = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.PatternInterface.ScrollItem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IScrollItemProvider" /> control pattern interface.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Selection">
+      <MemberSignature Language="C#" Value="Selection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.PatternInterface Selection = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.PatternInterface.Selection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.ISelectionProvider" /> control pattern interface.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionItem">
+      <MemberSignature Language="C#" Value="SelectionItem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.PatternInterface SelectionItem = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.PatternInterface.SelectionItem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.ISelectionItemProvider" /> control pattern interface.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SynchronizedInput">
+      <MemberSignature Language="C#" Value="SynchronizedInput" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.PatternInterface SynchronizedInput = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.PatternInterface.SynchronizedInput" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.ISynchronizedInputProvider" /> control pattern interface.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Table">
+      <MemberSignature Language="C#" Value="Table" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.PatternInterface Table = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.PatternInterface.Table" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.ITableProvider" /> control pattern interface.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TableItem">
+      <MemberSignature Language="C#" Value="TableItem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.PatternInterface TableItem = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.PatternInterface.TableItem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.ITableItemProvider" /> control pattern interface.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="Text" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.PatternInterface Text = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.PatternInterface.Text" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.ITextProvider" /> control pattern interface.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Toggle">
+      <MemberSignature Language="C#" Value="Toggle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.PatternInterface Toggle = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.PatternInterface.Toggle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IToggleProvider" /> control pattern interface.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Transform">
+      <MemberSignature Language="C#" Value="Transform" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.PatternInterface Transform = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.PatternInterface.Transform" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.ITransformProvider" /> control pattern interface.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="Value" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.PatternInterface Value = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.PatternInterface.Value" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IValueProvider" /> control pattern interface.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VirtualizedItem">
+      <MemberSignature Language="C#" Value="VirtualizedItem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.PatternInterface VirtualizedItem = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.PatternInterface.VirtualizedItem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IVirtualizedItemProvider" /> control pattern interface.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Window">
+      <MemberSignature Language="C#" Value="Window" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.PatternInterface Window = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.PatternInterface.Window" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.PatternInterface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value corresponding to the <see cref="T:System.Windows.Automation.Provider.IWindowProvider" /> control pattern interface.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

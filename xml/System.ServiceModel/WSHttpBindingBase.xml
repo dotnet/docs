@@ -1,0 +1,724 @@
+<Type Name="WSHttpBindingBase" FullName="System.ServiceModel.WSHttpBindingBase">
+  <TypeSignature Language="C#" Value="public abstract class WSHttpBindingBase : System.ServiceModel.Channels.Binding, System.ServiceModel.Channels.IBindingRuntimePreferences" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WSHttpBindingBase extends System.ServiceModel.Channels.Binding implements class System.ServiceModel.Channels.IBindingRuntimePreferences" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.WSHttpBindingBase" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Channels.Binding</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Channels.IBindingRuntimePreferences</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides the base class with members common to the <see cref="T:System.ServiceModel.WSHttpBinding" /> and the <see cref="T:System.ServiceModel.WSFederationHttpBinding" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.WSHttpBindingBase> provides some basic functionality for the bindings used to configure secure, reliable, and interoperable Web services, such as that implemented by the <xref:System.ServiceModel.WSHttpBinding> for non-duplex service contracts, and more particularly, for the secure and interoperable <xref:System.ServiceModel.WSFederationHttpBinding> that supports the WS-Federation protocol.  
+  
+ By default it generates a run-time stack that uses WS-Security for message security and authentication, HTTP for message delivery, and a Text/XML message encoding. It can be configured to also use WS-ReliableMessaging for reliability.  
+  
+ The use of WS-ReliableMessaging is configurable using the optional `reliableSessionEnabled` parameter.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the functionality provided by the <xref:System.ServiceModel.WSHttpBindingBase> class with the derived classes, <xref:System.ServiceModel.WSHttpBinding> and <xref:System.ServiceModel.WSFederationHttpBinding>.  
+  
+ [!code-csharp[WSHttpBindingBase#0](~/samples/snippets/csharp/VS_Snippets_CFX/wshttpbindingbase/cs/service.cs#0)]
+ [!code-vb[WSHttpBindingBase#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/wshttpbindingbase/vb/service.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WSHttpBindingBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBindingBase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WSHttpBindingBase" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to use the default constructor.  
+  
+ [!code-csharp[WSHttpBindingBase#1](~/samples/snippets/csharp/VS_Snippets_CFX/wshttpbindingbase/cs/service.cs#1)]
+ [!code-vb[WSHttpBindingBase#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/wshttpbindingbase/vb/service.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WSHttpBindingBase (bool reliableSessionEnabled);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(bool reliableSessionEnabled) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBindingBase.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="reliableSessionEnabled" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="reliableSessionEnabled">
+          <see langword="true" />, if a reliable session is enabled; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.WSHttpBindingBase" /> class with a value that indicates whether a reliable session is enabled.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BypassProxyOnLocal">
+      <MemberSignature Language="C#" Value="public bool BypassProxyOnLocal { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BypassProxyOnLocal" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.BypassProxyOnLocal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to bypass the proxy server for local addresses.</summary>
+        <value>
+          <see langword="true" /> to bypass the proxy server for local addresses; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An Internet resource is local if it has a local address. A local address is one that is on same computer, the local LAN or intranet and is identified, syntactically, by the lack of a period (.) as in the URIs "http://webserver/" and "http://localhost/".  
+  
+ Setting the <xref:System.ServiceModel.WSHttpBindingBase.BypassProxyOnLocal%2A> property determines whether endpoints configured with the <xref:System.ServiceModel.WSHttpBindingBase> use the proxy server when accessing local resources.  
+  
+ If <xref:System.ServiceModel.WSHttpBindingBase.BypassProxyOnLocal%2A> is `true`, requests to local Internet resources do not use the proxy server. When<xref:System.ServiceModel.WSHttpBindingBase.BypassProxyOnLocal%2A> is `false`, all Internet requests are made through the proxy server.  
+  
+   
+  
+## Examples  
+ [C#]  
+  
+ The following example sets this property to indicate that the proxy should be bypassed for local resources.  
+  
+ [!code-csharp[WSHttpBindingBase#3](~/samples/snippets/csharp/VS_Snippets_CFX/wshttpbindingbase/cs/service.cs#3)]
+ [!code-vb[WSHttpBindingBase#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/wshttpbindingbase/vb/service.vb#3)]  
+  
+ The value of this property can also be set in the configuration file.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBindingElements">
+      <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.BindingElementCollection CreateBindingElements ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.BindingElementCollection CreateBindingElements() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBindingBase.CreateBindingElements" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.BindingElementCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an ordered collection of binding elements contained in the current binding.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.BindingElementCollection" /> that contains the <see cref="T:System.ServiceModel.Channels.BindingElement" /> objects for the binding.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The order of the binding elements is important. It reflects the order in which the protocol and transport channels are constructed and stacked.  
+  
+   
+  
+## Examples  
+ This example shows how to get the maximum size for a message.  
+  
+ [!code-csharp[WSHttpBindingBase#16](~/samples/snippets/csharp/VS_Snippets_CFX/wshttpbindingbase/cs/service.cs#16)]
+ [!code-vb[WSHttpBindingBase#16](~/samples/snippets/visualbasic/VS_Snippets_CFX/wshttpbindingbase/vb/service.vb#16)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMessageSecurity">
+      <MemberSignature Language="C#" Value="protected abstract System.ServiceModel.Channels.SecurityBindingElement CreateMessageSecurity ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Channels.SecurityBindingElement CreateMessageSecurity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBindingBase.CreateMessageSecurity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.SecurityBindingElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a derived class, returns the <see cref="T:System.ServiceModel.Channels.SecurityBindingElement" /> from the current binding.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.SecurityBindingElement" /> from the current binding.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnvelopeVersion">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.EnvelopeVersion EnvelopeVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EnvelopeVersion EnvelopeVersion" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.EnvelopeVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.EnvelopeVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the version of SOAP that is used for messages that are processed by this binding.</summary>
+        <value>The value of the <see cref="T:System.ServiceModel.EnvelopeVersion" /> that is used with this binding. The value is always SOAP 1.2.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to get the envelope version.  
+  
+ [!code-csharp[WSHttpBindingBase#4](~/samples/snippets/csharp/VS_Snippets_CFX/wshttpbindingbase/cs/service.cs#4)]
+ [!code-vb[WSHttpBindingBase#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/wshttpbindingbase/vb/service.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTransport">
+      <MemberSignature Language="C#" Value="protected abstract System.ServiceModel.Channels.TransportBindingElement GetTransport ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Channels.TransportBindingElement GetTransport() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBindingBase.GetTransport" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.TransportBindingElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a derived class, returns the transport binding element from the current binding.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Channels.TransportBindingElement" /> from the current binding.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostNameComparisonMode">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.HostNameComparisonMode HostNameComparisonMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.HostNameComparisonMode HostNameComparisonMode" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.HostNameComparisonMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.HostNameComparisonMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the hostname is used to reach the service when matching the URI.</summary>
+        <value>The <see cref="P:System.ServiceModel.Configuration.WSDualHttpBindingElement.HostNameComparisonMode" /> value that indicates whether the hostname is used to reach the service when matching on the URI. The default value is <see cref="F:System.ServiceModel.HostNameComparisonMode.StrongWildcard" />, which ignores the hostname in the match.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to get the <xref:System.ServiceModel.Configuration.WSDualHttpBindingElement.HostNameComparisonMode%2A> value.  
+  
+ [!code-csharp[WSHttpBindingBase#5](~/samples/snippets/csharp/VS_Snippets_CFX/wshttpbindingbase/cs/service.cs#5)]
+ [!code-vb[WSHttpBindingBase#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/wshttpbindingbase/vb/service.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxBufferPoolSize">
+      <MemberSignature Language="C#" Value="public long MaxBufferPoolSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 MaxBufferPoolSize" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.MaxBufferPoolSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(524288)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum amount of memory allocated, in bytes, for the buffer manager that manages the buffers required by endpoints using this binding.</summary>
+        <value>The maximum size, in bytes, for the pool of buffers used by an endpoint configured with this binding. The default value is 524,288 bytes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Channels.BufferManager> tries to minimize the cost of using buffers with a buffer pool. Buffers are required to process messages by the service when they come out of the channel. If there is not sufficient memory in the buffer pool to process the message load, the <xref:System.ServiceModel.Channels.BufferManager> must allocate additional memory from the CLR heap, which increases the garbage collection overhead. Extensive allocation from the CLR garbage heap is an indication that the buffer pool size is too small and that performance can be improved with a larger allocation by increasing the <xref:System.ServiceModel.WSHttpBindingBase.MaxBufferPoolSize%2A> limit.  
+  
+   
+  
+## Examples  
+ This example shows how to get the <xref:System.ServiceModel.WSHttpBindingBase.MaxBufferPoolSize%2A> value.  
+  
+ [!code-csharp[WSHttpBindingBase#6](~/samples/snippets/csharp/VS_Snippets_CFX/wshttpbindingbase/cs/service.cs#6)]
+ [!code-vb[WSHttpBindingBase#6](~/samples/snippets/visualbasic/VS_Snippets_CFX/wshttpbindingbase/vb/service.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxReceivedMessageSize">
+      <MemberSignature Language="C#" Value="public long MaxReceivedMessageSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 MaxReceivedMessageSize" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(65536)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum size, in bytes, for a message that can be processed by the binding.</summary>
+        <value>The maximum size, in bytes, for a message that is processed by the binding. The default value is 65,536 bytes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The size of the messages that can be received on the wire by services using the <xref:System.ServiceModel.WSHttpBindingBase> is bounded by the amount of memory allocated for each message. This bound on message size is intended to limit exposure to denial of service (DoS) attacks.  
+  
+   
+  
+## Examples  
+ This example shows how to get the maximum size for a message  
+  
+ [!code-csharp[WSHttpBindingBase#7](~/samples/snippets/csharp/VS_Snippets_CFX/wshttpbindingbase/cs/service.cs#7)]
+ [!code-vb[WSHttpBindingBase#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/wshttpbindingbase/vb/service.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero.</exception>
+        <exception cref="T:System.ServiceModel.QuotaExceededException">A message exceeded the maximum size allocated.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageEncoding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.WSMessageEncoding MessageEncoding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.WSMessageEncoding MessageEncoding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.MessageEncoding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.WSMessageEncoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether MTOM or Text/XML is used to encode SOAP messages.</summary>
+        <value>The value of <see cref="T:System.ServiceModel.WSMessageEncoding" /> that indicates whether MTOM or Text is used to encode SOAP messages. The default value is <see cref="F:System.ServiceModel.WSMessageEncoding.Text" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to get the maximum size for a message  
+  
+ [!code-csharp[WSHttpBindingBase#8](~/samples/snippets/csharp/VS_Snippets_CFX/wshttpbindingbase/cs/service.cs#8)]
+ [!code-vb[WSHttpBindingBase#8](~/samples/snippets/visualbasic/VS_Snippets_CFX/wshttpbindingbase/vb/service.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProxyAddress">
+      <MemberSignature Language="C#" Value="public Uri ProxyAddress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ProxyAddress" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.ProxyAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.UriTypeConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URI address of the HTTP proxy.</summary>
+        <value>A <see cref="T:System.Uri" /> that serves as the address of the HTTP proxy. The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.ServiceModel.WSHttpBindingBase.UseDefaultWebProxy%2A> is set to `true`, the value of <xref:System.ServiceModel.WSHttpBindingBase.ProxyAddress%2A> is ignored.  
+  
+   
+  
+## Examples  
+ This example shows how to get the maximum size for a message.  
+  
+ [!code-csharp[WSHttpBindingBase#9](~/samples/snippets/csharp/VS_Snippets_CFX/wshttpbindingbase/cs/service.cs#9)]
+ [!code-vb[WSHttpBindingBase#9](~/samples/snippets/visualbasic/VS_Snippets_CFX/wshttpbindingbase/vb/service.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReaderQuotas">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryReaderQuotas ReaderQuotas { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlDictionaryReaderQuotas ReaderQuotas" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.ReaderQuotas" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDictionaryReaderQuotas</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding.</summary>
+        <value>The <see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> that specifies the complexity constraints.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The complexity constraints include items like a maximum element depth, a maximum length for string content within the message. The constraints protect against a class of denial of service (DoS) attacks that attempt to use message complexity to tie up endpoint processing resources.  
+  
+   
+  
+## Examples  
+ This example shows how to get the maximum size for a message.  
+  
+ [!code-csharp[WSHttpBindingBase#10](~/samples/snippets/csharp/VS_Snippets_CFX/wshttpbindingbase/cs/service.cs#10)]
+ [!code-vb[WSHttpBindingBase#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/wshttpbindingbase/vb/service.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReliableSession">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.OptionalReliableSession ReliableSession { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.OptionalReliableSession ReliableSession" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.ReliableSession" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.OptionalReliableSession</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that provides convenient access to the properties of a reliable session binding element that are available when using one of the system-provided bindings.</summary>
+        <value>The <see cref="T:System.ServiceModel.ReliableSession" /> that provides convenient access to the properties of a reliable session binding element that are available when using one of the system-provided bindings.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Reliable sessions are enabled with the <xref:System.ServiceModel.WSHttpBindingBase.%23ctor%28System.Boolean%29> constructor.  
+  
+   
+  
+## Examples  
+ This example shows how to get the properties of a reliable session binding.  
+  
+ [!code-csharp[WSHttpBindingBase#11](~/samples/snippets/csharp/VS_Snippets_CFX/wshttpbindingbase/cs/service.cs#11)]
+ [!code-vb[WSHttpBindingBase#11](~/samples/snippets/visualbasic/VS_Snippets_CFX/wshttpbindingbase/vb/service.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scheme">
+      <MemberSignature Language="C#" Value="public override string Scheme { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Scheme" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.Scheme" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URI transport scheme for the channels and listeners that are configured with this binding.</summary>
+        <value>"http" if the security mode of the transport binding element is set to <see cref="F:System.ServiceModel.SecurityMode.None" /> or <see cref="F:System.ServiceModel.SecurityMode.Message" />; "https" if the security mode is set otherwise.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to get the maximum size for a message.  
+  
+ [!code-csharp[WSHttpBindingBase#12](~/samples/snippets/csharp/VS_Snippets_CFX/wshttpbindingbase/cs/service.cs#12)]
+ [!code-vb[WSHttpBindingBase#12](~/samples/snippets/visualbasic/VS_Snippets_CFX/wshttpbindingbase/vb/service.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeReaderQuotas">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeReaderQuotas ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeReaderQuotas() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBindingBase.ShouldSerializeReaderQuotas" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.WSHttpBindingBase.ReaderQuotas" /> property has changed from its default value and should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.WSHttpBindingBase.ReaderQuotas" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeReliableSession">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeReliableSession ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeReliableSession() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBindingBase.ShouldSerializeReliableSession" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.WSHttpBindingBase.ReliableSession" /> property has changed from its default value and should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.WSHttpBindingBase.ReliableSession" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeTextEncoding">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeTextEncoding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeTextEncoding() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.WSHttpBindingBase.ShouldSerializeTextEncoding" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the <see cref="P:System.ServiceModel.WSHttpBindingBase.TextEncoding" /> property has changed from its default value and should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="P:System.ServiceModel.WSHttpBindingBase.TextEncoding" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously">
+      <MemberSignature Language="C#" Value="bool System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.System#ServiceModel#Channels#IBindingRuntimePreferences#ReceiveSynchronously" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether incoming requests are handled synchronously or asynchronously.</summary>
+        <value>
+          <see langword="true" /> if requests are handled synchronously; <see langword="false" /> if handled asynchronously. The default is <see langword="false" />, to handle requests asynchronously.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to use the ReceiveSynchronously member.  
+  
+ [!code-csharp[WSHttpBindingBase#19](~/samples/snippets/csharp/VS_Snippets_CFX/wshttpbindingbase/cs/service.cs#19)]
+ [!code-vb[WSHttpBindingBase#19](~/samples/snippets/visualbasic/VS_Snippets_CFX/wshttpbindingbase/vb/service.vb#19)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextEncoding">
+      <MemberSignature Language="C#" Value="public System.Text.Encoding TextEncoding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding TextEncoding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.TextEncoding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ServiceModel.Configuration.EncodingConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Text.Encoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the character encoding that is used for the message text.</summary>
+        <value>The <see cref="T:System.Text.Encoding" /> that indicates the character encoding that is used. The default is <see cref="T:System.Text.UTF8Encoding" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to get the maximum size for a message.  
+  
+ [!code-csharp[WSHttpBindingBase#13](~/samples/snippets/csharp/VS_Snippets_CFX/wshttpbindingbase/cs/service.cs#13)]
+ [!code-vb[WSHttpBindingBase#13](~/samples/snippets/visualbasic/VS_Snippets_CFX/wshttpbindingbase/vb/service.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionFlow">
+      <MemberSignature Language="C#" Value="public bool TransactionFlow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TransactionFlow" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.TransactionFlow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether this binding should support flowing WS-Transactions.</summary>
+        <value>
+          <see langword="true" /> if the flowing of transactions is supported; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to get the maximum size for a message.  
+  
+ [!code-csharp[WSHttpBindingBase#14](~/samples/snippets/csharp/VS_Snippets_CFX/wshttpbindingbase/cs/service.cs#14)]
+ [!code-vb[WSHttpBindingBase#14](~/samples/snippets/visualbasic/VS_Snippets_CFX/wshttpbindingbase/vb/service.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseDefaultWebProxy">
+      <MemberSignature Language="C#" Value="public bool UseDefaultWebProxy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseDefaultWebProxy" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.WSHttpBindingBase.UseDefaultWebProxy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the auto-configured HTTP proxy of the system should be used, if available.</summary>
+        <value>
+          <see langword="true" /> if the auto-configured HTTP proxy of the system should be used, if available; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is an error for this to be `true` and <xref:System.ServiceModel.WSHttpBindingBase.ProxyAddress%2A> to be non-`null`.  
+  
+   
+  
+## Examples  
+ This example shows how to get the maximum size for a message.  
+  
+ [!code-csharp[WSHttpBindingBase#15](~/samples/snippets/csharp/VS_Snippets_CFX/wshttpbindingbase/cs/service.cs#15)]
+ [!code-vb[WSHttpBindingBase#15](~/samples/snippets/visualbasic/VS_Snippets_CFX/wshttpbindingbase/vb/service.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

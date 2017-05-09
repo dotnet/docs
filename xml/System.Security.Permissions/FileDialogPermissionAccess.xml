@@ -1,0 +1,95 @@
+<Type Name="FileDialogPermissionAccess" FullName="System.Security.Permissions.FileDialogPermissionAccess">
+  <TypeSignature Language="C#" Value="public enum FileDialogPermissionAccess" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed FileDialogPermissionAccess extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Permissions.FileDialogPermissionAccess" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the type of access to files allowed through the **File** dialog boxes.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.FileDialogPermissionAccess None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileDialogPermissionAccess.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.FileDialogPermissionAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No access to files through the **File** dialog boxes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="Open" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.FileDialogPermissionAccess Open = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileDialogPermissionAccess.Open" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.FileDialogPermissionAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ability to open files through the **File** dialog boxes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenSave">
+      <MemberSignature Language="C#" Value="OpenSave" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.FileDialogPermissionAccess OpenSave = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileDialogPermissionAccess.OpenSave" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.FileDialogPermissionAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ability to open and save files through the **File** dialog boxes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="Save" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.FileDialogPermissionAccess Save = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileDialogPermissionAccess.Save" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.FileDialogPermissionAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ability to save files through the **File** dialog boxes.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

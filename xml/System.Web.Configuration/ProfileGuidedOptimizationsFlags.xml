@@ -1,0 +1,55 @@
+<Type Name="ProfileGuidedOptimizationsFlags" FullName="System.Web.Configuration.ProfileGuidedOptimizationsFlags">
+  <TypeSignature Language="C#" Value="public enum ProfileGuidedOptimizationsFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProfileGuidedOptimizationsFlags extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProfileGuidedOptimizationsFlags" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the optimization mode for an application deployment environment.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.ProfileGuidedOptimizationsFlags All = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.ProfileGuidedOptimizationsFlags.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.ProfileGuidedOptimizationsFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All optimizations are performed based on the deployment environment of the application.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.ProfileGuidedOptimizationsFlags None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.ProfileGuidedOptimizationsFlags.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.ProfileGuidedOptimizationsFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No optimizations are performed based on the deployment environment of the application.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

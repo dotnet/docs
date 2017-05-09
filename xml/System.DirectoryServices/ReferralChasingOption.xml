@@ -1,0 +1,93 @@
+<Type Name="ReferralChasingOption" FullName="System.DirectoryServices.ReferralChasingOption">
+  <TypeSignature Language="C#" Value="public enum ReferralChasingOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ReferralChasingOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ReferralChasingOption" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.ReferralChasingOption" /> enumeration specifies if and how referral chasing is pursued.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a server determines that other servers hold relevant information the server might refer the client to another server to obtain the result. Referral chasing is the process by which a client contacts the referenced server to continue the directory search.  
+  
+ Use the constants of this enumeration to set up search preferences for referral chasing. The action involves assigning the appropriate fields of <xref:System.DirectoryServices.DirectorySearcher> to elements of the <xref:System.DirectoryServices.ReferralChasingOption> enumeration.  
+  
+ The ADSI LDAP provider supports external referrals for paged searches, but does not support subordinate referrals during paging.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ReferralChasingOption All = int32(96)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ReferralChasingOption.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ReferralChasingOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Chase referrals of either the subordinate or external type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="External">
+      <MemberSignature Language="C#" Value="External" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ReferralChasingOption External = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ReferralChasingOption.External" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ReferralChasingOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Chase external referrals.  If no referral chasing option is specified for a directory search, the type of referral chasing performed is  <see cref="F:System.DirectoryServices.ReferralChasingOption.External" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ReferralChasingOption None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ReferralChasingOption.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ReferralChasingOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Never chase the referred-to server. Setting this option prevents a client from contacting other servers in a referral process.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Subordinate">
+      <MemberSignature Language="C#" Value="Subordinate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ReferralChasingOption Subordinate = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ReferralChasingOption.Subordinate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ReferralChasingOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Chase only subordinate referrals that are a subordinate naming context in a directory tree. The ADSI LDAP provider always turns off this flag for paged searches.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

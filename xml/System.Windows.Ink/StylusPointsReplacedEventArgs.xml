@@ -1,0 +1,75 @@
+<Type Name="StylusPointsReplacedEventArgs" FullName="System.Windows.Ink.StylusPointsReplacedEventArgs">
+  <TypeSignature Language="C#" Value="public class StylusPointsReplacedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StylusPointsReplacedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Ink.StylusPointsReplacedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Ink.Stroke.StylusPointsReplaced" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StylusPointsReplacedEventArgs (System.Windows.Input.StylusPointCollection newStylusPoints, System.Windows.Input.StylusPointCollection previousStylusPoints);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.StylusPointCollection newStylusPoints, class System.Windows.Input.StylusPointCollection previousStylusPoints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.StylusPointsReplacedEventArgs.#ctor(System.Windows.Input.StylusPointCollection,System.Windows.Input.StylusPointCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="newStylusPoints" Type="System.Windows.Input.StylusPointCollection" />
+        <Parameter Name="previousStylusPoints" Type="System.Windows.Input.StylusPointCollection" />
+      </Parameters>
+      <Docs>
+        <param name="newStylusPoints">The new <see cref="T:System.Windows.Input.StylusPointCollection" /> for the <see cref="T:System.Windows.Ink.Stroke" />.</param>
+        <param name="previousStylusPoints">The replaced <see cref="T:System.Windows.Input.StylusPointCollection" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.StylusPointsReplacedEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewStylusPoints">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.StylusPointCollection NewStylusPoints { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.StylusPointCollection NewStylusPoints" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Ink.StylusPointsReplacedEventArgs.NewStylusPoints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.StylusPointCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the new <see cref="T:System.Windows.Input.StylusPointCollection" /> for the <see cref="T:System.Windows.Ink.Stroke" />.</summary>
+        <value>The new <see cref="T:System.Windows.Input.StylusPointCollection" /> for the <see cref="T:System.Windows.Ink.Stroke" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousStylusPoints">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.StylusPointCollection PreviousStylusPoints { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.StylusPointCollection PreviousStylusPoints" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Ink.StylusPointsReplacedEventArgs.PreviousStylusPoints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.StylusPointCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the replaced <see cref="T:System.Windows.Input.StylusPointCollection" />.</summary>
+        <value>The replaced <see cref="T:System.Windows.Input.StylusPointCollection" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

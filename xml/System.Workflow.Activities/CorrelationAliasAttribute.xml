@@ -1,0 +1,122 @@
+<Type Name="CorrelationAliasAttribute" FullName="System.Workflow.Activities.CorrelationAliasAttribute">
+  <TypeSignature Language="C#" Value="public sealed class CorrelationAliasAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CorrelationAliasAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.CorrelationAliasAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Method | System.AttributeTargets.Event | System.AttributeTargets.Delegate, AllowMultiple=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Overrides the correlation parameter value when the correlation value must be obtained from a parameter other than that indicated by the <see cref="T:System.Workflow.Activities.CorrelationParameterAttribute" />. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ To match an incoming message with the appropriate workflow instance, the message and the workflow instance must share a key. This key is called a correlation set. Typically, the key can be a single-valued correlation set. This means that an ID field in the message can be matched against an ID of the same type that is held by schedule instances.  
+  
+ The <xref:System.Workflow.Activities.CorrelationAliasAttribute> is applied to a method or an event on an interface on a data exchange interface.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use a <xref:System.Workflow.Activities.CorrelationAliasAttribute> to override a <xref:System.Workflow.Activities.CorrelationParameterAttribute>. This code example is from the CorrelatedLocalService SDK sample. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Correlated Local Service Sample](http://msdn.microsoft.com/en-us/5a3d0733-bbea-4dbf-88ee-a8316db55fbd).  
+  
+ [!code-csharp[WF_Samples#312](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets38.cs#312)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CorrelationAliasAttribute (string name, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.CorrelationAliasAttribute.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the correlation parameter that is being aliased.</param>
+        <param name="path">Indicates which argument in the method or event holds the value for the correlation parameter specified by <c>name</c>. This parameter can use dot notation, for example, <see langword="Parameter.Location" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.CorrelationAliasAttribute" /> with the name of the correlation that is being aliased and the path to where the value can be found.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows initial property values for an instance of the <xref:System.Workflow.Activities.CorrelationAliasAttribute> class.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Workflow.Activities.CorrelationAliasAttribute.Name%2A>|The value of `name`.|  
+|<xref:System.Workflow.Activities.CorrelationAliasAttribute.Path%2A>|The value of `path`.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.CorrelationAliasAttribute.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the correlation parameter that is being aliased.</summary>
+        <value>The name of the correlation parameter that is being aliased.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.CorrelationAliasAttribute.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the path within the parameter that specifies the location of the correlation value.</summary>
+        <value>The path within the parameter that specifies the location of the correlation value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This parameter can use dot notation; for example, `Parameter.Location`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

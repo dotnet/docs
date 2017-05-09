@@ -1,0 +1,96 @@
+<Type Name="ApplicationServicesHostFactory" FullName="System.Web.ApplicationServices.ApplicationServicesHostFactory">
+  <TypeSignature Language="C#" Value="public class ApplicationServicesHostFactory : System.ServiceModel.Activation.ServiceHostFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ApplicationServicesHostFactory extends System.ServiceModel.Activation.ServiceHostFactory" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ApplicationServices.ApplicationServicesHostFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Activation.ServiceHostFactory</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a factory class that creates instances of the authentication service, role service, and profile service in managed hosting environments.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This factory class provides a way to create instances of the <xref:System.Web.ApplicationServices.AuthenticationService>, <xref:System.Web.ApplicationServices.ProfileService>, and <xref:System.Web.ApplicationServices.RoleService> classes.  
+  
+ To use this factory class, create a WCF Service (.svc) file and specify <xref:System.Web.ApplicationServices.ApplicationServicesHostFactory> in the `ServiceHosting` attribute of the `@ ServiceHost` directive.  
+  
+   
+  
+## Examples  
+ The following example shows how to specify <xref:System.Web.ApplicationServices.ApplicationServicesHostFactory> in the `@ ServiceHost` directive of a .svc file to configure the authentication service.  
+  
+```csharp  
+<%@ ServiceHost   
+  Language="C#"   
+  Service="System.Web.ApplicationServices.AuthenticationService"   
+  Factory="System.Web.ApplicationServices.ApplicationServicesHostFactory"   
+%>  
+  
+```  
+  
+```vb  
+<%@ ServiceHost   
+  Language="VB"   
+  Service="System.Web.ApplicationServices.AuthenticationService"   
+  Factory="System.Web.ApplicationServices.ApplicationServicesHostFactory"   
+%>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ApplicationServicesHostFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.ApplicationServicesHostFactory.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ApplicationServices.ApplicationServicesHostFactory" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateServiceHost">
+      <MemberSignature Language="C#" Value="protected override System.ServiceModel.ServiceHost CreateServiceHost (Type serviceType, Uri[] baseAddresses);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.ServiceModel.ServiceHost CreateServiceHost(class System.Type serviceType, class System.Uri[] baseAddresses) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.ApplicationServicesHostFactory.CreateServiceHost(System.Type,System.Uri[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.ServiceHost</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceType" Type="System.Type" />
+        <Parameter Name="baseAddresses" Type="System.Uri[]" />
+      </Parameters>
+      <Docs>
+        <param name="serviceType">The type of service host to create.</param>
+        <param name="baseAddresses">An array of base addresses for the service.</param>
+        <summary>Creates an instance of the service class that has the specified base address or addresses.</summary>
+        <returns>A <see cref="T:System.ServiceModel.ServiceHost" /> instance for the type of service that has the specified base address or addresses.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Usually this method is called automatically by [!INCLUDE[vsindigo](~/includes/vsindigo-md.md)] as part of service activation, and you do not have to call the method manually.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

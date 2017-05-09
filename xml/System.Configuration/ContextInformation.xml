@@ -1,0 +1,130 @@
+<Type Name="ContextInformation" FullName="System.Configuration.ContextInformation">
+  <TypeSignature Language="C#" Value="public sealed class ContextInformation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ContextInformation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.ContextInformation" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Encapsulates the context information that is associated with a <see cref="T:System.Configuration.ConfigurationElement" /> object. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ContextInformation> object provides environment details related to an element of the configuration. For instance, you can use the <xref:System.Configuration.ContextInformation.IsMachineLevel%2A> property to determine whether a <xref:System.Configuration.ConfigurationElement> was set in Machine.config, or you can determine which hierarchy a <xref:System.Configuration.ConfigurationElement> belongs to by using the <xref:System.Configuration.ContextInformation.HostingContext%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.ContextInformation> type.  
+  
+ [!code-csharp[System.Configuration.ContextInformation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ContextInformation/CS/ContextInformation.cs#1)]
+ [!code-vb[System.Configuration.ContextInformation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ContextInformation/VB/ContextInformation.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetSection">
+      <MemberSignature Language="C#" Value="public object GetSection (string sectionName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetSection(string sectionName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ContextInformation.GetSection(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sectionName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sectionName">The name of the configuration section.</param>
+        <summary>Provides an object containing configuration-section information based on the specified section name.</summary>
+        <returns>An object containing the specified section within the configuration.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When specifying a section within the configuration, note that the name of the configuration section is case-sensitive.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostingContext">
+      <MemberSignature Language="C#" Value="public object HostingContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object HostingContext" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ContextInformation.HostingContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the context of the environment where the configuration property is being evaluated.</summary>
+        <value>An object specifying the environment where the configuration property is being evaluated.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The possible <xref:System.Configuration.ContextInformation.HostingContext%2A> value is <xref:System.Web.Configuration.WebContext>, <xref:System.Configuration.ExeContext>, or `null`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.ContextInformation.HostingContext%2A> property.  
+  
+ [!code-csharp[System.Configuration.ContextInformation#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ContextInformation/CS/ContextInformation.cs#3)]
+ [!code-vb[System.Configuration.ContextInformation#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ContextInformation/VB/ContextInformation.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMachineLevel">
+      <MemberSignature Language="C#" Value="public bool IsMachineLevel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsMachineLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ContextInformation.IsMachineLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value specifying whether the configuration property is being evaluated at the machine configuration level.</summary>
+        <value>
+          <see langword="true" /> if the configuration property is being evaluated at the machine configuration level; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the returned value of <xref:System.Configuration.ContextInformation.IsMachineLevel%2A> is `false`, use the <xref:System.Configuration.ContextInformation.HostingContext%2A> property to determine the level within the configuration hierarchy.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.ContextInformation.HostingContext%2A> property.  
+  
+ [!code-csharp[System.Configuration.ContextInformation#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ContextInformation/CS/ContextInformation.cs#2)]
+ [!code-vb[System.Configuration.ContextInformation#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ContextInformation/VB/ContextInformation.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

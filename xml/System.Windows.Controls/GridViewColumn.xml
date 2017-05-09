@@ -1,0 +1,935 @@
+<Type Name="GridViewColumn" FullName="System.Windows.Controls.GridViewColumn">
+  <TypeSignature Language="C#" Value="public class GridViewColumn : System.Windows.DependencyObject, System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GridViewColumn extends System.Windows.DependencyObject implements class System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.GridViewColumn" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.DependencyObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.INotifyPropertyChanged</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.None, Readability=System.Windows.Readability.Unreadable)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Header")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.StyleTypedProperty(Property="HeaderContainerStyle", StyleTargetType=typeof(System.Windows.Controls.GridViewColumnHeader))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a column that displays data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Controls.GridViewColumn> is used by the <xref:System.Windows.Controls.GridView> view mode to display a column of data. The <xref:System.Windows.Controls.ListView> that implements the <xref:System.Windows.Controls.GridView> view mode provides the data for the column. You use data binding to specify the data for the <xref:System.Windows.Controls.GridViewColumn>.  
+  
+ You can use the <xref:System.Windows.Controls.GridViewColumn.DisplayMemberBinding%2A> property to define the data to display in a column. You can also define the data as part of a <xref:System.Windows.DataTemplate> that is specified by the <xref:System.Windows.Controls.GridViewColumn.CellTemplate%2A> property. If different cells have different <xref:System.Windows.DataTemplate> objects, the <xref:System.Windows.Controls.GridViewColumn.CellTemplateSelector%2A> property can specify a <xref:System.Windows.Controls.DataTemplateSelector>. The following list shows the properties mentioned here, in their order of precedence from highest to lowest:  
+  
+-   <xref:System.Windows.Controls.GridViewColumn.DisplayMemberBinding%2A>  
+  
+-   <xref:System.Windows.Controls.GridViewColumn.CellTemplate%2A>  
+  
+-   <xref:System.Windows.Controls.GridViewColumn.CellTemplateSelector%2A>  
+  
+ The <xref:System.Windows.Controls.GridViewColumn> class also contains properties that you can use to define and customize the column header for the column. The <xref:System.Windows.Controls.GridViewColumn.Header%2A> property can define the content of the column header. Other properties such as <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A> and <xref:System.Windows.Controls.GridViewColumn.HeaderContainerStyle%2A> can also specify content and style for the column header. Some of these properties are also found on other classes such as the <xref:System.Windows.Controls.GridViewColumnHeader> class. For more information about the properties that are used to define styles and templates for column headers, and for information about the order of precedence for these properties, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
+  
+ The <xref:System.Windows.Controls.GridViewColumn> class implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface. This interface provides the ability to subscribe to the events that occur when a change occurs to a property value, such as the <xref:System.Windows.Controls.GridViewColumn.ActualWidth%2A> property value.  
+  
+   
+  
+## Examples  
+ The following example shows how to define <xref:System.Windows.Controls.GridViewColumn> objects for a <xref:System.Windows.Controls.GridView>.  
+  
+ [!code-xml[ListViewSnips#GridViewColumnContent](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewSnips/CSharp/Window1.xaml#gridviewcolumncontent)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GridViewColumn ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewColumn.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.GridViewColumn" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActualWidth">
+      <MemberSignature Language="C#" Value="public double ActualWidth { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ActualWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewColumn.ActualWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the actual width of a <see cref="T:System.Windows.Controls.GridViewColumn" />.</summary>
+        <value>The current width of the column. The default is zero (0.0).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this property to get the current width of the <xref:System.Windows.Controls.GridViewColumn> when the <xref:System.Windows.Controls.GridViewColumn.Width%2A> property is set to <xref:System.Double.NaN?displayProperty=fullName>. A value of <xref:System.Double.NaN?displayProperty=fullName> for the <xref:System.Windows.Controls.GridViewColumn.Width%2A> property specifies that the column size accommodate the largest visible item that is not the column header.  
+  
+ Unlike <xref:System.Windows.FrameworkElement.ActualWidth%2A?displayProperty=fullName>, <xref:System.Windows.Controls.GridViewColumn.ActualWidth%2A?displayProperty=fullName> is not a dependency property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CellTemplate">
+      <MemberSignature Language="C#" Value="public System.Windows.DataTemplate CellTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DataTemplate CellTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewColumn.CellTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the template to use to display the contents of a column cell.</summary>
+        <value>A <see cref="T:System.Windows.DataTemplate" /> that is used to format a column cell. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following properties all bind to and display the content of a column cell, and are listed here in their order of precedence, from highest to lowest:  
+  
+-   <xref:System.Windows.Controls.GridViewColumn.DisplayMemberBinding%2A>  
+  
+-   <xref:System.Windows.Controls.GridViewColumn.CellTemplate%2A>  
+  
+-   <xref:System.Windows.Controls.GridViewColumn.CellTemplateSelector%2A>  
+  
+<a name="xamlAttributeUsage_CellTemplate"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object CellTemplate="{ResourceExtension TemplateResourceKey}"/>  
+```  
+  
+<a name="xamlPropertyElementUsage_CellTemplate"></a>   
+## XAML Property Element Usage  
+  
+<a name="xamlValues_CellTemplate"></a>   
+## XAML Values  
+ *ResourceExtension*  
+ One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
+  
+ *TemplateResourceKey*  
+ The key that identifies the template being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
+  
+> [!NOTE]
+>  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md). A binding reference using  or  is also possible, but uncommon.  
+  
+<a name="dependencyPropertyInfo_CellTemplate"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.GridViewColumn.CellTemplateProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to specify a <xref:System.Windows.DataTemplate> to use to display a <xref:System.Windows.Controls.GridViewColumn>.  
+  
+ [!code-xml[ListViewTemplate#GridViewCellTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewcelltemplate)]  
+  
+ [!code-xml[ListViewTemplate#CellTemplateProperty](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#celltemplateproperty)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CellTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CellTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CellTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewColumn.CellTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewColumn.CellTemplate" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Controls.GridViewColumn.CellTemplate%2A> dependency property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CellTemplateSelector">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.DataTemplateSelector CellTemplateSelector { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.DataTemplateSelector CellTemplateSelector" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewColumn.CellTemplateSelector" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataTemplateSelector</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Windows.Controls.DataTemplateSelector" /> that determines the template to use to display cells in a column.</summary>
+        <value>A <see cref="T:System.Windows.Controls.DataTemplateSelector" /> that provides <see cref="T:System.Windows.DataTemplate" /> selection for column cells. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following properties all bind to and display the content of a column cell, and are listed here in their order of precedence, from highest to lowest:  
+  
+-   <xref:System.Windows.Controls.GridViewColumn.DisplayMemberBinding%2A>  
+  
+-   <xref:System.Windows.Controls.GridViewColumn.CellTemplate%2A>  
+  
+-   <xref:System.Windows.Controls.GridViewColumn.CellTemplateSelector%2A>  
+  
+<a name="xamlAttributeUsage_CellTemplateSelector"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object CellTemplateSelector="{ResourceExtension DataTemplateSelectorClassKey}"/>  
+```  
+  
+<a name="xamlPropertyElementUsage_CellTemplateSelector"></a>   
+## XAML Property Element Usage  
+  
+```  
+<object>  
+  <object.CellTemplateSelector>  
+    <MyDataTemplateSelectorImplementation .../>  
+  </object.CellTemplateSelector>  
+</object>  
+```  
+  
+<a name="xamlValues_CellTemplateSelector"></a>   
+## XAML Values  
+ *MyDataTemplateSelectorImplementation*  
+ A class derived from <xref:System.Windows.Controls.DataTemplateSelector> that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
+  
+ *ResourceExtension*  
+ One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
+  
+ *DataTemplateSelectorClassKey*  
+ The key that identifies the selector implementation being requested. The key refers to a derived class that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md). You can also programmatically add an instance of your <xref:System.Windows.Controls.DataTemplateSelector> class as a resource to a resource dictionary.  
+  
+<a name="dependencyPropertyInfo_CellTemplateSelector"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.GridViewColumn.CellTemplateSelectorProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Controls.GridViewColumn.CellTemplateSelector%2A> property.  
+  
+ [!code-xml[ListViewSnips#GridViewColumnContent](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewSnips/CSharp/Window1.xaml#gridviewcolumncontent)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CellTemplateSelectorProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CellTemplateSelectorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CellTemplateSelectorProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewColumn.CellTemplateSelectorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewColumn.CellTemplateSelector" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Controls.GridViewColumn.CellTemplateSelector%2A> dependency property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayMemberBinding">
+      <MemberSignature Language="C#" Value="public System.Windows.Data.BindingBase DisplayMemberBinding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.BindingBase DisplayMemberBinding" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewColumn.DisplayMemberBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.BindingBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the data item to bind to for this column.</summary>
+        <value>The specified data item type that displays in the column. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.GridViewColumn.DisplayMemberBinding%2A> property associates a type of data from a data source to a column so that the column displays a set of values of that type. Examples of data source objects include <xref:System.Windows.Data.XmlDataProvider> objects and <xref:System.Windows.Data.ObjectDataProvider> objects.  
+  
+ The following properties are all used to define the content and style of a column cell, and are listed here in their order of precedence, from highest to lowest:  
+  
+-   <xref:System.Windows.Controls.GridViewColumn.DisplayMemberBinding%2A>  
+  
+-   <xref:System.Windows.Controls.GridViewColumn.CellTemplate%2A>  
+  
+-   <xref:System.Windows.Controls.GridViewColumn.CellTemplateSelector%2A>  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Controls.GridViewColumn.DisplayMemberBinding%2A> property.  
+  
+ [!code-csharp[ListViewCode#GridViewColumnProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml.cs#gridviewcolumnproperties)]
+ [!code-vb[ListViewCode#GridViewColumnProperties](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewCode/visualbasic/window1.xaml.vb#gridviewcolumnproperties)]
+ [!code-xml[ListViewCode#GridViewColumnProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#gridviewcolumnproperties)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header">
+      <MemberSignature Language="C#" Value="public object Header { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Header" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewColumn.Header" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the content of the header of a <see cref="T:System.Windows.Controls.GridViewColumn" />.</summary>
+        <value>The object to use for the column header. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.GridViewColumn.Header%2A> property can be set to an object that is as simple as a `string`, or to an object that is as complex as a <xref:System.Windows.Controls.StackPanel> that has embedded content. The default column header in a <xref:System.Windows.Controls.GridView> view mode is styled as a button that is derived from <xref:System.Windows.Controls.Primitives.ButtonBase> and that has the content of the <xref:System.Windows.Controls.GridViewColumn.Header%2A> property as its child. To specify a template for the column header, see the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A> or <xref:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector%2A> property descriptions.  
+  
+ Properties that define the content, layout, and style of a column header are found on many related classes, and some of these properties have functionality that is similar or the same. For more information, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
+  
+<a name="dependencyPropertyInfo_Header"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.GridViewColumn.HeaderProperty>|  
+|Metadata properties set to `true`|None|  
+  
+<a name="xamlAttributeUsage_Header"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object Header="string"/>  
+```  
+  
+<a name="xamlPropertyElementUsage_Header"></a>   
+## XAML Property Element Usage  
+  
+```  
+<object>  
+  <HeaderContentObject.../>  
+</object>  
+```  
+  
+<a name="xamlValues_Header"></a>   
+## XAML Values  
+ \<*HeaderContentObject*.../>  
+ A single element. This element can have child elements if the *HeaderContentObject* content model allows them.  
+  
+## Example  
+ The following example shows how to set the <xref:System.Windows.Controls.GridViewColumn.Header%2A> property.  
+  
+ [!code-csharp[ListViewCode#GridViewColumnProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml.cs#gridviewcolumnproperties)]
+ [!code-vb[ListViewCode#GridViewColumnProperties](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewCode/visualbasic/window1.xaml.vb#gridviewcolumnproperties)]
+ [!code-xml[ListViewCode#GridViewColumnProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#gridviewcolumnproperties)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderContainerStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Style HeaderContainerStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Style HeaderContainerStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewColumn.HeaderContainerStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the style to use for the header of the <see cref="T:System.Windows.Controls.GridViewColumn" />.</summary>
+        <value>The <see cref="T:System.Windows.Style" /> that defines the display properties for the column header. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.GridViewColumn.HeaderContainerStyle%2A> property and the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A> property can together define property values and the visual tree for column header content. The <xref:System.Windows.Controls.GridViewColumn.HeaderContainerStyle%2A> property can also specify the visual tree by defining a <xref:System.Windows.Controls.ControlTemplate>.  
+  
+ Properties that define the content, layout, and style of a column header are found in many related classes, and some of these properties have functionality that is similar or the same. For more information, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
+  
+ When you set a style, some restrictions apply. For more information, see the [Styling and Templating](~/docs/framework/wpf/controls/styling-and-templating.md).  
+  
+<a name="xamlAttributeUsage_HeaderContainerStyle"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object HeaderContainerStyle="{ResourceExtension StyleResourceKey}"/>  
+```  
+  
+<a name="xamlPropertyElementUsage_HeaderContainerStyle"></a>   
+## XAML Property Element Usage  
+  
+<a name="xamlValues_HeaderContainerStyle"></a>   
+## XAML Values  
+ *ResourceExtension*  
+ One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
+  
+ *StyleResourceKey*  
+ The key that identifies the style being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
+  
+> [!NOTE]
+>  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md). A binding reference using  or  is also possible, but uncommon.  
+  
+<a name="dependencyPropertyInfo_HeaderContainerStyle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.GridViewColumn.HeaderContainerStyleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to define a <xref:System.Windows.Controls.GridViewColumn.HeaderContainerStyle%2A> that specifies display properties for a column header.  
+  
+ [!code-xml[ListViewTemplate#GridViewHeaderStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewheaderstyle)]  
+  
+ [!code-xml[ListViewTemplate#GridViewColumnTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewcolumntemplate)]  
+  
+ The following example shows how to define a <xref:System.Windows.Controls.GridViewColumn.HeaderContainerStyle%2A> that defines display properties by using a <xref:System.Windows.Controls.ControlTemplate>.  
+  
+ [!code-xml[ListViewTemplate#GridViewColumnHCTwithControlTemplatePart1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewcolumnhctwithcontroltemplatepart1)]  
+  
+ [!code-xml[ListViewTemplate#GridViewColumnHCTwithControlTemplatePart2](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewcolumnhctwithcontroltemplatepart2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderContainerStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HeaderContainerStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HeaderContainerStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewColumn.HeaderContainerStyleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewColumn.HeaderContainerStyle" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Controls.GridViewColumn.HeaderContainerStyle%2A> dependency property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HeaderProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HeaderProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewColumn.HeaderProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewColumn.Header" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Controls.GridViewColumn.Header%2A> dependency property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderStringFormat">
+      <MemberSignature Language="C#" Value="public string HeaderStringFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HeaderStringFormat" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewColumn.HeaderStringFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a composite string that specifies how to format the <see cref="P:System.Windows.Controls.GridViewColumn.Header" /> property if it is displayed as a string.</summary>
+        <value>A composite string that specifies how to format the <see cref="P:System.Windows.Controls.GridViewColumn.Header" /> property if it is displayed as a string. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A?displayProperty=fullName>, <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A?displayProperty=fullName>, or <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A?displayProperty=fullName> property is set, this property is ignored.  
+  
+ You can use several properties to specify the format of the column headers.  If more than one property is set, the column header is formatted with the value of the property that has the highest priority. The format for a column can be set on several types. The following list shows the properties that can be used to format the column headers, ordered from lowest to highest priority:  
+  
+-   <xref:System.Windows.Controls.GridView.ColumnHeaderStringFormat%2A?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderStringFormat%2A?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Controls.GridViewColumn.HeaderStringFormat%2A?displayProperty=fullName>  
+  
+<a name="dependencyPropertyInfo_HeaderStringFormat"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.GridViewColumn.HeaderStringFormatProperty>|  
+|Metadata properties set to **true**|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderStringFormatProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HeaderStringFormatProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HeaderStringFormatProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewColumn.HeaderStringFormatProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewColumn.HeaderStringFormat" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderTemplate">
+      <MemberSignature Language="C#" Value="public System.Windows.DataTemplate HeaderTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DataTemplate HeaderTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewColumn.HeaderTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the template to use to display the content of the column header.</summary>
+        <value>A <see cref="T:System.Windows.DataTemplate" /> to use to display the column header. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If both the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector%2A> property and the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A> property are set, the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A> property takes precedence.  
+  
+ After a <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A> or <xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A> is specified for a <xref:System.Windows.Controls.GridViewColumn>, it cannot be changed.  
+  
+ You can also define the display of a column header by specifying a <xref:System.Windows.Controls.ControlTemplate> as part of a <xref:System.Windows.Controls.GridViewColumn.HeaderContainerStyle%2A?displayProperty=fullName>.  
+  
+ Properties that define the content, layout, and style of a column header are found on many related classes, and some of these properties have functionality that is similar or the same. For more information, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
+  
+<a name="xamlAttributeUsage_HeaderTemplate"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object HeaderTemplate="{ResourceExtension TemplateResourceKey}"/>  
+```  
+  
+<a name="xamlPropertyElementUsage_HeaderTemplate"></a>   
+## XAML Property Element Usage  
+  
+<a name="xamlValues_HeaderTemplate"></a>   
+## XAML Values  
+ *ResourceExtension*  
+ One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
+  
+ *TemplateResourceKey*  
+ The key that identifies the template being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
+  
+> [!NOTE]
+>  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md). A binding reference using  or  is also possible, but uncommon.  
+  
+<a name="dependencyPropertyInfo_HeaderTemplate"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.GridViewColumn.HeaderTemplateProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows how to specify a template to use to display the header of a <xref:System.Windows.Controls.GridViewColumn>.  
+  
+ [!code-xml[ListViewTemplate#GridViewHeaderTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewheadertemplate)]  
+  
+ [!code-xml[ListViewTemplate#GridViewColumnTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewcolumntemplate)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HeaderTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HeaderTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewColumn.HeaderTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewColumn.HeaderTemplate" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A> dependency property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderTemplateSelector">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.DataTemplateSelector HeaderTemplateSelector { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.DataTemplateSelector HeaderTemplateSelector" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataTemplateSelector</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Controls.DataTemplateSelector" /> that provides logic to select the template to use to display the column header.</summary>
+        <value>The <see cref="T:System.Windows.Controls.DataTemplateSelector" /> object that provides data template selection for each <see cref="T:System.Windows.Controls.GridViewColumn" />. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If both the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector%2A> property and the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A> property are set, the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A> property takes precedence.  
+  
+ Properties that define the content, layout, and style of a column header are found on many related classes, and some of these properties have functionality that is similar or the same. For more information, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
+  
+<a name="xamlAttributeUsage_HeaderTemplateSelector"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object HeaderTemplateSelector="{ResourceExtension DataTemplateSelectorClassKey}"/>  
+```  
+  
+<a name="xamlPropertyElementUsage_HeaderTemplateSelector"></a>   
+## XAML Property Element Usage  
+  
+```  
+<object>  
+  <object.HeaderTemplateSelector>  
+    <MyDataTemplateSelectorImplementation .../>  
+  </object.HeaderTemplateSelector>  
+</object>  
+```  
+  
+<a name="xamlValues_HeaderTemplateSelector"></a>   
+## XAML Values  
+ *ResourceExtension*  
+ One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
+  
+ *DataTemplateSelectorClassKey*  
+ The key that identifies the selector implementation being requested. The key refers to a derived class that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md). You can also programmatically add an instance of your <xref:System.Windows.Controls.DataTemplateSelector> class as a resource to a resource dictionary.  
+  
+ *MyDataTemplateSelectorImplementation*  
+ A class that derives from <xref:System.Windows.Controls.DataTemplateSelector> that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
+  
+<a name="dependencyPropertyInfo_HeaderTemplateSelector"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.GridViewColumn.HeaderTemplateSelectorProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderTemplateSelectorProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HeaderTemplateSelectorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HeaderTemplateSelectorProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewColumn.HeaderTemplateSelectorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector%2A> dependency property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnHeaderStringFormatChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnHeaderStringFormatChanged (string oldHeaderStringFormat, string newHeaderStringFormat);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnHeaderStringFormatChanged(string oldHeaderStringFormat, string newHeaderStringFormat) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewColumn.OnHeaderStringFormatChanged(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldHeaderStringFormat" Type="System.String" />
+        <Parameter Name="newHeaderStringFormat" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="oldHeaderStringFormat">The old value of the <see cref="P:System.Windows.Controls.GridViewColumn.HeaderStringFormat" /> property.</param>
+        <param name="newHeaderStringFormat">The new value of the <see cref="P:System.Windows.Controls.GridViewColumn.HeaderStringFormat" /> property.</param>
+        <summary>Occurs when the <see cref="P:System.Windows.Controls.GridViewColumn.HeaderStringFormat" /> property changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanged (System.ComponentModel.PropertyChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyChanged(class System.ComponentModel.PropertyChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewColumn.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.PropertyChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Controls.GridViewColumn.System#ComponentModel#INotifyPropertyChanged#PropertyChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewColumn.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a string representation of the <see cref="T:System.Windows.Controls.GridViewColumn" />.</summary>
+        <returns>A string that identifies the object as a <see cref="T:System.Windows.Controls.GridViewColumn" /> object and displays the value of the <see cref="P:System.Windows.Controls.GridViewColumn.Header" /> property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public double Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Width" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewColumn.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.LengthConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width of the column.</summary>
+        <value>The width of the column. The default is <see cref="F:System.Double.NaN" />, which automatically sizes to the largest column item that is not the column header.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To get the exact width when this property is set to <xref:System.Double?displayProperty=fullName>, use the <xref:System.Windows.Controls.GridViewColumn.ActualWidth%2A> property.  
+  
+<a name="xamlAttributeUsage_Width"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object Width="double"/>  
+- or –  
+<object Width="qualifiedDouble"/>  
+- or -  
+<object Width="Auto"/>  
+```  
+  
+<a name="xamlValues_Width"></a>   
+## XAML Values  
+ *double*  
+ <xref:System.Double>  
+  
+ String representation of a <xref:System.Double> value. This is interpreted as a [!INCLUDE[TLA#tla_dipixel](~/includes/tlasharptla-dipixel-md.md)] measurement. Strings need not explicitly include decimal points. For instance a value of `1` is acceptable.  
+  
+ *qualifiedDouble*  
+ A *double* value as described above, followed by one of the following unit declaration strings: `px`, `in`, `cm`, `pt`.  
+  
+ `px` (default) is [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]  
+  
+ `in` is inches; 1in==96px  
+  
+ `cm` is centimeters; 1cm==(96/2.54) px  
+  
+ `pt` is points; 1pt==(96/72) px  
+  
+ `Auto`  
+ Enables autosizing behavior. See Remarks.  
+  
+<a name="dependencyPropertyInfo_Width"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.GridViewColumn.WidthProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.Windows.Controls.GridViewColumn.Width%2A> property.  
+  
+ [!code-csharp[ListViewCode#GridViewColumnProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml.cs#gridviewcolumnproperties)]
+ [!code-vb[ListViewCode#GridViewColumnProperties](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewCode/visualbasic/window1.xaml.vb#gridviewcolumnproperties)]
+ [!code-xml[ListViewCode#GridViewColumnProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#gridviewcolumnproperties)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WidthProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty WidthProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty WidthProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewColumn.WidthProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewColumn.Width" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Controls.GridViewColumn.Width%2A> dependency property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

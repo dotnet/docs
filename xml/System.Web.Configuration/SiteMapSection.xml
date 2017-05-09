@@ -1,0 +1,214 @@
+<Type Name="SiteMapSection" FullName="System.Web.Configuration.SiteMapSection">
+  <TypeSignature Language="C#" Value="public sealed class SiteMapSection : System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SiteMapSection extends System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.SiteMapSection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines configuration settings that are used to support the infrastructure for configuring, storing, and rendering site navigation. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.SiteMapSection> class provides a way to programmatically access and modify the content of the configuration file `siteMap` section.  
+  
+   
+  
+## Examples  
+ This example demonstrates how to specify values declaratively for several attributes of the `siteMap` section, which can also be accessed as members of the <xref:System.Web.Configuration.SiteMapSection> class.  
+  
+ The following configuration file example shows how to specify values declaratively for the `siteMap` section.  
+  
+```  
+<system.web>  
+  <siteMap defaultProvider="XmlSiteMapReader" enabled="true">  
+    <providers>  
+      <clear />  
+      <add   
+        name="XmlSiteMapReader"  
+        type="XmlSiteMapProvider, System.Web, Version=1.1.3300.0,  
+              Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"  
+        siteMapFile="my.sitemap"   
+        description="XmlSiteMapProvider that loads my.sitemap"/>  
+    </providers>  
+  </siteMap>  
+</system.web>  
+```  
+  
+ The following code example demonstrates how to use the <xref:System.Web.Configuration.SiteMapSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.SiteMapSection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SiteMapSection/CS/sitemapsection.cs#1)]
+ [!code-vb[System.Web.Configuration.SiteMapSection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SiteMapSection/VB/sitemapsection.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SiteMapSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.SiteMapSection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.SiteMapSection" /> class by using default settings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.SiteMapSection.%23ctor> constructor is not intended to be used directly from your code. It is called by the ASP.NET configuration system. You obtain an instance of the <xref:System.Web.Configuration.SiteMapSection> class by using the <xref:System.Configuration.Configuration.GetSection%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultProvider">
+      <MemberSignature Language="C#" Value="public string DefaultProvider { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultProvider" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SiteMapSection.DefaultProvider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("defaultProvider", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the default navigation provider.</summary>
+        <value>The name of a provider in the <see cref="P:System.Web.Configuration.SiteMapSection.Providers" /> property or a <see cref="F:System.String.Empty" /> field. The default is <see langword="&quot;AspNetXmlSiteMapProvider&quot;" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Navigation providers expose an API for manipulating navigation values in a common fashion. You can specify navigation providers in the `providers` subsection of the `siteMap` section of a configuration file.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.Configuration.SiteMapSection.DefaultProvider%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.SiteMapSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.SiteMapSection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SiteMapSection/CS/sitemapsection.cs#2)]
+ [!code-vb[System.Web.Configuration.SiteMapSection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SiteMapSection/VB/sitemapsection.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SiteMapSection.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("enabled", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the ASP.NET site map feature is enabled.</summary>
+        <value>
+          <see langword="true" /> if the ASP.NET site map feature is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.SiteMapSection.Enabled%2A> property returns a Boolean value indicating whether or not the ASP.NET navigation feature can be accessed at run time.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.Configuration.SiteMapSection.Enabled%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.SiteMapSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.SiteMapSection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SiteMapSection/CS/sitemapsection.cs#3)]
+ [!code-vb[System.Web.Configuration.SiteMapSection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SiteMapSection/VB/sitemapsection.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SiteMapSection.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Providers">
+      <MemberSignature Language="C#" Value="public System.Configuration.ProviderSettingsCollection Providers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ProviderSettingsCollection Providers" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SiteMapSection.Providers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("providers")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ProviderSettingsCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Configuration.ProviderSettingsCollection" /> collection of <see cref="T:System.Configuration.ProviderSettings" /> objects.</summary>
+        <value>A <see cref="T:System.Configuration.ProviderSettingsCollection" /> that contains the providers settings defined within the <see langword="providers" /> subsection of the <see langword="siteMap" /> section of the configuration file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Site map providers are components that provide access to the navigation structure for a site. You can specify site map providers in the `providers` subsection of the `siteMap` section of a configuration file.  
+  
+ The <xref:System.Web.Configuration.SiteMapSection.DefaultProvider%2A> property names which provider is used by default.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.Configuration.SiteMapSection.Providers%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.SiteMapSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.SiteMapSection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SiteMapSection/CS/sitemapsection.cs#4)]
+ [!code-vb[System.Web.Configuration.SiteMapSection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SiteMapSection/VB/sitemapsection.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

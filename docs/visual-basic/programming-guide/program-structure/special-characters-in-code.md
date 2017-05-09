@@ -41,8 +41,8 @@ helpviewer_keywords:
   - "Visual Basic code, special characters"
 ms.assetid: 310dce0c-45b5-4e0d-83e9-32df258d2a3e
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

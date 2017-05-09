@@ -1,0 +1,1155 @@
+<Type Name="ImageButton" FullName="System.Web.UI.WebControls.ImageButton">
+  <TypeSignature Language="C#" Value="public class ImageButton : System.Web.UI.WebControls.Image, System.Web.UI.IPostBackDataHandler, System.Web.UI.IPostBackEventHandler, System.Web.UI.WebControls.IButtonControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ImageButton extends System.Web.UI.WebControls.Image implements class System.Web.UI.IPostBackDataHandler, class System.Web.UI.IPostBackEventHandler, class System.Web.UI.WebControls.IButtonControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ImageButton" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.Image</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.IPostBackDataHandler</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.IPostBackEventHandler</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.WebControls.IButtonControl</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("Click")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.PreviewControlDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.SupportsEventValidation</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>A control that displays an image and responds to mouse clicks on the image.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this topic:  
+  
+-   [Introduction](#introduction)  
+  
+-   [Determining Where the User Clicked](#DeterminingWhereTheUserClicked)  
+  
+-   [ImageButton Controls and Validation](#ButtonControlsAndValidation)  
+  
+-   [Accessibility](#accessibility)  
+  
+-   [Declarative Syntax](#DeclarativeSyntax)  
+  
+<a name="introduction"></a>   
+## Introduction  
+ Use the <xref:System.Web.UI.WebControls.ImageButton> control to display an image that responds to mouse clicks.  
+  
+ Both the <xref:System.Web.UI.WebControls.ImageButton.Click> and <xref:System.Web.UI.WebControls.ImageButton.Command> events are raised when the <xref:System.Web.UI.WebControls.ImageButton> control is clicked.  
+  
+ You can use the <xref:System.Web.UI.WebControls.ImageButton.OnCommand%2A> event handler to make the <xref:System.Web.UI.WebControls.ImageButton> control behave like a Command button. A command name can be associated with the control by using the <xref:System.Web.UI.WebControls.ImageButton.CommandName%2A> property. This allows multiple <xref:System.Web.UI.WebControls.ImageButton> controls to be placed on the same Web page. The value of the <xref:System.Web.UI.WebControls.ImageButton.CommandName%2A> property can then be programmatically identified in the <xref:System.Web.UI.WebControls.ImageButton.OnCommand%2A> event handler to determine the appropriate action to perform when each <xref:System.Web.UI.WebControls.ImageButton> control is clicked. The <xref:System.Web.UI.WebControls.ImageButton.CommandArgument%2A> property can also be used to pass additional information about the command, such as specifying ascending order.  
+  
+ Using the <xref:System.Web.UI.WebControls.ImageButton> control is similar to using the ASP.NET <xref:System.Web.UI.WebControls.Button> control. For more information, see [Button Web Server Controls Content Map](http://msdn.microsoft.com/library/66b3ce28-3b93-4f0a-951f-42fb5bb5fddf). and the class overview for the <xref:System.Web.UI.WebControls.Button> control.  
+  
+<a name="DeterminingWhereTheUserClicked"></a>   
+## Determining Where the User Clicked  
+ By using the <xref:System.Web.UI.WebControls.ImageButton.OnClick%2A> event handler, you can programmatically determine the coordinates where the image is clicked. You can then code a response, based on the values of the coordinates. Note that the origin (0, 0) is located at the upper left corner of the image.  
+  
+<a name="ButtonControlsAndValidation"></a>   
+## ImageButton Controls and Validation  
+ By default, page validation is performed when an <xref:System.Web.UI.WebControls.ImageButton> control is clicked. Page validation determines whether the input controls associated with a validation control on the page all pass the validation rules specified by the validation control. To prevent page validation from occurring, set the <xref:System.Web.UI.WebControls.ImageButton.CausesValidation%2A> property to `false`.  
+  
+<a name="accessibility"></a>   
+## Accessibility  
+ For information about how to configure this control so that it generates markup that conforms to accessibility standards, see [Accessibility in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/7e3ce9c4-6b7d-4fb1-94b5-72cf2a44fe13) and [ASP.NET Controls and Accessibility](http://msdn.microsoft.com/library/847a37e3-ce20-41da-b0d3-7dfb0fdae9a0).  
+  
+<a name="DeclarativeSyntax"></a>   
+## Declarative Syntax  
+  
+```  
+<asp:ImageButton  
+    AccessKey="string"  
+    AlternateText="string"  
+    BackColor="color name|#dddddd"  
+    BorderColor="color name|#dddddd"  
+    BorderStyle="NotSet|None|Dotted|Dashed|Solid|Double|Groove|Ridge|  
+        Inset|Outset"  
+    BorderWidth="size"  
+    CausesValidation="True|False"  
+    CommandArgument="string"  
+    CommandName="string"  
+    CssClass="string"  
+    DescriptionUrl="uri"  
+    Enabled="True|False"  
+    EnableTheming="True|False"  
+    EnableViewState="True|False"  
+    ForeColor="color name|#dddddd"  
+    Height="size"  
+    ID="string"  
+    ImageAlign="NotSet|Left|Right|Baseline|Top|Middle|Bottom|  
+        AbsBottom|AbsMiddle|TextTop"  
+    ImageUrl="uri"  
+    OnClick="Click event handler"  
+    OnClientClick="string"  
+    OnCommand="Command event handler"  
+    OnDataBinding="DataBinding event handler"  
+    OnDisposed="Disposed event handler"  
+    OnInit="Init event handler"  
+    OnLoad="Load event handler"  
+    OnPreRender="PreRender event handler"  
+    OnUnload="Unload event handler"  
+    PostBackUrl="uri"  
+    runat="server"  
+    SkinID="string"  
+    Style="string"  
+    TabIndex="integer"  
+    ToolTip="string"  
+    ValidationGroup="string"  
+    Visible="True|False"  
+    Width="size"  
+/>  
+```  
+  
+   
+  
+## Examples  
+ A Visual Studio Web site project with source code is available to accompany this topic: [Download](http://go.microsoft.com/fwlink/?LinkId=192874).  
+  
+ The following code example demonstrates how to create an <xref:System.Web.UI.WebControls.ImageButton> control that displays the coordinates at which an image is clicked.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic ImageButton.Click Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.Click Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic ImageButton.Click Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.Click Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ImageButton ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ImageButton.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ImageButton" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.ImageButton> class.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create and initialize a new instance of the <xref:System.Web.UI.WebControls.ImageButton> class.  
+  
+ [!code-csharp[Classic ImageButton.ImageButton Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.ImageButton Example/CS/source.cs#1)]
+ [!code-vb[Classic ImageButton.ImageButton Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.ImageButton Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAttributesToRender">
+      <MemberSignature Language="C#" Value="protected override void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ImageButton.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The output stream to render on the client.</param>
+        <summary>Adds the attributes of an <see cref="T:System.Web.UI.WebControls.ImageButton" /> to the output stream for rendering on the client.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ImageButton.OnPreRender%2A> method is used primarily by control developers when deriving a custom class from the <xref:System.Web.UI.WebControls.ImageButton> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.ImageButton.AddAttributesToRender%2A> method in a custom server control so that the <xref:System.Web.UI.WebControls.ImageButton> text always appears with a thin border.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. The first part of this code sample must be copied into an empty text file that has an .aspx extension. The second part must be saved as a code file (either .cs for C# or .vb for Visual Basic). For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomImageButtonAddAttributesToRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageButtonAddAttributesToRender/CS/custom_imagebutton_addattributestorendercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomImageButtonAddAttributesToRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageButtonAddAttributesToRender/VB/custom_imagebutton_addattributestorendervb.aspx#1)]  -->  
+[!code-csharp[CustomImageButtonAddAttributesToRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageButtonAddAttributesToRender/CS/custom_imagebutton_addattributestorender.cs#2)]
+[!code-vb[CustomImageButtonAddAttributesToRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageButtonAddAttributesToRender/VB/custom_imagebutton_addattributestorender.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CausesValidation">
+      <MemberSignature Language="C#" Value="public virtual bool CausesValidation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CausesValidation" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ImageButton.CausesValidation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether validation is performed when the <see cref="T:System.Web.UI.WebControls.ImageButton" /> control is clicked.</summary>
+        <value>
+          <see langword="true" /> if validation is performed when the <see cref="T:System.Web.UI.WebControls.ImageButton" /> control is clicked; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, page validation is performed when an <xref:System.Web.UI.WebControls.ImageButton> control is clicked. Page validation determines whether the input controls associated with a validation control on the page all pass the validation rules specified by the validation control.  
+  
+ You can specify or determine whether validation is performed on both the client and the server when an <xref:System.Web.UI.WebControls.ImageButton> control is clicked by using the <xref:System.Web.UI.WebControls.ImageButton.CausesValidation%2A> property. To prevent validation from being performed, set the <xref:System.Web.UI.WebControls.ImageButton.CausesValidation%2A> property to `false`.  
+  
+ This property is commonly set to `false` for a Reset or Clear button to prevent validation from being performed when the button is clicked.  
+  
+ When the value of the <xref:System.Web.UI.WebControls.ImageButton.CausesValidation%2A> property is set to `true`, you can also use the <xref:System.Web.UI.WebControls.ImageButton.ValidationGroup%2A> property to specify the name of the validation group for which the <xref:System.Web.UI.WebControls.ImageButton> control causes validation.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ImageButton.CausesValidation%2A> property to prevent page validation from occurring. Notice how the <xref:System.Web.UI.WebControls.BaseValidator.Validate%2A> method activates each validation control independently.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[ImageButtonCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageButtonCausesValidation/CS/imagebuttoncausesvalidationcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[ImageButtonCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageButtonCausesValidation/VB/imagebuttoncausesvalidationvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Click">
+      <MemberSignature Language="C#" Value="public event System.Web.UI.ImageClickEventHandler Click;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.ImageClickEventHandler Click" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ImageButton.Click" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ImageClickEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="T:System.Web.UI.WebControls.ImageButton" /> is clicked.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ImageButton.Click> event is raised when the <xref:System.Web.UI.WebControls.ImageButton> control is clicked.  
+  
+> [!NOTE]
+>  This event causes the page to be posted back to the server.  
+  
+ For more information about handling events, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.ImageButton.Click> event to display the coordinates at which the user clicks the image.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic ImageButton.Click Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.Click Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic ImageButton.Click Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.Click Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Command">
+      <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.CommandEventHandler Command;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.CommandEventHandler Command" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ImageButton.Command" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.CommandEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="T:System.Web.UI.WebControls.ImageButton" /> is clicked.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ImageButton.Command> event is raised when an <xref:System.Web.UI.WebControls.ImageButton> control is clicked.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.ImageButton.Command> event is raised through the control hierarchy in the form of the `BubbleEvent`.  
+  
+> [!NOTE]
+>  This event causes the page to post back to the server.  
+  
+ For more information about handling events, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.ImageButton.Command> event to determine which <xref:System.Web.UI.WebControls.ImageButton> control is clicked.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandArgument">
+      <MemberSignature Language="C#" Value="public string CommandArgument { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CommandArgument" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ImageButton.CommandArgument" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an optional argument that provides additional information about the <see cref="P:System.Web.UI.WebControls.ImageButton.CommandName" /> property.</summary>
+        <value>An optional argument that supplements the <see cref="P:System.Web.UI.WebControls.ImageButton.CommandName" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Sometimes, multiple <xref:System.Web.UI.WebControls.ImageButton> controls are related and share the same value for the <xref:System.Web.UI.WebControls.ImageButton.CommandName%2A> property, such as `Sort`. Use this property to supplement the <xref:System.Web.UI.WebControls.ImageButton.CommandName%2A> property with additional information about the command to perform, such as `Ascending`. The values of the <xref:System.Web.UI.WebControls.ImageButton.CommandName%2A> and <xref:System.Web.UI.WebControls.ImageButton.CommandArgument%2A> properties are typically used in the <xref:System.Web.UI.WebControls.ImageButton.OnCommand%2A> event handler to determine the action to perform when the <xref:System.Web.UI.WebControls.ImageButton> control is clicked.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ImageButton.CommandArgument%2A> property to associate a command argument with an <xref:System.Web.UI.WebControls.ImageButton> control.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandName">
+      <MemberSignature Language="C#" Value="public string CommandName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CommandName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ImageButton.CommandName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the command name associated with the <see cref="T:System.Web.UI.WebControls.ImageButton" /> control.</summary>
+        <value>The command name associated with the <see cref="T:System.Web.UI.WebControls.ImageButton" /> control. The default value is <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to specify the command to perform when the <xref:System.Web.UI.WebControls.ImageButton> control is clicked, such as `Sort`, `Cancel`, or `Edit`. This allows multiple <xref:System.Web.UI.WebControls.ImageButton> controls to be placed on the same Web page. The value in this property can then be programmatically identified in the <xref:System.Web.UI.WebControls.ImageButton.OnCommand%2A> event handler to determine the appropriate action to perform when each <xref:System.Web.UI.WebControls.ImageButton> control is clicked.  
+  
+ Supplemental information about the command, such as specifying ascending sort order, can be included by using the <xref:System.Web.UI.WebControls.Button.CommandArgument%2A> property.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ImageButton.CommandName%2A> property to associate a command name with an <xref:System.Web.UI.WebControls.ImageButton> control.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic ImageButton.CommandName Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.CommandName Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic ImageButton.CommandName Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.CommandName Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public override bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ImageButton.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Web.UI.WebControls.ImageButton" /> can be clicked to perform a post back to the server.</summary>
+        <value>
+          <see langword="true" /> if the control is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.ImageButton.Enabled%2A> property to specify whether an <xref:System.Web.UI.WebControls.ImageButton> can be clicked to perform a post back to the server. If you set this property to `false`, the control renders on the page, but does not raise a post back event when clicked.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ImageButton.Enabled%2A> property. The page contains two <xref:System.Web.UI.WebControls.ImageButton> controls. The <xref:System.Web.UI.WebControls.ImageButton.Enabled%2A> property is set to `true` for the `EnabledImageButton` image button, causing it to post back to the server when clicked. The <xref:System.Web.UI.WebControls.ImageButton.Enabled%2A> property is set to `false` for the `NotEnabledImageButton` image button, causing it to render on the page, but not post back to the server when clicked.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[ImageButton.Enabled#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageButton.Enabled/CS/imagebutton.enabledcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[ImageButton.Enabled#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageButton.Enabled/VB/imagebutton.enabledvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateEmptyAlternateText">
+      <MemberSignature Language="C#" Value="public override bool GenerateEmptyAlternateText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool GenerateEmptyAlternateText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ImageButton.GenerateEmptyAlternateText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the control generates an alternate-text attribute for an empty string value.</summary>
+        <value>
+          <see langword="false" />, indicating that the <see cref="T:System.Web.UI.WebControls.ImageButton" /> control does not generate an alternate-text attribute when the <see cref="P:System.Web.UI.WebControls.Image.AlternateText" /> property is empty.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the <xref:System.Web.UI.WebControls.ImageButton> control renders the <xref:System.Web.UI.WebControls.Image.AlternateText%2A> property using an `alt` attribute. When the <xref:System.Web.UI.WebControls.Image.AlternateText%2A> property is not set, the <xref:System.Web.UI.WebControls.ImageButton> control does not include the `alt` attribute to specify the alternate-text in the control rendering.  
+  
+ The XHTML document type definition requires the `alt` attribute on image controls. However, accessibility best practices recommend that image controls that do not convey information relevant to the context of the Web page should not specify an `alt` attribute. You can meet both XHTML and accessibility requirements by setting the <xref:System.Web.UI.WebControls.Image.AlternateText%2A> property to `true`.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">An attempt was made to set this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPostBackOptions">
+      <MemberSignature Language="C#" Value="protected virtual System.Web.UI.PostBackOptions GetPostBackOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.PostBackOptions GetPostBackOptions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ImageButton.GetPostBackOptions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.PostBackOptions</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a <see cref="T:System.Web.UI.PostBackOptions" /> object that represents the <see cref="T:System.Web.UI.WebControls.ImageButton" /> control's postback behavior.</summary>
+        <returns>A <see cref="T:System.Web.UI.PostBackOptions" /> that represents the <see cref="T:System.Web.UI.WebControls.ImageButton" /> control's postback behavior.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ImageButton.GetPostBackOptions%2A> method creates a <xref:System.Web.UI.PostBackOptions> object that represents the <xref:System.Web.UI.WebControls.ImageButton> control's postback behavior. The <xref:System.Web.UI.PostBackOptions> object is then typically passed to the <xref:System.Web.UI.ClientScriptManager.GetPostBackEventReference%28System.Web.UI.PostBackOptions%29?displayProperty=fullName> method, which is used to obtain a reference to a client-side script function that, when invoked, causes the server to postback to the page.  
+  
+ This method is used primarily by control developers when extending the <xref:System.Web.UI.WebControls.ImageButton> class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>You can override the <see cref="M:System.Web.UI.WebControls.ImageButton.GetPostBackOptions" /> method in your derived class to modify the postback options for the button control, or to call client-side script when the button is clicked. Be sure to call the base class's <see cref="M:System.Web.UI.WebControls.ImageButton.GetPostBackOptions" /> method so that the standard postback options are set.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadPostData">
+      <MemberSignature Language="C#" Value="protected virtual bool LoadPostData (string postDataKey, System.Collections.Specialized.NameValueCollection postCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ImageButton.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="postDataKey" Type="System.String" />
+        <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="postDataKey">The key value used to index an entry in the collection.</param>
+        <param name="postCollection">A <see cref="T:System.Collections.Specialized.NameValueCollection" /> that contains post information.</param>
+        <summary>Processes posted data for the <see cref="T:System.Web.UI.WebControls.ImageButton" /> control.</summary>
+        <returns>Returns <see langword="false" /> for all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ImageButton.LoadPostData%2A> member is used primarily by control developers when deriving a custom class from the <xref:System.Web.UI.WebControls.ImageButton> control.  
+  
+ The <xref:System.Web.UI.WebControls.ImageButton> checks to see if the x and y values were posted, which indicates that the image was clicked by the user. The <xref:System.Web.UI.WebControls.ImageButton> then registers with the page that it wants to raise an event during the event-processing phase.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnClick">
+      <MemberSignature Language="C#" Value="protected virtual void OnClick (System.Web.UI.ImageClickEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnClick(class System.Web.UI.ImageClickEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ImageButton.OnClick(System.Web.UI.ImageClickEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Web.UI.ImageClickEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Web.UI.ImageClickEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.ImageButton.Click" /> event and allows you to handle the <see cref="E:System.Web.UI.WebControls.ImageButton.Click" /> event directly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ImageButton.Click> event is raised when the <xref:System.Web.UI.WebControls.ImageButton> control is clicked. By using the <xref:System.Web.UI.WebControls.ImageButton.OnClick%2A> event handler, you can programmatically determine the coordinates where the image is clicked. You can then code a response, based on the values of these coordinates. Note that the origin (0, 0) is located at the upper left corner of the image.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
+  
+ The <xref:System.Web.UI.WebControls.ImageButton.OnClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.ImageButton.Click> event to display the coordinates where the user clicks the image.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic ImageButton.Click Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.Click Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic ImageButton.Click Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.Click Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Web.UI.WebControls.ImageButton.OnClick(System.Web.UI.ImageClickEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.ImageButton.OnClick(System.Web.UI.ImageClickEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnClientClick">
+      <MemberSignature Language="C#" Value="public virtual string OnClientClick { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OnClientClick" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ImageButton.OnClientClick" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the client-side script that executes when an <see cref="T:System.Web.UI.WebControls.ImageButton" /> control's <see cref="E:System.Web.UI.WebControls.ImageButton.Click" /> event is raised.</summary>
+        <value>The client-side script that executes when an <see cref="T:System.Web.UI.WebControls.ImageButton" /> control's <see cref="E:System.Web.UI.WebControls.ImageButton.Click" /> event is raised.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.ImageButton.OnClientClick%2A> property to specify additional client-side script that executes when an <xref:System.Web.UI.WebControls.ImageButton> control's <xref:System.Web.UI.WebControls.ImageButton.Click> event is raised. The script that you specify for this property is rendered in the <xref:System.Web.UI.WebControls.ImageButton> control's `OnClick` attribute in addition to the control's predefined client-side script.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCommand">
+      <MemberSignature Language="C#" Value="protected virtual void OnCommand (System.Web.UI.WebControls.CommandEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCommand(class System.Web.UI.WebControls.CommandEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ImageButton.OnCommand(System.Web.UI.WebControls.CommandEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Web.UI.WebControls.CommandEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.CommandEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.ImageButton.Command" /> event and allows you to handle the <see cref="E:System.Web.UI.WebControls.ImageButton.Command" /> event directly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ImageButton.Command> event is raised when the <xref:System.Web.UI.WebControls.ImageButton> control is clicked. The <xref:System.Web.UI.WebControls.ImageButton.OnCommand%2A> event handler is used to make the <xref:System.Web.UI.WebControls.ImageButton> control behave like a Command button. A command name can be associated with the control by using the <xref:System.Web.UI.WebControls.ImageButton.CommandName%2A> property. This allows multiple <xref:System.Web.UI.WebControls.ImageButton> controls to be placed on the Web page. The value in this property can then be programmatically identified in the <xref:System.Web.UI.WebControls.ImageButton.OnCommand%2A> event handler to determine the appropriate action to perform when each <xref:System.Web.UI.WebControls.ImageButton> control is clicked. The <xref:System.Web.UI.WebControls.ImageButton.CommandArgument%2A> property can also be used to pass additional information about the command, such as specifying ascending order.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.ImageButton.Command> event is raised through the control hierarchy in the form of the `BubbleEvent`.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [How to: Consume Events in a Web Forms Application](~/docs/standard/events/how-to-consume-events-in-a-web-forms-application.md).  
+  
+ The <xref:System.Web.UI.WebControls.ImageButton.OnCommand%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.ImageButton.Command> event to determine which <xref:System.Web.UI.WebControls.ImageButton> control is clicked.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic ImageButton.CommandArgument Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ImageButton.CommandArgument Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Web.UI.WebControls.ImageButton.OnCommand(System.Web.UI.WebControls.CommandEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.ImageButton.OnCommand(System.Web.UI.WebControls.CommandEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPreRender">
+      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ImageButton.OnPreRender(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
+        <summary>Determines whether the image has been clicked prior to rendering on the client.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ImageButton.OnPreRender%2A> method is used primarily by control developers when deriving a custom class from the <xref:System.Web.UI.WebControls.ImageButton> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.ImageButton.OnPreRender%2A> method so that it always displays a thin border in a custom <xref:System.Web.UI.WebControls.ImageButton> server control.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. The first part of the code sample must be copied into an empty text file that has an .aspx extension. The second part must be in a .cs file (for C#) or a .vb file (for Visual Basic). For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomImageButtonOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageButtonOnPreRender/CS/custom_imagebutton_onprerendercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomImageButtonOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageButtonOnPreRender/VB/custom_imagebutton_onprerendervb.aspx#1)]  -->  
+[!code-csharp[CustomImageButtonOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageButtonOnPreRender/CS/custom_imagebutton_onprerender.cs#2)]
+[!code-vb[CustomImageButtonOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageButtonOnPreRender/VB/custom_imagebutton_onprerender.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostBackUrl">
+      <MemberSignature Language="C#" Value="public virtual string PostBackUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PostBackUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ImageButton.PostBackUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.UrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.UrlProperty("*.aspx")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL of the page to post to from the current page when the <see cref="T:System.Web.UI.WebControls.ImageButton" /> control is clicked.</summary>
+        <value>The URL of the Web page to post to from the current page when the <see cref="T:System.Web.UI.WebControls.ImageButton" /> control is clicked. The default value is an empty string (""), which causes the page to post back to itself.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ImageButton.PostBackUrl%2A> property allows you to perform a cross-page post using the <xref:System.Web.UI.WebControls.ImageButton> control. Set the <xref:System.Web.UI.WebControls.ImageButton.PostBackUrl%2A> property to the URL of the Web page to post to when the <xref:System.Web.UI.WebControls.ImageButton> control is clicked. For example, specifying `Page2.aspx` causes the page that contains the <xref:System.Web.UI.WebControls.ImageButton> control to post to `Page2.aspx`. If you do not specify a value for the <xref:System.Web.UI.WebControls.ImageButton.PostBackUrl%2A> property, the page posts back to itself.  
+  
+> [!IMPORTANT]
+>  When performing a cross-page postback with controls with server-side validation, you should check that the page's <xref:System.Web.UI.Page.IsValid%2A> property is `true` before processing the postback. In the case of a cross-page postback, the page to check is the PreviousPage. The following Visual Basic code shows how this is done:  
+  
+```  
+Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load  
+        If Page.PreviousPage.IsValid Then  
+            ' Handle the post back  
+        Else  
+            Response.Write("Invalid")  
+        End If  
+End Sub  
+```  
+  
+ For more information on cross-page posting techniques, see [Cross-Page Posting in ASP.NET Web Forms](http://msdn.microsoft.com/library/fedf234e-b7c4-4644-a9e8-c1c0870b043b).  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ImageButton.PostBackUrl%2A> property to perform a cross-page post. When the user clicks the <xref:System.Web.UI.WebControls.ImageButton> control, the page posts the value entered in the text box to the target page specified by the <xref:System.Web.UI.WebControls.ImageButton.PostBackUrl%2A> property. To run this sample, you must also create a file for the target page in the same directory as this code example. The code for the target page is provided in the next example.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[ImageButton.PostBackUrlProperty#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageButton.PostBackUrlProperty/CS/imagebutton.postbackurlpropertycs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[ImageButton.PostBackUrlProperty#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageButton.PostBackUrlProperty/VB/imagebutton.postbackurlpropertyvb.aspx#1)]  -->  
+  
+ The following code example demonstrates how to use the <xref:System.Web.UI.Page.PreviousPage%2A?displayProperty=fullName> property to access a value that was posted from another page using the <xref:System.Web.UI.WebControls.Button.PostBackUrl%2A> property. This page gets the string that was posted from the previous page and displays it to the user. If you attempt to run this code example directly, you will get an error because the value of the `Text` field will be `null`. Instead, use this code to create a target page and place the file in the same directory as the code for the previous example. The name of the file must correspond to the value specified for the <xref:System.Web.UI.WebControls.Button.PostBackUrl%2A> property in the previous example. When you run the code for the previous example, this page will execute automatically when the cross-page post occurs.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[ImageButton.PostBackUrlPage2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageButton.PostBackUrlPage2/CS/imagebutton.postbackurlpage2cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[ImageButton.PostBackUrlPage2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageButton.PostBackUrlPage2/VB/imagebutton.postbackurlpage2vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaisePostBackEvent">
+      <MemberSignature Language="C#" Value="protected virtual void RaisePostBackEvent (string eventArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostBackEvent(string eventArgument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ImageButton.RaisePostBackEvent(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgument" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgument">The argument for the event.</param>
+        <summary>Raises events for the <see cref="T:System.Web.UI.WebControls.ImageButton" /> control when it posts back to the server.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ImageButton.RaisePostBackEvent%2A> member is used primarily by control developers when deriving a custom class from the <xref:System.Web.UI.WebControls.ImageButton> control.  
+  
+ This method is used internally by the <xref:System.Web.UI.WebControls.ImageButton> control, when it is clicked, to raise a <xref:System.Web.UI.WebControls.ImageButton.Click> event and, if defined, a <xref:System.Web.UI.WebControls.ImageButton.Command> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaisePostDataChangedEvent">
+      <MemberSignature Language="C#" Value="protected virtual void RaisePostDataChangedEvent ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostDataChangedEvent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ImageButton.RaisePostDataChangedEvent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Notifies the ASP.NET application that the state of the <see cref="T:System.Web.UI.WebControls.ImageButton" /> control has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ImageButton.RaisePostDataChangedEvent%2A> member is used primarily by control developers when deriving a custom class from the <xref:System.Web.UI.WebControls.ImageButton> control.  
+  
+ This method can be overridden in a derived class to raise change events for the <xref:System.Web.UI.WebControls.ImageButton> control when it posts back to the server.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsDisabledAttribute">
+      <MemberSignature Language="C#" Value="public override bool SupportsDisabledAttribute { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDisabledAttribute" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ImageButton.SupportsDisabledAttribute" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the control should set the <see langword="disabled" /> attribute of the rendered HTML element to "disabled" when the control's <see cref="P:System.Web.UI.WebControls.WebControl.IsEnabled" /> property is <see langword="false" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Web.UI.Control.RenderingCompatibility" /> property indicates an ASP.NET version lower than <c>4.0</c>; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
+      <MemberSignature Language="C#" Value="bool IPostBackDataHandler.LoadPostData (string postDataKey, System.Collections.Specialized.NameValueCollection postCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Web.UI.IPostBackDataHandler.LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ImageButton.System#Web#UI#IPostBackDataHandler#LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="postDataKey" Type="System.String" />
+        <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="postDataKey">The key identifier for the control, used to index the <c>postCollection</c>.</param>
+        <param name="postCollection">A <see cref="T:System.Collections.Specialized.NameValueCollection" /> collection that contains value information indexed by control identifiers.</param>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />.</summary>
+        <returns>
+          <see langword="true" /> if the server control's state changes as a result of the postback; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.IPostBackDataHandler.LoadPostData%2A?displayProperty=fullName> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ImageButton> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
+      <MemberSignature Language="C#" Value="void IPostBackDataHandler.RaisePostDataChangedEvent ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ImageButton.System#Web#UI#IPostBackDataHandler#RaisePostDataChangedEvent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent%2A?displayProperty=fullName> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ImageButton> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
+      <MemberSignature Language="C#" Value="void IPostBackEventHandler.RaisePostBackEvent (string eventArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(string eventArgument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ImageButton.System#Web#UI#IPostBackEventHandler#RaisePostBackEvent(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgument" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgument">The argument for the event</param>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent%2A?displayProperty=fullName> method is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ImageButton> instance is cast to an <xref:System.Web.UI.IPostBackEventHandler> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.WebControls.IButtonControl.Text">
+      <MemberSignature Language="C#" Value="string System.Web.UI.WebControls.IButtonControl.Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string System.Web.UI.WebControls.IButtonControl.Text" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ImageButton.System#Web#UI#WebControls#IButtonControl#Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a description of this member, see <see cref="P:System.Web.UI.WebControls.IButtonControl.Text" />.</summary>
+        <value>The text caption that is displayed for the button.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.IButtonControl.Text%2A> member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.WebControls.ImageButton> instance is cast to an <xref:System.Web.UI.WebControls.IButtonControl> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TagKey">
+      <MemberSignature Language="C#" Value="protected override System.Web.UI.HtmlTextWriterTag TagKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.HtmlTextWriterTag TagKey" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ImageButton.TagKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.UI.HtmlTextWriterTag" /> value that corresponds to the <see cref="T:System.Web.UI.WebControls.ImageButton" /> control.</summary>
+        <value>An <see cref="T:System.Web.UI.HtmlTextWriterTag" /> enumeration value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ImageButton.TagKey%2A> property is used primarily by control developers when deriving a custom class from the <xref:System.Web.UI.WebControls.ImageButton> control.  
+  
+ Use the <xref:System.Web.UI.WebControls.ImageButton.TagKey%2A> property to determine the <xref:System.Web.UI.HtmlTextWriterTag> value associated with an <xref:System.Web.UI.WebControls.ImageButton> control. This property overrides the base implementation to always return `HtmlTextWriterTag.Input`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.WebControls.ImageButton.TagKey%2A> method in a custom <xref:System.Web.UI.WebControls.ImageButton> control so that it always returns an Input tag.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. The first part of the code sample must be copied into an empty text file that has an .aspx extension. The second part must be in a .cs file (for C#) or a .vb file (for Visual Basic). For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomImageButtonTagKey#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageButtonTagKey/CS/custom_imagebutton_tagkeycs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomImageButtonTagKey#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageButtonTagKey/VB/custom_imagebutton_tagkeyvb.aspx#1)]  -->  
+[!code-csharp[CustomImageButtonTagKey#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomImageButtonTagKey/CS/custom_imagebutton_tagkey.cs#2)]
+[!code-vb[CustomImageButtonTagKey#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomImageButtonTagKey/VB/custom_imagebutton_tagkey.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="protected virtual string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ImageButton.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the <see cref="T:System.Web.UI.WebControls.ImageButton" /> control's <see cref="P:System.Web.UI.WebControls.Image.AlternateText" /> property.</summary>
+        <value>The value of the <see cref="T:System.Web.UI.WebControls.ImageButton" /> control's <see cref="P:System.Web.UI.WebControls.Image.AlternateText" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ImageButton.Text%2A> property is not intended to be called directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationGroup">
+      <MemberSignature Language="C#" Value="public virtual string ValidationGroup { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ValidationGroup" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ImageButton.ValidationGroup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the group of controls for which the <see cref="T:System.Web.UI.WebControls.ImageButton" /> control causes validation when it posts back to the server.</summary>
+        <value>The group of controls for which the <see cref="T:System.Web.UI.WebControls.ImageButton" /> control causes validation when it posts back to the server. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Validation groups allow you to assign validation controls on a page to a specific category. Each validation group can be validated independently of other validation groups on the page. Use the <xref:System.Web.UI.WebControls.ImageButton.ValidationGroup%2A> property to specify the name of the validation group for which the <xref:System.Web.UI.WebControls.ImageButton> control causes validation when it posts back to the server. This property has an effect only when the value of the <xref:System.Web.UI.WebControls.ImageButton.CausesValidation%2A> property is set to `true`. When you specify a value for the <xref:System.Web.UI.WebControls.ImageButton.ValidationGroup%2A> property, only the validation controls that are part of the specified group are validated when the <xref:System.Web.UI.WebControls.ImageButton> control posts back to the server. If you do not specify a value for this property and the <xref:System.Web.UI.WebControls.ImageButton.CausesValidation%2A> property is set to `true`, all validation controls on the page that are not assigned to a validation group are validated when the control posts back to the server.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.ImageButton.ValidationGroup%2A> property to specify the controls to validate when an <xref:System.Web.UI.WebControls.ImageButton> control posts back to the server. The page contains three text boxes to capture data from the user and three <xref:System.Web.UI.WebControls.RequiredFieldValidator> controls to ensure that the user does not leave a text box blank. The <xref:System.Web.UI.WebControls.RequiredFieldValidator> controls for the first two text boxes are in the `PersonalInfoGroup` validation group and the <xref:System.Web.UI.WebControls.RequiredFieldValidator> control for the third text box is in the `LocationInfoGroup` validation group. When `ImageButton1` is clicked, only the controls in validation group `PersonalInfoGroup` are validated. When `ImageButton2` is clicked, only the control in validation group `LocationInfoGroup` is validated.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[ImageButton.ValidationGroup#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ImageButton.ValidationGroup/CS/imagebutton.validationgroupcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[ImageButton.ValidationGroup#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ImageButton.ValidationGroup/VB/imagebutton.validationgroupvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

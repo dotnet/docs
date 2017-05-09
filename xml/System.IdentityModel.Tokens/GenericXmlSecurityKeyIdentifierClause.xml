@@ -1,0 +1,125 @@
+<Type Name="GenericXmlSecurityKeyIdentifierClause" FullName="System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause">
+  <TypeSignature Language="C#" Value="public class GenericXmlSecurityKeyIdentifierClause : System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GenericXmlSecurityKeyIdentifierClause extends System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IdentityModel.Tokens.SecurityKeyIdentifierClause</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a key identifier clause that is based on XML.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GenericXmlSecurityKeyIdentifierClause (System.Xml.XmlElement referenceXml);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlElement referenceXml) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause.#ctor(System.Xml.XmlElement)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="referenceXml" Type="System.Xml.XmlElement" />
+      </Parameters>
+      <Docs>
+        <param name="referenceXml">The XML element that represents the key identifier clause. Sets the value of the <see cref="P:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause.ReferenceXml" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause" /> class by using the specified XML element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.ClauseType%2A> property is initialized to `null` and the <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.DerivationLength%2A> property is initialized to zero in the new instance.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="referenceXML" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GenericXmlSecurityKeyIdentifierClause (System.Xml.XmlElement referenceXml, byte[] derivationNonce, int derivationLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlElement referenceXml, unsigned int8[] derivationNonce, int32 derivationLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause.#ctor(System.Xml.XmlElement,System.Byte[],System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="referenceXml" Type="System.Xml.XmlElement" />
+        <Parameter Name="derivationNonce" Type="System.Byte[]" />
+        <Parameter Name="derivationLength" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="referenceXml">The XML element that represents the key identifier clause. Sets the value of the <see cref="P:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause.ReferenceXml" /> property.</param>
+        <param name="derivationNonce">An array of <see cref="T:System.Byte" /> that contains the nonce that was used to create a derived key. Sets the value that is returned by the <see cref="M:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.GetDerivationNonce" /> method.</param>
+        <param name="derivationLength">The size of the derived key. Sets the value of the <see cref="P:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.DerivationLength" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause" /> class by using the specified XML element, nonce, and derivation length.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SecurityKeyIdentifierClause.ClauseType%2A> property is initialized to `null` in the new instance.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="referenceXML" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Matches">
+      <MemberSignature Language="C#" Value="public override bool Matches (System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Matches(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause.Matches(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+      </Parameters>
+      <Docs>
+        <param name="keyIdentifierClause">The key identifier clause to which to compare current instance.</param>
+        <summary>Returns a value that indicates whether specified key identifier clause matches the current instance.</summary>
+        <returns>
+          <see langword="true" /> if the specified key identifier clause matches the current instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the match to succeed, the specified key identifier clause must be assignable from <xref:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause> and its markup (XML) must match that of this instance. (The <xref:System.Xml.XmlNode.OuterXml%2A> property of the element specified by the <xref:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause.ReferenceXml%2A> property is compared for the two instances.)  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferenceXml">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlElement ReferenceXml { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlElement ReferenceXml" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.GenericXmlSecurityKeyIdentifierClause.ReferenceXml" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the XML element that represents the key identifier clause.</summary>
+        <value>The XML element that represents the key identifier clause.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

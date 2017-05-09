@@ -1,0 +1,116 @@
+<Type Name="EntryWrittenEventArgs" FullName="System.Diagnostics.EntryWrittenEventArgs">
+  <TypeSignature Language="C#" Value="public class EntryWrittenEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntryWrittenEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.EntryWrittenEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Diagnostics.EventLog.EntryWritten" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Diagnostics.EntryWrittenEventArgs.%23ctor%2A> constructor. It creates a custom <xref:System.Diagnostics.EventLog> object and writes an entry into it. Then it creates an <xref:System.Diagnostics.EntryWrittenEventArgs> object using the first entry in the custom <xref:System.Diagnostics.EventLog>. This object is used to notify a message.  
+  
+ [!code-cpp[EntryWrittenEventArgs_ctor1#1](~/samples/snippets/cpp/VS_Snippets_CLR/EntryWrittenEventArgs_ctor1/CPP/entrywritteneventargs_ctor1.cpp#1)]
+ [!code-csharp[EntryWrittenEventArgs_ctor1#1](~/samples/snippets/csharp/VS_Snippets_CLR/EntryWrittenEventArgs_ctor1/CS/entrywritteneventargs_ctor1.cs#1)]
+ [!code-vb[EntryWrittenEventArgs_ctor1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/EntryWrittenEventArgs_ctor1/VB/entrywritteneventargs_ctor1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntryWrittenEventArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.EntryWrittenEventArgs.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EntryWrittenEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Diagnostics.EntryWrittenEventArgs.%23ctor%2A> constructor. It creates a custom <xref:System.Diagnostics.EventLog> object and writes an entry into it. Then it creates an <xref:System.Diagnostics.EntryWrittenEventArgs> object using the first entry in the custom <xref:System.Diagnostics.EventLog>. This object is used to notify a message.  
+  
+ [!code-cpp[EntryWrittenEventArgs_ctor1#1](~/samples/snippets/cpp/VS_Snippets_CLR/EntryWrittenEventArgs_ctor1/CPP/entrywritteneventargs_ctor1.cpp#1)]
+ [!code-csharp[EntryWrittenEventArgs_ctor1#1](~/samples/snippets/csharp/VS_Snippets_CLR/EntryWrittenEventArgs_ctor1/CS/entrywritteneventargs_ctor1.cs#1)]
+ [!code-vb[EntryWrittenEventArgs_ctor1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/EntryWrittenEventArgs_ctor1/VB/entrywritteneventargs_ctor1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntryWrittenEventArgs (System.Diagnostics.EventLogEntry entry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Diagnostics.EventLogEntry entry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.EntryWrittenEventArgs.#ctor(System.Diagnostics.EventLogEntry)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="entry" Type="System.Diagnostics.EventLogEntry" />
+      </Parameters>
+      <Docs>
+        <param name="entry">An <see cref="T:System.Diagnostics.EventLogEntry" /> that represents the entry that was written.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EntryWrittenEventArgs" /> class with the specified event log entry.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the <xref:System.Diagnostics.EntryWrittenEventArgs.%23ctor%2A> constructor. It creates a custom <xref:System.Diagnostics.EventLog> object and writes an entry into it. Then it creates an <xref:System.Diagnostics.EntryWrittenEventArgs> object using the first entry in the custom <xref:System.Diagnostics.EventLog>. This object is used to notify a message.  
+  
+ [!code-cpp[EntryWrittenEventArgs_ctor2#1](~/samples/snippets/cpp/VS_Snippets_CLR/EntryWrittenEventArgs_ctor2/CPP/entrywritteneventargs_ctor2.cpp#1)]
+ [!code-csharp[EntryWrittenEventArgs_ctor2#1](~/samples/snippets/csharp/VS_Snippets_CLR/EntryWrittenEventArgs_ctor2/CS/entrywritteneventargs_ctor2.cs#1)]
+ [!code-vb[EntryWrittenEventArgs_ctor2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/EntryWrittenEventArgs_ctor2/VB/entrywritteneventargs_ctor2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Entry">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.EventLogEntry Entry { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.EventLogEntry Entry" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.EntryWrittenEventArgs.Entry" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.EventLogEntry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the event log entry that was written to the log.</summary>
+        <value>An <see cref="T:System.Diagnostics.EventLogEntry" /> that represents the entry that was written to the event log.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example assumes that you have already implemented the sample in <xref:System.Diagnostics.EntryWrittenEventArgs.%23ctor%28System.Diagnostics.EventLogEntry%29>.  
+  
+ It creates a custom <xref:System.Diagnostics.EventLog> object and writes an entry into it. Then it creates an <xref:System.Diagnostics.EntryWrittenEventArgs> object using the first entry in the custom EventLog. This object is used to notify a message.  
+  
+ [!code-cpp[EntryWrittenEventArgs_ctor2#2](~/samples/snippets/cpp/VS_Snippets_CLR/EntryWrittenEventArgs_ctor2/CPP/entrywritteneventargs_ctor2.cpp#2)]
+ [!code-csharp[EntryWrittenEventArgs_ctor2#2](~/samples/snippets/csharp/VS_Snippets_CLR/EntryWrittenEventArgs_ctor2/CS/entrywritteneventargs_ctor2.cs#2)]
+ [!code-vb[EntryWrittenEventArgs_ctor2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/EntryWrittenEventArgs_ctor2/VB/entrywritteneventargs_ctor2.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

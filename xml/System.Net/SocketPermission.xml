@@ -1,0 +1,542 @@
+<Type Name="SocketPermission" FullName="System.Net.SocketPermission">
+  <TypeSignature Language="C#" Value="public sealed class SocketPermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SocketPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
+  <TypeSignature Language="DocId" Value="T:System.Net.SocketPermission" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.CodeAccessPermission</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Security.Permissions.IUnrestrictedPermission</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Controls rights to make or accept connections on a transport address.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Net.SocketPermission> instances control permission to accept connections or initiate <xref:System.Net.Sockets.Socket> connections. A <xref:System.Net.Sockets.Socket> permission can be established for a host name or IP address, a port number, and a transport protocol.  
+  
+> [!NOTE]
+>  Avoid creating socket permissions using host names, as these names have to be resolved to IP addresses, and this might block the stack.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Net.SocketPermission> class to set, change, and enforce various socket access restrictions.  
+  
+ [!code-cpp[SocketPermissionExample#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SocketPermissionExample/CPP/source.cpp#1)]
+ [!code-csharp[SocketPermissionExample#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SocketPermissionExample/CS/source.cs#1)]
+ [!code-vb[SocketPermissionExample#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SocketPermissionExample/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SocketPermission (System.Security.Permissions.PermissionState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.SocketPermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
+      </Parameters>
+      <Docs>
+        <param name="state">One of the <see cref="T:System.Security.Permissions.PermissionState" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.SocketPermission" /> class that allows unrestricted access to the <see cref="T:System.Net.Sockets.Socket" /> or disallows access to the <see cref="T:System.Net.Sockets.Socket" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Net.SocketPermission> instance is created with the `Unrestricted` value from <xref:System.Security.Permissions.PermissionState> then the <xref:System.Net.SocketPermission> instance passes all demands. Any other value for `state` results in a <xref:System.Net.SocketPermission> instance that fails all demands unless a transport address permission is added with <xref:System.Net.SocketPermission.AddPermission%2A>.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Net.SocketPermission> using a <xref:System.Security.Permissions.PermissionState> enumerated value.  
+  
+ [!code-cpp[dateClient_SocketPermission_Constructor#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DateClient_SocketPermission_Constructor/CPP/dateclient_socketpermission_constructor.cpp#1)]
+ [!code-csharp[dateClient_SocketPermission_Constructor#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DateClient_SocketPermission_Constructor/CS/dateclient_socketpermission_constructor.cs#1)]
+ [!code-vb[dateClient_SocketPermission_Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DateClient_SocketPermission_Constructor/VB/dateclient_socketpermission_constructor.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SocketPermission (System.Net.NetworkAccess access, System.Net.TransportType transport, string hostName, int portNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.NetworkAccess access, valuetype System.Net.TransportType transport, string hostName, int32 portNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.SocketPermission.#ctor(System.Net.NetworkAccess,System.Net.TransportType,System.String,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="access" Type="System.Net.NetworkAccess" />
+        <Parameter Name="transport" Type="System.Net.TransportType" />
+        <Parameter Name="hostName" Type="System.String" />
+        <Parameter Name="portNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="access">One of the <see cref="T:System.Net.NetworkAccess" /> values.</param>
+        <param name="transport">One of the <see cref="T:System.Net.TransportType" /> values.</param>
+        <param name="hostName">The host name for the transport address.</param>
+        <param name="portNumber">The port number for the transport address.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.SocketPermission" /> class for the given transport address with the specified permission.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates a <xref:System.Net.SocketPermission> that controls access to the specified `hostName` and `portNumber` using the specified `transport`.  
+  
+ The `hostName` can be a DNS name, an IP address, or a specified IP subnet, such as 192.168.1.*.  
+  
+ The `portNumber` can be any valid port number defined by the transport, or <xref:System.Net.SocketPermission?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Net.SocketPermission> using a <xref:System.Net.NetworkAccess> enumerated value, a <xref:System.Net.TransportType> enumerated value, the hostname, and the port number.  
+  
+ [!code-cpp[dateClient_SocketPermission_Constructor#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DateClient_SocketPermission_Constructor/CPP/dateclient_socketpermission_constructor.cpp#1)]
+ [!code-csharp[dateClient_SocketPermission_Constructor#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DateClient_SocketPermission_Constructor/CS/dateclient_socketpermission_constructor.cs#1)]
+ [!code-vb[dateClient_SocketPermission_Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DateClient_SocketPermission_Constructor/VB/dateclient_socketpermission_constructor.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="hostName" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptList">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator AcceptList { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerator AcceptList" />
+      <MemberSignature Language="DocId" Value="P:System.Net.SocketPermission.AcceptList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a list of <see cref="T:System.Net.EndpointPermission" /> instances that identifies the endpoints that can be accepted under this permission instance.</summary>
+        <value>An instance that implements the <see cref="T:System.Collections.IEnumerator" /> interface that contains <see cref="T:System.Net.EndpointPermission" /> instances.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses the <xref:System.Net.SocketPermission.AcceptList%2A> property to return a list of endpoints to which accept privileges are granted.  
+  
+ [!code-cpp[SocketPermissionExample#2](~/samples/snippets/cpp/VS_Snippets_Remoting/SocketPermissionExample/CPP/source.cpp#2)]
+ [!code-csharp[SocketPermissionExample#2](~/samples/snippets/csharp/VS_Snippets_Remoting/SocketPermissionExample/CS/source.cs#2)]
+ [!code-vb[SocketPermissionExample#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SocketPermissionExample/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPermission">
+      <MemberSignature Language="C#" Value="public void AddPermission (System.Net.NetworkAccess access, System.Net.TransportType transport, string hostName, int portNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddPermission(valuetype System.Net.NetworkAccess access, valuetype System.Net.TransportType transport, string hostName, int32 portNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.SocketPermission.AddPermission(System.Net.NetworkAccess,System.Net.TransportType,System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="access" Type="System.Net.NetworkAccess" />
+        <Parameter Name="transport" Type="System.Net.TransportType" />
+        <Parameter Name="hostName" Type="System.String" />
+        <Parameter Name="portNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="access">One of the <see cref="T:System.Net.NetworkAccess" /> values.</param>
+        <param name="transport">One of the <see cref="T:System.Net.TransportType" /> values.</param>
+        <param name="hostName">The host name for the transport address.</param>
+        <param name="portNumber">The port number for the transport address.</param>
+        <summary>Adds a permission to the set of permissions for a transport address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `hostName` can be a DNS name, an IP address, or a specified IP subnet, such as 192.168.1.*.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Net.SocketPermission.AddPermission%2A> method to add connection permissions to the specified host.  
+  
+ [!code-cpp[dateClient_SocketPermission_Constructor#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DateClient_SocketPermission_Constructor/CPP/dateclient_socketpermission_constructor.cpp#1)]
+ [!code-csharp[dateClient_SocketPermission_Constructor#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DateClient_SocketPermission_Constructor/CS/dateclient_socketpermission_constructor.cs#1)]
+ [!code-vb[dateClient_SocketPermission_Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DateClient_SocketPermission_Constructor/VB/dateclient_socketpermission_constructor.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="hostName" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AllPorts">
+      <MemberSignature Language="C#" Value="public const int AllPorts = -1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 AllPorts = (-1)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.SocketPermission.AllPorts" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1</MemberValue>
+      <Docs>
+        <summary>Defines a constant that represents all ports.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This field is read-only. The value of this field is -1.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Net.SocketPermission.AllPorts> property to provide connection permissions to all of the resources ports.  
+  
+ [!code-cpp[DateClient_SocketPermission_Constructor#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DateClient_SocketPermission_Constructor/CPP/dateclient_socketpermission_constructor.cpp#1)]
+ [!code-csharp[DateClient_SocketPermission_Constructor#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DateClient_SocketPermission_Constructor/CS/dateclient_socketpermission_constructor.cs#1)]
+ [!code-vb[DateClient_SocketPermission_Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DateClient_SocketPermission_Constructor/VB/dateclient_socketpermission_constructor.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectList">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator ConnectList { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerator ConnectList" />
+      <MemberSignature Language="DocId" Value="P:System.Net.SocketPermission.ConnectList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a list of <see cref="T:System.Net.EndpointPermission" /> instances that identifies the endpoints that can be connected to under this permission instance.</summary>
+        <value>An instance that implements the <see cref="T:System.Collections.IEnumerator" /> interface that contains <see cref="T:System.Net.EndpointPermission" /> instances.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses the <xref:System.Net.SocketPermission.ConnectList%2A> property to return a list of endpoints to which connection privileges are granted.  
+  
+ [!code-cpp[dateClient_SocketPermission_ToXml#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DateClient_SocketPermission_ToXml/CPP/dateclient_socketpermission_toxml.cpp#1)]
+ [!code-csharp[dateClient_SocketPermission_ToXml#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DateClient_SocketPermission_ToXml/CS/dateclient_socketpermission_toxml.cs#1)]
+ [!code-vb[dateClient_SocketPermission_ToXml#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DateClient_SocketPermission_ToXml/VB/dateclient_socketpermission_toxml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Copy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.SocketPermission.Copy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a copy of a <see cref="T:System.Net.SocketPermission" /> instance.</summary>
+        <returns>A new instance of the <see cref="T:System.Net.SocketPermission" /> class that is a copy of the current instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object returned by this method represents the same level of access as the current instance. This method overrides <xref:System.Security.CodeAccessPermission.Copy%2A> and is implemented to support the <xref:System.Security.IPermission> interface.  
+  
+   
+  
+## Examples  
+ The following example creates a <xref:System.Net.SocketPermission> by taking a copy of an existing <xref:System.Net.SocketPermission>.  
+  
+ [!code-cpp[SocketPermissionExample#4](~/samples/snippets/cpp/VS_Snippets_Remoting/SocketPermissionExample/CPP/source.cpp#4)]
+ [!code-csharp[SocketPermissionExample#4](~/samples/snippets/csharp/VS_Snippets_Remoting/SocketPermissionExample/CS/source.cs#4)]
+ [!code-vb[SocketPermissionExample#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SocketPermissionExample/VB/source.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromXml">
+      <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement securityElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement securityElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.SocketPermission.FromXml(System.Security.SecurityElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securityElement" Type="System.Security.SecurityElement" />
+      </Parameters>
+      <Docs>
+        <param name="securityElement">The XML encoding used to reconstruct the <see cref="T:System.Net.SocketPermission" /> instance.</param>
+        <summary>Reconstructs a <see cref="T:System.Net.SocketPermission" /> instance for an XML encoding.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.SocketPermission.FromXml%2A> method reconstructs a <xref:System.Net.SocketPermission> instance from an XML encoding defined by the <xref:System.Security.SecurityElement> class.  
+  
+ Use the <xref:System.Net.SocketPermission.ToXml%2A> method to encode the <xref:System.Net.SocketPermission> instance, including state information, in XML.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Net.SocketPermission.FromXml%2A> method to convert XML encoded data to a <xref:System.Net.SocketPermission> instance.  
+  
+ [!code-cpp[dateClient_SocketPermission_Constructor#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DateClient_SocketPermission_Constructor/CPP/dateclient_socketpermission_constructor.cpp#1)]
+ [!code-csharp[dateClient_SocketPermission_Constructor#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DateClient_SocketPermission_Constructor/CS/dateclient_socketpermission_constructor.cs#1)]
+ [!code-vb[dateClient_SocketPermission_Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DateClient_SocketPermission_Constructor/VB/dateclient_socketpermission_constructor.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="securityElement" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="securityElement" /> is not a permission element for this type.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Intersect">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission Intersect (System.Security.IPermission target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Intersect(class System.Security.IPermission target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.SocketPermission.Intersect(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="target">The <see cref="T:System.Net.SocketPermission" /> instance to intersect with the current instance.</param>
+        <summary>Returns the logical intersection between two <see cref="T:System.Net.SocketPermission" /> instances.</summary>
+        <returns>The <see cref="T:System.Net.SocketPermission" /> instance that represents the intersection of two <see cref="T:System.Net.SocketPermission" /> instances. If the intersection is empty, the method returns <see langword="null" />. If the <paramref name="target" /> parameter is a null reference, the method returns <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The intersection of two permissions is a permission that helps to protect the resources and operations protected by both permissions. Specifically, it represents the minimum permission such that any demand that passes both permissions also passes their intersection. This method overrides <xref:System.Security.CodeAccessPermission.Intersect%2A> and is implemented to support the <xref:System.Security.IPermission> interface.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Net.SocketPermission.Intersect%2A> method to obtain a logical intersection between two <xref:System.Net.SocketPermission> instances.  
+  
+ [!code-cpp[DateClient_SocketPermission_Constructor#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DateClient_SocketPermission_Constructor/CPP/dateclient_socketpermission_constructor.cpp#1)]
+ [!code-csharp[DateClient_SocketPermission_Constructor#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DateClient_SocketPermission_Constructor/CS/dateclient_socketpermission_constructor.cs#1)]
+ [!code-vb[DateClient_SocketPermission_Constructor#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DateClient_SocketPermission_Constructor/VB/dateclient_socketpermission_constructor.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="target" /> parameter is not a <see cref="T:System.Net.SocketPermission" />.</exception>
+        <exception cref="T:System.Security.SecurityException">
+          <see cref="T:System.Net.DnsPermission" /> is not granted to the method caller.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSubsetOf">
+      <MemberSignature Language="C#" Value="public override bool IsSubsetOf (System.Security.IPermission target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSubsetOf(class System.Security.IPermission target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.SocketPermission.IsSubsetOf(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="target">A <see cref="T:System.Net.SocketPermission" /> that is to be tested for the subset relationship.</param>
+        <summary>Determines if the current permission is a subset of the specified permission.</summary>
+        <returns>If <paramref name="target" /> is <see langword="null" />, this method returns <see langword="true" /> if the current instance defines no permissions; otherwise, <see langword="false" />. If <paramref name="target" /> is not <see langword="null" />, this method returns <see langword="true" /> if the current instance defines a subset of <paramref name="target" /> permissions; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The current permission is a subset of the specified permission if the current permission specifies a set of operations that is wholly contained by the specified permission.  
+  
+ For example, a permission that represents access to 192.168.1.1:80 is a subset of a permission that represents access to 192.168.1.1:Any. If this method returns `true`, the current permission represents no more access to the protected resource than does the specified permission.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Net.SocketPermission.IsSubsetOf%2A> method to determine if one <xref:System.Net.SocketPermission> is the subset of another.  
+  
+ [!code-cpp[SocketPermissionExample#2](~/samples/snippets/cpp/VS_Snippets_Remoting/SocketPermissionExample/CPP/source.cpp#2)]
+ [!code-csharp[SocketPermissionExample#2](~/samples/snippets/csharp/VS_Snippets_Remoting/SocketPermissionExample/CS/source.cs#2)]
+ [!code-vb[SocketPermissionExample#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SocketPermissionExample/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="target" /> is not a <see cref="T:System.Net.Sockets.SocketException" />.</exception>
+        <exception cref="T:System.Security.SecurityException">
+          <see cref="T:System.Net.DnsPermission" /> is not granted to the method caller.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUnrestricted">
+      <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.SocketPermission.IsUnrestricted" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Checks the overall permission state of the object.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Net.SocketPermission" /> instance is created with the <see langword="Unrestricted" /> value from <see cref="T:System.Security.Permissions.PermissionState" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example checks the <xref:System.Net.SocketPermission.IsUnrestricted%2A> property to determine if the specified <xref:System.Net.SocketPermission> has any restrictions.  
+  
+ [!code-cpp[dateClient_SocketPermission_ToXml#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DateClient_SocketPermission_ToXml/CPP/dateclient_socketpermission_toxml.cpp#1)]
+ [!code-csharp[dateClient_SocketPermission_ToXml#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DateClient_SocketPermission_ToXml/CS/dateclient_socketpermission_toxml.cs#1)]
+ [!code-vb[dateClient_SocketPermission_ToXml#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DateClient_SocketPermission_ToXml/VB/dateclient_socketpermission_toxml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToXml">
+      <MemberSignature Language="C#" Value="public override System.Security.SecurityElement ToXml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.SecurityElement ToXml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.SocketPermission.ToXml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an XML encoding of a <see cref="T:System.Net.SocketPermission" /> instance and its current state.</summary>
+        <returns>A <see cref="T:System.Security.SecurityElement" /> instance that contains an XML-encoded representation of the <see cref="T:System.Net.SocketPermission" /> instance, including state information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.SocketPermission.ToXml%2A> method creates a <xref:System.Security.SecurityElement> instance to encode a representation of the <xref:System.Net.SocketPermission> instance, including state information, in XML.  
+  
+ Use the <xref:System.Net.SocketPermission.FromXml%2A> method to restore the state information from a <xref:System.Security.SecurityElement> instance.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Net.SocketPermission.ToXml%2A> method to convert a <xref:System.Net.SocketPermission> to XML.  
+  
+ [!code-cpp[dateClient_SocketPermission_ToXml#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DateClient_SocketPermission_ToXml/CPP/dateclient_socketpermission_toxml.cpp#1)]
+ [!code-csharp[dateClient_SocketPermission_ToXml#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DateClient_SocketPermission_ToXml/CS/dateclient_socketpermission_toxml.cs#1)]
+ [!code-vb[dateClient_SocketPermission_ToXml#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DateClient_SocketPermission_ToXml/VB/dateclient_socketpermission_toxml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Union">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission Union (System.Security.IPermission target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Union(class System.Security.IPermission target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.SocketPermission.Union(System.Security.IPermission)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Security.IPermission" />
+      </Parameters>
+      <Docs>
+        <param name="target">The <see cref="T:System.Net.SocketPermission" /> instance to combine with the current instance.</param>
+        <summary>Returns the logical union between two <see cref="T:System.Net.SocketPermission" /> instances.</summary>
+        <returns>The <see cref="T:System.Net.SocketPermission" /> instance that represents the union of two <see cref="T:System.Net.SocketPermission" /> instances. If <paramref name="target" /> parameter is <see langword="null" />, it returns a copy of the current instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The result of a call to <xref:System.Net.SocketPermission.Union%2A> is a permission that represents all of the access to <xref:System.Net.Sockets.Socket> connections represented by the current instance as well as the access represented by `target`. Any demand that passes either the current instance or `target` passes their union. This method overrides <xref:System.Security.CodeAccessPermission.Union%2A> and is implemented to support the <xref:System.Security.IPermission> interface.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Net.SocketPermission.Union%2A> method to return the logical union of two existing <xref:System.Net.SocketPermission> instances.  
+  
+ [!code-cpp[SocketPermissionExample#2](~/samples/snippets/cpp/VS_Snippets_Remoting/SocketPermissionExample/CPP/source.cpp#2)]
+ [!code-csharp[SocketPermissionExample#2](~/samples/snippets/csharp/VS_Snippets_Remoting/SocketPermissionExample/CS/source.cs#2)]
+ [!code-vb[SocketPermissionExample#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SocketPermissionExample/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="target" /> is not a <see cref="T:System.Net.SocketPermission" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

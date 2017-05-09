@@ -1,0 +1,208 @@
+<Type Name="ContextMenuStrip" FullName="System.Windows.Forms.ContextMenuStrip">
+  <TypeSignature Language="C#" Value="public class ContextMenuStrip : System.Windows.Forms.ToolStripDropDownMenu" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContextMenuStrip extends System.Windows.Forms.ToolStripDropDownMenu" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ContextMenuStrip" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.ToolStripDropDownMenu</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("Opening")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a shortcut menu.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.ContextMenuStrip> replaces <xref:System.Windows.Forms.ContextMenu>. You can associate a <xref:System.Windows.Forms.ContextMenuStrip> with any control, and a right mouse click automatically displays the shortcut menu. You can show a <xref:System.Windows.Forms.ContextMenuStrip> programmatically by using the <xref:System.Windows.Forms.ToolStripDropDown.Show%2A> method. <xref:System.Windows.Forms.ContextMenuStrip> supports cancelable <xref:System.Windows.Forms.ToolStripDropDown.Opening> and <xref:System.Windows.Forms.ToolStripDropDown.Closing> events to handle dynamic population and multiple-click scenarios. <xref:System.Windows.Forms.ContextMenuStrip> supports images, menu-item check state, text, access keys, shortcuts, and cascading menus.  
+  
+ The following items are specifically designed to work seamlessly with both <xref:System.Windows.Forms.ToolStripSystemRenderer> and <xref:System.Windows.Forms.ToolStripProfessionalRenderer> in all orientations. They are available by default at design time for the <xref:System.Windows.Forms.ContextMenuStrip> control:  
+  
+-   <xref:System.Windows.Forms.ToolStripMenuItem>  
+  
+-   <xref:System.Windows.Forms.ToolStripSeparator>  
+  
+-   <xref:System.Windows.Forms.ToolStripTextBox>  
+  
+-   <xref:System.Windows.Forms.ToolStripComboBox>  
+  
+ Shortcut menus are typically used to combine different menu items from a <xref:System.Windows.Forms.MenuStrip> of a form that are useful for the user given the context of the application. For example, you can use a shortcut menu assigned to a <xref:System.Windows.Forms.TextBox> control to provide menu items for changing the font of the text, finding text within the control, or Clipboard features for copying and pasting text. You can also expose new <xref:System.Windows.Forms.ToolStripMenuItem> objects in a shortcut menu that are not located within a <xref:System.Windows.Forms.MenuStrip> to provide situation-specific commands that are inappropriate for the <xref:System.Windows.Forms.MenuStrip> to display.  
+  
+ Typically, a shortcut menu is displayed when a user clicks the right mouse button over a control or the form itself. Many visible controls, as well as the <xref:System.Windows.Forms.Form> itself, have a <xref:System.Windows.Forms.Control.ContextMenuStrip%2A?displayProperty=fullName> property that binds the <xref:System.Windows.Forms.ContextMenuStrip> class to the control that displays the shortcut menu. More than one control can use a <xref:System.Windows.Forms.ContextMenuStrip>.  
+  
+ Set the <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowCheckMargin%2A?displayProperty=fullName> property to `true` to add space to the left of a <xref:System.Windows.Forms.ToolStripMenuItem> for a check mark that shows that the menu item is enabled or selected. The <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A?displayProperty=fullName> property is set to `true` by default. Use this space to the left of the <xref:System.Windows.Forms.ToolStripMenuItem> to display an image for that menu item.  
+  
+ Although <xref:System.Windows.Forms.ContextMenuStrip> replaces and adds functionality to the <xref:System.Windows.Forms.ContextMenu> control of previous versions, <xref:System.Windows.Forms.ContextMenu> is retained for both backward compatibility and future use if so desired.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates a <xref:System.Windows.Forms.ContextMenuStrip> with dynamic item addition, dynamic <xref:System.Windows.Forms.ContextMenuStrip.SourceControl%2A> determination with reuse, and handling of the <xref:System.Windows.Forms.ToolStripDropDown.Opening> event.  
+  
+ [!code-csharp[System.Windows.Forms.ToolStrip.Misc#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#40)]
+ [!code-vb[System.Windows.Forms.ToolStrip.Misc#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#40)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContextMenuStrip ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContextMenuStrip.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ContextMenuStrip" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContextMenuStrip (System.ComponentModel.IContainer container);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.IContainer container) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContextMenuStrip.#ctor(System.ComponentModel.IContainer)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="container" Type="System.ComponentModel.IContainer" />
+      </Parameters>
+      <Docs>
+        <param name="container">A component that implements <see cref="T:System.ComponentModel.IContainer" /> that is the container of the <see cref="T:System.Windows.Forms.ContextMenuStrip" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ContextMenuStrip" /> class and associates it with the specified container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to ensure that the <xref:System.Windows.Forms.ContextMenuStrip> is disposed of properly, since it is not a child of the form.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContextMenuStrip.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.ContextMenuStrip" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+  
+ When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Windows.Forms.ContextMenuStrip> references. This method invokes the `Dispose` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="SetVisibleCore">
+      <MemberSignature Language="C#" Value="protected override void SetVisibleCore (bool visible);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetVisibleCore(bool visible) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ContextMenuStrip.SetVisibleCore(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visible" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="visible">
+          <see langword="true" /> to make the control visible; otherwise, <see langword="false" />.</param>
+        <summary>Sets the control to the specified visible state.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceControl">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Control SourceControl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Control SourceControl" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ContextMenuStrip.SourceControl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Control</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the last control that caused this <see cref="T:System.Windows.Forms.ContextMenuStrip" /> to be displayed.</summary>
+        <value>The control that caused this <see cref="T:System.Windows.Forms.ContextMenuStrip" /> to be displayed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Common uses of the <xref:System.Windows.Forms.ContextMenuStrip.SourceControl%2A> property include the following:  
+  
+-   Adding, removing, enabling, or disabling a menu item during the <xref:System.Windows.Forms.ToolStripDropDown.Opening> event.  
+  
+-   Deciding on modifications of a chosen command based on the control that last displayed the <xref:System.Windows.Forms.ContextMenuStrip>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates dynamic <xref:System.Windows.Forms.ContextMenuStrip.SourceControl%2A> determination with reuse, and handling of the <xref:System.Windows.Forms.ToolStripDropDown.Opening> event. This example is part of a larger example provided for the <xref:System.Windows.Forms.ContextMenuStrip> class.  
+  
+ [!code-csharp[System.Windows.Forms.ToolStrip.Misc#42](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#42)]
+ [!code-vb[System.Windows.Forms.ToolStrip.Misc#42](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#42)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">for all windows to set this property value. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

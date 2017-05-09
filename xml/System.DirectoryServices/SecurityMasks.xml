@@ -1,0 +1,119 @@
+<Type Name="SecurityMasks" FullName="System.DirectoryServices.SecurityMasks">
+  <TypeSignature Language="C#" Value="public enum SecurityMasks" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SecurityMasks extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.SecurityMasks" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the available options for examining security information of a directory object. This enumeration is used with the <see cref="P:System.DirectoryServices.DirectorySearcher.SecurityMasks" /> and <see cref="P:System.DirectoryServices.DirectoryEntryConfiguration.SecurityMasks" /> properties.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+  
+```  
+using System.DirectoryServices;  
+...  
+DirectorySearcher src = new DirectorySearcher("…");  
+src.PropertiesToLoad = new string[] {ntSecurityDescriptor,…};  
+src.SecurityMasks = SecurityMasks.Dacl | SecurityMasks.Owner;  
+SearchResultCollection res = src.FindAll();  
+  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Dacl">
+      <MemberSignature Language="C#" Value="Dacl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.SecurityMasks Dacl = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.SecurityMasks.Dacl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.SecurityMasks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reads or writes the discretionary access-control list (DACL) data.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="Group" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.SecurityMasks Group = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.SecurityMasks.Group" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.SecurityMasks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reads or writes the group data.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.SecurityMasks None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.SecurityMasks.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.SecurityMasks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Does not read or write security data.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Owner">
+      <MemberSignature Language="C#" Value="Owner" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.SecurityMasks Owner = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.SecurityMasks.Owner" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.SecurityMasks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reads or writes the owner data.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sacl">
+      <MemberSignature Language="C#" Value="Sacl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.SecurityMasks Sacl = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.SecurityMasks.Sacl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.SecurityMasks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reads or writes the system access-control list (SACL) data.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

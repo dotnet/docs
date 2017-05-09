@@ -1,0 +1,977 @@
+<Type Name="DbMetaDataColumnNames" FullName="System.Data.Common.DbMetaDataColumnNames">
+  <TypeSignature Language="C#" Value="public static class DbMetaDataColumnNames" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DbMetaDataColumnNames extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.DbMetaDataColumnNames" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides static values that are used for the column names in the **MetaDataCollection** objects contained in the <see cref="T:System.Data.DataTable" />. The <see cref="T:System.Data.DataTable" /> is created by the **GetSchema** method.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CollectionName">
+      <MemberSignature Language="C#" Value="public static readonly string CollectionName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string CollectionName" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.CollectionName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **CollectionName** column in the **DataTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnSize">
+      <MemberSignature Language="C#" Value="public static readonly string ColumnSize;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ColumnSize" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.ColumnSize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **ColumnSize** column in the **DataTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompositeIdentifierSeparatorPattern">
+      <MemberSignature Language="C#" Value="public static readonly string CompositeIdentifierSeparatorPattern;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string CompositeIdentifierSeparatorPattern" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.CompositeIdentifierSeparatorPattern" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **CompositeIdentifierSeparatorPattern** column in the **DataSourceInformation** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFormat">
+      <MemberSignature Language="C#" Value="public static readonly string CreateFormat;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string CreateFormat" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.CreateFormat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **CreateFormat** column in the **DataTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateParameters">
+      <MemberSignature Language="C#" Value="public static readonly string CreateParameters;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string CreateParameters" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.CreateParameters" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **CreateParameters** column in the **DataTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSourceProductName">
+      <MemberSignature Language="C#" Value="public static readonly string DataSourceProductName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string DataSourceProductName" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.DataSourceProductName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **DataSourceProductName** column in the **DataSourceInformation** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSourceProductVersion">
+      <MemberSignature Language="C#" Value="public static readonly string DataSourceProductVersion;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string DataSourceProductVersion" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.DataSourceProductVersion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **DataSourceProductVersion** column in the **DataSourceInformation** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSourceProductVersionNormalized">
+      <MemberSignature Language="C#" Value="public static readonly string DataSourceProductVersionNormalized;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string DataSourceProductVersionNormalized" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.DataSourceProductVersionNormalized" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **DataSourceProductVersionNormalized** column in the **DataSourceInformation** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataType">
+      <MemberSignature Language="C#" Value="public static readonly string DataType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string DataType" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.DataType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **DataType** column in the **DataTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupByBehavior">
+      <MemberSignature Language="C#" Value="public static readonly string GroupByBehavior;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string GroupByBehavior" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.GroupByBehavior" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **GroupByBehavior** column in the **DataSourceInformation** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdentifierCase">
+      <MemberSignature Language="C#" Value="public static readonly string IdentifierCase;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string IdentifierCase" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.IdentifierCase" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **IdentifierCase** column in the **DataSourceInformation** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdentifierPattern">
+      <MemberSignature Language="C#" Value="public static readonly string IdentifierPattern;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string IdentifierPattern" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.IdentifierPattern" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **IdentifierPattern** column in the **DataSourceInformation** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAutoIncrementable">
+      <MemberSignature Language="C#" Value="public static readonly string IsAutoIncrementable;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string IsAutoIncrementable" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.IsAutoIncrementable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **IsAutoIncrementable** column in the **DataTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBestMatch">
+      <MemberSignature Language="C#" Value="public static readonly string IsBestMatch;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string IsBestMatch" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.IsBestMatch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **IsBestMatch** column in the **DataTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCaseSensitive">
+      <MemberSignature Language="C#" Value="public static readonly string IsCaseSensitive;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string IsCaseSensitive" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.IsCaseSensitive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **IsCaseSensitive** column in the **DataTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsConcurrencyType">
+      <MemberSignature Language="C#" Value="public static readonly string IsConcurrencyType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string IsConcurrencyType" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.IsConcurrencyType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **IsConcurrencyType** column in the **DataTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFixedLength">
+      <MemberSignature Language="C#" Value="public static readonly string IsFixedLength;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string IsFixedLength" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.IsFixedLength" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **IsFixedLength** column in the **DataTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFixedPrecisionScale">
+      <MemberSignature Language="C#" Value="public static readonly string IsFixedPrecisionScale;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string IsFixedPrecisionScale" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.IsFixedPrecisionScale" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **IsFixedPrecisionScale** column in the **DataTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLiteralSupported">
+      <MemberSignature Language="C#" Value="public static readonly string IsLiteralSupported;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string IsLiteralSupported" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.IsLiteralSupported" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **IsLiteralSupported** column in the **DataTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLong">
+      <MemberSignature Language="C#" Value="public static readonly string IsLong;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string IsLong" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.IsLong" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **IsLong** column in the **DataTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNullable">
+      <MemberSignature Language="C#" Value="public static readonly string IsNullable;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string IsNullable" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.IsNullable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **IsNullable** column in the **DataTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSearchable">
+      <MemberSignature Language="C#" Value="public static readonly string IsSearchable;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string IsSearchable" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.IsSearchable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **IsSearchable** column in the **DataTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSearchableWithLike">
+      <MemberSignature Language="C#" Value="public static readonly string IsSearchableWithLike;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string IsSearchableWithLike" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.IsSearchableWithLike" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **IsSearchableWithLike** column in the **DataTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUnsigned">
+      <MemberSignature Language="C#" Value="public static readonly string IsUnsigned;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string IsUnsigned" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.IsUnsigned" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **IsUnsigned** column in the **DataTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LiteralPrefix">
+      <MemberSignature Language="C#" Value="public static readonly string LiteralPrefix;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string LiteralPrefix" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.LiteralPrefix" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **LiteralPrefix** column in the **DataTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LiteralSuffix">
+      <MemberSignature Language="C#" Value="public static readonly string LiteralSuffix;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string LiteralSuffix" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.LiteralSuffix" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **LiteralSuffix** column in the **DataTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumScale">
+      <MemberSignature Language="C#" Value="public static readonly string MaximumScale;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string MaximumScale" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.MaximumScale" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **MaximumScale** column in the **DataTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinimumScale">
+      <MemberSignature Language="C#" Value="public static readonly string MinimumScale;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string MinimumScale" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.MinimumScale" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **MinimumScale** column in the **DataTypes** collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For numeric data types, this indicates the minimum number of digits to the right of the decimal point.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfIdentifierParts">
+      <MemberSignature Language="C#" Value="public static readonly string NumberOfIdentifierParts;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string NumberOfIdentifierParts" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.NumberOfIdentifierParts" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **NumberOfIdentifierParts** column in the **MetaDataCollections** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NumberOfRestrictions">
+      <MemberSignature Language="C#" Value="public static readonly string NumberOfRestrictions;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string NumberOfRestrictions" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.NumberOfRestrictions" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **NumberOfRestrictions** column in the **MetaDataCollections** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrderByColumnsInSelect">
+      <MemberSignature Language="C#" Value="public static readonly string OrderByColumnsInSelect;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string OrderByColumnsInSelect" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.OrderByColumnsInSelect" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **OrderByColumnsInSelect** column in the **DataSourceInformation** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterMarkerFormat">
+      <MemberSignature Language="C#" Value="public static readonly string ParameterMarkerFormat;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ParameterMarkerFormat" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.ParameterMarkerFormat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **ParameterMarkerFormat** column in the **DataSourceInformation** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterMarkerPattern">
+      <MemberSignature Language="C#" Value="public static readonly string ParameterMarkerPattern;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ParameterMarkerPattern" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.ParameterMarkerPattern" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **ParameterMarkerPattern** column in the **DataSourceInformation** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterNameMaxLength">
+      <MemberSignature Language="C#" Value="public static readonly string ParameterNameMaxLength;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ParameterNameMaxLength" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.ParameterNameMaxLength" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **ParameterNameMaxLength** column in the **DataSourceInformation** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterNamePattern">
+      <MemberSignature Language="C#" Value="public static readonly string ParameterNamePattern;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ParameterNamePattern" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.ParameterNamePattern" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **ParameterNamePattern** column in the **DataSourceInformation** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderDbType">
+      <MemberSignature Language="C#" Value="public static readonly string ProviderDbType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ProviderDbType" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.ProviderDbType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **ProviderDbType** column in the **DataTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuotedIdentifierCase">
+      <MemberSignature Language="C#" Value="public static readonly string QuotedIdentifierCase;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string QuotedIdentifierCase" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.QuotedIdentifierCase" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **QuotedIdentifierCase** column in the **DataSourceInformation** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuotedIdentifierPattern">
+      <MemberSignature Language="C#" Value="public static readonly string QuotedIdentifierPattern;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string QuotedIdentifierPattern" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.QuotedIdentifierPattern" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **QuotedIdentifierPattern** column in the **DataSourceInformation** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReservedWord">
+      <MemberSignature Language="C#" Value="public static readonly string ReservedWord;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ReservedWord" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.ReservedWord" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **ReservedWord** column in the **ReservedWords** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatementSeparatorPattern">
+      <MemberSignature Language="C#" Value="public static readonly string StatementSeparatorPattern;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string StatementSeparatorPattern" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.StatementSeparatorPattern" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **StatementSeparatorPattern** column in the **DataSourceInformation** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StringLiteralPattern">
+      <MemberSignature Language="C#" Value="public static readonly string StringLiteralPattern;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string StringLiteralPattern" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.StringLiteralPattern" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **StringLiteralPattern** column in the **DataSourceInformation** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportedJoinOperators">
+      <MemberSignature Language="C#" Value="public static readonly string SupportedJoinOperators;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string SupportedJoinOperators" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.SupportedJoinOperators" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **SupportedJoinOperators** column in the **DataSourceInformation** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeName">
+      <MemberSignature Language="C#" Value="public static readonly string TypeName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string TypeName" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Common.DbMetaDataColumnNames.TypeName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used by the **GetSchema** method to create the **TypeName** column in the **DataTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,61 @@
+<Type Name="ContextBoundObject" FullName="System.ContextBoundObject">
+  <TypeSignature Language="C#" Value="public abstract class ContextBoundObject : MarshalByRefObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit ContextBoundObject extends System.MarshalByRefObject" />
+  <TypeSignature Language="DocId" Value="T:System.ContextBoundObject" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.MarshalByRefObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the base class for all context-bound classes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Objects that reside in a context and are bound to the context rules are called context-bound objects. A context is a set of properties or usage rules that define an environment where a collection of objects resides. The rules are enforced when the objects are entering or leaving a context. Objects that are not context-bound are called agile objects.  
+  
+ Contexts are created during object activation. A new object is placed into an existing context or into a new context created using the attributes included in the metadata of the type. Context-bound classes are marked with a <xref:System.Runtime.Remoting.Contexts.ContextAttribute> that provides the usage rules. The context properties that can be added include policies regarding synchronization and transactions.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>The current version of the common language runtime does not support generic <see cref="T:System.ContextBoundObject" /> types or nongeneric <see cref="T:System.ContextBoundObject" /> types that have generic methods. Attempting to create an instance of such a type causes a <see cref="T:System.TypeLoadException" />.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ContextBoundObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ContextBoundObject.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Instantiates an instance of the <see cref="T:System.ContextBoundObject" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

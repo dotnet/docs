@@ -1,0 +1,179 @@
+<Type Name="MultiBindingExpression" FullName="System.Windows.Data.MultiBindingExpression">
+  <TypeSignature Language="C#" Value="public sealed class MultiBindingExpression : System.Windows.Data.BindingExpressionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MultiBindingExpression extends System.Windows.Data.BindingExpressionBase" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Data.MultiBindingExpression" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Data.BindingExpressionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains instance information about a single instance of a <see cref="T:System.Windows.Data.MultiBinding" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Data.MultiBindingExpression> describes a single run-time instance of a <xref:System.Windows.Data.MultiBinding>. Therefore, it describes a collection of <xref:System.Windows.Data.BindingExpression> objects attached to a single binding target property.  
+  
+ For information about binding expressions, see the Binding and BindingExpression section in the [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+  
+ With the use of a converter, the property values of the <xref:System.Windows.Data.BindingExpression> objects in a <xref:System.Windows.Data.MultiBindingExpression> produce a final value for the target property. In the reverse direction, the target property value is translated to a set of values that are fed back into the <xref:System.Windows.Data.BindingExpression> objects. For more information, see <xref:System.Windows.Data.MultiBinding>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BindingExpressions">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Data.BindingExpressionBase&gt; BindingExpressions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Data.BindingExpressionBase&gt; BindingExpressions" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBindingExpression.BindingExpressions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Data.BindingExpressionBase&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of <see cref="T:System.Windows.Data.BindingExpression" /> objects in this instance of <see cref="T:System.Windows.Data.MultiBindingExpression" />.</summary>
+        <value>A read-only collection of the <see cref="T:System.Windows.Data.BindingExpression" /> objects. Even though the return type is a collection of <see cref="T:System.Windows.Data.BindingExpressionBase" /> objects the returned collection would only contain <see cref="T:System.Windows.Data.BindingExpression" /> objects because the <see cref="T:System.Windows.Data.MultiBinding" /> class currently only supports <see cref="T:System.Windows.Data.Binding" /> objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasError">
+      <MemberSignature Language="C#" Value="public override bool HasError { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasError" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBindingExpression.HasError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a value that indicates whether any of the inner <see cref="T:System.Windows.Data.Binding" /> objects or the <see cref="T:System.Windows.Data.MultiBinding" /> itself has a failing validation rule.</summary>
+        <value>
+          <see langword="true" /> if at least one of the inner <see cref="T:System.Windows.Data.Binding" /> objects or the <see cref="T:System.Windows.Data.MultiBinding" /> itself has a failing validation rule; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set validation rules on both the <xref:System.Windows.Data.MultiBinding> object and the individual <xref:System.Windows.Data.Binding> objects in the <xref:System.Windows.Data.MultiBinding> object. The binding engine evaluates the <xref:System.Windows.Data.MultiBinding.ValidationRules%2A> on the <xref:System.Windows.Data.MultiBinding> object when a value moves from the binding target property to the <xref:System.Windows.Data.IMultiValueConverter> object (multi-value converter). After that, when a value moves from the converter to the binding source property of an individual binding, the binding engine evaluates the <xref:System.Windows.Data.Binding.ValidationRules%2A> on that <xref:System.Windows.Data.Binding> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasValidationError">
+      <MemberSignature Language="C#" Value="public override bool HasValidationError { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasValidationError" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBindingExpression.HasValidationError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the parent binding has a failed validation rule.</summary>
+        <value>
+          <see langword="true" /> if the parent binding has a failed validation rule; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is identical to the <xref:System.Windows.Data.MultiBindingExpression.HasError%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentMultiBinding">
+      <MemberSignature Language="C#" Value="public System.Windows.Data.MultiBinding ParentMultiBinding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.MultiBinding ParentMultiBinding" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBindingExpression.ParentMultiBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.MultiBinding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Data.MultiBinding" /> object from which this <see cref="T:System.Windows.Data.MultiBindingExpression" /> is created.</summary>
+        <value>The <see cref="T:System.Windows.Data.MultiBinding" /> object from which this <see cref="T:System.Windows.Data.MultiBindingExpression" /> is created.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateSource">
+      <MemberSignature Language="C#" Value="public override void UpdateSource ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void UpdateSource() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.MultiBindingExpression.UpdateSource" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sends the current binding target value to the binding source properties in <see cref="F:System.Windows.Data.BindingMode.TwoWay" /> or <see cref="F:System.Windows.Data.BindingMode.OneWayToSource" /> bindings.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateTarget">
+      <MemberSignature Language="C#" Value="public override void UpdateTarget ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void UpdateTarget() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.MultiBindingExpression.UpdateTarget" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Forces a data transfer from the binding source properties to the binding target property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationError">
+      <MemberSignature Language="C#" Value="public override System.Windows.Controls.ValidationError ValidationError { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.ValidationError ValidationError" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.MultiBindingExpression.ValidationError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ValidationError</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Controls.ValidationError" /> object that caused this instance of <see cref="T:System.Windows.Data.MultiBindingExpression" /> to be invalid.</summary>
+        <value>The <see cref="T:System.Windows.Controls.ValidationError" /> object that caused this instance of <see cref="T:System.Windows.Data.MultiBindingExpression" /> to be invalid.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set validation rules on both the <xref:System.Windows.Data.MultiBinding> object and the individual <xref:System.Windows.Data.Binding> objects in the <xref:System.Windows.Data.MultiBinding> object. The binding engine evaluates the <xref:System.Windows.Data.MultiBinding.ValidationRules%2A> on the <xref:System.Windows.Data.MultiBinding> object when a value moves from the binding target property to the <xref:System.Windows.Data.IMultiValueConverter> object (multi-value converter). After that, when a value moves from the converter to the binding source property of an individual binding, the binding engine evaluates the <xref:System.Windows.Data.Binding.ValidationRules%2A> on that <xref:System.Windows.Data.Binding> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

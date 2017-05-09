@@ -1,0 +1,96 @@
+<Type Name="CodeThrowExceptionStatement" FullName="System.CodeDom.CodeThrowExceptionStatement">
+  <TypeSignature Language="C#" Value="public class CodeThrowExceptionStatement : System.CodeDom.CodeStatement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeThrowExceptionStatement extends System.CodeDom.CodeStatement" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeThrowExceptionStatement" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.CodeDom.CodeStatement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a statement that throws an exception.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodeThrowExceptionStatement> can represent a statement that throws an exception. The expression should be, or evaluate to, a reference to an instance of a type that derives from the <xref:System.Exception> class.  
+  
+ The <xref:System.CodeDom.CodeThrowExceptionStatement.ToThrow%2A> property specifies the exception to throw.  
+  
+   
+  
+## Examples  
+ This example demonstrates using a <xref:System.CodeDom.CodeThrowExceptionStatement> to throw a new `System.Exception`.  
+  
+ [!code-cpp[CodeThrowExceptionStatement#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodeThrowExceptionStatement/CPP/codethrowexceptionstatementexample.cpp#2)]
+ [!code-csharp[CodeThrowExceptionStatement#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeThrowExceptionStatement/CS/codethrowexceptionstatementexample.cs#2)]
+ [!code-vb[CodeThrowExceptionStatement#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeThrowExceptionStatement/VB/codethrowexceptionstatementexample.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeThrowExceptionStatement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeThrowExceptionStatement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeThrowExceptionStatement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeThrowExceptionStatement (System.CodeDom.CodeExpression toThrow);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression toThrow) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeThrowExceptionStatement.#ctor(System.CodeDom.CodeExpression)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="toThrow" Type="System.CodeDom.CodeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="toThrow">A <see cref="T:System.CodeDom.CodeExpression" /> that indicates the exception to throw.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeThrowExceptionStatement" /> class with the specified exception type instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToThrow">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression ToThrow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression ToThrow" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeThrowExceptionStatement.ToThrow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the exception to throw.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeExpression" /> representing an instance of the exception to throw.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

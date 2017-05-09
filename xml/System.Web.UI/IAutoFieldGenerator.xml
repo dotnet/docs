@@ -1,0 +1,38 @@
+<Type Name="IAutoFieldGenerator" FullName="System.Web.UI.IAutoFieldGenerator">
+  <TypeSignature Language="C#" Value="public interface IAutoFieldGenerator" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAutoFieldGenerator" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.IAutoFieldGenerator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a method that automatically generates fields for data-bound controls that use ASP.NET Dynamic Data features.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GenerateFields">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection GenerateFields (System.Web.UI.Control control);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ICollection GenerateFields(class System.Web.UI.Control control) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.IAutoFieldGenerator.GenerateFields(System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="control">To be added.</param>
+        <summary>Automatically generates <see cref="T:System.Web.DynamicData.DynamicField" /> objects based on metadata information for the table.</summary>
+        <returns>A collection of <see cref="T:System.Web.DynamicData.DynamicField" /> objects.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

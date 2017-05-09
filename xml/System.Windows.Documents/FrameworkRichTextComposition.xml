@@ -1,0 +1,98 @@
+<Type Name="FrameworkRichTextComposition" FullName="System.Windows.Documents.FrameworkRichTextComposition">
+  <TypeSignature Language="C#" Value="public sealed class FrameworkRichTextComposition : System.Windows.Documents.FrameworkTextComposition" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FrameworkRichTextComposition extends System.Windows.Documents.FrameworkTextComposition" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Documents.FrameworkRichTextComposition" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Documents.FrameworkTextComposition</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a composition related to text input. You can use this class to find the text position of the composition or the result string.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used for parameters of text input events (i.e. <xref:System.Windows.Input.TextCompositionManager.TextInputStart>, <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate>, etc) on <xref:System.Windows.Controls.RichTextBox>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CompositionEnd">
+      <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer CompositionEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.TextPointer CompositionEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FrameworkRichTextComposition.CompositionEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.TextPointer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the end position of the current composition text.</summary>
+        <value>The end position of the current composition text.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompositionStart">
+      <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer CompositionStart { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.TextPointer CompositionStart" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FrameworkRichTextComposition.CompositionStart" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.TextPointer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the start position of the current composition text.</summary>
+        <value>The start position of the current composition text.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResultEnd">
+      <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer ResultEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.TextPointer ResultEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FrameworkRichTextComposition.ResultEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.TextPointer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the end position of the result text of the text input.</summary>
+        <value>The end position of the result text of the text input.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResultStart">
+      <MemberSignature Language="C#" Value="public System.Windows.Documents.TextPointer ResultStart { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.TextPointer ResultStart" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.FrameworkRichTextComposition.ResultStart" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.TextPointer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the start position of the result text of the text input.</summary>
+        <value>The start position of the result text of the text input.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

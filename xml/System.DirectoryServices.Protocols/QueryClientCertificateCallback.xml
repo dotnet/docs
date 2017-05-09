@@ -1,0 +1,26 @@
+<Type Name="QueryClientCertificateCallback" FullName="System.DirectoryServices.Protocols.QueryClientCertificateCallback">
+  <TypeSignature Language="C#" Value="public delegate System.Security.Cryptography.X509Certificates.X509Certificate QueryClientCertificateCallback(LdapConnection connection, byte[][] trustedCAs);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed QueryClientCertificateCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.QueryClientCertificateCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="connection" Type="System.DirectoryServices.Protocols.LdapConnection" />
+    <Parameter Name="trustedCAs" Type="System.Byte[][]" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="connection">A <see cref="T:System.DirectoryServices.Protocols.LdapConnection" /> object that specifies the connection.</param>
+    <param name="trustedCAs">An array of <see cref="T:System.Byte" /> arrays that specifies the trusted certification authorities (CAs).</param>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.QueryClientCertificateCallback" /> delegate gets or sets the default callback function used to specify the client certificates while establishing an SSL connection.</summary>
+    <returns>The default callback function used to specify the client certificates while establishing an SSL connection.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

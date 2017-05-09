@@ -1,0 +1,173 @@
+<Type Name="INameCreationService" FullName="System.ComponentModel.Design.Serialization.INameCreationService">
+  <TypeSignature Language="C#" Value="public interface INameCreationService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INameCreationService" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.INameCreationService" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a service that can generate unique names for objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.ComponentModel.Design.Serialization.DesignerLoader> can implement this service to provide a way for a designer to create new, unique names for objects. If this service is not available, the designer uses a default implementation.  
+  
+   
+  
+## Examples  
+ The following example code provides an example <xref:System.ComponentModel.Design.Serialization.INameCreationService> implementation. The service can create a unique name based on a type that does not match any names in the specified container. It can also validate a specified name string.  
+  
+ [!code-cpp[INameCreationServiceExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/INameCreationServiceExample/CPP/class1.cpp#1)]
+ [!code-csharp[INameCreationServiceExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/INameCreationServiceExample/CS/class1.cs#1)]
+ [!code-vb[INameCreationServiceExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/INameCreationServiceExample/VB/class1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateName">
+      <MemberSignature Language="C#" Value="public string CreateName (System.ComponentModel.IContainer container, Type dataType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string CreateName(class System.ComponentModel.IContainer container, class System.Type dataType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.INameCreationService.CreateName(System.ComponentModel.IContainer,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="container" Type="System.ComponentModel.IContainer" />
+        <Parameter Name="dataType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="container">The container where the new object is added.</param>
+        <param name="dataType">The data type of the object that receives the name.</param>
+        <summary>Creates a new name that is unique to all components in the specified container.</summary>
+        <returns>A unique name for the data type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a name for the new object that is unique within the specified container.  
+  
+   
+  
+## Examples  
+ The following code example provides an example <xref:System.ComponentModel.Design.Serialization.INameCreationService.CreateName%2A?displayProperty=fullName> method implementation. The method can create a name based on the name of a specified type that is unique to the names of the components within the specified container.  
+  
+ [!code-cpp[INameCreationServiceExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/INameCreationServiceExample/CPP/class1.cpp#2)]
+ [!code-csharp[INameCreationServiceExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/INameCreationServiceExample/CS/class1.cs#2)]
+ [!code-vb[INameCreationServiceExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/INameCreationServiceExample/VB/class1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>This type of service is often implemented to create a unique object name from the name of the data type, often appended with a number that allows the name to be a unique identifier. For example, <see langword="ListBox1" /> for a <see langword="ListBox" /> object.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidName">
+      <MemberSignature Language="C#" Value="public bool IsValidName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsValidName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.INameCreationService.IsValidName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name to validate.</param>
+        <summary>Gets a value indicating whether the specified name is valid.</summary>
+        <returns>
+          <see langword="true" /> if the name is valid; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An implementation of the <xref:System.ComponentModel.Design.Serialization.INameCreationService> can have rules that define the parameters for valid names. This method can be implemented to validate a name and enforce those rules.  
+  
+   
+  
+## Examples  
+ The following code example provides an example <xref:System.ComponentModel.Design.Serialization.INameCreationService.IsValidName%2A?displayProperty=fullName> method implementation. The method uses a string validation scheme that examines each character of the specified string to determine whether the specified string is a valid name. The method returns `true` if the string is valid, or `false` otherwise.  
+  
+ [!code-cpp[INameCreationServiceExample#3](~/samples/snippets/cpp/VS_Snippets_Winforms/INameCreationServiceExample/CPP/class1.cpp#3)]
+ [!code-csharp[INameCreationServiceExample#3](~/samples/snippets/csharp/VS_Snippets_Winforms/INameCreationServiceExample/CS/class1.cs#3)]
+ [!code-vb[INameCreationServiceExample#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/INameCreationServiceExample/VB/class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateName">
+      <MemberSignature Language="C#" Value="public void ValidateName (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ValidateName(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.INameCreationService.ValidateName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name to validate.</param>
+        <summary>Gets a value indicating whether the specified name is valid.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An implementation of the <xref:System.ComponentModel.Design.Serialization.INameCreationService> can have rules that define the parameters for valid names. This method can be implemented to validate a name and enforce those rules.  
+  
+ This method is similar to <xref:System.ComponentModel.Design.Serialization.INameCreationService.IsValidName%2A>, except that this method throws an exception if the name is invalid. This allows implementers to provide detailed information in the exception message.  
+  
+   
+  
+## Examples  
+ The following code example provides an example <xref:System.ComponentModel.Design.Serialization.INameCreationService.IsValidName%2A?displayProperty=fullName> method implementation that uses a string validation scheme that examines each character of the specified string to determine whether the specified string is a valid name. The method throws an exception if the string is not valid.  
+  
+ [!code-cpp[INameCreationServiceExample#4](~/samples/snippets/cpp/VS_Snippets_Winforms/INameCreationServiceExample/CPP/class1.cpp#4)]
+ [!code-csharp[INameCreationServiceExample#4](~/samples/snippets/csharp/VS_Snippets_Winforms/INameCreationServiceExample/CS/class1.cs#4)]
+ [!code-vb[INameCreationServiceExample#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/INameCreationServiceExample/VB/class1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "Boolean values, True keyword"
 ms.assetid: 4858e630-4813-4216-a55e-f4d0feb884e4
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -1,0 +1,200 @@
+<Type Name="ToolboxItemCollection" FullName="System.Drawing.Design.ToolboxItemCollection">
+  <TypeSignature Language="C#" Value="public sealed class ToolboxItemCollection : System.Collections.ReadOnlyCollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ToolboxItemCollection extends System.Collections.ReadOnlyCollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Design.ToolboxItemCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ReadOnlyCollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of toolbox items.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToolboxItemCollection (System.Drawing.Design.ToolboxItem[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Design.ToolboxItem[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemCollection.#ctor(System.Drawing.Design.ToolboxItem[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Drawing.Design.ToolboxItem[]" />
+      </Parameters>
+      <Docs>
+        <param name="value">An array of type <see cref="T:System.Drawing.Design.ToolboxItem" /> containing the toolbox items to fill the collection with.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.ToolboxItemCollection" /> class using the specified array of toolbox items.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates creating a new <xref:System.Drawing.Design.ToolboxItemCollection> instance initialized using an array of <xref:System.Drawing.Design.ToolboxItem> objects.  
+  
+ [!code-cpp[ToolboxItemCollectionExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/ToolboxItemCollectionExample/CPP/class1.cpp#1)]
+ [!code-csharp[ToolboxItemCollectionExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/ToolboxItemCollectionExample/CS/class1.cs#1)]
+ [!code-vb[ToolboxItemCollectionExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ToolboxItemCollectionExample/VB/class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToolboxItemCollection (System.Drawing.Design.ToolboxItemCollection value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Design.ToolboxItemCollection value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemCollection.#ctor(System.Drawing.Design.ToolboxItemCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Drawing.Design.ToolboxItemCollection" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.Drawing.Design.ToolboxItemCollection" /> to fill the new collection with.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.ToolboxItemCollection" /> class using the specified collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates creating a new <xref:System.Drawing.Design.ToolboxItemCollection> instance initialized using another <xref:System.Drawing.Design.ToolboxItemCollection>.  
+  
+ [!code-cpp[ToolboxItemCollectionExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/ToolboxItemCollectionExample/CPP/class1.cpp#2)]
+ [!code-csharp[ToolboxItemCollectionExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/ToolboxItemCollectionExample/CS/class1.cs#2)]
+ [!code-vb[ToolboxItemCollectionExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ToolboxItemCollectionExample/VB/class1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.Drawing.Design.ToolboxItem value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Drawing.Design.ToolboxItem value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemCollection.Contains(System.Drawing.Design.ToolboxItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Drawing.Design.ToolboxItem" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.Drawing.Design.ToolboxItem" /> to search the collection for.</param>
+        <summary>Indicates whether the collection contains the specified <see cref="T:System.Drawing.Design.ToolboxItem" />.</summary>
+        <returns>
+          <see langword="true" /> if the collection contains the specified object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Drawing.Design.ToolboxItemCollection.Contains%2A> method of a <xref:System.Drawing.Design.ToolboxItemCollection>.  
+  
+ [!code-cpp[ToolboxItemCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_Winforms/ToolboxItemCollectionExample/CPP/class1.cpp#5)]
+ [!code-csharp[ToolboxItemCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_Winforms/ToolboxItemCollectionExample/CS/class1.cs#5)]
+ [!code-vb[ToolboxItemCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ToolboxItemCollectionExample/VB/class1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Drawing.Design.ToolboxItem[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Drawing.Design.ToolboxItem[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemCollection.CopyTo(System.Drawing.Design.ToolboxItem[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Drawing.Design.ToolboxItem[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The array to copy to.</param>
+        <param name="index">The index to begin copying to.</param>
+        <summary>Copies the collection to the specified array beginning with the specified destination index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Drawing.Design.ToolboxItemCollection.CopyTo%2A> method of a <xref:System.Drawing.Design.ToolboxItemCollection>.  
+  
+ [!code-cpp[ToolboxItemCollectionExample#6](~/samples/snippets/cpp/VS_Snippets_Winforms/ToolboxItemCollectionExample/CPP/class1.cpp#6)]
+ [!code-csharp[ToolboxItemCollectionExample#6](~/samples/snippets/csharp/VS_Snippets_Winforms/ToolboxItemCollectionExample/CS/class1.cs#6)]
+ [!code-vb[ToolboxItemCollectionExample#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ToolboxItemCollectionExample/VB/class1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Drawing.Design.ToolboxItem value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Drawing.Design.ToolboxItem value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxItemCollection.IndexOf(System.Drawing.Design.ToolboxItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Drawing.Design.ToolboxItem" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.Drawing.Design.ToolboxItem" /> to get the index of in the collection.</param>
+        <summary>Gets the index of the specified <see cref="T:System.Drawing.Design.ToolboxItem" />, if it exists in the collection.</summary>
+        <returns>The index of the specified <see cref="T:System.Drawing.Design.ToolboxItem" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Drawing.Design.ToolboxItem this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Design.ToolboxItem Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Design.ToolboxItemCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Design.ToolboxItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the object to get or set.</param>
+        <summary>Gets the <see cref="T:System.Drawing.Design.ToolboxItem" /> at the specified index.</summary>
+        <value>A <see cref="T:System.Drawing.Design.ToolboxItem" /> at each valid index in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates using the indexer of a <xref:System.Drawing.Design.ToolboxItemCollection>.  
+  
+ [!code-cpp[ToolboxItemCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_Winforms/ToolboxItemCollectionExample/CPP/class1.cpp#4)]
+ [!code-csharp[ToolboxItemCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_Winforms/ToolboxItemCollectionExample/CS/class1.cs#4)]
+ [!code-vb[ToolboxItemCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ToolboxItemCollectionExample/VB/class1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

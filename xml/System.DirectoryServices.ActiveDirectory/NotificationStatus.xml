@@ -1,0 +1,66 @@
+<Type Name="NotificationStatus" FullName="System.DirectoryServices.ActiveDirectory.NotificationStatus">
+  <TypeSignature Language="C#" Value="public enum NotificationStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NotificationStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.NotificationStatus" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Represents the notification status of a replication connection.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IntraSiteOnly">
+      <MemberSignature Language="C#" Value="IntraSiteOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.NotificationStatus IntraSiteOnly = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.NotificationStatus.IntraSiteOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.NotificationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Send notifications only for intra-site connections.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoNotification">
+      <MemberSignature Language="C#" Value="NoNotification" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.NotificationStatus NoNotification = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.NotificationStatus.NoNotification" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.NotificationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Do not send notifications.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotificationAlways">
+      <MemberSignature Language="C#" Value="NotificationAlways" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.NotificationStatus NotificationAlways = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.NotificationStatus.NotificationAlways" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.NotificationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Always send notifications.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

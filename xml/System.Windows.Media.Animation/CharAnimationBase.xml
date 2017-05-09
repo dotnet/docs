@@ -1,0 +1,224 @@
+<Type Name="CharAnimationBase" FullName="System.Windows.Media.Animation.CharAnimationBase">
+  <TypeSignature Language="C#" Value="public abstract class CharAnimationBase : System.Windows.Media.Animation.AnimationTimeline" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CharAnimationBase extends System.Windows.Media.Animation.AnimationTimeline" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.CharAnimationBase" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Animation.AnimationTimeline</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Abstract class that, when implemented, animates a <see cref="T:System.Char" /> value.</summary>
+    <remarks>To be added.</remarks>
+    <block subset="none" type="overrides">
+      <para>See the [Custom Animations Overview](~/docs/framework/wpf/graphics-multimedia/custom-animations-overview.md) for information about extending animation classes.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CharAnimationBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.CharAnimationBase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.CharAnimationBase" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.CharAnimationBase Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Animation.CharAnimationBase Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.CharAnimationBase.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Animation.CharAnimationBase</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.Animation.CharAnimationBase" />, making deep copies of this object's values. When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentValue">
+      <MemberSignature Language="C#" Value="public char GetCurrentValue (char defaultOriginValue, char defaultDestinationValue, System.Windows.Media.Animation.AnimationClock animationClock);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance char GetCurrentValue(char defaultOriginValue, char defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.CharAnimationBase.GetCurrentValue(System.Char,System.Char,System.Windows.Media.Animation.AnimationClock)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="defaultOriginValue" Type="System.Char" />
+        <Parameter Name="defaultDestinationValue" Type="System.Char" />
+        <Parameter Name="animationClock" Type="System.Windows.Media.Animation.AnimationClock" />
+      </Parameters>
+      <Docs>
+        <param name="defaultOriginValue">The origin value provided to the animation if the animation does not have its own start value.</param>
+        <param name="defaultDestinationValue">The destination value provided to the animation if the animation does not have its own destination value.</param>
+        <param name="animationClock">The <see cref="T:System.Windows.Media.Animation.AnimationClock" /> which can generate the <see cref="P:System.Windows.Media.Animation.Clock.CurrentTime" /> or <see cref="P:System.Windows.Media.Animation.Clock.CurrentProgress" /> value to be used by the animation to generate its output value.</param>
+        <summary>Gets the current value of the animation.</summary>
+        <returns>The value this animation believes should be the current value for the property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the `defaultOriginValue` parameter depends on the animation’s position in the composition chain:  
+  
+-   If the animation is in the first position in a composition chain and it replaces another animation, `defaultOriginValue` is the output of that animation at the time it was replaced.  
+  
+-   If the animation is in the first position in a composition chain and no animation exists to replace, `defaultOriginValue` is the base value of the animated property.  
+  
+-   If this animation is not in the first position of a composition chain, then `defaultOriginValue` is the value that is returned by the previous animation in the composition chain that has an <xref:System.Windows.Media.Animation.AnimationClock> that is not <xref:System.Windows.Media.Animation.Clock.Stopped%2A>.  
+  
+ The value of the `defaultDestinationValue` parameter depends on whether there is a previous property <xref:System.Windows.Trigger> composition layer.  
+  
+-   If there is a previous property <xref:System.Windows.Trigger> composition layer, `defaultDestinationValue` is the output from that layer.  
+  
+-   If there is no previous composition layer, `defaultDestinationValue` is the base value of the property that you are animating.  
+  
+ For more information about animation composition, see the [Animation and Timing System Overview](~/docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md). For more information about creating custom animation types, see the [Custom Animations Overview](~/docs/framework/wpf/graphics-multimedia/custom-animations-overview.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentValue">
+      <MemberSignature Language="C#" Value="public override sealed object GetCurrentValue (object defaultOriginValue, object defaultDestinationValue, System.Windows.Media.Animation.AnimationClock animationClock);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetCurrentValue(object defaultOriginValue, object defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.CharAnimationBase.GetCurrentValue(System.Object,System.Object,System.Windows.Media.Animation.AnimationClock)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="defaultOriginValue" Type="System.Object" />
+        <Parameter Name="defaultDestinationValue" Type="System.Object" />
+        <Parameter Name="animationClock" Type="System.Windows.Media.Animation.AnimationClock" />
+      </Parameters>
+      <Docs>
+        <param name="defaultOriginValue">The origin value provided to the animation if the animation does not have its own start value.</param>
+        <param name="defaultDestinationValue">The destination value provided to the animation if the animation does not have its own destination value.</param>
+        <param name="animationClock">The <see cref="T:System.Windows.Media.Animation.AnimationClock" /> which can generate the <see cref="P:System.Windows.Media.Animation.Clock.CurrentTime" /> or <see cref="P:System.Windows.Media.Animation.Clock.CurrentProgress" /> value to be used by the animation to generate its output value.</param>
+        <summary>Gets the current value of the animation.</summary>
+        <returns>The value this animation believes should be the current value for the property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the `defaultOriginValue` parameter depends on the animation’s position in the composition chain:  
+  
+-   If the animation is in the first position in a composition chain and it replaces another animation, `defaultOriginValue` is the output of that animation at the time it was replaced.  
+  
+-   If the animation is in the first position in a composition chain and no animation exists to replace, `defaultOriginValue` is the base value of the animated property.  
+  
+-   If this animation is not in the first position of a composition chain, then `defaultOriginValue` is the value that is returned by the previous animation in the composition chain that has an <xref:System.Windows.Media.Animation.AnimationClock> that is not <xref:System.Windows.Media.Animation.Clock.Stopped%2A>.  
+  
+ The value of the `defaultDestinationValue` parameter depends on whether there is a previous property <xref:System.Windows.Trigger> composition layer.  
+  
+-   If there is a previous property <xref:System.Windows.Trigger> composition layer, `defaultDestinationValue` is the output from that layer.  
+  
+-   If there is no previous composition layer, `defaultDestinationValue` is the base value of the property that you are animating.  
+  
+ For more information about animation composition, see the [Animation and Timing System Overview](~/docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md). For more information about creating custom animation types, see the [Custom Animations Overview](~/docs/framework/wpf/graphics-multimedia/custom-animations-overview.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentValueCore">
+      <MemberSignature Language="C#" Value="protected abstract char GetCurrentValueCore (char defaultOriginValue, char defaultDestinationValue, System.Windows.Media.Animation.AnimationClock animationClock);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance char GetCurrentValueCore(char defaultOriginValue, char defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.CharAnimationBase.GetCurrentValueCore(System.Char,System.Char,System.Windows.Media.Animation.AnimationClock)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="defaultOriginValue" Type="System.Char" />
+        <Parameter Name="defaultDestinationValue" Type="System.Char" />
+        <Parameter Name="animationClock" Type="System.Windows.Media.Animation.AnimationClock" />
+      </Parameters>
+      <Docs>
+        <param name="defaultOriginValue">The suggested origin value, used if the animation does not have its own explicitly set start value.</param>
+        <param name="defaultDestinationValue">The suggested destination value, used if the animation does not have its own explicitly set end value.</param>
+        <param name="animationClock">An <see cref="T:System.Windows.Media.Animation.AnimationClock" /> that generates the <see cref="P:System.Windows.Media.Animation.Clock.CurrentTime" /> or <see cref="P:System.Windows.Media.Animation.Clock.CurrentProgress" /> used by the host animation.</param>
+        <summary>Calculates a value that represents the current value of the property being animated, as determined by the host animation.</summary>
+        <returns>The calculated value of the property, as determined by the current animation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the `defaultOriginValue` parameter depends on the animation’s position in the composition chain:  
+  
+-   If the animation is in the first position in a composition chain and it replaces another animation, `defaultOriginValue` is the output of that animation at the time it was replaced.  
+  
+-   If the animation is in the first position in a composition chain and no animation exists to replace, `defaultOriginValue` is the base value of the animated property.  
+  
+-   If this animation is not in the first position of a composition chain, then `defaultOriginValue` is the value that is returned by the previous animation in the composition chain that has an <xref:System.Windows.Media.Animation.AnimationClock> that is not <xref:System.Windows.Media.Animation.Clock.Stopped%2A>.  
+  
+ The value of the `defaultDestinationValue` parameter depends on whether there is a previous property <xref:System.Windows.Trigger> composition layer.  
+  
+-   If there is a previous property <xref:System.Windows.Trigger> composition layer, `defaultDestinationValue` is the output from that layer.  
+  
+-   If there is no previous composition layer, `defaultDestinationValue` is the base value of the property that you are animating.  
+  
+ For more information about animation composition, see the [Animation and Timing System Overview](~/docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md). For more information about creating custom animation types, see the [Custom Animations Overview](~/docs/framework/wpf/graphics-multimedia/custom-animations-overview.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetPropertyType">
+      <MemberSignature Language="C#" Value="public override sealed Type TargetPropertyType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type TargetPropertyType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.CharAnimationBase.TargetPropertyType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of value this animation generates.</summary>
+        <value>The type of value produced by this animation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

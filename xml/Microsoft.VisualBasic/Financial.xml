@@ -1,0 +1,663 @@
+<Type Name="Financial" FullName="Microsoft.VisualBasic.Financial">
+  <TypeSignature Language="C#" Value="public sealed class Financial" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Financial extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Financial" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.VisualBasic.CompilerServices.StandardModule</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The <see langword="Financial" /> module contains procedures used to perform financial operations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This module supports the Visual Basic run-time library members that perform financial calculations such as depreciation, present and future values, interest rates, rates of return, and payments.  
+  
+   
+  
+## Examples  
+ This example uses the `Rate` function to calculate the interest rate of a loan, given the total number of payments (`TotPmts`), the amount of the loan payment (`Payment`), the present value or principal of the loan (`PVal`), the future value of the loan (`FVal`), a number that indicates whether the payment is due at the beginning or end of the payment period (`PayType`), and an approximation of the expected interest rate (`Guess`).  
+  
+ [!code-vb[VbVbalrMath#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMath/VB/Class1.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DDB">
+      <MemberSignature Language="C#" Value="public static double DDB (double Cost, double Salvage, double Life, double Period, double Factor = 2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 DDB(float64 Cost, float64 Salvage, float64 Life, float64 Period, float64 Factor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.DDB(System.Double,System.Double,System.Double,System.Double,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Cost" Type="System.Double" />
+        <Parameter Name="Salvage" Type="System.Double" />
+        <Parameter Name="Life" Type="System.Double" />
+        <Parameter Name="Period" Type="System.Double" />
+        <Parameter Name="Factor" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="Cost">Required. <see langword="Double" /> specifying initial cost of the asset.</param>
+        <param name="Salvage">Required. <see langword="Double" /> specifying value of the asset at the end of its useful life.</param>
+        <param name="Life">Required. <see langword="Double" /> specifying length of useful life of the asset.</param>
+        <param name="Period">Required. <see langword="Double" /> specifying period for which asset depreciation is calculated.</param>
+        <param name="Factor">Optional. <see langword="Double" /> specifying rate at which the balance declines. If omitted, 2 (double-declining method) is assumed.</param>
+        <summary>Returns a <see langword="Double" /> specifying the depreciation of an asset for a specific time period using the double-declining balance method or some other method you specify.</summary>
+        <returns>Returns a <see langword="Double" /> specifying the depreciation of an asset for a specific time period using the double-declining balance method or some other method you specify.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The double-declining balance method computes depreciation at an accelerated rate. Depreciation is highest in the first period and decreases in successive periods.  
+  
+ The `Life` and `Period` arguments must be expressed in the same units. For example, if `Life` is given in months, `Period` must also be given in months. All arguments must be positive numbers.  
+  
+ The `DDB` function uses the following formula to calculate depreciation for a given period:  
+  
+ Depreciation / Period = ((Cost – Salvage) * Factor) / Life  
+  
+   
+  
+## Examples  
+ This example uses the `DDB` function to return the depreciation of an asset for a specified period given the initial cost (`InitCost`), the salvage value at the end of the asset's useful life (`SalvageVal`), the total life of the asset in years (`LifeTime`), and the period in years for which the depreciation is calculated (`Depr`).  
+  
+ [!code-vb[VbVbalrMath#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMath/VB/Class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Factor" /> &lt;= 0, <paramref name="Salvage" /> &lt; 0, <paramref name="Period" /> &lt;= 0, or <paramref name="Period" /> &gt; <paramref name="Life." /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FV">
+      <MemberSignature Language="C#" Value="public static double FV (double Rate, double NPer, double Pmt, double PV = 0, Microsoft.VisualBasic.DueDate Due = Microsoft.VisualBasic.DueDate.EndOfPeriod);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 FV(float64 Rate, float64 NPer, float64 Pmt, float64 PV, valuetype Microsoft.VisualBasic.DueDate Due) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.FV(System.Double,System.Double,System.Double,System.Double,Microsoft.VisualBasic.DueDate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Rate" Type="System.Double" />
+        <Parameter Name="NPer" Type="System.Double" />
+        <Parameter Name="Pmt" Type="System.Double" />
+        <Parameter Name="PV" Type="System.Double" />
+        <Parameter Name="Due" Type="Microsoft.VisualBasic.DueDate" />
+      </Parameters>
+      <Docs>
+        <param name="Rate">Required. <see langword="Double" /> specifying interest rate per period. For example, if you get a car loan at an annual percentage rate (APR) of 10 percent and make monthly payments, the rate per period is 0.1/12, or 0.0083.</param>
+        <param name="NPer">Required. <see langword="Double" /> specifying total number of payment periods in the annuity. For example, if you make monthly payments on a four-year car loan, your loan has a total of 4 x 12 (or 48) payment periods.</param>
+        <param name="Pmt">Required. <see langword="Double" /> specifying payment to be made each period. Payments usually contain principal and interest that doesn't change over the life of the annuity.</param>
+        <param name="PV">Optional. <see langword="Double" /> specifying present value (or lump sum) of a series of future payments. For example, when you borrow money to buy a car, the loan amount is the present value to the lender of the monthly car payments you will make. If omitted, 0 is assumed.</param>
+        <param name="Due">Optional. Object of type <see cref="T:Microsoft.VisualBasic.DueDate" /> that specifies when payments are due. This argument must be either <see langword="DueDate.EndOfPeriod" /> if payments are due at the end of the payment period, or <see langword="DueDate.BegOfPeriod" /> if payments are due at the beginning of the period. If omitted, <see langword="DueDate.EndOfPeriod" /> is assumed.</param>
+        <summary>Returns a <see langword="Double" /> specifying the future value of an annuity based on periodic, fixed payments and a fixed interest rate.</summary>
+        <returns>Returns a <see langword="Double" /> specifying the future value of an annuity based on periodic, fixed payments and a fixed interest rate.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An annuity is a series of fixed cash payments made over time. An annuity can be a loan (such as a home mortgage) or an investment (such as a monthly savings plan).  
+  
+ The `Rate` and `NPer` arguments must be calculated using payment periods expressed in the same units. For example, if `Rate` is calculated using months, `NPer` must also be calculated using months.  
+  
+ For all arguments, cash paid out (such as deposits to savings) is represented by negative numbers; cash received (such as dividend checks) is represented by positive numbers.  
+  
+   
+  
+## Examples  
+ This example uses the `FV` function to return the future value of an investment given the percentage rate that accrues per period (`APR / 12`), the total number of payments (`TotPmts`), the payment (`Payment`), the current value of the investment (`PVal`), and a number that indicates whether the payment is made at the beginning or end of the payment period (`PayType`). Note that because `Payment` represents cash paid out, it is a negative number.  
+  
+ [!code-vb[VbVbalrMath#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMath/VB/Class1.vb#22)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IPmt">
+      <MemberSignature Language="C#" Value="public static double IPmt (double Rate, double Per, double NPer, double PV, double FV = 0, Microsoft.VisualBasic.DueDate Due = Microsoft.VisualBasic.DueDate.EndOfPeriod);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 IPmt(float64 Rate, float64 Per, float64 NPer, float64 PV, float64 FV, valuetype Microsoft.VisualBasic.DueDate Due) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.IPmt(System.Double,System.Double,System.Double,System.Double,System.Double,Microsoft.VisualBasic.DueDate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Rate" Type="System.Double" />
+        <Parameter Name="Per" Type="System.Double" />
+        <Parameter Name="NPer" Type="System.Double" />
+        <Parameter Name="PV" Type="System.Double" />
+        <Parameter Name="FV" Type="System.Double" />
+        <Parameter Name="Due" Type="Microsoft.VisualBasic.DueDate" />
+      </Parameters>
+      <Docs>
+        <param name="Rate">Required. <see langword="Double" /> specifying interest rate per period. For example, if you get a car loan at an annual percentage rate (APR) of 10 percent and make monthly payments, the rate per period is 0.1/12, or 0.0083.</param>
+        <param name="Per">Required. <see langword="Double" /> specifying payment period in the range 1 through <c>NPer</c>.</param>
+        <param name="NPer">Required. <see langword="Double" /> specifying total number of payment periods in the annuity. For example, if you make monthly payments on a four-year car loan, your loan has a total of 4 x 12 (or 48) payment periods.</param>
+        <param name="PV">Required. <see langword="Double" /> specifying present value, or value today, of a series of future payments or receipts. For example, when you borrow money to buy a car, the loan amount is the present value to the lender of the monthly car payments you will make.</param>
+        <param name="FV">Optional. <see langword="Double" /> specifying future value or cash balance you want after you've made the final payment. For example, the future value of a loan is $0 because that's its value after the final payment. However, if you want to save $50,000 over 18 years for your child's education, then $50,000 is the future value. If omitted, 0 is assumed.</param>
+        <param name="Due">Optional. Object of type <see cref="T:Microsoft.VisualBasic.DueDate" /> that specifies when payments are due. This argument must be either <c>DueDate.EndOfPeriod</c> if payments are due at the end of the payment period, or <c>DueDate.BegOfPeriod</c> if payments are due at the beginning of the period. If omitted, <c>DueDate.EndOfPeriod</c> is assumed.</param>
+        <summary>Returns a <see langword="Double" /> specifying the interest payment for a given period of an annuity based on periodic, fixed payments and a fixed interest rate.</summary>
+        <returns>Returns a <see langword="Double" /> specifying the interest payment for a given period of an annuity based on periodic, fixed payments and a fixed interest rate.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An annuity is a series of fixed cash payments made over time. An annuity can be a loan (such as a home mortgage) or an investment (such as a monthly savings plan).  
+  
+ The `Rate` and `NPer` arguments must be calculated using payment periods expressed in the same units. For example, if `Rate` is calculated using months, `NPer` must also be calculated using months.  
+  
+ For all arguments, cash paid out (such as deposits to savings) is represented by negative numbers; cash received (such as dividend checks) is represented by positive numbers.  
+  
+   
+  
+## Examples  
+ This example uses the `IPmt` function to calculate how much of a payment is interest when all the payments are of equal value. Given are the interest percentage rate per period (`APR / 12`), the payment period for which the interest portion is desired (`Period`), the total number of payments (`TotPmts`), the present value or principal of the loan (`PVal`), the future value of the loan (`FVal`), and a number that indicates whether the payment is due at the beginning or end of the payment period (`PayType`).  
+  
+ [!code-vb[VbVbalrMath#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMath/VB/Class1.vb#26)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Per" /> &lt;= 0 or <paramref name="Per" /> &gt; <paramref name="NPer" /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IRR">
+      <MemberSignature Language="C#" Value="public static double IRR (ref double[] ValueArray, double Guess = 0.1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 IRR(float64[] ValueArray, float64 Guess) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.IRR(System.Double[]@,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ValueArray" Type="System.Double[]&amp;" RefType="ref" />
+        <Parameter Name="Guess" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="ValueArray">Required. Array of <see langword="Double" /> specifying cash flow values. The array must contain at least one negative value (a payment) and one positive value (a receipt).</param>
+        <param name="Guess">Optional. Object specifying value you estimate will be returned by <see langword="IRR" />. If omitted, <c>Guess</c> is 0.1 (10 percent).</param>
+        <summary>Returns a <see langword="Double" /> specifying the internal rate of return for a series of periodic cash flows (payments and receipts).</summary>
+        <returns>Returns a <see langword="Double" /> specifying the internal rate of return for a series of periodic cash flows (payments and receipts).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The internal rate of return is the interest rate received for an investment consisting of payments and receipts that occur at regular intervals.  
+  
+ The `IRR` function uses the order of values within the array to interpret the order of payments and receipts. Be sure to enter your payment and receipt values in the correct sequence. The cash flow for each period does not need to be fixed, as it is for an annuity.  
+  
+ `IRR` is calculated by iteration. Starting with the value of `Guess`, `IRR` cycles through the calculation until the result is accurate to within 0.00001 percent. If `IRR` cannot find a result after 20 tries, it fails.  
+  
+   
+  
+## Examples  
+ In this example, the `IRR` function returns the internal rate of return for a series of five cash flows contained in the array `Values()`. The first array element is a negative cash flow representing business start-up costs. The remaining four cash flows represent positive cash flows for the subsequent four years. `Guess` is the estimated internal rate of return.  
+  
+ [!code-vb[VbVbalrMath#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMath/VB/Class1.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Array argument values are invalid or <paramref name="Guess" /> &lt;= -1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MIRR">
+      <MemberSignature Language="C#" Value="public static double MIRR (ref double[] ValueArray, double FinanceRate, double ReinvestRate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 MIRR(float64[] ValueArray, float64 FinanceRate, float64 ReinvestRate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.MIRR(System.Double[]@,System.Double,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ValueArray" Type="System.Double[]&amp;" RefType="ref" />
+        <Parameter Name="FinanceRate" Type="System.Double" />
+        <Parameter Name="ReinvestRate" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="ValueArray">Required. Array of <see langword="Double" /> specifying cash-flow values. The array must contain at least one negative value (a payment) and one positive value (a receipt).</param>
+        <param name="FinanceRate">Required. <see langword="Double" /> specifying interest rate paid as the cost of financing.</param>
+        <param name="ReinvestRate">Required. <see langword="Double" /> specifying interest rate received on gains from cash reinvestment.</param>
+        <summary>Returns a <see langword="Double" /> specifying the modified internal rate of return for a series of periodic cash flows (payments and receipts).</summary>
+        <returns>Returns a <see langword="Double" /> specifying the modified internal rate of return for a series of periodic cash flows (payments and receipts).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The modified internal rate of return is the internal rate of return when payments and receipts are financed at different rates. The `MIRR` function takes into account both the cost of the investment (`FinanceRate`) and the interest rate received on reinvestment of cash (`ReinvestRate`).  
+  
+ The `FinanceRate` and `ReinvestRatearguments` are percentages expressed as decimal values. For example, 12 percent is expressed as 0.12.  
+  
+ The `MIRR` function uses the order of values within the array to interpret the order of payments and receipts. Be sure to enter your payment and receipt values in the correct sequence.  
+  
+   
+  
+## Examples  
+ This example uses the `MIRR` function to return the modified internal rate of return for a series of cash flows contained in the array `Values()`. `LoanAPR` represents the financing interest, and `InvAPR` represents the interest rate received on reinvestment.  
+  
+ [!code-vb[VbVbalrMath#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMath/VB/Class1.vb#29)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">Rank of <paramref name="ValueArray" /> does not equal 1, <paramref name="FinanceRate" /> = -1, or <paramref name="ReinvestRate" /> = -1</exception>
+        <exception cref="T:System.DivideByZeroException">Division by zero has occurred.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NPer">
+      <MemberSignature Language="C#" Value="public static double NPer (double Rate, double Pmt, double PV, double FV = 0, Microsoft.VisualBasic.DueDate Due = Microsoft.VisualBasic.DueDate.EndOfPeriod);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 NPer(float64 Rate, float64 Pmt, float64 PV, float64 FV, valuetype Microsoft.VisualBasic.DueDate Due) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.NPer(System.Double,System.Double,System.Double,System.Double,Microsoft.VisualBasic.DueDate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Rate" Type="System.Double" />
+        <Parameter Name="Pmt" Type="System.Double" />
+        <Parameter Name="PV" Type="System.Double" />
+        <Parameter Name="FV" Type="System.Double" />
+        <Parameter Name="Due" Type="Microsoft.VisualBasic.DueDate" />
+      </Parameters>
+      <Docs>
+        <param name="Rate">Required. <see langword="Double" /> specifying interest rate per period. For example, if you get a car loan at an annual percentage rate (APR) of 10 percent and make monthly payments, the rate per period is 0.1/12, or 0.0083.</param>
+        <param name="Pmt">Required. <see langword="Double" /> specifying payment to be made each period. Payments usually contain principal and interest that does not change over the life of the annuity.</param>
+        <param name="PV">Required. <see langword="Double" /> specifying present value, or value today, of a series of future payments or receipts. For example, when you borrow money to buy a car, the loan amount is the present value to the lender of the monthly car payments you will make.</param>
+        <param name="FV">Optional. <see langword="Double" /> specifying future value or cash balance you want after you have made the final payment. For example, the future value of a loan is $0 because that is its value after the final payment. However, if you want to save $50,000 over 18 years for your child's education, then $50,000 is the future value. If omitted, 0 is assumed.</param>
+        <param name="Due">Optional. Object of type <see cref="T:Microsoft.VisualBasic.DueDate" /> that specifies when payments are due. This argument must be either <c>DueDate.EndOfPeriod</c> if payments are due at the end of the payment period, or <c>DueDate.BegOfPeriod</c> if payments are due at the beginning of the period. If omitted, <c>DueDate.EndOfPeriod</c> is assumed.</param>
+        <summary>Returns a <see langword="Double" /> specifying the number of periods for an annuity based on periodic fixed payments and a fixed interest rate.</summary>
+        <returns>Returns a <see langword="Double" /> specifying the number of periods for an annuity based on periodic fixed payments and a fixed interest rate.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An annuity is a series of fixed cash payments made over a period of time. An annuity can be a loan (such as a home mortgage) or an investment (such as a monthly savings plan).  
+  
+ For all arguments, cash paid out (such as deposits to savings) is represented by negative numbers; cash received (such as dividend checks) is represented by positive numbers.  
+  
+   
+  
+## Examples  
+ This example uses the `NPer` function to return the number of periods during which payments must be made to pay off a loan whose value is contained in `PVal`. Also provided are the interest percentage rate per period (`APR / 12`), the payment (`Payment`), the future value of the loan (`FVal`), and a number that indicates whether the payment is due at the beginning or end of the payment period (`PayType`).  
+  
+ [!code-vb[VbVbalrMath#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMath/VB/Class1.vb#19)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Rate" /> = 0 and <paramref name="Pmt" /> = 0</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NPV">
+      <MemberSignature Language="C#" Value="public static double NPV (double Rate, ref double[] ValueArray);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 NPV(float64 Rate, float64[] ValueArray) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.NPV(System.Double,System.Double[]@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Rate" Type="System.Double" />
+        <Parameter Name="ValueArray" Type="System.Double[]&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="Rate">Required. <see langword="Double" /> specifying discount rate over the length of the period, expressed as a decimal.</param>
+        <param name="ValueArray">Required. Array of <see langword="Double" /> specifying cash flow values. The array must contain at least one negative value (a payment) and one positive value (a receipt).</param>
+        <summary>Returns a <see langword="Double" /> specifying the net present value of an investment based on a series of periodic cash flows (payments and receipts) and a discount rate.</summary>
+        <returns>Returns a <see langword="Double" /> specifying the net present value of an investment based on a series of periodic cash flows (payments and receipts) and a discount rate.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The net present value of an investment is the current value of a future series of payments and receipts.  
+  
+ The `NPV` function uses the order of values within the array to interpret the order of payments and receipts. Be sure to enter your payment and receipt values in the correct sequence.  
+  
+ The `NPV` investment begins one period before the date of the first cash flow value and ends with the last cash flow value in the array.  
+  
+ The net present value calculation is based on future cash flows. If your first cash flow occurs at the beginning of the first period, the first value must be added to the value returned by `NPV` and must not be included in the cash flow values of `ValueArray`.  
+  
+ The `NPV` function is similar to the `PV` function (present value) except that the `PV` function allows cash flows to begin either at the end or the beginning of a period. Unlike the variable `NPV` cash flow values, `PV` cash flows must be fixed throughout the investment.  
+  
+   
+  
+## Examples  
+ This example uses the `NPV` function to return the net present value for a series of cash flows contained in the array `values()`. The return value, stored in `FixedRetRate`, represents the fixed internal rate of return.  
+  
+ [!code-vb[VbVbalrMath#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMath/VB/Class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="ValueArray" /> is <see langword="Nothing" />, rank of <paramref name="ValueArray" /> &lt;&gt; 1, or <paramref name="Rate" /> = -1</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Pmt">
+      <MemberSignature Language="C#" Value="public static double Pmt (double Rate, double NPer, double PV, double FV = 0, Microsoft.VisualBasic.DueDate Due = Microsoft.VisualBasic.DueDate.EndOfPeriod);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 Pmt(float64 Rate, float64 NPer, float64 PV, float64 FV, valuetype Microsoft.VisualBasic.DueDate Due) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.Pmt(System.Double,System.Double,System.Double,System.Double,Microsoft.VisualBasic.DueDate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Rate" Type="System.Double" />
+        <Parameter Name="NPer" Type="System.Double" />
+        <Parameter Name="PV" Type="System.Double" />
+        <Parameter Name="FV" Type="System.Double" />
+        <Parameter Name="Due" Type="Microsoft.VisualBasic.DueDate" />
+      </Parameters>
+      <Docs>
+        <param name="Rate">Required. <see langword="Double" /> specifies the interest rate per period. For example, if you get a car loan at an annual percentage rate (APR) of 10 percent and make monthly payments, the rate per period is 0.1/12, or 0.0083.</param>
+        <param name="NPer">Required. <see langword="Double" /> specifies the total number of payment periods in the annuity. For example, if you make monthly payments on a four-year car loan, your loan has a total of 4 × 12 (or 48) payment periods.</param>
+        <param name="PV">Required. <see langword="Double" /> specifies the present value (or lump sum) that a series of payments to be paid in the future is worth now. For example, when you borrow money to buy a car, the loan amount is the present value to the lender of the monthly car payments you will make.</param>
+        <param name="FV">Optional. <see langword="Double" /> specifying future value or cash balance you want after you have made the final payment. For example, the future value of a loan is $0 because that is its value after the final payment. However, if you want to save $50,000 during 18 years for your child's education, then $50,000 is the future value. If omitted, 0 is assumed.</param>
+        <param name="Due">Optional. Object of type <see cref="T:Microsoft.VisualBasic.DueDate" /> that specifies when payments are due. This argument must be either <c>DueDate.EndOfPeriod</c> if payments are due at the end of the payment period, or <c>DueDate.BegOfPeriod</c> if payments are due at the beginning of the period. If omitted, <c>DueDate.EndOfPeriod</c> is assumed.</param>
+        <summary>Returns a <see langword="Double" /> specifying the payment for an annuity based on periodic, fixed payments and a fixed interest rate.</summary>
+        <returns>Returns a <see langword="Double" /> specifying the payment for an annuity based on periodic, fixed payments and a fixed interest rate.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An annuity is a series of fixed cash payments made during a period of time. An annuity can be a loan (such as a home mortgage) or an investment (such as a monthly savings plan).  
+  
+ The `Rate` and `NPer` arguments must be calculated using payment periods expressed in the same units. For example, if `Rate` is calculated using months, `NPer` must also be calculated using months.  
+  
+ For all arguments, cash paid (such as deposits to savings) is represented by negative numbers; cash received (such as dividend checks) is represented by positive numbers.  
+  
+   
+  
+## Examples  
+ This example uses the `Pmt` function to return the monthly payment for a loan during a fixed period. Given are the interest percentage rate per period (`APR / 12`), the total number of payments (`TotPmts`), the present value or principal of the loan (`PVal`), the future value of the loan (`FVal`), and a number that indicates whether the payment is due at the beginning or end of the payment period `(PayType).`  
+  
+ [!code-vb[VbVbalrMath#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMath/VB/Class1.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="NPer" /> = 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PPmt">
+      <MemberSignature Language="C#" Value="public static double PPmt (double Rate, double Per, double NPer, double PV, double FV = 0, Microsoft.VisualBasic.DueDate Due = Microsoft.VisualBasic.DueDate.EndOfPeriod);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 PPmt(float64 Rate, float64 Per, float64 NPer, float64 PV, float64 FV, valuetype Microsoft.VisualBasic.DueDate Due) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.PPmt(System.Double,System.Double,System.Double,System.Double,System.Double,Microsoft.VisualBasic.DueDate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Rate" Type="System.Double" />
+        <Parameter Name="Per" Type="System.Double" />
+        <Parameter Name="NPer" Type="System.Double" />
+        <Parameter Name="PV" Type="System.Double" />
+        <Parameter Name="FV" Type="System.Double" />
+        <Parameter Name="Due" Type="Microsoft.VisualBasic.DueDate" />
+      </Parameters>
+      <Docs>
+        <param name="Rate">Required. <see langword="Double" /> specifies the interest rate per period. For example, if you get a car loan at an annual percentage rate (APR) of 10 percent and make monthly payments, the rate per period is 0.1/12, or 0.0083.</param>
+        <param name="Per">Required. <see langword="Double" /> specifies the payment period in the range 1 through <c>NPer</c>.</param>
+        <param name="NPer">Required. <see langword="Double" /> specifies the total number of payment periods in the annuity. For example, if you make monthly payments on a four-year car loan, your loan has a total of 4 x 12 (or 48) payment periods.</param>
+        <param name="PV">Required. <see langword="Double" /> specifies the current value of a series of future payments or receipts. For example, when you borrow money to buy a car, the loan amount is the present value to the lender of the monthly car payments you will make.</param>
+        <param name="FV">Optional. <see langword="Double" /> specifying future value or cash balance you want after you have made the final payment. For example, the future value of a loan is $0 because that is its value after the final payment. However, if you want to save $50,000 over 18 years for your child's education, then $50,000 is the future value. If omitted, 0 is assumed.</param>
+        <param name="Due">Optional. Object of type <see cref="T:Microsoft.VisualBasic.DueDate" /> that specifies when payments are due. This argument must be either <c>DueDate.EndOfPeriod</c> if payments are due at the end of the payment period, or <c>DueDate.BegOfPeriod</c> if payments are due at the beginning of the period. If omitted, <c>DueDate.EndOfPeriod</c> is assumed.</param>
+        <summary>Returns a <see langword="Double" /> specifying the principal payment for a given period of an annuity based on periodic fixed payments and a fixed interest rate.</summary>
+        <returns>Returns a <see langword="Double" /> specifying the principal payment for a given period of an annuity based on periodic fixed payments and a fixed interest rate.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An annuity is a series of fixed cash payments made over a period of time. An annuity can be a loan (such as a home mortgage) or an investment (such as a monthly savings plan).  
+  
+ The `Rate` and `NPer` arguments must be calculated using payment periods expressed in the same units. For example, if `Rate` is calculated using months, `NPer` must also be calculated using months.  
+  
+ For all arguments, cash paid (such as deposits to savings) is represented by negative numbers; cash received (such as dividend checks) is represented by positive numbers.  
+  
+   
+  
+## Examples  
+ This example uses the `PPmt` function to calculate how much of a payment for a specific period is principal when all the payments are of equal value. Given are the interest percentage rate per period (`APR / 12`), the payment period for which the principal portion is desired (`Period`), the total number of payments (`TotPmts`), the present value or principal of the loan (`PVal`), the future value of the loan (`FVal`), and a number that indicates whether the payment is due at the beginning or end of the payment period (`PayType`).  
+  
+ [!code-vb[VbVbalrMath#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMath/VB/Class1.vb#24)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Per" /> &lt;=0 or <paramref name="Per" /> &gt; <paramref name="NPer" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PV">
+      <MemberSignature Language="C#" Value="public static double PV (double Rate, double NPer, double Pmt, double FV = 0, Microsoft.VisualBasic.DueDate Due = Microsoft.VisualBasic.DueDate.EndOfPeriod);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 PV(float64 Rate, float64 NPer, float64 Pmt, float64 FV, valuetype Microsoft.VisualBasic.DueDate Due) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.PV(System.Double,System.Double,System.Double,System.Double,Microsoft.VisualBasic.DueDate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Rate" Type="System.Double" />
+        <Parameter Name="NPer" Type="System.Double" />
+        <Parameter Name="Pmt" Type="System.Double" />
+        <Parameter Name="FV" Type="System.Double" />
+        <Parameter Name="Due" Type="Microsoft.VisualBasic.DueDate" />
+      </Parameters>
+      <Docs>
+        <param name="Rate">Required. <see langword="Double" /> specifies the interest rate per period. For example, if you get a car loan at an annual percentage rate (APR) of 10 percent and make monthly payments, the rate per period is 0.1/12, or 0.0083.</param>
+        <param name="NPer">Required. <see langword="Double" /> specifies the total number of payment periods in the annuity. For example, if you make monthly payments on a four-year car loan, your loan has 4 x 12 (or 48) payment periods.</param>
+        <param name="Pmt">Required. <see langword="Double" /> specifies the payment to be made each period. Payments usually contain principal and interest that does not change during the life of the annuity.</param>
+        <param name="FV">Optional. <see langword="Double" /> specifies the future value or cash balance you want after you make the final payment. For example, the future value of a loan is $0 because that is its value after the final payment. However, if you want to save $50,000 over 18 years for your child's education, then $50,000 is the future value. If omitted, 0 is assumed.</param>
+        <param name="Due">Optional. Object of type <see cref="T:Microsoft.VisualBasic.DueDate" /> that specifies when payments are due. This argument must be either <c>DueDate.EndOfPeriod</c> if payments are due at the end of the payment period, or <c>DueDate.BegOfPeriod</c> if payments are due at the beginning of the period. If omitted, <c>DueDate.EndOfPeriod</c> is assumed.</param>
+        <summary>Returns a <see langword="Double" /> specifying the present value of an annuity based on periodic, fixed payments to be paid in the future and a fixed interest rate.</summary>
+        <returns>Returns a <see langword="Double" /> specifying the present value of an annuity based on periodic, fixed payments to be paid in the future and a fixed interest rate.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An annuity is a series of fixed cash payments made over a period of time. An annuity can be a loan (such as a home mortgage) or an investment (such as a monthly savings plan).  
+  
+ The `Rate` and `NPer` arguments must be calculated using payment periods expressed in the same units. For example, if `Rate` is calculated using months, `NPer` must also be calculated using months.  
+  
+ For all arguments, cash paid out (such as deposits to savings) is represented by negative numbers; cash received (such as dividend checks) is represented by positive numbers.  
+  
+   
+  
+## Examples  
+ In this example, the `PV` function returns the present value of an $1,000,000 annuity that will provide $50,000 a year for the next 20 years. Provided are the expected annual percentage rate (`APR`), the total number of payments (`TotPmts`), the amount of each payment (`YrIncome`), the total future value of the investment (`FVal`), and a number that indicates whether each payment is made at the beginning or end of the payment period (`PayType`). Note that `YrIncome` is a negative number because it represents cash paid out from the annuity each year.  
+  
+ [!code-vb[VbVbalrMath#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMath/VB/Class1.vb#25)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rate">
+      <MemberSignature Language="C#" Value="public static double Rate (double NPer, double Pmt, double PV, double FV = 0, Microsoft.VisualBasic.DueDate Due = Microsoft.VisualBasic.DueDate.EndOfPeriod, double Guess = 0.1);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 Rate(float64 NPer, float64 Pmt, float64 PV, float64 FV, valuetype Microsoft.VisualBasic.DueDate Due, float64 Guess) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.Rate(System.Double,System.Double,System.Double,System.Double,Microsoft.VisualBasic.DueDate,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="NPer" Type="System.Double" />
+        <Parameter Name="Pmt" Type="System.Double" />
+        <Parameter Name="PV" Type="System.Double" />
+        <Parameter Name="FV" Type="System.Double" />
+        <Parameter Name="Due" Type="Microsoft.VisualBasic.DueDate" />
+        <Parameter Name="Guess" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="NPer">Required. <see langword="Double" /> specifies the total number of payment periods in the annuity. For example, if you make monthly payments on a four-year car loan, your loan has a total of 4 * 12 (or 48) payment periods.</param>
+        <param name="Pmt">Required. <see langword="Double" /> specifies the payment to be made each period. Payments usually contain principal and interest that doesn't change over the life of the annuity.</param>
+        <param name="PV">Required. <see langword="Double" /> specifies the present value, or value today, of a series of future payments or receipts. For example, when you borrow money to buy a car, the loan amount is the present value to the lender of the monthly car payments you will make.</param>
+        <param name="FV">Optional. <see langword="Double" /> specifies the future value or cash balance you want after you make the final payment. For example, the future value of a loan is $0 because that is its value after the final payment. However, if you want to save $50,000 over 18 years for your child's education, then $50,000 is the future value. If omitted, 0 is assumed.</param>
+        <param name="Due">Optional. Object of type <see cref="T:Microsoft.VisualBasic.DueDate" /> that specifies when payments are due. This argument must be either <c>DueDate.EndOfPeriod</c> if payments are due at the end of the payment period, or <c>DueDate.BegOfPeriod</c> if payments are due at the beginning of the period. If omitted, <c>DueDate.EndOfPeriod</c> is assumed.</param>
+        <param name="Guess">Optional. <see langword="Double" /> specifying value you estimate is returned by <see langword="Rate" />. If omitted, <c>Guess</c> is 0.1 (10 percent).</param>
+        <summary>Returns a <see langword="Double" /> specifying the interest rate per period for an annuity.</summary>
+        <returns>Returns a <see langword="Double" /> specifying the interest rate per period for an annuity.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An annuity is a series of fixed cash payments made over a period of time. An annuity can be a loan (such as a home mortgage) or an investment (such as a monthly savings plan).  
+  
+ For all arguments, cash paid out (such as deposits to savings) is represented by negative numbers; cash received (such as dividend checks) is represented by positive numbers.  
+  
+ `Rate` is calculated by iteration. Starting with the value of `Guess`, `Rate` cycles through the calculation until the result is accurate to within 0.00001 percent. If `Rate` cannot find a result after 20 tries, it fails. If your guess is 10 percent and `Rate` fails, try a different value for `Guess`.  
+  
+   
+  
+## Examples  
+ This example uses the `Rate` function to calculate the interest rate of a loan given the total number of payments (`TotPmts`), the amount of the loan payment (`Payment`), the present value or principal of the loan (`PVal`), the future value of the loan (`FVal`), a number that indicates whether the payment is due at the beginning or end of the payment period (`PayType`), and an approximation of the expected interest rate (`Guess`).  
+  
+ [!code-vb[VbVbalrMath#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMath/VB/Class1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="NPer" /> &lt;= 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SLN">
+      <MemberSignature Language="C#" Value="public static double SLN (double Cost, double Salvage, double Life);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 SLN(float64 Cost, float64 Salvage, float64 Life) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.SLN(System.Double,System.Double,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Cost" Type="System.Double" />
+        <Parameter Name="Salvage" Type="System.Double" />
+        <Parameter Name="Life" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="Cost">Required. <see langword="Double" /> specifying initial cost of the asset.</param>
+        <param name="Salvage">Required. <see langword="Double" /> specifying value of the asset at the end of its useful life.</param>
+        <param name="Life">Required. <see langword="Double" /> specifying length of the useful life of the asset.</param>
+        <summary>Returns a <see langword="Double" /> specifying the straight-line depreciation of an asset for a single period.</summary>
+        <returns>Returns a <see langword="Double" /> specifying the straight-line depreciation of an asset for a single period.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The depreciation period must be expressed in the same unit as the `Life` argument. All arguments must be positive numbers.  
+  
+   
+  
+## Examples  
+ This example uses the `SLN` function to return the straight-line depreciation of an asset for a single period given the asset's initial cost (`InitCost`), the salvage value at the end of the asset's useful life (`SalvageVal`), and the total life of the asset in years (`LifeTime`).  
+  
+ [!code-vb[VbVbalrMath#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMath/VB/Class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Life" /> = 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SYD">
+      <MemberSignature Language="C#" Value="public static double SYD (double Cost, double Salvage, double Life, double Period);" />
+      <MemberSignature Language="ILAsm" Value=".method public static float64 SYD(float64 Cost, float64 Salvage, float64 Life, float64 Period) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Financial.SYD(System.Double,System.Double,System.Double,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Cost" Type="System.Double" />
+        <Parameter Name="Salvage" Type="System.Double" />
+        <Parameter Name="Life" Type="System.Double" />
+        <Parameter Name="Period" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="Cost">Required. <see langword="Double" /> specifying the initial cost of the asset.</param>
+        <param name="Salvage">Required. <see langword="Double" /> specifying the value of the asset at the end of its useful life.</param>
+        <param name="Life">Required. <see langword="Double" /> specifying the length of the useful life of the asset.</param>
+        <param name="Period">Required. <see langword="Double" /> specifying the period for which asset depreciation is calculated.</param>
+        <summary>Returns a <see langword="Double" /> specifying the sum-of-years digits depreciation of an asset for a specified period.</summary>
+        <returns>Returns a <see langword="Double" /> specifying the sum-of-years digits depreciation of an asset for a specified period.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Life` and `Period` arguments must be expressed in the same units. For example, if `Life` is given in months, `Period` must also be given in months. All arguments must be positive numbers.  
+  
+   
+  
+## Examples  
+ This example uses the `SYD` function to return the depreciation of an asset for a specified period given the asset's initial cost (`InitCost`), the salvage value at the end of the asset's useful life (`SalvageVal`), and the total life of the asset in years (`LifeTime`).  
+  
+ [!code-vb[VbVbalrMath#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMath/VB/Class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="Salvage" /> &lt; 0, <paramref name="Period" /> &gt; <paramref name="Life" />, or <paramref name="Period" /> &lt;=0.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

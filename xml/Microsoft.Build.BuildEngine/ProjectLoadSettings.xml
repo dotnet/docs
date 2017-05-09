@@ -1,0 +1,55 @@
+<Type Name="ProjectLoadSettings" FullName="Microsoft.Build.BuildEngine.ProjectLoadSettings">
+  <TypeSignature Language="C#" Value="public enum ProjectLoadSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProjectLoadSettings extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.ProjectLoadSettings" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines how MSBuild loads a project.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IgnoreMissingImports">
+      <MemberSignature Language="C#" Value="IgnoreMissingImports" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.BuildEngine.ProjectLoadSettings IgnoreMissingImports = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.BuildEngine.ProjectLoadSettings.IgnoreMissingImports" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.BuildEngine.ProjectLoadSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Ignore nonexistent .targets files when loading the project.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.BuildEngine.ProjectLoadSettings None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.BuildEngine.ProjectLoadSettings.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.BuildEngine.ProjectLoadSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Load the project  normally.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

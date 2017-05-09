@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "Take clause"
 ms.assetid: 77bf87b2-1476-4456-957f-fee922fbad8c
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

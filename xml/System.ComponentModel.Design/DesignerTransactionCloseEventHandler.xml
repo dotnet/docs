@@ -1,0 +1,51 @@
+<Type Name="DesignerTransactionCloseEventHandler" FullName="System.ComponentModel.Design.DesignerTransactionCloseEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DesignerTransactionCloseEventHandler(object sender, DesignerTransactionCloseEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DesignerTransactionCloseEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerTransactionCloseEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.ComponentModel.Design.DesignerTransactionCloseEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.ComponentModel.Design.DesignerTransactionCloseEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.ComponentModel.Design.IDesignerHost.TransactionClosed" /> and <see cref="E:System.ComponentModel.Design.IDesignerHost.TransactionClosing" /> events of a designer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.ComponentModel.Design.DesignerTransactionCloseEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following example demonstrates registering a <xref:System.ComponentModel.Design.DesignerTransactionCloseEventHandler> and handling the <xref:System.ComponentModel.Design.IDesignerHost.TransactionClosing> and <xref:System.ComponentModel.Design.IDesignerHost.TransactionClosed> events.  
+  
+ [!code-cpp[DesignerTransactionCloseEventHandlerExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/DesignerTransactionCloseEventHandlerExample/CPP/designertransactioncloseeventhandlerexample.cpp#1)]
+ [!code-csharp[DesignerTransactionCloseEventHandlerExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DesignerTransactionCloseEventHandlerExample/CS/designertransactioncloseeventhandlerexample.cs#1)]
+ [!code-vb[DesignerTransactionCloseEventHandlerExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DesignerTransactionCloseEventHandlerExample/VB/designertransactioncloseeventhandlerexample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

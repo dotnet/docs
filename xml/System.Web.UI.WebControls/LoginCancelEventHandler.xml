@@ -1,0 +1,34 @@
+<Type Name="LoginCancelEventHandler" FullName="System.Web.UI.WebControls.LoginCancelEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void LoginCancelEventHandler(object sender, LoginCancelEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LoginCancelEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LoginCancelEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.LoginCancelEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Web.UI.WebControls.LoginCancelEventArgs" /> object that contains the event data.</param>
+    <summary>Represents the method that handles a cancelable event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.LoginCancelEventHandler> class represents the method that handles the cancelable events, such as the <xref:System.Web.UI.WebControls.Login.LoggingIn> event, or the <xref:System.Web.UI.WebControls.CreateUserWizard.CreatingUser> event.  
+  
+ When you create a <xref:System.Web.UI.WebControls.LoginCancelEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,414 @@
+<Type Name="CodeDirectiveCollection" FullName="System.CodeDom.CodeDirectiveCollection">
+  <TypeSignature Language="C#" Value="public class CodeDirectiveCollection : System.Collections.CollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeDirectiveCollection extends System.Collections.CollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeDirectiveCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.CollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.CodeDom.CodeDirective" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.CodeDom.CodeDirectiveCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeDirective> objects.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the members of the <xref:System.CodeDom.CodeDirectiveCollection> class.  
+  
+ [!code-csharp[CodeDirectiveCollectionExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#1)]
+ [!code-vb[CodeDirectiveCollectionExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeDirectiveCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeDirectiveCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.%23ctor> constructor to create a new instance of the class. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
+  
+ [!code-csharp[CodeDirectiveCollectionExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#2)]
+ [!code-vb[CodeDirectiveCollectionExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeDirectiveCollection (System.CodeDom.CodeDirective[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeDirective[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.#ctor(System.CodeDom.CodeDirective[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeDirective[]" />
+      </Parameters>
+      <Docs>
+        <param name="value">An array of <see cref="T:System.CodeDom.CodeDirective" /> objects with which to initialize the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeDirectiveCollection" /> class with the code directive objects in the specified array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeDirectiveCollection (System.CodeDom.CodeDirectiveCollection value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeDirectiveCollection value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.#ctor(System.CodeDom.CodeDirectiveCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeDirectiveCollection" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.CodeDom.CodeDirectiveCollection" /> object with which to initialize the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeDirectiveCollection" /> class with the elements in the specified code directive collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public int Add (System.CodeDom.CodeDirective value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.CodeDom.CodeDirective value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.Add(System.CodeDom.CodeDirective)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeDirective" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.CodeDom.CodeDirective" /> object to add.</param>
+        <summary>Adds the specified <see cref="T:System.CodeDom.CodeDirective" /> object to the collection.</summary>
+        <returns>The index position at which the new element was inserted.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.Add%2A> method to add a <xref:System.CodeDom.CodeDirective> object to the collection. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
+  
+ [!code-csharp[CodeDirectiveCollectionExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#3)]
+ [!code-vb[CodeDirectiveCollectionExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public void AddRange (System.CodeDom.CodeDirective[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.CodeDom.CodeDirective[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.AddRange(System.CodeDom.CodeDirective[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeDirective[]" />
+      </Parameters>
+      <Docs>
+        <param name="value">An array of <see cref="T:System.CodeDom.CodeDirective" /> objects to add to the collection.</param>
+        <summary>Adds an array of <see cref="T:System.CodeDom.CodeDirective" /> objects to the end of the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.AddRange%28System.CodeDom.CodeDirective%5B%5D%29> method to add an array of <xref:System.CodeDom.CodeDirective> objects to the collection. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
+  
+ [!code-csharp[CodeDirectiveCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#4)]
+ [!code-vb[CodeDirectiveCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public void AddRange (System.CodeDom.CodeDirectiveCollection value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.CodeDom.CodeDirectiveCollection value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.AddRange(System.CodeDom.CodeDirectiveCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeDirectiveCollection" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.CodeDom.CodeDirectiveCollection" /> object containing the <see cref="T:System.CodeDom.CodeDirective" /> objects to add to the collection.</param>
+        <summary>Adds the contents of the specified <see cref="T:System.CodeDom.CodeDirectiveCollection" /> object to the end of the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.AddRange%28System.CodeDom.CodeDirectiveCollection%29> method to add the contents of a <xref:System.CodeDom.CodeDirectiveCollection> object to the collection. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
+  
+ [!code-csharp[CodeDirectiveCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#4)]
+ [!code-vb[CodeDirectiveCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.CodeDom.CodeDirective value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.CodeDom.CodeDirective value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.Contains(System.CodeDom.CodeDirective)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeDirective" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.CodeDom.CodeDirective" /> object to search for in the collection.</param>
+        <summary>Gets a value indicating whether the collection contains the specified <see cref="T:System.CodeDom.CodeDirective" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the collection contains the specified object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.Contains%2A> method to determine whether the collection contains a specific <xref:System.CodeDom.CodeDirective> object. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
+  
+ [!code-csharp[CodeDirectiveCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#5)]
+ [!code-vb[CodeDirectiveCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.CodeDom.CodeDirective[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.CodeDom.CodeDirective[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.CopyTo(System.CodeDom.CodeDirective[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.CodeDom.CodeDirective[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">An array of type <see cref="T:System.CodeDom.CodeDirective" /> that is the destination of the values copied from the collection.</param>
+        <param name="index">The index in the array at which to begin inserting collection objects.</param>
+        <summary>Copies the contents of the collection to a one-dimensional array beginning at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.CopyTo%2A> method to copy the contents of the collection beginning at index 0 to the specified <xref:System.CodeDom.CodeDirective> array. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
+  
+ [!code-csharp[CodeDirectiveCollectionExample#6](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#6)]
+ [!code-vb[CodeDirectiveCollectionExample#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The destination array is multidimensional.  
+  
+ -or-  
+  
+ The number of elements in the <see cref="T:System.CodeDom.CodeDirectiveCollection" /> is greater than the available space between the index of the target array specified by <paramref name="index" /> and the end of the target array.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than the target array's minimum index.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.CodeDom.CodeDirective value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.CodeDom.CodeDirective value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.IndexOf(System.CodeDom.CodeDirective)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeDirective" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.CodeDom.CodeDirective" /> object to locate in the collection.</param>
+        <summary>Gets the index in the collection of the specified <see cref="T:System.CodeDom.CodeDirective" /> object, if it exists in the collection.</summary>
+        <returns>The index position in the collection of the specified object, if found; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.IndexOf%2A> method to get the index in the collection of the specified <xref:System.CodeDom.CodeDirective> object. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
+  
+ [!code-csharp[CodeDirectiveCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#5)]
+ [!code-vb[CodeDirectiveCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, System.CodeDom.CodeDirective value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.CodeDom.CodeDirective value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.Insert(System.Int32,System.CodeDom.CodeDirective)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.CodeDom.CodeDirective" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index position where the specified object should be inserted.</param>
+        <param name="value">The <see cref="T:System.CodeDom.CodeDirective" /> object to insert.</param>
+        <summary>Inserts the specified <see cref="T:System.CodeDom.CodeDirective" /> object into the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.Insert%2A> method to insert a <xref:System.CodeDom.CodeDirective> object at index 0 of the collection. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
+  
+ [!code-csharp[CodeDirectiveCollectionExample#8](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#8)]
+ [!code-vb[CodeDirectiveCollectionExample#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0.  
+  
+ -or-  
+  
+ <paramref name="index" /> is greater than <see cref="P:System.Collections.CollectionBase.Count" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeDirective this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeDirective Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeDirectiveCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeDirective</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index position to access.</param>
+        <summary>Gets or sets the <see cref="T:System.CodeDom.CodeDirective" /> object at the specified index in the collection.</summary>
+        <value>The <see cref="T:System.CodeDom.CodeDirective" /> at the index position.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is an indexer that can be used to access the collection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is outside the valid range of index positions for the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.CodeDom.CodeDirective value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.CodeDom.CodeDirective value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDirectiveCollection.Remove(System.CodeDom.CodeDirective)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeDirective" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.CodeDom.CodeDirective" /> object to remove from the collection.</param>
+        <summary>Removes the specified <see cref="T:System.CodeDom.CodeDirective" /> object from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows the use of the <xref:System.CodeDom.CodeDirectiveCollection.Remove%2A> method to remove the specified <xref:System.CodeDom.CodeDirectiveCollection> object from the collection. This example is part of a larger example provided for the <xref:System.CodeDom.CodeDirectiveCollection> class.  
+  
+ [!code-csharp[CodeDirectiveCollectionExample#9](~/samples/snippets/csharp/VS_Snippets_CLR/CodeDirectiveCollectionExample/CS/class1.cs#9)]
+ [!code-vb[CodeDirectiveCollectionExample#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeDirectiveCollectionExample/VB/class1.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

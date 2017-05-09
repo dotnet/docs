@@ -1,0 +1,220 @@
+<Type Name="Stapling" FullName="System.Printing.Stapling">
+  <TypeSignature Language="C#" Value="public enum Stapling" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Stapling extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.Stapling" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether, and where, a printer staples a multi-page document.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the values of this type primarily for these purposes:  
+  
+-   As members of the <xref:System.Printing.PrintCapabilities.StaplingCapability%2A> collection, which is a property of <xref:System.Printing.PrintCapabilities>, these values indicate the types of stapling that a printer supports.  
+  
+-   As the value of the <xref:System.Printing.PrintTicket.Stapling%2A> property of a <xref:System.Printing.PrintTicket>, the value instructs the printer whether, and where, to staple.  
+  
+ The `Unknown` value is never used in properties of <xref:System.Printing.PrintCapabilities> objects.  
+  
+ You should never set a <xref:System.Printing.PrintTicket> property to `Unknown`. If some other <xref:System.Printing.PrintTicket> producing application has created a *PrintTicket document* that sets the stapling feature to an unrecognized option (that is, an option that is not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397)), then a <xref:System.Printing.PrintTicket> object in your application that is constructed with that document will have `Unknown` as the value of the <xref:System.Printing.PrintTicket.Stapling%2A> property.  
+  
+ Although the <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintCapabilities> classes cannot be inherited, you can extend the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) to recognize print device features that are not accounted for in the <xref:System.Printing.PrintTicket> or <xref:System.Printing.PrintCapabilities> classes. For more information see [NOTINBUILD: How to: Extend the Print Schema and Create New Print System Classes](http://msdn.microsoft.com/en-us/a3600218-1ea5-478a-9853-6560464f2885).  
+  
+   
+  
+## Examples  
+ The following example shows how to test a printer's capabilities and configure the print job to take advantage of them.  
+  
+ [!code-cpp[XpsCreate#PrinterCapabilities](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#printercapabilities)]
+ [!code-csharp[XpsCreate#PrinterCapabilities](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#printercapabilities)]
+ [!code-vb[XpsCreate#PrinterCapabilities](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#printercapabilities)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Stapling None = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.Stapling.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.Stapling</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The document is not stapled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SaddleStitch">
+      <MemberSignature Language="C#" Value="SaddleStitch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Stapling SaddleStitch = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.Stapling.SaddleStitch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.Stapling</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Multiple staples along the fold line. Also called saddle-stitch stapling.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StapleBottomLeft">
+      <MemberSignature Language="C#" Value="StapleBottomLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Stapling StapleBottomLeft = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.Stapling.StapleBottomLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.Stapling</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A single staple in the lower-left corner.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StapleBottomRight">
+      <MemberSignature Language="C#" Value="StapleBottomRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Stapling StapleBottomRight = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.Stapling.StapleBottomRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.Stapling</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A single staple in the lower-right corner.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StapleDualBottom">
+      <MemberSignature Language="C#" Value="StapleDualBottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Stapling StapleDualBottom = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.Stapling.StapleDualBottom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.Stapling</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Two staples along the lower edge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StapleDualLeft">
+      <MemberSignature Language="C#" Value="StapleDualLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Stapling StapleDualLeft = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.Stapling.StapleDualLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.Stapling</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Two staples along the left edge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StapleDualRight">
+      <MemberSignature Language="C#" Value="StapleDualRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Stapling StapleDualRight = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.Stapling.StapleDualRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.Stapling</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Two staples along the right edge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StapleDualTop">
+      <MemberSignature Language="C#" Value="StapleDualTop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Stapling StapleDualTop = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.Stapling.StapleDualTop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.Stapling</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Two staples along the upper edge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StapleTopLeft">
+      <MemberSignature Language="C#" Value="StapleTopLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Stapling StapleTopLeft = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.Stapling.StapleTopLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.Stapling</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A single staple in the upper-left corner.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StapleTopRight">
+      <MemberSignature Language="C#" Value="StapleTopRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Stapling StapleTopRight = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.Stapling.StapleTopRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.Stapling</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A single staple in the upper-right corner.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Stapling Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.Stapling.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.Stapling</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

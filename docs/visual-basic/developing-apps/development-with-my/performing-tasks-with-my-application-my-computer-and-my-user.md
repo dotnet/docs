@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "My.User object, developing applications"
 ms.assetid: c8af61bd-4dd3-4a0f-9af5-795b594b240b
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

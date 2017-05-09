@@ -1,0 +1,98 @@
+<Type Name="ActiveDirectoryRole" FullName="System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole">
+  <TypeSignature Language="C#" Value="public enum ActiveDirectoryRole" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ActiveDirectoryRole extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Identifies specific roles within a domain.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InfrastructureRole">
+      <MemberSignature Language="C#" Value="InfrastructureRole" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole InfrastructureRole = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole.InfrastructureRole" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the infrastructure role.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NamingRole">
+      <MemberSignature Language="C#" Value="NamingRole" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole NamingRole = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole.NamingRole" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the domain naming master role.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PdcRole">
+      <MemberSignature Language="C#" Value="PdcRole" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole PdcRole = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole.PdcRole" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the primary domain controller (PDC) emulator role.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RidRole">
+      <MemberSignature Language="C#" Value="RidRole" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole RidRole = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole.RidRole" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the relative identifier (RID) master role.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SchemaRole">
+      <MemberSignature Language="C#" Value="SchemaRole" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole SchemaRole = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole.SchemaRole" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectoryRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the schema master role.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

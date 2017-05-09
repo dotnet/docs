@@ -1,0 +1,274 @@
+<Type Name="SettingsBase" FullName="System.Configuration.SettingsBase">
+  <TypeSignature Language="C#" Value="public abstract class SettingsBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SettingsBase extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsBase" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the base class used to support user property settings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET Web Forms and Windows Forms both use the same configuration settings infrastructure to support user settings. User settings within ASP.NET are often referred to as ASP.NET Profile. The settings infrastructure includes the <xref:System.Configuration.SettingsBase> base class, the <xref:System.Configuration.SettingsProperty> class, the <xref:System.Configuration.SettingsPropertyValue> class, the <xref:System.Configuration.SettingsContext> class, the <xref:System.Configuration.SettingsProvider> class, and the <xref:System.Configuration.SettingAttribute>  
+  
+ class.  
+  
+ The Settings base classes provide only a common infrastructure for defining and persisting settings properties. Depending on how these base classes are derived and their run-time environment, the settings API can provide different levels of functionality. For example, ASP.NET Profile uses the settings base classes to provide per-user settings that are saved and loaded according to request semantics.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SettingsBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsBase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.SettingsBase" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public virtual System.Configuration.SettingsContext Context { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.SettingsContext Context" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsBase.Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.SettingsContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the associated settings context.</summary>
+        <value>A <see cref="T:System.Configuration.SettingsContext" /> associated with the settings instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Configuration.SettingsContext> is used by the application to provide contextual information that the provider can use to persist settings.  
+  
+ Each settings class derived from <xref:System.Configuration.SettingsBase> has a context associated with it. The context is passed to the settings provider to identity additional information about the settings information. Context therefore acts as a hint to help the settings provider determine how to persist the associated settings values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public void Initialize (System.Configuration.SettingsContext context, System.Configuration.SettingsPropertyCollection properties, System.Configuration.SettingsProviderCollection providers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Initialize(class System.Configuration.SettingsContext context, class System.Configuration.SettingsPropertyCollection properties, class System.Configuration.SettingsProviderCollection providers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsBase.Initialize(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyCollection,System.Configuration.SettingsProviderCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Configuration.SettingsContext" />
+        <Parameter Name="properties" Type="System.Configuration.SettingsPropertyCollection" />
+        <Parameter Name="providers" Type="System.Configuration.SettingsProviderCollection" />
+      </Parameters>
+      <Docs>
+        <param name="context">The settings context related to the settings properties.</param>
+        <param name="properties">The settings properties that will be accessible from the <see cref="T:System.Configuration.SettingsBase" /> instance.</param>
+        <param name="providers">The initialized providers that should be used when loading and saving property values.</param>
+        <summary>Initializes internal properties used by <see cref="T:System.Configuration.SettingsBase" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsBase.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether access to the object is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Configuration.SettingsBase" /> is synchronized; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public virtual object this[string propertyName] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsBase.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">A <see cref="T:System.String" /> containing the name of the property to access.</param>
+        <summary>Gets or sets the value of the specified settings property.</summary>
+        <value>If found, the value of the named settings property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SettingsBase.Item%2A> property, also known as the indexer, is routinely used in the settings class derived from <xref:System.Configuration.SettingsBase>. The <xref:System.Configuration.SettingsBase.Item%2A> property binds the public property of the class to the corresponding settings property.  
+  
+ The first time a property is accessed, the <xref:System.Configuration.SettingsBase> instance will find all other properties that share the same provider as the requested property. The <xref:System.Configuration.SettingsBase> instance will then call the provider, passing it the set of <xref:System.Configuration.SettingsProperty> objects that represent the data the provider should retrieve.  
+  
+ Note that the indexer will get and set property data in a thread-safe manner if <xref:System.Configuration.SettingsBase.IsSynchronized%2A> is `true`. A <xref:System.Configuration.SettingsBase> instance by default is not thread safe. However, you can call <xref:System.Configuration.SettingsBase.Synchronized%2A>, passing in a <xref:System.Configuration.SettingsBase> instance to make the <xref:System.Configuration.SettingsBase> indexer operate in a thread-safe manner.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Configuration.SettingsPropertyNotFoundException">There are no properties associated with the current object, or the specified property could not be found.</exception>
+        <exception cref="T:System.Configuration.SettingsPropertyIsReadOnlyException">An attempt was made to set a read-only property.</exception>
+        <exception cref="T:System.Configuration.SettingsPropertyWrongTypeException">The value supplied is of a type incompatible with the settings property, during a set operation.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public virtual System.Configuration.SettingsPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.SettingsPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsBase.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.SettingsPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of settings properties.</summary>
+        <value>A <see cref="T:System.Configuration.SettingsPropertyCollection" /> collection containing all the <see cref="T:System.Configuration.SettingsProperty" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `get` accessor of the <xref:System.Configuration.SettingsBase.Properties%2A> property returns the collection of <xref:System.Configuration.SettingsProperty> instances associated with the properties managed by the <xref:System.Configuration.SettingsBase> instance.  
+  
+ The <xref:System.Configuration.SettingsBase> class natively recognizes certain characteristics of a setting, such as its name, property type, settings provider, default value, and read-only status and a serialization preference. These characteristics are mirrored as properties in the <xref:System.Configuration.SettingsProperty> class. All other attributes of the <xref:System.Configuration.SettingsProperty> class are just passed through to its associated settings provider as a <xref:System.Configuration.SettingsAttributeDictionary>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyValues">
+      <MemberSignature Language="C#" Value="public virtual System.Configuration.SettingsPropertyValueCollection PropertyValues { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.SettingsPropertyValueCollection PropertyValues" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsBase.PropertyValues" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.SettingsPropertyValueCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of settings property values.</summary>
+        <value>A collection of <see cref="T:System.Configuration.SettingsPropertyValue" /> objects representing the actual data values for the properties managed by the <see cref="T:System.Configuration.SettingsBase" /> instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Providers">
+      <MemberSignature Language="C#" Value="public virtual System.Configuration.SettingsProviderCollection Providers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.SettingsProviderCollection Providers" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsBase.Providers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.SettingsProviderCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of settings providers.</summary>
+        <value>A <see cref="T:System.Configuration.SettingsProviderCollection" /> containing <see cref="T:System.Configuration.SettingsProvider" /> objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Save">
+      <MemberSignature Language="C#" Value="public virtual void Save ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsBase.Save" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Stores the current values of the settings properties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SettingsBase> instance groups properties based on the provider that is associated with each property. Each provider is then called in sequence and is passed the set of properties that the provider should save.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Synchronized">
+      <MemberSignature Language="C#" Value="public static System.Configuration.SettingsBase Synchronized (System.Configuration.SettingsBase settingsBase);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Configuration.SettingsBase Synchronized(class System.Configuration.SettingsBase settingsBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsBase.Synchronized(System.Configuration.SettingsBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.SettingsBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="settingsBase" Type="System.Configuration.SettingsBase" />
+      </Parameters>
+      <Docs>
+        <param name="settingsBase">The class used to support user property settings.</param>
+        <summary>Provides a <see cref="T:System.Configuration.SettingsBase" /> class that is synchronized (thread safe).</summary>
+        <returns>A <see cref="T:System.Configuration.SettingsBase" /> class that is synchronized.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The indexer will get and set property data in a thread-safe manner if the <xref:System.Configuration.SettingsBase.IsSynchronized%2A> property is set to `true`.  A <xref:System.Configuration.SettingsBase> instance by default is not thread-safe.  However, you can call <xref:System.Configuration.SettingsBase.Synchronized%2A> passing in a <xref:System.Configuration.SettingsBase> instance to make the <xref:System.Configuration.SettingsBase> indexer operate in a thread-safe manner.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

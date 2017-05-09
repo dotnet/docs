@@ -26,8 +26,8 @@ helpviewer_keywords:
   - "operators [Visual Basic], comparison"
 ms.assetid: 0b570339-5407-474f-8421-e183a8b303ee
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -1,0 +1,304 @@
+<Type Name="IOrderedDictionary" FullName="System.Collections.Specialized.IOrderedDictionary">
+  <TypeSignature Language="C#" Value="public interface IOrderedDictionary : System.Collections.IDictionary" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IOrderedDictionary implements class System.Collections.ICollection, class System.Collections.IDictionary, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.IOrderedDictionary" />
+  <AssemblyInfo>
+    <AssemblyName>System.Collections.Specialized</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IDictionary</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents an indexed collection of key/value pairs.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Collections.Specialized.IOrderedDictionary> elements can be accessed either with the key or with the index.  
+  
+ Each element is a key/value pair stored in a <xref:System.Collections.DictionaryEntry> structure.  
+  
+ Each pair must have a unique key that is not `null`, but the value can be `null` and does not have to be unique. The <xref:System.Collections.Specialized.IOrderedDictionary> interface allows the contained keys and values to be enumerated, but it does not imply any particular sort order.  
+  
+ The `foreach` statement of the C# language (`For Each` in Visual Basic) returns an object of the type of the elements in the collection. Because each element of the <xref:System.Collections.IDictionary> is a key/value pair, the element type is not the type of the key or the type of the value. Instead, the element type is <xref:System.Collections.DictionaryEntry>, as the following example shows.  
+  
+ [!code-cpp[System.Collections.Specialized.IOrderedDictionary_Implementation#03](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.IOrderedDictionary_Implementation/cpp/remarks.cpp#03)]
+ [!code-csharp[System.Collections.Specialized.IOrderedDictionary_Implementation#03](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.IOrderedDictionary_Implementation/cs/remarks.cs#03)]
+ [!code-vb[System.Collections.Specialized.IOrderedDictionary_Implementation#03](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.IOrderedDictionary_Implementation/vb/remarks.vb#03)]  
+  
+ The `foreach` statement is a wrapper around the enumerator, which allows only reading from, not writing to, the collection.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the implementation of a simple <xref:System.Collections.Specialized.IOrderedDictionary> based on the <xref:System.Collections.ArrayList> class. The implemented <xref:System.Collections.Specialized.IOrderedDictionary> stores first names as the keys and last names as the values, with the added requirement that each first name is unique.  
+  
+ [!code-cpp[System.Collections.Specialized.IOrderedDictionary_Implementation#00](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.IOrderedDictionary_Implementation/cpp/iordereddictionary.cpp#00)]
+ [!code-csharp[System.Collections.Specialized.IOrderedDictionary_Implementation#00](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.IOrderedDictionary_Implementation/cs/iordereddictionary.cs#00)]
+ [!code-vb[System.Collections.Specialized.IOrderedDictionary_Implementation#00](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.IOrderedDictionary_Implementation/vb/iordereddictionary.vb#00)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>The implementing class must have a means to compare keys.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IDictionaryEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IDictionaryEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.IOrderedDictionary.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IDictionaryEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that iterates through the <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> collection.</summary>
+        <returns>An <see cref="T:System.Collections.IDictionaryEnumerator" /> for the entire <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [Visual Basic, C#]  
+  
+ The `foreach` statement of the C# language (`for each` in Visual Basic) hides the complexity of the enumerators.  Therefore, using `foreach` is recommended instead of directly manipulating the enumerator.  
+  
+ Enumerators can be used to read the data in the collection, but they cannot be used to modify the underlying collection.  
+  
+ Initially, the enumerator is positioned before the first element in the collection. <xref:System.Collections.IEnumerator.Reset%2A> also brings the enumerator back to this position.  At this position, the <xref:System.Collections.IEnumerator.Current%2A> property is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext%2A> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.IEnumerator.Current%2A>.  
+  
+ <xref:System.Collections.IEnumerator.Current%2A> returns the same object until either <xref:System.Collections.IEnumerator.MoveNext%2A> or <xref:System.Collections.IEnumerator.Reset%2A> is called. <xref:System.Collections.IEnumerator.MoveNext%2A> sets <xref:System.Collections.IEnumerator.Current%2A> to the next element.  
+  
+ If <xref:System.Collections.IEnumerator.MoveNext%2A> passes the end of the collection, the enumerator is positioned after the last element in the collection and <xref:System.Collections.IEnumerator.MoveNext%2A> returns `false`. When the enumerator is at this position, subsequent calls to <xref:System.Collections.IEnumerator.MoveNext%2A> also return `false`. If the last call to <xref:System.Collections.IEnumerator.MoveNext%2A> returned `false`, <xref:System.Collections.IEnumerator.Current%2A> is undefined. To set <xref:System.Collections.IEnumerator.Current%2A> to the first element of the collection again, you can call <xref:System.Collections.IEnumerator.Reset%2A> followed by <xref:System.Collections.IEnumerator.MoveNext%2A>.  
+  
+ An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is irrecoverably invalidated and its behavior is undefined.  
+  
+ The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  To guarantee thread safety during enumeration, you can lock the collection during the entire enumeration.  To allow the collection to be accessed by multiple threads for reading and writing, you must implement your own synchronization.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the implementation of a simple <xref:System.Collections.Specialized.IOrderedDictionary> based on the <xref:System.Collections.ArrayList> class. The implemented <xref:System.Collections.Specialized.IOrderedDictionary> stores first names as the keys and last names as the values, with the added requirement that each first name is unique. This code is part of a larger code example provided for the <xref:System.Collections.Specialized.IOrderedDictionary> class.  
+  
+ [!code-cpp[System.Collections.Specialized.IOrderedDictionary_Implementation#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.IOrderedDictionary_Implementation/cpp/iordereddictionary.cpp#01)]
+ [!code-csharp[System.Collections.Specialized.IOrderedDictionary_Implementation#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.IOrderedDictionary_Implementation/cs/iordereddictionary.cs#01)]
+ [!code-vb[System.Collections.Specialized.IOrderedDictionary_Implementation#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.IOrderedDictionary_Implementation/vb/iordereddictionary.vb#01)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, object key, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(int32 index, object key, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.IOrderedDictionary.Insert(System.Int32,System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="key" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which the key/value pair should be inserted.</param>
+        <param name="key">The object to use as the key of the element to add.</param>
+        <param name="value">The object to use as the value of the element to add.  The value can be <see langword="null" />.</param>
+        <summary>Inserts a key/value pair into the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Collections.Specialized.IOrderedDictionary> accepts `null` as a valid value and allows duplicate elements.  
+  
+ If the `index` parameter is equal to <xref:System.Collections.ICollection.Count%2A>, the `value` parameter is added to the end of the <xref:System.Collections.Specialized.IOrderedDictionary> collection.  
+  
+ In collections of contiguous elements, such as lists, the elements that follow the insertion point move down to accommodate the new element. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped together, such as a hash table.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the implementation of a simple <xref:System.Collections.Specialized.IOrderedDictionary> based on the <xref:System.Collections.ArrayList> class. The implemented <xref:System.Collections.Specialized.IOrderedDictionary> stores first names as the keys and last names as the values, with the added requirement that each first name is unique. This code is part of a larger code example provided for the <xref:System.Collections.Specialized.IOrderedDictionary> class.  
+  
+ [!code-cpp[System.Collections.Specialized.IOrderedDictionary_Implementation#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.IOrderedDictionary_Implementation/cpp/iordereddictionary.cpp#01)]
+ [!code-csharp[System.Collections.Specialized.IOrderedDictionary_Implementation#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.IOrderedDictionary_Implementation/cs/iordereddictionary.cs#01)]
+ [!code-vb[System.Collections.Specialized.IOrderedDictionary_Implementation#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.IOrderedDictionary_Implementation/vb/iordereddictionary.vb#01)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0.  
+  
+ -or-  
+  
+ <paramref name="index" /> is greater than <see cref="P:System.Collections.ICollection.Count" />.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">An element with the same key already exists in the <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> collection.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> collection is read-only.  
+  
+ -or-  
+  
+ The <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> collection has a fixed size.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.IOrderedDictionary.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to get or set.</param>
+        <summary>Gets or sets the element at the specified index.</summary>
+        <value>The element at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Collections.Specialized.IOrderedDictionary> accepts `null` as a valid value and allows duplicate elements.  
+  
+ The C# language uses the  keyword to define the indexers instead of implementing the <xref:System.Collections.Specialized.IOrderedDictionary.Item%2A> property. Visual Basic implements <xref:System.Collections.Specialized.IOrderedDictionary.Item%2A> as a default property, which provides the same indexing functionality.  
+  
+ This property allows you to access a specific element in the collection by using the following syntax:  
+  
+ [!code-cpp[System.Collections.Specialized.IOrderedDictionary_Implementation#04](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.IOrderedDictionary_Implementation/cpp/remarks.cpp#04)]
+ [!code-csharp[System.Collections.Specialized.IOrderedDictionary_Implementation#04](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.IOrderedDictionary_Implementation/cs/remarks.cs#04)]
+ [!code-vb[System.Collections.Specialized.IOrderedDictionary_Implementation#04](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.IOrderedDictionary_Implementation/vb/remarks.vb#04)]  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the implementation of a simple <xref:System.Collections.Specialized.IOrderedDictionary> based on the <xref:System.Collections.ArrayList> class. The implemented <xref:System.Collections.Specialized.IOrderedDictionary> stores first names as the keys and last names as the values, with the added requirement that each first name is unique. This code is part of a larger code example provided for the <xref:System.Collections.Specialized.IOrderedDictionary> class.  
+  
+ [!code-cpp[System.Collections.Specialized.IOrderedDictionary_Implementation#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.IOrderedDictionary_Implementation/cpp/iordereddictionary.cpp#01)]
+ [!code-csharp[System.Collections.Specialized.IOrderedDictionary_Implementation#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.IOrderedDictionary_Implementation/cs/iordereddictionary.cs#01)]
+ [!code-vb[System.Collections.Specialized.IOrderedDictionary_Implementation#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.IOrderedDictionary_Implementation/vb/iordereddictionary.vb#01)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0.  
+  
+ -or-  
+  
+ <paramref name="index" /> is equal to or greater than <see cref="P:System.Collections.ICollection.Count" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.IOrderedDictionary.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to remove.</param>
+        <summary>Removes the element at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated. This behavior does not apply to collections where elements are conceptually grouped together, such as a hash table.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the implementation of a simple <xref:System.Collections.Specialized.IOrderedDictionary> based on the <xref:System.Collections.ArrayList> class. The implemented <xref:System.Collections.Specialized.IOrderedDictionary> stores first names as the keys and last names as the values, with the added requirement that each first name is unique. This code is part of a larger code example provided for the <xref:System.Collections.Specialized.IOrderedDictionary> class.  
+  
+ [!code-cpp[System.Collections.Specialized.IOrderedDictionary_Implementation#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.IOrderedDictionary_Implementation/cpp/iordereddictionary.cpp#01)]
+ [!code-csharp[System.Collections.Specialized.IOrderedDictionary_Implementation#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.IOrderedDictionary_Implementation/cs/iordereddictionary.cs#01)]
+ [!code-vb[System.Collections.Specialized.IOrderedDictionary_Implementation#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.IOrderedDictionary_Implementation/vb/iordereddictionary.vb#01)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0.  
+  
+ -or-  
+  
+ <paramref name="index" /> is equal to or greater than <see cref="P:System.Collections.ICollection.Count" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> collection is read-only.  
+  
+ -or-  
+  
+ The <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> collection has a fixed size.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

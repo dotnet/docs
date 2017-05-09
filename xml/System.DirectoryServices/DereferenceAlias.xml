@@ -1,0 +1,82 @@
+<Type Name="DereferenceAlias" FullName="System.DirectoryServices.DereferenceAlias">
+  <TypeSignature Language="C#" Value="public enum DereferenceAlias" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DereferenceAlias extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DereferenceAlias" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.DereferenceAlias" /> enumeration specifies how aliases are resolved. This enumeration provides values for the <see cref="P:System.DirectoryServices.DirectorySearcher.DerefAlias" /> property.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Always">
+      <MemberSignature Language="C#" Value="Always" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.DereferenceAlias Always = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DereferenceAlias.Always" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.DereferenceAlias</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Dereferences aliases when both searching subordinates and locating the base objects of the search.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FindingBaseObject">
+      <MemberSignature Language="C#" Value="FindingBaseObject" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.DereferenceAlias FindingBaseObject = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DereferenceAlias.FindingBaseObject" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.DereferenceAlias</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Dereferences aliases when locating the base object of the search, but not when searching its subordinates.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InSearching">
+      <MemberSignature Language="C#" Value="InSearching" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.DereferenceAlias InSearching = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DereferenceAlias.InSearching" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.DereferenceAlias</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Dereferences aliases when searching subordinates of the base object, but not when locating the base itself.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Never">
+      <MemberSignature Language="C#" Value="Never" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.DereferenceAlias Never = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DereferenceAlias.Never" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.DereferenceAlias</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the alias will not be dereferenced. If the <see cref="P:System.DirectoryServices.DirectorySearcher.DerefAlias" /> property is not set, the default value is <see cref="F:System.DirectoryServices.DereferenceAlias.Never" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

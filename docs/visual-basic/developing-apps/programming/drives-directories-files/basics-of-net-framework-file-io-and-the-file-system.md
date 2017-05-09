@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "streams, definition"
 ms.assetid: 49d837c0-cf28-416f-8606-4d83d7b479ef
 caps.latest.revision: 30
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

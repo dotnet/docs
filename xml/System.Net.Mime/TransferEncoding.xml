@@ -1,0 +1,147 @@
+<Type Name="TransferEncoding" FullName="System.Net.Mime.TransferEncoding">
+  <TypeSignature Language="C#" Value="public enum TransferEncoding" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TransferEncoding extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Mime.TransferEncoding" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the Content-Transfer-Encoding header information for an e-mail message attachment.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The values in the <xref:System.Net.Mime.TransferEncoding> enumeration are used with the <xref:System.Net.Mail.AttachmentBase.TransferEncoding?displayProperty=fullName> property.  
+  
+ The Content-Transfer-Encoding header specifies the encoding of the associated message body so that it meets SMTP requirements. SMTP requires data for transport to be in 7-bit US-ASCII characters with lines no longer than 1000 characters.  
+  
+ Content-Transfer-Encoding values are described in detail in RFC 2045 Section 6, available at [http://www.ietf.org](http://www.ietf.org/).  
+  
+   
+  
+## Examples  
+ The following code example displays <xref:System.Net.Mime.TransferEncoding> used by an attachment.  
+  
+ [!code-cpp[NclMailSync#21](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#21)]
+ [!code-csharp[NclMailSync#21](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#21)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Base64">
+      <MemberSignature Language="C#" Value="Base64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mime.TransferEncoding Base64 = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Mime.TransferEncoding.Base64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Mime.TransferEncoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Encodes stream-based data. See RFC 2406 Section 6.8.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EightBit">
+      <MemberSignature Language="C#" Value="EightBit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mime.TransferEncoding EightBit = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Mime.TransferEncoding.EightBit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Mime.TransferEncoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The data is in 8-bit characters that may represent international characters with a total line length of no longer than 1000 8-bit characters. For more information about this 8-bit MIME transport extension, see IETF RFC 6152.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="QuotedPrintable">
+      <MemberSignature Language="C#" Value="QuotedPrintable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mime.TransferEncoding QuotedPrintable = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Mime.TransferEncoding.QuotedPrintable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Mime.TransferEncoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Encodes data that consists of printable characters in the US-ASCII character set. See RFC 2406 Section 6.7.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SevenBit">
+      <MemberSignature Language="C#" Value="SevenBit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mime.TransferEncoding SevenBit = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Mime.TransferEncoding.SevenBit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Mime.TransferEncoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used for data that is not encoded. The data is in 7-bit US-ASCII characters with a total line length of no longer than 1000 characters. See RFC2406 Section 2.7.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mime.TransferEncoding Unknown = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Mime.TransferEncoding.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Mime.TransferEncoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the transfer encoding is unknown.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

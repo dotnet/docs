@@ -1,0 +1,43 @@
+<Type Name="Saml2Statement" FullName="System.IdentityModel.Tokens.Saml2Statement">
+  <TypeSignature Language="C#" Value="public abstract class Saml2Statement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Saml2Statement extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2Statement" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the StatementAbstractType specified in [Saml2Core, 2.7.1].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This abstract class provides no operations; however, it is the base class from which all classes that represent SAML statements derive. For example, the <xref:System.IdentityModel.Tokens.Saml2AttributeStatement> class, which represents a SAML Attribute Statement, derives from this class. This class is also used to declare collections of SAML Statements in classes as in the <xref:System.IdentityModel.Tokens.Saml2Assertion.Statements%2A?displayProperty=fullName> property.  
+  
+ For more information about the StatementAbstractType, see the SAML V2.0 Core specification.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Saml2Statement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2Statement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Called from constructors in derived classes to initialize the <see cref="T:System.IdentityModel.Tokens.Saml2Statement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

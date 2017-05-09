@@ -14,7 +14,7 @@ ms.assetid: 79c50621-a24a-4e64-bbb9-b953113e841c
 
 # A mapping between project.json and csproj properties
 
-By [Nate McMaster](http://github.com/natemcmaster)
+By [Nate McMaster](https://github.com/natemcmaster)
 
 During the development of the .NET Core tooling, an important design change was made to 
 no longer support *project.json* files and instead move the .NET Core projects to the MSBuild/csproj 
@@ -327,7 +327,7 @@ There is no equivalent in csproj.
 
 ```xml
 <PropertyGroup>
-  <RuntimeIdentifiers>win7-x64;osx.10-11-x64;ubuntu.16.04-x64</RuntimeIdentifiers>
+  <RuntimeIdentifiers>win7-x64;osx.10.11-x64;ubuntu.16.04-x64</RuntimeIdentifiers>
 </PropertyGroup>
 ```
 
@@ -679,6 +679,5 @@ to the project-relative file path.
 ```
 
 ## See Also
-[project.json reference](project-json.md)
 
 [High-level overview of changes in CLI](../tools/cli-msbuild-architecture.md)

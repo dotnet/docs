@@ -1,0 +1,185 @@
+<Type Name="HitTestCode" FullName="System.Windows.Forms.VisualStyles.HitTestCode">
+  <TypeSignature Language="C#" Value="public enum HitTestCode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HitTestCode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.HitTestCode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the location of a point in the background specified by a visual style.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.HitTestCode> values represent the return values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.HitTestBackground%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bottom">
+      <MemberSignature Language="C#" Value="Bottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.HitTestCode Bottom = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.HitTestCode.Bottom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.HitTestCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The hit test succeeded in the bottom border segment.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BottomLeft">
+      <MemberSignature Language="C#" Value="BottomLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.HitTestCode BottomLeft = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.HitTestCode.BottomLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.HitTestCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The hit test succeeded in the bottom and left border intersection.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BottomRight">
+      <MemberSignature Language="C#" Value="BottomRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.HitTestCode BottomRight = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.HitTestCode.BottomRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.HitTestCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The hit test succeeded in the bottom and right border intersection.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Client">
+      <MemberSignature Language="C#" Value="Client" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.HitTestCode Client = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.HitTestCode.Client" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.HitTestCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The hit test succeeded in the middle background segment.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="Left" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.HitTestCode Left = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.HitTestCode.Left" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.HitTestCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The hit test succeeded in the left border segment.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Nowhere">
+      <MemberSignature Language="C#" Value="Nowhere" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.HitTestCode Nowhere = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.HitTestCode.Nowhere" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.HitTestCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The hit test succeeded outside the control or on a transparent area.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="Right" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.HitTestCode Right = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.HitTestCode.Right" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.HitTestCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The hit test succeeded in the right border segment.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="Top" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.HitTestCode Top = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.HitTestCode.Top" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.HitTestCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The hit test succeeded in the top border segment.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TopLeft">
+      <MemberSignature Language="C#" Value="TopLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.HitTestCode TopLeft = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.HitTestCode.TopLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.HitTestCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The hit test succeeded in the top and left border intersection.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TopRight">
+      <MemberSignature Language="C#" Value="TopRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.HitTestCode TopRight = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.HitTestCode.TopRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.HitTestCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The hit test succeeded in the top and right border intersection.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

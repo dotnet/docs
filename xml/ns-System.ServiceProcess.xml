@@ -1,0 +1,15 @@
+<Namespace Name="System.ServiceProcess">
+  <Docs>
+    <summary>The <see cref="N:System.ServiceProcess" /> namespace provides classes that allow you to implement, install, and control Windows service applications. Services are long-running executables that run without a user interface. Implementing a service involves inheriting from the <see cref="T:System.ServiceProcess.ServiceBase" /> class and defining specific behavior to process when start, stop, pause, and continue commands are passed in, as well as custom behavior and actions to take when the system shuts down.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Services are installed using an installation utility such as InstallUtil.exe. The <xref:System.ServiceProcess> namespace provides installation classes that write service information to the registry. The <xref:System.ServiceProcess.ServiceProcessInstaller> class provides an encompassing class which installs components common to all the services in an installation. For each service, you create an instance of the <xref:System.ServiceProcess.ServiceInstaller> class to install service-specific functionality.  
+  
+ The <xref:System.ServiceProcess.ServiceController> class enables you to connect to an existing service and manipulate it or get information about it. This class is typically used in an administrative capacity, and enables you to start, stop, pause, continue, or perform custom commands on a service. Where the <xref:System.ServiceProcess.ServiceBase> class defines the processing a service performs when a command occurs, the <xref:System.ServiceProcess.ServiceController> is the agent that enables you to call those commands on the service.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

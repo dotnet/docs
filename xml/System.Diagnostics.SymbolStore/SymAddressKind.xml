@@ -1,0 +1,245 @@
+<Type Name="SymAddressKind" FullName="System.Diagnostics.SymbolStore.SymAddressKind">
+  <TypeSignature Language="C#" Value="public enum SymAddressKind" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed SymAddressKind extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.SymAddressKind" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies address types for local variables, parameters, and fields in the methods <see cref="M:System.Diagnostics.SymbolStore.ISymbolWriter.DefineLocalVariable(System.String,System.Reflection.FieldAttributes,System.Byte[],System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />, <see cref="M:System.Diagnostics.SymbolStore.ISymbolWriter.DefineParameter(System.String,System.Reflection.ParameterAttributes,System.Int32,System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32)" />, and <see cref="M:System.Diagnostics.SymbolStore.ISymbolWriter.DefineField(System.Diagnostics.SymbolStore.SymbolToken,System.String,System.Reflection.FieldAttributes,System.Byte[],System.Diagnostics.SymbolStore.SymAddressKind,System.Int32,System.Int32,System.Int32)" /> of the <see cref="T:System.Diagnostics.SymbolStore.ISymbolWriter" /> interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `addr1`, `addr2`, and `addr3` parameters refer to the address parameters in the <xref:System.Diagnostics.SymbolStore.ISymbolWriter> interface methods.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BitField">
+      <MemberSignature Language="C#" Value="BitField" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.SymbolStore.SymAddressKind BitField = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymAddressKind.BitField" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.SymbolStore.SymAddressKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A bit field. The <paramref name="addr1" /> parameter is the position where the field starts, and the <paramref name="addr2" /> parameter is the field length.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ILOffset">
+      <MemberSignature Language="C#" Value="ILOffset" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.SymbolStore.SymAddressKind ILOffset = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymAddressKind.ILOffset" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.SymbolStore.SymAddressKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A Microsoft intermediate language (MSIL) offset. The <paramref name="addr1" /> parameter is the MSIL local variable or parameter index.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NativeOffset">
+      <MemberSignature Language="C#" Value="NativeOffset" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.SymbolStore.SymAddressKind NativeOffset = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymAddressKind.NativeOffset" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.SymbolStore.SymAddressKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A native offset. The <paramref name="addr1" /> parameter is the offset from the start of the parent.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NativeRegister">
+      <MemberSignature Language="C#" Value="NativeRegister" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.SymbolStore.SymAddressKind NativeRegister = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymAddressKind.NativeRegister" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.SymbolStore.SymAddressKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A native register address. The <paramref name="addr1" /> parameter is the register in which the variable is stored.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NativeRegisterRegister">
+      <MemberSignature Language="C#" Value="NativeRegisterRegister" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.SymbolStore.SymAddressKind NativeRegisterRegister = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymAddressKind.NativeRegisterRegister" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.SymbolStore.SymAddressKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A register-relative address. The <paramref name="addr1" /> parameter is the low-order register, and the <paramref name="addr2" /> parameter is the high-order register.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NativeRegisterRelative">
+      <MemberSignature Language="C#" Value="NativeRegisterRelative" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.SymbolStore.SymAddressKind NativeRegisterRelative = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymAddressKind.NativeRegisterRelative" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.SymbolStore.SymAddressKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A register-relative address. The <paramref name="addr1" /> parameter is the register, and the <paramref name="addr2" /> parameter is the offset.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NativeRegisterStack">
+      <MemberSignature Language="C#" Value="NativeRegisterStack" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.SymbolStore.SymAddressKind NativeRegisterStack = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymAddressKind.NativeRegisterStack" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.SymbolStore.SymAddressKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A register-relative address. The <paramref name="addr1" /> parameter is the low-order register, the <paramref name="addr2" /> parameter is the stack register, and the <paramref name="addr3" /> parameter is the offset from the stack pointer to the high-order part of the value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NativeRVA">
+      <MemberSignature Language="C#" Value="NativeRVA" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.SymbolStore.SymAddressKind NativeRVA = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymAddressKind.NativeRVA" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.SymbolStore.SymAddressKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A native Relevant Virtual Address (RVA). The <paramref name="addr1" /> parameter is the RVA in the module.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NativeSectionOffset">
+      <MemberSignature Language="C#" Value="NativeSectionOffset" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.SymbolStore.SymAddressKind NativeSectionOffset = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymAddressKind.NativeSectionOffset" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.SymbolStore.SymAddressKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A native section offset. The <paramref name="addr1" /> parameter is the section, and the <paramref name="addr2" /> parameter is the offset.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NativeStackRegister">
+      <MemberSignature Language="C#" Value="NativeStackRegister" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.SymbolStore.SymAddressKind NativeStackRegister = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.SymbolStore.SymAddressKind.NativeStackRegister" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.SymbolStore.SymAddressKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A register-relative address. The <paramref name="addr1" /> parameter is the stack register, the <paramref name="addr2" /> parameter is the offset from the stack pointer to the low-order part of the value, and the <paramref name="addr3" /> parameter is the high-order register.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

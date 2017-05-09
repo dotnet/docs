@@ -1,0 +1,37 @@
+<Type Name="INameScopeDictionary" FullName="System.Windows.Markup.INameScopeDictionary">
+  <TypeSignature Language="C#" Value="public interface INameScopeDictionary : System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;, System.Collections.Generic.IDictionary&lt;string,object&gt;, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;, System.Windows.Markup.INameScope" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INameScopeDictionary implements class System.Collections.Generic.ICollection`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;, class System.Collections.Generic.IDictionary`2&lt;string, object&gt;, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;, class System.Collections.IEnumerable, class System.Windows.Markup.INameScope" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.INameScopeDictionary" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Windows.Markup.INameScope</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Unifies enumerable, collection, and dictionary support that are useful for exposing a dictionary of names in a XAML namescope.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Markup.INameScopeDictionary> defines no members of its own. Instead, the interface inherits <xref:System.Collections.Generic.IDictionary%602>, <xref:System.Collections.Generic.ICollection%601> and <xref:System.Collections.Generic.IEnumerable%601> generic interfaces, with <xref:System.String> and <xref:System.Object> (or a <xref:System.Collections.Generic.KeyValuePair%602> thereof) as constraints. <xref:System.Windows.Markup.INameScopeDictionary> also inherits <xref:System.Windows.Markup.INameScope>.  
+  
+ The <xref:System.Windows.Markup.INameScopeDictionary> interface is used internally as a type for information passing, as part of object writer context for the WPF XAML implementation.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

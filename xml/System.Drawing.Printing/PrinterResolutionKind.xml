@@ -1,0 +1,109 @@
+<Type Name="PrinterResolutionKind" FullName="System.Drawing.Printing.PrinterResolutionKind">
+  <TypeSignature Language="C#" Value="public enum PrinterResolutionKind" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PrinterResolutionKind extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrinterResolutionKind" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies a printer resolution.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All printers support high, medium, low, and draft resolutions, although they can generate the same output.  
+  
+ This enumeration is used by the <xref:System.Drawing.Printing.PrinterResolution>, <xref:System.Drawing.Printing.PrinterSettings>, and <xref:System.Drawing.Printing.PageSettings> classes.  
+  
+ For more information on printing, see the <xref:System.Drawing.Printing> namespace overview.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Custom">
+      <MemberSignature Language="C#" Value="Custom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrinterResolutionKind Custom = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterResolutionKind.Custom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrinterResolutionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Custom resolution.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Draft">
+      <MemberSignature Language="C#" Value="Draft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrinterResolutionKind Draft = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterResolutionKind.Draft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrinterResolutionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Draft-quality resolution.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="High">
+      <MemberSignature Language="C#" Value="High" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrinterResolutionKind High = int32(-4)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterResolutionKind.High" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrinterResolutionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>High resolution.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Low">
+      <MemberSignature Language="C#" Value="Low" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrinterResolutionKind Low = int32(-2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterResolutionKind.Low" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrinterResolutionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Low resolution.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Medium">
+      <MemberSignature Language="C#" Value="Medium" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrinterResolutionKind Medium = int32(-3)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrinterResolutionKind.Medium" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrinterResolutionKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Medium resolution.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

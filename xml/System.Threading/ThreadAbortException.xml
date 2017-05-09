@@ -1,0 +1,109 @@
+<Type Name="ThreadAbortException" FullName="System.Threading.ThreadAbortException">
+  <TypeSignature Language="C#" Value="public sealed class ThreadAbortException : SystemException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ThreadAbortException extends System.SystemException" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.ThreadAbortException" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.SystemException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The exception that is thrown when a call is made to the <see cref="M:System.Threading.Thread.Abort(System.Object)" /> method. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a call is made to the <xref:System.Threading.Thread.Abort%2A> method to destroy a thread, the common language runtime throws a <xref:System.Threading.ThreadAbortException>. <xref:System.Threading.ThreadAbortException> is a special exception that can be caught, but it will automatically be raised again at the end of the `catch` block. When this exception is raised, the runtime executes all the `finally` blocks before ending the thread. Because the thread can do an unbounded computation in the `finally` blocks or call <xref:System.Threading.Thread.ResetAbort%2A?displayProperty=fullName> to cancel the abort, there is no guarantee that the thread will ever end. If you want to wait until the aborted thread has ended, you can call the <xref:System.Threading.Thread.Join%2A?displayProperty=fullName> method. <xref:System.Threading.Thread.Join%2A> is a blocking call that does not return until the thread actually stops executing.  
+  
+> [!NOTE]
+>  When the common language runtime (CLR) stops background threadsafter all foreground threads in a managed executable have ended, it does not use <xref:System.Threading.Thread.Abort%2A?displayProperty=fullName>. Therefore, you cannot use <xref:System.Threading.ThreadAbortException> to detect when background threads are being terminated by the CLR.  
+  
+ <xref:System.Threading.ThreadAbortException> uses the HRESULT COR_E_THREADABORTED, which has the value 0x80131530.  
+  
+> [!NOTE]
+>  The value of the inherited <xref:System.Exception.Data%2A> property is always `null`.  
+  
+   
+  
+## Examples  
+ The following example demonstrates aborting a thread. The thread that receives the `ThreadAbortException` uses the <xref:System.Threading.Thread.ResetAbort%2A> method to cancel the abort request and continue executing.  
+  
+ [!code-cpp[ThreadAbEx#1](~/samples/snippets/cpp/VS_Snippets_CLR/ThreadAbEx/CPP/threadabex.cpp#1)]
+ [!code-csharp[ThreadAbEx#1](~/samples/snippets/csharp/VS_Snippets_CLR/ThreadAbEx/CS/threadabex.cs#1)]
+ [!code-vb[ThreadAbEx#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/ThreadAbEx/VB/threadabex.vb#1)]  
+  
+ This code produces the following output:  
+  
+```  
+Thread - working.  
+Main - aborting my thread.  
+Thread - caught ThreadAbortException - resetting.  
+Exception message: Thread was being aborted.  
+Thread - still alive and working.  
+Thread - finished working.  
+Main ending.  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ExceptionState">
+      <MemberSignature Language="C#" Value="public object ExceptionState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ExceptionState" />
+      <MemberSignature Language="DocId" Value="P:System.Threading.ThreadAbortException.ExceptionState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that contains application-specific information related to the thread abort.</summary>
+        <value>An object containing application-specific information.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object returned by this property is specified through the `stateInfo` parameter of the <xref:System.Threading.Thread.Abort%2A> method. The exact content and usage of this object is application defined; it is typically used to convey information that is meaningful to the thread being aborted.  
+  
+   
+  
+## Examples  
+ The following code example shows how to pass information to a thread that is being aborted.  
+  
+ [!code-cpp[System.Threading.Thread.Abort2#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.Thread.Abort2/CPP/source.cpp#1)]
+ [!code-csharp[System.Threading.Thread.Abort2#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Thread.Abort2/CS/source.cs#1)]
+ [!code-vb[System.Threading.Thread.Abort2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Thread.Abort2/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

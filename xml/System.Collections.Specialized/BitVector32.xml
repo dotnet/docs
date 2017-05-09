@@ -1,0 +1,634 @@
+<Type Name="BitVector32" FullName="System.Collections.Specialized.BitVector32">
+  <TypeSignature Language="C#" Value="public struct BitVector32" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit BitVector32 extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.BitVector32" />
+  <AssemblyInfo>
+    <AssemblyName>System.Collections.Specialized</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a simple structure that stores Boolean values and small integers in 32 bits of memory.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Collections.Specialized.BitVector32> is more efficient than <xref:System.Collections.BitArray> for Boolean values and small integers that are used internally. A <xref:System.Collections.BitArray> can grow indefinitely as needed, but it has the memory and performance overhead that a class instance requires. In contrast, a <xref:System.Collections.Specialized.BitVector32> uses only 32 bits.  
+  
+ A <xref:System.Collections.Specialized.BitVector32> structure can be set up to contain either sections for small integers or bit flags for Booleans, but not both. A <xref:System.Collections.Specialized.BitVector32.Section> is a window into the <xref:System.Collections.Specialized.BitVector32> and is composed of the smallest number of consecutive bits that can contain the maximum value specified in <xref:System.Collections.Specialized.BitVector32.CreateSection%2A>. For example, a section with a maximum value of 1 is composed of only one bit, whereas a section with a maximum value of 5 is composed of three bits. You can create a <xref:System.Collections.Specialized.BitVector32.Section> with a maximum value of 1 to serve as a Boolean, thereby allowing you to store integers and Booleans in the same <xref:System.Collections.Specialized.BitVector32>.  
+  
+ Some members can be used for a <xref:System.Collections.Specialized.BitVector32> that is set up as sections, while other members can be used for one that is set up as bit flags. For example, the <xref:System.Collections.Specialized.BitVector32.Item%2A?displayProperty=fullName> property is the indexer for a <xref:System.Collections.Specialized.BitVector32> that is set up as sections, and the <xref:System.Collections.Specialized.BitVector32.Item%2A?displayProperty=fullName> property is the indexer for a <xref:System.Collections.Specialized.BitVector32> that is set up as bit flags. <xref:System.Collections.Specialized.BitVector32.CreateMask%2A> creates a series of masks that can be used to access individual bits in a <xref:System.Collections.Specialized.BitVector32> that is set up as bit flags.  
+  
+ Using a mask on a <xref:System.Collections.Specialized.BitVector32> that is set up as sections might cause unexpected results.  
+  
+   
+  
+## Examples  
+ The following code example uses a <xref:System.Collections.Specialized.BitVector32> as a collection of bit flags.  
+  
+ [!code-cpp[System.Collections.Specialized.BitVector32_BitFlags#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.BitVector32_BitFlags/CPP/bitvector32_bitflags.cpp#1)]
+ [!code-csharp[System.Collections.Specialized.BitVector32_BitFlags#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.BitVector32_BitFlags/CS/bitvector32_bitflags.cs#1)]
+ [!code-vb[System.Collections.Specialized.BitVector32_BitFlags#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.BitVector32_BitFlags/VB/bitvector32_bitflags.vb#1)]  
+  
+ The following code example uses a <xref:System.Collections.Specialized.BitVector32> as a collection of sections.  
+  
+ [!code-cpp[System.Collections.Specialized.BitVector32_Sections#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.BitVector32_Sections/CPP/bitvector32_sections.cpp#1)]
+ [!code-csharp[System.Collections.Specialized.BitVector32_Sections#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.BitVector32_Sections/CS/bitvector32_sections.cs#1)]
+ [!code-vb[System.Collections.Specialized.BitVector32_Sections#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.BitVector32_Sections/VB/bitvector32_sections.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BitVector32 (System.Collections.Specialized.BitVector32 value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Collections.Specialized.BitVector32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.#ctor(System.Collections.Specialized.BitVector32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Collections.Specialized.BitVector32" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.Collections.Specialized.BitVector32" /> structure that contains the data to copy.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.BitVector32" /> structure containing the data represented in an existing <see cref="T:System.Collections.Specialized.BitVector32" /> structure.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BitVector32 (int data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="data" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="data">An integer representing the data of the new <see cref="T:System.Collections.Specialized.BitVector32" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.BitVector32" /> structure containing the data represented in an integer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMask">
+      <MemberSignature Language="C#" Value="public static int CreateMask ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 CreateMask() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.CreateMask" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates the first mask in a series of masks that can be used to retrieve individual bits in a <see cref="T:System.Collections.Specialized.BitVector32" /> that is set up as bit flags.</summary>
+        <returns>A mask that isolates the first bit flag in the <see cref="T:System.Collections.Specialized.BitVector32" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use `CreateMask()` to create the first mask in a series and `CreateMask(int)` for all subsequent masks.  
+  
+ Multiple masks can be created to refer to the same bit flag.  
+  
+ The resulting mask isolates only one bit flag in the <xref:System.Collections.Specialized.BitVector32>. You can combine masks using the bitwise OR operation to create a mask that isolates multiple bit flags in the <xref:System.Collections.Specialized.BitVector32>.  
+  
+ Using a mask on a <xref:System.Collections.Specialized.BitVector32> that is set up as sections might cause unexpected results.  
+  
+ This method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example shows how to create and use masks.  
+  
+ [!code-cpp[System.Collections.Specialized.BitVector32.CreateMasks#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.BitVector32.CreateMasks/CPP/bitvector32_createmasks.cpp#1)]
+ [!code-csharp[System.Collections.Specialized.BitVector32.CreateMasks#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.BitVector32.CreateMasks/CS/bitvector32_createmasks.cs#1)]
+ [!code-vb[System.Collections.Specialized.BitVector32.CreateMasks#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.BitVector32.CreateMasks/VB/bitvector32_createmasks.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMask">
+      <MemberSignature Language="C#" Value="public static int CreateMask (int previous);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 CreateMask(int32 previous) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.CreateMask(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="previous" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="previous">The mask that indicates the previous bit flag.</param>
+        <summary>Creates an additional mask following the specified mask in a series of masks that can be used to retrieve individual bits in a <see cref="T:System.Collections.Specialized.BitVector32" /> that is set up as bit flags.</summary>
+        <returns>A mask that isolates the bit flag following the one that <paramref name="previous" /> points to in <see cref="T:System.Collections.Specialized.BitVector32" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use `CreateMask()` to create the first mask in a series and `CreateMask(int)` for all subsequent masks.  
+  
+ Multiple masks can be created to refer to the same bit flag.  
+  
+ The resulting mask isolates only one bit flag in the <xref:System.Collections.Specialized.BitVector32>. You can combine masks using the bitwise OR operation to create a mask that isolates multiple bit flags in the <xref:System.Collections.Specialized.BitVector32>.  
+  
+ Using a mask on a <xref:System.Collections.Specialized.BitVector32> that is set up as sections might cause unexpected results.  
+  
+ This method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example shows how to create and use masks.  
+  
+ [!code-cpp[System.Collections.Specialized.BitVector32.CreateMasks#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.BitVector32.CreateMasks/CPP/bitvector32_createmasks.cpp#1)]
+ [!code-csharp[System.Collections.Specialized.BitVector32.CreateMasks#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.BitVector32.CreateMasks/CS/bitvector32_createmasks.cs#1)]
+ [!code-vb[System.Collections.Specialized.BitVector32.CreateMasks#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.BitVector32.CreateMasks/VB/bitvector32_createmasks.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="previous" /> indicates the last bit flag in the <see cref="T:System.Collections.Specialized.BitVector32" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSection">
+      <MemberSignature Language="C#" Value="public static System.Collections.Specialized.BitVector32.Section CreateSection (short maxValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Collections.Specialized.BitVector32/Section CreateSection(int16 maxValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.CreateSection(System.Int16)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.BitVector32+Section</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="maxValue" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="maxValue">A 16-bit signed integer that specifies the maximum value for the new <see cref="T:System.Collections.Specialized.BitVector32.Section" />.</param>
+        <summary>Creates the first <see cref="T:System.Collections.Specialized.BitVector32.Section" /> in a series of sections that contain small integers.</summary>
+        <returns>A <see cref="T:System.Collections.Specialized.BitVector32.Section" /> that can hold a number from zero to <paramref name="maxValue" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Collections.Specialized.BitVector32.Section> is a window into the <xref:System.Collections.Specialized.BitVector32> and is composed of the smallest number of consecutive bits that can contain the maximum value specified in <xref:System.Collections.Specialized.BitVector32.CreateSection%2A>. For example, a section with a maximum value of 1 is composed of only one bit, whereas a section with a maximum value of 5 is composed of three bits. You can create a <xref:System.Collections.Specialized.BitVector32.Section> with a maximum value of 1 to serve as a Boolean, thereby allowing you to store integers and Booleans in the same <xref:System.Collections.Specialized.BitVector32>.  
+  
+ If sections already exist in the <xref:System.Collections.Specialized.BitVector32>, those sections are still accessible; however, overlapping sections might cause unexpected results.  
+  
+ This method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example uses a <xref:System.Collections.Specialized.BitVector32> as a collection of sections.  
+  
+ [!code-cpp[System.Collections.Specialized.BitVector32_Sections#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.BitVector32_Sections/CPP/bitvector32_sections.cpp#1)]
+ [!code-csharp[System.Collections.Specialized.BitVector32_Sections#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.BitVector32_Sections/CS/bitvector32_sections.cs#1)]
+ [!code-vb[System.Collections.Specialized.BitVector32_Sections#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.BitVector32_Sections/VB/bitvector32_sections.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="maxValue" /> is less than 1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSection">
+      <MemberSignature Language="C#" Value="public static System.Collections.Specialized.BitVector32.Section CreateSection (short maxValue, System.Collections.Specialized.BitVector32.Section previous);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Collections.Specialized.BitVector32/Section CreateSection(int16 maxValue, valuetype System.Collections.Specialized.BitVector32/Section previous) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.CreateSection(System.Int16,System.Collections.Specialized.BitVector32.Section)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.BitVector32+Section</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="maxValue" Type="System.Int16" />
+        <Parameter Name="previous" Type="System.Collections.Specialized.BitVector32+Section" />
+      </Parameters>
+      <Docs>
+        <param name="maxValue">A 16-bit signed integer that specifies the maximum value for the new <see cref="T:System.Collections.Specialized.BitVector32.Section" />.</param>
+        <param name="previous">The previous <see cref="T:System.Collections.Specialized.BitVector32.Section" /> in the <see cref="T:System.Collections.Specialized.BitVector32" />.</param>
+        <summary>Creates a new <see cref="T:System.Collections.Specialized.BitVector32.Section" /> following the specified <see cref="T:System.Collections.Specialized.BitVector32.Section" /> in a series of sections that contain small integers.</summary>
+        <returns>A <see cref="T:System.Collections.Specialized.BitVector32.Section" /> that can hold a number from zero to <paramref name="maxValue" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Collections.Specialized.BitVector32.Section> is a window into the <xref:System.Collections.Specialized.BitVector32> and is composed of the smallest number of consecutive bits that can contain the maximum value specified in <xref:System.Collections.Specialized.BitVector32.CreateSection%2A>. For example, a section with a maximum value of 1 is composed of only one bit, whereas a section with a maximum value of 5 is composed of three bits. You can create a <xref:System.Collections.Specialized.BitVector32.Section> with a maximum value of 1 to serve as a Boolean, thereby allowing you to store integers and Booleans in the same <xref:System.Collections.Specialized.BitVector32>.  
+  
+ If sections already exist after `previous` in the <xref:System.Collections.Specialized.BitVector32>, those sections are still accessible; however, overlapping sections might cause unexpected results.  
+  
+ This method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example uses a <xref:System.Collections.Specialized.BitVector32> as a collection of sections.  
+  
+ [!code-cpp[System.Collections.Specialized.BitVector32_Sections#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.BitVector32_Sections/CPP/bitvector32_sections.cpp#1)]
+ [!code-csharp[System.Collections.Specialized.BitVector32_Sections#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.BitVector32_Sections/CS/bitvector32_sections.cs#1)]
+ [!code-vb[System.Collections.Specialized.BitVector32_Sections#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.BitVector32_Sections/VB/bitvector32_sections.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="maxValue" /> is less than 1.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="previous" /> includes the final bit in the <see cref="T:System.Collections.Specialized.BitVector32" />.  
+  
+ -or-  
+  
+ <paramref name="maxValue" /> is greater than the highest value that can be represented by the number of bits after <paramref name="previous" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Data">
+      <MemberSignature Language="C#" Value="public int Data { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Data" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.BitVector32.Data" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see cref="T:System.Collections.Specialized.BitVector32" /> as an integer.</summary>
+        <value>The value of the <see cref="T:System.Collections.Specialized.BitVector32" /> as an integer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To access the value of the individual sections or bit flags, use the <xref:System.Collections.Specialized.BitVector32.Item%2A> property.  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object to compare with the current <see cref="T:System.Collections.Specialized.BitVector32" />.</param>
+        <summary>Determines whether the specified object is equal to the <see cref="T:System.Collections.Specialized.BitVector32" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified object is equal to the <see cref="T:System.Collections.Specialized.BitVector32" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object `o` is considered equal to the <xref:System.Collections.Specialized.BitVector32> if the type of `o` is compatible with the <xref:System.Collections.Specialized.BitVector32> type and if the value of `o` is equal to the value of <xref:System.Collections.Specialized.BitVector32.Data%2A>.  
+  
+ This method is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example compares a <xref:System.Collections.Specialized.BitVector32> with another <xref:System.Collections.Specialized.BitVector32> and with an <xref:System.Int32>.  
+  
+ [!code-cpp[System.Collections.Specialized.BitVector32.Equals#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Collections.Specialized.BitVector32.Equals/CPP/bitvector32_equals.cpp#1)]
+ [!code-csharp[System.Collections.Specialized.BitVector32.Equals#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Collections.Specialized.BitVector32.Equals/CS/bitvector32_equals.cs#1)]
+ [!code-vb[System.Collections.Specialized.BitVector32.Equals#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Collections.Specialized.BitVector32.Equals/VB/bitvector32_equals.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Serves as a hash function for the <see cref="T:System.Collections.Specialized.BitVector32" />.</summary>
+        <returns>A hash code for the <see cref="T:System.Collections.Specialized.BitVector32" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The hash code of a <xref:System.Collections.Specialized.BitVector32> is based on the value of <xref:System.Collections.Specialized.BitVector32.Data%2A>. Two instances of <xref:System.Collections.Specialized.BitVector32> with the same value for <xref:System.Collections.Specialized.BitVector32.Data%2A> will also generate the same hash code.  
+  
+ This method is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public int this[System.Collections.Specialized.BitVector32.Section section] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Item(valuetype System.Collections.Specialized.BitVector32/Section)" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.BitVector32.Item(System.Collections.Specialized.BitVector32.Section)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="section" Type="System.Collections.Specialized.BitVector32+Section" />
+      </Parameters>
+      <Docs>
+        <param name="section">A <see cref="T:System.Collections.Specialized.BitVector32.Section" /> that contains the value to get or set.</param>
+        <summary>Gets or sets the value stored in the specified <see cref="T:System.Collections.Specialized.BitVector32.Section" />.</summary>
+        <value>The value stored in the specified <see cref="T:System.Collections.Specialized.BitVector32.Section" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Collections.Specialized.BitVector32.Item%2A> [Section] property is the indexer for a <xref:System.Collections.Specialized.BitVector32> that is set up as sections, and the <xref:System.Collections.Specialized.BitVector32.Item%2A> [int] property is the indexer for a <xref:System.Collections.Specialized.BitVector32> that is set up as bit flags.  
+  
+ A <xref:System.Collections.Specialized.BitVector32.Section> is a window into the <xref:System.Collections.Specialized.BitVector32> and is composed of the smallest number of consecutive bits that can contain the maximum value specified in <xref:System.Collections.Specialized.BitVector32.CreateSection%2A>. For example, a section with a maximum value of 1 is composed of only one bit, whereas a section with a maximum value of 5 is composed of three bits. You can create a <xref:System.Collections.Specialized.BitVector32.Section> with a maximum value of 1 to serve as a Boolean, thereby allowing you to store integers and Booleans in the same <xref:System.Collections.Specialized.BitVector32>.  
+  
+ The C# language uses the  keyword to define the indexers instead of implementing the <xref:System.Collections.Specialized.BitVector32.Item%2A> property. Visual Basic implements <xref:System.Collections.Specialized.BitVector32.Item%2A> as a default property, which provides the same indexing functionality.  
+  
+ Retrieving the value of this property is an O(1) operation; setting the property is also an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public bool this[int bit] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.BitVector32.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bit" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="bit">A mask that indicates the bit to get or set.</param>
+        <summary>Gets or sets the state of the bit flag indicated by the specified mask.</summary>
+        <value>
+          <see langword="true" /> if the specified bit flag is on (1); otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Collections.Specialized.BitVector32.Item%2A> [Section] property is the indexer for a <xref:System.Collections.Specialized.BitVector32> that is set up as sections, and the <xref:System.Collections.Specialized.BitVector32.Item%2A> [int] property is the indexer for a <xref:System.Collections.Specialized.BitVector32> that is set up as bit flags.  
+  
+ Using this property on a <xref:System.Collections.Specialized.BitVector32> that is set up as sections might cause unexpected results.  
+  
+ The C# language uses the  keyword to define the indexers instead of implementing the <xref:System.Collections.Specialized.BitVector32.Item%2A> property. Visual Basic implements <xref:System.Collections.Specialized.BitVector32.Item%2A> as a default property, which provides the same indexing functionality.  
+  
+ Retrieving the value of this property is an O(1) operation; setting the property is also an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the current <see cref="T:System.Collections.Specialized.BitVector32" />.</summary>
+        <returns>A string that represents the current <see cref="T:System.Collections.Specialized.BitVector32" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides <xref:System.Object.ToString%2A?displayProperty=fullName>.  
+  
+ This method is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public static string ToString (System.Collections.Specialized.BitVector32 value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(valuetype System.Collections.Specialized.BitVector32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.ToString(System.Collections.Specialized.BitVector32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Collections.Specialized.BitVector32" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Collections.Specialized.BitVector32" /> to represent.</param>
+        <summary>Returns a string that represents the specified <see cref="T:System.Collections.Specialized.BitVector32" />.</summary>
+        <returns>A string that represents the specified <see cref="T:System.Collections.Specialized.BitVector32" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

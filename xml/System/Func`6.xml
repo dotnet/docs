@@ -1,0 +1,96 @@
+<Type Name="Func&lt;T1,T2,T3,T4,T5,TResult&gt;" FullName="System.Func&lt;T1,T2,T3,T4,T5,TResult&gt;">
+  <TypeSignature Language="C#" Value="public delegate TResult Func&lt;in T1,in T2,in T3,in T4,in T5,out TResult&gt;(T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Func`6&lt;- T1, - T2, - T3, - T4, - T5, + TResult&gt; extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Func`6" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T1">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="T2">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="T3">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="T4">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="T5">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="TResult">
+      <Constraints>
+        <ParameterAttribute>Covariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="arg1" Type="T1" />
+    <Parameter Name="arg2" Type="T2" />
+    <Parameter Name="arg3" Type="T3" />
+    <Parameter Name="arg4" Type="T4" />
+    <Parameter Name="arg5" Type="T5" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>TResult</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <typeparam name="T1">The type of the first parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="T2">The type of the second parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="T3">The type of the third parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="T4">The type of the fourth parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="T5">The type of the fifth parameter of the method that this delegate encapsulates.</typeparam>
+    <typeparam name="TResult">The type of the return value of the method that this delegate encapsulates.</typeparam>
+    <param name="arg1">The first parameter of the method that this delegate encapsulates.</param>
+    <param name="arg2">The second parameter of the method that this delegate encapsulates.</param>
+    <param name="arg3">The third parameter of the method that this delegate encapsulates.</param>
+    <param name="arg4">The fourth parameter of the method that this delegate encapsulates.</param>
+    <param name="arg5">The fifth parameter of the method that this delegate encapsulates.</param>
+    <summary>Encapsulates a method that has five parameters and returns a value of the type specified by the <paramref name="TResult" /> parameter.</summary>
+    <returns>The return value of the method that this delegate encapsulates.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this delegate to represent a method that can be passed as a parameter without explicitly declaring a custom delegate. The encapsulated method must correspond to the method signature that is defined by this delegate. This means that the encapsulated method must have five parameters, each of which is passed to it by value, and that it must return a value.  
+  
+> [!NOTE]
+>  To reference a method that has five parameters and returns `void` (or in Visual Basic, that is declared as a `Sub` rather than as a `Function`), use the generic <xref:System.Action%605> delegate instead.  
+  
+ You can also use the <xref:System.Func%606> delegate with anonymous methods and lambda expressions.  
+  
+ The underlying type of a lambda expression is one of the generic `Func` delegates. This makes it possible to pass a lambda expression as a parameter without explicitly assigning it to a delegate.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

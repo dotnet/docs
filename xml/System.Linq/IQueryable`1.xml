@@ -1,0 +1,58 @@
+<Type Name="IQueryable&lt;T&gt;" FullName="System.Linq.IQueryable&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface IQueryable&lt;out T&gt; : System.Collections.Generic.IEnumerable&lt;out T&gt;, System.Linq.IQueryable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IQueryable`1&lt;+ T&gt; implements class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.IEnumerable, class System.Linq.IQueryable" />
+  <TypeSignature Language="DocId" Value="T:System.Linq.IQueryable`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Linq.Expressions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>Covariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Linq.IQueryable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">The type of the data in the data source.</typeparam>
+    <summary>Provides functionality to evaluate queries against a specific data source wherein the type of the data is known.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Linq.IQueryable%601> interface is intended for implementation by query providers.  
+  
+ This interface inherits the <xref:System.Collections.Generic.IEnumerable%601> interface so that if it represents a query, the results of that query can be enumerated. Enumeration forces the expression tree associated with an <xref:System.Linq.IQueryable%601> object to be executed. Queries that do not return enumerable results are executed when the <xref:System.Linq.IQueryProvider.Execute%60%601%28System.Linq.Expressions.Expression%29> method is called.  
+  
+ The definition of "executing an expression tree" is specific to a query provider. For example, it may involve translating the expression tree to a query language appropriate for an underlying data source.  
+  
+ The <xref:System.Linq.IQueryable%601> interface enables queries to be polymorphic. That is, because a query against an `IQueryable` data source is represented as an expression tree, it can be executed against different types of data sources.  
+  
+ The `static` (`Shared` in Visual Basic) methods defined in the class <xref:System.Linq.Queryable> (except for <xref:System.Linq.Queryable.AsQueryable%2A>, <xref:System.Linq.Queryable.ThenBy%2A>, and <xref:System.Linq.Queryable.ThenByDescending%2A>) extend objects of types that implement the <xref:System.Linq.IQueryable%601> interface.  
+  
+ For more information about how to create your own LINQ provider, see [LINQ: Building an IQueryable Provider](http://go.microsoft.com/fwlink/?LinkID=112370) on MSDN Blogs.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

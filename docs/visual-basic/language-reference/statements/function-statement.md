@@ -39,8 +39,8 @@ helpviewer_keywords:
   - "Handles keyword, Function statements"
 ms.assetid: a4497077-0f46-4ede-a27f-9e8670df52b9
 caps.latest.revision: 62
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

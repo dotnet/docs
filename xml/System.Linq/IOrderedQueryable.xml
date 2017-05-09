@@ -1,0 +1,44 @@
+<Type Name="IOrderedQueryable" FullName="System.Linq.IOrderedQueryable">
+  <TypeSignature Language="C#" Value="public interface IOrderedQueryable : System.Collections.IEnumerable, System.Linq.IQueryable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IOrderedQueryable implements class System.Collections.IEnumerable, class System.Linq.IQueryable" />
+  <TypeSignature Language="DocId" Value="T:System.Linq.IOrderedQueryable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Linq.Expressions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Linq.IQueryable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents the result of a sorting operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Linq.IOrderedQueryable> interface is intended for implementation by query providers.  
+  
+ This interface represents the result of a sorting query that calls the method(s) <xref:System.Linq.Queryable.OrderBy%2A>, <xref:System.Linq.Queryable.OrderByDescending%2A>, <xref:System.Linq.Queryable.ThenBy%2A> or <xref:System.Linq.Queryable.ThenByDescending%2A>. When <xref:System.Linq.IQueryProvider.CreateQuery%2A> is called and passed an expression tree that represents a sorting query, the resulting <xref:System.Linq.IQueryable> object must be of a type that implements <xref:System.Linq.IOrderedQueryable>.  
+  
+ For more information about how to create your own LINQ provider, see [LINQ: Building an IQueryable Provider](http://go.microsoft.com/fwlink/?LinkID=112370) on MSDN Blogs.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

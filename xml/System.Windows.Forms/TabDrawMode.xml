@@ -1,0 +1,59 @@
+<Type Name="TabDrawMode" FullName="System.Windows.Forms.TabDrawMode">
+  <TypeSignature Language="C#" Value="public enum TabDrawMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TabDrawMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabDrawMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether the tabs in a tab control are owner-drawn (drawn by the parent window), or drawn by the operating system.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by members such as <xref:System.Windows.Forms.TabControl.DrawMode%2A?displayProperty=fullName>.  
+  
+ The <xref:System.Windows.Forms.TabControl> class and its derived classes support owner-draw functionality, but only one type, in which you can draw the tabs individually.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TabDrawMode Normal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabDrawMode.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TabDrawMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The tabs are drawn by the operating system, and are of the same size.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OwnerDrawFixed">
+      <MemberSignature Language="C#" Value="OwnerDrawFixed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TabDrawMode OwnerDrawFixed = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TabDrawMode.OwnerDrawFixed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TabDrawMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The tabs are drawn by the parent window, and are of the same size.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

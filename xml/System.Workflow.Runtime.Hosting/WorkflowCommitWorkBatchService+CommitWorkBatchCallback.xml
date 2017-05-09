@@ -1,0 +1,29 @@
+<Type Name="WorkflowCommitWorkBatchService+CommitWorkBatchCallback" FullName="System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService+CommitWorkBatchCallback">
+  <TypeSignature Language="C#" Value="public delegate void WorkflowCommitWorkBatchService.CommitWorkBatchCallback();" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed WorkflowCommitWorkBatchService/CommitWorkBatchCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService.CommitWorkBatchCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters />
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <summary>Commits a <see cref="T:System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService" /> work batch.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,75 @@
+<Type Name="FSharpChoice&lt;T1,T2,T3,T4,T5,T6,T7&gt;+Choice3Of7" FullName="Microsoft.FSharp.Core.FSharpChoice&lt;T1,T2,T3,T4,T5,T6,T7&gt;+Choice3Of7">
+  <TypeSignature Language="C#" Value="public class FSharpChoice&lt;T1,T2,T3,T4,T5,T6,T7&gt;.Choice3Of7 : Microsoft.FSharp.Core.FSharpChoice&lt;T1,T2,T3,T4,T5,T6,T7&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable beforefieldinit FSharpChoice`7/Choice3Of7&lt;T1, T2, T3, T4, T5, T6, T7&gt; extends Microsoft.FSharp.Core.FSharpChoice`7&lt;!T1, !T2, !T3, !T4, !T5, !T6, !T7&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.FSharpChoice`7.Choice3Of7" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T1" />
+    <TypeParameter Name="T2" />
+    <TypeParameter Name="T3" />
+    <TypeParameter Name="T4" />
+    <TypeParameter Name="T5" />
+    <TypeParameter Name="T6" />
+    <TypeParameter Name="T7" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.FSharp.Core.FSharpChoice&lt;T1,T2,T3,T4,T5,T6,T7&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T1">T1</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="T2">T2</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="T3">T3</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="T4">T4</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="T5">T5</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="T6">T6</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="T7">T7</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.FSharp.Core.FSharpChoice`7/Choice3Of7@DebugTypeProxy))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public T3 Item { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T3 Item" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.FSharpChoice`7.Choice3Of7.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Field, 2, 0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerNonUserCode</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Diagnostics.DebuggerNonUserCode</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T3</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

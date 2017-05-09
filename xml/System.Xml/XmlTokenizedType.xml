@@ -1,0 +1,303 @@
+<Type Name="XmlTokenizedType" FullName="System.Xml.XmlTokenizedType">
+  <TypeSignature Language="C#" Value="public enum XmlTokenizedType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlTokenizedType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.XmlTokenizedType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Represents the XML type for the string. This allows the string to be read as a particular XML type, for example a CDATA section type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The XML types are based on the World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0 recommendation.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CDATA">
+      <MemberSignature Language="C#" Value="CDATA" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType CDATA = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.CDATA" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>CDATA type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ENTITIES">
+      <MemberSignature Language="C#" Value="ENTITIES" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType ENTITIES = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.ENTITIES" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ENTITIES type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ENTITY">
+      <MemberSignature Language="C#" Value="ENTITY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType ENTITY = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.ENTITY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ENTITY type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ENUMERATION">
+      <MemberSignature Language="C#" Value="ENUMERATION" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType ENUMERATION = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.ENUMERATION" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ENUMERATION type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="ID" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType ID = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.ID" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>ID type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IDREF">
+      <MemberSignature Language="C#" Value="IDREF" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType IDREF = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.IDREF" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>IDREF type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IDREFS">
+      <MemberSignature Language="C#" Value="IDREFS" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType IDREFS = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.IDREFS" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>IDREFS type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NCName">
+      <MemberSignature Language="C#" Value="NCName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType NCName = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.NCName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>NCName type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NMTOKEN">
+      <MemberSignature Language="C#" Value="NMTOKEN" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType NMTOKEN = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.NMTOKEN" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>NMTOKEN type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NMTOKENS">
+      <MemberSignature Language="C#" Value="NMTOKENS" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType NMTOKENS = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.NMTOKENS" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>NMTOKENS type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType None = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NOTATION">
+      <MemberSignature Language="C#" Value="NOTATION" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType NOTATION = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.NOTATION" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>NOTATION type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="QName">
+      <MemberSignature Language="C#" Value="QName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType QName = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.QName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>QName type.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

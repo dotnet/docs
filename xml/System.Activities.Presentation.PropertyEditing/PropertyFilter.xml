@@ -1,0 +1,104 @@
+<Type Name="PropertyFilter" FullName="System.Activities.Presentation.PropertyEditing.PropertyFilter">
+  <TypeSignature Language="C#" Value="public class PropertyFilter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyFilter extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PropertyEditing.PropertyFilter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides filtering functionality for a property editing host.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Contains a list of strings, called *predicates*, that are compared against a target property name until a match is found.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyFilter (System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate&gt; predicates);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate&gt; predicates) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyFilter.#ctor(System.Collections.Generic.IEnumerable{System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="predicates" Type="System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.PropertyEditing.PropertyFilterPredicate&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="predicates">An <see cref="T:System.Collections.IEnumerable" /> list of predicates, or strings used for matching.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyFilter" /> class that includes an enumeration of filtering strings, called *predicates*, that can be compared against a target property name until a match is found.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyFilter (string filterText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string filterText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyFilter.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="filterText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filterText">A <see cref="T:System.String" /> that contains space-delimited predicates for property filtering.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyFilter" /> class that includes a <see cref="T:System.String" /> that contains a space-delimited sequence of filtering phrases, called *predicates*, that can be compared against a target property name until a match is found.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEmpty">
+      <MemberSignature Language="C#" Value="public bool IsEmpty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.PropertyFilter.IsEmpty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Read-only property that indicates whether this <see cref="T:System.Activities.Design.PropertyEditing.PropertyFilter" /> does not have any filtering predicates.</summary>
+        <value>
+          <see langword="true" /> if predicates are absent; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Match">
+      <MemberSignature Language="C#" Value="public bool Match (System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Match(class System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyFilter.Match(System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Activities.Presentation.PropertyEditing.IPropertyFilterTarget" />
+      </Parameters>
+      <Docs>
+        <param name="target">The name of the property that the current filter will be compared against when looking for a match.</param>
+        <summary>Matches the predicate strings of the current filtering object against the specified target property name and returns a Boolean that indicates whether one or more of the predicate strings matches the target name or whether this <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyFilter" /> does not have any predicates.</summary>
+        <returns>
+          <see langword="true" /> if there is a filter/target match or if there is nothing to use for the comparison; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,75 @@
+<Type Name="IInternalConfigConfigurationFactory" FullName="System.Configuration.Internal.IInternalConfigConfigurationFactory">
+  <TypeSignature Language="C#" Value="public interface IInternalConfigConfigurationFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInternalConfigConfigurationFactory" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.Internal.IInternalConfigConfigurationFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the interfaces used by the internal design time API to create a <see cref="T:System.Configuration.Configuration" /> object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public System.Configuration.Configuration Create (Type typeConfigHost, object[] hostInitConfigurationParams);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Configuration.Configuration Create(class System.Type typeConfigHost, object[] hostInitConfigurationParams) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigConfigurationFactory.Create(System.Type,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Configuration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeConfigHost" Type="System.Type" />
+        <Parameter Name="hostInitConfigurationParams" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="typeConfigHost">The <see cref="T:System.Type" /> of the <see cref="T:System.Configuration.Configuration" /> object to be created.</param>
+        <param name="hostInitConfigurationParams">A parameter array of <see cref="T:System.Object" /> that contains the parameters to be applied to the created <see cref="T:System.Configuration.Configuration" /> object.</param>
+        <summary>Creates and initializes a <see cref="T:System.Configuration.Configuration" /> object.</summary>
+        <returns>A <see cref="T:System.Configuration.Configuration" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NormalizeLocationSubPath">
+      <MemberSignature Language="C#" Value="public string NormalizeLocationSubPath (string subPath, System.Configuration.Internal.IConfigErrorInfo errorInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string NormalizeLocationSubPath(string subPath, class System.Configuration.Internal.IConfigErrorInfo errorInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigConfigurationFactory.NormalizeLocationSubPath(System.String,System.Configuration.Internal.IConfigErrorInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subPath" Type="System.String" />
+        <Parameter Name="errorInfo" Type="System.Configuration.Internal.IConfigErrorInfo" />
+      </Parameters>
+      <Docs>
+        <param name="subPath">A string representing the path to the configuration file.</param>
+        <param name="errorInfo">An instance of <see cref="T:System.Configuration.Internal.IConfigErrorInfo" /> or <see langword="null" />.</param>
+        <summary>Normalizes a location subpath of a path to a configuration file.</summary>
+        <returns>A normalized subpath string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

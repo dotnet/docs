@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "As keyword"
 ms.assetid: b4281ec8-2be5-49f7-aae8-ae0a96265b0d
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -1,0 +1,162 @@
+<Type Name="Link&lt;T&gt;" FullName="System.Data.Linq.Link&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public struct Link&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Link`1&lt;T&gt; extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Linq.Link`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The type of the elements in the deferred source.</typeparam>
+    <summary>Used to enable deferred loading of individual properties (similar to <see cref="T:System.Data.Linq.EntityRef`1" />).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you assign a deferred source (<xref:System.Collections.Generic.IEnumerable%601>) to <xref:System.Data.Linq.Link%601>, <xref:System.Data.Linq.Link%601> loads the value by enumerating the source the first time the <xref:System.Data.Linq.Link%601.Value%2A> property is accessed.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Link (System.Collections.Generic.IEnumerable&lt;T&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Link`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.Link`1" /> structure by referencing the source.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize the <xref:System.Data.Linq.Link%601> with a deferred value loader (implements <xref:System.Collections.Generic.IEnumerable%601>)  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Link (System.Data.Linq.Link&lt;T&gt; link);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Data.Linq.Link`1&lt;!T&gt; link) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Link`1.#ctor(System.Data.Linq.Link{`0})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="link" Type="System.Data.Linq.Link&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="link">The <see cref="T:System.Data.Linq.Link`1" /> instance from which to copy.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.Link`1" /> structure by copying the internal state from another <see cref="T:System.Data.Linq.Link`1" /> instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Link (T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Link`1.#ctor(`0)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="value">The value for the property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.Link`1" /> structure by referencing the value of the property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor when the value for the property is already known.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasLoadedOrAssignedValue">
+      <MemberSignature Language="C#" Value="public bool HasLoadedOrAssignedValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasLoadedOrAssignedValue" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Link`1.HasLoadedOrAssignedValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies whether the <see cref="T:System.Data.Linq.Link`1" /> has loaded or assigned a value.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Data.Linq.Link`1" /> has either loaded or assigned a value; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ "Loaded" means that the data was loaded during materialization or at deferred loading. "Assigned" means that you have manually given the data a value.  
+  
+ [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] uses this property to make sure that the <xref:System.Data.Linq.Link%601> has a value, so that accesing it will not trigger deferred loading.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasValue">
+      <MemberSignature Language="C#" Value="public bool HasValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasValue" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Link`1.HasValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the source has a value.</summary>
+        <value>Returns <see langword="true" /> if the source has an assigned or loaded value (including null).</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public T Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Value" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Link`1.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value assigned to or loaded by the <see cref="T:System.Data.Linq.Link`1" />.</summary>
+        <value>The value of this deferred property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

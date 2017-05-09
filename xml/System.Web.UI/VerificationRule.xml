@@ -1,0 +1,75 @@
+<Type Name="VerificationRule" FullName="System.Web.UI.VerificationRule">
+  <TypeSignature Language="C#" Value="public enum VerificationRule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VerificationRule extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.VerificationRule" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how conditional expressions defined by an <see cref="T:System.Web.UI.VerificationAttribute" /> instance are used in verification.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When using extending a class, member or indexer with a <xref:System.Web.UI.VerificationAttribute>, you may define how the conditional expression, defined by the <xref:System.Web.UI.VerificationAttribute.ConditionalProperty%2A> and <xref:System.Web.UI.VerificationAttribute.ConditionalValue%2A> properties, is used by specifying one of the <xref:System.Web.UI.VerificationRule> values. If in the creation of the <xref:System.Web.UI.VerificationAttribute> no <xref:System.Web.UI.VerificationRule> is specified, the default value of Required is used.  
+  
+ The left side of a verification rule's conditional expression is the <xref:System.Web.UI.VerificationAttribute.ConditionalProperty%2A> and the right side is the <xref:System.Web.UI.VerificationAttribute.ConditionalValue%2A>. The <xref:System.Web.UI.VerificationConditionalOperator> specifies how the <xref:System.Web.UI.VerificationAttribute.ConditionalProperty%2A> is to be compared to the <xref:System.Web.UI.VerificationAttribute.ConditionalValue%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NotEmptyString">
+      <MemberSignature Language="C#" Value="NotEmptyString" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.VerificationRule NotEmptyString = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.VerificationRule.NotEmptyString" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.VerificationRule</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The conditional expression specified in an <see cref="T:System.Web.UI.VerificationAttribute" /> instance must have a left hand side that is not an empty string ("").</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Prohibited">
+      <MemberSignature Language="C#" Value="Prohibited" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.VerificationRule Prohibited = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.VerificationRule.Prohibited" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.VerificationRule</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The conditional expression specified in an <see cref="T:System.Web.UI.VerificationAttribute" /> instance is prohibited.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Required">
+      <MemberSignature Language="C#" Value="Required" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.VerificationRule Required = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.VerificationRule.Required" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.VerificationRule</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The conditional expression specified in an <see cref="T:System.Web.UI.VerificationAttribute" /> instance is required.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

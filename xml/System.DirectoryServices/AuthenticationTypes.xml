@@ -1,0 +1,217 @@
+<Type Name="AuthenticationTypes" FullName="System.DirectoryServices.AuthenticationTypes">
+  <TypeSignature Language="C#" Value="public enum AuthenticationTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AuthenticationTypes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AuthenticationTypes" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.AuthenticationTypes" /> enumeration specifies the types of authentication used in <see cref="N:System.DirectoryServices" />. This enumeration has a <see cref="T:System.FlagsAttribute" /> attribute that allows a bitwise combination of its member values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Secure flag can be used in combination with other flags such as ReadonlyServer, FastBind.  
+  
+ Serverless binding refers to a process in which a client attempts to bind to an Active Directory Domain Services object without explicitly specifying an Active Directory Domain Services server in the binding string, for example:  
+  
+```  
+LDAP://CN=jsmith,DC=fabrikam,DC=Com  
+```  
+  
+ This is possible because the Lightweight Directory Access Protocol (LDAP) provider relies on the locator services of Windows 2000 to find the best domain controller (DC) for the client. However, the client must have an account on the Active Directory Domain Services domain controller to take advantage of the serverless binding feature, and the domain controller that is used by a serverless bind will always be located in the default domain (the domain associated with the current security context of the thread that's doing the binding).  
+  
+> [!NOTE]
+>  None of these options are supported by the Novell Netware Directory Service (NDS) system provider.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Anonymous">
+      <MemberSignature Language="C#" Value="Anonymous" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AuthenticationTypes Anonymous = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AuthenticationTypes.Anonymous" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AuthenticationTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No authentication is performed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Delegation">
+      <MemberSignature Language="C#" Value="Delegation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AuthenticationTypes Delegation = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AuthenticationTypes.Delegation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AuthenticationTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enables Active Directory Services Interface (ADSI) to delegate the user's security context, which is necessary for moving objects across domains.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Encryption">
+      <MemberSignature Language="C#" Value="Encryption" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AuthenticationTypes Encryption = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AuthenticationTypes.Encryption" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AuthenticationTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attaches a cryptographic signature to the message that both identifies the sender and ensures that the message has not been modified in transit.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FastBind">
+      <MemberSignature Language="C#" Value="FastBind" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AuthenticationTypes FastBind = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AuthenticationTypes.FastBind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AuthenticationTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that ADSI will not attempt to query the Active Directory Domain Services objectClass property.  Therefore, only the base interfaces that are supported by all ADSI objects will be exposed.  Other interfaces that the object supports will not be available. A user can use this option to boost the performance in a series of object manipulations that involve only methods of the base interfaces. However, ADSI does not verify if any of the request objects actually exist on the server. For more information, see the topic "Fast Binding Option for Batch Write/Modify Operations" in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  For more information about the objectClass property, see the "Object-Class" topic in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AuthenticationTypes None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AuthenticationTypes.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AuthenticationTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Equates to zero, which means to use basic authentication (simple bind) in the LDAP provider.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadonlyServer">
+      <MemberSignature Language="C#" Value="ReadonlyServer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AuthenticationTypes ReadonlyServer = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AuthenticationTypes.ReadonlyServer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AuthenticationTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a WinNT provider, ADSI tries to connect to a domain controller. For Active Directory Domain Services, this flag indicates that a writable server is not required for a serverless binding.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sealing">
+      <MemberSignature Language="C#" Value="Sealing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AuthenticationTypes Sealing = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AuthenticationTypes.Sealing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AuthenticationTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Encrypts data using Kerberos. The <see cref="F:System.DirectoryServices.AuthenticationTypes.Secure" /> flag must also be set to use sealing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Secure">
+      <MemberSignature Language="C#" Value="Secure" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AuthenticationTypes Secure = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AuthenticationTypes.Secure" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AuthenticationTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Requests secure authentication. When this flag is set, the WinNT provider uses NTLM to authenticate the client. Active Directory Domain Services uses Kerberos, and possibly NTLM, to authenticate the client. When the user name and password are a null reference (<see langword="Nothing" /> in Visual Basic), ADSI binds to the object using the security context of the calling thread, which is either the security context of the user account under which the application is running or of the client user account that the calling thread is impersonating.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SecureSocketsLayer">
+      <MemberSignature Language="C#" Value="SecureSocketsLayer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AuthenticationTypes SecureSocketsLayer = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AuthenticationTypes.SecureSocketsLayer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AuthenticationTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Attaches a cryptographic signature to the message that both identifies the sender and ensures that the message has not been modified in transit. Active Directory Domain Services requires the Certificate Server be installed to support Secure Sockets Layer (SSL) encryption.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerBind">
+      <MemberSignature Language="C#" Value="ServerBind" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AuthenticationTypes ServerBind = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AuthenticationTypes.ServerBind" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AuthenticationTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>If your ADsPath includes a server name, specify this flag when using the LDAP provider. Do not use this flag for paths that include a domain name or for serverless paths. Specifying a server name without also specifying this flag results in unnecessary network traffic.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Signing">
+      <MemberSignature Language="C#" Value="Signing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AuthenticationTypes Signing = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AuthenticationTypes.Signing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AuthenticationTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Verifies data integrity to ensure that the data received is the same as the data sent. The <see cref="F:System.DirectoryServices.AuthenticationTypes.Secure" /> flag must also be set to use signing.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

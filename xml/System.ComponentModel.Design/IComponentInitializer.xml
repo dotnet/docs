@@ -1,0 +1,103 @@
+<Type Name="IComponentInitializer" FullName="System.ComponentModel.Design.IComponentInitializer">
+  <TypeSignature Language="C#" Value="public interface IComponentInitializer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComponentInitializer" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IComponentInitializer" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a set of recommended default values during component creation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.IComponentInitializer> interface can be implemented by any designer, which is a component that also implements <xref:System.ComponentModel.Design.IDesigner>, which receives a recommended set of default values for the component it is designing. <xref:System.ComponentModel.Design.IComponentInitializer> is queried during new component creation. Recommended default values for the component's properties are passed in as name/value pairs in a dictionary.  
+  
+ This design provides two customization points: the toolbox item itself can be replaced or changed to perform custom actions, or the designer for a component can be changed to provide a custom action. A designer that implements <xref:System.ComponentModel.Design.IComponentInitializer> should not depend on either of its methods—<xref:System.ComponentModel.Design.IComponentInitializer.InitializeNewComponent%2A> or <xref:System.ComponentModel.Design.IComponentInitializer.InitializeExistingComponent%2A>—being called, because toolbox items are not obligated to call these methods.  
+  
+ For an overview of creating design components, see [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InitializeExistingComponent">
+      <MemberSignature Language="C#" Value="public void InitializeExistingComponent (System.Collections.IDictionary defaultValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitializeExistingComponent(class System.Collections.IDictionary defaultValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IComponentInitializer.InitializeExistingComponent(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="defaultValues" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="defaultValues">A dictionary of default property values, which are name/value pairs, with which to reset the component's state.</param>
+        <summary>Restores an instance of a component to its default state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.IComponentInitializer.InitializeExistingComponent%2A> method is called when a designer will re-initialize an existing component. For example, <xref:System.ComponentModel.Design.IComponentInitializer.InitializeExistingComponent%2A> is commonly called after a drag-and-drop operation. The `defaultValues` parameter is a dictionary containing name/value pairs of default values that should be applied to properties of the associated component. This dictionary may be `null` if no default values have been specified.  
+  
+> [!CAUTION]
+>  When implementing this method, generally you should not modify the component properties beyond those recommendations found in `defaultValue`. The existing component may already have had its properties set by the user or other design-time code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeNewComponent">
+      <MemberSignature Language="C#" Value="public void InitializeNewComponent (System.Collections.IDictionary defaultValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitializeNewComponent(class System.Collections.IDictionary defaultValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IComponentInitializer.InitializeNewComponent(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="defaultValues" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="defaultValues">A dictionary of default property values, which are name/value pairs, with which to initialize the component's state.</param>
+        <summary>Initializes a new component using a set of recommended values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.IComponentInitializer.InitializeNewComponent%2A> method is called after a new component is created. It is typically called by the toolbox item itself and is used to configure the component’s default values.  
+  
+ This dictionary may be `null` if no default values are specified. If the dictionary is `null`, the component properties should be left in their implicit default states.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

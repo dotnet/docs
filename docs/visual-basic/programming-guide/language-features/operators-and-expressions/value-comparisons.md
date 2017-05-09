@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "expressions [Visual Basic], comparing"
 ms.assetid: 60da0c76-9458-4afc-97e9-44a7939c064c
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

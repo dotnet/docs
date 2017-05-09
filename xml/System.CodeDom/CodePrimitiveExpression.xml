@@ -1,0 +1,105 @@
+<Type Name="CodePrimitiveExpression" FullName="System.CodeDom.CodePrimitiveExpression">
+  <TypeSignature Language="C#" Value="public class CodePrimitiveExpression : System.CodeDom.CodeExpression" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodePrimitiveExpression extends System.CodeDom.CodeExpression" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.CodePrimitiveExpression" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.CodeDom.CodeExpression</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a primitive data type value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodePrimitiveExpression> can be used to represent an expression that indicates a primitive data type value.  
+  
+ The <xref:System.CodeDom.CodePrimitiveExpression.Value%2A> property specifies the primitive data type value to represent.  
+  
+ Primitive data types that can be represented using <xref:System.CodeDom.CodePrimitiveExpression> include `null`; string; 16-, 32-, and 64-bit signed integers; and single-precision and double-precision floating-point numbers.  
+  
+   
+  
+## Examples  
+ The following example demonstrates use of <xref:System.CodeDom.CodePrimitiveExpression> to represent values of several primitive types.  
+  
+ [!code-cpp[CodePrimitiveExpressionExample#2](~/samples/snippets/cpp/VS_Snippets_CLR/CodePrimitiveExpressionExample/CPP/codeprimitiveexpressionexample.cpp#2)]
+ [!code-csharp[CodePrimitiveExpressionExample#2](~/samples/snippets/csharp/VS_Snippets_CLR/CodePrimitiveExpressionExample/CS/codeprimitiveexpressionexample.cs#2)]
+ [!code-vb[CodePrimitiveExpressionExample#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodePrimitiveExpressionExample/VB/codeprimitiveexpressionexample.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodePrimitiveExpression ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodePrimitiveExpression.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodePrimitiveExpression" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodePrimitiveExpression (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodePrimitiveExpression.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to represent.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodePrimitiveExpression" /> class using the specified object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public object Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodePrimitiveExpression.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the primitive data type to represent.</summary>
+        <value>The primitive data type instance to represent the value of.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any .NET Framework primitive type can be used here.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

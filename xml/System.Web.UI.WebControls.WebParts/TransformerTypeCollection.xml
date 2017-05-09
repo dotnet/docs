@@ -1,0 +1,214 @@
+<Type Name="TransformerTypeCollection" FullName="System.Web.UI.WebControls.WebParts.TransformerTypeCollection">
+  <TypeSignature Language="C#" Value="public sealed class TransformerTypeCollection : System.Collections.ReadOnlyCollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TransformerTypeCollection extends System.Collections.ReadOnlyCollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.TransformerTypeCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ReadOnlyCollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a read-only collection of <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.TransformerTypeCollection> class represents a read-only collection of objects, typically used by <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> and <xref:System.Web.UI.WebControls.WebParts.WebPartManager> objects to manage sets of <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> objects.  
+  
+ A <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control uses a <xref:System.Web.UI.WebControls.WebParts.TransformerTypeCollection> collection to keep a list of available <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> objects on a page, whereas a <xref:System.Web.UI.WebControls.WebParts.ConnectionsZone> object uses a <xref:System.Web.UI.WebControls.WebParts.TransformerTypeCollection> collection to track the available <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> objects that it contains.  
+  
+ Although the <xref:System.Web.UI.WebControls.WebParts.TransformerTypeCollection> collection is read-only, you can make programmatic changes to the properties of the underlying controls referenced in the collection.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TransformerTypeCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.TransformerTypeCollection" /> class with no members in the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TransformerTypeCollection (System.Collections.ICollection transformerTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.ICollection transformerTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.#ctor(System.Collections.ICollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="transformerTypes" Type="System.Collections.ICollection" />
+      </Parameters>
+      <Docs>
+        <param name="transformerTypes">A collection of <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.TransformerTypeCollection" /> class containing the specified <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="transformerTypes" /> contains objects that are not transformers.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TransformerTypeCollection (System.Web.UI.WebControls.WebParts.TransformerTypeCollection existingTransformerTypes, System.Collections.ICollection transformerTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.TransformerTypeCollection existingTransformerTypes, class System.Collections.ICollection transformerTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.#ctor(System.Web.UI.WebControls.WebParts.TransformerTypeCollection,System.Collections.ICollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="existingTransformerTypes" Type="System.Web.UI.WebControls.WebParts.TransformerTypeCollection" />
+        <Parameter Name="transformerTypes" Type="System.Collections.ICollection" />
+      </Parameters>
+      <Docs>
+        <param name="existingTransformerTypes">A collection of <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects already contained in a <see cref="T:System.Web.UI.WebControls.WebParts.TransformerTypeCollection" />.</param>
+        <param name="transformerTypes">A collection of <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects to combine with the collection in the <c>existingTransformerTypes</c> parameter.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.TransformerTypeCollection" /> class by combining an existing <see cref="T:System.Web.UI.WebControls.WebParts.TransformerTypeCollection" /> collection with the specified <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="transformerTypes" /> contains objects that are not transformers.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (Type value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Type value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.Contains(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> that is checked to determine whether it is in the collection.</param>
+        <summary>Returns a value indicating whether a particular transformer exists in the collection.</summary>
+        <returns>A Boolean value that indicates whether a particular transformer is in the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.Contains%2A> method enables you to check a particular <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> object and determine whether it is part of a <xref:System.Web.UI.WebControls.WebParts.TransformerTypeCollection> collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Type[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Type[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.CopyTo(System.Type[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Type[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">An array of <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects to contain the copied collection.</param>
+        <param name="index">The starting point in the array at which to place the collection contents.</param>
+        <summary>Copies the collection to an array of <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.CopyTo%2A> method is useful when you want to assemble a custom array that can contain all the <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> objects in the <xref:System.Web.UI.WebControls.WebParts.TransformerTypeCollection> collection, a subset of those objects, or a superset of those objects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Empty">
+      <MemberSignature Language="C#" Value="public static readonly System.Web.UI.WebControls.WebParts.TransformerTypeCollection Empty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.WebControls.WebParts.TransformerTypeCollection Empty" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.Empty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.TransformerTypeCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Creates a collection for storing transformers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.Empty> field creates and returns a new instance of the <xref:System.Web.UI.WebControls.WebParts.TransformerTypeCollection> object. The instance is created through the <xref:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.%23ctor%2A> constructor and does not contain any existing members in the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (Type value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Type value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.IndexOf(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> that is a member of the collection.</param>
+        <summary>Returns the position of a particular member in the collection.</summary>
+        <returns>An integer that indicates the position of a particular object in the collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Type this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.TransformerTypeCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of a particular <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> in a collection.</param>
+        <summary>Gets a member of the collection based on its position in the collection.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" /> located at <paramref name="index" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

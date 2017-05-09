@@ -1,0 +1,103 @@
+<Type Name="LocatorOptions" FullName="System.DirectoryServices.ActiveDirectory.LocatorOptions">
+  <TypeSignature Language="C#" Value="public enum LocatorOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LocatorOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.LocatorOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies search flags for finding a domain controller in a domain.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AvoidSelf">
+      <MemberSignature Language="C#" Value="AvoidSelf" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.LocatorOptions AvoidSelf = int64(16384)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.LocatorOptions.AvoidSelf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.LocatorOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When searching for domain controllers from a domain controller, exclude this domain controller from the search. If the current computer is not a domain controller, this flag is ignored.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ForceRediscovery">
+      <MemberSignature Language="C#" Value="ForceRediscovery" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.LocatorOptions ForceRediscovery = int64(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.LocatorOptions.ForceRediscovery" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.LocatorOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Forces cached domain controller data to be ignored when searching for domain controllers.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KdcRequired">
+      <MemberSignature Language="C#" Value="KdcRequired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.LocatorOptions KdcRequired = int64(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.LocatorOptions.KdcRequired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.LocatorOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Search only for domain controllers that are currently running the Kerberos Key Distribution Center service.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeServerRequired">
+      <MemberSignature Language="C#" Value="TimeServerRequired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.LocatorOptions TimeServerRequired = int64(2048)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.LocatorOptions.TimeServerRequired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.LocatorOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Search only for domain controllers that are currently running the Windows Time service.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteableRequired">
+      <MemberSignature Language="C#" Value="WriteableRequired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.LocatorOptions WriteableRequired = int64(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.LocatorOptions.WriteableRequired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.LocatorOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Search only for writeable domain controllers.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

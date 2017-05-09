@@ -1,0 +1,757 @@
+<Type Name="DisplayAttribute" FullName="System.ComponentModel.DataAnnotations.DisplayAttribute">
+  <TypeSignature Language="C#" Value="public sealed class DisplayAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DisplayAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.DisplayAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Method | System.AttributeTargets.Property | System.AttributeTargets.Field | System.AttributeTargets.Parameter, AllowMultiple=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a general-purpose attribute that lets you specify localizable strings for types and members of entity partial classes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The properties of this class can be used either as literals or as resource identifiers for a specified <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType%2A> instance.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DisplayAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.DisplayAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor initializes the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName%2A>, <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Name%2A>, <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Description%2A>, and <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt%2A> properties to an empty string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoGenerateField">
+      <MemberSignature Language="C#" Value="public bool AutoGenerateField { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoGenerateField" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayAttribute.AutoGenerateField" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether UI should be generated automatically in order to display this field.</summary>
+        <value>
+          <see langword="true" /> if UI should be generated automatically to display this field; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Do not use this property to access the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.AutoGenerateField%2A> property. Use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GetAutoGenerateField%2A> method instead.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">An attempt was made to get the property value before it was set.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoGenerateFilter">
+      <MemberSignature Language="C#" Value="public bool AutoGenerateFilter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoGenerateFilter" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayAttribute.AutoGenerateFilter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether filtering UI is automatically displayed for this field.</summary>
+        <value>
+          <see langword="true" /> if UI should be generated automatically to display filtering for this field; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Do not use this property to get the value of the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.AutoGenerateFilter%2A> property. Use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GetAutoGenerateFilter%2A> method instead.  
+  
+ Setting this property overrides the default behavior for specifying which columns are included as filters.  
+  
+   
+  
+## Examples  
+ The following example shows how to disable the filter for the Employee1 field.  
+  
+```csharp  
+[MetadataType(typeof(EmployeeMD))]  
+public partial class Employee {  
+    public class EmployeeMD {  
+        [Display(Name = "Last Name", Order = -9,   
+            Prompt = "Enter Last Name", Description="Emp Last Name")]  
+        public object LastName { get; set; }  
+  
+        [Display(Name = "Manager", AutoGenerateFilter=false)]  
+        public object Employee1 { get; set; }  
+    }  
+}  
+```  
+  
+```vb  
+<MetadataType(GetType(EmployeeMD))>  _  
+Public Class Employee  
+  
+    Public Class EmployeeMD  
+  
+        <Display(Name:="Last Name", Order:=-9, _  
+           Prompt:="Enter Last Name", Description:="Emp Last Name")>  _  
+        Public Property LastName As Object  
+        End Property  
+  
+        <Display(Name:="Manager", AutoGenerateFilter:=false)>  _  
+        Public Property Employee1 As Object  
+        End Property  
+    End Class  
+End Class  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">An attempt was made to get the property value before it was set.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that is used to display a description in the UI.</summary>
+        <value>The value that is used to display a description in the UI.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Do not use this property to get the value of the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Description%2A> property. Use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GetDescription%2A> method instead.  
+  
+ The <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Description%2A> property is typically used as a tooltip or description UI element that is bound to the member using this attribute. The Dynamic Data Edit.ascx template will display the description as a tooltip in text-entry fields. A `null` value or empty string is valid.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Description%2A> property.  
+  
+```csharp  
+[MetadataType(typeof(EmployeeMD))]  
+public partial class Employee {  
+    public class EmployeeMD {  
+        [Display(Name = "Last Name", Order = -9,   
+        Prompt = "Enter Last Name", Description="Emp Last Name")]  
+        public object LastName { get; set; }  
+  
+        [Display(Name = "Manager", AutoGenerateFilter=false)]  
+        public object Employee1 { get; set; }  
+    }  
+}  
+```  
+  
+```vb  
+<MetadataType(GetType(EmployeeMD))>  _  
+Public Class Employee  
+  
+    Public Class EmployeeMD  
+  
+        <Display(Name:="Last Name", Order:=-9, _  
+           Prompt:="Enter Last Name", Description:="Emp Last Name")>  _  
+        Public Property LastName As Object  
+        End Property  
+  
+        <Display(Name:="Manager", AutoGenerateFilter:=false)>  _  
+        Public Property Employee1 As Object  
+        End Property  
+    End Class  
+End Class  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAutoGenerateField">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; GetAutoGenerateField ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;bool&gt; GetAutoGenerateField() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetAutoGenerateField" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the value of the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.AutoGenerateField" /> property.</summary>
+        <returns>The value of <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.AutoGenerateField" /> if the property has been initialized; otherwise, <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAutoGenerateFilter">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; GetAutoGenerateFilter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;bool&gt; GetAutoGenerateFilter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetAutoGenerateFilter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether UI should be generated automatically in order to display filtering for this field.</summary>
+        <returns>The value of <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.AutoGenerateFilter" /> if the property has been initialized; otherwise, <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDescription">
+      <MemberSignature Language="C#" Value="public string GetDescription ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetDescription() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetDescription" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the value of the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Description" /> property.</summary>
+        <returns>The localized description, if the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" /> has been specified and the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Description" /> property represents a resource key; otherwise, the non-localized value of the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Description" /> property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Description%2A> property is typically used as a tooltip for the property that is annotated with this attribute.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" /> property and the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Description" /> property are initialized, but a public static property that has a name that matches the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Description" /> value could not be found for the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGroupName">
+      <MemberSignature Language="C#" Value="public string GetGroupName ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetGroupName() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetGroupName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the value of the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName" /> property.</summary>
+        <returns>A value that will be used for grouping fields in the UI, if <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName" /> has been initialized; otherwise, <see langword="null" />. If the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" /> property has been specified and the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName" /> property represents a resource key, a localized string is returned; otherwise, a non-localized string is returned.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetName">
+      <MemberSignature Language="C#" Value="public string GetName ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetName() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that is used for field display in the UI.</summary>
+        <returns>The localized string for the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Name" /> property, if the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" /> property has been specified and the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Name" /> property represents a resource key; otherwise, the non-localized value of the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Name" /> property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name is typically used as the field label for a UI element that is bound to the property that is annotated with the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Name%2A> property. A `null` value or empty string is valid.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" /> property and the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Name" /> property are initialized, but a public static property that has a name that matches the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Name" /> value could not be found for the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrder">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; GetOrder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;int32&gt; GetOrder() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetOrder" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the value of the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Order" /> property.</summary>
+        <returns>The value of the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Order" /> property, if it has been set; otherwise, <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an order is not specified, presentation layers should consider setting the value of the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Order%2A> property to 10000. This value lets explicitly-ordered fields be displayed before and after the fields that do not have a specified order.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPrompt">
+      <MemberSignature Language="C#" Value="public string GetPrompt ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetPrompt() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetPrompt" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the value of the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt" /> property.</summary>
+        <returns>Gets the localized string for the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt" /> property if the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" /> property has been specified and if the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt" /> property represents a resource key; otherwise, the non-localized value of the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt" /> property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt%2A> property is typically used as a prompt or watermark for a UI element that is bound to the property that is annotated with the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt%2A> attribute.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetShortName">
+      <MemberSignature Language="C#" Value="public string GetShortName ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetShortName() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayAttribute.GetShortName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the value of the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName" /> property.</summary>
+        <returns>The localized string for the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName" /> property if the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" /> property has been specified and if the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName" /> property represents a resource key; otherwise, the non-localized value of the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName" /> value property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The short name is used as the grid column label for a UI element that is bound to the property that is annotated with this attribute. This property returns either the literal, non-localized string, or a localized string if <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType%2A> is not `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupName">
+      <MemberSignature Language="C#" Value="public string GroupName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GroupName" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that is used to group fields in the UI.</summary>
+        <value>A value that is used to group fields in the UI.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Do not use this property to get the value of the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GroupName%2A> property. Use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GetDescription%2A> method instead. A `null` value or empty string is valid.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that is used for display in the UI.</summary>
+        <value>A value that is used for display in the UI.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Do not use this property to get the value of the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Name%2A> property. Use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GetName%2A> method instead.  
+  
+ The name is typically used as the field label for a UI element that is bound to the property that is annotated with this attribute. The Dynamic Data List.aspx, ListDetails.aspx, and Details.aspx page templates use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Name%2A> property for the field label. A `null` value or empty string is valid.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the name property.  
+  
+```csharp  
+[MetadataType(typeof(EmployeeMD))]  
+public partial class Employee {  
+    public class EmployeeMD {  
+        [Display(Name = "Last Name", Order = -9,   
+        Prompt = "Enter Last Name", Description="Emp Last Name")]  
+        public object LastName { get; set; }  
+  
+        [Display(Name = "Manager", AutoGenerateFilter=false)]  
+        public object Employee1 { get; set; }  
+    }  
+}  
+```  
+  
+```vb  
+<MetadataType(GetType(EmployeeMD))>  _  
+Public Class Employee  
+  
+    Public Class EmployeeMD  
+  
+        <Display(Name:="Last Name", Order:=-9, _  
+           Prompt:="Enter Last Name", Description:="Emp Last Name")>  _  
+        Public Property LastName As Object  
+        End Property  
+  
+        <Display(Name:="Manager", AutoGenerateFilter:=false)>  _  
+        Public Property Employee1 As Object  
+        End Property  
+    End Class  
+End Class  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Order">
+      <MemberSignature Language="C#" Value="public int Order { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Order" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Order" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the order weight of the column.</summary>
+        <value>The order weight of the column.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Columns are sorted in increasing order based on the order value. Columns without this attribute have an order value of 0. Negative values are valid and can be used to position a column before all non-negative columns. If an order is not specified, presentation layers should consider using the value 10000. This value lets explicitly-ordered fields be displayed before and after the fields that do not have a specified order.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the order weight of the LastName field to -9. The other fields in the entity have the default order weight of zero. Therefore, the LastName field will be displayed first.  
+  
+```csharp  
+[MetadataType(typeof(EmployeeMD))]  
+public partial class Employee {  
+    public class EmployeeMD {  
+        [Display(Name = "Last Name", Order = -9,   
+        Prompt = "Enter Last Name", Description="Emp Last Name")]  
+        public object LastName { get; set; }  
+  
+        [Display(Name = "Manager", AutoGenerateFilter=false)]  
+        public object Employee1 { get; set; }  
+    }  
+}  
+```  
+  
+```vb  
+<MetadataType(GetType(EmployeeMD))>  _  
+Public Class Employee  
+  
+    Public Class EmployeeMD  
+  
+        <Display(Name:="Last Name", Order:=-9, _  
+           Prompt:="Enter Last Name", Description:="Emp Last Name")>  _  
+        Public Property LastName As Object  
+        End Property  
+  
+        <Display(Name:="Manager", AutoGenerateFilter:=false)>  _  
+        Public Property Employee1 As Object  
+        End Property  
+    End Class  
+End Class  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Prompt">
+      <MemberSignature Language="C#" Value="public string Prompt { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Prompt" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that will be used to set the watermark for prompts in the UI.</summary>
+        <value>A value that will be used to display a watermark in the UI.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is typically used as a prompt or watermark for a UI element that is bound to the property that is annotated with this attribute. Do not use this method to access the prompt string. Use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.GetPrompt%2A> method instead.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt%2A> property to "Enter Last Name".  
+  
+```csharp  
+[MetadataType(typeof(EmployeeMD))]  
+public partial class Employee {  
+    public class EmployeeMD {  
+        [Display(Name = "Last Name", Order = -9,   
+        Prompt = "Enter Last Name", Description="Emp Last Name")]  
+        public object LastName { get; set; }  
+  
+        [Display(Name = "Manager", AutoGenerateFilter=false)]  
+        public object Employee1 { get; set; }  
+    }  
+}  
+```  
+  
+```vb  
+<MetadataType(GetType(EmployeeMD))>  _  
+Public Class Employee  
+  
+    Public Class EmployeeMD  
+  
+        <Display(Name:="Last Name", Order:=-9, _  
+           Prompt:="Enter Last Name", Description:="Emp Last Name")>  _  
+        Public Property LastName As Object  
+        End Property  
+  
+        <Display(Name:="Manager", AutoGenerateFilter:=false)>  _  
+        Public Property Employee1 As Object  
+        End Property  
+    End Class  
+End Class  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceType">
+      <MemberSignature Language="C#" Value="public Type ResourceType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ResourceType" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type that contains the resources for the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName" />, <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Name" />, <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt" />, and <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Description" /> properties.</summary>
+        <value>The type of the resource that contains the <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName" />, <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Name" />, <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt" />, and <see cref="P:System.ComponentModel.DataAnnotations.DisplayAttribute.Description" /> properties.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this value is `null`, the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName%2A>, <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Name%2A>, <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Prompt%2A>, and <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.Description%2A> properties are assumed to be literal, non-localized strings. If this value is not `null`, the string properties are assumed to be the names of public static properties that return the actual string value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShortName">
+      <MemberSignature Language="C#" Value="public string ShortName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ShortName" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that is used for the grid column label.</summary>
+        <value>A value that is for the grid column label.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The short name is used as the grid column label for a UI element that is bound to the property that is annotated with this attribute. The Dynamic Data Insert.aspx and Edit.aspx page templates use the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName%2A> for the field label. This property returns the localized string for <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType%2A> if the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType%2A> property has been specified and if the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName%2A> property represents a resource key. If the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ResourceType%2A> property has not been specified or if the <xref:System.ComponentModel.DataAnnotations.DisplayAttribute.ShortName%2A> property is not a resource key, this property returns a non-localized string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

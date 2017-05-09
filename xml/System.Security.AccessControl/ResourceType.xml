@@ -1,0 +1,296 @@
+<Type Name="ResourceType" FullName="System.Security.AccessControl.ResourceType">
+  <TypeSignature Language="C#" Value="public enum ResourceType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ResourceType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.ResourceType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.AccessControl</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the defined native object types.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DSObject">
+      <MemberSignature Language="C#" Value="DSObject" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType DSObject = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.DSObject" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A directory service (DS) object or a property set or property of a directory service object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DSObjectAll">
+      <MemberSignature Language="C#" Value="DSObjectAll" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType DSObjectAll = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.DSObjectAll" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A directory service object and all of its property sets and properties.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FileObject">
+      <MemberSignature Language="C#" Value="FileObject" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType FileObject = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.FileObject" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A file or directory.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KernelObject">
+      <MemberSignature Language="C#" Value="KernelObject" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType KernelObject = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.KernelObject" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A local kernel object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LMShare">
+      <MemberSignature Language="C#" Value="LMShare" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType LMShare = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.LMShare" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A network share.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Printer">
+      <MemberSignature Language="C#" Value="Printer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType Printer = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.Printer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A printer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderDefined">
+      <MemberSignature Language="C#" Value="ProviderDefined" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType ProviderDefined = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.ProviderDefined" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An object defined by a provider.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RegistryKey">
+      <MemberSignature Language="C#" Value="RegistryKey" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType RegistryKey = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.RegistryKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A registry key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RegistryWow6432Key">
+      <MemberSignature Language="C#" Value="RegistryWow6432Key" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType RegistryWow6432Key = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.RegistryWow6432Key" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An object for a registry entry under WOW64.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Service">
+      <MemberSignature Language="C#" Value="Service" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType Service = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.Service" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A Windows service.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An unknown object type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowObject">
+      <MemberSignature Language="C#" Value="WindowObject" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType WindowObject = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.WindowObject" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A window station or desktop object on the local computer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WmiGuidObject">
+      <MemberSignature Language="C#" Value="WmiGuidObject" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ResourceType WmiGuidObject = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ResourceType.WmiGuidObject" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.ResourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A Windows Management Instrumentation (WMI) object.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,405 @@
+<Type Name="KeyEventArgs" FullName="System.Windows.Forms.KeyEventArgs">
+  <TypeSignature Language="C#" Value="public class KeyEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.KeyEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.Control.KeyDown" /> or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Forms.KeyEventArgs>, which specifies the key the user pressed and whether any modifier keys (CTRL, ALT, and SHIFT) were pressed at the same time, is passed with each <xref:System.Windows.Forms.Control.KeyDown> or <xref:System.Windows.Forms.Control.KeyUp> event.  
+  
+ The <xref:System.Windows.Forms.Control.KeyDown> event occurs when the user presses any key. The <xref:System.Windows.Forms.Control.KeyUp> event occurs when the user releases the key. Duplicate <xref:System.Windows.Forms.Control.KeyDown> events occur each time the key repeats, if the key is held down, but only one <xref:System.Windows.Forms.Control.KeyUp> event is generated when the user releases the key.  
+  
+ The <xref:System.Windows.Forms.Control.KeyPress> event also occurs when a key is pressed. A <xref:System.Windows.Forms.KeyPressEventArgs> is passed with each <xref:System.Windows.Forms.Control.KeyPress> event, and specifies the character that was composed as a result of each key press.  
+  
+ For information about the event model, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code examples demonstrate how to detect the state of a key press.  
+  
+ **Example 1**  
+  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.Control.KeyDown> event with the <xref:System.Windows.Forms.Help> class to display pop-up style Help to the user of the application. The example uses the <xref:System.Windows.Forms.KeyEventArgs> properties passed to the event handler method to filter for all variations of pressing the F1 key with a modifier key. When the user presses any variation of F1 that includes any keyboard modifier, the <xref:System.Windows.Forms.Help> class displays a pop-up window, similar to a <xref:System.Windows.Forms.ToolTip>, near the control. If the user presses ALT+F2, a different Help pop-up is displayed with additional information.  
+  
+ [!code-cpp[KeyEventArgs.Modifiers#1](~/samples/snippets/cpp/VS_Snippets_Winforms/KeyEventArgs.Modifiers/CPP/form1.cpp#1)]
+ [!code-csharp[KeyEventArgs.Modifiers#1](~/samples/snippets/csharp/VS_Snippets_Winforms/KeyEventArgs.Modifiers/CS/form1.cs#1)]
+ [!code-vb[KeyEventArgs.Modifiers#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/KeyEventArgs.Modifiers/VB/form1.vb#1)]  
+  
+ **Example 2**  
+  
+ The following example determines whether the user pressed ALT+E, and if the mouse pointer is over a <xref:System.Windows.Forms.TreeNode>, allows the user to edit that <xref:System.Windows.Forms.TreeNode>.  
+  
+ [!code-cpp[Windows.Forms.Control Members4#3](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.Control Members4/CPP/controlmembers4.cpp#3)]
+ [!code-csharp[Windows.Forms.Control Members4#3](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.Control Members4/CS/controlmembers4.cs#3)]
+ [!code-vb[Windows.Forms.Control Members4#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Windows.Forms.Control Members4/VB/controlmembers4.vb#3)]  
+  
+ **Example 3**  
+  
+ The following example determines whether the user pressed a non-numeric key, and if so, cancels the <xref:System.Windows.Forms.Control.KeyPress> event by using the <xref:System.Windows.Forms.KeyEventArgs.Handled%2A> property.  
+  
+ [!code-cpp[Control.KeyDown#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Control.KeyDown/CPP/form1.cpp#1)]
+ [!code-csharp[Control.KeyDown#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.KeyDown/CS/form1.cs#1)]
+ [!code-vb[Control.KeyDown#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Control.KeyDown/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public KeyEventArgs (System.Windows.Forms.Keys keyData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.KeyEventArgs.#ctor(System.Windows.Forms.Keys)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
+      </Parameters>
+      <Docs>
+        <param name="keyData">A <see cref="T:System.Windows.Forms.Keys" /> representing the key that was pressed, combined with any modifier flags that indicate which CTRL, SHIFT, and ALT keys were pressed at the same time. Possible values are obtained be applying the bitwise OR (|) operator to constants from the <see cref="T:System.Windows.Forms.Keys" /> enumeration.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.KeyEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alt">
+      <MemberSignature Language="C#" Value="public virtual bool Alt { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Alt" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.KeyEventArgs.Alt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the ALT key was pressed.</summary>
+        <value>
+          <see langword="true" /> if the ALT key was pressed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ **Example 1**  
+  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.Control.KeyDown> event with the <xref:System.Windows.Forms.Help> class to display pop-up style Help to the user of the application. The example uses the <xref:System.Windows.Forms.KeyEventArgs> properties passed to the event handler method to filter for all variations of pressing the F1 key with a modifier key. When the user presses any variation of F1 that includes any keyboard modifier, the <xref:System.Windows.Forms.Help> class displays a pop-up window, similar to a <xref:System.Windows.Forms.ToolTip>, near the control. If the user presses ALT+F2, a different Help pop-up is displayed with additional information.  
+  
+ [!code-cpp[KeyEventArgs.Modifiers#1](~/samples/snippets/cpp/VS_Snippets_Winforms/KeyEventArgs.Modifiers/CPP/form1.cpp#1)]
+ [!code-csharp[KeyEventArgs.Modifiers#1](~/samples/snippets/csharp/VS_Snippets_Winforms/KeyEventArgs.Modifiers/CS/form1.cs#1)]
+ [!code-vb[KeyEventArgs.Modifiers#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/KeyEventArgs.Modifiers/VB/form1.vb#1)]  
+  
+ **Example 2**  
+  
+ The following example determines whether the user pressed ALT+E, and if the mouse pointer is over <xref:System.Windows.Forms.TreeNode>, allows the user to edit that <xref:System.Windows.Forms.TreeNode>.  
+  
+ [!code-cpp[Windows.Forms.Control Members4#3](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.Control Members4/CPP/controlmembers4.cpp#3)]
+ [!code-csharp[Windows.Forms.Control Members4#3](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.Control Members4/CS/controlmembers4.cs#3)]
+ [!code-vb[Windows.Forms.Control Members4#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Windows.Forms.Control Members4/VB/controlmembers4.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Control">
+      <MemberSignature Language="C#" Value="public bool Control { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Control" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.KeyEventArgs.Control" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the CTRL key was pressed.</summary>
+        <value>
+          <see langword="true" /> if the CTRL key was pressed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.Control.KeyDown> event with the <xref:System.Windows.Forms.Help> class to display pop-up style Help to the user of the application. The example uses the <xref:System.Windows.Forms.KeyEventArgs> properties passed to the event handler method to filter for all variations of pressing the F1 key with a modifier key. When the user presses any variation of F1 that includes any keyboard modifier, the <xref:System.Windows.Forms.Help> class displays a pop-up window, similar to a <xref:System.Windows.Forms.ToolTip>, near the control. If the user presses ALT+F2, a different Help pop-up is displayed with additional information.  
+  
+ [!code-cpp[KeyEventArgs.Modifiers#1](~/samples/snippets/cpp/VS_Snippets_Winforms/KeyEventArgs.Modifiers/CPP/form1.cpp#1)]
+ [!code-csharp[KeyEventArgs.Modifiers#1](~/samples/snippets/csharp/VS_Snippets_Winforms/KeyEventArgs.Modifiers/CS/form1.cs#1)]
+ [!code-vb[KeyEventArgs.Modifiers#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/KeyEventArgs.Modifiers/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Handled">
+      <MemberSignature Language="C#" Value="public bool Handled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Handled" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.KeyEventArgs.Handled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the event was handled.</summary>
+        <value>
+          <see langword="true" /> to bypass the control's default handling; otherwise, <see langword="false" /> to also pass the event along to the default control handler.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.KeyEventArgs.Handled%2A> is implemented differently by different controls within Windows Forms. For controls like <xref:System.Windows.Forms.TextBox> which subclass native Win32 controls, it is interpreted to mean that the key message should not be passed to the underlying native control. If you set `Handled` to true on a <xref:System.Windows.Forms.TextBox>, that control will not pass the key press `events` to the underlying Win32 text box control, but it will still display the characters that the user typed.  
+  
+ If you want to prevent the current control from receiving a key press, use the <xref:System.Windows.Forms.KeyEventArgs.SuppressKeyPress%2A> property.  
+  
+   
+  
+## Examples  
+ The following example determines whether the user pressed a non-numeric key, and if so, cancels the <xref:System.Windows.Forms.Control.KeyPress> event by using the <xref:System.Windows.Forms.KeyEventArgs.Handled%2A> property.  
+  
+ [!code-cpp[Control.KeyDown#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Control.KeyDown/CPP/form1.cpp#1)]
+ [!code-csharp[Control.KeyDown#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.KeyDown/CS/form1.cs#1)]
+ [!code-vb[Control.KeyDown#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Control.KeyDown/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyCode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Keys KeyCode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Keys KeyCode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.KeyEventArgs.KeyCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the keyboard code for a <see cref="E:System.Windows.Forms.Control.KeyDown" /> or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
+        <value>A <see cref="T:System.Windows.Forms.Keys" /> value that is the key code for the event.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code examples show how to use the <xref:System.Windows.Forms.KeyEventArgs.KeyCode%2A> property to determine which key was pressed.  
+  
+ **Example 1**  
+  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.Control.KeyDown> event with the <xref:System.Windows.Forms.Help> class to display pop-up style Help to the user of the application. The example uses the <xref:System.Windows.Forms.KeyEventArgs> properties passed to the event handler method to filter for all variations of pressing the F1 key with a modifier key. When the user presses any variation of F1 that includes any keyboard modifier, the <xref:System.Windows.Forms.Help> class displays a pop-up window, similar to a <xref:System.Windows.Forms.ToolTip>, near the control. If the user presses ALT+F2, a different Help pop-up is displayed with additional information.  
+  
+ [!code-cpp[KeyEventArgs.Modifiers#1](~/samples/snippets/cpp/VS_Snippets_Winforms/KeyEventArgs.Modifiers/CPP/form1.cpp#1)]
+ [!code-csharp[KeyEventArgs.Modifiers#1](~/samples/snippets/csharp/VS_Snippets_Winforms/KeyEventArgs.Modifiers/CS/form1.cs#1)]
+ [!code-vb[KeyEventArgs.Modifiers#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/KeyEventArgs.Modifiers/VB/form1.vb#1)]  
+  
+ **Example 2**  
+  
+ The following example determines whether the user pressed ALT+E, and if the mouse pointer is over a <xref:System.Windows.Forms.TreeNode>, allows the user to edit that <xref:System.Windows.Forms.TreeNode>.  
+  
+ [!code-cpp[Windows.Forms.Control Members4#3](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.Control Members4/CPP/controlmembers4.cpp#3)]
+ [!code-csharp[Windows.Forms.Control Members4#3](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.Control Members4/CS/controlmembers4.cs#3)]
+ [!code-vb[Windows.Forms.Control Members4#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Windows.Forms.Control Members4/VB/controlmembers4.vb#3)]  
+  
+ **Example 3**  
+  
+ The following example determines whether the user pressed a non-numeric key, and if so, cancels the <xref:System.Windows.Forms.Control.KeyPress> event by using the <xref:System.Windows.Forms.KeyEventArgs.Handled%2A> property.  
+  
+ [!code-cpp[Control.KeyDown#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Control.KeyDown/CPP/form1.cpp#1)]
+ [!code-csharp[Control.KeyDown#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.KeyDown/CS/form1.cs#1)]
+ [!code-vb[Control.KeyDown#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Control.KeyDown/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyData">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Keys KeyData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Keys KeyData" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.KeyEventArgs.KeyData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the key data for a <see cref="E:System.Windows.Forms.Control.KeyDown" /> or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
+        <value>A <see cref="T:System.Windows.Forms.Keys" /> representing the key code for the key that was pressed, combined with modifier flags that indicate which combination of CTRL, SHIFT, and ALT keys was pressed at the same time.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use constants from <xref:System.Windows.Forms.Keys> to extract information from the <xref:System.Windows.Forms.KeyEventArgs.KeyData%2A> property. Use the bitwise AND operator to compare data returned by <xref:System.Windows.Forms.KeyEventArgs.KeyData%2A> with constants in <xref:System.Windows.Forms.Keys> to obtain information about which keys the user pressed. To determine whether a specific modifier key was pressed, use the <xref:System.Windows.Forms.KeyEventArgs.Control%2A>, <xref:System.Windows.Forms.KeyEventArgs.Shift%2A>, and <xref:System.Windows.Forms.KeyEventArgs.Alt%2A> properties.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.KeyDown?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.KeyDown?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#48](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#48)]
+ [!code-vb[System.Windows.Forms.EventExamples#48](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#48)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyValue">
+      <MemberSignature Language="C#" Value="public int KeyValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 KeyValue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.KeyEventArgs.KeyValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the keyboard value for a <see cref="E:System.Windows.Forms.Control.KeyDown" /> or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
+        <value>The integer representation of the <see cref="P:System.Windows.Forms.KeyEventArgs.KeyCode" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.KeyDown?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.KeyDown?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#48](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#48)]
+ [!code-vb[System.Windows.Forms.EventExamples#48](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#48)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Modifiers">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Keys Modifiers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Keys Modifiers" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.KeyEventArgs.Modifiers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the modifier flags for a <see cref="E:System.Windows.Forms.Control.KeyDown" /> or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event. The flags indicate which combination of CTRL, SHIFT, and ALT keys was pressed.</summary>
+        <value>A <see cref="T:System.Windows.Forms.Keys" /> value representing one or more modifier flags.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To determine whether a specific modifier key was pressed, use the <xref:System.Windows.Forms.KeyEventArgs.Control%2A>, <xref:System.Windows.Forms.KeyEventArgs.Shift%2A>, and <xref:System.Windows.Forms.KeyEventArgs.Alt%2A> properties. Modifier flags can be combined with bitwise OR.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Windows.Forms.KeyEventArgs.Modifiers%2A> property to determine which modifier keys were pressed along with the primary key.  
+  
+ [!code-cpp[KeyEventArgs.Modifiers#1](~/samples/snippets/cpp/VS_Snippets_Winforms/KeyEventArgs.Modifiers/CPP/form1.cpp#1)]
+ [!code-csharp[KeyEventArgs.Modifiers#1](~/samples/snippets/csharp/VS_Snippets_Winforms/KeyEventArgs.Modifiers/CS/form1.cs#1)]
+ [!code-vb[KeyEventArgs.Modifiers#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/KeyEventArgs.Modifiers/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shift">
+      <MemberSignature Language="C#" Value="public virtual bool Shift { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Shift" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.KeyEventArgs.Shift" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the SHIFT key was pressed.</summary>
+        <value>
+          <see langword="true" /> if the SHIFT key was pressed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example determines whether the user pressed the Shift key with the F1 key, and if so, displays help.  
+  
+ [!code-cpp[KeyEventArgs.Modifiers#1](~/samples/snippets/cpp/VS_Snippets_Winforms/KeyEventArgs.Modifiers/CPP/form1.cpp#1)]
+ [!code-csharp[KeyEventArgs.Modifiers#1](~/samples/snippets/csharp/VS_Snippets_Winforms/KeyEventArgs.Modifiers/CS/form1.cs#1)]
+ [!code-vb[KeyEventArgs.Modifiers#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/KeyEventArgs.Modifiers/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuppressKeyPress">
+      <MemberSignature Language="C#" Value="public bool SuppressKeyPress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SuppressKeyPress" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.KeyEventArgs.SuppressKeyPress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the key event should be passed on to the underlying control.</summary>
+        <value>
+          <see langword="true" /> if the key event should not be sent to the control; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can assign `true` to this property in an event handler such as <xref:System.Windows.Forms.Control.KeyDown> in order to prevent user input.  
+  
+ Setting <xref:System.Windows.Forms.KeyEventArgs.SuppressKeyPress%2A> to `true` also sets <xref:System.Windows.Forms.KeyEventArgs.Handled%2A> to `true`.  
+  
+   
+  
+## Examples  
+ The following code example prevents numeric keystrokes from reaching the <xref:System.Windows.Forms.TextBox> control named `textBox1`.  
+  
+ [!code-csharp[KeyEventArgs.SuppressKeyPress#1](~/samples/snippets/csharp/VS_Snippets_Winforms/keyeventargs.suppresskeypress/cs/form1.cs#1)]
+ [!code-vb[KeyEventArgs.SuppressKeyPress#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/keyeventargs.suppresskeypress/vb/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

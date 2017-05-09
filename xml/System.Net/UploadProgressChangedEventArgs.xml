@@ -1,0 +1,163 @@
+<Type Name="UploadProgressChangedEventArgs" FullName="System.Net.UploadProgressChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class UploadProgressChangedEventArgs : System.ComponentModel.ProgressChangedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UploadProgressChangedEventArgs extends System.ComponentModel.ProgressChangedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Net.UploadProgressChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.ProgressChangedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Net.WebClient.UploadProgressChanged" /> event of a <see cref="T:System.Net.WebClient" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Instances of this class are passed to the <xref:System.Net.UploadProgressChangedEventHandler>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BytesReceived">
+      <MemberSignature Language="C#" Value="public long BytesReceived { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 BytesReceived" />
+      <MemberSignature Language="DocId" Value="P:System.Net.UploadProgressChangedEventArgs.BytesReceived" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of bytes received.</summary>
+        <value>An <see cref="T:System.Int64" /> value that indicates the number of bytes received.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Uploading data to a server may result in a download from the server. For example, suppose your application uploads a POST request to a Web server. The resulting download will update <xref:System.Net.UploadProgressChangedEventArgs.BytesReceived%2A> and <xref:System.Net.UploadProgressChangedEventArgs.TotalBytesToReceive%2A>.  
+  
+ To determine what percentage of the transfer has occurred, use the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> property. When the upload is complete, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 50%. When the download completes, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 100%.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BytesSent">
+      <MemberSignature Language="C#" Value="public long BytesSent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 BytesSent" />
+      <MemberSignature Language="DocId" Value="P:System.Net.UploadProgressChangedEventArgs.BytesSent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of bytes sent.</summary>
+        <value>An <see cref="T:System.Int64" /> value that indicates the number of bytes sent.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Uploading data to a server may result in a download from the server. For example, suppose your application uploads a POST request to a Web server. The resulting download will update <xref:System.Net.UploadProgressChangedEventArgs.BytesReceived%2A> and <xref:System.Net.UploadProgressChangedEventArgs.TotalBytesToReceive%2A>.  
+  
+ To determine what percentage of the transfer has occurred, use the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> property. When the upload is complete, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 50%. When the download completes, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 100%.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalBytesToReceive">
+      <MemberSignature Language="C#" Value="public long TotalBytesToReceive { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 TotalBytesToReceive" />
+      <MemberSignature Language="DocId" Value="P:System.Net.UploadProgressChangedEventArgs.TotalBytesToReceive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the total number of bytes in a <see cref="T:System.Net.WebClient" /> data upload operation.</summary>
+        <value>An <see cref="T:System.Int64" /> value that indicates the number of bytes that will be received.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To determine the number of bytes already received, use the <xref:System.Net.DownloadProgressChangedEventArgs.BytesReceived%2A> property.  
+  
+ Uploading data to a server may result in a download from the server. For example, suppose your application uploads a POST request to a Web server. The resulting download will update <xref:System.Net.UploadProgressChangedEventArgs.BytesReceived%2A> and <xref:System.Net.UploadProgressChangedEventArgs.TotalBytesToReceive%2A>.  
+  
+ To determine what percentage of the transfer has occurred, use the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> property. When the upload is complete, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 50%. When the download completes, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 100%.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalBytesToSend">
+      <MemberSignature Language="C#" Value="public long TotalBytesToSend { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 TotalBytesToSend" />
+      <MemberSignature Language="DocId" Value="P:System.Net.UploadProgressChangedEventArgs.TotalBytesToSend" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the total number of bytes to send.</summary>
+        <value>An <see cref="T:System.Int64" /> value that indicates the number of bytes that will be sent.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To determine the number of bytes already sent, use the <xref:System.Net.UploadProgressChangedEventArgs.BytesSent%2A> property.  
+  
+ Uploading data to a server may result in a download from the server. For example, suppose your application uploads a POST request to a Web server. The resulting download will update <xref:System.Net.UploadProgressChangedEventArgs.BytesReceived%2A> and <xref:System.Net.UploadProgressChangedEventArgs.TotalBytesToReceive%2A>.  
+  
+ To determine what percentage of the transfer has occurred, use the <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> property. When the upload is complete, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 50%. When the download completes, <xref:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage%2A> will be 100%.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

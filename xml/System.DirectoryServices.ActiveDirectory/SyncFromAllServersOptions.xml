@@ -1,0 +1,135 @@
+<Type Name="SyncFromAllServersOptions" FullName="System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions">
+  <TypeSignature Language="C#" Value="public enum SyncFromAllServersOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SyncFromAllServersOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies additional options when performing a synchronization.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AbortIfServerUnavailable">
+      <MemberSignature Language="C#" Value="AbortIfServerUnavailable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions AbortIfServerUnavailable = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.AbortIfServerUnavailable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Aborts the synchronization if any server cannot be contacted or if any server is unreachable.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckServerAlivenessOnly">
+      <MemberSignature Language="C#" Value="CheckServerAlivenessOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions CheckServerAlivenessOnly = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.CheckServerAlivenessOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Disables all synchronization. The topology is analyzed and unavailable or unreachable servers are identified.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CrossSite">
+      <MemberSignature Language="C#" Value="CrossSite" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions CrossSite = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.CrossSite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Synchronizes across site boundaries. By default, this method attempts to synchronize only with domain controllers in the same site as the home system. Set this flag to attempt to synchronize with all domain controllers in the enterprise forest. However, the domain controllers can be synchronized only if connected by a synchronous (RPC) transport.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No synchronization options.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PushChangeOutward">
+      <MemberSignature Language="C#" Value="PushChangeOutward" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions PushChangeOutward = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.PushChangeOutward" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Pushes changes from the home server out to all partners using transitive replication. This reverses the direction of replication and the order of execution of the replication sets from the usual mode of execution.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipInitialCheck">
+      <MemberSignature Language="C#" Value="SkipInitialCheck" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions SkipInitialCheck = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.SkipInitialCheck" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Assumes that all servers are responding. This will speed up the operation of this method, but if some servers are not responding, some transitive replications might be blocked.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncAdjacentServerOnly">
+      <MemberSignature Language="C#" Value="SyncAdjacentServerOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions SyncAdjacentServerOnly = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.SyncAdjacentServerOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Disables transitive replication. Synchronization is performed only with adjacent servers.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

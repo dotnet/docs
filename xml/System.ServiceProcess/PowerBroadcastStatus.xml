@@ -1,0 +1,189 @@
+<Type Name="PowerBroadcastStatus" FullName="System.ServiceProcess.PowerBroadcastStatus">
+  <TypeSignature Language="C#" Value="public enum PowerBroadcastStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PowerBroadcastStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceProcess.PowerBroadcastStatus" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceProcess</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates the system's power status.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ServiceProcess.PowerBroadcastStatus> is used by the <xref:System.ServiceProcess.ServiceBase> class to indicate a change in the system's power status. You can design your application to react to any power status change.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BatteryLow">
+      <MemberSignature Language="C#" Value="BatteryLow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus BatteryLow = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceProcess.PowerBroadcastStatus.BatteryLow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Battery power is low.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OemEvent">
+      <MemberSignature Language="C#" Value="OemEvent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus OemEvent = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceProcess.PowerBroadcastStatus.OemEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An Advanced Power Management (APM) BIOS signaled an APM OEM event.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PowerStatusChange">
+      <MemberSignature Language="C#" Value="PowerStatusChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus PowerStatusChange = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceProcess.PowerBroadcastStatus.PowerStatusChange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A change in the power status of the computer is detected, such as a switch from battery power to A/C. The system also broadcasts this event when remaining battery power slips below the threshold specified by the user or if the battery power changes by a specified percentage.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="QuerySuspend">
+      <MemberSignature Language="C#" Value="QuerySuspend" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus QuerySuspend = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceProcess.PowerBroadcastStatus.QuerySuspend" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system has requested permission to suspend the computer. An application that grants permission should carry out preparations for the suspension before returning.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="QuerySuspendFailed">
+      <MemberSignature Language="C#" Value="QuerySuspendFailed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus QuerySuspendFailed = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceProcess.PowerBroadcastStatus.QuerySuspendFailed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system was denied permission to suspend the computer. This status is broadcast if any application or driver denied a previous <see langword="QuerySuspend" /> status.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeAutomatic">
+      <MemberSignature Language="C#" Value="ResumeAutomatic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus ResumeAutomatic = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceProcess.PowerBroadcastStatus.ResumeAutomatic" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The computer has woken up automatically to handle an event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  If the system detects any user activity after broadcasting `ResumeAutomatic`, it will broadcast a `ResumeSuspend` event to let applications know they can resume full interaction with the user.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeCritical">
+      <MemberSignature Language="C#" Value="ResumeCritical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus ResumeCritical = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceProcess.PowerBroadcastStatus.ResumeCritical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system has resumed operation after a critical suspension caused by a failing battery.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Because a critical suspension occurs without prior notification, resources and data previously available may not be present when the application receives this event. The application should attempt to restore its state to the best of its ability.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeSuspend">
+      <MemberSignature Language="C#" Value="ResumeSuspend" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus ResumeSuspend = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceProcess.PowerBroadcastStatus.ResumeSuspend" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system has resumed operation after being suspended.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Suspend">
+      <MemberSignature Language="C#" Value="Suspend" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus Suspend = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceProcess.PowerBroadcastStatus.Suspend" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The computer is about to enter a suspended state. This event is typically broadcast when all applications and installable drivers have returned <see langword="true" /> to a previous <see langword="QuerySuspend" /> state.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

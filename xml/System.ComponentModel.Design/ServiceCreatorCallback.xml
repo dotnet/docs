@@ -1,0 +1,52 @@
+<Type Name="ServiceCreatorCallback" FullName="System.ComponentModel.Design.ServiceCreatorCallback">
+  <TypeSignature Language="C#" Value="public delegate object ServiceCreatorCallback(IServiceContainer container, Type serviceType);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ServiceCreatorCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ServiceCreatorCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="container" Type="System.ComponentModel.Design.IServiceContainer" />
+    <Parameter Name="serviceType" Type="System.Type" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Object</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="container">The service container that requested the creation of the service.</param>
+    <param name="serviceType">The type of service to create.</param>
+    <summary>Provides a callback mechanism that can create an instance of a service on demand.</summary>
+    <returns>The service specified by <paramref name="serviceType" />, or <see langword="null" /> if the service could not be created.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ComponentModel.Design.ServiceCreatorCallback> provides a mechanism to publish services that you can request to have created when needed, rather than the service being created immediately when the designer loads. You can use a callback function if the service is not essential and may not be used. A service published by using a <xref:System.ComponentModel.Design.ServiceCreatorCallback> does not use as many additional resources if it is not requested and created. To use a callback function to publish your service, pass a <xref:System.ComponentModel.Design.ServiceCreatorCallback> to the <xref:System.ComponentModel.Design.IServiceContainer.AddService%2A> method of an <xref:System.ComponentModel.Design.IServiceContainer>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to publish a service using a callback function.  
+  
+ [!code-cpp[Classic ServiceCreatorCallback Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ServiceCreatorCallback Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ServiceCreatorCallback Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ServiceCreatorCallback Example/CS/source.cs#1)]
+ [!code-vb[Classic ServiceCreatorCallback Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ServiceCreatorCallback Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

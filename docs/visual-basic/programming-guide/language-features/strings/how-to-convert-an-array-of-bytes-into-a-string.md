@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "arrays [Visual Basic], converting to strings"
 ms.assetid: d0dc8317-9ab3-4324-99f7-3f5788c0e72a
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

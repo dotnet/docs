@@ -1,0 +1,38 @@
+<Type Name="ExtensionDataObject" FullName="System.Runtime.Serialization.ExtensionDataObject">
+  <TypeSignature Language="C#" Value="public sealed class ExtensionDataObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExtensionDataObject extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.ExtensionDataObject" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stores data from a versioned data contract that has been extended by adding new members.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.ExtensionDataObject> is the structure that stores extra data encountered by the <xref:System.Runtime.Serialization.XmlObjectSerializer> during deserialization operations. The structure is used by serialization to write the extra data into the serialized instance. The structure is returned by the <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A> property of the <xref:System.Runtime.Serialization.IExtensibleDataObject> interface.  
+  
+   
+  
+## Examples  
+ The following code serializes an instance of a type (`PersonVersion2`) that is the second version of the serializable type (`Person`). The second version contains extra data (`ID` field) that is not present in the first version. The code then deserializes the XML document into a `Person` object, then immediately reserializes the object including the extra data. Finally, the code deserializes the new XML into a `PersonVersion2` object and writes the complete data to the console, proving that the data has made a round trip to and from an older version of the type. Note that the <xref:System.Runtime.Serialization.DataContractAttribute> attribute must be applied with the <xref:System.Runtime.Serialization.DataContractAttribute.Name%2A> and <xref:System.Runtime.Serialization.DataContractAttribute.Namespace%2A> properties set to the same name and namespace as the original class.  
+  
+ [!code-csharp[IUnknownSerializationData#0](~/samples/snippets/csharp/VS_Snippets_CFX/iunknownserializationdata/cs/iunknownserialization.cs#0)]
+ [!code-vb[IUnknownSerializationData#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/iunknownserializationdata/vb/iunknownserialization.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

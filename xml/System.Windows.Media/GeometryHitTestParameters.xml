@@ -1,0 +1,90 @@
+<Type Name="GeometryHitTestParameters" FullName="System.Windows.Media.GeometryHitTestParameters">
+  <TypeSignature Language="C#" Value="public class GeometryHitTestParameters : System.Windows.Media.HitTestParameters" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GeometryHitTestParameters extends System.Windows.Media.HitTestParameters" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.GeometryHitTestParameters" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.HitTestParameters</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies a <see cref="T:System.Windows.Media.Geometry" /> as the parameter to be used for hit testing a visual tree.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ With the <xref:System.Windows.Media.GeometryHitTestParameters> class, you can use a <xref:System.Windows.Media.Geometry> value for hit testing, to determine whether any visual object intersects with the <xref:System.Windows.Media.Geometry> value.  
+  
+ You can also hit test with a <xref:System.Windows.Point> value by creating a <xref:System.Windows.Media.PointHitTestParameters> object.  
+  
+> [!NOTE]
+>  [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] hit testing only considers the filled area of a geometry during a hit test. If you create a point <xref:System.Windows.Media.Geometry>, the hit test would not intersect anything because a point has no area.  
+  
+   
+  
+## Examples  
+ The following example shows how to set up a hit test using <xref:System.Windows.Media.GeometryHitTestParameters> for the <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> method. The <xref:System.Windows.Point> value that is passed to the `OnMouseDown` method is used to create a <xref:System.Windows.Media.Geometry> object in order to expand the range of the hit test.  
+  
+ [!code-csharp[HitTestingOverview#HitTestingOverviewSnippet10](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/GeometryHitTest.cs#hittestingoverviewsnippet10)]
+ [!code-vb[HitTestingOverview#HitTestingOverviewSnippet10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/geometryhittest.vb#hittestingoverviewsnippet10)]  
+  
+ The <xref:System.Windows.Media.GeometryHitTestResult.IntersectionDetail%2A> property of <xref:System.Windows.Media.GeometryHitTestResult> provides information about the results of a hit test that uses a <xref:System.Windows.Media.Geometry> as a hit test parameter. The following illustration shows the relationship between the hit test geometry (the blue circle) and the target object (the red square).  
+  
+ ![Diagram of IntersectionDetail used in hit testing](~/add/media/intersectiondetail01.png "Diagram of IntersectionDetail used in hit testing")  
+Intersection between hit test geometry and target object  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GeometryHitTestParameters (System.Windows.Media.Geometry geometry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Geometry geometry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeometryHitTestParameters.#ctor(System.Windows.Media.Geometry)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="geometry" Type="System.Windows.Media.Geometry" />
+      </Parameters>
+      <Docs>
+        <param name="geometry">The <see cref="T:System.Windows.Media.Geometry" /> value to use for the hit test geometry.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GeometryHitTestParameters" /> class, using the specified <see cref="T:System.Windows.Media.Geometry" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to set up a hit test by using <xref:System.Windows.Media.GeometryHitTestParameters> for the <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> method. A <xref:System.Windows.Point> value is used to create a <xref:System.Windows.Media.Geometry> object to expand the range of the hit test over a wider display area.  
+  
+ [!code-csharp[HitTestingOverview#HitTestingOverviewSnippet12](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/GeometryHitTest.cs#hittestingoverviewsnippet12)]
+ [!code-vb[HitTestingOverview#HitTestingOverviewSnippet12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/geometryhittest.vb#hittestingoverviewsnippet12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HitGeometry">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Geometry HitGeometry { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Geometry HitGeometry" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.GeometryHitTestParameters.HitGeometry" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Geometry</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Media.Geometry" /> that defines the hit test geometry for this <see cref="T:System.Windows.Media.GeometryHitTestParameters" /> instance.</summary>
+        <value>The <see cref="T:System.Windows.Media.Geometry" /> that defines the hit test region.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

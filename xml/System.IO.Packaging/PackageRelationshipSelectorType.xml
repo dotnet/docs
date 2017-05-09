@@ -1,0 +1,64 @@
+<Type Name="PackageRelationshipSelectorType" FullName="System.IO.Packaging.PackageRelationshipSelectorType">
+  <TypeSignature Language="C#" Value="public enum PackageRelationshipSelectorType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PackageRelationshipSelectorType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackageRelationshipSelectorType" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Packaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of selection criteria that is used to match and return <see cref="T:System.IO.Packaging.PackageRelationship" /> selections through a <see cref="T:System.IO.Packaging.PackageRelationshipSelector" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="Id" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.PackageRelationshipSelectorType Id = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Packaging.PackageRelationshipSelectorType.Id" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.PackageRelationshipSelectorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="T:System.IO.Packaging.PackageRelationship" /> selections are by <see cref="P:System.IO.Packaging.PackageRelationship.Id" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="Type" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Packaging.PackageRelationshipSelectorType Type = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Packaging.PackageRelationshipSelectorType.Type" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Packaging.PackageRelationshipSelectorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="T:System.IO.Packaging.PackageRelationship" /> selections are by <see cref="P:System.IO.Packaging.PackageRelationship.RelationshipType" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

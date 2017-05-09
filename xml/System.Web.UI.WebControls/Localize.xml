@@ -1,0 +1,105 @@
+<Type Name="Localize" FullName="System.Web.UI.WebControls.Localize">
+  <TypeSignature Language="C#" Value="public class Localize : System.Web.UI.WebControls.Literal" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Localize extends System.Web.UI.WebControls.Literal" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Localize" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.Literal</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.LocalizeDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Web.UI.WebControls.Localize))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Reserves a location on a Web page in which to display localized static text.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this topic:  
+  
+-   [Introduction](#introduction)  
+  
+-   [Declarative Syntax](#declarative_syntax)  
+  
+<a name="introduction"></a>   
+## Introduction  
+ Use the <xref:System.Web.UI.WebControls.Localize> control to reserve a location on a Web page in which to display localized text.  
+  
+> [!NOTE]
+>  Controls that are outside the `body` element are ignored.  
+  
+ The <xref:System.Web.UI.WebControls.Localize> control inherits from the <xref:System.Web.UI.WebControls.Literal> control and is identical to it in every way. The <xref:System.Web.UI.WebControls.Localize> control is used at design time to distinguish static text that can be localized from other static text. Although the <xref:System.Web.UI.WebControls.Label> control allows you to apply a style to the displayed text, the <xref:System.Web.UI.WebControls.Localize> control does not. You can programmatically manage the text displayed in the control by setting the <xref:System.Web.UI.WebControls.Literal.Text%2A?displayProperty=fullName> property, inherited from the <xref:System.Web.UI.WebControls.Literal> control.  
+  
+> [!CAUTION]
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+  
+<a name="declarative_syntax"></a>   
+## Declarative Syntax  
+  
+```  
+<asp:Localize  
+    EnableTheming="True|False"  
+    EnableViewState="True|False"  
+    ID="string"  
+    Mode="Transform|PassThrough|Encode"  
+    OnDataBinding="DataBinding event handler"  
+    OnDisposed="Disposed event handler"  
+    OnInit="Init event handler"  
+    OnLoad="Load event handler"  
+    OnPreRender="PreRender event handler"  
+    OnUnload="Unload event handler"  
+    runat="server"  
+    SkinID="string"  
+    Text="string"  
+    Visible="True|False"  
+/>  
+```  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.Localize> control to display static text.  
+  
+> [!NOTE]
+>  The following code example uses the single-file code model and might not work correctly if copied directly into a code-behind file. This code example must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Localize#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Localize/CS/localizecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Localize#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Localize/VB/localizevb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Localize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Localize.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Localize" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create a new instance of the <xref:System.Web.UI.WebControls.Localize> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

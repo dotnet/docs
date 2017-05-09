@@ -1,0 +1,142 @@
+<Type Name="IFeatureSupport" FullName="System.Windows.Forms.IFeatureSupport">
+  <TypeSignature Language="C#" Value="public interface IFeatureSupport" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFeatureSupport" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IFeatureSupport" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies a standard interface for retrieving feature information from the current system.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When implemented in a class, <xref:System.Windows.Forms.IFeatureSupport> provides methods you can use to determine whether a feature is currently installed on the system and to get the version number of a feature. Call <xref:System.Windows.Forms.IFeatureSupport.IsPresent%2A> to determine whether a feature, or a specific version of a feature, is currently installed. Call <xref:System.Windows.Forms.IFeatureSupport.GetVersionPresent%2A> to determine the version number of an installed feature.  
+  
+ See the <xref:System.Windows.Forms.FeatureSupport> and <xref:System.Windows.Forms.OSFeature> classes for implementations of this interface.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Forms.OSFeature> implementation of <xref:System.Windows.Forms.IFeatureSupport> and queries for the <xref:System.Windows.Forms.OSFeature.LayeredWindows> feature. The version is checked to see if it is `null`, to determine whether the feature is present. The result is displayed in a text box. This code assumes `textBox1` has been created and placed on a form.  
+  
+ [!code-cpp[Classic OSFeature Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OSFeature Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic OSFeature Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OSFeature Example/CS/source.cs#1)]
+ [!code-vb[Classic OSFeature Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OSFeature Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetVersionPresent">
+      <MemberSignature Language="C#" Value="public Version GetVersionPresent (object feature);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Version GetVersionPresent(object feature) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IFeatureSupport.GetVersionPresent(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="feature" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="feature">The feature whose version is requested.</param>
+        <summary>Retrieves the version of the specified feature.</summary>
+        <returns>A <see cref="T:System.Version" /> representing the version number of the specified feature; or <see langword="null" /> if the feature is not installed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For an implementation of this method, see <xref:System.Windows.Forms.OSFeature.GetVersionPresent%2A>.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Forms.OSFeature> implementation of <xref:System.Windows.Forms.IFeatureSupport> and queries for the <xref:System.Windows.Forms.OSFeature.LayeredWindows> feature. The version is checked to see if it is `null`, to determine whether the feature is present. The result is displayed in a text box. This code assumes `textBox1` has been created and placed on a form.  
+  
+ [!code-cpp[Classic OSFeature Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OSFeature Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic OSFeature Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OSFeature Example/CS/source.cs#1)]
+ [!code-vb[Classic OSFeature Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OSFeature Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPresent">
+      <MemberSignature Language="C#" Value="public bool IsPresent (object feature);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsPresent(object feature) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IFeatureSupport.IsPresent(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="feature" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="feature">The feature to look for.</param>
+        <summary>Determines whether any version of the specified feature is currently available on the system.</summary>
+        <returns>
+          <see langword="true" /> if the feature is present; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Forms.OSFeature> implementation of <xref:System.Windows.Forms.IFeatureSupport> and queries for the <xref:System.Windows.Forms.OSFeature.LayeredWindows> feature. The version is checked to see if it is `null`, to determine whether the feature is present. The result is displayed in a text box. This code assumes `textBox1` has been created and placed on a form.  
+  
+ [!code-cpp[Classic OSFeature Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OSFeature Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic OSFeature Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OSFeature Example/CS/source.cs#1)]
+ [!code-vb[Classic OSFeature Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OSFeature Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPresent">
+      <MemberSignature Language="C#" Value="public bool IsPresent (object feature, Version minimumVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsPresent(object feature, class System.Version minimumVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IFeatureSupport.IsPresent(System.Object,System.Version)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="feature" Type="System.Object" />
+        <Parameter Name="minimumVersion" Type="System.Version" />
+      </Parameters>
+      <Docs>
+        <param name="feature">The feature to look for.</param>
+        <param name="minimumVersion">A <see cref="T:System.Version" /> representing the minimum version number of the feature to look for.</param>
+        <summary>Determines whether the specified or newer version of the specified feature is currently available on the system.</summary>
+        <returns>
+          <see langword="true" /> if the requested version of the feature is present; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Forms.OSFeature> implementation of <xref:System.Windows.Forms.IFeatureSupport> and queries for the <xref:System.Windows.Forms.OSFeature.LayeredWindows> feature. The version is checked to see if it is `null`, to determine whether the feature is present. The result is displayed in a text box. This code assumes `textBox1` has been created and placed on a form.  
+  
+ [!code-cpp[Classic OSFeature Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic OSFeature Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic OSFeature Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic OSFeature Example/CS/source.cs#1)]
+ [!code-vb[Classic OSFeature Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic OSFeature Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

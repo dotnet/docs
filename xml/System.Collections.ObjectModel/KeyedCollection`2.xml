@@ -1,0 +1,962 @@
+<Type Name="KeyedCollection&lt;TKey,TItem&gt;" FullName="System.Collections.ObjectModel.KeyedCollection&lt;TKey,TItem&gt;">
+  <TypeSignature Language="C#" Value="public abstract class KeyedCollection&lt;TKey,TItem&gt; : System.Collections.ObjectModel.Collection&lt;TItem&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit KeyedCollection`2&lt;TKey, TItem&gt; extends System.Collections.ObjectModel.Collection`1&lt;!TItem&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Collections.ObjectModel.KeyedCollection`2" />
+  <AssemblyInfo>
+    <AssemblyName>System.ObjectModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TKey" />
+    <TypeParameter Name="TItem" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.Collection&lt;TItem&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">TItem</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Generic.Mscorlib_KeyedCollectionDebugView`2))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TKey">The type of keys in the collection.</typeparam>
+    <typeparam name="TItem">The type of items in the collection.</typeparam>
+    <summary>Provides the abstract base class for a collection whose keys are embedded in the values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Collections.ObjectModel.KeyedCollection%602> class provides both O(1) indexed retrieval and keyed retrieval that approaches O(1). It is an abstract type, or more accurately an infinite set of abstract types, because each of its constructed generic types is an abstract base class. To use <xref:System.Collections.ObjectModel.KeyedCollection%602>, derive your collection type from the appropriate constructed type.  
+  
+ The <xref:System.Collections.ObjectModel.KeyedCollection%602> class is a hybrid between a collection based on the <xref:System.Collections.Generic.IList%601> generic interface and a collection based on the <xref:System.Collections.Generic.IDictionary%602> generic interface. Like collections based on the <xref:System.Collections.Generic.IList%601> generic interface, <xref:System.Collections.ObjectModel.KeyedCollection%602> is an indexed list of items. Like collections based on the <xref:System.Collections.Generic.IDictionary%602> generic interface, <xref:System.Collections.ObjectModel.KeyedCollection%602> has a key associated with each element.  
+  
+ Unlike dictionaries, an element of <xref:System.Collections.ObjectModel.KeyedCollection%602> is not a key/value pair; instead, the entire element is the value and the key is embedded within the value.  For example, an element of a collection derived from `KeyedCollection\<String,String>` (`KeyedCollection(Of String, String)` in Visual Basic) might be "John Doe Jr." where the value is "John Doe Jr." and the key is "Doe"; or a collection of employee records containing integer keys could be derived from `KeyedCollection\<int,Employee>`. The abstract <xref:System.Collections.ObjectModel.KeyedCollection%602.GetKeyForItem%2A> method extracts the key from the element.  
+  
+ By default, the <xref:System.Collections.ObjectModel.KeyedCollection%602> includes a lookup dictionary that you can obtain with the <xref:System.Collections.ObjectModel.KeyedCollection%602.Dictionary%2A> property.  When an item is added to the <xref:System.Collections.ObjectModel.KeyedCollection%602>, the item's key is extracted once and saved in the lookup dictionary for faster searches. This behavior is overridden by specifying a dictionary creation threshold when you create the <xref:System.Collections.ObjectModel.KeyedCollection%602>. The lookup dictionary is created the first time the number of elements exceeds that threshold.  If you specify –1 as the threshold, the lookup dictionary is never created.  
+  
+> [!NOTE]
+>  When the internal lookup dictionary is used, it contains references to all the items in the collection if `TItem` is a reference type, or copies of all the items in the collection if `TItem` is a value type. Thus, using the lookup dictionary may not be appropriate if `TItem` is a value type.  
+  
+ You can access an item by its index or key by using the <xref:System.Collections.ObjectModel.KeyedCollection%602.Item%2A>property. You can add items without a key, but these items can subsequently be accessed only by index.  
+  
+   
+  
+## Examples  
+ This section contains two code examples. The first example shows the minimum code required to derive from <xref:System.Collections.ObjectModel.KeyedCollection%602>, and demonstrates many of the inherited methods. The second example shows how to override the protected methods of <xref:System.Collections.ObjectModel.KeyedCollection%602> to provide custom behavior.  
+  
+ **Example 1**  
+  
+ This code example shows the minimum code necessary to derive a collection class from <xref:System.Collections.ObjectModel.KeyedCollection%602>: overriding the <xref:System.Collections.ObjectModel.KeyedCollection%602.GetKeyForItem%2A> method and providing a public constructor that delegates to a base class constructor. The code example also demonstrates many of the properties and methods inherited from <xref:System.Collections.ObjectModel.KeyedCollection%602> and <xref:System.Collections.ObjectModel.Collection%601> classes.  
+  
+ The `SimpleOrder` class is a very simple requisition list that contains `OrderItem` objects, each of which represents a line item in the order. The key of `OrderItem` is immutable, an important consideration for classes that derive from <xref:System.Collections.ObjectModel.KeyedCollection%602>. For a code example that uses mutable keys, see <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey%2A>.  
+  
+ [!code-cpp[KeyedCollection#1](~/samples/snippets/cpp/VS_Snippets_CLR/KeyedCollection/cpp/source.cpp#1)]
+ [!code-csharp[KeyedCollection#1](~/samples/snippets/csharp/VS_Snippets_CLR/KeyedCollection/cs/source.cs#1)]
+ [!code-vb[KeyedCollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/KeyedCollection/VB/source.vb#1)]  
+  
+ **Example 2**  
+  
+ The following code example shows how to override the protected <xref:System.Collections.ObjectModel.KeyedCollection%602.InsertItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.RemoveItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.ClearItems%2A>, and <xref:System.Collections.ObjectModel.KeyedCollection%602.SetItem%2A> methods, to provide custom behavior for the <xref:System.Collections.ObjectModel.Collection%601.Add%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.Remove%2A>, and <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> methods, and for setting the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The custom behavior provided in this example is a notification event named `Changed`, which is raised at the end of each of the overridden methods.  
+  
+ The code example creates the `SimpleOrder` class, which derives from <xref:System.Collections.ObjectModel.KeyedCollection%602> and represents a simple order form. The order form contains `OrderItem` objects representing items ordered. The code example also creates a `SimpleOrderChangedEventArgs` class to contain the event information, and an enumeration to identify the type of change.  
+  
+ The code example demonstrates the custom behavior by calling the properties and methods of the derived class, in the `Main` method of the `Demo` class.  
+  
+ This code example uses objects with immutable keys. For a code example that uses mutable keys, see <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey%2A>.  
+  
+ [!code-cpp[KeyedCollection2#1](~/samples/snippets/cpp/VS_Snippets_CLR/KeyedCollection2/cpp/source.cpp#1)]
+ [!code-csharp[KeyedCollection2#1](~/samples/snippets/csharp/VS_Snippets_CLR/KeyedCollection2/cs/source.cs#1)]
+ [!code-vb[KeyedCollection2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/KeyedCollection2/vb/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected KeyedCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" /> class that uses the default equality comparer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Collections.ObjectModel.KeyedCollection%602> created with this constructor uses the default generic equality comparer for the type of the key, obtained from <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName>. To specify a different generic equality comparer, use the <xref:System.Collections.ObjectModel.KeyedCollection%602.%23ctor%28System.Collections.Generic.IEqualityComparer%7B%600%7D%29> constructor or the <xref:System.Collections.ObjectModel.KeyedCollection%602.%23ctor%28System.Collections.Generic.IEqualityComparer%7B%600%7D%2CSystem.Int32%29> constructor.  
+  
+ By default, the <xref:System.Collections.ObjectModel.KeyedCollection%602> includes a lookup dictionary that is created when the first item is added. When an item is added to the <xref:System.Collections.ObjectModel.KeyedCollection%602>, the item's key is extracted once and saved in the lookup dictionary for faster searches. This behavior can be overridden by using the <xref:System.Collections.ObjectModel.KeyedCollection%602.%23ctor%28System.Collections.Generic.IEqualityComparer%7B%600%7D%2CSystem.Int32%29> constructor and specifying a dictionary creation threshold.  
+  
+> [!NOTE]
+>  Because the <xref:System.Collections.ObjectModel.KeyedCollection%602> class is abstract (`MustInherit` in Visual Basic), you must derive from it in order to use it. In the constructor for your derived type, call the appropriate <xref:System.Collections.ObjectModel.KeyedCollection%602> constructor. It is not necessary to expose functionality like the equality comparer or the dictionary creation threshold in your constructors.  
+  
+ This constructor is an O(1) operation.  
+  
+   
+  
+## Examples  
+ This code example shows the minimum code necessary to derive a collection class from <xref:System.Collections.ObjectModel.KeyedCollection%602>: overriding the <xref:System.Collections.ObjectModel.KeyedCollection%602.GetKeyForItem%2A> method and providing a public constructor that delegates to a base class constructor. The code example also demonstrates many of the properties and methods inherited from <xref:System.Collections.ObjectModel.KeyedCollection%602> and <xref:System.Collections.ObjectModel.Collection%601> classes.  
+  
+ The `SimpleOrder` class is a very simple requisition list that contains `OrderItem` objects, each of which represents a line item in the order. The key of `OrderItem` is immutable, an important consideration for classes that derive from <xref:System.Collections.ObjectModel.KeyedCollection%602>. For a code example that uses mutable keys, see <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey%2A>.  
+  
+ [!code-cpp[KeyedCollection#1](~/samples/snippets/cpp/VS_Snippets_CLR/KeyedCollection/cpp/source.cpp#1)]
+ [!code-csharp[KeyedCollection#1](~/samples/snippets/csharp/VS_Snippets_CLR/KeyedCollection/cs/source.cs#1)]
+ [!code-vb[KeyedCollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/KeyedCollection/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected KeyedCollection (System.Collections.Generic.IEqualityComparer&lt;TKey&gt; comparer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEqualityComparer`1&lt;!TKey&gt; comparer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.#ctor(System.Collections.Generic.IEqualityComparer{`0})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TKey&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="comparer">The implementation of the <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> generic interface to use when comparing keys, or <see langword="null" /> to use the default equality comparer for the type of the key, obtained from <see cref="P:System.Collections.Generic.EqualityComparer`1.Default" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" /> class that uses the specified equality comparer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the <xref:System.Collections.ObjectModel.KeyedCollection%602> includes a lookup dictionary that is created when the first item is added. When an item is added to the <xref:System.Collections.ObjectModel.KeyedCollection%602>, the item's key is extracted once and saved in the lookup dictionary for faster searches. This behavior can be overridden by using the <xref:System.Collections.ObjectModel.KeyedCollection%602.%23ctor%28System.Collections.Generic.IEqualityComparer%7B%600%7D%2CSystem.Int32%29> constructor and specifying a dictionary creation threshold.  
+  
+> [!NOTE]
+>  Because the <xref:System.Collections.ObjectModel.KeyedCollection%602> class is abstract (`MustInherit` in Visual Basic), you must derive from it in order to use it. In the constructor for your derived type, call the appropriate <xref:System.Collections.ObjectModel.KeyedCollection%602> constructor. It is not necessary to expose functionality like the equality comparer or the dictionary creation threshold in your constructors.  
+  
+ This constructor is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected KeyedCollection (System.Collections.Generic.IEqualityComparer&lt;TKey&gt; comparer, int dictionaryCreationThreshold);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEqualityComparer`1&lt;!TKey&gt; comparer, int32 dictionaryCreationThreshold) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.#ctor(System.Collections.Generic.IEqualityComparer{`0},System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;TKey&gt;" />
+        <Parameter Name="dictionaryCreationThreshold" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="comparer">The implementation of the <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> generic interface to use when comparing keys, or <see langword="null" /> to use the default equality comparer for the type of the key, obtained from <see cref="P:System.Collections.Generic.EqualityComparer`1.Default" />.</param>
+        <param name="dictionaryCreationThreshold">The number of elements the collection can hold without creating a lookup dictionary (0 creates the lookup dictionary when the first item is added), or –1 to specify that a lookup dictionary is never created.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" /> class that uses the specified equality comparer and creates a lookup dictionary when the specified threshold is exceeded.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the <xref:System.Collections.ObjectModel.KeyedCollection%602> includes a lookup dictionary that is created when the first item is added. When an item is added to the <xref:System.Collections.ObjectModel.KeyedCollection%602>, the item's key is extracted once and saved in the lookup dictionary for faster searches. This constructor allows you to override that behavior. Specify 0 to create the dictionary when the first element is added, 1 to create the dictionary when the second element is added, and so on. If you specify –1 as the threshold, the lookup dictionary is never created.  
+  
+ For very small collections the improvement in retrieval speed provided by the lookup dictionary might not be worth the extra memory required by the dictionary. Setting a threshold allows you to decide when to make that tradeoff.  
+  
+> [!NOTE]
+>  Because the <xref:System.Collections.ObjectModel.KeyedCollection%602> class is abstract (`MustInherit` in Visual Basic), you must derive from it in order to use it. In the constructor for your derived type, call the appropriate <xref:System.Collections.ObjectModel.KeyedCollection%602> constructor. It is not necessary to expose functionality like the equality comparer or the dictionary creation threshold in your constructors.  
+  
+ This constructor is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the protected <xref:System.Collections.ObjectModel.KeyedCollection%602.InsertItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.RemoveItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.ClearItems%2A>, and <xref:System.Collections.ObjectModel.KeyedCollection%602.SetItem%2A> methods, to provide custom behavior for the <xref:System.Collections.ObjectModel.Collection%601.Add%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.Remove%2A>, and <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> methods, and for setting the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The custom behavior provided in this example is a notification event named `Changed`, which is raised at the end of each of the overridden methods.  
+  
+ The code example uses the <xref:System.Collections.ObjectModel.KeyedCollection%602.%23ctor%28System.Collections.Generic.IEqualityComparer%7B%600%7D%2CSystem.Int32%29> constructor with a threshold of 0, so that the internal dictionary is created the first time an object is added to the collection.  
+  
+ The code example creates the `SimpleOrder` class, which derives from <xref:System.Collections.ObjectModel.KeyedCollection%602> and represents a simple order form. The order form contains `OrderItem` objects representing items ordered. The code example also creates a `SimpleOrderChangedEventArgs` class to contain the event information, and an enumeration to identify the type of change.  
+  
+ The code example demonstrates the custom behavior by calling the properties and methods of the derived class, in the `Main` method of the `Demo` class.  
+  
+ This code example uses objects with immutable keys. For a code example that uses mutable keys, see <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey%2A>.  
+  
+ [!code-cpp[KeyedCollection2#1](~/samples/snippets/cpp/VS_Snippets_CLR/KeyedCollection2/cpp/source.cpp#1)]
+ [!code-csharp[KeyedCollection2#1](~/samples/snippets/csharp/VS_Snippets_CLR/KeyedCollection2/cs/source.cs#1)]
+ [!code-vb[KeyedCollection2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/KeyedCollection2/vb/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="dictionaryCreationThreshold" /> is less than –1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeItemKey">
+      <MemberSignature Language="C#" Value="protected void ChangeItemKey (TItem item, TKey newKey);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ChangeItemKey(!TItem item, !TKey newKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.ChangeItemKey(`1,`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="TItem" />
+        <Parameter Name="newKey" Type="TKey" />
+      </Parameters>
+      <Docs>
+        <param name="item">The element to change the key of.</param>
+        <param name="newKey">The new key for <c>item</c>.</param>
+        <summary>Changes the key associated with the specified element in the lookup dictionary.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not modify the key embedded in `item`; it simply replaces the key saved in the lookup dictionary.  Therefore, if `newKey` is different from the key that is embedded in `item`, you cannot access `item` by using the key returned by <xref:System.Collections.ObjectModel.KeyedCollection%602.GetKeyForItem%2A>.  
+  
+ This method does nothing if the <xref:System.Collections.ObjectModel.KeyedCollection%602> does not have a lookup dictionary.  
+  
+ Every key in a <xref:System.Collections.ObjectModel.KeyedCollection%602> must be unique. A key cannot be `null`.  
+  
+ This method is an O(1) operation.  
+  
+## Notes for Implementers  
+ Before modifying the key embedded in an item, you must call this method to update the key in the lookup dictionary. If the dictionary creation threshold is –1, calling this method is not necessary.  
+  
+ Do not expose the <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey%2A> method as a public method of a derived class. Misuse of this method puts the lookup dictionary out of sync with item keys. For example, setting the key to `null` and then setting it to another value adds multiple keys for an item to the lookup dictionary. Expose this method internally to allow mutable item keys: When the key for an item changes, this method is used to change the key in the lookup dictionary.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the protected <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey%2A> method to support mutable keys, and how to override the protected <xref:System.Collections.ObjectModel.KeyedCollection%602.InsertItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.RemoveItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.ClearItems%2A>, and <xref:System.Collections.ObjectModel.KeyedCollection%602.SetItem%2A> methods to maintain the integrity of the keys and the collection.  
+  
+ The code example creates the `MutableKeys` collection, which derives from <xref:System.Collections.ObjectModel.KeyedCollection%602>, and the `MutableKey` class. The `MutableKey` class has a settable `Key` property. When a new key is assigned to the property, the property setter calls the `internal` (`Friend` in Visual Basic) `ChangeKey` method of the collection to test whether the new key would conflict with an existing key. If so, an exception is thrown and the property value is not changed.  
+  
+ In order to maintain the connection between a `MutableKey` object and the `MutableKeys` collection and to prevent an object from being inserted into two collections, the `MutableKey` class has an `internal` (`Friend` in Visual Basic) `Collection` field. This field is maintained by the protected methods that provide custom behavior for adding and removing items from the collection, such as the <xref:System.Collections.ObjectModel.KeyedCollection%602.InsertItem%2A> method. The field is set when the item is added to a collection and cleared when the item is removed.  
+  
+ [!code-csharp[KeyedCollectionMutable#1](~/samples/snippets/csharp/VS_Snippets_CLR/KeyedCollectionMutable/cs/source.cs#1)]
+ [!code-vb[KeyedCollectionMutable#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/KeyedCollectionMutable/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="item" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="item" /> is not found.  
+  
+ -or-  
+  
+ <paramref name="key" /> already exists in the <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearItems">
+      <MemberSignature Language="C#" Value="protected override void ClearItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.ClearItems" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all elements from the <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there is a lookup dictionary, this method clears it but does not delete it.  
+  
+ If the number of elements has exceeded the dictionary creation threshold and the <xref:System.Collections.ObjectModel.KeyedCollection%602> is using a lookup dictionary, it will continue to use a lookup dictionary even though the number of elements is again under the threshold.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+  
+## Notes for Implementers  
+ Override this method to provide customized behavior for the <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> method, inherited from the <xref:System.Collections.ObjectModel.Collection%601> generic class.  
+  
+ Call the base class implementation of this method to clear the underlying collection and to clear the lookup dictionary.  
+  
+   
+  
+## Examples  
+ This section contains two code examples that demonstrate overriding the <xref:System.Collections.ObjectModel.KeyedCollection%602.ClearItems%2A> method to provide custom behavior for clearing all objects from the collection. The first example adds a custom notification event and the second provides support for a collection of objects with mutable keys.  
+  
+ Example 1  
+  
+ The following code example shows how to override the protected <xref:System.Collections.ObjectModel.KeyedCollection%602.InsertItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.RemoveItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.ClearItems%2A>, and <xref:System.Collections.ObjectModel.KeyedCollection%602.SetItem%2A> methods, to provide custom behavior for the <xref:System.Collections.ObjectModel.Collection%601.Add%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.Remove%2A>, and <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> methods, and for setting the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The custom behavior provided in this example is a notification event named `Changed`, which is raised at the end of each of the overridden methods.  
+  
+ The code example creates the `SimpleOrder` class, which derives from <xref:System.Collections.ObjectModel.KeyedCollection%602> and represents a simple order form. The order form contains `OrderItem` objects representing items ordered. The code example also creates a `SimpleOrderChangedEventArgs` class to contain the event information, and an enumeration to identify the type of change.  
+  
+ The code example demonstrates the custom behavior by calling the properties and methods of the derived class, in the `Main` method of the `Demo` class.  
+  
+ This code example uses objects with immutable keys. For a code example that uses mutable keys, see <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey%2A>.  
+  
+ [!code-cpp[KeyedCollection2#1](~/samples/snippets/cpp/VS_Snippets_CLR/KeyedCollection2/cpp/source.cpp#1)]
+ [!code-csharp[KeyedCollection2#1](~/samples/snippets/csharp/VS_Snippets_CLR/KeyedCollection2/cs/source.cs#1)]
+ [!code-vb[KeyedCollection2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/KeyedCollection2/vb/source.vb#1)]  
+  
+ Example 2  
+  
+ The following code example shows how to override the protected <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey%2A> method to support mutable keys, and how to override the protected <xref:System.Collections.ObjectModel.KeyedCollection%602.InsertItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.RemoveItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.ClearItems%2A>, and <xref:System.Collections.ObjectModel.KeyedCollection%602.SetItem%2A> methods to maintain the integrity of the keys and the collection.  
+  
+ The code example creates the `MutableKeys` collection, which derives from <xref:System.Collections.ObjectModel.KeyedCollection%602>, and the `MutableKey` class. The `MutableKey` class has a settable `Key` property. When a new key is assigned to the property, the property setter calls the `internal` (`Friend` in Visual Basic) `ChangeKey` method of the collection to test whether the new key would conflict with an existing key. If so, an exception is thrown and the property value is not changed.  
+  
+ In order to maintain the connection between a `MutableKey` object and the `MutableKeys` collection and to prevent an object from being inserted into two collections, the `MutableKey` class has an `internal` (`Friend` in Visual Basic) `Collection` field. This field is maintained by the protected methods that provide custom behavior for adding and removing items from the collection, such as the <xref:System.Collections.ObjectModel.KeyedCollection%602.InsertItem%2A> method. The field is set when the item is added to a collection and cleared when the item is removed.  
+  
+ [!code-csharp[KeyedCollectionMutable#1](~/samples/snippets/csharp/VS_Snippets_CLR/KeyedCollectionMutable/cs/source.cs#1)]
+ [!code-vb[KeyedCollectionMutable#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/KeyedCollectionMutable/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Comparer">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEqualityComparer&lt;TKey&gt; Comparer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEqualityComparer`1&lt;!TKey&gt; Comparer" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.ObjectModel.KeyedCollection`2.Comparer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEqualityComparer&lt;TKey&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the generic equality comparer that is used to determine equality of keys in the collection.</summary>
+        <value>The implementation of the <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> generic interface that is used to determine equality of keys in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Retrieving the value of this property is an O(1) operation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (TKey key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(!TKey key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.Contains(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="TKey" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to locate in the <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" />.</param>
+        <summary>Determines whether the collection contains an element with the specified key.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" /> contains an element with the specified key; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Collections.ObjectModel.KeyedCollection%602> has a lookup dictionary, `key` is used to search the dictionary. If there is no lookup dictionary, the key of each element is extracted using the <xref:System.Collections.ObjectModel.KeyedCollection%602.GetKeyForItem%2A> method and compared with the specified key.  
+  
+ This method is an O(1) operation if the <xref:System.Collections.ObjectModel.KeyedCollection%602> has a lookup dictionary; otherwise it is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+  
+   
+  
+## Examples  
+ This code example shows the minimum code necessary to derive a collection class from <xref:System.Collections.ObjectModel.KeyedCollection%602>: overriding the <xref:System.Collections.ObjectModel.KeyedCollection%602.GetKeyForItem%2A> method and providing a public constructor that delegates to a base class constructor. The code example also demonstrates many of the properties and methods inherited from <xref:System.Collections.ObjectModel.KeyedCollection%602> and <xref:System.Collections.ObjectModel.Collection%601> classes.  
+  
+ The `SimpleOrder` class is a very simple requisition list that contains `OrderItem` objects, each of which represents a line item in the order. The key of `OrderItem` is immutable, an important consideration for classes that derive from <xref:System.Collections.ObjectModel.KeyedCollection%602>. For a code example that uses mutable keys, see <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey%2A>.  
+  
+ [!code-cpp[KeyedCollection#1](~/samples/snippets/cpp/VS_Snippets_CLR/KeyedCollection/cpp/source.cpp#1)]
+ [!code-csharp[KeyedCollection#1](~/samples/snippets/csharp/VS_Snippets_CLR/KeyedCollection/cs/source.cs#1)]
+ [!code-vb[KeyedCollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/KeyedCollection/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dictionary">
+      <MemberSignature Language="C#" Value="protected System.Collections.Generic.IDictionary&lt;TKey,TItem&gt; Dictionary { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;!TKey, !TItem&gt; Dictionary" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.ObjectModel.KeyedCollection`2.Dictionary" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;TKey,TItem&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the lookup dictionary of the <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" />.</summary>
+        <value>The lookup dictionary of the <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" />, if it exists; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the <xref:System.Collections.ObjectModel.KeyedCollection%602> includes a lookup dictionary that is created when the first item is added. When an item is added to the <xref:System.Collections.ObjectModel.KeyedCollection%602>, the item's key is extracted once and saved in the lookup dictionary for faster searches. This behavior can be overridden by using the <xref:System.Collections.ObjectModel.KeyedCollection%602.%23ctor%28System.Collections.Generic.IEqualityComparer%7B%600%7D%2CSystem.Int32%29> constructor and specifying a dictionary creation threshold.  
+  
+ Retrieving the value of this property is an O(1) operation.  
+  
+   
+  
+## Examples  
+ The following code example shows how to override the protected <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey%2A> method to support mutable keys, and how to override the protected <xref:System.Collections.ObjectModel.KeyedCollection%602.InsertItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.RemoveItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.ClearItems%2A>, and <xref:System.Collections.ObjectModel.KeyedCollection%602.SetItem%2A> methods to maintain the integrity of the keys and the collection.  
+  
+ The code example creates the `MutableKeys` collection, which derives from <xref:System.Collections.ObjectModel.KeyedCollection%602>, and the `MutableKey` class. The `MutableKey` class has a settable `Key` property. When a new key is assigned to the property, the property setter calls the `internal` (`Friend` in Visual Basic) `ChangeKey` method of the collection to test whether the new key would conflict with an existing key. If so, an exception is thrown and the property value is not changed.  
+  
+ In order to maintain the connection between a `MutableKey` object and the `MutableKeys` collection and to prevent an object from being inserted into two collections, the `MutableKey` class has an `internal` (`Friend` in Visual Basic) `Collection` field. This field is maintained by the protected methods that provide custom behavior for adding and removing items from the collection, such as the <xref:System.Collections.ObjectModel.KeyedCollection%602.InsertItem%2A> method. The field is set when the item is added to a collection and cleared when the item is removed.  
+  
+ [!code-csharp[KeyedCollectionMutable#1](~/samples/snippets/csharp/VS_Snippets_CLR/KeyedCollectionMutable/cs/source.cs#1)]
+ [!code-vb[KeyedCollectionMutable#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/KeyedCollectionMutable/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetKeyForItem">
+      <MemberSignature Language="C#" Value="protected abstract TKey GetKeyForItem (TItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance !TKey GetKeyForItem(!TItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.GetKeyForItem(`1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TKey</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="TItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">The element from which to extract the key.</param>
+        <summary>When implemented in a derived class, extracts the key from the specified element.</summary>
+        <returns>The key for the specified element.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the key in the lookup dictionary is different from the key that is embedded in `item`, you cannot access `item` by using the key returned by <xref:System.Collections.ObjectModel.KeyedCollection%602.GetKeyForItem%2A>.  
+  
+ You can implement this method to return `null` for a collection that contains items without keys, in which case the items can be accessed only by their index. This method is an O(1) operation.  
+  
+## Notes for Implementers  
+ You must override this method to provide the dictionary with a way to extract keys from items in the dictionary.  
+  
+ This method is called internally. It is not necessary for it to be public.  
+  
+   
+  
+## Examples  
+ This code example shows the minimum code necessary to derive a collection class from <xref:System.Collections.ObjectModel.KeyedCollection%602>: overriding the <xref:System.Collections.ObjectModel.KeyedCollection%602.GetKeyForItem%2A> method and providing a public constructor that delegates to a base class constructor. The code example also demonstrates many of the properties and methods inherited from <xref:System.Collections.ObjectModel.KeyedCollection%602> and <xref:System.Collections.ObjectModel.Collection%601> classes.  
+  
+ The `SimpleOrder` class is a very simple requisition list that contains `OrderItem` objects, each of which represents a line item in the order. The key of `OrderItem` is immutable, an important consideration for classes that derive from <xref:System.Collections.ObjectModel.KeyedCollection%602>. For a code example that uses mutable keys, see <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey%2A>.  
+  
+ [!code-cpp[KeyedCollection#1](~/samples/snippets/cpp/VS_Snippets_CLR/KeyedCollection/cpp/source.cpp#1)]
+ [!code-csharp[KeyedCollection#1](~/samples/snippets/csharp/VS_Snippets_CLR/KeyedCollection/cs/source.cs#1)]
+ [!code-vb[KeyedCollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/KeyedCollection/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertItem">
+      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, TItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, !TItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.InsertItem(System.Int32,`1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="TItem" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which <c>item</c> should be inserted.</param>
+        <param name="item">The object to insert.</param>
+        <summary>Inserts an element into the <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" /> at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `index` is equal to <xref:System.Collections.ObjectModel.Collection%601.Count%2A>, `item` is added to the end of the <xref:System.Collections.ObjectModel.KeyedCollection%602>.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+  
+ <xref:System.Collections.ObjectModel.KeyedCollection%602.InsertItem%2A> is called by the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> and <xref:System.Collections.ObjectModel.Collection%601.Insert%2A> methods.  
+  
+## Notes for Implementers  
+ Override this method to provide customized behavior for the <xref:System.Collections.ObjectModel.Collection%601.Add%2A> and <xref:System.Collections.ObjectModel.Collection%601.Insert%2A> methods, inherited from the <xref:System.Collections.ObjectModel.Collection%601> generic class.  
+  
+ Call the base class implementation of this method to insert the item into the underlying collection and to update the lookup dictionary.  
+  
+   
+  
+## Examples  
+ This section contains two code examples that demonstrate overriding the <xref:System.Collections.ObjectModel.KeyedCollection%602.InsertItem%2A> method to provide custom behavior for adding or inserting objects into the collection. The first example adds a custom notification event and the second provides support for a collection of objects with mutable keys.  
+  
+ Example 1  
+  
+ The following code example shows how to override the protected <xref:System.Collections.ObjectModel.KeyedCollection%602.InsertItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.RemoveItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.ClearItems%2A>, and <xref:System.Collections.ObjectModel.KeyedCollection%602.SetItem%2A> methods, to provide custom behavior for the <xref:System.Collections.ObjectModel.Collection%601.Add%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.Remove%2A>, and <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> methods, and for setting the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The custom behavior provided in this example is a notification event named `Changed`, which is raised at the end of each of the overridden methods.  
+  
+ The code example creates the `SimpleOrder` class, which derives from <xref:System.Collections.ObjectModel.KeyedCollection%602> and represents a simple order form. The order form contains `OrderItem` objects representing items ordered. The code example also creates a `SimpleOrderChangedEventArgs` class to contain the event information, and an enumeration to identify the type of change.  
+  
+ The code example demonstrates the custom behavior by calling the properties and methods of the derived class, in the `Main` method of the `Demo` class.  
+  
+ This code example uses objects with immutable keys. For a code example that uses mutable keys, see <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey%2A>.  
+  
+ [!code-cpp[KeyedCollection2#1](~/samples/snippets/cpp/VS_Snippets_CLR/KeyedCollection2/cpp/source.cpp#1)]
+ [!code-csharp[KeyedCollection2#1](~/samples/snippets/csharp/VS_Snippets_CLR/KeyedCollection2/cs/source.cs#1)]
+ [!code-vb[KeyedCollection2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/KeyedCollection2/vb/source.vb#1)]  
+  
+ Example 2  
+  
+ The following code example shows how to override the protected <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey%2A> method to support mutable keys, and how to override the protected <xref:System.Collections.ObjectModel.KeyedCollection%602.InsertItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.RemoveItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.ClearItems%2A>, and <xref:System.Collections.ObjectModel.KeyedCollection%602.SetItem%2A> methods to maintain the integrity of the keys and the collection.  
+  
+ The code example creates the `MutableKeys` collection, which derives from <xref:System.Collections.ObjectModel.KeyedCollection%602>, and the `MutableKey` class. The `MutableKey` class has a settable `Key` property. When a new key is assigned to the property, the property setter calls the `internal` (`Friend` in Visual Basic) `ChangeKey` method of the collection to test whether the new key would conflict with an existing key. If so, an exception is thrown and the property value is not changed.  
+  
+ In order to maintain the connection between a `MutableKey` object and the `MutableKeys` collection and to prevent an object from being inserted into two collections, the `MutableKey` class has an `internal` (`Friend` in Visual Basic) `Collection` field. This field is maintained by the protected methods that provide custom behavior for adding and removing items from the collection, such as the <xref:System.Collections.ObjectModel.KeyedCollection%602.InsertItem%2A> method. The field is set when the item is added to a collection and cleared when the item is removed.  
+  
+ [!code-csharp[KeyedCollectionMutable#1](~/samples/snippets/csharp/VS_Snippets_CLR/KeyedCollectionMutable/cs/source.cs#1)]
+ [!code-vb[KeyedCollectionMutable#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/KeyedCollectionMutable/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0.  
+  
+ -or-  
+  
+ <paramref name="index" /> is greater than <see cref="P:System.Collections.ObjectModel.Collection`1.Count" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public TItem this[TKey key] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TItem Item(!TKey)" />
+      <MemberSignature Language="DocId" Value="P:System.Collections.ObjectModel.KeyedCollection`2.Item(`0)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="TKey" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the element to get.</param>
+        <summary>Gets the element with the specified key.</summary>
+        <value>The element with the specified key. If an element with the specified key is not found, an exception is thrown.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[key]` (`myCollection(key)` in Visual Basic).  
+  
+> [!NOTE]
+>  This property is distinct from the inherited <xref:System.Collections.ObjectModel.Collection%601.Item%2A?displayProperty=fullName> property, which gets and sets elements by numeric index. However, if `TKey` is of type <xref:System.Int32>, this property masks the inherited property. In that case, you can access the inherited property by casting the <xref:System.Collections.ObjectModel.KeyedCollection%602> to its base type. For example, `KeyedCollection<int, MyType>` (`KeyedCollection(Of Integer, MyType)` in Visual Basic, `KeyedCollection<int, MyType^>` in C++) can be cast to `Collection<MyType>` (`Collection(Of MyType)` in Visual Basic, `Collection<MyType^>` in C++).  
+  
+ If the <xref:System.Collections.ObjectModel.KeyedCollection%602> has a lookup dictionary, `key` is used to retrieve the element from the dictionary.  If there is no lookup dictionary, the key of each element is extracted using the <xref:System.Collections.ObjectModel.KeyedCollection%602.GetKeyForItem%2A> method and compared with the specified key.  
+  
+ The C# language uses the  keyword to define the indexers instead of implementing the <xref:System.Collections.ObjectModel.KeyedCollection%602.Item%2A> property. Visual Basic implements <xref:System.Collections.ObjectModel.KeyedCollection%602.Item%2A> as a default property, which provides the same indexing functionality.  
+  
+ Retrieving the value of this property is an O(1) operation if the <xref:System.Collections.ObjectModel.KeyedCollection%602> has a lookup dictionary; otherwise it is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+  
+   
+  
+## Examples  
+ This code example shows the minimum code necessary to derive a collection class from <xref:System.Collections.ObjectModel.KeyedCollection%602>: overriding the <xref:System.Collections.ObjectModel.KeyedCollection%602.GetKeyForItem%2A> method and providing a public constructor that delegates to a base class constructor. The code example also demonstrates many of the properties and methods inherited from <xref:System.Collections.ObjectModel.KeyedCollection%602> and <xref:System.Collections.ObjectModel.Collection%601> classes.  
+  
+ The code example calls both the <xref:System.Collections.ObjectModel.KeyedCollection%602.Item%2A?displayProperty=fullName> property, which is read-only and retrieves by key, and the <xref:System.Collections.ObjectModel.Collection%601.Item%2A?displayProperty=fullName> property, which is settable and retrieves by index. It shows how to access the latter property when the objects in the derived collection have integer keys, indistinguishable from the integers used for indexed retrieval.  
+  
+ The `SimpleOrder` class is a very simple requisition list that contains `OrderItem` objects, each of which represents a line item in the order. The key of `OrderItem` is immutable, an important consideration for classes that derive from <xref:System.Collections.ObjectModel.KeyedCollection%602>. For a code example that uses mutable keys, see <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey%2A>.  
+  
+ [!code-cpp[KeyedCollection#1](~/samples/snippets/cpp/VS_Snippets_CLR/KeyedCollection/cpp/source.cpp#1)]
+ [!code-csharp[KeyedCollection#1](~/samples/snippets/csharp/VS_Snippets_CLR/KeyedCollection/cs/source.cs#1)]
+ [!code-vb[KeyedCollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/KeyedCollection/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">An element with the specified key does not exist in the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public bool Remove (TKey key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Remove(!TKey key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.Remove(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="TKey" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the element to remove.</param>
+        <summary>Removes the element with the specified key from the <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" />.</summary>
+        <returns>
+          <see langword="true" /> if the element is successfully removed; otherwise, <see langword="false" />.  This method also returns <see langword="false" /> if <paramref name="key" /> is not found in the <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The key of the element is also removed from the lookup dictionary.  
+  
+ If the number of elements has exceeded the dictionary creation threshold and the <xref:System.Collections.ObjectModel.KeyedCollection%602> is using a lookup dictionary, it will continue to use a lookup dictionary even though the number of elements is again under the threshold.  
+  
+> [!NOTE]
+>  To customize the behavior of this method, override the <xref:System.Collections.ObjectModel.KeyedCollection%602.RemoveItem%2A> method.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+  
+   
+  
+## Examples  
+ This code example shows the minimum code necessary to derive a collection class from <xref:System.Collections.ObjectModel.KeyedCollection%602>: overriding the <xref:System.Collections.ObjectModel.KeyedCollection%602.GetKeyForItem%2A> method and providing a public constructor that delegates to a base class constructor. The code example also demonstrates many of the properties and methods inherited from <xref:System.Collections.ObjectModel.KeyedCollection%602> and <xref:System.Collections.ObjectModel.Collection%601> classes.  
+  
+ The example demonstrates <xref:System.Collections.ObjectModel.KeyedCollection%602.Remove%2A> method inherited from <xref:System.Collections.ObjectModel.KeyedCollection%602>, which removes the item with a specified key, and also the <xref:System.Collections.ObjectModel.Collection%601.Remove%2A> and <xref:System.Collections.ObjectModel.Collection%601.RemoveAt%2A> methods inherited from <xref:System.Collections.ObjectModel.Collection%601>, which remove by object and by index respectively.  
+  
+ The `SimpleOrder` class is a very simple requisition list that contains `OrderItem` objects, each of which represents a line item in the order. The key of `OrderItem` is immutable, an important consideration for classes that derive from <xref:System.Collections.ObjectModel.KeyedCollection%602>. For a code example that uses mutable keys, see <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey%2A>.  
+  
+ [!code-cpp[KeyedCollection#1](~/samples/snippets/cpp/VS_Snippets_CLR/KeyedCollection/cpp/source.cpp#1)]
+ [!code-csharp[KeyedCollection#1](~/samples/snippets/csharp/VS_Snippets_CLR/KeyedCollection/cs/source.cs#1)]
+ [!code-vb[KeyedCollection#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/KeyedCollection/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="key" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveItem">
+      <MemberSignature Language="C#" Value="protected override void RemoveItem (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemoveItem(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.RemoveItem(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the element to remove.</param>
+        <summary>Removes the element at the specified index of the <see cref="T:System.Collections.ObjectModel.KeyedCollection`2" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The key of the element is also removed from the lookup dictionary.  
+  
+ If the number of elements has exceeded the dictionary creation threshold and the <xref:System.Collections.ObjectModel.KeyedCollection%602> is using a lookup dictionary, it will continue to use a lookup dictionary even though the number of elements is again under the threshold.  
+  
+ This method is an O(`n`) operation, where `n` is <xref:System.Collections.ObjectModel.Collection%601.Count%2A>.  
+  
+## Notes for Implementers  
+ Override this method to provide customized behavior for the <xref:System.Collections.ObjectModel.Collection%601.Remove%28%600%29> and <xref:System.Collections.ObjectModel.Collection%601.RemoveAt%28System.Int32%29> methods, inherited from the <xref:System.Collections.ObjectModel.Collection%601> generic class, and the <xref:System.Collections.ObjectModel.KeyedCollection%602.Remove%28%600%29> method.  
+  
+ Call the base class implementation of this method to remove the item from the underlying collection and to update the lookup dictionary.  
+  
+   
+  
+## Examples  
+ This section contains two code examples that demonstrate overriding the <xref:System.Collections.ObjectModel.KeyedCollection%602.RemoveItem%2A> method to provide custom behavior for removing objects from the collection. The first example adds a custom notification event and the second provides support for a collection of objects with mutable keys.  
+  
+ Example 1  
+  
+ The following code example shows how to override the protected <xref:System.Collections.ObjectModel.KeyedCollection%602.InsertItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.RemoveItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.ClearItems%2A>, and <xref:System.Collections.ObjectModel.KeyedCollection%602.SetItem%2A> methods, to provide custom behavior for the <xref:System.Collections.ObjectModel.Collection%601.Add%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.Remove%2A>, and <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> methods, and for setting the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The custom behavior provided in this example is a notification event named `Changed`, which is raised at the end of each of the overridden methods.  
+  
+ The code example creates the `SimpleOrder` class, which derives from <xref:System.Collections.ObjectModel.KeyedCollection%602> and represents a simple order form. The order form contains `OrderItem` objects representing items ordered. The code example also creates a `SimpleOrderChangedEventArgs` class to contain the event information, and an enumeration to identify the type of change.  
+  
+ The code example demonstrates the custom behavior by calling the properties and methods of the derived class, in the `Main` method of the `Demo` class.  
+  
+ This code example uses objects with immutable keys. For a code example that uses mutable keys, see <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey%2A>.  
+  
+ [!code-cpp[KeyedCollection2#1](~/samples/snippets/cpp/VS_Snippets_CLR/KeyedCollection2/cpp/source.cpp#1)]
+ [!code-csharp[KeyedCollection2#1](~/samples/snippets/csharp/VS_Snippets_CLR/KeyedCollection2/cs/source.cs#1)]
+ [!code-vb[KeyedCollection2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/KeyedCollection2/vb/source.vb#1)]  
+  
+ Example 2  
+  
+ The following code example shows how to override the protected <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey%2A> method to support mutable keys, and how to override the protected <xref:System.Collections.ObjectModel.KeyedCollection%602.InsertItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.RemoveItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.ClearItems%2A>, and <xref:System.Collections.ObjectModel.KeyedCollection%602.SetItem%2A> methods to maintain the integrity of the keys and the collection.  
+  
+ The code example creates the `MutableKeys` collection, which derives from <xref:System.Collections.ObjectModel.KeyedCollection%602>, and the `MutableKey` class. The `MutableKey` class has a settable `Key` property. When a new key is assigned to the property, the property setter calls the `internal` (`Friend` in Visual Basic) `ChangeKey` method of the collection to test whether the new key would conflict with an existing key. If so, an exception is thrown and the property value is not changed.  
+  
+ In order to maintain the connection between a `MutableKey` object and the `MutableKeys` collection and to prevent an object from being inserted into two collections, the `MutableKey` class has an `internal` (`Friend` in Visual Basic) `Collection` field. This field is maintained by the protected methods that provide custom behavior for adding and removing items from the collection, such as the <xref:System.Collections.ObjectModel.KeyedCollection%602.InsertItem%2A> method. The field is set when the item is added to a collection and cleared when the item is removed.  
+  
+ [!code-csharp[KeyedCollectionMutable#1](~/samples/snippets/csharp/VS_Snippets_CLR/KeyedCollectionMutable/cs/source.cs#1)]
+ [!code-vb[KeyedCollectionMutable#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/KeyedCollectionMutable/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItem">
+      <MemberSignature Language="C#" Value="protected override void SetItem (int index, TItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, !TItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.KeyedCollection`2.SetItem(System.Int32,`1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="TItem" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the item to be replaced.</param>
+        <param name="item">The new item.</param>
+        <summary>Replaces the item at the specified index with the specified item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The lookup dictionary is updated accordingly. That is, the key of the item that is being replaced is removed from the lookup dictionary, and the key of the new item is added.  
+  
+ This method is an O(1) operation.  
+  
+## Notes for Implementers  
+ Override this method to provide customized behavior for setting the <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property inherited from the <xref:System.Collections.ObjectModel.Collection%601> generic class.  
+  
+> [!NOTE]
+>  This method does not affect the behavior of the <xref:System.Collections.ObjectModel.KeyedCollection%602.Item%2A?displayProperty=fullName> property, which is read-only.  
+  
+ Call the base class implementation of this method to set the item in the underlying collection and to update the lookup dictionary.  
+  
+   
+  
+## Examples  
+ This section contains two code examples that demonstrate overriding the <xref:System.Collections.ObjectModel.KeyedCollection%602.SetItem%2A> method to provide custom behavior for setting the <xref:System.Collections.ObjectModel.Collection%601.Item%2A?displayProperty=fullName> property. The first example adds a custom notification event and the second provides support for a collection of objects with mutable keys.  
+  
+ Example 1  
+  
+ The following code example shows how to override the protected <xref:System.Collections.ObjectModel.KeyedCollection%602.InsertItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.RemoveItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.ClearItems%2A>, and <xref:System.Collections.ObjectModel.KeyedCollection%602.SetItem%2A> methods, to provide custom behavior for the <xref:System.Collections.ObjectModel.Collection%601.Add%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.Remove%2A>, and <xref:System.Collections.ObjectModel.Collection%601.Clear%2A> methods, and for setting the default <xref:System.Collections.ObjectModel.Collection%601.Item%2A> property (the indexer in C#). The custom behavior provided in this example is a notification event named `Changed`, which is raised at the end of each of the overridden methods.  
+  
+ The code example creates the `SimpleOrder` class, which derives from <xref:System.Collections.ObjectModel.KeyedCollection%602> and represents a simple order form. The order form contains `OrderItem` objects representing items ordered. The code example also creates a `SimpleOrderChangedEventArgs` class to contain the event information, and an enumeration to identify the type of change.  
+  
+ The code example demonstrates the custom behavior by calling the properties and methods of the derived class, in the `Main` method of the `Demo` class.  
+  
+ This code example uses objects with immutable keys. For a code example that uses mutable keys, see <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey%2A>.  
+  
+ [!code-cpp[KeyedCollection2#1](~/samples/snippets/cpp/VS_Snippets_CLR/KeyedCollection2/cpp/source.cpp#1)]
+ [!code-csharp[KeyedCollection2#1](~/samples/snippets/csharp/VS_Snippets_CLR/KeyedCollection2/cs/source.cs#1)]
+ [!code-vb[KeyedCollection2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/KeyedCollection2/vb/source.vb#1)]  
+  
+ Example 2  
+  
+ The following code example shows how to override the protected <xref:System.Collections.ObjectModel.KeyedCollection%602.ChangeItemKey%2A> method to support mutable keys, and how to override the protected <xref:System.Collections.ObjectModel.KeyedCollection%602.InsertItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.RemoveItem%2A>, <xref:System.Collections.ObjectModel.KeyedCollection%602.ClearItems%2A>, and <xref:System.Collections.ObjectModel.KeyedCollection%602.SetItem%2A> methods to maintain the integrity of the keys and the collection.  
+  
+ The code example creates the `MutableKeys` collection, which derives from <xref:System.Collections.ObjectModel.KeyedCollection%602>, and the `MutableKey` class. The `MutableKey` class has a settable `Key` property. When a new key is assigned to the property, the property setter calls the `internal` (`Friend` in Visual Basic) `ChangeKey` method of the collection to test whether the new key would conflict with an existing key. If so, an exception is thrown and the property value is not changed.  
+  
+ In order to maintain the connection between a `MutableKey` object and the `MutableKeys` collection and to prevent an object from being inserted into two collections, the `MutableKey` class has an `internal` (`Friend` in Visual Basic) `Collection` field. This field is maintained by the protected methods that provide custom behavior for adding and removing items from the collection, such as the <xref:System.Collections.ObjectModel.KeyedCollection%602.InsertItem%2A> method. The field is set when the item is added to a collection and cleared when the item is removed.  
+  
+ [!code-csharp[KeyedCollectionMutable#1](~/samples/snippets/csharp/VS_Snippets_CLR/KeyedCollectionMutable/cs/source.cs#1)]
+ [!code-vb[KeyedCollectionMutable#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/KeyedCollectionMutable/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

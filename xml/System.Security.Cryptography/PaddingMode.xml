@@ -1,0 +1,202 @@
+<Type Name="PaddingMode" FullName="System.Security.Cryptography.PaddingMode">
+  <TypeSignature Language="C#" Value="public enum PaddingMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PaddingMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.PaddingMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the type of padding to apply when the message data block is shorter than the full number of bytes needed for a cryptographic operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Most plain text messages do not consist of a number of bytes that completely fill blocks. Often, there are not enough bytes to fill the last block. When this happens, a padding string is added to the text. For example, if the block length is 64 bits and the last block contains only 40 bits, 24 bits of padding are added.  
+  
+ Some encryption standards specify a particular padding scheme. The following example shows how these modes work. Given a blocklength of 8, a data length of 9, the number of padding octets equal to 7, and the data equal to FF FF FF FF FF FF FF FF FF:  
+  
+ Data:                    FF FF FF FF FF FF FF FF FF  
+  
+ X923 padding:          FF FF FF FF FF FF FF FF FF 00 00 00 00 00 00 07  
+  
+ PKCS7 padding:        FF FF FF FF FF FF FF FF FF 07 07 07 07 07 07 07  
+  
+ ISO10126 padding:     FF FF FF FF FF FF FF FF FF 7D 2A 75 EF F8 EF 07  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ANSIX923">
+      <MemberSignature Language="C#" Value="ANSIX923" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.PaddingMode ANSIX923 = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.PaddingMode.ANSIX923" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.PaddingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ANSIX923 padding string consists of a sequence of bytes filled with zeros before the length.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following example shows how this mode works. Given a blocklength of 8, a data length of 9, the number of padding octets equal to 7, and the data equal to FF FF FF FF FF FF FF FF FF:  
+  
+ Data:        FF FF FF FF FF FF FF FF FF  
+  
+ X923 padding:          FF FF FF FF FF FF FF FF FF 00 00 00 00 00 00 07  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ISO10126">
+      <MemberSignature Language="C#" Value="ISO10126" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.PaddingMode ISO10126 = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.PaddingMode.ISO10126" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.PaddingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ISO10126 padding string consists of random data before the length.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following example shows how this mode works. Given a blocklength of 8, a data length of 9, the number of padding octets equal to 7, and the data equal to FF FF FF FF FF FF FF FF FF:  
+  
+ Data:        FF FF FF FF FF FF FF FF FF  
+  
+ ISO10126 padding:     FF FF FF FF FF FF FF FF FF 7D 2A 75 EF F8 EF 07  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.PaddingMode None = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.PaddingMode.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.PaddingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No padding is done.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PKCS7">
+      <MemberSignature Language="C#" Value="PKCS7" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.PaddingMode PKCS7 = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.PaddingMode.PKCS7" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.PaddingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The PKCS #7 padding string consists of a sequence of bytes, each of which is equal to the total number of padding bytes added.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following example shows how these modes work. Given a blocklength of 8, a data length of 9, the number of padding octets equal to 7, and the data equal to FF FF FF FF FF FF FF FF FF:  
+  
+ Data:         FF FF FF FF FF FF FF FF FF  
+  
+ PKCS7 padding:        FF FF FF FF FF FF FF FF FF 07 07 07 07 07 07 07  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Zeros">
+      <MemberSignature Language="C#" Value="Zeros" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.PaddingMode Zeros = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.PaddingMode.Zeros" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.PaddingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The padding string consists of bytes set to zero.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

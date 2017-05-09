@@ -1,0 +1,110 @@
+<Type Name="MorphHelper" FullName="System.Activities.Presentation.Model.MorphHelper">
+  <TypeSignature Language="C#" Value="public static class MorphHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MorphHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.MorphHelper" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A helper class used to update model item references and properties.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddPropertyValueMorphHelper">
+      <MemberSignature Language="C#" Value="public static void AddPropertyValueMorphHelper (Type propertyType, System.Activities.Presentation.Model.PropertyValueMorphHelper extension);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddPropertyValueMorphHelper(class System.Type propertyType, class System.Activities.Presentation.Model.PropertyValueMorphHelper extension) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.MorphHelper.AddPropertyValueMorphHelper(System.Type,System.Activities.Presentation.Model.PropertyValueMorphHelper)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyType" Type="System.Type" />
+        <Parameter Name="extension" Type="System.Activities.Presentation.Model.PropertyValueMorphHelper" />
+      </Parameters>
+      <Docs>
+        <param name="propertyType">The property type.</param>
+        <param name="extension">The method that handles type conversions.</param>
+        <summary>Adds a method to handle type conversions for the specified property type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertyValueMorphHelper">
+      <MemberSignature Language="C#" Value="public static System.Activities.Presentation.Model.PropertyValueMorphHelper GetPropertyValueMorphHelper (Type propertyType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Presentation.Model.PropertyValueMorphHelper GetPropertyValueMorphHelper(class System.Type propertyType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.MorphHelper.GetPropertyValueMorphHelper(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.PropertyValueMorphHelper</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="propertyType">The property type to get the method for.</param>
+        <summary>Returns the method that handles type conversions for the specified property type.</summary>
+        <returns>The method that handles type conversions for the specified property type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MorphObject">
+      <MemberSignature Language="C#" Value="public static void MorphObject (System.Activities.Presentation.Model.ModelItem oldModelItem, System.Activities.Presentation.Model.ModelItem newModelitem);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MorphObject(class System.Activities.Presentation.Model.ModelItem oldModelItem, class System.Activities.Presentation.Model.ModelItem newModelitem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.MorphHelper.MorphObject(System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldModelItem" Type="System.Activities.Presentation.Model.ModelItem" />
+        <Parameter Name="newModelitem" Type="System.Activities.Presentation.Model.ModelItem" />
+      </Parameters>
+      <Docs>
+        <param name="oldModelItem">The old model item to get the parents and sources of.</param>
+        <param name="newModelitem">The new model item.</param>
+        <summary>Updates the model item references to the specified new model item in the model item parents and sources.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MorphProperties">
+      <MemberSignature Language="C#" Value="public static void MorphProperties (System.Activities.Presentation.Model.ModelItem oldModelItem, System.Activities.Presentation.Model.ModelItem newModelitem);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MorphProperties(class System.Activities.Presentation.Model.ModelItem oldModelItem, class System.Activities.Presentation.Model.ModelItem newModelitem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.MorphHelper.MorphProperties(System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldModelItem" Type="System.Activities.Presentation.Model.ModelItem" />
+        <Parameter Name="newModelitem" Type="System.Activities.Presentation.Model.ModelItem" />
+      </Parameters>
+      <Docs>
+        <param name="oldModelItem">The old model item.</param>
+        <param name="newModelitem">The new model item.</param>
+        <summary>Updates the property values in the specified new model item from the corresponding property values in the specified old model item.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

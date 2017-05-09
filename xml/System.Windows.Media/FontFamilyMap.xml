@@ -1,0 +1,189 @@
+<Type Name="FontFamilyMap" FullName="System.Windows.Media.FontFamilyMap">
+  <TypeSignature Language="C#" Value="public class FontFamilyMap" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FontFamilyMap extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.FontFamilyMap" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines which <see cref="T:System.Windows.Media.FontFamily" /> to use for a specified set of Unicode code points and a culture-specific language.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.FontFamilyMap> also specifies a scale factor, allowing the target <xref:System.Windows.Media.FontFamily> size to be adjusted so that it better matches the size of other fonts used in the composite font family.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FontFamilyMap ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.FontFamilyMap.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.FontFamilyMap" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[FontSnippets#FontMapSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontMapSnippets.xaml.cs#fontmapsnippet1)]
+ [!code-vb[FontSnippets#FontMapSnippet1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontmapsnippets.xaml.vb#fontmapsnippet1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Language">
+      <MemberSignature Language="C#" Value="public System.Windows.Markup.XmlLanguage Language { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Markup.XmlLanguage Language" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.FontFamilyMap.Language" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Markup.XmlLanguage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the culture-specific language for the <see cref="T:System.Windows.Media.FontFamilyMap" />.</summary>
+        <value>A <see cref="T:System.Windows.Markup.XmlLanguage" /> value representing the culture-specific language. The default value is a <see langword="null" /> string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.FontFamilyMap.Language%2A> property can refer to one of the following:  
+  
+-   A specific language if the <xref:System.Windows.Media.FontFamilyMap> applies to just that language.  
+  
+-   A neutral language if it applies to a group of related languages.  
+  
+-   An empty string if it applies to any language.  
+  
+ The default value is the empty string.  
+  
+   
+  
+## Examples  
+ [!code-csharp[FontSnippets#FontMapSnippet5](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontMapSnippets.xaml.cs#fontmapsnippet5)]
+ [!code-vb[FontSnippets#FontMapSnippet5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontmapsnippets.xaml.vb#fontmapsnippet5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scale">
+      <MemberSignature Language="C#" Value="public double Scale { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Scale" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.FontFamilyMap.Scale" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the font scale factor for the target <see cref="T:System.Windows.Media.FontFamily" />.</summary>
+        <value>A <see cref="T:System.Double" /> value representing the scale factor. The default value is <c>1.0</c>.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.FontFamilyMap.Scale%2A> allows the target <xref:System.Windows.Media.FontFamily> size to be adjusted so that it better matches the size of other fonts used in the composite font family. The scale factor is relative to "em" units.  
+  
+   
+  
+## Examples  
+ [!code-csharp[FontSnippets#FontMapSnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontMapSnippets.xaml.cs#fontmapsnippet2)]
+ [!code-vb[FontSnippets#FontMapSnippet2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontmapsnippets.xaml.vb#fontmapsnippet2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public string Target { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Target" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.FontFamilyMap.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.Markup.DesignerSerializationOptions(System.Windows.Markup.DesignerSerializationOptions.SerializeAsAttribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the target font family name for which the Unicode range applies to.</summary>
+        <value>A <see cref="T:System.String" /> value representing the font family name. The default value is a <see langword="null" /> string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[FontSnippets#FontMapSnippet3](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontMapSnippets.xaml.cs#fontmapsnippet3)]
+ [!code-vb[FontSnippets#FontMapSnippet3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontmapsnippets.xaml.vb#fontmapsnippet3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unicode">
+      <MemberSignature Language="C#" Value="public string Unicode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Unicode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.FontFamilyMap.Unicode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Windows.Markup.DesignerSerializationOptions(System.Windows.Markup.DesignerSerializationOptions.SerializeAsAttribute)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string value representing one or more Unicode code point ranges.</summary>
+        <value>A <see cref="T:System.String" /> value representing Unicode code point ranges. The default value is "0000-10ffff".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each Unicode code point range is represented by the first and last code point in the range, for example, `"0000-00ff"`. The string of Unicode code point ranges is delimited by a comma, for example, `"0000-00ff, 00e0-00ef"`.  
+  
+ A code page is a list of selected character codes (characters represented as code points) in a certain order. Code pages are usually defined to support specific languages or groups of languages that share common writing systems. Windows code pages contain 256 code points and are zero-based. In most code pages, the code points 0 through 127 represent the same characters. This allows for continuity and legacy code. The code points 128 through 255 differ significantly between code pages. For more information, see [Encoding Support for Code Pages](http://msdn.microsoft.com/en-us/5db4c290-41d5-41f5-a7e6-3ab0f4bfafae).  
+  
+   
+  
+## Examples  
+ [!code-csharp[FontSnippets#FontMapSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontMapSnippets.xaml.cs#fontmapsnippet4)]
+ [!code-vb[FontSnippets#FontMapSnippet4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontmapsnippets.xaml.vb#fontmapsnippet4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.FormatException">Unicode range not valid.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

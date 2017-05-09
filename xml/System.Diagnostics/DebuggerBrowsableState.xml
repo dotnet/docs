@@ -1,0 +1,127 @@
+<Type Name="DebuggerBrowsableState" FullName="System.Diagnostics.DebuggerBrowsableState">
+  <TypeSignature Language="C#" Value="public enum DebuggerBrowsableState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DebuggerBrowsableState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.DebuggerBrowsableState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Diagnostics.Debug</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides display instructions for the debugger.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Diagnostics.DebuggerBrowsableState> is used to simplify the view in the debug window. Use of the <xref:System.Diagnostics.DebuggerDisplayAttribute> attribute using this enumeration can result in a much simpler and more pleasing view in the debug window. See the <xref:System.Diagnostics.DebuggerBrowsableAttribute> class for information on the use of this enumeration.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Diagnostics.DebuggerBrowsableState> enumeration to instruct the debugger to not display the root (property name) of the `Keys` property, but to display the elements of the array that `Keys` gets. This code example is part of a larger example provided for the <xref:System.Diagnostics.DebuggerDisplayAttribute> class.  
+  
+ [!code-cpp[System.Diagnostics.DebuggerBrowsableAttribute#6](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Diagnostics.DebuggerBrowsableAttribute/cpp/program.cpp#6)]
+ [!code-csharp[System.Diagnostics.DebuggerBrowsableAttribute#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.DebuggerBrowsableAttribute/CS/program.cs#6)]
+ [!code-vb[System.Diagnostics.DebuggerBrowsableAttribute#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.DebuggerBrowsableAttribute/VB/module1.vb#6)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Collapsed">
+      <MemberSignature Language="C#" Value="Collapsed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.DebuggerBrowsableState Collapsed = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.DebuggerBrowsableState.Collapsed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Debug</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.DebuggerBrowsableState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Show the element as collapsed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Never">
+      <MemberSignature Language="C#" Value="Never" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.DebuggerBrowsableState Never = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.DebuggerBrowsableState.Never" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Debug</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.DebuggerBrowsableState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Never show the element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootHidden">
+      <MemberSignature Language="C#" Value="RootHidden" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.DebuggerBrowsableState RootHidden = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.DebuggerBrowsableState.RootHidden" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Debug</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.DebuggerBrowsableState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Do not display the root element; display the child elements if the element is a collection or array of items.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

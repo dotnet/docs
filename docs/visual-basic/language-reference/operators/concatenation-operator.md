@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "strings [Visual Basic], concatenating"
 ms.assetid: fefc3d00-cbf1-475c-8c5e-6fb213b3f85a
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

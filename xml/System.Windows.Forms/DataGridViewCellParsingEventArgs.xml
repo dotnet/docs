@@ -1,0 +1,210 @@
+<Type Name="DataGridViewCellParsingEventArgs" FullName="System.Windows.Forms.DataGridViewCellParsingEventArgs">
+  <TypeSignature Language="C#" Value="public class DataGridViewCellParsingEventArgs : System.Windows.Forms.ConvertEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewCellParsingEventArgs extends System.Windows.Forms.ConvertEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellParsingEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.ConvertEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.DataGridView.CellParsing" /> event of a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Handle the <xref:System.Windows.Forms.DataGridView.CellParsing> event to provide custom value conversion from a user-specified value to a value in the type specified by the cell <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A> property.  
+  
+ When you handle the <xref:System.Windows.Forms.DataGridView.CellParsing> event, you can convert the value yourself or you can customize the default conversion. For example, you can convert the value yourself using the cell <xref:System.Windows.Forms.DataGridViewCell.ParseFormattedValue%2A> method with type converters of your choosing. Alternately, you can let the default type converters parse the value, but modify the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A>, and <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> properties of the object returned by the <xref:System.Windows.Forms.DataGridViewCellParsingEventArgs.InheritedCellStyle%2A?displayProperty=fullName> property, which is initialized using the cell <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property.  
+  
+ When you convert the value yourself, replace the initial, formatted value of the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A?displayProperty=fullName> property with the converted value in the type specified by the cell <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A> property. To indicate that no further parsing is necessary, set the <xref:System.Windows.Forms.DataGridViewCellParsingEventArgs.ParsingApplied%2A?displayProperty=fullName> property to `true`.  
+  
+ When the event handler completes, if the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A> is `null` or is not of the correct type, or the <xref:System.Windows.Forms.DataGridViewCellParsingEventArgs.ParsingApplied%2A> property is `false`, the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A> is parsed using the cell <xref:System.Windows.Forms.DataGridViewCell.ParseFormattedValue%2A> method with default type converters. The default implementation of this method parses the value using the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A>, and <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> properties of the cell style passed in. If the value is not equal to <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, the value is parsed using the <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> property and the type converters passed in.  
+  
+ To customize the conversion of a cell value into a formatted value for display, handle the <xref:System.Windows.Forms.DataGridView.CellFormatting> event.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using <xref:System.Windows.Forms.DataGridViewCellParsingEventArgs> to check the validity of date entries.  
+  
+ [!code-cpp[System.Windows.Forms.GridViewUnbound#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/CPP/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.GridViewUnbound#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.GridViewUnbound#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/VB/form1.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridViewCellParsingEventArgs (int rowIndex, int columnIndex, object value, Type desiredType, System.Windows.Forms.DataGridViewCellStyle inheritedCellStyle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 rowIndex, int32 columnIndex, object value, class System.Type desiredType, class System.Windows.Forms.DataGridViewCellStyle inheritedCellStyle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellParsingEventArgs.#ctor(System.Int32,System.Int32,System.Object,System.Type,System.Windows.Forms.DataGridViewCellStyle)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="rowIndex" Type="System.Int32" />
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="desiredType" Type="System.Type" />
+        <Parameter Name="inheritedCellStyle" Type="System.Windows.Forms.DataGridViewCellStyle" />
+      </Parameters>
+      <Docs>
+        <param name="rowIndex">The row index of the cell that was changed.</param>
+        <param name="columnIndex">The column index of the cell that was changed.</param>
+        <param name="value">The new value.</param>
+        <param name="desiredType">The type of the new value.</param>
+        <param name="inheritedCellStyle">The style applied to the cell that was changed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCellParsingEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnIndex">
+      <MemberSignature Language="C#" Value="public int ColumnIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellParsingEventArgs.ColumnIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the column index of the cell data that requires parsing.</summary>
+        <value>The column index of the cell that was changed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.DataGridViewCellParsingEventArgs.ColumnIndex%2A> property to obtain an index into the <xref:System.Windows.Forms.DataGridView.Columns%2A> property of a <xref:System.Windows.Forms.DataGridView>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using <xref:System.Windows.Forms.DataGridViewCellParsingEventArgs.ColumnIndex%2A> to discover if the changed cell is in the date column.  
+  
+ [!code-cpp[System.Windows.Forms.GridViewUnbound#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/CPP/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.GridViewUnbound#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.GridViewUnbound#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InheritedCellStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewCellStyle InheritedCellStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewCellStyle InheritedCellStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellParsingEventArgs.InheritedCellStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewCellStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the style applied to the edited cell.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> that represents the current style of the cell being edited. The default value is the value of the cell <see cref="P:System.Windows.Forms.DataGridViewCell.InheritedStyle" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this property to determine the formatting in effect for the cell. Setting this property or changing the properties of the object that this property returns has no effect unless the <xref:System.Windows.Forms.DataGridViewCellParsingEventArgs.ParsingApplied%2A> is `false` when the event handler exits. In this case, the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A>, and <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> properties of the cell style are used to parse the cell value.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellParsing?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellParsing?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#303](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#303)]
+ [!code-vb[System.Windows.Forms.EventExamples#303](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#303)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParsingApplied">
+      <MemberSignature Language="C#" Value="public bool ParsingApplied { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ParsingApplied" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellParsingEventArgs.ParsingApplied" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether a cell's value has been successfully parsed.</summary>
+        <value>
+          <see langword="true" /> if the cell's value has been successfully parsed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Forms.DataGridViewCellParsingEventHandler> sets the <xref:System.Windows.Forms.DataGridViewCellParsingEventArgs.ParsingApplied%2A> property to indicate whether the new cell value was successfully parsed and no further conversion is necessary.  
+  
+   
+  
+## Examples  
+ The following code example sets <xref:System.Windows.Forms.DataGridViewCellParsingEventArgs.ParsingApplied%2A> to `true` when the cell's value is successfully parsed.  
+  
+ [!code-cpp[System.Windows.Forms.GridViewUnbound#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/CPP/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.GridViewUnbound#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.GridViewUnbound#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowIndex">
+      <MemberSignature Language="C#" Value="public int RowIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RowIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellParsingEventArgs.RowIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the row index of the cell that requires parsing.</summary>
+        <value>The row index of the cell that was changed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.DataGridViewCellParsingEventArgs.RowIndex%2A> property to obtain an index into the <xref:System.Windows.Forms.DataGridView.Rows%2A> property of a <xref:System.Windows.Forms.DataGridView>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CellParsing?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CellParsing?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#303](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#303)]
+ [!code-vb[System.Windows.Forms.EventExamples#303](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#303)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

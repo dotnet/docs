@@ -1,0 +1,161 @@
+<Type Name="ConfigurationValidatorAttribute" FullName="System.Configuration.ConfigurationValidatorAttribute">
+  <TypeSignature Language="C#" Value="public class ConfigurationValidatorAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConfigurationValidatorAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationValidatorAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Serves as the base class for the <see cref="N:System.Configuration" /> validator attribute types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All the ASP.NET configuration standard validator attribute types derive from <xref:System.Configuration.ConfigurationValidatorAttribute>. You can use this type to create your own custom validator attribute.  
+  
+   
+  
+## Examples  
+ The following code examples demonstrate how to create two custom validators using the <xref:System.Configuration.ConfigurationValidatorAttribute> type. The first example performs validation using hard-coded parameters; the second example performs validation using the parameters assigned to it at the time it is applied to the related section property. This code example also contains three supporting files. The first file contains the custom section that uses the validators described above, the second file contains a custom converter type, and the third file contains the console application that builds and uses the custom validators and the section that contains them.  
+  
+ The following code example shows how to create a fixed validator with hard-coded parameters.  
+  
+ [!code-csharp[System.Configuration.ConfigValidatorAttribute#21](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/CS/FixedValidatorAttribute.cs#21)]
+ [!code-vb[System.Configuration.ConfigValidatorAttribute#21](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/VB/FixedValidatorAttribute.vb#21)]  
+  
+ The following code example shows how to create a programmable validator.  
+  
+ [!code-csharp[System.Configuration.ConfigValidatorAttribute#31](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/CS/ProgrammableValidatorAttribute.cs#31)]
+ [!code-vb[System.Configuration.ConfigValidatorAttribute#31](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/VB/ProgrammableValidatorAttribute.vb#31)]  
+  
+ The following code example shows how to create a custom section using the previous validators.  
+  
+ [!code-csharp[System.Configuration.ConfigValidatorAttribute#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/CS/AutomobileSection.cs#11)]
+ [!code-vb[System.Configuration.ConfigValidatorAttribute#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/VB/AutomobileSection.vb#11)]  
+  
+ The following code example shows how to create a custom converter.  
+  
+ [!code-csharp[System.Configuration.ConfigValidatorAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/CS/AutomobileConverter.cs#1)]
+ [!code-vb[System.Configuration.ConfigValidatorAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/VB/AutomobileConverter.vb#1)]  
+  
+ The following code example shows how to create the console application that builds and uses the custom validators and their containing section.  
+  
+ [!code-csharp[System.Configuration.ConfigValidatorAttribute#41](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/CS/TestingConfigValidatorAttribute.cs#41)]
+ [!code-vb[System.Configuration.ConfigValidatorAttribute#41](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigValidatorAttribute/VB/TestingConfigValidatorAttribute.vb#41)]  
+  
+ The following code example is a configuration excerpt used by the previous example.  
+  
+```  
+<?xml version="1.0" encoding="utf-8"?>  
+<configuration>  
+    <configSections>  
+        <section name="Cars" type="Samples.AspNet.SelectCar, ConfigValidatorAttribute, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" allowLocation="false" allowDefinition="Everywhere" allowExeDefinition="MachineToApplication" restartOnExternalChanges="true" requirePermission="true" />  
+    </configSections>  
+    <Cars commute="Make:AlfaRomeo Color:Blue Miles:10000 Year:2002"  
+        dream="Make:Ferrari Color:Red Miles:10 Year:2005" />  
+</configuration>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ConfigurationValidatorAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationValidatorAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationValidatorAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use this constructor in the attributed model to ensure that the value assigned to the related property is an integer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConfigurationValidatorAttribute (Type validator);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type validator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationValidatorAttribute.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="validator" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="validator">The validator type to use when creating an instance of <see cref="T:System.Configuration.ConfigurationValidatorAttribute" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.ConfigurationValidatorAttribute" /> class using the specified validator type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor determines whether a validator instance can be created from an instance of the specified `validator` type.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="validator" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="validator" /> is not derived from <see cref="T:System.Configuration.ConfigurationValidatorBase" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidatorInstance">
+      <MemberSignature Language="C#" Value="public virtual System.Configuration.ConfigurationValidatorBase ValidatorInstance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationValidatorBase ValidatorInstance" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationValidatorAttribute.ValidatorInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationValidatorBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the validator attribute instance.</summary>
+        <value>The current <see cref="T:System.Configuration.ConfigurationValidatorBase" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidatorType">
+      <MemberSignature Language="C#" Value="public Type ValidatorType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ValidatorType" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationValidatorAttribute.ValidatorType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the validator attribute.</summary>
+        <value>The <see cref="T:System.Type" /> of the current validator attribute instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

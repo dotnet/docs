@@ -1,0 +1,237 @@
+<Type Name="AttributeUsageAttribute" FullName="System.AttributeUsageAttribute">
+  <TypeSignature Language="C#" Value="public sealed class AttributeUsageAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit AttributeUsageAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.AttributeUsageAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, Inherited=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the usage of another attribute class. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you are defining your own attribute class, you can control the manner in which it is used by placing an <xref:System.AttributeUsageAttribute> on your attribute class. The indicated attribute class must derive from <xref:System.Attribute>, either directly or indirectly.  
+  
+ Attribute classes have positional and named parameters. Each public constructor for an attribute class defines a valid sequence of positional parameters for that class. Named parameters are defined by the non-static, public, and read-write fields or properties of the attribute class.  
+  
+ The three properties of <xref:System.AttributeUsageAttribute> are set by defining the following parameters:  
+  
+-   <xref:System.AttributeUsageAttribute.ValidOn%2A>  
+  
+ This positional parameter specifies the program elements that the indicated attribute can be placed on. The set of all possible elements that you can place an attribute on is listed in the <xref:System.AttributeTargets> enumeration. You can combine several <xref:System.AttributeTargets> values using a bitwise OR operation to get the desired combination of valid program elements.  
+  
+-   <xref:System.AttributeUsageAttribute.AllowMultiple%2A>  
+  
+ This named parameter specifies whether the indicated attribute can be specified more than once for a given program element.  
+  
+-   <xref:System.AttributeUsageAttribute.Inherited%2A>  
+  
+ This named parameter specifies whether the indicated attribute can be inherited by derived classes and overriding members.  
+  
+ For more information about using attributes, see <xref:System.Attribute> and [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AttributeUsageAttribute (AttributeTargets validOn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.AttributeTargets validOn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AttributeUsageAttribute.#ctor(System.AttributeTargets)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="validOn" Type="System.AttributeTargets" />
+      </Parameters>
+      <Docs>
+        <param name="validOn">The set of values combined using a bitwise OR operation to indicate which program elements are valid.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.AttributeUsageAttribute" /> class with the specified list of <see cref="T:System.AttributeTargets" />, the <see cref="P:System.AttributeUsageAttribute.AllowMultiple" /> value, and the <see cref="P:System.AttributeUsageAttribute.Inherited" /> value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can combine several <xref:System.AttributeTargets> values using a bitwise OR operation to get the desired combination of valid program elements.  
+  
+ For default property values, see the <xref:System.AttributeUsageAttribute.ValidOn%2A>, <xref:System.AttributeUsageAttribute.AllowMultiple%2A>, and <xref:System.AttributeUsageAttribute.Inherited%2A> properties.  
+  
+   
+  
+## Examples  
+ The definition of the DispId attribute illustrates the use of a bitwise OR operation to combine several <xref:System.AttributeTargets> values.  
+  
+ [!code-cpp[Classic AttributeUsageAttribute.AttributeUsageAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic AttributeUsageAttribute.AttributeUsageAttribute Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic AttributeUsageAttribute.AttributeUsageAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic AttributeUsageAttribute.AttributeUsageAttribute Example/CS/source.cs#1)]
+ [!code-vb[Classic AttributeUsageAttribute.AttributeUsageAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic AttributeUsageAttribute.AttributeUsageAttribute Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowMultiple">
+      <MemberSignature Language="C#" Value="public bool AllowMultiple { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowMultiple" />
+      <MemberSignature Language="DocId" Value="P:System.AttributeUsageAttribute.AllowMultiple" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value indicating whether more than one instance of the indicated attribute can be specified for a single program element.</summary>
+        <value>
+          <see langword="true" /> if more than one instance is allowed to be specified; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An attribute that can be specified more than once for a program element is called a multi-use attribute. An attribute that can be specified only once is called a single-use attribute.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Inherited">
+      <MemberSignature Language="C#" Value="public bool Inherited { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Inherited" />
+      <MemberSignature Language="DocId" Value="P:System.AttributeUsageAttribute.Inherited" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Boolean" /> value that determines whether the indicated attribute is inherited by derived classes and overriding members.</summary>
+        <value>
+          <see langword="true" /> if the attribute can be inherited by derived classes and overriding members; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.AttributeUsageAttribute.Inherited%2A> property determines:  
+  
+-   Whether classes derived from a base class tagged with the attribute to which the <xref:System.AttributeUsageAttribute> attribute is applied inherit that attribute.  
+  
+-   Whether methods of derived classes that override a base class method tagged with the attribute to which the <xref:System.AttributeUsageAttribute> attribute is applied inherit that attribute.  (If a class inherits a base class member, it also inherits any attributes applied to that member.)  
+  
+   
+  
+## Examples  
+ The following example illustrates the difference between an attribute to which an <xref:System.AttributeUsageAttribute> attribute with an <xref:System.AttributeUsageAttribute.Inherited%2A> property value of `true` is applied and one to which  <xref:System.AttributeUsageAttribute> attribute with an <xref:System.AttributeUsageAttribute.Inherited%2A> property value of `true` is applied . The example defines two attributes, `InheritedAttribute` and `NotInheritedAttribute`. Both attributes can apply to classes and methods. Because the <xref:System.AttributeUsageAttribute.Inherited%2A> property of the <xref:System.AttributeUsageAttribute> attribute applied to `InheritedAttribute` is `true`, it is inherited by derived classes and the members of derived classes that override the base class method.  On the other hand, because the <xref:System.AttributeUsageAttribute.Inherited%2A> property of the <xref:System.AttributeUsageAttribute> attribute applied to `NotInheritedAttribute` is `false`, it is not inherited by derived classes and the members of derived classes that override the base class method.  
+  
+ [!code-csharp[System.AttributeUsageAttribute.Inherited#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.AttributeUsageAttribute.Inherited/cs/Inherited1.cs#1)]
+ [!code-vb[System.AttributeUsageAttribute.Inherited#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.AttributeUsageAttribute.Inherited/vb/Inherited1.vb#1)]  
+  
+ The example then defines two  base classes. The first, `BaseA`, has a single method, `MethodA`.  The second, `BaseB`, has a single method, `MethodB`. `BaseA` and `MethodA` are tagged with the `InheritedAttribute` attribute, and `BaseB` and `MethodB` are tagged with the `NotInheritedAttribute` attribute. `DerivedA` inherits from `BaseA` and overrides its `MethodA` method. `DerivedB` inherits from `BaseB` and overrides its `MethodB` method.  
+  
+ [!code-csharp[System.AttributeUsageAttribute.Inherited#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/System.AttributeUsageAttribute.Inherited/cs/Inherited1.cs#2)]
+ [!code-vb[System.AttributeUsageAttribute.Inherited#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/System.AttributeUsageAttribute.Inherited/vb/Inherited1.vb#2)]  
+  
+ As the output from the example shows, `DerivedA` and `DerivedA.MethodA` inherit the `InheritedAttribute` attribute, but `DerivedB` and `DerivedB.MethodB` do not inherit the `NotInheritedAttribute` attribute.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidOn">
+      <MemberSignature Language="C#" Value="public AttributeTargets ValidOn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.AttributeTargets ValidOn" />
+      <MemberSignature Language="DocId" Value="P:System.AttributeUsageAttribute.ValidOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AttributeTargets</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a set of values identifying which program elements that the indicated attribute can be applied to.</summary>
+        <value>One or several <see cref="T:System.AttributeTargets" /> values. The default is <see langword="All" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

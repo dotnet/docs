@@ -1,0 +1,83 @@
+<Type Name="DnsEndpointIdentity" FullName="System.ServiceModel.DnsEndpointIdentity">
+  <TypeSignature Language="C#" Value="public class DnsEndpointIdentity : System.ServiceModel.EndpointIdentity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DnsEndpointIdentity extends System.ServiceModel.EndpointIdentity" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.DnsEndpointIdentity" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.EndpointIdentity</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies the DNS identity of the server.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class specifies the expected identity of the server. This identity is valid for X509 Certificate authentication mode if the server’s certificate contains a DNS with the same value. It is also valid for Windows authentication mode if the SPN has the same value. In this case, a client specifying the  DnsEndpointIdentity “server1.microsoft.com”  for Windows authentication mode is equivalent to specifying the SpnEndpointIdentity “host/server1.microsoft.com” .  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DnsEndpointIdentity (System.IdentityModel.Claims.Claim identity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Claims.Claim identity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DnsEndpointIdentity.#ctor(System.IdentityModel.Claims.Claim)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="identity" Type="System.IdentityModel.Claims.Claim" />
+      </Parameters>
+      <Docs>
+        <param name="identity">The <see cref="T:System.IdentityModel.Claims.Claim" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DnsEndpointIdentity" /> class from a claim.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `identity` is used to create an endpoint identity by the <xref:System.ServiceModel.EndpointIdentity.Initialize%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="identity" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DnsEndpointIdentity (string dnsName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dnsName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DnsEndpointIdentity.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dnsName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dnsName">The DNS name.</param>
+        <summary>Initializes a new instance of this class from a DNS name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `dnsName` is used to create a DNS claim and an endpoint identity is created by the <xref:System.ServiceModel.EndpointIdentity.Initialize%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dnsName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The claim type of <paramref name="dnsName" /> is not <see cref="P:System.IdentityModel.Claims.ClaimTypes.Dns" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,100 @@
+<Type Name="PrincipalPolicy" FullName="System.Security.Principal.PrincipalPolicy">
+  <TypeSignature Language="C#" Value="public enum PrincipalPolicy" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PrincipalPolicy extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Principal.PrincipalPolicy" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies how principal and identity objects should be created for an application domain. The default is <see langword="UnauthenticatedPrincipal" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For performance reasons, the default principal and identity objects are not created until they are needed. If a principal is explicitly added to the current thread, a default principal is not created and the principal policy setting is ignored.  
+  
+ A trusted host can override the default principal policy by specifying another of these values using the <xref:System.AppDomain.SetPrincipalPolicy%2A> method of an <xref:System.AppDomain>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NoPrincipal">
+      <MemberSignature Language="C#" Value="NoPrincipal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.PrincipalPolicy NoPrincipal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Principal.PrincipalPolicy.NoPrincipal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Principal.PrincipalPolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No principal or identity objects should be created.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnauthenticatedPrincipal">
+      <MemberSignature Language="C#" Value="UnauthenticatedPrincipal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.PrincipalPolicy UnauthenticatedPrincipal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Principal.PrincipalPolicy.UnauthenticatedPrincipal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Principal.PrincipalPolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Principal and identity objects for the unauthenticated entity should be created. An unauthenticated entity has <see cref="P:System.Security.Principal.GenericIdentity.Name" /> set to the empty string ("") and <see cref="P:System.Security.Principal.GenericIdentity.IsAuthenticated" /> set to <see langword="false" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsPrincipal">
+      <MemberSignature Language="C#" Value="WindowsPrincipal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Principal.PrincipalPolicy WindowsPrincipal = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Principal.PrincipalPolicy.WindowsPrincipal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Principal.PrincipalPolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Principal and identity objects that reflect the operating system token associated with the current execution thread should be created, and the associated operating system groups should be mapped into roles.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

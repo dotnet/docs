@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "procedures, returning a value"
 ms.assetid: 4bcc4724-2b4e-4df8-9b4b-16054607f87d
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

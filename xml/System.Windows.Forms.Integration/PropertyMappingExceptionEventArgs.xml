@@ -1,0 +1,86 @@
+<Type Name="PropertyMappingExceptionEventArgs" FullName="System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs">
+  <TypeSignature Language="C#" Value="public class PropertyMappingExceptionEventArgs : System.Windows.Forms.Integration.IntegrationExceptionEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyMappingExceptionEventArgs extends System.Windows.Forms.Integration.IntegrationExceptionEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsFormsIntegration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.Integration.IntegrationExceptionEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.Integration.PropertyMap.PropertyMappingError" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In your event handler, set the value of the <xref:System.Windows.Forms.Integration.IntegrationExceptionEventArgs.ThrowException%2A> property to `true` to indicate that the exception should be raised.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyMappingExceptionEventArgs (Exception exception, string propertyName, object propertyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception, string propertyName, object propertyValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs.#ctor(System.Exception,System.String,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="exception" Type="System.Exception" />
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="propertyValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="exception">The <see cref="T:System.Exception" /> to raise.</param>
+        <param name="propertyName">The name of the property associated with the property-mapping error.</param>
+        <param name="propertyValue">The value of the property associated with the property-mapping error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="exception" /> is <see langword="null" />; <paramref name="propertyName" /> is <see langword="null" /> or refers to an empty string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyName">
+      <MemberSignature Language="C#" Value="public string PropertyName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PropertyName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs.PropertyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the property associated with the property-mapping error.</summary>
+        <value>A string representing the name of the property associated with the property-mapping error.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyValue">
+      <MemberSignature Language="C#" Value="public object PropertyValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object PropertyValue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Integration.PropertyMappingExceptionEventArgs.PropertyValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsFormsIntegration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the property associated with the property-mapping error.</summary>
+        <value>An object representing the value of the property associated with the property-mapping error.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

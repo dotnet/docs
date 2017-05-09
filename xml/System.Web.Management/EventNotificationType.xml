@@ -1,0 +1,97 @@
+<Type Name="EventNotificationType" FullName="System.Web.Management.EventNotificationType">
+  <TypeSignature Language="C#" Value="public enum EventNotificationType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EventNotificationType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Management.EventNotificationType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of event notification.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Management.EventNotificationType> enumeration provides four notification types that specify how the notification should take place. The four notification types are as follows:  
+  
+-   Flush  
+  
+-   Regular  
+  
+-   Unbuffered  
+  
+-   Urgent  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Flush">
+      <MemberSignature Language="C#" Value="Flush" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.EventNotificationType Flush = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Management.EventNotificationType.Flush" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Management.EventNotificationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The notification of an event is triggered by a requested flush.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Regular">
+      <MemberSignature Language="C#" Value="Regular" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.EventNotificationType Regular = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Management.EventNotificationType.Regular" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Management.EventNotificationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The notification of an event is triggered on a regularly scheduled interval.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unbuffered">
+      <MemberSignature Language="C#" Value="Unbuffered" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.EventNotificationType Unbuffered = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Management.EventNotificationType.Unbuffered" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Management.EventNotificationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Every event is treated as if a flush has occurred.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Urgent">
+      <MemberSignature Language="C#" Value="Urgent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.EventNotificationType Urgent = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Management.EventNotificationType.Urgent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Management.EventNotificationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Notification triggered by exceeding the urgent event threshold.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

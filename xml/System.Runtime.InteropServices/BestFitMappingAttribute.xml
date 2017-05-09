@@ -1,0 +1,179 @@
+<Type Name="BestFitMappingAttribute" FullName="System.Runtime.InteropServices.BestFitMappingAttribute">
+  <TypeSignature Language="C#" Value="public sealed class BestFitMappingAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BestFitMappingAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.BestFitMappingAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Interface, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Controls whether Unicode characters are converted to the closest matching ANSI characters.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can apply this attribute to an assembly, interface, class, or structure.  
+  
+ By default, the common language runtime converts to ANSI characters any managed Unicode characters passed to an unmanaged method executing on Windows 98 or Windows Me. Best-fit mapping enables the interop marshaler to select a close-matching character when no exact match exists. For example, the marshaler converts the Unicode copyright character to 'c' for unmanaged methods that accept ANSI characters.  
+  
+> [!CAUTION]
+>  Some characters lack a best-fit representation; these characters are called unmappable. Unmappable characters are usually converted to the default '?' ANSI character. Certain Unicode characters are converted to dangerous characters, such as the backslash '\\' character, which can inadvertently change a path.  
+  
+ <xref:System.Runtime.InteropServices.BestFitMappingAttribute> provides two parameters to control aspects of best-fit mapping. You use the first parameter to toggle best-fit mapping on and off. The default value is `true`, which enables best-fit mapping on the assembly, interface, and class levels. An attribute applied to an interface or class overrides an assembly-level attribute. You can likewise enable or disable best-fit mapping for platform invoke calls by using the <xref:System.Runtime.InteropServices.DllImportAttribute.BestFitMapping?displayProperty=fullName> field. A value set by the platform invoke field overrides all levels of <xref:System.Runtime.InteropServices.BestFitMappingAttribute>.  
+  
+ You can use the second parameter to control throwing an exception on unmappable characters. The default value for the <xref:System.Runtime.InteropServices.BestFitMappingAttribute.ThrowOnUnmappableChar> field is `false`, which disables throwing an exception each time the runtime encounters a Unicode character that has to be converted to the '?' ANSI character. Even if best-fit mapping is `true`, unmappable characters generate an exception when the <xref:System.Runtime.InteropServices.BestFitMappingAttribute.ThrowOnUnmappableChar> field is `true`. To tighten security, you can toggle the first parameter to `false` and the second parameter to `true`. This combination of parameter settings turns best-fit mapping off, but enables the exception-throwing mechanism as a safety precaution.  
+  
+> [!CAUTION]
+>  You cannot change the default values provided by <xref:System.Runtime.InteropServices.BestFitMappingAttribute> when passing a managed array whose elements are ANSI Chars or LPSTRs to an unmanaged safe array. Best-fit mapping is always enabled and no exception can be thrown. Be aware that this combination can compromise your security model.  
+  
+   
+  
+## Examples  
+ The following example shows how to disable best fit mapping and to throw an exception on the conversion of Unicode characters to the '?' ANSI character. Setting <xref:System.Runtime.InteropServices.BestFitMappingAttribute> parameters in this manner provides an added measure of security.  
+  
+ [!code-cpp[System.Runtime.InteropServices.BestFitMappingAttribute#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.runtime.interopservices.bestfitmappingattribute/cpp/source.cpp#1)]
+ [!code-csharp[System.Runtime.InteropServices.BestFitMappingAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.interopservices.bestfitmappingattribute/cs/source.cs#1)]
+ [!code-vb[System.Runtime.InteropServices.BestFitMappingAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.interopservices.bestfitmappingattribute/vb/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BestFitMappingAttribute (bool BestFitMapping);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool BestFitMapping) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.BestFitMappingAttribute.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="BestFitMapping" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="BestFitMapping">
+          <see langword="true" /> to indicate that best-fit mapping is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.BestFitMappingAttribute" /> class set to the value of the <see cref="P:System.Runtime.InteropServices.BestFitMappingAttribute.BestFitMapping" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BestFitMapping">
+      <MemberSignature Language="C#" Value="public bool BestFitMapping { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BestFitMapping" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.BestFitMappingAttribute.BestFitMapping" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the best-fit mapping behavior when converting Unicode characters to ANSI characters.</summary>
+        <value>
+          <see langword="true" /> if best-fit mapping is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If best-fit mapping is `false` and <xref:System.Runtime.InteropServices.BestFitMappingAttribute.ThrowOnUnmappableChar> is `true`, all Unicode characters that require conversion to ANSI format will generate an exception when passed to unmanaged code. Some characters are unmappable, even when best-fit mapping is `true`. Some characters lack a best-fit representation; these characters are called unmappable. Unmappable characters are usually converted to the default '?' ANSI character.  
+  
+> [!CAUTION]
+>  Certain Unicode characters are converted to dangerous characters, such as the backslash '\\' character, which can inadvertently change a path.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowOnUnmappableChar">
+      <MemberSignature Language="C#" Value="public bool ThrowOnUnmappableChar;" />
+      <MemberSignature Language="ILAsm" Value=".field public bool ThrowOnUnmappableChar" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.BestFitMappingAttribute.ThrowOnUnmappableChar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enables or disables the throwing of an exception on an unmappable Unicode character that is converted to an ANSI '?' character.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `false`, the <xref:System.Runtime.InteropServices.BestFitMappingAttribute.ThrowOnUnmappableChar> field is disabled; otherwise, an exception is thrown each time the interop marshaler encounters an unmappable character. The default `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

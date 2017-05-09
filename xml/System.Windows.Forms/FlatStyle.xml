@@ -1,0 +1,129 @@
+<Type Name="FlatStyle" FullName="System.Windows.Forms.FlatStyle">
+  <TypeSignature Language="C#" Value="public enum FlatStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FlatStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FlatStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the appearance of a control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by members such as <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A?displayProperty=fullName>, <xref:System.Windows.Forms.GroupBox.FlatStyle%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.Label.FlatStyle%2A?displayProperty=fullName>.  
+  
+ In the case of the Popup style button, this enumeration controls some behavior as well as appearance. The Popup style control initially appears Flat until the mouse pointer moves over it. When the mouse pointer moves over the Popup control, it appears as a Standard style control until the mouse pointer is moved off of it again.  
+  
+ If the System style is used, the appearance of the control is determined by the user's operating system and the following property values will be ignored: <xref:System.Windows.Forms.Control.BackgroundImage%2A?displayProperty=fullName>, `ImageAlign`, `Image`, `ImageIndex`, `ImageList`, and `TextAlign`. In addition, the <xref:System.Windows.Forms.Control.BackColor%2A?displayProperty=fullName> property will be ignored for button controls. If supported, users can change the appearance of controls by adjusting the appearance settings of their operating system.  
+  
+> [!NOTE]
+>  When the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property of the <xref:System.Windows.Forms.RadioButton> and <xref:System.Windows.Forms.CheckBox> classes is set to System, the control is drawn by the user's operating system and the check alignment is based upon the `CheckAlign` and <xref:System.Windows.Forms.ButtonBase.TextAlign%2A?displayProperty=fullName> property values. The `CheckAlign` property value is not changed, but the appearance of the control can be affected. The check box is horizontally aligned with either the left or right edge of the control (a left or center alignment appears left aligned, right remains unchanged), and vertically aligned the same as the descriptive text. For example, if you have a <xref:System.Windows.Forms.CheckBox> control with a `CheckAlign` property value of <xref:System.Drawing.ContentAlignment?displayProperty=fullName> and a <xref:System.Windows.Forms.ButtonBase.TextAlign%2A> property value of <xref:System.Drawing.ContentAlignment?displayProperty=fullName>, and the <xref:System.Windows.Forms.ButtonBase.FlatStyle%2A> property value is set to System, the check box alignment will appear to be <xref:System.Drawing.ContentAlignment?displayProperty=fullName> while the text alignment remains unchanged.  
+  
+> [!CAUTION]
+>  Setting the `FlatStyle` property to System is not advisable if you need to display an image on a control, display an image as a control's background, or perform precise text alignment.  
+  
+   
+  
+## Examples  
+ The following is an example of a manifest to allow your application to support the visual styles available in Windows XP if you are using version 1.0 of the .NET Framework. The manifest can be added to your application as a resource or as a stand-alone text file. The manifest file resides in the same directory as the executable file, and the name of the text file must be the complete name of the executable file with an additional file name extension of.manifest. For example, the manifest file for MyApp.exe would be MyApp.exe.manifest. This example assumes that the `FlatStyle` properties of the controls in your application are set to System.  
+  
+```  
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
+ <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  
+ <assemblyIdentity  
+     version="1.0.0.0"  
+     processorArchitecture="X86"  
+     name="CompanyName.ProductName.YourApplication"  
+     type="win32"  
+ />  
+ <description>Your application description here.</description>  
+ <dependency>  
+     <dependentAssembly>  
+         <assemblyIdentity  
+             type="win32"  
+             name="Microsoft.Windows.Common-Controls"  
+             version="6.0.0.0"  
+             processorArchitecture="X86"  
+             publicKeyToken="6595b64144ccf1df"  
+             language="*"  
+         />  
+     </dependentAssembly>  
+ </dependency>  
+ </assembly>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Flat">
+      <MemberSignature Language="C#" Value="Flat" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FlatStyle Flat = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FlatStyle.Flat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FlatStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The control appears flat.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Popup">
+      <MemberSignature Language="C#" Value="Popup" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FlatStyle Popup = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FlatStyle.Popup" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FlatStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A control appears flat until the mouse pointer moves over it, at which point it appears three-dimensional.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Standard">
+      <MemberSignature Language="C#" Value="Standard" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FlatStyle Standard = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FlatStyle.Standard" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FlatStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The control appears three-dimensional.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="System">
+      <MemberSignature Language="C#" Value="System" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FlatStyle System = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FlatStyle.System" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FlatStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The appearance of the control is determined by the user's operating system.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "loops, transferring to next iteration"
 ms.assetid: 3ad00103-358b-4af3-a3a8-1b9ea0e995d3
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

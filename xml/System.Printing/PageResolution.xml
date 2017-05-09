@@ -1,0 +1,200 @@
+<Type Name="PageResolution" FullName="System.Printing.PageResolution">
+  <TypeSignature Language="C#" Value="public sealed class PageResolution" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PageResolution extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.PageResolution" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the page resolution of printed output as either a qualitative value or as dots per inch, or both.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!CAUTION]
+>  Classes within the <xref:System.Printing> namespace are not supported for use within a Windows service or ASP.NET application or service. Attempting to use these classes from within one of these application types may produce unexpected problems, such as diminished service performance and run-time exceptions.  
+  
+ If you want to print from a Windows Forms application, see the <xref:System.Drawing.Printing> namespace.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PageResolution (System.Printing.PageQualitativeResolution qualitative);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Printing.PageQualitativeResolution qualitative) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PageResolution.#ctor(System.Printing.PageQualitativeResolution)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="qualitative" Type="System.Printing.PageQualitativeResolution" />
+      </Parameters>
+      <Docs>
+        <param name="qualitative">A value representing the resolution.</param>
+        <summary>Initiates a new instance of the <see cref="T:System.Printing.PageResolution" /> class that has the specified <see cref="T:System.Printing.PageQualitativeResolution" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PageResolution (int resolutionX, int resolutionY);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 resolutionX, int32 resolutionY) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PageResolution.#ctor(System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="resolutionX" Type="System.Int32" />
+        <Parameter Name="resolutionY" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="resolutionX">The horizontal resolution in dots per inch.</param>
+        <param name="resolutionY">The vertical resolution in dots per inch.</param>
+        <summary>Initiates a new instance of the <see cref="T:System.Printing.PageResolution" /> class that has the specified vertical and horizontal dots per inch.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For most printers, `resolutionX` is the paper dimension that is perpendicular to the direction of paper movement through the printer, and `resolutionY` is the paper dimension that is parallel to the direction of paper movement. The two values are usually the same.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PageResolution (int resolutionX, int resolutionY, System.Printing.PageQualitativeResolution qualitative);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 resolutionX, int32 resolutionY, valuetype System.Printing.PageQualitativeResolution qualitative) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PageResolution.#ctor(System.Int32,System.Int32,System.Printing.PageQualitativeResolution)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="resolutionX" Type="System.Int32" />
+        <Parameter Name="resolutionY" Type="System.Int32" />
+        <Parameter Name="qualitative" Type="System.Printing.PageQualitativeResolution" />
+      </Parameters>
+      <Docs>
+        <param name="resolutionX">The horizontal resolution in dots per inch.</param>
+        <param name="resolutionY">The vertical resolution in dots per inch.</param>
+        <param name="qualitative">A value representing the resolution.</param>
+        <summary>Initiates a new instance of the <see cref="T:System.Printing.PageResolution" /> class that has the specified <see cref="T:System.Printing.PageQualitativeResolution" /> and the specified vertical and horizontal dots per inch.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For most printers, `resolutionX` is the paper dimension that is perpendicular to the direction of paper movement through the printer, and `resolutionY` is the paper dimension that is parallel to the direction of paper movement. The two values are usually the same.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QualitativeResolution">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.PageQualitativeResolution&gt; QualitativeResolution { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.PageQualitativeResolution&gt; QualitativeResolution" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PageResolution.QualitativeResolution" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Printing.PageQualitativeResolution&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the qualitative expression, if any, of the page resolution.</summary>
+        <value>A <see cref="T:System.Printing.PageQualitativeResolution" /> value that represents the level of page resolution.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PageResolution.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the page resolution as a <see cref="T:System.String" />.</summary>
+        <returns>A <see cref="T:System.String" /> that contains the property values of the <see cref="T:System.Printing.PageResolution" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The format of the string is as follows:  
+  
+ <xref:System.Printing.PageResolution.X%2A> x <xref:System.Printing.PageResolution.Y%2A> (Qualitative Resolution: <xref:System.Printing.PageQualitativeResolution>)  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="X">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; X { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; X" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PageResolution.X" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the dots-per-inch measure of the horizontal page resolution.</summary>
+        <value>An <see cref="T:System.Int32" /> value that represents a horizontal page resolution.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For most printers, this value is the paper dimension that is perpendicular to the direction of paper movement through the printer, and <xref:System.Printing.PageResolution.Y%2A> is the paper dimension that is parallel to the direction of paper movement. The two values are usually the same.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Y">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; Y { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; Y" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PageResolution.Y" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the dots-per-inch measure of the vertical page resolution.</summary>
+        <value>A nullable <see cref="T:System.Int32" /> value that represents a vertical page resolution.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For most printers, this value is the paper dimension that is parallel to the direction of paper movement through the printer, and <xref:System.Printing.PageResolution.X%2A> is the paper dimension that is perpendicular to the direction of paper movement. The two values are usually the same.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

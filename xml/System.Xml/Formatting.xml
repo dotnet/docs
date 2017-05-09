@@ -1,0 +1,73 @@
+<Type Name="Formatting" FullName="System.Xml.Formatting">
+  <TypeSignature Language="C#" Value="public enum Formatting" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Formatting extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Formatting" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies formatting options for the <see cref="T:System.Xml.XmlTextWriter" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Indented">
+      <MemberSignature Language="C#" Value="Indented" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Formatting Indented = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.Formatting.Indented" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Formatting</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Causes child elements to be indented according to the <see cref="P:System.Xml.XmlTextWriter.Indentation" /> and <see cref="P:System.Xml.XmlTextWriter.IndentChar" /> settings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This option indents element content only; mixed content is not affected. For the XML 1.0 definitions of these terms, see the World Wide Web Consortium (W3C) documentation (www.w3.org/TR/1998/REC-xml-19980210#sec-element-content and www.w3.org/TR/1998/REC-xml-19980210#sec-mixed-content).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Formatting None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.Formatting.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Formatting</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No special formatting is applied. This is the default.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

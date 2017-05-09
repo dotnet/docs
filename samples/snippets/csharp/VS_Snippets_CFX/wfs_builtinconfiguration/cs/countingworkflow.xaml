@@ -1,0 +1,36 @@
+﻿<!--Copyright (c) Microsoft Corporation.  All Rights Reserved.-->
+<Activity mc:Ignorable="sap" x:Class="Microsoft.Samples.BuiltInConfiguration.CountingWorkflow" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mv="clr-namespace:Microsoft.VisualBasic;assembly=System" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/servicemodel" xmlns:s="clr-namespace:System;assembly=mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:s1="clr-namespace:System;assembly=mscorlib" xmlns:s2="clr-namespace:System;assembly=System" xmlns:s3="clr-namespace:System;assembly=System.Xml" xmlns:s4="clr-namespace:System;assembly=System.Core" xmlns:sa="clr-namespace:System.Activities;assembly=System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" xmlns:sad="clr-namespace:System.Activities.Debugger;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System" xmlns:scg1="clr-namespace:System.Collections.Generic;assembly=System.ServiceModel" xmlns:scg2="clr-namespace:System.Collections.Generic;assembly=System.Core" xmlns:scg3="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data.DataSetExtensions" xmlns:sl="clr-namespace:System.Linq;assembly=System.Core" xmlns:st="clr-namespace:System.Text;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Sequence sap:VirtualizedContainerService.HintSize="488,891">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg3:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg3:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <p:Receive CanCreateInstance="True" sap:VirtualizedContainerService.HintSize="466,90" OperationName="start" ServiceContractName="ICountingWorkflow" />
+    <While sap:VirtualizedContainerService.HintSize="466,523">
+      <While.Variables>
+        <Variable x:TypeArguments="x:Int32" Default="0" Name="counter" />
+      </While.Variables>
+      <While.Condition>[counter &lt; 60]</While.Condition>
+      <Sequence sap:VirtualizedContainerService.HintSize="438,407">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg3:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg3:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <WriteLine sap:VirtualizedContainerService.HintSize="242,61" Text="[&quot;Counter = &quot; + counter.ToString()]" />
+        <Assign sap:VirtualizedContainerService.HintSize="242,58">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:Int32">[counter + 1]</InArgument>
+          </Assign.Value>
+        </Assign>
+        <Persist sap:VirtualizedContainerService.HintSize="242,22" />
+        <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="242,22" />
+      </Sequence>
+    </While>
+    <WriteLine sap:VirtualizedContainerService.HintSize="466,73.96" Text="Counting completed" />
+  </Sequence>
+</Activity>

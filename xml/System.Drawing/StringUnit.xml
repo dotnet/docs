@@ -1,0 +1,153 @@
+<Type Name="StringUnit" FullName="System.Drawing.StringUnit">
+  <TypeSignature Language="C#" Value="public enum StringUnit" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StringUnit extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.StringUnit" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the units of measure for a text string.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is not currently used in the .NET Framework.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Display">
+      <MemberSignature Language="C#" Value="Display" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringUnit Display = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringUnit.Display" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the device unit as the unit of measure.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Document">
+      <MemberSignature Language="C#" Value="Document" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringUnit Document = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringUnit.Document" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies 1/300 of an inch as the unit of measure.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Em">
+      <MemberSignature Language="C#" Value="Em" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringUnit Em = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringUnit.Em" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a printer's em size of 32 as the unit of measure.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inch">
+      <MemberSignature Language="C#" Value="Inch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringUnit Inch = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringUnit.Inch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an inch as the unit of measure.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Millimeter">
+      <MemberSignature Language="C#" Value="Millimeter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringUnit Millimeter = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringUnit.Millimeter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a millimeter as the unit of measure</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pixel">
+      <MemberSignature Language="C#" Value="Pixel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringUnit Pixel = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringUnit.Pixel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a pixel as the unit of measure.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Point">
+      <MemberSignature Language="C#" Value="Point" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringUnit Point = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringUnit.Point" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a printer's point (1/72 inch) as the unit of measure.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="World">
+      <MemberSignature Language="C#" Value="World" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringUnit World = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.StringUnit.World" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.StringUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies world units as the unit of measure.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

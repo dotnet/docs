@@ -1,0 +1,146 @@
+<Type Name="XamlNodeType" FullName="System.Xaml.XamlNodeType">
+  <TypeSignature Language="C#" Value="public enum XamlNodeType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XamlNodeType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.XamlNodeType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the type of the node that is currently being processed by a XAML reader.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EndMember">
+      <MemberSignature Language="C#" Value="EndMember" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.XamlNodeType EndMember = unsigned int8(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.EndMember" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlNodeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The reader is at the end of a member node.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EndObject">
+      <MemberSignature Language="C#" Value="EndObject" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.XamlNodeType EndObject = unsigned int8(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.EndObject" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlNodeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The reader is at the end of an object node.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObject">
+      <MemberSignature Language="C#" Value="GetObject" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.XamlNodeType GetObject = unsigned int8(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.GetObject" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlNodeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The reader is within an object node and writing a default or implicit value, instead of being a specified object value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NamespaceDeclaration">
+      <MemberSignature Language="C#" Value="NamespaceDeclaration" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.XamlNodeType NamespaceDeclaration = unsigned int8(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.NamespaceDeclaration" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlNodeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The reader is within an XML namespace declaration.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.XamlNodeType None = unsigned int8(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlNodeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The reader is not positioned at a true node (for example, the reader might be at end-of-file).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StartMember">
+      <MemberSignature Language="C#" Value="StartMember" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.XamlNodeType StartMember = unsigned int8(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.StartMember" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlNodeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The reader is at the start of a member node.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StartObject">
+      <MemberSignature Language="C#" Value="StartObject" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.XamlNodeType StartObject = unsigned int8(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.StartObject" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlNodeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The reader is at the start of an object node.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="Value" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.XamlNodeType Value = unsigned int8(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.Value" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlNodeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The reader is within a node and processing a value.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

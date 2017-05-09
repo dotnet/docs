@@ -1,0 +1,374 @@
+<Type Name="ManagementScope" FullName="System.Management.ManagementScope">
+  <TypeSignature Language="C#" Value="public class ManagementScope : ICloneable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagementScope extends System.Object implements class System.ICloneable" />
+  <TypeSignature Language="DocId" Value="T:System.Management.ManagementScope" />
+  <AssemblyInfo>
+    <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Management.ManagementScopeConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a scope (namespace) for management operations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example initializes a new <xref:System.Management.ManagementScope> with a specific path and then connects the scope object to a WMI namespace. The example connects to a namespace on a remote computer.  
+  
+ [!code-csharp[wminet_ManagementScope#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementScope/cs/ManagementScope.cs#1)]
+ [!code-vb[wminet_ManagementScope#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementScope/vb/ManagementScope.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManagementScope ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementScope.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementScope" /> class, with default values. This is the default constructor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the object does not have any properties set before connection, it is initialized with default values (for example, the local machine and the root\cimv2 namespace).  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManagementScope (System.Management.ManagementPath path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementPath path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementScope.#ctor(System.Management.ManagementPath)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.Management.ManagementPath" />
+      </Parameters>
+      <Docs>
+        <param name="path">A <see cref="T:System.Management.ManagementPath" /> containing the path to a server and namespace for the <see cref="T:System.Management.ManagementScope" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementScope" /> class representing the specified scope path.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManagementScope (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementScope.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">The server and namespace path for the <see cref="T:System.Management.ManagementScope" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementScope" /> class representing the specified scope path.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new <xref:System.Management.ManagementScope> with a specific path and then connects the scope object to a WMI namespace. The example connects to a namespace on a remote computer.  
+  
+ [!code-csharp[wminet_ManagementScope(S)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementScope(S)/cs/ManagementScope(S).cs#1)]
+ [!code-vb[wminet_ManagementScope(S)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementScope(S)/vb/ManagementScope(S).vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManagementScope (System.Management.ManagementPath path, System.Management.ConnectionOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementPath path, class System.Management.ConnectionOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementScope.#ctor(System.Management.ManagementPath,System.Management.ConnectionOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.Management.ManagementPath" />
+        <Parameter Name="options" Type="System.Management.ConnectionOptions" />
+      </Parameters>
+      <Docs>
+        <param name="path">A <see cref="T:System.Management.ManagementPath" /> containing the path to the server and namespace for the <see cref="T:System.Management.ManagementScope" />.</param>
+        <param name="options">The <see cref="T:System.Management.ConnectionOptions" /> containing options for the connection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementScope" /> class representing the specified scope path, with the specified options.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManagementScope (string path, System.Management.ConnectionOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, class System.Management.ConnectionOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementScope.#ctor(System.String,System.Management.ConnectionOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="options" Type="System.Management.ConnectionOptions" />
+      </Parameters>
+      <Docs>
+        <param name="path">The server and namespace for the <see cref="T:System.Management.ManagementScope" />.</param>
+        <param name="options">A <see cref="T:System.Management.ConnectionOptions" /> containing options for the connection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementScope" /> class representing the specified scope path, with the specified options.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new <xref:System.Management.ManagementScope> with a specific path and then connects the scope object to a WMI namespace. The example connects to a namespace on a remote computer.  
+  
+ [!code-csharp[wminet_ManagementScope(S_C)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementScope(S_C)/cs/ManagementScope(S_C).cs#1)]
+ [!code-vb[wminet_ManagementScope(S_C)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementScope(S_C)/vb/ManagementScope(S_C).vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Management.ManagementScope Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Management.ManagementScope Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementScope.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.ManagementScope</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a copy of the object.</summary>
+        <returns>A new copy of the <see cref="T:System.Management.ManagementScope" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Connect">
+      <MemberSignature Language="C#" Value="public void Connect ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Connect() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementScope.Connect" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Connects this <see cref="T:System.Management.ManagementScope" /> to the actual WMI scope.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called implicitly when the scope is used in an operation that requires it to be connected. Calling it explicitly allows the user to control the time of connection. This method will return within two minutes.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example initializes a new <xref:System.Management.ManagementScope> with a specific path and then connects the scope object to a WMI namespace. The example connects to a namespace on a remote computer.  
+  
+ [!code-csharp[wminet_ManagementScope_Connect#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementScope_Connect/cs/ManagementScope_Connect.cs#1)]
+ [!code-vb[wminet_ManagementScope_Connect#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementScope_Connect/vb/ManagementScope_Connect.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsConnected">
+      <MemberSignature Language="C#" Value="public bool IsConnected { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsConnected" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ManagementScope.IsConnected" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Management.ManagementScope" /> is currently bound to a WMI server and namespace.</summary>
+        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether the scope is currently bound to a WMI server and namespace.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A scope is disconnected after creation until someone explicitly calls <xref:System.Management.ManagementScope.Connect%2A>, or uses the scope for any operation that requires a live connection. Also, the scope is disconnected from the previous connection whenever the identifying properties of the scope are changed.  
+  
+## Property Value  
+ `true` if a connection is alive (bound to a server and namespace); otherwise, `false`.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public System.Management.ConnectionOptions Options { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Management.ConnectionOptions Options" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ManagementScope.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.ConnectionOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets options for making the WMI connection.</summary>
+        <value>Returns a <see cref="T:System.Management.ConnectionOptions" /> that contains the options for making a WMI connection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ The valid <xref:System.Management.ConnectionOptions> containing options for the WMI connection.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public System.Management.ManagementPath Path { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Management.ManagementPath Path" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ManagementScope.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.ManagementPath</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path for the <see cref="T:System.Management.ManagementScope" />.</summary>
+        <value>Returns a <see cref="T:System.Management.ManagementPath" /> containing the path to the scope (namespace).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ A <xref:System.Management.ManagementPath> containing the path to a server and namespace.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ICloneable.Clone">
+      <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementScope.System#ICloneable#Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new object that is a copy of the current instance.</summary>
+        <returns>A new object that is a copy of this instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

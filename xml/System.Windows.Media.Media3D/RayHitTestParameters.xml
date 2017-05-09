@@ -1,0 +1,115 @@
+<Type Name="RayHitTestParameters" FullName="System.Windows.Media.Media3D.RayHitTestParameters">
+  <TypeSignature Language="C#" Value="public sealed class RayHitTestParameters : System.Windows.Media.Media3D.HitTestParameters3D" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RayHitTestParameters extends System.Windows.Media.Media3D.HitTestParameters3D" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.RayHitTestParameters" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Media3D.HitTestParameters3D</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies the parameters of a hit test along a ray.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that the visual layer supports hit testing against all objects under a point or geometry, not just the topmost object.  A 2D hit test will also return 3D results directly under the specified point or geometry.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RayHitTestParameters (System.Windows.Media.Media3D.Point3D origin, System.Windows.Media.Media3D.Vector3D direction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Media3D.Point3D origin, valuetype System.Windows.Media.Media3D.Vector3D direction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.RayHitTestParameters.#ctor(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Vector3D)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="origin" Type="System.Windows.Media.Media3D.Point3D" />
+        <Parameter Name="direction" Type="System.Windows.Media.Media3D.Vector3D" />
+      </Parameters>
+      <Docs>
+        <param name="origin">Point3D at which the ray originates.</param>
+        <param name="direction">Vector3D that indicates the direction of the ray.</param>
+        <summary>Creates an instance of the object that specifies the origin and direction of the ray along which to hit test.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that the visual layer supports hit testing against all objects under a point or geometry, not just the topmost object.  A 2D hit test will also return 3D results directly under the specified point or geometry.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Direction">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Vector3D Direction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Media3D.Vector3D Direction" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayHitTestParameters.Direction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Vector3D</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Windows.Media.Media3D.Vector3D" /> that indicates the direction (from its origin) of the ray along which to hit test.</summary>
+        <value>Vector3D that indicates the direction of the ray along which to hit test.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that the visual layer supports hit testing against all objects under a point or geometry, not just the topmost object.  A 2D hit test will also return 3D results directly under the specified point or geometry.  
+  
+   
+  
+## Examples  
+ [!code-csharp[hittest3d#HitTest3D3DN4](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml.cs#hittest3d3dn4)]
+ [!code-vb[hittest3d#HitTest3D3DN4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTest3D/visualbasic/window1.xaml.vb#hittest3d3dn4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Origin">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Point3D Origin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Media3D.Point3D Origin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayHitTestParameters.Origin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Point3D</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the origin of the ray along which to hit test.</summary>
+        <value>Origin of the ray along which to hit test.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that the visual layer supports hit testing against all objects under a point or geometry, not just the topmost object.  A 2D hit test will also return 3D results directly under the specified point or geometry.  
+  
+   
+  
+## Examples  
+ [!code-csharp[hittest3d#HitTest3D3DN4](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml.cs#hittest3d3dn4)]
+ [!code-vb[hittest3d#HitTest3D3DN4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTest3D/visualbasic/window1.xaml.vb#hittest3d3dn4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,106 @@
+<Type Name="ManualResetEvent" FullName="System.Threading.ManualResetEvent">
+  <TypeSignature Language="C#" Value="public sealed class ManualResetEvent : System.Threading.EventWaitHandle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ManualResetEvent extends System.Threading.EventWaitHandle" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.ManualResetEvent" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Threading.EventWaitHandle</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Notifies one or more waiting threads that an event has occurred. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the .NET Framework version 2.0, <xref:System.Threading.ManualResetEvent> derives from the new <xref:System.Threading.EventWaitHandle> class. A <xref:System.Threading.ManualResetEvent> is functionally equivalent to an <xref:System.Threading.EventWaitHandle> created with <xref:System.Threading.EventResetMode?displayProperty=fullName>.  
+  
+> [!NOTE]
+>  Unlike the <xref:System.Threading.ManualResetEvent> class, the <xref:System.Threading.EventWaitHandle> class provides access to named system synchronization events.  
+  
+ <xref:System.Threading.ManualResetEvent> allows threads to communicate with each other by signaling. Typically, this communication concerns a task which one thread must complete before other threads can proceed.  
+  
+ When a thread begins an activity that must complete before other threads proceed, it calls <xref:System.Threading.EventWaitHandle.Reset%2A> to put `ManualResetEvent` in the non-signaled state. This thread can be thought of as controlling the `ManualResetEvent`. Threads that call <xref:System.Threading.WaitHandle.WaitOne%2A> on the `ManualResetEvent` will block, awaiting the signal. When the controlling thread completes the activity, it calls <xref:System.Threading.EventWaitHandle.Set%2A> to signal that the waiting threads can proceed. All waiting threads are released.  
+  
+ Once it has been signaled, `ManualResetEvent` remains signaled until it is manually reset. That is, calls to `WaitOne` return immediately.  
+  
+ You can control the initial state of a `ManualResetEvent` by passing a Boolean value to the constructor, `true` if the initial state is signaled and `false` otherwise.  
+  
+ `ManualResetEvent` can also be used with the `static`<xref:System.Threading.WaitHandle.WaitAll%2A> and <xref:System.Threading.WaitHandle.WaitAny%2A> methods.  
+  
+ For more information about thread synchronization mechanisms, see [ManualResetEvent and ManualResetEventSlim](~/docs/standard/threading/manualresetevent-and-manualreseteventslim.md) in the conceptual documentation.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how <xref:System.Threading.ManualResetEvent> works. The example starts with a <xref:System.Threading.ManualResetEvent> in the unsignaled state (that is, `false` is passed to the constructor). The example creates three threads, each of which blocks on the <xref:System.Threading.ManualResetEvent> by calling its <xref:System.Threading.WaitHandle.WaitOne%2A> method. When the user presses the **Enter** key, the example calls the <xref:System.Threading.EventWaitHandle.Set%2A> method, which releases all three threads. Contrast this with the behavior of the <xref:System.Threading.AutoResetEvent> class, which releases threads one at a time, resetting automatically after each release.  
+  
+ Pressing the **Enter** key again demonstrates that the <xref:System.Threading.ManualResetEvent> remains in the signaled state until its <xref:System.Threading.EventWaitHandle.Reset%2A> method is called: The example starts two more threads. These threads do not block when they call the <xref:System.Threading.WaitHandle.WaitOne%2A> method, but instead run to completion.  
+  
+ Pressing the **Enter** key again causes the example to call the <xref:System.Threading.EventWaitHandle.Reset%2A> method and to start one more thread, which blocks when it calls <xref:System.Threading.WaitHandle.WaitOne%2A>. Pressing the **Enter** key one final time calls <xref:System.Threading.EventWaitHandle.Set%2A> to release the last thread, and the program ends.  
+  
+ [!code-cpp[System.Threading.ManualResetEvent#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.ManualResetEvent/CPP/source.cpp#1)]
+ [!code-csharp[System.Threading.ManualResetEvent#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.ManualResetEvent/CS/source.cs#1)]
+ [!code-vb[System.Threading.ManualResetEvent#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.ManualResetEvent/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>This class is thread safe.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManualResetEvent (bool initialState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool initialState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEvent.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="initialState" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="initialState">
+          <see langword="true" /> to set the initial state signaled; <see langword="false" /> to set the initial state to nonsignaled.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.ManualResetEvent" /> class with a Boolean value indicating whether to set the initial state to signaled.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the initial state of a <xref:System.Threading.ManualResetEvent> is signaled (that is, if it is created by passing `true` for `initialState`), threads that wait on the <xref:System.Threading.ManualResetEvent> do not block. If the initial state is nonsignaled, threads block until the <xref:System.Threading.EventWaitHandle.Set%2A> method is called.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

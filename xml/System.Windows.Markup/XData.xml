@@ -1,0 +1,100 @@
+<Type Name="XData" FullName="System.Windows.Markup.XData">
+  <TypeSignature Language="C#" Value="public sealed class XData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XData extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XData" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Text")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents literal data that can appear as the value for a <see langword="Value" /> node.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Markup.XData.Text%2A> is the XAML content property for <xref:System.Windows.Markup.XData>. To read values from out of a XAML node stream where `XData` is returned, get the <xref:System.Windows.Markup.XData.Text%2A> property value.  
+  
+ Encoding considerations are declared at top-level XML, and are generally UTF-8 by default.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XData ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XData.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XData" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XData.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the literal value string that this <see cref="T:System.Windows.Markup.XData" /> wraps.</summary>
+        <value>The literal value string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Markup.XData.Text%2A> is the XAML content property for <xref:System.Windows.Markup.XData>. To read values from out of a XAML node stream where `XData` is returned, get the <xref:System.Windows.Markup.XData.Text%2A> property value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlReader">
+      <MemberSignature Language="C#" Value="public object XmlReader { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object XmlReader" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XData.XmlReader" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a reader for the literal data.</summary>
+        <value>A reader for the literal data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no reader is previously set for `XData`, calling the get accessor creates a new <xref:System.Xml.XmlReader> for this purpose.  
+  
+ The type of this property is <xref:System.Object> rather than <xref:System.Xml.XmlReader> in order to provide an optimization pathway for callers that do not want to include the `System.Xml` assembly just for the base type definitions, and who will be using the default reader.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

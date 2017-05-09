@@ -1,0 +1,1296 @@
+<Type Name="BaseDataList" FullName="System.Web.UI.WebControls.BaseDataList">
+  <TypeSignature Language="C#" Value="public abstract class BaseDataList : System.Web.UI.WebControls.WebControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BaseDataList extends System.Web.UI.WebControls.WebControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.BaseDataList" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.WebControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("SelectedIndexChanged")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("DataSource")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.BaseDataListDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Serves as the abstract base class for data listing controls, such as <see cref="T:System.Web.UI.WebControls.DataList" /> and <see cref="T:System.Web.UI.WebControls.DataGrid" />. This class provides the methods and properties common to all data listing controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseDataList> class provides the common functionality for all data listing controls, such as <xref:System.Web.UI.WebControls.DataList> and <xref:System.Web.UI.WebControls.DataGrid>. A data listing control is used to display the records from a data source, such as a <xref:System.Data.DataView?displayProperty=fullName> control. Each data listing control can have a unique display style and capabilities. Because the <xref:System.Web.UI.WebControls.BaseDataList> class is abstract, an instance of this class is not created directly. Instead, data listing controls inherit the methods and properties common to all data listing controls from this class.  
+  
+ You can control the appearance of a data listing control by setting certain properties of this class. To determine the amount of spacing between the cells of a data listing control, set the <xref:System.Web.UI.WebControls.BaseDataList.CellSpacing%2A> property. To determine the amount of spacing between the contents of a cell and the cell's border, set the <xref:System.Web.UI.WebControls.BaseDataList.CellPadding%2A> property. You can display the border between the individual cells of a data listing control by setting the <xref:System.Web.UI.WebControls.BaseDataList.GridLines%2A> property. The horizontal alignment of the content in the cells of a data listing control is controlled by the <xref:System.Web.UI.WebControls.BaseDataList.HorizontalAlign%2A> property.  
+  
+ The <xref:System.Web.UI.WebControls.BaseDataList> class provides two properties to support data binding. To bind data to any collection that implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface (such as <xref:System.Data.DataView?displayProperty=fullName> or <xref:System.Collections.ArrayList?displayProperty=fullName>), or the <xref:System.ComponentModel.IListSource> interface, use the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property to specify the data source. When you set the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property, you must manually write the code to perform the data binding. To automatically bind a data listing control to a data source represented by a data source control, use the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property and set its value to the <xref:System.Web.UI.Control.ID%2A> property of the data source control to use. When you set the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property, the data listing control automatically binds to the specified data source control. Therefore, you do not need to explicitly call the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method.  
+  
+ If the data source specified by the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property contains multiple sources of data, use the <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A> property to specify the specific source to bind to the control. For example, if you have a <xref:System.Data.DataSet?displayProperty=fullName> object with multiple tables, you must specify which table to bind to the control. After you have specified the data source, use the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method to bind the data source to the control.  
+  
+ The <xref:System.Web.UI.WebControls.BaseDataList> class contains a <xref:System.Web.UI.WebControls.BaseDataList.DataKeys%2A> collection that stores the key field of each record (displayed as a row) in a data listing control. This allows you to store the key field with a data listing control without displaying it in the control. The key field is commonly used as part of an update query string to revise a specific record in the data source. The collection is filled with the values from the field specified by the <xref:System.Web.UI.WebControls.BaseDataList.DataKeyField%2A> property.  
+  
+ The <xref:System.Web.UI.WebControls.BaseDataList> class provides a <xref:System.Web.UI.WebControls.BaseDataList.SelectedIndexChanged> event that is raised when the selected item in the control changes. This allows you to create a custom event handler that performs a specific set of instructions when the event is raised.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from <see cref="T:System.Web.UI.WebControls.BaseDataList" />, you must override the following members: <see cref="M:System.Web.UI.WebControls.BaseDataList.CreateControlHierarchy(System.Boolean)" /> and <see cref="M:System.Web.UI.WebControls.BaseDataList.PrepareControlHierarchy" />.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected BaseDataList ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseDataList.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.BaseDataList" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.UI.WebControls.BaseDataList> object is not created directly. This constructor is commonly called in the constructor of a derived class to initialize the properties defined in the <xref:System.Web.UI.WebControls.BaseDataList> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddParsedSubObject">
+      <MemberSignature Language="C#" Value="protected override void AddParsedSubObject (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddParsedSubObject(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseDataList.AddParsedSubObject(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">An <see cref="T:System.Object" /> that represents the parsed element.</param>
+        <summary>Notifies the server control that an element, either XML or HTML, was parsed, and adds the element to the server control's <see cref="T:System.Web.UI.ControlCollection" /> collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Caption">
+      <MemberSignature Language="C#" Value="public virtual string Caption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Caption" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseDataList.Caption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text to render in an HTML caption element in the control. This property is provided to make the control more accessible to users of assistive technology devices.</summary>
+        <value>A string that represents the text to render in an HTML caption element in the control. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BaseDataList.Caption%2A> property to specify the text to render in an HTML caption element in the control. The text that you specify provides assistive technology devices with a description of the control.  
+  
+ To specify the alignment of the HTML caption element in the control, use the <xref:System.Web.UI.WebControls.BaseDataList.CaptionAlign%2A> property.  
+  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CaptionAlign">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.TableCaptionAlign CaptionAlign { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.TableCaptionAlign CaptionAlign" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseDataList.CaptionAlign" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TableCaptionAlign</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the horizontal or vertical position of the HTML caption element in a control. This property is provided to make the control more accessible to users of assistive technology devices.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.TableCaptionAlign" /> enumeration values. The default value is <see langword="NotSet" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BaseDataList.CaptionAlign%2A> property to specify the horizontal or vertical position of the HTML caption element in a control. This property is provided to make the control more accessible to users of assistive technology devices.  
+  
+ This property is set using one of the <xref:System.Web.UI.WebControls.TableCaptionAlign> enumeration values. The following table lists the possible values.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|`NotSet`|The caption element's alignment is not set.|  
+|`Top`|The caption element is aligned with the top of the table.|  
+|`Bottom`|The caption element is aligned with the bottom of the table.|  
+|`Left`|The caption element is aligned with the left edge of the table.|  
+|`Right`|The caption element is aligned with the right edge of the table.|  
+  
+ Use the <xref:System.Web.UI.WebControls.BaseDataList.Caption%2A> property to specify the text to render in an HTML caption element in a control.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.WebControls.TableCaptionAlign" /> enumeration values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CellPadding">
+      <MemberSignature Language="C#" Value="public virtual int CellPadding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CellPadding" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseDataList.CellPadding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount of space between the contents of a cell and the cell's border.</summary>
+        <value>The amount of space (in pixels) between the contents of a cell and the cell's border. The default value is -1, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BaseDataList.CellPadding%2A> property to control the spacing between the contents of a cell and the cell's border. The padding amount specified is added to all four sides of the cell.  
+  
+ All cells in the same column of a data listing control share the same cell width. Therefore, if the content of one cell is longer than the content of other cells in the same column, the padding amount is applied to the widest cell. All other cells in the column are also set to this cell width.  
+  
+ Similarly, all cells in the same row share the same height. The padding amount is applied to the height of the tallest cell in the row. All other cells in the row are set to this cell height. Individual cell sizes cannot be specified.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseDataList.CellPadding%2A> property to specify the spacing between the contents of a cell and the cell's border.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[BaseDataListCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListCellPadding/CS/basedatalistcellpaddingcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[BaseDataListCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListCellPadding/VB/basedatalistcellpaddingvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CellSpacing">
+      <MemberSignature Language="C#" Value="public virtual int CellSpacing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CellSpacing" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseDataList.CellSpacing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount of space between cells.</summary>
+        <value>The amount of space (in pixels) between cells. The default value is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BaseDataList.CellSpacing%2A> property to control the spacing between adjacent cells in a data listing control. This spacing is applied both vertically and horizontally. The cell spacing is uniform for the entire data listing control. Individual cell spacing between each row or column cannot be specified.  
+  
+> [!NOTE]
+>  If you set this property to a value greater than `0` and set the <xref:System.Web.UI.WebControls.BaseDataList.GridLines%2A> property to a value that displays the cell borders, a gap is displayed between the borders of adjacent cells. In this situation, the <xref:System.Web.UI.WebControls.BaseDataList.CellSpacing%2A> property controls the size of the gap.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseDataList.CellSpacing%2A> property to specify the spacing between adjacent cells.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[BaseDataListCellPadding#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListCellPadding/CS/basedatalistcellpaddingcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[BaseDataListCellPadding#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListCellPadding/VB/basedatalistcellpaddingvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Controls">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.ControlCollection Controls { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ControlCollection Controls" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseDataList.Controls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ControlCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.UI.ControlCollection" /> object that contains a collection of child controls in a data listing control.</summary>
+        <value>A <see cref="T:System.Web.UI.ControlCollection" /> that contains a collection of child controls in a data listing control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BaseDataList.Controls%2A> collection to manage the child controls contained in a data listing control. You can add controls, remove controls, or iterate through the server controls in the collection.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to programmatically add a control to the <xref:System.Web.UI.WebControls.BaseDataList.Controls%2A> collection.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[BaseDataListControls#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListControls/CS/basedatalistcontrolscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[BaseDataListControls#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListControls/VB/basedatalistcontrolsvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChildControls">
+      <MemberSignature Language="C#" Value="protected override void CreateChildControls ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void CreateChildControls() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseDataList.CreateChildControls" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a child control using the view state.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateControlHierarchy">
+      <MemberSignature Language="C#" Value="protected abstract void CreateControlHierarchy (bool useDataSource);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CreateControlHierarchy(bool useDataSource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseDataList.CreateControlHierarchy(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="useDataSource" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="useDataSource">
+          <see langword="true" /> to use the control's data source; otherwise, <see langword="false" />.</param>
+        <summary>When overridden in a derived class, creates the control hierarchy for the data listing control with or without the specified data source.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseDataList.CreateControlHierarchy%2A> method is a helper method used by a derived class to create its control hierarchy.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When you create a data listing control that derives from <see cref="T:System.Web.UI.WebControls.BaseDataList" />, you must override the <see cref="M:System.Web.UI.WebControls.BaseDataList.CreateControlHierarchy(System.Boolean)" /> method to create the control hierarchy for the derived data listing control.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDataSourceSelectArguments">
+      <MemberSignature Language="C#" Value="protected virtual System.Web.UI.DataSourceSelectArguments CreateDataSourceSelectArguments ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.DataSourceSelectArguments CreateDataSourceSelectArguments() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseDataList.CreateDataSourceSelectArguments" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataSourceSelectArguments</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a default <see cref="T:System.Web.UI.DataSourceSelectArguments" /> object used by the data-bound control if no arguments are specified.</summary>
+        <returns>A <see cref="T:System.Web.UI.DataSourceSelectArguments" /> initialized to <see cref="P:System.Web.UI.DataSourceSelectArguments.Empty" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseDataList.CreateDataSourceSelectArguments%2A> method is a helper method used by the <xref:System.Web.UI.WebControls.BaseDataList.SelectArguments%2A> property to create its default <xref:System.Web.UI.DataSourceSelectArguments> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataBind">
+      <MemberSignature Language="C#" Value="public override void DataBind ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DataBind() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseDataList.DataBind" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Binds the control and all its child controls to the specified data source.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method to bind the data source specified by the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property to the data listing control. By binding the data source to a data listing control, the information in the data source is displayed in a data listing control.  
+  
+ The <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method is also commonly used to synchronize the data source and a data listing control after information in the data source is updated. This allows any changes in the data source to also be updated in a data listing control.  
+  
+ If the data source for the data listing control is specified by the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property, you do not need to call the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method. ASP.NET calls this method automatically to bind the specified data source control to the data listing control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method to bind a data source to a <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic DataGrid Example 2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGrid Example 2/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic DataGrid Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGrid Example 2/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataKeyField">
+      <MemberSignature Language="C#" Value="public virtual string DataKeyField { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataKeyField" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseDataList.DataKeyField" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the key field in the data source specified by the <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" /> property.</summary>
+        <value>The name of the key field in the data source specified by <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BaseDataList.DataKeyField%2A> property to specify the key field in the data source indicated by the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property. The specified field is used to populate the <xref:System.Web.UI.WebControls.BaseDataList.DataKeys%2A> collection. This allows you to store the key field with a data listing control without displaying it in the control. The key field is commonly used in a handler for an event, such as `ItemCommand` or `DeleteCommand`, as part of an update query string to revise a specific record in the data source. The key field helps the update query string identify the appropriate record to modify.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseDataList.DataKeyField%2A> property to specify the key field for the data source.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[BaseDataListDataKeys#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListDataKeys/CS/basedatalistdatakeyscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[BaseDataListDataKeys#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListDataKeys/VB/basedatalistdatakeysvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataKeys">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataKeyCollection DataKeys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataKeyCollection DataKeys" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseDataList.DataKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataKeyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.UI.WebControls.DataKeyCollection" /> object that stores the key values of each record in a data listing control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.DataKeyCollection" /> that stores the key values of each record in a data listing control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BaseDataList.DataKeys%2A> collection to access the key values of each record (displayed as a row) in a data listing control. This allows you to store the key field with a data listing control without displaying it in the control. This collection is automatically filled with the values from the field specified by the <xref:System.Web.UI.WebControls.BaseDataList.DataKeyField%2A> property.  
+  
+ The key field is commonly used in a handler for an event, such as `ItemCommand` or `DeleteCommand`, as part of an update query string to revise a specific record in the data source. The key field helps the update query string identify the appropriate record to modify.  
+  
+ For more information on accessing data with ASP.NET, see [ASP.NET Data Access Content Map](http://msdn.microsoft.com/en-us/f9219396-a0fa-481f-894d-e3d9c67d64f2).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseDataList.DataKeys%2A> property to determine the value of the key field for the record being deleted.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[BaseDataListDataKeys#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListDataKeys/CS/basedatalistdatakeyscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[BaseDataListDataKeys#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListDataKeys/VB/basedatalistdatakeysvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataKeysArray">
+      <MemberSignature Language="C#" Value="protected System.Collections.ArrayList DataKeysArray { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList DataKeysArray" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseDataList.DataKeysArray" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ArrayList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Collections.ArrayList" /> object that contains the key values of each record in a data listing control.</summary>
+        <value>An <see cref="T:System.Collections.ArrayList" /> that contains the key values of each record in a data listing control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseDataList.DataKeysArray%2A> property is used by a derived class to store the key values of each record in a data listing control. This property is generally used to generate the <xref:System.Web.UI.WebControls.DataKeyCollection> object contained in the <xref:System.Web.UI.WebControls.BaseDataList.DataKeys%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataMember">
+      <MemberSignature Language="C#" Value="public string DataMember { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataMember" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseDataList.DataMember" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the specific data member in a multimember data source to bind to a data listing control.</summary>
+        <value>A data member from a multimember data source. The default value is <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A> property to specify a member from a multimember data source to bind to the list control. For example, if you have a data source with more than one table specified in the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property, use the <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A> property to specify which table to bind to a data listing control.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A> property to specify which table in a <xref:System.Data.DataSet> object to bind to a <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[BaseDataListDataMember#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListDataMember/CS/basedatalistdatamembercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[BaseDataListDataMember#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListDataMember/VB/basedatalistdatamembervb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSource">
+      <MemberSignature Language="C#" Value="public virtual object DataSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DataSource" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseDataList.DataSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the source containing a list of values used to populate the items within the control.</summary>
+        <value>An <see cref="T:System.Collections.IEnumerable" /> or <see cref="T:System.ComponentModel.IListSource" /> that contains a collection of values used to supply data to this control. The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property to specify the source of values to bind to a data listing control. A data source must be a collection that implements either the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface (such as <xref:System.Data.DataView?displayProperty=fullName>, <xref:System.Collections.ArrayList?displayProperty=fullName>, or <xref:System.Collections.Generic.List%601?displayProperty=fullName>) or the <xref:System.ComponentModel.IListSource> interface to bind to a control derived from the <xref:System.Web.UI.WebControls.BaseDataList> class. When you set the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property, you must manually write the code to perform data binding.  
+  
+ If the data source specified by the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property contains multiple sources of data, use the <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A> property to specify the specific source to bind to the control. For example, if you have a <xref:System.Data.DataSet?displayProperty=fullName> object with multiple tables, you must specify which table to bind to the control. After you have specified the data source, use the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method to bind the data source to the control.  
+  
+ Alternately, you can use the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property to automatically bind to a data source represented by a data source control. When you set the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property, the data listing control automatically binds to the specified data source control. You do not need to write code that explicitly calls the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method.  
+  
+ If values are specified for both the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property and the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property, ASP.NET is not able to resolve the data source and an <xref:System.Web.HttpException?displayProperty=fullName> exception is thrown.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property to specify the data source to bind to a <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic DataGrid Example 2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DataGrid Example 2/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic DataGrid Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DataGrid Example 2/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The data source cannot be resolved because a value is specified for both the <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" /> property and the <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSourceID" /> property.</exception>
+        <exception cref="T:System.ArgumentException">The data source is of an invalid type. The data source must be <see langword="null" /> or implement either the <see cref="T:System.Collections.IEnumerable" /> or the <see cref="T:System.ComponentModel.IListSource" /> interface.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSourceID">
+      <MemberSignature Language="C#" Value="public virtual string DataSourceID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataSourceID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseDataList.DataSourceID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.IDReferenceProperty(typeof(System.Web.UI.DataSourceControl))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="P:System.Web.UI.Control.ID" /> property of the data source control that the data listing control should use to retrieve its data source.</summary>
+        <value>The programmatic identifier assigned to the data source control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property to access the <xref:System.Web.UI.Control.ID%2A> property of the data source control that the data listing control should use to retrieve its data source. The data source control referenced by the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property can be any control that implements the <xref:System.Web.UI.IDataSource> interface. The data source control must exist either in the same naming container as the data listing control that references it, or in a parent control of the data listing control. When you specify a value for this property, the data listing control automatically binds to the specified data source control. You do not need to write code that explicitly calls the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method.  
+  
+ Alternately, you can use the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property to specify the source of values to bind to a data listing control. The data source must be a collection that implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface (such as <xref:System.Data.DataView?displayProperty=fullName>, <xref:System.Collections.ArrayList?displayProperty=fullName>, or <xref:System.Collections.Generic.List%601?displayProperty=fullName>) or the <xref:System.ComponentModel.IListSource> interface to bind to a control derived from the <xref:System.Web.UI.WebControls.BaseDataList> class. When you set the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property, you must manually write the code to perform data binding.  
+  
+ If values are specified for both the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A> property and the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property, ASP.NET is not able to resolve the data source and an <xref:System.Web.HttpException?displayProperty=fullName> exception is thrown.  
+  
+ This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The data source cannot be resolved because a value is specified for both the <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" /> property and the <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSourceID" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EnsureDataBound">
+      <MemberSignature Language="C#" Value="protected void EnsureDataBound ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void EnsureDataBound() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseDataList.EnsureDataBound" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Verifies that the data listing control requires data binding and that a valid data source control is specified before calling the <see cref="M:System.Web.UI.WebControls.BaseDataList.DataBind" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you specify a value for the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property, ASP.NET automatically binds the data listing control to the specified data source control. When ASP.NET performs data binding for the control, it calls the <xref:System.Web.UI.WebControls.BaseDataList.EnsureDataBound%2A> method first to verify that the control has not already been bound to data and that a valid data source control that implements the <xref:System.Web.UI.IDataSource> interface is specified for its <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property. The <xref:System.Web.UI.WebControls.BaseDataList.EnsureDataBound%2A> method then calls the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetData">
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.IEnumerable GetData ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.IEnumerable GetData() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseDataList.GetData" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:System.Collections.IEnumerable" />-implemented object that represents the data source.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerable" />-implemented object that represents the data source.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseDataList.GetData%2A> method is a helper method called by derived classes (such as <xref:System.Web.UI.WebControls.DataGrid> and <xref:System.Web.UI.WebControls.DataList>) to retrieve the data source.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GridLines">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.GridLines GridLines { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.GridLines GridLines" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseDataList.GridLines" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.GridLines</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the border between the cells of a data listing control is displayed.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.GridLines" /> values. The default value is <see langword="Both" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BaseDataList.GridLines%2A> property to specify whether the border between the cells of a data listing control is displayed. This property is set with one of the <xref:System.Web.UI.WebControls.GridLines> enumeration values. The following table lists the possible values.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|`None`|No cell border is displayed.|  
+|`Horizontal`|Only the upper and lower borders of the cells in a data listing control are displayed.|  
+|`Vertical`|Only the left and right borders of the cells in the data list control are displayed.|  
+|`Both`|All borders of the cells in a data listing control are displayed.|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseDataList.GridLines%2A> property to display both the horizontal and vertical gridlines in a data-bound control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[BaseDataListGridLines#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListGridLines/CS/basedatalistgridlinescs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[BaseDataListGridLines#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListGridLines/VB/basedatalistgridlinesvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalAlign">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.HorizontalAlign HorizontalAlign { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.HorizontalAlign HorizontalAlign" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseDataList.HorizontalAlign" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Layout")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.HorizontalAlign</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the horizontal alignment of a data listing control within its container.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.HorizontalAlign" /> values. The default value is <see langword="NotSet" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BaseDataList.HorizontalAlign%2A> property to specify the horizontal alignment of a data listing control within its container. This property is set with one of the <xref:System.Web.UI.WebControls.HorizontalAlign> enumeration values. The following table lists the possible values.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|`NotSet`|The horizontal alignment is not set.|  
+|`Left`|The data listing control is left-aligned within its container.|  
+|`Center`|The data listing control is centered within its container.|  
+|`Right`|The data listing control is right-aligned within its container.|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseDataList.HorizontalAlign%2A> property to specify the horizontal alignment of the data-bound control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[BaseDataListHorizontalAlign#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListHorizontalAlign/CS/basedatalisthorizontalaligncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[BaseDataListHorizontalAlign#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListHorizontalAlign/VB/basedatalisthorizontalalignvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialized">
+      <MemberSignature Language="C#" Value="protected bool Initialized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Initialized" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseDataList.Initialized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the control has been initialized.</summary>
+        <value>
+          <see langword="true" /> if the control has been initialized; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseDataList.Initialized%2A> property is used by derived classes (such as <xref:System.Web.UI.WebControls.DataList> and <xref:System.Web.UI.WebControls.DataGrid>) to determine whether the control has been initialized.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBindableType">
+      <MemberSignature Language="C#" Value="public static bool IsBindableType (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsBindableType(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseDataList.IsBindableType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">A <see cref="T:System.Type" /> that contains the data type to test.</param>
+        <summary>Determines whether the specified data type can be bound to a list control that derives from the <see cref="T:System.Web.UI.WebControls.BaseDataList" /> class.</summary>
+        <returns>
+          <see langword="true" /> if the specified data type can be bound to a list control that derives from the <see cref="T:System.Web.UI.WebControls.BaseDataList" /> class; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BaseDataList.IsBindableType%2A> static method to determine whether the specified data type can be bound to a list control that inherits from the <xref:System.Web.UI.WebControls.BaseDataList> class. The supported data types are <xref:System.Boolean?displayProperty=fullName>, <xref:System.Byte?displayProperty=fullName>, <xref:System.SByte?displayProperty=fullName>, <xref:System.Int16?displayProperty=fullName>, <xref:System.UInt16?displayProperty=fullName>, <xref:System.Int32?displayProperty=fullName>, <xref:System.UInt32?displayProperty=fullName>, <xref:System.Int64?displayProperty=fullName>, <xref:System.UInt64?displayProperty=fullName>, <xref:System.Char?displayProperty=fullName>, <xref:System.Double?displayProperty=fullName>, <xref:System.Single?displayProperty=fullName>, <xref:System.DateTime?displayProperty=fullName>, <xref:System.Decimal?displayProperty=fullName>, and <xref:System.String?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.BaseDataList.IsBindableType%2A> property to determine whether values of a certain data type can be bound to a <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[BaseDataListIsBindableType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListIsBindableType/CS/basedatalistisbindabletypecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[BaseDataListIsBindableType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListIsBindableType/VB/basedatalistisbindabletypevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBoundUsingDataSourceID">
+      <MemberSignature Language="C#" Value="protected bool IsBoundUsingDataSourceID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsBoundUsingDataSourceID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseDataList.IsBoundUsingDataSourceID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSourceID" /> property is set.</summary>
+        <value>
+          <see langword="true" /> if <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSourceID" /> is set to a value other than <see cref="F:System.String.Empty" />; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseDataList.IsBoundUsingDataSourceID%2A> property is used by derived classes (such as <xref:System.Web.UI.WebControls.DataList> and <xref:System.Web.UI.WebControls.DataGrid>) to determine whether the data-bound control is bound to an ASP.NET version 2.0 data source control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDataBinding">
+      <MemberSignature Language="C#" Value="protected override void OnDataBinding (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDataBinding(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseDataList.OnDataBinding(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.DataBinding" /> event of a <see cref="T:System.Web.UI.WebControls.BaseDataList" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Control.DataBinding> event is raised when data is bound to the <xref:System.Web.UI.WebControls.BaseDataList> control. This method notifies the control to perform any data-binding logic that is associated with it.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Web.UI.WebControls.BaseDataList.OnDataBinding%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Web.UI.WebControls.BaseDataList.OnDataBinding(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.BaseDataList.OnDataBinding(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDataPropertyChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnDataPropertyChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDataPropertyChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseDataList.OnDataPropertyChanged" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called when one of the base data source identification properties is changed, to rebind the data-bound control to its data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseDataList.OnDataPropertyChanged%2A> method is called to rebind the data-bound control to its data when the <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A>, <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A>, or <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A> property changes values after the page's <xref:System.Web.UI.Control.PreRender> event.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">An attempt was made to change the property value during the data-binding phase of the control.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDataSourceViewChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnDataSourceViewChanged (object sender, EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDataSourceViewChanged(object sender, class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseDataList.OnDataSourceViewChanged(System.Object,System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">The source of the event.</param>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.DataSourceView.DataSourceViewChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseDataList.OnDataSourceViewChanged%2A> method notifies a data-bound control that the underlying data source has changed and that the control should rebind and any necessary work should be performed. Typically, the <xref:System.Web.UI.WebControls.BaseDataList.OnDataSourceViewChanged%2A> method is called when a property of the data source view has changed.  
+  
+ The <xref:System.Web.UI.WebControls.BaseDataList> class sets the <xref:System.Web.UI.WebControls.BaseDataList.RequiresDataBinding%2A> property to `true` when the <xref:System.Web.UI.DataSourceView.DataSourceViewChanged> event is raised.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Web.UI.WebControls.BaseDataList.OnDataSourceViewChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Web.UI.WebControls.BaseDataList.OnDataSourceViewChanged(System.Object,System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.BaseDataList.OnDataSourceViewChanged(System.Object,System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInit">
+      <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseDataList.OnInit(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.Init" /> event for the <see cref="T:System.Web.UI.WebControls.BaseDataList" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseDataList.OnInit%2A> method notifies the <xref:System.Web.UI.WebControls.BaseDataList> control to perform any initialization steps that are required to create and set up an instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLoad">
+      <MemberSignature Language="C#" Value="protected override void OnLoad (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnLoad(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseDataList.OnLoad(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.Load" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPreRender">
+      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseDataList.OnPreRender(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSelectedIndexChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnSelectedIndexChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectedIndexChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseDataList.OnSelectedIndexChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.WebControls.BaseDataList.SelectedIndexChanged" /> event of a <see cref="T:System.Web.UI.WebControls.BaseDataList" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseDataList.SelectedIndexChanged> event is raised when a different item is selected in a data listing control between posts to the server. The <xref:System.Web.UI.WebControls.BaseDataList.OnSelectedIndexChanged%2A> method allows you to create a custom handler for the event.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Web.UI.WebControls.BaseDataList.OnSelectedIndexChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Web.UI.WebControls.BaseDataList.OnSelectedIndexChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.WebControls.BaseDataList.OnSelectedIndexChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="PrepareControlHierarchy">
+      <MemberSignature Language="C#" Value="protected abstract void PrepareControlHierarchy ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void PrepareControlHierarchy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseDataList.PrepareControlHierarchy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets up the control hierarchy for the data-bound control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you inherit from <xref:System.Web.UI.WebControls.BaseDataList>, you must implement the <xref:System.Web.UI.WebControls.BaseDataList.PrepareControlHierarchy%2A> method to prepare the control hierarchy for the data-bound control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseDataList.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">A <see cref="T:System.Web.UI.HtmlTextWriter" /> that contains the output stream to render on the client.</param>
+        <summary>Renders the control to the specified HTML writer.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequiresDataBinding">
+      <MemberSignature Language="C#" Value="protected bool RequiresDataBinding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RequiresDataBinding" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseDataList.RequiresDataBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the data listing control needs to bind to its specified data source.</summary>
+        <value>
+          <see langword="true" /> if the control needs to bind to a data source; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseDataList> control uses the <xref:System.Web.UI.WebControls.BaseDataList.RequiresDataBinding%2A> property to determine whether the control needs to call the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method to bind to its specified data source.  
+  
+ Each time the `set` accessor is called on either the <xref:System.Web.UI.WebControls.BaseDataList.DataSource%2A>, the <xref:System.Web.UI.WebControls.BaseDataList.DataSourceID%2A>, or the <xref:System.Web.UI.WebControls.BaseDataList.DataMember%2A> property to change the data source after the <xref:System.Web.UI.WebControls.BaseDataList.OnInit%2A> method has already been called, ASP.NET automatically sets the value of the <xref:System.Web.UI.WebControls.BaseDataList.RequiresDataBinding%2A> property to `true`. The value of the <xref:System.Web.UI.WebControls.BaseDataList.RequiresDataBinding%2A> property is also set to `true` when the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl.OnDataSourceChanged%2A> method is called.  
+  
+ ASP.NET automatically sets the value of the <xref:System.Web.UI.WebControls.Repeater.RequiresDataBinding%2A> property to `false` immediately after the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method has been called.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectArguments">
+      <MemberSignature Language="C#" Value="protected System.Web.UI.DataSourceSelectArguments SelectArguments { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataSourceSelectArguments SelectArguments" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseDataList.SelectArguments" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataSourceSelectArguments</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.UI.DataSourceSelectArguments" /> object that the data-bound control uses when retrieving data from a data source control.</summary>
+        <value>A <see cref="T:System.Web.UI.DataSourceSelectArguments" /> used by the data-bound control to retrieve data. The default is to return the value from <see cref="M:System.Web.UI.WebControls.BaseDataList.CreateDataSourceSelectArguments" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseDataList.SelectArguments%2A> property calls the <xref:System.Web.UI.WebControls.BaseDataList.CreateDataSourceSelectArguments%2A> method to create a default <xref:System.Web.UI.DataSourceSelectArguments> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedIndexChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler SelectedIndexChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectedIndexChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.BaseDataList.SelectedIndexChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a different item is selected in a data listing control between posts to the server.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.BaseDataList.SelectedIndexChanged> event is raised when a different item is selected in a data listing control between posts to the server.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to provide an event handler for the <xref:System.Web.UI.WebControls.BaseDataList.SelectedIndexChanged> event declaratively.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[BaseDataListSelectedIndexChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListSelectedIndexChanged/CS/basedatalistselectedindexchangedcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[BaseDataListSelectedIndexChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListSelectedIndexChanged/VB/basedatalistselectedindexchangedvb.aspx#1)]  -->  
+  
+ The following code example demonstrates how to provide an event handler for the <xref:System.Web.UI.WebControls.BaseDataList.SelectedIndexChanged> event programmatically.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[BaseDataListSelectedIndexChanged2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BaseDataListSelectedIndexChanged2/CS/basedatalistselectedindexchanged2cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[BaseDataListSelectedIndexChanged2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BaseDataListSelectedIndexChanged2/VB/basedatalistselectedindexchanged2vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsDisabledAttribute">
+      <MemberSignature Language="C#" Value="public override bool SupportsDisabledAttribute { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDisabledAttribute" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseDataList.SupportsDisabledAttribute" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the control should set the <see langword="disabled" /> attribute of the rendered HTML element to "disabled" when the control's <see cref="P:System.Web.UI.WebControls.WebControl.IsEnabled" /> property is <see langword="false" />.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Web.UI.Control.RenderingCompatibility" /> property indicates an ASP.NET version lower than <c>4.0</c>; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property indicates how ASP.NET should render HTML for a control when the control is disabled. If this property is `true`, ASP.NET renders a `disabled` attribute when a control is disabled. If this property is `false`, ASP.NET renders a `class` attribute when a control is disabled. For more information, see <xref:System.Web.UI.WebControls.WebControl.SupportsDisabledAttribute%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseAccessibleHeader">
+      <MemberSignature Language="C#" Value="public virtual bool UseAccessibleHeader { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseAccessibleHeader" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseDataList.UseAccessibleHeader" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the data listing control renders its header in an accessible format. This property is provided to make the control more accessible to users of assistive technology devices.</summary>
+        <value>
+          <see langword="true" /> if the control renders its header in an accessible format; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.BaseDataList.UseAccessibleHeader%2A> property to specify whether the data listing control renders its header in an accessible format. This property is provided to make the control more accessible to users of assistive technology devices. By default, the value of this property is `false` and the header for the control is rendered between cell tags `<td>` and `</td>`. If the value of this property is `true`, the header for the control is rendered between table header cell tags `<th>` and `</th>`. In addition, a `scope="col"` attribute is added to the table header to specify that the header applies to all the cells in the column. The default rendering of the `<th>` element is preserved, rendering text as bold and centered horizontally. Developers can override the behavior of the `<th>` element using a cascading style sheet (CSS). However, requiring the use of style sheets is discouraged when creating accessible Web pages.  
+  
+ For data listing controls, such as the <xref:System.Web.UI.WebControls.DataList> control and the <xref:System.Web.UI.WebControls.DataGrid> control, that inherit from the <xref:System.Web.UI.WebControls.BaseDataList> class, you can set the <xref:System.Web.UI.WebControls.BaseDataList.UseAccessibleHeader%2A> property declaratively or programmatically. If you set the <xref:System.Web.UI.WebControls.BaseDataList.UseAccessibleHeader%2A> property programmatically, set it before binding data with the <xref:System.Web.UI.WebControls.BaseDataList.DataBind%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,365 @@
+<Type Name="LogPolicy" FullName="System.IO.Log.LogPolicy">
+  <TypeSignature Language="C#" Value="public sealed class LogPolicy" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LogPolicy extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Log.LogPolicy" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Log</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the policy associated with a <see cref="T:System.IO.Log.LogStore" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A policy is a set of rules to be followed by a <xref:System.IO.Log.LogStore> instance and its clients. A <xref:System.IO.Log.LogPolicy> instance is used to examine and modify the policy associated with a specific <xref:System.IO.Log.LogStore>. A policy can describe the minimum and maximum allowable log sizes, or how the <xref:System.IO.Log.LogStore> instance is allowed to grow. In addition, you can also control whether a <xref:System.IO.Log.LogStore> instance can be archived.  
+  
+ After changing any of the properties, you should use the <xref:System.IO.Log.LogPolicy.Commit%2A> method to ensure that the changes are applied to the <xref:System.IO.Log.LogStore>. You can call the <xref:System.IO.Log.LogPolicy.Refresh%2A> method to discard changes or to get the most current policy.  
+  
+   
+  
+## Examples  
+ This example shows how to use the <xref:System.IO.Log.LogPolicy> class to set policy for a log record sequence.  
+  
+ [!code-csharp[S_UELogRecordSequence#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#2)]
+ [!code-vb[S_UELogRecordSequence#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AutoGrow">
+      <MemberSignature Language="C#" Value="public bool AutoGrow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoGrow" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogPolicy.AutoGrow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.IO.Log.LogStore" /> can grow automatically.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.IO.Log.LogStore" /> can grow its size automatically; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to use the <xref:System.IO.Log.LogPolicy> class to set policy for a log record sequence.  
+  
+ [!code-csharp[S_UELogRecordSequence#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#2)]
+ [!code-vb[S_UELogRecordSequence#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoShrinkPercentage">
+      <MemberSignature Language="C#" Value="public int AutoShrinkPercentage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AutoShrinkPercentage" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogPolicy.AutoShrinkPercentage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the percentage of free space the <see cref="T:System.IO.Log.LogStore" /> can shrink.</summary>
+        <value>The percentage of free space the <see cref="T:System.IO.Log.LogStore" /> can shrink.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the amount of free space in the <xref:System.IO.Log.LogStore> is greater than the amount specified by this property, the <xref:System.IO.Log.LogStore> automatically reduces its size until it reaches the size specified by the <xref:System.IO.Log.LogPolicy.MinimumExtentCount%2A> property.  
+  
+   
+  
+## Examples  
+ This example shows how to use the <xref:System.IO.Log.LogPolicy> class to set policy for a log record sequence.  
+  
+ [!code-csharp[S_UELogRecordSequence#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#2)]
+ [!code-vb[S_UELogRecordSequence#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Commit">
+      <MemberSignature Language="C#" Value="public void Commit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Commit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.LogPolicy.Commit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets this policy as the current policy for the <see cref="T:System.IO.Log.LogStore" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must call <xref:System.IO.Log.LogPolicy.Commit%2A> after making any changes to ensure that the changes are recorded.  
+  
+   
+  
+## Examples  
+ This example shows how to use the <xref:System.IO.Log.LogPolicy> class to set policy for a log record sequence.  
+  
+ [!code-csharp[S_UELogRecordSequence#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#2)]
+ [!code-vb[S_UELogRecordSequence#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The set of policies installed on the log is invalid.  
+  
+ -or-  
+  
+ A policy of the log prevented this operation from completing.</exception>
+        <exception cref="T:System.IO.IOException">The request could not be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.NotSupportedException">Setting this policy is not supported on the current platform.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.IO.PathTooLongException">The new extent prefix is invalid or too long. A valid prefix must be provided.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Access for the specified log store is denied by the operating system.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GrowthRate">
+      <MemberSignature Language="C#" Value="public System.IO.Log.PolicyUnit GrowthRate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Log.PolicyUnit GrowthRate" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogPolicy.GrowthRate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.PolicyUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the rate of automatic growth of the <see cref="T:System.IO.Log.LogStore" />.</summary>
+        <value>The rate of automatic growth of the <see cref="T:System.IO.Log.LogStore" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.IO.Log.LogStore> becomes full, this policy value determines how much more space can be added. Space will not be added if it causes the number of extents in the <xref:System.IO.Log.LogStore> to exceed <xref:System.IO.Log.LogPolicy.MaximumExtentCount%2A>.  
+  
+   
+  
+## Examples  
+ This example shows how to use the <xref:System.IO.Log.LogPolicy> class to set policy for a log record sequence.  
+  
+ [!code-csharp[S_UELogRecordSequence#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#2)]
+ [!code-vb[S_UELogRecordSequence#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumExtentCount">
+      <MemberSignature Language="C#" Value="public int MaximumExtentCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumExtentCount" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogPolicy.MaximumExtentCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum number of <see cref="T:System.IO.Log.LogExtent" /> instances the <see cref="T:System.IO.Log.LogStore" /> can contain.</summary>
+        <value>The maximum number of <see cref="T:System.IO.Log.LogExtent" /> instances the <see cref="T:System.IO.Log.LogStore" /> can contain.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to use the <xref:System.IO.Log.LogPolicy> class to set policy for a log record sequence.  
+  
+ [!code-csharp[S_UELogRecordSequence#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#2)]
+ [!code-vb[S_UELogRecordSequence#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinimumExtentCount">
+      <MemberSignature Language="C#" Value="public int MinimumExtentCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinimumExtentCount" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogPolicy.MinimumExtentCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the minimum number of <see cref="T:System.IO.Log.LogExtent" /> instances the <see cref="T:System.IO.Log.LogStore" /> can contain.</summary>
+        <value>An integer that specifies the minimum number of <see cref="T:System.IO.Log.LogExtent" /> instances the <see cref="T:System.IO.Log.LogStore" /> can contain. Since the CLFS requires that the minimum extent count to be 2 extents, this value should be at least 2.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to use the <xref:System.IO.Log.LogPolicy> class to set policy for a log record sequence.  
+  
+ [!code-csharp[S_UELogRecordSequence#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#2)]
+ [!code-vb[S_UELogRecordSequence#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewExtentPrefix">
+      <MemberSignature Language="C#" Value="public string NewExtentPrefix { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NewExtentPrefix" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogPolicy.NewExtentPrefix" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the prefix string for automatically created extents.</summary>
+        <value>The prefix string for automatically created extents.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This string can contain a full path to the directory where the new extent is created. The default path to the extent is the directory that contains the base <xref:System.IO.Log.LogStore> file.  
+  
+   
+  
+## Examples  
+ This example shows how to use the <xref:System.IO.Log.LogPolicy> class to set policy for a log record sequence.  
+  
+ [!code-csharp[S_UELogRecordSequence#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#2)]
+ [!code-vb[S_UELogRecordSequence#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextExtentSuffix">
+      <MemberSignature Language="C#" Value="public long NextExtentSuffix { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 NextExtentSuffix" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogPolicy.NextExtentSuffix" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the suffix number for new extents.</summary>
+        <value>The suffix number for new extents.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to use the <xref:System.IO.Log.LogPolicy> class to set policy for a log record sequence.  
+  
+ [!code-csharp[S_UELogRecordSequence#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#2)]
+ [!code-vb[S_UELogRecordSequence#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PinnedTailThreshold">
+      <MemberSignature Language="C#" Value="public System.IO.Log.PolicyUnit PinnedTailThreshold { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Log.PolicyUnit PinnedTailThreshold" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogPolicy.PinnedTailThreshold" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.PolicyUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount of space that the <see cref="E:System.IO.Log.LogRecordSequence.TailPinned" /> event requires for advancing the base of the log.</summary>
+        <value>The amount of space that the <see cref="E:System.IO.Log.LogRecordSequence.TailPinned" /> event requires for advancing the base of the log.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The amount of space can be expressed in percentage, or in bytes which is rounded off to the nearest containers in CLFS. The default is 35 percent.  
+  
+   
+  
+## Examples  
+ This example shows how to use the <xref:System.IO.Log.LogPolicy> class to set policy for a log record sequence.  
+  
+ [!code-csharp[S_UELogRecordSequence#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#2)]
+ [!code-vb[S_UELogRecordSequence#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Log.LogPolicy.Refresh" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reads the current policy for the <see cref="T:System.IO.Log.LogStore" />, discarding any changes that may have been made.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to use the <xref:System.IO.Log.LogPolicy> class to set policy for a log record sequence.  
+  
+ [!code-csharp[S_UELogRecordSequence#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#2)]
+ [!code-vb[S_UELogRecordSequence#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The set of policies installed on the log is invalid.  
+  
+ -or-  
+  
+ A policy of the log prevented this operation from completing.</exception>
+        <exception cref="T:System.IO.IOException">The request could not be performed because of an unexpected I/O exception.</exception>
+        <exception cref="T:System.NotSupportedException">Setting this policy is not supported on the current platform.</exception>
+        <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
+        <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
+        <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">Access for the specified log store is denied by the operating system.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

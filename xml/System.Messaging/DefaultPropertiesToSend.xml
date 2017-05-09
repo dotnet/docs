@@ -1,0 +1,819 @@
+<Type Name="DefaultPropertiesToSend" FullName="System.Messaging.DefaultPropertiesToSend">
+  <TypeSignature Language="C#" Value="public class DefaultPropertiesToSend" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DefaultPropertiesToSend extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Messaging.DefaultPropertiesToSend" />
+  <AssemblyInfo>
+    <AssemblyName>System.Messaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.ExpandableObjectConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the default property values that will be used when sending objects other than <see cref="T:System.Messaging.Message" /> instances to a message queue.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set default values on selected properties for messages sent to a <xref:System.Messaging.MessageQueue>. <xref:System.Messaging.DefaultPropertiesToSend> is used to specify default property values of the message being sent when objects other than <xref:System.Messaging.Message> instances are sent to a queue, for example, the string argument passed into the <xref:System.Messaging.MessageQueue.Send%2A> method in the code fragment, `myMessageQueue.Send("hello")`. The <xref:System.Messaging.Message> class has corresponding, identically named properties to those in <xref:System.Messaging.DefaultPropertiesToSend> that provide the values when sending a <xref:System.Messaging.Message> instance specifically. Even if you have specified <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A?displayProperty=fullName> for a queue, sending a <xref:System.Messaging.Message> object to that queue will cause the values for the identically named <xref:System.Messaging.Message> properties to override the queue's <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> values.  
+  
+ Properties that you do not set explicitly default to the values specified by the constructor, <xref:System.Messaging.DefaultPropertiesToSend.%23ctor%2A>.  
+  
+ For a list of initial property values for an instance of <xref:System.Messaging.DefaultPropertiesToSend>, see the <xref:System.Messaging.DefaultPropertiesToSend> constructor.  
+  
+   
+  
+## Examples  
+ The following code example uses the priority of a message to determine default properties to send for the message.  
+  
+ [!code-cpp[MessageQueue.DefaultPropertiesToSend#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueue.DefaultPropertiesToSend/CPP/mqdefaultpropertiestosend.cpp#1)]
+ [!code-csharp[MessageQueue.DefaultPropertiesToSend#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueue.DefaultPropertiesToSend/CS/mqdefaultpropertiestosend.cs#1)]
+ [!code-vb[MessageQueue.DefaultPropertiesToSend#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MessageQueue.DefaultPropertiesToSend/VB/mqdefaultpropertiestosend.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DefaultPropertiesToSend ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.DefaultPropertiesToSend.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.DefaultPropertiesToSend" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can create a new instance of <xref:System.Messaging.DefaultPropertiesToSend> to define default property values to associate with objects sent to a queue that are not of type <xref:System.Messaging.Message>. When working with <xref:System.Messaging.MessageQueue> objects, a <xref:System.Messaging.DefaultPropertiesToSend> instance is created for you and associated with the <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A?displayProperty=fullName> member of the <xref:System.Messaging.MessageQueue>.  
+  
+ There are two ways to define a queue's default properties to send, as shown in the following C# code. You can set values for this instance of <xref:System.Messaging.DefaultPropertiesToSend> and associate it with the queue's <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A?displayProperty=fullName> property:  
+  
+```  
+DefaultPropertiesToSend myDefaultProperties = new DefaultPropertiesToSend();  
+  // Set default values for the properties.  
+  myDefaultProperties.Label = "myLabel";  
+  myDefaultProperties.Recoverable = false;  
+ ...  
+  myMessageQueue.DefaultPropertiesToSend = myDefaultProperties;  
+  myMessageQueue.Send("hello");  
+```  
+  
+ Or, you can individually assign values to the <xref:System.Messaging.MessageQueue> instance's <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> property directly:  
+  
+```  
+myMessageQueue.DefaultPropertiesToSend.Label = "myLabel";  
+  myMessageQueue.DefaultPropertiesToSend.Recoverable = false;  
+...  
+  myMessageQueue.Send("hello");  
+```  
+  
+ If you choose the second of these options, you do not need to call the <xref:System.Messaging.DefaultPropertiesToSend.%23ctor%2A> constructor explicitly. You might want to create instances of <xref:System.Messaging.DefaultPropertiesToSend>, for example, if the properties' default values depend on some criterion of the message being sent. You can create multiple <xref:System.Messaging.DefaultPropertiesToSend> instances and assign one to the queue's <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A?displayProperty=fullName> property before sending the message to the queue.  
+  
+ The following table shows initial property values for an instance of <xref:System.Messaging.DefaultPropertiesToSend>.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Messaging.DefaultPropertiesToSend.AcknowledgeType%2A>|`AcknowledgeTypes.None`|  
+|<xref:System.Messaging.DefaultPropertiesToSend.AdministrationQueue%2A>|`null`|  
+|<xref:System.Messaging.DefaultPropertiesToSend.AppSpecific%2A>|0|  
+|<xref:System.Messaging.DefaultPropertiesToSend.AttachSenderId%2A>|`true`|  
+|<xref:System.Messaging.DefaultPropertiesToSend.EncryptionAlgorithm%2A>|`EncryptionAlgorithm.RC2`|  
+|<xref:System.Messaging.DefaultPropertiesToSend.Extension%2A>|A zero-length array of bytes|  
+|<xref:System.Messaging.DefaultPropertiesToSend.HashAlgorithm%2A>|`HashAlgorithm.MD5`|  
+|<xref:System.Messaging.DefaultPropertiesToSend.Label%2A>|An empty string ("")|  
+|<xref:System.Messaging.DefaultPropertiesToSend.Priority%2A>|`MessagePriority.Normal`|  
+|<xref:System.Messaging.DefaultPropertiesToSend.Recoverable%2A>|`false`|  
+|<xref:System.Messaging.DefaultPropertiesToSend.ResponseQueue%2A>|`null`|  
+|<xref:System.Messaging.DefaultPropertiesToSend.TimeToBeReceived%2A>|`Message.InfiniteTimeout`|  
+|<xref:System.Messaging.DefaultPropertiesToSend.TimeToReachQueue%2A>|`Message.InfiniteTimeout`|  
+|<xref:System.Messaging.DefaultPropertiesToSend.TransactionStatusQueue%2A>|`null`|  
+|<xref:System.Messaging.DefaultPropertiesToSend.UseAuthentication%2A>|`false`|  
+|<xref:System.Messaging.DefaultPropertiesToSend.UseDeadLetterQueue%2A>|`false`|  
+|<xref:System.Messaging.DefaultPropertiesToSend.UseEncryption%2A>|`false`|  
+|<xref:System.Messaging.DefaultPropertiesToSend.UseJournalQueue%2A>|`false`|  
+|<xref:System.Messaging.DefaultPropertiesToSend.UseTracing%2A>|`false`|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcknowledgeType">
+      <MemberSignature Language="C#" Value="public System.Messaging.AcknowledgeTypes AcknowledgeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Messaging.AcknowledgeTypes AcknowledgeType" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.DefaultPropertiesToSend.AcknowledgeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgAcknowledgeType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Messaging.AcknowledgeTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of acknowledgement message to be returned to the sending application.</summary>
+        <value>One of the <see cref="T:System.Messaging.AcknowledgeTypes" /> enumeration values. This value is used to determine the type of acknowledgment messages the system posts in the administration queue and when acknowledgments are returned to the sending application. The default is <see langword="AcknowledgeTypes.None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.DefaultPropertiesToSend.AcknowledgeType%2A> property specifies the type of acknowledgment messages to return to the sending application. For example, set the <xref:System.Messaging.DefaultPropertiesToSend.AcknowledgeType%2A> property to request notification when a message reaches its destination, when it is retrieved, or whether a time-out has prevented the message from reaching or being retrieved from the destination queue.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdministrationQueue">
+      <MemberSignature Language="C#" Value="public System.Messaging.MessageQueue AdministrationQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Messaging.MessageQueue AdministrationQueue" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.DefaultPropertiesToSend.AdministrationQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgAdministrationQueue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the queue that receives acknowledgement messages generated by Message Queuing.</summary>
+        <value>The <see cref="T:System.Messaging.MessageQueue" /> that specifies the administration queue used for system-generated acknowledgment messages. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The queue specified in the <xref:System.Messaging.DefaultPropertiesToSend.AdministrationQueue%2A> property can be any non-transactional queue. The acknowledgment messages sent to the administration queue can indicate whether or not the original message reached its destination queue, and whether or not it was removed from the queue.  
+  
+ When the <xref:System.Messaging.DefaultPropertiesToSend.AcknowledgeType%2A> property has any value other than `None`, the sending application must specify the queue to be used as the administration queue.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppSpecific">
+      <MemberSignature Language="C#" Value="public int AppSpecific { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AppSpecific" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.DefaultPropertiesToSend.AppSpecific" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgAppSpecific")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets additional, application-specific information.</summary>
+        <value>Information specific to the application. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.DefaultPropertiesToSend.AppSpecific%2A> property contains additional, application-specific information that can be used to organize different types of messages, for example, using application-specific indexes. It is the responsibility of the application to interpret <xref:System.Messaging.DefaultPropertiesToSend.AppSpecific%2A> information.  
+  
+ Where possible, message data should be included in the body of the message rather than in the <xref:System.Messaging.DefaultPropertiesToSend.AppSpecific%2A> property.  
+  
+ When working with foreign queues, use the <xref:System.Messaging.DefaultPropertiesToSend.Extension%2A> property to specify non-Message Queuing message properties. As with <xref:System.Messaging.DefaultPropertiesToSend.AppSpecific%2A>, it is the responsibility of the application to understand the content of the <xref:System.Messaging.DefaultPropertiesToSend.Extension%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttachSenderId">
+      <MemberSignature Language="C#" Value="public bool AttachSenderId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AttachSenderId" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.DefaultPropertiesToSend.AttachSenderId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgAttachSenderId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the sender ID should be attached to the message.</summary>
+        <value>
+          <see langword="true" /> if sender ID should be attached to the message; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The sender ID is an array of bytes that represents the identifier of the sending user. The sender ID is set by Message Queuing and is used by the receiving Queue Manager to verify whether the sender has access rights to a queue. The sender ID is only trustworthy if the message was authenticated when it reached the destination queue.  
+  
+ When the sender ID is not attached to the message, the sending application is indicating that Message Queuing should not validate the message's sender when the message is sent to the destination queue. If the destination queue only accepts authenticated messages, and either <xref:System.Messaging.DefaultPropertiesToSend.UseAuthentication%2A> or <xref:System.Messaging.DefaultPropertiesToSend.AttachSenderId%2A> is `false`, the message will be rejected when it reaches the queue.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptionAlgorithm">
+      <MemberSignature Language="C#" Value="public System.Messaging.EncryptionAlgorithm EncryptionAlgorithm { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Messaging.EncryptionAlgorithm EncryptionAlgorithm" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.DefaultPropertiesToSend.EncryptionAlgorithm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgEncryptionAlgorithm")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Messaging.EncryptionAlgorithm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the encryption algorithm used to encrypt the body of a private message.</summary>
+        <value>One of the <see cref="T:System.Messaging.EncryptionAlgorithm" /> enumeration values. The default is <see langword="RC2" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a message is private, it is encrypted before it is sent and is decrypted when it is received. The <xref:System.Messaging.DefaultPropertiesToSend.EncryptionAlgorithm%2A> property specifies the algorithm used to encrypt the message body of a private message.  
+  
+ A queue can require that incoming messages be encrypted. If a non-encrypted (non-private) message is sent to a queue that only accepts private messages, or if a private message is sent to a queue that only accepts non-private messages, the message is rejected by the queue. The sending application can request a negative acknowledgment message be returned to the sending application if a message was rejected.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Extension">
+      <MemberSignature Language="C#" Value="public byte[] Extension { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Extension" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.DefaultPropertiesToSend.Extension" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.ComponentModel.Design.ArrayEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgExtension")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets additional information associated with the message.</summary>
+        <value>An array of bytes that provides additional, application-defined information associated with the message. The default is a zero-length array.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.DefaultPropertiesToSend.Extension%2A> property provides for additional application-defined information that is associated with the message, such as a large binary object. It is the responsibility of the receiving application to interpret the contents of the <xref:System.Messaging.DefaultPropertiesToSend.Extension%2A>.  
+  
+ Where possible, message data should be included in the body of the message rather than in the extension.  
+  
+ When working with foreign queues, use the <xref:System.Messaging.DefaultPropertiesToSend.Extension%2A> property to specify non-Message Queuing message properties.  
+  
+ A foreign queue exists in a queuing system other than Microsoft Message Queuing. Microsoft Message Queuing communicates with such queues through a connector application.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HashAlgorithm">
+      <MemberSignature Language="C#" Value="public System.Messaging.HashAlgorithm HashAlgorithm { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Messaging.HashAlgorithm HashAlgorithm" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.DefaultPropertiesToSend.HashAlgorithm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgHashAlgorithm")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Messaging.HashAlgorithm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the hashing algorithm used when authenticating messages or creating a digital signature for a message.</summary>
+        <value>One of the <see cref="T:System.Messaging.HashAlgorithm" /> enumeration values. The default is <see langword="MD5" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.DefaultPropertiesToSend.HashAlgorithm%2A> property identifies the hashing algorithm Message Queuing uses when authenticating messages or when creating a digital signature for a message.  
+  
+ Message Queuing on the source computer uses the hashing algorithm when creating a digital signature for a message. The target Queue Manager then uses the same hashing algorithm to authenticate the message when it is received.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Label">
+      <MemberSignature Language="C#" Value="public string Label { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Label" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.DefaultPropertiesToSend.Label" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgLabel")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an application-defined string that describes the message.</summary>
+        <value>The label of the message. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A message label can be used for display purposes, for example, or to selectively process messages based on the label value. The maximum length for a message label is 249 Unicode characters. The label does not need to be unique across messages.  
+  
+ Message queue and message labels represent an application-defined value that can help to identify the queue or message in human-readable terms. It is the responsibility of the application to interpret label contents; they have no intrinsic meaning to the Message Queuing application.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="public System.Messaging.MessagePriority Priority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Messaging.MessagePriority Priority" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.DefaultPropertiesToSend.Priority" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgPriority")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessagePriority</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the message priority, which is used to determine where the message is placed in the queue.</summary>
+        <value>One of the <see cref="T:System.Messaging.MessagePriority" /> enumeration values that represents the priority level of a non-transactional message. The default is <see langword="Normal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.DefaultPropertiesToSend.Priority%2A> property affects how Message Queuing handles the message while it is en route, as well as where the message is placed in the queue when it reaches its destination. Higher priority messages are given preference during routing and inserted toward the front of the queue. Messages with the same priority are placed in the queue according to their arrival time.  
+  
+ Message priority can only be set meaningfully for non-transactional messages. The priority for transactional messages is automatically set to `Lowest`, which causes transactional message priority to be ignored.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Recoverable">
+      <MemberSignature Language="C#" Value="public bool Recoverable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Recoverable" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.DefaultPropertiesToSend.Recoverable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgRecoverable")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the message is guaranteed to be delivered in the event of a computer failure or network problem.</summary>
+        <value>
+          <see langword="true" /> if the message is guaranteed delivery by saving it to disk while en route; <see langword="false" /> if delivery is not assured. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.DefaultPropertiesToSend.Recoverable%2A> property indicates whether delivery of a message is guaranteed, even if a computer crashes while the message is en route to the destination queue.  
+  
+ If delivery of a message is guaranteed, the message is stored locally at every step along the route until the message is successfully forwarded to the next computer. Setting <xref:System.Messaging.DefaultPropertiesToSend.Recoverable%2A> to `true` on <xref:System.Messaging.DefaultPropertiesToSend> could affect the throughput.  
+  
+ If the message is transactional, Message Queuing automatically treats the message as recoverable, regardless of whether <xref:System.Messaging.DefaultPropertiesToSend.Recoverable%2A> is set to `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseQueue">
+      <MemberSignature Language="C#" Value="public System.Messaging.MessageQueue ResponseQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Messaging.MessageQueue ResponseQueue" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.DefaultPropertiesToSend.ResponseQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgResponseQueue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the queue that receives application-generated response messages.</summary>
+        <value>The <see cref="T:System.Messaging.MessageQueue" /> to which application-generated response messages are returned. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.DefaultPropertiesToSend.ResponseQueue%2A> property identifies the queue that receives application-generated response messages that are returned to the sending application by the receiving application. Response queues are specified by the sending application when the application sends its messages. Any available queue can be specified as a response queue.  
+  
+ Messages returned to the response queue are application-specific. The application must define what is in the messages as well as what is to be done when a message is received.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeToBeReceived">
+      <MemberSignature Language="C#" Value="public TimeSpan TimeToBeReceived { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan TimeToBeReceived" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.DefaultPropertiesToSend.TimeToBeReceived" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Messaging.TimeoutConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgTimeToBeReceived")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the time limit for the message to be retrieved from the destination queue.</summary>
+        <value>The total time, in seconds, for a sent message to be received from the destination queue. The default is <see cref="F:System.Messaging.Message.InfiniteTimeout" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.DefaultPropertiesToSend.TimeToBeReceived%2A> property specifies the total time in seconds for a sent message to be received from the destination queue. This time limit includes the time spent getting to the destination queue, plus the time spent waiting in the queue before the message is retrieved by an application.  
+  
+> [!CAUTION]
+>  When using dependent client computers, synchronize the clock on the client computer with the clock on the server running Message Queuing. If the two clocks are not synchronized, you might see unpredictable behavior when sending messages when <xref:System.Messaging.DefaultPropertiesToSend.TimeToBeReceived%2A> is not <xref:System.Messaging.Message.InfiniteTimeout>.  
+  
+ If the <xref:System.Messaging.DefaultPropertiesToSend.TimeToBeReceived%2A> interval expires before the message is removed from the queue, the Message Queuing application discards the message. The message is either sent to the dead-letter queue, if the message's <xref:System.Messaging.DefaultPropertiesToSend.UseDeadLetterQueue%2A> property is set to `true`, or ignored, if <xref:System.Messaging.DefaultPropertiesToSend.UseDeadLetterQueue%2A> is `false`. If <xref:System.Messaging.DefaultPropertiesToSend.TimeToBeReceived%2A> is less than <xref:System.Messaging.DefaultPropertiesToSend.TimeToReachQueue%2A>, <xref:System.Messaging.DefaultPropertiesToSend.TimeToBeReceived%2A> takes precedence.  
+  
+ The message's <xref:System.Messaging.DefaultPropertiesToSend.AcknowledgeType%2A> property can be set to request that Message Queuing send a negative acknowledgment message back to the sending application if the message is not retrieved before the timer expires.  
+  
+> [!CAUTION]
+>  If you have specified to receive <xref:System.Messaging.DefaultPropertiesToSend.TimeToReachQueue%2A> negative acknowledgments, you will not receive them when the value of <xref:System.Messaging.DefaultPropertiesToSend.TimeToBeReceived%2A> is less than the value of <xref:System.Messaging.DefaultPropertiesToSend.TimeToReachQueue%2A>.  
+  
+ When several messages are sent in a transaction, Message Queuing uses the value of the first message's <xref:System.Messaging.DefaultPropertiesToSend.TimeToBeReceived%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeToReachQueue">
+      <MemberSignature Language="C#" Value="public TimeSpan TimeToReachQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan TimeToReachQueue" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.DefaultPropertiesToSend.TimeToReachQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Messaging.TimeoutConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgTimeToReachQueue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the time limit for the message to reach the queue.</summary>
+        <value>The time limit in seconds for a message to reach the destination queue, from the time the message is sent. The default is <see cref="F:System.Messaging.Message.InfiniteTimeout" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Messaging.DefaultPropertiesToSend.TimeToReachQueue%2A> interval expires before the message reaches its destination, the Message Queuing application discards the message. The message is either sent to the dead-letter queue, if the message's <xref:System.Messaging.DefaultPropertiesToSend.UseDeadLetterQueue%2A> property is set to `true`, or ignored, if <xref:System.Messaging.DefaultPropertiesToSend.UseDeadLetterQueue%2A> is `false`. If <xref:System.Messaging.DefaultPropertiesToSend.TimeToReachQueue%2A> is greater than <xref:System.Messaging.DefaultPropertiesToSend.TimeToBeReceived%2A>, <xref:System.Messaging.DefaultPropertiesToSend.TimeToBeReceived%2A> takes precedence.  
+  
+ The message's <xref:System.Messaging.DefaultPropertiesToSend.AcknowledgeType%2A> property can be set to request that Message Queuing send a negative acknowledgment message back to the sending application if the message does not arrive before the timer expires.  
+  
+ If <xref:System.Messaging.DefaultPropertiesToSend.TimeToReachQueue%2A> is 0 seconds, Message Queuing tries once to send the message to its destination if the queue is waiting for the message. If the queue is local, the message always reaches the queue.  
+  
+ When several messages are sent in a transaction, Message Queuing uses the value of the first message's <xref:System.Messaging.DefaultPropertiesToSend.TimeToReachQueue%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionStatusQueue">
+      <MemberSignature Language="C#" Value="public System.Messaging.MessageQueue TransactionStatusQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Messaging.MessageQueue TransactionStatusQueue" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.DefaultPropertiesToSend.TransactionStatusQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgTransactionStatusQueue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the transaction status queue on the source computer.</summary>
+        <value>The transaction status queue on the source computer, which is used for sending acknowledgement messages back to the sending application. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.DefaultPropertiesToSend.TransactionStatusQueue%2A> property identifies the transaction status queue on the source computer. The property is set by Message Queuing, and is used by connector applications when retrieving transactional messages sent to a foreign queue.  
+  
+ A foreign queue exists in a queuing system other than Microsoft Message Queuing. Microsoft Message Queuing communicates with such queues through a connector application.  
+  
+ The connector application can use the transaction status queue to send acknowledgment messages back to the sending application. The transaction status queue should receive these acknowledgments even if the sending application does not request other acknowledgments.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseAuthentication">
+      <MemberSignature Language="C#" Value="public bool UseAuthentication { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseAuthentication" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.DefaultPropertiesToSend.UseAuthentication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgUseAuthentication")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the message must be authenticated before being sent.</summary>
+        <value>
+          <see langword="true" /> if the sending application requested authentication for the message; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.DefaultPropertiesToSend.UseAuthentication%2A> property specifies whether the message needs to be authenticated. If the sending application requests authentication, Message Queuing creates a digital signature and uses it to sign the message when it is sent and to authenticate the message when it is received.  
+  
+ If a message is sent to a queue that only accepts authenticated messages, the message will be rejected when it reaches the queue if <xref:System.Messaging.DefaultPropertiesToSend.UseAuthentication%2A> is set to `false`.  
+  
+ It is not possible to look at the properties of a message and determine whether a message failed authentication. Messages that fail authentication are discarded and are not delivered to the queue.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseDeadLetterQueue">
+      <MemberSignature Language="C#" Value="public bool UseDeadLetterQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseDeadLetterQueue" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.DefaultPropertiesToSend.UseDeadLetterQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgUseDeadLetterQueue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether a copy of the message that could not be delivered should be sent to a dead-letter queue.</summary>
+        <value>
+          <see langword="true" /> if message delivery failure should result in a copy of the message being sent to a dead-letter queue; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Messaging.DefaultPropertiesToSend.UseJournalQueue%2A> and <xref:System.Messaging.DefaultPropertiesToSend.UseDeadLetterQueue%2A> specify how Message Queuing will track a message. If <xref:System.Messaging.DefaultPropertiesToSend.UseDeadLetterQueue%2A> is `true`, then in case of delivery failure (for non-transactional messages), the message is sent to the non-transactional dead-letter queue on the computer that could not deliver the message (for example, if a message timer expires).  
+  
+ In the case of delivery failure for transactional messages, the message is sent to the transactional dead-letter queue on the source computer in all negative and in-doubt cases.  
+  
+ When you store messages in a dead-letter queue, empty the queue periodically to remove messages that are no longer needed. Messages stored in dead-letter queues count against the size quota for the computer where the queue resides. The computer quota is set by the administrator and refers to the total size allocated for storing messages on a computer, not just in a single queue.  
+  
+ You do not create a journal or dead-letter queue. These are both system queues that are generated by Message Queuing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseEncryption">
+      <MemberSignature Language="C#" Value="public bool UseEncryption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseEncryption" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.DefaultPropertiesToSend.UseEncryption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgUseEncryption")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to make the message private.</summary>
+        <value>
+          <see langword="true" /> to require Message Queuing to encrypt the message; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a message is private, its body is encrypted before it is sent and is decrypted when it is received. To send a private message, the sending application must specify that encryption be used and, optionally, which encryption algorithm to apply.  
+  
+ When sending private messages, it is not necessary that your application perform the message encryption. Message Queuing can encrypt the message body for you when your application sends messages within a Microsoft Windows 2000 enterprise where there is access to the directory service. When receiving private messages, it is always the receiving Queue Manager that decrypts the message body.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseJournalQueue">
+      <MemberSignature Language="C#" Value="public bool UseJournalQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseJournalQueue" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.DefaultPropertiesToSend.UseJournalQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgUseJournalQueue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether a copy of the message should be kept in a machine journal on the originating computer.</summary>
+        <value>
+          <see langword="true" /> to require that a copy of a message be kept in the originating computer's machine journal after it has been successfully transmitted from the originating computer to the next step; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Messaging.DefaultPropertiesToSend.UseJournalQueue%2A> and <xref:System.Messaging.DefaultPropertiesToSend.UseDeadLetterQueue%2A> specify how Message Queuing will track a message. If <xref:System.Messaging.DefaultPropertiesToSend.UseJournalQueue%2A> is `true`, then at each step that a message is transmitted, a copy is kept in the computer journal on the originating computer.  
+  
+ The sent message will only be copied to the journal queue if the destination queue is on a remote computer. If the destination is on the local computer, the message is sent directly to the queue; there are no intermediate steps to require journaling.  
+  
+ When you store messages in a journal queue, empty the queue periodically to remove messages that are no longer needed. Messages stored in journal queues count against the quota for the computer where the queue resides (the computer quota is set by the administrator).  
+  
+ You do not create a journal or dead-letter queue. These are both system queues that are generated by Message Queuing.  
+  
+ Journaling can be specified by both the message and the queue. When <xref:System.Messaging.DefaultPropertiesToSend.UseJournalQueue%2A?displayProperty=fullName> is `true`, the message is journaled when it is sent. When <xref:System.Messaging.MessageQueue.UseJournalQueue%2A?displayProperty=fullName> is `true`, the message is journaled when it is received.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseTracing">
+      <MemberSignature Language="C#" Value="public bool UseTracing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseTracing" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.DefaultPropertiesToSend.UseTracing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgUseTracing")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to trace a message as it moves toward its destination queue.</summary>
+        <value>
+          <see langword="true" /> if each intermediate step made by the original message en route to the destination queue will generate a report to be sent to the system's report queue; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.DefaultPropertiesToSend.UseTracing%2A> property specifies whether to track the route of a message as it moves toward its destination queue. If `true`, a Message Queuing-generated report message is sent to a report queue each time the message passes through a Message Queuing routing server. The report queue is specified by the source Queue Manager. Report queues are not limited to Message Queuing-generated report messages. Your application-generated messages can be sent to report queues as well.  
+  
+ Using tracing involves setting up Active Directory and specifying a report queue for the Message Queuing enterprise. These settings are configured by the administrator.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

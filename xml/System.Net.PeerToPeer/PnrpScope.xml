@@ -1,0 +1,89 @@
+<Type Name="PnrpScope" FullName="System.Net.PeerToPeer.PnrpScope">
+  <TypeSignature Language="C#" Value="public enum PnrpScope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PnrpScope extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.PnrpScope" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the different scopes of a PNRP cloud.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Net.PeerToPeer.PnrpScope> is an enumerated type.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.PeerToPeer.PnrpScope All = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.PnrpScope.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.PeerToPeer.PnrpScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All IP addresses are allowed to register with the PNRP <see cref="T:System.Net.PeerToPeer.Cloud" />. There is no difference between any scope and all scopes.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Global">
+      <MemberSignature Language="C#" Value="Global" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.PeerToPeer.PnrpScope Global = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.PnrpScope.Global" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.PeerToPeer.PnrpScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scope is global; all valid IP addresses are allowed to register with the PNRP <see cref="T:System.Net.PeerToPeer.Cloud" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LinkLocal">
+      <MemberSignature Language="C#" Value="LinkLocal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.PeerToPeer.PnrpScope LinkLocal = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.PnrpScope.LinkLocal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.PeerToPeer.PnrpScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scope is link-local; only IP addresses defined for the local area subnet are allowed to register with the PNRP <see cref="T:System.Net.PeerToPeer.Cloud" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SiteLocal">
+      <MemberSignature Language="C#" Value="SiteLocal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.PeerToPeer.PnrpScope SiteLocal = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.PnrpScope.SiteLocal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.PeerToPeer.PnrpScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scope is site-local; only IP addresses defined for the site are allowed to register with the PNRP.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,228 @@
+<Type Name="RuntimeHelpers" FullName="Microsoft.FSharp.Core.CompilerServices.RuntimeHelpers">
+  <TypeSignature Language="C#" Value="public static class RuntimeHelpers" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed RuntimeHelpers extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.CompilerServices.RuntimeHelpers" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.RequireQualifiedAccess</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateEvent&lt;TDelegate,TArgs&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.IEvent&lt;TDelegate,TArgs&gt; CreateEvent&lt;TDelegate,TArgs&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TDelegate,Microsoft.FSharp.Core.Unit&gt; addHandler, Microsoft.FSharp.Core.FSharpFunc&lt;TDelegate,Microsoft.FSharp.Core.Unit&gt; removeHandler, Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.FSharpFunc&lt;object,Microsoft.FSharp.Core.FSharpFunc&lt;TArgs,Microsoft.FSharp.Core.Unit&gt;&gt;,TDelegate&gt; createHandler) where TDelegate : Delegate;" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.IEvent`2&lt;!!TDelegate, !!TArgs&gt; CreateEvent&lt;(class System.Delegate) TDelegate, TArgs&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TDelegate, class Microsoft.FSharp.Core.Unit&gt; addHandler, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TDelegate, class Microsoft.FSharp.Core.Unit&gt; removeHandler, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.FSharpFunc`2&lt;object, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TArgs, class Microsoft.FSharp.Core.Unit&gt;&gt;, !!TDelegate&gt; createHandler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.RuntimeHelpers.CreateEvent``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.FSharpFunc{System.Object,Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.Unit}},``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.IEvent&lt;TDelegate,TArgs&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TDelegate">
+          <Constraints>
+            <BaseTypeName>System.Delegate</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TArgs" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="addHandler" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TDelegate,Microsoft.FSharp.Core.Unit&gt;" />
+        <Parameter Name="removeHandler" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TDelegate,Microsoft.FSharp.Core.Unit&gt;" />
+        <Parameter Name="createHandler" Type="Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.FSharpFunc&lt;System.Object,Microsoft.FSharp.Core.FSharpFunc&lt;TArgs,Microsoft.FSharp.Core.Unit&gt;&gt;,TDelegate&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TDelegate">To be added.</typeparam>
+        <typeparam name="TArgs">To be added.</typeparam>
+        <param name="addHandler">To be added.</param>
+        <param name="removeHandler">To be added.</param>
+        <param name="createHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumerateFromFunctions&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;TResult&gt; EnumerateFromFunctions&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,T&gt; create, Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; moveNext, Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; current);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;!!TResult&gt; EnumerateFromFunctions&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, !!T&gt; create, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; moveNext, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt; current) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.RuntimeHelpers.EnumerateFromFunctions``2(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,``0},Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Core.FSharpFunc{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="create" Type="Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,T&gt;" />
+        <Parameter Name="moveNext" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;" />
+        <Parameter Name="current" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="create">To be added.</param>
+        <param name="moveNext">To be added.</param>
+        <param name="current">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumerateThenFinally&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; EnumerateThenFinally&lt;T&gt; (System.Collections.Generic.IEnumerable&lt;T&gt; source, Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; compensation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; EnumerateThenFinally&lt;T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; source, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; compensation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.RuntimeHelpers.EnumerateThenFinally``1(System.Collections.Generic.IEnumerable{``0},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+        <Parameter Name="compensation" Type="Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="compensation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumerateUsing&lt;T,TCollection,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;TResult&gt; EnumerateUsing&lt;T,TCollection,TResult&gt; (T resource, Microsoft.FSharp.Core.FSharpFunc&lt;T,TCollection&gt; source) where T : IDisposable where TCollection : System.Collections.Generic.IEnumerable&lt;TResult&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;!!TResult&gt; EnumerateUsing&lt;(class System.IDisposable) T, (class System.Collections.Generic.IEnumerable`1&lt;!!TResult&gt;) TCollection, TResult&gt;(!!T resource, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TCollection&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.RuntimeHelpers.EnumerateUsing``3(``0,Microsoft.FSharp.Core.FSharpFunc{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IDisposable</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TCollection">
+          <Constraints>
+            <InterfaceName>System.Collections.Generic.IEnumerable&lt;TResult&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="resource" Type="T" />
+        <Parameter Name="source" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TCollection&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TCollection">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="resource">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnumerateWhile&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; EnumerateWhile&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,bool&gt; guard, System.Collections.Generic.IEnumerable&lt;T&gt; source);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; EnumerateWhile&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, bool&gt; guard, class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.RuntimeHelpers.EnumerateWhile``1(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,System.Boolean},System.Collections.Generic.IEnumerable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="guard" Type="Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,System.Boolean&gt;" />
+        <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="guard">To be added.</param>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

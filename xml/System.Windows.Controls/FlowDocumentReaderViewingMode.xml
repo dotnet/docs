@@ -1,0 +1,83 @@
+<Type Name="FlowDocumentReaderViewingMode" FullName="System.Windows.Controls.FlowDocumentReaderViewingMode">
+  <TypeSignature Language="C#" Value="public enum FlowDocumentReaderViewingMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FlowDocumentReaderViewingMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.FlowDocumentReaderViewingMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Names viewing modes for the <see cref="T:System.Windows.Controls.FlowDocumentReader" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following figure provides an example of Page viewing mode.  Page mode displays a single page of content at a time.  Note that this mode includes page navigation controls that display the current page count and position and provide **Next** and **Previous** page buttons.  This viewing mode does not display scroll bars.  
+  
+ ![FlowDocReader ViewMode of Page](~/add/media/flowdocrdrviewmode-page.png "FlowDocReader ViewMode of Page")  
+  
+ The following figure provides an example of TwoPage viewing mode.  TwoPage mode is similar to Page mode, except two facing pages are displayed at a time, similar to an open book.  Note that this mode includes page navigation controls that display the current page count and position and provide **Next** and **Previous** page buttons; in this mode, the **Next** and **Previous** page buttons cause content to jump by two pages at a time, similar to turning a page in a book.  The current page number indicates the leading page.  This viewing mode does not display scroll bars.  
+  
+ ![FlowDocumentReader ViewMode of Book](~/add/media/flowdocrdrviewmode-book.png "FlowDocumentReader ViewMode of Book")  
+  
+ The following figure provides an example of Scroll viewing mode.  This viewing mode does not include page navigation controls; rather, the user navigates content using provided scroll bars.  For the purposes of page count and navigation, Scroll viewing mode presents a single page whose number is always 1.  
+  
+ ![Screenshot: FlowDocumentReader ViewMode of Scroll](~/add/media/flowdocrdrviewmode-scroll.png "Screenshot: FlowDocumentReader ViewMode of Scroll")  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Page">
+      <MemberSignature Language="C#" Value="Page" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.FlowDocumentReaderViewingMode Page = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentReaderViewingMode.Page" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.FlowDocumentReaderViewingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the <see cref="T:System.Windows.Controls.FlowDocumentReader" /> should show content one page at a time.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Scroll">
+      <MemberSignature Language="C#" Value="Scroll" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.FlowDocumentReaderViewingMode Scroll = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentReaderViewingMode.Scroll" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.FlowDocumentReaderViewingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the <see cref="T:System.Windows.Controls.FlowDocumentReader" /> should show content in continuous scrolling mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TwoPage">
+      <MemberSignature Language="C#" Value="TwoPage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.FlowDocumentReaderViewingMode TwoPage = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentReaderViewingMode.TwoPage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.FlowDocumentReaderViewingMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the <see cref="T:System.Windows.Controls.FlowDocumentReader" /> should show content two pages at a time, similar to an open book.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

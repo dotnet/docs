@@ -1,0 +1,112 @@
+<Type Name="SocketInformationOptions" FullName="System.Net.Sockets.SocketInformationOptions">
+  <TypeSignature Language="C#" Value="public enum SocketInformationOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SocketInformationOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketInformationOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes states for a <see cref="T:System.Net.Sockets.Socket" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Connected">
+      <MemberSignature Language="C#" Value="Connected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketInformationOptions Connected = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketInformationOptions.Connected" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Sockets.SocketInformationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Net.Sockets.Socket" /> is connected.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Listening">
+      <MemberSignature Language="C#" Value="Listening" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketInformationOptions Listening = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketInformationOptions.Listening" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Sockets.SocketInformationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Net.Sockets.Socket" /> is listening for new connections.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NonBlocking">
+      <MemberSignature Language="C#" Value="NonBlocking" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketInformationOptions NonBlocking = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketInformationOptions.NonBlocking" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Sockets.SocketInformationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Net.Sockets.Socket" /> is nonblocking.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UseOnlyOverlappedIO">
+      <MemberSignature Language="C#" Value="UseOnlyOverlappedIO" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketInformationOptions UseOnlyOverlappedIO = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketInformationOptions.UseOnlyOverlappedIO" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Sockets.SocketInformationOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Net.Sockets.Socket" /> uses overlapped I/O.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

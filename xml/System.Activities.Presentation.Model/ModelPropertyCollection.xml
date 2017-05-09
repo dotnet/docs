@@ -1,0 +1,45 @@
+<Type Name="ModelPropertyCollection" FullName="System.Activities.Presentation.Model.ModelPropertyCollection">
+  <TypeSignature Language="C#" Value="public abstract class ModelPropertyCollection : System.Activities.Presentation.Model.ModelMemberCollection&lt;System.Activities.Presentation.Model.ModelProperty,System.Windows.DependencyProperty&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ModelPropertyCollection extends System.Activities.Presentation.Model.ModelMemberCollection`2&lt;class System.Activities.Presentation.Model.ModelProperty, class System.Windows.DependencyProperty&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.ModelPropertyCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.Presentation.Model.ModelMemberCollection&lt;System.Activities.Presentation.Model.ModelProperty,System.Windows.DependencyProperty&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TItemType">System.Activities.Presentation.Model.ModelProperty</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="TFindType">System.Windows.DependencyProperty</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains an enumeration of properties.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the search capabilities of this class, see <xref:System.Activities.Presentation.Model.ModelMemberCollection%602>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ModelPropertyCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelPropertyCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Activities.Presentation.Model.ModelPropertyCollection" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

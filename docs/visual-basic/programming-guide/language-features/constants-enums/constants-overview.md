@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "constants"
 ms.assetid: 29016fe8-78b3-4dc8-90b8-1cfec2fa8ac9
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

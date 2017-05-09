@@ -1,0 +1,135 @@
+<Type Name="Timeout" FullName="System.Threading.Timeout">
+  <TypeSignature Language="C#" Value="public static class Timeout" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Timeout extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.Timeout" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains constants that specify infinite time-out intervals. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The members of this class are used to specify infinite time-out intervals in threading operations. <xref:System.Threading.Timeout.Infinite> is used by methods that accept an integer `millisecondsTimeout` parameter, such as <xref:System.Threading.Thread.Sleep%28System.Int32%29?displayProperty=fullName>, <xref:System.Threading.Thread.Join%28System.Int32%29?displayProperty=fullName>, and <xref:System.Threading.ReaderWriterLock.AcquireReaderLock%28System.Int32%29?displayProperty=fullName>. <xref:System.Threading.Timeout.InfiniteTimeSpan> is used by methods that accept a `timeout` parameter of type <xref:System.TimeSpan>, such as <xref:System.Threading.Thread.Sleep%28System.TimeSpan%29?displayProperty=fullName>, <xref:System.Threading.Thread.Join%28System.TimeSpan%29?displayProperty=fullName>, and <xref:System.Threading.ReaderWriterLock.AcquireReaderLock%28System.TimeSpan%29?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following example shows a thread going to sleep for an infinite time and subsequently being woken up.  
+  
+ [!code-cpp[System.Threading.Thread.Interrupt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.Thread.Interrupt/CPP/source.cpp#1)]
+ [!code-csharp[System.Threading.Thread.Interrupt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Thread.Interrupt/CS/source.cs#1)]
+ [!code-vb[System.Threading.Thread.Interrupt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Thread.Interrupt/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>This type is thread safe.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName="Infinite">
+      <MemberSignature Language="C#" Value="public const int Infinite = -1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 Infinite = (-1)" />
+      <MemberSignature Language="DocId" Value="F:System.Threading.Timeout.Infinite" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1</MemberValue>
+      <Docs>
+        <summary>A constant used to specify an infinite waiting period, for threading methods that accept an <see cref="T:System.Int32" /> parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For threading methods that accept a `millisecondsTimeout` parameter, such as <xref:System.Threading.Thread.Sleep%28System.Int32%29?displayProperty=fullName> and <xref:System.Threading.Thread.Join%28System.Int32%29?displayProperty=fullName>, this value is used to suspend the thread indefinitely. However, in most cases, we recommend that you use other <xref:System.Threading?displayProperty=fullName> classes such as <xref:System.Threading.Mutex>, <xref:System.Threading.Monitor>, <xref:System.Threading.EventWaitHandle>, or <xref:System.Threading.Semaphore> instead to sychronize threads or manage resources.  
+  
+ The value of this field is -1 (0xFFFFFFFF).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InfiniteTimeSpan">
+      <MemberSignature Language="C#" Value="public static readonly TimeSpan InfiniteTimeSpan;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.TimeSpan InfiniteTimeSpan" />
+      <MemberSignature Language="DocId" Value="F:System.Threading.Timeout.InfiniteTimeSpan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant used to specify an infinite waiting period, for methods that accept a <see cref="T:System.TimeSpan" /> parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For threading methods that accept a `timeout` parameter of type <xref:System.TimeSpan>, such as <xref:System.Threading.Thread.Sleep%28System.TimeSpan%29?displayProperty=fullName> and <xref:System.Threading.Thread.Join%28System.TimeSpan%29?displayProperty=fullName>, this value is used to suspend the thread indefinitely. However, in most cases, we recommend that you use other <xref:System.Threading?displayProperty=fullName> classes such as <xref:System.Threading.Mutex>, <xref:System.Threading.Monitor>, <xref:System.Threading.EventWaitHandle>, or <xref:System.Threading.Semaphore> instead to sychronize threads or manage resources.  
+  
+ The value of this field is -00:00:00.0010000, or -1 millisecond.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

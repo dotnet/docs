@@ -1,0 +1,218 @@
+<Type Name="IAuthenticationModule" FullName="System.Net.IAuthenticationModule">
+  <TypeSignature Language="C#" Value="public interface IAuthenticationModule" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAuthenticationModule" />
+  <TypeSignature Language="DocId" Value="T:System.Net.IAuthenticationModule" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the base authentication interface for Web client authentication modules.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.IAuthenticationModule> interface defines the properties and methods that custom authentication modules must use.  
+  
+ Authentication modules conduct the entire authentication process with a server, responding to an authentication challenge as appropriate. This process may consist of requests to an authentication server separate from the resource server, as well as any other activities required to properly authenticate a request for a URI.  
+  
+ Custom authentication modules should implement the <xref:System.Net.IAuthenticationModule> interface and then register with the <xref:System.Net.AuthenticationManager.Register%2A?displayProperty=fullName> method. Authentication modules are also registered at program initialization by reading the configuration file.  
+  
+   
+  
+## Examples  
+ The following example creates creates a customized authentication class by implementing the <xref:System.Net.IAuthenticationModule> interface. For a complete example refer to the <xref:System.Net.AuthenticationManager> class.  
+  
+ [!code-cpp[System.Net.Authentication#6](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Authentication/CPP/custombasicauthentication.cpp#6)]
+ [!code-csharp[System.Net.Authentication#6](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Authentication/CS/custombasicauthentication.cs#6)]
+ [!code-vb[System.Net.Authentication#6](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Authentication/VB/custombasicauthentication.vb#6)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Authenticate">
+      <MemberSignature Language="C#" Value="public System.Net.Authorization Authenticate (string challenge, System.Net.WebRequest request, System.Net.ICredentials credentials);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.Authorization Authenticate(string challenge, class System.Net.WebRequest request, class System.Net.ICredentials credentials) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.IAuthenticationModule.Authenticate(System.String,System.Net.WebRequest,System.Net.ICredentials)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Authorization</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="challenge" Type="System.String" />
+        <Parameter Name="request" Type="System.Net.WebRequest" />
+        <Parameter Name="credentials" Type="System.Net.ICredentials" />
+      </Parameters>
+      <Docs>
+        <param name="challenge">The authentication challenge sent by the server.</param>
+        <param name="request">The <see cref="T:System.Net.WebRequest" /> instance associated with the challenge.</param>
+        <param name="credentials">The credentials associated with the challenge.</param>
+        <summary>Returns an instance of the <see cref="T:System.Net.Authorization" /> class in respose to an authentication challenge from a server.</summary>
+        <returns>An <see cref="T:System.Net.Authorization" /> instance containing the authorization message for the request, or <see langword="null" /> if the challenge cannot be handled.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.IAuthenticationModule.Authenticate%2A> method conducts the authentication process with the server and returns an <xref:System.Net.Authorization> instance to the <xref:System.Net.AuthenticationManager>.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Net.IAuthenticationModule.Authenticate%2A> method. For a complete example refer to the <xref:System.Net.AuthenticationManager> class.  
+  
+ [!code-cpp[System.Net.Authentication#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Authentication/CPP/custombasicauthentication.cpp#3)]
+ [!code-csharp[System.Net.Authentication#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Authentication/CS/custombasicauthentication.cs#3)]
+ [!code-vb[System.Net.Authentication#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Authentication/VB/custombasicauthentication.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>The <see cref="T:System.Net.AuthenticationManager" /> calls the <see cref="M:System.Net.IAuthenticationModule.Authenticate(System.String,System.Net.WebRequest,System.Net.ICredentials)" /> method on registered authentication modules to determine which module handles the challenge. If the authentication module cannot handle the challenge, the <see cref="M:System.Net.IAuthenticationModule.Authenticate(System.String,System.Net.WebRequest,System.Net.ICredentials)" /> method must return <see langword="null" />. If the authentication module encounters an error while conducting the authentication process, <see cref="M:System.Net.IAuthenticationModule.Authenticate(System.String,System.Net.WebRequest,System.Net.ICredentials)" /> must throw an exception.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthenticationType">
+      <MemberSignature Language="C#" Value="public string AuthenticationType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AuthenticationType" />
+      <MemberSignature Language="DocId" Value="P:System.Net.IAuthenticationModule.AuthenticationType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the authentication type provided by this authentication module.</summary>
+        <value>A string indicating the authentication type provided by this authentication module.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.IAuthenticationModule.AuthenticationType%2A> property identifies the authentication type implemented by this authentication module. The <xref:System.Net.IAuthenticationModule.AuthenticationType%2A> property is used by the <xref:System.Net.AuthenticationManager.Register%2A?displayProperty=fullName> method to determine if the authentication module has been registered, and by the <xref:System.Net.AuthenticationManager.Unregister%2A?displayProperty=fullName> method to remove a registered authentication module.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Net.IAuthenticationModule.AuthenticationType%2A> property. For a complete example refer to the <xref:System.Net.AuthenticationManager> class.  
+  
+ [!code-cpp[System.Net.Authentication#7](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Authentication/CPP/custombasicauthentication.cpp#7)]
+ [!code-csharp[System.Net.Authentication#7](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Authentication/CS/custombasicauthentication.cs#7)]
+ [!code-vb[System.Net.Authentication#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Authentication/VB/custombasicauthentication.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanPreAuthenticate">
+      <MemberSignature Language="C#" Value="public bool CanPreAuthenticate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanPreAuthenticate" />
+      <MemberSignature Language="DocId" Value="P:System.Net.IAuthenticationModule.CanPreAuthenticate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the authentication module supports preauthentication.</summary>
+        <value>
+          <see langword="true" /> if the authorization module supports preauthentication; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.IAuthenticationModule.CanPreAuthenticate%2A> property is set to `true` to indicate that the authentication module can respond with a valid <xref:System.Net.Authorization> instance when the <xref:System.Net.IAuthenticationModule.PreAuthenticate%2A> method is called.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Net.IAuthenticationModule.CanPreAuthenticate%2A> property. For a complete example refer to the <xref:System.Net.AuthenticationManager> class.  
+  
+ [!code-cpp[System.Net.Authentication#7](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Authentication/CPP/custombasicauthentication.cpp#7)]
+ [!code-csharp[System.Net.Authentication#7](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Authentication/CS/custombasicauthentication.cs#7)]
+ [!code-vb[System.Net.Authentication#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Authentication/VB/custombasicauthentication.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>This is typically a fixed value; either the authentication module can preauthenticate, or it cannot.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="PreAuthenticate">
+      <MemberSignature Language="C#" Value="public System.Net.Authorization PreAuthenticate (System.Net.WebRequest request, System.Net.ICredentials credentials);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.Authorization PreAuthenticate(class System.Net.WebRequest request, class System.Net.ICredentials credentials) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.IAuthenticationModule.PreAuthenticate(System.Net.WebRequest,System.Net.ICredentials)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Authorization</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.Net.WebRequest" />
+        <Parameter Name="credentials" Type="System.Net.ICredentials" />
+      </Parameters>
+      <Docs>
+        <param name="request">The <see cref="T:System.Net.WebRequest" /> instance associated with the authentication request.</param>
+        <param name="credentials">The credentials associated with the authentication request.</param>
+        <summary>Returns an instance of the <see cref="T:System.Net.Authorization" /> class for an authentication request to a server.</summary>
+        <returns>An <see cref="T:System.Net.Authorization" /> instance containing the authorization message for the request.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Net.IAuthenticationModule.CanPreAuthenticate%2A> property is `true`, the <xref:System.Net.IAuthenticationModule.PreAuthenticate%2A> method will return an instance of the <xref:System.Net.Authorization> class containing an authentication message.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Net.IAuthenticationModule.PreAuthenticate%2A> method. For a complete example refer to the <xref:System.Net.AuthenticationManager> class.  
+  
+ [!code-cpp[System.Net.Authentication#4](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Authentication/CPP/custombasicauthentication.cpp#4)]
+ [!code-csharp[System.Net.Authentication#4](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Authentication/CS/custombasicauthentication.cs#4)]
+ [!code-vb[System.Net.Authentication#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Authentication/VB/custombasicauthentication.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

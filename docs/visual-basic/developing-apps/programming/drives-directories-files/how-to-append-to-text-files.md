@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "I/O [Visual Basic], WriteAllText method"
 ms.assetid: bbbd7fb5-f169-41a9-b53f-520ea9613913
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

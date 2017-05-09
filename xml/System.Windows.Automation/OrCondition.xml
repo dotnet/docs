@@ -1,0 +1,87 @@
+<Type Name="OrCondition" FullName="System.Windows.Automation.OrCondition">
+  <TypeSignature Language="C#" Value="public class OrCondition : System.Windows.Automation.Condition" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OrCondition extends System.Windows.Automation.Condition" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.OrCondition" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.Condition</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a combination of two or more conditions where a match exists if any one of the conditions is true.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OrCondition (System.Windows.Automation.Condition[] conditions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Automation.Condition[] conditions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.OrCondition.#ctor(System.Windows.Automation.Condition[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="conditions" Type="System.Windows.Automation.Condition[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="conditions">Two or more conditions, any one of which may be true for a match.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.OrCondition" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In the following example, an <xref:System.Windows.Automation.OrCondition> is used to retrieve [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements that are either buttons or radio buttons.  
+  
+ [!code-csharp[UIAClient_snip#175](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ConditionSnips.cs#175)]
+ [!code-vb[UIAClient_snip#175](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ConditionSnips.vb#175)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConditions">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.Condition[] GetConditions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.Condition[] GetConditions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.OrCondition.GetConditions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Condition[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the conditions that are combined in this condition.</summary>
+        <returns>The conditions combined in this condition.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned array is a copy. Modifying it does not affect the state of the condition.  
+  
+   
+  
+## Examples  
+ The following example function constructs an <xref:System.Windows.Automation.OrCondition> and then displays the number of subconditions that it contains.  
+  
+ [!code-csharp[UIAClient_snip#175](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ConditionSnips.cs#175)]
+ [!code-vb[UIAClient_snip#175](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ConditionSnips.vb#175)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

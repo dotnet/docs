@@ -1,0 +1,306 @@
+<Type Name="CharEnumerator" FullName="System.CharEnumerator">
+  <TypeSignature Language="C#" Value="public sealed class CharEnumerator : ICloneable, System.Collections.Generic.IEnumerator&lt;char&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit CharEnumerator extends System.Object implements class System.Collections.Generic.IEnumerator`1&lt;char&gt;, class System.Collections.IEnumerator, class System.ICloneable, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.CharEnumerator" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerator&lt;System.Char&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Supports iterating over a <see cref="T:System.String" /> object and reading its individual characters. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.CharEnumerator> provides read-only access to the characters in a referenced <xref:System.String> object. For example, the `foreach` statement of the Microsoft Visual Basic and C# programming languages, which iterates through the elements of a collection, retrieves a <xref:System.CharEnumerator> from a <xref:System.String> object in order to iterate through the characters in that object.  
+  
+ There is no public constructor for <xref:System.CharEnumerator>. Instead, call a <xref:System.String> object's <xref:System.String.GetEnumerator%2A> method to obtain a <xref:System.CharEnumerator> that is initialized to reference the string.  
+  
+ A <xref:System.CharEnumerator> maintains an internal index to the characters in the string the <xref:System.CharEnumerator> references. The state of the index is invalid when it references a character position logically before the first character or after the last character in the string, and valid when it references a character within the string. The index is initialized to a position logically before the first character, and is set to a position after the last character when the iteration is complete. An exception is thrown if you attempt to access a character while the index is invalid.  
+  
+ The <xref:System.CharEnumerator.MoveNext%2A> method increments the index by one, so the first and subsequent characters are accessed in turn. The <xref:System.CharEnumerator.Reset%2A> method sets the index to a position logically before the first character. The <xref:System.CharEnumerator.Current%2A> property retrieves the character currently referenced by index. The <xref:System.CharEnumerator.Clone%2A> method creates a copy of the <xref:System.CharEnumerator>.  
+  
+> [!NOTE]
+>  Several independent instances of <xref:System.CharEnumerator> across one or more threads can have access to a single instance of <xref:System.String>. This class is implemented to support the <xref:System.Collections.IEnumerator> interface. For more information regarding the use of an enumerator, see the <xref:System.Collections.IEnumerator> topic.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.CharEnumerator> class to enumerate the individual characters in a string. It instantiates a <xref:System.CharEnumerator> object by calling the <xref:System.String.GetEnumerator%2A?displayProperty=fullName> method, moves from one character to the next by calling the <xref:System.CharEnumerator.MoveNext%2A> method, and displays the current character by retrieving the value of the <xref:System.CharEnumerator.Current%2A> property.  
+  
+ [!code-cpp[System.CharEnumerator.Class#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.CharEnumerator.Class/cpp/charenumerator1.cpp#1)]
+ [!code-csharp[System.CharEnumerator.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CharEnumerator.Class/cs/CharEnumerator1.cs#1)]
+ [!code-vb[System.CharEnumerator.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CharEnumerator.Class/vb/CharEnumerator1.vb#1)]  
+  
+ Note, however, that the same operation can be performed somewhat more intuitively by using `foreach` (in C#) or `For Each` (in Visual Basic), as the following example shows.  
+  
+ [!code-cpp[System.CharEnumerator.Class#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.CharEnumerator.Class/cpp/charenumerator1.cpp#2)]
+ [!code-csharp[System.CharEnumerator.Class#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CharEnumerator.Class/cs/CharEnumerator1.cs#2)]
+ [!code-vb[System.CharEnumerator.Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CharEnumerator.Class/vb/CharEnumerator1.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CharEnumerator.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a copy of the current <see cref="T:System.CharEnumerator" /> object.</summary>
+        <returns>An <see cref="T:System.Object" /> that is a copy of the current <see cref="T:System.CharEnumerator" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value is a copy of this instance of <xref:System.CharEnumerator> and its current state. This is useful for saving your state while iterating through a <xref:System.String> object.  
+  
+ For example, suppose your application uses an original instance of <xref:System.CharEnumerator> to iterate through each character in a <xref:System.String>. When some unique character is encountered, your application pauses processing and invokes the <xref:System.CharEnumerator.Clone%2A> method. In effect, this saves the <xref:System.CharEnumerator> object's index in the <xref:System.String>.  
+  
+ Your application uses the clone to navigate to another part of the `String` to perform some auxiliary processing. The side-effect of this navigation is the clone loses track of the position where processing stopped. However, when the auxiliary processing is complete, your application discards the clone and uses the original <xref:System.CharEnumerator> instance to resume working on the <xref:System.String> where the original processing stopped.  
+  
+> [!NOTE]
+>  This method is implemented to support the <xref:System.ICloneable> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public char Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance char Current" />
+      <MemberSignature Language="DocId" Value="P:System.CharEnumerator.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the currently referenced character in the string enumerated by this <see cref="T:System.CharEnumerator" /> object.</summary>
+        <value>The Unicode character currently referenced by this <see cref="T:System.CharEnumerator" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.CharEnumerator> class maintains an internal index to the enumerated string, and the <xref:System.CharEnumerator.Current%2A> property returns the character that is currently referenced by the index. This property should be invoked only when the index is valid; otherwise, an exception is thrown.  
+  
+ The index is always invalid for an empty string (""). The index is also invalid after the <xref:System.String.GetEnumerator%2A?displayProperty=fullName> or <xref:System.CharEnumerator.Reset%2A> method is called. After either of these methods is called, invoke the <xref:System.CharEnumerator.MoveNext%2A> method to adjust the index to the first character in the enumerated string. The index is valid whenever the <xref:System.CharEnumerator.MoveNext%2A> method returns `true`.  
+  
+ <xref:System.CharEnumerator.Current%2A> does not move the index, and consecutive calls to <xref:System.CharEnumerator.Current%2A> return the same character until <xref:System.CharEnumerator.MoveNext%2A>, <xref:System.CharEnumerator.Reset%2A>, or <xref:System.String.GetEnumerator%2A?displayProperty=fullName> is called.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.CharEnumerator> class to enumerate the individual characters in a string. It instantiates a <xref:System.CharEnumerator> object by calling the <xref:System.String.GetEnumerator%2A?displayProperty=fullName> method, moves from one character to the next by calling the <xref:System.CharEnumerator.MoveNext%2A> method, and displays the current character by retrieving the value of the <xref:System.CharEnumerator.Current%2A> property.  
+  
+ [!code-cpp[System.CharEnumerator.Class#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.CharEnumerator.Class/cpp/charenumerator1.cpp#1)]
+ [!code-csharp[System.CharEnumerator.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CharEnumerator.Class/cs/CharEnumerator1.cs#1)]
+ [!code-vb[System.CharEnumerator.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CharEnumerator.Class/vb/CharEnumerator1.vb#1)]  
+  
+ Note, however, that the same operation can be performed somewhat more intuitively by using `foreach` (in C#) or `For Each` (in Visual Basic), as the following example shows.  
+  
+ [!code-cpp[System.CharEnumerator.Class#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.CharEnumerator.Class/cpp/charenumerator1.cpp#2)]
+ [!code-csharp[System.CharEnumerator.Class#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CharEnumerator.Class/cs/CharEnumerator1.cs#2)]
+ [!code-vb[System.CharEnumerator.Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CharEnumerator.Class/vb/CharEnumerator1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The index is invalid; that is, it is before the first or after the last character of the enumerated string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CharEnumerator.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.CharEnumerator" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call <xref:System.CharEnumerator.Dispose%2A> when you are finished using the <xref:System.CharEnumerator>. The <xref:System.CharEnumerator.Dispose%2A> method leaves the <xref:System.CharEnumerator> in an unusable state. After calling <xref:System.CharEnumerator.Dispose%2A>, you must release all references to the <xref:System.CharEnumerator> so the garbage collector can reclaim the memory that the <xref:System.CharEnumerator> was occupying.  
+  
+ For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+> [!NOTE]
+>  Always call <xref:System.CharEnumerator.Dispose%2A> before you release your last reference to the <xref:System.CharEnumerator>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.CharEnumerator> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveNext">
+      <MemberSignature Language="C#" Value="public bool MoveNext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveNext() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CharEnumerator.MoveNext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Increments the internal index of the current <see cref="T:System.CharEnumerator" /> object to the next character of the enumerated string.</summary>
+        <returns>
+          <see langword="true" /> if the index is successfully incremented and within the enumerated string; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.CharEnumerator> class maintains an internal index to the enumerated string, and the <xref:System.CharEnumerator.MoveNext%2A> method increments the index by one. Call <xref:System.CharEnumerator.MoveNext%2A> after calling <xref:System.String.GetEnumerator%2A> or <xref:System.CharEnumerator.Reset%2A> to increment the current character position to the first character in the enumerated string. Check that the return value is `true` to determine that the current character position is valid.  
+  
+ If the index is already beyond the last character of the enumerated string, the index is not changed and `false` is returned.  
+  
+ Notice that if the enumerated string is empty (""), the state of the <xref:System.CharEnumerator> is always invalid. This is because the internal index for the <xref:System.CharEnumerator> is initially before the first character of the enumerated string and is therefore invalid. <xref:System.CharEnumerator.MoveNext%2A> logically sets the index after the last (nonexistent) character of the enumerated string which is also invalid.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.CharEnumerator> class to enumerate the individual characters in a string. It instantiates a <xref:System.CharEnumerator> object by calling the <xref:System.String.GetEnumerator%2A?displayProperty=fullName> method, moves from one character to the next by calling the <xref:System.CharEnumerator.MoveNext%2A> method, and displays the current character by retrieving the value of the <xref:System.CharEnumerator.Current%2A> property.  
+  
+ [!code-cpp[System.CharEnumerator.Class#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.CharEnumerator.Class/cpp/charenumerator1.cpp#1)]
+ [!code-csharp[System.CharEnumerator.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CharEnumerator.Class/cs/CharEnumerator1.cs#1)]
+ [!code-vb[System.CharEnumerator.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CharEnumerator.Class/vb/CharEnumerator1.vb#1)]  
+  
+ Note, however, that the same operation can be performed somewhat more intuitively by using `foreach` (in C#) or `For Each` (in Visual Basic), as the following example shows.  
+  
+ [!code-cpp[System.CharEnumerator.Class#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.CharEnumerator.Class/cpp/charenumerator1.cpp#2)]
+ [!code-csharp[System.CharEnumerator.Class#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.CharEnumerator.Class/cs/CharEnumerator1.cs#2)]
+ [!code-vb[System.CharEnumerator.Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.CharEnumerator.Class/vb/CharEnumerator1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CharEnumerator.Reset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Initializes the index to a position logically before the first character of the enumerated string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.CharEnumerator> class maintains an internal index to the enumerated string, and the <xref:System.CharEnumerator.Reset%2A> method sets the index to the invalid state.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerator.Current">
+      <MemberSignature Language="C#" Value="object System.Collections.IEnumerator.Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IEnumerator.Current" />
+      <MemberSignature Language="DocId" Value="P:System.CharEnumerator.System#Collections#IEnumerator#Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the currently referenced character in the string enumerated by this <see cref="T:System.CharEnumerator" /> object. For a description of this member, see <see cref="P:System.Collections.IEnumerator.Current" />.</summary>
+        <value>The boxed Unicode character currently referenced by this <see cref="T:System.CharEnumerator" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.CharEnumerator> instance is cast to an <xref:System.Collections.IEnumerator> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Enumeration has not started.  
+  
+ -or-  
+  
+ Enumeration has ended.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,172 @@
+<Type Name="IDesigner" FullName="System.ComponentModel.Design.IDesigner">
+  <TypeSignature Language="C#" Value="public interface IDesigner : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDesigner implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides the basic framework for building a custom designer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.IDesigner> interface provides an interface through which you can implement basic services for a designer. A designer can modify the behavior of a component at design time, and may provide its own services and behavior. A designer is only active at design-time, and must be associated with a type of component using a <xref:System.ComponentModel.DesignerAttribute> in order to be loaded when a component of the associated type is created at design time.  
+  
+ The <xref:System.ComponentModel.Design.IDesigner> interface provides methods and properties that you can implement in order to provide custom behavior at design time.  
+  
+ Implement the <xref:System.ComponentModel.Design.IDesigner.Initialize%2A> method of a designer to perform actions when a component is created. This can be useful if a component should have a special configuration at design-time, or if its configuration should change depending on conditions that the designer can determine.  
+  
+ A designer can provide menu commands on the shortcut menu that is displayed when a user right-clicks a component or control in the design-time environment. You can implement the <xref:System.ComponentModel.Design.IDesigner.Verbs%2A> property to define a get accessor that returns a <xref:System.ComponentModel.Design.DesignerVerbCollection> containing the <xref:System.ComponentModel.Design.DesignerVerb> objects for generating menu commands.  
+  
+ A designer for a component that appears in the component tray can perform a default action when the component is double-clicked. Implement the <xref:System.ComponentModel.Design.IDesigner.DoDefaultAction%2A> method to specify the behavior to perform when the component is double-clicked.  
+  
+ A designer can also use the available design-time services to perform a variety of tasks, including surveying the current design-time environment for components and their properties, reading and setting the values of properties of components, managing the toolbox, managing selected components, or displaying a user interface that can be used to configure values or to apply further processing.  
+  
+ To implement a designer for a control that can be sited on a form, you can inherit from the <xref:System.Windows.Forms.Design.ControlDesigner> class. Controls whose associated designer does not derive from <xref:System.Windows.Forms.Design.ControlDesigner> are displayed in the component tray. The <xref:System.ComponentModel.Design.ComponentDesigner> and <xref:System.Windows.Forms.Design.ControlDesigner> classes implement the <xref:System.ComponentModel.Design.IDesigner> interface and provide additional design-time support that may be of use to authors of designers. For more information, see the reference documentation for these classes.  
+  
+ For an overview of creating design components, please see [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+  
+   
+  
+## Examples  
+ This example demonstrates an <xref:System.ComponentModel.Design.IDesigner> implementation that stores a local reference to its component, performs a default action when the component is double-clicked, and provides a designer verb menu command.  
+  
+ [!code-cpp[IDesignerExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IDesignerExample/CPP/testcontrol.cpp#1)]
+ [!code-csharp[IDesignerExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IDesignerExample/CS/testcontrol.cs#1)]
+ [!code-vb[IDesignerExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IDesignerExample/VB/testcontrol.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Component">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.IComponent Component { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IComponent Component" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IDesigner.Component" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.IComponent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the base component that this designer is designing.</summary>
+        <value>An <see cref="T:System.ComponentModel.IComponent" /> indicating the base component that this designer is designing.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoDefaultAction">
+      <MemberSignature Language="C#" Value="public void DoDefaultAction ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DoDefaultAction() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesigner.DoDefaultAction" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Performs the default action for this designer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when a user double-clicks the representation of a component in the component tray.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public void Initialize (System.ComponentModel.IComponent component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component to associate with this designer.</param>
+        <summary>Initializes the designer with the specified component.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Verbs">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.DesignerVerbCollection Verbs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerVerbCollection Verbs" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IDesigner.Verbs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignerVerbCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of the design-time verbs supported by the designer.</summary>
+        <value>A <see cref="T:System.ComponentModel.Design.DesignerVerbCollection" /> that contains the verbs supported by the designer, or <see langword="null" /> if the component has no verbs.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns the design time verbs supported by the component associated with the designer. The verbs returned by this method are typically displayed by the design-time environment in a right-click menu. When a user selects one of the verbs, the event handler of the corresponding <xref:System.ComponentModel.Design.DesignerVerb> is invoked.  
+  
+> [!NOTE]
+>  A design-time environment typically provides a **Properties...** entry on a component's right-click menu. To avoid duplicate titles for menu entries, no verb with a title of "Properties..." should be included in a <xref:System.ComponentModel.Design.DesignerVerbCollection>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

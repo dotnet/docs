@@ -1,0 +1,97 @@
+<Type Name="CacheItemRemovedReason" FullName="System.Web.Caching.CacheItemRemovedReason">
+  <TypeSignature Language="C#" Value="public enum CacheItemRemovedReason" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CacheItemRemovedReason extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Caching.CacheItemRemovedReason" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the reason an item was removed from the <see cref="T:System.Web.Caching.Cache" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Web.Caching.CacheItemRemovedCallback> delegate to notify your ASP.NET applications when and why an object was removed from the <xref:System.Web.Caching.Cache>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates a shared Boolean property, `itemRemoved`, a shared <xref:System.Web.Caching.CacheItemRemovedReason> enumeration object, `reason`, and a <xref:System.Web.Caching.CacheItemRemovedCallback> delegate, `onRemove`. The latter can be included in an <xref:System.Web.Caching.Cache.Insert%2A> or <xref:System.Web.Caching.Cache.Add%2A> method call. It also defines a method, `RemovedCallback`, with a signature that matches the <xref:System.Web.Caching.CacheItemRemovedCallback> delegate. When the `RemovedCallback` method is called, it changes the `itemRemoved` property value to `true` and assigns the `reason` property value to the reason provided by the <xref:System.Web.Caching.CacheItemRemovedReason> enumeration.  
+  
+ [!code-csharp[System.Web.Caching Examples#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Caching Examples/CS/cachecs.aspx#2)]
+ [!code-vb[System.Web.Caching Examples#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Caching Examples/VB/cachevb.aspx#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DependencyChanged">
+      <MemberSignature Language="C#" Value="DependencyChanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Caching.CacheItemRemovedReason DependencyChanged = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemRemovedReason.DependencyChanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Caching.CacheItemRemovedReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The item is removed from the cache because the cache dependency associated with it changed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Expired">
+      <MemberSignature Language="C#" Value="Expired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Caching.CacheItemRemovedReason Expired = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemRemovedReason.Expired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Caching.CacheItemRemovedReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The item is removed from the cache because it expired.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Removed">
+      <MemberSignature Language="C#" Value="Removed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Caching.CacheItemRemovedReason Removed = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemRemovedReason.Removed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Caching.CacheItemRemovedReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The item is removed from the cache by a <see cref="M:System.Web.Caching.Cache.Remove(System.String)" /> method call or by an <see cref="M:System.Web.Caching.Cache.Insert(System.String,System.Object)" /> method call that specified the same key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Underused">
+      <MemberSignature Language="C#" Value="Underused" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Caching.CacheItemRemovedReason Underused = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemRemovedReason.Underused" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Caching.CacheItemRemovedReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The item is removed from the cache because the system removed it to free memory.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

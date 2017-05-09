@@ -1,0 +1,178 @@
+<Type Name="ServiceControllerStatus" FullName="System.ServiceProcess.ServiceControllerStatus">
+  <TypeSignature Language="C#" Value="public enum ServiceControllerStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ServiceControllerStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceProcess.ServiceControllerStatus" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceProcess</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates the current state of the service.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceProcess.ServiceControllerStatus> enumeration is used by an instance of the <xref:System.ServiceProcess.ServiceController> class to indicate whether an existing service is running, stopped, paused, or whether a Start, Stop, Pause, or Continue command is pending.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.ServiceProcess.ServiceController> class to check the current status of the TelNet service. If the service is stopped, the example starts the service. If the service is running, the example stops the service.  
+  
+ [!code-cpp[ServiceController#2](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceController/CPP/servicecontroller.cpp#2)]
+ [!code-csharp[ServiceController#2](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceController/CS/servicecontroller.cs#2)]
+ [!code-vb[ServiceController#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/ServiceController/VB/servicecontroller.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ContinuePending">
+      <MemberSignature Language="C#" Value="ContinuePending" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.ServiceControllerStatus ContinuePending = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceControllerStatus.ContinuePending" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.ServiceControllerStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The service continue is pending. This corresponds to the Win32 <see langword="SERVICE_CONTINUE_PENDING" /> constant, which is defined as 0x00000005.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Paused">
+      <MemberSignature Language="C#" Value="Paused" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.ServiceControllerStatus Paused = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceControllerStatus.Paused" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.ServiceControllerStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The service is paused. This corresponds to the Win32 <see langword="SERVICE_PAUSED" /> constant, which is defined as 0x00000007.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PausePending">
+      <MemberSignature Language="C#" Value="PausePending" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.ServiceControllerStatus PausePending = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceControllerStatus.PausePending" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.ServiceControllerStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The service pause is pending. This corresponds to the Win32 <see langword="SERVICE_PAUSE_PENDING" /> constant, which is defined as 0x00000006.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Running">
+      <MemberSignature Language="C#" Value="Running" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.ServiceControllerStatus Running = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceControllerStatus.Running" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.ServiceControllerStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The service is running. This corresponds to the Win32 <see langword="SERVICE_RUNNING" /> constant, which is defined as 0x00000004.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StartPending">
+      <MemberSignature Language="C#" Value="StartPending" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.ServiceControllerStatus StartPending = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceControllerStatus.StartPending" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.ServiceControllerStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The service is starting. This corresponds to the Win32 <see langword="SERVICE_START_PENDING" /> constant, which is defined as 0x00000002.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stopped">
+      <MemberSignature Language="C#" Value="Stopped" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.ServiceControllerStatus Stopped = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceControllerStatus.Stopped" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.ServiceControllerStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The service is not running. This corresponds to the Win32 <see langword="SERVICE_STOPPED" /> constant, which is defined as 0x00000001.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StopPending">
+      <MemberSignature Language="C#" Value="StopPending" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.ServiceControllerStatus StopPending = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceProcess.ServiceControllerStatus.StopPending" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess.ServiceController</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.ServiceControllerStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The service is stopping. This corresponds to the Win32 <see langword="SERVICE_STOP_PENDING" /> constant, which is defined as 0x00000003.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

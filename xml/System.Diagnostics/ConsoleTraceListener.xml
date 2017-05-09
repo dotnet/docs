@@ -1,0 +1,168 @@
+<Type Name="ConsoleTraceListener" FullName="System.Diagnostics.ConsoleTraceListener">
+  <TypeSignature Language="C#" Value="public class ConsoleTraceListener : System.Diagnostics.TextWriterTraceListener" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConsoleTraceListener extends System.Diagnostics.TextWriterTraceListener" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.ConsoleTraceListener" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Diagnostics.TextWriterTraceListener</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Directs tracing or debugging output to either the standard output or the standard error stream.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Diagnostics.ConsoleTraceListener> class to write trace and debugging messages to the console. You can initialize a <xref:System.Diagnostics.ConsoleTraceListener> object to write trace messages to the <xref:System.Console.Out%2A?displayProperty=fullName> stream or to the <xref:System.Console.Error%2A?displayProperty=fullName> stream.  
+  
+> [!IMPORTANT]
+>  <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a`try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+  
+ When trace and debugging output is enabled, the <xref:System.Diagnostics.ConsoleTraceListener> messages are written to the specified <xref:System.Console?displayProperty=fullName> stream, which is similar to the way messages are written with the <xref:System.Console.Write%2A?displayProperty=fullName> or <xref:System.Console.WriteLine%2A?displayProperty=fullName> methods. In a console application, the <xref:System.Console?displayProperty=fullName> output and error streams write messages to the existing console window, or you can redirect the streams to write to a <xref:System.IO.TextWriter?displayProperty=fullName> instance.  
+  
+> [!NOTE]
+>  If the console does not exist, as in a Windows-based application, messages written to the console are not displayed.  
+  
+ Add a <xref:System.Diagnostics.ConsoleTraceListener> object to the appropriate <xref:System.Diagnostics.Trace.Listeners%2A> collection if you want messages written through <xref:System.Diagnostics.Trace>, <xref:System.Diagnostics.TraceSource>, or <xref:System.Diagnostics.Debug> to be written to the console. In addition, you can write messages directly to the console using the <xref:System.Diagnostics.Trace.Write%2A?displayProperty=fullName> or <xref:System.Diagnostics.Trace.WriteLine%2A?displayProperty=fullName> methods.  
+  
+> [!NOTE]
+>  The <xref:System.Diagnostics.Debug> and <xref:System.Diagnostics.Trace> classes share the same <xref:System.Diagnostics.TraceListenerCollection> collection, accessed through their respective `Listeners` properties. If you add a <xref:System.Diagnostics.ConsoleTraceListener> object to the collection using one of these classes, the other class automatically uses the same listener.  
+  
+ Most compilers enable trace and debug output through conditional compilation flags. If you do not enable tracing or debugging, the messages written through the <xref:System.Diagnostics.Debug?displayProperty=fullName> and <xref:System.Diagnostics.Trace?displayProperty=fullName> classes are effectively ignored. The syntax to enable trace and debug output is compiler specific; if you use compilers other than C# or Visual Basic, refer to the documentation for your compiler.  
+  
+-   To enable debugging in C#, add the **/d:DEBUG**flag to the compiler command line when you compile your code, or you can add **#define DEBUG** to the top of your file. In Visual Basic, add the **/d:DEBUG=True** flag to the compiler command line.  
+  
+-   To enable tracing in C#, add the **/d:TRACE** flag to the compiler command line when you compile your code, or add **#define TRACE** to the top of your file. In Visual Basic, add the **/d:TRACE=True** flag to the compiler command line.  
+  
+ You can add a <xref:System.Diagnostics.ConsoleTraceListener> object to the <xref:System.Diagnostics.Trace.Listeners%2A> collection in your code, or you can add a <xref:System.Diagnostics.ConsoleTraceListener> object to the <xref:System.Diagnostics.Trace.Listeners%2A> collection through the application configuration file. Add the <xref:System.Diagnostics.ConsoleTraceListener> object in your code to write messages for a specific code section or execution path. Add the <xref:System.Diagnostics.ConsoleTraceListener> object in your application configuration file to direct all trace and debug messages to the console while the application executes.  
+  
+ To write trace and debug messages to the console for a specific section of code, initialize a <xref:System.Diagnostics.ConsoleTraceListener> object and add it to the <xref:System.Diagnostics.Trace.Listeners%2A> collection. Instrument the section of code that contains messages using the <xref:System.Diagnostics.Trace> or <xref:System.Diagnostics.Debug> classes. At the end of the code section, remove the <xref:System.Diagnostics.ConsoleTraceListener> object from the <xref:System.Diagnostics.Trace.Listeners%2A> collection, and call the <xref:System.Diagnostics.TextWriterTraceListener.Close%2A> method on the <xref:System.Diagnostics.ConsoleTraceListener>.  
+  
+ To direct all trace and debug messages to the console while the application executes, add a <xref:System.Diagnostics.ConsoleTraceListener> object to the application configuration file. Edit the configuration file that corresponds to the name of your application, or the app.config file in a [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)] project. In this file, insert an element for a <xref:System.Diagnostics.ConsoleTraceListener>.  
+  
+ The following example adds a <xref:System.Diagnostics.ConsoleTraceListener> object named `configConsoleListener` to the <xref:System.Diagnostics.Trace.Listeners%2A> collection.  
+  
+```  
+<configuration>  
+  <system.diagnostics>  
+    <trace autoflush="false" indentsize="4">  
+      <listeners>  
+        <add name="configConsoleListener"            type="System.Diagnostics.ConsoleTraceListener" />  
+      </listeners>  
+    </trace>  
+  </system.diagnostics>  
+ </configuration>  
+```  
+  
+ For details about adding trace listeners in the application configuration file, see [\&lt;listeners\&gt;](~/docs/framework/configure-apps/file-schema/trace-debug/listeners-element-for-trace.md).  
+  
+   
+  
+## Examples  
+ The following code example implements a console application consisting of a class with two public methods.  
+  
+ The `Main` method examines the command-line arguments and determines if trace output should be directed to the standard error stream or the standard output stream. `Main` creates and initializes a <xref:System.Diagnostics.ConsoleTraceListener> object for the specified <xref:System.Console> output stream, and adds this object to the trace listener collection. It then calls the `WriteEnvironmentInfoToTrace` method, which writes details about the executing environment and the trace listener configuration to the trace output.  
+  
+ When the example application runs, the environment and trace configuration details are written to the specified console output stream through the <xref:System.Diagnostics.ConsoleTraceListener> object.  
+  
+ [!code-csharp[Diagnostics_ConsoleTraceListener#1](~/samples/snippets/csharp/VS_Snippets_CLR/Diagnostics_ConsoleTraceListener/CS/program.cs#1)]
+ [!code-vb[Diagnostics_ConsoleTraceListener#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Diagnostics_ConsoleTraceListener/VB/consoletrace.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConsoleTraceListener ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.ConsoleTraceListener.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.ConsoleTraceListener" /> class with trace output written to the standard output stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes a <xref:System.Diagnostics.ConsoleTraceListener> object to write messages to the <xref:System.Console.Out%2A?displayProperty=fullName> stream. Its <xref:System.Diagnostics.TraceListener.Name%2A> property is initialized to an empty string ("").  
+  
+   
+  
+## Examples  
+ The following code example initializes a <xref:System.Diagnostics.ConsoleTraceListener> object for the specified <xref:System.Console> output stream and adds it to the trace listener collection. This code example is part of a larger example provided for the <xref:System.Diagnostics.ConsoleTraceListener> class.  
+  
+ [!code-csharp[Diagnostics_ConsoleTraceListener#2](~/samples/snippets/csharp/VS_Snippets_CLR/Diagnostics_ConsoleTraceListener/CS/program.cs#2)]
+ [!code-vb[Diagnostics_ConsoleTraceListener#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Diagnostics_ConsoleTraceListener/VB/consoletrace.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConsoleTraceListener (bool useErrorStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool useErrorStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.ConsoleTraceListener.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="useErrorStream" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="useErrorStream">
+          <see langword="true" /> to write tracing and debugging output to the standard error stream; <see langword="false" /> to write tracing and debugging output to the standard output stream.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.ConsoleTraceListener" /> class with an option to write trace output to the standard output stream or the standard error stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes a <xref:System.Diagnostics.ConsoleTraceListener> object to write messages to either the <xref:System.Console.Out%2A?displayProperty=fullName> or the <xref:System.Console.Error%2A?displayProperty=fullName> stream. Its <xref:System.Diagnostics.TraceListener.Name%2A> property is initialized to an empty string ("").  
+  
+   
+  
+## Examples  
+ The following code example initializes a <xref:System.Diagnostics.ConsoleTraceListener> object for the specified <xref:System.Console> output stream and adds it to the trace listener collection. This code example is part of a larger example provided for the <xref:System.Diagnostics.ConsoleTraceListener> class.  
+  
+ [!code-csharp[Diagnostics_ConsoleTraceListener#2](~/samples/snippets/csharp/VS_Snippets_CLR/Diagnostics_ConsoleTraceListener/CS/program.cs#2)]
+ [!code-vb[Diagnostics_ConsoleTraceListener#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/Diagnostics_ConsoleTraceListener/VB/consoletrace.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public override void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.ConsoleTraceListener.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Closes the output to the stream specified for this trace listener.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The stream specified for this <xref:System.Diagnostics.ConsoleTraceListener> instance (either the <xref:System.Console.Out%2A?displayProperty=fullName> stream or the <xref:System.Console.Error%2A?displayProperty=fullName> stream) is closed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,59 @@
+<Type Name="DependencyPropertyHelper" FullName="System.Windows.DependencyPropertyHelper">
+  <TypeSignature Language="C#" Value="public static class DependencyPropertyHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DependencyPropertyHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.DependencyPropertyHelper" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a single helper method (<see cref="M:System.Windows.DependencyPropertyHelper.GetValueSource(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />) that reports the property system source for the effective value of a dependency property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The[!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] property system is fairly complex, and relies on rationalizing the values that potentially come from a variety of inputs, based on an established value determination precedence. Because these sources potentially come from run-time code, from compiled markup, or even from run-time user settings, it can be useful to know exactly which participant in the dependency property value system established the value you obtain when calling <xref:System.Windows.DependencyObject.GetValue%2A> at run-time on that property. If the value came from a different source than you had intended, you might need to adjust some aspect of your application. The value source might be a style, a theme, a local value, an animation, a binding, or a run-time based value such as system settings through themes or system resources. For more information, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).  
+  
+ Another mechanism that reports on the property in general, rather than a specific instance of the property on an object, is the property metadata. The property metadata is findable by calling <xref:System.Windows.DependencyProperty.GetMetadata%2A> and examining the returned <xref:System.Windows.PropertyMetadata> (or one of several possible derived classes that the returned property metadata is castable to).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetValueSource">
+      <MemberSignature Language="C#" Value="public static System.Windows.ValueSource GetValueSource (System.Windows.DependencyObject dependencyObject, System.Windows.DependencyProperty dependencyProperty);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.ValueSource GetValueSource(class System.Windows.DependencyObject dependencyObject, class System.Windows.DependencyProperty dependencyProperty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DependencyPropertyHelper.GetValueSource(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.ValueSource</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dependencyObject" Type="System.Windows.DependencyObject" />
+        <Parameter Name="dependencyProperty" Type="System.Windows.DependencyProperty" />
+      </Parameters>
+      <Docs>
+        <param name="dependencyObject">The element that contains the <c>dependencyProperty</c> to report information for.</param>
+        <param name="dependencyProperty">The identifier for the dependency property to report information for.</param>
+        <summary>Returns a structure that reports various metadata and property system characteristics of a specified dependency property on a particular <see cref="T:System.Windows.DependencyObject" />.</summary>
+        <returns>A <see cref="T:System.Windows.ValueSource" /> structure that reports the specific information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You should call this method in a context such that late participants in property value determination are able to act on a property. For instance, bindings may not be active on a property unless all participant elements in the element tree are loaded and the asynchronous binding is propagated, and the binding source object is connected. Similarly, resources including all necessary theme dictionaries should be available.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

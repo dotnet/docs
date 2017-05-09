@@ -1,0 +1,82 @@
+<Type Name="ProcessStatus" FullName="System.Web.ProcessStatus">
+  <TypeSignature Language="C#" Value="public enum ProcessStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProcessStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ProcessStatus" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Provides enumerated values that indicate the current status of a process.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Alive">
+      <MemberSignature Language="C#" Value="Alive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ProcessStatus Alive = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.ProcessStatus.Alive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ProcessStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the process is running.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShutDown">
+      <MemberSignature Language="C#" Value="ShutDown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ProcessStatus ShutDown = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.ProcessStatus.ShutDown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ProcessStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the process has shut down normally after receiving a shutdown message from the Internet Information Services (IIS) process.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShuttingDown">
+      <MemberSignature Language="C#" Value="ShuttingDown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ProcessStatus ShuttingDown = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.ProcessStatus.ShuttingDown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ProcessStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the process has begun to shut down.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Terminated">
+      <MemberSignature Language="C#" Value="Terminated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ProcessStatus Terminated = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.ProcessStatus.Terminated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ProcessStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the process was forced to terminate by the Internet Information Services (IIS) process.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,53 @@
+<Type Name="DataGridViewCellParsingEventHandler" FullName="System.Windows.Forms.DataGridViewCellParsingEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DataGridViewCellParsingEventHandler(object sender, DataGridViewCellParsingEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewCellParsingEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellParsingEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Forms.DataGridViewCellParsingEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellParsingEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle a <see cref="E:System.Windows.Forms.DataGridView.CellParsing" /> event of a <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Handle the <xref:System.Windows.Forms.DataGridView.CellParsing> event to provide custom value conversion from a user-specified value to a value in the type specified by the cell <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A> property.  
+  
+ When you handle the <xref:System.Windows.Forms.DataGridView.CellParsing> event, you can convert the value yourself or you can customize the default conversion. For example, you can convert the value yourself using the cell <xref:System.Windows.Forms.DataGridViewCell.ParseFormattedValue%2A> method with type converters of your choosing. Alternatively, you can let the default type converters parse the value, but modify the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A>, and <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> properties of the object returned by the <xref:System.Windows.Forms.DataGridViewCellParsingEventArgs.InheritedCellStyle%2A?displayProperty=fullName> property, which is initialized using the cell <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property.  
+  
+ When you convert the value yourself, replace the initial, formatted value of the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A?displayProperty=fullName> property with the converted value in the type specified by the cell <xref:System.Windows.Forms.DataGridViewCell.ValueType%2A> property. To indicate that no further parsing is necessary, set the <xref:System.Windows.Forms.DataGridViewCellParsingEventArgs.ParsingApplied%2A?displayProperty=fullName> property to `true`.  
+  
+ When the event handler completes, if the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A> is `null` or is not of the correct type, or the <xref:System.Windows.Forms.DataGridViewCellParsingEventArgs.ParsingApplied%2A> property is `false`, the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A> is parsed using the cell <xref:System.Windows.Forms.DataGridViewCell.ParseFormattedValue%2A> method with default type converters. The default implementation of this method parses the value using the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A>, and <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> properties of the cell style passed in. If the value is not equal to <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, the value is parsed using the <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> property and the type converters passed in.  
+  
+ To customize the conversion of a cell value into a formatted value for display, handle the <xref:System.Windows.Forms.DataGridView.CellFormatting> event.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ When you create a <xref:System.Windows.Forms.DataGridViewCellParsingEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using <xref:System.Windows.Forms.DataGridViewCellParsingEventHandler> to check the validity of date entries.  
+  
+ [!code-cpp[System.Windows.Forms.GridViewUnbound#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/CPP/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.GridViewUnbound#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.GridViewUnbound#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/VB/form1.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

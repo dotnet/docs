@@ -1,0 +1,168 @@
+<Type Name="GenericEnumConverter" FullName="System.Configuration.GenericEnumConverter">
+  <TypeSignature Language="C#" Value="public sealed class GenericEnumConverter : System.Configuration.ConfigurationConverterBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GenericEnumConverter extends System.Configuration.ConfigurationConverterBase" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.GenericEnumConverter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationConverterBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Converts between a string and an enumeration type.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type, like all the other configuration converter types, converts strings found in the configuration file to and from the related strongly typed properties.  
+  
+ In particular, the <xref:System.Configuration.GenericEnumConverter> object converts a <xref:System.String> value, assigned to a configuration property, to an <xref:System.Enum> value and vice versa.  
+  
+   
+  
+## Examples  
+ The following code example shows how to access a custom section property that uses the <xref:System.Configuration.GenericEnumConverter> type.  
+  
+ [!code-csharp[System.Configuration.GenericEnumConverter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.GenericEnumConverter/CS/GenericEnumConverter.cs#1)]
+ [!code-vb[System.Configuration.GenericEnumConverter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.GenericEnumConverter/VB/GenericEnumConverter.vb#1)]  
+  
+ The following code example shows how to define a custom enumerator property accessed in the previous example. Notice that there is no need to specify the <xref:System.Configuration.GenericEnumConverter> type; it is implicitly invoked by the system.  
+  
+ [!code-csharp[System.Configuration.ConfigurationConvertersCustomSection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ConfigurationConvertersCustomSection/CS/ConfigurationConvertersCustomSection.cs#5)]
+ [!code-vb[System.Configuration.ConfigurationConvertersCustomSection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ConfigurationConvertersCustomSection/VB/ConfigurationConvertersCustomSection.vb#5)]  
+  
+ The following example is a configuration excerpt used by the previous example.  
+  
+```  
+<?xml version="1.0" encoding="utf-8"?>  
+<configuration>  
+  
+  <configSections>  
+    <section name="CustomSection"   
+      type="Samples.AspNet.CustomSection,   
+      ConfigurationConverters,   
+      Version=1.0.0.0, Culture=neutral,   
+      PublicKeyToken=null"   
+      allowDefinition="Everywhere"   
+      allowExeDefinition="MachineToApplication"   
+      restartOnExternalChanges="true" />  
+  </configSections>  
+  
+  <CustomSection fileName="default.txt" maxIdleTime="90" timeDelay="infinite" cdStr="str0, str1" permission="Read" maxUsers="Infinite"/>  
+  
+</configuration>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GenericEnumConverter (Type typeEnum);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type typeEnum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.GenericEnumConverter.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="typeEnum" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="typeEnum">The enumeration type to convert.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.GenericEnumConverter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Normally, you use the converter types provided by the system. The only time you need to use the <xref:System.Configuration.GenericEnumConverter.%23ctor%2A> constructor is when you create your own conversion type.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="typeEnum" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertFrom">
+      <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext ctx, System.Globalization.CultureInfo ci, object data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext ctx, class System.Globalization.CultureInfo ci, object data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.GenericEnumConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ctx" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="ci" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="data" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="ctx">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object used for type conversions.</param>
+        <param name="ci">The <see cref="T:System.Globalization.CultureInfo" /> object used during conversion.</param>
+        <param name="data">The <see cref="T:System.String" /> object to convert.</param>
+        <summary>Converts a <see cref="T:System.String" /> to an <see cref="T:System.Enum" /> type.</summary>
+        <returns>The <see cref="T:System.Enum" /> type that represents the <paramref name="data" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The system uses the <xref:System.Configuration.GenericEnumConverter.ConvertFrom%2A> method when it reads from a configuration file to convert a <xref:System.String> value to an <xref:System.Enum> type.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="data" /> is null or an empty string ("").  
+  
+ \- or -  
+  
+ <paramref name="data" /> starts with a numeric character.  
+  
+ \- or -  
+  
+ <paramref name="data" /> includes white space.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTo">
+      <MemberSignature Language="C#" Value="public override object ConvertTo (System.ComponentModel.ITypeDescriptorContext ctx, System.Globalization.CultureInfo ci, object value, Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertTo(class System.ComponentModel.ITypeDescriptorContext ctx, class System.Globalization.CultureInfo ci, object value, class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.GenericEnumConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ctx" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="ci" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="ctx">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> object used for type conversions.</param>
+        <param name="ci">The <see cref="T:System.Globalization.CultureInfo" /> object used during conversion.</param>
+        <param name="value">The value to convert to.</param>
+        <param name="type">The type to convert to.</param>
+        <summary>Converts an <see cref="T:System.Enum" /> type to a <see cref="T:System.String" /> value.</summary>
+        <returns>The <see cref="T:System.String" /> that represents the <paramref name="value" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The system uses the <xref:System.Configuration.GenericEnumConverter.ConvertTo%2A> method when it writes to a configuration file to convert a <xref:System.Enum> type to a <xref:System.String> value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

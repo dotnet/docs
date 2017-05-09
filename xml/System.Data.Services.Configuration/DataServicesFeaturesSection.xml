@@ -1,0 +1,57 @@
+<Type Name="DataServicesFeaturesSection" FullName="System.Data.Services.Configuration.DataServicesFeaturesSection">
+  <TypeSignature Language="C#" Value="public sealed class DataServicesFeaturesSection : System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataServicesFeaturesSection extends System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Configuration.DataServicesFeaturesSection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A configuration section that allows you to configure WCF data services features.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataServicesFeaturesSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Configuration.DataServicesFeaturesSection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.Configuration.DataServicesFeaturesSection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplaceFunction">
+      <MemberSignature Language="C#" Value="public System.Data.Services.Configuration.DataServicesReplaceFunctionFeature ReplaceFunction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Services.Configuration.DataServicesReplaceFunctionFeature ReplaceFunction" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Configuration.DataServicesFeaturesSection.ReplaceFunction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("replaceFunction")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Configuration.DataServicesReplaceFunctionFeature</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a DataServiceReplaceFunctionFeature instance.</summary>
+        <value>A DataServiceReplaceFunctionFeature instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

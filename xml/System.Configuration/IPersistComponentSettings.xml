@@ -1,0 +1,195 @@
+<Type Name="IPersistComponentSettings" FullName="System.Configuration.IPersistComponentSettings">
+  <TypeSignature Language="C#" Value="public interface IPersistComponentSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPersistComponentSettings" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.IPersistComponentSettings" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines standard functionality for controls or libraries that store and retrieve application settings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, you can add application settings support to an application by creating a settings wrapper class, which is derived from <xref:System.Configuration.ApplicationSettingsBase>, and then add special properties to this class. However, this approach does not sufficiently encapsulate application settings for a control so that its container is shielded from the details. The <xref:System.Configuration.IPersistComponentSettings> interface provides an application with a standard interface for communicating application settings state change requests to a control, component, or library module. Design-time tools also depend on this interface to properly manage controls and components.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LoadComponentSettings">
+      <MemberSignature Language="C#" Value="public void LoadComponentSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadComponentSettings() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.IPersistComponentSettings.LoadComponentSettings" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reads the control's application settings into their corresponding properties and updates the control's state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In general, the <xref:System.Configuration.IPersistComponentSettings.LoadComponentSettings%2A> method performs two essential operations:  
+  
+-   It causes each application settings instance contained by the control to refresh the values of its application settings properties, typically by calling their <xref:System.Configuration.ApplicationSettingsBase.Reload%2A> methods.  
+  
+-   As required, it updates those general properties that depend on these reloaded settings properties. For example, if the settings class contained a `location` settings property, <xref:System.Configuration.IPersistComponentSettings.LoadComponentSettings%2A> should ensure that the control's <xref:System.Windows.Forms.Control.Location%2A> property is updated to reflect this reloaded setting.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetComponentSettings">
+      <MemberSignature Language="C#" Value="public void ResetComponentSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetComponentSettings() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.IPersistComponentSettings.ResetComponentSettings" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resets the control's application settings properties to their default values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The implementation of the <xref:System.Configuration.IPersistComponentSettings.ResetComponentSettings%2A> method typically calls the <xref:System.Configuration.ApplicationSettingsBase.Reset%2A> method on each instance of an application settings class it contains.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveComponentSettings">
+      <MemberSignature Language="C#" Value="public void SaveComponentSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveComponentSettings() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.IPersistComponentSettings.SaveComponentSettings" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Persists the control's application settings properties.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.IPersistComponentSettings.SaveComponentSettings%2A> method writes the values of the control's application settings properties to the associated data store. The data store and serialization technique the method uses is determined by the settings provider associated with each settings class through the <xref:System.Configuration.SettingsProviderAttribute>. You can override the choice of the settings provider by using the <xref:System.Configuration.ISettingsProviderService> interface.  
+  
+> [!NOTE]
+>  If the <xref:System.Configuration.IPersistComponentSettings.SaveSettings%2A> property is `true`, the control should call <xref:System.Configuration.IPersistComponentSettings.SaveComponentSettings%2A> in its own <xref:System.Windows.Forms.Control.Dispose%2A> method so that the control's configuration data is stored automatically before the application ends.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveSettings">
+      <MemberSignature Language="C#" Value="public bool SaveSettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SaveSettings" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.IPersistComponentSettings.SaveSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the control should automatically persist its application settings properties.</summary>
+        <value>
+          <see langword="true" /> if the control should automatically persist its state; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a control contains configuration data, it will typically persist this data in response to an explicit call to the <xref:System.Configuration.IPersistComponentSettings.SaveComponentSettings%2A> method or sometimes implicitly when the control's <xref:System.Windows.Forms.Control.Dispose%2A> method is invoked. The <xref:System.Configuration.IPersistComponentSettings.SaveSettings%2A> property determines whether a control automatically persists its configuration data when it is disposed.  
+  
+ The default value of <xref:System.Configuration.IPersistComponentSettings.SaveSettings%2A> depends on the implementation of the control. The documentation for the control should indicate whether it uses application settings, what data is persisted, and what the default value of the <xref:System.Configuration.IPersistComponentSettings.SaveSettings%2A> property is.  
+  
+   
+  
+## Examples  
+ The following code example shows the proper way for a control to check the value of the <xref:System.Configuration.IPersistComponentSettings.SaveSettings%2A> property before it attempts to automatically persist its configuration data.  
+  
+ `protected override void Dispose( bool disposing ) {`  
+  
+ `if(disposing) {`  
+  
+ `try {`  
+  
+ `if (SaveSettings) {`  
+  
+ `SaveComponentSettings();`  
+  
+ `}`  
+  
+ `}`  
+  
+ `finally {`  
+  
+ `//...`  
+  
+ `}`  
+  
+ `}`  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SettingsKey">
+      <MemberSignature Language="C#" Value="public string SettingsKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SettingsKey" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.IPersistComponentSettings.SettingsKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the application settings key for the current instance of the control.</summary>
+        <value>A <see cref="T:System.String" /> containing the settings key for the current instance of the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Configuration.IPersistComponentSettings.SettingsKey%2A> property to disambiguate groups of application settings properties when there are multiple instances of the same wrapper class. For example, if a control contains an associated wrapper class, then placing multiple instances of the same control in the same application will typically result in multiple instances of the wrapper class. A settings key is required only when the configuration data differs on a per-instance basis; for example, the location of dynamically positioned controls.  
+  
+ The following general rules apply to the use of <xref:System.Configuration.IPersistComponentSettings.SettingsKey%2A>:  
+  
+-   A control, like any class, may contain zero or more application settings classes, derived from <xref:System.Configuration.ApplicationSettingsBase>. Each settings class contains its own <xref:System.Configuration.ApplicationSettingsBase.SettingsKey%2A?displayProperty=fullName> property, which helps disambiguate multiple instances of that class.  
+  
+-   A control should separate its per-instance data and its shared data into different settings classes.  
+  
+-   For a control with any per-instance configuration data, the `get` accessor of the <xref:System.Configuration.IPersistComponentSettings.SettingsKey%2A> property should default to the <xref:System.Windows.Forms.Control.Name%2A> of the control. In most cases the name of the control will be unique within an application. If the control contains only shared configuration data, `get` should default to `null`.  
+  
+-   The `set` accessor for this property should be implemented to distinguish between settings classes containing per-instance and shared configuration data. For each settings class containing per-instance data, `set` should just pass-through to the <xref:System.Configuration.ApplicationSettingsBase.SettingsKey%2A?displayProperty=fullName> property of the settings class. For settings classes containing shared data, `set` should perform no action for that settings class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

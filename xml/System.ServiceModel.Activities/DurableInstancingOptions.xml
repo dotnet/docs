@@ -1,0 +1,81 @@
+<Type Name="DurableInstancingOptions" FullName="System.ServiceModel.Activities.DurableInstancingOptions">
+  <TypeSignature Language="C#" Value="public sealed class DurableInstancingOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DurableInstancingOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.DurableInstancingOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Used mainly to associate a concrete implementation of the <see cref="T:System.Runtime.DurableInstancing.InstanceStore" /> such as <see cref="T:System.Activities.DurableInstancing.SqlWorkflowInstanceStore" /> with a workflow service host. This class is also used to add instance owner metadata.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddInitialInstanceValues">
+      <MemberSignature Language="C#" Value="public void AddInitialInstanceValues (System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt; writeOnlyValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddInitialInstanceValues(class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt; writeOnlyValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.DurableInstancingOptions.AddInitialInstanceValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writeOnlyValues" Type="System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="writeOnlyValues">The write-only values. These values are optional when loading an instance.</param>
+        <summary>Adds write-only metadata for an instance to the host.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddInstanceOwnerValues">
+      <MemberSignature Language="C#" Value="public void AddInstanceOwnerValues (System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt; readWriteValues, System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt; writeOnlyValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddInstanceOwnerValues(class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt; readWriteValues, class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt; writeOnlyValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.DurableInstancingOptions.AddInstanceOwnerValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object},System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="readWriteValues" Type="System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Object&gt;" />
+        <Parameter Name="writeOnlyValues" Type="System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="readWriteValues">The read-write metadata.</param>
+        <param name="writeOnlyValues">The write-only values. These values are optional when loading an instance.</param>
+        <summary>Adds metadata for an instance owner to the host. This method may   be called before the workflow host is opened.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceStore">
+      <MemberSignature Language="C#" Value="public System.Runtime.DurableInstancing.InstanceStore InstanceStore { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.DurableInstancing.InstanceStore InstanceStore" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.DurableInstancingOptions.InstanceStore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.DurableInstancing.InstanceStore</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Refers to a concrete implementation of the <see cref="T:System.Runtime.DurableInstancing.InstanceStore" /> class such as <see cref="T:System.Activities.DurableInstancing.SqlWorkflowInstanceStore" />.</summary>
+        <value>A concrete implementation of the <see cref="T:System.Runtime.DurableInstancing.InstanceStore" /> class.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

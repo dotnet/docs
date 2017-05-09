@@ -1,0 +1,181 @@
+<Type Name="CodeCondition" FullName="System.Workflow.Activities.CodeCondition">
+  <TypeSignature Language="C#" Value="public class CodeCondition : System.Workflow.ComponentModel.ActivityCondition" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CodeCondition extends System.Workflow.ComponentModel.ActivityCondition" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.CodeCondition" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.ComponentModel.ActivityCondition</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Workflow.ComponentModel.Compiler.ActivityValidator(typeof(System.Workflow.Activities.CodeCondition/CodeConditionValidator))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines a condition that guards/drives the execution of a certain activity within a workflow definition. It has an event of type <see cref="T:System.Workflow.Activities.ConditionalEventArgs" /> to return the result of the condition.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeCondition ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.CodeCondition.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.CodeCondition" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the constructor to create a new instance of <xref:System.Workflow.Activities.CodeCondition>. The code also creates two <xref:System.Workflow.Activities.CodeActivity> class instances and an instance of <xref:System.Workflow.Activities.ConditionedActivityGroup>. This code example is part of the ConditionedActivityGroup SDK sample from the SimpleCAGWorkflow.designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Using ConditionedActivityGroup](http://msdn.microsoft.com/en-us/5a0b7e9e-def5-46b2-acbb-0005e1aff984).  
+  
+```csharp  
+private ConditionedActivityGroup BookingCAG;  
+private CodeActivity Car;  
+private CodeActivity Airline;  
+  
+this.CanModifyActivities = true;  
+CodeCondition codecondition1 = new CodeCondition();  
+CodeCondition codecondition2 = new CodeCondition();  
+this.BookingCAG = new ConditionedActivityGroup();  
+this.Car = new CodeActivity();  
+this.Airline = new CodeActivity();  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Condition">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Activities.ConditionalEventArgs&gt; Condition;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Activities.ConditionalEventArgs&gt; Condition" />
+      <MemberSignature Language="DocId" Value="E:System.Workflow.Activities.CodeCondition.Condition" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Workflow.Activities.ConditionalEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the condition is evaluated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows how to attach a <xref:System.Workflow.Activities.CodeCondition.Condition> event handler for the current <xref:System.Workflow.Activities.CodeCondition> instance. This code example is part of the ConditionedActivityGroup SDK sample from the SimpleCAGWorkflow.designer.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Using ConditionedActivityGroup](http://msdn.microsoft.com/en-us/5a0b7e9e-def5-46b2-acbb-0005e1aff984).  
+  
+ [!code-csharp[wf_samples#158](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#158)]
+ [!code-vb[wf_samples#158](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#158)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConditionEvent">
+      <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty ConditionEvent;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty ConditionEvent" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.CodeCondition.ConditionEvent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="E:System.Workflow.Activities.CodeCondition.Condition" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[DependencyPropertyRemark](~/includes/dependencypropertyremark-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Evaluate">
+      <MemberSignature Language="C#" Value="public override bool Evaluate (System.Workflow.ComponentModel.Activity ownerActivity, IServiceProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Evaluate(class System.Workflow.ComponentModel.Activity ownerActivity, class System.IServiceProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.CodeCondition.Evaluate(System.Workflow.ComponentModel.Activity,System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ownerActivity" Type="System.Workflow.ComponentModel.Activity" />
+        <Parameter Name="provider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="ownerActivity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> associated with this condition.</param>
+        <param name="provider">The <see cref="T:System.IServiceProvider" /> for this condition evaluation.</param>
+        <summary>Evaluates the underlying condition.</summary>
+        <returns>
+          <see langword="true" /> if the condition evaluates to true; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBoundValue">
+      <MemberSignature Language="C#" Value="protected override object GetBoundValue (System.Workflow.ComponentModel.ActivityBind bind, Type targetType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetBoundValue(class System.Workflow.ComponentModel.ActivityBind bind, class System.Type targetType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.CodeCondition.GetBoundValue(System.Workflow.ComponentModel.ActivityBind,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bind" Type="System.Workflow.ComponentModel.ActivityBind" />
+        <Parameter Name="targetType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="bind">The <see cref="T:System.Workflow.ComponentModel.ActivityBind" /> of interest.</param>
+        <param name="targetType">The <see cref="T:System.Type" /> of the target of the <see cref="T:System.Workflow.ComponentModel.ActivityBind" />.</param>
+        <summary>Retrieves the <see cref="T:System.Object" /> that is the subject of a <see cref="T:System.Workflow.ComponentModel.ActivityBind" />.</summary>
+        <returns>The <see cref="T:System.Object" /> bound to the activity by the <see cref="T:System.Workflow.ComponentModel.ActivityBind" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="bind" /> or <paramref name="targetType" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

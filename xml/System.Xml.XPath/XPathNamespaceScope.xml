@@ -1,0 +1,109 @@
+<Type Name="XPathNamespaceScope" FullName="System.Xml.XPath.XPathNamespaceScope">
+  <TypeSignature Language="C#" Value="public enum XPathNamespaceScope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XPathNamespaceScope extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.XPath.XPathNamespaceScope" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.XPath</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines the namespace scope.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xml.XPath.XPathNamespaceScope> enumeration can be passed to the <xref:System.Xml.XPath.XPathNavigator.MoveToFirstNamespace%2A> and <xref:System.Xml.XPath.XPathNavigator.MoveToNextNamespace%2A> methods of the <xref:System.Xml.XPath.XPathNavigator> class to specify the type of namespace node to move to.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XPath.XPathNamespaceScope All = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNamespaceScope.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XPath.XPathNamespaceScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns all namespaces defined in the scope of the current node. This includes the <c>xmlns:xml</c> namespace which is always declared implicitly. The order of the namespaces returned is not defined.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExcludeXml">
+      <MemberSignature Language="C#" Value="ExcludeXml" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XPath.XPathNamespaceScope ExcludeXml = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNamespaceScope.ExcludeXml" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XPath.XPathNamespaceScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns all namespaces defined in the scope of the current node, excluding the <c>xmlns:xml</c> namespace. The <c>xmlns:xml</c> namespace is always declared implicitly. The order of the namespaces returned is not defined.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Local">
+      <MemberSignature Language="C#" Value="Local" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XPath.XPathNamespaceScope Local = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.XPath.XPathNamespaceScope.Local" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XPath</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XPath.XPathNamespaceScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns all namespaces that are defined locally at the current node.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

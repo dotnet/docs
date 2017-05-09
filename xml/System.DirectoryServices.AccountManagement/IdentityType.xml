@@ -1,0 +1,114 @@
+<Type Name="IdentityType" FullName="System.DirectoryServices.AccountManagement.IdentityType">
+  <TypeSignature Language="C#" Value="public enum IdentityType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IdentityType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.IdentityType" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the format of the identity.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DistinguishedName">
+      <MemberSignature Language="C#" Value="DistinguishedName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.IdentityType DistinguishedName = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.IdentityType.DistinguishedName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.IdentityType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The identity is a Distinguished Name (DN).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Guid">
+      <MemberSignature Language="C#" Value="Guid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.IdentityType Guid = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.IdentityType.Guid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.IdentityType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The identity is a Globally Unique Identifier (GUID).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="Name" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.IdentityType Name = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.IdentityType.Name" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.IdentityType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The identity is a name.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SamAccountName">
+      <MemberSignature Language="C#" Value="SamAccountName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.IdentityType SamAccountName = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.IdentityType.SamAccountName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.IdentityType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The identity is a Security Account Manager (SAM) name.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sid">
+      <MemberSignature Language="C#" Value="Sid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.IdentityType Sid = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.IdentityType.Sid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.IdentityType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The identity is a Security Identifier (SID) in Security Descriptor Definition Language (SDDL) format.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UserPrincipalName">
+      <MemberSignature Language="C#" Value="UserPrincipalName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.IdentityType UserPrincipalName = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.IdentityType.UserPrincipalName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.IdentityType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The identity is a User Principal Name (UPN).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

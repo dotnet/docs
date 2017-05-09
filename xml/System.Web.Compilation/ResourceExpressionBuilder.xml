@@ -1,0 +1,230 @@
+<Type Name="ResourceExpressionBuilder" FullName="System.Web.Compilation.ResourceExpressionBuilder">
+  <TypeSignature Language="C#" Value="public class ResourceExpressionBuilder : System.Web.Compilation.ExpressionBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResourceExpressionBuilder extends System.Web.Compilation.ExpressionBuilder" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Compilation.ResourceExpressionBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Compilation.ExpressionBuilder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.Compilation.ExpressionEditor("System.Web.UI.Design.ResourceExpressionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.Compilation.ExpressionPrefix("Resources")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides code to the page parser for assigning property values on a control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.ResourceExpressionBuilder> class creates code to retrieve resource values when the page is executed. A resource file typically contains information localized for a particular language or culture.  
+  
+ A resource expression takes the form `<%$ Resources: ClassKey, ResourceKey %>` within the page. The part of the expression before the colon (:) designates the type of expression builder to use, and the part after the colon signifies the class name and resource key. The preceding expression would retrieve the following value from a file named `ClassKey.resx`:  
+  
+```  
+<data name="ResourceKey"><value xml:space="preserve">Hello!</value></data>  
+```  
+  
+ When the page parser encounters an expression with the `Resources` prefix, it creates an instance of the <xref:System.Web.Compilation.ResourceExpressionBuilder> class. The <xref:System.Web.Compilation.ResourceExpressionBuilder> class either evaluates the expression or generates code to return a value for the expression when the page is executed.  
+  
+ If the expression is encountered in a page that will be compiled, the <xref:System.Web.Compilation.ResourceExpressionBuilder> object generates code that retrieves the specified value from the resource file. If the expression is encountered in a page that will not be compiled, the <xref:System.Web.Compilation.ResourceExpressionBuilder> object returns the value from the resource file when the page is parsed.  
+  
+   
+  
+## Examples  
+ The following code example retrieves the default currency from a resource file.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Compilation.ResourceExpressionBuilder#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Compilation.ResourceExpressionBuilder/CS/Default.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Compilation.ResourceExpressionBuilder#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Compilation.ResourceExpressionBuilder/VB/Default.aspx#1)]  -->  
+  
+ This code reads the following value from a resource file named `Financial.resx` in the App_GlobalResources directory.  
+  
+```  
+<data name="Currency"><value xml:space="preserve">US dollars</value></data>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResourceExpressionBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ResourceExpressionBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ResourceExpressionBuilder" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EvaluateExpression">
+      <MemberSignature Language="C#" Value="public override object EvaluateExpression (object target, System.Web.UI.BoundPropertyEntry entry, object parsedData, System.Web.Compilation.ExpressionBuilderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object EvaluateExpression(object target, class System.Web.UI.BoundPropertyEntry entry, object parsedData, class System.Web.Compilation.ExpressionBuilderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ResourceExpressionBuilder.EvaluateExpression(System.Object,System.Web.UI.BoundPropertyEntry,System.Object,System.Web.Compilation.ExpressionBuilderContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="entry" Type="System.Web.UI.BoundPropertyEntry" />
+        <Parameter Name="parsedData" Type="System.Object" />
+        <Parameter Name="context" Type="System.Web.Compilation.ExpressionBuilderContext" />
+      </Parameters>
+      <Docs>
+        <param name="target">The object containing the expression.</param>
+        <param name="entry">The object that represents information about the property bound to by the expression.</param>
+        <param name="parsedData">The object containing parsed data as returned by the <see cref="Overload:System.Web.Compilation.ResourceExpressionBuilder.ParseExpression" /> method.</param>
+        <param name="context">Contextual information for the evaluation of the expression.</param>
+        <summary>Returns a value from a resource file.</summary>
+        <returns>An <see cref="T:System.Object" /> associated with the parsed expression. The parsed expression contains the class name and resource key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when an expression of the form `<%$ Resources: someResourceKey %>` is encountered in a page that uses the no-compile feature. It retrieves the appropriate value from a key/value pair in a resource file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCodeExpression">
+      <MemberSignature Language="C#" Value="public override System.CodeDom.CodeExpression GetCodeExpression (System.Web.UI.BoundPropertyEntry entry, object parsedData, System.Web.Compilation.ExpressionBuilderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.CodeDom.CodeExpression GetCodeExpression(class System.Web.UI.BoundPropertyEntry entry, object parsedData, class System.Web.Compilation.ExpressionBuilderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ResourceExpressionBuilder.GetCodeExpression(System.Web.UI.BoundPropertyEntry,System.Object,System.Web.Compilation.ExpressionBuilderContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entry" Type="System.Web.UI.BoundPropertyEntry" />
+        <Parameter Name="parsedData" Type="System.Object" />
+        <Parameter Name="context" Type="System.Web.Compilation.ExpressionBuilderContext" />
+      </Parameters>
+      <Docs>
+        <param name="entry">The property name of the object.</param>
+        <param name="parsedData">The parsed value of the expression.</param>
+        <param name="context">Properties for the control or page.</param>
+        <summary>Returns a code expression to evaluate during page execution.</summary>
+        <returns>A <see cref="T:System.CodeDom.CodeExpression" /> that invokes a method.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called during the CodeDOM creation for a page or control. The <xref:System.CodeDom.CodeExpression> object returned is of the type <xref:System.CodeDom.CodeMethodInvokeExpression> and represents the method to call when retrieving a resource value during page execution.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseExpression">
+      <MemberSignature Language="C#" Value="public static System.Web.Compilation.ResourceExpressionFields ParseExpression (string expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Compilation.ResourceExpressionFields ParseExpression(string expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ResourceExpressionBuilder.ParseExpression(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Compilation.ResourceExpressionFields</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The expression value to be parsed.</param>
+        <summary>Returns an object that represents the parsed expression.</summary>
+        <returns>The <see cref="T:System.Web.Compilation.ResourceExpressionFields" /> for the expression.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method parses the expression and returns a <xref:System.Web.Compilation.ResourceExpressionFields.ClassKey%2A> and a <xref:System.Web.Compilation.ResourceExpressionFields.ResourceKey%2A> property value in the returned <xref:System.Web.Compilation.ResourceExpressionFields> object, if these properties are provided in the expression.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseExpression">
+      <MemberSignature Language="C#" Value="public override object ParseExpression (string expression, Type propertyType, System.Web.Compilation.ExpressionBuilderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ParseExpression(string expression, class System.Type propertyType, class System.Web.Compilation.ExpressionBuilderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Compilation.ResourceExpressionBuilder.ParseExpression(System.String,System.Type,System.Web.Compilation.ExpressionBuilderContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.String" />
+        <Parameter Name="propertyType" Type="System.Type" />
+        <Parameter Name="context" Type="System.Web.Compilation.ExpressionBuilderContext" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The value of the declarative expression.</param>
+        <param name="propertyType">The type of the property bound to by the expression.</param>
+        <param name="context">Contextual information for the evaluation of the expression.</param>
+        <summary>Returns an object that represents the parsed expression.</summary>
+        <returns>An <see cref="T:System.Object" /> that represents the parsed expression.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The returned <xref:System.Object> is of type <xref:System.Web.Compilation.ResourceExpressionFields>. This method parses the expression and returns a <xref:System.Web.Compilation.ResourceExpressionFields.ClassKey%2A> and a <xref:System.Web.Compilation.ResourceExpressionFields.ResourceKey%2A> property value in the returned <xref:System.Web.Compilation.ResourceExpressionFields> object, if those properties are provided in the expression.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The resource expression cannot be found or is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsEvaluate">
+      <MemberSignature Language="C#" Value="public override bool SupportsEvaluate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsEvaluate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Compilation.ResourceExpressionBuilder.SupportsEvaluate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a value indicating whether an expression can be evaluated in a page that uses the no-compile feature.</summary>
+        <value>
+          <see langword="true" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Compilation.ResourceExpressionBuilder.SupportsEvaluate%2A> property indicates whether the <xref:System.Web.Compilation.ResourceExpressionBuilder.EvaluateExpression%2A> method has been implemented in the class. <xref:System.Web.Compilation.ResourceExpressionBuilder.EvaluateExpression%2A> must be implemented within an expression builder for an expression to be evaluated in a page that uses the no-compile feature. <xref:System.Web.Compilation.ResourceExpressionBuilder> supports evaluation of resource values in non-compiled pages, so this property always returns `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

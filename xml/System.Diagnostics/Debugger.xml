@@ -1,0 +1,306 @@
+<Type Name="Debugger" FullName="System.Diagnostics.Debugger">
+  <TypeSignature Language="C#" Value="public sealed class Debugger" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Debugger extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.Debugger" />
+  <AssemblyInfo>
+    <AssemblyName>System.Diagnostics.Debug</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enables communication with a debugger. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Debugger ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Debugger.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Call the static methods directly on this type", true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Debugger" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Break">
+      <MemberSignature Language="C#" Value="public static void Break ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Break() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Debugger.Break" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Debug</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Signals a breakpoint to an attached debugger.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If no debugger is attached, users are asked if they want to attach a debugger. If users say yes, the debugger is started. If a debugger is attached, the debugger is signaled with a user breakpoint event, and the debugger suspends execution of the process just as if a debugger breakpoint had been hit.  
+  
+> [!WARNING]
+>  Starting with [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the runtime no longer exercises tight control of launching the debugger for the <xref:System.Diagnostics.Debugger.Break%2A> method, but instead reports an error to the Windows Error Reporting (WER) subsystem. WER provides many settings to customize the problem reporting experience, so a lot of factors will influence  the way WER responds to an error such as operating system version, process, session, user, machine and domain. If you're having unexpected results when calling  the <xref:System.Diagnostics.Debugger.Break%2A> method,  check the  WER settings on your machine. For more information on how to customize WER, see [WER Settings](https://msdn.microsoft.com/library/windows/desktop/bb513638.aspx). If you want to ensure the debugger is launched regardless of the WER settings, be sure to call the <xref:System.Diagnostics.Debugger.Launch%2A> method instead.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to stop the debugger at the call to <xref:System.Console.WriteLine%2A>.  
+  
+```vb  
+Debugger.Break()  
+Console.WriteLine("Hello, world.")  
+```  
+  
+```csharp  
+Debugger.Break();  
+Console.WriteLine("Hello, world.");  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The <see cref="T:System.Security.Permissions.UIPermission" /> is not set to break into the debugger.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for permission to start a debugger. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration:  <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /> Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultCategory">
+      <MemberSignature Language="C#" Value="public static readonly string DefaultCategory;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string DefaultCategory" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Debugger.DefaultCategory" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the default category of message with a constant.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this default constant is `null`. <xref:System.Diagnostics.Debugger.DefaultCategory> is used by <xref:System.Diagnostics.Debugger.Log%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAttached">
+      <MemberSignature Language="C#" Value="public static bool IsAttached { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsAttached" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Debugger.IsAttached" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Debug</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a debugger is attached to the process.</summary>
+        <value>
+          <see langword="true" /> if a debugger is attached; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLogging">
+      <MemberSignature Language="C#" Value="public static bool IsLogging ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsLogging() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Debugger.IsLogging" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Checks to see if logging is enabled by an attached debugger.</summary>
+        <returns>
+          <see langword="true" /> if a debugger is attached and logging is enabled; otherwise, <see langword="false" />. The attached debugger is the registered managed debugger in the <see langword="DbgManagedDebugger" /> registry key. For more information on this key, see [Enabling JIT-Attach Debugging](~/docs/framework/debug-trace-profile/enabling-jit-attach-debugging.md).</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Launch">
+      <MemberSignature Language="C#" Value="public static bool Launch ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Launch() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Debugger.Launch" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Debug</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Launches and attaches a debugger to the process.</summary>
+        <returns>
+          <see langword="true" /> if the startup is successful or if the debugger is already attached; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a debugger is already attached, nothing happens.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The <see cref="T:System.Security.Permissions.UIPermission" /> is not set to start the debugger.</exception>
+        <permission cref="T:System.Security.Permissions.UIPermission">for permission to start a debugger. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration:  <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /> Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Log">
+      <MemberSignature Language="C#" Value="public static void Log (int level, string category, string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Log(int32 level, string category, string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Debugger.Log(System.Int32,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="level" Type="System.Int32" />
+        <Parameter Name="category" Type="System.String" />
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="level">A description of the importance of the message.</param>
+        <param name="category">The category of the message.</param>
+        <param name="message">The message to show.</param>
+        <summary>Posts a message for the attached debugger.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there is no debugger attached, this method has no effect. The debugger might or might not report the message, depending upon its settings.  
+  
+> [!NOTE]
+>  The category parameter is limited to 256 characters. Strings longer than 256 characters are truncated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotifyOfCrossThreadDependency">
+      <MemberSignature Language="C#" Value="public static void NotifyOfCrossThreadDependency ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void NotifyOfCrossThreadDependency() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Debugger.NotifyOfCrossThreadDependency" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Notifies a debugger that execution is about to enter a path that involves a cross-thread dependency.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Debuggers must specifically enable callbacks that they wish to receive. A debugger that wants to receive cross-thread dependency callbacks must call the  method.  
+  
+ A debugger that has selected <xref:System.Diagnostics.Debugger.NotifyOfCrossThreadDependency%2A> can take appropriate action upon notification. For example, performing a function evaluation typically requires freezing all threads except for the thread that is performing the evaluation. If the function evaluation requires execution on more than one thread, as might occur in remoting scenarios, the evaluation will block. The <xref:System.Diagnostics.Debugger.NotifyOfCrossThreadDependency%2A> notification informs the debugger that it has to release a thread or abort the function evaluation. The notification is subject to collection after this method returns.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,161 @@
+<Type Name="DataGridViewAdvancedCellBorderStyle" FullName="System.Windows.Forms.DataGridViewAdvancedCellBorderStyle">
+  <TypeSignature Language="C#" Value="public enum DataGridViewAdvancedCellBorderStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewAdvancedCellBorderStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the border styles that can be applied to the cells of a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridView.AdvancedCellBorderStyle%2A> property of the <xref:System.Windows.Forms.DataGridView> control returns an object of type <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle>, which has properties of type <xref:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Windows.Forms.DataGridView.AdjustedTopLeftHeaderBorderStyle%2A?displayProperty=fullName> property to customize the borders of the upper-left cell. This code example is part of a larger example provided for the <xref:System.Windows.Forms.DataGridViewAdvancedBorderStyle> class.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewAdvancedBorderStyle#12](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewAdvancedBorderStyle/CS/advancedborderstyle.cs#12)]
+ [!code-vb[System.Windows.Forms.DataGridViewAdvancedBorderStyle#12](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewAdvancedBorderStyle/VB/advancedborderstyle.vb#12)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Inset">
+      <MemberSignature Language="C#" Value="Inset" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAdvancedCellBorderStyle Inset = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.Inset" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A single-line sunken border.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InsetDouble">
+      <MemberSignature Language="C#" Value="InsetDouble" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAdvancedCellBorderStyle InsetDouble = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.InsetDouble" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A double-line sunken border.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAdvancedCellBorderStyle None = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No borders.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotSet">
+      <MemberSignature Language="C#" Value="NotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAdvancedCellBorderStyle NotSet = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.NotSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The border is not set.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Outset">
+      <MemberSignature Language="C#" Value="Outset" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAdvancedCellBorderStyle Outset = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.Outset" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A single-line raised border.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OutsetDouble">
+      <MemberSignature Language="C#" Value="OutsetDouble" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAdvancedCellBorderStyle OutsetDouble = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.OutsetDouble" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A double-line raised border.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OutsetPartial">
+      <MemberSignature Language="C#" Value="OutsetPartial" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAdvancedCellBorderStyle OutsetPartial = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.OutsetPartial" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A single-line border containing a raised portion.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Single">
+      <MemberSignature Language="C#" Value="Single" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAdvancedCellBorderStyle Single = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAdvancedCellBorderStyle.Single" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewAdvancedCellBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A single-line border.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

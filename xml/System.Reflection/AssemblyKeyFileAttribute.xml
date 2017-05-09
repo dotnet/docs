@@ -1,0 +1,147 @@
+<Type Name="AssemblyKeyFileAttribute" FullName="System.Reflection.AssemblyKeyFileAttribute">
+  <TypeSignature Language="C#" Value="public sealed class AssemblyKeyFileAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssemblyKeyFileAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyKeyFileAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the name of a file containing the key pair used to generate a strong name.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When building a strong-named assembly, the author must supply either this attribute or <xref:System.Reflection.AssemblyKeyNameAttribute>. If <xref:System.Reflection.AssemblyDelaySignAttribute> has also been specified, it is likely that this file will only contain the public key.  
+  
+ An example of the syntax is `[assembly:AssemblyKeyFileAttribute("myKey.snk")]`.  
+  
+> [!CAUTION]
+>  Since the path and file name persist, ensure that the string you use with `AssemblyKeyFileAttribute` does not contain sensitive information.  
+  
+   
+  
+## Examples  
+ The following code example shows the use of the <xref:System.Reflection.AssemblyDelaySignAttribute> attribute with the <xref:System.Reflection.AssemblyKeyFileAttribute>. To compile this example, you must create a strong-name key file named TestPublicKey.snk using the [Sn.exe (Strong Name Tool)](~/docs/framework/tools/sn-exe-strong-name-tool.md):  
+  
+```  
+sn -k TestPublicKey.snk   
+```  
+  
+ Compile the example as a .dll. If you compile from the command line, use the `/t:library` option for C# or Visual Basic, or the `/LD` linker option for Visual C++.  
+  
+ [!code-cpp[AssemblyDelaySignattribute#1](~/samples/snippets/cpp/VS_Snippets_CLR/AssemblyDelaySignAttribute/cpp/source.cpp#1)]
+ [!code-csharp[AssemblyDelaySignattribute#1](~/samples/snippets/csharp/VS_Snippets_CLR/AssemblyDelaySignAttribute/cs/source.cs#1)]
+ [!code-vb[AssemblyDelaySignattribute#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/AssemblyDelaySignAttribute/vb/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AssemblyKeyFileAttribute (string keyFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string keyFile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyKeyFileAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="keyFile" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="keyFile">The name of the file containing the key pair.</param>
+        <summary>Initializes a new instance of the <see langword="AssemblyKeyFileAttribute" /> class with the name of the file containing the key pair to generate a strong name for the assembly being attributed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is no default path for the <xref:System.Reflection.AssemblyKeyFileAttribute> constructor. The value set by the constructor is interpreted by the linker, or by [!INCLUDE[vsprvsext](~/includes/vsprvsext-md.md)], that invokes the linker.  
+  
+ The default setting for the [Al.exe (Assembly Linker)](~/docs/framework/tools/al-exe-assembly-linker.md) tool assumes that the key file is in the current directory. In [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], the Visual Basic and Visual C# compilers build and link to subdirectories of the project directory, so if you put the key file in the project directory the relative path might be "..\\..\keyfile.snk" or "..\keyfile.snk" in Visual Basic, or "..\\\\..\\\keyfile.snk" or "..\\\keyfile.snk" in C#. For C#, this attribute can be set in the project properties.  
+  
+> [!CAUTION]
+>  Because the path and file name persist, ensure that the string you use with `AssemblyKeyFileAttribute` does not contain sensitive information.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyFile">
+      <MemberSignature Language="C#" Value="public string KeyFile { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string KeyFile" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyKeyFileAttribute.KeyFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the file containing the key pair used to generate a strong name for the attributed assembly.</summary>
+        <value>A string containing the name of the file that contains the key pair.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!CAUTION]
+>  Because the path and file name persist, ensure that the string you use with `AssemblyKeyFileAttribute` does not contain sensitive information.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

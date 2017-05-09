@@ -1,0 +1,91 @@
+<Type Name="ForestTrustRelationshipCollision" FullName="System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision">
+  <TypeSignature Language="C#" Value="public class ForestTrustRelationshipCollision" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ForestTrustRelationshipCollision extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collision record resulting from a collision between forest trust records.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CollisionRecord">
+      <MemberSignature Language="C#" Value="public string CollisionRecord { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CollisionRecord" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision.CollisionRecord" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collision record from the underlying Active Directory Domain Services service.</summary>
+        <value>A <see cref="T:System.String" /> containing the collision record resulting from a collision between forest trust records.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollisionType">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType CollisionType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType CollisionType" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision.CollisionType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType" /> value for the forest trust collision.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType" /> value indicating the collision type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DomainCollisionOption">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.DomainCollisionOptions DomainCollisionOption { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.ActiveDirectory.DomainCollisionOptions DomainCollisionOption" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision.DomainCollisionOption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.DomainCollisionOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.DirectoryServices.ActiveDirectory.DomainCollisionOptions" /> value for the forest trust collision.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.DomainCollisionOptions" /> value that provides information about the collision when the <see cref="P:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision.CollisionType" /> type is <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TopLevelNameCollisionOption">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions TopLevelNameCollisionOption { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions TopLevelNameCollisionOption" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision.TopLevelNameCollisionOption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions" /> value for the forest trust collision.</summary>
+        <value>A <see cref="T:System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions" /> value that provides information about the collision when the <see cref="P:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision.CollisionType" /> type is <see cref="T:System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

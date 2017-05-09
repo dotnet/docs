@@ -1,0 +1,25 @@
+<Type Name="XpsSerializationProgressChangedEventHandler" FullName="System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void XpsSerializationProgressChangedEventHandler(object sender, XpsSerializationProgressChangedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XpsSerializationProgressChangedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Windows.Xps.Serialization.XpsSerializationManager.XpsSerializationProgressChanged" /> event of an <see cref="T:System.Windows.Xps.Serialization.XpsSerializationManager" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

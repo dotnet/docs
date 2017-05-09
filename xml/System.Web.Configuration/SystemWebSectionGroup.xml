@@ -1,0 +1,1395 @@
+<Type Name="SystemWebSectionGroup" FullName="System.Web.Configuration.SystemWebSectionGroup">
+  <TypeSignature Language="C#" Value="public sealed class SystemWebSectionGroup : System.Configuration.ConfigurationSectionGroup" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SystemWebSectionGroup extends System.Configuration.ConfigurationSectionGroup" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.SystemWebSectionGroup" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSectionGroup</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Allows the user to programmatically access the <see langword="system.web" /> group of the configuration file. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.SystemWebSectionGroup> class refers to the `system.web` group within a configuration file. You can use this type to access any of the sections contained in this group.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.SystemWebSectionGroup> object from the configuration file associated with an existing Web application. You can use this object to access the sections contained in the `system.web` group.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#1)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SystemWebSectionGroup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.SystemWebSectionGroup.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of <see cref="T:System.Web.Configuration.SystemWebSectionGroup" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is called by the ASP.NET configuration system and is not intended to be used directly from your code. You can obtain an instance of the <xref:System.Web.Configuration.SystemWebSectionGroup> class by using the <xref:System.Configuration.Configuration.GetSectionGroup%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AnonymousIdentification">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.AnonymousIdentificationSection AnonymousIdentification { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.AnonymousIdentificationSection AnonymousIdentification" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.AnonymousIdentification" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("anonymousIdentification")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.AnonymousIdentificationSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="anonymousIdentification" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.AnonymousIdentificationSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.AnonymousIdentificationSection> object refers to the `anonymousIdentification` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.AnonymousIdentificationSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#2)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Authentication">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.AuthenticationSection Authentication { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.AuthenticationSection Authentication" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Authentication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("authentication")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.AuthenticationSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="authentication" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.AuthenticationSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.AuthenticationSection> object refers to the `authentication` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.AuthenticationSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#3)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Authorization">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.AuthorizationSection Authorization { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.AuthorizationSection Authorization" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Authorization" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("authorization")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.AuthorizationSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="authorization" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.AuthorizationSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.AuthorizationSection> object refers to the `authorization` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.AuthorizationSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#4)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BrowserCaps">
+      <MemberSignature Language="C#" Value="public System.Configuration.DefaultSection BrowserCaps { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.DefaultSection BrowserCaps" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.BrowserCaps" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("browserCaps")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Configuration.DefaultSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="browserCaps" /> section.</summary>
+        <value>The <see cref="T:System.Configuration.DefaultSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.DefaultSection> object refers to the `browserCaps` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Configuration.DefaultSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#24](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#24)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#24](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#24)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientTarget">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.ClientTargetSection ClientTarget { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.ClientTargetSection ClientTarget" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.ClientTarget" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("clientTarget")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.ClientTargetSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="clientTarget" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.ClientTargetSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.ClientTargetSection> object refers to the `clientTarget` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.ClientTargetSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#25](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#25)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#25](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#25)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compilation">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.CompilationSection Compilation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.CompilationSection Compilation" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Compilation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("compilation")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.CompilationSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="compilation" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.CompilationSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.CompilationSection> object refers to the `compilation` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.CompilationSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#5)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomErrors">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.CustomErrorsSection CustomErrors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.CustomErrorsSection CustomErrors" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.CustomErrors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("customErrors")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.CustomErrorsSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="customErrors" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.CustomErrorsSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.CustomErrorsSection> object refers to the `customErrors` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.CustomErrorsSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#6)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deployment">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.DeploymentSection Deployment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.DeploymentSection Deployment" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Deployment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("deployment")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.DeploymentSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="deployment" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.DeploymentSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.DeploymentSection> object refers to the `deployement` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.DeploymentSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#26](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#26)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#26](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#26)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceFilters">
+      <MemberSignature Language="C#" Value="public System.Configuration.DefaultSection DeviceFilters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.DefaultSection DeviceFilters" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.DeviceFilters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("deviceFilters")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Configuration.DefaultSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="deviceFilters" /> section.</summary>
+        <value>The <see cref="T:System.Configuration.DefaultSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.DefaultSection> object refers to the `deviceFilters` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Configuration.DefaultSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#27](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#27)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#27](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#27)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FullTrustAssemblies">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.FullTrustAssembliesSection FullTrustAssemblies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.FullTrustAssembliesSection FullTrustAssemblies" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.FullTrustAssemblies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("fullTrustAssemblies")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.FullTrustAssembliesSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="FullTrustAssemblies" /> section of the configuration file.</summary>
+        <value>The <see langword="FullTrustAssemblies" /> section of the configuration file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Globalization">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.GlobalizationSection Globalization { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.GlobalizationSection Globalization" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Globalization" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("globalization")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.GlobalizationSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="globalization" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.GlobalizationSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.GlobalizationSection> object refers to the `globalization` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.GlobalizationSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#7)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HealthMonitoring">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.HealthMonitoringSection HealthMonitoring { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.HealthMonitoringSection HealthMonitoring" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.HealthMonitoring" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("healthMonitoring")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.HealthMonitoringSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="healthMonitoring" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.HealthMonitoringSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.HealthMonitoringSection> object refers to the `healthMonitoring` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.HealthMonitoringSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#28](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#28)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#28](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#28)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostingEnvironment">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.HostingEnvironmentSection HostingEnvironment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.HostingEnvironmentSection HostingEnvironment" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.HostingEnvironment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("hostingEnvironment")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.HostingEnvironmentSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="hostingEnvironment" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.HostingEnvironmentSection" /> object refers to the <see langword="hostingEnvironment" /> section of the configuration file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.HostingEnvironmentSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#29](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#29)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#29](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#29)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpCookies">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.HttpCookiesSection HttpCookies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.HttpCookiesSection HttpCookies" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.HttpCookies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("httpCookies")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.HttpCookiesSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="httpCookies" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.HttpCookiesSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.HttpCookiesSection> object refers to the `httpCookies` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.HttpCookiesSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#8)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpHandlers">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.HttpHandlersSection HttpHandlers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.HttpHandlersSection HttpHandlers" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.HttpHandlers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("httpHandlers")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.HttpHandlersSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="httpHandlers" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.HttpHandlersSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.HttpHandlersSection> object refers to the `httpHandlers` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.HttpHandlersSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#9)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpModules">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.HttpModulesSection HttpModules { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.HttpModulesSection HttpModules" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.HttpModules" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("httpModules")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.HttpModulesSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="httpModules" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.HttpModulesSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.HttpModulesSection> object refers to the `httpModules` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.HttpModulesSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#10)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpRuntime">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.HttpRuntimeSection HttpRuntime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.HttpRuntimeSection HttpRuntime" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.HttpRuntime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("httpRuntime")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.HttpRuntimeSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="httpRuntime" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.HttpRuntimeSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.HttpRuntimeSection> object refers to the `httpRuntime` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.HttpRuntimeSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#11)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Identity">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.IdentitySection Identity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.IdentitySection Identity" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Identity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("identity")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.IdentitySection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="identity" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.IdentitySection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.IdentitySection> object refers to the `identity` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.IdentitySection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#12)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MachineKey">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.MachineKeySection MachineKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.MachineKeySection MachineKey" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.MachineKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("machineKey")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.MachineKeySection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="machineKey" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.MachineKeySection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.MachineKeySection> object refers to the `machineKey` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.MachineKeySection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#13](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#13)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#13](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Membership">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.MembershipSection Membership { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.MembershipSection Membership" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Membership" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("membership")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.MembershipSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="membership" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.MembershipSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.MembershipSection> object refers to the `membership` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.MembershipSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#14](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#14)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#14](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MobileControls">
+      <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSection MobileControls { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationSection MobileControls" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.MobileControls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("mobileControls")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("System.Web.Mobile.dll is obsolete.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="mobileControls" /> section.</summary>
+        <value>The <see cref="T:System.Configuration.ConfigurationSection" /> object refers to the <see langword="mobileControls" /> section of the configuration file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Configuration.ConfigurationSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#30](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#30)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#30](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#30)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pages">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.PagesSection Pages { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.PagesSection Pages" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Pages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("pages")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.PagesSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="pages" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.PagesSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.PagesSection> object refers to the `pages` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.PagesSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#15](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#15)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#15](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PartialTrustVisibleAssemblies">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.PartialTrustVisibleAssembliesSection PartialTrustVisibleAssemblies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.PartialTrustVisibleAssembliesSection PartialTrustVisibleAssemblies" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.PartialTrustVisibleAssemblies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("partialTrustVisibleAssemblies")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.PartialTrustVisibleAssembliesSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="PartialTrustVisibleAssemblies" /> section of the configuration file.</summary>
+        <value>The <see langword="PartialTrustVisibleAssemblies" /> section of the configuration file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessModel">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.ProcessModelSection ProcessModel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.ProcessModelSection ProcessModel" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.ProcessModel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("processModel")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.ProcessModelSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="processModel" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.ProcessModelSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.ProcessModelSection> object refers to the `processModel` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.ProcessModelSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#16](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#16)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#16](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#16)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Profile">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.ProfileSection Profile { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.ProfileSection Profile" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Profile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("profile")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.ProfileSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="profile" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.ProfileSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.ProfileSection> object refers to the `profile` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.ProfileSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#17](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#17)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#17](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#17)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Protocols">
+      <MemberSignature Language="C#" Value="public System.Configuration.DefaultSection Protocols { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.DefaultSection Protocols" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Protocols" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("protocols")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Configuration.DefaultSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="protocols" /> section.</summary>
+        <value>The <see cref="T:System.Configuration.DefaultSection" /> object refers to the <see langword="protocols" /> section of the configuration file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Configuration.DefaultSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#31](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#31)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#31](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#31)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoleManager">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.RoleManagerSection RoleManager { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.RoleManagerSection RoleManager" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.RoleManager" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("roleManager")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.RoleManagerSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="roleManager" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.RoleManagerSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.RoleManagerSection> object refers to the `roleManager` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.RoleManagerSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#18](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#18)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#18](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#18)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityPolicy">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.SecurityPolicySection SecurityPolicy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.SecurityPolicySection SecurityPolicy" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.SecurityPolicy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("securityPolicy")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.SecurityPolicySection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="securityPolicy" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.SecurityPolicySection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.SecurityPolicySection> object refers to the `securityPolicy` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.SecurityPolicySection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#19](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#19)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#19](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#19)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionState">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.SessionStateSection SessionState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.SessionStateSection SessionState" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.SessionState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("sessionState")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.SessionStateSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="sessionState" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.SessionStateSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.SessionStateSection> object refers to the `sessionState` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.SessionStateSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#20](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#20)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#20](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SiteMap">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.SiteMapSection SiteMap { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.SiteMapSection SiteMap" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.SiteMap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("siteMap")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.SiteMapSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="siteMap" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.SiteMapSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.SiteMapSection> object refers to the `siteMap` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.SiteMapSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#21](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#21)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#21](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#21)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trace">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.TraceSection Trace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.TraceSection Trace" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Trace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("trace")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.TraceSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="trace" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.TraceSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.TraceSection> object refers to the `trace` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.TraceSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#22](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#22)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#22](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#22)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trust">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.TrustSection Trust { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.TrustSection Trust" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Trust" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("trust")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.TrustSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="trust" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.TrustSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.TrustSection> object refers to the `trust` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.TrustSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#23](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#23)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#23](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#23)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UrlMappings">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.UrlMappingsSection UrlMappings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.UrlMappingsSection UrlMappings" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.UrlMappings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("urlMappings")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.UrlMappingsSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="urlMappings" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.UrlMappingsSection" /> object refers to the <see langword="urlMappings" /> section of the configuration file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.UrlMappingsSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#32](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#32)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#32](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#32)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebControls">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.WebControlsSection WebControls { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.WebControlsSection WebControls" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.WebControls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("webControls")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.WebControlsSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="webControls" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.WebControlsSection" /> object refers to the <see langword="webControls" /> section of the configuration file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.WebControlsSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#33](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#33)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#33](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#33)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebParts">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.WebPartsSection WebParts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.WebPartsSection WebParts" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.WebParts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("webParts")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.WebPartsSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="webParts" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.WebPartsSection" /> object refers to the <see langword="webParts" /> section of the configuration file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.WebPartsSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#34](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#34)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#34](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#34)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebServices">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Configuration.WebServicesSection WebServices { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Configuration.WebServicesSection WebServices" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.WebServices" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("webServices")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.WebServicesSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="webServices" /> section.</summary>
+        <value>The <see cref="T:System.Web.Services.Configuration.WebServicesSection" /> object refers to the <see langword="webServices" /> section of the configuration file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Services.Configuration.WebServicesSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#35](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#35)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#35](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#35)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XhtmlConformance">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.XhtmlConformanceSection XhtmlConformance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.XhtmlConformanceSection XhtmlConformance" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.XhtmlConformance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("xhtmlConformance")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.XhtmlConformanceSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="xhtmlConformance" /> section.</summary>
+        <value>The <see cref="T:System.Web.Configuration.XhtmlConformanceSection" /> object refers to the <see langword="xhtmlConformance" /> section of the configuration file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.XhtmlConformanceSection> object from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.SystemWebSectionGroup#36](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/CS/SystemWebSectionGroup.cs#36)]
+ [!code-vb[System.Web.Configuration.SystemWebSectionGroup#36](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.SystemWebSectionGroup/VB/SystemWebSectionGroup.vb#36)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

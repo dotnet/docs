@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "My.User object"
 ms.assetid: caa7462e-2149-4bdb-8850-802b80b93cbf
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

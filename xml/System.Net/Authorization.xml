@@ -1,0 +1,341 @@
+<Type Name="Authorization" FullName="System.Net.Authorization">
+  <TypeSignature Language="C#" Value="public class Authorization" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Authorization extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Authorization" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains an authentication message for an Internet server.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.AuthenticationManager> returns an instance of the <xref:System.Net.Authorization> class that contains an authentication message. This message is sent to the Internet server to indicate that the client (such as <xref:System.Net.WebRequest> or one of its descendants) is authorized to access the server.  
+  
+ The <xref:System.Net.Authorization> instance is created by the authentication module that the <xref:System.Net.AuthenticationManager> designates to handle the request.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Authorization (string token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Authorization.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="token" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="token">The encrypted authorization message expected by the server.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Net.Authorization" /> class with the specified authorization message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Authorization> instance is created with the <xref:System.Net.Authorization.Message%2A> property set to `token` and the <xref:System.Net.Authorization.Complete%2A> property set to `true`.  
+  
+   
+  
+## Examples  
+ The following code example shows how to create an <xref:System.Net.Authorization> object. For a complete example, refer to the <xref:System.Net.AuthenticationManager> class.  
+  
+ [!code-cpp[System.Net.Authentication#3](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Authentication/CPP/custombasicauthentication.cpp#3)]
+ [!code-csharp[System.Net.Authentication#3](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Authentication/CS/custombasicauthentication.cs#3)]
+ [!code-vb[System.Net.Authentication#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Authentication/VB/custombasicauthentication.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Authorization (string token, bool finished);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string token, bool finished) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Authorization.#ctor(System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="token" Type="System.String" />
+        <Parameter Name="finished" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="token">The encrypted authorization message expected by the server.</param>
+        <param name="finished">The completion status of the authorization attempt. <see langword="true" /> if the authorization attempt is complete; otherwise, <see langword="false" />.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Net.Authorization" /> class with the specified authorization message and completion status.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Authorization> instance is created with the <xref:System.Net.Authorization.Message%2A> property set to `token` and the <xref:System.Net.Authorization.Complete%2A> property set to `finished`.  
+  
+   
+  
+## Examples  
+ The following code example creates a new instance of the <xref:System.Net.Authorization> class with the specified authorization message and completion status.  
+  
+ [!code-cpp[Authorization_ProtectionRealm#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Authorization_ProtectionRealm/CPP/authorization_protectionrealm.cpp#1)]
+ [!code-csharp[Authorization_ProtectionRealm#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Authorization_ProtectionRealm/CS/authorization_protectionrealm.cs#1)]
+ [!code-vb[Authorization_ProtectionRealm#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Authorization_ProtectionRealm/VB/authorization_protectionrealm.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Authorization (string token, bool finished, string connectionGroupId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string token, bool finished, string connectionGroupId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Authorization.#ctor(System.String,System.Boolean,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="token" Type="System.String" />
+        <Parameter Name="finished" Type="System.Boolean" />
+        <Parameter Name="connectionGroupId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="token">The encrypted authorization message expected by the server.</param>
+        <param name="finished">The completion status of the authorization attempt. <see langword="true" /> if the authorization attempt is complete; otherwise, <see langword="false" />.</param>
+        <param name="connectionGroupId">A unique identifier that can be used to create private client-server connections that are bound only to this authentication scheme.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Net.Authorization" /> class with the specified authorization message, completion status, and connection group identifier.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a new instance of the <xref:System.Net.Authorization> class with the specified authorization message, completion status, and connection group identifier.  
+  
+ [!code-cpp[Authorization_Constructor3#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Authorization_Constructor3/CPP/authorization_constructor3.cpp#1)]
+ [!code-csharp[Authorization_Constructor3#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Authorization_Constructor3/CS/authorization_constructor3.cs#1)]
+ [!code-vb[Authorization_Constructor3#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Authorization_Constructor3/VB/authorization_constructor3.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Complete">
+      <MemberSignature Language="C#" Value="public bool Complete { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Complete" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Authorization.Complete" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the completion status of the authorization.</summary>
+        <value>
+          <see langword="true" /> if the authentication process is complete; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Authorization.Complete%2A> property is set to `true` when the authentication process between the client and the server is finished. Some authentication modules, such as the Kerberos module, use multiple round trips between the client and server to complete the authentication process. To keep the <xref:System.Net.WebRequest> or descendant that initiated the authentication process from interrupting while authorization is taking place, the authentication module sets the <xref:System.Net.Authorization.Complete%2A> property to `false`.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Net.Authorization.Complete%2A> property to get the completion status of the authorization. For a complete example, refer to the <xref:System.Net.AuthenticationManager> class.  
+  
+ [!code-cpp[System.Net.Authentication#5](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Authentication/CPP/custombasicauthentication.cpp#5)]
+ [!code-csharp[System.Net.Authentication#5](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Authentication/CS/custombasicauthentication.cs#5)]
+ [!code-vb[System.Net.Authentication#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Authentication/VB/custombasicauthentication.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionGroupId">
+      <MemberSignature Language="C#" Value="public string ConnectionGroupId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectionGroupId" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Authorization.ConnectionGroupId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a unique identifier for user-specific connections.</summary>
+        <value>A unique string that associates a connection with an authenticating entity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Authorization.ConnectionGroupId%2A> property is a unique string that associates a connection with a specific authenticating entity. For example, the NTLM authorization module ties the authentication credential information to a specific connection to prevent invalid reuse of the connection.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Net.Authorization.ConnectionGroupId%2A> property to get the group identifier returned by the server. For a complete example, refer to the <xref:System.Net.AuthenticationManager> class.  
+  
+ [!code-cpp[System.Net.Authentication#5](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Authentication/CPP/custombasicauthentication.cpp#5)]
+ [!code-csharp[System.Net.Authentication#5](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Authentication/CS/custombasicauthentication.cs#5)]
+ [!code-vb[System.Net.Authentication#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Authentication/VB/custombasicauthentication.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public string Message { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Message" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Authorization.Message" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the message returned to the server in response to an authentication challenge.</summary>
+        <value>The message that will be returned to the server in response to an authentication challenge.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Authorization.Message%2A> property contains the authorization string that the client will return to the server when accessing protected resources. The actual contents of the message are defined by the authentication type the client and server are using. Basic HTTP authentication, for example, uses a different message than Kerberos authentication.  
+  
+ When an authentication module supports preauthentication, the <xref:System.Net.Authorization.Message%2A> property is sent with the initial request.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Net.Authorization.Message%2A> property to get the message returned to the server in response to an authentication challenge. For a complete example, refer to the <xref:System.Net.AuthenticationManager> class.  
+  
+ [!code-cpp[System.Net.Authentication#5](~/samples/snippets/cpp/VS_Snippets_Remoting/System.Net.Authentication/CPP/custombasicauthentication.cpp#5)]
+ [!code-csharp[System.Net.Authentication#5](~/samples/snippets/csharp/VS_Snippets_Remoting/System.Net.Authentication/CS/custombasicauthentication.cs#5)]
+ [!code-vb[System.Net.Authentication#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/System.Net.Authentication/VB/custombasicauthentication.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MutuallyAuthenticated">
+      <MemberSignature Language="C#" Value="public bool MutuallyAuthenticated { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MutuallyAuthenticated" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Authorization.MutuallyAuthenticated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Boolean" /> value that indicates whether mutual authentication occurred.</summary>
+        <value>
+          <see langword="true" /> if both client and server were authenticated; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns `false` if the authentication has not completed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtectionRealm">
+      <MemberSignature Language="C#" Value="public string[] ProtectionRealm { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] ProtectionRealm" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Authorization.ProtectionRealm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the prefix for Uniform Resource Identifiers (URIs) that can be authenticated with the <see cref="P:System.Net.Authorization.Message" /> property.</summary>
+        <value>An array of strings that contains URI prefixes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.Authorization.ProtectionRealm%2A> property contains a list of URI prefixes that the <xref:System.Net.Authorization.Message%2A> property can be used to authenticate. <xref:System.Net.WebRequest> and its descendants compare a URI to this list to determine if the <xref:System.Net.Authorization> is valid for a particular URI.  
+  
+   
+  
+## Examples  
+ The following code example gets or sets the prefix for URIs that can be authenticated with the <xref:System.Net.Authorization.Message%2A> property.  
+  
+ [!code-cpp[Authorization_ProtectionRealm#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Authorization_ProtectionRealm/CPP/authorization_protectionrealm.cpp#1)]
+ [!code-csharp[Authorization_ProtectionRealm#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Authorization_ProtectionRealm/CS/authorization_protectionrealm.cs#1)]
+ [!code-vb[Authorization_ProtectionRealm#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Authorization_ProtectionRealm/VB/authorization_protectionrealm.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

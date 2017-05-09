@@ -1,0 +1,447 @@
+<Type Name="AdvancedFilters" FullName="System.DirectoryServices.AccountManagement.AdvancedFilters">
+  <TypeSignature Language="C#" Value="public class AdvancedFilters" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AdvancedFilters extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.AdvancedFilters" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>This class provides writable access to certain attributes so that users can modify read-only properties of the "dummy" principal object that is passed to a <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" /> object when using [Query By Example](http://msdn.microsoft.com/en-us/84ac40bb-04c4-4d0b-adaf-0ddb9253599e).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.DirectoryServices.AccountManagement.AdvancedFilters> class is accessed from a <xref:System.DirectoryServices.AccountManagement.UserPrincipal> object through the <xref:System.DirectoryServices.AccountManagement.UserPrincipal.AdvancedSearchFilter%2A> property, and is effectually treated like a property of the <xref:System.DirectoryServices.AccountManagement.UserPrincipal> object, and isn't intended to be used on its own.  
+  
+   
+  
+## Examples  
+ See the [Query By Example](http://msdn.microsoft.com/en-us/84ac40bb-04c4-4d0b-adaf-0ddb9253599e) topic for example code.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected AdvancedFilters (System.DirectoryServices.AccountManagement.Principal p);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.AccountManagement.Principal p) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AdvancedFilters.#ctor(System.DirectoryServices.AccountManagement.Principal)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="p" Type="System.DirectoryServices.AccountManagement.Principal" />
+      </Parameters>
+      <Docs>
+        <param name="p">A <see cref="T:System.DirectoryServices.AccountManagement.Principal" /> object.</param>
+        <summary>Instantiates a new <see cref="T:System.DirectoryServices.AccountManagement.AdvancedFilters" /> object. Not intended to be called directly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Applications should access <xref:System.DirectoryServices.AccountManagement.AdvancedFilters> through the <xref:System.DirectoryServices.AccountManagement.UserPrincipal.AdvancedSearchFilter%2A> property of the user object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AccountExpirationDate">
+      <MemberSignature Language="C#" Value="public void AccountExpirationDate (DateTime expirationTime, System.DirectoryServices.AccountManagement.MatchType match);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AccountExpirationDate(valuetype System.DateTime expirationTime, valuetype System.DirectoryServices.AccountManagement.MatchType match) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AdvancedFilters.AccountExpirationDate(System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expirationTime" Type="System.DateTime" />
+        <Parameter Name="match" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <param name="expirationTime">A <see cref="T:System.DateTime" /> object.</param>
+        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <c>expirationTime</c> should be used in the comparison.</param>
+        <summary>Sets the query filter for the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AccountExpirationDate" /> attribute to the specified time and comparison type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+  
+```csharp  
+  
+// Create the principal context for the usr object.  
+PrincipalContext ctx = new PrincipalContext(ContextType.Domain, "fabrikam.com", "CN=Users,DC=fabrikam,DC=com", "administrator", "securlyStoredPassword");  
+  
+// Create the principal user object from the context  
+UserPrincipal usr = new UserPrincipal(ctx);  
+  
+// Set the advanced query filter  
+usr.AdvancedSearchFilter.AccountExpirationDate(DateTime.Now, MatchType.LessThan);  
+  
+// Create a PrincipalSearcher object.  
+PrincipalSearcher ps = new PrincipalSearcher(usr);  
+  
+PrincipalSearchResult<Principal> results = ps.FindAll();  
+  
+Console.WriteLine("The following users' accounts have expired:");  
+  
+foreach (UserPrincipal u in results)  
+{  
+  Console.WriteLine(u.Name);  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AccountLockoutTime">
+      <MemberSignature Language="C#" Value="public void AccountLockoutTime (DateTime lockoutTime, System.DirectoryServices.AccountManagement.MatchType match);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AccountLockoutTime(valuetype System.DateTime lockoutTime, valuetype System.DirectoryServices.AccountManagement.MatchType match) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AdvancedFilters.AccountLockoutTime(System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lockoutTime" Type="System.DateTime" />
+        <Parameter Name="match" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <param name="lockoutTime">A <see cref="T:System.DateTime" /> object.</param>
+        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <c>lockoutTime</c> should be used in the comparison.</param>
+        <summary>Sets the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.AccountLockoutTime" /> query filter to the specified time and comparison type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+  
+```csharp  
+  
+// Create the principal context for the usr object.  
+PrincipalContext ctx = new PrincipalContext(ContextType.Domain, "fabrikam.com", "CN=Users,DC=fabrikam,DC=com", "administrator", "SecurlyStoredPassword");  
+  
+// Create the principal user object from the context  
+UserPrincipal usr = new UserPrincipal(ctx);  
+  
+// Set the advanced query filter  
+usr.AdvancedSearchFilter.AccountLockoutTime(DateTime.Now.AddDays(-1), MatchType.GreaterThan);  
+  
+// Create a PrincipalSearcher object.  
+PrincipalSearcher ps = new PrincipalSearcher(usr);  
+  
+PrincipalSearchResult<Principal> results = ps.FindAll();  
+  
+//Print user names of all accounts locked within the last 24 hours.  
+  
+foreach (UserPrincipal u in results)  
+{  
+  Console.WriteLine(u.Name);  
+ }  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdvancedFilterSet">
+      <MemberSignature Language="C#" Value="protected void AdvancedFilterSet (string attribute, object value, Type objectType, System.DirectoryServices.AccountManagement.MatchType mt);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AdvancedFilterSet(string attribute, object value, class System.Type objectType, valuetype System.DirectoryServices.AccountManagement.MatchType mt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AdvancedFilters.AdvancedFilterSet(System.String,System.Object,System.Type,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribute" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="objectType" Type="System.Type" />
+        <Parameter Name="mt" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <param name="attribute">The name of the attribute</param>
+        <param name="value">An object.</param>
+        <param name="objectType">The object type of <c>value</c>.</param>
+        <param name="mt">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <c>value</c> should be compared to the attribute's value.</param>
+        <summary>Creates a query filter for a property in an extended class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ In an extended class, you might implement an advanced search filter for `LogonCount`:  
+  
+```csharp  
+  
+public class InetOrgPersonSearchFilter : AdvancedFilters  
+{  
+	public InetOrgPersonSearchFilter(Principal p) : base(p) { }  
+  
+	public void LogonCount(int value, MatchType mt)  
+	{  
+		this.AdvancedFilterSet("LogonCount", value, typeof(int), mt);  
+	}  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BadLogonCount">
+      <MemberSignature Language="C#" Value="public void BadLogonCount (int badLogonCount, System.DirectoryServices.AccountManagement.MatchType match);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BadLogonCount(int32 badLogonCount, valuetype System.DirectoryServices.AccountManagement.MatchType match) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AdvancedFilters.BadLogonCount(System.Int32,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="badLogonCount" Type="System.Int32" />
+        <Parameter Name="match" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <param name="badLogonCount">An integer.</param>
+        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <c>badLogonCount</c> should be compared to the attribute's value.</param>
+        <summary>Sets the query filter for the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.BadLogonCount" /> attribute to the specified value and comparison type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+  
+```csharp  
+  
+// Create the principal context for the usr object.  
+PrincipalContext ctx = new PrincipalContext(ContextType.Domain, "fabrikam.com", "CN=Users,DC=fabrikam,DC=com", "administrator", "SecurlyStoredPassword");  
+  
+// Create the principal user object from the context  
+UserPrincipal usr = new UserPrincipal(ctx);  
+  
+// Set the advanced query filter  
+int badLogonThreshold = 3;  
+usr.AdvancedSearchFilter.BadLogonCount(badLogonThreshold, MatchType.GreaterThan);  
+  
+// Create a PrincipalSearcher object.  
+PrincipalSearcher ps = new PrincipalSearcher(usr);  
+PrincipalSearchResult<Principal> results = ps.FindAll();  
+Console.WriteLine("The following users have logged on unsuccessfully at more than " + badLogonThreshold.toString + " times:");  
+foreach (UserPrincipal u in results)  
+{  
+  Console.WriteLine(u.Name);  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastBadPasswordAttempt">
+      <MemberSignature Language="C#" Value="public void LastBadPasswordAttempt (DateTime lastAttempt, System.DirectoryServices.AccountManagement.MatchType match);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LastBadPasswordAttempt(valuetype System.DateTime lastAttempt, valuetype System.DirectoryServices.AccountManagement.MatchType match) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AdvancedFilters.LastBadPasswordAttempt(System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lastAttempt" Type="System.DateTime" />
+        <Parameter Name="match" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <param name="lastAttempt">A <see cref="T:System.DateTime" /> object.</param>
+        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <c>lastAttempt</c> should be used in the comparison.</param>
+        <summary>Sets the query filter for the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.LastBadPasswordAttempt" /> attribute to the specified <see cref="T:System.DateTime" /> and the specified comparison value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+  
+```csharp  
+  
+// Create the principal context for the usr object.  
+PrincipalContext ctx = new PrincipalContext(ContextType.Domain, "fabrikam.com", "CN=Users,DC=fabrikam,DC=com", "administrator", "SecurlyStoredPassword");  
+  
+// Create the principal user object from the context  
+UserPrincipal usr = new UserPrincipal(ctx);  
+  
+// Set the advanced query filter  
+usr.AdvancedSearchFilter.LastBadPasswordAttempt(DateTime.Now.AddDays(-1), MatchType.GreaterThan);  
+  
+// Create a PrincipalSearcher object.  
+PrincipalSearcher ps = new PrincipalSearcher(usr);  
+PrincipalSearchResult<Principal> results = ps.FindAll();  
+  
+//Write the name of all users whose most recent incorrect  
+//password entry was within the last day  
+  
+foreach (UserPrincipal u in results)  
+{  
+	Console.WriteLine(u.Name);  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastLogonTime">
+      <MemberSignature Language="C#" Value="public void LastLogonTime (DateTime logonTime, System.DirectoryServices.AccountManagement.MatchType match);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LastLogonTime(valuetype System.DateTime logonTime, valuetype System.DirectoryServices.AccountManagement.MatchType match) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AdvancedFilters.LastLogonTime(System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="logonTime" Type="System.DateTime" />
+        <Parameter Name="match" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <param name="logonTime">A <see cref="T:System.DateTime" /> object.</param>
+        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <c>logonTime</c> should be used in the comparison.</param>
+        <summary>Sets the query filter for the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.LastLogon" /> attribute to the specified <see cref="T:System.DateTime" /> and the specified comparison value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+  
+```csharp  
+  
+// Create the principal context for the usr object.  
+PrincipalContext ctx = new PrincipalContext(ContextType.Domain, "fabrikam.com", "CN=Users,DC=fabrikam,DC=com", "administrator", "SecurlyStoredPassword");  
+  
+// Create the principal user object from the context  
+UserPrincipal usr = new UserPrincipal(ctx);  
+  
+// Set the advanced query filter  
+usr.AdvancedSearchFilter.LastLogonTime(DateTime.Now.AddDays(-1), MatchType.GreaterThan);  
+  
+// Create a PrincipalSearcher object.  
+PrincipalSearcher ps = new PrincipalSearcher(usr);  
+PrincipalSearchResult<Principal> results = ps.FindAll();  
+  
+//Write the names of all users who have logged on since yesterday  
+foreach (UserPrincipal u in results)  
+{  
+	Console.WriteLine(u.Name);  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastPasswordSetTime">
+      <MemberSignature Language="C#" Value="public void LastPasswordSetTime (DateTime passwordSetTime, System.DirectoryServices.AccountManagement.MatchType match);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LastPasswordSetTime(valuetype System.DateTime passwordSetTime, valuetype System.DirectoryServices.AccountManagement.MatchType match) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.AdvancedFilters.LastPasswordSetTime(System.DateTime,System.DirectoryServices.AccountManagement.MatchType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="passwordSetTime" Type="System.DateTime" />
+        <Parameter Name="match" Type="System.DirectoryServices.AccountManagement.MatchType" />
+      </Parameters>
+      <Docs>
+        <param name="passwordSetTime">A <see cref="T:System.DateTime" /> object.</param>
+        <param name="match">A <see cref="T:System.DirectoryServices.AccountManagement.MatchType" /> that specifies how <c>passwordSetTime</c> should be used in the comparison.</param>
+        <summary>Sets the query filter for the <see cref="P:System.DirectoryServices.AccountManagement.AuthenticablePrincipal.LastPasswordSet" /> attribute to the specified <see cref="T:System.DateTime" /> and the specified comparison value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The time will default to UTC. If you want to specify the time in local time, then specify the <xref:System.DateTime.Kind%2A> property of your <xref:System.DateTime> object as <xref:System.DateTimeKind?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+  
+```csharp  
+  
+// Create the principal context for the usr object.  
+PrincipalContext ctx = new PrincipalContext(ContextType.Domain, "fabrikam.com", "CN=Users,DC=fabrikam,DC=com", "administrator", "SecurlyStoredPassword");  
+  
+// Create the principal user object from the context  
+UserPrincipal usr = new UserPrincipal(ctx);  
+  
+// Set the advanced query filter  
+usr.AdvancedSearchFilter.LastPasswordSetTime(DateTime.Now.AddDays(-30), MatchType.LessThan);  
+  
+// Create a PrincipalSearcher object.  
+PrincipalSearcher ps = new PrincipalSearcher(usr);  
+PrincipalSearchResult<Principal> results = ps.FindAll();  
+  
+//Force users who have not changed their password in the last  
+//30 days to do so at next logon  
+foreach (UserPrincipal u in results)  
+{  
+	u.ExpirePasswordNow();  
+	u.Save();  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

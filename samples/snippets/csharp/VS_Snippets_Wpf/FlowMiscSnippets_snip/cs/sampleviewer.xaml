@@ -1,0 +1,21 @@
+<Page  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  x:Class="SDKSample.SampleViewer"
+  WindowTitle="Miscellaneous Flow Properties" >
+  <DockPanel Background="White">
+    <TabControl Name="sampleSelector">
+      <TabItem Header="LineStackingStrategyExample">
+        <Frame Source="LineStackingStrategyExample.xaml" Background="White" />
+      </TabItem>
+      <TabItem Header="TextEffectTarget">
+        <Frame Source="TextEffectTargetExample.xaml" Background="White" />
+      </TabItem>
+      <TabItem Header="BaselineAlignment">
+        <Frame Source="BaselineAlignmentExample.xaml" Background="White"/>
+      </TabItem>
+      <TabItem Header="FigureLength">
+        <Frame Source="FigureLengthExample.xaml" Background="White" />
+      </TabItem>
+    </TabControl>
+  </DockPanel>
+</Page>

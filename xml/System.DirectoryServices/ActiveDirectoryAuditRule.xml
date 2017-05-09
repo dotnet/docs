@@ -1,0 +1,205 @@
+<Type Name="ActiveDirectoryAuditRule" FullName="System.DirectoryServices.ActiveDirectoryAuditRule">
+  <TypeSignature Language="C#" Value="public class ActiveDirectoryAuditRule : System.Security.AccessControl.ObjectAuditRule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActiveDirectoryAuditRule extends System.Security.AccessControl.ObjectAuditRule" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectoryAuditRule" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.AccessControl.ObjectAuditRule</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.ActiveDirectoryAuditRule" /> is used to set an access control entry (ACE) on a system access control list (SACL). The <see cref="T:System.DirectoryServices.ActiveDirectoryAccessRule" /> contains the trustee, which is represented as an <see cref="P:System.Security.AccessControl.AuthorizationRule.IdentityReference" /> object. It also contains information about the access control type, access mask, and other properties such as inheritance flags. This rule is set on an <see cref="T:System.DirectoryServices.ActiveDirectorySecurity" /> object. After the <see cref="T:System.DirectoryServices.ActiveDirectorySecurity" /> is committed to the directory store, it will modify the security descriptor object according to the rules that are set on <see cref="T:System.DirectoryServices.ActiveDirectoryAuditRule" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActiveDirectoryAuditRule (System.Security.Principal.IdentityReference identity, System.DirectoryServices.ActiveDirectoryRights adRights, System.Security.AccessControl.AuditFlags auditFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.DirectoryServices.ActiveDirectoryRights adRights, valuetype System.Security.AccessControl.AuditFlags auditFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectoryAuditRule.#ctor(System.Security.Principal.IdentityReference,System.DirectoryServices.ActiveDirectoryRights,System.Security.AccessControl.AuditFlags)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="identity" Type="System.Security.Principal.IdentityReference" />
+        <Parameter Name="adRights" Type="System.DirectoryServices.ActiveDirectoryRights" />
+        <Parameter Name="auditFlags" Type="System.Security.AccessControl.AuditFlags" />
+      </Parameters>
+      <Docs>
+        <param name="identity">Specifies an <see cref="T:System.Security.Principal.IdentityReference" /> object, such as an NTAccount object, that resolves to a security identifier (SID).</param>
+        <param name="adRights">Specifies an <see cref="T:System.DirectoryServices.ActiveDirectoryRights" /> object, which is used to define all the rights that can be set on a directory object, as defined in the <see cref="T:System.DirectoryServices.ActiveDirectoryRights" /> enumeration.</param>
+        <param name="auditFlags">Specifies an <see cref="T:System.Security.AccessControl.AuditFlags" /> object, which contains the combination of one or more audit flags to add to this <see cref="T:System.DirectoryServices.ActiveDirectoryAuditRule" />. The allowable flags are <see cref="F:System.Security.AccessControl.AuditFlags.Success" /> and <see cref="F:System.Security.AccessControl.AuditFlags.Failure" />. This parameter may not be zero.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectoryAuditRule" /> class with the specified identity, rights, and flags.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActiveDirectoryAuditRule (System.Security.Principal.IdentityReference identity, System.DirectoryServices.ActiveDirectoryRights adRights, System.Security.AccessControl.AuditFlags auditFlags, System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.DirectoryServices.ActiveDirectoryRights adRights, valuetype System.Security.AccessControl.AuditFlags auditFlags, valuetype System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectoryAuditRule.#ctor(System.Security.Principal.IdentityReference,System.DirectoryServices.ActiveDirectoryRights,System.Security.AccessControl.AuditFlags,System.DirectoryServices.ActiveDirectorySecurityInheritance)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="identity" Type="System.Security.Principal.IdentityReference" />
+        <Parameter Name="adRights" Type="System.DirectoryServices.ActiveDirectoryRights" />
+        <Parameter Name="auditFlags" Type="System.Security.AccessControl.AuditFlags" />
+        <Parameter Name="inheritanceType" Type="System.DirectoryServices.ActiveDirectorySecurityInheritance" />
+      </Parameters>
+      <Docs>
+        <param name="identity">Specifies an <see cref="T:System.Security.Principal.IdentityReference" /> object, such as an NTAccount object, that resolves to a security identifier (SID).</param>
+        <param name="adRights">Specifies an <see cref="T:System.DirectoryServices.ActiveDirectoryRights" /> object, which is used to define all the rights that can be set on a directory object, as defined in the <see cref="T:System.DirectoryServices.ActiveDirectoryRights" /> enumeration.</param>
+        <param name="auditFlags">Specifies an <see cref="T:System.Security.AccessControl.AuditFlags" /> object, which contains a combination of one or more audit flags to add to this <see cref="T:System.DirectoryServices.ActiveDirectoryAuditRule" />. The allowable flags are <see cref="F:System.Security.AccessControl.AuditFlags.Success" /> and <see cref="F:System.Security.AccessControl.AuditFlags.Failure" />. This parameter can not be zero.</param>
+        <param name="inheritanceType">Specifies the <see cref="T:System.DirectoryServices.ActiveDirectorySecurityInheritance" /> object that contains inheritance information. The allowable flags for this parameter are found in the <see cref="T:System.DirectoryServices.ActiveDirectorySecurityInheritance" /> enumeration.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectoryAuditRule" /> class with the specified identity, rights, flags, and inheritance type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActiveDirectoryAuditRule (System.Security.Principal.IdentityReference identity, System.DirectoryServices.ActiveDirectoryRights adRights, System.Security.AccessControl.AuditFlags auditFlags, Guid objectType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.DirectoryServices.ActiveDirectoryRights adRights, valuetype System.Security.AccessControl.AuditFlags auditFlags, valuetype System.Guid objectType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectoryAuditRule.#ctor(System.Security.Principal.IdentityReference,System.DirectoryServices.ActiveDirectoryRights,System.Security.AccessControl.AuditFlags,System.Guid)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="identity" Type="System.Security.Principal.IdentityReference" />
+        <Parameter Name="adRights" Type="System.DirectoryServices.ActiveDirectoryRights" />
+        <Parameter Name="auditFlags" Type="System.Security.AccessControl.AuditFlags" />
+        <Parameter Name="objectType" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="identity">Specifies an <see cref="T:System.Security.Principal.IdentityReference" /> object, such as an NTAccount object, that resolves to a security identifier (SID).</param>
+        <param name="adRights">Specifies an <see cref="T:System.DirectoryServices.ActiveDirectoryRights" /> object, which is used to define all the rights that can be set on a directory object, as defined in the <see cref="T:System.DirectoryServices.ActiveDirectoryRights" /> enumeration.</param>
+        <param name="auditFlags">Specifies an <see cref="T:System.Security.AccessControl.AuditFlags" /> object, which contains the combination of one or more audit flags to add to this <see cref="T:System.DirectoryServices.ActiveDirectoryAuditRule" />. The allowable flags are <see cref="F:System.Security.AccessControl.AuditFlags.Success" /> and <see cref="F:System.Security.AccessControl.AuditFlags.Failure" />. This parameter can not be zero.</param>
+        <param name="objectType">Specifies a <see cref="T:System.Guid" /> object that contains the GUID of the object to which the access permissions apply.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectoryAuditRule" /> class with the specified identity, rights, flags, and object type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActiveDirectoryAuditRule (System.Security.Principal.IdentityReference identity, System.DirectoryServices.ActiveDirectoryRights adRights, System.Security.AccessControl.AuditFlags auditFlags, System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType, Guid inheritedObjectType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.DirectoryServices.ActiveDirectoryRights adRights, valuetype System.Security.AccessControl.AuditFlags auditFlags, valuetype System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType, valuetype System.Guid inheritedObjectType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectoryAuditRule.#ctor(System.Security.Principal.IdentityReference,System.DirectoryServices.ActiveDirectoryRights,System.Security.AccessControl.AuditFlags,System.DirectoryServices.ActiveDirectorySecurityInheritance,System.Guid)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="identity" Type="System.Security.Principal.IdentityReference" />
+        <Parameter Name="adRights" Type="System.DirectoryServices.ActiveDirectoryRights" />
+        <Parameter Name="auditFlags" Type="System.Security.AccessControl.AuditFlags" />
+        <Parameter Name="inheritanceType" Type="System.DirectoryServices.ActiveDirectorySecurityInheritance" />
+        <Parameter Name="inheritedObjectType" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="identity">Specifies an <see cref="T:System.Security.Principal.IdentityReference" /> object, such as an NTAccount object, that resolves to a security identifier (SID).</param>
+        <param name="adRights">Specifies an <see cref="T:System.DirectoryServices.ActiveDirectoryRights" /> data type object, which is used to define all the rights that can be set on a directory object, as defined in the <see cref="T:System.DirectoryServices.ActiveDirectoryRights" /> enumeration.</param>
+        <param name="auditFlags">Specifies an <see cref="T:System.Security.AccessControl.AuditFlags" /> object, which contains the combination of one or more audit flags to add to this <see cref="T:System.DirectoryServices.ActiveDirectoryAuditRule" />. The allowable flags are <see cref="F:System.Security.AccessControl.AuditFlags.Success" /> and <see cref="F:System.Security.AccessControl.AuditFlags.Failure" />. This parameter may not be zero.</param>
+        <param name="inheritanceType">Specifies the <see cref="T:System.DirectoryServices.ActiveDirectorySecurityInheritance" /> object that contains inheritance information. The allowable flags for this parameter are found in the <see cref="T:System.DirectoryServices.ActiveDirectorySecurityInheritance" /> enumeration.</param>
+        <param name="inheritedObjectType">Specifies the <see cref="T:System.Guid" /> object that identifies the type of child object that can inherit this access rule.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectoryAuditRule" /> class with the specified identity, rights, flags, inheritance type, and inherited object type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActiveDirectoryAuditRule (System.Security.Principal.IdentityReference identity, System.DirectoryServices.ActiveDirectoryRights adRights, System.Security.AccessControl.AuditFlags auditFlags, Guid objectType, System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.DirectoryServices.ActiveDirectoryRights adRights, valuetype System.Security.AccessControl.AuditFlags auditFlags, valuetype System.Guid objectType, valuetype System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectoryAuditRule.#ctor(System.Security.Principal.IdentityReference,System.DirectoryServices.ActiveDirectoryRights,System.Security.AccessControl.AuditFlags,System.Guid,System.DirectoryServices.ActiveDirectorySecurityInheritance)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="identity" Type="System.Security.Principal.IdentityReference" />
+        <Parameter Name="adRights" Type="System.DirectoryServices.ActiveDirectoryRights" />
+        <Parameter Name="auditFlags" Type="System.Security.AccessControl.AuditFlags" />
+        <Parameter Name="objectType" Type="System.Guid" />
+        <Parameter Name="inheritanceType" Type="System.DirectoryServices.ActiveDirectorySecurityInheritance" />
+      </Parameters>
+      <Docs>
+        <param name="identity">Specifies an <see cref="T:System.Security.Principal.IdentityReference" /> object, such as an NTAccount object, that resolves to a security identifier (SID).</param>
+        <param name="adRights">Specifies an <see cref="T:System.DirectoryServices.ActiveDirectoryRights" /> object, which is used to define all the rights that can be set on a directory object, as defined in the <see cref="T:System.DirectoryServices.ActiveDirectoryRights" /> enumeration.</param>
+        <param name="auditFlags">Specifies an <see cref="T:System.Security.AccessControl.AuditFlags" /> object, which contains the combination of one or more audit flags to add to this <see cref="T:System.DirectoryServices.ActiveDirectoryAuditRule" />. The allowable flags are <see cref="F:System.Security.AccessControl.AuditFlags.Success" /> and <see cref="F:System.Security.AccessControl.AuditFlags.Failure" />. This parameter may not be zero.</param>
+        <param name="objectType">Specifies a <see cref="T:System.Guid" /> object which contains the GUID of the object to which the access permissions apply.</param>
+        <param name="inheritanceType">Specifies the <see cref="T:System.DirectoryServices.ActiveDirectorySecurityInheritance" /> object that contains inheritance information. The allowable flags for this parameter are found in the <see cref="T:System.DirectoryServices.ActiveDirectorySecurityInheritance" /> enumeration.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectoryAuditRule" /> class with the specified identity, rights, flags, object type, and inheritance type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActiveDirectoryAuditRule (System.Security.Principal.IdentityReference identity, System.DirectoryServices.ActiveDirectoryRights adRights, System.Security.AccessControl.AuditFlags auditFlags, Guid objectType, System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType, Guid inheritedObjectType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.DirectoryServices.ActiveDirectoryRights adRights, valuetype System.Security.AccessControl.AuditFlags auditFlags, valuetype System.Guid objectType, valuetype System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType, valuetype System.Guid inheritedObjectType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectoryAuditRule.#ctor(System.Security.Principal.IdentityReference,System.DirectoryServices.ActiveDirectoryRights,System.Security.AccessControl.AuditFlags,System.Guid,System.DirectoryServices.ActiveDirectorySecurityInheritance,System.Guid)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="identity" Type="System.Security.Principal.IdentityReference" />
+        <Parameter Name="adRights" Type="System.DirectoryServices.ActiveDirectoryRights" />
+        <Parameter Name="auditFlags" Type="System.Security.AccessControl.AuditFlags" />
+        <Parameter Name="objectType" Type="System.Guid" />
+        <Parameter Name="inheritanceType" Type="System.DirectoryServices.ActiveDirectorySecurityInheritance" />
+        <Parameter Name="inheritedObjectType" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="identity">Specifies an <see cref="T:System.Security.Principal.IdentityReference" /> object, such as an NTAccount object, that resolves to a security identifier (SID).</param>
+        <param name="adRights">Specifies an <see cref="T:System.DirectoryServices.ActiveDirectoryRights" /> object, which is used to define all the rights that can be set on a directory object, as defined in the <see cref="T:System.DirectoryServices.ActiveDirectoryRights" /> enumeration.</param>
+        <param name="auditFlags">Specifies an <see cref="T:System.Security.AccessControl.AuditFlags" /> object, which contains the combination of one or more audit flags to add to this <see cref="T:System.DirectoryServices.ActiveDirectoryAuditRule" />. The allowable flags are <see cref="F:System.Security.AccessControl.AuditFlags.Success" /> and <see cref="F:System.Security.AccessControl.AuditFlags.Failure" />. This parameter may not be zero.</param>
+        <param name="objectType">Specifies a <see cref="T:System.Guid" /> object that contains the GUID of the object to which the access permissions apply.</param>
+        <param name="inheritanceType">Specifies the <see cref="T:System.DirectoryServices.ActiveDirectorySecurityInheritance" /> object that contains inheritance information. The allowable flags for this parameter are found in the <see cref="T:System.DirectoryServices.ActiveDirectorySecurityInheritance" /> enumeration.</param>
+        <param name="inheritedObjectType">Specifies the <see cref="T:System.Guid" /> object that identifies the type of child object that can inherit this access rule.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectoryAuditRule" /> class with the specified identity, rights, flags, object type, inheritance type, and inherited object type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveDirectoryRights">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectoryRights ActiveDirectoryRights { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.ActiveDirectoryRights ActiveDirectoryRights" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectoryAuditRule.ActiveDirectoryRights" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectoryRights</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the rights for the audit rule.</summary>
+        <value>One or more of the <see cref="T:System.DirectoryServices.ActiveDirectoryRights" /> enumeration values that specifies the rights for the audit rule.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InheritanceType">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectorySecurityInheritance InheritanceType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.ActiveDirectorySecurityInheritance InheritanceType" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectoryAuditRule.InheritanceType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.ActiveDirectorySecurityInheritance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the inheritance type of the audit rule.</summary>
+        <value>One of the <see cref="T:System.DirectoryServices.ActiveDirectorySecurityInheritance" /> enumeration values that specifies the inheritance type of the audit rule.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

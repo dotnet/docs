@@ -1,0 +1,319 @@
+<Type Name="IsolationLevel" FullName="System.Data.IsolationLevel">
+  <TypeSignature Language="C#" Value="public enum IsolationLevel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IsolationLevel extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.IsolationLevel" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Common</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the transaction locking behavior for the connection.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.IsolationLevel> values are used by a .NET Framework data provider when performing a transaction.  
+  
+ The <xref:System.Data.IsolationLevel> remains in effect until explicitly changed, but it can be changed at any time. The new value is used at execution time, not parse time. If changed during a transaction, the expected behavior of the server is to apply the new locking level to all statements remaining.  
+  
+   
+  
+## Examples  
+ This application demonstrates how to use <xref:System.Data.IsolationLevel> in <xref:System.Data.Common.DbTransaction>. The sample will demonstrate which of the following behaviors are allowed in the different isolation levels:  
+  
+-   Dirty reads.  
+  
+-   Non-repeatable reads.  
+  
+-   Phantoms.  
+  
+ This application will execute in the following isolation levels:  
+  
+-   ReadUncommitted  
+  
+-   ReadCommitted  
+  
+-   RepeatableRead  
+  
+-   Serializable  
+  
+-   Snapshot  
+  
+ The PhantomReadThreads class demonstrates if the specific transaction allows the Phantom Read behavior. If the transaction allows the behavior, the threads will operate in the following order:  
+  
+-   In first thread, select the products(All).  
+  
+-   In the second thread, insert a new product.  
+  
+-   Commit the transaction in second thread.  
+  
+-   Select the products again.  
+  
+-   Commit the transaction in first thread.  
+  
+ If the transaction allows the behavior, the two Select operations will get the different results.  
+  
+ The NonrepeatableReadThreads class demonstrates if the specific transaction allows the Nonrepeatable Read behavior. If the transaction allows the behavior, the threads will operate in the following order:  
+  
+-   In first thread, select the product(ProductId=1).  
+  
+-   In the second thread, update the Quantity value(ProductId=1).  
+  
+-   Commit the transaction in second thread.  
+  
+-   Select the product again.  
+  
+-   Commit the transaction in first thread.  
+  
+ If the transaction allows the behavior, the two Select operations will get the different results.  
+  
+ The ExchangeValuesThreads class demonstrates the difference between the Serializable and Snapshot transaction. For the the Serializable transaction, threads will operate in the following order:  
+  
+-   In first thread, get the Price of product(ProductId=2) and store in the variable.  
+  
+-   In first thread, update the Price of product(ProductId=1) with the price of product(ProductId=2).  
+  
+-   Commit the transaction in first thread.  
+  
+-   In second thread, get the Price of product(ProductId=1) and store in the variable.  
+  
+-   In second thread, update the Price of product(ProductId=2) with the price of product(ProductId=1).  
+  
+-   Commit the transaction in second thread.  
+  
+ Now the values of the Price(ProductId=1 and ProductId=2) are as same as the original Price of Product(ProductId=2).  
+  
+ For the Snapshot transaction, threads will operate in the following order:  
+  
+-   In first thread, get the Price of product(ProductId=2) and store in the variable;  
+  
+-   In first thread, update the Price of product(ProductId=1) with the price of product(ProductId=2).  
+  
+-   In second thread, get the Price of product(ProductId=1) from the snapshot and store in the variable.  
+  
+-   In second thread, update the Price of product(ProductId=2) with the price of product(ProductId=1).  
+  
+-   Commit the transaction in second thread.  
+  
+-   Commit the transaction in first thread.  
+  
+ Now exchange the Price of products(ProductId=1 and ProductId=2).  
+  
+ The DirtyReadThreads class demonstrates if the specific transaction allows the Dirty Read behavior. If the transaction allows the behavior, the threads will operate in the following order:  
+  
+-   In first thread, begin a transaction and add the Quantity value(ProductId=1).  
+  
+-   In the second thread, read the Quantity value and add the value again.  
+  
+-   Commit the transaction in second thread.  
+  
+-   Roll back the transaction in first thread.  
+  
+ If the transaction allows the behavior, the Quantity value will be added twice.  
+  
+ C# and Visual Basic projects with this code sample can be found on [Developer Code Samples](http://code.msdn.microsoft.com/site/search?query=How%20to%20use%20IsolationLevel%20Enumeration%20in%20DbTransaction&f%5B0%5D.Value=How%20to%20use%20IsolationLevel%20Enumeration%20in%20DbTransaction&f%5B0%5D.Type=SearchText&ac=4).  
+  
+ [!code-csharp[system_data_IsolationLevel#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/system_data_isolationlevel/cs/source.cs#1)]
+ [!code-vb[system_data_IsolationLevel#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/system_data_isolationlevel/vb/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Chaos">
+      <MemberSignature Language="C#" Value="Chaos" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.IsolationLevel Chaos = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.IsolationLevel.Chaos" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.IsolationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The pending changes from more highly isolated transactions cannot be overwritten.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadCommitted">
+      <MemberSignature Language="C#" Value="ReadCommitted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.IsolationLevel ReadCommitted = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.IsolationLevel.ReadCommitted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.IsolationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Shared locks are held while the data is being read to avoid dirty reads, but the data can be changed before the end of the transaction, resulting in non-repeatable reads or phantom data.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadUncommitted">
+      <MemberSignature Language="C#" Value="ReadUncommitted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.IsolationLevel ReadUncommitted = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.IsolationLevel.ReadUncommitted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.IsolationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A dirty read is possible, meaning that no shared locks are issued and no exclusive locks are honored.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RepeatableRead">
+      <MemberSignature Language="C#" Value="RepeatableRead" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.IsolationLevel RepeatableRead = int32(65536)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.IsolationLevel.RepeatableRead" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.IsolationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Locks are placed on all data that is used in a query, preventing other users from updating the data. Prevents non-repeatable reads but phantom rows are still possible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Serializable">
+      <MemberSignature Language="C#" Value="Serializable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.IsolationLevel Serializable = int32(1048576)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.IsolationLevel.Serializable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.IsolationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A range lock is placed on the <see cref="T:System.Data.DataSet" />, preventing other users from updating or inserting rows into the dataset until the transaction is complete.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Snapshot">
+      <MemberSignature Language="C#" Value="Snapshot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.IsolationLevel Snapshot = int32(16777216)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.IsolationLevel.Snapshot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.IsolationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reduces blocking by storing a version of data that one application can read while another is modifying the same data. Indicates that from one transaction you cannot see changes made in other transactions, even if you requery.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unspecified">
+      <MemberSignature Language="C#" Value="Unspecified" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.IsolationLevel Unspecified = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.IsolationLevel.Unspecified" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.IsolationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A different isolation level than the one specified is being used, but the level cannot be determined.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When using <xref:System.Data.Odbc.OdbcTransaction>, if you do not set <xref:System.Data.IsolationLevel> or you set <xref:System.Data.IsolationLevel> to `Unspecified`, the transaction executes according to the isolation level that is determined by the driver that is being used.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

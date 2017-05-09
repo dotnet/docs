@@ -25,8 +25,8 @@ helpviewer_keywords:
   - "throw statement"
 ms.assetid: a6e07406-5c8a-4498-87a2-8339f3651d62
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

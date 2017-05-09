@@ -1,0 +1,302 @@
+<Type Name="CodeBinaryOperatorType" FullName="System.CodeDom.CodeBinaryOperatorType">
+  <TypeSignature Language="C#" Value="public enum CodeBinaryOperatorType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed CodeBinaryOperatorType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeBinaryOperatorType" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines identifiers for supported binary operators.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.CodeDom.CodeBinaryOperatorType> defines identifiers for the most common types of binary operators. These operator identifiers are used by <xref:System.CodeDom.CodeBinaryOperatorExpression> to indicate the type of operator in each expression.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="Add" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.CodeBinaryOperatorType Add = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.Add" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeBinaryOperatorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Addition operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Assign">
+      <MemberSignature Language="C#" Value="Assign" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.CodeBinaryOperatorType Assign = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.Assign" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeBinaryOperatorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Assignment operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BitwiseAnd">
+      <MemberSignature Language="C#" Value="BitwiseAnd" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.CodeBinaryOperatorType BitwiseAnd = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.BitwiseAnd" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeBinaryOperatorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bitwise and operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BitwiseOr">
+      <MemberSignature Language="C#" Value="BitwiseOr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.CodeBinaryOperatorType BitwiseOr = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.BitwiseOr" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeBinaryOperatorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Bitwise or operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BooleanAnd">
+      <MemberSignature Language="C#" Value="BooleanAnd" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.CodeBinaryOperatorType BooleanAnd = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.BooleanAnd" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeBinaryOperatorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Boolean and operator. This represents a short circuiting operator. A short circuiting operator will evaluate only as many expressions as necessary before returning a correct value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BooleanOr">
+      <MemberSignature Language="C#" Value="BooleanOr" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.CodeBinaryOperatorType BooleanOr = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.BooleanOr" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeBinaryOperatorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Boolean or operator. This represents a short circuiting operator. A short circuiting operator will evaluate only as many expressions as necessary before returning a correct value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Divide">
+      <MemberSignature Language="C#" Value="Divide" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.CodeBinaryOperatorType Divide = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.Divide" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeBinaryOperatorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Division operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GreaterThan">
+      <MemberSignature Language="C#" Value="GreaterThan" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.CodeBinaryOperatorType GreaterThan = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.GreaterThan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeBinaryOperatorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Greater than operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GreaterThanOrEqual">
+      <MemberSignature Language="C#" Value="GreaterThanOrEqual" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.CodeBinaryOperatorType GreaterThanOrEqual = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.GreaterThanOrEqual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeBinaryOperatorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Greater than or equal operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IdentityEquality">
+      <MemberSignature Language="C#" Value="IdentityEquality" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.CodeBinaryOperatorType IdentityEquality = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.IdentityEquality" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeBinaryOperatorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identity equal operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IdentityInequality">
+      <MemberSignature Language="C#" Value="IdentityInequality" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.CodeBinaryOperatorType IdentityInequality = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.IdentityInequality" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeBinaryOperatorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identity not equal operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LessThan">
+      <MemberSignature Language="C#" Value="LessThan" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.CodeBinaryOperatorType LessThan = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.LessThan" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeBinaryOperatorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Less than operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LessThanOrEqual">
+      <MemberSignature Language="C#" Value="LessThanOrEqual" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.CodeBinaryOperatorType LessThanOrEqual = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.LessThanOrEqual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeBinaryOperatorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Less than or equal operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Modulus">
+      <MemberSignature Language="C#" Value="Modulus" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.CodeBinaryOperatorType Modulus = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.Modulus" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeBinaryOperatorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Modulus operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiply">
+      <MemberSignature Language="C#" Value="Multiply" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.CodeBinaryOperatorType Multiply = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.Multiply" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeBinaryOperatorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Multiplication operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Subtract">
+      <MemberSignature Language="C#" Value="Subtract" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.CodeBinaryOperatorType Subtract = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.Subtract" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeBinaryOperatorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Subtraction operator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueEquality">
+      <MemberSignature Language="C#" Value="ValueEquality" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.CodeBinaryOperatorType ValueEquality = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.CodeDom.CodeBinaryOperatorType.ValueEquality" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeBinaryOperatorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Value equal operator.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

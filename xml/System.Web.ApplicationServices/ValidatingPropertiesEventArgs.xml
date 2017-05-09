@@ -1,0 +1,100 @@
+<Type Name="ValidatingPropertiesEventArgs" FullName="System.Web.ApplicationServices.ValidatingPropertiesEventArgs">
+  <TypeSignature Language="C#" Value="public class ValidatingPropertiesEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ValidatingPropertiesEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ApplicationServices.ValidatingPropertiesEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.ApplicationServices.ProfileService.ValidatingProperties" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You create an event handler for the <xref:System.Web.ApplicationServices.ProfileService.ValidatingProperties> event to customize how profile property values are validated. The <xref:System.Web.ApplicationServices.ProfileService.ValidatingProperties> event is raised when profile properties are set for a user. If any property values fail validation, add them to the collection in the <xref:System.Web.ApplicationServices.ValidatingPropertiesEventArgs.FailedProperties%2A> property. The <xref:System.Web.ApplicationServices.ProfileService.SetPropertiesForCurrentUser%2A> method returns the collection in the <xref:System.Web.ApplicationServices.ValidatingPropertiesEventArgs.FailedProperties%2A> property so that you can determine which properties failed validation.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Web.ApplicationServices.ProfileService.ValidatingProperties> event. When the value passed for `FirstName` property is empty or `null`, the `FirstName` property is added to the <xref:System.Web.ApplicationServices.ValidatingPropertiesEventArgs.FailedProperties%2A> collection.  
+  
+ [!code-csharp[System.Web.ApplicationServices.ProfileService#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.ApplicationServices.ProfileService/cs/Global.asax#1)]
+ [!code-vb[System.Web.ApplicationServices.ProfileService#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ApplicationServices.ProfileService/vb/Global.asax#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FailedProperties">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;string&gt; FailedProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;string&gt; FailedProperties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.ValidatingPropertiesEventArgs.FailedProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection that contains profile properties that have failed validation.</summary>
+        <value>The profile properties that have failed validation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.ApplicationServices.ValidatingPropertiesEventArgs.FailedProperties%2A> property contains a collection of the names of the properties that have failed validation. If you create an event handler for the <xref:System.Web.ApplicationServices.ProfileService.ValidatingProperties> event, you add the names of the properties that fail validation to the collection in the <xref:System.Web.ApplicationServices.ValidatingPropertiesEventArgs.FailedProperties%2A> property. The <xref:System.Web.ApplicationServices.ProfileService.SetPropertiesForCurrentUser%2A> method returns the collection in the <xref:System.Web.ApplicationServices.ValidatingPropertiesEventArgs.FailedProperties%2A> property so that you can determine which properties failed validation.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Web.ApplicationServices.ProfileService.ValidatingProperties> event. When the value passed for `FirstName` property is empty or `null`, the `FirstName` property is added to the <xref:System.Web.ApplicationServices.ValidatingPropertiesEventArgs.FailedProperties%2A> collection.  
+  
+ [!code-csharp[System.Web.ApplicationServices.ProfileService#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.ApplicationServices.ProfileService/cs/Global.asax#1)]
+ [!code-vb[System.Web.ApplicationServices.ProfileService#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ApplicationServices.ProfileService/vb/Global.asax#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,object&gt; Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ApplicationServices.ValidatingPropertiesEventArgs.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of names and values of the profile properties to validate.</summary>
+        <value>The names and values of the profile properties to validate.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.ApplicationServices.ValidatingPropertiesEventArgs.Properties%2A> property returns an <xref:System.Collections.IDictionary> object that contains the names and values of the profile properties to set for the user. If you create an event handler for the <xref:System.Web.ApplicationServices.ProfileService.ValidatingProperties> event, you can retrieve the properties to validate from the <xref:System.Web.ApplicationServices.ValidatingPropertiesEventArgs.Properties%2A> property. If any values fail validation, add them to the <xref:System.Web.ApplicationServices.ValidatingPropertiesEventArgs.FailedProperties%2A> property. The <xref:System.Web.ApplicationServices.ProfileService.SetPropertiesForCurrentUser%2A> method returns the collection in the <xref:System.Web.ApplicationServices.ValidatingPropertiesEventArgs.FailedProperties%2A> property so that you can determine which properties failed validation.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Web.ApplicationServices.ProfileService.ValidatingProperties> event. When the value passed for `FirstName` property is empty or `null`, the `FirstName` property is added to the <xref:System.Web.ApplicationServices.ValidatingPropertiesEventArgs.FailedProperties%2A> collection.  
+  
+ [!code-csharp[System.Web.ApplicationServices.ProfileService#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.ApplicationServices.ProfileService/cs/Global.asax#1)]
+ [!code-vb[System.Web.ApplicationServices.ProfileService#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.ApplicationServices.ProfileService/vb/Global.asax#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,91 @@
+<Type Name="VlvResponseControl" FullName="System.DirectoryServices.Protocols.VlvResponseControl">
+  <TypeSignature Language="C#" Value="public class VlvResponseControl : System.DirectoryServices.Protocols.DirectoryControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VlvResponseControl extends System.DirectoryServices.Protocols.DirectoryControl" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.VlvResponseControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.Protocols.DirectoryControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.VlvResponseControl" /> class is used to pass virtual list view (VLV) data from the server to the client.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ContentCount">
+      <MemberSignature Language="C#" Value="public int ContentCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ContentCount" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.VlvResponseControl.ContentCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.VlvResponseControl.ContentCount" /> property contains the number of items in the list.</summary>
+        <value>The number of items in the list.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextId">
+      <MemberSignature Language="C#" Value="public byte[] ContextId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] ContextId" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.VlvResponseControl.ContextId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.VlvResponseControl.ContextId" /> property contains the context ID assigned by the server to identify this search.</summary>
+        <value>The context ID assigned by the server to identify this search.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.ResultCode Result { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.Protocols.ResultCode Result" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.VlvResponseControl.Result" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.VlvResponseControl.Result" /> property contains a result code in the form of a <see cref="T:System.DirectoryServices.Protocols.ResultCode" /> object.</summary>
+        <value>A result code in the form of a <see cref="T:System.DirectoryServices.Protocols.ResultCode" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetPosition">
+      <MemberSignature Language="C#" Value="public int TargetPosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TargetPosition" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.VlvResponseControl.TargetPosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.VlvResponseControl.TargetPosition" /> property contains the list index position of the target entry.</summary>
+        <value>The list index position of the target entry.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

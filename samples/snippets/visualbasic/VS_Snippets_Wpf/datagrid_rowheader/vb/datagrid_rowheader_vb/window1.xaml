@@ -1,0 +1,19 @@
+﻿<Window x:Class="Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:local="clr-namespace:DataGrid_RowHeader_VB"
+    Title="Window1" Height="300" Width="300">
+    <Window.Resources>
+        <local:ConvertItemToIndex x:Key="IndexConverter"/>
+    </Window.Resources>
+    <Grid>
+        <DataGrid Name="DG1" ItemsSource="{Binding}" CanUserAddRows="False" CanUserDeleteRows="False" >
+            <!--Bind the Content property of the RowHeaderStyle to the Converter to create numbered rows-->
+            <DataGrid.RowHeaderStyle>
+                <Style TargetType="{x:Type DataGridRowHeader}">
+                    <Setter Property="Content" Value="{Binding Converter={StaticResource IndexConverter}}" />
+                </Style>
+            </DataGrid.RowHeaderStyle>
+        </DataGrid>
+    </Grid>
+</Window>

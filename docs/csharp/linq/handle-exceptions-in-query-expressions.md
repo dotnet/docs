@@ -2,7 +2,7 @@
 title: "Handle exceptions in query expressions"
 description: How to handle exceptions in query expressions.
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016

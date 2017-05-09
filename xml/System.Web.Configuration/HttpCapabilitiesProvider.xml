@@ -1,0 +1,56 @@
+<Type Name="HttpCapabilitiesProvider" FullName="System.Web.Configuration.HttpCapabilitiesProvider">
+  <TypeSignature Language="C#" Value="public abstract class HttpCapabilitiesProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HttpCapabilitiesProvider extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpCapabilitiesProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Enables you to customize browser definitions. You can also customize the algorithm that identifies the browser based on information in the incoming <see cref="T:System.Web.HttpRequest" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected HttpCapabilitiesProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpCapabilitiesProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.HttpCapabilitiesProvider" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBrowserCapabilities">
+      <MemberSignature Language="C#" Value="public abstract System.Web.HttpBrowserCapabilities GetBrowserCapabilities (System.Web.HttpRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.HttpBrowserCapabilities GetBrowserCapabilities(class System.Web.HttpRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpCapabilitiesProvider.GetBrowserCapabilities(System.Web.HttpRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpBrowserCapabilities</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.Web.HttpRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">The current <see cref="T:System.Web.HttpRequest" /> object.</param>
+        <summary>Gets the <see cref="T:System.Web.HttpBrowserCapabilities" /> object for the current browser.</summary>
+        <returns>The <see cref="T:System.Web.HttpBrowserCapabilities" /> object for the current browser.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

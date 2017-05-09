@@ -1,0 +1,2195 @@
+<Type Name="MetadataSerializer" FullName="System.IdentityModel.Metadata.MetadataSerializer">
+  <TypeSignature Language="C#" Value="public class MetadataSerializer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MetadataSerializer extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.MetadataSerializer" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides support for Metadata Serialization</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MetadataSerializer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.MetadataSerializer" /> class with a default token serializer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Metadata.MetadataSerializer.CertificateValidationMode%2A><xref:System.IdentityModel.Metadata.MetadataSerializer.RevocationMode%2A> and <xref:System.IdentityModel.Metadata.MetadataSerializer.TrustedStoreLocation%2A> properties are initialized to the following values: <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultCertificateValidationMode?displayProperty=fullName>, <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultRevocationMode?displayProperty=fullName>, and <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultTrustedStoreLocation?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MetadataSerializer (System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Selectors.SecurityTokenSerializer tokenSerializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.#ctor(System.IdentityModel.Selectors.SecurityTokenSerializer)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="tokenSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="tokenSerializer">The token serializer that will be used to serialize security tokens.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.MetadataSerializer" /> class that uses the specified token serializer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Metadata.MetadataSerializer.CertificateValidationMode%2A><xref:System.IdentityModel.Metadata.MetadataSerializer.RevocationMode%2A> and <xref:System.IdentityModel.Metadata.MetadataSerializer.TrustedStoreLocation%2A> properties are initialized to the following values: <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultCertificateValidationMode?displayProperty=fullName>, <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultRevocationMode?displayProperty=fullName>, and <xref:System.IdentityModel.Configuration.IdentityConfiguration.DefaultTrustedStoreLocation?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tokenSerializer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateValidationMode">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Security.X509CertificateValidationMode CertificateValidationMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Security.X509CertificateValidationMode CertificateValidationMode" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.MetadataSerializer.CertificateValidationMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.X509CertificateValidationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the validation mode of the X.509 certificate that is used to sign the metadata document.</summary>
+        <value>One of the enumeration values that specifies the X.509 certificate validation mode. The default is specified by <see cref="F:System.IdentityModel.Configuration.IdentityConfiguration.DefaultCertificateValidationMode" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateValidator">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Selectors.X509CertificateValidator CertificateValidator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Selectors.X509CertificateValidator CertificateValidator" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.MetadataSerializer.CertificateValidator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Selectors.X509CertificateValidator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the certificate validator for the X.509 certificate that is used to sign the metadata document.</summary>
+        <value>The certificate validator for the X.509 certificate.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateApplicationServiceInstance">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.ApplicationServiceDescriptor CreateApplicationServiceInstance ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.ApplicationServiceDescriptor CreateApplicationServiceInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateApplicationServiceInstance" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.ApplicationServiceDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an application service descriptor.</summary>
+        <returns>The application service descriptor.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateContactPersonInstance">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.ContactPerson CreateContactPersonInstance ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.ContactPerson CreateContactPersonInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateContactPersonInstance" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.ContactPerson</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a contact person.</summary>
+        <returns>The contact person.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEntitiesDescriptorInstance">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.EntitiesDescriptor CreateEntitiesDescriptorInstance ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.EntitiesDescriptor CreateEntitiesDescriptorInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateEntitiesDescriptorInstance" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.EntitiesDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an entities descriptor.</summary>
+        <returns>The entities descriptor.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEntityDescriptorInstance">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.EntityDescriptor CreateEntityDescriptorInstance ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.EntityDescriptor CreateEntityDescriptorInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateEntityDescriptorInstance" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.EntityDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an entity descriptor.</summary>
+        <returns>The entity descriptor.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIdentityProviderSingleSignOnDescriptorInstance">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor CreateIdentityProviderSingleSignOnDescriptorInstance ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor CreateIdentityProviderSingleSignOnDescriptorInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateIdentityProviderSingleSignOnDescriptorInstance" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an IDPSSO descriptor.</summary>
+        <returns>The IDPSSO descriptor.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIndexedProtocolEndpointInstance">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.IndexedProtocolEndpoint CreateIndexedProtocolEndpointInstance ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.IndexedProtocolEndpoint CreateIndexedProtocolEndpointInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateIndexedProtocolEndpointInstance" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.IndexedProtocolEndpoint</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an indexed enpoint.</summary>
+        <returns>The indexed endpoint.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateKeyDescriptorInstance">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.KeyDescriptor CreateKeyDescriptorInstance ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.KeyDescriptor CreateKeyDescriptorInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateKeyDescriptorInstance" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.KeyDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a key descriptor.</summary>
+        <returns>The key descriptor.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateLocalizedNameInstance">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.LocalizedName CreateLocalizedNameInstance ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.LocalizedName CreateLocalizedNameInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateLocalizedNameInstance" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.LocalizedName</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a localized name.</summary>
+        <returns>The localized name.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateLocalizedUriInstance">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.LocalizedUri CreateLocalizedUriInstance ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.LocalizedUri CreateLocalizedUriInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateLocalizedUriInstance" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.LocalizedUri</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a localized URI.</summary>
+        <returns>The localized URI.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrganizationInstance">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.Organization CreateOrganizationInstance ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.Organization CreateOrganizationInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateOrganizationInstance" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.Organization</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an organization.</summary>
+        <returns>The organization.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateProtocolEndpointInstance">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.ProtocolEndpoint CreateProtocolEndpointInstance ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.ProtocolEndpoint CreateProtocolEndpointInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateProtocolEndpointInstance" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.ProtocolEndpoint</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an endpoint.</summary>
+        <returns>The endpoint.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSecurityTokenServiceDescriptorInstance">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.SecurityTokenServiceDescriptor CreateSecurityTokenServiceDescriptorInstance ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.SecurityTokenServiceDescriptor CreateSecurityTokenServiceDescriptorInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateSecurityTokenServiceDescriptorInstance" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.SecurityTokenServiceDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a security token service descriptor.</summary>
+        <returns>The security token service descriptor.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateServiceProviderSingleSignOnDescriptorInstance">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor CreateServiceProviderSingleSignOnDescriptorInstance ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor CreateServiceProviderSingleSignOnDescriptorInstance() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.CreateServiceProviderSingleSignOnDescriptorInstance" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an SPSSO descriptor.</summary>
+        <returns>The SPSSO descriptor.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMetadataSigningCertificate">
+      <MemberSignature Language="C#" Value="protected virtual System.Security.Cryptography.X509Certificates.X509Certificate2 GetMetadataSigningCertificate (System.IdentityModel.Tokens.SecurityKeyIdentifier ski);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Security.Cryptography.X509Certificates.X509Certificate2 GetMetadataSigningCertificate(class System.IdentityModel.Tokens.SecurityKeyIdentifier ski) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.GetMetadataSigningCertificate(System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.X509Certificate2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ski" Type="System.IdentityModel.Tokens.SecurityKeyIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="ski">The key identifier from which to create the X.509 certificate.</param>
+        <summary>Gets the X.509 certificate created from the specified key identifier.</summary>
+        <returns>The X.509 certificate that was created from the specified key identifier.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this method only supports key identifier clauses of type <xref:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause>. You can override this method to support other kinds of key identifier clauses. This method is invoked by the <xref:System.IdentityModel.Metadata.MetadataSerializer.ValidateSigningCredential%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="ski" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">Cannot find a key identifier clause of type <see cref="T:System.IdentityModel.Tokens.X509RawDataKeyIdentifierClause" /> in <paramref name="ski" />. Enforces the default behavior, you can override this method to support other key identifier clauses.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LanguageAttribute">
+      <MemberSignature Language="C#" Value="public const string LanguageAttribute;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LanguageAttribute" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.MetadataSerializer.LanguageAttribute" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A string constant that defines the language attribute, “xml:lang”.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LanguageLocalName">
+      <MemberSignature Language="C#" Value="public const string LanguageLocalName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LanguageLocalName" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.MetadataSerializer.LanguageLocalName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A string constant that defines the language local name, “lang”.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LanguageNamespaceUri">
+      <MemberSignature Language="C#" Value="public const string LanguageNamespaceUri;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LanguageNamespaceUri" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.MetadataSerializer.LanguageNamespaceUri" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A string constant that defines the language namespace URI, “http://www.w3.org/XML/1998/namespace”.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LanguagePrefix">
+      <MemberSignature Language="C#" Value="public const string LanguagePrefix;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string LanguagePrefix" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.MetadataSerializer.LanguagePrefix" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A string constant that defines the language prefix, “xml”.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadApplicationServiceDescriptor">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.ApplicationServiceDescriptor ReadApplicationServiceDescriptor (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.ApplicationServiceDescriptor ReadApplicationServiceDescriptor(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadApplicationServiceDescriptor(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.ApplicationServiceDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader.</param>
+        <summary>Reads an application service descriptor.</summary>
+        <returns>The application service descriptor.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAttribute">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2Attribute ReadAttribute (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2Attribute ReadAttribute(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadAttribute(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2Attribute</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader.</param>
+        <summary>Reads the &lt;saml:Attribute&gt; element.</summary>
+        <returns>The Saml2 attribute.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation requires that the content of the Attribute element be a simple string. To handle complex content or content of declared simple types other than xs:string, override this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadContactPerson">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.ContactPerson ReadContactPerson (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.ContactPerson ReadContactPerson(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadContactPerson(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.ContactPerson</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader.</param>
+        <summary>Reads a contact person.</summary>
+        <returns>A contact person.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadCustomAttributes&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected virtual void ReadCustomAttributes&lt;T&gt; (System.Xml.XmlReader reader, T target);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ReadCustomAttributes&lt;T&gt;(class System.Xml.XmlReader reader, !!T target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadCustomAttributes``1(System.Xml.XmlReader,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="target" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type that represents the metadata element that is being read; for example, <see cref="T:System.IdentityModel.Metadata.ContactPerson" />.</typeparam>
+        <param name="reader">The XML reader.</param>
+        <param name="target">An object of type <c>T</c>.</param>
+        <summary>Extensibility point for reading custom attributes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadCustomElement&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected virtual bool ReadCustomElement&lt;T&gt; (System.Xml.XmlReader reader, T target);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ReadCustomElement&lt;T&gt;(class System.Xml.XmlReader reader, !!T target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadCustomElement``1(System.Xml.XmlReader,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="target" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type that represents the metadata element that is being read; for example, <see cref="T:System.IdentityModel.Metadata.ContactPerson" />.</typeparam>
+        <param name="reader">The XML reader.</param>
+        <param name="target">An object of type <c>T</c>.</param>
+        <summary>Extensibility point for reading custom elements. By default, returns <see langword="false" />.</summary>
+        <returns>
+          <see langword="true" /> if an element of type <paramref name="T" /> is read; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadCustomRoleDescriptor">
+      <MemberSignature Language="C#" Value="protected virtual void ReadCustomRoleDescriptor (string xsiType, System.Xml.XmlReader reader, System.IdentityModel.Metadata.EntityDescriptor entityDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ReadCustomRoleDescriptor(string xsiType, class System.Xml.XmlReader reader, class System.IdentityModel.Metadata.EntityDescriptor entityDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadCustomRoleDescriptor(System.String,System.Xml.XmlReader,System.IdentityModel.Metadata.EntityDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xsiType" Type="System.String" />
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="entityDescriptor" Type="System.IdentityModel.Metadata.EntityDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="xsiType">The xsi type</param>
+        <param name="reader">The XML reader.</param>
+        <param name="entityDescriptor">The entity descriptor for adding the Role Descriptors</param>
+        <summary>Extensibility point for reading custom RoleDescriptors.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadDisplayClaim">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.DisplayClaim ReadDisplayClaim (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.DisplayClaim ReadDisplayClaim(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadDisplayClaim(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.DisplayClaim</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader.</param>
+        <summary>Reads a display claim.</summary>
+        <returns>The display claim.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IdentityModel.Metadata.MetadataSerializationException">Thrown if the XML is not well-formed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadEntitiesDescriptor">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.EntitiesDescriptor ReadEntitiesDescriptor (System.Xml.XmlReader reader, System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.EntitiesDescriptor ReadEntitiesDescriptor(class System.Xml.XmlReader reader, class System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadEntitiesDescriptor(System.Xml.XmlReader,System.IdentityModel.Selectors.SecurityTokenResolver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.EntitiesDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="tokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader.</param>
+        <param name="tokenResolver">The security token resolver.</param>
+        <summary>Reads an entities descriptor.</summary>
+        <returns>The entities descriptor.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IdentityModel.Metadata.MetadataSerializationException">Thrown if the XML is not well-formed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadEntityDescriptor">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.EntityDescriptor ReadEntityDescriptor (System.Xml.XmlReader inputReader, System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.EntityDescriptor ReadEntityDescriptor(class System.Xml.XmlReader inputReader, class System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadEntityDescriptor(System.Xml.XmlReader,System.IdentityModel.Selectors.SecurityTokenResolver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.EntityDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputReader" Type="System.Xml.XmlReader" />
+        <Parameter Name="tokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
+      </Parameters>
+      <Docs>
+        <param name="inputReader">The XML reader.</param>
+        <param name="tokenResolver">The security token resolver.</param>
+        <summary>Reads an entity descriptor.</summary>
+        <returns>An entity descriptor.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="inputReader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadIdentityProviderSingleSignOnDescriptor">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor ReadIdentityProviderSingleSignOnDescriptor (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor ReadIdentityProviderSingleSignOnDescriptor(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadIdentityProviderSingleSignOnDescriptor(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader.</param>
+        <summary>Reads an IDPSSO descriptor.</summary>
+        <returns>The IDPSSO descriptor.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadIndexedProtocolEndpoint">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.IndexedProtocolEndpoint ReadIndexedProtocolEndpoint (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.IndexedProtocolEndpoint ReadIndexedProtocolEndpoint(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadIndexedProtocolEndpoint(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.IndexedProtocolEndpoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader.</param>
+        <summary>Reads an indexed endpoint.</summary>
+        <returns>An indexed endpoint.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadKeyDescriptor">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.KeyDescriptor ReadKeyDescriptor (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.KeyDescriptor ReadKeyDescriptor(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadKeyDescriptor(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.KeyDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader.</param>
+        <summary>Reads a key descriptor.</summary>
+        <returns>The key descriptor.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadLocalizedName">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.LocalizedName ReadLocalizedName (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.LocalizedName ReadLocalizedName(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadLocalizedName(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.LocalizedName</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader.</param>
+        <summary>Reads a localized name.</summary>
+        <returns>A localized name.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadLocalizedUri">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.LocalizedUri ReadLocalizedUri (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.LocalizedUri ReadLocalizedUri(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadLocalizedUri(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.LocalizedUri</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader.</param>
+        <summary>Reads a localized URI.</summary>
+        <returns>A localized URI.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadMetadata">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Metadata.MetadataBase ReadMetadata (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IdentityModel.Metadata.MetadataBase ReadMetadata(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadMetadata(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.MetadataBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The stream to read.</param>
+        <summary>Reads the specified stream to deserialize an entity descriptor or an entities descriptor.</summary>
+        <returns>The descriptor. An instance of the <see cref="T:System.IdentityModel.Metadata.EntityDescriptor" /> or <see cref="T:System.IdentityModel.Metadata.EntitiesDescriptor" /> class.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadMetadata">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Metadata.MetadataBase ReadMetadata (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IdentityModel.Metadata.MetadataBase ReadMetadata(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadMetadata(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.MetadataBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader to be read.</param>
+        <summary>Reads the specified XML reader to deserialize an entity descriptor or an entities descriptor.</summary>
+        <returns>The descriptor. An instance of the <see cref="T:System.IdentityModel.Metadata.EntityDescriptor" /> or <see cref="T:System.IdentityModel.Metadata.EntitiesDescriptor" /> class.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadMetadata">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Metadata.MetadataBase ReadMetadata (System.Xml.XmlReader reader, System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IdentityModel.Metadata.MetadataBase ReadMetadata(class System.Xml.XmlReader reader, class System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadMetadata(System.Xml.XmlReader,System.IdentityModel.Selectors.SecurityTokenResolver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.MetadataBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="tokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader to be read.</param>
+        <param name="tokenResolver">The token resolver to use to resolve the signature token.</param>
+        <summary>Read the given XmlReader to deserialize an entity descriptor or an entities descriptor.</summary>
+        <returns>The descriptor. An instance of the <see cref="T:System.IdentityModel.Metadata.EntityDescriptor" /> or <see cref="T:System.IdentityModel.Metadata.EntitiesDescriptor" /> class.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="tokenResolver" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadMetadataCore">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.MetadataBase ReadMetadataCore (System.Xml.XmlReader reader, System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.MetadataBase ReadMetadataCore(class System.Xml.XmlReader reader, class System.IdentityModel.Selectors.SecurityTokenResolver tokenResolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadMetadataCore(System.Xml.XmlReader,System.IdentityModel.Selectors.SecurityTokenResolver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.MetadataBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="tokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader.</param>
+        <param name="tokenResolver">The security token resolver.</param>
+        <summary>Reads an entity descriptor or an entities descriptor.</summary>
+        <returns>The descriptor. An instance of the <see cref="T:System.IdentityModel.Metadata.EntityDescriptor" /> or <see cref="T:System.IdentityModel.Metadata.EntitiesDescriptor" /> class.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the <xref:System.IdentityModel.Metadata.MetadataSerializer.ReadMetadata%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="tokenResolver" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IdentityModel.Metadata.MetadataSerializationException">The reader is not positioned on an <see langword="&lt;EntityDescriptor&gt;" /> or an <see langword="&lt;EntitiesDescriptor&gt;" /> element.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadOrganization">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.Organization ReadOrganization (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.Organization ReadOrganization(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadOrganization(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.Organization</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader.</param>
+        <summary>Reads an organization.</summary>
+        <returns>An organization.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadProtocolEndpoint">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.ProtocolEndpoint ReadProtocolEndpoint (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.ProtocolEndpoint ReadProtocolEndpoint(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadProtocolEndpoint(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.ProtocolEndpoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader.</param>
+        <summary>Reads an endpoint.</summary>
+        <returns>An endpoint.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadRoleDescriptorAttributes">
+      <MemberSignature Language="C#" Value="protected virtual void ReadRoleDescriptorAttributes (System.Xml.XmlReader reader, System.IdentityModel.Metadata.RoleDescriptor roleDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ReadRoleDescriptorAttributes(class System.Xml.XmlReader reader, class System.IdentityModel.Metadata.RoleDescriptor roleDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadRoleDescriptorAttributes(System.Xml.XmlReader,System.IdentityModel.Metadata.RoleDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="roleDescriptor" Type="System.IdentityModel.Metadata.RoleDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader.</param>
+        <param name="roleDescriptor">The role descriptor.</param>
+        <summary>Reads role descriptor attributes.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="roleDescriptor" /> is .<see langword="null" />  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.RoleDescriptor.ProtocolsSupported" /> property of <paramref name="roleDescriptor" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadRoleDescriptorElement">
+      <MemberSignature Language="C#" Value="protected virtual bool ReadRoleDescriptorElement (System.Xml.XmlReader reader, System.IdentityModel.Metadata.RoleDescriptor roleDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ReadRoleDescriptorElement(class System.Xml.XmlReader reader, class System.IdentityModel.Metadata.RoleDescriptor roleDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadRoleDescriptorElement(System.Xml.XmlReader,System.IdentityModel.Metadata.RoleDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="roleDescriptor" Type="System.IdentityModel.Metadata.RoleDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader.</param>
+        <param name="roleDescriptor">The role descriptor.</param>
+        <summary>Reads role descriptor elements.</summary>
+        <returns>
+          <see langword="true" /> if an element is read; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="roleDescriptor" /> is .<see langword="null" />  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.RoleDescriptor.Contacts" /> property of <paramref name="roleDescriptor" /> is <see langword="null" />.  
+  
+ The <see cref="P:System.IdentityModel.Metadata.RoleDescriptor.Keys" /> property of <paramref name="roleDescriptor" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSecurityTokenServiceDescriptor">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.SecurityTokenServiceDescriptor ReadSecurityTokenServiceDescriptor (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.SecurityTokenServiceDescriptor ReadSecurityTokenServiceDescriptor(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadSecurityTokenServiceDescriptor(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.SecurityTokenServiceDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader.</param>
+        <summary>Reads a security token service descriptor.</summary>
+        <returns>A security token service descriptor.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadServiceProviderSingleSignOnDescriptor">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor ReadServiceProviderSingleSignOnDescriptor (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor ReadServiceProviderSingleSignOnDescriptor(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadServiceProviderSingleSignOnDescriptor(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader.</param>
+        <summary>Reads an SPSSO descriptor.</summary>
+        <returns>An SPSSO descriptor.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IdentityModel.Metadata.MetadataSerializationException">The XML was not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSingleSignOnDescriptorAttributes">
+      <MemberSignature Language="C#" Value="protected virtual void ReadSingleSignOnDescriptorAttributes (System.Xml.XmlReader reader, System.IdentityModel.Metadata.SingleSignOnDescriptor roleDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ReadSingleSignOnDescriptorAttributes(class System.Xml.XmlReader reader, class System.IdentityModel.Metadata.SingleSignOnDescriptor roleDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadSingleSignOnDescriptorAttributes(System.Xml.XmlReader,System.IdentityModel.Metadata.SingleSignOnDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="roleDescriptor" Type="System.IdentityModel.Metadata.SingleSignOnDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader.</param>
+        <param name="roleDescriptor">The SSO role descriptor.</param>
+        <summary>Reads SSO descriptor attributes.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="roleDescriptor" /> is .<see langword="null" /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSingleSignOnDescriptorElement">
+      <MemberSignature Language="C#" Value="protected virtual bool ReadSingleSignOnDescriptorElement (System.Xml.XmlReader reader, System.IdentityModel.Metadata.SingleSignOnDescriptor singleSignOnDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ReadSingleSignOnDescriptorElement(class System.Xml.XmlReader reader, class System.IdentityModel.Metadata.SingleSignOnDescriptor singleSignOnDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadSingleSignOnDescriptorElement(System.Xml.XmlReader,System.IdentityModel.Metadata.SingleSignOnDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="singleSignOnDescriptor" Type="System.IdentityModel.Metadata.SingleSignOnDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader.</param>
+        <param name="singleSignOnDescriptor">The SSO descriptor.</param>
+        <summary>Reads SSO descriptor elements.</summary>
+        <returns>
+          <see langword="true" /> if an element is read; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="singleSignOnDescriptor" /> is .<see langword="null" /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadWebServiceDescriptorAttributes">
+      <MemberSignature Language="C#" Value="protected virtual void ReadWebServiceDescriptorAttributes (System.Xml.XmlReader reader, System.IdentityModel.Metadata.WebServiceDescriptor roleDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ReadWebServiceDescriptorAttributes(class System.Xml.XmlReader reader, class System.IdentityModel.Metadata.WebServiceDescriptor roleDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadWebServiceDescriptorAttributes(System.Xml.XmlReader,System.IdentityModel.Metadata.WebServiceDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="roleDescriptor" Type="System.IdentityModel.Metadata.WebServiceDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader.</param>
+        <param name="roleDescriptor">The web service descriptor.</param>
+        <summary>Reads web service descriptor attributes.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="roleDescriptor" /> is .<see langword="null" /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadWebServiceDescriptorElement">
+      <MemberSignature Language="C#" Value="public virtual bool ReadWebServiceDescriptorElement (System.Xml.XmlReader reader, System.IdentityModel.Metadata.WebServiceDescriptor roleDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ReadWebServiceDescriptorElement(class System.Xml.XmlReader reader, class System.IdentityModel.Metadata.WebServiceDescriptor roleDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ReadWebServiceDescriptorElement(System.Xml.XmlReader,System.IdentityModel.Metadata.WebServiceDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="roleDescriptor" Type="System.IdentityModel.Metadata.WebServiceDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The XML reader.</param>
+        <param name="roleDescriptor">The web service descriptor.</param>
+        <summary>Reads web service descriptor elements.</summary>
+        <returns>
+          <see langword="true" /> if an element is read; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="roleDescriptor" /> is .<see langword="null" />  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.WebServiceDescriptor.TargetScopes" /> property of <paramref name="roleDescriptor" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.WebServiceDescriptor.ClaimTypesOffered" /> property of <paramref name="roleDescriptor" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.WebServiceDescriptor.TokenTypesOffered" /> property of <paramref name="roleDescriptor" /> is <see langword="null" />.  
+  
+ The parameter reader/roleDescriptor/roleDescriptor.TargetScopes/roleDescriptor.TargetScopes/roleDescriptor.TokenTypesOffered is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RevocationMode">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509RevocationMode RevocationMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.X509Certificates.X509RevocationMode RevocationMode" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.MetadataSerializer.RevocationMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.X509RevocationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the revocation mode of the X.509 certificate that is used to sign the metadata document.</summary>
+        <value>One of the enumeration values that specifies the X.509 certificate revocation mode. The default is specified by <see cref="F:System.IdentityModel.Configuration.IdentityConfiguration.DefaultRevocationMode" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityTokenSerializer">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Selectors.SecurityTokenSerializer SecurityTokenSerializer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Selectors.SecurityTokenSerializer SecurityTokenSerializer" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.MetadataSerializer.SecurityTokenSerializer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Selectors.SecurityTokenSerializer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the token serializer that is used by the current instance to serialize security tokens.</summary>
+        <value>The token serializer that is used by the current instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrustedIssuers">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;string&gt; TrustedIssuers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;string&gt; TrustedIssuers" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.MetadataSerializer.TrustedIssuers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of trusted issuers that are trusted to sign the metadata document by the current instance.</summary>
+        <value>The list of trusted issuers.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrustedStoreLocation">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.StoreLocation TrustedStoreLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.X509Certificates.StoreLocation TrustedStoreLocation" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.MetadataSerializer.TrustedStoreLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.X509Certificates.StoreLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the trusted store location of the X.509 certificate that is used to sign the metadata document.</summary>
+        <value>One of the enumeration values that specify the X.509 certificate store location. The default is specified by <see cref="F:System.IdentityModel.Configuration.IdentityConfiguration.DefaultTrustedStoreLocation" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateIssuer">
+      <MemberSignature Language="C#" Value="protected virtual void ValidateIssuer (System.Security.Cryptography.X509Certificates.X509Certificate2 signingCertificate);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ValidateIssuer(class System.Security.Cryptography.X509Certificates.X509Certificate2 signingCertificate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ValidateIssuer(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="signingCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" />
+      </Parameters>
+      <Docs>
+        <param name="signingCertificate">The signing certificate.</param>
+        <summary>Validates the X.509 certificate that signed the metadata document against the trusted issuers list specified by the <see cref="P:System.IdentityModel.Metadata.MetadataSerializer.TrustedIssuers" /> property. This method is invoked by the <see cref="M:System.IdentityModel.Metadata.MetadataSerializer.ValidateSigningCredential(System.IdentityModel.Tokens.SigningCredentials)" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this method does not perform any validation. Provide your own implementation to perform trusted issuer validation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateSigningCredential">
+      <MemberSignature Language="C#" Value="protected virtual void ValidateSigningCredential (System.IdentityModel.Tokens.SigningCredentials signingCredentials);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ValidateSigningCredential(class System.IdentityModel.Tokens.SigningCredentials signingCredentials) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.ValidateSigningCredential(System.IdentityModel.Tokens.SigningCredentials)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="signingCredentials" Type="System.IdentityModel.Tokens.SigningCredentials" />
+      </Parameters>
+      <Docs>
+        <param name="signingCredentials">The credentials that were used to sign the metadata document.</param>
+        <summary>Validates the signing credentials of the metadata document.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="signingCredentials" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteApplicationServiceDescriptor">
+      <MemberSignature Language="C#" Value="protected virtual void WriteApplicationServiceDescriptor (System.Xml.XmlWriter writer, System.IdentityModel.Metadata.ApplicationServiceDescriptor appService);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteApplicationServiceDescriptor(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.ApplicationServiceDescriptor appService) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteApplicationServiceDescriptor(System.Xml.XmlWriter,System.IdentityModel.Metadata.ApplicationServiceDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="appService" Type="System.IdentityModel.Metadata.ApplicationServiceDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XML writer.</param>
+        <param name="appService">The application service descriptor.</param>
+        <summary>Writes an application service descriptor.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="appService" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.ApplicationServiceDescriptor.Endpoints" /> property of <paramref name="appService" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.ApplicationServiceDescriptor.PassiveRequestorEndpoints" /> property of <paramref name="appService" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAttribute">
+      <MemberSignature Language="C#" Value="protected virtual void WriteAttribute (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.Saml2Attribute data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteAttribute(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.Saml2Attribute data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteAttribute(System.Xml.XmlWriter,System.IdentityModel.Tokens.Saml2Attribute)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2Attribute" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XML writer.</param>
+        <param name="data">The Saml2 attribute.</param>
+        <summary>Writes the &lt;saml:Attribute&gt; element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="data" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteContactPerson">
+      <MemberSignature Language="C#" Value="protected virtual void WriteContactPerson (System.Xml.XmlWriter writer, System.IdentityModel.Metadata.ContactPerson contactPerson);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteContactPerson(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.ContactPerson contactPerson) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteContactPerson(System.Xml.XmlWriter,System.IdentityModel.Metadata.ContactPerson)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="contactPerson" Type="System.IdentityModel.Metadata.ContactPerson" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XML writer.</param>
+        <param name="contactPerson">The contact person.</param>
+        <summary>Writes a contact person.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="contactPerson" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.ContactPerson.EmailAddresses" /> property of <paramref name="contactPerson" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.ContactPerson.TelephoneNumbers" /> property of <paramref name="contactPerson" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteCustomAttributes&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected virtual void WriteCustomAttributes&lt;T&gt; (System.Xml.XmlWriter writer, T source);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteCustomAttributes&lt;T&gt;(class System.Xml.XmlWriter writer, !!T source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteCustomAttributes``1(System.Xml.XmlWriter,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="source" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type that represents the element whose attribute is being written. For example <see cref="T:System.IdentityModel.Metadata.ContactPerson" />.</typeparam>
+        <param name="writer">The XML writer.</param>
+        <param name="source">The source element of type <c>T</c>.</param>
+        <summary>Extensible point to write custom attributes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteCustomElements&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected virtual void WriteCustomElements&lt;T&gt; (System.Xml.XmlWriter writer, T source);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteCustomElements&lt;T&gt;(class System.Xml.XmlWriter writer, !!T source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteCustomElements``1(System.Xml.XmlWriter,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="source" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type that represents the element that is being written.</typeparam>
+        <param name="writer">The XML writer.</param>
+        <param name="source">The source element of type <c>T</c>.</param>
+        <summary>Extensible point to write custom elements.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteDisplayClaim">
+      <MemberSignature Language="C#" Value="protected virtual void WriteDisplayClaim (System.Xml.XmlWriter writer, System.IdentityModel.Metadata.DisplayClaim claim);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteDisplayClaim(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.DisplayClaim claim) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteDisplayClaim(System.Xml.XmlWriter,System.IdentityModel.Metadata.DisplayClaim)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="claim" Type="System.IdentityModel.Metadata.DisplayClaim" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XML writer.</param>
+        <param name="claim">The display claim to write.</param>
+        <summary>Writes a display claim.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEntitiesDescriptor">
+      <MemberSignature Language="C#" Value="protected virtual void WriteEntitiesDescriptor (System.Xml.XmlWriter inputWriter, System.IdentityModel.Metadata.EntitiesDescriptor entitiesDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteEntitiesDescriptor(class System.Xml.XmlWriter inputWriter, class System.IdentityModel.Metadata.EntitiesDescriptor entitiesDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteEntitiesDescriptor(System.Xml.XmlWriter,System.IdentityModel.Metadata.EntitiesDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputWriter" Type="System.Xml.XmlWriter" />
+        <Parameter Name="entitiesDescriptor" Type="System.IdentityModel.Metadata.EntitiesDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="inputWriter">The XML writer.</param>
+        <param name="entitiesDescriptor">The entities descriptor.</param>
+        <summary>Writes an entities descriptor.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="inputWriter" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="entitiesDescriptor" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.EntitiesDescriptor.ChildEntities" /> property of <paramref name="entitiesDescriptor" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.EntitiesDescriptor.ChildEntityGroups" /> property of <paramref name="entitiesDescriptor" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEntityDescriptor">
+      <MemberSignature Language="C#" Value="protected virtual void WriteEntityDescriptor (System.Xml.XmlWriter inputWriter, System.IdentityModel.Metadata.EntityDescriptor entityDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteEntityDescriptor(class System.Xml.XmlWriter inputWriter, class System.IdentityModel.Metadata.EntityDescriptor entityDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteEntityDescriptor(System.Xml.XmlWriter,System.IdentityModel.Metadata.EntityDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inputWriter" Type="System.Xml.XmlWriter" />
+        <Parameter Name="entityDescriptor" Type="System.IdentityModel.Metadata.EntityDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="inputWriter">The XML writer.</param>
+        <param name="entityDescriptor">The entity descriptor.</param>
+        <summary>Writes an entity descriptor.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="inputWriter" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="entityDescriptor" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.EntityDescriptor.Contacts" /> property of <paramref name="entityDescriptor" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.EntityDescriptor.RoleDescriptors" /> property of <paramref name="entityDescriptor" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteIdentityProviderSingleSignOnDescriptor">
+      <MemberSignature Language="C#" Value="protected virtual void WriteIdentityProviderSingleSignOnDescriptor (System.Xml.XmlWriter writer, System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor identityProviderSingleSignOnDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteIdentityProviderSingleSignOnDescriptor(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor identityProviderSingleSignOnDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteIdentityProviderSingleSignOnDescriptor(System.Xml.XmlWriter,System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="identityProviderSingleSignOnDescriptor" Type="System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XML writer.</param>
+        <param name="identityProviderSingleSignOnDescriptor">The IDPSSO descriptor.</param>
+        <summary>Writes an IDPSSO descriptor.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="identityProviderSingleSignOnDescriptor" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor.SupportedAttributes" /> property of <paramref name="identityProviderSingleSignOnDescriptor" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.IdentityProviderSingleSignOnDescriptor.SingleSignOnServices" /> property of <paramref name="identityProviderSingleSignOnDescriptor" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteIndexedProtocolEndpoint">
+      <MemberSignature Language="C#" Value="protected virtual void WriteIndexedProtocolEndpoint (System.Xml.XmlWriter writer, System.IdentityModel.Metadata.IndexedProtocolEndpoint indexedEP, System.Xml.XmlQualifiedName element);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteIndexedProtocolEndpoint(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.IndexedProtocolEndpoint indexedEP, class System.Xml.XmlQualifiedName element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteIndexedProtocolEndpoint(System.Xml.XmlWriter,System.IdentityModel.Metadata.IndexedProtocolEndpoint,System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="indexedEP" Type="System.IdentityModel.Metadata.IndexedProtocolEndpoint" />
+        <Parameter Name="element" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XML writer.</param>
+        <param name="indexedEP">The indexed endpoint.</param>
+        <param name="element">The XML qualified element.</param>
+        <summary>Writes an indexed endpoint.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="indexedEP" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteKeyDescriptor">
+      <MemberSignature Language="C#" Value="protected virtual void WriteKeyDescriptor (System.Xml.XmlWriter writer, System.IdentityModel.Metadata.KeyDescriptor keyDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteKeyDescriptor(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.KeyDescriptor keyDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteKeyDescriptor(System.Xml.XmlWriter,System.IdentityModel.Metadata.KeyDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="keyDescriptor" Type="System.IdentityModel.Metadata.KeyDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XML writer.</param>
+        <param name="keyDescriptor">The key descriptor.</param>
+        <summary>Writes a key descriptor.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="keyDescriptor" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLocalizedName">
+      <MemberSignature Language="C#" Value="protected virtual void WriteLocalizedName (System.Xml.XmlWriter writer, System.IdentityModel.Metadata.LocalizedName name, System.Xml.XmlQualifiedName element);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteLocalizedName(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.LocalizedName name, class System.Xml.XmlQualifiedName element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteLocalizedName(System.Xml.XmlWriter,System.IdentityModel.Metadata.LocalizedName,System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="name" Type="System.IdentityModel.Metadata.LocalizedName" />
+        <Parameter Name="element" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XML writer.</param>
+        <param name="name">The localized name.</param>
+        <param name="element">The xml qualified name.</param>
+        <summary>Writes a localized name.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="name" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLocalizedUri">
+      <MemberSignature Language="C#" Value="protected virtual void WriteLocalizedUri (System.Xml.XmlWriter writer, System.IdentityModel.Metadata.LocalizedUri uri, System.Xml.XmlQualifiedName element);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteLocalizedUri(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.LocalizedUri uri, class System.Xml.XmlQualifiedName element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteLocalizedUri(System.Xml.XmlWriter,System.IdentityModel.Metadata.LocalizedUri,System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="uri" Type="System.IdentityModel.Metadata.LocalizedUri" />
+        <Parameter Name="element" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XML writer.</param>
+        <param name="uri">The localized URI.</param>
+        <param name="element">The xml qualified name.</param>
+        <summary>Writes a localized URI</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="uri" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteMetadata">
+      <MemberSignature Language="C#" Value="public void WriteMetadata (System.IO.Stream stream, System.IdentityModel.Metadata.MetadataBase metadata);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteMetadata(class System.IO.Stream stream, class System.IdentityModel.Metadata.MetadataBase metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteMetadata(System.IO.Stream,System.IdentityModel.Metadata.MetadataBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="metadata" Type="System.IdentityModel.Metadata.MetadataBase" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The stream to which to write the federation metadata.</param>
+        <param name="metadata">The metadata to write.</param>
+        <summary>Writes the federation metadata to the specified stream.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="metadata" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteMetadata">
+      <MemberSignature Language="C#" Value="public void WriteMetadata (System.Xml.XmlWriter writer, System.IdentityModel.Metadata.MetadataBase metadata);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteMetadata(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.MetadataBase metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteMetadata(System.Xml.XmlWriter,System.IdentityModel.Metadata.MetadataBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="metadata" Type="System.IdentityModel.Metadata.MetadataBase" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XML writer to which to write the federation Metadata</param>
+        <param name="metadata">The metadata to write.</param>
+        <summary>Writes the federation metadata to the specified XML writer.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="metadata" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteMetadataCore">
+      <MemberSignature Language="C#" Value="protected virtual void WriteMetadataCore (System.Xml.XmlWriter writer, System.IdentityModel.Metadata.MetadataBase metadataBase);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteMetadataCore(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.MetadataBase metadataBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteMetadataCore(System.Xml.XmlWriter,System.IdentityModel.Metadata.MetadataBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="metadataBase" Type="System.IdentityModel.Metadata.MetadataBase" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XML writer.</param>
+        <param name="metadataBase">The SAML metadata base. An instance of the <see cref="T:System.IdentityModel.Metadata.EntityDescriptor" /> or <see cref="T:System.IdentityModel.Metadata.EntitiesDescriptor" /> class.</param>
+        <summary>Writes the metadata.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="metadataBase" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IdentityModel.Metadata.MetadataSerializationException">
+          <paramref name="metadataBase" /> is not assignable from <see cref="T:System.IdentityModel.Metadata.EntityDescriptor" /> or <see cref="T:System.IdentityModel.Metadata.EntitiesDescriptor" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteOrganization">
+      <MemberSignature Language="C#" Value="protected virtual void WriteOrganization (System.Xml.XmlWriter writer, System.IdentityModel.Metadata.Organization organization);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteOrganization(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.Organization organization) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteOrganization(System.Xml.XmlWriter,System.IdentityModel.Metadata.Organization)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="organization" Type="System.IdentityModel.Metadata.Organization" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XML writer.</param>
+        <param name="organization">The organization.</param>
+        <summary>Writes an organization.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="organization" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteProtocolEndpoint">
+      <MemberSignature Language="C#" Value="protected virtual void WriteProtocolEndpoint (System.Xml.XmlWriter writer, System.IdentityModel.Metadata.ProtocolEndpoint endpoint, System.Xml.XmlQualifiedName element);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteProtocolEndpoint(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.ProtocolEndpoint endpoint, class System.Xml.XmlQualifiedName element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteProtocolEndpoint(System.Xml.XmlWriter,System.IdentityModel.Metadata.ProtocolEndpoint,System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="endpoint" Type="System.IdentityModel.Metadata.ProtocolEndpoint" />
+        <Parameter Name="element" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XML writer.</param>
+        <param name="endpoint">The endpoint.</param>
+        <param name="element">The xml qualified name element.</param>
+        <summary>Writes an endpoint.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="endpoint" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteRoleDescriptorAttributes">
+      <MemberSignature Language="C#" Value="protected virtual void WriteRoleDescriptorAttributes (System.Xml.XmlWriter writer, System.IdentityModel.Metadata.RoleDescriptor roleDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteRoleDescriptorAttributes(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.RoleDescriptor roleDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteRoleDescriptorAttributes(System.Xml.XmlWriter,System.IdentityModel.Metadata.RoleDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="roleDescriptor" Type="System.IdentityModel.Metadata.RoleDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XML writer.</param>
+        <param name="roleDescriptor">The role descriptor.</param>
+        <summary>Writes role descriptor attributes.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="roleDescriptor" /> is .<see langword="null" />  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.RoleDescriptor.ProtocolsSupported" /> property of <paramref name="roleDescriptor" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteRoleDescriptorElements">
+      <MemberSignature Language="C#" Value="protected virtual void WriteRoleDescriptorElements (System.Xml.XmlWriter writer, System.IdentityModel.Metadata.RoleDescriptor roleDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteRoleDescriptorElements(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.RoleDescriptor roleDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteRoleDescriptorElements(System.Xml.XmlWriter,System.IdentityModel.Metadata.RoleDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="roleDescriptor" Type="System.IdentityModel.Metadata.RoleDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XML writer.</param>
+        <param name="roleDescriptor">The role descriptor.</param>
+        <summary>Writes the role descriptor element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="roleDescriptor" /> is .<see langword="null" />  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.RoleDescriptor.Contacts" /> property of <paramref name="roleDescriptor" /> is <see langword="null" />.  
+  
+ The <see cref="P:System.IdentityModel.Metadata.RoleDescriptor.Keys" /> property of <paramref name="roleDescriptor" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteSecurityTokenServiceDescriptor">
+      <MemberSignature Language="C#" Value="protected virtual void WriteSecurityTokenServiceDescriptor (System.Xml.XmlWriter writer, System.IdentityModel.Metadata.SecurityTokenServiceDescriptor securityTokenServiceDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteSecurityTokenServiceDescriptor(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.SecurityTokenServiceDescriptor securityTokenServiceDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteSecurityTokenServiceDescriptor(System.Xml.XmlWriter,System.IdentityModel.Metadata.SecurityTokenServiceDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="securityTokenServiceDescriptor" Type="System.IdentityModel.Metadata.SecurityTokenServiceDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XML writer.</param>
+        <param name="securityTokenServiceDescriptor">The security token service descriptor.</param>
+        <summary>Writes a security token service descriptor.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="securityTokenServiceDescriptor" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.SecurityTokenServiceDescriptor.SecurityTokenServiceEndpoints" /> property of <paramref name="securityTokenServiceDescriptor" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.SecurityTokenServiceDescriptor.PassiveRequestorEndpoints" /> property of <paramref name="securityTokenServiceDescriptor" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteServiceProviderSingleSignOnDescriptor">
+      <MemberSignature Language="C#" Value="protected virtual void WriteServiceProviderSingleSignOnDescriptor (System.Xml.XmlWriter writer, System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor serviceProviderSingleSignOnDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteServiceProviderSingleSignOnDescriptor(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor serviceProviderSingleSignOnDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteServiceProviderSingleSignOnDescriptor(System.Xml.XmlWriter,System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="serviceProviderSingleSignOnDescriptor" Type="System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XML writer.</param>
+        <param name="serviceProviderSingleSignOnDescriptor">The SPSSO descriptor.</param>
+        <summary>Writes an SPSSO descriptor.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="serviceProviderSingleSignOnDescriptor" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.AssertionConsumerServices" /> property of <paramref name="serviceProviderSingleSignOnDescriptor" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteSingleSignOnDescriptorAttributes">
+      <MemberSignature Language="C#" Value="protected virtual void WriteSingleSignOnDescriptorAttributes (System.Xml.XmlWriter writer, System.IdentityModel.Metadata.SingleSignOnDescriptor singleSignOnDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteSingleSignOnDescriptorAttributes(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.SingleSignOnDescriptor singleSignOnDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteSingleSignOnDescriptorAttributes(System.Xml.XmlWriter,System.IdentityModel.Metadata.SingleSignOnDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="singleSignOnDescriptor" Type="System.IdentityModel.Metadata.SingleSignOnDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XML writer.</param>
+        <param name="singleSignOnDescriptor">The SSO descriptor.</param>
+        <summary>Writes the SSO descriptor attributes.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="singleSignOnDescriptor" /> is .<see langword="null" /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteSingleSignOnDescriptorElements">
+      <MemberSignature Language="C#" Value="protected virtual void WriteSingleSignOnDescriptorElements (System.Xml.XmlWriter writer, System.IdentityModel.Metadata.SingleSignOnDescriptor singleSignOnDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteSingleSignOnDescriptorElements(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.SingleSignOnDescriptor singleSignOnDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteSingleSignOnDescriptorElements(System.Xml.XmlWriter,System.IdentityModel.Metadata.SingleSignOnDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="singleSignOnDescriptor" Type="System.IdentityModel.Metadata.SingleSignOnDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XML writer.</param>
+        <param name="singleSignOnDescriptor">The SSO descriptor.</param>
+        <summary>Writes the SSO descriptor element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="singleSignOnDescriptor" /> is .<see langword="null" /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteWebServiceDescriptorAttributes">
+      <MemberSignature Language="C#" Value="protected virtual void WriteWebServiceDescriptorAttributes (System.Xml.XmlWriter writer, System.IdentityModel.Metadata.WebServiceDescriptor wsDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteWebServiceDescriptorAttributes(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.WebServiceDescriptor wsDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteWebServiceDescriptorAttributes(System.Xml.XmlWriter,System.IdentityModel.Metadata.WebServiceDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="wsDescriptor" Type="System.IdentityModel.Metadata.WebServiceDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XML writer.</param>
+        <param name="wsDescriptor">The web service descriptor.</param>
+        <summary>Writes the web service descriptor attributes.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="wsDescriptor" /> is .<see langword="null" /></exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteWebServiceDescriptorElements">
+      <MemberSignature Language="C#" Value="protected virtual void WriteWebServiceDescriptorElements (System.Xml.XmlWriter writer, System.IdentityModel.Metadata.WebServiceDescriptor wsDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteWebServiceDescriptorElements(class System.Xml.XmlWriter writer, class System.IdentityModel.Metadata.WebServiceDescriptor wsDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.MetadataSerializer.WriteWebServiceDescriptorElements(System.Xml.XmlWriter,System.IdentityModel.Metadata.WebServiceDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="wsDescriptor" Type="System.IdentityModel.Metadata.WebServiceDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The XML writer.</param>
+        <param name="wsDescriptor">The web service descriptor.</param>
+        <summary>Writes a web service descriptor element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="wsDescriptor" /> is .<see langword="null" />  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.WebServiceDescriptor.TargetScopes" /> property of <paramref name="wsDescriptor" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.WebServiceDescriptor.ClaimTypesOffered" /> property of <paramref name="wsDescriptor" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Metadata.WebServiceDescriptor.TokenTypesOffered" /> property of <paramref name="wsDescriptor" /> is <see langword="null" />.  
+  
+ The parameter reader/roleDescriptor/roleDescriptor.TargetScopes/roleDescriptor.TargetScopes/roleDescriptor.TokenTypesOffered is null.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

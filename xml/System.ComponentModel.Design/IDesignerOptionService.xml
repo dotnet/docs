@@ -1,0 +1,153 @@
+<Type Name="IDesignerOptionService" FullName="System.ComponentModel.Design.IDesignerOptionService">
+  <TypeSignature Language="C#" Value="public interface IDesignerOptionService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDesignerOptionService" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IDesignerOptionService" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides access to the designer options located on the **Tools** menu under the **Options** command in the Visual Studio development environment.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ComponentModel.Design.IDesignerOptionService> provides an interface that can be used to retrieve and update the values of the Windows Forms Designer options, which are listed within the dialog displayed by the **Options** command of the **Tools** menu of the Visual Studio development environment. The <xref:System.ComponentModel.Design.IDesignerOptionService.GetOptionValue%2A> method retrieves the value of a specified option. The <xref:System.ComponentModel.Design.IDesignerOptionService.SetOptionValue%2A> method sets a specified value for a specified option.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates accessing the <xref:System.ComponentModel.Design.IDesignerOptionService> to display the current values of the standard options.  
+  
+ [!code-cpp[IDesignerOptionServiceExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IDesignerOptionServiceExample/CPP/idesigneroptionservicecontrol.cpp#1)]
+ [!code-csharp[IDesignerOptionServiceExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IDesignerOptionServiceExample/CS/idesigneroptionservicecontrol.cs#1)]
+ [!code-vb[IDesignerOptionServiceExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IDesignerOptionServiceExample/VB/idesigneroptionservicecontrol.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetOptionValue">
+      <MemberSignature Language="C#" Value="public object GetOptionValue (string pageName, string valueName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetOptionValue(string pageName, string valueName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerOptionService.GetOptionValue(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pageName" Type="System.String" />
+        <Parameter Name="valueName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pageName">The name of the page that defines the option.</param>
+        <param name="valueName">The name of the option property.</param>
+        <summary>Gets the value of the specified Windows Forms Designer option.</summary>
+        <returns>The value of the specified option.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `pageName` parameter should consist of "WindowsFormsDesigner\\*CategoryName*", where *CategoryName* is an options category name without any white space characters. The category name is typically "General". Therefore, you can access the "General" designer options category with the English page name "WindowsFormsDesigner\General".  
+  
+> [!NOTE]
+>  The page and value names are always expected in English. Therefore, the following table is provided to help you access the options you want.  
+  
+ The following table indicates the English value names, their data format, and a description of each:  
+  
+|Value Name|Value Format|Description|  
+|----------------|------------------|-----------------|  
+|GridSize|<xref:System.Drawing.Size>|The size of each grid square.|  
+|GridSize.Width|<xref:System.Int32>|The width of each grid square. This nested property is read-only when accessed through the designer option service.|  
+|GridSize.Height|<xref:System.Int32>|The height of each grid square. This nested property is read-only when accessed through the designer option service.|  
+|ShowGrid|<xref:System.Boolean>|`true` if the grid should be shown; `false` if the grid should not be shown.|  
+|SnapToGrid|<xref:System.Boolean>|`true` if the positions of the components should be aligned to the grid; `false` if the positions should not necessarily be aligned.|  
+|LayoutMode|`Microsoft.VisualStudio.Windows.Forms.LayoutMode`|`SnapLines` to use snaplines, or `SnapToGrid` to align controls to the grid,|  
+|ObjectBoundSmartTagAutoShow|<xref:System.Boolean>|`true` to allow a component's smart tag panel to open automatically upon creation; otherwise, `false`.|  
+|AutoToolboxPopulate|<xref:System.Boolean>|`true` to automatically add a solution's custom controls and components to the **Toolbox**; otherwise, `false`.|  
+|UseOptimizedCodeGeneration|<xref:System.Boolean>|`true` if the component cache is enabled; otherwise, `false`.|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.ComponentModel.Design.IDesignerOptionService.GetOptionValue%2A> method to query for the value of the `GridSize` option.  
+  
+ [!code-cpp[IDesignerOptionServiceExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/IDesignerOptionServiceExample/CPP/idesigneroptionservicecontrol.cpp#2)]
+ [!code-csharp[IDesignerOptionServiceExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/IDesignerOptionServiceExample/CS/idesigneroptionservicecontrol.cs#2)]
+ [!code-vb[IDesignerOptionServiceExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IDesignerOptionServiceExample/VB/idesigneroptionservicecontrol.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOptionValue">
+      <MemberSignature Language="C#" Value="public void SetOptionValue (string pageName, string valueName, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetOptionValue(string pageName, string valueName, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDesignerOptionService.SetOptionValue(System.String,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pageName" Type="System.String" />
+        <Parameter Name="valueName" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="pageName">The name of the page that defines the option.</param>
+        <param name="valueName">The name of the option property.</param>
+        <param name="value">The new value.</param>
+        <summary>Sets the value of the specified Windows Forms Designer option.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `pageName` parameter should consist of "WindowsFormsDesigner\C*ategoryName*", where *CategoryName* is an options category name without any white space characters. The category name is typically "General". Therefore, you can access the "General" designer options category with the English page name "WindowsFormsDesigner\General".  
+  
+> [!NOTE]
+>  The page and value names are always expected in English. Therefore, the following table is provided to help you access the options you want.  
+  
+ The following table indicates the English value names, their data format, and a description of each:  
+  
+|Value Name|Value Format|Description|  
+|----------------|------------------|-----------------|  
+|GridSize|<xref:System.Drawing.Size>|The size of each grid square.|  
+|GridSize.Width|<xref:System.Int32>|The width of each grid square. This nested property is read-only when accessed through the designer option service.|  
+|GridSize.Height|<xref:System.Int32>|The height of each grid square. This nested property is read-only when accessed through the designer option service.|  
+|ShowGrid|<xref:System.Boolean>|`true` if the grid should be shown; `false` if the grid should not be shown.|  
+|SnapToGrid|<xref:System.Boolean>|`true` if the positions of the components should be aligned to the grid; `false` if the positions should not necessarily be aligned.|  
+|LayoutMode|`Microsoft.VisualStudio.Windows.Forms.LayoutMode`|`SnapLines` to use snaplines, or `SnapToGrid` to align controls to the grid,|  
+|ObjectBoundSmartTagAutoShow|<xref:System.Boolean>|`true` to allow a component's smart tag panel to open automatically upon creation; otherwise, `false`.|  
+|AutoToolboxPopulate|<xref:System.Boolean>|`true` to automatically add a solution's custom controls and components to the **Toolbox**; otherwise, `false`.|  
+|UseOptimizedCodeGeneration|<xref:System.Boolean>|`true` if the component cache is enabled; otherwise, `false`.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

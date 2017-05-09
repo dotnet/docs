@@ -1,0 +1,173 @@
+<Type Name="CanExecuteChangedEventManager" FullName="System.Windows.Input.CanExecuteChangedEventManager">
+  <TypeSignature Language="C#" Value="public class CanExecuteChangedEventManager : System.Windows.WeakEventManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CanExecuteChangedEventManager extends System.Windows.WeakEventManager" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.CanExecuteChangedEventManager" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.WeakEventManager</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a <see cref="T:System.Windows.WeakEventManager" /> implementation so that you can use the "weak event listener" pattern to attach listeners for the <see cref="E:System.Windows.Input.ICommand.CanExecuteChanged" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For information about how to use this class, see “Using an Existing Weak Event Manager Class“ in[Weak Event Patterns](~/docs/framework/wpf/advanced/weak-event-patterns.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddHandler">
+      <MemberSignature Language="C#" Value="public static void AddHandler (System.Windows.Input.ICommand source, EventHandler&lt;EventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddHandler(class System.Windows.Input.ICommand source, class System.EventHandler`1&lt;class System.EventArgs&gt; handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.CanExecuteChangedEventManager.AddHandler(System.Windows.Input.ICommand,System.EventHandler{System.EventArgs})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Windows.Input.ICommand" />
+        <Parameter Name="handler" Type="System.EventHandler&lt;System.EventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source object that the raises the <see cref="E:System.Windows.Input.ICommand.CanExecuteChanged" /> event.</param>
+        <param name="handler">The delegate that handles the <see cref="E:System.Windows.Input.ICommand.CanExecuteChanged" /> event.</param>
+        <summary>Adds the specified delegate as an event handler of the specified source.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.  
+  
+ --or--  
+  
+ <paramref name="handler" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NewListenerList">
+      <MemberSignature Language="C#" Value="protected override System.Windows.WeakEventManager.ListenerList NewListenerList ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.WeakEventManager/ListenerList NewListenerList() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.CanExecuteChangedEventManager.NewListenerList" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.WeakEventManager+ListenerList</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Purge">
+      <MemberSignature Language="C#" Value="protected override bool Purge (object source, object data, bool purgeAll);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool Purge(object source, object data, bool purgeAll) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.CanExecuteChangedEventManager.Purge(System.Object,System.Object,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+        <Parameter Name="data" Type="System.Object" />
+        <Parameter Name="purgeAll" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source for events being listened to.</param>
+        <param name="data">The data to check. This object is expected to be a <see cref="T:System.Windows.WeakEventManager.ListenerList" /> implementation.</param>
+        <param name="purgeAll">
+          <see langword="true" /> to stop listening to <c>source</c>, and completely remove all entries from <c>data</c>.</param>
+        <summary>Removes inactive listener entries from the data list for the provided source.</summary>
+        <returns>
+          <see langword="true" /> if some entries were actually removed; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveHandler">
+      <MemberSignature Language="C#" Value="public static void RemoveHandler (System.Windows.Input.ICommand source, EventHandler&lt;EventArgs&gt; handler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveHandler(class System.Windows.Input.ICommand source, class System.EventHandler`1&lt;class System.EventArgs&gt; handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.CanExecuteChangedEventManager.RemoveHandler(System.Windows.Input.ICommand,System.EventHandler{System.EventArgs})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Windows.Input.ICommand" />
+        <Parameter Name="handler" Type="System.EventHandler&lt;System.EventArgs&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source object that the raises the <see cref="E:System.Windows.Input.ICommand.CanExecuteChanged" /> event.</param>
+        <param name="handler">The delegate that handles the <see cref="E:System.Windows.Input.ICommand.CanExecuteChanged" /> event.</param>
+        <summary>Removes the specified event handler from the specified source.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="source" /> is <see langword="null" />.  
+  
+ --or--  
+  
+ <paramref name="handler" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartListening">
+      <MemberSignature Language="C#" Value="protected override void StartListening (object source);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void StartListening(object source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.CanExecuteChangedEventManager.StartListening(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="source">The object with the event.</param>
+        <summary>Begins listening for the <see cref="E:System.Windows.Input.ICommand.CanExecuteChanged" /> event on the specified source.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopListening">
+      <MemberSignature Language="C#" Value="protected override void StopListening (object source);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void StopListening(object source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.CanExecuteChangedEventManager.StopListening(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source object to stop listening for.</param>
+        <summary>Stops listening for the <see cref="E:System.Windows.Input.ICommand.CanExecuteChanged" /> event on the specified source.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

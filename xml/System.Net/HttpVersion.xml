@@ -1,0 +1,100 @@
+<Type Name="HttpVersion" FullName="System.Net.HttpVersion">
+  <TypeSignature Language="C#" Value="public class HttpVersion" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpVersion extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Net.HttpVersion" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the HTTP version numbers that are supported by the <see cref="T:System.Net.HttpWebRequest" /> and <see cref="T:System.Net.HttpWebResponse" /> classes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.HttpVersion> class defines the HTTP versions that are supported by the <xref:System.Net.HttpWebRequest> and <xref:System.Net.HttpWebResponse> classes. The HTTP version number is used to control version-specific features of HTTP, such as pipelining and chunking.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of <xref:System.Net.HttpVersion>.  
+  
+ [!code-cpp[HttpVersion_Version10#1](~/samples/snippets/cpp/VS_Snippets_Remoting/HttpVersion_Version10/CPP/httpversion_version10.cpp#1)]
+ [!code-csharp[HttpVersion_Version10#1](~/samples/snippets/csharp/VS_Snippets_Remoting/HttpVersion_Version10/CS/httpversion_version10.cs#1)]
+ [!code-vb[HttpVersion_Version10#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/HttpVersion_Version10/VB/httpversion_version10.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpVersion ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.HttpVersion.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.HttpVersion" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version10">
+      <MemberSignature Language="C#" Value="public static readonly Version Version10;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Version Version10" />
+      <MemberSignature Language="DocId" Value="F:System.Net.HttpVersion.Version10" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Defines a <see cref="T:System.Version" /> instance for HTTP 1.0.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version11">
+      <MemberSignature Language="C#" Value="public static readonly Version Version11;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Version Version11" />
+      <MemberSignature Language="DocId" Value="F:System.Net.HttpVersion.Version11" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Defines a <see cref="T:System.Version" /> instance for HTTP 1.1.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

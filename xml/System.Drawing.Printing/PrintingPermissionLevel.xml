@@ -1,0 +1,89 @@
+<Type Name="PrintingPermissionLevel" FullName="System.Drawing.Printing.PrintingPermissionLevel">
+  <TypeSignature Language="C#" Value="public enum PrintingPermissionLevel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PrintingPermissionLevel extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrintingPermissionLevel" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of printing that code is allowed to do.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Drawing.Printing.PrintingPermission> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllPrinting">
+      <MemberSignature Language="C#" Value="AllPrinting" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrintingPermissionLevel AllPrinting = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintingPermissionLevel.AllPrinting" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrintingPermissionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Provides full access to all printers.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultPrinting">
+      <MemberSignature Language="C#" Value="DefaultPrinting" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrintingPermissionLevel DefaultPrinting = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrintingPermissionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Provides printing programmatically to the default printer, along with safe printing through semirestricted dialog box. <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting" /> is a subset of <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.AllPrinting" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoPrinting">
+      <MemberSignature Language="C#" Value="NoPrinting" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrintingPermissionLevel NoPrinting = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintingPermissionLevel.NoPrinting" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrintingPermissionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Prevents access to printers. <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.NoPrinting" /> is a subset of <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SafePrinting">
+      <MemberSignature Language="C#" Value="SafePrinting" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrintingPermissionLevel SafePrinting = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrintingPermissionLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Provides printing only from a restricted dialog box. <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting" /> is a subset of <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

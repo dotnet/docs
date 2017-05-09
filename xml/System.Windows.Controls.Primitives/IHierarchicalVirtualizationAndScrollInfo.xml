@@ -1,0 +1,140 @@
+<Type Name="IHierarchicalVirtualizationAndScrollInfo" FullName="System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo">
+  <TypeSignature Language="C#" Value="public interface IHierarchicalVirtualizationAndScrollInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHierarchicalVirtualizationAndScrollInfo" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides properties through which a control that displays hierarchical data communicates with a <see cref="T:System.Windows.Controls.VirtualizingPanel" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Controls that display a header and child items use this interface to provide information to a <xref:System.Windows.Controls.VirtualizingPanel>. The <xref:System.Windows.Controls.TreeViewItem> and <xref:System.Windows.Controls.GroupItem> implement this interface.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Constraints">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.HierarchicalVirtualizationConstraints Constraints { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.HierarchicalVirtualizationConstraints Constraints" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.Constraints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.HierarchicalVirtualizationConstraints</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an object that represents the sizes of the control's viewport and cache.</summary>
+        <value>An object that represents the sizes of the control's viewport and cache.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderDesiredSizes">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes HeaderDesiredSizes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes HeaderDesiredSizes" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.HeaderDesiredSizes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that represents the desired size of the control's header, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)] and in logical units.</summary>
+        <value>An object that represents the desired size of the control's header, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)] and in logical units.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InBackgroundLayout">
+      <MemberSignature Language="C#" Value="public bool InBackgroundLayout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InBackgroundLayout" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the control's layout pass occurs at a lower priority.</summary>
+        <value>
+          <see langword="true" /> if the control's layout pass occurs at a lower priority; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Virtualizing panels can use the <xref:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.InBackgroundLayout%2A> property to populate the caches of the control.  By performing a layout pass at a lower priority to populate the caches, an application does not become unresponsive.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemDesiredSizes">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes ItemDesiredSizes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes ItemDesiredSizes" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemDesiredSizes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an object that represents the desired size of the control's items, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)] and in logical units.</summary>
+        <value>An object that represents the desired size of the control's items, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)] and in logical units.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsHost">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.Panel ItemsHost { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.Panel ItemsHost" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.ItemsHost" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Panel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Controls.Panel" /> that displays the items of the control.</summary>
+        <value>The <see cref="T:System.Windows.Controls.Panel" /> that displays the items of the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MustDisableVirtualization">
+      <MemberSignature Language="C#" Value="public bool MustDisableVirtualization { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MustDisableVirtualization" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.IHierarchicalVirtualizationAndScrollInfo.MustDisableVirtualization" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the owning <see cref="T:System.Windows.Controls.ItemsControl" /> should virtualize its items.</summary>
+        <value>
+          <see langword="true" /> if the owning <see cref="T:System.Windows.Controls.ItemsControl" /> should virtualize its items; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

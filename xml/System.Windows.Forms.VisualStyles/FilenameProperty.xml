@@ -1,0 +1,153 @@
+<Type Name="FilenameProperty" FullName="System.Windows.Forms.VisualStyles.FilenameProperty">
+  <TypeSignature Language="C#" Value="public enum FilenameProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FilenameProperty extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.FilenameProperty" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Identifies the names of the image files that are used to draw a visual style element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.FilenameProperty> enumeration represents the names of image files that are used to draw visual style elements. The <xref:System.Windows.Forms.VisualStyles.FilenameProperty> values are used as an argument in the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetFilename%2A?displayProperty=fullName> method to specify which file name property to retrieve for the element that the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> currently represents.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GlyphImageFile">
+      <MemberSignature Language="C#" Value="GlyphImageFile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.FilenameProperty GlyphImageFile = int32(3008)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.FilenameProperty.GlyphImageFile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.FilenameProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of the glyph image file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageFile">
+      <MemberSignature Language="C#" Value="ImageFile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.FilenameProperty ImageFile = int32(3001)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.FilenameProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of the background image file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageFile1">
+      <MemberSignature Language="C#" Value="ImageFile1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.FilenameProperty ImageFile1 = int32(3002)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.FilenameProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of the first multiple-image file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageFile2">
+      <MemberSignature Language="C#" Value="ImageFile2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.FilenameProperty ImageFile2 = int32(3003)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.FilenameProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of the second multiple-image file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageFile3">
+      <MemberSignature Language="C#" Value="ImageFile3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.FilenameProperty ImageFile3 = int32(3004)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.FilenameProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of the third multiple-image file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageFile4">
+      <MemberSignature Language="C#" Value="ImageFile4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.FilenameProperty ImageFile4 = int32(3005)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.FilenameProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of the fourth multiple-image file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageFile5">
+      <MemberSignature Language="C#" Value="ImageFile5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.FilenameProperty ImageFile5 = int32(3006)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.FilenameProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of the fifth multiple-image file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StockImageFile">
+      <MemberSignature Language="C#" Value="StockImageFile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.FilenameProperty StockImageFile = int32(3007)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.FilenameProperty.StockImageFile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.FilenameProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of the stock image file.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,76 @@
+<Type Name="SessionStateType" FullName="System.Web.Management.SessionStateType">
+  <TypeSignature Language="C#" Value="public enum SessionStateType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SessionStateType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Management.SessionStateType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the session-state type used when installing a session-state database provider.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Management.SessionStateType> enumeration with the <xref:System.Web.Management.SqlServices.InstallSessionState%2A> method of the <xref:System.Web.Management.SqlServices> type.  
+  
+ [!code-csharp[System.Web.Management.SqlServices#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#8)]
+ [!code-vb[System.Web.Management.SqlServices#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#8)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Custom">
+      <MemberSignature Language="C#" Value="Custom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.SessionStateType Custom = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Management.SessionStateType.Custom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Management.SessionStateType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Session-state data and stored procedures are placed in a custom data store.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Persisted">
+      <MemberSignature Language="C#" Value="Persisted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.SessionStateType Persisted = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Management.SessionStateType.Persisted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Management.SessionStateType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Session-state data and stored procedures are placed in the "ASPState" database. Session-state data will survive a restart of the database server.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Temporary">
+      <MemberSignature Language="C#" Value="Temporary" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.SessionStateType Temporary = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Management.SessionStateType.Temporary" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Management.SessionStateType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Session state data is stored in tempdb, and stored procedures are placed in the "ASPState" database. Session state data will not survive a restart of SQL Server.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

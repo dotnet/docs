@@ -1,0 +1,149 @@
+<Type Name="ECParameters" FullName="System.Security.Cryptography.ECParameters">
+  <TypeSignature Language="C#" Value="public struct ECParameters" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ECParameters extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ECParameters" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the standard parameters for the elliptic curve cryptography (ECC) algorithm.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Curve">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.ECCurve Curve;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype System.Security.Cryptography.ECCurve Curve" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECParameters.Curve" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECCurve</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the curve associated with the public key (<see cref="F:System.Security.Cryptography.ECParameters.Q" />) and the optional private key (<see cref="F:System.Security.Cryptography.ECParameters.D" />).</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="D">
+      <MemberSignature Language="C#" Value="public byte[] D;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int8[] D" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECParameters.D" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the private key <see langword="D" /> for the elliptic curve cryptography (ECC) algorithm, stored in big-endian format.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Q">
+      <MemberSignature Language="C#" Value="public System.Security.Cryptography.ECPoint Q;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype System.Security.Cryptography.ECPoint Q" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECParameters.Q" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.ECPoint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the public key <see langword="Q" /> for the elliptic curve cryptography (ECC) algorithm.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public void Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Validate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECParameters.Validate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Validates the current object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Security.Cryptography.ECParameters.Validate%2A> method checks the integrity of the <xref:System.Security.Cryptography.ECParameters> structure, throwing a <xref:System.Security.Cryptography.CryptographicException> when it is not valid. The following are the requirements:  
+  
+-   <xref:System.Security.Cryptography.ECParameters.Q>.<xref:System.Security.Cryptography.ECPoint.X> and <xref:System.Security.Cryptography.ECParameters.Q>.<xref:System.Security.Cryptography.ECPoint.Y> are required fields and must have the same length.  
+  
+-   If the curve is an explicit curve, <xref:System.Security.Cryptography.ECParameters.D> is required and must have the same length as <xref:System.Security.Cryptography.ECParameters.Curve>.<xref:System.Security.Cryptography.ECCurve.Order>.  
+  
+-   If the curve is a named curve, <xref:System.Security.Cryptography.ECParameters.D> is required and must have the same length as <xref:System.Security.Cryptography.ECParameters.Q>.<xref:System.Security.Cryptography.ECPoint.X> and <xref:System.Security.Cryptography.ECParameters.Q>.<xref:System.Security.Cryptography.ECPoint.Y>.  
+  
+-   <xref:System.Security.Cryptography.ECParameters.Curve>.<xref:System.Security.Cryptography.ECCurve.Validate%2A> must also succeed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The key or curve parameters are not valid for the current curve type.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

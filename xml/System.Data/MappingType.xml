@@ -1,0 +1,122 @@
+<Type Name="MappingType" FullName="System.Data.MappingType">
+  <TypeSignature Language="C#" Value="public enum MappingType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed MappingType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.MappingType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how a <see cref="T:System.Data.DataColumn" /> is mapped.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.MappingType> enumeration is used when getting or setting the <xref:System.Data.DataColumn.ColumnMapping%2A> property of the <xref:System.Data.DataColumn>. The property determines how a column's values will be written when the <xref:System.Data.DataSet.WriteXml%2A> method is called on a <xref:System.Data.DataSet> to write the data and schema out as an XML document.  
+  
+   
+  
+## Examples  
+ The following example returns the <xref:System.Data.DataColumn.ColumnMapping%2A> property value for each column in a table.  
+  
+ [!code-csharp[Classic WebData MappingType Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData MappingType Example/CS/source.cs#1)]
+ [!code-vb[Classic WebData MappingType Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData MappingType Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Attribute">
+      <MemberSignature Language="C#" Value="Attribute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.MappingType Attribute = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.MappingType.Attribute" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.MappingType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The column is mapped to an XML attribute.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Element">
+      <MemberSignature Language="C#" Value="Element" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.MappingType Element = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.MappingType.Element" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.MappingType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The column is mapped to an XML element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Hidden">
+      <MemberSignature Language="C#" Value="Hidden" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.MappingType Hidden = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.MappingType.Hidden" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.MappingType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The column is mapped to an internal structure.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SimpleContent">
+      <MemberSignature Language="C#" Value="SimpleContent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.MappingType SimpleContent = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.MappingType.SimpleContent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.MappingType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The column is mapped to an <see cref="T:System.Xml.XmlText" /> node.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,66 @@
+<Type Name="SearchScope" FullName="System.DirectoryServices.Protocols.SearchScope">
+  <TypeSignature Language="C#" Value="public enum SearchScope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SearchScope extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SearchScope" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.SearchScope" /> enumeration specifies the scope of a search.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Base">
+      <MemberSignature Language="C#" Value="Base" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.SearchScope Base = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SearchScope.Base" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.SearchScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Search only the specified base object. The value is equal to 0.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OneLevel">
+      <MemberSignature Language="C#" Value="OneLevel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.SearchScope OneLevel = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SearchScope.OneLevel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.SearchScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Search the child objects of the base object, but not the base object itself. The value is equal to 1.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Subtree">
+      <MemberSignature Language="C#" Value="Subtree" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.SearchScope Subtree = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SearchScope.Subtree" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.SearchScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Search the base object and all child objects. The value is equal to 2.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

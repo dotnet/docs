@@ -1,0 +1,128 @@
+<Type Name="ProfileAutoSaveEventArgs" FullName="System.Web.Profile.ProfileAutoSaveEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class ProfileAutoSaveEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProfileAutoSaveEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileAutoSaveEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.Profile.ProfileModule.ProfileAutoSaving" /> event of the <see cref="T:System.Web.Profile.ProfileModule" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Profile.ProfileAutoSaveEventHandler> delegate is defined for the <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event of the <xref:System.Web.Profile.ProfileModule> class. You can access the <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event of the <xref:System.Web.Profile.ProfileModule> class in the Global.asax file for your ASP.NET application, as shown in the example for this topic. The <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event is raised at the end of page execution if the <xref:System.Web.Profile.ProfileManager.AutomaticSaveEnabled%2A?displayProperty=fullName> property is `true`.  
+  
+ The <xref:System.Configuration.SettingsBase.Save%2A> method automatically determines whether properties that are made up of primitive types, strings, or <xref:System.DateTime> objects have been changed, by checking the <xref:System.Configuration.SettingsPropertyValue.IsDirty%2A> property value for each <xref:System.Configuration.SettingsPropertyValue> in the user profile. The <xref:System.Configuration.SettingsBase.Save%2A> method cannot explicitly determine whether a custom class has changed. You can use the <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event to determine whether a custom object has been modified and then either continue with the automatic save if the object has been modified or cancel the automatic save if the object has not been modified.  
+  
+ To cancel the automatic profile save operation, set the <xref:System.Web.Profile.ProfileAutoSaveEventArgs.ContinueWithProfileAutoSave%2A> property to `false` in the <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event; otherwise, set the <xref:System.Web.Profile.ProfileAutoSaveEventArgs.ContinueWithProfileAutoSave%2A> property to `true`.  
+  
+ There may be multiple subscribers to the <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event. The <xref:System.Web.Profile.ProfileModule> will use the last value that the <xref:System.Web.Profile.ProfileAutoSaveEventArgs.ContinueWithProfileAutoSave%2A> property is set to. As a result, it is recommended that you explicitly set the <xref:System.Web.Profile.ProfileAutoSaveEventArgs.ContinueWithProfileAutoSave%2A> property in the <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event regardless of whether you are canceling or continuing with the automatic save, as you may need to overwrite the value set by an earlier subscriber.  
+  
+   
+  
+## Examples  
+ The following code example shows the <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event included in the Global.asax file for an ASP.NET application.  
+  
+ [!code-csharp[System.Web.Profile.ProfileManager.ProfileAutoSaving#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager.ProfileAutoSaving/CS/global.asax#11)]
+ [!code-vb[System.Web.Profile.ProfileManager.ProfileAutoSaving#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager.ProfileAutoSaving/VB/global.asax#11)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProfileAutoSaveEventArgs (System.Web.HttpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileAutoSaveEventArgs.#ctor(System.Web.HttpContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.Web.HttpContext" /> of the current request.</param>
+        <summary>Creates an instance of the <see cref="T:System.Web.Profile.ProfileAutoSaveEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Profile.ProfileAutoSaveEventArgs.%23ctor%2A> creates an instance of the <xref:System.Web.Profile.ProfileAutoSaveEventArgs> class and sets the <xref:System.Web.Profile.ProfileAutoSaveEventArgs.Context%2A> property to the specified <xref:System.Web.HttpContext>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public System.Web.HttpContext Context { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpContext Context" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileAutoSaveEventArgs.Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.HttpContext" /> for the current request.</summary>
+        <value>The <see cref="T:System.Web.HttpContext" /> for the current request</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Profile.ProfileAutoSaveEventArgs> object provides event information to the <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event of the <xref:System.Web.Profile.ProfileModule> class. The <xref:System.Web.Profile.ProfileAutoSaveEventArgs.Context%2A> property provides access to the <xref:System.Web.HttpContext> of the current request.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContinueWithProfileAutoSave">
+      <MemberSignature Language="C#" Value="public bool ContinueWithProfileAutoSave { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ContinueWithProfileAutoSave" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileAutoSaveEventArgs.ContinueWithProfileAutoSave" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Web.Profile.ProfileModule" /> will automatically save the user profile.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.Profile.ProfileModule" /> will automatically save the user profile; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.SettingsBase.Save%2A> method automatically determines whether properties that are made up of primitive types, strings, or <xref:System.DateTime> objects have been changed, by checking the <xref:System.Configuration.SettingsPropertyValue.IsDirty%2A> property value for each <xref:System.Configuration.SettingsPropertyValue> in the user profile. The <xref:System.Configuration.SettingsBase.Save%2A> method cannot explicitly determine whether a custom class has changed. You can use the <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event to determine whether a custom object has been modified and then either continue with the automatic save if the object has been modified or cancel the automatic save if the object has not been modified.  
+  
+ To cancel the automatic profile save operation, set the <xref:System.Web.Profile.ProfileAutoSaveEventArgs.ContinueWithProfileAutoSave%2A> property to `false` in the <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event; otherwise, set the <xref:System.Web.Profile.ProfileAutoSaveEventArgs.ContinueWithProfileAutoSave%2A> property to `true`.  
+  
+ There may be multiple subscribers to the <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event. The <xref:System.Web.Profile.ProfileModule> will use the last value that the <xref:System.Web.Profile.ProfileAutoSaveEventArgs.ContinueWithProfileAutoSave%2A> property is set to. As a result, it is recommended that you explicitly set the <xref:System.Web.Profile.ProfileAutoSaveEventArgs.ContinueWithProfileAutoSave%2A> property in the <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event whether you are canceling or continuing with the automatic save, as you may need to overwrite the value set by an earlier subscriber.  
+  
+   
+  
+## Examples  
+ The following code example shows the <xref:System.Web.Profile.ProfileModule.ProfileAutoSaving> event included in the Global.asax file for an ASP.NET application.  
+  
+ [!code-csharp[System.Web.Profile.ProfileManager.ProfileAutoSaving#11](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager.ProfileAutoSaving/CS/global.asax#11)]
+ [!code-vb[System.Web.Profile.ProfileManager.ProfileAutoSaving#11](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager.ProfileAutoSaving/VB/global.asax#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

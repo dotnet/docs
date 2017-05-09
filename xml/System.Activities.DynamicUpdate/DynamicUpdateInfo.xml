@@ -1,0 +1,179 @@
+<Type Name="DynamicUpdateInfo" FullName="System.Activities.DynamicUpdate.DynamicUpdateInfo">
+  <TypeSignature Language="C#" Value="public static class DynamicUpdateInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DynamicUpdateInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.DynamicUpdate.DynamicUpdateInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies dynamic update information.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the versioning and dynamic update functionality of Windows Workflow Foundation. [!INCLUDE[crabout](~/includes/crabout-md.md)] workflow versioning, workflow identity, and dynamic update, see the following topics.  
+  
+ [Workflow Versioning](http://go.microsoft.com/fwlink/?LinkID=271561)  
+ Describes the workflow versioning functionality introduced in [!INCLUDE[net_v45](~/includes/net-v45-md.md)].  
+  
+ [Dynamic Update](http://go.microsoft.com/fwlink/?LinkId=271563)  
+ Describes how to update the workflow definition of a persisted workflow instance by using dynamic update.  
+  
+ [Using WorkflowApplication Identity and Versioning](http://go.microsoft.com/fwlink/?LinkId=271564)  
+ Describes how to use <xref:System.Activities.WorkflowIdentity> to host multiple versions of a workflow side-by-side.  
+  
+ [Side by Side Versioning in WorkflowServiceHost](http://go.microsoft.com/fwlink/?LinkId=271565)  
+ Describes how to host multiple versions of a workflow on a single endpoint.  
+  
+ [How to: Host Multiple Versions of a Workflow Side-by-Side](http://go.microsoft.com/fwlink/?LinkId=271566)  
+ This step in the [Getting Started Tutorial](http://go.microsoft.com/fwlink/?LinkId=271570) demonstrates updating a workflow definition, and hosting workflows using both the old and new definition at the same time.  
+  
+ [How to: Update the Definition of a Running Workflow Instance](http://go.microsoft.com/fwlink/?LinkId=271567)  
+ This step in the [Getting Started Tutorial](http://go.microsoft.com/fwlink/?LinkId=271570) demonstrates updating persisted workflow instances to use a new workflow definition.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetMapItem">
+      <MemberSignature Language="C#" Value="public static System.Activities.DynamicUpdate.DynamicUpdateMapItem GetMapItem (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.DynamicUpdate.DynamicUpdateMapItem GetMapItem(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateInfo.GetMapItem(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.DynamicUpdate.DynamicUpdateMapItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The instance of the specified object.</param>
+        <summary>Gets the map item for the <see cref="T:System.Activities.DynamicUpdate.DynamicUpdateInfo" />.</summary>
+        <returns>The map item.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOriginalActivityBuilder">
+      <MemberSignature Language="C#" Value="public static System.Activities.ActivityBuilder GetOriginalActivityBuilder (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.ActivityBuilder GetOriginalActivityBuilder(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateInfo.GetOriginalActivityBuilder(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.ActivityBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The instance of the specified object.</param>
+        <summary>Gets the original activity builder for the <see cref="T:System.Activities.DynamicUpdate.DynamicUpdateInfo" />.</summary>
+        <returns>The original activity builder.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOriginalDefinition">
+      <MemberSignature Language="C#" Value="public static System.Activities.Activity GetOriginalDefinition (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Activity GetOriginalDefinition(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateInfo.GetOriginalDefinition(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The instance of the specified object.</param>
+        <summary>Gets the original definition for the <see cref="T:System.Activities.DynamicUpdate.DynamicUpdateInfo" />.</summary>
+        <returns>The original definition.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMapItem">
+      <MemberSignature Language="C#" Value="public static void SetMapItem (object instance, System.Activities.DynamicUpdate.DynamicUpdateMapItem mapItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetMapItem(object instance, class System.Activities.DynamicUpdate.DynamicUpdateMapItem mapItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateInfo.SetMapItem(System.Object,System.Activities.DynamicUpdate.DynamicUpdateMapItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="mapItem" Type="System.Activities.DynamicUpdate.DynamicUpdateMapItem" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The instance of the specified object.</param>
+        <param name="mapItem">The map item to be set.</param>
+        <summary>Sets the map item for the <see cref="T:System.Activities.DynamicUpdate.DynamicUpdateInfo" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOriginalActivityBuilder">
+      <MemberSignature Language="C#" Value="public static void SetOriginalActivityBuilder (object instance, System.Activities.ActivityBuilder originalActivityBuilder);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetOriginalActivityBuilder(object instance, class System.Activities.ActivityBuilder originalActivityBuilder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateInfo.SetOriginalActivityBuilder(System.Object,System.Activities.ActivityBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="originalActivityBuilder" Type="System.Activities.ActivityBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The instance of the specified object.</param>
+        <param name="originalActivityBuilder">The original activity builder to be set.</param>
+        <summary>Sets the original activity builder for the <see cref="T:System.Activities.DynamicUpdate.DynamicUpdateInfo" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetOriginalDefinition">
+      <MemberSignature Language="C#" Value="public static void SetOriginalDefinition (object instance, System.Activities.Activity originalDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetOriginalDefinition(object instance, class System.Activities.Activity originalDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateInfo.SetOriginalDefinition(System.Object,System.Activities.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="originalDefinition" Type="System.Activities.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The instance of the specified object.</param>
+        <param name="originalDefinition">The original definition to be set.</param>
+        <summary>Sets the original definition for the <see cref="T:System.Activities.DynamicUpdate.DynamicUpdateInfo" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

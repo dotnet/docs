@@ -1,0 +1,55 @@
+<Type Name="ExeContext" FullName="System.Configuration.ExeContext">
+  <TypeSignature Language="C#" Value="public sealed class ExeContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExeContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.ExeContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Manages the path context for the current application. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ExePath">
+      <MemberSignature Language="C#" Value="public string ExePath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExePath" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ExeContext.ExePath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current path for the application.</summary>
+        <value>A string value containing the current path.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserLevel">
+      <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationUserLevel UserLevel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.ConfigurationUserLevel UserLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ExeContext.UserLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationUserLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object representing the path level of the current application.</summary>
+        <value>A <see cref="T:System.Configuration.ConfigurationUserLevel" /> object representing the path level of the current application.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

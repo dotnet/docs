@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "literals [Visual Basic], XML"
 ms.assetid: 37987c15-4ab8-471b-bd45-399816bfb57f
 caps.latest.revision: 27
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

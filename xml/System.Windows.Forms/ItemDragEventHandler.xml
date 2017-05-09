@@ -1,0 +1,41 @@
+<Type Name="ItemDragEventHandler" FullName="System.Windows.Forms.ItemDragEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void ItemDragEventHandler(object sender, ItemDragEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ItemDragEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ItemDragEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Forms.ItemDragEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">An <see cref="T:System.Windows.Forms.ItemDragEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.ListView.ItemDrag" /> event of a <see cref="T:System.Windows.Forms.ListView" /> or <see cref="T:System.Windows.Forms.TreeView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create an <xref:System.Windows.Forms.ItemDragEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to enable drag-and-drop operations within a <xref:System.Windows.Forms.TreeView> control. In the example, any node can be dragged to another node that is not a descendant of the dragged node. The dragged node, including all of its descendant nodes, becomes a child of the destination node. When the left mouse button is used, the dragged node is moved to the destination node. When the right mouse button is used, the dragged node is copied to the destination node.  
+  
+ [!code-cpp[TreeViewDragDrop#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeViewDragDrop/CPP/treeviewdragdrop.cpp#1)]
+ [!code-csharp[TreeViewDragDrop#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeViewDragDrop/CS/treeviewdragdrop.cs#1)]
+ [!code-vb[TreeViewDragDrop#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeViewDragDrop/VB/treeviewdragdrop.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

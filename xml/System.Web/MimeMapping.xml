@@ -1,0 +1,41 @@
+<Type Name="MimeMapping" FullName="System.Web.MimeMapping">
+  <TypeSignature Language="C#" Value="public static class MimeMapping" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MimeMapping extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.MimeMapping" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Maps document extensions to content MIME types.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetMimeMapping">
+      <MemberSignature Language="C#" Value="public static string GetMimeMapping (string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetMimeMapping(string fileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.MimeMapping.GetMimeMapping(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">The file name that is used to determine the MIME type.</param>
+        <summary>Returns the MIME mapping for the specified file name.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,122 @@
+<Type Name="PartialResultsCollection" FullName="System.DirectoryServices.Protocols.PartialResultsCollection">
+  <TypeSignature Language="C#" Value="public class PartialResultsCollection : System.Collections.ReadOnlyCollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PartialResultsCollection extends System.Collections.ReadOnlyCollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.PartialResultsCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ReadOnlyCollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.PartialResultsCollection" /> class represents any partial results returned from a not-yet-completed asynchronous operation.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.PartialResultsCollection.Contains(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Object" /> for which to search.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.PartialResultsCollection.Contains(System.Object)" /> method determines whether this <see cref="T:System.DirectoryServices.Protocols.PartialResultsCollection" /> object contains a specified <see cref="T:System.Object" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.Object" /> is part of the collection or <see langword="false" /> if it is not.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (object[] values, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(object[] values, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.PartialResultsCollection.CopyTo(System.Object[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="values" Type="System.Object[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="values">A one-dimensional array that is the destination of the elements copied from the <see cref="T:System.DirectoryServices.Protocols.PartialResultsCollection" /> object.</param>
+        <param name="index">The zero-based index of <c>values</c> where copying begins.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.PartialResultsCollection.CopyTo(System.Object[],System.Int32)" /> method copies the entire collection to a one-dimensional array, starting at the specified index of the target array.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="values" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="values" /> is multidimensional  
+  
+ -or-  
+  
+ The number of elements in the source <see cref="T:System.DirectoryServices.Protocols.PartialResultsCollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="values" />.</exception>
+        <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.DirectoryServices.Protocols.PartialResultsCollection" /> cannot be cast automatically to the type of the destination <paramref name="values" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.PartialResultsCollection.IndexOf(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Object" /> for which the index is returned.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.PartialResultsCollection.IndexOf(System.Object)" /> method returns the zero-based index of the first occurrence of the specified <see cref="T:System.Object" /> in the <see cref="T:System.DirectoryServices.Protocols.PartialResultsCollection" />.</summary>
+        <returns>The index value of the specified <see cref="T:System.Object" />, if found, or -1 if the specified object is not found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.PartialResultsCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index value of the <see cref="T:System.Object" />.</param>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.PartialResultsCollection.Item(System.Int32)" /> property contains the <see cref="T:System.Object" /> at the specified index.</summary>
+        <value>The <see cref="T:System.Object" /> at the specified index.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero or <paramref name="index" /> is equal to or greater than the number of items in the collection.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

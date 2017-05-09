@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "remarks XML tag"
 ms.assetid: c6241773-a7ed-41c9-9a8b-9722a0c606a9
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

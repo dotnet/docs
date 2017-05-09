@@ -1,0 +1,149 @@
+<Type Name="Saml2SubjectConfirmation" FullName="System.IdentityModel.Tokens.Saml2SubjectConfirmation">
+  <TypeSignature Language="C#" Value="public class Saml2SubjectConfirmation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Saml2SubjectConfirmation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2SubjectConfirmation" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the SubjectConfirmation element specified in [Saml2Core, 2.4.1.1].</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the element that this class represents, see the SAML V2.0 Core specification.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Saml2SubjectConfirmation (Uri method);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri method) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SubjectConfirmation.#ctor(System.Uri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="method" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="method">The <see cref="T:System.Uri" /> that indicates the confirmation method.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2SubjectConfirmation" /> class with the specified confirmation method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.Saml2SubjectConfirmation.SubjectConfirmationData%2A> property is initialized to `null`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="method" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="method" /> is not an absolute URI.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Saml2SubjectConfirmation (Uri method, System.IdentityModel.Tokens.Saml2SubjectConfirmationData data);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri method, class System.IdentityModel.Tokens.Saml2SubjectConfirmationData data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SubjectConfirmation.#ctor(System.Uri,System.IdentityModel.Tokens.Saml2SubjectConfirmationData)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="method" Type="System.Uri" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2SubjectConfirmationData" />
+      </Parameters>
+      <Docs>
+        <param name="method">The <see cref="T:System.Uri" /> that indicates the confirmation method.</param>
+        <param name="data">The <see cref="T:System.IdentityModel.Tokens.Saml2SubjectConfirmationData" /> that contains the additional confirmation information.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2SubjectConfirmation" /> class with the specified confirmation method and additional confirmation information.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="method" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="method" /> is not an absolute URI.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Method">
+      <MemberSignature Language="C#" Value="public Uri Method { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Method" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectConfirmation.Method" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a URI reference that identifies a protocol or mechanism to be used to confirm the subject. [Saml2Core, 2.4.1.1]</summary>
+        <value>A <see cref="T:System.Uri" /> that represents the reference.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The contents of the required Method attribute.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
+        <exception cref="T:System.ArgumentException">An attempt to set a value that is not an absolute URI occurs.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NameIdentifier">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.Saml2NameIdentifier NameIdentifier { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.Saml2NameIdentifier NameIdentifier" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectConfirmation.NameIdentifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2NameIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the identifier for the entity expected to satisfy the enclosing subject confirmation requirements. [Saml2Core, 2.4.1.1]</summary>
+        <value>A <see cref="T:System.IdentityModel.Tokens.Saml2NameIdentifier" /> that specifies the entity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubjectConfirmationData">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.Saml2SubjectConfirmationData SubjectConfirmationData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.Saml2SubjectConfirmationData SubjectConfirmationData" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SubjectConfirmation.SubjectConfirmationData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2SubjectConfirmationData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets additional confirmation information to be used by a specific confirmation method. [Saml2Core, 2.4.1.1]</summary>
+        <value>A <see cref="T:System.IdentityModel.Tokens.Saml2SubjectConfirmationData" /> that contains information to be used with the confirmation method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The contents of the optional SubjectConfirmationData element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

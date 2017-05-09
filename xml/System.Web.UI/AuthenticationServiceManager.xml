@@ -1,0 +1,117 @@
+<Type Name="AuthenticationServiceManager" FullName="System.Web.UI.AuthenticationServiceManager">
+  <TypeSignature Language="C#" Value="public class AuthenticationServiceManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AuthenticationServiceManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.AuthenticationServiceManager" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("Path")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.EmptyStringExpandableObjectConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Configures the location of a custom implementation of the authentication service.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.AuthenticationServiceManager> class corresponds to the <xref:System.Web.UI.ScriptManager.AuthenticationService%2A> property of the <xref:System.Web.UI.ScriptManager> or <xref:System.Web.UI.ScriptManagerProxy> control.  
+  
+ The authentication Web service is used by AJAX-enabled applications to log on and log off from client script. You can use <xref:System.Web.UI.AuthenticationServiceManager> to provide the path of an alternative implementation of the authentication Web service instead of using the built-in Web service that is provided by the AJAX features of ASP.NET.  
+  
+ To use the authentication service in your application, you must enable it in the configuration file. If you use the built-in authentication Web service, you do not have to explicitly declare the authentication service manager on the page.  
+  
+ To create your own authentication service, you must implement a Web service that has two methods: `Login` and `Logout`. In addition, these methods require the same signature of the built-in authentication Web service.  
+  
+ The following example shows the basic class structure that must be implemented in a custom authentication Web service class.  
+  
+  
+  
+ To use a custom authentication Web service, you can add the service declaratively in markup by including an `<AuthenticationService>` element inside the `<asp:ScriptManager>` element on the page, as shown in the following example.  
+  
+```  
+<asp:ScriptManager ID="SM1" runat="server">  
+  <AuthenticationService Path="MyAuthenticationService.asmx" />  
+</asp:ScriptManager>  
+```  
+  
+ You can also programmatically configure <xref:System.Web.UI.AuthenticationServiceManager.Path%2A> to use a custom authentication Web service.  
+  
+ Regardless of whether the declarative section for the authentication service is on the page, if the authentication service is enabled in the configuration file, then AJAX-enabled applications will include an ECMAScript (JavaScript) variable in the rendered page. This allows client script to determine whether the current user is authenticated.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AuthenticationServiceManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.AuthenticationServiceManager.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.AuthenticationServiceManager" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.AuthenticationServiceManager.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path of the authentication service.</summary>
+        <value>The path of the custom authentication Web service.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.UI.AuthenticationServiceManager.Path%2A> property is not set, then the return value is <xref:System.String?displayProperty=fullName>. In this case, the AJAX functionality in ASP.NET will then use the built-in authentication Web service that corresponds to the following internal default path: ~/ScriptServices_AuthenticationService.asmx. The same behavior occurs if you set <xref:System.Web.UI.AuthenticationServiceManager.Path%2A> to an empty value or `null`.  
+  
+ <xref:System.Web.UI.AuthenticationServiceManager.Path%2A> can be specified in the <xref:System.Web.UI.ScriptManager> control or in an associated <xref:System.Web.UI.ScriptManagerProxy> control. When <xref:System.Web.UI.AuthenticationServiceManager.Path%2A> is set at the <xref:System.Web.UI.ScriptManagerProxy> level, the following caveats apply:  
+  
+-   If there are multiple proxies in the control hierarchy, <xref:System.Web.UI.AuthenticationServiceManager.Path%2A> does not have to be set on each proxy instance.  
+  
+-   If <xref:System.Web.UI.AuthenticationServiceManager.Path%2A> is explicitly set on a proxy instance, the value must be the same for all other proxies on which this property is explicitly set.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">More than one unique path was set in the control hierarchy.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

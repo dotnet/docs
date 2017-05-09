@@ -1,0 +1,355 @@
+<Type Name="SecurityMessageProperty" FullName="System.ServiceModel.Security.SecurityMessageProperty">
+  <TypeSignature Language="C#" Value="public class SecurityMessageProperty : IDisposable, System.ServiceModel.Channels.IMessageProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SecurityMessageProperty extends System.Object implements class System.IDisposable, class System.ServiceModel.Channels.IMessageProperty" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SecurityMessageProperty" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Channels.IMessageProperty</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Contains security-related properties and is attached to a message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Client authentication results are translated into an instance of <xref:System.ServiceModel.ServiceSecurityContext>, which is attached to the message using a <xref:System.ServiceModel.Security.SecurityMessageProperty>. This property can be used by higher layers to implement custom authorization logic.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SecurityMessageProperty ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityMessageProperty.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SecurityMessageProperty" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCopy">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.IMessageProperty CreateCopy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.IMessageProperty CreateCopy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityMessageProperty.CreateCopy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.IMessageProperty</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clones the current instance of this class.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.IMessageProperty" /> cloned from the current instance of this class.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To access any objects in the <xref:System.ServiceModel.Security.SecurityMessageProperty>, such as <xref:System.ServiceModel.Security.SecurityMessageProperty.ServiceSecurityContext%2A>, <xref:System.ServiceModel.Security.SecurityMessageProperty.TransportToken%2A>, or <xref:System.ServiceModel.Security.SecurityMessageProperty.IncomingSupportingTokens%2A>), a copy must be created because these properties are undefined after the message is disposed of.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityMessageProperty.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Disposes of the current instance of this class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExternalAuthorizationPolicies">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; ExternalAuthorizationPolicies { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; ExternalAuthorizationPolicies" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityMessageProperty.ExternalAuthorizationPolicies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a collection of external authorization policies.</summary>
+        <value>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of type <see cref="T:System.IdentityModel.Policy.IAuthorizationPolicy" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> is called on these authorization policies as part of the process that creates the <xref:System.ServiceModel.ServiceSecurityContext>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrCreate">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Security.SecurityMessageProperty GetOrCreate (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Security.SecurityMessageProperty GetOrCreate(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityMessageProperty.GetOrCreate(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.SecurityMessageProperty</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">The <see cref="T:System.ServiceModel.Channels.Message" />.</param>
+        <summary>Gets or creates an instance of this class from the specified message.</summary>
+        <returns>An instance of <see cref="T:System.ServiceModel.Security.SecurityMessageProperty" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasIncomingSupportingTokens">
+      <MemberSignature Language="C#" Value="public bool HasIncomingSupportingTokens { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasIncomingSupportingTokens" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityMessageProperty.HasIncomingSupportingTokens" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether the incoming message contains at least one supporting security token.</summary>
+        <value>
+          <see langword="true" /> if <see cref="P:System.ServiceModel.Security.SecurityMessageProperty.IncomingSupportingTokens" /> contains at least one entry; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Supporting tokens provide additional claims beyond those contained in the principal tokens for the binding. Supporting tokens can be scoped at a different scope than the binding.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncomingSupportingTokens">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Security.SupportingTokenSpecification&gt; IncomingSupportingTokens { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Security.SupportingTokenSpecification&gt; IncomingSupportingTokens" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityMessageProperty.IncomingSupportingTokens" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Security.SupportingTokenSpecification&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a collection of incoming supporting tokens.</summary>
+        <value>A <see cref="T:System.Collections.ObjectModel.Collection`1" /> of type <see cref="T:System.ServiceModel.Security.SupportingTokenSpecification" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Supporting tokens provide additional claims beyond those contained in the principal tokens for the binding. Supporting tokens can be scoped at a different scope than the binding.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitiatorToken">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Security.SecurityTokenSpecification InitiatorToken { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.SecurityTokenSpecification InitiatorToken" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityMessageProperty.InitiatorToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.SecurityTokenSpecification</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.ServiceModel.Security.SecurityTokenSpecification" /> initiator token for this message.</summary>
+        <value>The <see cref="T:System.ServiceModel.Security.SecurityTokenSpecification" /> initiator token for this message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the message pattern requires multiple messages, the Initiator Token is used for the message signature from initiator to the recipient, and for encryption from recipient to initiator.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutgoingSupportingTokens">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Security.SupportingTokenSpecification&gt; OutgoingSupportingTokens { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Security.SupportingTokenSpecification&gt; OutgoingSupportingTokens" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityMessageProperty.OutgoingSupportingTokens" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Security.SupportingTokenSpecification&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of outgoing <see cref="T:System.ServiceModel.Security.SupportingTokenSpecification" /> objects.</summary>
+        <value>A collection of outgoing supporting tokens.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtectionToken">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Security.SecurityTokenSpecification ProtectionToken { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.SecurityTokenSpecification ProtectionToken" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityMessageProperty.ProtectionToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.SecurityTokenSpecification</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.ServiceModel.Security.SecurityTokenSpecification" /> protection token for this message.</summary>
+        <value>The <see cref="T:System.ServiceModel.Security.SecurityTokenSpecification" /> protection token for this message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Protection Tokens are used in symmetric security bindings for signing and encryption.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RecipientToken">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Security.SecurityTokenSpecification RecipientToken { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.SecurityTokenSpecification RecipientToken" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityMessageProperty.RecipientToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.SecurityTokenSpecification</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.ServiceModel.Security.SecurityTokenSpecification" /> recipient token for this message.</summary>
+        <value>The <see cref="T:System.ServiceModel.Security.SecurityTokenSpecification" /> recipient token for this message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the message pattern requires multiple messages, the Recipient Token is used for encryption from initiator to recipient, and for the message signature from recipient to initiator.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SenderIdPrefix">
+      <MemberSignature Language="C#" Value="public string SenderIdPrefix { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SenderIdPrefix" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityMessageProperty.SenderIdPrefix" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the sender ID prefix for this message.</summary>
+        <value>The sender ID prefix for this message.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The property value is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">No character of the property value is alphabetic, numeric, or equal to "_", ".", or "-".</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceSecurityContext">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.ServiceSecurityContext ServiceSecurityContext { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.ServiceSecurityContext ServiceSecurityContext" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityMessageProperty.ServiceSecurityContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.ServiceSecurityContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.ServiceModel.ServiceSecurityContext" /> for this message.</summary>
+        <value>The <see cref="T:System.ServiceModel.ServiceSecurityContext" /> object for this message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this class to obtain information about the runtime security context. A security context is created when a client is successfully authenticated. The security information from the client and for the current service instance can be obtained from an instance of this class.  
+  
+ A common use of the class is to retrieve the current set of claims for the purpose of authorizing a client when accessing a method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransportToken">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Security.SecurityTokenSpecification TransportToken { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.SecurityTokenSpecification TransportToken" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SecurityMessageProperty.TransportToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.SecurityTokenSpecification</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.ServiceModel.Security.SecurityTokenSpecification" /> transport token for this message.</summary>
+        <value>The <see cref="T:System.ServiceModel.Security.SecurityTokenSpecification" /> transport token for this message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A Transport Token provides security at the transport level. A token used by HTTPS is an example of a Transport Token.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

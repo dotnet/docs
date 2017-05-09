@@ -1,0 +1,121 @@
+<Type Name="PanningMode" FullName="System.Windows.Controls.PanningMode">
+  <TypeSignature Language="C#" Value="public enum PanningMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PanningMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.PanningMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how <see cref="T:System.Windows.Controls.ScrollViewer" /> reacts to touch manipulation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.ScrollViewer> will scroll when a user drags a finger on the control on a touch device that supports Windows Touch.  The <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A> property specifies whether the <xref:System.Windows.Controls.ScrollViewer> scroll horizontally, vertically, or both.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Both">
+      <MemberSignature Language="C#" Value="Both" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.PanningMode Both = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.PanningMode.Both" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.PanningMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Controls.ScrollViewer" /> scrolls horizontally and vertically.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalFirst">
+      <MemberSignature Language="C#" Value="HorizontalFirst" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.PanningMode HorizontalFirst = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.PanningMode.HorizontalFirst" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.PanningMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Controls.ScrollViewer" /> scrolls when the user moves a finger horizontally first.  If the user moves the vertically first, the movement is treated as mouse events.  After the <see cref="T:System.Windows.Controls.ScrollViewer" /> begins to scroll, it will scroll horizontally and vertically.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalOnly">
+      <MemberSignature Language="C#" Value="HorizontalOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.PanningMode HorizontalOnly = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.PanningMode.HorizontalOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.PanningMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Controls.ScrollViewer" /> scrolls horizontally only.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.PanningMode None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.PanningMode.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.PanningMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Controls.ScrollViewer" /> does not respond to touch input.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalFirst">
+      <MemberSignature Language="C#" Value="VerticalFirst" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.PanningMode VerticalFirst = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.PanningMode.VerticalFirst" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.PanningMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Controls.ScrollViewer" /> scrolls when the user moves a finger vertically first.  If the user moves the horizontally first, the movement is treated as mouse events.  After the <see cref="T:System.Windows.Controls.ScrollViewer" /> begins to scroll, it will scroll horizontally and vertically.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalOnly">
+      <MemberSignature Language="C#" Value="VerticalOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.PanningMode VerticalOnly = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.PanningMode.VerticalOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.PanningMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Controls.ScrollViewer" /> scrolls vertically only.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

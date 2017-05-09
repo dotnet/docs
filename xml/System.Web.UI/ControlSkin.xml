@@ -1,0 +1,109 @@
+<Type Name="ControlSkin" FullName="System.Web.UI.ControlSkin">
+  <TypeSignature Language="C#" Value="public class ControlSkin" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ControlSkin extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ControlSkin" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a control skin, which is a means to define stylistic properties that are applied to an ASP.NET Web server control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Page and control developers do not use the <xref:System.Web.UI.ControlSkinDelegate>, <xref:System.Web.UI.ControlSkin>, or <xref:System.Web.UI.PageTheme> classes directly. These classes are used internally by the ASP.NET page framework to apply server-side properties and cascading style sheet definitions that are defined in ASP.NET themes and control skin files to specific types of controls.  
+  
+ <xref:System.Web.UI.ControlSkin> objects represent a named skin or default skin of a <xref:System.Web.UI.Control> control at run time and design time. ASP.NET builds <xref:System.Web.UI.PageTheme>, <xref:System.Web.UI.ControlSkin> and <xref:System.Web.UI.ControlSkinDelegate> objects to apply the style elements defined in themes and control skin files to ASP.NET Web pages and controls.  
+  
+ For more information about themes and control skins, see [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how control skins are specified for controls in a declarative ASP.NET page. The example shows three ASP.NET server controls found in the same page, two that use the same named skin and one that uses a different skin.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[ControlSkin#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ControlSkin/CS/controlskincs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[ControlSkin#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ControlSkin/VB/controlskinvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ControlSkin (Type controlType, System.Web.UI.ControlSkinDelegate themeDelegate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type controlType, class System.Web.UI.ControlSkinDelegate themeDelegate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlSkin.#ctor(System.Type,System.Web.UI.ControlSkinDelegate)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="controlType" Type="System.Type" />
+        <Parameter Name="themeDelegate" Type="System.Web.UI.ControlSkinDelegate" />
+      </Parameters>
+      <Docs>
+        <param name="controlType">The <see cref="T:System.Type" /> of <see cref="T:System.Web.UI.Control" /> to which the skin is applied, used to enforce type consistency among named skins.</param>
+        <param name="themeDelegate">The <see cref="T:System.Web.UI.ControlSkinDelegate" /> that applies the style elements defined in a control skin file to the type identified by the <c>controlType</c> parameter.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Web.UI.ControlSkin" /> class using the passed <see cref="T:System.Web.UI.Control" /> type and delegate.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplySkin">
+      <MemberSignature Language="C#" Value="public void ApplySkin (System.Web.UI.Control control);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ApplySkin(class System.Web.UI.Control control) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ControlSkin.ApplySkin(System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="control">The control to which to apply the skin.</param>
+        <summary>Applies the skin to the <see cref="T:System.Web.UI.Control" /> control contained by the <see cref="T:System.Web.UI.ControlSkin" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Passes the <xref:System.Web.UI.Control> object associated with the <xref:System.Web.UI.ControlSkin> class to the <xref:System.Web.UI.ControlSkinDelegate>, which applies the skin to the <xref:System.Web.UI.Control> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlType">
+      <MemberSignature Language="C#" Value="public Type ControlType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ControlType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ControlSkin.ControlType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Type" /> of the control that the <see cref="T:System.Web.UI.ControlSkin" /> object is associated with.</summary>
+        <value>The <see cref="T:System.Type" /> of the <see cref="T:System.Web.UI.Control" /> used in this instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

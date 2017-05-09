@@ -1,0 +1,45 @@
+<Type Name="TemplatePropertyEntry" FullName="System.Web.UI.TemplatePropertyEntry">
+  <TypeSignature Language="C#" Value="public class TemplatePropertyEntry : System.Web.UI.BuilderPropertyEntry" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplatePropertyEntry extends System.Web.UI.BuilderPropertyEntry" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.TemplatePropertyEntry" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.BuilderPropertyEntry</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Enables property entry for <see cref="T:System.Web.UI.ITemplate" /> class properties.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TemplatePropertyEntry> class is used during page parsing.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BindableTemplate">
+      <MemberSignature Language="C#" Value="public bool BindableTemplate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BindableTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.TemplatePropertyEntry.BindableTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating if the <see cref="T:System.Web.UI.ITemplate" /> property can have data bound to it.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.ITemplate" /> property is bindable; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

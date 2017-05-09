@@ -1,0 +1,26 @@
+<Type Name="TaskEventHandler" FullName="System.Web.TaskEventHandler">
+  <TypeSignature Language="C#" Value="public delegate System.Threading.Tasks.Task TaskEventHandler(object sender, EventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TaskEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.TaskEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.EventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Threading.Tasks.Task</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the asynchronous task that is being processed by an instance of the <see cref="T:System.Web.EventHandlerTaskAsyncHelper" /> class.</summary>
+    <returns>The asynchronous task.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

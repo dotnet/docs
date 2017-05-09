@@ -1,0 +1,55 @@
+<Type Name="SearchResultReference" FullName="System.DirectoryServices.Protocols.SearchResultReference">
+  <TypeSignature Language="C#" Value="public class SearchResultReference" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SearchResultReference extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SearchResultReference" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.SearchResultReference" /> class contains a single search reference returned by the server.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Controls">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.DirectoryControl[] Controls { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.Protocols.DirectoryControl[] Controls" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SearchResultReference.Controls" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.DirectoryControl[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SearchResultReference.Controls" /> property contains an array of <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> objects returned by the server in the search reference.</summary>
+        <value>An array of <see cref="T:System.DirectoryServices.Protocols.DirectoryControl" /> objects returned by the server in the search reference.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reference">
+      <MemberSignature Language="C#" Value="public Uri[] Reference { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri[] Reference" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SearchResultReference.Reference" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SearchResultReference.Reference" /> property contains an array of <see cref="T:System.Uri" /> objects returned by the server in the search reference.</summary>
+        <value>An array of <see cref="T:System.Uri" /> objects returned by the server in the search reference.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,74 @@
+<Type Name="ReturnEventArgs&lt;T&gt;" FullName="System.Windows.Navigation.ReturnEventArgs&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class ReturnEventArgs&lt;T&gt; : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReturnEventArgs`1&lt;T&gt; extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.ReturnEventArgs`1" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The type of the return value.</typeparam>
+    <summary>Provides data for the <see cref="E:System.Windows.Navigation.PageFunction`1.Return" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReturnEventArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.ReturnEventArgs`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Navigation.ReturnEventArgs`1" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReturnEventArgs (T result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.ReturnEventArgs`1.#ctor(`0)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="result" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="result">The value to be returned.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Navigation.ReturnEventArgs`1" /> class with the return value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public T Result { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Result" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.ReturnEventArgs`1.Result" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value that is returned by the page function.</summary>
+        <value>The value that is returned by the page function.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

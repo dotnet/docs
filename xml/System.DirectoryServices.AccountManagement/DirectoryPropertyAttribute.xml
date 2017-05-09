@@ -1,0 +1,85 @@
+<Type Name="DirectoryPropertyAttribute" FullName="System.DirectoryServices.AccountManagement.DirectoryPropertyAttribute">
+  <TypeSignature Language="C#" Value="public sealed class DirectoryPropertyAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DirectoryPropertyAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.DirectoryPropertyAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property, AllowMultiple=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains the data required by the store to map a principal property to a directory attribute. This attribute is required for principal extensions and can only be set on a property. It must be specified on every property that represents a directory attribute in the extended class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If multiple directory attributes are used in the extension methods, multiple attributes should be added to the propert (one per attribute).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DirectoryPropertyAttribute (string schemaAttributeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string schemaAttributeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.DirectoryPropertyAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="schemaAttributeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="schemaAttributeName">The name of the attribute that is set in the directory. The <see cref="P:System.DirectoryServices.AccountManagement.DirectoryPropertyAttribute.SchemaAttributeName" /> property is initialized to this value. This property represents the ldapDisplayName for application directory and domain directories.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.DirectoryPropertyAttribute" /> class with the schema attribute name.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public Nullable&lt;System.DirectoryServices.AccountManagement.ContextType&gt; Context { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DirectoryServices.AccountManagement.ContextType&gt; Context" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.DirectoryPropertyAttribute.Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DirectoryServices.AccountManagement.ContextType&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This property is not implemented and always returns null.</summary>
+        <value>A <see cref="T:System.DirectoryServices.AccountManagement.ContextType" /> enumeration value that specifies the type of store to which this attribute applies, or null if no context is set.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SchemaAttributeName">
+      <MemberSignature Language="C#" Value="public string SchemaAttributeName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SchemaAttributeName" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.DirectoryPropertyAttribute.SchemaAttributeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the string that represents the attribute name in the directory.</summary>
+        <value>The string that represents the attribute name in the directory.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

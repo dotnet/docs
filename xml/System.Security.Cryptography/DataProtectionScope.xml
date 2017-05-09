@@ -1,0 +1,83 @@
+<Type Name="DataProtectionScope" FullName="System.Security.Cryptography.DataProtectionScope">
+  <TypeSignature Language="C#" Value="public enum DataProtectionScope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataProtectionScope extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.DataProtectionScope" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Cryptography.ProtectedData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Security</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the scope of the data protection to be applied by the <see cref="M:System.Security.Cryptography.ProtectedData.Protect(System.Byte[],System.Byte[],System.Security.Cryptography.DataProtectionScope)" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used with the <xref:System.Security.Cryptography.ProtectedData.Protect%2A> and <xref:System.Security.Cryptography.ProtectedData.Unprotect%2A> methods to protect data through encryption.  
+  
+ **Caution** The LocalMachine enumeration value allows multiple accounts to unprotect data.  Use this value only when you trust every account on a computer.  For most situations, you should use the CurrentUser value.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use data protection.  
+  
+ [!code-cpp[Cryptography.DataProtectionSample#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.DataProtectionSample/CPP/dataprotectionsample.cpp#1)]
+ [!code-csharp[Cryptography.DataProtectionSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.DataProtectionSample/CS/dataprotectionsample.cs#1)]
+ [!code-vb[Cryptography.DataProtectionSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.DataProtectionSample/vb/dataprotectionsample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CurrentUser">
+      <MemberSignature Language="C#" Value="CurrentUser" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.DataProtectionScope CurrentUser = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.DataProtectionScope.CurrentUser" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.ProtectedData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.DataProtectionScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The protected data is associated with the current user. Only threads running under the current user context can unprotect the data.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalMachine">
+      <MemberSignature Language="C#" Value="LocalMachine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.DataProtectionScope LocalMachine = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.DataProtectionScope.LocalMachine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.ProtectedData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.DataProtectionScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The protected data is associated with the machine context. Any process running on the computer can unprotect data. This enumeration value is usually used in server-specific applications that run on a server where untrusted users are not allowed access.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

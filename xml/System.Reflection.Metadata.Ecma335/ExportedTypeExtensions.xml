@@ -1,0 +1,43 @@
+<Type Name="ExportedTypeExtensions" FullName="System.Reflection.Metadata.Ecma335.ExportedTypeExtensions">
+  <TypeSignature Language="C#" Value="public static class ExportedTypeExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ExportedTypeExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.ExportedTypeExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.3.0.0</AssemblyVersion>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetTypeDefinitionId">
+      <MemberSignature Language="C#" Value="public static int GetTypeDefinitionId (this System.Reflection.Metadata.ExportedType exportedType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetTypeDefinitionId(valuetype System.Reflection.Metadata.ExportedType exportedType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ExportedTypeExtensions.GetTypeDefinitionId(System.Reflection.Metadata.ExportedType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.3.0.0</AssemblyVersion>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exportedType" Type="System.Reflection.Metadata.ExportedType" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="exportedType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

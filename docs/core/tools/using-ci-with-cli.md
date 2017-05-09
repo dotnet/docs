@@ -38,7 +38,7 @@ feed that contains the packages.
 
 For Windows platforms, you can use the MSI. 
 
-All of the binaries can be found on the [.NET Core getting started page](https://aka.ms/dotnetcoregs) which points to the 
+All of the binaries can be found on the [.NET Core installation guide](https://aka.ms/dotnetcoregs) which points to the 
 latest stable releases. If you wish to use newer (and potentially unstable) releases or the latest, you can use the 
 links from the [CLI repo](https://github.com/dotnet/cli). 
 
@@ -78,12 +78,12 @@ for more information.
 
 ### AppVeyor
 
-The [appveyor.com ci](https://www.appveyor.com/) has .NET Core SDK preview2 already installed in the build worker image `Visual Studio 2015`.
+The [appveyor.com ci](https://www.appveyor.com/) has .NET Core SDK 1.0.1 already installed in the build worker image `Visual Studio 2017`.
 
 Just use:
 
 ```yaml
-os: Visual Studio 2015
+os: Visual Studio 2017
 ```
 
 It's possible to install a specific version of .NET Core SDK, see [example appveyor.yml](https://github.com/dotnet/docs/blob/master/appveyor.yml) 

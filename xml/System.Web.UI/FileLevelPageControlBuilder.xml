@@ -1,0 +1,107 @@
+<Type Name="FileLevelPageControlBuilder" FullName="System.Web.UI.FileLevelPageControlBuilder">
+  <TypeSignature Language="C#" Value="public class FileLevelPageControlBuilder : System.Web.UI.RootBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileLevelPageControlBuilder extends System.Web.UI.RootBuilder" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.FileLevelPageControlBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.RootBuilder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Parses page files and is the default <see cref="T:System.Web.UI.ControlBuilder" /> class for parsing page files.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Control builders support the page parser in building a control and the child controls that the control contains. The <xref:System.Web.UI.FileLevelPageControlBuilder> class is the default <xref:System.Web.UI.ControlBuilder> class for individual page files. Override the <xref:System.Web.UI.FileLevelPageControlBuilder> methods to provide custom page parsing.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileLevelPageControlBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.FileLevelPageControlBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.FileLevelPageControlBuilder" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.FileLevelPageControlBuilder.%23ctor%2A> constructor is used by ASP.NET when parsing the page and is not intended for use in your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendLiteralString">
+      <MemberSignature Language="C#" Value="public override void AppendLiteralString (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AppendLiteralString(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.FileLevelPageControlBuilder.AppendLiteralString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">The content to add to the control.</param>
+        <summary>Adds the specified literal content to a control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.FileLevelPageControlBuilder.AppendLiteralString%2A> method to add literal content to the control. Literal content can be any text that is passed by the browser to the server control. For example, any HTML elements and text, between their opening and closing tags, are literal content.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The <see cref="M:System.Web.UI.FileLevelPageControlBuilder.AppendLiteralString(System.String)" /> method cannot append the literal string to a content page.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendSubBuilder">
+      <MemberSignature Language="C#" Value="public override void AppendSubBuilder (System.Web.UI.ControlBuilder subBuilder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AppendSubBuilder(class System.Web.UI.ControlBuilder subBuilder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.FileLevelPageControlBuilder.AppendSubBuilder(System.Web.UI.ControlBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subBuilder" Type="System.Web.UI.ControlBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="subBuilder">The <see cref="T:System.Web.UI.ControlBuilder" /> assigned to the child control.</param>
+        <summary>Adds a <see cref="T:System.Web.UI.ControlBuilder" /> object to the <see cref="T:System.Web.UI.FileLevelPageControlBuilder" /> object for any child controls that belong to the container control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.FileLevelPageControlBuilder.AppendSubBuilder%2A> method overrides the <xref:System.Web.UI.ControlBuilder.AppendSubBuilder%2A?displayProperty=fullName> method to provide custom logic when master pages and content pages are being used. In a content page, anything that is not inside the <xref:System.Web.UI.WebControls.Content> control (except script blocks for server code) raises an <xref:System.Web.HttpParseException> exception. Adding a <xref:System.Web.UI.ControlBuilder> object for a child control that is a <xref:System.Web.UI.WebControls.Content> control raises an <xref:System.Web.HttpException> exception. For more information about master and content pages, see [ASP.NET Master Pages](http://msdn.microsoft.com/library/4e53eedf-8304-4e7a-aed1-691a2623b28b).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The <see cref="T:System.Web.UI.ControlBuilder" /> that was added is associated with a <see cref="T:System.Web.UI.WebControls.Content" /> control and is only allowed on pages that contain <see cref="T:System.Web.UI.WebControls.Content" /> controls.</exception>
+        <exception cref="T:System.Web.HttpParseException">The content page contained a literal other than a <see cref="T:System.Web.UI.WebControls.Content" /> control.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

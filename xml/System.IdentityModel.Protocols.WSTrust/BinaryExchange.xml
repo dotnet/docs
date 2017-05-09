@@ -1,0 +1,193 @@
+<Type Name="BinaryExchange" FullName="System.IdentityModel.Protocols.WSTrust.BinaryExchange">
+  <TypeSignature Language="C#" Value="public class BinaryExchange" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BinaryExchange extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.BinaryExchange" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the contents of a WS-Trust BinaryExchange element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the element that this class represents, see the version of the WS-Trust specification that applies to your scenario.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BinaryExchange (byte[] binaryData, Uri valueType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] binaryData, class System.Uri valueType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.BinaryExchange.#ctor(System.Byte[],System.Uri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="binaryData" Type="System.Byte[]" />
+        <Parameter Name="valueType" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="binaryData">The binary data exchanged.</param>
+        <param name="valueType">A <see cref="T:System.Uri" /> that represents the value type of the binary data.</param>
+        <summary>Creates a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.BinaryExchange" /> class with the specified data and ValueType URI.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the initial property values for the new instance.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.IdentityModel.Protocols.WSTrust.BinaryExchange.BinaryData%2A>|The specified binary data.|  
+|<xref:System.IdentityModel.Protocols.WSTrust.BinaryExchange.EncodingType%2A>|A <xref:System.Uri> based on the <xref:System.IdentityModel.WSSecurity10Constants.EncodingTypes.Base64> constant.|  
+|<xref:System.IdentityModel.Protocols.WSTrust.BinaryExchange.ValueType%2A>|The specified value type <xref:System.Uri>.|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="binaryData" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="valueType" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="valueType" /> is not an absolute URI.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BinaryExchange (byte[] binaryData, Uri valueType, Uri encodingType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] binaryData, class System.Uri valueType, class System.Uri encodingType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.BinaryExchange.#ctor(System.Byte[],System.Uri,System.Uri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="binaryData" Type="System.Byte[]" />
+        <Parameter Name="valueType" Type="System.Uri" />
+        <Parameter Name="encodingType" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="binaryData">The binary data exchanged.</param>
+        <param name="valueType">A <see cref="T:System.Uri" /> that represents the value type of the binary data.</param>
+        <param name="encodingType">A <see cref="T:System.Uri" /> that specifies the encoding type to be used for encoding the binary data.</param>
+        <summary>Creates a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.BinaryExchange" /> with the specified data, ValueType URI, and EncodingType URI.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the initial property values for the new instance.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.IdentityModel.Protocols.WSTrust.BinaryExchange.BinaryData%2A>|The specified binary data.|  
+|<xref:System.IdentityModel.Protocols.WSTrust.BinaryExchange.EncodingType%2A>|The specified encoding type <xref:System.Uri>.|  
+|<xref:System.IdentityModel.Protocols.WSTrust.BinaryExchange.ValueType%2A>|The specified value type <xref:System.Uri>.|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="binaryData" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="encodingType" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="valueType" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="encodingType" /> is not an absolute URI.  
+  
+ -or-  
+  
+ <paramref name="valueType" /> is not an absolute URI.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BinaryData">
+      <MemberSignature Language="C#" Value="public byte[] BinaryData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] BinaryData" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.BinaryExchange.BinaryData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the binary data associated with the BinaryExchange element.</summary>
+        <value>An array of <see cref="T:System.Byte" /> that contains the binary data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns the value of the BinaryExchange element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncodingType">
+      <MemberSignature Language="C#" Value="public Uri EncodingType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri EncodingType" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.BinaryExchange.EncodingType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the EncodingType URI.</summary>
+        <value>A <see cref="T:System.Uri" /> that contains the encoding type. This is the value of the EncodingType attribute of the BinaryExchange element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specifies the type of encoding used to encode the binary data contained in the element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueType">
+      <MemberSignature Language="C#" Value="public Uri ValueType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ValueType" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.BinaryExchange.ValueType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the ValueType URI.</summary>
+        <value>A <see cref="T:System.Uri" /> that contains the value type. This is the value of the ValueType attribute of the BinaryExchange element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specifies the type of the binary data contained in the element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

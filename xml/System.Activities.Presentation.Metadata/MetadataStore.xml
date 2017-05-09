@@ -1,0 +1,87 @@
+<Type Name="MetadataStore" FullName="System.Activities.Presentation.Metadata.MetadataStore">
+  <TypeSignature Language="C#" Value="public static class MetadataStore" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed MetadataStore extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Metadata.MetadataStore" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>An in-memory collection of hash tables that allows the rapid lookup of designer elements by <see cref="T:System.Type" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The metadata store contains custom attribute metadata, such as the association between designers and types. Custom attributes can be defined in an <xref:System.Activities.Presentation.Metadata.AttributeTable> and added to the metadata store. After the attributes are added, they will appear in calls made to <xref:System.ComponentModel.TypeDescriptor>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to associate the `AcitivityDesigner1` custom activity designer with a custom activity. [!INCLUDE[crabout](~/includes/crabout-md.md)] how to create custom activity designers, see [How to: Create a Custom Activity Designer](~/docs/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer.md).  
+  
+```  
+internal class Metadata : IRegisterMetadata  
+{  
+    private AttributeTable attributes;  
+  
+    // Called by the designer to register any design-time metadata.  
+    public void Register()  
+    {  
+        AttributeTableBuilder builder = new AttributeTableBuilder();  
+  
+        // Add the custom attributes to associate the ActivityDesigner1 custom designer  
+        // with the custom activity MyActivity.  
+        builder.AddCustomAttributes(  
+            typeof(MyActivity),  
+            new DesignerAttribute(typeof(ActivityDesigner1)));  
+        MetadataStore.AddAttributeTable(builder.CreateTable());  
+  
+    }  
+}  
+```  
+  
+<!-- TODO: review snippet reference  [!CODE [WFD_MetadataStore#0](WFD_MetadataStore#0)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddAttributeTable">
+      <MemberSignature Language="C#" Value="public static void AddAttributeTable (System.Activities.Presentation.Metadata.AttributeTable table);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddAttributeTable(class System.Activities.Presentation.Metadata.AttributeTable table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.MetadataStore.AddAttributeTable(System.Activities.Presentation.Metadata.AttributeTable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.Activities.Presentation.Metadata.AttributeTable" />
+      </Parameters>
+      <Docs>
+        <param name="table">The table to add.</param>
+        <summary>Adds the given table to the current <see cref="T:System.AppDomain" /> object’s attribute store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After the table is added, calls to <xref:System.ComponentModel.TypeDescriptor> will use attributes defined in the newly added table. Multiple tables can be added to the attribute store. In the case of conflicts, attributes in the most recently added table are used.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_MetadataStore#1](WFD_MetadataStore#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,1089 @@
+<Type Name="BlobWriter" FullName="System.Reflection.Metadata.BlobWriter">
+  <TypeSignature Language="C#" Value="public struct BlobWriter" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit BlobWriter extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.BlobWriter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BlobWriter (byte[] buffer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] buffer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.#ctor(System.Byte[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BlobWriter (int size);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="size" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="size">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BlobWriter (System.Reflection.Metadata.Blob blob);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Reflection.Metadata.Blob blob) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.#ctor(System.Reflection.Metadata.Blob)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="blob" Type="System.Reflection.Metadata.Blob" />
+      </Parameters>
+      <Docs>
+        <param name="blob">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BlobWriter (byte[] buffer, int start, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] buffer, int32 start, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.#ctor(System.Byte[],System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <param name="start">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Align">
+      <MemberSignature Language="C#" Value="public void Align (int alignment);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Align(int32 alignment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.Align(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="alignment" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="alignment">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Blob">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Blob Blob { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.Blob Blob" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.BlobWriter.Blob" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.Blob</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentEquals">
+      <MemberSignature Language="C#" Value="public bool ContentEquals (System.Reflection.Metadata.BlobWriter other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ContentEquals(valuetype System.Reflection.Metadata.BlobWriter other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.ContentEquals(System.Reflection.Metadata.BlobWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Reflection.Metadata.BlobWriter" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public int Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.BlobWriter.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public int Offset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Offset" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.BlobWriter.Offset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PadTo">
+      <MemberSignature Language="C#" Value="public void PadTo (int offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PadTo(int32 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.PadTo(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="offset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemainingBytes">
+      <MemberSignature Language="C#" Value="public int RemainingBytes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RemainingBytes" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.BlobWriter.RemainingBytes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToArray">
+      <MemberSignature Language="C#" Value="public byte[] ToArray ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] ToArray() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.ToArray" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToArray">
+      <MemberSignature Language="C#" Value="public byte[] ToArray (int start, int byteCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] ToArray(int32 start, int32 byteCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.ToArray(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="byteCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="byteCount">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToImmutableArray">
+      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;byte&gt; ToImmutableArray ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;unsigned int8&gt; ToImmutableArray() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.ToImmutableArray" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToImmutableArray">
+      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;byte&gt; ToImmutableArray (int start, int byteCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;unsigned int8&gt; ToImmutableArray(int32 start, int32 byteCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.ToImmutableArray(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableArray&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="byteCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="start">To be added.</param>
+        <param name="byteCount">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteBoolean">
+      <MemberSignature Language="C#" Value="public void WriteBoolean (bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBoolean(bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteBoolean(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteByte">
+      <MemberSignature Language="C#" Value="public void WriteByte (byte value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteByte(unsigned int8 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteByte(System.Byte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteBytes">
+      <MemberSignature Language="C#" Value="public void WriteBytes (byte[] buffer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBytes(unsigned int8[] buffer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteBytes(System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteBytes">
+      <MemberSignature Language="C#" Value="public void WriteBytes (System.Collections.Immutable.ImmutableArray&lt;byte&gt; buffer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBytes(valuetype System.Collections.Immutable.ImmutableArray`1&lt;unsigned int8&gt; buffer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteBytes(System.Collections.Immutable.ImmutableArray{System.Byte})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Collections.Immutable.ImmutableArray&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteBytes">
+      <MemberSignature Language="C#" Value="public void WriteBytes (System.Reflection.Metadata.BlobBuilder source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBytes(class System.Reflection.Metadata.BlobBuilder source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteBytes(System.Reflection.Metadata.BlobBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Reflection.Metadata.BlobBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteBytes">
+      <MemberSignature Language="C#" Value="public void WriteBytes (byte value, int byteCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBytes(unsigned int8 value, int32 byteCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteBytes(System.Byte,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Byte" />
+        <Parameter Name="byteCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="byteCount">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteBytes">
+      <MemberSignature Language="C#" Value="public void WriteBytes (byte* buffer, int byteCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBytes(unsigned int8* buffer, int32 byteCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteBytes(System.Byte*,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte*" />
+        <Parameter Name="byteCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <param name="byteCount">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteBytes">
+      <MemberSignature Language="C#" Value="public int WriteBytes (System.IO.Stream source, int byteCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 WriteBytes(class System.IO.Stream source, int32 byteCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteBytes(System.IO.Stream,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.IO.Stream" />
+        <Parameter Name="byteCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="byteCount">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteBytes">
+      <MemberSignature Language="C#" Value="public void WriteBytes (byte[] buffer, int start, int byteCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBytes(unsigned int8[] buffer, int32 start, int32 byteCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteBytes(System.Byte[],System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="byteCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <param name="start">To be added.</param>
+        <param name="byteCount">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteBytes">
+      <MemberSignature Language="C#" Value="public void WriteBytes (System.Collections.Immutable.ImmutableArray&lt;byte&gt; buffer, int start, int byteCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBytes(valuetype System.Collections.Immutable.ImmutableArray`1&lt;unsigned int8&gt; buffer, int32 start, int32 byteCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteBytes(System.Collections.Immutable.ImmutableArray{System.Byte},System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="buffer" Type="System.Collections.Immutable.ImmutableArray&lt;System.Byte&gt;" />
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="byteCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="buffer">To be added.</param>
+        <param name="start">To be added.</param>
+        <param name="byteCount">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteCompressedInteger">
+      <MemberSignature Language="C#" Value="public void WriteCompressedInteger (int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteCompressedInteger(int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteCompressedInteger(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteCompressedSignedInteger">
+      <MemberSignature Language="C#" Value="public void WriteCompressedSignedInteger (int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteCompressedSignedInteger(int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteCompressedSignedInteger(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteConstant">
+      <MemberSignature Language="C#" Value="public void WriteConstant (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteConstant(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteConstant(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteDateTime">
+      <MemberSignature Language="C#" Value="public void WriteDateTime (DateTime value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteDateTime(valuetype System.DateTime value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteDateTime(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteDecimal">
+      <MemberSignature Language="C#" Value="public void WriteDecimal (decimal value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteDecimal(valuetype System.Decimal value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteDecimal(System.Decimal)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Decimal" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteDouble">
+      <MemberSignature Language="C#" Value="public void WriteDouble (double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteDouble(float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteDouble(System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteGuid">
+      <MemberSignature Language="C#" Value="public void WriteGuid (Guid value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteGuid(valuetype System.Guid value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteGuid(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteInt16">
+      <MemberSignature Language="C#" Value="public void WriteInt16 (short value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteInt16(int16 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteInt16(System.Int16)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteInt16BE">
+      <MemberSignature Language="C#" Value="public void WriteInt16BE (short value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteInt16BE(int16 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteInt16BE(System.Int16)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteInt32">
+      <MemberSignature Language="C#" Value="public void WriteInt32 (int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteInt32(int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteInt32(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteInt32BE">
+      <MemberSignature Language="C#" Value="public void WriteInt32BE (int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteInt32BE(int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteInt32BE(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteInt64">
+      <MemberSignature Language="C#" Value="public void WriteInt64 (long value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteInt64(int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteInt64(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteReference">
+      <MemberSignature Language="C#" Value="public void WriteReference (int reference, bool isSmall);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteReference(int32 reference, bool isSmall) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteReference(System.Int32,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="System.Int32" />
+        <Parameter Name="isSmall" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="reference">To be added.</param>
+        <param name="isSmall">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteSByte">
+      <MemberSignature Language="C#" Value="public void WriteSByte (sbyte value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteSByte(int8 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteSByte(System.SByte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.SByte" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteSerializedString">
+      <MemberSignature Language="C#" Value="public void WriteSerializedString (string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteSerializedString(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteSerializedString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="str">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteSingle">
+      <MemberSignature Language="C#" Value="public void WriteSingle (float value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteSingle(float32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteSingle(System.Single)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteUInt16">
+      <MemberSignature Language="C#" Value="public void WriteUInt16 (ushort value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteUInt16(unsigned int16 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteUInt16(System.UInt16)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt16" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteUInt16BE">
+      <MemberSignature Language="C#" Value="public void WriteUInt16BE (ushort value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteUInt16BE(unsigned int16 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteUInt16BE(System.UInt16)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt16" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteUInt32">
+      <MemberSignature Language="C#" Value="public void WriteUInt32 (uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteUInt32(unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteUInt32(System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteUInt32BE">
+      <MemberSignature Language="C#" Value="public void WriteUInt32BE (uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteUInt32BE(unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteUInt32BE(System.UInt32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteUInt64">
+      <MemberSignature Language="C#" Value="public void WriteUInt64 (ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteUInt64(unsigned int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteUInt64(System.UInt64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteUserString">
+      <MemberSignature Language="C#" Value="public void WriteUserString (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteUserString(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteUserString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteUTF16">
+      <MemberSignature Language="C#" Value="public void WriteUTF16 (char[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteUTF16(char[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteUTF16(System.Char[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Char[]" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteUTF16">
+      <MemberSignature Language="C#" Value="public void WriteUTF16 (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteUTF16(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteUTF16(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteUTF8">
+      <MemberSignature Language="C#" Value="public void WriteUTF8 (string value, bool allowUnpairedSurrogates);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteUTF8(string value, bool allowUnpairedSurrogates) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobWriter.WriteUTF8(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="allowUnpairedSurrogates" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="allowUnpairedSurrogates">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

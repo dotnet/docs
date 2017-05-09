@@ -1,0 +1,87 @@
+<Type Name="IExtensionCollection&lt;T&gt;" FullName="System.ServiceModel.IExtensionCollection&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface IExtensionCollection&lt;T&gt; : System.Collections.Generic.ICollection&lt;System.ServiceModel.IExtension&lt;T&gt;&gt;, System.Collections.Generic.IEnumerable&lt;System.ServiceModel.IExtension&lt;T&gt;&gt; where T : IExtensibleObject&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExtensionCollection`1&lt;(class System.ServiceModel.IExtensibleObject`1&lt;!T&gt;) T&gt; implements class System.Collections.Generic.ICollection`1&lt;class System.ServiceModel.IExtension`1&lt;!T&gt;&gt;, class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.IExtension`1&lt;!T&gt;&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.IExtensionCollection`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <InterfaceName>System.ServiceModel.IExtensibleObject&lt;T&gt;</InterfaceName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.ICollection&lt;System.ServiceModel.IExtension&lt;T&gt;&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.ServiceModel.IExtension&lt;T&gt;&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">The type of the extension objects.</typeparam>
+    <summary>A collection of the <see cref="T:System.ServiceModel.IExtension`1" /> objects that allow for retrieving the <see cref="T:System.ServiceModel.IExtension`1" /> by its type.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Find&lt;E&gt;">
+      <MemberSignature Language="C#" Value="public E Find&lt;E&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!E Find&lt;E&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.IExtensionCollection`1.Find``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>E</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="E" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="E">The type of extension object.</typeparam>
+        <summary>Finds the specified extension object in the collection.</summary>
+        <returns>The extension object that was found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> returns an extension that implements (is or derives from) the specified type. If more than one extension implements the specified type, one is returned. The [!INCLUDE[indigo2](~/includes/indigo2-md.md)] implementation returns the most recently added, but this is not required of implementations. If no extension implements the specified type, <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> returns null.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindAll&lt;E&gt;">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;E&gt; FindAll&lt;E&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ObjectModel.Collection`1&lt;!!E&gt; FindAll&lt;E&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.IExtensionCollection`1.FindAll``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;E&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="E" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="E">The type of extension object.</typeparam>
+        <summary>Finds all extension object in the collection specified by <paramref name="E" />.</summary>
+        <returns>A collection of all extension objects in the collection that implement the specified type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

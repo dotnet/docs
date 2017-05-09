@@ -1,0 +1,121 @@
+<Type Name="ControlLocation" FullName="System.Web.UI.Design.ControlLocation">
+  <TypeSignature Language="C#" Value="public enum ControlLocation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ControlLocation extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ControlLocation" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the possible locations for adding a control in a container.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.ControlLocation> enumeration is used by the <xref:System.Web.UI.Design.WebFormsRootDesigner.AddControlToDocument%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="After">
+      <MemberSignature Language="C#" Value="After" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.Design.ControlLocation After = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ControlLocation.After" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ControlLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Adds the control after the current selection or current control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Before">
+      <MemberSignature Language="C#" Value="Before" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.Design.ControlLocation Before = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ControlLocation.Before" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ControlLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Adds the control before the current selection or current control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="First">
+      <MemberSignature Language="C#" Value="First" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.Design.ControlLocation First = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ControlLocation.First" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ControlLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Adds the control at the start of the document.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstChild">
+      <MemberSignature Language="C#" Value="FirstChild" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.Design.ControlLocation FirstChild = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ControlLocation.FirstChild" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ControlLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Adds the control as the first child of the selected control, if the selected control is a container control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Last">
+      <MemberSignature Language="C#" Value="Last" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.Design.ControlLocation Last = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ControlLocation.Last" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ControlLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Adds the control at the end of the document.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LastChild">
+      <MemberSignature Language="C#" Value="LastChild" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.Design.ControlLocation LastChild = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ControlLocation.LastChild" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ControlLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Adds the control as the last child of the selected control, if the selected control is a container control.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

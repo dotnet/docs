@@ -1,0 +1,108 @@
+<Type Name="DataGridViewColumnEventArgs" FullName="System.Windows.Forms.DataGridViewColumnEventArgs">
+  <TypeSignature Language="C#" Value="public class DataGridViewColumnEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewColumnEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewColumnEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for column-related events of a <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.DataGridViewColumnEventArgs> provides data for the following <xref:System.Windows.Forms.DataGridView> events:  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnContextMenuStripChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnDataPropertyNameChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnDefaultCellStyleChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnDisplayIndexChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnDividerWidthChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnHeaderCellChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnMinimumWidthChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnNameChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnSortModeChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnToolTipTextChanged>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnWidthChanged>  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.ColumnAdded> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.ColumnAdded> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#314](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#314)]
+ [!code-vb[System.Windows.Forms.EventExamples#314](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#314)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridViewColumnEventArgs (System.Windows.Forms.DataGridViewColumn dataGridViewColumn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataGridViewColumn dataGridViewColumn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumnEventArgs.#ctor(System.Windows.Forms.DataGridViewColumn)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dataGridViewColumn" Type="System.Windows.Forms.DataGridViewColumn" />
+      </Parameters>
+      <Docs>
+        <param name="dataGridViewColumn">The column that the event occurs for.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewColumnEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dataGridViewColumn" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Column">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewColumn Column { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewColumn Column" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumnEventArgs.Column" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewColumn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the column that the event occurs for.</summary>
+        <value>The <see cref="T:System.Windows.Forms.DataGridViewColumn" /> that the event occurs for.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.ColumnAdded?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.ColumnAdded?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#314](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#314)]
+ [!code-vb[System.Windows.Forms.EventExamples#314](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#314)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

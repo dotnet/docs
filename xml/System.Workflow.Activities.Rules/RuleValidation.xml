@@ -1,0 +1,218 @@
+<Type Name="RuleValidation" FullName="System.Workflow.Activities.Rules.RuleValidation">
+  <TypeSignature Language="C#" Value="public class RuleValidation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RuleValidation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleValidation" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Validates expression conditions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code creates an invalid condition. It then attempts to validate the condition, and displays any errors that result.  
+  
+```csharp  
+// Create an invalid condition ("abc" < true).  
+CodeBinaryOperatorExpression invalidCompare = new CodeBinaryOperatorExpression();  
+invalidCompare.Left = new CodePrimitiveExpression("abc");  
+invalidCompare.Operator = CodeBinaryOperatorType.LessThan;  
+invalidCompare.Right = new CodePrimitiveExpression(true);  
+RuleExpressionCondition condition = new RuleExpressionCondition();  
+condition.Expression = invalidCompare;  
+  
+// Create a validator for this condition.  
+// We are not using "this" in the condition, so the type is not used.  
+RuleValidation validation = new RuleValidation(this.GetType(), null);  
+  
+// See whether the condition validates.  
+if (!condition.Validate(validation))  
+{  
+    // There were errors, so display them.  
+    foreach (ValidationError error in validation.Errors)  
+    {  
+        Console.WriteLine(error.ErrorText);  
+    }  
+}  
+  
+```  
+  
+ Running this code produces the following error:  
+  
+```  
+Relational operator "LessThan" cannot be used on operands of types "string" and "bool".  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RuleValidation (Type thisType, System.Workflow.ComponentModel.Compiler.ITypeProvider typeProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type thisType, class System.Workflow.ComponentModel.Compiler.ITypeProvider typeProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleValidation.#ctor(System.Type,System.Workflow.ComponentModel.Compiler.ITypeProvider)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="thisType" Type="System.Type" />
+        <Parameter Name="typeProvider" Type="System.Workflow.ComponentModel.Compiler.ITypeProvider" />
+      </Parameters>
+      <Docs>
+        <param name="thisType">The type of the object that this <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> or <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> will be executed against. Normally it is the workflow, but it can be any valid type.</param>
+        <param name="typeProvider">An optional <see cref="T:System.Workflow.ComponentModel.Compiler.ITypeProvider" /> implementation that is used to determine what <see cref="T:System.Type" />s are available in the condition. If one is not specified, only types in the assembly specified by the activity and any assemblies it references are available.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> class using the <see cref="T:System.Type" /> of the <see cref="T:System.Workflow.Activities.Rules.Rule" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="thisType" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RuleValidation (System.Workflow.ComponentModel.Activity activity, System.Workflow.ComponentModel.Compiler.ITypeProvider typeProvider, bool checkStaticType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Activity activity, class System.Workflow.ComponentModel.Compiler.ITypeProvider typeProvider, bool checkStaticType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleValidation.#ctor(System.Workflow.ComponentModel.Activity,System.Workflow.ComponentModel.Compiler.ITypeProvider,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Workflow.ComponentModel.Activity" />
+        <Parameter Name="typeProvider" Type="System.Workflow.ComponentModel.Compiler.ITypeProvider" />
+        <Parameter Name="checkStaticType" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> in which context the <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> or <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> is run. In most cases, this will be the workflow object.</param>
+        <param name="typeProvider">An optional <see cref="T:System.Workflow.ComponentModel.Compiler.ITypeProvider" /> implementation that is used to determine what <see cref="T:System.Type" />s are available in the condition. If one is not specified, only types in the assembly specified by the activity and any assemblies it references are available.</param>
+        <param name="checkStaticType">If <see langword="true" />, the types used by any <see cref="T:System.Workflow.Activities.Rules.RuleCondition" /> or <see cref="T:System.Workflow.Activities.Rules.RuleSet" /> that are validated with this object must be in the restricted list of types allowed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> class using the specified <see cref="T:System.Workflow.ComponentModel.Activity" /> and the type provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is used at design time.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="activity" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Errors">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Compiler.ValidationErrorCollection Errors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Compiler.ValidationErrorCollection Errors" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleValidation.Errors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Compiler.ValidationErrorCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the errors associated with the <see cref="T:System.Workflow.Activities.Rules.RuleValidation" />.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> that contains the <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> objects created during rule validation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpressionInfo">
+      <MemberSignature Language="C#" Value="public System.Workflow.Activities.Rules.RuleExpressionInfo ExpressionInfo (System.CodeDom.CodeExpression expression);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.Activities.Rules.RuleExpressionInfo ExpressionInfo(class System.CodeDom.CodeExpression expression) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleValidation.ExpressionInfo(System.CodeDom.CodeExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.Rules.RuleExpressionInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expression" Type="System.CodeDom.CodeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="expression">The <see cref="T:System.CodeDom.CodeExpression" /> to evaluate.</param>
+        <summary>Determines the type of the code expression.</summary>
+        <returns>The <see cref="T:System.Workflow.Activities.Rules.RuleExpressionInfo" /> for the object. This identifies the type of the object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopParentExpression">
+      <MemberSignature Language="C#" Value="public void PopParentExpression ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PopParentExpression() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleValidation.PopParentExpression" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes and returns the parent expressions at the top of the <see cref="T:System.Collections.Stack" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PushParentExpression">
+      <MemberSignature Language="C#" Value="public bool PushParentExpression (System.CodeDom.CodeExpression newParent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool PushParentExpression(class System.CodeDom.CodeExpression newParent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleValidation.PushParentExpression(System.CodeDom.CodeExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newParent" Type="System.CodeDom.CodeExpression" />
+      </Parameters>
+      <Docs>
+        <param name="newParent">The <see cref="T:System.CodeDom.CodeExpression" /> to add to the <see cref="T:System.Collections.Stack" />.</param>
+        <summary>Inserts an object at the top of the <see cref="T:System.Collections.Stack" />.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="newParent" /> was added to the stack; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `newParent` is already part of the parent <xref:System.CodeDom.CodeExpression> objects, a new <xref:System.Workflow.ComponentModel.Compiler.ValidationError> is created.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="newParent" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ThisType">
+      <MemberSignature Language="C#" Value="public Type ThisType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThisType" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleValidation.ThisType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of object.</summary>
+        <value>The <see cref="T:System.Type" /> of the object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

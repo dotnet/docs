@@ -2,7 +2,7 @@
 title: Tuples | C# Guide
 description: Learn about unnamed and named tuple types in C#
 keywords: .NET, .NET Core, C#
-author:  BillWagner
+author: BillWagner
 ms-author: wiwagn
 ms.date: 11/23/2016
 ms.topic: article
@@ -110,8 +110,8 @@ the rules for assigning named tuples to each other.
 ## Assignment and tuples
 
 The language supports assignment between tuple types that have
-the same number of fields and the same types for each of those
-fields. Those types must be exact compile-time matches. Other
+the same number of fields and implicit conversions for the types for each of those
+fields. Other
 conversions are not considered for assignments. Let's look at the kinds
 of assignments that are allowed between tuple types.
 
@@ -287,7 +287,7 @@ Note that you cannot use a specific
 type outside the parentheses, even if every field in the tuple has the
 same type.
 
-### Deconstring user defined types
+### Deconstructing user defined types
 
 Any tuple type can be deconstructed as shown above. It's also easy
 to enable deconstruction on any user defined type (classes, structs, or 

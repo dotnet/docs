@@ -1,0 +1,706 @@
+<Type Name="ResultCode" FullName="System.DirectoryServices.Protocols.ResultCode">
+  <TypeSignature Language="C#" Value="public enum ResultCode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ResultCode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.ResultCode" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.ResultCode" /> enumeration specifies the operation result codes.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AdminLimitExceeded">
+      <MemberSignature Language="C#" Value="AdminLimitExceeded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode AdminLimitExceeded = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.AdminLimitExceeded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The administration limit on the server was exceeded. The value is equal to 11.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AffectsMultipleDsas">
+      <MemberSignature Language="C#" Value="AffectsMultipleDsas" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode AffectsMultipleDsas = int32(71)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.AffectsMultipleDsas" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Multiple directory service agents are affected. The value is equal to 71.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AliasDereferencingProblem">
+      <MemberSignature Language="C#" Value="AliasDereferencingProblem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode AliasDereferencingProblem = int32(36)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.AliasDereferencingProblem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A problem occurred when dereferencing the alias. The value is equal to 36.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AliasProblem">
+      <MemberSignature Language="C#" Value="AliasProblem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode AliasProblem = int32(33)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.AliasProblem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The alias is invalid. The value is equal to 33.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AttributeOrValueExists">
+      <MemberSignature Language="C#" Value="AttributeOrValueExists" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode AttributeOrValueExists = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.AttributeOrValueExists" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The attribute exists or the value has been assigned. The value is equal to 20.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthMethodNotSupported">
+      <MemberSignature Language="C#" Value="AuthMethodNotSupported" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode AuthMethodNotSupported = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.AuthMethodNotSupported" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The authentication method is not supported. The value is equal to 7.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Busy">
+      <MemberSignature Language="C#" Value="Busy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode Busy = int32(51)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.Busy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The server is busy. The value is equal to 51.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareFalse">
+      <MemberSignature Language="C#" Value="CompareFalse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode CompareFalse = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.CompareFalse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The attribute and known values do not match. The value is equal to 5.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareTrue">
+      <MemberSignature Language="C#" Value="CompareTrue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode CompareTrue = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.CompareTrue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The attribute and known values match. The value is equal to 6.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfidentialityRequired">
+      <MemberSignature Language="C#" Value="ConfidentialityRequired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode ConfidentialityRequired = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.ConfidentialityRequired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Confidentiality is required for this operation. The value is equal to 13.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ConstraintViolation">
+      <MemberSignature Language="C#" Value="ConstraintViolation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode ConstraintViolation = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.ConstraintViolation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A value in the request does not comply with certain constraints. The value is equal to 19.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EntryAlreadyExists">
+      <MemberSignature Language="C#" Value="EntryAlreadyExists" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode EntryAlreadyExists = int32(68)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.EntryAlreadyExists" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The object already exists. The value is equal to 68.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InappropriateAuthentication">
+      <MemberSignature Language="C#" Value="InappropriateAuthentication" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode InappropriateAuthentication = int32(48)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.InappropriateAuthentication" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The authentication that was provided was not appropriate. The value is equal to 48.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InappropriateMatching">
+      <MemberSignature Language="C#" Value="InappropriateMatching" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode InappropriateMatching = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.InappropriateMatching" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The matching rule does not apply to the specified attribute type. The value is equal to 18.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InsufficientAccessRights">
+      <MemberSignature Language="C#" Value="InsufficientAccessRights" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode InsufficientAccessRights = int32(50)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.InsufficientAccessRights" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The user has insufficient access rights. The value is equal to 50.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidAttributeSyntax">
+      <MemberSignature Language="C#" Value="InvalidAttributeSyntax" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode InvalidAttributeSyntax = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.InvalidAttributeSyntax" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The syntax is invalid. The value is equal to 21.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidDNSyntax">
+      <MemberSignature Language="C#" Value="InvalidDNSyntax" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode InvalidDNSyntax = int32(34)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.InvalidDNSyntax" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The distinguished name contains invalid syntax. The value is equal to 34.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LoopDetect">
+      <MemberSignature Language="C#" Value="LoopDetect" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode LoopDetect = int32(54)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.LoopDetect" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The chain of referrals has looped back to a referring server. The value is equal to 54.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NamingViolation">
+      <MemberSignature Language="C#" Value="NamingViolation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode NamingViolation = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.NamingViolation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A naming violation occurred. The value is equal to 64.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoSuchAttribute">
+      <MemberSignature Language="C#" Value="NoSuchAttribute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode NoSuchAttribute = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.NoSuchAttribute" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The requested attribute does not exist. The value is equal to 16.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoSuchObject">
+      <MemberSignature Language="C#" Value="NoSuchObject" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode NoSuchObject = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.NoSuchObject" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The object does not exist. The value is equal to 32.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotAllowedOnNonLeaf">
+      <MemberSignature Language="C#" Value="NotAllowedOnNonLeaf" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode NotAllowedOnNonLeaf = int32(66)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.NotAllowedOnNonLeaf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This operation is not allowed on a non-leaf object. The value is equal to 66.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotAllowedOnRdn">
+      <MemberSignature Language="C#" Value="NotAllowedOnRdn" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode NotAllowedOnRdn = int32(67)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.NotAllowedOnRdn" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This operation is not allowed on a relative distinguished name (RDN). The value is equal to 67.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectClassModificationsProhibited">
+      <MemberSignature Language="C#" Value="ObjectClassModificationsProhibited" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode ObjectClassModificationsProhibited = int32(69)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.ObjectClassModificationsProhibited" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The request is attempting to modify an object class that cannot be modified. The value is equal to 69.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectClassViolation">
+      <MemberSignature Language="C#" Value="ObjectClassViolation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode ObjectClassViolation = int32(65)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.ObjectClassViolation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An object class violation occurred. The value is equal to 65.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OffsetRangeError">
+      <MemberSignature Language="C#" Value="OffsetRangeError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode OffsetRangeError = int32(61)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.OffsetRangeError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The search results exceed the specified offset range. The value is equal to 61.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OperationsError">
+      <MemberSignature Language="C#" Value="OperationsError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode OperationsError = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.OperationsError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An operation error occurred. The value is equal to 1.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Other">
+      <MemberSignature Language="C#" Value="Other" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode Other = int32(80)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.Other" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An unknown error occurred. The value is equal to 80.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtocolError">
+      <MemberSignature Language="C#" Value="ProtocolError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode ProtocolError = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.ProtocolError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A protocol error occurred. The value is equal to 2.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Referral">
+      <MemberSignature Language="C#" Value="Referral" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode Referral = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.Referral" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A referral was returned from the server. The value is equal to 10.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferralV2">
+      <MemberSignature Language="C#" Value="ReferralV2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode ReferralV2 = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.ReferralV2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only partial results and referrals were received. The value is equal to 9.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ResultsTooLarge">
+      <MemberSignature Language="C#" Value="ResultsTooLarge" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode ResultsTooLarge = int32(70)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.ResultsTooLarge" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The returned results are too large. The value is equal to 70.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SaslBindInProgress">
+      <MemberSignature Language="C#" Value="SaslBindInProgress" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode SaslBindInProgress = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.SaslBindInProgress" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Simple Authentication and Security Layer (SASL) bind is in progress. The value is equal to 14.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SizeLimitExceeded">
+      <MemberSignature Language="C#" Value="SizeLimitExceeded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode SizeLimitExceeded = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.SizeLimitExceeded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The size limit was exceeded. The value is equal to 4.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SortControlMissing">
+      <MemberSignature Language="C#" Value="SortControlMissing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode SortControlMissing = int32(60)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.SortControlMissing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The search requires a SORT control. The value is equal to 60.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StrongAuthRequired">
+      <MemberSignature Language="C#" Value="StrongAuthRequired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode StrongAuthRequired = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.StrongAuthRequired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Strong authentication is required for this operation. The value is equal to 8.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Success">
+      <MemberSignature Language="C#" Value="Success" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode Success = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.Success" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The call completed successfully. The value is equal to 0.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeLimitExceeded">
+      <MemberSignature Language="C#" Value="TimeLimitExceeded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode TimeLimitExceeded = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.TimeLimitExceeded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The time limit set by the server-side time limit parameter was exceeded. The value is equal to 3.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unavailable">
+      <MemberSignature Language="C#" Value="Unavailable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode Unavailable = int32(52)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.Unavailable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The server is unavailable. The value is equal to 52.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnavailableCriticalExtension">
+      <MemberSignature Language="C#" Value="UnavailableCriticalExtension" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode UnavailableCriticalExtension = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.UnavailableCriticalExtension" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The server does not support the control. The control is critical. The value is equal to 12.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UndefinedAttributeType">
+      <MemberSignature Language="C#" Value="UndefinedAttributeType" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode UndefinedAttributeType = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.UndefinedAttributeType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The type is not defined. The value is equal to 17.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnwillingToPerform">
+      <MemberSignature Language="C#" Value="UnwillingToPerform" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode UnwillingToPerform = int32(53)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.UnwillingToPerform" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The server cannot handle directory requests. The value is equal to 53.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VirtualListViewError">
+      <MemberSignature Language="C#" Value="VirtualListViewError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ResultCode VirtualListViewError = int32(76)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ResultCode.VirtualListViewError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.ResultCode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An error occurred when attempting to perform a requested Virtual List View operation. The value is equal to 76.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

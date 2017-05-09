@@ -1,0 +1,41 @@
+<Type Name="IPersistedSelector" FullName="System.Web.UI.WebControls.IPersistedSelector">
+  <TypeSignature Language="C#" Value="public interface IPersistedSelector" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPersistedSelector" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.IPersistedSelector" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a property that is used by the <see cref="T:System.Web.DynamicData.DynamicDataManager" /> control to enable selecting data in a data-bound control through the query string.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DataKey">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataKey DataKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataKey DataKey" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IPersistedSelector.DataKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the data-key value for the selected record in a data-bound control.</summary>
+        <value>The data-key value for the selected record in a data-bound control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.IPersistedSelector.DataKey%2A> property differs from the default selection made by the data-bound control because the item selected can be persisted across paging and the item may not be on the current page.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

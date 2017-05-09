@@ -1,0 +1,233 @@
+<Type Name="PrintCommitAttributesException" FullName="System.Printing.PrintCommitAttributesException">
+  <TypeSignature Language="C#" Value="public class PrintCommitAttributesException : System.Printing.PrintSystemException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PrintCommitAttributesException extends System.Printing.PrintSystemException" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.PrintCommitAttributesException" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Printing.PrintSystemException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The exception that is thrown when an error condition prevents some attributes from being committed by a <see cref="T:System.Printing.PrintSystemObject" /> to the actual computer, printer, or device that the object represents.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!CAUTION]
+>  Classes within the <xref:System.Printing> namespace are not supported for use within a Windows service or ASP.NET application or service. Attempting to use these classes from within one of these application types may produce unexpected problems, such as diminished service performance and run-time exceptions.  
+  
+ If you want to print from a Windows Forms application, see the <xref:System.Drawing.Printing> namespace.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintCommitAttributesException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintCommitAttributesException.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintCommitAttributesException" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintCommitAttributesException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintCommitAttributesException.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">A description of the error condition.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintCommitAttributesException" /> class and provides it with the specified message.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected PrintCommitAttributesException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintCommitAttributesException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">Stores all the data that is used to serialize the object.</param>
+        <param name="context">Describes the context of the serialized stream, including the source and the destination.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintCommitAttributesException" /> class by using the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintCommitAttributesException (string message, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintCommitAttributesException.#ctor(System.String,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">A description of the error condition.</param>
+        <param name="innerException">The underlying condition that triggered the <see cref="T:System.Printing.PrintCommitAttributesException" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintCommitAttributesException" /> class by using the specified message and the inner <see cref="T:System.Exception" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintCommitAttributesException (int errorCode, System.Collections.ObjectModel.Collection&lt;string&gt; attributesSuccessList, System.Collections.ObjectModel.Collection&lt;string&gt; attributesFailList);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 errorCode, class System.Collections.ObjectModel.Collection`1&lt;string&gt; attributesSuccessList, class System.Collections.ObjectModel.Collection`1&lt;string&gt; attributesFailList) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintCommitAttributesException.#ctor(System.Int32,System.Collections.ObjectModel.Collection{System.String},System.Collections.ObjectModel.Collection{System.String})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="errorCode" Type="System.Int32" />
+        <Parameter Name="attributesSuccessList" Type="System.Collections.ObjectModel.Collection&lt;System.String&gt;" />
+        <Parameter Name="attributesFailList" Type="System.Collections.ObjectModel.Collection&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="errorCode">An <see cref="T:System.Int32" /> that is interpreted as an HRESULT, a coded numerical value that is assigned to a specific exception.</param>
+        <param name="attributesSuccessList">A collection of strings that name the attributes that your program successfully committed.</param>
+        <param name="attributesFailList">A collection of strings that name the attributes that your program was unable to commit.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintCommitAttributesException" /> class by using the specified error code, and the success and failure collections.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintCommitAttributesException (int errorCode, string message, System.Collections.ObjectModel.Collection&lt;string&gt; attributesSuccessList, System.Collections.ObjectModel.Collection&lt;string&gt; attributesFailList, string objectName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 errorCode, string message, class System.Collections.ObjectModel.Collection`1&lt;string&gt; attributesSuccessList, class System.Collections.ObjectModel.Collection`1&lt;string&gt; attributesFailList, string objectName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintCommitAttributesException.#ctor(System.Int32,System.String,System.Collections.ObjectModel.Collection{System.String},System.Collections.ObjectModel.Collection{System.String},System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="errorCode" Type="System.Int32" />
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="attributesSuccessList" Type="System.Collections.ObjectModel.Collection&lt;System.String&gt;" />
+        <Parameter Name="attributesFailList" Type="System.Collections.ObjectModel.Collection&lt;System.String&gt;" />
+        <Parameter Name="objectName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="errorCode">An <see cref="T:System.Int32" /> that is interpreted as an HRESULT, a coded numerical value that is assigned to a specific exception.</param>
+        <param name="message">A description of the error condition.</param>
+        <param name="attributesSuccessList">A collection of strings that name the attributes that your program successfully committed.</param>
+        <param name="attributesFailList">A collection of strings that name the attributes that your program was unable to commit.</param>
+        <param name="objectName">The object that generated the exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintCommitAttributesException" /> class by using the specified error code, message, and object name, and the success and failure collections.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommittedAttributesCollection">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;string&gt; CommittedAttributesCollection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;string&gt; CommittedAttributesCollection" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintCommitAttributesException.CommittedAttributesCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Collections.ObjectModel.Collection`1" /> of the names of the attributes that were successfully committed.</summary>
+        <value>A <see cref="T:System.Collections.ObjectModel.Collection`1" /> of strings that identify the <see cref="T:System.Printing.PrintSystemObject" /> attributes that were successfully committed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FailedAttributesCollection">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;string&gt; FailedAttributesCollection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;string&gt; FailedAttributesCollection" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintCommitAttributesException.FailedAttributesCollection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Collections.ObjectModel.Collection`1" /> of the names of the attributes that were not committed.</summary>
+        <value>A <see cref="T:System.Collections.ObjectModel.Collection`1" /> of strings that identify the <see cref="T:System.Printing.PrintSystemObject" /> attributes that your program was unable to commit.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectData">
+      <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintCommitAttributesException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">Stores all the data that is used to serialize the object.</param>
+        <param name="context">Describes the context of the serialized stream, including the source and the destination.</param>
+        <summary>Gets information about the serialization of the object and the context of the serialized stream.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintObjectName">
+      <MemberSignature Language="C#" Value="public string PrintObjectName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PrintObjectName" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.PrintCommitAttributesException.PrintObjectName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the object that threw the exception.</summary>
+        <value>A <see cref="T:System.String" /> reference to the <see cref="P:System.Printing.PrintSystemObject.Name" /> property of the <see cref="T:System.Printing.PrintSystemObject" /> that threw the exception.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

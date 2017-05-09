@@ -1,0 +1,84 @@
+<Type Name="ContextExchangeMechanism" FullName="System.ServiceModel.Channels.ContextExchangeMechanism">
+  <TypeSignature Language="C#" Value="public enum ContextExchangeMechanism" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContextExchangeMechanism extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ContextExchangeMechanism" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.WorkflowServices, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies whether an HTTP cookie or a SOAP header is the mechanism used to exchange context for a conversation between a client and service.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Channels.ContextBindingElement.ContextExchangeMechanism%2A> property or the <xref:System.ServiceModel.Channels.ContextBindingElement.%23ctor%28System.Net.Security.ProtectionLevel%2CSystem.ServiceModel.Channels.ContextExchangeMechanism%29> constructor to specify the value of the <xref:System.ServiceModel.Channels.ContextExchangeMechanism> for a conversation between a client and service.  
+  
+ Service endpoints that require support for the context exchange protocol can make this requirement explicit in their published policy. Policy assertions that represent the requirement for the client to support the context exchange protocol at the SOAP level or that require the enabling of HTTP cookie support can be published by an endpoint. The generation of these assertions into the policy on the service is controlled by the value of the <xref:System.ServiceModel.Channels.ContextBindingElement.ContextExchangeMechanism%2A> property as follows:  
+  
+-   For HttpCookie, the following assertion is generated:  
+  
+    ```  
+    <HttpUseCookie xmlns=”http://schemas.xmlsoap.org/soap/http”/>  
+    ```  
+  
+-   For ContextSoapHeader, the following assertion is generated:  
+  
+    ```  
+    <IncludeContext   
+    xmlns=”http://schemas.microsoft.com/ws/2006/05/context”  
+    protectionLevel=”Sign” />  
+    ```  
+  
+ The HttpCookie enumeration is implemented at the transport layer. This can be used in the case of simplex communication, where the client makes an initial request and the context is provided by the service on the corresponding reply. All subsequent messages between the service and client for the lifetime of that conversation contain the context. For service endpoints that use an HTTP transport and clients that agree to allow the use of HTTP cookies, the HttpCookie enumeration can be utilized to exchange the application context. When HTTP cookies are used to propagate context, they should be protected using transport security. This mechanism cannot be used with non-HTTP transports.  
+  
+ The ContextSoapHeader enumeration provides an alternative that is implemented in a custom context channel and that can be used with non-HTTP transports and other message exchange pattern, such as request-reply, and a duplex session. This context exchange protocol provides a SOAP-based equivalent of the feature offered by HTTP cookies at the transport layer. It introduces a new `wsc:Context` SOAP header to represent the context information. The `wsc:Context` header must be protected from modification while in transit for the same reason as the WS-Addressing headers must be protected: upon arrival, these headers are used to dispatch the message to the correct workflow instances. The `wsc:Context` header is therefore required to be digitally signed at either SOAP or transport level when the binding offers message protection capability.  
+  
+ The channel layer communicates the context to and from the application layer using <xref:System.ServiceModel.Channels.ContextMessageProperty>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ContextSoapHeader">
+      <MemberSignature Language="C#" Value="ContextSoapHeader" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.ContextExchangeMechanism ContextSoapHeader = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.ContextExchangeMechanism.ContextSoapHeader" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.ContextExchangeMechanism</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A SOAP header is used to exchange context. This is the default exchange mechanism.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpCookie">
+      <MemberSignature Language="C#" Value="HttpCookie" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.ContextExchangeMechanism HttpCookie = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.ContextExchangeMechanism.HttpCookie" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.ContextExchangeMechanism</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An HTTP cookie is used to exchange context.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

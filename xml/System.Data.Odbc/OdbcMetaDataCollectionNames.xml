@@ -1,0 +1,138 @@
+<Type Name="OdbcMetaDataCollectionNames" FullName="System.Data.Odbc.OdbcMetaDataCollectionNames">
+  <TypeSignature Language="C#" Value="public static class OdbcMetaDataCollectionNames" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit OdbcMetaDataCollectionNames extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcMetaDataCollectionNames" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a list of constants for use with the **GetSchema** method to retrieve metadata collections.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Columns">
+      <MemberSignature Language="C#" Value="public static readonly string Columns;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Columns" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataCollectionNames.Columns" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant for use with the **GetSchema** method that represents the **Columns** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Indexes">
+      <MemberSignature Language="C#" Value="public static readonly string Indexes;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Indexes" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataCollectionNames.Indexes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant for use with the **GetSchema** method that represents the **Indexes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcedureColumns">
+      <MemberSignature Language="C#" Value="public static readonly string ProcedureColumns;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ProcedureColumns" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataCollectionNames.ProcedureColumns" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant for use with the **GetSchema** method that represents the **ProcedureColumns** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcedureParameters">
+      <MemberSignature Language="C#" Value="public static readonly string ProcedureParameters;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ProcedureParameters" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataCollectionNames.ProcedureParameters" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant for use with the **GetSchema** method that represents the **ProcedureParameters** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Procedures">
+      <MemberSignature Language="C#" Value="public static readonly string Procedures;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Procedures" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataCollectionNames.Procedures" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant for use with the **GetSchema** method that represents the **Procedures** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tables">
+      <MemberSignature Language="C#" Value="public static readonly string Tables;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Tables" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataCollectionNames.Tables" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant for use with the **GetSchema** method that represents the **Tables** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Views">
+      <MemberSignature Language="C#" Value="public static readonly string Views;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Views" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataCollectionNames.Views" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant for use with the **GetSchema** method that represents the **Views** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

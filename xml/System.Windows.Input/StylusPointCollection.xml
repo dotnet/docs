@@ -1,0 +1,556 @@
+<Type Name="StylusPointCollection" FullName="System.Windows.Input.StylusPointCollection">
+  <TypeSignature Language="C#" Value="public class StylusPointCollection : System.Collections.ObjectModel.Collection&lt;System.Windows.Input.StylusPoint&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StylusPointCollection extends System.Collections.ObjectModel.Collection`1&lt;valuetype System.Windows.Input.StylusPoint&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusPointCollection" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.Collection&lt;System.Windows.Input.StylusPoint&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Windows.Input.StylusPoint</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains a collection of <see cref="T:System.Windows.Input.StylusPoint" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Ink.Stroke> has a <xref:System.Windows.Input.StylusPointCollection> that contains <xref:System.Windows.Input.StylusPoint> objects collected from a stylus and digitizer. You can use the <xref:System.Windows.Input.StylusPointCollection> to customize the <xref:System.Windows.Ink.Stroke>.  
+  
+   
+  
+## Examples  
+ The following example overrides the <xref:System.Windows.Ink.Stroke.DrawCore%2A?displayProperty=fullName> method to draw a circle at each <xref:System.Windows.Input.StylusPoint> comprising a <xref:System.Windows.Ink.Stroke>. If the <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A> property is set to `true`, the <xref:System.Windows.Ink.Stroke.GetBezierStylusPoints%2A> method returns the stylus points. Otherwise, the <xref:System.Windows.Ink.Stroke.StylusPoints%2A> property returns the stylus points.  
+  
+ [!code-csharp[StrokeSnippets#23](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyStroke.cs#23)]
+ [!code-vb[StrokeSnippets#23](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyStroke.vb#23)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StylusPointCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusPointCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example collects <xref:System.Windows.Input.StylusPoint> objects in the <xref:System.Windows.UIElement.OnStylusDown%2A> method of a custom control. The example creates a <xref:System.Windows.Input.StylusPointCollection> by specifying the <xref:System.Windows.Input.StylusPointDescription> and the initial size of the <xref:System.Windows.Input.StylusPointCollection>.  
+  
+ [!code-csharp[PacketSpy#19](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#19)]
+ [!code-vb[PacketSpy#19](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#19)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StylusPointCollection (System.Collections.Generic.IEnumerable&lt;System.Windows.Input.StylusPoint&gt; stylusPoints);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Windows.Input.StylusPoint&gt; stylusPoints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Input.StylusPoint})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="stylusPoints" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.Input.StylusPoint&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="stylusPoints">A generic IEnumerable of type <see cref="T:System.Windows.Input.StylusPoint" /> to add to the <see cref="T:System.Windows.Input.StylusPointCollection" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusPointCollection" /> class with the specified <see cref="T:System.Windows.Input.StylusPoint" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Input.StylusPointCollection>.  
+  
+ [!code-csharp[PacketSpy#28](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#28)]
+ [!code-vb[PacketSpy#28](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#28)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stylusPoints" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The length of <paramref name="points" /> is 0.  
+  
+ -or-  
+  
+ The <see cref="T:System.Windows.Input.StylusPoint" /> objects in <paramref name="stylusPoints" /> have incompatible <see cref="T:System.Windows.Input.StylusPointDescription" /> objects.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StylusPointCollection (System.Collections.Generic.IEnumerable&lt;System.Windows.Point&gt; points);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Windows.Point&gt; points) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Point})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="points" Type="System.Collections.Generic.IEnumerable&lt;System.Windows.Point&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="points">A generic IEnumerable of type <see cref="T:System.Windows.Point" /> that specifies the <see cref="T:System.Windows.Input.StylusPoint" /> objects to add to the <see cref="T:System.Windows.Input.StylusPointCollection" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusPointCollection" /> class with specified points.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Input.StylusPointCollection>.  
+  
+ [!code-csharp[PacketSpy#20](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#20)]
+ [!code-vb[PacketSpy#20](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="points" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The length of <paramref name="points" /> is 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StylusPointCollection (int initialCapacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 initialCapacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="initialCapacity" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="initialCapacity">The number of <see cref="T:System.Windows.Input.StylusPoint" /> objects the <see cref="T:System.Windows.Input.StylusPointCollection" /> can initially contain.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusPointCollection" /> class that may initially contain the specified number of <see cref="T:System.Windows.Input.StylusPoint" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you use the <xref:System.Windows.Input.StylusPointCollection.%23ctor%2A> constructor to create a new <xref:System.Windows.Input.StylusPointCollection>, you specify it's `initialCapacity`. However, you can add more <xref:System.Windows.Input.StylusPoint> objects by calling the <xref:System.Windows.Input.StylusPointCollection.Add%2A> method.  
+  
+   
+  
+## Examples  
+ The following example collects <xref:System.Windows.Input.StylusPoint> objects in the <xref:System.Windows.UIElement.OnStylusDown%2A> method of a custom control. The example creates a <xref:System.Windows.Input.StylusPointCollection> by specifying both the <xref:System.Windows.Input.StylusPointDescription> and the initial size of the <xref:System.Windows.Input.StylusPointCollection>.  
+  
+ [!code-csharp[PacketSpy#19](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#19)]
+ [!code-vb[PacketSpy#19](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#19)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="initialCapacity" /> is negative.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StylusPointCollection (System.Windows.Input.StylusPointDescription stylusPointDescription);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.StylusPointDescription stylusPointDescription) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.#ctor(System.Windows.Input.StylusPointDescription)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="stylusPointDescription" Type="System.Windows.Input.StylusPointDescription" />
+      </Parameters>
+      <Docs>
+        <param name="stylusPointDescription">A <see cref="T:System.Windows.Input.StylusPointDescription" /> that specifies the additional properties stored in each <see cref="T:System.Windows.Input.StylusPoint" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusPointCollection" /> class that contains the properties specified in the <see cref="T:System.Windows.Input.StylusPointDescription" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All <xref:System.Windows.Input.StylusPoint> objects added to the <xref:System.Windows.Input.StylusPointCollection> must have a <xref:System.Windows.Input.StylusPointDescription> that is compatible with `stylusPointDescription`.  
+  
+   
+  
+## Examples  
+ The following example collects <xref:System.Windows.Input.StylusPoint> objects in the <xref:System.Windows.UIElement.OnStylusDown%2A> method of a custom control. The example creates a <xref:System.Windows.Input.StylusPointCollection> by specifying the <xref:System.Windows.Input.StylusPointDescription> and the initial size of the <xref:System.Windows.Input.StylusPointCollection>.  
+  
+ [!code-csharp[PacketSpy#19](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#19)]
+ [!code-vb[PacketSpy#19](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#19)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stylusPointDescription" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StylusPointCollection (System.Windows.Input.StylusPointDescription stylusPointDescription, int initialCapacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.StylusPointDescription stylusPointDescription, int32 initialCapacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.#ctor(System.Windows.Input.StylusPointDescription,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="stylusPointDescription" Type="System.Windows.Input.StylusPointDescription" />
+        <Parameter Name="initialCapacity" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="stylusPointDescription">A <see cref="T:System.Windows.Input.StylusPointDescription" /> that specifies the additional properties stored in each <see cref="T:System.Windows.Input.StylusPoint" />.</param>
+        <param name="initialCapacity">The number of <see cref="T:System.Windows.Input.StylusPoint" /> objects the <see cref="T:System.Windows.Input.StylusPointCollection" /> can initially contain.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusPointCollection" /> class that is the specified size and contains the properties specified in the <see cref="T:System.Windows.Input.StylusPointDescription" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you use the <xref:System.Windows.Input.StylusPointCollection.%23ctor%2A> constructor to create a new <xref:System.Windows.Input.StylusPointCollection>, the <xref:System.Windows.Input.StylusPointCollection> is created with the capacity to hold the specified number of <xref:System.Windows.Input.StylusPoint> objects. You can add more <xref:System.Windows.Input.StylusPoint> objects than `initialCapacity` by calling the <xref:System.Windows.Input.StylusPointCollection.Add%2A> method.  
+  
+   
+  
+## Examples  
+ The following example collects <xref:System.Windows.Input.StylusPoint> objects in the <xref:System.Windows.UIElement.OnStylusDown%2A> method of a custom control. The example creates a <xref:System.Windows.Input.StylusPointCollection> by specifying the <xref:System.Windows.Input.StylusPointDescription> and the initial size of the <xref:System.Windows.Input.StylusPointCollection>.  
+  
+ [!code-csharp[PacketSpy#19](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#19)]
+ [!code-vb[PacketSpy#19](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#19)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="initialCapacity" /> is negative.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stylusPointDescription" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Windows.Input.StylusPointCollection stylusPoints);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Windows.Input.StylusPointCollection stylusPoints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.Add(System.Windows.Input.StylusPointCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stylusPoints" Type="System.Windows.Input.StylusPointCollection" />
+      </Parameters>
+      <Docs>
+        <param name="stylusPoints">The <see cref="T:System.Windows.Input.StylusPointCollection" /> to add to the current <see cref="T:System.Windows.Input.StylusPointCollection" />.</param>
+        <summary>Adds the specified <see cref="T:System.Windows.Input.StylusPointCollection" /> to the current <see cref="T:System.Windows.Input.StylusPointCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example collects <xref:System.Windows.Input.StylusPoint> objects in the <xref:System.Windows.UIElement.OnStylusDown%2A> method of a custom control.  
+  
+ [!code-csharp[PacketSpy#19](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#19)]
+ [!code-vb[PacketSpy#19](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#19)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stylusPoints" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="T:System.Windows.Input.StylusPointDescription" /> of <paramref name="stylusPoints" /> is not compatible with the <see cref="P:System.Windows.Input.StylusPointCollection.Description" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Changed">
+      <MemberSignature Language="C#" Value="public event EventHandler Changed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Changed" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Input.StylusPointCollection.Changed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="T:System.Windows.Input.StylusPointCollection" /> changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to handle the <xref:System.Windows.Input.StylusPointCollection.Changed> event.  
+  
+ [!code-csharp[StrokeSnippets#27](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeSnippets/CSharp/MyBorder.cs#27)]
+ [!code-vb[StrokeSnippets#27](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeSnippets/VisualBasic/MyBorder.vb#27)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearItems">
+      <MemberSignature Language="C#" Value="protected override sealed void ClearItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.ClearItems" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all <see cref="T:System.Windows.Input.StylusPoint" /> objects from the <see cref="T:System.Windows.Input.StylusPointCollection" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Input.StylusPointCollection" /> is connected to a <see cref="T:System.Windows.Ink.Stroke" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.StylusPointCollection Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.StylusPointCollection Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.StylusPointCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Copies the <see cref="T:System.Windows.Input.StylusPointCollection" />.</summary>
+        <returns>A new <see cref="T:System.Windows.Input.StylusPointCollection" /> that contains copies of the <see cref="T:System.Windows.Input.StylusPoint" /> objects in the current <see cref="T:System.Windows.Input.StylusPointCollection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to copy a <xref:System.Windows.Input.StylusPointCollection>. The example creates a stroke comprised of members of the <xref:System.Windows.Input.StylusPointCollection> and adds them to an <xref:System.Windows.Controls.InkCanvas>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkcanvs1`.  
+  
+ [!code-csharp[PacketSpy#18](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#18)]
+ [!code-vb[PacketSpy#18](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#18)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.StylusPointDescription Description { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.StylusPointDescription Description" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPointCollection.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.StylusPointDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Input.StylusPointDescription" /> that is associated with the <see cref="T:System.Windows.Input.StylusPoint" /> objects in the <see cref="T:System.Windows.Input.StylusPointCollection" />.</summary>
+        <value>The <see cref="T:System.Windows.Input.StylusPointDescription" /> that is associated with the <see cref="T:System.Windows.Input.StylusPoint" /> objects in the <see cref="T:System.Windows.Input.StylusPointCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example gets the <xref:System.Windows.Input.StylusPointDescription> for a <xref:System.Windows.Input.StylusPointCollection> and gets the information for each <xref:System.Windows.Input.StylusPointPropertyInfo> in the <xref:System.Windows.Input.StylusPointDescription>.  
+  
+ [!code-csharp[PacketSpy#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[PacketSpy#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#2)]  
+[!code-csharp[PacketSpy#4](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#4)]
+[!code-vb[PacketSpy#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertItem">
+      <MemberSignature Language="C#" Value="protected override sealed void InsertItem (int index, System.Windows.Input.StylusPoint stylusPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, valuetype System.Windows.Input.StylusPoint stylusPoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.InsertItem(System.Int32,System.Windows.Input.StylusPoint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="stylusPoint" Type="System.Windows.Input.StylusPoint" />
+      </Parameters>
+      <Docs>
+        <param name="index">The position at which to insert the <see cref="T:System.Windows.Input.StylusPoint" />.</param>
+        <param name="stylusPoint">The <see cref="T:System.Windows.Input.StylusPoint" /> to insert into the <see cref="T:System.Windows.Input.StylusPointCollection" />.</param>
+        <summary>Inserts the specified <see cref="T:System.Windows.Input.StylusPoint" /> into the <see cref="T:System.Windows.Input.StylusPointCollection" /> at the specified position.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="T:System.Windows.Input.StylusPointDescription" /> of <paramref name="stylusPoint" /> is not compatible with the <see cref="P:System.Windows.Input.StylusPointCollection.Description" /> property.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is greater or equal to the number of <see cref="T:System.Windows.Input.StylusPoint" /> objects in the <see cref="T:System.Windows.Input.StylusPointCollection" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OnChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.OnChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Input.StylusPointCollection.Changed" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static System.Windows.Point[] op_Explicit (System.Windows.Input.StylusPointCollection stylusPoints);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Point[] op_Explicit(class System.Windows.Input.StylusPointCollection stylusPoints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.op_Explicit(System.Windows.Input.StylusPointCollection)~System.Windows.Point[]" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stylusPoints" Type="System.Windows.Input.StylusPointCollection" />
+      </Parameters>
+      <Docs>
+        <param name="stylusPoints">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reformat">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.StylusPointCollection Reformat (System.Windows.Input.StylusPointDescription subsetToReformatTo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.StylusPointCollection Reformat(class System.Windows.Input.StylusPointDescription subsetToReformatTo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.Reformat(System.Windows.Input.StylusPointDescription)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.StylusPointCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subsetToReformatTo" Type="System.Windows.Input.StylusPointDescription" />
+      </Parameters>
+      <Docs>
+        <param name="subsetToReformatTo">A <see cref="T:System.Windows.Input.StylusPointDescription" /> to intersect with the <see cref="T:System.Windows.Input.StylusPointDescription" /> of the current <see cref="T:System.Windows.Input.StylusPointCollection" />.</param>
+        <summary>Finds the intersection of the specified <see cref="T:System.Windows.Input.StylusPointDescription" /> and the <see cref="P:System.Windows.Input.StylusPointCollection.Description" /> property.</summary>
+        <returns>A <see cref="T:System.Windows.Input.StylusPointCollection" /> that has a <see cref="T:System.Windows.Input.StylusPointDescription" /> that is a subset of the specified <see cref="T:System.Windows.Input.StylusPointDescription" /> and the <see cref="T:System.Windows.Input.StylusPointDescription" /> that the current <see cref="T:System.Windows.Input.StylusPointCollection" /> uses.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `subsetToReformatTo` is a <xref:System.Windows.Input.StylusPointDescription> which describes a subset of values belonging to the <xref:System.Windows.Input.StylusPointCollection.Description%2A> property. Use the <xref:System.Windows.Input.StylusPointDescription.GetCommonDescription%2A> method to get a <xref:System.Windows.Input.StylusPointDescription> that intersects the <xref:System.Windows.Input.StylusPointCollection.Description%2A> of the current <xref:System.Windows.Input.StylusPointCollection>.  
+  
+ The <xref:System.Windows.Input.StylusPointCollection.Reformat%2A> method returns a <xref:System.Windows.Input.StylusPointCollection> that contains the same <xref:System.Windows.Input.StylusPoint> objects as those belonging to the current <xref:System.Windows.Input.StylusPointCollection>. The <xref:System.Windows.Input.StylusPoint> objects in the new <xref:System.Windows.Input.StylusPointCollection> uses `subsetToReformatTo` as the <xref:System.Windows.Input.StylusPointDescription>.  
+  
+> [!NOTE]
+>  <xref:System.Windows.Input.StylusPointCollection.Reformat%2A> uses the constraints from the <xref:System.Windows.Input.StylusPointPropertyInfo> of the <xref:System.Windows.Input.StylusPointCollection.Description%2A> property, even if the constraints in `subsetToReformatTo` are different. For example, if `subsetToReformatTo` uses the values 0 and 1023 for <xref:System.Windows.Input.StylusPointProperties.NormalPressure> whereas <xref:System.Windows.Input.StylusPointCollection.Description%2A> uses the values 0 and 255. <xref:System.Windows.Input.StylusPointCollection.Reformat%2A> returns a <xref:System.Windows.Input.StylusPointDescription> using the values, 0 and 255.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create a new <xref:System.Windows.Input.StylusPointCollection> that uses a different <xref:System.Windows.Input.StylusPointDescription>.  
+  
+ [!code-csharp[PacketSpy#17](~/samples/snippets/csharp/VS_Snippets_Wpf/PacketSpy/CSharp/Window1.xaml.cs#17)]
+ [!code-vb[PacketSpy#17](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PacketSpy/VisualBasic/Window1.xaml.vb#17)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="subsetToReformatTo" /> is not a subset of the <see cref="P:System.Windows.Input.StylusPointCollection.Description" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveItem">
+      <MemberSignature Language="C#" Value="protected override sealed void RemoveItem (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemoveItem(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.RemoveItem(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The position at which to remove the <see cref="T:System.Windows.Input.StylusPoint" />.</param>
+        <summary>Removes the <see cref="T:System.Windows.Input.StylusPoint" /> at the specified position from the <see cref="T:System.Windows.Input.StylusPointCollection" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Input.StylusPointCollection" /> is connected to a <see cref="T:System.Windows.Ink.Stroke" /> and there is only one <see cref="T:System.Windows.Input.StylusPoint" /> in the <see cref="T:System.Windows.Input.StylusPointCollection" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItem">
+      <MemberSignature Language="C#" Value="protected override sealed void SetItem (int index, System.Windows.Input.StylusPoint stylusPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, valuetype System.Windows.Input.StylusPoint stylusPoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.SetItem(System.Int32,System.Windows.Input.StylusPoint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="stylusPoint" Type="System.Windows.Input.StylusPoint" />
+      </Parameters>
+      <Docs>
+        <param name="index">The position at which to set the <see cref="T:System.Windows.Input.StylusPoint" />.</param>
+        <param name="stylusPoint">The <see cref="T:System.Windows.Input.StylusPoint" /> to set at the specified position.</param>
+        <summary>Sets the specified <see cref="T:System.Windows.Input.StylusPoint" /> at the specified position.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="T:System.Windows.Input.StylusPointDescription" /> of <paramref name="stylusPoint" /> is not compatible with the <see cref="P:System.Windows.Input.StylusPointCollection.Description" /> property.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is greater than the number of <see cref="T:System.Windows.Input.StylusPoint" /> objects in the <see cref="T:System.Windows.Input.StylusPointCollection" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToHiMetricArray">
+      <MemberSignature Language="C#" Value="public int[] ToHiMetricArray ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32[] ToHiMetricArray() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointCollection.ToHiMetricArray" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Converts the property values of the <see cref="T:System.Windows.Input.StylusPoint" /> objects into a 32-bit signed integer array.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

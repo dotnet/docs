@@ -1,0 +1,177 @@
+<Type Name="OdbcError" FullName="System.Data.Odbc.OdbcError">
+  <TypeSignature Language="C#" Value="public sealed class OdbcError" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit OdbcError extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcError" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Collects information relevant to a warning or error returned by the data source.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is created by the <xref:System.Data.Odbc.OdbcDataAdapter> whenever an error occurs. Each instance of <xref:System.Data.Odbc.OdbcError> created by the <xref:System.Data.Odbc.OdbcDataAdapter> is then managed by the <xref:System.Data.Odbc.OdbcErrorCollection> class, which in turn is created by the <xref:System.Data.Odbc.OdbcException> class.  
+  
+ If the severity of the error is too great, the server may close the <xref:System.Data.Odbc.OdbcConnection>. However, the user can reopen the connection and continue.  
+  
+   
+  
+## Examples  
+ The following example displays the properties of the <xref:System.Data.Odbc.OdbcError> class.  
+  
+ [!code-csharp[Classic WebData OdbcError#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcError/CS/source.cs#1)]
+ [!code-vb[Classic WebData OdbcError#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcError/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public string Message { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Message" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcError.Message" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a short description of the error.</summary>
+        <value>A description of the error.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example displays the properties of the <xref:System.Data.Odbc.OdbcError>.  
+  
+ [!code-csharp[Classic WebData OdbcError#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcError/CS/source.cs#1)]
+ [!code-vb[Classic WebData OdbcError#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcError/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NativeError">
+      <MemberSignature Language="C#" Value="public int NativeError { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NativeError" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcError.NativeError" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the data source-specific error information.</summary>
+        <value>The data source-specific error information.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example displays the properties of the <xref:System.Data.Odbc.OdbcError>.  
+  
+ [!code-csharp[Classic WebData OdbcError#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcError/CS/source.cs#1)]
+ [!code-vb[Classic WebData OdbcError#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcError/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public string Source { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Source" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcError.Source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the driver that generated the error.</summary>
+        <value>The name of the driver that generated the error.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example displays the properties of an <xref:System.Data.Odbc.OdbcError>.  
+  
+ [!code-csharp[Classic WebData OdbcError#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcError/CS/source.cs#1)]
+ [!code-vb[Classic WebData OdbcError#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcError/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SQLState">
+      <MemberSignature Language="C#" Value="public string SQLState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SQLState" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcError.SQLState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the five-character error code that follows the ANSI SQL standard for the database.</summary>
+        <value>The five-character error code, which identifies the source of the error if the error can be issued from more than one place.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example displays the properties of the <xref:System.Data.Odbc.OdbcError>.  
+  
+ [!code-csharp[Classic WebData OdbcError#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcError/CS/source.cs#1)]
+ [!code-vb[Classic WebData OdbcError#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcError/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcError.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the complete text of the error message.</summary>
+        <returns>The complete text of the error.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example displays each <xref:System.Data.Odbc.OdbcError> within the <xref:System.Data.Odbc.OdbcErrorCollection> collection.  
+  
+ [!code-csharp[Classic WebData OdbcError.ToString#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OdbcError.ToString/CS/source.cs#1)]
+ [!code-vb[Classic WebData OdbcError.ToString#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OdbcError.ToString/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

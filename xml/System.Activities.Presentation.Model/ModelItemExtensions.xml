@@ -1,0 +1,170 @@
+<Type Name="ModelItemExtensions" FullName="System.Activities.Presentation.Model.ModelItemExtensions">
+  <TypeSignature Language="C#" Value="public static class ModelItemExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ModelItemExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.ModelItemExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Implements extensions to the base model item.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Focus">
+      <MemberSignature Language="C#" Value="public static void Focus (this System.Activities.Presentation.Model.ModelItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Focus(class System.Activities.Presentation.Model.ModelItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemExtensions.Focus(System.Activities.Presentation.Model.ModelItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Activities.Presentation.Model.ModelItem" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="item">The designer item to set focus on.</param>
+        <summary>Sets the keyboard focus on the specified designer item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the specified designer item is not visible in the model tree view, this method expands the model tree up to a parent that is no more than five levels up.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Focus">
+      <MemberSignature Language="C#" Value="public static void Focus (this System.Activities.Presentation.Model.ModelItem item, int level);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Focus(class System.Activities.Presentation.Model.ModelItem item, int32 level) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemExtensions.Focus(System.Activities.Presentation.Model.ModelItem,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Activities.Presentation.Model.ModelItem" RefType="this" />
+        <Parameter Name="level" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="item">The designer item to set focus on.</param>
+        <param name="level">The maximum number of levels used to set a limit on the expansion of the model tree if the specified designer item is not visible.</param>
+        <summary>Sets the keyboard focus on the specified designer item.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the specified designer item is not visible in the model tree view, this method expands the model tree up to a parent that is no more than a maximum number of levels up specified by the `level` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEditingContext">
+      <MemberSignature Language="C#" Value="public static System.Activities.Presentation.EditingContext GetEditingContext (this System.Activities.Presentation.Model.ModelItem modelItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Presentation.EditingContext GetEditingContext(class System.Activities.Presentation.Model.ModelItem modelItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemExtensions.GetEditingContext(System.Activities.Presentation.Model.ModelItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.EditingContext</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelItem" Type="System.Activities.Presentation.Model.ModelItem" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="modelItem">The model item.</param>
+        <summary>Retrieves the editing context of the specified model item.</summary>
+        <returns>The editing context of the specified model item.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetModelItemFromPath">
+      <MemberSignature Language="C#" Value="public static System.Activities.Presentation.Model.ModelItem GetModelItemFromPath (string path, System.Activities.Presentation.Model.ModelItem root);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Presentation.Model.ModelItem GetModelItemFromPath(string path, class System.Activities.Presentation.Model.ModelItem root) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemExtensions.GetModelItemFromPath(System.String,System.Activities.Presentation.Model.ModelItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="root" Type="System.Activities.Presentation.Model.ModelItem" />
+      </Parameters>
+      <Docs>
+        <param name="path">The path.</param>
+        <param name="root">The root.</param>
+        <summary>Retrieves a model item from the specified path and root.</summary>
+        <returns>The model item from the specified path and root.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetModelPath">
+      <MemberSignature Language="C#" Value="public static string GetModelPath (this System.Activities.Presentation.Model.ModelItem modelItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetModelPath(class System.Activities.Presentation.Model.ModelItem modelItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemExtensions.GetModelPath(System.Activities.Presentation.Model.ModelItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelItem" Type="System.Activities.Presentation.Model.ModelItem" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="modelItem">The model item.</param>
+        <summary>Retrieves the path of the specified model item.</summary>
+        <returns>The path of the specified model item.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsParentOf">
+      <MemberSignature Language="C#" Value="public static bool IsParentOf (this System.Activities.Presentation.Model.ModelItem item, System.Activities.Presentation.Model.ModelItem child);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsParentOf(class System.Activities.Presentation.Model.ModelItem item, class System.Activities.Presentation.Model.ModelItem child) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelItemExtensions.IsParentOf(System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.Model.ModelItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Activities.Presentation.Model.ModelItem" RefType="this" />
+        <Parameter Name="child" Type="System.Activities.Presentation.Model.ModelItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">The parent designer item to check.</param>
+        <param name="child">The child designer item to check.</param>
+        <summary>Returns a value that indicates whether the first specified designer item is a parent of the second specified designer item.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="item" /> is the parent of <paramref name="child" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

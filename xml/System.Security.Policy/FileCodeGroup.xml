@@ -1,0 +1,426 @@
+<Type Name="FileCodeGroup" FullName="System.Security.Policy.FileCodeGroup">
+  <TypeSignature Language="C#" Value="public sealed class FileCodeGroup : System.Security.Policy.CodeGroup" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit FileCodeGroup extends System.Security.Policy.CodeGroup" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Policy.FileCodeGroup" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Policy.CodeGroup</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Grants permission to manipulate files located in the code assemblies to code assemblies that match the membership condition. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Code groups are the building blocks of code access security policy. Each policy level consists of a root code group that can have child code groups. Each child code group can have their own child code groups; this behavior extends to any number of levels, forming a tree. Each code group has a membership condition that determines if a given assembly belongs to it based on the evidence for that assembly. Only code groups whose membership conditions match a given assembly and their child code groups apply policy.  
+  
+ <xref:System.Security.Policy.FileCodeGroup> has the same child matching semantics as <xref:System.Security.Policy.UnionCodeGroup>. However, <xref:System.Security.Policy.FileCodeGroup> returns a permission set containing a dynamically-calculated <xref:System.Security.Permissions.FileIOPermission> that grants file access to the directory from which the code is run; <xref:System.Security.Policy.UnionCodeGroup> only returns a static permission set. The type of file access granted is passed as a parameter to the constructor.  
+  
+ This code group only matches assemblies run over a file protocol, that is, assemblies that have URLs that point to a file or UNC path.  
+  
+   
+  
+## Examples  
+ The following example shows the use of members of the <xref:System.Security.Policy.FileCodeGroup> class.  
+  
+ [!code-cpp[System.Security.Policy.FileCodeGroup_Evt#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/CPP/members.cpp#1)]
+ [!code-csharp[System.Security.Policy.FileCodeGroup_Evt#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/CS/members.cs#1)]
+ [!code-vb[System.Security.Policy.FileCodeGroup_Evt#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/VB/Form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileCodeGroup (System.Security.Policy.IMembershipCondition membershipCondition, System.Security.Permissions.FileIOPermissionAccess access);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Policy.IMembershipCondition membershipCondition, valuetype System.Security.Permissions.FileIOPermissionAccess access) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.FileCodeGroup.#ctor(System.Security.Policy.IMembershipCondition,System.Security.Permissions.FileIOPermissionAccess)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="membershipCondition" Type="System.Security.Policy.IMembershipCondition" />
+        <Parameter Name="access" Type="System.Security.Permissions.FileIOPermissionAccess" />
+      </Parameters>
+      <Docs>
+        <param name="membershipCondition">A membership condition that tests evidence to determine whether this code group applies policy.</param>
+        <param name="access">One of the <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /> values. This value is used to construct the <see cref="T:System.Security.Permissions.FileIOPermission" /> that is granted.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Policy.FileCodeGroup" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates a basic code group. Child code groups can be added with the <xref:System.Security.Policy.CodeGroup.AddChild%2A> method.  
+  
+ <xref:System.Security.Policy.FileCodeGroup> returns a permission set containing a dynamically-calculated <xref:System.Security.Permissions.FileIOPermission> that grants file access to the directory from which the code is run. The type of access granted is determined by the `access` parameter.  
+  
+   
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.Policy.FileCodeGroup.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Security.Policy.FileCodeGroup> class.  
+  
+ [!code-cpp[System.Security.Policy.FileCodeGroup_Evt#2](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/CPP/members.cpp#2)]
+ [!code-csharp[System.Security.Policy.FileCodeGroup_Evt#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/CS/members.cs#2)]
+ [!code-vb[System.Security.Policy.FileCodeGroup_Evt#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/VB/Form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="membershipCondition" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The type of the <paramref name="membershipCondition" /> parameter is not valid.  
+  
+ -or-  
+  
+ The type of the <paramref name="access" /> parameter is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AttributeString">
+      <MemberSignature Language="C#" Value="public override string AttributeString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AttributeString" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Policy.FileCodeGroup.AttributeString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string representation of the attributes of the policy statement for the code group.</summary>
+        <value>Always <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Security.Policy.FileCodeGroup> does not use <xref:System.Security.Policy.FileCodeGroup.AttributeString%2A>, so this property is always `null`.  
+  
+   
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.Policy.FileCodeGroup.AttributeString%2A> property to get the attributes for the code group. This code example is part of a larger example provided for the <xref:System.Security.Policy.FileCodeGroup> class.  
+  
+ [!code-cpp[System.Security.Policy.FileCodeGroup_Evt#5](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/CPP/members.cpp#5)]
+ [!code-csharp[System.Security.Policy.FileCodeGroup_Evt#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/CS/members.cs#5)]
+ [!code-vb[System.Security.Policy.FileCodeGroup_Evt#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/VB/Form1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public override System.Security.Policy.CodeGroup Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Policy.CodeGroup Copy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.FileCodeGroup.Copy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.CodeGroup</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Makes a deep copy of the current code group.</summary>
+        <returns>An equivalent copy of the current code group, including its membership conditions and child code groups.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method makes a deep copy of the code group, so that copies of all objects the code group contains are also made.  
+  
+   
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.Policy.FileCodeGroup.Copy%2A> method to make a deep copy of the code group. This code example is part of a larger example provided for the <xref:System.Security.Policy.FileCodeGroup> class.  
+  
+ [!code-cpp[System.Security.Policy.FileCodeGroup_Evt#18](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/CPP/members.cpp#18)]
+ [!code-csharp[System.Security.Policy.FileCodeGroup_Evt#18](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/CS/members.cs#18)]
+ [!code-vb[System.Security.Policy.FileCodeGroup_Evt#18](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/VB/Form1.vb#18)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateXml">
+      <MemberSignature Language="C#" Value="protected override void CreateXml (System.Security.SecurityElement element, System.Security.Policy.PolicyLevel level);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CreateXml(class System.Security.SecurityElement element, class System.Security.Policy.PolicyLevel level) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.FileCodeGroup.CreateXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Security.SecurityElement" />
+        <Parameter Name="level" Type="System.Security.Policy.PolicyLevel" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="level">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.FileCodeGroup.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">The code group to compare with the current code group.</param>
+        <summary>Determines whether the specified code group is equivalent to the current code group.</summary>
+        <returns>
+          <see langword="true" /> if the specified code group is equivalent to the current code group; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.Policy.FileCodeGroup.Equals%2A> method to determine if two code groups are equal. This code example is part of a larger example provided for the <xref:System.Security.Policy.FileCodeGroup> class.  
+  
+ [!code-cpp[System.Security.Policy.FileCodeGroup_Evt#20](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/CPP/members.cpp#20)]
+ [!code-csharp[System.Security.Policy.FileCodeGroup_Evt#20](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/CS/members.cs#20)]
+ [!code-vb[System.Security.Policy.FileCodeGroup_Evt#20](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/VB/Form1.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.FileCodeGroup.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the hash code of the current code group.</summary>
+        <returns>The hash code of the current code group.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.Policy.FileCodeGroup.GetHashCode%2A> method to get the hash code of the current code group. This code example is part of a larger example provided for the <xref:System.Security.Policy.FileCodeGroup> class.  
+  
+ [!code-cpp[System.Security.Policy.FileCodeGroup_Evt#14](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/CPP/members.cpp#14)]
+ [!code-csharp[System.Security.Policy.FileCodeGroup_Evt#14](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/CS/members.cs#14)]
+ [!code-vb[System.Security.Policy.FileCodeGroup_Evt#14](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/VB/Form1.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MergeLogic">
+      <MemberSignature Language="C#" Value="public override string MergeLogic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MergeLogic" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Policy.FileCodeGroup.MergeLogic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the merge logic.</summary>
+        <value>The string "Union".</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.Policy.FileCodeGroup.MergeLogic%2A> property to get the merge logic for this code group. This code example is part of a larger example provided for the <xref:System.Security.Policy.FileCodeGroup> class.  
+  
+ [!code-cpp[System.Security.Policy.FileCodeGroup_Evt#15](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/CPP/members.cpp#15)]
+ [!code-csharp[System.Security.Policy.FileCodeGroup_Evt#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/CS/members.cs#15)]
+ [!code-vb[System.Security.Policy.FileCodeGroup_Evt#15](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/VB/Form1.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseXml">
+      <MemberSignature Language="C#" Value="protected override void ParseXml (System.Security.SecurityElement e, System.Security.Policy.PolicyLevel level);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ParseXml(class System.Security.SecurityElement e, class System.Security.Policy.PolicyLevel level) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.FileCodeGroup.ParseXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Security.SecurityElement" />
+        <Parameter Name="level" Type="System.Security.Policy.PolicyLevel" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <param name="level">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PermissionSetName">
+      <MemberSignature Language="C#" Value="public override string PermissionSetName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PermissionSetName" />
+      <MemberSignature Language="DocId" Value="P:System.Security.Policy.FileCodeGroup.PermissionSetName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the named permission set for the code group.</summary>
+        <value>The concatenatation of the string "Same directory FileIO - " and the access type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.Policy.FileCodeGroup.PermissionSetName%2A> property to get the name of the named permission set for the code group. This code example is part of a larger example provided for the <xref:System.Security.Policy.FileCodeGroup> class.  
+  
+ [!code-cpp[System.Security.Policy.FileCodeGroup_Evt#13](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/CPP/members.cpp#13)]
+ [!code-csharp[System.Security.Policy.FileCodeGroup_Evt#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/CS/members.cs#13)]
+ [!code-vb[System.Security.Policy.FileCodeGroup_Evt#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/VB/Form1.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resolve">
+      <MemberSignature Language="C#" Value="public override System.Security.Policy.PolicyStatement Resolve (System.Security.Policy.Evidence evidence);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Policy.PolicyStatement Resolve(class System.Security.Policy.Evidence evidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.FileCodeGroup.Resolve(System.Security.Policy.Evidence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.PolicyStatement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="evidence" Type="System.Security.Policy.Evidence" />
+      </Parameters>
+      <Docs>
+        <param name="evidence">The evidence for the assembly.</param>
+        <summary>Resolves policy for the code group and its descendants for a set of evidence.</summary>
+        <returns>A policy statement consisting of the permissions granted by the code group with optional attributes, or <see langword="null" /> if the code group does not apply (the membership condition does not match the specified evidence).</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Given evidence for an assembly to be loaded, this method evaluates the code group by first checking the membership condition against the specified evidence. If there is a match, this method returns a policy statement for the code group, including evaluation of child code groups.  
+  
+ The .NET Framework security system uses <xref:System.Security.Policy.FileCodeGroup.Resolve%2A> on the policy levels to determine which permissions to grant to loaded code from the resulting policy statements and the code request on the assembly.  
+  
+ <xref:System.Security.Policy.FileCodeGroup> uses union semantics and forms a permission set based on the <xref:System.Security.Policy.Url> specified by `evidence`.  
+  
+   
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.Policy.FileCodeGroup.Resolve%2A> method to resolve policy for the code group. This code example is part of a larger example provided for the <xref:System.Security.Policy.FileCodeGroup> class.  
+  
+ [!code-cpp[System.Security.Policy.FileCodeGroup_Evt#19](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/CPP/members.cpp#19)]
+ [!code-csharp[System.Security.Policy.FileCodeGroup_Evt#19](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/CS/members.cs#19)]
+ [!code-vb[System.Security.Policy.FileCodeGroup_Evt#19](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/VB/Form1.vb#19)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="evidence" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Policy.PolicyException">The current policy is <see langword="null" />.  
+  
+ -or-  
+  
+ More than one code group (including the parent code group and all child code groups) is marked <see cref="F:System.Security.Policy.PolicyStatementAttribute.Exclusive" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveMatchingCodeGroups">
+      <MemberSignature Language="C#" Value="public override System.Security.Policy.CodeGroup ResolveMatchingCodeGroups (System.Security.Policy.Evidence evidence);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Policy.CodeGroup ResolveMatchingCodeGroups(class System.Security.Policy.Evidence evidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Policy.FileCodeGroup.ResolveMatchingCodeGroups(System.Security.Policy.Evidence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Policy.CodeGroup</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="evidence" Type="System.Security.Policy.Evidence" />
+      </Parameters>
+      <Docs>
+        <param name="evidence">The evidence for the assembly.</param>
+        <summary>Resolves matching code groups.</summary>
+        <returns>A <see cref="T:System.Security.Policy.CodeGroup" /> that is the root of the tree of matching code groups.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Given evidence for an assembly to be loaded, this method evaluates the code group by first checking the membership condition against the specified evidence. If there is a match, this method returns a root code group. The code group that is returned contains child code groups, which in turn can have child code groups as necessary to reflect the complete set of code groups that were matched by the evidence provided.  
+  
+ <xref:System.Security.Policy.FileCodeGroup> uses union semantics and forms a permission set based on the <xref:System.Security.Policy.Url> specified by `evidence`.  
+  
+   
+  
+## Examples  
+ The following code shows the use of the <xref:System.Security.Policy.FileCodeGroup.ResolveMatchingCodeGroups%2A> method to resolve matching code groups. This code example is part of a larger example provided for the <xref:System.Security.Policy.FileCodeGroup> class.  
+  
+ [!code-cpp[System.Security.Policy.FileCodeGroup_Evt#9](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/CPP/members.cpp#9)]
+ [!code-csharp[System.Security.Policy.FileCodeGroup_Evt#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/CS/members.cs#9)]
+ [!code-vb[System.Security.Policy.FileCodeGroup_Evt#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Policy.FileCodeGroup_Evt/VB/Form1.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="evidence" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

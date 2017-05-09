@@ -1,0 +1,98 @@
+<Type Name="FormClosedEventArgs" FullName="System.Windows.Forms.FormClosedEventArgs">
+  <TypeSignature Language="C#" Value="public class FormClosedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormClosedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FormClosedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.Form.FormClosed" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Form.FormClosed> event occurs after a form is closed, either by the user, through the user interface (UI), or programmatically, through calls to methods such as <xref:System.Windows.Forms.Form.Close%2A> in the <xref:System.Windows.Forms.Form> class, or <xref:System.Windows.Forms.Application.Exit%2A> in the <xref:System.Windows.Forms.Application> class. If a form has any child or owned forms, a <xref:System.Windows.Forms.Form.FormClosed> event is also raised for each one.  
+  
+ The <xref:System.Windows.Forms.FormClosedEventArgs> class provides data for the <xref:System.Windows.Forms.Form.FormClosed> event. The <xref:System.Windows.Forms.FormClosedEventArgs.CloseReason%2A> property provides the reason why the form is being closed.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.FormClosed> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.FormClosed> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#395](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#395)]
+ [!code-vb[System.Windows.Forms.EventExamples#395](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#395)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FormClosedEventArgs (System.Windows.Forms.CloseReason closeReason);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.CloseReason closeReason) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FormClosedEventArgs.#ctor(System.Windows.Forms.CloseReason)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="closeReason" Type="System.Windows.Forms.CloseReason" />
+      </Parameters>
+      <Docs>
+        <param name="closeReason">A <see cref="T:System.Windows.Forms.CloseReason" /> value that represents the reason why the form was closed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.FormClosedEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `closeReason` parameter is used to initialize the <xref:System.Windows.Forms.FormClosedEventArgs.CloseReason%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseReason">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.CloseReason CloseReason { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.CloseReason CloseReason" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FormClosedEventArgs.CloseReason" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CloseReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates why the form was closed.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.CloseReason" /> enumerated values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Forms.Form> can be closed because of a variety of reasons, both user-initiated and programmatic. The <xref:System.Windows.Forms.FormClosingEventArgs.CloseReason%2A> property indicates the reason for the closure.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Form.FormClosed?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.Form> named `Form1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.Form.FormClosed?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#395](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#395)]
+ [!code-vb[System.Windows.Forms.EventExamples#395](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#395)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,428 @@
+<Type Name="MatchCollection" FullName="System.Text.RegularExpressions.MatchCollection">
+  <TypeSignature Language="C#" Value="public class MatchCollection : System.Collections.ICollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit MatchCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.MatchCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents the set of successful matches found by iteratively applying a regular expression pattern to the input string.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection is immutable (read-only) and has no public constructor. The <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=fullName> method returns a <xref:System.Text.RegularExpressions.MatchCollection> object.  
+  
+ The collection contains zero or more <xref:System.Text.RegularExpressions.Match?displayProperty=fullName> objects. If the match is successful, the collection is populated with one <xref:System.Text.RegularExpressions.Match?displayProperty=fullName> object for each match found in the input string. If the match is unsuccessful, the collection contains no <xref:System.Text.RegularExpressions.Match?displayProperty=fullName> objects, and its <xref:System.Text.RegularExpressions.MatchCollection.Count%2A> property equals zero.  
+  
+ When applying a regular expression pattern to a particular input string, the regular expression engine uses either of two techniques to build the <xref:System.Text.RegularExpressions.MatchCollection> object:  
+  
+-   Direct evaluation.  
+  
+     The <xref:System.Text.RegularExpressions.MatchCollection> object is populated all at once, with all matches resulting from a particular call to the <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=fullName> method. This technique is used when the collection's <xref:System.Text.RegularExpressions.MatchCollection.Count%2A> property is accessed. It typically is the more expensive method of populating the collection and entails a greater performance hit.  
+  
+-   Lazy evaluation.  
+  
+     The <xref:System.Text.RegularExpressions.MatchCollection> object is populated as needed on a match-by-match basis. It is equivalent to the regular expression engine calling the <xref:System.Text.RegularExpressions.Regex.Match%2A?displayProperty=fullName> method repeatedly and adding each match to the collection. This technique is used when the collection is accessed through its <xref:System.Text.RegularExpressions.MatchCollection.GetEnumerator%2A> method, or when it is accessed using the `foreach` statement (in C#) or the `For Each`...`Next` statement (in Visual Basic).  
+  
+ To iterate through the members of the collection, you should use the collection iteration construct provided by your language (such as `foreach` in C# and `For Each`…`Next` in Visual Basic) instead of retrieving the enumerator that is returned by the <xref:System.Text.RegularExpressions.MatchCollection.GetEnumerator%2A> method.  
+  
+   
+  
+## Examples  
+ The following example illustrates the use of the <xref:System.Text.RegularExpressions.MatchCollection> class to interrogate a set of <xref:System.Text.RegularExpressions.Match> instances.  
+  
+ [!code-cpp[Regex_Words#0](~/samples/snippets/cpp/VS_Snippets_CLR/Regex_Words/CPP/words.cpp#0)]
+ [!code-csharp[Regex_Words#0](~/samples/snippets/csharp/VS_Snippets_CLR/Regex_Words/CS/words.cs#0)]
+ [!code-vb[Regex_Words#0](~/samples/snippets/visualbasic/VS_Snippets_CLR/Regex_Words/VB/words.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Array array, int arrayIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 arrayIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.MatchCollection.CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="arrayIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The array the collection is to be copied into.</param>
+        <param name="arrayIndex">The position in the array where copying is to begin.</param>
+        <summary>Copies all the elements of the collection to the given array starting at the given index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the collection is copied into the array starting at the given index, the destination array must be at least as large as the entire collection.  
+  
+> [!WARNING]
+>  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.CaptureCollection.System%23Collections%23ICollection%23CopyTo%2A?displayProperty=fullName> method instead.  
+  
+ Because the <xref:System.Text.RegularExpressions.MatchCollection> object is generally populated by using lazy evaluation, trying to copy the collection before it has been fully populated may throw a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. This exception can be thrown if a time-out value for matching operations is in effect, and the attempt to find a single match exceeds that time-out interval.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="array" /> is a multi-dimensional array.</exception>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="arrayIndex" /> is outside the bounds of <paramref name="array" />.  
+  
+ -or-  
+  
+ <paramref name="arrayIndex" /> plus <see cref="P:System.Text.RegularExpressions.MatchCollection.Count" /> is outside the bounds of <paramref name="array" />.</exception>
+        <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.MatchCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of matches.</summary>
+        <value>The number of matches.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Accessing individual members of the <xref:System.Text.RegularExpressions.MatchCollection> object by retrieving the value of the collection's <xref:System.Text.RegularExpressions.MatchCollection.Count%2A> property causes the regular expression engine to populate the collection using direct evaluation. ln contrast, calling the <xref:System.Text.RegularExpressions.MatchCollection.GetEnumerator%2A> method (or using the `foreach` statement in C# and the `For Each`...`Next` statement in Visual Basic) causes the regular expression engine to populate the collection on an as needed basis using lazy evaluation. Direct evaluation can be a much more expensive method of building the collection than lazy evaluation.  
+  
+ Because the <xref:System.Text.RegularExpressions.MatchCollection> object is generally populated by using lazy evaluation, trying to determine the number of elements in the collection before it has been fully populated may throw a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. This exception can be thrown if a time-out value for matching operations is in effect, and the attempt to find a single match exceeds that time-out interval.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Text.RegularExpressions.MatchCollection.Count%2A> property to determine whether the call to the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%29?displayProperty=fullName> method found any matches. If not, it indicates that no matches were found. Otherwise, it enumerates the matches and displays their value and the position in the input string at which they were found.  
+  
+ [!code-csharp[System.Text.RegularExpressions.MatchCollection.Count#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.matchcollection.count/cs/countex1.cs#1)]
+ [!code-vb[System.Text.RegularExpressions.MatchCollection.Count#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.matchcollection.count/vb/countex1.vb#1)]  
+  
+ The regular expression pattern `\d+` matches one or more decimal characters in an input string.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.MatchCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides an enumerator that iterates through the collection.</summary>
+        <returns>An object that contains all <see cref="T:System.Text.RegularExpressions.Match" /> objects within the <see cref="T:System.Text.RegularExpressions.MatchCollection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Instead of  calling the <xref:System.Text.RegularExpressions.MatchCollection.GetEnumerator%2A> method to retrieve an enumerator that lets you iterate through the <xref:System.Text.RegularExpressions.Match> objects in the collection, you should use the group iteration construct (such as `foreach` in C# and `For Each`…`Next` in Visual Basic) provided by your programming language.  
+  
+ Iterating the members of the <xref:System.Text.RegularExpressions.MatchCollection> object using the <xref:System.Text.RegularExpressions.MatchCollection.GetEnumerator%2A> method (or the `foreach` statement in C# and the `For Each`...`Next` statement in Visual Basic) causes the regular expression engine to populate the collection on an as needed basis using lazy evaluation. This is analogous to repeatedly calling the <xref:System.Text.RegularExpressions.Regex.Match%2A?displayProperty=fullName> method, and then adding the resulting match to the <xref:System.Text.RegularExpressions.MatchCollection> object. In contrast, the regular expression engine uses direct evaluation to populate the collection all at once when the <xref:System.Text.RegularExpressions.MatchCollection.Count%2A> property is accessed. This can be a much more expensive method of building the collection than lazy evaluation.  
+  
+ Because the <xref:System.Text.RegularExpressions.MatchCollection> object is generally populated by using lazy evaluation, trying to navigate to the next member of the collection may throw a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. This exception can be thrown if a time-out value for matching operations is in effect, and the attempt to find the next match exceeds that time-out interval.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.MatchCollection.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the collection is read only.</summary>
+        <value>
+          <see langword="true" /> in all cases.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.MatchCollection.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether access to the collection is synchronized (thread-safe).</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.MatchCollection.System%23Collections%23ICollection%23IsSynchronized%2A?displayProperty=fullName> property instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public virtual System.Text.RegularExpressions.Match this[int i] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Text.RegularExpressions.Match Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.MatchCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Text.RegularExpressions.Match</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">Index into the <see cref="T:System.Text.RegularExpressions.Match" /> collection.</param>
+        <summary>Gets an individual member of the collection.</summary>
+        <value>The captured substring at position <paramref name="i" /> in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In C#, the <xref:System.Text.RegularExpressions.MatchCollection.Item%2A> property is an indexer; it is not explicitly referenced in code, but instead allows the <xref:System.Text.RegularExpressions.MatchCollection> collection to be accessed as if it were an array.  
+  
+ Typically, individual items in the <xref:System.Text.RegularExpressions.MatchCollection> object are accessed by their index only after the total number of items in the collection has been determined from the <xref:System.Text.RegularExpressions.MatchCollection.Count%2A> property. However, accessing the <xref:System.Text.RegularExpressions.MatchCollection.Count%2A> property causes the regular expression engine to use direct evaluation to build the collection all at once. This is typically more expensive than iterating the collection using the <xref:System.Text.RegularExpressions.MatchCollection.GetEnumerator%2A> method, the C# `foreach` statement, or the Visual Basic `For Each`...`Next` statement.  
+  
+ Because the <xref:System.Text.RegularExpressions.MatchCollection> object is generally populated by using lazy evaluation, trying to navigate to a specific match may throw a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. This exception can be thrown if a time-out value for matching operations is in effect, and the attempt to find a specific match exceeds that time-out interval.  
+  
+   
+  
+## Examples  
+ The following example parses the first sentence of Nathaniel Hawthorne's *House of the Seven Gables* and returns a <xref:System.Text.RegularExpressions.MatchCollection> object that contains all words that begin with either an uppercase or lowercase "h". The <xref:System.Text.RegularExpressions.MatchCollection.Item%2A> property is then used to retrieve each word and display it to the console.  
+  
+ [!code-csharp[System.Text.RegularExpressions.MatchCollection.Item#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.RegularExpressions.MatchCollection.Item/cs/RegEx_24804.cs#1)]
+ [!code-vb[System.Text.RegularExpressions.MatchCollection.Item#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Text.RegularExpressions.MatchCollection.Item/vb/RegEx_24804.vb#1)]  
+  
+ The example produces the following output:  
+  
+```  
+Half  
+house  
+huge  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="i" /> is less than 0 or greater than or equal to <see cref="P:System.Text.RegularExpressions.MatchCollection.Count" />.</exception>
+        <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.MatchCollection.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to the collection.</summary>
+        <value>An object that can be used to synchronize access to the collection. This property always returns the object itself.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!WARNING]
+>  This member is not present in the [!INCLUDE[net_portable](~/includes/net-portable-md.md)]. If you are developing applications that target the [!INCLUDE[net_portable](~/includes/net-portable-md.md)], use the <xref:System.Text.RegularExpressions.MatchCollection.System%23Collections%23ICollection%23SyncRoot%2A?displayProperty=fullName> property instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.CopyTo">
+      <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int arrayIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 arrayIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Text.RegularExpressions.MatchCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="arrayIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">To be added.</param>
+        <param name="arrayIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.IsSynchronized">
+      <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.MatchCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.SyncRoot">
+      <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Text.RegularExpressions.MatchCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

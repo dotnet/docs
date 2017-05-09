@@ -1,0 +1,325 @@
+<Type Name="ActivityExecutionContext" FullName="System.Workflow.ComponentModel.ActivityExecutionContext">
+  <TypeSignature Language="C#" Value="public sealed class ActivityExecutionContext : IDisposable, IServiceProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityExecutionContext extends System.Object implements class System.IDisposable, class System.IServiceProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityExecutionContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IServiceProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the execution environment of an <see cref="T:System.Workflow.ComponentModel.Activity" />. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ Represents the execution environment of an <xref:System.Workflow.ComponentModel.Activity>. This class selectively exposes workflow runtime capabilities and services to individual activities. This class cannot be inherited.  
+  
+ [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Understanding the Activity Execution Context](http://msdn.microsoft.com/en-us/60a032ef-4c51-482f-9aa8-fce406856b29).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Activity">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Activity Activity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Activity Activity" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityExecutionContext.Activity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Activity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.Activity" /> that currently executes within this execution context.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.Activity" /> associated to this execution context.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">This instance is marked for garbage collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelActivity">
+      <MemberSignature Language="C#" Value="public void CancelActivity (System.Workflow.ComponentModel.Activity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelActivity(class System.Workflow.ComponentModel.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.CancelActivity(System.Workflow.ComponentModel.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Workflow.ComponentModel.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The canceled <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
+        <summary>Called by a composite activity to schedule the cancellation of a child activity. The workflow runtime disallows cancellation of a child activity that is not in the <see cref="E:System.Workflow.ComponentModel.Activity.Executing" /> state.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="activity" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="activity" /> is not a valid child of the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" />. This means that either the argument is equal to the associated <see cref="P:System.Workflow.ComponentModel.ActivityExecutionContext.Activity" /> or that the argument is not in the commented state and is a child of the <see cref="P:System.Workflow.ComponentModel.ActivityExecutionContext.Activity" /> associated with this <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> has been disposed.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="activity" /> is not in the <see cref="E:System.Workflow.ComponentModel.Activity.Executing" /> state.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CloseActivity">
+      <MemberSignature Language="C#" Value="public void CloseActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CloseActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.CloseActivity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates to the workflow runtime that the currently executing activity should transition to the <see cref="E:System.Workflow.ComponentModel.Activity.Closed" /> state.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The status of the associated <see cref="P:System.Workflow.ComponentModel.ActivityExecutionContext.Activity" /> is not equal to <see cref="E:System.Workflow.ComponentModel.Activity.Executing" /> or <see cref="E:System.Workflow.ComponentModel.Activity.Canceling" /> or <see cref="E:System.Workflow.ComponentModel.Activity.Compensating" /> or <see cref="E:System.Workflow.ComponentModel.Activity.Closed" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The disposed <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextGuid">
+      <MemberSignature Language="C#" Value="public Guid ContextGuid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid ContextGuid" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityExecutionContext.ContextGuid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="ContextID" /> of the associated <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
+        <value>The <see langword="ContextID" /> of the associated <see cref="T:System.Workflow.ComponentModel.Activity" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentExceptionProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty CurrentExceptionProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty CurrentExceptionProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityExecutionContext.CurrentExceptionProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents an exception that has occurred during the execution of the workflow instance. This property has a value only when an activity is in the faulting state.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteActivity">
+      <MemberSignature Language="C#" Value="public void ExecuteActivity (System.Workflow.ComponentModel.Activity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExecuteActivity(class System.Workflow.ComponentModel.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.ExecuteActivity(System.Workflow.ComponentModel.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Workflow.ComponentModel.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The executed <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
+        <summary>Called by a composite activity to schedule the execution of a child activity. The workflow runtime disallows execution of a child activity that is not in the initialized state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the status is <xref:System.Workflow.ComponentModel.Activity.Closed>, the <xref:System.Workflow.ComponentModel.Activity> is initialized and executed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="activity" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="activity" /> is not a valid child of the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" />. This means that either the argument is equal to the associated <see cref="P:System.Workflow.ComponentModel.ActivityExecutionContext.Activity" /> or that the argument is not in the commented state and is a child of the <see cref="P:System.Workflow.ComponentModel.ActivityExecutionContext.Activity" /> associated with this <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The status is neither initialized nor <see cref="E:System.Workflow.ComponentModel.Activity.Closed" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecutionContextManager">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.ActivityExecutionContextManager ExecutionContextManager { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.ActivityExecutionContextManager ExecutionContextManager" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityExecutionContext.ExecutionContextManager" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.ActivityExecutionContextManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContextManager" /> associated with this instance.</summary>
+        <value>the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContextManager" /> associated with this instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetService">
+      <MemberSignature Language="C#" Value="public object GetService (Type serviceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetService(class System.Type serviceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.GetService(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="serviceType">The <see cref="T:System.Type" /> of the service.</param>
+        <summary>Returns a service of the specified type.</summary>
+        <returns>A service <see cref="T:System.Object" /> of the specified <see cref="T:System.Type" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetService&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T GetService&lt;T&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetService&lt;T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.GetService``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">The specified type for which the provider is to be returned.</typeparam>
+        <summary>Returns a service provider of the specified <see cref="T:System.Type" />.</summary>
+        <returns>A service provider <see cref="T:System.Object" /> of the specified <see cref="T:System.Type" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> has been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IDisposable.Dispose">
+      <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.System#IDisposable#Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackData">
+      <MemberSignature Language="C#" Value="public void TrackData (object userData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TrackData(object userData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.TrackData(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userData" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="userData">An object that specifies the data to track.</param>
+        <summary>Invokes the track method for the associated <see cref="P:System.Workflow.ComponentModel.ActivityExecutionContext.Activity" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The tracking routine is defined as part of the interface provided by each activity. See comment in user-supplied custom code.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="userData" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ObjectDisposedException">If the <see cref="T:System.Workflow.ComponentModel.Activity" /> associated with this instance is a null reference (<see langword="Nothing" />).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackData">
+      <MemberSignature Language="C#" Value="public void TrackData (string userDataKey, object userData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TrackData(string userDataKey, object userData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityExecutionContext.TrackData(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="userDataKey" Type="System.String" />
+        <Parameter Name="userData" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="userDataKey">The member of <c>userData</c> to track.</param>
+        <param name="userData">The data to track.</param>
+        <summary>Invokes the track method for the associated <see cref="P:System.Workflow.ComponentModel.ActivityExecutionContext.Activity" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The tracking routine is defined as part of the interface provided by each activity. It is user supplied custom code.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">If <paramref name="userData" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ObjectDisposedException">If the <see cref="T:System.Workflow.ComponentModel.Activity" /> associated with this instance is a null reference (<see langword="Nothing" />).</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

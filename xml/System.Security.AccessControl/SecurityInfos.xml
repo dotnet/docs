@@ -1,0 +1,112 @@
+<Type Name="SecurityInfos" FullName="System.Security.AccessControl.SecurityInfos">
+  <TypeSignature Language="C#" Value="public enum SecurityInfos" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SecurityInfos extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.SecurityInfos" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security.AccessControl</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the section of a security descriptor to be queried or set.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DiscretionaryAcl">
+      <MemberSignature Language="C#" Value="DiscretionaryAcl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.SecurityInfos DiscretionaryAcl = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.SecurityInfos.DiscretionaryAcl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.SecurityInfos</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the discretionary access control list (DACL).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="Group" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.SecurityInfos Group = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.SecurityInfos.Group" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.SecurityInfos</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the primary group identifier.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Owner">
+      <MemberSignature Language="C#" Value="Owner" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.SecurityInfos Owner = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.SecurityInfos.Owner" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.SecurityInfos</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the owner identifier.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemAcl">
+      <MemberSignature Language="C#" Value="SystemAcl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.SecurityInfos SystemAcl = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.SecurityInfos.SystemAcl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.SecurityInfos</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the system access control list (SACL).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

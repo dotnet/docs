@@ -1,0 +1,176 @@
+<Type Name="BuiltInRole" FullName="Microsoft.VisualBasic.ApplicationServices.BuiltInRole">
+  <TypeSignature Language="C#" Value="public enum BuiltInRole" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuiltInRole extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.BuiltInRole" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(Microsoft.VisualBasic.ApplicationServices.BuiltInRoleConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates the type of role to check when calling the <see cref="M:Microsoft.VisualBasic.ApplicationServices.User.IsInRole(Microsoft.VisualBasic.ApplicationServices.BuiltInRole)" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration provides functionality similar to the <xref:System.Security.Principal.WindowsBuiltInRole> enumeration.  
+  
+ These roles represent the local Windows groups common to most installations of Windows.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AccountOperator">
+      <MemberSignature Language="C#" Value="AccountOperator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.ApplicationServices.BuiltInRole AccountOperator = int32(548)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.BuiltInRole.AccountOperator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.ApplicationServices.BuiltInRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Account operators manage the user accounts on a computer or domain.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Administrator">
+      <MemberSignature Language="C#" Value="Administrator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.ApplicationServices.BuiltInRole Administrator = int32(544)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.BuiltInRole.Administrator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.ApplicationServices.BuiltInRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Administrators have complete and unrestricted access to the computer or domain.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BackupOperator">
+      <MemberSignature Language="C#" Value="BackupOperator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.ApplicationServices.BuiltInRole BackupOperator = int32(551)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.BuiltInRole.BackupOperator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.ApplicationServices.BuiltInRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Backup operators can override security restrictions for the sole purpose of backing up or restoring files.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Guest">
+      <MemberSignature Language="C#" Value="Guest" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.ApplicationServices.BuiltInRole Guest = int32(546)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.BuiltInRole.Guest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.ApplicationServices.BuiltInRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Guests are more restricted than users.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PowerUser">
+      <MemberSignature Language="C#" Value="PowerUser" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.ApplicationServices.BuiltInRole PowerUser = int32(547)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.BuiltInRole.PowerUser" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.ApplicationServices.BuiltInRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Power users possess most administrative permissions with some restrictions. Thus, power users can run legacy applications, in addition to certified applications.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintOperator">
+      <MemberSignature Language="C#" Value="PrintOperator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.ApplicationServices.BuiltInRole PrintOperator = int32(550)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.BuiltInRole.PrintOperator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.ApplicationServices.BuiltInRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Print operators can take control of a printer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Replicator">
+      <MemberSignature Language="C#" Value="Replicator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.ApplicationServices.BuiltInRole Replicator = int32(552)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.BuiltInRole.Replicator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.ApplicationServices.BuiltInRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Replicators support file replication in a domain.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemOperator">
+      <MemberSignature Language="C#" Value="SystemOperator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.ApplicationServices.BuiltInRole SystemOperator = int32(549)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.BuiltInRole.SystemOperator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.ApplicationServices.BuiltInRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>System operators manage a particular computer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="User">
+      <MemberSignature Language="C#" Value="User" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.ApplicationServices.BuiltInRole User = int32(545)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.BuiltInRole.User" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.ApplicationServices.BuiltInRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Users are prevented from making accidental or intentional system-wide changes. Thus, users can run certified applications, but not most legacy applications.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

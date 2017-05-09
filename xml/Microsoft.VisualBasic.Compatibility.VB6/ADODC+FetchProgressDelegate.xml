@@ -1,0 +1,44 @@
+<Type Name="ADODC+FetchProgressDelegate" FullName="Microsoft.VisualBasic.Compatibility.VB6.ADODC+FetchProgressDelegate">
+  <TypeSignature Language="C#" Value="public delegate void ADODC.FetchProgressDelegate(int progress, int maxProgress, ref EventStatusEnum adStatus, Recordset pRecordset);" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ADODC/FetchProgressDelegate extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ADODC.FetchProgressDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="progress" Type="System.Int32" />
+    <Parameter Name="maxProgress" Type="System.Int32" />
+    <Parameter Name="adStatus" Type="ADODB.EventStatusEnum&amp;" RefType="ref" />
+    <Parameter Name="pRecordset" Type="ADODB.Recordset" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="progress">An <see langword="Integer" /> representing the progress of the fetch operation.</param>
+    <param name="maxProgress">An <see langword="Integer" /> representing the size of the fetch operation.</param>
+    <param name="adStatus">An <see langword="ADODB.EventStatusEnum" />.</param>
+    <param name="pRecordset">An <see langword="ADODB.Recordset" /> object.</param>
+    <summary>Represents the method that will handle a <see langword="FetchProgress" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

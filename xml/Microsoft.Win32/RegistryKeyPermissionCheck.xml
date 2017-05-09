@@ -1,0 +1,92 @@
+<Type Name="RegistryKeyPermissionCheck" FullName="Microsoft.Win32.RegistryKeyPermissionCheck">
+  <TypeSignature Language="C#" Value="public enum RegistryKeyPermissionCheck" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RegistryKeyPermissionCheck extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Win32.RegistryKeyPermissionCheck" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether security checks are performed when opening registry keys and accessing their name/value pairs.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an application saves or retrieves a large number of registry settings from a set of subkeys, numerous redundant security checks are performed. This enumeration specifies when security checks on a key are to be omitted.  
+  
+ The following table shows when security checks are performed, based on the way the parent key and the current key are opened.  
+  
+|Parent key opened with|Current key opened with|Result|  
+|----------------------------|-----------------------------|------------|  
+|Default|Default|A security check is performed when accessing any value in the current key, or when attempting to access a subkey. This is the behavior in the .NET Framework versions 1.0 and 1.1.|  
+|Default|ReadSubTree|A security check is performed when trying to open the current key.|  
+|Default|ReadWriteSubTree|A security check is performed when trying to open the current key.|  
+|ReadSubTree|Default or ReadSubTree|No security checks are performed when opening the current key or its values.|  
+|ReadSubTree|ReadWriteSubTree|A security check is performed when trying to open the current key.|  
+|ReadWriteSubTree|Any|No security checks are performed when opening the current key or its values.|  
+  
+   
+  
+## Examples  
+ The following code example creates a subkey containing 100 key/value pairs and closes it. The example opens the subkey with Default and records the time it takes to read all the values. Then the example opens the subkey with ReadSubTree and records the time it takes to read all the values. Finally, the example computes and displays the percentage improvement.  
+  
+ [!code-csharp[RegistryKey.OpenSubKey_PermCheck#1](~/samples/snippets/csharp/VS_Snippets_CLR/RegistryKey.OpenSubKey_PermCheck/cs/source.cs#1)]
+ [!code-vb[RegistryKey.OpenSubKey_PermCheck#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/RegistryKey.OpenSubKey_PermCheck/vb/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.RegistryKeyPermissionCheck Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryKeyPermissionCheck.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryKeyPermissionCheck</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The registry key inherits the mode of its parent. Security checks are performed when trying to access subkeys or values, unless the parent was opened with <see cref="F:Microsoft.Win32.RegistryKeyPermissionCheck.ReadSubTree" /> or <see cref="F:Microsoft.Win32.RegistryKeyPermissionCheck.ReadWriteSubTree" /> mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSubTree">
+      <MemberSignature Language="C#" Value="ReadSubTree" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.RegistryKeyPermissionCheck ReadSubTree = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryKeyPermissionCheck.ReadSubTree" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryKeyPermissionCheck</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Security checks are not performed when accessing subkeys or values. A security check is performed when trying to open the current key, unless the parent was opened with <see cref="F:Microsoft.Win32.RegistryKeyPermissionCheck.ReadSubTree" /> or <see cref="F:Microsoft.Win32.RegistryKeyPermissionCheck.ReadWriteSubTree" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadWriteSubTree">
+      <MemberSignature Language="C#" Value="ReadWriteSubTree" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.RegistryKeyPermissionCheck ReadWriteSubTree = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Win32.RegistryKeyPermissionCheck.ReadWriteSubTree" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.RegistryKeyPermissionCheck</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Security checks are not performed when accessing subkeys or values. A security check is performed when trying to open the current key, unless the parent was opened with <see cref="F:Microsoft.Win32.RegistryKeyPermissionCheck.ReadWriteSubTree" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

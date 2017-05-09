@@ -1,0 +1,43 @@
+<Type Name="HandledEventHandler" FullName="System.ComponentModel.HandledEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void HandledEventHandler(object sender, HandledEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HandledEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.HandledEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.ComponentModel.HandledEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.ComponentModel.HandledEventArgs" /> that contains the event data.</param>
+    <summary>Represents a method that can handle events which may or may not require further processing after the event handler has returned.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This delegate is available for use with your own events when the <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=fullName> property provides sufficient event data. The event handler can set the <xref:System.ComponentModel.HandledEventArgs.Handled%2A> property to `true` if all necessary processing has been completed in the handler.  
+  
+ Typically, events that require this functionality will also require additional event data, and will use a class that derives from <xref:System.ComponentModel.HandledEventArgs> along with a corresponding, similarly-named delegate type. For example, the <xref:System.Windows.Forms.DataGridView.RowPrePaint?displayProperty=fullName> event uses the <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs> event-data type and the <xref:System.Windows.Forms.DataGridViewRowPrePaintEventHandler> delegate type. Because delegates are not inherited, the <xref:System.ComponentModel.HandledEventHandler> is rarely used.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

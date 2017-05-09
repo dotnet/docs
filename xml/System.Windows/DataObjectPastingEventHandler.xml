@@ -1,0 +1,44 @@
+<Type Name="DataObjectPastingEventHandler" FullName="System.Windows.DataObjectPastingEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DataObjectPastingEventHandler(object sender, DataObjectPastingEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataObjectPastingEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.DataObjectPastingEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.DataObjectPastingEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The object where the event handler is attached.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents a method that will handle the <see cref="E:System.Windows.DataObject.Pasting" /> attached event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.DataObject.Pasting> attached event occurs when a paste operation has selected a data format to paste, but before the data is actually pasted.  
+  
+ Actions typically performed by a <xref:System.Windows.DataObject.Pasting> attached event handler include:  
+  
+-   Change the selected paste format by setting new value for the <xref:System.Windows.DataObjectPastingEventArgs.FormatToApply%2A> property.  
+  
+-   Apply a custom data format to the paste selection.  
+  
+-   Create a new <xref:System.Windows.DataObject>, and assign it to the <xref:System.Windows.DataObjectPastingEventArgs.DataObject%2A> property of `e`.  A read-only copy of the original data object is stored in <xref:System.Windows.DataObjectPastingEventArgs.SourceDataObject%2A>.  
+  
+-   Cancel the paste operation by calling <xref:System.Windows.DataObjectEventArgs.CancelCommand%2A>.  
+  
+ **Important** If the paste format is changed, the handler method is responsible for ensuring that a newly selected paste format is consumable by the paste target.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

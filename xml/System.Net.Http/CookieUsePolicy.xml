@@ -1,0 +1,74 @@
+<Type Name="CookieUsePolicy" FullName="System.Net.Http.CookieUsePolicy">
+  <TypeSignature Language="C#" Value="public enum CookieUsePolicy" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CookieUsePolicy extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Http.CookieUsePolicy" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IgnoreCookies">
+      <MemberSignature Language="C#" Value="IgnoreCookies" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Http.CookieUsePolicy IgnoreCookies = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Http.CookieUsePolicy.IgnoreCookies" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.CookieUsePolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UseInternalCookieStoreOnly">
+      <MemberSignature Language="C#" Value="UseInternalCookieStoreOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Http.CookieUsePolicy UseInternalCookieStoreOnly = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Http.CookieUsePolicy.UseInternalCookieStoreOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.CookieUsePolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UseSpecifiedCookieContainer">
+      <MemberSignature Language="C#" Value="UseSpecifiedCookieContainer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Http.CookieUsePolicy UseSpecifiedCookieContainer = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Http.CookieUsePolicy.UseSpecifiedCookieContainer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http.WinHttpHandler</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.CookieUsePolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

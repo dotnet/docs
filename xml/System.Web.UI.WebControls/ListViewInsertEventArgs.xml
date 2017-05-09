@@ -1,0 +1,139 @@
+<Type Name="ListViewInsertEventArgs" FullName="System.Web.UI.WebControls.ListViewInsertEventArgs">
+  <TypeSignature Language="C#" Value="public class ListViewInsertEventArgs : System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListViewInsertEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewInsertEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.CancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.ListView.ItemInserting" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ListView> control raises the <xref:System.Web.UI.WebControls.ListView.ItemInserting> event when an Insert button in the control is clicked, but before the <xref:System.Web.UI.WebControls.ListView> control inserts the record. (An Insert button is a button whose `CommandName` property is set to "Insert".) This enables you to provide an event-handling method that performs a custom routine whenever this event occurs. For example, you can validate or HTML-encode the values of a record before it is inserted it in the data source.  
+  
+ A <xref:System.Web.UI.WebControls.ListViewInsertEventArgs> object is passed to the event-handling method. This object enables you to determine the value of an optional command argument that is sent to the <xref:System.Web.UI.WebControls.ListView> control. You can access the <xref:System.Web.UI.WebControls.ListViewItem> object that is being inserted by using the <xref:System.Web.UI.WebControls.ListViewInsertEventArgs.Item%2A> property. You can also read or modify the field values for the new record by using the <xref:System.Web.UI.WebControls.ListViewInsertEventArgs.Values%2A> property. To cancel the insert operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
+  
+ For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.ListViewInsertEventArgs> class, see the <xref:System.Web.UI.WebControls.ListViewInsertEventArgs.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewInsertEventArgs> object to cancel an insert operation if the data item contains an empty value.  
+  
+> [!IMPORTANT]
+>  This example contains a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemInserting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserting/CS/ListViewItemInsertingCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemInserting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserting/VB/ListViewItemInsertingVB.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewInsertEventArgs (System.Web.UI.WebControls.ListViewItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.ListViewItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewInsertEventArgs.#ctor(System.Web.UI.WebControls.ListViewItem)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="item" Type="System.Web.UI.WebControls.ListViewItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">The data item that is being inserted into the data source.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ListViewInsertEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.ListViewInsertEventArgs> class.  
+  
+> [!NOTE]
+>  This constructor is primarily used by control developers when they raise events.  
+  
+ The following table shows the initial property value for an instance of the <xref:System.Web.UI.WebControls.ListViewInsertEventArgs> class.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.ListViewInsertEventArgs.Item%2A>|The value of the `item` parameter.|  
+|<xref:System.ComponentModel.CancelEventArgs.Cancel%2A>|`false`.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.ListViewItem Item { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.ListViewItem Item" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewInsertEventArgs.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ListViewItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.UI.WebControls.ListViewItem" /> object that represents the data item to be inserted.</summary>
+        <value>The data item to be inserted.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.ListViewInsertEventArgs.Item%2A> property to access the item from the <xref:System.Web.UI.WebControls.ListView> control for the data that is being inserted. For example, you can access values from controls in the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template that are not data-bound by using the <xref:System.Web.UI.WebControls.ListViewInsertEventArgs.Item%2A> property. To do so, use the <xref:System.Web.UI.Control.FindControl%2A> method of the <xref:System.Web.UI.WebControls.ListViewItem> object that is referenced by the <xref:System.Web.UI.WebControls.ListViewInsertEventArgs.Item%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary Values { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary Values" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewInsertEventArgs.Values" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.IOrderedDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the values for the record to insert.</summary>
+        <value>The values for the record to insert.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.ListViewInsertEventArgs.Values%2A> property to access the values of the fields for the record to insert. For example, you can validate or HTML-encode the values of the record before it is inserted in the data source.  
+  
+ The <xref:System.Web.UI.WebControls.ListViewInsertEventArgs.Values%2A> property returns an <xref:System.Collections.Specialized.OrderedDictionary> object that implements the <xref:System.Collections.Specialized.IOrderedDictionary> interface. The <xref:System.Collections.Specialized.OrderedDictionary> object contains <xref:System.Collections.DictionaryEntry> objects that represent the fields of the record. To access the field names, use the <xref:System.Collections.Specialized.OrderedDictionary.Keys%2A> property of the <xref:System.Collections.Specialized.OrderedDictionary> object. To access the field values, use the <xref:System.Collections.Specialized.OrderedDictionary.Values%2A> property.  
+  
+> [!NOTE]
+>  As a shortcut, you can use the indexer of the <xref:System.Collections.Specialized.OrderedDictionary> object to access the field values directly. The advantage of using the indexer is that it returns field values directly. Data source controls that rely on the field order (such as <xref:System.Web.UI.WebControls.AccessDataSource>) can access field values only by index.  
+  
+   
+  
+## Examples  
+ The following example shows how to iterate through the <xref:System.Web.UI.WebControls.ListViewInsertEventArgs.Values%2A> collection. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.ListViewInsertEventArgs> class.  
+  
+ [!code-csharp[System.Web.UI.WebControls.ListView.ItemInserting#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserting/CS/ListViewItemInsertingCS.aspx#2)]
+ [!code-vb[System.Web.UI.WebControls.ListView.ItemInserting#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserting/VB/ListViewItemInsertingVB.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

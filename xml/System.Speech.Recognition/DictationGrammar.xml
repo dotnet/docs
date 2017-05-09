@@ -1,0 +1,161 @@
+<Type Name="DictationGrammar" FullName="System.Speech.Recognition.DictationGrammar">
+  <TypeSignature Language="C#" Value="public class DictationGrammar : System.Speech.Recognition.Grammar" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DictationGrammar extends System.Speech.Recognition.Grammar" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.DictationGrammar" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Speech.Recognition.Grammar</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a speech recognition grammar used for free text dictation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides applications with a predefined language model that can process spoken user input into text. This class supports both default and custom <xref:System.Speech.Recognition.DictationGrammar> objects. For information about selecting a dictation grammar, see the <xref:System.Speech.Recognition.DictationGrammar.%23ctor%28System.String%29> constructor.  
+  
+ By default, the <xref:System.Speech.Recognition.DictationGrammar> language model is context free. It does not make use of specific words or word order to identify and interpret audio input. To add context to the dictation grammar, use the <xref:System.Speech.Recognition.DictationGrammar.SetDictationContext%2A> method.  
+  
+> [!NOTE]
+>  <xref:System.Speech.Recognition.DictationGrammar> objects do not support the <xref:System.Speech.Recognition.Grammar.Priority%2A> property. <xref:System.Speech.Recognition.DictationGrammar> throws a <xref:System.NotSupportedException> if <xref:System.Speech.Recognition.Grammar.Priority%2A> is set.  
+  
+   
+  
+## Examples  
+ The following example creates three dictation grammars, adds them to a new <xref:System.Speech.Recognition.SpeechRecognitionEngine> object, and returns the new object. The first grammar is the default dictation grammar. The second grammar is the spelling dictation grammar. The third grammar is the default dictation grammar that includes a context phrase. The <xref:System.Speech.Recognition.DictationGrammar.SetDictationContext%2A> method is used to associate the context phrase with the dictation grammar after it is loaded to the <xref:System.Speech.Recognition.SpeechRecognitionEngine> object.  
+  
+```csharp  
+  
+private SpeechRecognitionEngine LoadDictationGrammars()  
+{  
+  
+  // Create a default dictation grammar.  
+  DictationGrammar defaultDictationGrammar = new DictationGrammar();  
+  defaultDictationGrammar.Name = "default dictation";  
+  defaultDictationGrammar.Enabled = true;  
+  
+  // Create the spelling dictation grammar.  
+  DictationGrammar spellingDictationGrammar =  
+    new DictationGrammar("grammar:dictation#spelling");  
+  spellingDictationGrammar.Name = "spelling dictation";  
+  spellingDictationGrammar.Enabled = true;  
+  
+  // Create the question dictation grammar.  
+  DictationGrammar customDictationGrammar =  
+    new DictationGrammar("grammar:dictation");  
+  customDictationGrammar.Name = "question dictation";  
+  customDictationGrammar.Enabled = true;  
+  
+  // Create a SpeechRecognitionEngine object and add the grammars to it.  
+  SpeechRecognitionEngine recoEngine = new SpeechRecognitionEngine();  
+  recoEngine.LoadGrammar(defaultDictationGrammar);  
+  recoEngine.LoadGrammar(spellingDictationGrammar);  
+  recoEngine.LoadGrammar(customDictationGrammar);  
+  
+  // Add a context to customDictationGrammar.  
+  customDictationGrammar.SetDictationContext("How do you", null);  
+  
+  return recoEngine;  
+}  
+  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DictationGrammar ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.DictationGrammar.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.DictationGrammar" /> class for the default dictation grammar provided by Windows Desktop Speech Technology.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default dictation grammar emulates standard dictation practices, including punctuation. It does not support the spelling of a word.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DictationGrammar (string topic);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string topic) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.DictationGrammar.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="topic" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="topic">An XML-compliant Universal Resource Identifier (URI) that specifies the dictation grammar, either <c>grammar:dictation</c> or <c>grammar:dictation#spelling</c>.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.DictationGrammar" /> class with a specific dictation grammar.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Speech platform uses a specialized URI syntax to define the custom dictation grammar. The value `grammar:dictation` indicates the default dictation grammar. The value `grammar:dictation#spelling` indicates the spelling dictation grammar.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDictationContext">
+      <MemberSignature Language="C#" Value="public void SetDictationContext (string precedingText, string subsequentText);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDictationContext(string precedingText, string subsequentText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.DictationGrammar.SetDictationContext(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="precedingText" Type="System.String" />
+        <Parameter Name="subsequentText" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="precedingText">Text that indicates the start of a dictation context.</param>
+        <param name="subsequentText">Text that indicates the end of a dictation context.</param>
+        <summary>Adds a context to a dictation grammar that has been loaded by a <see cref="T:System.Speech.Recognition.SpeechRecognizer" /> or a <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the dictation grammar does not make use of specific words or word order to identify and interpret audio input. When a context is added to a dictation grammar, the recognition engine uses the `precedingText` and `subsequentText` to identify when to interpret speech as dictation.  
+  
+> [!NOTE]
+>  A dictation grammar must be loaded by a <xref:System.Speech.Recognition.SpeechRecognizer> or <xref:System.Speech.Recognition.SpeechRecognitionEngine> object before you can use <xref:System.Speech.Recognition.DictationGrammar.SetDictationContext%2A> to add a context.  
+  
+ The following table describes how the recognition engine uses the two parameters to determine when to use the dictation grammar.  
+  
+|`precedingText`|`subsequentText`|Description|  
+|---------------------|----------------------|-----------------|  
+|not `null`|not `null`|The recognition engine uses the terms to bracket possible candidate phrases.|  
+|`null`|not `null`|The recognition engine uses the `subsequentText` to finish dictation.|  
+|not `null`|`null`|The recognition engine uses the `precedingText` to start dictation.|  
+|`null`|`null`|The recognition engine does not use a context when using the dictation grammar.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

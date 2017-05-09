@@ -1,0 +1,74 @@
+<Type Name="PipesAclExtensions" FullName="System.IO.Pipes.PipesAclExtensions">
+  <TypeSignature Language="C#" Value="public static class PipesAclExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PipesAclExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Pipes.PipesAclExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetAccessControl">
+      <MemberSignature Language="C#" Value="public static System.IO.Pipes.PipeSecurity GetAccessControl (this System.IO.Pipes.PipeStream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Pipes.PipeSecurity GetAccessControl(class System.IO.Pipes.PipeStream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipesAclExtensions.GetAccessControl(System.IO.Pipes.PipeStream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IO.Pipes.PipeSecurity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Pipes.PipeStream" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAccessControl">
+      <MemberSignature Language="C#" Value="public static void SetAccessControl (this System.IO.Pipes.PipeStream stream, System.IO.Pipes.PipeSecurity pipeSecurity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAccessControl(class System.IO.Pipes.PipeStream stream, class System.IO.Pipes.PipeSecurity pipeSecurity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipesAclExtensions.SetAccessControl(System.IO.Pipes.PipeStream,System.IO.Pipes.PipeSecurity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Pipes.PipeStream" RefType="this" />
+        <Parameter Name="pipeSecurity" Type="System.IO.Pipes.PipeSecurity" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <param name="pipeSecurity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,123 @@
+<Type Name="ISerializable" FullName="System.Runtime.Serialization.ISerializable">
+  <TypeSignature Language="C#" Value="public interface ISerializable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISerializable" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.ISerializable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Allows an object to control its own serialization and deserialization.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any class that might be serialized must be marked with the <xref:System.SerializableAttribute>. If a class needs to control its serialization process, it can implement the <xref:System.Runtime.Serialization.ISerializable> interface. The <xref:System.Runtime.Serialization.Formatter> calls the <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> at serialization time and populates the supplied <xref:System.Runtime.Serialization.SerializationInfo> with all the data required to represent the object. The <xref:System.Runtime.Serialization.Formatter> creates a <xref:System.Runtime.Serialization.SerializationInfo> with the type of the object in the graph. Objects that need to send proxies for themselves can use the <xref:System.Runtime.Serialization.SerializationInfo.FullTypeName%2A> and <xref:System.Runtime.Serialization.SerializationInfo.AssemblyName%2A> methods on <xref:System.Runtime.Serialization.SerializationInfo> to change the transmitted information.  
+  
+ In the case of class inheritance, it is possible to serialize a class that derives from a base class that implements <xref:System.Runtime.Serialization.ISerializable>. In this case, the derived class should call the base class implementation of <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> inside its implementation of <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A>. Otherwise, the data from the base class will not be serialized.  
+  
+ The <xref:System.Runtime.Serialization.ISerializable> interface implies a constructor with the signature constructor (<xref:System.Runtime.Serialization.SerializationInfo> information, <xref:System.Runtime.Serialization.StreamingContext> context). At deserialization time, the current constructor is called only after the data in the <xref:System.Runtime.Serialization.SerializationInfo> has been deserialized by the formatter. In general, this constructor should be protected if the class is not sealed.  
+  
+ The order in which objects are deserialized cannot be guaranteed. For example, if one type references a type that has not been deserialized yet, an exception will occur. If you are creating types that have such dependencies, you can work around the problem by implementing the `IDeserializationCallback` interface and the `OnDeserialization` method.  
+  
+ The serialization architecture handles object types that extend <xref:System.MarshalByRefObject> the same as types that extend <xref:System.Object>. These types can be marked with the <xref:System.SerializableAttribute> and implement the <xref:System.Runtime.Serialization.ISerializable> interface as any other object type. Their object state will be captured and persisted onto the stream.  
+  
+ When these types are being used through <xref:System.Runtime.Remoting>, the remoting infrastructure provides a surrogate that preempts typical serialization and instead serializes a proxy to the <xref:System.MarshalByRefObject>. A surrogate is a helper that knows how to serialize and deserialize objects of a particular type. The proxy, invisible to the user in most cases, will be of type <xref:System.Runtime.Remoting.ObjRef>.  
+  
+ As a general design pattern, it would be unusual for a class to be both marked with the serializable attribute and extend <xref:System.MarshalByRefObject>. Developers should think carefully about the possible serialization and remoting scenarios when combining these two characteristics. One example where this might be applicable is with a <xref:System.IO.MemoryStream>. While the base class of <xref:System.IO.MemoryStream> (<xref:System.IO.Stream>) extends from <xref:System.MarshalByRefObject>, it is possible to capture the state of a <xref:System.IO.MemoryStream> and restore it at will. It might, therefore, be meaningful to serialize the state of this stream into a database and restore it at some later point in time. However, when used through remoting, an object of this type would be proxied.  
+  
+ For more information about serialization of classes that extend <xref:System.MarshalByRefObject>, see <xref:System.Runtime.Remoting.Messaging.RemotingSurrogateSelector>. For more information about implementing <xref:System.Runtime.Serialization.ISerializable>, see [Custom Serialization](~/docs/framework/serialization/custom-serialization.md).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Runtime.Serialization.ISerializable> interface to define custom serialization behavior for a class.  
+  
+ [!code-cpp[ISerializable Interface Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ISerializable Interface Example/CPP/iobjectreference.cpp#1)]
+ [!code-csharp[ISerializable Interface Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ISerializable Interface Example/CS/iobjectreference.cs#1)]
+ [!code-vb[ISerializable Interface Example#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ISerializable Interface Example/VB/iobjectreference.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>Implement this interface to allow an object to take part in its own serialization and deserialization.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="GetObjectData">
+      <MemberSignature Language="C#" Value="public void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
+        <param name="context">The destination (see <see cref="T:System.Runtime.Serialization.StreamingContext" />) for this serialization.</param>
+        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data needed to serialize the target object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any objects that are included in the <xref:System.Runtime.Serialization.SerializationInfo> are automatically tracked and serialized by the formatter.  
+  
+ Code that calls <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> requires the <xref:System.Security.Permissions.SecurityPermission> for providing serialization services. Associated enumeration: <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName>.  
+  
+> [!NOTE]
+>  It is not guaranteed that this method will be called only once per object instance during serialization. Therefore, the method should be implemented in such a way that its behavior will be the same regardless of the number of times it is called.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> method to set alternate values for a serialized object. The code uses the <xref:System.Runtime.Serialization.SerializationInfo.AddValue%2A> method of the <xref:System.Runtime.Serialization.SerializationInfo> class to store the alternate values when the object is serialized. Conversely, when the constructor of the `Person` class is called during deserialization, the alternatve values are retrieved using the <xref:System.Runtime.Serialization.SerializationInfo.GetValue%2A> method and reassigned to the object's fields.  
+  
+ [!code-csharp[ISerializable_GetObjectData#0](~/samples/snippets/csharp/VS_Snippets_Remoting/ISerializable_GetObjectData/cs/ISerializable_GetObjectData.cs#0)]
+ [!code-vb[ISerializable_GetObjectData#0](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ISerializable_GetObjectData/vb/ISerializable_GetObjectData.vb#0)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

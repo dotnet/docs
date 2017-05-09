@@ -1,0 +1,311 @@
+<Type Name="NameValueConfigurationCollection" FullName="System.Configuration.NameValueConfigurationCollection">
+  <TypeSignature Language="C#" Value="public sealed class NameValueConfigurationCollection : System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NameValueConfigurationCollection extends System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.NameValueConfigurationCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElementCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Configuration.ConfigurationCollection(typeof(System.Configuration.NameValueConfigurationElement), AddItemName="add", ClearItemsName="clear", CollectionType=System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMap, RemoveItemName="remove")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains a collection of <see cref="T:System.Configuration.NameValueConfigurationElement" /> objects. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.NameValueConfigurationCollection> class allows you to programmatically access a collection of <xref:System.Configuration.NameValueConfigurationElement> objects.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.NameValueConfigurationCollection> type.  
+  
+ [!code-csharp[System.Configuration.NameValueConfigurationCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.NameValueConfigurationCollection/CS/NameValueConfigurationCollection.cs#1)]
+ [!code-vb[System.Configuration.NameValueConfigurationCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.NameValueConfigurationCollection/VB/NameValueConfigurationCollection.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NameValueConfigurationCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.NameValueConfigurationCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.NameValueConfigurationCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.NameValueConfigurationCollection.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Configuration.NameValueConfigurationCollection> class.  
+  
+ [!code-csharp[System.Configuration.NameValueConfigurationCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.NameValueConfigurationCollection/CS/NameValueConfigurationCollection.cs#2)]
+ [!code-vb[System.Configuration.NameValueConfigurationCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.NameValueConfigurationCollection/VB/NameValueConfigurationCollection.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Configuration.NameValueConfigurationElement nameValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Configuration.NameValueConfigurationElement nameValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.NameValueConfigurationCollection.Add(System.Configuration.NameValueConfigurationElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nameValue" Type="System.Configuration.NameValueConfigurationElement" />
+      </Parameters>
+      <Docs>
+        <param name="nameValue">A  <see cref="T:System.Configuration.NameValueConfigurationElement" /> object.</param>
+        <summary>Adds a <see cref="T:System.Configuration.NameValueConfigurationElement" /> object to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Configuration.NameValueConfigurationCollection.Add%2A> method to add a new <xref:System.Configuration.NameValueConfigurationElement> object to the collection.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.NameValueConfigurationCollection.Add%2A> method. This code example is part of a larger example provided for the <xref:System.Configuration.NameValueConfigurationCollection> class.  
+  
+ [!code-csharp[System.Configuration.NameValueConfigurationCollection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.NameValueConfigurationCollection/CS/NameValueConfigurationCollection.cs#3)]
+ [!code-vb[System.Configuration.NameValueConfigurationCollection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.NameValueConfigurationCollection/VB/NameValueConfigurationCollection.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllKeys">
+      <MemberSignature Language="C#" Value="public string[] AllKeys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] AllKeys" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.NameValueConfigurationCollection.AllKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the keys to all items contained in the <see cref="T:System.Configuration.NameValueConfigurationCollection" />.</summary>
+        <value>A string array.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.NameValueConfigurationCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the <see cref="T:System.Configuration.NameValueConfigurationCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Configuration.NameValueConfigurationCollection.Clear%2A> method is called, it removes all <xref:System.Configuration.NameValueConfigurationElement> objects from the collection.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.NameValueConfigurationCollection.Clear%2A> method. This code example is part of a larger example provided for the <xref:System.Configuration.NameValueConfigurationCollection> class.  
+  
+ [!code-csharp[System.Configuration.NameValueConfigurationCollection#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.NameValueConfigurationCollection/CS/NameValueConfigurationCollection.cs#7)]
+ [!code-vb[System.Configuration.NameValueConfigurationCollection#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.NameValueConfigurationCollection/VB/NameValueConfigurationCollection.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNewElement">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.NameValueConfigurationCollection.CreateNewElement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementKey">
+      <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.NameValueConfigurationCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Configuration.ConfigurationElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Configuration.NameValueConfigurationElement this[string name] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.NameValueConfigurationElement Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.NameValueConfigurationCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.NameValueConfigurationElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Configuration.NameValueConfigurationElement" /> contained in the collection.</param>
+        <summary>Gets or sets the <see cref="T:System.Configuration.NameValueConfigurationElement" /> object based on the supplied parameter.</summary>
+        <value>A <see cref="T:System.Configuration.NameValueConfigurationElement" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Configuration.NameValueConfigurationCollection.Item%2A> property to get or set a <xref:System.Configuration.NameValueConfigurationElement> object based on the `name` parameter.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.NameValueConfigurationCollection.Item%2A> property. This code example is part of a larger example provided for the <xref:System.Configuration.NameValueConfigurationCollection> class.  
+  
+ [!code-csharp[System.Configuration.NameValueConfigurationCollection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.NameValueConfigurationCollection/CS/NameValueConfigurationCollection.cs#5)]
+ [!code-vb[System.Configuration.NameValueConfigurationCollection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.NameValueConfigurationCollection/VB/NameValueConfigurationCollection.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.NameValueConfigurationCollection.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Configuration.NameValueConfigurationElement nameValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Configuration.NameValueConfigurationElement nameValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.NameValueConfigurationCollection.Remove(System.Configuration.NameValueConfigurationElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="nameValue" Type="System.Configuration.NameValueConfigurationElement" />
+      </Parameters>
+      <Docs>
+        <param name="nameValue">A <see cref="T:System.Configuration.NameValueConfigurationElement" /> object.</param>
+        <summary>Removes a <see cref="T:System.Configuration.NameValueConfigurationElement" /> object from the collection based on the provided parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Configuration.NameValueConfigurationCollection.Remove%2A> method to remove a <xref:System.Configuration.NameValueConfigurationElement> from the collection. Override in a derived class if custom behavior is required when the element is removed.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Configuration.NameValueConfigurationCollection.Remove%2A> method. This code example is part of a larger example provided for the <xref:System.Configuration.NameValueConfigurationCollection> class.  
+  
+ [!code-csharp[System.Configuration.NameValueConfigurationCollection#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.NameValueConfigurationCollection/CS/NameValueConfigurationCollection.cs#6)]
+ [!code-vb[System.Configuration.NameValueConfigurationCollection#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.NameValueConfigurationCollection/VB/NameValueConfigurationCollection.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.NameValueConfigurationCollection.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Configuration.NameValueConfigurationElement" /> object.</param>
+        <summary>Removes a <see cref="T:System.Configuration.NameValueConfigurationElement" /> object from the collection based on the provided parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Configuration.NameValueConfigurationCollection.Remove%2A> method to remove a <xref:System.Configuration.NameValueConfigurationElement> from the collection. Override in a derived class if custom behavior is required when the element is removed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

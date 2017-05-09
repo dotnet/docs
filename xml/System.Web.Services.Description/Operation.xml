@@ -1,0 +1,307 @@
+<Type Name="Operation" FullName="System.Web.Services.Description.Operation">
+  <TypeSignature Language="C#" Value="public sealed class Operation : System.Web.Services.Description.NamedItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Operation extends System.Web.Services.Description.NamedItem" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.Operation" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Description.NamedItem</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.Services.Configuration.XmlFormatExtensionPoint("Extensions")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides an abstract definition of an action supported by the XML Web service. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Description.Operation> class corresponds to the Web Services Description Language (WSDL) `operation` element enclosed by the `portType` element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a typical use of the <xref:System.Web.Services.Description.Operation> class. The example takes a <xref:System.Web.Services.Description.ServiceDescription> that does not have a <xref:System.Web.Services.Description.PortType> that supports the HTTP POST protocol. It adds a <xref:System.Web.Services.Description.PortType> instance that supports POST, and writes out a new WSDL contract.  
+  
+ [!code-cpp[Operation_5#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Operation_5/CPP/operation_5.cpp#1)]
+ [!code-csharp[Operation_5#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Operation_5/CS/operation_5.cs#1)]
+ [!code-vb[Operation_5#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Operation_5/VB/operation_5.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Operation ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.Operation.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.Operation" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Extensions">
+      <MemberSignature Language="C#" Value="public override System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection Extensions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection Extensions" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Operation.Extensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" /> associated with this <see cref="T:System.Web.Services.Description.Operation" />.</summary>
+        <value>The <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" /> associated with this <see cref="T:System.Web.Services.Description.Operation" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Faults">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.OperationFaultCollection Faults { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.OperationFaultCollection Faults" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Operation.Faults" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("fault")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.OperationFaultCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of faults, or error messages, defined by the current <see cref="T:System.Web.Services.Description.Operation" />.</summary>
+        <value>A collection of faults, or error messages, defined by the current operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[Operation_Faults#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Operation_Faults/CPP/operation_faults.cpp#1)]
+ [!code-csharp[Operation_Faults#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Operation_Faults/CS/operation_faults.cs#1)]
+ [!code-vb[Operation_Faults#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Operation_Faults/VB/operation_faults.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBoundBy">
+      <MemberSignature Language="C#" Value="public bool IsBoundBy (System.Web.Services.Description.OperationBinding operationBinding);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsBoundBy(class System.Web.Services.Description.OperationBinding operationBinding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.Operation.IsBoundBy(System.Web.Services.Description.OperationBinding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operationBinding" Type="System.Web.Services.Description.OperationBinding" />
+      </Parameters>
+      <Docs>
+        <param name="operationBinding">An <see cref="T:System.Web.Services.Description.OperationBinding" /> to be checked to determine whether it matches with the <see cref="T:System.Web.Services.Description.Operation" />.</param>
+        <summary>Returns a value that indicates whether the specified <see cref="T:System.Web.Services.Description.OperationBinding" /> matches with the <see cref="T:System.Web.Services.Description.Operation" />.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Web.Services.Description.Operation" /> instance matches the <paramref name="operationBinding" /> parameter; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates a typical use of the <xref:System.Web.Services.Description.Operation.IsBoundBy%2A> method.  
+  
+ [!code-cpp[Operation_IsBoundBy#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Operation_IsBoundBy/CPP/operation_isboundby.cpp#1)]
+ [!code-csharp[Operation_IsBoundBy#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Operation_IsBoundBy/CS/operation_isboundby.cs#1)]
+ [!code-vb[Operation_IsBoundBy#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Operation_IsBoundBy/VB/operation_isboundby.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Messages">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.OperationMessageCollection Messages { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.OperationMessageCollection Messages" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Operation.Messages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("output", typeof(System.Web.Services.Description.OperationOutput))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("input", typeof(System.Web.Services.Description.OperationInput))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.OperationMessageCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of instances of the <see cref="T:System.Web.Services.Description.Message" /> class defined by the current <see cref="T:System.Web.Services.Description.Operation" />.</summary>
+        <value>The collection of instances of the <see cref="T:System.Web.Services.Description.Message" /> class defined by the current <see cref="T:System.Web.Services.Description.Operation" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because an <xref:System.Web.Services.Description.Operation> is associated with exactly one <xref:System.Web.Services.Description.OperationInput> and exactly one <xref:System.Web.Services.Description.OperationOutput>, only one instance of each can be a member of this collection, and thus the collection can have a maximum of two members.  
+  
+   
+  
+## Examples  
+ [!code-cpp[Operation_5#3](~/samples/snippets/cpp/VS_Snippets_Remoting/Operation_5/CPP/operation_5.cpp#3)]
+ [!code-csharp[Operation_5#3](~/samples/snippets/csharp/VS_Snippets_Remoting/Operation_5/CS/operation_5.cs#3)]
+ [!code-vb[Operation_5#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Operation_5/VB/operation_5.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterOrder">
+      <MemberSignature Language="C#" Value="public string[] ParameterOrder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] ParameterOrder" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Operation.ParameterOrder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an array of the elements contained in the <see cref="P:System.Web.Services.Description.Operation.ParameterOrderString" />.</summary>
+        <value>An array of names of <see cref="T:System.Web.Services.Description.MessagePart" /> instances.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The elements of this array are identical to those of the <xref:System.Web.Services.Description.Operation.ParameterOrderString%2A> property, but housed in an array rather than a space-delimited string.  
+  
+   
+  
+## Examples  
+ [!code-cpp[Operation_2#2](~/samples/snippets/cpp/VS_Snippets_Remoting/Operation_2/CPP/operation_2.cpp#2)]
+ [!code-csharp[Operation_2#2](~/samples/snippets/csharp/VS_Snippets_Remoting/Operation_2/CS/operation_2.cs#2)]
+ [!code-vb[Operation_2#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Operation_2/VB/operation_2.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterOrderString">
+      <MemberSignature Language="C#" Value="public string ParameterOrderString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ParameterOrderString" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Operation.ParameterOrderString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("parameterOrder")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an optional Remote Procedure Call (RPC) signature that orders specification for request-response or solicit-response operations.</summary>
+        <value>A list of names of the <see cref="T:System.Web.Services.Description.MessagePart" /> instances separated by a single space.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The named <xref:System.Web.Services.Description.MessagePart> instances must adhere to the following rules:  
+  
+-   The order of the named <xref:System.Web.Services.Description.MessagePart> instances reflects the order of the parameters in the RPC (remote procedure call) signature, which is the name of the operation, its input and output parameters, the results it returns and the exceptions it might be asked to handle.  
+  
+-   The return value is not present in the list.  
+  
+-   If the <xref:System.Web.Services.Description.MessagePart> name appears in both the input and output messages, it is an `in/out` parameter.  
+  
+-   If the <xref:System.Web.Services.Description.MessagePart> name appears only in the input message, it is an `in` parameter.  
+  
+-   If the <xref:System.Web.Services.Description.MessagePart> name appears only in the output message, it is an `out` parameter.  
+  
+ Note that this parameter list is not required, even if the <xref:System.Web.Services.Description.Operation> is to be used with an RPC-style <xref:System.Web.Services.Description.Binding>. Do not call <xref:System.Web.Services.Description.Operation.ParameterOrderString%2A> directly. This method is only used internally for XML serialization. To return the parameter list use <xref:System.Web.Services.Description.Operation.ParameterOrder%2A>.  
+  
+   
+  
+## Examples  
+ [!code-cpp[Operation_2#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Operation_2/CPP/operation_2.cpp#1)]
+ [!code-csharp[Operation_2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Operation_2/CS/operation_2.cs#1)]
+ [!code-vb[Operation_2#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Operation_2/VB/operation_2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PortType">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.PortType PortType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.PortType PortType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Operation.PortType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.PortType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.Services.Description.PortType" /> of which the <see cref="T:System.Web.Services.Description.Operation" /> is a member.</summary>
+        <value>A <see cref="T:System.Web.Services.Description.PortType" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ Operation_5#5  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

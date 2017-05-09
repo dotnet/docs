@@ -1,0 +1,52 @@
+<Type Name="OpenReadCompletedEventHandler" FullName="System.Net.OpenReadCompletedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void OpenReadCompletedEventHandler(object sender, OpenReadCompletedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OpenReadCompletedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Net.OpenReadCompletedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Net.OpenReadCompletedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Net.OpenReadCompletedEventArgs" /> containing event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Net.WebClient.OpenReadCompleted" /> event of a <see cref="T:System.Net.WebClient" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.Net.OpenReadCompletedEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates downloading a resource for reading.  
+  
+ [!code-cpp[NCLWebClientAsync#30](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLWebClientAsync/CPP/asyncmethods.cpp#30)]
+ [!code-csharp[NCLWebClientAsync#30](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebClientAsync/CS/asyncmethods.cs#30)]
+ [!code-vb[NCLWebClientAsync#30](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebClientAsync/VB/asyncmethods.vb#30)]  
+  
+ The following method is called when the download completes.  
+  
+ [!code-cpp[NCLWebClientAsync#31](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLWebClientAsync/CPP/asyncmethods.cpp#31)]
+ [!code-csharp[NCLWebClientAsync#31](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLWebClientAsync/CS/asyncmethods.cs#31)]
+ [!code-vb[NCLWebClientAsync#31](~/samples/snippets/visualbasic/VS_Snippets_Remoting/NCLWebClientAsync/VB/asyncmethods.vb#31)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

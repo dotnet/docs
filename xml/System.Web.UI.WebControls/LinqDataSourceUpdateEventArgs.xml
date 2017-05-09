@@ -1,0 +1,314 @@
+<Type Name="LinqDataSourceUpdateEventArgs" FullName="System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs">
+  <TypeSignature Language="C#" Value="public class LinqDataSourceUpdateEventArgs : System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinqDataSourceUpdateEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.CancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.LinqDataSource.Updating" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs> object is passed to any event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Updating> event. You can use the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs> object to examine the data before the update operation is executed in the data source. You can then validate the data, examine validation exceptions thrown by the data class, or change a value before the update. You can also cancel the update operation.  
+  
+ The <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.OriginalObject%2A> object contains the data that was originally retrieved from the data source. The <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.NewObject%2A> object contains the data that will be saved in the data source during the update operation.  
+  
+ If the object that represents the data source throws a validation exception before updating the data, the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.Exception%2A> property contains an instance of the <xref:System.Web.UI.WebControls.LinqDataSourceValidationException> class. You can retrieve all the validation exceptions through the <xref:System.Web.UI.WebControls.LinqDataSourceValidationException.InnerExceptions%2A> property. If no validation exception is thrown, the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.Exception%2A> property contains `null`. If you handle the validation exceptions and do not want the exception to be re-thrown, set the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.ExceptionHandled%2A> property to `true`.  
+  
+ By default, the <xref:System.Web.UI.WebControls.LinqDataSource> control stores the original values from the data source in view state on the Web page, except those whose <xref:System.Data.Linq.Mapping.ColumnAttribute> attribute is marked as `UpdateCheck.Never`. LINQ to SQL automatically checks the integrity of the data before updating the data. It does this by comparing the current values in the data source with the original values stored in view state. LINQ to SQL raises an exception if the values in the data source have changed. You can perform additional data validation by creating a handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Updating> event.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Updating> event. The example shows how to compare properties from the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.OriginalObject%2A> property and the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.NewObject%2A> property to determine whether the value in the `Category` property has changed. If so, the `CategoryChanged` property of the object in the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.NewObject%2A> property is set to `true`.  
+  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSource.Updating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Updating/cs/Default.aspx.cs#1)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSource.Updating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Updating/vb/Default.aspx.vb#1)]  
+  
+ The following example shows an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Updating> event. It displays any validation exception messages by using a <xref:System.Web.UI.WebControls.Label> control.  
+  
+```vb  
+Protected Sub LinqDataSource_Updating(ByVal sender As Object, _  
+        ByVal e As LinqDataSourceUpdateEventArgs)  
+    If (e.Exception IsNot Nothing) Then  
+        For Each innerException As KeyValuePair(Of String, Exception) _  
+               In e.Exception.InnerExceptions  
+            Label1.Text &= innerException.Key & ": " & _  
+                innerException.Value.Message & "<br />"  
+        Next  
+        e.ExceptionHandled = True  
+    End If  
+End Sub  
+```  
+  
+ [C#]  
+  
+```  
+protected void LinqDataSource_Updating(object sender,   
+        LinqDataSourceUpdateEventArgs e)  
+{  
+    if (e.Exception != null)  
+    {  
+        foreach (KeyValuePair<string, Exception> innerException in   
+             e.Exception.InnerExceptions)  
+        {  
+        Label1.Text += innerException.Key + ": " +   
+            innerException.Value.Message + "<br />";  
+        }  
+        e.ExceptionHandled = true;  
+    }  
+}  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinqDataSourceUpdateEventArgs (System.Web.UI.WebControls.LinqDataSourceValidationException exception);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.LinqDataSourceValidationException exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.#ctor(System.Web.UI.WebControls.LinqDataSourceValidationException)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="exception" Type="System.Web.UI.WebControls.LinqDataSourceValidationException" />
+      </Parameters>
+      <Docs>
+        <param name="exception">The exception that occurred when validating the data to update.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs" /> class with the specified exception.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinqDataSourceUpdateEventArgs (object originalObject, object newObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object originalObject, object newObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.#ctor(System.Object,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="originalObject" Type="System.Object" />
+        <Parameter Name="newObject" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="originalObject">An object of the type specified in the <see cref="P:System.Web.UI.WebControls.LinqDataSource.TableName" /> property that contains the initial values that were retrieved from the data source.</param>
+        <param name="newObject">An object of the type specified in the <see cref="P:System.Web.UI.WebControls.LinqDataSource.TableName" /> property that contains the values that will be saved in the data source.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Exception">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.LinqDataSourceValidationException Exception { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.LinqDataSourceValidationException Exception" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.Exception" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.LinqDataSourceValidationException</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the exception that was thrown while the data was being validated before the update operation.</summary>
+        <value>The exception, if an error occurred; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a validation exception is raised before the update operation is performed, the exception is stored in the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.Exception%2A> property. In an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Updating> event, you can retrieve the exception through the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.Exception%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Updating> event. It displays any validation exception messages by using a <xref:System.Web.UI.WebControls.Label> control.  
+  
+```vb  
+Protected Sub LinqDataSource_Updating(ByVal sender As Object, _  
+        ByVal e As LinqDataSourceUpdateEventArgs)  
+    If (e.Exception IsNot Nothing) Then  
+        For Each innerException As KeyValuePair(Of String, Exception) _  
+               In e.Exception.InnerExceptions  
+            Label1.Text &= innerException.Key & ": " & _  
+                innerException.Value.Message & "<br />"  
+        Next  
+        e.ExceptionHandled = True  
+    End If  
+End Sub  
+```  
+  
+ [C#]  
+  
+```  
+protected void LinqDataSource_Updating(object sender,   
+        LinqDataSourceUpdateEventArgs e)  
+{  
+    if (e.Exception != null)  
+    {  
+        foreach (KeyValuePair<string, Exception> innerException in   
+             e.Exception.InnerExceptions)  
+        {  
+        Label1.Text += innerException.Key + ": " +   
+            innerException.Value.Message + "<br />";  
+        }  
+        e.ExceptionHandled = true;  
+    }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExceptionHandled">
+      <MemberSignature Language="C#" Value="public bool ExceptionHandled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExceptionHandled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.ExceptionHandled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the exception was handled and that it should not be thrown again.</summary>
+        <value>
+          <see langword="true" /> if the exception was handled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can create an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Updating> event to examine validation exceptions that occurred before the update operation. If you handle the exception and do not want it to be thrown again, set the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.ExceptionHandled%2A> property to `true`. If you do not set the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.ExceptionHandled%2A> property to `true`, the exception will be propagated to the next event handler in the call stack.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Updating> event. It displays any validation exception messages by using a <xref:System.Web.UI.WebControls.Label> control.  
+  
+```vb  
+Protected Sub LinqDataSource_Updating(ByVal sender As Object, _  
+        ByVal e As LinqDataSourceUpdateEventArgs)  
+    If (e.Exception IsNot Nothing) Then  
+        For Each innerException As KeyValuePair(Of String, Exception) _  
+               In e.Exception.InnerExceptions  
+            Label1.Text &= innerException.Key & ": " & _  
+                innerException.Value.Message & "<br />"  
+        Next  
+        e.ExceptionHandled = True  
+    End If  
+End Sub  
+```  
+  
+ [C#]  
+  
+```  
+protected void LinqDataSource_Updating(object sender,   
+        LinqDataSourceUpdateEventArgs e)  
+{  
+    if (e.Exception != null)  
+    {  
+        foreach (KeyValuePair<string, Exception> innerException in   
+             e.Exception.InnerExceptions)  
+        {  
+        Label1.Text += innerException.Key + ": " +   
+            innerException.Value.Message + "<br />";  
+        }  
+        e.ExceptionHandled = true;  
+    }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewObject">
+      <MemberSignature Language="C#" Value="public object NewObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object NewObject" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.NewObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object that contains the values that will be saved in the data source.</summary>
+        <value>An object of the type specified in the <see cref="P:System.Web.UI.WebControls.LinqDataSource.TableName" /> property that contains the data to save.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Create an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Updating> event and retrieve the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.NewObject%2A> property to validate the data. You can also change the data or cancel the update operation.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Updating> event. The example shows how to compare properties from the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.OriginalObject%2A> property and the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.NewObject%2A> property to determine whether the value in the `Category` property has changed. If so, the `CategoryChanged` property of the object in the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.NewObject%2A> property is set to `true`.  
+  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSource.Updating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Updating/cs/Default.aspx.cs#1)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSource.Updating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Updating/vb/Default.aspx.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalObject">
+      <MemberSignature Language="C#" Value="public object OriginalObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object OriginalObject" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.OriginalObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object that contains the values that were originally retrieved from the data source.</summary>
+        <value>An object of the type specified in the <see cref="P:System.Web.UI.WebControls.LinqDataSource.TableName" /> property that contains the data that was retrieved from the data source.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.OriginalObject%2A> property to check the original values against the current values in the data source and to cancel the update operation or take other action.  
+  
+ The <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.OriginalObject%2A> property contains values for only the properties that are persisted in view state in the Web page. A property is persisted under these circumstances:  
+  
+-   When it is displayed in a data-bound control.  
+  
+-   When the <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A?displayProperty=fullName> property of the <xref:System.Data.Linq.Mapping.ColumnAttribute?displayProperty=fullName> attribute is set to `Always` or `WhenChanged`.  
+  
+ If the <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A> property is set to `Never` and the value is not displayed in a data-bound control, the value is not stored in the Web page. In that case, it cannot be assigned to the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.OriginalObject%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Updating> event. The example shows how to compare properties from the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.OriginalObject%2A> property and the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.NewObject%2A> property to determine whether the value in the `Category` property has changed. If so, the `CategoryChanged` property of the object in the <xref:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.NewObject%2A> property is set to `true`.  
+  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSource.Updating#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Updating/cs/Default.aspx.cs#1)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSource.Updating#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Updating/vb/Default.aspx.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

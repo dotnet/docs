@@ -1,0 +1,172 @@
+<Type Name="EnumMemberAttribute" FullName="System.Runtime.Serialization.EnumMemberAttribute">
+  <TypeSignature Language="C#" Value="public sealed class EnumMemberAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EnumMemberAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.EnumMemberAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field, AllowMultiple=false, Inherited=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies that the field is an enumeration member and should be serialized.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.EnumMemberAttribute> enables fine control of the names of the enumerations as they are serialized.  
+  
+ To use <xref:System.Runtime.Serialization.EnumMemberAttribute>, create an enumeration and apply the <xref:System.Runtime.Serialization.DataContractAttribute> attribute to the enumeration. Then apply the <xref:System.Runtime.Serialization.EnumMemberAttribute> attribute to each member that needs to be in the serialization stream.  
+  
+   
+  
+## Examples  
+ The following example shows <xref:System.Runtime.Serialization.EnumMemberAttribute> applied to members of an enumeration.  
+  
+ [!code-csharp[EnumMemberAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/enummemberattribute/cs/source.cs#1)]
+ [!code-vb[EnumMemberAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/enummemberattribute/vb/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EnumMemberAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.EnumMemberAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.EnumMemberAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValueSetExplicitly">
+      <MemberSignature Language="C#" Value="public bool IsValueSetExplicitly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsValueSetExplicitly" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.EnumMemberAttribute.IsValueSetExplicitly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets whether the <see cref="P:System.Runtime.Serialization.EnumMemberAttribute.Value" /> has been explicitly set.</summary>
+        <value>
+          <see langword="true" /> if the value has been explicitly set; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.EnumMemberAttribute.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value associated with the enumeration member the attribute is applied to.</summary>
+        <value>The value associated with the enumeration member.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the value of an enumeration is the name of the enumeration. When a value is specified, that value will appear in the XML document or stream.  
+  
+   
+  
+## Examples  
+ The following code:  
+  
+ [!code-csharp[EnumMemberAttribute#0](~/samples/snippets/csharp/VS_Snippets_CFX/enummemberattribute/cs/source.cs#0)]  
+  
+ results in the following XML when serialized with the <xref:System.Runtime.Serialization.DataContractSerializer>:  
+  
+```  
+<Shapes>Circle</Shapes>  
+```  
+  
+ or  
+  
+```  
+<Shapes>Square</Shapes>  
+```  
+  
+ The following code, with the Value property set:  
+  
+ [!code-csharp[EnumMemberAttribute#3](~/samples/snippets/csharp/VS_Snippets_CFX/enummemberattribute/cs/source.cs#3)]
+ [!code-vb[EnumMemberAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/enummemberattribute/vb/source.vb#3)]  
+  
+ results in the following XML:  
+  
+```  
+<Shapes>1</Shapes>  
+```  
+  
+ or  
+  
+```  
+<Shapes>2</Shapes>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

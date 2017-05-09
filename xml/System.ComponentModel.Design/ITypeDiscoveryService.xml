@@ -1,0 +1,64 @@
+<Type Name="ITypeDiscoveryService" FullName="System.ComponentModel.Design.ITypeDiscoveryService">
+  <TypeSignature Language="C#" Value="public interface ITypeDiscoveryService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITypeDiscoveryService" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ITypeDiscoveryService" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Discovers available types at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.ITypeDiscoveryService> is used to discover available types at design time, when a client of the service does not know the names of existing types or referenced assemblies.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetTypes">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection GetTypes (Type baseType, bool excludeGlobalTypes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ICollection GetTypes(class System.Type baseType, bool excludeGlobalTypes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ITypeDiscoveryService.GetTypes(System.Type,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseType" Type="System.Type" />
+        <Parameter Name="excludeGlobalTypes" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="baseType">The base type to match. Can be <see langword="null" />.</param>
+        <param name="excludeGlobalTypes">Indicates whether types from all referenced assemblies should be checked.</param>
+        <summary>Retrieves the list of available types.</summary>
+        <returns>A collection of types that match the criteria specified by <paramref name="baseType" /> and <paramref name="excludeGlobalTypes" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `baseType` is `null`, all types are returned. Otherwise, only types derived from the specified base type are returned. If `excludeGlobalTypes` is `false`, types from all referenced assemblies are checked. Otherwise, only types from non-Global Assembly Cache (GAC) referenced assemblies are checked. For more information, see [Working with Assemblies and the Global Assembly Cache](~/docs/framework/app-domains/working-with-assemblies-and-the-gac.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,54 @@
+<Type Name="IUserControlTypeResolutionService" FullName="System.Web.UI.IUserControlTypeResolutionService">
+  <TypeSignature Language="C#" Value="public interface IUserControlTypeResolutionService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IUserControlTypeResolutionService" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.IUserControlTypeResolutionService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the method a class must implement to return a control's type for a specified tag prefix and tag name.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Page developers and control authors do not use the <xref:System.Web.UI.IUserControlTypeResolutionService> interface. The <xref:System.Web.UI.IUserControlTypeResolutionService> interface is implemented by tool developers to return the <xref:System.Type> of a control identified by a tag prefix and tag name.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetType">
+      <MemberSignature Language="C#" Value="public Type GetType (string tagPrefix, string tagName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetType(string tagPrefix, string tagName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.IUserControlTypeResolutionService.GetType(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tagPrefix" Type="System.String" />
+        <Parameter Name="tagName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="tagPrefix">The parsed prefix of an ASP.NET tag.</param>
+        <param name="tagName">The name of the parsed ASP.NET tag.</param>
+        <summary>Retrieves a type based on a parsed ASP.NET tag prefix and the name of the tag.</summary>
+        <returns>A <see cref="T:System.Type" /> that represents the type of control the prefix and tag identify.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Designer environments implement this method to provide a way for ASP.NET parsers and designers to resolve user control types at design time.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

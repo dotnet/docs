@@ -1,0 +1,110 @@
+<Type Name="MaskGenerationMethod" FullName="System.Security.Cryptography.MaskGenerationMethod">
+  <TypeSignature Language="C#" Value="public abstract class MaskGenerationMethod" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MaskGenerationMethod extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.MaskGenerationMethod" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the abstract class from which all mask generator algorithms must derive.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Derived classes of <xref:System.Security.Cryptography.MaskGenerationMethod> compute masks that are used in key exchange algorithms such as Optimal Asymmetric Encryption Padding (OAEP).  
+  
+ This class is used by implementations of key exchange algorithms only for mask generation. Application code does not use this class directly.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to derive from the <xref:System.Security.Cryptography.MaskGenerationMethod> class.  
+  
+ [!code-cpp[System.Security.Cryptography.MaskGenerationMethod#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Cryptography.MaskGenerationMethod/CPP/maskgenerator.cpp#1)]
+ [!code-csharp[System.Security.Cryptography.MaskGenerationMethod#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Cryptography.MaskGenerationMethod/CS/maskgenerator.cs#1)]
+ [!code-vb[System.Security.Cryptography.MaskGenerationMethod#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Cryptography.MaskGenerationMethod/VB/maskgenerator.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MaskGenerationMethod ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.MaskGenerationMethod.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.MaskGenerationMethod" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateMask">
+      <MemberSignature Language="C#" Value="public abstract byte[] GenerateMask (byte[] rgbSeed, int cbReturn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GenerateMask(unsigned int8[] rgbSeed, int32 cbReturn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.MaskGenerationMethod.GenerateMask(System.Byte[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rgbSeed" Type="System.Byte[]" />
+        <Parameter Name="cbReturn" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rgbSeed">The random seed to use to compute the mask.</param>
+        <param name="cbReturn">The length of the generated mask in bytes.</param>
+        <summary>When overridden in a derived class, generates a mask with the specified length using the specified random seed.</summary>
+        <returns>A randomly generated mask whose length is equal to the <paramref name="cbReturn" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Security.Cryptography.MaskGenerationMethod.GenerateMask%2A> to create and return a mask using the specified seed. This code example is part of a larger example provided for the <xref:System.Security.Cryptography.MaskGenerationMethod> class.  
+  
+ System.Security.Cryptography.MaskGenerationMethod#3  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

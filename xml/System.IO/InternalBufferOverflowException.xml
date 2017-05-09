@@ -1,0 +1,153 @@
+<Type Name="InternalBufferOverflowException" FullName="System.IO.InternalBufferOverflowException">
+  <TypeSignature Language="C#" Value="public class InternalBufferOverflowException : SystemException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit InternalBufferOverflowException extends System.SystemException" />
+  <TypeSignature Language="DocId" Value="T:System.IO.InternalBufferOverflowException" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.SystemException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The exception thrown when the internal buffer overflows.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In a <xref:System.IO.FileSystemWatcher>, when you are notified of file changes, the system stores those changes in a buffer the component creates and passes to the Application Programming Interfaces (APIs). If there are many changes in a short time, the buffer can easily overflow, resulting in an exception being thrown, which essentially loses all changes. To keep the buffer from overflowing, use the <xref:System.IO.FileSystemWatcher.NotifyFilter%2A?displayProperty=fullName> and <xref:System.IO.FileSystemWatcher.IncludeSubdirectories%2A?displayProperty=fullName> properties to filter out your unwanted change notifications. You can also increase the size of the internal buffer through the <xref:System.IO.FileSystemWatcher.InternalBufferSize%2A?displayProperty=fullName> property. However, increasing the size of the buffer is expensive, so keep the buffer as small as possible.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a FileSystemWatcher to monitor file changes (creates, deletes, renames, changes) occurring on a disk drive. The example also shows how to properly receive error notifications.  
+  
+ [!code-csharp[FileSystemWatcher#1](~/samples/snippets/csharp/VS_Snippets_CLR/FileSystemWatcher/cs/filesystemwatcher.cs#1)]
+ [!code-vb[FileSystemWatcher#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/FileSystemWatcher/VB/FileSystemWatcher.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InternalBufferOverflowException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.InternalBufferOverflowException.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new default instance of the <see cref="T:System.IO.InternalBufferOverflowException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These constructors are used by the component to signify an error. Only use them if extending the class or the .NET Framework. This exception indicates an internal buffer has overflowed and users should take appropriate steps in their code to ensure it recovers properly. The cause of the overflow is often too many changes in a short period of time, causing the internal notification buffer to overflow. To resolve this, use the <xref:System.IO.FileSystemWatcher.NotifyFilter%2A?displayProperty=fullName> and <xref:System.IO.FileSystemWatcher.IncludeSubdirectories%2A?displayProperty=fullName> properties to filter out unwanted change notifications. You can also increase the size of the internal buffer through the <xref:System.IO.FileSystemWatcher.InternalBufferSize%2A?displayProperty=fullName> property. However, increasing the size of the buffer is expensive, so keep the buffer as small as possible.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InternalBufferOverflowException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.InternalBufferOverflowException.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message to be given for the exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.InternalBufferOverflowException" /> class with the error message to be displayed specified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These constructors are used by the component to signify an error. Only use them if extending the class or the .NET Framework. This exception indicates an internal buffer has overflowed and users should take appropriate steps in their code to ensure it recovers properly. The cause of the overflow is often too many changes in a short period of time, causing the internal notification buffer to overflow. To resolve this, use the <xref:System.IO.FileSystemWatcher.NotifyFilter%2A?displayProperty=fullName> and <xref:System.IO.FileSystemWatcher.IncludeSubdirectories%2A?displayProperty=fullName> properties to filter out unwanted change notifications. You can also increase the size of the internal buffer through the <xref:System.IO.FileSystemWatcher.InternalBufferSize%2A?displayProperty=fullName> property. However, increasing the size of the buffer is expensive, so keep the buffer as small as possible.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected InternalBufferOverflowException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.InternalBufferOverflowException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The information required to serialize the T:System.IO.InternalBufferOverflowException object.</param>
+        <param name="context">The source and destination of the serialized stream associated with the T:System.IO.InternalBufferOverflowException object.</param>
+        <summary>Initializes a new, empty instance of the <see cref="T:System.IO.InternalBufferOverflowException" /> class that is serializable using the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> objects.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InternalBufferOverflowException (string message, Exception inner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.InternalBufferOverflowException.#ctor(System.String,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="inner" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message to be given for the exception.</param>
+        <param name="inner">The inner exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.InternalBufferOverflowException" /> class with the message to be displayed and the generated inner exception specified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These constructors are used by the component to signify an error. Only use them if extending the class or the .NET Framework. This exception indicates an internal buffer has overflowed and users should take appropriate steps in their code to ensure it recovers properly. The cause of the overflow is often too many changes in a short period of time, causing the internal notification buffer to overflow. To resolve this, use the <xref:System.IO.FileSystemWatcher.NotifyFilter%2A?displayProperty=fullName> and <xref:System.IO.FileSystemWatcher.IncludeSubdirectories%2A?displayProperty=fullName> properties to filter out unwanted change notifications. You can also increase the size of the internal buffer through the <xref:System.IO.FileSystemWatcher.InternalBufferSize%2A?displayProperty=fullName> property. However, increasing the size of the buffer is expensive, so keep the buffer as small as possible.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

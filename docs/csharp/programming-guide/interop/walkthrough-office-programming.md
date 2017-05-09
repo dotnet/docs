@@ -43,6 +43,7 @@ Both languages enable embedding of type information, which allows deployment of 
 This walkthrough demonstrates these features in the context of Office programming, but many of these features are also useful in general programming. In the walkthrough, you use an Excel Add-in application to create an Excel workbook. Next, you create a Word document that contains a link to the workbook. Finally, you see how to enable and disable the PIA dependency.  
   
 ## Prerequisites  
+
 You must have Microsoft Office Excel and Microsoft Office Word installed on your computer to complete this walkthrough.  
   
  If you are using an operating system that is older than [!INCLUDE[windowsver](../../../csharp/programming-guide/interop/includes/windowsver_md.md)], make sure that [!INCLUDE[dnprdnlong](../../../csharp/programming-guide/events/includes/dnprdnlong_md.md)] is installed.  
@@ -55,9 +56,9 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
   
 2.  On the **File** menu, point to **New**, and then click **Project**.  
   
-3.  In the **Installed Templates** pane, expand **Visual Basic** or **Visual C#**, expand **Office**, and then click **2013** (or **2010** or **2007**).  
+3.  In the **Installed Templates** pane, expand **Visual Basic** or **Visual C#**, expand **Office**, and then click the version year of the Office product.  
   
-4.  In the **Templates** pane, click **Excel 2013 Add-in** (or **Excel 2010 Add-in** or **Excel 2007 Add-in**).  
+4.  In the **Templates** pane, click **Excel \<version> Add-in**.  
   
 5.  Look at the top of the **Templates** pane to make sure that **.NET Framework 4**, or a later version, appears in the **Target Framework** box.  
   
@@ -71,7 +72,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
   
 1.  In **Solution Explorer**, right-click your project's name and then click **Add Reference**. The **Add Reference** dialog box appears.  
   
-2.  On the **Assemblies** tab, select **Microsoft.Office.Interop.Excel**, version 15.0.0.0 (or version 14.0.0.0 for Excel 2010 or version 12.0.0.0 for Excel 2007), in the **Component Name** list, and then hold down the CTRL key and select **Microsoft.Office.Interop.Word**, version 15.0.0.0 (or version 14.0.0.0 for Word 2010 or 12.0.0.0 for Word 2007).  If you do not see the assemblies, you may need to ensure they are installed and displayed (see [How to: Install Office Primary Interop Assemblies](http://msdn.microsoft.com/library/92948fcc-76c6-4b08-ba63-cab59dd60eb1)).  
+2.  On the **Assemblies** tab, select **Microsoft.Office.Interop.Excel**, version `<version>.0.0.0` (for a key to the Office product version numbers, see [Microsoft Versions](https://en.wikipedia.org/wiki/Microsoft_Office#Versions)), in the **Component Name** list, and then hold down the CTRL key and select **Microsoft.Office.Interop.Word**, `version <version>.0.0.0`. If you do not see the assemblies, you may need to ensure they are installed and displayed (see [How to: Install Office Primary Interop Assemblies](https://docs.microsoft.com/visualstudio/vsto/how-to-install-office-primary-interop-assemblies)).  
   
 3.  Click **OK**.  
   
@@ -88,12 +89,12 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
   
 1.  In **Solution Explorer**, right-click your project's name, click **Add**, and then click **Class**. Name the class Account.vb if you are using Visual Basic or Account.cs if you are using C#. Click **Add**.  
   
-2.  Replace the definition of the `Account` class with the following code. The class definitions use *auto-implemented properties*, new to Visual Basic in Visual Studio 2010. For more information, see [Auto-Implemented Properties](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md).  
+2.  Replace the definition of the `Account` class with the following code. The class definitions use *auto-implemented properties*. For more information, see [Auto-Implemented Properties](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md).  
   
      [!code-cs[csOfficeWalkthrough#2](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_2.cs)]
      [!code-vb[csOfficeWalkthrough#2](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_2.vb)]  
   
-3.  To create a `bankAccounts` list that contains two accounts, add the following code to the `ThisAddIn_Startup` method in ThisAddIn.vb or ThisAddIn.cs. The list declarations use *collection initializers*, new to Visual Basic in Visual Studio 2010. For more information, see [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md).  
+3.  To create a `bankAccounts` list that contains two accounts, add the following code to the `ThisAddIn_Startup` method in *ThisAddIn.vb* or *ThisAddIn.cs*. The list declarations use *collection initializers*. For more information, see [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md).  
   
      [!code-cs[csOfficeWalkthrough#3](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_3.cs)]
      [!code-vb[csOfficeWalkthrough#3](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_3.vb)]  
@@ -128,7 +129,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
      [!code-cs[csOfficeWalkthrough#7](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_7.cs)]
      [!code-vb[csOfficeWalkthrough#7](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_7.vb)]  
   
-     These additions demonstrate another new feature in C# 2010: treating `Object` values returned from COM hosts such as Office as if they have type [dynamic](../../../csharp/language-reference/keywords/dynamic.md). This happens automatically when **Embed Interop Types** is set to its default value, `True`, or, equivalently, when the assembly is referenced by the [/link](../../../csharp/language-reference/compiler-options/link-compiler-option.md) compiler option. Type `dynamic` allows late binding, already available in Visual Basic, and avoids the explicit casting required in Visual C# 2008 and earlier versions of the language.  
+     These additions demonstrate another feature in C#: treating `Object` values returned from COM hosts such as Office as if they have type [dynamic](../../../csharp/language-reference/keywords/dynamic.md). This happens automatically when **Embed Interop Types** is set to its default value, `True`, or, equivalently, when the assembly is referenced by the [/link](../../../csharp/language-reference/compiler-options/link-compiler-option.md) compiler option. Type `dynamic` allows late binding, already available in Visual Basic, and avoids the explicit casting required in Visual C# 2008 and earlier versions of the language.  
   
      For example, `excelApp.Columns[1]` returns an `Object`, and `AutoFit` is an Excel  [Range](http://go.microsoft.com/fwlink/?LinkId=210911) method. Without `dynamic`, you must cast the object returned by `excelApp.Columns[1]` as an instance of `Range` before calling method `AutoFit`.  
   
@@ -138,7 +139,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
   
 ### To invoke DisplayInExcel  
   
-1.  Add the following code at the end of the `ThisAddIn_StartUp` method. The call to `DisplayInExcel` contains two arguments. The first argument is the name of the list of accounts to be processed. The second argument is a multiline lambda expression that defines how the data is to be processed. The `ID` and `balance` values for each account are displayed in adjacent cells, and the row is displayed in red if the balance is less than zero. Multiline lambda expressions are a new feature in Visual Basic 2010. For more information, see [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).  
+1.  Add the following code at the end of the `ThisAddIn_StartUp` method. The call to `DisplayInExcel` contains two arguments. The first argument is the name of the list of accounts to be processed. The second argument is a multiline lambda expression that defines how the data is to be processed. The `ID` and `balance` values for each account are displayed in adjacent cells, and the row is displayed in red if the balance is less than zero. For more information, see [Lambda Expressions](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).  
   
      [!code-cs[csOfficeWalkthrough#9](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_9.cs)]
      [!code-vb[csOfficeWalkthrough#9](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_9.vb)]  
@@ -152,9 +153,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
      [!code-cs[csOfficeWalkthrough#10](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_10.cs)]
      [!code-vb[csOfficeWalkthrough#10](../../../csharp/programming-guide/interop/codesnippet/VisualBasic/walkthrough-office-programming_10.vb)]  
   
-     This code demonstrates several of the new features in C#: the ability to omit the `ref` keyword in COM programming, named arguments, and optional arguments. These features already exist in Visual Basic. The  [PasteSpecial](http://go.microsoft.com/fwlink/?LinkId=147099) method has seven parameters, all of which are defined as optional reference parameters. Prior to Visual C# 2010, you had to define object variables to use as arguments for the seven parameters, even when you had no meaningful values to send in. Named and optional arguments enable you to designate the parameters you want to access by name, and to send arguments to only those parameters. In this example, arguments are sent to indicate that a link to the workbook on the Clipboard should be created (parameter `Link`), and that the link is to be displayed in the Word document as an icon (parameter `DisplayAsIcon`). Visual C# 2010 also enables you to omit the `ref` keyword for these arguments. Compare the following code segment from Visual C# 2008 with the single line required in Visual C# 2010:  
-  
-     [!code-cs[csOfficeWalkthrough#11](../../../csharp/programming-guide/interop/codesnippet/CSharp/walkthrough-office-programming_11.cs)]  
+     This code demonstrates several of the new features in C#: the ability to omit the `ref` keyword in COM programming, named arguments, and optional arguments. These features already exist in Visual Basic. The [PasteSpecial](https://msdn.microsoft.com/library/microsoft.office.interop.word.selection.pastespecial.aspx) method has seven parameters, all of which are defined as optional reference parameters. Named and optional arguments enable you to designate the parameters you want to access by name and to send arguments to only those parameters. In this example, arguments are sent to indicate that a link to the workbook on the Clipboard should be created (parameter `Link`) and that the link is to be displayed in the Word document as an icon (parameter `DisplayAsIcon`). Visual C# also enables you to omit the `ref` keyword for these arguments.
   
 ### To run the application  
   
@@ -168,11 +167,11 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
   
 1.  Run the application again, but do not click **Clean Solution**.  
   
-2.  On the **Start** menu, click **All Programs**. Next click **Microsoft Visual Studio 2013**, then **Visual Studio Tools**, then **Visual Studio Command Prompt (2013)**.  
+2.  Select the **Start**. Locate **Microsoft Visual Studio \<version>** and open a developer command prompt.  
   
-3.  Type `ildasm` in the Visual Studio Command Prompt (2013) window, and then press ENTER. The IL DASM window appears.  
+3.  Type `ildasm` in the Visual Studio Command Prompt window, and then press ENTER. The IL DASM window appears.  
   
-4.  On the **File** menu in the IL DASM window, click **Open**. Double-click **Visual Studio 2013**, and then double-click **Projects**. Open the folder for your project, and look in the bin/Debug folder for *your project name*.dll. Double-click *your project name*.dll. A new window displays your project's attributes, in addition to references to other modules and assemblies. Note that namespaces `Microsoft.Office.Interop.Excel` and `Microsoft.Office.Interop.Word` are included in the assembly. By default in Visual Studio 2013, the compiler imports the types you need from a referenced PIA into your assembly.  
+4.  On the **File** menu in the IL DASM window, select **File** > **Open**. Double-click **Visual Studio \<version>**, and then double-click **Projects**. Open the folder for your project, and look in the bin/Debug folder for *your project name*.dll. Double-click *your project name*.dll. A new window displays your project's attributes, in addition to references to other modules and assemblies. Note that namespaces `Microsoft.Office.Interop.Excel` and `Microsoft.Office.Interop.Word` are included in the assembly. By default in Visual Studio, the compiler imports the types you need from a referenced PIA into your assembly.  
   
      For more information, see [How to: View Assembly Contents](http://msdn.microsoft.com/library/fb7baaab-4c0d-47ad-8fd3-4591cf834709).  
   
@@ -181,7 +180,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
      Because deployment of PIAs is no longer necessary, you can create an application in advanced scenarios that works with multiple versions of Office, including earlier versions. However, this works only if your code does not use any APIs that are not available in the version of Office you are working with. It is not always clear whether a particular API was available in an earlier version, and for that reason working with earlier versions of Office is not recommended.  
   
     > [!NOTE]
-    >  Office did not publish PIAs before Office 2003. Therefore, the only way to generate an interop assembly for Office 2002 or earlier versions is by importing the COM reference.  
+    > Office did not publish PIAs before Office 2003. Therefore, the only way to generate an interop assembly for Office 2002 or earlier versions is by importing the COM reference.  
   
 6.  Close the manifest window and the assembly window.  
   

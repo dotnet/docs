@@ -1,0 +1,161 @@
+<Type Name="ScriptingWebServicesSectionGroup" FullName="System.Web.Configuration.ScriptingWebServicesSectionGroup">
+  <TypeSignature Language="C#" Value="public sealed class ScriptingWebServicesSectionGroup : System.Configuration.ConfigurationSectionGroup" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ScriptingWebServicesSectionGroup extends System.Configuration.ConfigurationSectionGroup" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ScriptingWebServicesSectionGroup" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSectionGroup</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a group of related sections in a configuration file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.Configuration.ScriptingWebServicesSectionGroup> class to programmatically set and retrieve the values of the `webServices` section of the configuration file.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScriptingWebServicesSectionGroup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ScriptingWebServicesSectionGroup.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ScriptingWebServicesSectionGroup" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthenticationService">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.ScriptingAuthenticationServiceSection AuthenticationService { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.ScriptingAuthenticationServiceSection AuthenticationService" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingWebServicesSectionGroup.AuthenticationService" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("authenticationService")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.ScriptingAuthenticationServiceSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="authenticationService" /> section that is contained in the configuration file.</summary>
+        <value>A <see cref="T:System.Web.Configuration.ScriptingAuthenticationServiceSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.ScriptingAuthenticationServiceSection> object refers to the `authenticationService` section of the configuration file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="JsonSerialization">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.ScriptingJsonSerializationSection JsonSerialization { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.ScriptingJsonSerializationSection JsonSerialization" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingWebServicesSectionGroup.JsonSerialization" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("jsonSerialization")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.ScriptingJsonSerializationSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="jsonSerialization" /> section that is contained in the configuration file.</summary>
+        <value>A <see cref="T:System.Web.Configuration.ScriptingJsonSerializationSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.ScriptingJsonSerializationSection> object refers to the `jsonSerialization` section of the configuration file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProfileService">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.ScriptingProfileServiceSection ProfileService { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.ScriptingProfileServiceSection ProfileService" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingWebServicesSectionGroup.ProfileService" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("profileService")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.ScriptingProfileServiceSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="profileService" /> section that is contained in the configuration file.</summary>
+        <value>A <see cref="T:System.Web.Configuration.ScriptingProfileServiceSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.ScriptingProfileServiceSection> object refers to the `profileService` section of the configuration file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoleService">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.ScriptingRoleServiceSection RoleService { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.ScriptingRoleServiceSection RoleService" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingWebServicesSectionGroup.RoleService" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("roleService")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.ScriptingRoleServiceSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="roleService" /> section that is contained in the configuration file.</summary>
+        <value>A <see cref="T:System.Web.Configuration.ScriptingRoleServiceSection" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.ScriptingRoleServiceSection> object refers to the `roleService` section of the configuration file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,781 @@
+<Type Name="HttpRequestHeaders" FullName="System.Net.Http.Headers.HttpRequestHeaders">
+  <TypeSignature Language="C#" Value="public sealed class HttpRequestHeaders : System.Net.Http.Headers.HttpHeaders" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpRequestHeaders extends System.Net.Http.Headers.HttpHeaders" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.HttpRequestHeaders" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Http</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Net.Http.Headers.HttpHeaders</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the collection of Request Headers as defined in RFC 2616.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type is derived from <xref:System.Net.Http.Headers.HttpHeaders>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Accept">
+      <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.MediaTypeWithQualityHeaderValue&gt; Accept { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.MediaTypeWithQualityHeaderValue&gt; Accept" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Accept" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.MediaTypeWithQualityHeaderValue&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see langword="Accept" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="Accept" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptCharset">
+      <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.StringWithQualityHeaderValue&gt; AcceptCharset { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.StringWithQualityHeaderValue&gt; AcceptCharset" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.AcceptCharset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.StringWithQualityHeaderValue&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see langword="Accept-Charset" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="Accept-Charset" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptEncoding">
+      <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.StringWithQualityHeaderValue&gt; AcceptEncoding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.StringWithQualityHeaderValue&gt; AcceptEncoding" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.AcceptEncoding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.StringWithQualityHeaderValue&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see langword="Accept-Encoding" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="Accept-Encoding" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptLanguage">
+      <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.StringWithQualityHeaderValue&gt; AcceptLanguage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.StringWithQualityHeaderValue&gt; AcceptLanguage" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.AcceptLanguage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.StringWithQualityHeaderValue&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see langword="Accept-Language" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="Accept-Language" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Authorization">
+      <MemberSignature Language="C#" Value="public System.Net.Http.Headers.AuthenticationHeaderValue Authorization { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.AuthenticationHeaderValue Authorization" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Authorization" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.Headers.AuthenticationHeaderValue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the <see langword="Authorization" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="Authorization" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheControl">
+      <MemberSignature Language="C#" Value="public System.Net.Http.Headers.CacheControlHeaderValue CacheControl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.CacheControlHeaderValue CacheControl" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.CacheControl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.Headers.CacheControlHeaderValue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the <see langword="Cache-Control" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="Cache-Control" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Connection">
+      <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;string&gt; Connection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;string&gt; Connection" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Connection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see langword="Connection" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="Connection" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionClose">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; ConnectionClose { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ConnectionClose" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.ConnectionClose" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates if the <see langword="Connection" /> header for an HTTP request contains Close.</summary>
+        <value>
+          <see langword="true" /> if the <see langword="Connection" /> header contains Close, otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Date">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; Date { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; Date" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Date" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the <see langword="Date" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="Date" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expect">
+      <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.NameValueWithParametersHeaderValue&gt; Expect { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.NameValueWithParametersHeaderValue&gt; Expect" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Expect" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.NameValueWithParametersHeaderValue&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see langword="Expect" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="Expect" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpectContinue">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; ExpectContinue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ExpectContinue" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.ExpectContinue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates if the <see langword="Expect" /> header for an HTTP request contains Continue.</summary>
+        <value>
+          <see langword="true" /> if the <see langword="Expect" /> header contains Continue, otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="From">
+      <MemberSignature Language="C#" Value="public string From { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string From" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.From" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the <see langword="From" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="From" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Host">
+      <MemberSignature Language="C#" Value="public string Host { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Host" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Host" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the <see langword="Host" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="Host" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IfMatch">
+      <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.EntityTagHeaderValue&gt; IfMatch { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.EntityTagHeaderValue&gt; IfMatch" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.IfMatch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.EntityTagHeaderValue&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see langword="If-Match" /> header for an HTTP request.</summary>
+        <value>Returns <see cref="T:System.Net.Http.Headers.HttpHeaderValueCollection`1" />.  
+  
+ The value of the <see langword="If-Match" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IfModifiedSince">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; IfModifiedSince { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; IfModifiedSince" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.IfModifiedSince" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the <see langword="If-Modified-Since" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="If-Modified-Since" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IfNoneMatch">
+      <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.EntityTagHeaderValue&gt; IfNoneMatch { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.EntityTagHeaderValue&gt; IfNoneMatch" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.IfNoneMatch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.EntityTagHeaderValue&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see langword="If-None-Match" /> header for an HTTP request.</summary>
+        <value>Gets the value of the <see langword="If-None-Match" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IfRange">
+      <MemberSignature Language="C#" Value="public System.Net.Http.Headers.RangeConditionHeaderValue IfRange { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.RangeConditionHeaderValue IfRange" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.IfRange" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.Headers.RangeConditionHeaderValue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the <see langword="If-Range" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="If-Range" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IfUnmodifiedSince">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; IfUnmodifiedSince { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; IfUnmodifiedSince" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.IfUnmodifiedSince" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the <see langword="If-Unmodified-Since" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="If-Unmodified-Since" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxForwards">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; MaxForwards { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MaxForwards" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.MaxForwards" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the <see langword="Max-Forwards" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="Max-Forwards" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pragma">
+      <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.NameValueHeaderValue&gt; Pragma { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.NameValueHeaderValue&gt; Pragma" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Pragma" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.NameValueHeaderValue&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see langword="Pragma" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="Pragma" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProxyAuthorization">
+      <MemberSignature Language="C#" Value="public System.Net.Http.Headers.AuthenticationHeaderValue ProxyAuthorization { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.AuthenticationHeaderValue ProxyAuthorization" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.ProxyAuthorization" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.Headers.AuthenticationHeaderValue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the <see langword="Proxy-Authorization" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="Proxy-Authorization" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Range">
+      <MemberSignature Language="C#" Value="public System.Net.Http.Headers.RangeHeaderValue Range { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.RangeHeaderValue Range" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Range" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.Headers.RangeHeaderValue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the <see langword="Range" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="Range" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Referrer">
+      <MemberSignature Language="C#" Value="public Uri Referrer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Referrer" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Referrer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the <see langword="Referer" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="Referer" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TE">
+      <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.TransferCodingWithQualityHeaderValue&gt; TE { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.TransferCodingWithQualityHeaderValue&gt; TE" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.TE" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.TransferCodingWithQualityHeaderValue&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see langword="TE" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="TE" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trailer">
+      <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;string&gt; Trailer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;string&gt; Trailer" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Trailer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see langword="Trailer" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="Trailer" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransferEncoding">
+      <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.TransferCodingHeaderValue&gt; TransferEncoding { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.TransferCodingHeaderValue&gt; TransferEncoding" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.TransferEncoding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.TransferCodingHeaderValue&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see langword="Transfer-Encoding" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="Transfer-Encoding" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransferEncodingChunked">
+      <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; TransferEncodingChunked { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; TransferEncodingChunked" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.TransferEncodingChunked" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates if the <see langword="Transfer-Encoding" /> header for an HTTP request contains chunked.</summary>
+        <value>
+          <see langword="true" /> if the <see langword="Transfer-Encoding" /> header contains chunked, otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Upgrade">
+      <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.ProductHeaderValue&gt; Upgrade { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.ProductHeaderValue&gt; Upgrade" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Upgrade" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.ProductHeaderValue&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see langword="Upgrade" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="Upgrade" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserAgent">
+      <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.ProductInfoHeaderValue&gt; UserAgent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.ProductInfoHeaderValue&gt; UserAgent" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.UserAgent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.ProductInfoHeaderValue&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see langword="User-Agent" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="User-Agent" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Via">
+      <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.ViaHeaderValue&gt; Via { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.ViaHeaderValue&gt; Via" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Via" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.ViaHeaderValue&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see langword="Via" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="Via" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Warning">
+      <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.WarningHeaderValue&gt; Warning { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.WarningHeaderValue&gt; Warning" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Warning" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.WarningHeaderValue&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see langword="Warning" /> header for an HTTP request.</summary>
+        <value>The value of the <see langword="Warning" /> header for an HTTP request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

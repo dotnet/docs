@@ -1,0 +1,307 @@
+<Type Name="BlobContentId" FullName="System.Reflection.Metadata.BlobContentId">
+  <TypeSignature Language="C#" Value="public struct BlobContentId : IEquatable&lt;System.Reflection.Metadata.BlobContentId&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit BlobContentId extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Reflection.Metadata.BlobContentId&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.BlobContentId" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Reflection.Metadata.BlobContentId&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BlobContentId (byte[] id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobContentId.#ctor(System.Byte[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="id" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="id">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BlobContentId (System.Collections.Immutable.ImmutableArray&lt;byte&gt; id);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Collections.Immutable.ImmutableArray`1&lt;unsigned int8&gt; id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobContentId.#ctor(System.Collections.Immutable.ImmutableArray{System.Byte})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="id" Type="System.Collections.Immutable.ImmutableArray&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="id">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BlobContentId (Guid guid, uint stamp);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid guid, unsigned int32 stamp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobContentId.#ctor(System.Guid,System.UInt32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="guid" Type="System.Guid" />
+        <Parameter Name="stamp" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="guid">To be added.</param>
+        <param name="stamp">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobContentId.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Reflection.Metadata.BlobContentId other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Reflection.Metadata.BlobContentId other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobContentId.Equals(System.Reflection.Metadata.BlobContentId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Reflection.Metadata.BlobContentId" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromHash">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.BlobContentId FromHash (byte[] hashCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.BlobContentId FromHash(unsigned int8[] hashCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobContentId.FromHash(System.Byte[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.BlobContentId</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hashCode" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="hashCode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromHash">
+      <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.BlobContentId FromHash (System.Collections.Immutable.ImmutableArray&lt;byte&gt; hashCode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.BlobContentId FromHash(valuetype System.Collections.Immutable.ImmutableArray`1&lt;unsigned int8&gt; hashCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobContentId.FromHash(System.Collections.Immutable.ImmutableArray{System.Byte})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.BlobContentId</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hashCode" Type="System.Collections.Immutable.ImmutableArray&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="hashCode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobContentId.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTimeBasedProvider">
+      <MemberSignature Language="C#" Value="public static Func&lt;System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.Blob&gt;,System.Reflection.Metadata.BlobContentId&gt; GetTimeBasedProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Func`2&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Reflection.Metadata.Blob&gt;, valuetype System.Reflection.Metadata.BlobContentId&gt; GetTimeBasedProvider() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobContentId.GetTimeBasedProvider" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.Blob&gt;,System.Reflection.Metadata.BlobContentId&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Guid">
+      <MemberSignature Language="C#" Value="public Guid Guid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Guid" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.BlobContentId.Guid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDefault">
+      <MemberSignature Language="C#" Value="public bool IsDefault { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDefault" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.BlobContentId.IsDefault" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Reflection.Metadata.BlobContentId left, System.Reflection.Metadata.BlobContentId right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Reflection.Metadata.BlobContentId left, valuetype System.Reflection.Metadata.BlobContentId right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobContentId.op_Equality(System.Reflection.Metadata.BlobContentId,System.Reflection.Metadata.BlobContentId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Reflection.Metadata.BlobContentId" />
+        <Parameter Name="right" Type="System.Reflection.Metadata.BlobContentId" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Reflection.Metadata.BlobContentId left, System.Reflection.Metadata.BlobContentId right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.Metadata.BlobContentId left, valuetype System.Reflection.Metadata.BlobContentId right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobContentId.op_Inequality(System.Reflection.Metadata.BlobContentId,System.Reflection.Metadata.BlobContentId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Reflection.Metadata.BlobContentId" />
+        <Parameter Name="right" Type="System.Reflection.Metadata.BlobContentId" />
+      </Parameters>
+      <Docs>
+        <param name="left">To be added.</param>
+        <param name="right">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stamp">
+      <MemberSignature Language="C#" Value="public uint Stamp { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 Stamp" />
+      <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.BlobContentId.Stamp" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

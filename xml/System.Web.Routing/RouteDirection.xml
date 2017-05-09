@@ -1,0 +1,62 @@
+<Type Name="RouteDirection" FullName="System.Web.Routing.RouteDirection">
+  <TypeSignature Language="C#" Value="public enum RouteDirection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RouteDirection extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Routing.RouteDirection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Web.Routing, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates whether ASP.NET routing is processing a URL from a client or generating a URL.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use ASP.NET routing to process a URL by matching it to the route definitions in an ASP.NET application, or to generate URLs that are based on the route definitions. The <xref:System.Web.Routing.RouteDirection> enumeration provides values that help you differentiate between these scenarios. This is useful because route constraints are processed differently depending on the scenario. If you create a custom route constraint by implementing the <xref:System.Web.Routing.IRouteConstraint> interface, you might have to check the value of the `routeDirection` parameter in the <xref:System.Web.Routing.IRouteConstraint.Match%2A> method to differentiate the scenarios.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IncomingRequest">
+      <MemberSignature Language="C#" Value="IncomingRequest" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Routing.RouteDirection IncomingRequest = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Routing.RouteDirection.IncomingRequest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Routing.RouteDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A URL from a client is being processed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UrlGeneration">
+      <MemberSignature Language="C#" Value="UrlGeneration" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Routing.RouteDirection UrlGeneration = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Routing.RouteDirection.UrlGeneration" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Routing.RouteDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A URL is being created based on the route definition.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,695 @@
+<Type Name="DerivedPatternsModule" FullName="Microsoft.FSharp.Quotations.DerivedPatternsModule">
+  <TypeSignature Language="C#" Value="public static class DerivedPatternsModule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed DerivedPatternsModule extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Quotations.DerivedPatternsModule" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationRepresentation(Microsoft.FSharp.Core.CompilationRepresentationFlags.ModuleSuffix)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AndAlsoPattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;Tuple&lt;Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; AndAlsoPattern (Microsoft.FSharp.Quotations.FSharpExpr input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;class System.Tuple`2&lt;class Microsoft.FSharp.Quotations.FSharpExpr, class Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; AndAlsoPattern(class Microsoft.FSharp.Quotations.FSharpExpr input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.AndAlsoPattern(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|AndAlso|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;System.Tuple&lt;Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationsPattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;Tuple&lt;Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt;&gt;&gt; ApplicationsPattern (Microsoft.FSharp.Quotations.FSharpExpr input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;class System.Tuple`2&lt;class Microsoft.FSharp.Quotations.FSharpExpr, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt;&gt;&gt; ApplicationsPattern(class Microsoft.FSharp.Quotations.FSharpExpr input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.ApplicationsPattern(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|Applications|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;System.Tuple&lt;Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt;&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BoolPattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;bool&gt; BoolPattern (Microsoft.FSharp.Quotations.FSharpExpr input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;bool&gt; BoolPattern(class Microsoft.FSharp.Quotations.FSharpExpr input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.BoolPattern(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|Bool|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BytePattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;byte&gt; BytePattern (Microsoft.FSharp.Quotations.FSharpExpr input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;unsigned int8&gt; BytePattern(class Microsoft.FSharp.Quotations.FSharpExpr input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.BytePattern(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|Byte|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CharPattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;char&gt; CharPattern (Microsoft.FSharp.Quotations.FSharpExpr input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;char&gt; CharPattern(class Microsoft.FSharp.Quotations.FSharpExpr input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.CharPattern(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|Char|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;System.Char&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecimalPattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;decimal&gt; DecimalPattern (Microsoft.FSharp.Quotations.FSharpExpr input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Decimal&gt; DecimalPattern(class Microsoft.FSharp.Quotations.FSharpExpr input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.DecimalPattern(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|Decimal|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;System.Decimal&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoublePattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;double&gt; DoublePattern (Microsoft.FSharp.Quotations.FSharpExpr input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;float64&gt; DoublePattern(class Microsoft.FSharp.Quotations.FSharpExpr input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.DoublePattern(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|Double|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Int16Pattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;short&gt; Int16Pattern (Microsoft.FSharp.Quotations.FSharpExpr input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;int16&gt; Int16Pattern(class Microsoft.FSharp.Quotations.FSharpExpr input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.Int16Pattern(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|Int16|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;System.Int16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Int32Pattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;int&gt; Int32Pattern (Microsoft.FSharp.Quotations.FSharpExpr input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; Int32Pattern(class Microsoft.FSharp.Quotations.FSharpExpr input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.Int32Pattern(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|Int32|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Int64Pattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;long&gt; Int64Pattern (Microsoft.FSharp.Quotations.FSharpExpr input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;int64&gt; Int64Pattern(class Microsoft.FSharp.Quotations.FSharpExpr input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.Int64Pattern(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|Int64|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LambdasPattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;Tuple&lt;Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpVar&gt;&gt;,Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; LambdasPattern (Microsoft.FSharp.Quotations.FSharpExpr input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;class System.Tuple`2&lt;class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpVar&gt;&gt;, class Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; LambdasPattern(class Microsoft.FSharp.Quotations.FSharpExpr input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.LambdasPattern(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|Lambdas|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;System.Tuple&lt;Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpVar&gt;&gt;,Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MethodWithReflectedDefinitionPattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; MethodWithReflectedDefinitionPattern (System.Reflection.MethodBase methodBase);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; MethodWithReflectedDefinitionPattern(class System.Reflection.MethodBase methodBase) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.MethodWithReflectedDefinitionPattern(System.Reflection.MethodBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|MethodWithReflectedDefinition|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="methodBase" Type="System.Reflection.MethodBase" />
+      </Parameters>
+      <Docs>
+        <param name="methodBase">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrElsePattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;Tuple&lt;Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; OrElsePattern (Microsoft.FSharp.Quotations.FSharpExpr input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;class System.Tuple`2&lt;class Microsoft.FSharp.Quotations.FSharpExpr, class Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; OrElsePattern(class Microsoft.FSharp.Quotations.FSharpExpr input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.OrElsePattern(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|OrElse|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;System.Tuple&lt;Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyGetterWithReflectedDefinitionPattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; PropertyGetterWithReflectedDefinitionPattern (System.Reflection.PropertyInfo propertyInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; PropertyGetterWithReflectedDefinitionPattern(class System.Reflection.PropertyInfo propertyInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.PropertyGetterWithReflectedDefinitionPattern(System.Reflection.PropertyInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|PropertyGetterWithReflectedDefinition|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyInfo" Type="System.Reflection.PropertyInfo" />
+      </Parameters>
+      <Docs>
+        <param name="propertyInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertySetterWithReflectedDefinitionPattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; PropertySetterWithReflectedDefinitionPattern (System.Reflection.PropertyInfo propertyInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; PropertySetterWithReflectedDefinitionPattern(class System.Reflection.PropertyInfo propertyInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.PropertySetterWithReflectedDefinitionPattern(System.Reflection.PropertyInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|PropertySetterWithReflectedDefinition|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyInfo" Type="System.Reflection.PropertyInfo" />
+      </Parameters>
+      <Docs>
+        <param name="propertyInfo">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SBytePattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;sbyte&gt; SBytePattern (Microsoft.FSharp.Quotations.FSharpExpr input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;int8&gt; SBytePattern(class Microsoft.FSharp.Quotations.FSharpExpr input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.SBytePattern(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|SByte|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;System.SByte&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SinglePattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;float&gt; SinglePattern (Microsoft.FSharp.Quotations.FSharpExpr input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;float32&gt; SinglePattern(class Microsoft.FSharp.Quotations.FSharpExpr input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.SinglePattern(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|Single|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;System.Single&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpecificCallPattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Core.FSharpOption&lt;Tuple&lt;Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;,Microsoft.FSharp.Collections.FSharpList&lt;Type&gt;,Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt;&gt;&gt; SpecificCallPattern (Microsoft.FSharp.Quotations.FSharpExpr templateParameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Quotations.FSharpExpr, class Microsoft.FSharp.Core.FSharpOption`1&lt;class System.Tuple`3&lt;class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt;, class Microsoft.FSharp.Collections.FSharpList`1&lt;class System.Type&gt;, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt;&gt;&gt; SpecificCallPattern(class Microsoft.FSharp.Quotations.FSharpExpr templateParameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.SpecificCallPattern(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|SpecificCall|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Core.FSharpOption&lt;System.Tuple&lt;Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;,Microsoft.FSharp.Collections.FSharpList&lt;System.Type&gt;,Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt;&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="templateParameter" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="templateParameter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StringPattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;string&gt; StringPattern (Microsoft.FSharp.Quotations.FSharpExpr input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;string&gt; StringPattern(class Microsoft.FSharp.Quotations.FSharpExpr input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.StringPattern(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|String|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UInt16Pattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;ushort&gt; UInt16Pattern (Microsoft.FSharp.Quotations.FSharpExpr input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;unsigned int16&gt; UInt16Pattern(class Microsoft.FSharp.Quotations.FSharpExpr input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.UInt16Pattern(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|UInt16|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;System.UInt16&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UInt32Pattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;uint&gt; UInt32Pattern (Microsoft.FSharp.Quotations.FSharpExpr input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;unsigned int32&gt; UInt32Pattern(class Microsoft.FSharp.Quotations.FSharpExpr input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.UInt32Pattern(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|UInt32|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;System.UInt32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UInt64Pattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;ulong&gt; UInt64Pattern (Microsoft.FSharp.Quotations.FSharpExpr input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;unsigned int64&gt; UInt64Pattern(class Microsoft.FSharp.Quotations.FSharpExpr input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.UInt64Pattern(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|UInt64|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;System.UInt64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnitPattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Core.Unit&gt; UnitPattern (Microsoft.FSharp.Quotations.FSharpExpr input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Core.Unit&gt; UnitPattern(class Microsoft.FSharp.Quotations.FSharpExpr input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.DerivedPatternsModule.UnitPattern(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|Unit|_|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Core.Unit&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="input">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

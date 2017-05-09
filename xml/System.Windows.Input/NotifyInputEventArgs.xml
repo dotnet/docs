@@ -1,0 +1,96 @@
+<Type Name="NotifyInputEventArgs" FullName="System.Windows.Input.NotifyInputEventArgs">
+  <TypeSignature Language="C#" Value="public class NotifyInputEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NotifyInputEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.NotifyInputEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for raw input being processed by the <see cref="P:System.Windows.Input.NotifyInputEventArgs.InputManager" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The input staging area processes input into [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] events.  
+  
+ <xref:System.Windows.Input.NotifyInputEventArgs> is used with the <xref:System.Windows.Input.InputManager.PreNotifyInput> and <xref:System.Windows.Input.InputManager.PostNotifyInput> events.  
+  
+ Input is processed in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] in the follow stages:  
+  
+1.  Pre-process stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PreProcessInput> event.  
+  
+2.  Pre-notify stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PreNotifyInput> event.  
+  
+3.  The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] input event or events are raised.  
+  
+4.  Post-notify stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PostNotifyInput> event.  
+  
+5.  Post-process stage.  The input manager raises the <xref:System.Windows.Input.InputManager.PostProcessInput> event.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InputManager">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.InputManager InputManager { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.InputManager InputManager" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.NotifyInputEventArgs.InputManager" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.InputManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the input manager processing the input event.</summary>
+        <value>The input manager.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is one <xref:System.Windows.Input.InputManager> per thread.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">for getting the input manager.  Associated enumerations:  <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="StagingItem">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.StagingAreaInputItem StagingItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.StagingAreaInputItem StagingItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.NotifyInputEventArgs.StagingItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.StagingAreaInputItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the staging area input item being processed by the input manager.</summary>
+        <value>The staging area.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The input staging area processes raw input into [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] events.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

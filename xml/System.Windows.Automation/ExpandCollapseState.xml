@@ -1,0 +1,97 @@
+<Type Name="ExpandCollapseState" FullName="System.Windows.Automation.ExpandCollapseState">
+  <TypeSignature Language="C#" Value="public enum ExpandCollapseState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ExpandCollapseState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ExpandCollapseState" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("76d12d7e-b227-4417-9ce2-42642ffa896a")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains values that specify the <see cref="T:System.Windows.Automation.ExpandCollapseState" /> of a UI Automation element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Automation.ExpandCollapseState> refers to the visibility of immediate child objects only; it does not refer to the visibility of all descendant objects.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Collapsed">
+      <MemberSignature Language="C#" Value="Collapsed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.ExpandCollapseState Collapsed = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ExpandCollapseState.Collapsed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.ExpandCollapseState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No child nodes, controls, or content of the UI Automation element are displayed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Expanded">
+      <MemberSignature Language="C#" Value="Expanded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.ExpandCollapseState Expanded = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ExpandCollapseState.Expanded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.ExpandCollapseState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All child nodes, controls or content of the UI Automation element are displayed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LeafNode">
+      <MemberSignature Language="C#" Value="LeafNode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.ExpandCollapseState LeafNode = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ExpandCollapseState.LeafNode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.ExpandCollapseState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The UI Automation element has no child nodes, controls, or content to display.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PartiallyExpanded">
+      <MemberSignature Language="C#" Value="PartiallyExpanded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.ExpandCollapseState PartiallyExpanded = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ExpandCollapseState.PartiallyExpanded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.ExpandCollapseState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Some, but not all, child nodes, controls, or content of the UI Automation element are displayed.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

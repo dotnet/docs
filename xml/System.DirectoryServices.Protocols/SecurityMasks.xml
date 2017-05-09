@@ -1,0 +1,103 @@
+<Type Name="SecurityMasks" FullName="System.DirectoryServices.Protocols.SecurityMasks">
+  <TypeSignature Language="C#" Value="public enum SecurityMasks" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SecurityMasks extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SecurityMasks" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.SecurityMasks" /> enumeration specifies various security descriptor options.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Dacl">
+      <MemberSignature Language="C#" Value="Dacl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.SecurityMasks Dacl = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SecurityMasks.Dacl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.SecurityMasks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The discretionary access control list (DACL) security descriptor flag. The value is equal to 4 or 0x4.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="Group" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.SecurityMasks Group = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SecurityMasks.Group" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.SecurityMasks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The primary group security descriptor flag. The value is equal to 2 or 0x2.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.SecurityMasks None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SecurityMasks.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.SecurityMasks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No security descriptor flag is set. The value is equal to 0 or 0x0.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Owner">
+      <MemberSignature Language="C#" Value="Owner" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.SecurityMasks Owner = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SecurityMasks.Owner" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.SecurityMasks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The owner security descriptor flag. The value is equal to 1 or 0x1.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sacl">
+      <MemberSignature Language="C#" Value="Sacl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.SecurityMasks Sacl = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SecurityMasks.Sacl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.SecurityMasks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The system access control list (SACL) security descriptor flag.  The value is equal to 8 or 0x8.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

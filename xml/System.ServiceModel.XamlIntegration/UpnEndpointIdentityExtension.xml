@@ -1,0 +1,97 @@
+<Type Name="UpnEndpointIdentityExtension" FullName="System.ServiceModel.XamlIntegration.UpnEndpointIdentityExtension">
+  <TypeSignature Language="C#" Value="public class UpnEndpointIdentityExtension : System.Windows.Markup.MarkupExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UpnEndpointIdentityExtension extends System.Windows.Markup.MarkupExtension" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.XamlIntegration.UpnEndpointIdentityExtension" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Markup.MarkupExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.MarkupExtensionReturnType(typeof(System.ServiceModel.UpnEndpointIdentity))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>A XAML markup extension for the <see cref="T:System.ServiceModel.UpnEndpointIdentity" /> class.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UpnEndpointIdentityExtension ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.XamlIntegration.UpnEndpointIdentityExtension.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.XamlIntegration.UpnEndpointIdentityExtension" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UpnEndpointIdentityExtension (System.ServiceModel.UpnEndpointIdentity identity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.UpnEndpointIdentity identity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.XamlIntegration.UpnEndpointIdentityExtension.#ctor(System.ServiceModel.UpnEndpointIdentity)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="identity" Type="System.ServiceModel.UpnEndpointIdentity" />
+      </Parameters>
+      <Docs>
+        <param name="identity">The User Principal Name (UPN) endpoint identity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.XamlIntegration.UpnEndpointIdentityExtension" /> class with the specified <see cref="T:System.ServiceModel.UpnEndpointIdentity" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvideValue">
+      <MemberSignature Language="C#" Value="public override object ProvideValue (IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ProvideValue(class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.XamlIntegration.UpnEndpointIdentityExtension.ProvideValue(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">The service provider.</param>
+        <summary>Provides the object that the markup extension represents.</summary>
+        <returns>The object that the markup extension represents.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpnName">
+      <MemberSignature Language="C#" Value="public string UpnName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UpnName" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.XamlIntegration.UpnEndpointIdentityExtension.UpnName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the user principle name.</summary>
+        <value>The user principle name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,56 @@
+<Type Name="IApplicationResourceStreamResolver" FullName="System.Xml.IApplicationResourceStreamResolver">
+  <TypeSignature Language="C#" Value="public interface IApplicationResourceStreamResolver" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IApplicationResourceStreamResolver" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.IApplicationResourceStreamResolver" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an application resource stream resolver.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetApplicationResourceStream">
+      <MemberSignature Language="C#" Value="public System.IO.Stream GetApplicationResourceStream (Uri relativeUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream GetApplicationResourceStream(class System.Uri relativeUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.IApplicationResourceStreamResolver.GetApplicationResourceStream(System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("This API supports the .NET Framework infrastructure and is not intended to be used directly from your code.", true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="relativeUri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="relativeUri">The relative URI.</param>
+        <summary>Returns an application resource stream from the specified URI.</summary>
+        <returns>An application resource stream.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

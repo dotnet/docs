@@ -1,0 +1,65 @@
+<Type Name="NetworkAccess" FullName="System.Net.NetworkAccess">
+  <TypeSignature Language="C#" Value="public enum NetworkAccess" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NetworkAccess extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Net.NetworkAccess" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies network access permissions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.NetworkAccess> enumeration is used with the <xref:System.Net.WebPermission> and <xref:System.Net.SocketPermission> classes.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Accept">
+      <MemberSignature Language="C#" Value="Accept" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkAccess Accept = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.NetworkAccess.Accept" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.NetworkAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the application is allowed to accept connections from the Internet on a local resource. Notice that this is a protection for the local host that uses Accept to grant access to a local resource (address/port). At the time a socket tries to bind to this local resource a permission check is performed to see if an Accept exists on that resource.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Connect">
+      <MemberSignature Language="C#" Value="Connect" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkAccess Connect = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.NetworkAccess.Connect" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.NetworkAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the application is allowed to connect to specific Internet resources. Notice that, in the case of remote host resource, no check is performed to see that Connect permissions exist. This is because the port of a connecting remote host is unknown and not suitable permissions can be built in advance. It is the application responsibility to check the permissions of the remote host trying to connect to a listening socket.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

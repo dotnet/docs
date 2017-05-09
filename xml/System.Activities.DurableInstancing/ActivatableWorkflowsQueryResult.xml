@@ -1,0 +1,104 @@
+<Type Name="ActivatableWorkflowsQueryResult" FullName="System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult">
+  <TypeSignature Language="C#" Value="public sealed class ActivatableWorkflowsQueryResult : System.Runtime.DurableInstancing.InstanceStoreQueryResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivatableWorkflowsQueryResult extends System.Runtime.DurableInstancing.InstanceStoreQueryResult" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Runtime.DurableInstancing.InstanceStoreQueryResult</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains the results from executing the <see cref="T:System.Activities.DurableInstancing.QueryActivatableWorkflowsCommand" /> against an instance store.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance store should periodically search for activatable workflow instances that belong to a workflow host that uses the store. It should raise the <xref:System.Activities.DurableInstancing.HasActivatableWorkflowEvent> when it finds an activatable instance in the persistence store. If the instance store does not find an activatable instance in the persistence store, it should continue to monitor the persistence store for any activatable instances.  
+  
+ After raising the HasActivatableWorkflowEvent, the instance store should stop monitoring the persistence store for activatable instances until it receives and executes the <xref:System.Activities.DurableInstancing.QueryActivatableWorkflowsCommand>. The monitoring continues only if the command execution does not return any activatable workflow instances.  
+  
+ When a generic host receives this event, it executes the <xref:System.Activities.DurableInstancing.QueryActivatableWorkflowsCommand> against the instance store to obtain activation parameters required to create a workflow host. The generic host uses these activation parameters to create a workflow host, which in turn loads and runs the service instance. The activation parameters for the WAS activation type are: Site Name, Application Path (relative to the site), and Service Path (relative to the application). An instance store could return multiple sets of these three activation parameters.  
+  
+ A generic host is a host that has an XName parameter named **ActivationType**, which should be set to a value supported by the instance store. Currently, the SQL Workflow Instance Store supports generic hosts with ActivationType parameter set to value: **WAS**. If the ActivationType is not set at all, the SQL Workflow Instance Store treats the host as a generic host.  
+  
+> [!NOTE]
+>  The Workflow Management Service that ships with the code named “Dublin” (Application Server Extensions for .NET 4.0) is a generic host that has the activation type set to **WAS**.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivatableWorkflowsQueryResult ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivatableWorkflowsQueryResult (System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt; parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt; parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.#ctor(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parameters" Type="System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="parameters">A dictionary object containing activation parameters.</param>
+        <summary>Creates an instance of the <see cref="T:System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult" /> class and initializes the <see cref="P:System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.ActivationParameters" /> property with the data in the dictionary object passed in as a parameter.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivatableWorkflowsQueryResult (System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt;&gt; parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt;&gt; parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object}})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parameters" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Object&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="parameters">An enumerable dictionary object containing activation parameters.</param>
+        <summary>Creates an instance of the <see cref="T:System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult" /> class and initializes the <see cref="P:System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.ActivationParameters" /> property with the data in the enumerable dictionary object passed in as a parameter.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivationParameters">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt;&gt; ActivationParameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt;&gt; ActivationParameters" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.ActivationParameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Object&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A list of activation parameters that a generic host uses to create a workflow host.</summary>
+        <value>A List object containing activation parameters.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

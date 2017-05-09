@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "queries [Visual Basic], Skip While"
 ms.assetid: 5dee8350-7520-4f1a-b00d-590cacd572d6
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

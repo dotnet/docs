@@ -1,0 +1,159 @@
+<Type Name="ThreadingAclExtensions" FullName="System.Threading.ThreadingAclExtensions">
+  <TypeSignature Language="C#" Value="public static class ThreadingAclExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ThreadingAclExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.ThreadingAclExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.AccessControl</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetAccessControl">
+      <MemberSignature Language="C#" Value="public static System.Security.AccessControl.EventWaitHandleSecurity GetAccessControl (this System.Threading.EventWaitHandle handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.AccessControl.EventWaitHandleSecurity GetAccessControl(class System.Threading.EventWaitHandle handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.ThreadingAclExtensions.GetAccessControl(System.Threading.EventWaitHandle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.EventWaitHandleSecurity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.Threading.EventWaitHandle" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="handle">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAccessControl">
+      <MemberSignature Language="C#" Value="public static System.Security.AccessControl.MutexSecurity GetAccessControl (this System.Threading.Mutex mutex);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.AccessControl.MutexSecurity GetAccessControl(class System.Threading.Mutex mutex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.ThreadingAclExtensions.GetAccessControl(System.Threading.Mutex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.MutexSecurity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mutex" Type="System.Threading.Mutex" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="mutex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAccessControl">
+      <MemberSignature Language="C#" Value="public static System.Security.AccessControl.SemaphoreSecurity GetAccessControl (this System.Threading.Semaphore semaphore);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.AccessControl.SemaphoreSecurity GetAccessControl(class System.Threading.Semaphore semaphore) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.ThreadingAclExtensions.GetAccessControl(System.Threading.Semaphore)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.AccessControl.SemaphoreSecurity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="semaphore" Type="System.Threading.Semaphore" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="semaphore">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAccessControl">
+      <MemberSignature Language="C#" Value="public static void SetAccessControl (this System.Threading.EventWaitHandle handle, System.Security.AccessControl.EventWaitHandleSecurity eventSecurity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAccessControl(class System.Threading.EventWaitHandle handle, class System.Security.AccessControl.EventWaitHandleSecurity eventSecurity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.ThreadingAclExtensions.SetAccessControl(System.Threading.EventWaitHandle,System.Security.AccessControl.EventWaitHandleSecurity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="handle" Type="System.Threading.EventWaitHandle" RefType="this" />
+        <Parameter Name="eventSecurity" Type="System.Security.AccessControl.EventWaitHandleSecurity" />
+      </Parameters>
+      <Docs>
+        <param name="handle">To be added.</param>
+        <param name="eventSecurity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAccessControl">
+      <MemberSignature Language="C#" Value="public static void SetAccessControl (this System.Threading.Mutex mutex, System.Security.AccessControl.MutexSecurity mutexSecurity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAccessControl(class System.Threading.Mutex mutex, class System.Security.AccessControl.MutexSecurity mutexSecurity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.ThreadingAclExtensions.SetAccessControl(System.Threading.Mutex,System.Security.AccessControl.MutexSecurity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mutex" Type="System.Threading.Mutex" RefType="this" />
+        <Parameter Name="mutexSecurity" Type="System.Security.AccessControl.MutexSecurity" />
+      </Parameters>
+      <Docs>
+        <param name="mutex">To be added.</param>
+        <param name="mutexSecurity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAccessControl">
+      <MemberSignature Language="C#" Value="public static void SetAccessControl (this System.Threading.Semaphore semaphore, System.Security.AccessControl.SemaphoreSecurity semaphoreSecurity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAccessControl(class System.Threading.Semaphore semaphore, class System.Security.AccessControl.SemaphoreSecurity semaphoreSecurity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.ThreadingAclExtensions.SetAccessControl(System.Threading.Semaphore,System.Security.AccessControl.SemaphoreSecurity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="semaphore" Type="System.Threading.Semaphore" RefType="this" />
+        <Parameter Name="semaphoreSecurity" Type="System.Security.AccessControl.SemaphoreSecurity" />
+      </Parameters>
+      <Docs>
+        <param name="semaphore">To be added.</param>
+        <param name="semaphoreSecurity">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

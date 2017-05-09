@@ -1,0 +1,268 @@
+<Type Name="LazyInitializer" FullName="System.Threading.LazyInitializer">
+  <TypeSignature Language="C#" Value="public static class LazyInitializer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit LazyInitializer extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.LazyInitializer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides lazy initialization routines.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These routines avoid needing to allocate a dedicated, lazy-initialization instance, instead using references to ensure targets have been initialized as they are accessed.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use EnsureInitialized to lazily initialize a value using a Boolean value to track whether initialization has already happened and an object to use as the mutual exclusion lock.  
+  
+```vb  
+Dim _data As ExpensiveData = Nothing  
+Dim _dataInitialized As Boolean = False  
+Dim _dataLock As Object = Nothing  
+'    ...  
+Dim name = LazyInitializer.EnsureInitialized(_data, _dataInitialized, _dataLock)  
+```  
+  
+```csharp  
+ExpensiveData _data = null;  
+                     bool _dataInitialized = false;  
+                     object _dataLock = new object();  
+                  //  ...  
+  
+                    ExpensiveData dataToUse = LazyInitializer.EnsureInitialized(ref _data, ref _dataInitialized, ref _dataLock);  
+```  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>The methods of <see cref="T:System.Threading.LazyInitializer" /> are thread-safe and may be called from multiple threads concurrently.</threadsafe>
+  </Docs>
+  <Members>
+    <Member MemberName="EnsureInitialized&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T EnsureInitialized&lt;T&gt; (ref T target) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T EnsureInitialized&lt;class T&gt;(!!T target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.LazyInitializer.EnsureInitialized``1(``0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="target" Type="T&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the reference to be initialized.</typeparam>
+        <param name="target">A reference of type <c>T</c> to initialize if it has not already been initialized.</param>
+        <summary>Initializes a target reference type with the type's default constructor if it hasn't already been initialized.</summary>
+        <returns>The initialized reference of type <paramref name="T" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method may only be used on reference types. To ensure initialization of value types, see other overloads of EnsureInitialized.  
+  
+ This method may be used concurrently by multiple threads to initialize `target`.  
+  
+ In the event that multiple threads access this method concurrently, multiple instances of `T` may be created, but only one will be stored into `target`. In such an occurrence, this method will not dispose of the objects that were not stored. If such objects must be disposed, it is up to the caller to determine if an object was not used and to then dispose of the object appropriately.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.MemberAccessException">Permissions to access the constructor of type <paramref name="T" /> were missing.</exception>
+        <exception cref="T:System.MissingMemberException">Type <paramref name="T" /> does not have a default constructor.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EnsureInitialized&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T EnsureInitialized&lt;T&gt; (ref T target, Func&lt;T&gt; valueFactory) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T EnsureInitialized&lt;class T&gt;(!!T target, class System.Func`1&lt;!!T&gt; valueFactory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.LazyInitializer.EnsureInitialized``1(``0@,System.Func{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="target" Type="T&amp;" RefType="ref" />
+        <Parameter Name="valueFactory" Type="System.Func&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The reference type of the reference to be initialized.</typeparam>
+        <param name="target">The reference of type <c>T</c> to initialize if it hasn't already been initialized.</param>
+        <param name="valueFactory">The function that is called to initialize the reference.</param>
+        <summary>Initializes a target reference type by using a specified function if it hasn't already been initialized.</summary>
+        <returns>The initialized value of type <paramref name="T" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method may only be used on reference types, and `valueFactory` may not return a null reference (Nothing in Visual Basic). To ensure initialization of value types or to allow null reference types, see other overloads of EnsureInitialized.  
+  
+ This method may be used concurrently by multiple threads to initialize `target`.  
+  
+ In the event that multiple threads access this method concurrently, multiple instances of `T` may be created, but only one will be stored into `target`. In such an occurrence, this method will not dispose of the objects that were not stored. If such objects must be disposed, it is up to the caller to determine if an object was not used and to then dispose of the object appropriately.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.MissingMemberException">Type <paramref name="T" /> does not have a default constructor.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="valueFactory" /> returned null (Nothing in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EnsureInitialized&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T EnsureInitialized&lt;T&gt; (ref T target, ref bool initialized, ref object syncLock);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T EnsureInitialized&lt;T&gt;(!!T target, bool initialized, object syncLock) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.LazyInitializer.EnsureInitialized``1(``0@,System.Boolean@,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="target" Type="T&amp;" RefType="ref" />
+        <Parameter Name="initialized" Type="System.Boolean&amp;" RefType="ref" />
+        <Parameter Name="syncLock" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the reference to be initialized.</typeparam>
+        <param name="target">A reference or value of type <c>T</c> to initialize if it hasn't already been initialized.</param>
+        <param name="initialized">A reference to a Boolean value that determines whether the target has already been initialized.</param>
+        <param name="syncLock">A reference to an object used as the mutually exclusive lock for initializing <c>target</c>. If <c>syncLock</c> is <see langword="null" />, a new object will be instantiated.</param>
+        <summary>Initializes a target reference or value type with its default constructor if it hasn't already been initialized.</summary>
+        <returns>The initialized value of type <paramref name="T" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `intialized` is specified as true, then no further initialization occurs.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.MemberAccessException">Permissions to access the constructor of type <paramref name="T" /> were missing.</exception>
+        <exception cref="T:System.MissingMemberException">Type <paramref name="T" /> does not have a default constructor.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EnsureInitialized&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T EnsureInitialized&lt;T&gt; (ref T target, ref bool initialized, ref object syncLock, Func&lt;T&gt; valueFactory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T EnsureInitialized&lt;T&gt;(!!T target, bool initialized, object syncLock, class System.Func`1&lt;!!T&gt; valueFactory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Threading.LazyInitializer.EnsureInitialized``1(``0@,System.Boolean@,System.Object@,System.Func{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="target" Type="T&amp;" RefType="ref" />
+        <Parameter Name="initialized" Type="System.Boolean&amp;" RefType="ref" />
+        <Parameter Name="syncLock" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="valueFactory" Type="System.Func&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the reference to be initialized.</typeparam>
+        <param name="target">A reference or value of type <c>T</c> to initialize if it hasn't already been initialized.</param>
+        <param name="initialized">A reference to a Boolean value that determines whether the target has already been initialized.</param>
+        <param name="syncLock">A reference to an object used as the mutually exclusive lock for initializing <c>target</c>. If <c>syncLock</c> is <see langword="null" />, a new object will be instantiated.</param>
+        <param name="valueFactory">The function that is called to initialize the reference or value.</param>
+        <summary>Initializes a target reference or value type by using a specified function if it hasn't already been initialized.</summary>
+        <returns>The initialized value of type <paramref name="T" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `intialized` is specified as true, then no further initialization occurs.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.MemberAccessException">Permissions to access the constructor of type <paramref name="T" /> were missing.</exception>
+        <exception cref="T:System.MissingMemberException">Type <paramref name="T" /> does not have a default constructor.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

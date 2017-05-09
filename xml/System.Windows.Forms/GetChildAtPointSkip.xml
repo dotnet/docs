@@ -1,0 +1,96 @@
+<Type Name="GetChildAtPointSkip" FullName="System.Windows.Forms.GetChildAtPointSkip">
+  <TypeSignature Language="C#" Value="public enum GetChildAtPointSkip" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GetChildAtPointSkip extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.GetChildAtPointSkip" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies which child controls to skip.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The system maintains an internal list that contains the child controls associated with a parent window. The order of the controls in the list depends on the z-order of the child controls. If more than one child window contains the specified point, the system returns the first control in the list that contains the point and meets the criteria specified by <xref:System.Windows.Forms.GetChildAtPointSkip>.  
+  
+ For more information, see `ChildWindowFromPointEx` in the Platform SDK documentation.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Disabled">
+      <MemberSignature Language="C#" Value="Disabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.GetChildAtPointSkip Disabled = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.GetChildAtPointSkip.Disabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.GetChildAtPointSkip</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Skips disabled child windows.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Invisible">
+      <MemberSignature Language="C#" Value="Invisible" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.GetChildAtPointSkip Invisible = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.GetChildAtPointSkip.Invisible" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.GetChildAtPointSkip</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Skips invisible child windows.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.GetChildAtPointSkip None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.GetChildAtPointSkip.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.GetChildAtPointSkip</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Does not skip any child windows.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Transparent">
+      <MemberSignature Language="C#" Value="Transparent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.GetChildAtPointSkip Transparent = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.GetChildAtPointSkip.Transparent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.GetChildAtPointSkip</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Skips transparent child windows.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,183 @@
+<Type Name="ClientTarget" FullName="System.Web.Configuration.ClientTarget">
+  <TypeSignature Language="C#" Value="public sealed class ClientTarget : System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClientTarget extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ClientTarget" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the alias associated with the target user agent for which ASP.NET server controls should render content. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.ClientTarget> class refers to elements that are added in the `clientTarget` section of the configuration file.  
+  
+ The <xref:System.Web.Configuration.ClientTarget> class belongs to a group that includes the <xref:System.Web.Configuration.ClientTargetCollection> class and the <xref:System.Web.Configuration.ClientTargetSection> class.  
+  
+ The <xref:System.Web.Configuration.ClientTarget> class contains two properties identifying a client browser, also named user agent. One property is the alias associated with the client browser identified by the second property. ASP.NET uses this information to render server controls in a page.  
+  
+ For information about how the user agent or its alias is used programmatically, see the <xref:System.Web.UI.Page.ClientTarget%2A?displayProperty=fullName> property. For information about how the user agent or its alias is used declaratively, see [@ Page](http://msdn.microsoft.com/en-us/f06cf9e5-22bb-461d-8b8f-549e53ff40a4).  
+  
+ If the <xref:System.Web.UI.Page.ClientTarget%2A?displayProperty=fullName> property is not set, the <xref:System.Web.HttpBrowserCapabilities> object that is associated with the <xref:System.Web.UI.Page.Request%2A?displayProperty=fullName> property reflects the capabilities of the client browser. (It reflects the capabilities of the browser type, but not necessarily the settings in a specific instance of that browser.) If the property is set, the client browser detection is disabled and the page uses browser capabilities that are associated with the user agent string that you define. You can set this property to any valid user agent string.  
+  
+   
+  
+## Examples  
+ This section provides two code examples. The first demonstrates how to declaratively specify values for several properties of the <xref:System.Web.Configuration.ClientTarget> class. The second shows how to obtain the <xref:System.Web.Configuration.ClientTargetCollection> object from the configuration file. You use this object to access the <xref:System.Web.Configuration.ClientTarget> objects it contains.  
+  
+ The following code example shows how to declaratively specify values for several properties of the <xref:System.Web.Configuration.ClientTarget> class.  
+  
+```  
+<clientTarget>  
+  <add alias=  
+    "uplevel"   
+    userAgent="Mozilla/5.0 (compatible;MSIE 6.0;Windows NT 5.1)"/>  
+  <add alias="downlevel" userAgent="Generic Downlevel"/>  
+</clientTarget>  
+```  
+  
+ The following code example shows how to obtain the <xref:System.Web.Configuration.ClientTargetCollection> object from the configuration file.  
+  
+ [!code-csharp[System.Web.Configuration.ClientTarget#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ClientTarget/CS/clienttarget.cs#1)]
+ [!code-vb[System.Web.Configuration.ClientTarget#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ClientTarget/VB/clienttarget.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ClientTarget (string alias, string userAgent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string alias, string userAgent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ClientTarget.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="alias" Type="System.String" />
+        <Parameter Name="userAgent" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="alias">The name used to refer to a specific user agent.</param>
+        <param name="userAgent">The user agent's identification name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ClientTarget" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alias">
+      <MemberSignature Language="C#" Value="public string Alias { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Alias" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ClientTarget.Alias" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("alias", IsKey=true, IsRequired=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the user agent's alias.</summary>
+        <value>The name used to refer to a specific user agent.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.ClientTarget.Alias%2A> property refers to the `alias` attribute of the `add` element in the `clientTarget` section of the configuration file.  
+  
+ The ASP.NET configuration defaults include the following aliases:  
+  
+-   `uplevel`, which tells ASP.NET to send HTML and ECMAScript that is supported by Internet Explorer 6.0 and later versions.  
+  
+-   `downlevel`, which tells ASP.NET to limit the HTML and script to the versions that are supported by browsers earlier than Internet Explorer 6.0.  
+  
+   
+  
+## Examples  
+ The following code example shows how to get the <xref:System.Web.Configuration.ClientTarget.Alias%2A> from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.ClientTarget#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ClientTarget/CS/clienttarget.cs#3)]
+ [!code-vb[System.Web.Configuration.ClientTarget#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ClientTarget/VB/clienttarget.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ClientTarget.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserAgent">
+      <MemberSignature Language="C#" Value="public string UserAgent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UserAgent" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ClientTarget.UserAgent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("userAgent", IsRequired=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the user agent's identification name.</summary>
+        <value>The user agent's identification name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.ClientTarget.UserAgent%2A> property refers to the `userAgent` attribute of the `add` element in the `clientTarget` section of the configuration file.  
+  
+ The ASP.NET configuration defaults allow customizing pages for various Microsoft Internet Explorer versions. Among them you find the alias `uplevel`, which tells ASP.NET to send the client HTML and ECMAScript supported by Internet Explorer 4.0 and later, and `downlevel`, which tells ASP.NET to limit the HTML and script to that supported by earlier browsers than Internet Explorer 4.0.  
+  
+   
+  
+## Examples  
+ The following code example shows how to get the <xref:System.Web.Configuration.ClientTarget.UserAgent%2A> from the configuration file of an existing Web application.  
+  
+ [!code-csharp[System.Web.Configuration.ClientTarget#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ClientTarget/CS/clienttarget.cs#4)]
+ [!code-vb[System.Web.Configuration.ClientTarget#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ClientTarget/VB/clienttarget.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

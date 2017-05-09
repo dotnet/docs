@@ -1,0 +1,97 @@
+<Type Name="DuplicateKeyException" FullName="System.Data.Linq.DuplicateKeyException">
+  <TypeSignature Language="C#" Value="public class DuplicateKeyException : InvalidOperationException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DuplicateKeyException extends System.InvalidOperationException" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Linq.DuplicateKeyException" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.InvalidOperationException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Thrown when an attempt is made to add an object to the identity cache by using a key that is already being used.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DuplicateKeyException (object duplicate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object duplicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.DuplicateKeyException.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="duplicate" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="duplicate">The duplicate key that caused the exception to be thrown.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.DuplicateKeyException" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DuplicateKeyException (object duplicate, string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object duplicate, string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.DuplicateKeyException.#ctor(System.Object,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="duplicate" Type="System.Object" />
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="duplicate">The duplicate key that caused the exception to be thrown.</param>
+        <param name="message">The message to appear when the exception is thrown.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.DuplicateKeyException" /> class by referencing the duplicate key and providing an error message.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DuplicateKeyException (object duplicate, string message, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object duplicate, string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.DuplicateKeyException.#ctor(System.Object,System.String,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="duplicate" Type="System.Object" />
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="duplicate">The duplicate key that caused the exception to be thrown.</param>
+        <param name="message">The message to appear when the exception is thrown.</param>
+        <param name="innerException">The previous exception that caused the <see cref="T:System.Data.Linq.DuplicateKeyException" /> exception to be thrown.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.DuplicateKeyException" /> class by referencing the duplicate key, providing an error message, and specifying the exception that caused this exception to be thrown.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Object">
+      <MemberSignature Language="C#" Value="public object Object { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Object" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.DuplicateKeyException.Object" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object that caused the exception.</summary>
+        <value>The object that caused the exception.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

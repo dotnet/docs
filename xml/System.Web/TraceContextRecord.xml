@@ -1,0 +1,188 @@
+<Type Name="TraceContextRecord" FullName="System.Web.TraceContextRecord">
+  <TypeSignature Language="C#" Value="public sealed class TraceContextRecord" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TraceContextRecord extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.TraceContextRecord" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an ASP.NET trace message and any associated data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.TraceContextRecord> object encapsulates the trace message, category, any associated <xref:System.Exception>, and whether the trace record was written by the <xref:System.Web.TraceContext.Warn%2A?displayProperty=fullName> method.  
+  
+ Every call to the <xref:System.Web.TraceContext.Write%2A?displayProperty=fullName> and <xref:System.Web.TraceContext.Warn%2A?displayProperty=fullName> methods generates a <xref:System.Web.TraceContextRecord> object that is added to the <xref:System.Web.TraceContextEventArgs.TraceRecords%2A?displayProperty=fullName> messages collection. You can access the collection of records by handling the <xref:System.Web.TraceContext.TraceFinished> event.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can register a <xref:System.Web.TraceContextEventHandler> delegate to handle the <xref:System.Web.TraceContext.TraceFinished> event. In this example, the `OnTraceFinished` method accesses the collection of <xref:System.Web.TraceContextRecord> objects through the <xref:System.Web.TraceContextEventArgs.TraceRecords%2A> property, iterates through them, and writes them to the response stream.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Trace_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_3/CS/form3cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Trace_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_3/VB/form3vb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TraceContextRecord (string category, string msg, bool isWarning, Exception errorInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string category, string msg, bool isWarning, class System.Exception errorInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.TraceContextRecord.#ctor(System.String,System.String,System.Boolean,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="category" Type="System.String" />
+        <Parameter Name="msg" Type="System.String" />
+        <Parameter Name="isWarning" Type="System.Boolean" />
+        <Parameter Name="errorInfo" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="category">The trace category that receives the message.</param>
+        <param name="msg">The trace message.</param>
+        <param name="isWarning">
+          <see langword="true" /> if the method associated with the <see cref="T:System.Web.TraceContextRecord" /> is the <see cref="Overload:System.Web.TraceContext.Warn" /> method;<see langword=" false" /> if the tracing method is the <see cref="Overload:System.Web.TraceContext.Write" /> method.</param>
+        <param name="errorInfo">A <see cref="T:System.Exception" /> object that contains additional error information.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.TraceContextRecord" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Every call to the <xref:System.Web.TraceContext.Write%2A?displayProperty=fullName> and <xref:System.Web.TraceContext.Warn%2A?displayProperty=fullName> methods generates a <xref:System.Web.TraceContextRecord> object that is added to the <xref:System.Web.TraceContextEventArgs.TraceRecords%2A?displayProperty=fullName> messages collection. The <xref:System.Web.TraceContext.Warn%2A> method call sets the <xref:System.Web.TraceContextRecord.IsWarning%2A> property to `true`, while the <xref:System.Web.TraceContext.Write%2A> method calls set it to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Category">
+      <MemberSignature Language="C#" Value="public string Category { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Category" />
+      <MemberSignature Language="DocId" Value="P:System.Web.TraceContextRecord.Category" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the user-defined category for the trace record.</summary>
+        <value>A string that represents a category for the trace record.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The category is used to better organize trace messages into recognizable groups, but can be any string. The <xref:System.Web.TraceContext> class uses <xref:System.String.Empty?displayProperty=fullName> as its default category for methods that take only a `message` parameter. The default category for ASP.NET, which writes several trace records when tracing is enabled, is "aspx.page".  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to access the <xref:System.Web.TraceContextRecord.Category%2A> property of a <xref:System.Web.TraceContextRecord>, and print it and its associated trace message to the `Response` stream.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Trace_5#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_5/CS/form5cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Trace_5#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_5/VB/form5vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorInfo">
+      <MemberSignature Language="C#" Value="public Exception ErrorInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Exception ErrorInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Web.TraceContextRecord.ErrorInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Exception" /> associated with the trace record, if one is available.</summary>
+        <value>A <see cref="T:System.Exception" /> associated with the trace record, if one exists, or <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can include an exception in a trace record if you are using tracing to debug an application or troubleshoot error and exception handling. The <xref:System.Web.TraceContextRecord.ErrorInfo%2A> property is `null` when the trace record is associated with one of the <xref:System.Web.TraceContext> methods that does not have an explicit `errorInfo` parameter or no exception is provided.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsWarning">
+      <MemberSignature Language="C#" Value="public bool IsWarning { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsWarning" />
+      <MemberSignature Language="DocId" Value="P:System.Web.TraceContextRecord.IsWarning" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the trace record is associated with a <see cref="Overload:System.Web.TraceContext.Warn" /> method call.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.TraceContextRecord" /> is associated with the <see cref="Overload:System.Web.TraceContext.Warn" /> method call; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to check the <xref:System.Web.TraceContextRecord.IsWarning%2A> property of a <xref:System.Web.TraceContextRecord> to determine whether the message that the record contains was written by a <xref:System.Web.TraceContext.Warn%2A> or <xref:System.Web.TraceContext.Write%2A> method call. If the trace record is a warning message, a different action is taken than if it is an error message.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Trace_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_4/CS/form4cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Trace_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_4/VB/form4vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public string Message { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Message" />
+      <MemberSignature Language="DocId" Value="P:System.Web.TraceContextRecord.Message" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the user-defined trace message.</summary>
+        <value>A string that represents a message for the trace record.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The message can be any string, and is used to write detailed tracing information. It corresponds to the message parameter that is passed to the <xref:System.Web.TraceContext.Write%2A?displayProperty=fullName> and <xref:System.Web.TraceContext.Warn%2A?displayProperty=fullName> methods. The information can be run-time values, messages to orient you and guide you through a program's execution, or other diagnostic data.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to access the <xref:System.Web.TraceContextRecord.Message%2A> property of a <xref:System.Web.TraceContextRecord>, and print it to the `Response` stream.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Trace_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_4/CS/form4cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Trace_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_4/VB/form4vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

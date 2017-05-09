@@ -1,0 +1,144 @@
+<Type Name="OptimizedClosures+FSharpFunc&lt;T1,T2,T3,T4,T5,TResult&gt;" FullName="Microsoft.FSharp.Core.OptimizedClosures+FSharpFunc&lt;T1,T2,T3,T4,T5,TResult&gt;">
+  <TypeSignature Language="C#" Value="public abstract class OptimizedClosures.FSharpFunc&lt;T1,T2,T3,T4,T5,TResult&gt; : Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,Microsoft.FSharp.Core.FSharpFunc&lt;T4,Microsoft.FSharp.Core.FSharpFunc&lt;T5,TResult&gt;&gt;&gt;&gt;&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract serializable beforefieldinit OptimizedClosures/FSharpFunc`6&lt;T1, T2, T3, T4, T5, TResult&gt; extends Microsoft.FSharp.Core.FSharpFunc`2&lt;!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T3, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T4, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T5, !TResult&gt;&gt;&gt;&gt;&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.OptimizedClosures.FSharpFunc`6" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T1" />
+    <TypeParameter Name="T2" />
+    <TypeParameter Name="T3" />
+    <TypeParameter Name="T4" />
+    <TypeParameter Name="T5" />
+    <TypeParameter Name="TResult" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,Microsoft.FSharp.Core.FSharpFunc&lt;T4,Microsoft.FSharp.Core.FSharpFunc&lt;T5,TResult&gt;&gt;&gt;&gt;&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">T1</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="TResult">Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,Microsoft.FSharp.Core.FSharpFunc&lt;T4,Microsoft.FSharp.Core.FSharpFunc&lt;T5,TResult&gt;&gt;&gt;&gt;</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.AbstractClass</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T1">To be added.</typeparam>
+    <typeparam name="T2">To be added.</typeparam>
+    <typeparam name="T3">To be added.</typeparam>
+    <typeparam name="T4">To be added.</typeparam>
+    <typeparam name="T5">To be added.</typeparam>
+    <typeparam name="TResult">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FSharpFunc ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptimizedClosures.FSharpFunc`6.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Adapt">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.OptimizedClosures.FSharpFunc&lt;T1,T2,T3,T4,T5,TResult&gt; Adapt (Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,Microsoft.FSharp.Core.FSharpFunc&lt;T4,Microsoft.FSharp.Core.FSharpFunc&lt;T5,TResult&gt;&gt;&gt;&gt;&gt; func);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.OptimizedClosures/FSharpFunc`6&lt;!T1, !T2, !T3, !T4, !T5, !TResult&gt; Adapt(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T3, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T4, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T5, !TResult&gt;&gt;&gt;&gt;&gt; func) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptimizedClosures.FSharpFunc`6.Adapt(Microsoft.FSharp.Core.FSharpFunc{`0,Microsoft.FSharp.Core.FSharpFunc{`1,Microsoft.FSharp.Core.FSharpFunc{`2,Microsoft.FSharp.Core.FSharpFunc{`3,Microsoft.FSharp.Core.FSharpFunc{`4,`5}}}}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.OptimizedClosures+FSharpFunc&lt;T1,T2,T3,T4,T5,TResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="func" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,Microsoft.FSharp.Core.FSharpFunc&lt;T4,Microsoft.FSharp.Core.FSharpFunc&lt;T5,TResult&gt;&gt;&gt;&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="func">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invoke">
+      <MemberSignature Language="C#" Value="public override Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,Microsoft.FSharp.Core.FSharpFunc&lt;T4,Microsoft.FSharp.Core.FSharpFunc&lt;T5,TResult&gt;&gt;&gt;&gt; Invoke (T1 t);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T3, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T4, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T5, !TResult&gt;&gt;&gt;&gt; Invoke(!T1 t) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptimizedClosures.FSharpFunc`6.Invoke(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,Microsoft.FSharp.Core.FSharpFunc&lt;T4,Microsoft.FSharp.Core.FSharpFunc&lt;T5,TResult&gt;&gt;&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="t" Type="T1" />
+      </Parameters>
+      <Docs>
+        <param name="t">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invoke">
+      <MemberSignature Language="C#" Value="public abstract TResult Invoke (T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !TResult Invoke(!T1 arg1, !T2 arg2, !T3 arg3, !T4 arg4, !T5 arg5) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptimizedClosures.FSharpFunc`6.Invoke(`0,`1,`2,`3,`4)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="arg1" Type="T1" />
+        <Parameter Name="arg2" Type="T2" />
+        <Parameter Name="arg3" Type="T3" />
+        <Parameter Name="arg4" Type="T4" />
+        <Parameter Name="arg5" Type="T5" />
+      </Parameters>
+      <Docs>
+        <param name="arg1">To be added.</param>
+        <param name="arg2">To be added.</param>
+        <param name="arg3">To be added.</param>
+        <param name="arg4">To be added.</param>
+        <param name="arg5">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

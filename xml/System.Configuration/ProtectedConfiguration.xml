@@ -1,0 +1,185 @@
+<Type Name="ProtectedConfiguration" FullName="System.Configuration.ProtectedConfiguration">
+  <TypeSignature Language="C#" Value="public static class ProtectedConfiguration" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ProtectedConfiguration extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.ProtectedConfiguration" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides access to the protected-configuration providers for the current application's configuration file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Configuration.ProtectedConfiguration> class allows you to obtain information about the providers available to protect sensitive configuration data. You typically use the standard providers, but you can also create custom providers by deriving from the <xref:System.Configuration.ProtectedConfigurationProvider> class.  
+  
+ For more information about protected configuration, see [Encrypting Configuration Information Using Protected Configuration](http://msdn.microsoft.com/library/51cdfe5b-9d82-458c-94ff-c551c4f38ed1).  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ProtectedConfiguration> class to retrieve a collection of protected-configuration providers and discover their provider name, RSA provider name, and section names.  
+  
+ [!code-csharp[System.Configuration.ProtectedConfiguration#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProtectedConfiguration/CS/ProtectedConfiguration.cs#1)]
+ [!code-vb[System.Configuration.ProtectedConfiguration#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProtectedConfiguration/VB/ProtectedConfiguration.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DataProtectionProviderName">
+      <MemberSignature Language="C#" Value="public const string DataProtectionProviderName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DataProtectionProviderName" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ProtectedConfiguration.DataProtectionProviderName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of the data protection provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This a constant string variable that contains the name of the data-protection provider made available by the system to protect a configuration section.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ProtectedConfiguration.DataProtectionProviderName> property to retrieve the name of the current data-protection provider.  
+  
+ [!code-csharp[System.Configuration.ProtectedConfiguration#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProtectedConfiguration/CS/ProtectedConfiguration.cs#4)]
+ [!code-vb[System.Configuration.ProtectedConfiguration#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProtectedConfiguration/VB/ProtectedConfiguration.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultProvider">
+      <MemberSignature Language="C#" Value="public static string DefaultProvider { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string DefaultProvider" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ProtectedConfiguration.DefaultProvider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the default protected-configuration provider.</summary>
+        <value>The name of the default protected-configuration provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default provider is identified by the `defaultProvider` attribute of the `<configProtectedData>` configuration-file element. The value must correspond to the name of one of the providers added in the `<providers>` subsection of the `<configProtectedData>` section. The `<configProtectedData>` section can also be accessed through an instance of the <xref:System.Configuration.ProtectedConfigurationSection> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtectedDataSectionName">
+      <MemberSignature Language="C#" Value="public const string ProtectedDataSectionName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ProtectedDataSectionName" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ProtectedConfiguration.ProtectedDataSectionName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of the protected data section.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a constant string variable that contains the name of the protected data section.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ProtectedConfiguration.ProtectedDataSectionName> property to retrieve the name of a protected data section.  
+  
+ [!code-csharp[System.Configuration.ProtectedConfiguration#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProtectedConfiguration/CS/ProtectedConfiguration.cs#6)]
+ [!code-vb[System.Configuration.ProtectedConfiguration#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProtectedConfiguration/VB/ProtectedConfiguration.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Providers">
+      <MemberSignature Language="C#" Value="public static System.Configuration.ProtectedConfigurationProviderCollection Providers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Configuration.ProtectedConfigurationProviderCollection Providers" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.ProtectedConfiguration.Providers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ProtectedConfigurationProviderCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of the installed protected-configuration providers.</summary>
+        <value>A <see cref="T:System.Configuration.ProtectedConfigurationProviderCollection" /> collection of installed <see cref="T:System.Configuration.ProtectedConfigurationProvider" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ProtectedConfiguration.Providers%2A> property to retrieve the collection of installed <xref:System.Configuration.ProtectedConfigurationProvider> objects.  
+  
+ [!code-csharp[System.Configuration.ProtectedConfiguration#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProtectedConfiguration/CS/ProtectedConfiguration.cs#3)]
+ [!code-vb[System.Configuration.ProtectedConfiguration#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProtectedConfiguration/VB/ProtectedConfiguration.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RsaProviderName">
+      <MemberSignature Language="C#" Value="public const string RsaProviderName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string RsaProviderName" />
+      <MemberSignature Language="DocId" Value="F:System.Configuration.ProtectedConfiguration.RsaProviderName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of the RSA provider.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This a constant string variable that contains the name of the RSA provider made available by the system to protect a configuration section.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Configuration.ProtectedConfiguration.RsaProviderName> property to retrieve the name of the current RSA provider.  
+  
+ [!code-csharp[System.Configuration.ProtectedConfiguration#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Configuration.ProtectedConfiguration/CS/ProtectedConfiguration.cs#5)]
+ [!code-vb[System.Configuration.ProtectedConfiguration#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Configuration.ProtectedConfiguration/VB/ProtectedConfiguration.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

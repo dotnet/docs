@@ -1,0 +1,394 @@
+<Type Name="FSharpType" FullName="Microsoft.FSharp.Reflection.FSharpType">
+  <TypeSignature Language="C#" Value="public static class FSharpType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable sealed FSharpType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Reflection.FSharpType" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.AbstractClass</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.Sealed</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetExceptionFields">
+      <MemberSignature Language="C#" Value="public static System.Reflection.PropertyInfo[] GetExceptionFields (Type exceptionType, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Reflection.PropertyInfo[] GetExceptionFields(class System.Type exceptionType, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.GetExceptionFields(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PropertyInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exceptionType" Type="System.Type" />
+        <Parameter Name="bindingFlags" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="exceptionType">To be added.</param>
+        <param name="bindingFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFunctionElements">
+      <MemberSignature Language="C#" Value="public static Tuple&lt;Type,Type&gt; GetFunctionElements (Type functionType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;class System.Type, class System.Type&gt; GetFunctionElements(class System.Type functionType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.GetFunctionElements(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Tuple&lt;System.Type,System.Type&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="functionType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="functionType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRecordFields">
+      <MemberSignature Language="C#" Value="public static System.Reflection.PropertyInfo[] GetRecordFields (Type recordType, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Reflection.PropertyInfo[] GetRecordFields(class System.Type recordType, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.GetRecordFields(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.PropertyInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recordType" Type="System.Type" />
+        <Parameter Name="bindingFlags" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="recordType">To be added.</param>
+        <param name="bindingFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTupleElements">
+      <MemberSignature Language="C#" Value="public static Type[] GetTupleElements (Type tupleType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Type[] GetTupleElements(class System.Type tupleType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.GetTupleElements(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tupleType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="tupleType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUnionCases">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Reflection.UnionCaseInfo[] GetUnionCases (Type unionType, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Reflection.UnionCaseInfo[] GetUnionCases(class System.Type unionType, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.GetUnionCases(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Reflection.UnionCaseInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unionType" Type="System.Type" />
+        <Parameter Name="bindingFlags" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="unionType">To be added.</param>
+        <param name="bindingFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsExceptionRepresentation">
+      <MemberSignature Language="C#" Value="public static bool IsExceptionRepresentation (Type exceptionType, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool IsExceptionRepresentation(class System.Type exceptionType, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.IsExceptionRepresentation(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exceptionType" Type="System.Type" />
+        <Parameter Name="bindingFlags" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="exceptionType">To be added.</param>
+        <param name="bindingFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFunction">
+      <MemberSignature Language="C#" Value="public static bool IsFunction (Type typ);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool IsFunction(class System.Type typ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.IsFunction(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typ" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="typ">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsModule">
+      <MemberSignature Language="C#" Value="public static bool IsModule (Type typ);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool IsModule(class System.Type typ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.IsModule(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typ" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="typ">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRecord">
+      <MemberSignature Language="C#" Value="public static bool IsRecord (Type typ, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool IsRecord(class System.Type typ, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.IsRecord(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typ" Type="System.Type" />
+        <Parameter Name="bindingFlags" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="typ">To be added.</param>
+        <param name="bindingFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTuple">
+      <MemberSignature Language="C#" Value="public static bool IsTuple (Type typ);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool IsTuple(class System.Type typ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.IsTuple(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typ" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="typ">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUnion">
+      <MemberSignature Language="C#" Value="public static bool IsUnion (Type typ, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool IsUnion(class System.Type typ, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.IsUnion(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typ" Type="System.Type" />
+        <Parameter Name="bindingFlags" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="typ">To be added.</param>
+        <param name="bindingFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeFunctionType">
+      <MemberSignature Language="C#" Value="public static Type MakeFunctionType (Type domain, Type range);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Type MakeFunctionType(class System.Type domain, class System.Type range) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.MakeFunctionType(System.Type,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="domain" Type="System.Type" />
+        <Parameter Name="range" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="domain">To be added.</param>
+        <param name="range">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeTupleType">
+      <MemberSignature Language="C#" Value="public static Type MakeTupleType (Type[] types);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Type MakeTupleType(class System.Type[] types) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.MakeTupleType(System.Type[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="types" Type="System.Type[]" />
+      </Parameters>
+      <Docs>
+        <param name="types">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

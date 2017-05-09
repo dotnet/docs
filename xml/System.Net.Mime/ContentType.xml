@@ -1,0 +1,434 @@
+<Type Name="ContentType" FullName="System.Net.Mime.ContentType">
+  <TypeSignature Language="C#" Value="public class ContentType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContentType extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Mime.ContentType" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a MIME protocol Content-Type header.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The information in the <xref:System.Net.Mime.ContentType> class is used to describe the data contained in an e-mail message in such a way that software that displays e-mail can present the content in an appropriate manner. <xref:System.Net.Mime.ContentType> is used with the <xref:System.Net.Mail.Attachment> class to specify the type of content in the attachment.  
+  
+ The syntax of the Content-Type header is described in RFC 2045 Section 5.1. RFC 2046 provides detailed information about MIME media types and their parameters. These RFCs are available at [http://www.ietf.org](http://www.ietf.org/).  
+  
+   
+  
+## Examples  
+ The following code example sends an e-mail message with an attachment and displays the <xref:System.Net.Mail.Attachment.ContentDisposition%2A> properties for the attachment.  
+  
+ [!code-cpp[NclMailSync#6](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#6)]
+ [!code-csharp[NclMailSync#6](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#6)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContentType ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mime.ContentType.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new default instance of the <see cref="T:System.Net.Mime.ContentType" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Net.Mime.ContentType.MediaType%2A> property to `"application/octet-stream"`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to call this constructor.  
+  
+ [!code-cpp[NclMailSync#15](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#15)]
+ [!code-csharp[NclMailSync#15](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContentType (string contentType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string contentType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mime.ContentType.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="contentType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="contentType">A <see cref="T:System.String" />, for example, <c>"text/plain; charset=us-ascii"</c>, that contains the MIME media type, subtype, and optional parameters.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Mime.ContentType" /> class using the specified string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The syntax of the `contentType` string is described in RFC 2045 Section 5.1 available at [http://www.ietf.org](http://www.ietf.org/).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to call this constructor.  
+  
+ [!code-cpp[NclMailSync#15](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#15)]
+ [!code-csharp[NclMailSync#15](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#15)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="contentType" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="contentType" /> is <see cref="F:System.String.Empty" /> ("").</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="contentType" /> is in a form that cannot be parsed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Boundary">
+      <MemberSignature Language="C#" Value="public string Boundary { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Boundary" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mime.ContentType.Boundary" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the boundary parameter included in the Content-Type header represented by this instance.</summary>
+        <value>A <see cref="T:System.String" /> that contains the value associated with the boundary parameter.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the following example of a Content-Type header, the value of the <xref:System.Net.Mime.ContentType.Boundary%2A> parameter is "`-----boundary---0`".  
+  
+ `content-type: multipart/mixed; boundary=-----boundary---0`  
+  
+ Set this property to `null` or <xref:System.String?displayProperty=fullName> to remove the boundary information from the header.  
+  
+ The syntax of the Content-Type header is described in RFC 2045 Section 5.1. An in-depth discussion of the boundary parameter is contained in RFC 2046 Section 5.1.1. These RFCs are available at [http://www.ietf.org](http://www.ietf.org/).  
+  
+   
+  
+## Examples  
+ The following code example displays the value of the <xref:System.Net.Mime.ContentType.Boundary%2A> property.  
+  
+ [!code-cpp[NclMailSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#5)]
+ [!code-csharp[NclMailSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CharSet">
+      <MemberSignature Language="C#" Value="public string CharSet { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CharSet" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mime.ContentType.CharSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the charset parameter included in the Content-Type header represented by this instance.</summary>
+        <value>A <see cref="T:System.String" /> that contains the value associated with the charset parameter.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the following example of a Content-Type header, the value of the <xref:System.Net.Mime.ContentType.CharSet%2A> property is "`us-ascii`".  
+  
+ `content-type: application/x-myType; charset=us-ascii`  
+  
+ Set this property to `null` or <xref:System.String?displayProperty=fullName> to remove the charset information from the header.  
+  
+ A grammar that details the syntax of the Content-Type header is described in RFC 2045 Section 5.1. An in-depth discussion of the charset parameter is contained in RFC 2046 Section 4.1.2. These RFCs are available at [http://www.ietf.org](http://www.ietf.org/).  
+  
+   
+  
+## Examples  
+ The following code example displays the value of the property.  
+  
+ [!code-cpp[NclMailSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#5)]
+ [!code-csharp[NclMailSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object rparam);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object rparam) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mime.ContentType.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rparam" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="rparam">The <see cref="T:System.Net.Mime.ContentType" /> object to compare with this object.</param>
+        <summary>Determines whether the content-type header of the specified <see cref="T:System.Net.Mime.ContentType" /> object is equal to the content-type header of this object.</summary>
+        <returns>
+          <see langword="true" /> if the content-type headers are the same; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mime.ContentType.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines the hash code of the specified <see cref="T:System.Net.Mime.ContentType" /> object</summary>
+        <returns>An integer hash value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MediaType">
+      <MemberSignature Language="C#" Value="public string MediaType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MediaType" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mime.ContentType.MediaType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the media type value included in the Content-Type header represented by this instance.</summary>
+        <value>A <see cref="T:System.String" /> that contains the media type and subtype value. This value does not include the semicolon (;) separator that follows the subtype.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the following example of a Content-Type header, the value of the <xref:System.Net.Mime.ContentType.MediaType%2A> property is `"application/x-myType"`.  
+  
+ `content-type: application/x-myType; name=data.xyz`  
+  
+ Set this property to `null` or <xref:System.String?displayProperty=fullName> to remove the name information from the header.  
+  
+ The syntax of the Content-Type header is described in RFC 2045 Section 5.1. RFC 2046 provides detailed information on MIME media types. These RFCs are available at [http://www.ietf.org](http://www.ietf.org/).  
+  
+   
+  
+## Examples  
+ The following code example sets the value of this property.  
+  
+ [!code-cpp[NclMailSync#13](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#13)]
+ [!code-csharp[NclMailSync#13](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#13)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value specified for a set operation is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The value specified for a set operation is <see cref="F:System.String.Empty" /> ("").</exception>
+        <exception cref="T:System.FormatException">The value specified for a set operation is in a form that cannot be parsed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mime.ContentType.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the name parameter included in the Content-Type header represented by this instance.</summary>
+        <value>A <see cref="T:System.String" /> that contains the value associated with the name parameter.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the following example of a Content-Type header, the value of the <xref:System.Net.Mime.ContentType.Name%2A> property is `"data.xyz"`.  
+  
+ `content-type: application/x-myType; name=data.xyz`  
+  
+ A grammar that details the syntax of the Content-Type header is described in RFC 2045 Section 5.1, available at [http://www.ietf.org](http://www.ietf.org/).  
+  
+ When specifying content for a <xref:System.Net.Mail.Attachment> as a <xref:System.IO.Stream> or <xref:System.String>, you can use <xref:System.Net.Mime.ContentType.Name%2A> to set the name of the file that stores the content on the recipient's system.  
+  
+   
+  
+## Examples  
+ The following code example sets the value of the property to specify a name for a file being attached as a stream.  
+  
+ [!code-cpp[NclMailSync#15](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#15)]
+ [!code-csharp[NclMailSync#15](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parameters">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringDictionary Parameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringDictionary Parameters" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Mime.ContentType.Parameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the dictionary that contains the parameters included in the Content-Type header represented by this instance.</summary>
+        <value>A writable <see cref="T:System.Collections.Specialized.StringDictionary" /> that contains name and value pairs.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set the parameters by specifying the entire Content-Header value when constructing a <xref:System.Net.Mime.ContentType> object or you can add parameters to the <xref:System.Collections.Specialized.StringDictionary> returned by the <xref:System.Net.Mime.ContentType.Parameters%2A> property.  
+  
+ When adding a parameter entry to the dictionary, the name of the parameter is the entry's key and the value of the parameter is the entry's value.  
+  
+ A grammar that details the syntax of the Content-Type header is described in RFC 2045 Section 5.1. RFC 2046 provides detailed information on MIME media types and their associated parameters. These RFCs are available at [http://www.ietf.org](http://www.ietf.org/).  
+  
+   
+  
+## Examples  
+ The following code example displays the values in the dictionary returned by this property.  
+  
+ [!code-cpp[NclMailSync#5](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#5)]
+ [!code-csharp[NclMailSync#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Mime.ContentType.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string representation of this <see cref="T:System.Net.Mime.ContentType" /> object.</summary>
+        <returns>A <see cref="T:System.String" /> that contains the current settings for this <see cref="T:System.Net.Mime.ContentType" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Net.Mime.ContentType.ToString%2A> method contains the string used to create this <xref:System.Net.Mime.ContentType>, if one was specified and no property values have been changed. If no string was specified, or one or more property values have changed since this <xref:System.Net.Mime.ContentType> was created, the value of <xref:System.Net.Mime.ContentType.ToString%2A> is a string in the format of a Content-Type header that is composed using the current property values. The string does not include the `"Content-type:"` prefix.  
+  
+ The syntax of the Content-Type header is described in RFC 2045 Section 5.1, available at [http://www.ietf.org](http://www.ietf.org/).  
+  
+   
+  
+## Examples  
+ The following code example displays the string representation of a <xref:System.Net.Mime.ContentType>.  
+  
+ [!code-cpp[NclMailSync#13](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#13)]
+ [!code-csharp[NclMailSync#13](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

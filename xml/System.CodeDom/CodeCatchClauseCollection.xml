@@ -1,0 +1,403 @@
+<Type Name="CodeCatchClauseCollection" FullName="System.CodeDom.CodeCatchClauseCollection">
+  <TypeSignature Language="C#" Value="public class CodeCatchClauseCollection : System.Collections.CollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeCatchClauseCollection extends System.Collections.CollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeCatchClauseCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.CollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.CodeDom.CodeCatchClause" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.CodeDom.CodeCatchClauseCollection> class provides a simple collection object that can be used to store a set of <xref:System.CodeDom.CodeCatchClause> objects.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the use of the  <xref:System.CodeDom.CodeCatchClauseCollection> class methods. The example creates a new instance of the class and uses the methods to add statements to the collection, return their index, and add or remove attributes at a specific index point.  
+  
+ [!code-cpp[CodeCatchClauseCollectionExample#1](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#1)]
+ [!code-csharp[CodeCatchClauseCollectionExample#1](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#1)]
+ [!code-vb[CodeCatchClauseCollectionExample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeCatchClauseCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCatchClauseCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeCatchClauseCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeCatchClauseCollection (System.CodeDom.CodeCatchClause[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeCatchClause[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCatchClauseCollection.#ctor(System.CodeDom.CodeCatchClause[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeCatchClause[]" />
+      </Parameters>
+      <Docs>
+        <param name="value">An array of <see cref="T:System.CodeDom.CodeCatchClause" /> objects with which to initialize the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeCatchClauseCollection" /> class containing the specified array of <see cref="T:System.CodeDom.CodeCatchClause" /> objects.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">One or more objects in the array are <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CodeCatchClauseCollection (System.CodeDom.CodeCatchClauseCollection value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeCatchClauseCollection value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCatchClauseCollection.#ctor(System.CodeDom.CodeCatchClauseCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeCatchClauseCollection" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.CodeDom.CodeCatchClauseCollection" /> with which to initialize the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeCatchClauseCollection" /> class containing the elements of the specified source collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public int Add (System.CodeDom.CodeCatchClause value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.CodeDom.CodeCatchClause value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCatchClauseCollection.Add(System.CodeDom.CodeCatchClause)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeCatchClause" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.CodeDom.CodeCatchClause" /> object to add.</param>
+        <summary>Adds the specified <see cref="T:System.CodeDom.CodeCatchClause" /> object to the collection.</summary>
+        <returns>The index at which the new element was inserted.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to add a <xref:System.CodeDom.CodeCatchClause> object to the <xref:System.CodeDom.CodeCatchClauseCollection> instance.  
+  
+ [!code-cpp[CodeCatchClauseCollectionExample#3](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#3)]
+ [!code-csharp[CodeCatchClauseCollectionExample#3](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#3)]
+ [!code-vb[CodeCatchClauseCollectionExample#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public void AddRange (System.CodeDom.CodeCatchClause[] value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.CodeDom.CodeCatchClause[] value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCatchClauseCollection.AddRange(System.CodeDom.CodeCatchClause[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeCatchClause[]" />
+      </Parameters>
+      <Docs>
+        <param name="value">An array of type <see cref="T:System.CodeDom.CodeCatchClause" /> that contains the objects to add to the collection.</param>
+        <summary>Copies the elements of the specified <see cref="T:System.CodeDom.CodeCatchClause" /> array to the end of the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.CodeDom.CodeCatchClauseCollection.AddRange%28System.CodeDom.CodeCatchClause%5B%5D%29> method overload to add the members of an array of <xref:System.CodeDom.CodeCatchClause> objects to the <xref:System.CodeDom.CodeCatchClauseCollection>.  
+  
+ [!code-cpp[CodeCatchClauseCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#4)]
+ [!code-csharp[CodeCatchClauseCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#4)]
+ [!code-vb[CodeCatchClauseCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public void AddRange (System.CodeDom.CodeCatchClauseCollection value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.CodeDom.CodeCatchClauseCollection value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCatchClauseCollection.AddRange(System.CodeDom.CodeCatchClauseCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeCatchClauseCollection" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.CodeDom.CodeCatchClauseCollection" /> that contains the objects to add to the collection.</param>
+        <summary>Copies the contents of another <see cref="T:System.CodeDom.CodeCatchClauseCollection" /> object to the end of the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.CodeDom.CodeCatchClauseCollection.AddRange%28System.CodeDom.CodeCatchClauseCollection%29> method overload to add the members of one <xref:System.CodeDom.CodeCatchClauseCollection> object to another <xref:System.CodeDom.CodeCatchClauseCollection>.  
+  
+ [!code-cpp[CodeCatchClauseCollectionExample#4](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#4)]
+ [!code-csharp[CodeCatchClauseCollectionExample#4](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#4)]
+ [!code-vb[CodeCatchClauseCollectionExample#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.CodeDom.CodeCatchClause value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.CodeDom.CodeCatchClause value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCatchClauseCollection.Contains(System.CodeDom.CodeCatchClause)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeCatchClause" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.CodeDom.CodeCatchClause" /> object to locate in the collection.</param>
+        <summary>Gets a value that indicates whether the collection contains the specified <see cref="T:System.CodeDom.CodeCatchClause" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the collection contains the specified object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses the <xref:System.CodeDom.CodeCatchClauseCollection.Contains%2A> method to search for the presence of a specific <xref:System.CodeDom.CodeCatchClause> instance and gets the index value at which it was found.  
+  
+ [!code-cpp[CodeCatchClauseCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#5)]
+ [!code-csharp[CodeCatchClauseCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#5)]
+ [!code-vb[CodeCatchClauseCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.CodeDom.CodeCatchClause[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.CodeDom.CodeCatchClause[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCatchClauseCollection.CopyTo(System.CodeDom.CodeCatchClause[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.CodeDom.CodeCatchClause[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the values copied from the collection.</param>
+        <param name="index">The index of the array at which to begin inserting.</param>
+        <summary>Copies the collection objects to a one-dimensional <see cref="T:System.Array" /> instance beginning at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to copy the contents of a <xref:System.CodeDom.CodeCatchClauseCollection> to a <xref:System.CodeDom.CodeCatchClause> array beginning at index value 0.  
+  
+ [!code-cpp[CodeCatchClauseCollectionExample#6](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#6)]
+ [!code-csharp[CodeCatchClauseCollectionExample#6](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#6)]
+ [!code-vb[CodeCatchClauseCollectionExample#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The destination array is multidimensional.  
+  
+ -or-  
+  
+ The number of elements in the <see cref="T:System.CodeDom.CodeCatchClauseCollection" /> is greater than the available space between the index of the target array specified by the <paramref name="index" /> parameter and the end of the target array.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="array" /> parameter is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than the target array's minimum index.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.CodeDom.CodeCatchClause value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.CodeDom.CodeCatchClause value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCatchClauseCollection.IndexOf(System.CodeDom.CodeCatchClause)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeCatchClause" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.CodeDom.CodeCatchClause" /> object to locate in the collection.</param>
+        <summary>Gets the index of the specified <see cref="T:System.CodeDom.CodeCatchClause" /> object in the collection, if it exists in the collection.</summary>
+        <returns>The index of the specified object, if found, in the collection; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example searches for the presence of a specific <xref:System.CodeDom.CodeCatchClause> object and uses the <xref:System.CodeDom.CodeCatchClauseCollection.IndexOf%2A> method to get the index value at which it was found.  
+  
+ [!code-cpp[CodeCatchClauseCollectionExample#5](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#5)]
+ [!code-csharp[CodeCatchClauseCollectionExample#5](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#5)]
+ [!code-vb[CodeCatchClauseCollectionExample#5](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, System.CodeDom.CodeCatchClause value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.CodeDom.CodeCatchClause value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCatchClauseCollection.Insert(System.Int32,System.CodeDom.CodeCatchClause)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.CodeDom.CodeCatchClause" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index where the specified object should be inserted.</param>
+        <param name="value">The <see cref="T:System.CodeDom.CodeCatchClause" /> object to insert.</param>
+        <summary>Inserts the specified <see cref="T:System.CodeDom.CodeCatchClause" /> object into the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.CodeDom.CodeCatchClauseCollection.Insert%2A> method to add a <xref:System.CodeDom.CodeCatchClause> object to a <xref:System.CodeDom.CodeCatchClauseCollection>.  
+  
+ [!code-cpp[CodeCatchClauseCollectionExample#8](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#8)]
+ [!code-csharp[CodeCatchClauseCollectionExample#8](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#8)]
+ [!code-vb[CodeCatchClauseCollectionExample#8](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeCatchClause this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeCatchClause Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeCatchClauseCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeCatchClause</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the collection to access.</param>
+        <summary>Gets or sets the <see cref="T:System.CodeDom.CodeCatchClause" /> object at the specified index in the collection.</summary>
+        <value>A <see cref="T:System.CodeDom.CodeCatchClause" /> object at each valid index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is an indexer that can be used to access the collection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is outside the valid range of indexes for the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.CodeDom.CodeCatchClause value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.CodeDom.CodeCatchClause value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeCatchClauseCollection.Remove(System.CodeDom.CodeCatchClause)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.CodeDom.CodeCatchClause" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.CodeDom.CodeCatchClause" /> object to remove from the collection.</param>
+        <summary>Removes the specified <see cref="T:System.CodeDom.CodeCatchClause" /> object from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.CodeDom.CodeCatchClauseCollection.Remove%2A> method to delete a <xref:System.CodeDom.CodeCatchClause> object from a <xref:System.CodeDom.CodeCatchClauseCollection>.  
+  
+ [!code-cpp[CodeCatchClauseCollectionExample#9](~/samples/snippets/cpp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CPP/class1.cpp#9)]
+ [!code-csharp[CodeCatchClauseCollectionExample#9](~/samples/snippets/csharp/VS_Snippets_CLR/CodeCatchClauseCollectionExample/CS/class1.cs#9)]
+ [!code-vb[CodeCatchClauseCollectionExample#9](~/samples/snippets/visualbasic/VS_Snippets_CLR/CodeCatchClauseCollectionExample/VB/class1.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The specified object is not found in the collection.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

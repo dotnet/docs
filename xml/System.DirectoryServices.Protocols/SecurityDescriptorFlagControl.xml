@@ -1,0 +1,89 @@
+<Type Name="SecurityDescriptorFlagControl" FullName="System.DirectoryServices.Protocols.SecurityDescriptorFlagControl">
+  <TypeSignature Language="C#" Value="public class SecurityDescriptorFlagControl : System.DirectoryServices.Protocols.DirectoryControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SecurityDescriptorFlagControl extends System.DirectoryServices.Protocols.DirectoryControl" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SecurityDescriptorFlagControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.Protocols.DirectoryControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.SecurityDescriptorFlagControl" /> class is used to pass flags to the server to control various security descriptor behaviors.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SecurityDescriptorFlagControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.SecurityDescriptorFlagControl.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SecurityDescriptorFlagControl.#ctor" /> constructor creates a new instance of the <see cref="T:System.DirectoryServices.Protocols.SecurityDescriptorFlagControl" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SecurityDescriptorFlagControl (System.DirectoryServices.Protocols.SecurityMasks masks);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DirectoryServices.Protocols.SecurityMasks masks) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.SecurityDescriptorFlagControl.#ctor(System.DirectoryServices.Protocols.SecurityMasks)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="masks" Type="System.DirectoryServices.Protocols.SecurityMasks" />
+      </Parameters>
+      <Docs>
+        <param name="masks">A combination of <see cref="T:System.DirectoryServices.Protocols.SecurityMasks" /> values that specify security descriptor options.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SecurityDescriptorFlagControl.#ctor(System.DirectoryServices.Protocols.SecurityMasks)" /> constructor creates a new instance of the <see cref="T:System.DirectoryServices.Protocols.SecurityDescriptorFlagControl" /> class using the specified security masks.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public override byte[] GetValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] GetValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.SecurityDescriptorFlagControl.GetValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SecurityDescriptorFlagControl.GetValue" /> method returns the security descriptor options specified for this control.</summary>
+        <returns>The security descriptor options specified for this control.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityMasks">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.SecurityMasks SecurityMasks { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.Protocols.SecurityMasks SecurityMasks" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SecurityDescriptorFlagControl.SecurityMasks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.SecurityMasks</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SecurityDescriptorFlagControl.SecurityMasks" /> property contains a combination of <see cref="T:System.DirectoryServices.Protocols.SecurityMasks" /> values that specify security descriptor options.</summary>
+        <value>A combination of <see cref="T:System.DirectoryServices.Protocols.SecurityMasks" /> values that specify security descriptor options.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,58 @@
+<Type Name="TypeDescriptorPermissionFlags" FullName="System.Security.Permissions.TypeDescriptorPermissionFlags">
+  <TypeSignature Language="C#" Value="public enum TypeDescriptorPermissionFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TypeDescriptorPermissionFlags extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Permissions.TypeDescriptorPermissionFlags" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines permission settings for type descriptors.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NoFlags">
+      <MemberSignature Language="C#" Value="NoFlags" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.TypeDescriptorPermissionFlags NoFlags = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.TypeDescriptorPermissionFlags.NoFlags" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.TypeDescriptorPermissionFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No permission flags are set on the type descriptor.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RestrictedRegistrationAccess">
+      <MemberSignature Language="C#" Value="RestrictedRegistrationAccess" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.TypeDescriptorPermissionFlags RestrictedRegistrationAccess = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Permissions.TypeDescriptorPermissionFlags.RestrictedRegistrationAccess" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Permissions.TypeDescriptorPermissionFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The type descriptor may be called from partially trusted code.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

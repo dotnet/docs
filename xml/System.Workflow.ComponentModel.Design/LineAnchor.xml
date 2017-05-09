@@ -1,0 +1,210 @@
+<Type Name="LineAnchor" FullName="System.Workflow.ComponentModel.Design.LineAnchor">
+  <TypeSignature Language="C#" Value="public enum LineAnchor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LineAnchor extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.LineAnchor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Determines the shapes of connector points on a workflow design surface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ Connectors are the lines rendered on the workflow design surface between interconnected activity designers. The ends of each line are called connector points, which are where the lines attach to the activity designers that they connect. <xref:System.Workflow.ComponentModel.Design.LineAnchor> provides values that determine the appearance of the connector points.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Arrow">
+      <MemberSignature Language="C#" Value="Arrow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.LineAnchor Arrow = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.LineAnchor.Arrow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.LineAnchor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The connector point is an arrow.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrowAnchor">
+      <MemberSignature Language="C#" Value="ArrowAnchor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.LineAnchor ArrowAnchor = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.LineAnchor.ArrowAnchor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.LineAnchor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The connector point is an arrow anchor.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Diamond">
+      <MemberSignature Language="C#" Value="Diamond" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.LineAnchor Diamond = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.LineAnchor.Diamond" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.LineAnchor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The connector point is a diamond.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DiamondAnchor">
+      <MemberSignature Language="C#" Value="DiamondAnchor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.LineAnchor DiamondAnchor = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.LineAnchor.DiamondAnchor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.LineAnchor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The connector point is an diamond anchor.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.LineAnchor None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.LineAnchor.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.LineAnchor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>There is no connector point.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rectangle">
+      <MemberSignature Language="C#" Value="Rectangle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.LineAnchor Rectangle = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.LineAnchor.Rectangle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.LineAnchor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The connector point is a rectangle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RectangleAnchor">
+      <MemberSignature Language="C#" Value="RectangleAnchor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.LineAnchor RectangleAnchor = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.LineAnchor.RectangleAnchor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.LineAnchor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The connector point is a rectangle anchor.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Round">
+      <MemberSignature Language="C#" Value="Round" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.LineAnchor Round = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.LineAnchor.Round" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.LineAnchor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The connector point is a circle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RoundAnchor">
+      <MemberSignature Language="C#" Value="RoundAnchor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.LineAnchor RoundAnchor = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.LineAnchor.RoundAnchor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.LineAnchor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The connector point is a circle anchor.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RoundedRectangle">
+      <MemberSignature Language="C#" Value="RoundedRectangle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.LineAnchor RoundedRectangle = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.LineAnchor.RoundedRectangle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.LineAnchor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The connector point is a rounded rectangle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RoundedRectangleAnchor">
+      <MemberSignature Language="C#" Value="RoundedRectangleAnchor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.LineAnchor RoundedRectangleAnchor = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.LineAnchor.RoundedRectangleAnchor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Design.LineAnchor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The connector point is a rounded rectangle anchor.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

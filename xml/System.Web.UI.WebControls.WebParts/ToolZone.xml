@@ -1,0 +1,816 @@
+<Type Name="ToolZone" FullName="System.Web.UI.WebControls.WebParts.ToolZone">
+  <TypeSignature Language="C#" Value="public abstract class ToolZone : System.Web.UI.WebControls.WebParts.WebZone, System.Web.UI.IPostBackEventHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ToolZone extends System.Web.UI.WebControls.WebParts.WebZone implements class System.Web.UI.IPostBackEventHandler" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ToolZone" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.WebParts.WebZone</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.IPostBackEventHandler</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Serves as the base class for a set of helper zones that appear only in certain associated page display modes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the Web Parts control set, a zone is a region on a Web page that contains server controls, and provides modular layout with a consistent user interface (UI) for the contained controls.  
+  
+ There are two general types of zone controls that derive from the base <xref:System.Web.UI.WebControls.WebParts.WebZone> class: <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zones and <xref:System.Web.UI.WebControls.WebParts.ToolZone> zones. The <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zones contain server controls (which can be custom <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, or other server controls including ASP.NET controls and user controls). These controls form the primary UI of a Web page and are visible in all the possible display modes, unless they are hidden programmatically or by a user.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.ToolZone> zones are special helper zones that appear only when a page is in certain display modes associated with the zone, and these zones also contain special server controls that enable users to modify the layout, appearance, properties, and content of Web pages from within a browser. Developers can inherit from the base <xref:System.Web.UI.WebControls.WebParts.ToolZone> class, or any of the derived <xref:System.Web.UI.WebControls.WebParts.ToolZone> zones, to create custom zones.  
+  
+ The Web Parts control set contains three types of <xref:System.Web.UI.WebControls.WebParts.ToolZone> zones, described in the following table.  
+  
+|Tool zone type|Description|  
+|--------------------|-----------------|  
+|<xref:System.Web.UI.WebControls.WebParts.EditorZone>|Contains controls used to edit <xref:System.Web.UI.WebControls.WebParts.WebPart> and server control properties on a page.|  
+|<xref:System.Web.UI.WebControls.WebParts.CatalogZone>|Contains <xref:System.Web.UI.WebControls.WebParts.CatalogPart> controls, which in turn contain <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that users can add to a page.|  
+|<xref:System.Web.UI.WebControls.WebParts.ConnectionsZone>|Does not contain declarative markup elements; this zone is self-contained. At run time, it renders a special UI that enables users to manage connections between <xref:System.Web.UI.WebControls.WebParts.WebPart> controls.|  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.ToolZone> base class provides methods and properties that are useful to derived zones. It contains <xref:System.Web.UI.WebControls.WebParts.ToolZone.RenderHeader%2A> and <xref:System.Web.UI.WebControls.WebParts.ToolZone.RenderFooter%2A> methods, which override the base methods from the <xref:System.Web.UI.WebControls.WebParts.WebZone> class, and render buttons and other UI attributes for the header and footer of a zone. There are also several members for handling verbs, which are common UI actions that users can perform in the various zones. Members related to handling verbs include: <xref:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerb%2A>, <xref:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerbs%2A>, and <xref:System.Web.UI.WebControls.WebParts.ToolZone.HeaderCloseVerb%2A>.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.ToolZone.%23ctor%2A> contains two overloaded methods, which add <xref:System.Web.UI.WebControls.WebParts.WebPartDisplayMode> objects to the <xref:System.Web.UI.WebControls.WebParts.ToolZone.AssociatedDisplayModes%2A> collection. This collection of associated display modes determines which display modes are related to a particular type of zone (in other words, it determines in which display modes a zone is visible). The union of all associated display modes for all the <xref:System.Web.UI.WebControls.WebParts.ToolZone> zones on a given Web page determines which display modes (besides the normal browse mode) are possible or supported on the page. The collection of supported display modes for a page is contained in the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.SupportedDisplayModes%2A> property.  
+  
+> [!NOTE]
+>  At any given time, only one display mode can be active on a page. The currently active display mode is referenced in the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisplayMode%2A> property.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.ToolZone> class also contains a number of style properties that contain style attributes for the various UI elements of a zone. Some <xref:System.Web.UI.WebControls.WebParts.ToolZone> style properties include <xref:System.Web.UI.WebControls.WebParts.ToolZone.EditUIStyle%2A>, <xref:System.Web.UI.WebControls.WebParts.ToolZone.HeaderVerbStyle%2A>, <xref:System.Web.UI.WebControls.WebParts.ToolZone.InstructionTextStyle%2A>, and <xref:System.Web.UI.WebControls.WebParts.ToolZone.LabelStyle%2A>.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>The Web Parts control set contains the specialized zones listed above in the Remarks section, and you can often derive from one of them to add custom behavior to a zone. However, for more programmatic control over the rendering of a zone, you should inherit directly from the <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> class. For example, you might want to create a custom zone for a specialized task, such as a search zone.  
+  
+ To create a custom zone, you can override any of the virtual <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> members to fully customize the rendering, or you can override only a specific member. Optionally, you can also create a custom display mode for your zone by inheriting from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> class, but this is not required. In the constructor of your zone, you should add the various display modes in which you want your zone to be displayed to a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayModeCollection" /> object, so that your zone is visible when the page is in those display modes.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ToolZone (System.Collections.ICollection associatedDisplayModes);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Collections.ICollection associatedDisplayModes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.#ctor(System.Collections.ICollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="associatedDisplayModes" Type="System.Collections.ICollection" />
+      </Parameters>
+      <Docs>
+        <param name="associatedDisplayModes">An <see cref="T:System.Collections.ICollection" /> of <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> objects that determine when a zone can be displayed.</param>
+        <summary>Associates a collection of <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> objects with a particular <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> zone, so that the zone can be displayed in the appropriate page display modes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ToolZone.%23ctor%2A> constructor is used to associate a <xref:System.Web.UI.WebControls.WebParts.ToolZone> zone with one or more display modes. This enables the tool zone to be displayed in the associated display modes.  
+  
+> [!NOTE]
+>  In the implementation of <xref:System.Web.UI.WebControls.WebParts.ToolZone> zones provided by the Web Parts control set, each zone is associated with only one display mode. However, using this overload of the constructor, it is possible to associate a custom zone with multiple display modes.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="associatedDisplayModes" /> parameter is equal to <see langword="null" /> or 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ToolZone (System.Web.UI.WebControls.WebParts.WebPartDisplayMode associatedDisplayMode);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.WebPartDisplayMode associatedDisplayMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.#ctor(System.Web.UI.WebControls.WebParts.WebPartDisplayMode)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="associatedDisplayMode" Type="System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
+      </Parameters>
+      <Docs>
+        <param name="associatedDisplayMode">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> that determines when a zone can be displayed.</param>
+        <summary>Associates a single <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> object with a particular <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> zone, so that the zone can be displayed in the appropriate page display mode.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ToolZone.%23ctor%2A> constructor is used to associate a <xref:System.Web.UI.WebControls.WebParts.ToolZone> zone with a single display mode. This enables the tool zone to be displayed when a page enters that display mode. For example, a <xref:System.Web.UI.WebControls.WebParts.CatalogZone> control can be displayed only in <xref:System.Web.UI.WebControls.WebParts.WebPartManager.CatalogDisplayMode> mode.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="associatedDisplayMode" /> parameter is equal to <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AssociatedDisplayModes">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPartDisplayModeCollection AssociatedDisplayModes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartDisplayModeCollection AssociatedDisplayModes" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.AssociatedDisplayModes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPartDisplayModeCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> objects that are associated with a particular <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> zone.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayModeCollection" /> that contains <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> objects associated with a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each <xref:System.Web.UI.WebControls.WebParts.ToolZone> control has a special page display mode associated with it, as indicated in the following table.  
+  
+> [!NOTE]
+>  In the implementation of <xref:System.Web.UI.WebControls.WebParts.ToolZone> zones provided by the Web Parts control set, each zone is associated with only one display mode. However, using the <xref:System.Web.UI.WebControls.WebParts.ToolZone.%23ctor%28System.Collections.ICollection%29> you could associate a custom zone with multiple display modes.  
+  
+|Tool zone type|Associated display mode|  
+|--------------------|-----------------------------|  
+|<xref:System.Web.UI.WebControls.WebParts.EditorZone>|<xref:System.Web.UI.WebControls.WebParts.WebPartManager.EditDisplayMode>|  
+|<xref:System.Web.UI.WebControls.WebParts.CatalogZone>|<xref:System.Web.UI.WebControls.WebParts.WebPartManager.CatalogDisplayMode>|  
+|<xref:System.Web.UI.WebControls.WebParts.ConnectionsZone>|<xref:System.Web.UI.WebControls.WebParts.WebPartManager.ConnectDisplayMode>|  
+  
+ The collection of associated display modes for each zone on a page is added to the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.SupportedDisplayModes%2A> property, which determines the total set of possible display modes on a page.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="protected abstract void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides a base method declaration that derived <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> controls can override to handle the details of closing a specialized zone.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Display">
+      <MemberSignature Language="C#" Value="protected virtual bool Display { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Display" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.Display" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> control is currently displayed.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> is currently displayed; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.UI.WebControls.WebParts.ToolZone> controls, by default, are not displayed when a Web Parts page loads. They appear only when the page is switched programmatically or by a user into a page display mode that is associated with a particular <xref:System.Web.UI.WebControls.WebParts.ToolZone> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditUIStyle">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style EditUIStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style EditUIStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.EditUIStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the style attributes for the editable controls contained in a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.Style" /> that contains style attributes for editable controls within a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ToolZone.EditUIStyle%2A> property enables you to access style characteristics for the editable controls contained within a <xref:System.Web.UI.WebControls.WebParts.ToolZone> control. Editable controls are rendered by the derived <xref:System.Web.UI.WebControls.WebParts.ToolZone> zones, and include controls such as <xref:System.Web.UI.WebControls.TextBox>, <xref:System.Web.UI.WebControls.DropDownList>, and <xref:System.Web.UI.WebControls.CheckBox> controls that enable users to edit property values on <xref:System.Web.UI.WebControls.WebParts.WebPart> controls. The style characteristics contained in the <xref:System.Web.UI.WebControls.WebParts.ToolZone.EditUIStyle%2A> property apply to the editable controls, which together compose the editing user interface (UI) that appears to users.  
+  
+> [!NOTE]
+>  Even though the property is read-only, you can set the style attributes of the underlying <xref:System.Web.UI.WebControls.Style> object.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.UI.WebControls.WebParts.ToolZone.EditUIStyle%2A> property with an inherited <xref:System.Web.UI.WebControls.WebParts.ToolZone> control. Specifically, it demonstrates how to change the <xref:System.Web.UI.WebControls.WebParts.ToolZone.EditUIStyle%2A> property for UI elements in an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control.  
+  
+ The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ToolZone_EditUIStyle#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_EditUIStyle/CS/displaymodemenucs.ascx#5)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ToolZone_EditUIStyle#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_EditUIStyle/VB/displaymodemenuvb.ascx#5)]  -->  
+  
+ The second part of the code example is the Web page. The page contains an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control, which inherits from the <xref:System.Web.UI.WebControls.WebParts.ToolZone> class. The `Button1_Click` method in the page sets the <xref:System.Web.UI.WebControls.WebParts.ToolZone.EditUIStyle%2A> property. Note that after the page loads, you must switch the page into edit mode to see the effects of the <xref:System.Web.UI.WebControls.WebParts.ToolZone.EditUIStyle%2A> property on the <xref:System.Web.UI.WebControls.WebParts.EditorZone> control's UI. As you click the button that says **Change Edit UI Font**, notice that the font of the editable controls in the zone changes.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ToolZone_EditUIStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_EditUIStyle/CS/toolzone_edituistylecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ToolZone_EditUIStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_EditUIStyle/VB/toolzone_edituistylevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderCloseVerb">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.WebPartVerb HeaderCloseVerb { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb HeaderCloseVerb" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.HeaderCloseVerb" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPartVerb</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> object in the header of a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> control that is used to close the control.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> used to close a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Web.UI.WebControls.WebParts.ToolZone.HeaderCloseVerb%2A> property programmatically or in the declarative markup of a Web page to specify various attributes for the verb that is used to close a <xref:System.Web.UI.WebControls.WebParts.ToolZone> control.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.UI.WebControls.WebParts.ToolZone.HeaderCloseVerb%2A> property with an inherited <xref:System.Web.UI.WebControls.WebParts.ToolZone> control. The example shows how to enable and disable the close verb in the header of an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control.  
+  
+ The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ToolZone_HeaderCloseVerb#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_HeaderCloseVerb/CS/displaymodemenucs.ascx#5)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ToolZone_HeaderCloseVerb#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_HeaderCloseVerb/VB/displaymodemenuvb.ascx#5)]  -->  
+  
+ The second part of the code example is the Web page. The page contains an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control, which inherits from the <xref:System.Web.UI.WebControls.WebParts.ToolZone> class. The `Button1_Click` method in the page sets the <xref:System.Web.UI.WebControls.WebParts.ToolZone.HeaderCloseVerb%2A> property value.  
+  
+ Note that after the page loads, you must switch the page into edit mode to see the effects of the code that uses the <xref:System.Web.UI.WebControls.WebParts.ToolZone.HeaderCloseVerb%2A> property on the <xref:System.Web.UI.WebControls.WebParts.EditorZone> control. As you click the **Enable/Disable Close Verb** button, the verb in the header of the zone should be alternately enabled and disabled.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ToolZone_HeaderCloseVerb#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_HeaderCloseVerb/CS/toolzone_headercloseverbcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ToolZone_HeaderCloseVerb#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_HeaderCloseVerb/VB/toolzone_headercloseverbvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderVerbStyle">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style HeaderVerbStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style HeaderVerbStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.HeaderVerbStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the style attributes for all header verbs displayed in a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.Style" /> that contains style attributes for header verbs within a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ToolZone.HeaderVerbStyle%2A> property, though it is read-only, enables you to get or set the style attributes of the underlying <xref:System.Web.UI.WebControls.Style> object for all the header verbs in a <xref:System.Web.UI.WebControls.WebParts.ToolZone> control.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.UI.WebControls.WebParts.ToolZone.HeaderVerbStyle%2A> property with an inherited <xref:System.Web.UI.WebControls.WebParts.ToolZone> control. The example shows how to change the width of the border around an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control by using this property.  
+  
+ The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ToolZone_HeaderVerbStyle#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_HeaderVerbStyle/CS/displaymodemenucs.ascx#5)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ToolZone_HeaderVerbStyle#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_HeaderVerbStyle/VB/displaymodemenuvb.ascx#5)]  -->  
+  
+ The second part of the code example is the Web page. The page contains an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control, which inherits from the <xref:System.Web.UI.WebControls.WebParts.ToolZone> class. The `Button1_Click` method in the page sets the <xref:System.Web.UI.WebControls.WebParts.ToolZone.HeaderVerbStyle%2A> property value.  
+  
+ Note that after the page loads, you must switch the page into edit mode to see the effects of the code that uses the <xref:System.Web.UI.WebControls.WebParts.ToolZone.HeaderCloseVerb%2A> property on the <xref:System.Web.UI.WebControls.WebParts.EditorZone> control. As you click the **Toggle Header Verb Border** button, the border width around the zone should change.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ToolZone_HeaderVerbStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_HeaderVerbStyle/CS/toolzone_headerverbstylecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ToolZone_HeaderVerbStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_HeaderVerbStyle/VB/toolzone_headerverbstylevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstructionText">
+      <MemberSignature Language="C#" Value="public virtual string InstructionText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InstructionText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.InstructionText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text in a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> control that provides directions for end users.</summary>
+        <value>A string that contains the directions for end users. A default value appropriate to specific tool zones is provided by derived <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> classes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ToolZone.InstructionText%2A> property is used to hold a set of instructions that are provided for end users when a particular <xref:System.Web.UI.WebControls.WebParts.ToolZone> control is displayed.  
+  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.UI.WebControls.WebParts.ToolZone.InstructionText%2A> property with an inherited <xref:System.Web.UI.WebControls.WebParts.ToolZone> control. The example shows how to change the value of the instruction text that appears in an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control by using this property.  
+  
+ The first part of the code example is a user control that is referenced in the page, and enables you to switch the page to different display modes. For more information on display modes and enabling users to switch among them, see [Walkthrough: Changing Display Modes on a Web Parts Page](http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ToolZone_Overview#5](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_Overview/CS/displaymodemenucs.ascx#5)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ToolZone_Overview#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_Overview/VB/displaymodemenuvb.ascx#5)]  -->  
+  
+ The second part of the code example shows a partial class that contains the code to update the property programmatically in the `Button1_Click` method.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ [!code-csharp[WebParts_ToolZone_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_Overview/CS/Toolzone_overview.cs#2)]
+ [!code-vb[WebParts_ToolZone_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_Overview/VB/Toolzone_overview.vb#2)]  
+  
+ The third part of the code example shows a Web page that contains two inherited <xref:System.Web.UI.WebControls.WebParts.ToolZone> controls: a <xref:System.Web.UI.WebControls.WebParts.CatalogZone> control and an <xref:System.Web.UI.WebControls.WebParts.EditorZone> control. Each <xref:System.Web.UI.WebControls.WebParts.ToolZone> control sets some properties in the declarative markup of the page.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_ToolZone_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_ToolZone_Overview/CS/Toolzone_overview_cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_ToolZone_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_ToolZone_Overview/VB/Toolzone_overview_vb.aspx#1)]  -->  
+  
+ You can load the page in a browser and switch among the various page display modes to see how the different tool zones behave. Switch the page into edit mode, enter some text into the text box, and click **Update Edit Zone Text** to see the effect of programmatically updating the <xref:System.Web.UI.WebControls.WebParts.ToolZone.InstructionText%2A> property. The instruction text appears near the top of the zone.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Tool zones in the Web Parts control set that derive from the <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> class (see the zones listed in the <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> class overview) override the <see cref="P:System.Web.UI.WebControls.WebParts.ToolZone.InstructionText" /> property to provide default instructions for end users.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="InstructionTextStyle">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style InstructionTextStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style InstructionTextStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.InstructionTextStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the style attributes for the instruction text that appears at the top of a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.Style" /> that contains style attributes for the instruction text within a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LabelStyle">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style LabelStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style LabelStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.LabelStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the style attributes for the contents of the labels that appear alongside the editing controls within a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> control. The derived <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> controls, such as <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZone" /> and <see cref="T:System.Web.UI.WebControls.WebParts.EditorZone" />, apply the styles to the labels.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.Style" /> that contains style attributes for the labels within a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadViewState">
+      <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.LoadViewState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">The state to load.</param>
+        <summary>Loads view state.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The length of <paramref name="savedState" />, when converted to an object array, does not equal 7.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDisplayModeChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnDisplayModeChanged (object sender, System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDisplayModeChanged(object sender, class System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.OnDisplayModeChanged(System.Object,System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">An <see cref="T:System.Object" /> that raises the <see cref="M:System.Web.UI.WebControls.WebParts.ToolZone.OnDisplayModeChanged(System.Object,System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs)" /> method.</param>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs" /> that contains the event data.</param>
+        <summary>Provides a base method declaration that derived <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> controls can override to handle the details of changing page display modes for a specialized zone.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInit">
+      <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.OnInit(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Creates specialized event handlers used by the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control on a Web page.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSelectedWebPartChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnSelectedWebPartChanged (object sender, System.Web.UI.WebControls.WebParts.WebPartEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectedWebPartChanged(object sender, class System.Web.UI.WebControls.WebParts.WebPartEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.OnSelectedWebPartChanged(System.Object,System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="e" Type="System.Web.UI.WebControls.WebParts.WebPartEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="sender">An <see cref="T:System.Object" /> that raises the <see cref="M:System.Web.UI.WebControls.WebParts.ToolZone.OnSelectedWebPartChanged(System.Object,System.Web.UI.WebControls.WebParts.WebPartEventArgs)" /> method.</param>
+        <param name="e">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartEventArgs" /> that contains the event data.</param>
+        <summary>Provides a base method declaration that derived <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> controls can override to handle the event of changing which Web Parts control is selected within a specialized zone.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaisePostBackEvent">
+      <MemberSignature Language="C#" Value="protected virtual void RaisePostBackEvent (string eventArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostBackEvent(string eventArgument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.RaisePostBackEvent(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgument" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgument">A <see cref="T:System.String" /> that contains the argument for the event.</param>
+        <summary>Calls the <see cref="M:System.Web.UI.WebControls.WebParts.ToolZone.Close" /> method for a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> control when the control posts back to the server.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a user clicks a close verb in a <xref:System.Web.UI.WebControls.WebParts.ToolZone> control, when the page passes the value of the `eventArgument` parameter to the <xref:System.Web.UI.WebControls.WebParts.ToolZone.RaisePostBackEvent%2A> method, the control then calls the <xref:System.Web.UI.WebControls.WebParts.ToolZone.Close%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderFooter">
+      <MemberSignature Language="C#" Value="protected override void RenderFooter (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderFooter(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderFooter(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that renders verbs in a zone's footer area.</param>
+        <summary>Overrides the base method to render verbs in the footer of a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderHeader">
+      <MemberSignature Language="C#" Value="protected override void RenderHeader (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderHeader(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderHeader(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that renders the header section.</param>
+        <summary>Overrides the base method to provide specialized rendering for the header area required by <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> controls.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ToolZone.RenderHeader%2A> method renders all the details for the header of a <xref:System.Web.UI.WebControls.WebParts.ToolZone> control, including style attributes, the table that contains the header, the actual contents, and a close verb.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderVerb">
+      <MemberSignature Language="C#" Value="protected virtual void RenderVerb (System.Web.UI.HtmlTextWriter writer, System.Web.UI.WebControls.WebParts.WebPartVerb verb);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderVerb(class System.Web.UI.HtmlTextWriter writer, class System.Web.UI.WebControls.WebParts.WebPartVerb verb) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerb(System.Web.UI.HtmlTextWriter,System.Web.UI.WebControls.WebParts.WebPartVerb)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+        <Parameter Name="verb" Type="System.Web.UI.WebControls.WebParts.WebPartVerb" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that renders a single verb.</param>
+        <param name="verb">The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> to be rendered within a zone.</param>
+        <summary>Renders an individual verb with a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerb%2A> method renders the user interface for a specific <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> object in a zone. The method checks the value of the <xref:System.Web.UI.WebControls.WebParts.WebZone.VerbButtonType%2A> property and, based on that value, renders the verb as a button, a link, or a clickable image.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderVerbs">
+      <MemberSignature Language="C#" Value="protected virtual void RenderVerbs (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderVerbs(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerbs(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that renders the verbs in a zone.</param>
+        <summary>Provides a base method declaration that derived <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> controls can override to customize the rendering of the verbs within a specialized zone.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveViewState">
+      <MemberSignature Language="C#" Value="protected override object SaveViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.SaveViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves any view-state changes that have occurred after a page was posted back to the server.</summary>
+        <returns>Returns the zone control's current view state. If no view state is associated with the zone, this method returns null.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
+      <MemberSignature Language="C#" Value="void IPostBackEventHandler.RaisePostBackEvent (string eventArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(string eventArgument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.System#Web#UI#IPostBackEventHandler#RaisePostBackEvent(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgument" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgument">A <see cref="T:System.String" /> that contains the postback event data.</param>
+        <summary>Implements the <see cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" /> method.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackViewState">
+      <MemberSignature Language="C#" Value="protected override void TrackViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TrackViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.TrackViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Tracks changes to a zone control's view state.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public override bool Visible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.Visible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether a server control is rendered as a user interface (UI) element on the page.</summary>
+        <value>
+          <see langword="true" /> if the control is visible on the page; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ToolZone> class overrides the base <xref:System.Web.UI.Control.Visible%2A> property to consider both the value of the base property and the value of the <xref:System.Web.UI.WebControls.WebParts.ToolZone.Display%2A> property. If both property values are set to `true`, then the <xref:System.Web.UI.WebControls.WebParts.ToolZone.Visible%2A> property returns a value of `true`, and the control is visible on the page. If either property value is `false`, the <xref:System.Web.UI.WebControls.WebParts.ToolZone.Visible%2A> property returns a value of `false`, and the control is not visible.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Web.UI.WebControls.WebParts.ToolZone.Visible%2A> property can only be assigned at design time in a designer, such as the Microsoft Visual Studio designer. If you attempt to set the property programmatically, an exception is thrown.  
+  
+ This property is not bindable in visual designers, but is bindable at runtime. For more information, see <xref:System.ComponentModel.BindableAttribute>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The caller attempts to set the property at run time.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

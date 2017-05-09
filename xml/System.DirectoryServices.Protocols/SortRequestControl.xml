@@ -1,0 +1,124 @@
+<Type Name="SortRequestControl" FullName="System.DirectoryServices.Protocols.SortRequestControl">
+  <TypeSignature Language="C#" Value="public class SortRequestControl : System.DirectoryServices.Protocols.DirectoryControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SortRequestControl extends System.DirectoryServices.Protocols.DirectoryControl" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SortRequestControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.Protocols.DirectoryControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.SortRequestControl" /> class is used with <see cref="T:System.DirectoryServices.Protocols.SearchRequest" /> to instruct the server to sort the search results before returning them to the client application.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SortRequestControl (System.DirectoryServices.Protocols.SortKey[] sortKeys);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.Protocols.SortKey[] sortKeys) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.SortRequestControl.#ctor(System.DirectoryServices.Protocols.SortKey[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sortKeys" Type="System.DirectoryServices.Protocols.SortKey[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="sortKeys">An array of <see cref="T:System.DirectoryServices.Protocols.SortKey" /> objects used by the server to sort the search results before returning them to the client.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SortRequestControl.#ctor(System.DirectoryServices.Protocols.SortKey[])" /> constructor creates and initializes a new instance of the <see cref="T:System.DirectoryServices.Protocols.SortRequestControl" /> class using the specified sort keys.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SortRequestControl (string attributeName, bool reverseOrder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attributeName, bool reverseOrder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.SortRequestControl.#ctor(System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="attributeName" Type="System.String" />
+        <Parameter Name="reverseOrder" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="attributeName">The name of the attribute on which the query is based.</param>
+        <param name="reverseOrder">
+          <see langword="true" /> if results should be returned in reverse order or <see langword="false" /> otherwise.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SortRequestControl.#ctor(System.String,System.Boolean)" /> constructor creates a new instance of the <see cref="T:System.DirectoryServices.Protocols.SortRequestControl" /> class using the specified attribute name and sort order.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SortRequestControl (string attributeName, string matchingRule, bool reverseOrder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attributeName, string matchingRule, bool reverseOrder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.SortRequestControl.#ctor(System.String,System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="attributeName" Type="System.String" />
+        <Parameter Name="matchingRule" Type="System.String" />
+        <Parameter Name="reverseOrder" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="attributeName">The name of the attribute on which the query is based.</param>
+        <param name="matchingRule">Specifies the object identifier (OID) of the matching rule for the sort.</param>
+        <param name="reverseOrder">
+          <see langword="true" /> if the sort is ordered from lowest to highest or <see langword="false" /> if the sort is ordered from highest to lowest.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SortRequestControl.#ctor(System.String,System.String,System.Boolean)" /> constructor creates a new instance of the <see cref="T:System.DirectoryServices.Protocols.SortRequestControl" /> class using the specified attribute name, matching rule, and sort order.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public override byte[] GetValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] GetValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.SortRequestControl.GetValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.SortRequestControl.GetValue" /> method specifies the sort keys and matching rules for this control.</summary>
+        <returns>The sort keys and matching rules for this control.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortKeys">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.SortKey[] SortKeys { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.Protocols.SortKey[] SortKeys" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.SortRequestControl.SortKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.SortKey[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.SortRequestControl.SortKeys" /> property contains an array of <see cref="T:System.DirectoryServices.Protocols.SortKey" /> objects used by the server to sort the search results before returning them to the client.</summary>
+        <value>An array of <see cref="T:System.DirectoryServices.Protocols.SortKey" /> objects used by the server to sort the search results before returning them to the client.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,127 @@
+<Type Name="ISecurityEncodable" FullName="System.Security.ISecurityEncodable">
+  <TypeSignature Language="C#" Value="public interface ISecurityEncodable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISecurityEncodable" />
+  <TypeSignature Language="DocId" Value="T:System.Security.ISecurityEncodable" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the methods that convert permission object state to and from XML element representation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The XML representation of permissions is used to describe instances of permissions for code requests, declarative security permission sets, and security policy configuration.  
+  
+> [!NOTE]
+>  You must implement this interface for any new permission object.  
+  
+   
+  
+## Examples  
+ This example shows how to define a permission class for use with code access security. All of the necessary permission interfaces are implemented.  
+  
+ [!code-cpp[Permission#1](~/samples/snippets/cpp/VS_Snippets_CLR/Permission/cpp/Permission.cpp#1)]
+ [!code-csharp[Permission#1](~/samples/snippets/csharp/VS_Snippets_CLR/Permission/CS/Permission.cs#1)]
+ [!code-vb[Permission#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Permission/vb/permission.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FromXml">
+      <MemberSignature Language="C#" Value="public void FromXml (System.Security.SecurityElement e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FromXml(class System.Security.SecurityElement e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.ISecurityEncodable.FromXml(System.Security.SecurityElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Security.SecurityElement" />
+      </Parameters>
+      <Docs>
+        <param name="e">The XML encoding to use to reconstruct the security object.</param>
+        <summary>Reconstructs a security object with a specified state from an XML encoding.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Custom code that extends security objects needs to implement the <xref:System.Security.ISecurityEncodable.ToXml%2A> and <xref:System.Security.ISecurityEncodable.FromXml%2A> methods to make the objects security-encodable.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates implementing the <xref:System.Security.ISecurityEncodable.FromXml%2A> method. This code example is part of a larger example provided for the <xref:System.Security.ISecurityEncodable> class.  
+  
+ [!code-cpp[Permission#6](~/samples/snippets/cpp/VS_Snippets_CLR/Permission/cpp/Permission.cpp#6)]
+ [!code-csharp[Permission#6](~/samples/snippets/csharp/VS_Snippets_CLR/Permission/CS/Permission.cs#6)]
+ [!code-vb[Permission#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/Permission/vb/permission.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToXml">
+      <MemberSignature Language="C#" Value="public System.Security.SecurityElement ToXml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.SecurityElement ToXml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Security.ISecurityEncodable.ToXml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecurityElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an XML encoding of the security object and its current state.</summary>
+        <returns>An XML encoding of the security object, including any state information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Custom code that extends security objects needs to implement the <xref:System.Security.ISecurityEncodable.ToXml%2A> and <xref:System.Security.ISecurityEncodable.FromXml%2A> methods to make the objects security-encodable.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates implementing the <xref:System.Security.ISecurityEncodable.FromXml%2A> method. This code example is part of a larger example provided for the <xref:System.Security.ISecurityEncodable> class.  
+  
+ [!code-cpp[Permission#7](~/samples/snippets/cpp/VS_Snippets_CLR/Permission/cpp/Permission.cpp#7)]
+ [!code-csharp[Permission#7](~/samples/snippets/csharp/VS_Snippets_CLR/Permission/CS/Permission.cs#7)]
+ [!code-vb[Permission#7](~/samples/snippets/visualbasic/VS_Snippets_CLR/Permission/vb/permission.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

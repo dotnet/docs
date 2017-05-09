@@ -1,0 +1,193 @@
+<Type Name="BaseVsaSite" FullName="Microsoft.JScript.Vsa.BaseVsaSite">
+  <TypeSignature Language="C#" Value="public class BaseVsaSite : Microsoft.JScript.Vsa.IJSVsaSite" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BaseVsaSite extends System.Object implements class Microsoft.JScript.Vsa.IJSVsaSite" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.BaseVsaSite" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.JScript.Vsa.IJSVsaSite</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enables communication between the host and the script engine.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BaseVsaSite ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.BaseVsaSite.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Assembly">
+      <MemberSignature Language="C#" Value="public virtual byte[] Assembly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Assembly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Vsa.BaseVsaSite.Assembly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An assembly for this site.</summary>
+        <value>An assembly for this site.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DebugInfo">
+      <MemberSignature Language="C#" Value="public virtual byte[] DebugInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] DebugInfo" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Vsa.BaseVsaSite.DebugInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Debug information for this site.</summary>
+        <value>Debug information for this site.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCompiledState">
+      <MemberSignature Language="C#" Value="public virtual void GetCompiledState (out byte[] pe, out byte[] debugInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetCompiledState(unsigned int8[] pe, unsigned int8[] debugInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.BaseVsaSite.GetCompiledState(System.Byte[]@,System.Byte[]@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pe" Type="System.Byte[]&amp;" RefType="out" />
+        <Parameter Name="debugInfo" Type="System.Byte[]&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pe">An assembly to be set.</param>
+        <param name="debugInfo">Debug info object to be set.</param>
+        <summary>Sets an assembly and debug info for this site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEventSourceInstance">
+      <MemberSignature Language="C#" Value="public virtual object GetEventSourceInstance (string itemName, string eventSourceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetEventSourceInstance(string itemName, string eventSourceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.BaseVsaSite.GetEventSourceInstance(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemName" Type="System.String" />
+        <Parameter Name="eventSourceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="itemName">The specified item name.</param>
+        <param name="eventSourceName">The specified event source name.</param>
+        <summary>Gets a reference to an event source previously added to a script engine using the <see cref="M:Microsoft.Vsa.IVsaCodeItem.AddEventSource(System.String,System.String)" /> method.</summary>
+        <returns>Returns the event source to the engine.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGlobalInstance">
+      <MemberSignature Language="C#" Value="public virtual object GetGlobalInstance (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetGlobalInstance(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.BaseVsaSite.GetGlobalInstance(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">Gets a reference to a global item, such as the host-provided application object.</param>
+        <summary>Gets a reference to a global item, such as the host-provided application object.</summary>
+        <returns>Returns a reference to the global object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Notify">
+      <MemberSignature Language="C#" Value="public virtual void Notify (string notify, object optional);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Notify(string notify, object optional) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.BaseVsaSite.Notify(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="notify" Type="System.String" />
+        <Parameter Name="optional" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="notify">Notifies the host about events generated by the script engine.</param>
+        <param name="optional">Notifies the host about events generated by the engine.</param>
+        <summary>Notifies the host about events generated by the script engine.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCompilerError">
+      <MemberSignature Language="C#" Value="public virtual bool OnCompilerError (Microsoft.JScript.Vsa.IJSVsaError error);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OnCompilerError(class Microsoft.JScript.Vsa.IJSVsaError error) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Vsa.BaseVsaSite.OnCompilerError(Microsoft.JScript.Vsa.IJSVsaError)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="error" Type="Microsoft.JScript.Vsa.IJSVsaError" />
+      </Parameters>
+      <Docs>
+        <param name="error">The <see cref="T:Microsoft.Vsa.IVsaError" /> object representing the offending error.</param>
+        <summary>Notifies the host about how to respond to compiler errors encountered by the script engine.</summary>
+        <returns>Returns TRUE if the compiler is directed to continue reporting further errors to the <see cref="T:Microsoft.Vsa.IVsaSite" /> object. Returns FALSE if the compiler is directed to stop reporting further errors to the <see langword="IVsaSite" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

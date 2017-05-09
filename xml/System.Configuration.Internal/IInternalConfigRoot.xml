@@ -1,0 +1,209 @@
+<Type Name="IInternalConfigRoot" FullName="System.Configuration.Internal.IInternalConfigRoot">
+  <TypeSignature Language="C#" Value="public interface IInternalConfigRoot" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInternalConfigRoot" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.Internal.IInternalConfigRoot" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines interfaces used by internal .NET structures to support a configuration root object.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ConfigChanged">
+      <MemberSignature Language="C#" Value="public event System.Configuration.Internal.InternalConfigEventHandler ConfigChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Configuration.Internal.InternalConfigEventHandler ConfigChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Configuration.Internal.IInternalConfigRoot.ConfigChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Internal.InternalConfigEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the method that handles the <see cref="E:System.Configuration.Internal.IInternalConfigRoot.ConfigChanged" /> event of an <see cref="T:System.Configuration.Internal.IInternalConfigRoot" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigRemoved">
+      <MemberSignature Language="C#" Value="public event System.Configuration.Internal.InternalConfigEventHandler ConfigRemoved;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Configuration.Internal.InternalConfigEventHandler ConfigRemoved" />
+      <MemberSignature Language="DocId" Value="E:System.Configuration.Internal.IInternalConfigRoot.ConfigRemoved" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Internal.InternalConfigEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the method that handles the <see cref="E:System.Configuration.Internal.IInternalConfigRoot.ConfigRemoved" /> event of a <see cref="T:System.Configuration.Internal.IInternalConfigRoot" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetConfigRecord">
+      <MemberSignature Language="C#" Value="public System.Configuration.Internal.IInternalConfigRecord GetConfigRecord (string configPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Configuration.Internal.IInternalConfigRecord GetConfigRecord(string configPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigRoot.GetConfigRecord(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Internal.IInternalConfigRecord</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="configPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="configPath">A string representing the path to a configuration file.</param>
+        <summary>Returns an <see cref="T:System.Configuration.Internal.IInternalConfigRecord" /> object representing a configuration specified by a configuration path.</summary>
+        <returns>An <see cref="T:System.Configuration.Internal.IInternalConfigRecord" /> object representing a configuration specified by <paramref name="configPath" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSection">
+      <MemberSignature Language="C#" Value="public object GetSection (string section, string configPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetSection(string section, string configPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigRoot.GetSection(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="section" Type="System.String" />
+        <Parameter Name="configPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="section">A string representing a section of a configuration file.</param>
+        <param name="configPath">A string representing the path to a configuration file.</param>
+        <summary>Returns an <see cref="T:System.Object" /> representing the data in a section of a configuration file.</summary>
+        <returns>An <see cref="T:System.Object" /> representing the data in a section of a configuration file.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUniqueConfigPath">
+      <MemberSignature Language="C#" Value="public string GetUniqueConfigPath (string configPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetUniqueConfigPath(string configPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigRoot.GetUniqueConfigPath(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="configPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="configPath">The path of configuration file.</param>
+        <summary>Returns a value representing the file path of the nearest configuration ancestor that has configuration data.</summary>
+        <returns>Returns a string representing the file path of the nearest configuration ancestor that has configuration data.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUniqueConfigRecord">
+      <MemberSignature Language="C#" Value="public System.Configuration.Internal.IInternalConfigRecord GetUniqueConfigRecord (string configPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Configuration.Internal.IInternalConfigRecord GetUniqueConfigRecord(string configPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigRoot.GetUniqueConfigRecord(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.Internal.IInternalConfigRecord</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="configPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="configPath">The path of the configuration file.</param>
+        <summary>Returns an <see cref="T:System.Configuration.Internal.IInternalConfigRecord" /> object representing a unique configuration record for given configuration path.</summary>
+        <returns>An <see cref="T:System.Configuration.Internal.IInternalConfigRecord" /> object representing a unique configuration record for a given configuration path.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Init">
+      <MemberSignature Language="C#" Value="public void Init (System.Configuration.Internal.IInternalConfigHost host, bool isDesignTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Init(class System.Configuration.Internal.IInternalConfigHost host, bool isDesignTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigRoot.Init(System.Configuration.Internal.IInternalConfigHost,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="host" Type="System.Configuration.Internal.IInternalConfigHost" />
+        <Parameter Name="isDesignTime" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="host">An <see cref="T:System.Configuration.Internal.IInternalConfigHost" /> object.</param>
+        <param name="isDesignTime">
+          <see langword="true" /> if design time; <see langword="false" /> if run time.</param>
+        <summary>Initializes a configuration object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDesignTime">
+      <MemberSignature Language="C#" Value="public bool IsDesignTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDesignTime" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Internal.IInternalConfigRoot.IsDesignTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a value indicating whether the configuration is a design-time configuration.</summary>
+        <value>
+          <see langword="true" /> if the configuration is a design-time configuration; <see langword="false" /> if the configuration is not a design-time configuration.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveConfig">
+      <MemberSignature Language="C#" Value="public void RemoveConfig (string configPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveConfig(string configPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigRoot.RemoveConfig(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="configPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="configPath">The path of the configuration file.</param>
+        <summary>Finds and removes a configuration record and all its children for a given configuration path.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,457 @@
+<Type Name="PrintQueueStatus" FullName="System.Printing.PrintQueueStatus">
+  <TypeSignature Language="C#" Value="public enum PrintQueueStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintQueueStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.PrintQueueStatus" />
+  <AssemblyInfo>
+    <AssemblyName>System.Printing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the status of a print queue or its printer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Like the <xref:System.Printing.PrintQueue> class, this enumeration handles the print queue and the physical printer (or device) as one unit. Some values represent the status of the physical device and others represent the status of the print queue program that is running on the print server.  
+  
+ Use this enumeration to provide values for the <xref:System.Printing.PrintQueue.QueueStatus%2A> property of the <xref:System.Printing.PrintQueue> class.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this enumeration as part of a survey all printers for possible error status.  
+  
+ [!code-cpp[PrinterStatusSurvey#SpotTroubleUsingQueueAttributes](~/samples/snippets/cpp/VS_Snippets_Wpf/PrinterStatusSurvey/CPP/Program.cpp#spottroubleusingqueueattributes)]
+ [!code-csharp[PrinterStatusSurvey#SpotTroubleUsingQueueAttributes](~/samples/snippets/csharp/VS_Snippets_Wpf/PrinterStatusSurvey/CSharp/Program.cs#spottroubleusingqueueattributes)]
+ [!code-vb[PrinterStatusSurvey#SpotTroubleUsingQueueAttributes](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrinterStatusSurvey/visualbasic/program.vb#spottroubleusingqueueattributes)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Busy">
+      <MemberSignature Language="C#" Value="Busy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus Busy = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.Busy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer is busy.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DoorOpen">
+      <MemberSignature Language="C#" Value="DoorOpen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus DoorOpen = int32(4194304)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.DoorOpen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A door on the printer is open.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="Error" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus Error = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.Error" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer cannot print due to an error condition.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Initializing">
+      <MemberSignature Language="C#" Value="Initializing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus Initializing = int32(32768)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.Initializing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer is initializing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IOActive">
+      <MemberSignature Language="C#" Value="IOActive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus IOActive = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.IOActive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer is exchanging data with the print server.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ManualFeed">
+      <MemberSignature Language="C#" Value="ManualFeed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus ManualFeed = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.ManualFeed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer is waiting for a user to place print media in the manual feed bin.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Status is not specified.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotAvailable">
+      <MemberSignature Language="C#" Value="NotAvailable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus NotAvailable = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.NotAvailable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Status information is unavailable.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoToner">
+      <MemberSignature Language="C#" Value="NoToner" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus NoToner = int32(262144)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.NoToner" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer is out of toner.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Offline">
+      <MemberSignature Language="C#" Value="Offline" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus Offline = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.Offline" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer is offline.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OutOfMemory">
+      <MemberSignature Language="C#" Value="OutOfMemory" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus OutOfMemory = int32(2097152)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.OutOfMemory" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer has no available memory.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputBinFull">
+      <MemberSignature Language="C#" Value="OutputBinFull" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus OutputBinFull = int32(2048)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.OutputBinFull" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer's output bin is full.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PagePunt">
+      <MemberSignature Language="C#" Value="PagePunt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus PagePunt = int32(524288)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.PagePunt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer is unable to print the current page.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PaperJam">
+      <MemberSignature Language="C#" Value="PaperJam" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus PaperJam = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.PaperJam" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The paper in the printer is jammed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PaperOut">
+      <MemberSignature Language="C#" Value="PaperOut" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus PaperOut = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.PaperOut" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer does not have, or is out of, the type of paper needed for the current print job.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PaperProblem">
+      <MemberSignature Language="C#" Value="PaperProblem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus PaperProblem = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.PaperProblem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The paper in the printer is causing an unspecified error condition.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Paused">
+      <MemberSignature Language="C#" Value="Paused" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus Paused = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.Paused" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print queue is paused.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PendingDeletion">
+      <MemberSignature Language="C#" Value="PendingDeletion" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus PendingDeletion = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.PendingDeletion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print queue is deleting a print job.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PowerSave">
+      <MemberSignature Language="C#" Value="PowerSave" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus PowerSave = int32(16777216)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.PowerSave" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer is in power save mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Printing">
+      <MemberSignature Language="C#" Value="Printing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus Printing = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.Printing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The device is printing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Processing">
+      <MemberSignature Language="C#" Value="Processing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus Processing = int32(16384)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.Processing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The device is doing some kind of work, which need not be printing if the device is a combination printer, fax machine, and scanner.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerUnknown">
+      <MemberSignature Language="C#" Value="ServerUnknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus ServerUnknown = int32(8388608)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.ServerUnknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer is in an error state.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TonerLow">
+      <MemberSignature Language="C#" Value="TonerLow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus TonerLow = int32(131072)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.TonerLow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only a small amount of toner remains in the printer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UserIntervention">
+      <MemberSignature Language="C#" Value="UserIntervention" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus UserIntervention = int32(1048576)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.UserIntervention" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer requires user action to correct an error condition.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Waiting">
+      <MemberSignature Language="C#" Value="Waiting" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus Waiting = int32(8192)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.Waiting" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer is waiting for a print job.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WarmingUp">
+      <MemberSignature Language="C#" Value="WarmingUp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintQueueStatus WarmingUp = int32(65536)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintQueueStatus.WarmingUp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer is warming up.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,53 @@
+<Type Name="CommandMenuMode" FullName="System.Activities.Presentation.View.CommandMenuMode">
+  <TypeSignature Language="C#" Value="public sealed class CommandMenuMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CommandMenuMode extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.CommandMenuMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies the full command menu for the context menu that appears when you right-click the canvas.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FullCommandMenu">
+      <MemberSignature Language="C#" Value="public static readonly System.Activities.Presentation.View.CommandMenuMode FullCommandMenu;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Activities.Presentation.View.CommandMenuMode FullCommandMenu" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.CommandMenuMode.FullCommandMenu" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.View.CommandMenuMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the full-command menu mode.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoCommandMenu">
+      <MemberSignature Language="C#" Value="public static readonly System.Activities.Presentation.View.CommandMenuMode NoCommandMenu;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Activities.Presentation.View.CommandMenuMode NoCommandMenu" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.CommandMenuMode.NoCommandMenu" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.View.CommandMenuMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the no-command menu mode.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

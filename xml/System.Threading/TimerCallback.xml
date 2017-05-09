@@ -1,0 +1,58 @@
+<Type Name="TimerCallback" FullName="System.Threading.TimerCallback">
+  <TypeSignature Language="C#" Value="public delegate void TimerCallback(object state);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TimerCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Threading.TimerCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Timer</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="state" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="state">An object containing application-specific information relevant to the method invoked by this delegate, or <see langword="null" />.</param>
+    <summary>Represents the method that handles calls from a <see cref="T:System.Threading.Timer" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use a `TimerCallback` delegate to specify the method that is called by a <xref:System.Threading.Timer>. This method does not execute in the thread that created the timer; it executes in a separate thread pool thread that is provided by the system. The `TimerCallback` delegate invokes the method once after the start time elapses, and continues to invoke it once per timer interval until the <xref:System.Threading.Timer.Dispose%2A> method is called, or until the <xref:System.Threading.Timer.Change%2A?displayProperty=fullName> method is called with the interval value <xref:System.Threading.Timeout.Infinite>.  
+  
+> [!NOTE]
+>  Callbacks can occur after the <xref:System.Threading.Timer.Dispose> method overload has been called, because the timer queues callbacks for execution by thread pool threads. You can use the <xref:System.Threading.Timer.Dispose%28System.Threading.WaitHandle%29> method overload to wait until all callbacks have completed.  
+  
+ The timer delegate is specified when the timer is constructed, and cannot be changed. The start time for a `Timer` is passed in the `dueTime` parameter of the `Timer` constructors, and the period is passed in the `period` parameter. For an example that demonstrates creating and using a `TimerCallback` delegate, see <xref:System.Threading.Timer?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example shows how to create the delegate used with the `Timer` class.  
+  
+ [!code-cpp[System.Threading.Timer#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.Timer/CPP/source.cpp#1)]
+ [!code-csharp[System.Threading.Timer#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Timer/CS/source.cs#1)]
+ [!code-vb[System.Threading.Timer#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Timer/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

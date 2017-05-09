@@ -1,0 +1,85 @@
+<Type Name="ReaderOptions" FullName="System.Xml.Linq.ReaderOptions">
+  <TypeSignature Language="C#" Value="public enum ReaderOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ReaderOptions extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Xml.Linq.ReaderOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.XDocument</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.Linq</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies whether to omit duplicate namespaces when loading an <see cref="T:System.Xml.Linq.XDocument" /> with an <see cref="T:System.Xml.XmlReader" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Linq.ReaderOptions None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.Linq.ReaderOptions.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Linq.ReaderOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No reader options specified.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OmitDuplicateNamespaces">
+      <MemberSignature Language="C#" Value="OmitDuplicateNamespaces" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Linq.ReaderOptions OmitDuplicateNamespaces = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Xml.Linq.ReaderOptions.OmitDuplicateNamespaces" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Linq.ReaderOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Omit duplicate namespaces when loading the <see cref="T:System.Xml.Linq.XDocument" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

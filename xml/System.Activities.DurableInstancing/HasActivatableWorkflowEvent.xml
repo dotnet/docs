@@ -1,0 +1,65 @@
+<Type Name="HasActivatableWorkflowEvent" FullName="System.Activities.DurableInstancing.HasActivatableWorkflowEvent">
+  <TypeSignature Language="C#" Value="public sealed class HasActivatableWorkflowEvent : System.Runtime.DurableInstancing.InstancePersistenceEvent&lt;System.Activities.DurableInstancing.HasActivatableWorkflowEvent&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HasActivatableWorkflowEvent extends System.Runtime.DurableInstancing.InstancePersistenceEvent`1&lt;class System.Activities.DurableInstancing.HasActivatableWorkflowEvent&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.DurableInstancing.HasActivatableWorkflowEvent" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Runtime.DurableInstancing.InstancePersistenceEvent&lt;System.Activities.DurableInstancing.HasActivatableWorkflowEvent&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Activities.DurableInstancing.HasActivatableWorkflowEvent</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an event that an instance store raises to notify generic hosts about the existence of activatable instances in the persistence database.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance is *activatable*, if it is not in the suspended state or the completed state and satisfies the following conditions:  
+  
+-   The instance is *runnable*. An instance in the persistence database is considered as runnable if it satisfies the following conditions:  
+  
+    -   The instance is unlocked and has a pending timer that has expired.  
+  
+    -   The instance is unlocked and its status is **Executing**.  
+  
+    -   The instance has an invalid lock on it.  
+  
+-   There is no workflow host capable of loading the instance is running on the computer.  
+  
+ An instance store should periodically search for activatable workflow instances that belong to a workflow host that uses the store. It should raise the <xref:System.Activities.DurableInstancing.HasActivatableWorkflowEvent> when it finds an activatable instance in the persistence store. If the instance store does not find an activatable instance in the persistence store, it should continue to monitor the persistence store for any activatable instances.  
+  
+ After raising the HasActivatableWorkflowEvent, the instance store should stop monitoring the persistence store for activatable instances until it receives and executes the <xref:System.Activities.DurableInstancing.QueryActivatableWorkflowsCommand>. The monitoring continues only if the command execution does not return any activatable workflow instances.  
+  
+ When a generic host receives this event, it executes the <xref:System.Activities.DurableInstancing.QueryActivatableWorkflowsCommand> against the instance store to obtain activation parameters required to create a workflow host. The generic host uses these activation parameters to create a workflow host, which in turn loads and runs the service instance. The activation parameters for the WAS activation type are: Site Name, Application Path (relative to the site), and Service Path (relative to the application). An instance store could return multiple sets of these three activation parameters.  
+  
+ A generic host is a host that has an XName parameter named **ActivationType**, which should be set to a value supported by the instance store. Currently, the SQL Workflow Instance Store supports generic hosts with ActivationType parameter set to value: **WAS**. If the ActivationType is not set at all, the SQL Workflow Instance Store treats the host as a generic host.  
+  
+> [!NOTE]
+>  The Workflow Management Service that ships with the code named “Dublin” (Application Server Extensions for .NET 4.0) is a generic host that has the activation type set to **WAS**.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HasActivatableWorkflowEvent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.HasActivatableWorkflowEvent.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.DurableInstancing.HasActivatableWorkflowEvent" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

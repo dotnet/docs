@@ -1,0 +1,82 @@
+<Type Name="NodeEngineShutdownReason" FullName="Microsoft.Build.Execution.NodeEngineShutdownReason">
+  <TypeSignature Language="C#" Value="public enum NodeEngineShutdownReason" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NodeEngineShutdownReason extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.NodeEngineShutdownReason" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Reasons for a node to shutdown.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BuildComplete">
+      <MemberSignature Language="C#" Value="BuildComplete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Execution.NodeEngineShutdownReason BuildComplete = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Execution.NodeEngineShutdownReason.BuildComplete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Execution.NodeEngineShutdownReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The BuildManager sent a command instructing the node to terminate.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildCompleteReuse">
+      <MemberSignature Language="C#" Value="BuildCompleteReuse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Execution.NodeEngineShutdownReason BuildCompleteReuse = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Execution.NodeEngineShutdownReason.BuildCompleteReuse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Execution.NodeEngineShutdownReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The BuildManager sent a command instructing the node to terminate, but to restart for reuse.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionFailed">
+      <MemberSignature Language="C#" Value="ConnectionFailed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Execution.NodeEngineShutdownReason ConnectionFailed = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Execution.NodeEngineShutdownReason.ConnectionFailed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Execution.NodeEngineShutdownReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The communication link failed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="Error" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Execution.NodeEngineShutdownReason Error = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.Execution.NodeEngineShutdownReason.Error" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Execution.NodeEngineShutdownReason</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The NodeEngine caught an exception which requires the Node to shut down.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

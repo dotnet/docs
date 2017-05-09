@@ -1,0 +1,82 @@
+<Type Name="SelectiveScrollingOrientation" FullName="System.Windows.Controls.SelectiveScrollingOrientation">
+  <TypeSignature Language="C#" Value="public enum SelectiveScrollingOrientation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SelectiveScrollingOrientation extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.SelectiveScrollingOrientation" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the direction that <see cref="T:System.Windows.Controls.Primitives.SelectiveScrollingGrid" /> panels can scroll.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Both">
+      <MemberSignature Language="C#" Value="Both" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.SelectiveScrollingOrientation Both = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SelectiveScrollingOrientation.Both" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.SelectiveScrollingOrientation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The panel scrolls in both the horizontal and vertical direction.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Horizontal">
+      <MemberSignature Language="C#" Value="Horizontal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.SelectiveScrollingOrientation Horizontal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SelectiveScrollingOrientation.Horizontal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.SelectiveScrollingOrientation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The panel scrolls in the horizontal direction only.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.SelectiveScrollingOrientation None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SelectiveScrollingOrientation.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.SelectiveScrollingOrientation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The panel does not scroll.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Vertical">
+      <MemberSignature Language="C#" Value="Vertical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.SelectiveScrollingOrientation Vertical = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SelectiveScrollingOrientation.Vertical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.SelectiveScrollingOrientation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The panel scrolls in the vertical direction only.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

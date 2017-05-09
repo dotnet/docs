@@ -1,0 +1,461 @@
+<Type Name="InvalidOperationException" FullName="System.InvalidOperationException">
+  <TypeSignature Language="C#" Value="public class InvalidOperationException : SystemException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit InvalidOperationException extends System.SystemException" />
+  <TypeSignature Language="DocId" Value="T:System.InvalidOperationException" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.0.20.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Exception</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-4.5">System.SystemException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The exception that is thrown when a method call is invalid for the object's current state.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.InvalidOperationException> is used in cases when the failure to invoke a method is caused by reasons other than invalid arguments. Typically, it is thrown when the state of an object cannot support the method call. For example, an <xref:System.InvalidOperationException> exception is thrown by methods such as:  
+  
+-   <xref:System.Collections.IEnumerator.MoveNext%2A?displayProperty=fullName> if objects of a collection are modified after the enumerator is created. For more information, see [Changing a collection while iterating it](#Iterating).  
+  
+-   <xref:System.Resources.ResourceSet.GetString%2A?displayProperty=fullName> if the resource set is closed before the method call is made.  
+  
+-   <xref:System.Xml.Linq.XContainer.Add%2A?displayProperty=fullName>, if the object or objects to be added would result in an incorrectly structured XML document.  
+  
+-   A method that attempts to manipulate the UI from a thread that is not the main or UI thread.  
+  
+> [!IMPORTANT]
+>  Because the <xref:System.InvalidOperationException> exception can be thrown in a wide variety of circumstances, it is important to read the exception message returned by the <xref:System.Exception.Message%2A> property.  
+  
+ In this section:  
+  
+ [Some common causes of InvalidOperationException exceptions](#Causes)   
+ [Updating a UI thread from a non-UI thread](#UI)  
+ [Changing a collection while iterating it](#Iterating)  
+ [Sorting an array or collection whose objects cannot be compared](#Sorting)  
+ [Casting a Nullable&lt;T&gt; that is null to its underlying type](#Nullable)   
+ [Calling a System.Linq.Enumerable method on an empty collection](#Empty)  
+ [Calling Enumerable.Single or Enumerable.SingleOrDefault on a sequence without one element](#Single)  
+ [Dynamic cross-application domain field access](#Emit)  
+[Throwing an InvalidOperationException exception](#Throwing)  
+[Miscellaneous information](#Misc)  
+  
+<a name="Causes"></a>   
+## Some common causes of InvalidOperationException exceptions  
+ The following sections show how some common cases in which in <xref:System.InvalidOperationException> exception is thrown in an app. How you handle the issue depends on the specific situation. Most commonly, however, the exception results from developer error, and the <xref:System.InvalidOperationException> exception can be anticipated and avoided.  
+  
+<a name="UI"></a>   
+### Updating a UI thread from a non-UI thread  
+ Often, worker threads are used to perform some background work that involves gathering data to be displayed in an application's user interface. However. most GUI (graphical user interface) application frameworks for the .NET Framework, such as Windows Forms and Windows Presentation Foundation (WPF),  let you access GUI objects only from the thread that creates and manages the UI (the Main or UI thread). An <xref:System.InvalidOperationException> is thrown when you try to access a UI element from a thread other than the UI thread.  The text of the exception message is shown in the following table.  
+  
+|Application Type|Message|  
+|----------------------|-------------|  
+|WPF app|**The calling thread cannot access this object because a different thread owns it.**|  
+|UWP app|**The application called an interface that was marshalled for a different thread.**|  
+|Windows Forms app|**Cross-thread operation not valid: Control 'TextBox1' accessed from a thread other than the thread it was created on.**|  
+  
+ UI frameworks for the .NET Framework implement a *dispatcher* pattern that includes a method to check whether a call to a member of a UI element is being executed on the UI thread, and other methods to schedule the call on the UI thread:  
+  
+-   In WPF apps, call the <xref:System.Windows.Threading.Dispatcher.CheckAccess%2A?displayProperty=fullName> method to determine if a method is running on a non-UI thread. It returns `true` if the method is running on the UI thread and `false` otherwise. Call one of the overloads of the <xref:System.Windows.Threading.Dispatcher.Invoke%2A?displayProperty=fullName> method to schedule the call on the UI thread.  
+  
+-   In UWP apps, call the [CoreDispatcher.HasThreadAccess](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.core.coredispatcher.hasthreadaccess.aspx) method to determine if a method is running on a non-UI thread. Call the  [CoreDispatcher.RunAsync](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.core.coredispatcher.runasync.aspx) method to execute a delegate that updates the UI thread. Use the  
+  
+-   In Windows Forms apps, use the <xref:System.Windows.Forms.Control.InvokeRequired%2A?displayProperty=fullName> property to determine if a method is running on a non-UI thread. Call one of the overloads of the <xref:System.Windows.Forms.Control.Invoke%2A?displayProperty=fullName> method to execute a delegate that updates the UI thread.  
+  
+ The following examples illustrate the <xref:System.InvalidOperationException> exception that is thrown when you attempt to update a UI element from a thread other than the thread that created it.  Each example requires that you create two controls:  
+  
+-   A text box control named `textBox1`.  In a Windows Forms app, you should set its <xref:System.Windows.Forms.TextBox.Multiline%2A> property to `true`.  
+  
+-   A button  control named `threadExampleBtn`. The example provides a handler, `ThreadsExampleBtn_Click`, for the button's `Click` event.  
+  
+ In each case, the `threadExampleBtn_Click` event handler calls the `DoSomeWork` method twice. The first call runs synchronously and succeeds. But the second call, because it runs asynchronously on a thread pool thread, attempts to update the UI from a non-UI thread. This results in a <xref:System.InvalidOperationException> exception.  
+  
+ WPF and UWP apps  
+ [!code-csharp[System.InvalidOperationException.Threading.WPF1#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Invalidoperationexception.threading.wpf1/cs/MainWindow.xaml.cs#1)]
+ [!code-vb[System.InvalidOperationException.Threading.WPF1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Invalidoperationexception.threading.wpf1/vb/MainWindow.xaml.vb#1)]  
+  
+ The following version of the `DoSomeWork` method eliminates the exception in a WPF app.  
+  
+ [!code-csharp[System.InvalidOperationException.Threading.WPF2#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Invalidoperationexception.threading.wpf2/cs/MainWindowDispatcher.xaml.cs#3)]
+ [!code-vb[System.InvalidOperationException.Threading.WPF2#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Invalidoperationexception.threading.wpf2/vb/MainWindowDispatcher.xaml.vb#3)]  
+  
+ The following version of the `DoSomeWork` method eliminates the exception in a UWP app.  
+  
+ [!code-csharp[System.InvalidOperationException.Threading.UWP#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidoperationexception.threading.uwp/cs/MainPage.xaml.cs#4)]
+ [!code-vb[System.InvalidOperationException.Threading.UWP#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.invalidoperationexception.threading.uwp/vb/MainPage.xaml.vb#4)]  
+  
+ Windows Forms apps  
+ [!code-csharp[System.InvalidOperationException.Threading.WF#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Invalidoperationexception.threading.wf/cs/Form1.cs#2)]
+ [!code-vb[System.InvalidOperationException.Threading.WF#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Invalidoperationexception.threading.wf/vb/Form1.vb#2)]  
+  
+ The following version of the `DoSomeWork` method eliminates the exception in a Windows Forms app.  
+  
+ [!code-csharp[System.InvalidOperationException.Threading.WF2#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Invalidoperationexception.threading.wf2/cs/Form1.cs#5)]
+ [!code-vb[System.InvalidOperationException.Threading.WF2#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Invalidoperationexception.threading.wf2/vb/Form1.vb#5)]  
+  
+<a name="Iterating"></a>   
+### Changing a collection while iterating it  
+ The `foreach` statement in C# or `For Each` statement in Visual Basic is used to iterate the members of a collection and to read or modify its individual elements. However, it can't be used to add or remove items from the collection. Doing this throws an  <xref:System.InvalidOperationException> exception with a message that is similar to, "**Collection was modified; enumeration operation may not execute.**"  
+  
+ The following example iterates a collection of integers attempts to add the square of each integer to the collection. The example throws an <xref:System.InvalidOperationException> with the first call to the <xref:System.Collections.Generic.List%601.Add%2A?displayProperty=fullName> method.  
+  
+ [!code-csharp[System.InvalidOperationException#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidoperationexception/cs/Iterating1.cs#1)]
+ [!code-vb[System.InvalidOperationException#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.invalidoperationexception/vb/Iterating1.vb#1)]  
+  
+ You can eliminate the exception in one of two ways, depending on your application logic:  
+  
+-   If elements must be added to the collection while iterating it, you can iterate it by index using the `for` statement instead of `foreach` or `For Each`. The following example uses the for statement to add the square of numbers in the collection to the collection.  
+  
+     [!code-csharp[System.InvalidOperationException#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidoperationexception/cs/Iterating2.cs#2)]
+     [!code-vb[System.InvalidOperationException#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.invalidoperationexception/vb/Iterating2.vb#2)]  
+  
+     Note that you must establish the number of iterations before iterating the collection either by using a counter inside the loop that will exit the loop appropraitely, by iterating backward, from `Count` - 1 to 0, or, as the example does, by assigning the number of elements in the array to a variable and using it to establish the upper bound of the loop. Otherwise, if an element is added to the collection on every iteration, an endless loop results.  
+  
+-   If it is not necessary to add elements to the collection while iterating it, you can store the elements to be added in a temporary collection that you add when iterating the collection has finished.  The following example uses this approach to add the square of numbers in a collection to a temporary collection, and then to combine the collections into a single array object.  
+  
+     [!code-csharp[System.InvalidOperationException#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidoperationexception/cs/Iterating3.cs#3)]
+     [!code-vb[System.InvalidOperationException#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.invalidoperationexception/vb/Iterating3.vb#3)]  
+  
+<a name="Sorting"></a>   
+### Sorting an array or collection whose objects cannot be compared  
+ General-purpose sorting methods, such as the <xref:System.Array.Sort%28System.Array%29?displayProperty=fullName> method or the <xref:System.Collections.Generic.List%601.Sort?displayProperty=fullName> method, usually require that at least one of the objects to be sorted implement the <xref:System.IComparable%601> or the <xref:System.IComparable> interface. If not, the collection or array cannot be sorted, and the method throws an  <xref:System.InvalidOperationException> exception. The following example defines a `Person` class, stores two `Person` objects in a generic <xref:System.Collections.Generic.List%601> object, and attempts to sort them. As the output from the example shows, the call to the <xref:System.Collections.Generic.List%601.Sort?displayProperty=fullName> method throws an <xref:System.InvalidOperationException>.  
+  
+ [!code-csharp[System.InvalidOperationException#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidoperationexception/cs/List_Sort1.cs#12)]
+ [!code-vb[System.InvalidOperationException#12](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.invalidoperationexception/vb/List_Sort1.vb#12)]  
+  
+ You can eliminate the exception in any of three ways:  
+  
+-   If you can own the type that you are trying to sort (that is, if you control its source code), you can modify it to implement the <xref:System.IComparable%601> or the <xref:System.IComparable> interface. This requires that you implement either the <xref:System.IComparable%601.CompareTo%2A?displayProperty=fullName> or the <xref:System.IComparable.CompareTo%2A> method. Adding an interface implementation to an existing type is not a breaking change.  
+  
+     The following example uses this approach to provide an <xref:System.IComparable%601> implementation  for the `Person` class. You can still call the collection or array's general sorting method and, as the output from the example shows, the collection sorts successfully.  
+  
+     [!code-csharp[System.InvalidOperationException#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidoperationexception/cs/List_Sort2.cs#13)]
+     [!code-vb[System.InvalidOperationException#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.invalidoperationexception/vb/List_Sort2.vb#13)]  
+  
+-   If you cannot modify the source code for the type you are trying to sort, you can define a special-purpose sorting class that implements the <xref:System.Collections.Generic.IComparer%601> interface.  You can call an overload of the `Sort` method that includes an  <xref:System.Collections.Generic.IComparer%601> parameter. This approach is especially useful if you want to develop a specialized sorting class that can sort objects based on multiple criteria.  
+  
+     The following example uses the approach by developing a custom `PersonComparer` class that is used to sort `Person` collections.  It then passes an instance of this class to the <xref:System.Collections.Generic.List%601.Sort%28System.Collections.Generic.IComparer%7B%600%7D%29?displayProperty=fullName> method.  
+  
+     [!code-csharp[System.InvalidOperationException#14](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidoperationexception/cs/List_Sort3.cs#14)]
+     [!code-vb[System.InvalidOperationException#14](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.invalidoperationexception/vb/List_Sort3.vb#14)]  
+  
+-   If you cannot modify the source code for the type you are trying to sort, you can create a  <xref:System.Comparison%601> delegate to perform the sorting. The delegate signature is  
+  
+    ```vb  
+    Function Comparison(Of T)(x As T, y As T) As Integer  
+    ```  
+  
+    ```csharp  
+    int Comparison<T>(T x, T y)  
+    ```  
+  
+     The following example uses the approach by defining a  `PersonComparison` method that matches the  <xref:System.Comparison%601> delegate signature.  It then passes this delegate to the <xref:System.Collections.Generic.List%601.Sort%28System.Comparison%7B%600%7D%29?displayProperty=fullName> method.  
+  
+     [!code-csharp[System.InvalidOperationException#15](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidoperationexception/cs/List_Sort4.cs#15)]
+     [!code-vb[System.InvalidOperationException#15](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.invalidoperationexception/vb/List_Sort4.vb#15)]  
+  
+<a name="Nullable"></a>   
+### Casting a Nullable\<T> that is null to its underlying type  
+ Attempting to cast a <xref:System.Nullable%601> value that is `null` to its underlying type throws an <xref:System.InvalidOperationException> exception  and displays the error message, "**Nullable object must have a value.**  
+  
+ The following example throws an <xref:System.InvalidOperationException> exception  when it attempts to iterate an array that includes a `Nullable(Of Integer)` value.  
+  
+ [!code-csharp[System.InvalidOperationException#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidoperationexception/cs/Nullable1.cs#4)]
+ [!code-vb[System.InvalidOperationException#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.invalidoperationexception/vb/Nullable1.vb#4)]  
+  
+ To prevent the exception:  
+  
+-   Use the <xref:System.Nullable%601.HasValue%2A?displayProperty=fullName> property to select only those elements that are not `null`.  
+  
+-   Call one of the <xref:System.Nullable%601.GetValueOrDefault%2A?displayProperty=fullName> overloads to provide a default value for a `null` value.  
+  
+ The following example does both to avoid the  <xref:System.InvalidOperationException> exception.  
+  
+ [!code-csharp[System.InvalidOperationException#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidoperationexception/cs/Nullable2.cs#5)]
+ [!code-vb[System.InvalidOperationException#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.invalidoperationexception/vb/Nullable2.vb#5)]  
+  
+<a name="Empty"></a>   
+### Calling a System.Linq.Enumerable method on an empty collection  
+ The <xref:System.Linq.Enumerable.Aggregate%2A?displayProperty=fullName>, <xref:System.Linq.Enumerable.Average%2A?displayProperty=fullName>, <xref:System.Linq.Enumerable.First%2A?displayProperty=fullName>, <xref:System.Linq.Enumerable.Last%2A?displayProperty=fullName>, <xref:System.Linq.Enumerable.Max%2A?displayProperty=fullName>, <xref:System.Linq.Enumerable.Min%2A?displayProperty=fullName>,  <xref:System.Linq.Enumerable.Single%2A?displayProperty=fullName>, and <xref:System.Linq.Enumerable.SingleOrDefault%2A?displayProperty=fullName> methods perform operations on a sequence and return a single result.   Some overloads of these methods throw an <xref:System.InvalidOperationException> exception when the sequence is empty, while other overloads return `null`. The <xref:System.Linq.Enumerable.SingleOrDefault%2A?displayProperty=fullName> method also throws an <xref:System.InvalidOperationException> exception when the sequence contains more than one element.  
+  
+> [!NOTE]
+>  Most of the methods that throw an <xref:System.InvalidOperationException> exception are overloads. Be sure that you understand the behavior of the overload that you choose.  
+  
+ The following table lists the exception messages from the <xref:System.InvalidOperationException> exception objects thrown by calls to some <xref:System.Linq.Enumerable?displayProperty=fullName> methods.  
+  
+|Method|Message|  
+|------------|-------------|  
+|`Aggregate` <br /> `Average` <br /> `Last` <br /> `Max` <br /> `Min`|**Sequence contains no elements**|  
+|`First`|**Sequence contains no matching element**|  
+|`Single` <br /> `SingleOrDefault`|**Sequence contains more than one matching element**|  
+  
+ How you eliminate or handle the exception depends on your application's assumptions and on the particular method you call.  
+  
+-   When you deliberately call one of these methods without checking for an empty sequence, you are assuming that the sequence is not empty, and that an empty sequence is an unexpected occurrence. In this case, catching or rethrowing the exception is appropriate .  
+  
+-   If your failure to check for an empty sequence was inadvertent, you can  call one of the overloads of the <xref:System.Linq.Enumerable.Any%2A?displayProperty=fullName> overload to determine whether a sequence contains any elements.  
+  
+    > [!TIP]
+    >  Calling the <xref:System.Linq.Enumerable.Any%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D%29?displayProperty=fullName> method before generating a sequence can improve performance if the data to be processed might contain a large number of elements or if operation that generates the sequence is expensive.  
+  
+-   If you've called a method such as <xref:System.Linq.Enumerable.First%2A?displayProperty=fullName>, <xref:System.Linq.Enumerable.Last%2A?displayProperty=fullName>, or <xref:System.Linq.Enumerable.Single%2A?displayProperty=fullName>, you can substitute an alternate method, such as <xref:System.Linq.Enumerable.FirstOrDefault%2A?displayProperty=fullName>, <xref:System.Linq.Enumerable.LastOrDefault%2A?displayProperty=fullName>, or  <xref:System.Linq.Enumerable.SingleOrDefault%2A?displayProperty=fullName>, that returns a default value instead of a member of the sequence.  
+  
+ The examples provide additional detail.  
+  
+ The following example uses the <xref:System.Linq.Enumerable.Average%2A?displayProperty=fullName> method to compute the average of a sequence whose values are greater than 4. Since no values from the original array exceed 4, no values are included in the sequence, and the method throws an <xref:System.InvalidOperationException> exception.  
+  
+ [!code-csharp[System.InvalidOperationException#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidoperationexception/cs/Enumerable1.cs#6)]
+ [!code-vb[System.InvalidOperationException#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.invalidoperationexception/vb/Enumerable1.vb#6)]  
+  
+ The exception can be eliminated by calling the <xref:System.Linq.Enumerable.Any%2A> method to determine whether the sequence contains any elements before calling the method that processes the sequence, as the following example shows.  
+  
+ [!code-csharp[System.InvalidOperationException#7](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidoperationexception/cs/Enumerable2.cs#7)]
+ [!code-vb[System.InvalidOperationException#7](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.invalidoperationexception/vb/Enumerable2.vb#7)]  
+  
+ The <xref:System.Linq.Enumerable.First%2A?displayProperty=fullName> method returns the first item in a sequence or the first element in a sequence that satisfies a specified condition. If the sequence is empty and therefore does not have a first element, it throws an <xref:System.InvalidOperationException> exception.  
+  
+ In the following example, the <xref:System.Linq.Enumerable.First%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D%29?displayProperty=fullName> method throws an <xref:System.InvalidOperationException> exception because the dbQueryResults array doesn't contain an element greater than 4.  
+  
+ [!code-csharp[System.InvalidOperationException#8](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidoperationexception/cs/Enumerable3.cs#8)]
+ [!code-vb[System.InvalidOperationException#8](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.invalidoperationexception/vb/Enumerable3.vb#8)]  
+  
+ You can call the <xref:System.Linq.Enumerable.FirstOrDefault%2A?displayProperty=fullName> method instead of <xref:System.Linq.Enumerable.First%2A?displayProperty=fullName> to return a specified or default value. If the method does not find a first element in the sequence, it returns  the default value for that data type.  The default value is `null` for a reference type, zero for a numeric data type, and <xref:System.DateTime.MinValue?displayProperty=fullName> for the <xref:System.DateTime> type.  
+  
+> [!NOTE]
+>  Interpreting the value returned by the <xref:System.Linq.Enumerable.FirstOrDefault%2A?displayProperty=fullName> method is often complicated by the fact that the default value of the type can be a valid value in the sequence.  In this case, you an call the <xref:System.Linq.Enumerable.Any%2A?displayProperty=fullName>method to determine whether the sequence has valid members before calling the <xref:System.Linq.Enumerable.First%2A?displayProperty=fullName> method.  
+  
+ The following example calls the  <xref:System.Linq.Enumerable.FirstOrDefault%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D%29?displayProperty=fullName> method to prevent the <xref:System.InvalidOperationException> exception thrown in the previous example.  
+  
+ [!code-csharp[System.InvalidOperationException#9](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidoperationexception/cs/Enumerable4.cs#9)]
+ [!code-vb[System.InvalidOperationException#9](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.invalidoperationexception/vb/Enumerable4.vb#9)]  
+  
+<a name="Single"></a>   
+### Calling Enumerable.Single or Enumerable.SingleOrDefault on a sequence without one element  
+ The <xref:System.Linq.Enumerable.Single%2A?displayProperty=fullName> method returns the only element of a sequence, or the only element of a sequence that meets a specified condition.    If there are no elements in the sequence, or if there is more than one element , the method throws an <xref:System.InvalidOperationException> exception.  
+  
+ You can use the <xref:System.Linq.Enumerable.SingleOrDefault%2A?displayProperty=fullName> method to return a default value instead of throwing an exception when the sequence contains no elements. However, the <xref:System.Linq.Enumerable.SingleOrDefault%2A?displayProperty=fullName> method still throws an <xref:System.InvalidOperationException> exception  when the sequence contains more than one element.  
+  
+ The following table lists the exception messages from the <xref:System.InvalidOperationException> exception objects thrown by calls to the <xref:System.Linq.Enumerable.Single%2A?displayProperty=fullName> and <xref:System.Linq.Enumerable.SingleOrDefault%2A?displayProperty=fullName> methods.  
+  
+|Method|Message|  
+|------------|-------------|  
+|`Single`|**Sequence contains no matching element**|  
+|`Single` <br /> `SingleOrDefault`|**Sequence contains more than one matching element**|  
+  
+ In the following example, the call to the <xref:System.Linq.Enumerable.Single%2A?displayProperty=fullName> method throws an <xref:System.InvalidOperationException> exception because the sequence doesn't have an element greater than 4.  
+  
+ [!code-csharp[System.InvalidOperationException#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidoperationexception/cs/Enumerable5.cs#10)]
+ [!code-vb[System.InvalidOperationException#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.invalidoperationexception/vb/Enumerable5.vb#10)]  
+  
+ The following example attempts to prevent the <xref:System.InvalidOperationException> exception thrown when a sequence is empty by instead calling the <xref:System.Linq.Enumerable.SingleOrDefault%2A?displayProperty=fullName> method. However, because this sequence returns multiple elements whose value is greater than 2, it also throws an <xref:System.InvalidOperationException> exception.  
+  
+ [!code-csharp[System.InvalidOperationException#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.invalidoperationexception/cs/Enumerable6.cs#11)]
+ [!code-vb[System.InvalidOperationException#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.invalidoperationexception/vb/Enumerable6.vb#11)]  
+  
+ Calling the <xref:System.Linq.Enumerable.Single%2A?displayProperty=fullName> method assumes that either a sequence or the sequence that meets specified criteria contains only one element.  <xref:System.Linq.Enumerable.SingleOrDefault%2A?displayProperty=fullName> assumes a sequence with zero or one result, but no more. If this assumption is a deliberate one on your part and these conditions are not met, rethrowing or catching the resulting <xref:System.InvalidOperationException> is appropriate. Otherwise, or if you expect that invalid conditions will occur with some frequency, you should consider using some other <xref:System.Linq.Enumerable> method, such as <xref:System.Linq.Enumerable.FirstOrDefault%2A> or <xref:System.Linq.Enumerable.Where%2A>.  
+  
+<a name="Emit"></a>   
+### Dynamic cross-application domain field access  
+ The <xref:System.Reflection.Emit.OpCodes.Ldflda?displayProperty=fullName> Microsoft intermediate language (MSIL) instruction throws an <xref:System.InvalidOperationException> exception if the object containing the field whose address you are trying to retrieve is not within the application domain in which your code is executing. The address of a field can only be accessed from the application domain in which it resides.  
+  
+<a name="Throwing"></a>   
+## Throwing an InvalidOperationException exception  
+ You should throw an <xref:System.InvalidOperationException> exception only when the state of your object for some reason does not support a particular method call. That is, the method call is valid in some circumstances or contexts, but is invalid in others.  
+  
+ If the method invocation failure is due to invalid arguments, then <xref:System.ArgumentException> or one of its derived classes, <xref:System.ArgumentNullException> or <xref:System.ArgumentOutOfRangeException>, should be thrown instead.  
+  
+<a name="Misc"></a>   
+## Miscellaneous information  
+ <xref:System.InvalidOperationException> uses the HRESULT COR_E_INVALIDOPERATION, which has the value 0x80131509.  
+  
+ For a list of initial property values for an instance of <xref:System.InvalidOperationException>, see the <xref:System.InvalidOperationException.%23ctor%2A> constructors.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InvalidOperationException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.InvalidOperationException.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.InvalidOperationException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "The requested operation cannot be performed." This message takes into account the current system culture.  
+  
+ The following table shows the initial property values for an instance of <xref:System.InvalidOperationException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
+|<xref:System.Exception.Message%2A>|The localized error message string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InvalidOperationException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.InvalidOperationException.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message that describes the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.InvalidOperationException" /> class with a specified error message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Exception.Message%2A?displayProperty=fullName> property of the new exception using the `message` parameter. The content of `message` is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+  
+ The following table shows the initial property values for an instance of <xref:System.InvalidOperationException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic).|  
+|<xref:System.Exception.Message%2A>|The error message string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected InvalidOperationException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.InvalidOperationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The object that holds the serialized object data.</param>
+        <param name="context">The contextual information about the source or destination.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.InvalidOperationException" /> class with serialized data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is called during deserialization to reconstitute the exception object transmitted over a stream. For more information, see [XML and SOAP Serialization](~/docs/framework/serialization/xml-and-soap-serialization.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InvalidOperationException (string message, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.InvalidOperationException.#ctor(System.String,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The error message that explains the reason for the exception.</param>
+        <param name="innerException">The exception that is the cause of the current exception. If the <c>innerException</c> parameter is not a null reference (<see langword="Nothing" /> in Visual Basic), the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.InvalidOperationException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is passed into the constructor, or a null reference (`Nothing` in Visual Basic) if the <xref:System.Exception.InnerException%2A> property does not supply the inner exception value to the constructor.  
+  
+ The following table shows the initial property values for an instance of <xref:System.InvalidOperationException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
+|<xref:System.Exception.Message%2A>|The error message string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

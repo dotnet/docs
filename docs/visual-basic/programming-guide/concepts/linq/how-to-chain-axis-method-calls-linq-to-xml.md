@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: e4e22942-39bd-460f-b3c0-9f09e53d3aa9
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Chain Axis Method Calls (LINQ to XML) (Visual Basic)

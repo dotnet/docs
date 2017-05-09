@@ -1,0 +1,149 @@
+<Type Name="IAttachedPropertyStore" FullName="System.Xaml.IAttachedPropertyStore">
+  <TypeSignature Language="C#" Value="public interface IAttachedPropertyStore" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAttachedPropertyStore" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.IAttachedPropertyStore" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an attachable member store for an object where attachable members are set. This attachable member store can then be referenced with <see cref="T:System.Xaml.AttachablePropertyServices" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An attachable member is typically implemented and used as an attachable property. The term "attachable member" provides for the possibility that a technology also defines a system for attachable events. As an item in a property store, an attachable event stores a reference to the handler that is assigned through attachable member usage. An attachable event in XAML can use the same store as the attachable properties do, even if the attachable event is not truly a property to the underlying type system or as it is considered in real-world use.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CopyPropertiesTo">
+      <MemberSignature Language="C#" Value="public void CopyPropertiesTo (System.Collections.Generic.KeyValuePair&lt;System.Xaml.AttachableMemberIdentifier,object&gt;[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyPropertiesTo(valuetype System.Collections.Generic.KeyValuePair`2&lt;class System.Xaml.AttachableMemberIdentifier, object&gt;[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.IAttachedPropertyStore.CopyPropertiesTo(System.Collections.Generic.KeyValuePair{System.Xaml.AttachableMemberIdentifier,System.Object}[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Collections.Generic.KeyValuePair&lt;System.Xaml.AttachableMemberIdentifier,System.Object&gt;[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The destination array. The array is a generic array, should be passed undimensioned, and should have components of <see cref="T:System.Xaml.AttachableMemberIdentifier" /> and <see langword="object" />.</param>
+        <param name="index">The source index where copying should begin.</param>
+        <summary>Copies all attachable member/value pairs from this attachable member store into a destination array.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyCount">
+      <MemberSignature Language="C#" Value="public int PropertyCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PropertyCount" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.IAttachedPropertyStore.PropertyCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the count of the attachable member entries in this attachable member store.</summary>
+        <value>The integer count of entries in the store.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveProperty">
+      <MemberSignature Language="C#" Value="public bool RemoveProperty (System.Xaml.AttachableMemberIdentifier attachableMemberIdentifier);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool RemoveProperty(class System.Xaml.AttachableMemberIdentifier attachableMemberIdentifier) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.IAttachedPropertyStore.RemoveProperty(System.Xaml.AttachableMemberIdentifier)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attachableMemberIdentifier" Type="System.Xaml.AttachableMemberIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="attachableMemberIdentifier">The XAML type system identifier for the attachable member entry to remove.</param>
+        <summary>Removes the entry for the specified attachable member from this attachable member store.</summary>
+        <returns>
+          <see langword="true" /> if an attachable member entry for <paramref name="attachableMemberIdentifier" /> was found in the store and removed; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty">
+      <MemberSignature Language="C#" Value="public void SetProperty (System.Xaml.AttachableMemberIdentifier attachableMemberIdentifier, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetProperty(class System.Xaml.AttachableMemberIdentifier attachableMemberIdentifier, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.IAttachedPropertyStore.SetProperty(System.Xaml.AttachableMemberIdentifier,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attachableMemberIdentifier" Type="System.Xaml.AttachableMemberIdentifier" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="attachableMemberIdentifier">The XAML type system identifier for the attachable member entry to set.</param>
+        <param name="value">The value to set.</param>
+        <summary>Sets a value for the specified attachable member in the specified store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An implementation should not throw an exception if the specific attachable member already exists. If a member already exists, the implementation should overwrite any existing value with `value`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetProperty">
+      <MemberSignature Language="C#" Value="public bool TryGetProperty (System.Xaml.AttachableMemberIdentifier attachableMemberIdentifier, out object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetProperty(class System.Xaml.AttachableMemberIdentifier attachableMemberIdentifier, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.IAttachedPropertyStore.TryGetProperty(System.Xaml.AttachableMemberIdentifier,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attachableMemberIdentifier" Type="System.Xaml.AttachableMemberIdentifier" />
+        <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="attachableMemberIdentifier">The XAML type system identifier for the attachable member entry to get.</param>
+        <param name="value">Out parameter. When this method returns, contains the destination object for the value if <c>attachableMemberIdentifier</c> exists in the store and has a value.</param>
+        <summary>Attempts to get a value for the specified attachable member in the specified store.</summary>
+        <returns>
+          <see langword="true" /> if an attachable member entry for <paramref name="attachableMemberIdentifier" /> was found in the store and a value was posted to <paramref name="value" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An implementation should not throw an exception if the specific attachable member is not located in the store.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

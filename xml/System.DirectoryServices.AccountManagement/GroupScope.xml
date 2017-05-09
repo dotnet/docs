@@ -1,0 +1,66 @@
+<Type Name="GroupScope" FullName="System.DirectoryServices.AccountManagement.GroupScope">
+  <TypeSignature Language="C#" Value="public enum GroupScope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GroupScope extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.GroupScope" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the scope of the group principal.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Global">
+      <MemberSignature Language="C#" Value="Global" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.GroupScope Global = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.GroupScope.Global" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.GroupScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The group's scope is global. This group type is supported on AD DS. When a global group is specified with an AD LDS directory, a <see cref="F:System.DirectoryServices.AccountManagement.GroupScope.Local" /> group is created instead.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Local">
+      <MemberSignature Language="C#" Value="Local" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.GroupScope Local = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.GroupScope.Local" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.GroupScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scope of the group is local. This group type is supported on AD DS and AD LDS.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Universal">
+      <MemberSignature Language="C#" Value="Universal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.AccountManagement.GroupScope Universal = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.DirectoryServices.AccountManagement.GroupScope.Universal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.AccountManagement.GroupScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scope of the group is universal. This group type is supported on AD DS and AD LDS.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

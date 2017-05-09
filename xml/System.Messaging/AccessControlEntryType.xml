@@ -1,0 +1,91 @@
+<Type Name="AccessControlEntryType" FullName="System.Messaging.AccessControlEntryType">
+  <TypeSignature Language="C#" Value="public enum AccessControlEntryType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed AccessControlEntryType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Messaging.AccessControlEntryType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Messaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether to allow, deny, or revoke access rights for a trustee.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you use the <xref:System.Messaging.AccessControlEntry> class to specify a new access right for a trustee, you set its <xref:System.Messaging.AccessControlEntry.EntryType%2A> property to describe whether to grant the right or deny it. Furthermore, you can define whether the new right is appended to an existing list (if the trustee already exists in the context for which you are adding or removing access privileges) or if the new right overwrites and deletes any previously defined rights.  
+  
+ When creating a new `Allow` entry, there might be a preexisting `Deny` entry for the same trustee that takes precedence and must be addressed. Similarly, when creating a new `Deny` entry, there might be an existing `Allow` entry that takes precedence. For information about the order in which access rights are applied, see <xref:System.Messaging.AccessControlList>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Allow">
+      <MemberSignature Language="C#" Value="Allow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.AccessControlEntryType Allow = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.AccessControlEntryType.Allow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.AccessControlEntryType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An access-allowed entry that causes the new rights to be added to any existing rights the trustee has.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Deny">
+      <MemberSignature Language="C#" Value="Deny" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.AccessControlEntryType Deny = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.AccessControlEntryType.Deny" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.AccessControlEntryType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An access-denied entry that denies the specified rights in addition to any currently denied rights of the trustee.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="Revoke" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.AccessControlEntryType Revoke = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.AccessControlEntryType.Revoke" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.AccessControlEntryType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An entry that removes all existing allowed or denied rights for the specified trustee.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="Set" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.AccessControlEntryType Set = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.AccessControlEntryType.Set" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.AccessControlEntryType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An access-allowed entry that is similar to <see langword="Allow" />, except that the new entry allows only the specified rights. Using it discards any existing rights, including all existing access-denied entries for the trustee.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

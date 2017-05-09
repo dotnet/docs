@@ -1,0 +1,245 @@
+<Type Name="ImportOptions" FullName="System.Runtime.Serialization.ImportOptions">
+  <TypeSignature Language="C#" Value="public class ImportOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ImportOptions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.ImportOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Serialization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the options that can be set on an <see cref="T:System.Runtime.Serialization.XsdDataContractImporter" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.XsdDataContractImporter> is used to generate code from XML schema using the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] CodeDOM. To generate an XML schema from an assembly, use the <xref:System.Runtime.Serialization.XsdDataContractExporter>.  
+  
+ For more information about importing and exporting schemas, see [Schema Import and Export](~/docs/framework/wcf/feature-details/schema-import-and-export.md) and [Importing Schema to Generate Classes](~/docs/framework/wcf/feature-details/importing-schema-to-generate-classes.md).  
+  
+   
+  
+## Examples  
+ The following example creates an instance of the <xref:System.Runtime.Serialization.ImportOptions> class and sets the <xref:System.Runtime.Serialization.ImportOptions.EnableDataBinding%2A> and <xref:System.Runtime.Serialization.ImportOptions.GenerateInternal%2A> properties.  
+  
+ [!code-csharp[XsdDataContractImporter#3](~/samples/snippets/csharp/VS_Snippets_CFX/xsddatacontractimporter/cs/xsddatacontractimporterexample.cs#3)]
+ [!code-vb[XsdDataContractImporter#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/xsddatacontractimporter/vb/xsddatacontractimporterexample.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ImportOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ImportOptions.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.ImportOptions" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeProvider">
+      <MemberSignature Language="C#" Value="public System.CodeDom.Compiler.CodeDomProvider CodeProvider { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.Compiler.CodeDomProvider CodeProvider" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ImportOptions.CodeProvider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.Compiler.CodeDomProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> instance that provides the means to check whether particular options for a target language are supported.</summary>
+        <value>A <see cref="T:System.CodeDom.Compiler.CodeDomProvider" /> that provides the means to check whether particular options for a target language are supported.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To support better code generation for different languages, information about what is supported by the target language needs to be passed to the schema importer. This is done by passing an instance of the <xref:System.CodeDom.Compiler.CodeDomProvider> class, which provides a <xref:System.CodeDom.Compiler.CodeDomProvider.Supports%2A> method to check whether it supports particular <xref:System.CodeDom.Compiler.CodeGeneratorOptions>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataContractSurrogate">
+      <MemberSignature Language="C#" Value="public System.Runtime.Serialization.IDataContractSurrogate DataContractSurrogate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.IDataContractSurrogate DataContractSurrogate" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ImportOptions.DataContractSurrogate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Serialization.IDataContractSurrogate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a data contract surrogate that can be used to modify the code generated during an import operation.</summary>
+        <value>An implementation of the <see cref="T:System.Runtime.Serialization.IDataContractSurrogate" /> interface that handles schema import.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableDataBinding">
+      <MemberSignature Language="C#" Value="public bool EnableDataBinding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableDataBinding" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ImportOptions.EnableDataBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether types in generated code should implement the <see cref="T:System.ComponentModel.INotifyPropertyChanged" /> interface.</summary>
+        <value>
+          <see langword="true" /> if the generated code should implement the <see cref="T:System.ComponentModel.INotifyPropertyChanged" /> interface; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface is used by [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] components, such as Windows Forms or Windows Presentation Foundation, to capture data changes for user interface updates. The generated properties raise a property-changed event when the value changes, allowing UI hooks to act accordingly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateInternal">
+      <MemberSignature Language="C#" Value="public bool GenerateInternal { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool GenerateInternal" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ImportOptions.GenerateInternal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether generated code will be marked internal or public.</summary>
+        <value>
+          <see langword="true" /> if the code will be marked <see langword="internal" />; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateSerializable">
+      <MemberSignature Language="C#" Value="public bool GenerateSerializable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool GenerateSerializable" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ImportOptions.GenerateSerializable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether generated data contract classes will be marked with the <see cref="T:System.SerializableAttribute" /> attribute in addition to the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute.</summary>
+        <value>
+          <see langword="true" /> to generate classes with the <see cref="T:System.SerializableAttribute" /> applied; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportXmlType">
+      <MemberSignature Language="C#" Value="public bool ImportXmlType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ImportXmlType" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ImportOptions.ImportXmlType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether all XML schema types, even those that do not conform to a data contract schema, will be imported.</summary>
+        <value>
+          <see langword="true" /> to import all schema types; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Normally, importing a type that does not conform to a valid data contract schema will fail. However, when this property is set to `true`, all such types will be imported as types that implement the <xref:System.Xml.Serialization.IXmlSerializable> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespaces">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; Namespaces { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; Namespaces" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ImportOptions.Namespaces" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a dictionary that contains the mapping of data contract namespaces to the CLR namespaces that must be used to generate code during an import operation.</summary>
+        <value>A <see cref="T:System.Collections.Generic.IDictionary`2" /> that contains the namespace mappings.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferencedCollectionTypes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Type&gt; ReferencedCollectionTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Type&gt; ReferencedCollectionTypes" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ImportOptions.ReferencedCollectionTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.Type&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of types that represents data contract collections that should be referenced when generating code for collections, such as lists or dictionaries of items.</summary>
+        <value>An <see cref="T:System.Collections.Generic.ICollection`1" /> that contains the referenced collection types.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, an array will be generated when importing a collection schema (unless the schema has a special annotation that mentions a different type). However, if there is a matching type in the <xref:System.Runtime.Serialization.ImportOptions.ReferencedCollectionTypes%2A> collection, that type will be used. For example, when importing schema that contains a list of integers, an array of integers will normally be generated. However, if the collection contains the <xref:System.Collections.Generic.LinkedList%601> of type integer, that type will be used instead of the array.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferencedTypes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Type&gt; ReferencedTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Type&gt; ReferencedTypes" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.ImportOptions.ReferencedTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.Type&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Collections.Generic.IList`1" /> containing types referenced in generated code.</summary>
+        <value>A <see cref="T:System.Collections.Generic.IList`1" /> that contains the referenced types.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

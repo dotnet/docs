@@ -1,0 +1,107 @@
+<Type Name="ScrollableControlDesigner" FullName="System.Windows.Forms.Design.ScrollableControlDesigner">
+  <TypeSignature Language="C#" Value="public class ScrollableControlDesigner : System.Windows.Forms.Design.ParentControlDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScrollableControlDesigner extends System.Windows.Forms.Design.ParentControlDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ScrollableControlDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.Design.ParentControlDesigner</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Base designer class for extending the design mode behavior of a <see cref="T:System.Windows.Forms.Control" /> which should receive scroll messages.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.Design.ScrollableControlDesigner> provides a base class for designers of controls that respond to scroll messages. In addition to the methods and functionality inherited from the <xref:System.Windows.Forms.Design.ParentControlDesigner>, <xref:System.Windows.Forms.Design.ControlDesigner>, and <xref:System.ComponentModel.Design.ComponentDesigner> classes, <xref:System.Windows.Forms.Design.ScrollableControlDesigner> provides a <xref:System.Windows.Forms.Control.WndProc%2A> method override that passes WM_HSCROLL and WM_VSCROLL messages to the control at design time.  
+  
+> [!NOTE]
+>  If a form has its <xref:System.Windows.Forms.Form.AutoScroll%2A> property set to active, the scroll bars are always active in the design-time environment.  
+  
+ You can associate a designer with a type using a <xref:System.ComponentModel.DesignerAttribute>. For an overview of customizing design time behavior, see [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScrollableControlDesigner ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ScrollableControlDesigner.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.ScrollableControlDesigner" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHitTest">
+      <MemberSignature Language="C#" Value="protected override bool GetHitTest (System.Drawing.Point pt);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool GetHitTest(valuetype System.Drawing.Point pt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ScrollableControlDesigner.GetHitTest(System.Drawing.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pt" Type="System.Drawing.Point" />
+      </Parameters>
+      <Docs>
+        <param name="pt">A <see cref="T:System.Drawing.Point" /> indicating the position at which the mouse was clicked, in screen coordinates.</param>
+        <summary>Indicates whether a mouse click at the specified point should be handled by the control.</summary>
+        <returns>
+          <see langword="true" /> if a click at the specified point is to be handled by the control; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Design.ScrollableControlDesigner.GetHitTest%2A> method determines whether a click at the specified point should be passed to the control, while the control is in design mode. You can override and implement this method to enable your control to receive clicks in the design-time environment.  
+  
+> [!NOTE]
+>  You can pass a point in screen coordinates to the <xref:System.Windows.Forms.Control.PointToClient%2A> method of the <xref:System.Windows.Forms.Control> class to obtain the coordinates of the point relative to the upper-left corner of the control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WndProc">
+      <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message m) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ScrollableControlDesigner.WndProc(System.Windows.Forms.Message@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="m" Type="System.Windows.Forms.Message&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="m">The <see cref="T:System.Windows.Forms.Message" /> to process.</param>
+        <summary>Processes Windows messages and passes WM_HSCROLL and WM_VSCROLL messages to the control at design time.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This override of the <xref:System.Windows.Forms.Design.ControlDesigner.WndProc%2A> method passes any WM_HSCROLL and WM_VSCROLL messages to the control at design time. All messages are first passed to the base <xref:System.Windows.Forms.Design.ControlDesigner.WndProc%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

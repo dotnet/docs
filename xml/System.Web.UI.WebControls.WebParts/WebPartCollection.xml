@@ -1,0 +1,309 @@
+<Type Name="WebPartCollection" FullName="System.Web.UI.WebControls.WebParts.WebPartCollection">
+  <TypeSignature Language="C#" Value="public sealed class WebPartCollection : System.Collections.ReadOnlyCollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebPartCollection extends System.Collections.ReadOnlyCollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ReadOnlyCollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains a collection of <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls used to track and manage related groups of controls. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> class is a read-only collection of controls, typically used by <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> and <xref:System.Web.UI.WebControls.WebParts.WebPartManager> controls to manage sets of <xref:System.Web.UI.WebControls.WebParts.WebPart> controls.  
+  
+ A <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control uses a <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object to keep a list of all the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls on a page, whereas a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> control uses a <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object to track the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that it contains.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> collection contains both <xref:System.Web.UI.WebControls.WebParts.WebPart> controls and other server controls (such as user controls, custom controls, and ASP.NET controls) that are placed in <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zones and used as part of Web Parts applications. So, for example, if you have a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> zone in a page, and within it you declare a custom <xref:System.Web.UI.WebControls.WebParts.WebPart> control and the ASP.NET <xref:System.Web.UI.WebControls.Calendar> control, both controls will be in the <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> collection referenced by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebParts%2A> property.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object exists so that the Web Parts control set can work with strongly typed collections. Similarly, if you want to perform mass operations on a set of <xref:System.Web.UI.WebControls.WebParts.WebPart> controls, you can get a reference to a <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object using the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebParts%2A> property. For example, you might want to loop through all the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls on a page and change their appearance in some way. Even though the <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object is read-only, you can make programmatic changes to the properties of the underlying controls referenced in the collection.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object on a Web Parts page. This example has three parts:  
+  
+-   The code for the page in a partial class.  
+  
+-   The Web page that contains the controls.  
+  
+-   A description of how the example works in a browser.  
+  
+ The first part of the code example contains the code for the page in a partial class. Note that the `Button1_Click` method creates a <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object that consists of all the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls referenced in the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebParts%2A?displayProperty=fullName> property, which includes all the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls on the page. The method iterates through all the controls, and toggles each control's <xref:System.Web.UI.WebControls.WebParts.WebPart.ChromeState%2A> property, which determines whether that control is normal or minimized.  
+  
+ [!code-csharp[WebParts_WebPartCollection_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/CS/webpartcollection.cs#1)]
+ [!code-vb[WebParts_WebPartCollection_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/VB/webpartcollection.vb#1)]  
+  
+ The second part of the code example is the Web page that contains the controls. Notice that the controls declared in `WebPartZone1` are standard ASP.NET server controls, but because they are wrapped as <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> controls at run time, and the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> class inherits from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class, the controls are automatically treated as <xref:System.Web.UI.WebControls.WebParts.WebPart> controls at run time and therefore are included in the <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/CS/webpartcollectioncs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/VB/webpartcollectionvb.aspx#2)]  -->  
+  
+ After you load the page in a browser and click the **Toggle ChromeState** button, the code in the partial class loops through the <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object and alternately minimizes the controls or returns them to normal. Or, if you repeatedly click the **Toggle BulletedList1 Title** button, the title of the uppermost control is changed to alternate values.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebPartCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes an empty new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartCollection.%23ctor%2A> constructor initializes an empty instance of the <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> class. The object itself is read-only and has no method to add individual <xref:System.Web.UI.WebControls.WebParts.WebPart> controls to it; therefore, you will have little occasion to use this constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebPartCollection (System.Collections.ICollection webParts);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.ICollection webParts) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartCollection.#ctor(System.Collections.ICollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="webParts" Type="System.Collections.ICollection" />
+      </Parameters>
+      <Docs>
+        <param name="webParts">An <see cref="T:System.Collections.ICollection" /> of <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls.</param>
+        <summary>Initializes a new instance of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartCollection" /> object by passing in an <see cref="T:System.Collections.ICollection" /> collection of <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartCollection.%23ctor%2A> constructor initializes an instance of the <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> class by passing in a collection of <xref:System.Web.UI.WebControls.WebParts.WebPart> controls.  
+  
+ Although a <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object is read-only and there is no method for adding individual controls to it, you can create your own <xref:System.Collections.ICollection> collection of controls, and pass that to the <xref:System.Web.UI.WebControls.WebParts.WebPartCollection.%23ctor%2A> constructor. This enables you to create custom collections and perform bulk operations on them. You can also access the underlying controls in the collection and change their property values programmatically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebPartCollection.%23ctor%2A> constructor on a Web Parts page. This example has three parts:  
+  
+-   The code for the page in a partial class.  
+  
+-   The Web page that contains the controls.  
+  
+-   A description of how the example works in a browser.  
+  
+ The first part of the code example contains the code for the page in a partial class. Note that the `Button1_Click` method creates a <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object that consists of all the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls referenced in the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebParts%2A?displayProperty=fullName> property, which includes all the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls on the page. The method iterates through all the controls, and toggles each control's <xref:System.Web.UI.WebControls.WebParts.WebPart.ChromeState%2A> property, which determines whether that control is normal or minimized.  
+  
+ [!code-csharp[WebParts_WebPartCollection_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/CS/webpartcollection.cs#1)]
+ [!code-vb[WebParts_WebPartCollection_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/VB/webpartcollection.vb#1)]  
+  
+ The second part of the code example is the Web page that contains the controls. Notice that the controls declared in `WebPartZone1` are standard ASP.NET server controls, but because they are wrapped as <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> controls at run time, and the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> class inherits from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class, the controls are automatically treated as <xref:System.Web.UI.WebControls.WebParts.WebPart> controls at run time and therefore are included in the <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/CS/webpartcollectioncs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/VB/webpartcollectionvb.aspx#2)]  -->  
+  
+ After you load the page in a browser, click the **Toggle ChromeState** button, and notice that the code in the partial class loops through the <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object and alternately minimizes the controls or returns them to normal. Or, if you repeatedly click the **Toggle BulletedList1 Title** button, the title of the uppermost control is changed to alternate values.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="webParts" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">An object in the <paramref name="webParts" /> collection is <see langword="null" />.  
+  
+ \- or -  
+  
+ An object in the <paramref name="webParts" /> collection is not a of type <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.Web.UI.WebControls.WebParts.WebPart value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.UI.WebControls.WebParts.WebPart value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartCollection.Contains(System.Web.UI.WebControls.WebParts.WebPart)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> that is checked to determine whether it is in the collection.</param>
+        <summary>Returns a value indicating whether a particular control exists in the collection.</summary>
+        <returns>A Boolean value that indicates whether a particular control is in the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartCollection.Contains%2A> method enables you to check a particular <xref:System.Web.UI.WebControls.WebParts.WebPart> object and determine whether it is part of a <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Web.UI.WebControls.WebParts.WebPart[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.UI.WebControls.WebParts.WebPart[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartCollection.CopyTo(System.Web.UI.WebControls.WebParts.WebPart[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Web.UI.WebControls.WebParts.WebPart[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">An array of <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> objects to contain the copied collection.</param>
+        <param name="index">The starting point in the array at which to place the collection contents.</param>
+        <summary>Copies the collection to an array of <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartCollection.CopyTo%2A> method is useful when you want to assemble a custom array that can contain the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in the <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object, a subset of those controls, or a superset of those controls.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Web.UI.WebControls.WebParts.WebPart value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.UI.WebControls.WebParts.WebPart value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartCollection.IndexOf(System.Web.UI.WebControls.WebParts.WebPart)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> that is a member of the collection.</param>
+        <summary>Returns the position of a particular member of the collection.</summary>
+        <returns>An integer that indicates the position of a particular object in the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartCollection.IndexOf%2A> method is useful if you have multiple <xref:System.Web.UI.WebControls.WebParts.WebPart> controls on a Web Parts page, and you need to know the ordinal position of one control relative to the others.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPart this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPart Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPart</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of a particular <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control in a collection.</param>
+        <summary>Returns a member of the collection based on its position in the collection.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> at the specified index in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartCollection.Item%2A> indexer allows you to access the underlying <xref:System.Web.UI.WebControls.WebParts.WebPart> controls in a <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object by index, and change their property values or call methods.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebPartCollection.Item%2A> indexer on a Web Parts page. This example has three parts:  
+  
+-   The code for the page in a partial class.  
+  
+-   The Web page that contains the controls.  
+  
+-   A description of how the example works in a browser.  
+  
+ The first part of the code example contains the code for the page in a partial class. Note that the `Button2_Click` method creates an empty <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object, then assigns to it the <xref:System.Web.UI.WebControls.WebParts.WebPart> controls from the `WebPartZone1.WebParts` property. The method accesses the first control in the collection by using its index, and toggles its <xref:System.Web.UI.WebControls.WebParts.WebPart.Title%2A> property value.  
+  
+ [!code-csharp[WebParts_WebPartCollection_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/CS/webpartcollection.cs#1)]
+ [!code-vb[WebParts_WebPartCollection_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/VB/webpartcollection.vb#1)]  
+  
+ The second part of the code example is the Web page that contains the controls. Notice that the controls declared in `WebPartZone1` are standard ASP.NET server controls, but because they are wrapped as <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> controls at run time, and the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> class inherits from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class, the controls can be treated as <xref:System.Web.UI.WebControls.WebParts.WebPart> controls at run time and made part of a <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPartCollection_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/CS/webpartcollectioncs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_WebPartCollection_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPartCollection_Overview/VB/webpartcollectionvb.aspx#2)]  -->  
+  
+ After you load the page in a browser, click the **Toggle BulletedList1 Title** button, and notice that the code toggles the title of the control between the two available title choices.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPart this[string id] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPart Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPart</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id">The unique identifier for a particular <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control in a collection.</param>
+        <summary>Returns a member of the collection based on a unique string identifier.</summary>
+        <value>The first <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> in the collection whose ID equals the value of <paramref name="id" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartCollection.Item%2A> indexer enables you to access a <xref:System.Web.UI.WebControls.WebParts.WebPart> control in a <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object according to a unique identifier.  
+  
+> [!NOTE]
+>  The Web Parts control set performs case-insensitive matching on this property, so case sensitivity is not part of a unique `id` value.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartCollection.Item%2A> property also works to identify members of a <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object in some specialized cases. In the case of <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> controls, the indexer is able to match the identifier for the underlying child control wrapped by the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control. In the case of <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> controls, the indexer matches the identifier for the control based on a case-insensitive comparison of the `id` parameter and either the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.OriginalID%2A> or <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.GenericWebPartID%2A> property values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

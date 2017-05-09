@@ -1,0 +1,68 @@
+<Type Name="IRouteConstraint" FullName="System.Web.Routing.IRouteConstraint">
+  <TypeSignature Language="C#" Value="public interface IRouteConstraint" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRouteConstraint" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Routing.IRouteConstraint" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Web.Routing, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the contract that a class must implement in order to check whether a URL parameter value is valid for a constraint.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you include a constraint for a URL parameter in a route definition, you must represent the constraint as either string or as an object that implements the <xref:System.Web.Routing.IRouteConstraint> interface. If the constraint is a string, it is treated as a regular expression. You create a class that implements <xref:System.Web.Routing.IRouteConstraint> when you cannot represent the validation logic easily as a regular expression. You add the validation logic in the <xref:System.Web.Routing.IRouteConstraint.Match%2A> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Match">
+      <MemberSignature Language="C#" Value="public bool Match (System.Web.HttpContextBase httpContext, System.Web.Routing.Route route, string parameterName, System.Web.Routing.RouteValueDictionary values, System.Web.Routing.RouteDirection routeDirection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Match(class System.Web.HttpContextBase httpContext, class System.Web.Routing.Route route, string parameterName, class System.Web.Routing.RouteValueDictionary values, valuetype System.Web.Routing.RouteDirection routeDirection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.IRouteConstraint.Match(System.Web.HttpContextBase,System.Web.Routing.Route,System.String,System.Web.Routing.RouteValueDictionary,System.Web.Routing.RouteDirection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="httpContext" Type="System.Web.HttpContextBase" />
+        <Parameter Name="route" Type="System.Web.Routing.Route" />
+        <Parameter Name="parameterName" Type="System.String" />
+        <Parameter Name="values" Type="System.Web.Routing.RouteValueDictionary" />
+        <Parameter Name="routeDirection" Type="System.Web.Routing.RouteDirection" />
+      </Parameters>
+      <Docs>
+        <param name="httpContext">An object that encapsulates information about the HTTP request.</param>
+        <param name="route">The object that this constraint belongs to.</param>
+        <param name="parameterName">The name of the parameter that is being checked.</param>
+        <param name="values">An object that contains the parameters for the URL.</param>
+        <param name="routeDirection">An object that indicates whether the constraint check is being performed when an incoming request is being handled or when a URL is being generated.</param>
+        <summary>Determines whether the URL parameter contains a valid value for this constraint.</summary>
+        <returns>
+          <see langword="true" /> if the URL parameter contains a valid value; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Web.Routing.IRouteConstraint.Match%2A> method to add validation logic for the constraint. This method is called by the routing framework when an incoming request is processed and when a URL is constructed. You can determine the current scenario by examining the `routeDirection` parameter.  
+  
+ When a request is processed, the routing framework determines whether the pattern and values of the incoming request match the pattern and constraints of the route. When a URL is constructed, the routing framework determines whether the values supplied when the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A> method is called match the pattern and constraints of the route.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

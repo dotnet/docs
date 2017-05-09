@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: e7e2dc9e-bda9-420d-a5b1-4fabf1cca46b
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Find Descendant Elements (XPath-LINQ to XML) (Visual Basic)

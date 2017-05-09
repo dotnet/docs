@@ -1,0 +1,348 @@
+<Type Name="SqlNotificationInfo" FullName="System.Data.SqlClient.SqlNotificationInfo">
+  <TypeSignature Language="C#" Value="public enum SqlNotificationInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SqlNotificationInfo extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlNotificationInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>This enumeration provides additional information about the different notifications that can be received by the dependency event handler.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.SqlClient.SqlNotificationInfo> enumeration is referenced by an instance of the <xref:System.Data.SqlClient.SqlNotificationEventArgs> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AlreadyChanged">
+      <MemberSignature Language="C#" Value="AlreadyChanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlNotificationInfo AlreadyChanged = int32(-2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.AlreadyChanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlNotificationInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see langword="SqlDependency" /> object already fired, and new commands cannot be added to it.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Alter">
+      <MemberSignature Language="C#" Value="Alter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlNotificationInfo Alter = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Alter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlNotificationInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An underlying server object related to the query was modified.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="Delete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlNotificationInfo Delete = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Delete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlNotificationInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Data was changed by a DELETE statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Drop">
+      <MemberSignature Language="C#" Value="Drop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlNotificationInfo Drop = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Drop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlNotificationInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An underlying object related to the query was dropped.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="Error" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlNotificationInfo Error = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Error" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlNotificationInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An internal server error occurred.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Expired">
+      <MemberSignature Language="C#" Value="Expired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlNotificationInfo Expired = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Expired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlNotificationInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see langword="SqlDependency" /> object has expired.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="Insert" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlNotificationInfo Insert = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Insert" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlNotificationInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Data was changed by an INSERT statement.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Invalid">
+      <MemberSignature Language="C#" Value="Invalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlNotificationInfo Invalid = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Invalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlNotificationInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A statement was provided that cannot be notified (for example, an UPDATE statement).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Isolation">
+      <MemberSignature Language="C#" Value="Isolation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlNotificationInfo Isolation = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Isolation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlNotificationInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The statement was executed under an isolation mode that was not valid (for example, Snapshot).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Merge">
+      <MemberSignature Language="C#" Value="Merge" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlNotificationInfo Merge = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Merge" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlNotificationInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used to distinguish the server-side cause for a query notification firing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="Options" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlNotificationInfo Options = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Options" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlNotificationInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The SET options were not set appropriately at subscription time.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousFire">
+      <MemberSignature Language="C#" Value="PreviousFire" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlNotificationInfo PreviousFire = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.PreviousFire" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlNotificationInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A previous statement has caused query notifications to fire under the current transaction.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Query">
+      <MemberSignature Language="C#" Value="Query" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlNotificationInfo Query = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Query" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlNotificationInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A SELECT statement that cannot be notified or was provided.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Resource">
+      <MemberSignature Language="C#" Value="Resource" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlNotificationInfo Resource = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Resource" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlNotificationInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Fires as a result of server resource pressure.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Restart">
+      <MemberSignature Language="C#" Value="Restart" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlNotificationInfo Restart = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Restart" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlNotificationInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The server was restarted (notifications are sent during restart.).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateLimit">
+      <MemberSignature Language="C#" Value="TemplateLimit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlNotificationInfo TemplateLimit = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.TemplateLimit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlNotificationInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The subscribing query causes the number of templates on one of the target tables to exceed the maximum allowable limit.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Truncate">
+      <MemberSignature Language="C#" Value="Truncate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlNotificationInfo Truncate = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Truncate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlNotificationInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>One or more tables were truncated.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlNotificationInfo Unknown = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlNotificationInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used when the info option sent by the server was not recognized by the client.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="Update" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlNotificationInfo Update = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlNotificationInfo.Update" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.SqlClient.SqlNotificationInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Data was changed by an UPDATE statement.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

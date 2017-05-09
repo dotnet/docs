@@ -111,7 +111,6 @@ This topic is the second of four topics that discusses how to implement a discov
 3.  Within the `Main()` method, add the following code:  
   
     ```csharp  
-  
     // Define the base address of the service  
     Uri baseAddress = new Uri("net.tcp://localhost:9002/CalculatorService/" + Guid.NewGuid().ToString());  
     // Define the endpoint address where announcement messages will be sent  

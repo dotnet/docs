@@ -62,11 +62,19 @@ This topic demonstrates the use of Secure Sockets Layer (SSL) transport security
   
 4.  Configure a custom binding named "reliableSessionOverHttps" to use the HTTPS transport and reliable sessions.  
   
+<<<<<<< HEAD
     [!code-xml[C_HowTo_CreateReliableSessionHTTPS#2211](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_createreliablesessionhttps/common/app.config#2211)]   
   
 5.  Create an instance of the `ClientCalculator` in an application and then call the service operations.  
   
     [!code-csharp[C_HowTo_CreateReliableSessionHTTPS#1223](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_createreliablesessionhttps/cs/client.cs#1223)]  
+=======
+     [!code-xml[C_HowTo_CreateReliableSessionHTTPS#2211](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_createreliablesessionhttps/common/app.config#2211)]   
+  
+5.  Create an instance of the `ClientCalculator` in an application and then call the service operations.  
+  
+     [!code-csharp[C_HowTo_CreateReliableSessionHTTPS#1223](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_createreliablesessionhttps/cs/client.cs#1223)]   
+>>>>>>> Review and fix TODO code snippet references (docs 3)
   
 6.  Compile and run the client.  
   

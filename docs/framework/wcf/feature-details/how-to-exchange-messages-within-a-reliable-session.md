@@ -56,7 +56,7 @@ This topic outlines the steps required to enable a reliable session using one of
   
      [!code-csharp[C_HowTo_UseReliableSession#1221](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_usereliablesession/cs/client.cs#1221)]  
   
-3.  The generated client application also contains the implementation of the `ClientCalculator`. Note that the address and binding information is not specified anywhere inside the implementation of the service. Also, code does not have to be written to retrieve that information from the configuration file.  
+3.  The generated client appl-xmlication also contains the implementation of the `ClientCalculator`. Note that the address and binding information is not specified anywhere inside the implementation of the service. Also, code does not have to be written to retrieve that information from the configuration file.  
   
      [!code-csharp[C_HowTo_UseReliableSession#1222](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_usereliablesession/cs/client.cs#1222)]  
   

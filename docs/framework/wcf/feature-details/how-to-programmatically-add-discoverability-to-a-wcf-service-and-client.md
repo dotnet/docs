@@ -32,7 +32,7 @@ This topic explains how to make a [!INCLUDE[indigo1](../../../../includes/indigo
   
 4.  In the `Main()` method, inside the `using` statement, add a <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> instance to the service host.  
   
-    ```csharp  
+    ```csharp   
     public static void Main()  
     {  
         // Create a ServiceHost for the CalculatorService type.  
@@ -50,7 +50,7 @@ This topic explains how to make a [!INCLUDE[indigo1](../../../../includes/indigo
   
 5.  Add a <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> to the service host right after the code that adds the <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior>.  
   
-    ```csharp  
+    ```csharp   
     // Add ServiceDiscoveryBehavior  
     serviceHost.Description.Behaviors.Add(new ServiceDiscoveryBehavior());  
   
@@ -72,7 +72,7 @@ This topic explains how to make a [!INCLUDE[indigo1](../../../../includes/indigo
   
 5.  Add the following `using` statements.  
   
-    ```csharp  
+    ```csharp   
     using System.ServiceModel;  
     using System.ServiceModel.Discovery;  
     using Microsoft.ServiceModel.Samples;  
@@ -80,7 +80,7 @@ This topic explains how to make a [!INCLUDE[indigo1](../../../../includes/indigo
   
 6.  Add a static method called `FindCalculatorServiceAddress()` to the `Program` class.  
   
-    ```csharp  
+    ```csharp   
     static EndpointAddress FindCalculatorServiceAddress()  
     {  
     }  
@@ -90,7 +90,7 @@ This topic explains how to make a [!INCLUDE[indigo1](../../../../includes/indigo
   
 7.  Inside the `FindCalculatorServiceAddress` method, create a new <xref:System.ServiceModel.Discovery.DiscoveryClient> instance, passing in a <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> to the constructor.  
   
-    ```csharp  
+    ```csharp   
     static EndpointAddress FindCalculatorServiceAddress()  
     {  
         // Create DiscoveryClient  
@@ -102,14 +102,14 @@ This topic explains how to make a [!INCLUDE[indigo1](../../../../includes/indigo
   
 8.  On the next line, call the <xref:System.ServiceModel.Discovery.DiscoveryClient.Find%2A> method and specify a <xref:System.ServiceModel.Discovery.FindCriteria> instance that contains the service contract you want to search for. In this case, specify `ICalculator`.  
   
-    ```csharp  
+    ```csharp   
     // Find ICalculatorService endpoints              
     FindResponse findResponse = discoveryClient.Find(new FindCriteria(typeof(ICalculator)));  
     ```  
   
 9. After the call to <xref:System.ServiceModel.Discovery.DiscoveryClient.Find%2A>, check to see if there is at least one matching service and return the <xref:System.ServiceModel.EndpointAddress> of the first matching service. Otherwise return `null`.  
   
-    ```csharp  
+    ```csharp   
     if (findResponse.Endpoints.Count > 0)  
     {  
         return findResponse.Endpoints[0].Address;  
@@ -122,7 +122,7 @@ This topic explains how to make a [!INCLUDE[indigo1](../../../../includes/indigo
   
 10. Add a static method named `InvokeCalculatorService` to the `Program` class.  
   
-    ```csharp  
+    ```csharp   
     static void InvokeCalculatorService(EndpointAddress endpointAddress)  
     {  
     }  
@@ -132,21 +132,21 @@ This topic explains how to make a [!INCLUDE[indigo1](../../../../includes/indigo
   
 11. Inside the `InvokeCalculatorService` method, create an instance of the `CalculatorServiceClient` class. This class is defined by the [Self-Host](http://go.microsoft.com/fwlink/?LinkId=145523) sample. It was generated using Svcutil.exe.  
   
-    ```csharp  
+    ```csharp   
     // Create a client  
     CalculatorClient client = new CalculatorClient();  
     ```  
   
 12. On the next line, set the endpoint address of the client to the endpoint address returned from `FindCalculatorServiceAddress()`.  
   
-    ```csharp  
+    ```csharp   
     // Connect to the discovered service endpoint  
     client.Endpoint.Address = endpointAddress;  
     ```  
   
 13. Immediately after the code for the previous step, call the methods exposed by the calculator service.  
   
-    ```csharp  
+    ```csharp   
     Console.WriteLine("Invoking CalculatorService at {0}", endpointAddress);  
   
     double value1 = 100.00D;  
@@ -175,7 +175,7 @@ This topic explains how to make a [!INCLUDE[indigo1](../../../../includes/indigo
   
 14. Add code to the `Main()` method in the `Program` class to call `FindCalculatorServiceAddress`.  
   
-    ```csharp  
+    ```csharp   
     public static void Main()  
     {  
         EndpointAddress endpointAddress = FindCalculatorServiceAddress();  
@@ -184,7 +184,7 @@ This topic explains how to make a [!INCLUDE[indigo1](../../../../includes/indigo
   
 15. On the next line, call the `InvokeCalculatorService()` and pass in the endpoint address returned from `FindCalculatorServiceAddress()`.  
   
-    ```csharp  
+    ```csharp   
     if (endpointAddress != null)  
     {  
         InvokeCalculatorService(endpointAddress);  
@@ -228,7 +228,7 @@ This topic explains how to make a [!INCLUDE[indigo1](../../../../includes/indigo
 ## Example  
  The following is a listing of the code for this sample. Because this code is based on the [Self-Host](http://go.microsoft.com/fwlink/?LinkId=145523) sample, only those files that are changed are listed. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the Self-Host sample, see [Setup Instructions](http://go.microsoft.com/fwlink/?LinkId=145522).  
   
-```csharp  
+```csharp   
 // Service.cs  
 using System;  
 using System.Configuration;  
@@ -264,7 +264,7 @@ namespace Microsoft.ServiceModel.Samples
 }  
 ```  
   
-```csharp  
+```csharp   
 // Program.cs  
 using System;  
 using System.Collections.Generic;  

@@ -28,7 +28,7 @@ manager: "erikre"
   
 1.  Define a basic [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service contract with an interface marked with the <xref:System.ServiceModel.ServiceContractAttribute> attribute. Mark each operation with the <xref:System.ServiceModel.OperationContractAttribute>. Be sure to set the <xref:System.ServiceModel.ServiceContractAttribute.Namespace%2A> property.  
   
-    ```  
+    ```csharp  
     [ServiceContract(Namespace = "MyService")]]  
     public interface ICalculator  
     {  
@@ -43,7 +43,7 @@ manager: "erikre"
   
 2.  Implement the `ICalculator` service contract with a `CalculatorService`.  
   
-    ```  
+    ```csharp  
     public class CalculatorService : ICalculator  
     {  
         public double Add(double n1, double n2)  
@@ -56,7 +56,7 @@ manager: "erikre"
   
 3.  Define a namespace for the `ICalculator` and `CalculatorService` implementations by wrapping them in a namespace block.  
   
-    ```  
+    ```csharp  
     Namespace Microsoft.Ajax.Samples  
     {  
         //Include the code for ICalculator and Caculator here.  

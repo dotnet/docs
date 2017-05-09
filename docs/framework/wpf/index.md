@@ -33,8 +33,8 @@ Windows Presentation Foundation (WPF) in Visual Studio 2015 provides developers 
 > [!NOTE]
 >  The Mozilla Firefox browser disables the Microsoft Framework Assistant extension. See [How to remove the .NET Framework Assistant for Firefox](https://support.microsoft.com/en-us/kb/963707) for information on how to remove the extension from Firefox.  
   
- [Create Modern Desktop Applications with Windows Presentation Foundation](http://msdn.microsoft.com/library/8d6c7295-ff64-4681-b01c-5056e8504569)  
+ [Create Modern Desktop Applications with Windows Presentation Foundation](/visualstudio/designers/create-modern-desktop-applications-with-windows-presentation-foundation)  
   
- [Designing XAML in Visual Studio and Blend for Visual Studio](http://msdn.microsoft.com/library/288e2415-9fcf-408e-bc35-9848315e14fd)  
+ [Designing XAML in Visual Studio and Blend for Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)  
   
  [Get Visual Studio](https://www.visualstudio.com/features/wpf-vs)

@@ -74,6 +74,6 @@ Applications typically consist of many parts that must all be protected from vul
 ## See Also  
  [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)   
  [Recommendations for Data Access Strategies](http://msdn.microsoft.com/en-us/72411f32-d12a-4de8-b961-e54fca7faaf5)   
- [Securing Applications](http://msdn.microsoft.com/library/7d32c4cf-8bec-4307-a2a8-42f0ceddf3eb)   
+ [Securing Applications](/visualstudio/ide/securing-applications)   
  [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)   
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

@@ -41,16 +41,16 @@ As forms are the base unit of your application, it is essential that you give so
  [Graphics Overview](../../../docs/framework/winforms/advanced/graphics-overview-windows-forms.md)  
  Discusses how to create graphics, draw text, and manipulate graphical images as objects using the advanced implementation of the Windows graphics design interface.  
   
- [ClickOnce Security and Deployment](http://msdn.microsoft.com/library/abab6d34-c3c2-45c1-a8b6-43c7d3131e7a)  
+ [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)  
  Discusses the principles of ClickOnce deployment.  
   
- [Windows Forms/MFC Programming Differences](http://msdn.microsoft.com/library/f3bfcf45-cfd4-45a4-8cde-5f4dbb18ee51)  
+ [Windows Forms/MFC Programming Differences](/cpp/dotnet/windows-forms-mfc-programming-differences)  
  Discusses the differences between MFC applications and Windows Forms.  
   
- [Accessing data in Visual Studio](http://msdn.microsoft.com/library/9812a6d5-23d2-4427-8b98-70a2abfec3bc)  
+ [Accessing data in Visual Studio](/visualstudio/data-tools/accessing-data-in-visual-studio)  
  Discusses incorporating data access functionality into your applications.  
   
- [Windows Forms Applications](http://msdn.microsoft.com/library/7092ee7f-8378-4def-aef8-1695bd97cf14)  
+ [Windows Forms Applications](/visualstudio/debugger/debugging-preparation-windows-forms-applications)  
  Discusses the process of debugging applications created with the Windows Application project template, as well as how to change the Debug and Release configurations.  
   
  [Deploying Applications, Services, and Components](https://msdn.microsoft.com/library/wtzawcsz)  

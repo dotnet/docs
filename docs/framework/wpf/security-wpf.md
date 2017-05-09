@@ -274,7 +274,7 @@ manager: "wpickett"
 |----------|--------------|  
 |Managed code|[Patterns and Practices Security Guidance for Applications](http://go.microsoft.com/fwlink/?LinkId=117426)|  
 |[!INCLUDE[TLA2#tla_cas](../../../includes/tla2sharptla-cas-md.md)]|[Code Access Security](../../../docs/framework/misc/code-access-security.md)|  
-|[!INCLUDE[TLA2#tla_clickonce](../../../includes/tla2sharptla-clickonce-md.md)]|[ClickOnce Security and Deployment](http://msdn.microsoft.com/library/abab6d34-c3c2-45c1-a8b6-43c7d3131e7a)|  
+|[!INCLUDE[TLA2#tla_clickonce](../../../includes/tla2sharptla-clickonce-md.md)]|[ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)|  
 |[!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]|[WPF Partial Trust Security](../../../docs/framework/wpf/wpf-partial-trust-security.md)|  
   
 ## See Also  
@@ -283,5 +283,5 @@ manager: "wpickett"
  [WPF Security Strategy - Security Engineering](../../../docs/framework/wpf/wpf-security-strategy-security-engineering.md)   
  [Patterns and Practices Security Guidance for Applications](http://go.microsoft.com/fwlink/?LinkId=117426)   
  [Code Access Security](../../../docs/framework/misc/code-access-security.md)   
- [ClickOnce Security and Deployment](http://msdn.microsoft.com/library/abab6d34-c3c2-45c1-a8b6-43c7d3131e7a)   
+ [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)   
  [XAML Overview (WPF)](../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)

@@ -28,7 +28,7 @@ manager: "erikre"
   
 1.  Define a basic [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service contract with an interface marked with the <xref:System.ServiceModel.ServiceContractAttribute> attribute. Mark each operation with the <xref:System.ServiceModel.OperationContractAttribute>. Be sure to set the <xref:System.ServiceModel.ServiceContractAttribute.Namespace%2A> property.  
   
-    ```  
+    ```csharp  
     [ServiceContract(Namespace = "MyService")]]  
     public interface ICalculator  
     {  
@@ -43,7 +43,7 @@ manager: "erikre"
   
 2.  Implement the `ICalculator` service contract with a `CalculatorService`.  
   
-    ```  
+    ```csharp  
     public class CalculatorService : ICalculator  
     {  
         public double Add(double n1, double n2)  
@@ -56,7 +56,7 @@ manager: "erikre"
   
 3.  Define a namespace for the `ICalculator` and `CalculatorService` implementations by wrapping them in a namespace block.  
   
-    ```  
+    ```csharp  
     Namespace Microsoft.Ajax.Samples  
     {  
         //Include the code for ICalculator and Caculator here.  
@@ -83,7 +83,6 @@ manager: "erikre"
 1.  The endpoint is configured at an empty address relative to the .svc file, so the service is now available and can be invoked by sending requests to service.svc/\<operation> - for example, service.svc/Add for the `Add` operation. You can use it by entering the service URL into the Scripts collection of the ASP.NET AJAX Script Manager control. For an example, see the [AJAX Service Without Configuration](../../../../docs/framework/wcf/samples/ajax-service-without-configuration.md).  
   
 ## Example  
-<!-- TODO: review snippet reference  [!CODE [Microsoft.Win32.RegistryKey#4](Microsoft.Win32.RegistryKey#4)]  -->  
   
  The automatically-configured endpoint is created at an empty address relative to the base URL. A configuration file can also be added and used with this approach. If the configuration file contains endpoint definitions, these endpoints are added to the automatically-configured endpoint.  
   

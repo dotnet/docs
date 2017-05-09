@@ -11,25 +11,21 @@ ms.devlang: dotnet
 ms.assetid: 71b9d722-c5a8-4271-9ce1-d87e7ae2494d
 ---
 
-.NET Core distribution packaging
-================================
+# .NET Core distribution packaging
 
-As .NET Core becomes available on more and more platforms, thanks to the efforts of dedicated contributors, it is useful to provide guidelines on how to package, name, and version it, in order to ensure a consistency of experience no matter where you choose to run .NET.
-This document provides such guidelines.
+As .NET Core becomes available on more and more platforms, it's useful to learn how to package, name, and version it, in order to ensure a consistent experience no matter where you choose to run .NET.
 
-What .NET Core is made of
--------------------------
+## .NET Core components
 
 .NET Core is made of three major parts that need to be packaged:
 
-1. **The host** (also known as the "muxer") has two distinct roles: activate a runtime to launch an application, and activate an SDK to dispatch commands to it. The host is a native executable (`dotnet.exe`) and its supporting policy libraries (installed in `host/fxr`). It's built from the code in the [`dotnet/core-setup`](https://github.com/dotnet/core-setup/) repository. There is typically only one host on a given machine, although that is not a strict requirement.
-2. **The framework** is made of a runtime and supporting managed libraries. A framework may be installed as part of an application, or as a shared framework in a central location that can be re-used by multiple applications. There may be any number of shared frameworks installed on a given machine. Shared frameworks live under `shared/Microsoft.NETCore.App/<version>`. The host will roll forward across patch versions, so if an application targets `Microsoft.NETCore.App` 1.0.0, and only 1.0.4 is present, it will be launched against 1.0.4.
-3. **The SDK** (also sometimes referred to as "the tooling") is a set of managed tools that can be used to write and build .NET Core libraries and applications. This includes the CLI, MS Build and associated build tasks and targets, NuGet, new project templates, etc. It is possible to have multiple SDKs on a machine (in order, for example, to allow for building projects that explicitly require an older version), but the recommendation is to use the latest available tools whenever possible.
+1. **The host** (also known as the "muxer") has two distinct roles: activate a runtime to launch an application, and activate an SDK to dispatch commands to it. The host is a native executable (`dotnet.exe`) and its supporting policy libraries (installed in `host/fxr`). It's built from the code in the [`dotnet/core-setup`](https://github.com/dotnet/core-setup/) repository. There is typically only one host on a given machine, although that isn't a strict requirement.
+2. **The framework** is made of a runtime and supporting managed libraries. The framework may be installed as part of an application, or as a shared framework in a central location that can be re-used by multiple applications. There may be any number of shared frameworks installed on a given machine. Shared frameworks live under `shared/Microsoft.NETCore.App/<version>`. The host rolls forward across patch versions. If an application targets `Microsoft.NETCore.App` 1.0.0, and only 1.0.4 is present, it's launched against 1.0.4.
+3. **The SDK** (also known as "the tooling") is a set of managed tools that can be used to write and build .NET Core libraries and applications. This includes the CLI, MSBuild and associated build tasks and targets, NuGet, new project templates, etc. It's possible to have multiple SDKs on a machine (in order, for example, to allow for building projects that explicitly require an older version), but the recommendation is to use the latest available tools whenever possible.
 
-Recommended package names
--------------------------
+## Recommended package names
 
-These are recommendations, and a specific package maintainer may choose to diverge from it, for example based on different tradition of the specific distro they're targeting.
+The following is our recommendation for package names. A package maintainer may choose to diverge from it based on various reasons, such as, a different tradition of the specific distribution they're targeting.
 
 ### Minimum package set
 
@@ -48,16 +44,14 @@ Some maintainers may choose to provide additional packages such as:
 
 * `dotnet-lts`: the latest "Long-Term Support" version of the shared framework. [LTS and Current release trains](https://docs.microsoft.com/en-us/dotnet/articles/core/versions/lts-current) correspond to different cadences at which .NET Core gets released. Users have a choice of adopting one or the other train, based on how often they are willing to update. This is a concept that is also tied to support levels, so it may or may not make sense depending on the distro being considered.
 
-Disk layout
------------
+## Disk layout
 
 When installing .NET Core packages, the relative placement of their target destinations on disk matter.
 The `dotnet.exe` host should be placed next to `sdk` and `shared` folders that contain the versioned contents of the `dotnet-sdk` SDK packages, and `dotnet-runtime` shared framework packages.
 
 The disk layout of files and directories inside the packages is versioned. This means that updating to the latest `dotnet-runtime` will effectively install the new version side-by-side with the ones that were previously there, reducing the possibility of breaking existing applications by updating the package. Package updates should not remove previous versions.
 
-Update policies
----------------
+## Update policies
 
 When an `update` is performed, the behavior of each package is as follows:
 

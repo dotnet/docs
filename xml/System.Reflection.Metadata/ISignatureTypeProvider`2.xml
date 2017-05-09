@@ -1,0 +1,178 @@
+<Type Name="ISignatureTypeProvider&lt;TType,TGenericContext&gt;" FullName="System.Reflection.Metadata.ISignatureTypeProvider&lt;TType,TGenericContext&gt;">
+  <TypeSignature Language="C#" Value="public interface ISignatureTypeProvider&lt;TType,TGenericContext&gt; : System.Reflection.Metadata.IConstructedTypeProvider&lt;TType&gt;, System.Reflection.Metadata.ISimpleTypeProvider&lt;TType&gt;, System.Reflection.Metadata.ISZArrayTypeProvider&lt;TType&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISignatureTypeProvider`2&lt;TType, TGenericContext&gt; implements class System.Reflection.Metadata.IConstructedTypeProvider`1&lt;!TType&gt;, class System.Reflection.Metadata.ISimpleTypeProvider`1&lt;!TType&gt;, class System.Reflection.Metadata.ISZArrayTypeProvider`1&lt;!TType&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ISignatureTypeProvider`2" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TType" />
+    <TypeParameter Name="TGenericContext" />
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Reflection.Metadata.IConstructedTypeProvider&lt;TType&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Reflection.Metadata.ISimpleTypeProvider&lt;TType&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Reflection.Metadata.ISZArrayTypeProvider&lt;TType&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TType">To be added.</typeparam>
+    <typeparam name="TGenericContext">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetFunctionPointerType">
+      <MemberSignature Language="C#" Value="public TType GetFunctionPointerType (System.Reflection.Metadata.MethodSignature&lt;TType&gt; signature);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TType GetFunctionPointerType(valuetype System.Reflection.Metadata.MethodSignature`1&lt;!TType&gt; signature) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISignatureTypeProvider`2.GetFunctionPointerType(System.Reflection.Metadata.MethodSignature{`0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="signature" Type="System.Reflection.Metadata.MethodSignature&lt;TType&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="signature">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGenericMethodParameter">
+      <MemberSignature Language="C#" Value="public TType GetGenericMethodParameter (TGenericContext genericContext, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TType GetGenericMethodParameter(!TGenericContext genericContext, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISignatureTypeProvider`2.GetGenericMethodParameter(`1,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="genericContext" Type="TGenericContext" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="genericContext">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGenericTypeParameter">
+      <MemberSignature Language="C#" Value="public TType GetGenericTypeParameter (TGenericContext genericContext, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TType GetGenericTypeParameter(!TGenericContext genericContext, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISignatureTypeProvider`2.GetGenericTypeParameter(`1,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="genericContext" Type="TGenericContext" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="genericContext">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetModifiedType">
+      <MemberSignature Language="C#" Value="public TType GetModifiedType (TType modifier, TType unmodifiedType, bool isRequired);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TType GetModifiedType(!TType modifier, !TType unmodifiedType, bool isRequired) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISignatureTypeProvider`2.GetModifiedType(`0,`0,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modifier" Type="TType" />
+        <Parameter Name="unmodifiedType" Type="TType" />
+        <Parameter Name="isRequired" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="modifier">To be added.</param>
+        <param name="unmodifiedType">To be added.</param>
+        <param name="isRequired">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPinnedType">
+      <MemberSignature Language="C#" Value="public TType GetPinnedType (TType elementType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TType GetPinnedType(!TType elementType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISignatureTypeProvider`2.GetPinnedType(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementType" Type="TType" />
+      </Parameters>
+      <Docs>
+        <param name="elementType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTypeFromSpecification">
+      <MemberSignature Language="C#" Value="public TType GetTypeFromSpecification (System.Reflection.Metadata.MetadataReader reader, TGenericContext genericContext, System.Reflection.Metadata.TypeSpecificationHandle handle, byte rawTypeKind);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TType GetTypeFromSpecification(class System.Reflection.Metadata.MetadataReader reader, !TGenericContext genericContext, valuetype System.Reflection.Metadata.TypeSpecificationHandle handle, unsigned int8 rawTypeKind) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ISignatureTypeProvider`2.GetTypeFromSpecification(System.Reflection.Metadata.MetadataReader,`1,System.Reflection.Metadata.TypeSpecificationHandle,System.Byte)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Reflection.Metadata.MetadataReader" />
+        <Parameter Name="genericContext" Type="TGenericContext" />
+        <Parameter Name="handle" Type="System.Reflection.Metadata.TypeSpecificationHandle" />
+        <Parameter Name="rawTypeKind" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="genericContext">To be added.</param>
+        <param name="handle">To be added.</param>
+        <param name="rawTypeKind">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

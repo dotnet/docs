@@ -6,6 +6,7 @@
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
+    <AssemblyVersion>1.4.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
@@ -42,6 +43,36 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DecodeSignature&lt;TType,TGenericContext&gt;">
+      <MemberSignature Language="C#" Value="public TType DecodeSignature&lt;TType,TGenericContext&gt; (System.Reflection.Metadata.ISignatureTypeProvider&lt;TType,TGenericContext&gt; provider, TGenericContext genericContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TType DecodeSignature&lt;TType, TGenericContext&gt;(class System.Reflection.Metadata.ISignatureTypeProvider`2&lt;!!TType, !!TGenericContext&gt; provider, !!TGenericContext genericContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.TypeSpecification.DecodeSignature``2(System.Reflection.Metadata.ISignatureTypeProvider{``0,``1},``1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TType</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TType" />
+        <TypeParameter Name="TGenericContext" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="provider" Type="System.Reflection.Metadata.ISignatureTypeProvider&lt;TType,TGenericContext&gt;" />
+        <Parameter Name="genericContext" Type="TGenericContext" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TType">To be added.</typeparam>
+        <typeparam name="TGenericContext">To be added.</typeparam>
+        <param name="provider">To be added.</param>
+        <param name="genericContext">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetCustomAttributes">
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.CustomAttributeHandleCollection GetCustomAttributes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.CustomAttributeHandleCollection GetCustomAttributes() cil managed" />
@@ -51,6 +82,7 @@
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.CustomAttributeHandleCollection</ReturnType>
@@ -71,6 +103,7 @@
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.BlobHandle</ReturnType>

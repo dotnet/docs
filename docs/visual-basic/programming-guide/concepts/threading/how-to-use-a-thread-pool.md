@@ -157,4 +157,4 @@ Fibonacci(27) = 196418
  [Thread Pooling (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/thread-pooling.md)   
  [Threading (Visual Basic)](../../../../visual-basic/programming-guide/concepts/threading/index.md)   
  @System.Threading.Monitor   
- [Security](http://msdn.microsoft.com/library/9a9621d7-8883-4a4f-a874-65e8e09e20a6)
+ [Security](../../../../standard/security/index.md)

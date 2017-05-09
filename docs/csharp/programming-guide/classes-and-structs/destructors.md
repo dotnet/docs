@@ -87,9 +87,9 @@ protected override void Finalize()
   
  For more details about cleaning up resources, see the following topics:  
   
--   [Cleaning Up Unmanaged Resources](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213)  
+-   [Cleaning Up Unmanaged Resources](../../../standard/garbage-collection/unmanaged.md)  
   
--   [Implementing a Dispose Method](http://msdn.microsoft.com/library/eb4e1af0-3b48-4fbc-ad4e-fc2f64138bf9)  
+-   [Implementing a Dispose Method](../../../standard/garbage-collection/implementing-dispose.md)  
   
 -   [using Statement](../../../csharp/language-reference/keywords/using-statement.md)  
   

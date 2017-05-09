@@ -76,7 +76,6 @@ This topic explains how to make a [!INCLUDE[indigo1](../../../../includes/indigo
     using System.ServiceModel;  
     using System.ServiceModel.Discovery;  
     using Microsoft.ServiceModel.Samples;  
-  
     ```  
   
 6.  Add a static method called `FindCalculatorServiceAddress()` to the `Program` class.  
@@ -230,7 +229,6 @@ This topic explains how to make a [!INCLUDE[indigo1](../../../../includes/indigo
  The following is a listing of the code for this sample. Because this code is based on the [Self-Host](http://go.microsoft.com/fwlink/?LinkId=145523) sample, only those files that are changed are listed. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the Self-Host sample, see [Setup Instructions](http://go.microsoft.com/fwlink/?LinkId=145522).  
   
 ```csharp  
-  
 // Service.cs  
 using System;  
 using System.Configuration;  
@@ -347,7 +345,7 @@ namespace DiscoveryClientApp
     }  
 }  
 ```  
- 
+
 ## See Also  
  [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)   
  [WCF Discovery Object Model](../../../../docs/framework/wcf/feature-details/wcf-discovery-object-model.md)

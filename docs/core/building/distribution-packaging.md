@@ -33,14 +33,14 @@ These are recommendations, and a specific package maintainer may choose to diver
 
 ### Minimum package set
 
-* `dotnet-[major].[minor]`: a shared framework with the specified version (only the latest patch version for a given major+minor combination should be available in the package manager). **dependencies**: `dotnet-host`
+* `dotnet-runtime-[major].[minor]`: a shared framework with the specified version (only the latest patch version for a given major+minor combination should be available in the package manager). **dependencies**: `dotnet-host`
 * `dotnet-sdk`: the latest SDK. **dependencies**: the latest `dotnet-sdk-[major].[minor]`.
-* `dotnet-sdk-[major].[minor]`: the SDK with the specified version. The version specified is the highest included version of included shared frameworks, so that users can easily relate an SDK to a shared framework. **dependencies**: `dotnet-host`, one or more `dotnet-[major].[minor]` (one of those is used by the SDK code itself, the others are here for users to build and run against).
+* `dotnet-sdk-[major].[minor]`: the SDK with the specified version. The version specified is the highest included version of included shared frameworks, so that users can easily relate an SDK to a shared framework. **dependencies**: `dotnet-host`, one or more `dotnet-runtime-[major].[minor]` (one of those is used by the SDK code itself, the others are here for users to build and run against).
 * `dotnet-host`: the latest host.
 
 #### Preview versions
 
-Package maintainers may decide to include preview versions of the shared framework and SDK. Those should never be included in the unversioned package (`dotnet` and `dotnet-sdk`), but may be released as versioned packages with an additional preview marker appended to the major and minor version sections of the name. For example, there may be a `dotnet-sdk-2.0-preview-final` package.
+Package maintainers may decide to include preview versions of the shared framework and SDK. Those should never be included in the unversioned `dotnet-sdk` package, but may be released as versioned packages with an additional preview marker appended to the major and minor version sections of the name. For example, there may be a `dotnet-sdk-2.0-preview-final` package.
 
 ### Optional additional packages
 
@@ -52,16 +52,16 @@ Disk layout
 -----------
 
 When installing .NET Core packages, the relative placement of their target destinations on disk matter.
-The `dotnet.exe` host should be placed next to `sdk` and `shared` folders that contain the versioned contents of the `dotnet-sdk` SDK package, and `dotnet` shared framework package.
+The `dotnet.exe` host should be placed next to `sdk` and `shared` folders that contain the versioned contents of the `dotnet-sdk` SDK packages, and `dotnet-runtime` shared framework packages.
 
-The disk layout of files and directories inside the packages is versioned. This means that updating to the latest `dotnet` will effectively install the new version side-by-side with the ones that were previously there, reducing the possibility of breaking existing applications by updating the package. Package updates should not remove previous versions.
+The disk layout of files and directories inside the packages is versioned. This means that updating to the latest `dotnet-runtime` will effectively install the new version side-by-side with the ones that were previously there, reducing the possibility of breaking existing applications by updating the package. Package updates should not remove previous versions.
 
 Update policies
 ---------------
 
 When an `update` is performed, the behavior of each package is as follows:
 
-* `dotnet-[major].[minor]`: new patch versions update the package, but new minor or major versions are separate packages.
+* `dotnet-runtime-[major].[minor]`: new patch versions update the package, but new minor or major versions are separate packages.
 * `dotnet-sdk`: `update` rolls forward major, minor, and patch versions.
 * `dotnet-sdk-[major].[minor]`: new patch versions update the package, but new minor or major versions are separate packages.
 * `dotnet-lts`: `update` rolls forward major, minor, and patch versions.

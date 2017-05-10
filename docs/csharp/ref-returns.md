@@ -1,10 +1,10 @@
 ---
 title: "Ref return values and ref locals (C# Guide) |  | Microsoft Docs"
 description: "Learn how to define and use ref return and ref local values"
-keywords: "ref returns, C#", "reference return values, C#", "ref return values, C#"
+keywords: "ref returns, C#", "reference return values, C#", "ref return values, C#", "ref locals, C#", "ref local values, C#" 
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.date: "05/02/2017"
+ms.date: "05/10/2017"
 ms.topic: "article"
 ms.prod: ".net"
 ms.technology: "devlang-csharp"
@@ -13,7 +13,7 @@ ms.assetid: "18cf7a4b-29f0-4b14-85b8-80af754aabd8"
 ---
 # Ref returns and ref locals
 
-Starting with C# 7, C# supports reference return values (ref returns). A reference return value allows a method to return a reference to an object, rather than a value, back to a caller. 
+Starting with C# 7, C# supports reference return values (ref returns). A reference return value allows a method to return a reference to an object, rather than a value, back to a caller. The caller can then choose to treat the returned object returned as if it were returned by value or by reference. A value returned by reference that the caller handles as a reference rather than a value is a ref local).
 
 ## What is a reference return value?
 
@@ -23,7 +23,7 @@ Most developers are familiar with passing an argument to a called method *by ref
 
 - The caller, rather than the called method, can modify the value returned by the method.
 
-- Modifications to the method's return value by the caller are reflected in the state of the object whose method was called.
+- Instead of modifications to the argument that are reflected in state of the object on the caller, modifications to the method's return value by the caller are reflected in the state of the object whose method was called.
 
 Reference return values can produce more compact code, as well as allow an object to expose only the individual data items, such as an array element, that are of interest to the caller. This reduces the likelihood that the caller will inadvertently modify the object's state.
 
@@ -45,7 +45,8 @@ You define a ref return value by adding the [ref](language-reference/keywords/re
 public ref Person GetContactInformation(string fname, string lname);
 ```
 
-In addition, in each [return](language-reference/keywords/return.md) statement in the method body, the value returned must be preceded by the [ref](language-reference/keywords/ref.md). For example, the following `return` statement returns a `Person` object named `p` by reference:
+
+In addition to including the `ref` keyword in the method signature, the name of the object returned by each [return](language-reference/keywords/return.md) statement in the method body must be preceded by the [ref](language-reference/keywords/ref.md) keyword. For example, the following `return` statement returns a `Person` object named `p` by reference:
 
 ```cs
 return ref p;
@@ -57,13 +58,16 @@ A caller can handle a ref return value in either of two ways:
 
 - As an ordinary value returned by value from a method. The caller can choose to ignore that the return value is a reference return value. In this case, any changes made to the value returned by the method call are not reflected in the state of the called type.
 
-- As a reference return value. The caller must define the variable to which the reference return value is assigned as a [ref local](ref-locals.md), and any changes to the value returned by the method call are reflected in the state of the called type. 
+- As a reference return value. The caller must define the variable to which the reference return value is assigned as a [ref local](#ref-local), and any changes to the value returned by the method call are reflected in the state of the called type. 
 
-To handle the return value by reference, the value must be declared as *ref local* by using the `ref` keyword. For example, if the value returned by the `Person.GetContactInfomation` method is to be consumed as a reference rather than a value, the method call appears as:
+### Ref locals
+
+To handle the reference return value as a reference, the caller must declare the value to be a *ref local* by using the `ref` keyword. For example, if the value returned by the `Person.GetContactInfomation` method is to be consumed as a reference rather than a value, the method call appears as:
 
 ```cs
 ref Person p = Person.GetContactInformation("Brandie", "Best");
 ```
+Subsequent changes to the `Person` object returned by the method are reflected in the 
 
 ## Ref return values: an example
 

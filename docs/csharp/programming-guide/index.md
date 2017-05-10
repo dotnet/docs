@@ -1,7 +1,7 @@
 ---
 title: "C# Programming Guide | Microsoft Docs"
 
-ms.date: "2015-07-20"
+ms.date: "2017-05-02"
 ms.prod: .net
 
 
@@ -38,37 +38,39 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# C# Programming Guide
+# C# programming guide
 This section provides detailed information on key C# language features and features accessible to C# through the .NET Framework.  
   
  Most of this section assumes that you already know something about C# and general programming concepts. If you are a complete beginner with programming or with C#, you might want to visit the [C# Developer Center](http://go.microsoft.com/fwlink/?linkid=95125), where you can find many tutorials, samples and videos to help you get started.  
   
  For information about specific keywords, operators and preprocessor directives, see [C# Reference](../../csharp/language-reference/index.md). For information about the C# Language Specification, see [C# Language Specification](../../csharp/language-reference/language-specification.md).  
   
+## Program sections
+
+[Inside a C# Program](../../csharp/programming-guide/inside-a-program/index.md)  
+  
+[Main() and Command-Line Arguments](../../csharp/programming-guide/main-and-command-args/index.md)  
+ 
 ## Language Sections  
- [Inside a C# Program](../../csharp/programming-guide/inside-a-program/index.md)  
-  
- [Main() and Command-Line Arguments](../../csharp/programming-guide/main-and-command-args/index.md)  
-  
+[Statements, Expressions, and Operators](../../csharp/programming-guide/statements-expressions-operators/index.md)  
+
  [Types](../../csharp/programming-guide/types/index.md)  
+
+ [Classes and Structs](../../csharp/programming-guide/classes-and-structs/index.md)  
   
+ [Interfaces](../../csharp/programming-guide/interfaces/index.md)  
+
+ [Enumeration Types](../../csharp/programming-guide/enumeration-types.md)  
+  
+ [Delegates](../../csharp/programming-guide/delegates/index.md)  
+ 
  [Arrays](../../csharp/programming-guide/arrays/index.md)  
   
  [Strings](../../csharp/programming-guide/strings/index.md)  
   
- [Statements, Expressions, and Operators](../../csharp/programming-guide/statements-expressions-operators/index.md)  
-  
- [Classes and Structs](../../csharp/programming-guide/classes-and-structs/index.md)  
-  
  [Properties](../../csharp/programming-guide/classes-and-structs/properties.md)  
   
- [Interfaces](../../csharp/programming-guide/interfaces/index.md)  
-  
  [Indexers](../../csharp/programming-guide/indexers/index.md)  
-  
- [Enumeration Types](../../csharp/programming-guide/enumeration-types.md)  
-  
- [Delegates](../../csharp/programming-guide/delegates/index.md)  
   
  [Events](../../csharp/programming-guide/events/index.md)  
   
@@ -104,9 +106,6 @@ This section provides detailed information on key C# language features and featu
  [Interoperability](../../csharp/programming-guide/interop/index.md)  
   
  [Reflection](../../csharp/programming-guide/concepts/reflection.md)  
-  
-## Featured Book Chapter  
- [Advanced C#](http://go.microsoft.com/fwlink/?LinkId=195407) in [C# 3.0 in a Nutshell, Third Edition: A Desktop Quick Reference](http://go.microsoft.com/fwlink/?LinkId=195406)  
   
 ## See Also  
  [C# Reference](../../csharp/language-reference/index.md)   

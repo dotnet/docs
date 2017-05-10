@@ -33,6 +33,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # ref (C# Reference)
+<<<<<<< Updated upstream
 The `ref` keyword indicates a value that is passed by reference. It is used in three different contexts: 
 
 - In a method signature and in a method call, to pass an argument to a method by reference. See [Passing an argument by reference](#passing-an-argument-by-reference) for more information.
@@ -40,6 +41,15 @@ The `ref` keyword indicates a value that is passed by reference. It is used in t
 - In a method signature, to return a value to the caller by reference. See [Reference return values](#reference-return-values) for more information.
 
 - In a member body, to indicate that a reference return value is stored locally as a reference that the caller intends to modify. See [Ref locals](#ref-locals) for more information.
+=======
+The `ref` keyword indicates that a value is passed by reference. It is used in three different contexts: 
+
+- In a method signature and in a method call, to pass an argument to a method by reference. See [Passing an argument by reference](passing-an-argument-by-reference) for more information.
+
+- In a method signature, to return a value to the caller by reference. See [Reference return values](reference-return-values) for more information.
+
+- In a member body, to indicate that a reference return value is stored locally as a reference that the caller intends to modify. See [Ref locals](ref-locals) for more information.
+>>>>>>> Stashed changes
 
 ## Passing an argument by reference
 

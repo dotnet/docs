@@ -76,5 +76,5 @@ Client application services make it easy for you to create Windows-based applica
  [Using Profile Information with Microsoft Ajax](http://msdn.microsoft.com/library/91239ae6-d01c-4f4e-a433-eb9040dbed61)   
  [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1)   
  [Managing Authorization Using Roles](http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195)   
- [OLD NIB: Managing Application Settings](http://msdn.microsoft.com/en-us/7de3c3bd-e0dc-4e75-a1aa-7b0ecfaac4fc)   
  [Application Settings Overview](../../../docs/framework/winforms/advanced/application-settings-overview.md)
+

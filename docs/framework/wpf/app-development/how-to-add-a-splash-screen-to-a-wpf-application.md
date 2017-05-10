@@ -56,4 +56,4 @@ This topic shows how to add a startup window, or *splash screen*, to a Windows P
   
 ## See Also  
  <xref:System.Windows.SplashScreen>   
- [NIB:How to: Add Existing Items to a Project](http://msdn.microsoft.com/en-us/15f4cfb7-78ab-457f-9f14-099a25a6a2d3)
+

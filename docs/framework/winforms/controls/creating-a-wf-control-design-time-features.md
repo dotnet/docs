@@ -89,11 +89,11 @@ The design-time experience for a custom control can be enhanced by authoring an 
   
 1.  Add a Windows Forms Control Library project to the solution. Name the project "MarqueeControlLibrary."  
   
-2.  Using **Solution Explorer**, delete the project's default control by deleting the source file named "UserControl1.cs" or "UserControl1.vb", depending on your language of choice. For more information, see [NIB:How to: Remove, Delete, and Exclude Items](http://msdn.microsoft.com/en-us/6dffdc86-29c8-4eff-bcd8-e3a0dd9e9a73).  
+2.  Using **Solution Explorer**, delete the project's default control by deleting the source file named "UserControl1.cs" or "UserControl1.vb", depending on your language of choice.   
   
 3.  Add a new <xref:System.Windows.Forms.UserControl> item to the `MarqueeControlLibrary` project. Give the new source file a base name of "MarqueeControl."  
   
-4.  Using **Solution Explorer**, create a new folder in the `MarqueeControlLibrary` project. For more information, see [NIB:How to: Add New Project Items](http://msdn.microsoft.com/en-us/63d3e16b-de6e-4bb5-a0e3-ecec762201ce). Name the new folder "Design."  
+4.  Using **Solution Explorer**, create a new folder in the `MarqueeControlLibrary` project. Name the new folder "Design."  
   
 5.  Right-click the **Design** folder and add a new class. Give the source file a base name of "MarqueeControlRootDesigner."  
   

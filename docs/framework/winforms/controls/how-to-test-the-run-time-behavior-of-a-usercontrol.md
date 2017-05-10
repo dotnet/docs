@@ -49,7 +49,7 @@ When you develop a <xref:System.Windows.Forms.UserControl>, you need to test its
   
 6.  Close the test container.  
   
-7.  Add another user control to the **TestContainerExample** project. For details, see [NIB:How to: Add Existing Items to a Project](http://msdn.microsoft.com/en-us/15f4cfb7-78ab-457f-9f14-099a25a6a2d3).  
+7.  Add another user control to the **TestContainerExample** project.  
   
 8.  In the **Windows Forms Designer**, drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** onto the control's design surface.  
   

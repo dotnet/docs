@@ -170,7 +170,7 @@ Embedding connection strings in your application's code can lead to security vul
  [!code-csharp[DataWorks ConnectionStringsWeb.Encrypt#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks ConnectionStringsWeb.Encrypt/CS/source.cs#1)]
  [!code-vb[DataWorks ConnectionStringsWeb.Encrypt#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks ConnectionStringsWeb.Encrypt/VB/source.vb#1)]  
   
- For more information securing ASP.NET applications, see [NIB: ASP.NET Security](http://msdn.microsoft.com/en-us/04b37532-18d9-40b4-8e5f-ee09a70b311d) and [ASP.NET 2.0 Security Practices at a Glance](http://go.microsoft.com/fwlink/?LinkId=59997) on the ASP.NET Developer Center.  
+ For more information securing ASP.NET applications, see [ASP.NET 2.0 Security Practices at a Glance](http://go.microsoft.com/fwlink/?LinkId=59997) on the ASP.NET Developer Center.  
   
 ## See Also  
  [Connection String Builders](../../../../docs/framework/data/adonet/connection-string-builders.md)   

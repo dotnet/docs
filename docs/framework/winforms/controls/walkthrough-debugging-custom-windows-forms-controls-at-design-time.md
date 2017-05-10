@@ -65,9 +65,9 @@ When you create a custom control, you will often find it necessary to debug its 
   
 1.  Add a **Windows Control Library** project to the solution.  
   
-2.  Add a new **UserControl** item to the DebugControlLibrary project. For details, see [NIB:How to: Add New Project Items](http://msdn.microsoft.com/en-us/63d3e16b-de6e-4bb5-a0e3-ecec762201ce). Give the new source file a base name of "DebugControl".  
+2.  Add a new **UserControl** item to the DebugControlLibrary project. Give the new source file a base name of "DebugControl".  
   
-3.  Using the **Solution Explorer**, delete the project's default control by deleting the code file with a base name of "`UserControl1`". For details, see [NIB:How to: Remove, Delete, and Exclude Items](http://msdn.microsoft.com/en-us/6dffdc86-29c8-4eff-bcd8-e3a0dd9e9a73).  
+3.  Using the **Solution Explorer**, delete the project's default control by deleting the code file with a base name of "`UserControl1`".  
   
 4.  Build the solution.  
   

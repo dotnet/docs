@@ -167,7 +167,7 @@ manager: "wpickett"
      [!code-csharp[ExpenseIt#5](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt/ExpenseReportPage.xaml.cs#5)]
      [!code-vb[ExpenseIt#5](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ExpenseIt/VB/ExpenseIt1_A/ExpenseReportPage.xaml.vb#5)]  
   
-10. Add an image named watermark.png to the project. You can either create your own image, or copy the file from the sample code. For more information, see                          [NIB:How to: Add Existing Items to a Project](http://msdn.microsoft.com/en-us/15f4cfb7-78ab-457f-9f14-099a25a6a2d3).  
+10. Add an image named watermark.png to the project. You can either create your own image, or copy the file from the sample code.   
   
 <a name="Build_The_Application"></a>   
 ## Building and Running the Application  

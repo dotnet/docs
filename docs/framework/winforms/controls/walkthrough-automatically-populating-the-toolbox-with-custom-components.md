@@ -59,8 +59,6 @@ If your components are defined by a project in the currently open solution, they
   
 2.  Add a new component to the project. Call it `DemoComponent`.  
   
-     For more information, see [NIB:How to: Add New Project Items](http://msdn.microsoft.com/en-us/63d3e16b-de6e-4bb5-a0e3-ecec762201ce).  
-  
 3.  Build the project.  
   
 4.  From the **Tools** menu, click the **Options** item. Click **General** under the **Windows Forms Designer** item and ensure that the **AutoToolboxPopulate** option is set to **True**.  

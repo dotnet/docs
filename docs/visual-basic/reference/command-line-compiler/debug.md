@@ -59,7 +59,7 @@ Causes the compiler to generate debugging information and place it in the output
   
  By default, debugging information is not emitted (`/debug-`). To emit debugging information, specify `/debug` or `/debug+`.  
   
- For information on how to configure the debug performance of an application, see [Making an Image Easier to Debug](http://msdn.microsoft.com/library/7d90ea7a-150f-4f97-98a7-f9c26541b9a3).  
+ For information on how to configure the debug performance of an application, see [Making an Image Easier to Debug](../../../framework/debug-trace-profile/making-an-image-easier-to-debug.md).  
   
 |To set /debug in the Visual Studio integrated development environment|  
 |---|  

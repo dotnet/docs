@@ -81,13 +81,13 @@ The following overview discusses the advantages of smart client applications, th
  When you update your application, you publish a new deployment manifest and a new copy of your application to your Web server. [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] will detect that there is an update available and upgrade the user's installation; no custom programming is required to update old assemblies.  
   
 #### Help Deploying ClickOnce Applications  
- For a full introduction to [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)], see [ClickOnce Security and Deployment](http://msdn.microsoft.com/library/abab6d34-c3c2-45c1-a8b6-43c7d3131e7a). For step-by-step information about how to use these features, see the following Help topics,  
+ For a full introduction to [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)], see [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment). For step-by-step information about how to use these features, see the following Help topics,  
   
 |Description|Help topic|  
 |-----------------|----------------|  
-|Deploying an application by using [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)]|[How to: Publish a ClickOnce Application using the Publish Wizard](http://msdn.microsoft.com/library/2e4aa67c-4445-4f7b-9e03-9acb95829127)<br /><br /> [Walkthrough: Manually Deploying a ClickOnce Application](http://msdn.microsoft.com/library/ccee6551-a1b9-4ca2-8845-9c1cf4ac2560)|  
-|Updating a [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] deployment|[How to: Manage Updates for a ClickOnce Application](http://msdn.microsoft.com/library/a3f23f05-e7f1-4620-b23c-2d68f9643684)|  
-|Managing security with [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)]|[How to: Enable ClickOnce Security Settings](http://msdn.microsoft.com/library/73cd3e9d-cd72-4ad2-8cae-94d6bb6b01e0)|  
+|Deploying an application by using [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)]|[How to: Publish a ClickOnce Application using the Publish Wizard](/visualstudio/deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard)<br /><br /> [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)|  
+|Updating a [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] deployment|[How to: Manage Updates for a ClickOnce Application](/visualstudio/deployment/how-to-manage-updates-for-a-clickonce-application)|  
+|Managing security with [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)]|[How to: Enable ClickOnce Security Settings](/visualstudio/deployment/how-to-enable-clickonce-security-settings)|  
   
 ### Other Controls and Features  
  There are many other features in Windows Forms that make implementing common tasks fast and easy, such as support for creating dialog boxes, printing, adding Help and documentation, and localizing your application to multiple languages. Additionally, Windows Forms relies on the robust security system of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]. With this system, you can release more secure applications to your customers.  
@@ -107,4 +107,4 @@ The following overview discusses the advantages of smart client applications, th
  [DataGridView Control Overview](../../../docs/framework/winforms/controls/datagridview-control-overview-windows-forms.md)   
  [BindingSource Component Overview](../../../docs/framework/winforms/controls/bindingsource-component-overview.md)   
  [Application Settings Overview](../../../docs/framework/winforms/advanced/application-settings-overview.md)   
- [ClickOnce Security and Deployment](http://msdn.microsoft.com/library/abab6d34-c3c2-45c1-a8b6-43c7d3131e7a)
+ [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)

@@ -51,4 +51,4 @@ Documents the settings to enable High DPI support in Windows Forms Application s
 
 ## See also  
   
-[Windows Forms](http://msdn.microsoft.com/library/627df1e9-b254-41af-bbac-9a4f02810c54)
+[Windows Forms](../index.md)

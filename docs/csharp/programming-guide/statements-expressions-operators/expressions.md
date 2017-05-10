@@ -88,7 +88,7 @@ DoWork();
   
 ## Expression body definitions
 
-C# supports *expression-bodied members*, which allow you to supply a concise expression body definition for methods, constructors, destructors, properties, and indexers. For more information, see [Expression-bodied members](expression-bodied-members.md).
+C# supports *expression-bodied members*, which allow you to supply a concise expression body definition for methods, constructors, finalizers, properties, and indexers. For more information, see [Expression-bodied members](expression-bodied-members.md).
 
 ## Remarks  
  Whenever a variable, object property, or object indexer access is identified from an expression, the value of that item is used as the value of the expression. An expression can be placed anywhere in C# where a value or object is required, as long as the expression ultimately evaluates to the required type.  

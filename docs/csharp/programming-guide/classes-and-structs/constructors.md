@@ -49,7 +49,7 @@ A constructor is a method whose name is the same as the name of its type. Its me
 
 [!code-cs[constructors](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/constructors1.cs#1)]  
 
-If a constructor can be implemented as a single statement, you can use an [expression body definition](expression-bodied-members.md). The following example defines a `Location` class whose constructor has a single string parameter named *name*. The expression body definition assigns the argument to the `Name` property.
+If a constructor can be implemented as a single statement, you can use an [expression body definition](../statements-expressions-operators/expression-bodied-members.md). The following example defines a `Location` class whose constructor has a single string parameter named *name*. The expression body definition assigns the argument to the `Name` property.
 
 [!code-cs[expression-bodied-constructor](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-ctor.cs#1)]  
 
@@ -81,6 +81,6 @@ For more information and examples, see [Static Constructors](../../../csharp/pro
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)   
- [Destructors](../../../csharp/programming-guide/classes-and-structs/destructors.md)   
+ [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)   
  [static](../../../csharp/language-reference/keywords/static.md)   
  [Why Do Initializers Run In The Opposite Order As Constructors? Part One](http://go.microsoft.com/fwlink/?LinkId=112374)

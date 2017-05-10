@@ -20,7 +20,7 @@ Expression body definitions let you provide a member's implementation in a very 
 member => expression;
 ```
 
-where *expression* is any valid expression. 
+where *expression* is a valid expression. 
 
 Support for expression body definitions was introduced for methods and property get accessors in C# 6 and was expanded in C# 7. Expression body definitions can be used with the type members listed in the following table: 
 
@@ -35,9 +35,9 @@ Support for expression body definitions was introduced for methods and property 
 
 ## Methods
 
-An expression-bodied method consists of a single expression that returns a value whose type matches the method's return type, or, for methods that return `void`, that performs some operation. For example, types that override the <xref:System.Object.ToString%2A</xref> method typically include a single expression that returns the string representation of the current object. 
+An expression-bodied method consists of a single expression that returns a value whose type matches the method's return type, or, for methods that return `void`, that performs some operation. For example, types that override the <xref:System.Object.ToString%2A> method typically include a single expression that returns the string representation of the current object. 
 
-The following example defines a `Person` class that overrides the <xref:System.Object.ToString%2A</xref> method with an expression body definition. It also defines a `Show` method that displays a name to the console. Note that the `return` keyword is not used in the `ToString` expression body definition.
+The following example defines a `Person` class that overrides the <xref:System.Object.ToString%2A> method with an expression body definition. It also defines a `Show` method that displays a name to the console. Note that the `return` keyword is not used in the `ToString` expression body definition.
 
 [!code-cs[expression-bodied-methods](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-methods.cs)]  
 
@@ -45,7 +45,7 @@ For more information, see [Methods (C# Programming Guide)](../classes-and-struct
  
 ## Constructors
 
-An expression body definition for a constructor typically consists of a single assignment statement or a method call that handles the constructor's arguments or initializes instance state. 
+An expression body definition for a constructor typically consists of a single assignment expression or a method call that handles the constructor's arguments or initializes instance state. 
 
 The following example defines a `Location` class whose constructor has a single string parameter named *name*. The expression body definition assigns the argument to the `Name` property.
 
@@ -53,19 +53,19 @@ The following example defines a `Location` class whose constructor has a single 
 
 For more information, see [Constructors (C# Programming Guide)](../classes-and-structs/constructors.md).
 
-## Destructors
+## Finalizers
 
-An expression body definition for a destructor typically contains cleanup statements, such as statements that release unmanaged resources.
+An expression body definition for a finalizer typically contains cleanup statements, such as statements that release unmanaged resources.
 
-The following example defines a destructor that uses an expression body definition to indicate that the destructor has been called.
+The following example defines a finalizer that uses an expression body definition to indicate that the finalizer has been called.
 
-[!code-cs[expression-bodied-destructor](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-destructor.cs#1)]  
+[!code-cs[expression-bodied-finalizer](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-destructor.cs#1)]  
 
-For more information, see [Destructors (C# Programming Guide)](../classes-and-structs/destructors.md).
+For more information, see [Finalizers (C# Programming Guide)](../classes-and-structs/destructors.md).
 
 ## Property get statements
 
-If you choose to implement a property get accessor yourself, you can use an expression body definition for single-line statements that simply return the property value. Note that the `return` statement isn't used.
+If you choose to implement a property get accessor yourself, you can use an expression body definition for single expressions that simply return the property value. Note that the `return` statement isn't used.
 
 The following example defines a `Location.Name` property whose property get accessor returns the value of the private `locationName` field that backs the property. 
 

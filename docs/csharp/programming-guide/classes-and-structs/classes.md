@@ -88,10 +88,10 @@ A *class* is a construct that enables you to create your own custom types by gro
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Object-Oriented Programming](http://msdn.microsoft.com/library/1cf6e655-3f30-45f1-9a5d-4a88ca24a1c2)   
+ [Object-Oriented Programming](../concepts/object-oriented-programming.md)   
  [Polymorphism](../../../csharp/programming-guide/classes-and-structs/polymorphism.md)   
  [Members](../../../csharp/programming-guide/classes-and-structs/members.md)   
  [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)   
  [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)   
- [Destructors](../../../csharp/programming-guide/classes-and-structs/destructors.md)   
+ [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)   
  [Objects](../../../csharp/programming-guide/classes-and-structs/objects.md)

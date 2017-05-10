@@ -180,13 +180,13 @@
 ## Remarks  
  This property contains one of the members of the <xref:System.ServiceModel.Description.PrincipalPermissionMode> enumeration. Valid values are:  
   
--   <xref:System.ServiceModel.Description.PrincipalPermissionMode>. A custom `IAuthorizationPolicy` implementation is used to populate `Thread.CurrentPrincipal`.  
+-   <xref:System.ServiceModel.Description.PrincipalPermissionMode.Custom>. A custom `IAuthorizationPolicy` implementation is used to populate `Thread.CurrentPrincipal`.  
   
--   <xref:System.ServiceModel.Description.PrincipalPermissionMode>. The `Thread.CurrentPrincipal` property is not set.  
+-   <xref:System.ServiceModel.Description.PrincipalPermissionMode.None>. The `Thread.CurrentPrincipal` property is not set.  
   
--   <xref:System.ServiceModel.Description.PrincipalPermissionMode>. The `Thread.CurrentPrincipal` property is set to an `IPrincipal` based on ASP.NET role information.  
+-   <xref:System.ServiceModel.Description.PrincipalPermissionMode.UseAspNetRoles>. The `Thread.CurrentPrincipal` property is set to an `IPrincipal` based on ASP.NET role information.  
   
--   <xref:System.ServiceModel.Description.PrincipalPermissionMode>. The `Thread.CurrentPrincipal` property is set to a `WindowsPrincipal` based on the user credentials of the incoming message.  
+-   <xref:System.ServiceModel.Description.PrincipalPermissionMode.UseWindowsGroups>. The `Thread.CurrentPrincipal` property is set to a `WindowsPrincipal` based on the user credentials of the incoming message.  
   
    
   

@@ -1,8 +1,8 @@
 '<SnippetWindowClosingCODEBEHIND1>
 
-Imports System
-Imports System.ComponentModel
-Imports System.Windows
+Imports System ' EventArgs
+Imports System.ComponentModel ' CancelEventArgs
+Imports System.Windows ' window
 
 Namespace VisualBasic
     Partial Public Class DataWindow

@@ -233,7 +233,7 @@
 ## Remarks  
  When the <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath%2A> property is set, the <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetNamespaceUri%2A> and <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetNamespacePrefix%2A> properties must also be set.  
   
- The value of <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath%2A> must be `null` (`Nothing` in Visual Basic) when the value of the <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetSyndicationItem%2A> property is anything other than <xref:System.Data.Services.Common.SyndicationItemProperty>.  
+ The value of <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath%2A> must be `null` (`Nothing` in Visual Basic) when the value of the <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetSyndicationItem%2A> property is anything other than <xref:System.Data.Services.Common.SyndicationItemProperty.CustomProperty>.  
   
  <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetPath%2A> must be a path expression in which nested elements are separated by a backslash (`/`) and attributes are specified by an ampersand (`@`). In the following example, the string `UnitsInStock/@ReorderLevel` maps a property value to an attribute named `ReorderLevel` on a child element named `UnitsInStock` of the root entry element.  
   
@@ -297,7 +297,7 @@
 ## Remarks  
  If mapping to syndication content, this property is the content type of syndication item.  
   
- When you specify a value of <xref:System.Data.Services.Common.SyndicationTextContentKind> for the <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetTextContentKind%2A> attribute, you must ensure that the property value contains properly formatted XML. The data service returns the value without performing any transformations. You must also ensure that any XML element prefixes in the returned XML have a namespace URI and prefix defined in the mapped feed.  
+ When you specify a value of <xref:System.Data.Services.Common.SyndicationTextContentKind.xhtml> for the <xref:System.Data.Services.Common.EntityPropertyMappingAttribute.TargetTextContentKind%2A> attribute, you must ensure that the property value contains properly formatted XML. The data service returns the value without performing any transformations. You must also ensure that any XML element prefixes in the returned XML have a namespace URI and prefix defined in the mapped feed.  
   
  ]]></format>
         </remarks>

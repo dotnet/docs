@@ -63,9 +63,9 @@ Each member of a class has an associated accessibility, which controls the regio
 * `protected`
 	- Access limited to this class or classes derived from this class
 * `internal`
-	- Access limited to this program
+	- Access limited to the current assembly (.exe, .dll, etc.)
 * `protected internal`
-	- Access limited to this program or classes derived from this class
+	- Access limited to the containing class or classes derived from the containing class
 * `private`
 	- Access limited to this class
 

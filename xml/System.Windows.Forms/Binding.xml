@@ -780,7 +780,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Note that even if this property is set to <xref:System.Windows.Forms.DataSourceUpdateMode>, the binding will update at least one time, when it is first established.  
+ Note that even if this property is set to <xref:System.Windows.Forms.DataSourceUpdateMode.Never>, the binding will update at least one time, when it is first established.  
   
  ]]></format>
         </remarks>

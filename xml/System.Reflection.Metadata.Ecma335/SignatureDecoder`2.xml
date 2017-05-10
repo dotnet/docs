@@ -1,0 +1,159 @@
+<Type Name="SignatureDecoder&lt;TType,TGenericContext&gt;" FullName="System.Reflection.Metadata.Ecma335.SignatureDecoder&lt;TType,TGenericContext&gt;">
+  <TypeSignature Language="C#" Value="public struct SignatureDecoder&lt;TType,TGenericContext&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SignatureDecoder`2&lt;TType, TGenericContext&gt; extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.SignatureDecoder`2" />
+  <AssemblyInfo>
+    <AssemblyName>System.Reflection.Metadata</AssemblyName>
+    <AssemblyVersion>1.4.2.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TType" />
+    <TypeParameter Name="TGenericContext" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TType">To be added.</typeparam>
+    <typeparam name="TGenericContext">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SignatureDecoder (System.Reflection.Metadata.ISignatureTypeProvider&lt;TType,TGenericContext&gt; provider, System.Reflection.Metadata.MetadataReader metadataReader, TGenericContext genericContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Metadata.ISignatureTypeProvider`2&lt;!TType, !TGenericContext&gt; provider, class System.Reflection.Metadata.MetadataReader metadataReader, !TGenericContext genericContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureDecoder`2.#ctor(System.Reflection.Metadata.ISignatureTypeProvider{`0,`1},System.Reflection.Metadata.MetadataReader,`1)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="provider" Type="System.Reflection.Metadata.ISignatureTypeProvider&lt;TType,TGenericContext&gt;" />
+        <Parameter Name="metadataReader" Type="System.Reflection.Metadata.MetadataReader" />
+        <Parameter Name="genericContext" Type="TGenericContext" />
+      </Parameters>
+      <Docs>
+        <param name="provider">To be added.</param>
+        <param name="metadataReader">To be added.</param>
+        <param name="genericContext">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecodeFieldSignature">
+      <MemberSignature Language="C#" Value="public TType DecodeFieldSignature (ref System.Reflection.Metadata.BlobReader blobReader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TType DecodeFieldSignature(valuetype System.Reflection.Metadata.BlobReader blobReader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureDecoder`2.DecodeFieldSignature(System.Reflection.Metadata.BlobReader@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="blobReader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecodeLocalSignature">
+      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;TType&gt; DecodeLocalSignature (ref System.Reflection.Metadata.BlobReader blobReader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;!TType&gt; DecodeLocalSignature(valuetype System.Reflection.Metadata.BlobReader blobReader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureDecoder`2.DecodeLocalSignature(System.Reflection.Metadata.BlobReader@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableArray&lt;TType&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="blobReader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecodeMethodSignature">
+      <MemberSignature Language="C#" Value="public System.Reflection.Metadata.MethodSignature&lt;TType&gt; DecodeMethodSignature (ref System.Reflection.Metadata.BlobReader blobReader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.MethodSignature`1&lt;!TType&gt; DecodeMethodSignature(valuetype System.Reflection.Metadata.BlobReader blobReader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureDecoder`2.DecodeMethodSignature(System.Reflection.Metadata.BlobReader@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Metadata.MethodSignature&lt;TType&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="blobReader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecodeMethodSpecificationSignature">
+      <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;TType&gt; DecodeMethodSpecificationSignature (ref System.Reflection.Metadata.BlobReader blobReader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;!TType&gt; DecodeMethodSpecificationSignature(valuetype System.Reflection.Metadata.BlobReader blobReader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureDecoder`2.DecodeMethodSpecificationSignature(System.Reflection.Metadata.BlobReader@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Immutable.ImmutableArray&lt;TType&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="blobReader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecodeType">
+      <MemberSignature Language="C#" Value="public TType DecodeType (ref System.Reflection.Metadata.BlobReader blobReader, bool allowTypeSpecifications = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TType DecodeType(valuetype System.Reflection.Metadata.BlobReader blobReader, bool allowTypeSpecifications) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.SignatureDecoder`2.DecodeType(System.Reflection.Metadata.BlobReader@,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Metadata</AssemblyName>
+        <AssemblyVersion>1.4.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="blobReader" Type="System.Reflection.Metadata.BlobReader&amp;" RefType="ref" />
+        <Parameter Name="allowTypeSpecifications" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="blobReader">To be added.</param>
+        <param name="allowTypeSpecifications">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

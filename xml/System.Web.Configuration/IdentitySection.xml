@@ -19,7 +19,7 @@
  The <xref:System.Web.Configuration.IdentitySection> provides a way to programmatically access and modify the `identity` section of a configuration file.  
   
 > [!NOTE]
->  The <xref:System.Web.Configuration.IdentitySection> can read and write information from and to the related section of the configuration file according to the section property <xref:System.Configuration.SectionInformation.AllowDefinition%2A> whose value is <xref:System.Configuration.ConfigurationAllowDefinition>.  
+>  The <xref:System.Web.Configuration.IdentitySection> can read and write information from and to the related section of the configuration file according to the section property <xref:System.Configuration.SectionInformation.AllowDefinition%2A> whose value is <xref:System.Configuration.ConfigurationAllowDefinition.Everywhere>.  
   
    
   

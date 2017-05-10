@@ -49,52 +49,8 @@
  [!code-vb[IErrorHandler#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/ierrorhandler/vb/ierrorhandler.vb#7)]  
   
  The following code example shows how to configure the service to load the service behavior using an application configuration file. For more details about how to expose a service behavior in a configuration file, see <xref:System.ServiceModel.Description.IServiceBehavior>.  
-  
-```  
-  
-<configuration>  
-  <system.serviceModel>  
-    <services>  
-      <service   
-        name="Microsoft.WCF.Documentation.SampleService"  
-        behaviorConfiguration="metaAndErrors">  
-        <host>  
-          <baseAddresses>  
-            <add baseAddress="http://localhost:8080/SampleService"/>  
-          </baseAddresses>  
-        </host>  
-        <endpoint  
-          address=""  
-          binding="wsHttpBinding"  
-          contract="Microsoft.WCF.Documentation.ISampleService"  
-         />  
-        <endpoint  
-          address="mex"  
-          binding="mexHttpBinding"  
-          contract="IMetadataExchange"  
-         />  
-      </service>  
-    </services>  
-    <behaviors>  
-      <serviceBehaviors>  
-        <behavior name="metaAndErrors">  
-          <serviceDebug includeExceptionDetailInFaults="true"/>  
-          <serviceMetadata httpGetEnabled="true"/>  
-          <enforceGreetingFaults />  
-        </behavior>  
-      </serviceBehaviors>  
-    </behaviors>  
-    <extensions>  
-      <behaviorExtensions>  
-        <add   
-          name="enforceGreetingFaults"   
-          type="Microsoft.WCF.Documentation.EnforceGreetingFaultBehavior, HostApplication, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"  
-        />  
-      </behaviorExtensions>  
-    </extensions>  
-  </system.serviceModel>  
-</configuration>  
-```  
+
+ [!code-xml[IErrorHandler#4](~/samples/snippets/csharp/VS_Snippets_CFX/ierrorhandler/cs/hostapplication.exe.config#4)]   
   
  ]]></format>
     </remarks>
@@ -129,7 +85,7 @@
 > [!NOTE]
 >  Because the <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError%2A> method can be called from many different places there are no guarantees made about which thread the method is called on. Do not depend on <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError%2A> method being called on the operation thread.  
   
- All <xref:System.ServiceModel.Dispatcher.IErrorHandler> implementations are called. By default (when the return value is `false`), if there is an exception, the dispatcher aborts any session and aborts the <xref:System.ServiceModel.InstanceContext> if the <xref:System.ServiceModel.InstanceContextMode> is anything other than <xref:System.ServiceModel.InstanceContextMode>.  The exception is then considered unhandled and any state is considered corrupt.  
+ All <xref:System.ServiceModel.Dispatcher.IErrorHandler> implementations are called. By default (when the return value is `false`), if there is an exception, the dispatcher aborts any session and aborts the <xref:System.ServiceModel.InstanceContext> if the <xref:System.ServiceModel.InstanceContextMode> is anything other than <xref:System.ServiceModel.InstanceContextMode.Single>.  The exception is then considered unhandled and any state is considered corrupt.  
   
  Return `true` from <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError%2A> to prevent this default behavior. If any error handler returns `true` it instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] that it is safe to continue using state associated with the failed request.  
   
@@ -152,9 +108,7 @@
   
  The following code example shows how to configure the service to load the service behavior using an application configuration file. For more details about how to expose a service behavior in a configuration file, see <xref:System.ServiceModel.Description.IServiceBehavior>.  
   
- <!-- TODO: review snippet reference [!code[IErrorHandler#4](~/samples/snippets/common/VS_Snippets_CFX/ierrorhandler/common/hostapplication.exe.config#4)]  -->
- <!-- TODO: review snippet reference [!code-csharp[IErrorHandler#4](~/samples/snippets/csharp/VS_Snippets_CFX/ierrorhandler/cs/hostapplication.exe.config#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[IErrorHandler#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/ierrorhandler/vb/hostapplication.exe.config#4)]  -->  
+ [!code-xml[IErrorHandler#4](~/samples/snippets/csharp/VS_Snippets_CFX/ierrorhandler/cs/hostapplication.exe.config#4)]   
   
  ]]></format>
         </remarks>
@@ -209,9 +163,7 @@
   
  The following code example shows how to configure the service to load the service behavior using an application configuration file. For more details about how to expose a service behavior in a configuration file, see <xref:System.ServiceModel.Description.IServiceBehavior>.  
   
- <!-- TODO: review snippet reference [!code[IErrorHandler#4](~/samples/snippets/common/VS_Snippets_CFX/ierrorhandler/common/hostapplication.exe.config#4)]  -->
- <!-- TODO: review snippet reference [!code-csharp[IErrorHandler#4](~/samples/snippets/csharp/VS_Snippets_CFX/ierrorhandler/cs/hostapplication.exe.config#4)]  -->
- <!-- TODO: review snippet reference [!code-vb[IErrorHandler#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/ierrorhandler/vb/hostapplication.exe.config#4)]  -->  
+ [!code-xml[IErrorHandler#4](~/samples/snippets/csharp/VS_Snippets_CFX/ierrorhandler/cs/hostapplication.exe.config#4)]   
   
  ]]></format>
         </remarks>

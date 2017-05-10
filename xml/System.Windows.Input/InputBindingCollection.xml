@@ -38,6 +38,31 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.InputBindingCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [Commanding Overview](~/docs/framework/wpf/advanced/commanding-overview.md)  
+  
+ <xref:System.Windows.Input.KeyBinding>  
+  
+ <xref:System.Windows.Input.MouseBinding>  
+  
+ <xref:System.Windows.Input.KeyGesture>  
+  
+ <xref:System.Windows.Input.MouseGesture>  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InputBindingCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -647,30 +672,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.InputBindingCollection" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- [Commanding Overview](~/docs/framework/wpf/advanced/commanding-overview.md)  
-  
- <xref:System.Windows.Input.KeyBinding>  
-  
- <xref:System.Windows.Input.MouseBinding>  
-  
- <xref:System.Windows.Input.KeyGesture>  
-  
- <xref:System.Windows.Input.MouseGesture>  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

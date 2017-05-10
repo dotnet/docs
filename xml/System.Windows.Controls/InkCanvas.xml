@@ -39,8 +39,7 @@
   
  The following example declares two <xref:System.Windows.Controls.InkCanvas> objects in XAML and establishes data binding between them and other data sources. The first <xref:System.Windows.Controls.InkCanvas>, called `ic`, is bound to two data sources. The <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> and <xref:System.Windows.Controls.InkCanvas.DefaultDrawingAttributes%2A> properties on `ic` are bound to <xref:System.Windows.Controls.ListBox> objects, which are, in turn, bound to arrays defined in the XAML. The <xref:System.Windows.Controls.InkCanvas.EditingMode%2A>, <xref:System.Windows.Controls.InkCanvas.DefaultDrawingAttributes%2A>, and <xref:System.Windows.Controls.InkCanvas.Strokes%2A> properties of the second <xref:System.Windows.Controls.InkCanvas> are bound to the first <xref:System.Windows.Controls.InkCanvas> in the following code.  
   
- <!-- TODO: review snippet reference [!code-xml[InkCanvasBinding#1](~/samples/snippets/csharp/VS_Snippets_Wpf/InkCanvasBinding/CS/Window1.xaml#1)]  -->
- <!-- TODO: review snippet reference [!code-xml[InkCanvasBinding#1](~/samples/snippets/xaml/VS_Snippets_Wpf/InkCanvasBinding/XAML/Window1.xaml#1)]  -->  
+ [!code-xml[InkCanvasBindingSnippet#1](~/samples/snippets/csharp/VS_Snippets_Wpf/InkCanvasBindingSnippet/CS/Window1.xaml#1)]   
   
  ]]></format>
     </remarks>
@@ -80,7 +79,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.InkCanvas.ActiveEditingMode%2A> property indicates the current <xref:System.Windows.Controls.InkCanvasEditingMode> of the <xref:System.Windows.Controls.InkCanvas>.  Suppose that the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> is set to <xref:System.Windows.Controls.InkCanvasEditingMode> and the <xref:System.Windows.Controls.InkCanvas.EditingModeInverted%2A> is set to <xref:System.Windows.Controls.InkCanvasEditingMode>.  When the tablet pen is used in an inverted position, <xref:System.Windows.Controls.InkCanvas.ActiveEditingMode%2A> has a value of <xref:System.Windows.Controls.InkCanvasEditingMode>. Otherwise, its value is <xref:System.Windows.Controls.InkCanvasEditingMode>.  
+ The <xref:System.Windows.Controls.InkCanvas.ActiveEditingMode%2A> property indicates the current <xref:System.Windows.Controls.InkCanvasEditingMode> of the <xref:System.Windows.Controls.InkCanvas>.  Suppose that the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> is set to <xref:System.Windows.Controls.InkCanvasEditingMode.Ink> and the <xref:System.Windows.Controls.InkCanvas.EditingModeInverted%2A> is set to <xref:System.Windows.Controls.InkCanvasEditingMode.EraseByPoint>.  When the tablet pen is used in an inverted position, <xref:System.Windows.Controls.InkCanvas.ActiveEditingMode%2A> has a value of <xref:System.Windows.Controls.InkCanvasEditingMode.EraseByPoint>. Otherwise, its value is <xref:System.Windows.Controls.InkCanvasEditingMode.Ink>.  
   
 <a name="dependencyPropertyInfo_ActiveEditingMode"></a>   
 ## Dependency Property Information  
@@ -125,7 +124,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.InkCanvas.ActiveEditingMode%2A> property changes whenever the <xref:System.Windows.Controls.InkCanvas> enters a new editing mode. For example, suppose that the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> is set to <xref:System.Windows.Controls.InkCanvasEditingMode> and the <xref:System.Windows.Controls.InkCanvas.EditingModeInverted%2A> is set to <xref:System.Windows.Controls.InkCanvasEditingMode>. When the user changes the tip of tablet pen, the <xref:System.Windows.Controls.InkCanvas.ActiveEditingModeChanged> event occurs.  
+ The <xref:System.Windows.Controls.InkCanvas.ActiveEditingMode%2A> property changes whenever the <xref:System.Windows.Controls.InkCanvas> enters a new editing mode. For example, suppose that the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> is set to <xref:System.Windows.Controls.InkCanvasEditingMode.Ink> and the <xref:System.Windows.Controls.InkCanvas.EditingModeInverted%2A> is set to <xref:System.Windows.Controls.InkCanvasEditingMode.EraseByPoint>. When the user changes the tip of tablet pen, the <xref:System.Windows.Controls.InkCanvas.ActiveEditingModeChanged> event occurs.  
   
 <a name="routedEventInfo_ActiveEditingModeChanged"></a>   
 ## Routed Event Information  
@@ -237,7 +236,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.InkCanvas>|  
+|Identifier field|<xref:System.Windows.Controls.InkCanvas.BackgroundProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>|  
   
    
@@ -478,10 +477,8 @@
   
  The following example demonstrates how to bind the <xref:System.Windows.Controls.InkCanvas.DefaultDrawingAttributes%2A> property to a data source.  
   
- <!-- TODO: review snippet reference [!code-xml[InkCanvasBinding#3](~/samples/snippets/xaml/VS_Snippets_Wpf/InkCanvasBinding/XAML/Window2.xaml#3)]  -->
- <!-- TODO: review snippet reference [!code-xml[InkCanvasBinding#3](~/samples/snippets/csharp/VS_Snippets_Wpf/InkCanvasBinding/CS/Window2.xaml#3)]  -->  
-<!-- TODO: review snippet reference [!code-xml[InkCanvasBinding#4](~/samples/snippets/xaml/VS_Snippets_Wpf/InkCanvasBinding/XAML/Window2.xaml#4)]  -->
-<!-- TODO: review snippet reference [!code-xml[InkCanvasBinding#4](~/samples/snippets/csharp/VS_Snippets_Wpf/InkCanvasBinding/CS/Window2.xaml#4)]  -->  
+ [!code-xml[InkCanvasBindingSnippet#3](~/samples/snippets/csharp/VS_Snippets_Wpf/InkCanvasBindingSnippet/CS/Window2.xaml#3)]  
+ [!code-xml[InkCanvasBindingSnippet#4](~/samples/snippets/csharp/VS_Snippets_Wpf/InkCanvasBindingSnippet/CS/Window2.xaml#4)]   
   
  ]]></format>
         </remarks>
@@ -623,7 +620,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> is <xref:System.Windows.Controls.InkCanvasEditingMode>. Changing the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> clears any existing selections.  
+ The default <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> is <xref:System.Windows.Controls.InkCanvasEditingMode.Ink>. Changing the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> clears any existing selections.  
   
  The <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> specifies the mode of the pointing device as it interacts with the <xref:System.Windows.Controls.InkCanvas>. <xref:System.Windows.Controls.InkCanvas.EditingModeInverted%2A> is used by some digitizers when the "eraser end" of the stylus contacts the digitizer.  
   
@@ -677,14 +674,14 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.InkCanvas>|  
+|Identifier field|<xref:System.Windows.Controls.InkCanvas.EditingModeChangedEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.RoutedEventHandler>|  
   
    
   
 ## Examples  
- The following example checks whether the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> property is set to <xref:System.Windows.Controls.InkCanvasEditingMode> or <xref:System.Windows.Controls.InkCanvasEditingMode>.  
+ The following example checks whether the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> property is set to <xref:System.Windows.Controls.InkCanvasEditingMode.Ink> or <xref:System.Windows.Controls.InkCanvasEditingMode.Select>.  
   
  [!code-csharp[InkCanvasSamples#21](~/samples/snippets/csharp/VS_Snippets_Wpf/InkCanvasSamples/CSharp/Window1.xaml.cs#21)]
  [!code-vb[InkCanvasSamples#21](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkCanvasSamples/VisualBasic/Window1.xaml.vb#21)]  
@@ -783,14 +780,14 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.InkCanvas>|  
+|Identifier field|<xref:System.Windows.Controls.InkCanvas.EditingModeInvertedChangedEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.RoutedEventHandler>|  
   
    
   
 ## Examples  
- The following example checks whether the <xref:System.Windows.Controls.InkCanvas.EditingModeInverted%2A> property is set to <xref:System.Windows.Controls.InkCanvasEditingMode> or <xref:System.Windows.Controls.InkCanvasEditingMode>.  
+ The following example checks whether the <xref:System.Windows.Controls.InkCanvas.EditingModeInverted%2A> property is set to <xref:System.Windows.Controls.InkCanvasEditingMode.EraseByPoint> or <xref:System.Windows.Controls.InkCanvasEditingMode.EraseByStroke>.  
   
  [!code-csharp[InkCanvasSamples#20](~/samples/snippets/csharp/VS_Snippets_Wpf/InkCanvasSamples/CSharp/Window1.xaml.cs#20)]
  [!code-vb[InkCanvasSamples#20](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkCanvasSamples/VisualBasic/Window1.xaml.vb#20)]  
@@ -874,7 +871,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This shape will be used to erase ink from an <xref:System.Windows.Controls.InkCanvas> when the current <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> is set to <xref:System.Windows.Controls.InkCanvasEditingMode>.  
+ This shape will be used to erase ink from an <xref:System.Windows.Controls.InkCanvas> when the current <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> is set to <xref:System.Windows.Controls.InkCanvasEditingMode.EraseByPoint>.  
   
  Individual properties of a <xref:System.Windows.Ink.StylusShape> cannot be modified once the shape has been created.  
   
@@ -925,7 +922,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.InkCanvas>|  
+|Identifier field|<xref:System.Windows.Controls.InkCanvas.GestureEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.Controls.InkCanvasGestureEventHandler>|  
   
@@ -1901,6 +1898,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Paste">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Pastes the contents of the Clipboard to the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.InkCanvas> can support Clipboard data in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] format, [!INCLUDE[TLA#tla_isf](~/includes/tlasharptla-isf-md.md)], and text format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Paste">
       <MemberSignature Language="C#" Value="public void Paste ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Paste() cil managed" />
@@ -2082,6 +2096,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Select">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Selects a set of ink <see cref="T:System.Windows.Ink.Stroke" /> objects and/or <see cref="T:System.Windows.FrameworkElement" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Windows.Controls.InkCanvas> can contain <xref:System.Windows.Ink.Stroke> objects, which are created in response to user stylus input, and <xref:System.Windows.FrameworkElement> objects, such as <xref:System.Windows.Controls.Image> and <xref:System.Windows.Controls.Button> objects.  
+  
+ Selected strokes will be displayed with an adorner around them for ease of recognition and manipulation. <xref:System.Windows.FrameworkElement> objects will not display differently when selected.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Select">
       <MemberSignature Language="C#" Value="public void Select (System.Collections.Generic.IEnumerable&lt;System.Windows.UIElement&gt; selectedElements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Select(class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.UIElement&gt; selectedElements) cil managed" />
@@ -2667,7 +2700,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event occurs when a user erases ink whether the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> property is set to <xref:System.Windows.Controls.InkCanvasEditingMode> or <xref:System.Windows.Controls.InkCanvasEditingMode>.  
+ This event occurs when a user erases ink whether the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> property is set to <xref:System.Windows.Controls.InkCanvasEditingMode.EraseByPoint> or <xref:System.Windows.Controls.InkCanvasEditingMode.EraseByStroke>.  
   
 <a name="routedEventInfo_StrokeErasing"></a>   
 ## Routed Event Information  
@@ -2681,7 +2714,7 @@
    
   
 ## Examples  
- The following example reports the number of strokes that are on an <xref:System.Windows.Controls.InkCanvas> when the <xref:System.Windows.Controls.InkCanvas.StrokeErased> event occurs. If <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> is set to <xref:System.Windows.Controls.InkCanvasEditingMode> and the user erases the middle of a stroke, the number of strokes on the <xref:System.Windows.Controls.InkCanvas> increases. This is because the old stroke was replaced by two new strokes.  
+ The following example reports the number of strokes that are on an <xref:System.Windows.Controls.InkCanvas> when the <xref:System.Windows.Controls.InkCanvas.StrokeErased> event occurs. If <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> is set to <xref:System.Windows.Controls.InkCanvasEditingMode.EraseByPoint> and the user erases the middle of a stroke, the number of strokes on the <xref:System.Windows.Controls.InkCanvas> increases. This is because the old stroke was replaced by two new strokes.  
   
  [!code-csharp[InkCanvasSamples#18](~/samples/snippets/csharp/VS_Snippets_Wpf/InkCanvasSamples/CSharp/Window1.xaml.cs#18)]
  [!code-vb[InkCanvasSamples#18](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InkCanvasSamples/VisualBasic/Window1.xaml.vb#18)]  
@@ -2725,7 +2758,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Handle this event when you want to check whether a stroke should be erased. Set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true` if you want to prevent the stroke from being erased. You can use this technique when the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> or <xref:System.Windows.Controls.InkCanvas.EditingModeInverted%2A> property is set to <xref:System.Windows.Controls.InkCanvasEditingMode> or <xref:System.Windows.Controls.InkCanvasEditingMode>.  
+ Handle this event when you want to check whether a stroke should be erased. Set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true` if you want to prevent the stroke from being erased. You can use this technique when the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> or <xref:System.Windows.Controls.InkCanvas.EditingModeInverted%2A> property is set to <xref:System.Windows.Controls.InkCanvasEditingMode.EraseByStroke> or <xref:System.Windows.Controls.InkCanvasEditingMode.EraseByPoint>.  
   
    
   
@@ -2764,7 +2797,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.InkCanvas>|  
+|Identifier field|<xref:System.Windows.Controls.InkCanvas.StrokesProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -2777,8 +2810,7 @@
   
  The following example demonstrates how to bind the <xref:System.Windows.Controls.InkCanvas.Strokes%2A> property of an <xref:System.Windows.Controls.InkCanvas> to another <xref:System.Windows.Controls.InkCanvas>.  
   
- <!-- TODO: review snippet reference [!code-xml[InkCanvasBinding#2](~/samples/snippets/xaml/VS_Snippets_Wpf/InkCanvasBinding/XAML/Window2.xaml#2)]  -->
- <!-- TODO: review snippet reference [!code-xml[InkCanvasBinding#2](~/samples/snippets/csharp/VS_Snippets_Wpf/InkCanvasBinding/CS/Window2.xaml#2)]  -->  
+ [!code-xml[InkCanvasBindingSnippet#2](~/samples/snippets/csharp/VS_Snippets_Wpf/InkCanvasBindingSnippet/CS/Window2.xaml#2)]   
   
  ]]></format>
         </remarks>
@@ -2944,41 +2976,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Select">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Selects a set of ink <see cref="T:System.Windows.Ink.Stroke" /> objects and/or <see cref="T:System.Windows.FrameworkElement" /> objects.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Windows.Controls.InkCanvas> can contain <xref:System.Windows.Ink.Stroke> objects, which are created in response to user stylus input, and <xref:System.Windows.FrameworkElement> objects, such as <xref:System.Windows.Controls.Image> and <xref:System.Windows.Controls.Button> objects.  
-  
- Selected strokes will be displayed with an adorner around them for ease of recognition and manipulation. <xref:System.Windows.FrameworkElement> objects will not display differently when selected.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Paste">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Pastes the contents of the Clipboard to the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Controls.InkCanvas> can support Clipboard data in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] format, [!INCLUDE[TLA#tla_isf](~/includes/tlasharptla-isf-md.md)], and text format.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

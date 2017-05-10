@@ -21,7 +21,7 @@
 ## Remarks  
  <xref:System.Windows.Shell.ThumbButtonInfoCollection> is a strongly-typed <xref:System.Windows.FreezableCollection%601> that is used to support declarations in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)].  
   
- The [!INCLUDE[win7](~/includes/win7-md.md)] shell allows a maximum of seven buttons in the taskbar preview. If more than seven <xref:System.Windows.Shell.ThumbButtonInfo> objects are added to the <xref:System.Windows.Shell.ThumbButtonInfoCollection>, the additional objects are treated as overflow. When a button is <xref:System.Windows.Visibility>, it does not have any visible elements and no space is reserved for it. In this case, additional buttons from the <xref:System.Windows.Shell.ThumbButtonInfoCollection> overflow are displayed.  
+ The [!INCLUDE[win7](~/includes/win7-md.md)] shell allows a maximum of seven buttons in the taskbar preview. If more than seven <xref:System.Windows.Shell.ThumbButtonInfo> objects are added to the <xref:System.Windows.Shell.ThumbButtonInfoCollection>, the additional objects are treated as overflow. When a button is <xref:System.Windows.Visibility.Collapsed>, it does not have any visible elements and no space is reserved for it. In this case, additional buttons from the <xref:System.Windows.Shell.ThumbButtonInfoCollection> overflow are displayed.  
   
  ]]></format>
     </remarks>

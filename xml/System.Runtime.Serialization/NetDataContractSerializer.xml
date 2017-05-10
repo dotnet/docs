@@ -337,7 +337,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An `AssemblyFormat` instance can have two styles: <xref:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle> or <xref:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle>. Specifying `Simple` allows types in one version to be loaded and deserialized from an instance serialized from a different version.  
+ An `AssemblyFormat` instance can have two styles: <xref:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle.Full> or <xref:System.Runtime.Serialization.Formatters.FormatterAssemblyStyle.Simple>. Specifying `Simple` allows types in one version to be loaded and deserialized from an instance serialized from a different version.  
   
  ]]></format>
         </remarks>
@@ -449,6 +449,24 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsStartObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the reader is positioned on an object that can be deserialized.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is equivalent to using the `ReadObject` method of the `IFormatter` interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsStartObject">
       <MemberSignature Language="C#" Value="public override bool IsStartObject (System.Xml.XmlDictionaryReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsStartObject(class System.Xml.XmlDictionaryReader reader) cil managed" />
@@ -534,6 +552,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the XML stream or document and returns the deserialized object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReadObject">
       <MemberSignature Language="C#" Value="public override object ReadObject (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ReadObject(class System.Xml.XmlReader reader) cil managed" />
@@ -695,6 +733,24 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteEndObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the closing XML element using the specified writer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteEndObject%2A> methods are used in succession to write the complete serialization using the pattern: write start, write content, and write end. The three methods are also called by the <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteObject%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteEndObject">
       <MemberSignature Language="C#" Value="public override void WriteEndObject (System.Xml.XmlDictionaryWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteEndObject(class System.Xml.XmlDictionaryWriter writer) cil managed" />
@@ -778,6 +834,24 @@
         <exception cref="T:System.ServiceModel.QuotaExceededException">the maximum number of object to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteObjectContent">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the XML content using the specified writer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteEndObject%2A> methods are used in succession to write the complete serialization using the pattern: write start, write content, and write end. The three methods are also called by the <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteObject%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteObjectContent">
       <MemberSignature Language="C#" Value="public override void WriteObjectContent (System.Xml.XmlDictionaryWriter writer, object graph);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteObjectContent(class System.Xml.XmlDictionaryWriter writer, object graph) cil managed" />
@@ -906,79 +980,5 @@
         <exception cref="T:System.ServiceModel.QuotaExceededException">the maximum number of object to serialize has been exceeded. Check the <see cref="P:System.Runtime.Serialization.DataContractSerializer.MaxItemsInObjectGraph" /> property.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="IsStartObject">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the reader is positioned on an object that can be deserialized.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This is equivalent to using the `ReadObject` method of the `IFormatter` interface.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteEndObject">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes the closing XML element using the specified writer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteEndObject%2A> methods are used in succession to write the complete serialization using the pattern: write start, write content, and write end. The three methods are also called by the <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteObject%2A> method.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ReadObject">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads the XML stream or document and returns the deserialized object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteObjectContent">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes the XML content using the specified writer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteEndObject%2A> methods are used in succession to write the complete serialization using the pattern: write start, write content, and write end. The three methods are also called by the <xref:System.Runtime.Serialization.NetDataContractSerializer.WriteObject%2A> method.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

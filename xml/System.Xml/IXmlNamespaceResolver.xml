@@ -7,6 +7,7 @@
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
@@ -33,6 +34,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -63,9 +65,9 @@
   
 |XmlNamespaceScope value|xmlns:xml|xmlns:xmlns|xmlns=""|  
 |-----------------------------|---------------|-----------------|---------------|  
-|<xref:System.Xml.XmlNamespaceScope>|yes|no|no|  
-|<xref:System.Xml.XmlNamespaceScope>|no|no|no|  
-|<xref:System.Xml.XmlNamespaceScope>|no|no|yes|  
+|<xref:System.Xml.XmlNamespaceScope.All>|yes|no|no|  
+|<xref:System.Xml.XmlNamespaceScope.ExcludeXml>|no|no|no|  
+|<xref:System.Xml.XmlNamespaceScope.Local>|no|no|yes|  
   
  ]]></format>
         </remarks>
@@ -81,6 +83,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -132,6 +135,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

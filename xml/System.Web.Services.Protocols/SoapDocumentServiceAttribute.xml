@@ -150,7 +150,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The Web Services Description Language (WSDL) defines two formatting styles for parameters sent to and from XML Web services: <xref:System.Web.Services.Description.SoapBindingUse> and <xref:System.Web.Services.Description.SoapBindingUse>. <xref:System.Web.Services.Description.SoapBindingUse> refers to formatting the parameters using the SOAP encoding outlined in the SOAP specification in section 5. <xref:System.Web.Services.Description.SoapBindingUse> refers to formatting the parameters using a predefined XSD schema for each parameter.  
+ The Web Services Description Language (WSDL) defines two formatting styles for parameters sent to and from XML Web services: <xref:System.Web.Services.Description.SoapBindingUse.Encoded> and <xref:System.Web.Services.Description.SoapBindingUse.Literal>. <xref:System.Web.Services.Description.SoapBindingUse.Encoded> refers to formatting the parameters using the SOAP encoding outlined in the SOAP specification in section 5. <xref:System.Web.Services.Description.SoapBindingUse.Literal> refers to formatting the parameters using a predefined XSD schema for each parameter.  
   
  For more details, see [&#91;\<topic://cpconCustomizingSOAPInASPNETWebServicesWebServiceClients>&#93;](http://msdn.microsoft.com/en-us/1d777288-c0d9-4e6a-b638-f010da031952).  
   

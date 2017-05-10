@@ -147,7 +147,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Drawing.Design.IconEditor.EditValue%2A> method is not supported, the <xref:System.Drawing.Design.IconEditor.GetEditStyle%2A> method will return <xref:System.Drawing.Design.UITypeEditorEditStyle>.  
+ If the <xref:System.Drawing.Design.IconEditor.EditValue%2A> method is not supported, the <xref:System.Drawing.Design.IconEditor.GetEditStyle%2A> method will return <xref:System.Drawing.Design.UITypeEditorEditStyle.None>.  
   
  ]]></format>
         </remarks>

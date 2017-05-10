@@ -113,7 +113,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.TemplateContainerAttribute.BindingDirection%2A> property can be either the <xref:System.ComponentModel.BindingDirection> field, where the template can accept only property values or the <xref:System.ComponentModel.BindingDirection> field, where the template can accept and expose property values. In the latter scenario, data-bound controls automatically can use the update, delete, and insert operations of a data source using the `Bind` data-binding syntax.  
+ The <xref:System.Web.UI.TemplateContainerAttribute.BindingDirection%2A> property can be either the <xref:System.ComponentModel.BindingDirection.OneWay> field, where the template can accept only property values or the <xref:System.ComponentModel.BindingDirection.TwoWay> field, where the template can accept and expose property values. In the latter scenario, data-bound controls automatically can use the update, delete, and insert operations of a data source using the `Bind` data-binding syntax.  
   
  For more information on data binding, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742) and [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
   

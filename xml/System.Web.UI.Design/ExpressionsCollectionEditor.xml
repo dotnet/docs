@@ -99,9 +99,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.ExpressionsCollectionEditor.GetEditStyle%2A> method returns the <xref:System.Drawing.Design.UITypeEditorEditStyle> value by default.  
+ The <xref:System.Web.UI.Design.ExpressionsCollectionEditor.GetEditStyle%2A> method returns the <xref:System.Drawing.Design.UITypeEditorEditStyle.Modal> value by default.  
   
- If <xref:System.Web.UI.Design.ExpressionsCollectionEditor.GetEditStyle%2A> is not supported in the specified context, the <xref:System.Web.UI.Design.ExpressionsCollectionEditor.GetEditStyle%2A> returns <xref:System.Drawing.Design.UITypeEditorEditStyle>.  
+ If <xref:System.Web.UI.Design.ExpressionsCollectionEditor.GetEditStyle%2A> is not supported in the specified context, the <xref:System.Web.UI.Design.ExpressionsCollectionEditor.GetEditStyle%2A> returns <xref:System.Drawing.Design.UITypeEditorEditStyle.None>.  
   
  ]]></format>
         </remarks>

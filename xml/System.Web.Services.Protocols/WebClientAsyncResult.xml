@@ -49,7 +49,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The XML Web service request is canceled if the underlying transport supports the <xref:System.Net.WebRequest.Abort%2A?displayProperty=fullName> method. If the corresponding `End` method is subsequently called after the <xref:System.Web.Services.Protocols.WebClientAsyncResult.Abort%2A> method, a <xref:System.Net.WebException> is thrown, setting the <xref:System.Net.WebException.Status%2A> property to <xref:System.Net.WebExceptionStatus>.  
+ The XML Web service request is canceled if the underlying transport supports the <xref:System.Net.WebRequest.Abort%2A?displayProperty=fullName> method. If the corresponding `End` method is subsequently called after the <xref:System.Web.Services.Protocols.WebClientAsyncResult.Abort%2A> method, a <xref:System.Net.WebException> is thrown, setting the <xref:System.Net.WebException.Status%2A> property to <xref:System.Net.WebExceptionStatus.RequestCanceled>.  
   
  ]]></format>
         </remarks>

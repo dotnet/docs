@@ -73,13 +73,11 @@
   
  The following example defines a <xref:System.Windows.Controls.Slider> control that is named `RectangeHeight` that can have a <xref:System.Windows.Controls.Primitives.RangeBase.Value%2A> between 0 and 200.  
   
- [!code-xml[SliderwithDataBinding#Minimum](~/samples/snippets/csharp/VS_Snippets_Wpf/SliderwithDataBinding/CS/Pane1.xaml#minimum)]
- <!-- TODO: review snippet reference [!code-xml[SliderwithDataBinding#Minimum](~/samples/snippets/xaml/VS_Snippets_Wpf/SliderwithDataBinding/XAML/Pane1.xaml#minimum)]  -->  
+ [!code-xml[SliderwithDataBinding#Minimum](~/samples/snippets/csharp/VS_Snippets_Wpf/SliderwithDataBinding/CS/Pane1.xaml#minimum)]   
   
  The following example shows how to define a <xref:System.Windows.Shapes.Rectangle> that binds its <xref:System.Windows.FrameworkElement.Height%2A> property to the <xref:System.Windows.Controls.Primitives.RangeBase.Value%2A> of the <xref:System.Windows.Controls.Slider> control. (In the complete sample, a similar binding is created for the <xref:System.Windows.FrameworkElement.Width%2A> property.)  
   
- [!code-xml[SliderwithDataBinding#BindingRectangle](~/samples/snippets/csharp/VS_Snippets_Wpf/SliderwithDataBinding/CS/Pane1.xaml#bindingrectangle)]
- <!-- TODO: review snippet reference [!code-xml[SliderwithDataBinding#BindingRectangle](~/samples/snippets/xaml/VS_Snippets_Wpf/SliderwithDataBinding/XAML/Pane1.xaml#bindingrectangle)]  -->  
+ [!code-xml[SliderwithDataBinding#BindingRectangle](~/samples/snippets/csharp/VS_Snippets_Wpf/SliderwithDataBinding/CS/Pane1.xaml#bindingrectangle)]   
   
  ]]></format>
     </remarks>
@@ -155,7 +153,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Slider>|  
+|Identifier field|<xref:System.Windows.Controls.Slider.AutoToolTipPlacementProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -229,7 +227,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Slider>|  
+|Identifier field|<xref:System.Windows.Controls.Slider.AutoToolTipPrecisionProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -290,7 +288,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Windows.Controls.Slider.IsDirectionReversed%2A> property is set to `true`, the <xref:System.Windows.Input.InputGesture> for this command is <xref:System.Windows.Input.Key>.  
+ If the <xref:System.Windows.Controls.Slider.IsDirectionReversed%2A> property is set to `true`, the <xref:System.Windows.Input.InputGesture> for this command is <xref:System.Windows.Input.Key.PageUp>.  
   
  The default value of the <xref:System.Windows.Controls.Primitives.RangeBase.LargeChange%2A> property is (0.1).  
   
@@ -321,7 +319,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Windows.Controls.Slider.IsDirectionReversed%2A> property is set to `true`, the <xref:System.Windows.Input.InputGesture> objects are <xref:System.Windows.Input.Key> and <xref:System.Windows.Input.Key>.  
+ If the <xref:System.Windows.Controls.Slider.IsDirectionReversed%2A> property is set to `true`, the <xref:System.Windows.Input.InputGesture> objects are <xref:System.Windows.Input.Key.Up> and <xref:System.Windows.Input.Key.Right>.  
   
  The default value of the <xref:System.Windows.Controls.Primitives.RangeBase.SmallChange%2A> property is (0.1).  
   
@@ -417,7 +415,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Windows.Controls.Slider.IsDirectionReversed%2A> property is set to `true`, the <xref:System.Windows.Input.InputGesture> for this command is <xref:System.Windows.Input.Key>.  
+ If the <xref:System.Windows.Controls.Slider.IsDirectionReversed%2A> property is set to `true`, the <xref:System.Windows.Input.InputGesture> for this command is <xref:System.Windows.Input.Key.PageDown>.  
   
  The default value of the <xref:System.Windows.Controls.Primitives.RangeBase.LargeChange%2A> property is (1).  
   
@@ -448,7 +446,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Windows.Controls.Slider.IsDirectionReversed%2A> property is set to `true`, the <xref:System.Windows.Input.InputGesture> objects for this command are <xref:System.Windows.Input.Key> and <xref:System.Windows.Input.Key> and <xref:System.Windows.Controls.Slider>.  
+ If the <xref:System.Windows.Controls.Slider.IsDirectionReversed%2A> property is set to `true`, the <xref:System.Windows.Input.InputGesture> objects for this command are <xref:System.Windows.Input.Key.Down> and <xref:System.Windows.Input.Key.Left> and <xref:System.Windows.Controls.Slider>.  
   
  The default value of the <xref:System.Windows.Controls.Primitives.RangeBase.SmallChange%2A> property is (0.1).  
   
@@ -850,7 +848,7 @@
         <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a command that sets the <see cref="T:System.Windows.Controls.Slider" /> <see cref="P:System.Windows.Controls.Primitives.RangeBase.Value" /> to the <see cref="P:System.Windows.Controls.Primitives.RangeBase.Maximum" /> value.</summary>
+        <summary>Gets a command that sets the <see cref="T:System.Windows.Controls.Slider" /><see cref="P:System.Windows.Controls.Primitives.RangeBase.Value" /> to the <see cref="P:System.Windows.Controls.Primitives.RangeBase.Maximum" /> value.</summary>
         <value>The <see cref="T:System.Windows.Input.RoutedCommand" /> to use. The default is <see cref="F:System.Windows.Input.Key.End" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -878,7 +876,7 @@
         <ReturnType>System.Windows.Input.RoutedCommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a command that sets the <see cref="T:System.Windows.Controls.Slider" /> <see cref="P:System.Windows.Controls.Primitives.RangeBase.Value" /> to the <see cref="P:System.Windows.Controls.Primitives.RangeBase.Minimum" /> value.</summary>
+        <summary>Gets a command that sets the <see cref="T:System.Windows.Controls.Slider" /><see cref="P:System.Windows.Controls.Primitives.RangeBase.Value" /> to the <see cref="P:System.Windows.Controls.Primitives.RangeBase.Minimum" /> value.</summary>
         <value>The <see cref="T:System.Windows.Input.RoutedCommand" /> to use. The default is <see cref="F:System.Windows.Input.Key.Home" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1257,7 +1255,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In addition to the default processing of the <xref:System.Windows.Controls.Primitives.Thumb.DragStarted> event, this implementation displays a tooltip that shows the <xref:System.Windows.Controls.Primitives.RangeBase.Value%2A> of the <xref:System.Windows.Controls.Slider> when the <xref:System.Windows.Controls.Slider.AutoToolTipPlacement%2A> property is not set to <xref:System.Windows.Controls.Primitives.AutoToolTipPlacement>.  
+ In addition to the default processing of the <xref:System.Windows.Controls.Primitives.Thumb.DragStarted> event, this implementation displays a tooltip that shows the <xref:System.Windows.Controls.Primitives.RangeBase.Value%2A> of the <xref:System.Windows.Controls.Slider> when the <xref:System.Windows.Controls.Slider.AutoToolTipPlacement%2A> property is not set to <xref:System.Windows.Controls.Primitives.AutoToolTipPlacement.None>.  
   
  This implementation does not handle the <xref:System.Windows.Controls.Primitives.Thumb.DragStarted> event. The value of the <xref:System.Windows.RoutedEventArgs.Handled%2A> property of the <xref:System.Windows.Controls.Primitives.DragCompletedEventArgs> is not changed.  
   
@@ -1533,7 +1531,7 @@
 ## Remarks  
  If the <xref:System.Windows.Controls.Slider.Ticks%2A> property is set to a value that is not `null`, the <xref:System.Windows.Controls.Slider.TickFrequency%2A> property is not used.  
   
- The <xref:System.Windows.Controls.Slider.TickPlacement%2A> property must be set to a value other than <xref:System.Windows.Controls.Primitives.TickPlacement> for tick marks to appear along the <xref:System.Windows.Controls.Slider>.  
+ The <xref:System.Windows.Controls.Slider.TickPlacement%2A> property must be set to a value other than <xref:System.Windows.Controls.Primitives.TickPlacement.None> for tick marks to appear along the <xref:System.Windows.Controls.Slider>.  
   
  Tick marks are drawn at an interval that is specified by the <xref:System.Windows.Controls.Slider.TickFrequency%2A> property. The tick marks start at the value of the <xref:System.Windows.Controls.Primitives.RangeBase.Minimum%2A> property and continue until the value of the <xref:System.Windows.Controls.Primitives.RangeBase.Maximum%2A> property is reached.  
   
@@ -1609,7 +1607,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.Slider.TickPlacement%2A> property must be set to a value other than <xref:System.Windows.Controls.Primitives.TickPlacement> for tick marks to appear.  
+ The <xref:System.Windows.Controls.Slider.TickPlacement%2A> property must be set to a value other than <xref:System.Windows.Controls.Primitives.TickPlacement.None> for tick marks to appear.  
   
    
   
@@ -1677,7 +1675,7 @@
 ## Remarks  
  Tick marks that are outside the range that is defined by the <xref:System.Windows.Controls.Primitives.RangeBase.Minimum%2A> and <xref:System.Windows.Controls.Primitives.RangeBase.Maximum%2A> property values are ignored.  
   
- The <xref:System.Windows.Controls.Slider.TickPlacement%2A> property must be set to a value other than <xref:System.Windows.Controls.Primitives.TickPlacement> for tick marks to appear.  
+ The <xref:System.Windows.Controls.Slider.TickPlacement%2A> property must be set to a value other than <xref:System.Windows.Controls.Primitives.TickPlacement.None> for tick marks to appear.  
   
 <a name="dependencyPropertyInfo_Ticks"></a>   
 ## Dependency Property Information  

@@ -53,6 +53,30 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.MetadataExchangeClient" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table lists the default bindings that are used for various protocol schemes.  
+  
+|Scheme|Binding|  
+|------------|-------------|  
+|http|<xref:System.ServiceModel.WsHttpBinding> (<xref:System.ServiceModel.SecurityMode?displayProperty=fullName>)|  
+|https|<xref:System.ServiceModel.WsHttpBinding> (<xref:System.ServiceModel.SecurityMode?displayProperty=fullName>)|  
+|net.tcp|<xref:System.ServiceModel.Channels.CustomBinding> with a <xref:System.ServiceModel.Channels.TcpTransportBindingElement>|  
+|net.pipe|<xref:System.ServiceModel.Channels.CustomBinding> with a <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MetadataExchangeClient ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -184,6 +208,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginGetMetadata">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous method call that returns a <see cref="T:System.ServiceModel.Description.MetadataSet" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Begins an asynchronous implementation of the <xref:System.ServiceModel.Description.MetadataExchangeClient.GetMetadata%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginGetMetadata">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginGetMetadata (AsyncCallback callback, object asyncState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginGetMetadata(class System.AsyncCallback callback, object asyncState) cil managed" />
@@ -702,46 +743,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.MetadataExchangeClient" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The following table lists the default bindings that are used for various protocol schemes.  
-  
-|Scheme|Binding|  
-|------------|-------------|  
-|http|<xref:System.ServiceModel.WsHttpBinding> (<xref:System.ServiceModel.SecurityMode?displayProperty=fullName>)|  
-|https|<xref:System.ServiceModel.WsHttpBinding> (<xref:System.ServiceModel.SecurityMode?displayProperty=fullName>)|  
-|net.tcp|<xref:System.ServiceModel.Channels.CustomBinding> with a <xref:System.ServiceModel.Channels.TcpTransportBindingElement>|  
-|net.pipe|<xref:System.ServiceModel.Channels.CustomBinding> with a <xref:System.ServiceModel.Channels.NamedPipeTransportBindingElement>|  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginGetMetadata">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous method call that returns a <see cref="T:System.ServiceModel.Description.MetadataSet" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Begins an asynchronous implementation of the <xref:System.ServiceModel.Description.MetadataExchangeClient.GetMetadata%2A> methods.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

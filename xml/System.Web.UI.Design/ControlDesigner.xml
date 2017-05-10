@@ -965,6 +965,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Invalidate">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invalidates the control as displayed on the design surface and causes the design host to call the <see cref="M:System.Web.UI.Design.ControlDesigner.OnPaint(System.Windows.Forms.PaintEventArgs)" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling <xref:System.Web.UI.Design.ControlDesigner.UpdateDesignTimeHtml%2A> method also calls <xref:System.Web.UI.Design.ControlDesigner.Invalidate%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Invalidate">
       <MemberSignature Language="C#" Value="public void Invalidate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invalidate() cil managed" />
@@ -1788,7 +1805,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- There are several flags that can be set. For example, use the <xref:System.Web.UI.Design.ControlDesigner.SetViewFlags%2A> method to set the <xref:System.Web.UI.Design.ViewFlags> value of the current <xref:System.Web.UI.Design.ControlDesigner.ViewControl%2A> property for the control designer, instead of the obsolete <xref:System.Web.UI.Design.ControlDesigner.DesignTimeHtmlRequiresLoadComplete%2A> property.  
+ There are several flags that can be set. For example, use the <xref:System.Web.UI.Design.ControlDesigner.SetViewFlags%2A> method to set the <xref:System.Web.UI.Design.ViewFlags.DesignTimeHtmlRequiresLoadComplete> value of the current <xref:System.Web.UI.Design.ControlDesigner.ViewControl%2A> property for the control designer, instead of the obsolete <xref:System.Web.UI.Design.ControlDesigner.DesignTimeHtmlRequiresLoadComplete%2A> property.  
   
    
   
@@ -2009,22 +2026,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Invalidate">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invalidates the control as displayed on the design surface and causes the design host to call the <see cref="M:System.Web.UI.Design.ControlDesigner.OnPaint(System.Windows.Forms.PaintEventArgs)" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Calling <xref:System.Web.UI.Design.ControlDesigner.UpdateDesignTimeHtml%2A> method also calls <xref:System.Web.UI.Design.ControlDesigner.Invalidate%2A> method.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

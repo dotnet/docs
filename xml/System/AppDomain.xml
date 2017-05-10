@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Extensions</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.MarshalByRefObject</BaseTypeName>
   </Base>
@@ -107,6 +111,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("AppDomain.AppendPrivatePath has been deprecated. Please investigate the use of AppDomainSetup.PrivateBinPath instead.")</AttributeName>
@@ -188,6 +196,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -226,6 +238,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.AssemblyLoadEventHandler</ReturnType>
@@ -271,6 +287,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ResolveEventHandler</ReturnType>
@@ -327,6 +347,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -367,6 +391,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -417,6 +445,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -583,6 +615,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.AppDomain</ReturnType>
@@ -2050,6 +2086,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.AppDomain</ReturnType>
       </ReturnValue>
@@ -2099,7 +2139,7 @@
  This method should only be used to define a dynamic assembly in the current application domain. For more information, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
    
   
@@ -2225,7 +2265,7 @@
  This method should only be used to define a dynamic assembly in the current application domain. For more information, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
    
   
@@ -2284,7 +2324,7 @@
  This method should only be used to define a dynamic assembly in the current application domain. For more information, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
    
   
@@ -2398,7 +2438,7 @@
  This method should only be used to define a dynamic assembly in the current application domain. For more information, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
    
   
@@ -2464,7 +2504,7 @@
  The permission requests specified for `requiredPermissions`, `optionalPermissions`, and `refusedPermissions` are not used unless the dynamic assembly has been saved and reloaded into memory. To specify permission requests for a transient assembly that is never saved to disk, use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence as well as requested permissions, and supply an <xref:System.Security.Policy.Evidence> object.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
  This method should only be used to define a dynamic assembly in the current application domain. For more information, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload .  
   
@@ -2582,7 +2622,7 @@
  The permission requests specified for `requiredPermissions`, `optionalPermissions`, and `refusedPermissions` are used only if `evidence` is also supplied, or if the dynamic assembly is saved and reloaded into memory.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
  Only fully trusted callers can supply their `evidence` when defining a dynamic <xref:System.Reflection.Assembly>. The runtime will map the <xref:System.Security.Policy.Evidence> through the security policy to determine the granted permissions. Partially trusted callers must supply a null `evidence`. If `evidence` is `null`, the runtime copies the permission sets, that is, the current grant and deny sets, from the caller's <xref:System.Reflection.Assembly> to the dynamic <xref:System.Reflection.Assembly> being defined and marks policy as resolved.  
   
@@ -2656,7 +2696,7 @@
  The permission requests specified for `requiredPermissions`, `optionalPermissions`, and `refusedPermissions` are not used unless the dynamic assembly has been saved and reloaded into memory. To specify permission requests for a transient assembly that is never saved to disk, use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence as well as requested permissions, and supply an <xref:System.Security.Policy.Evidence> object.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you use an overload of the <xref:System.AppDomain.DefineDynamicAssembly%2A> method that specifies evidence and permissions, supply the evidence you want the dynamic assembly to have, and include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
  This method should only be used to define a dynamic assembly in the current application domain. For more information, see the <xref:System.AppDomain.Load%28System.Reflection.AssemblyName%29> method overload.  
   
@@ -2727,7 +2767,7 @@
  The permission requests specified for `requiredPermissions`, `optionalPermissions`, and `refusedPermissions` are used only if `evidence` is also supplied, or if the dynamic assembly is saved and reloaded into memory.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
  Only fully trusted callers can supply their `evidence` when defining a dynamic <xref:System.Reflection.Assembly>. The runtime will map the <xref:System.Security.Policy.Evidence> through the security policy to determine the granted permissions. Partially trusted callers must supply a null `evidence`. If `evidence` is `null`, the runtime copies the permission sets, that is, the current grant and deny sets, from the caller's <xref:System.Reflection.Assembly> to the dynamic <xref:System.Reflection.Assembly> being defined and marks policy as resolved.  
   
@@ -2806,7 +2846,7 @@
  The permission requests specified for `requiredPermissions`, `optionalPermissions`, and `refusedPermissions` are used only if `evidence` is also supplied, or if the dynamic assembly is saved and reloaded into memory.  
   
 > [!NOTE]
->  During the development of code that emits dynamic assemblies, it is recommended that you include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
+>  During the development of code that emits dynamic assemblies, it is recommended that you include <xref:System.Security.Permissions.SecurityPermissionFlag?displayProperty=fullName> in `refusedPermissions`. Including <xref:System.Security.Permissions.SecurityPermissionFlag.SkipVerification> in the `refusedPermissions` parameter ensures that the MSIL is verified. A limitation of this technique is that it also causes <xref:System.Security.SecurityException> to be thrown when used with code that demands full trust.  
   
  Only fully trusted callers can supply their evidence when defining a dynamic <xref:System.Reflection.Assembly>. The runtime will map the <xref:System.Security.Policy.Evidence> through the security policy to determine the granted permissions. Partially trusted callers must supply `null` for the `evidence` parameter. If `evidence` is `null`, the runtime copies the permission sets, that is, the current grant and deny sets, from the caller's <xref:System.Reflection.Assembly> to the dynamic <xref:System.Reflection.Assembly> being defined and marks policy as resolved.  
   
@@ -3005,6 +3045,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
@@ -3042,6 +3086,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -3117,6 +3165,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -3249,6 +3301,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -3385,6 +3441,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -3530,6 +3590,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -3583,6 +3647,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -3700,6 +3768,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -3897,6 +3969,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;System.Runtime.ExceptionServices.FirstChanceExceptionEventArgs&gt;</ReturnType>
       </ReturnValue>
@@ -3955,6 +4031,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -3995,6 +4075,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Assembly[]</ReturnType>
       </ReturnValue>
@@ -4033,6 +4117,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("AppDomain.GetCurrentThreadId has been deprecated because it does not provide a stable Id when managed threads are running on fibers (aka lightweight threads). To get a stable identifier for a managed thread, use the ManagedThreadId property on Thread.'")</AttributeName>
@@ -4069,6 +4157,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -4169,6 +4261,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>get: System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
@@ -4234,6 +4330,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
@@ -4278,6 +4378,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -4318,6 +4422,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -4363,6 +4471,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -4406,6 +4518,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -4440,6 +4556,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Assembly</ReturnType>
@@ -4500,6 +4620,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Assembly</ReturnType>
@@ -4563,6 +4687,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Assembly</ReturnType>
       </ReturnValue>
@@ -4612,6 +4740,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Assembly</ReturnType>
@@ -4853,6 +4985,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -4890,6 +5026,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
@@ -4921,6 +5061,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -4954,6 +5098,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
@@ -4978,6 +5126,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -5042,6 +5194,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
@@ -5082,6 +5238,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ResolveEventHandler</ReturnType>
       </ReturnValue>
@@ -5120,6 +5280,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Assembly[]</ReturnType>
@@ -5162,6 +5326,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -5195,6 +5363,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ResolveEventHandler</ReturnType>
@@ -5283,6 +5455,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("Use AppDomainSetup.SetCachePath")</AttributeName>
@@ -5324,6 +5500,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -5417,6 +5597,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("Use AppDomainSetup.DynamicBase")</AttributeName>
@@ -5466,6 +5650,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -5479,7 +5667,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting this value will only be effective if you set it before using the <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property. For example, if you set <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> to a given principal (for example, a generic principal) and then use the <xref:System.AppDomain.SetPrincipalPolicy%2A> method to set the <xref:System.Security.Principal.PrincipalPolicy> to <xref:System.Security.Principal.PrincipalPolicy>, the current principal will remain the generic principal.  
+ Setting this value will only be effective if you set it before using the <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> property. For example, if you set <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> to a given principal (for example, a generic principal) and then use the <xref:System.AppDomain.SetPrincipalPolicy%2A> method to set the <xref:System.Security.Principal.PrincipalPolicy> to <xref:System.Security.Principal.PrincipalPolicy.WindowsPrincipal>, the current principal will remain the generic principal.  
   
    
   
@@ -5509,6 +5697,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -5555,6 +5747,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -5610,6 +5806,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -5672,6 +5872,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -5847,6 +6051,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -5882,6 +6090,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ResolveEventHandler</ReturnType>
@@ -5933,6 +6145,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.UnhandledExceptionEventHandler</ReturnType>
@@ -6004,6 +6220,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

@@ -577,6 +577,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="LoadComponent">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads a [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)] file that is located at the specified [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)].</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[TLA2#tla_titlexaml](~/includes/tla2sharptla-titlexaml-md.md)] file can be an application code file (configured as an [!INCLUDE[TLA#tla_msbuild](~/includes/tlasharptla-msbuild-md.md)] Page item) or an application data file (a resource file, content file, or site-of-origin file; see [WPF Application Resource, Content, and Data Files](~/docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)).  
+  
+> [!NOTE]
+>  This method is not thread-safe.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="LoadComponent">
       <MemberSignature Language="C#" Value="public static object LoadComponent (Uri resourceLocator);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object LoadComponent(class System.Uri resourceLocator) cil managed" />
@@ -681,7 +701,7 @@
   
  You can specify a different main window by setting <xref:System.Windows.Application.MainWindow%2A> assigning another <xref:System.Windows.Application.Windows%2A> object to the <xref:System.Windows.Application.MainWindow%2A> property.  
   
- If the <xref:System.Windows.Application.ShutdownMode%2A> property of the <xref:System.Windows.Application> object is set to <xref:System.Windows.ShutdownMode>, closing the main window causes the application to shut down.  
+ If the <xref:System.Windows.Application.ShutdownMode%2A> property of the <xref:System.Windows.Application> object is set to <xref:System.Windows.ShutdownMode.OnMainWindowClose>, closing the main window causes the application to shut down.  
   
  It is possible to set the <xref:System.Windows.Application.MainWindow%2A> property from [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)], if an application's main window is not the window that is produced by setting the <xref:System.Windows.Application.StartupUri%2A> property in [!INCLUDE[TLA2#tla_titlexaml](~/includes/tla2sharptla-titlexaml-md.md)]. The two limitations of the [!INCLUDE[TLA2#tla_titlexaml](~/includes/tla2sharptla-titlexaml-md.md)] approach are:  
   
@@ -1504,7 +1524,7 @@
   
  If <xref:System.Windows.Application.SessionEnding> is unhandled, or is handled without being cancelled, <xref:System.Windows.Application.Shutdown%2A> is called and the <xref:System.Windows.Application.Exit> event is raised.  
   
- To obtain more information about why the session is ending, an application can inspect <xref:System.Windows.SessionEndingCancelEventArgs.ReasonSessionEnding%2A>, which is one of the <xref:System.Windows.ReasonSessionEnding> values (<xref:System.Windows.ReasonSessionEnding> and <xref:System.Windows.ReasonSessionEnding>).  
+ To obtain more information about why the session is ending, an application can inspect <xref:System.Windows.SessionEndingCancelEventArgs.ReasonSessionEnding%2A>, which is one of the <xref:System.Windows.ReasonSessionEnding> values (<xref:System.Windows.ReasonSessionEnding.Logoff> and <xref:System.Windows.ReasonSessionEnding.Shutdown>).  
   
  <xref:System.Windows.Application.SessionEnding> is not raised by console applications.  
   
@@ -1596,13 +1616,13 @@
   
  <xref:System.Windows.Application.Shutdown%2A> is implicitly called by [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] in the following situations:  
   
--   When <xref:System.Windows.Application.ShutdownMode%2A> is set to <xref:System.Windows.ShutdownMode>.  
+-   When <xref:System.Windows.Application.ShutdownMode%2A> is set to <xref:System.Windows.ShutdownMode.OnLastWindowClose>.  
   
--   When the <xref:System.Windows.Application.ShutdownMode%2A> is set to <xref:System.Windows.ShutdownMode>.  
+-   When the <xref:System.Windows.Application.ShutdownMode%2A> is set to <xref:System.Windows.ShutdownMode.OnMainWindowClose>.  
   
 -   When a user ends a session and the <xref:System.Windows.Application.SessionEnding> event is either unhandled, or handled without cancellation.  
   
- Calling <xref:System.Windows.Application.Shutdown%2A> explicitly causes an application to shut down, regardless of the <xref:System.Windows.Application.ShutdownMode%2A> setting. However, if <xref:System.Windows.Application.ShutdownMode%2A> is set to <xref:System.Windows.ShutdownMode>, you must call <xref:System.Windows.Application.Shutdown%2A> to shut down an application.  
+ Calling <xref:System.Windows.Application.Shutdown%2A> explicitly causes an application to shut down, regardless of the <xref:System.Windows.Application.ShutdownMode%2A> setting. However, if <xref:System.Windows.Application.ShutdownMode%2A> is set to <xref:System.Windows.ShutdownMode.OnExplicitShutdown>, you must call <xref:System.Windows.Application.Shutdown%2A> to shut down an application.  
   
 > [!IMPORTANT]
 >  When <xref:System.Windows.Application.Shutdown%2A> is called, the application will shut down irrespective of whether the <xref:System.Windows.Window.Closing> event of any open windows is canceled.  
@@ -1671,11 +1691,11 @@
 ## Remarks  
  Applications stop running only when the <xref:System.Windows.Application.Shutdown%2A> method of the Application is called. Shut down can occur implicitly or explicitly, as specified by the value of the <xref:System.Windows.Application.ShutdownMode%2A> property.  
   
- If you set <xref:System.Windows.Application.ShutdownMode%2A> to <xref:System.Windows.ShutdownMode>, [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] implicitly calls <xref:System.Windows.Application.Shutdown%2A> when the last window in an application closes, even if any currently instantiated windows are set as the main window (see <xref:System.Windows.Application.MainWindow%2A>).  
+ If you set <xref:System.Windows.Application.ShutdownMode%2A> to <xref:System.Windows.ShutdownMode.OnLastWindowClose>, [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] implicitly calls <xref:System.Windows.Application.Shutdown%2A> when the last window in an application closes, even if any currently instantiated windows are set as the main window (see <xref:System.Windows.Application.MainWindow%2A>).  
   
- A <xref:System.Windows.Application.ShutdownMode%2A> of <xref:System.Windows.ShutdownMode> causes [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)]to implicitly call <xref:System.Windows.Application.Shutdown%2A> when the <xref:System.Windows.Application.MainWindow%2A> closes, even if other windows are currently open.  
+ A <xref:System.Windows.Application.ShutdownMode%2A> of <xref:System.Windows.ShutdownMode.OnMainWindowClose> causes [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)]to implicitly call <xref:System.Windows.Application.Shutdown%2A> when the <xref:System.Windows.Application.MainWindow%2A> closes, even if other windows are currently open.  
   
- The lifetime of some applications may not be dependent on when the main window or last window is closed, or may not be dependent on windows at all. For these scenarios you need to set the <xref:System.Windows.Application.ShutdownMode%2A> property to <xref:System.Windows.ShutdownMode>, which requires an explicit <xref:System.Windows.Application.Shutdown%2A> method call to stop the application. Otherwise, the application continues running in the background.  
+ The lifetime of some applications may not be dependent on when the main window or last window is closed, or may not be dependent on windows at all. For these scenarios you need to set the <xref:System.Windows.Application.ShutdownMode%2A> property to <xref:System.Windows.ShutdownMode.OnExplicitShutdown>, which requires an explicit <xref:System.Windows.Application.Shutdown%2A> method call to stop the application. Otherwise, the application continues running in the background.  
   
  <xref:System.Windows.Application.ShutdownMode%2A> can be configured declaratively from [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)] or programmatically from code.  
   
@@ -1917,25 +1937,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="LoadComponent">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Loads a [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)] file that is located at the specified [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)].</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The [!INCLUDE[TLA2#tla_titlexaml](~/includes/tla2sharptla-titlexaml-md.md)] file can be an application code file (configured as an [!INCLUDE[TLA#tla_msbuild](~/includes/tlasharptla-msbuild-md.md)] Page item) or an application data file (a resource file, content file, or site-of-origin file; see [WPF Application Resource, Content, and Data Files](~/docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)).  
-  
-> [!NOTE]
->  This method is not thread-safe.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

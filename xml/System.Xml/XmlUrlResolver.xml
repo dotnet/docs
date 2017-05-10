@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Xml.XmlResolver</BaseTypeName>
   </Base>
@@ -43,7 +47,7 @@
  [!code-csharp[XmlCachingResolver_ex#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlCachingResolver_ex/CS/XmlCachingResolver_ex.cs#1)]
  [!code-vb[XmlCachingResolver_ex#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlCachingResolver_ex/VB/XmlCachingResolver_ex.vb#1)]  
   
- The caching behavior of the `XmlCachingResolver` class is implemented in the `GetEntity` method. This is done by creating new <xref:System.Net.WebRequest> and <xref:System.Net.Cache.HttpRequestCachePolicy> objects. The <xref:System.Net.Cache.HttpRequestCachePolicy> object is created using the <xref:System.Net.Cache.HttpRequestCacheLevel> member of the <xref:System.Net.Cache.HttpRequestCacheLevel> enumeration.  
+ The caching behavior of the `XmlCachingResolver` class is implemented in the `GetEntity` method. This is done by creating new <xref:System.Net.WebRequest> and <xref:System.Net.Cache.HttpRequestCachePolicy> objects. The <xref:System.Net.Cache.HttpRequestCachePolicy> object is created using the <xref:System.Net.Cache.HttpRequestCacheLevel.Default> member of the <xref:System.Net.Cache.HttpRequestCacheLevel> enumeration.  
   
  The <xref:System.Net.WebRequest.CachePolicy%2A> property of the <xref:System.Net.WebRequest> object is set with the <xref:System.Net.Cache.HttpRequestCachePolicy> object.  
   
@@ -78,6 +82,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlUrlResolver" /> class.</summary>
@@ -97,6 +105,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Cache.RequestCachePolicy</ReturnType>
@@ -120,6 +132,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.ICredentials</ReturnType>
@@ -171,6 +187,10 @@ resolver.Credentials = myCache;
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -230,6 +250,10 @@ resolver.Credentials = myCache;
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
@@ -269,6 +293,10 @@ resolver.Credentials = myCache;
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.IWebProxy</ReturnType>
       </ReturnValue>
@@ -291,6 +319,10 @@ resolver.Credentials = myCache;
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>

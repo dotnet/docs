@@ -328,6 +328,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="UpdateFileInfo">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates file information for each referenced assembly and file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The file information includes a hash computation and a file size for each referenced file and assembly. Also, the assembly identity is obtained for any referenced assemblies with an unspecified assembly identity. Any resulting errors or warnings are reported in the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageCollection> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="UpdateFileInfo">
       <MemberSignature Language="C#" Value="public void UpdateFileInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateFileInfo() cil managed" />
@@ -576,22 +593,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="UpdateFileInfo">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Updates file information for each referenced assembly and file.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The file information includes a hash computation and a file size for each referenced file and assembly. Also, the assembly identity is obtained for any referenced assemblies with an unspecified assembly identity. Any resulting errors or warnings are reported in the <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageCollection> object.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

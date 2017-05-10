@@ -1,23 +1,21 @@
 <Type Name="ICustomAttributeTypeProvider&lt;TType&gt;" FullName="System.Reflection.Metadata.ICustomAttributeTypeProvider&lt;TType&gt;">
-  <TypeSignature Language="C#" Value="public interface ICustomAttributeTypeProvider&lt;TType&gt; : System.Reflection.Metadata.IPrimitiveTypeProvider&lt;TType&gt;, System.Reflection.Metadata.ISZArrayTypeProvider&lt;TType&gt;, System.Reflection.Metadata.ITypeProvider&lt;TType&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICustomAttributeTypeProvider`1&lt;TType&gt; implements class System.Reflection.Metadata.IPrimitiveTypeProvider`1&lt;!TType&gt;, class System.Reflection.Metadata.ISZArrayTypeProvider`1&lt;!TType&gt;, class System.Reflection.Metadata.ITypeProvider`1&lt;!TType&gt;" />
+  <TypeSignature Language="C#" Value="public interface ICustomAttributeTypeProvider&lt;TType&gt; : System.Reflection.Metadata.ISimpleTypeProvider&lt;TType&gt;, System.Reflection.Metadata.ISZArrayTypeProvider&lt;TType&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICustomAttributeTypeProvider`1&lt;TType&gt; implements class System.Reflection.Metadata.ISimpleTypeProvider`1&lt;!TType&gt;, class System.Reflection.Metadata.ISZArrayTypeProvider`1&lt;!TType&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ICustomAttributeTypeProvider`1" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
+    <AssemblyVersion>1.4.2.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TType" />
   </TypeParameters>
   <Interfaces>
     <Interface>
-      <InterfaceName>System.Reflection.Metadata.IPrimitiveTypeProvider&lt;TType&gt;</InterfaceName>
+      <InterfaceName>System.Reflection.Metadata.ISimpleTypeProvider&lt;TType&gt;</InterfaceName>
     </Interface>
     <Interface>
       <InterfaceName>System.Reflection.Metadata.ISZArrayTypeProvider&lt;TType&gt;</InterfaceName>
-    </Interface>
-    <Interface>
-      <InterfaceName>System.Reflection.Metadata.ITypeProvider&lt;TType&gt;</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
@@ -34,6 +32,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TType</ReturnType>
@@ -53,6 +52,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TType</ReturnType>
@@ -75,6 +75,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.PrimitiveTypeCode</ReturnType>
@@ -97,6 +98,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
+        <AssemblyVersion>1.4.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

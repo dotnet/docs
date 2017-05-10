@@ -1096,6 +1096,26 @@ Next
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Refresh">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Refreshes object state by using data in the database.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is useful after an optimistic concurrency error to bring items into a state for another attempt. It updates the state of the primitive fields and properties on the objects.  
+  
+> [!NOTE]
+>  If an object is on the *many* side of a one-to-many relationship, the foreign key on the object will be set and the object pointer for the other side of the relationship will be set to the new value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Refresh">
       <MemberSignature Language="C#" Value="public void Refresh (System.Data.Linq.RefreshMode mode, System.Collections.IEnumerable entities);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh(valuetype System.Data.Linq.RefreshMode mode, class System.Collections.IEnumerable entities) cil managed" />
@@ -1171,6 +1191,25 @@ Next
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SubmitChanges">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Computes the set of modified objects to be inserted, updated, or deleted, and executes the appropriate commands to implement the changes to the database.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If override methods are present for insert, update, or delete, <xref:System.Data.Linq.DataContext.SubmitChanges%2A> executes these methods instead of the default [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] commands.  
+  
+ <xref:System.Data.Linq.DataContext.SubmitChanges%2A> starts a transaction and will roll back if an exception occurs while <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is executing. However, this does not roll back the changes in memory or tracked by the <xref:System.Data.Linq.DataContext>; those changes will need to be rolled back manually. You can start with a new instance of the <xref:System.Data.Linq.DataContext> if the changes in memory are to be discarded.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SubmitChanges">
       <MemberSignature Language="C#" Value="public void SubmitChanges ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SubmitChanges() cil managed" />
@@ -1220,7 +1259,7 @@ Next
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Default failure mode is <xref:System.Data.Linq.ConflictMode>.  
+ Default failure mode is <xref:System.Data.Linq.ConflictMode.FailOnFirstConflict>.  
   
    
   
@@ -1265,6 +1304,43 @@ Next
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Translate">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts an existing <see cref="T:System.Data.IDataReader" /> to objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each row in the <xref:System.Data.IDataReader> is converted to an object in the <xref:System.Collections.Generic.IEnumerable%601>.  
+  
+```  
+public IEnumerable<T> Translate<T>(IDataReader reader) {}  
+```  
+  
+ Description: This method is used to convert an existing <xref:System.Data.Common.DbDataReader> to objects. Each row in the <xref:System.Data.Common.DbDataReader> is converted to an object in the <xref:System.Collections.Generic.IEnumerable%601>.  
+  
+ **Generic parameters:**  
+  
+ `T`: See <xref:System.Data.Linq.DataContext.ExecuteQuery%2A>.  
+  
+ **Parameters:**  
+  
+ `Query`: See the description for command under <xref:System.Data.Linq.DataContext.ExecuteCommand%2A>.  
+  
+ `Parameters`: See the description for parameters under <xref:System.Data.Linq.DataContext.ExecuteCommand%2A>.  
+  
+ **Return type:**  
+  
+ <xref:System.Collections.Generic.IEnumerable%601>: collection of objects returned by the conversion.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Translate">
       <MemberSignature Language="C#" Value="public System.Data.Linq.IMultipleResults Translate (System.Data.Common.DbDataReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Linq.IMultipleResults Translate(class System.Data.Common.DbDataReader reader) cil managed" />
@@ -1355,81 +1431,5 @@ Next
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Refresh">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Refreshes object state by using data in the database.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is useful after an optimistic concurrency error to bring items into a state for another attempt. It updates the state of the primitive fields and properties on the objects.  
-  
-> [!NOTE]
->  If an object is on the *many* side of a one-to-many relationship, the foreign key on the object will be set and the object pointer for the other side of the relationship will be set to the new value.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SubmitChanges">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Computes the set of modified objects to be inserted, updated, or deleted, and executes the appropriate commands to implement the changes to the database.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If override methods are present for insert, update, or delete, <xref:System.Data.Linq.DataContext.SubmitChanges%2A> executes these methods instead of the default [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] commands.  
-  
- <xref:System.Data.Linq.DataContext.SubmitChanges%2A> starts a transaction and will roll back if an exception occurs while <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is executing. However, this does not roll back the changes in memory or tracked by the <xref:System.Data.Linq.DataContext>; those changes will need to be rolled back manually. You can start with a new instance of the <xref:System.Data.Linq.DataContext> if the changes in memory are to be discarded.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Translate">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts an existing <see cref="T:System.Data.IDataReader" /> to objects.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Each row in the <xref:System.Data.IDataReader> is converted to an object in the <xref:System.Collections.Generic.IEnumerable%601>.  
-  
-```  
-public IEnumerable<T> Translate<T>(IDataReader reader) {}  
-```  
-  
- Description: This method is used to convert an existing <xref:System.Data.Common.DbDataReader> to objects. Each row in the <xref:System.Data.Common.DbDataReader> is converted to an object in the <xref:System.Collections.Generic.IEnumerable%601>.  
-  
- **Generic parameters:**  
-  
- `T`: See <xref:System.Data.Linq.DataContext.ExecuteQuery%2A>.  
-  
- **Parameters:**  
-  
- `Query`: See the description for command under <xref:System.Data.Linq.DataContext.ExecuteCommand%2A>.  
-  
- `Parameters`: See the description for parameters under <xref:System.Data.Linq.DataContext.ExecuteCommand%2A>.  
-  
- **Return type:**  
-  
- <xref:System.Collections.Generic.IEnumerable%601>: collection of objects returned by the conversion.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

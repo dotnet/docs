@@ -262,6 +262,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateAlternateLink">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a new <xref:System.ServiceModel.Syndication.SyndicationLink> object and sets <xref:System.ServiceModel.Syndication.SyndicationLink.RelationshipType%2A> to `alternate`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateAlternateLink">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Syndication.SyndicationLink CreateAlternateLink (Uri uri);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Syndication.SyndicationLink CreateAlternateLink(class System.Uri uri) cil managed" />
@@ -381,6 +398,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateSelfLink">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> with the relationship type set to <see langword="self" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a new <xref:System.ServiceModel.Syndication.SyndicationLink> object and sets <xref:System.ServiceModel.Syndication.SyndicationLink.RelationshipType%2A> to `self`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateSelfLink">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Syndication.SyndicationLink CreateSelfLink (Uri uri);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Syndication.SyndicationLink CreateSelfLink(class System.Uri uri) cil managed" />
@@ -907,39 +941,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateAlternateLink">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method creates a new <xref:System.ServiceModel.Syndication.SyndicationLink> object and sets <xref:System.ServiceModel.Syndication.SyndicationLink.RelationshipType%2A> to `alternate`.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateSelfLink">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new <see cref="T:System.ServiceModel.Syndication.SyndicationLink" /> with the relationship type set to <see langword="self" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method creates a new <xref:System.ServiceModel.Syndication.SyndicationLink> object and sets <xref:System.ServiceModel.Syndication.SyndicationLink.RelationshipType%2A> to `self`.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

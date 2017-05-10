@@ -26,7 +26,7 @@
   
  If you are writing a new item and want to control all aspects of the painting, override the `OnPaint` method. From within `OnPaint`, you can use methods from the <xref:System.Windows.Forms.ToolStripRenderer>.  
   
- By default, the <xref:System.Windows.Forms.ToolStrip> is double buffered, taking advantage of the <xref:System.Windows.Forms.ControlStyles> setting.  
+ By default, the <xref:System.Windows.Forms.ToolStrip> is double buffered, taking advantage of the <xref:System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer> setting.  
   
    
   

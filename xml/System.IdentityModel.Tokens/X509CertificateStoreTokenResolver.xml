@@ -31,7 +31,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default store location is <xref:System.Security.Cryptography.X509Certificates.StoreLocation>. The default store name is <xref:System.Security.Cryptography.X509Certificates.StoreName>.  
+ The default store location is <xref:System.Security.Cryptography.X509Certificates.StoreLocation.LocalMachine>. The default store name is <xref:System.Security.Cryptography.X509Certificates.StoreName.My>.  
   
  ]]></format>
         </remarks>

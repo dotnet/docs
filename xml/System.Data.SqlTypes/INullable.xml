@@ -15,6 +15,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Common</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Interfaces />
   <Docs>
     <summary>All the <see cref="N:System.Data.SqlTypes" /> objects and structures implement the <see langword="INullable" /> interface.</summary>
@@ -46,13 +50,18 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Indicates whether a structure is null. This property is read-only.</summary>
         <value>
-          <see cref="T:System.Data.SqlTypes.SqlBoolean" /> <see langword="true" /> if the value of this object is null. Otherwise, <see langword="false" />.</value>
+          <see cref="T:System.Data.SqlTypes.SqlBoolean" />
+          <see langword="true" /> if the value of this object is null. Otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

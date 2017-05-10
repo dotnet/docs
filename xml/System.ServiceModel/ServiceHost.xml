@@ -349,6 +349,23 @@
         <exception cref="T:System.InvalidOperationException">The type of service hosted is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InitializeDescription">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a description of the service hosted based on its type or instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method removes the requirement for passing base addresses as part of <xref:System.ServiceModel.ServiceHost.%23ctor%2A>. Classes that inherit from <xref:System.ServiceModel.ServiceHost> can call <xref:System.ServiceModel.ServiceHost.%23ctor%2A> and then can call one of the <xref:System.ServiceModel.ServiceHost.InitializeDescription%2A> when a base address is available. This is how the Service Model Metadata Utility Tool (Svcutil.exe) is implemented.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="InitializeDescription">
       <MemberSignature Language="C#" Value="protected void InitializeDescription (object singletonInstance, System.ServiceModel.UriSchemeKeyedCollection baseAddresses);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void InitializeDescription(object singletonInstance, class System.ServiceModel.UriSchemeKeyedCollection baseAddresses) cil managed" />
@@ -468,22 +485,5 @@ protected override void OnClosed()
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="InitializeDescription">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a description of the service hosted based on its type or instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method removes the requirement for passing base addresses as part of <xref:System.ServiceModel.ServiceHost.%23ctor%2A>. Classes that inherit from <xref:System.ServiceModel.ServiceHost> can call <xref:System.ServiceModel.ServiceHost.%23ctor%2A> and then can call one of the <xref:System.ServiceModel.ServiceHost.InitializeDescription%2A> when a base address is available. This is how the Service Model Metadata Utility Tool (Svcutil.exe) is implemented.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

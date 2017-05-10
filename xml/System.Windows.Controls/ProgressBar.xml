@@ -44,9 +44,7 @@
 ## Examples  
  This example creates a <xref:System.Windows.Controls.ProgressBar> and uses an animation to simulate the progress of an operation.  
   
- [!code-xml[StatusBar_Snips#1](~/samples/snippets/csharp/VS_Snippets_Wpf/StatusBar_Snips/CS/Window1.xaml#1)]
- <!-- TODO: review snippet reference [!code-xml[StatusBar_Snips#1](~/samples/snippets/xaml/VS_Snippets_Wpf/StatusBar_Snips/XAML/Window1.xaml#1)]  -->  
-  
+ [!code-xml[StatusBar_Snips#1](~/samples/snippets/csharp/VS_Snippets_Wpf/StatusBar_Snips/CS/Window1.xaml#1)]    
  [!code-csharp[ProgressBar#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ProgressBar/CSharp/Window1.xaml.cs#1)]
  [!code-vb[ProgressBar#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ProgressBar/visualbasic/window1.xaml.vb#1)]  
   
@@ -259,7 +257,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.ProgressBar>|  
+|Identifier field|<xref:System.Windows.Controls.ProgressBar.OrientationProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
   
    

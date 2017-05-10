@@ -26,7 +26,7 @@
 ## Remarks  
  <xref:System.ComponentModel.Design.ByteViewer> provides an interface for viewing hexadecimal, ANSI, and Unicode formatted data.  
   
- The <xref:System.ComponentModel.Design.DisplayMode> enumeration specifies the identifiers that are used to indicate the display mode to use. The <xref:System.ComponentModel.Design.DisplayMode> display mode selects a default display mode based on the contents of the byte array. <xref:System.ComponentModel.Design.ByteViewer> uses a simple algorithm to determine what kind of data is stored in the buffer. The hexadecimal <xref:System.ComponentModel.Design.DisplayMode> view displays the hexadecimal values and corresponding byte representations (chars) in a read-only edit box. The default number of columns is 16. The <xref:System.ComponentModel.Design.DisplayMode> and <xref:System.ComponentModel.Design.DisplayMode> views show the byte array in a read-only edit box. In these views, `NUL` characters are replaced with Unicode block characters.  
+ The <xref:System.ComponentModel.Design.DisplayMode> enumeration specifies the identifiers that are used to indicate the display mode to use. The <xref:System.ComponentModel.Design.DisplayMode.Auto> display mode selects a default display mode based on the contents of the byte array. <xref:System.ComponentModel.Design.ByteViewer> uses a simple algorithm to determine what kind of data is stored in the buffer. The hexadecimal <xref:System.ComponentModel.Design.DisplayMode.Hexdump> view displays the hexadecimal values and corresponding byte representations (chars) in a read-only edit box. The default number of columns is 16. The <xref:System.ComponentModel.Design.DisplayMode.Ansi> and <xref:System.ComponentModel.Design.DisplayMode.Unicode> views show the byte array in a read-only edit box. In these views, `NUL` characters are replaced with Unicode block characters.  
   
    
   
@@ -311,7 +311,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.Design.DisplayMode> display mode displays the buffer starting at the specified line. If the specified line is out of range, the start line is set to zero.  
+ The <xref:System.ComponentModel.Design.DisplayMode.Hexdump> display mode displays the buffer starting at the specified line. If the specified line is out of range, the start line is set to zero.  
   
  ]]></format>
         </remarks>

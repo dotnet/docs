@@ -68,7 +68,7 @@
         <param name="binding">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.OptionalReliableSession" /> class from a reliable session binding element.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="reliableSessionBindingElement" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="binding" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Enabled">

@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.IO.Packaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
@@ -21,7 +22,7 @@
 ## Remarks  
  If the target is inside the <xref:System.IO.Packaging.Package> (Internal), the relationship <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> is always a relative [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].  
   
- If the target is outside the <xref:System.IO.Packaging.Package> (External), the relationship <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> can be either relative to the current location of the package or an absolute [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].  
+ If the target is outside the <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> (External), the relationship <xref:System.IO.Packaging.PackageRelationship.TargetUri%2A> can be either relative to the current location of the package or an absolute [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)].  
   
  ]]></format>
     </remarks>
@@ -35,6 +36,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -55,6 +57,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

@@ -236,7 +236,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Configuration.ConfigurationErrorsException">The binding element identified by the <paramref name="configurationName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Configuration.ConfigurationErrorsException">The binding element identified by the <paramref name="name" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

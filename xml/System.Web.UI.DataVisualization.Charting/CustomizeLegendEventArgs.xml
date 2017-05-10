@@ -86,7 +86,7 @@
  The <xref:System.Web.UI.DataVisualization.Charting.CustomizeLegendEventArgs.LegendItems%2A> property allows you to delete or modify both default and custom legend items in the <xref:System.Web.UI.DataVisualization.Charting.Chart.CustomizeLegend> event, and to add custom legend items. The order of legend items can also be changed.  
   
 > [!NOTE]
->  The <xref:System.Web.UI.DataVisualization.Charting.LegendItem.SeriesPointIndex> and <xref:System.Web.UI.DataVisualization.Charting.LegendItem.SeriesName> properties can be used to determine the data element that is associated with a default legend item. These properties will return zero-length strings for custom legend items, because custom items are not associated with chart data.  
+>  The <xref:System.Web.UI.DataVisualization.Charting.LegendItem.SeriesPointIndex%2A> and <xref:System.Web.UI.DataVisualization.Charting.LegendItem.SeriesName> properties can be used to determine the data element that is associated with a default legend item. These properties will return zero-length strings for custom legend items, because custom items are not associated with chart data.  
   
  This property enables you to determine which <xref:System.Web.UI.DataVisualization.Charting.Legend> the event was raised for, which enables you to customize an individual <xref:System.Web.UI.DataVisualization.Charting.Legend>.  
   

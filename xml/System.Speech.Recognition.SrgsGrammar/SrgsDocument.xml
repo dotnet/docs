@@ -26,6 +26,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Using the constructors for the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> class, you can create an instance of <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> from a <xref:System.Speech.Recognition.GrammarBuilder>, <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule>, or <xref:System.Xml.XmlReader> object, from a string that contains the path to an XML-format grammar, or you can initiate a blank instance of <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SrgsDocument ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -729,22 +746,5 @@ public void WorldSoccerWinners ()
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Using the constructors for the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> class, you can create an instance of <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> from a <xref:System.Speech.Recognition.GrammarBuilder>, <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule>, or <xref:System.Xml.XmlReader> object, from a string that contains the path to an XML-format grammar, or you can initiate a blank instance of <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

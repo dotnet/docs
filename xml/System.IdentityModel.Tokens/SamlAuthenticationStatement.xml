@@ -135,24 +135,13 @@
         <summary>Gets or sets the instant in time at which the subject was authenticated.</summary>
         <value>A <see cref="T:System.DateTime" /> that specifies the instant in time at which the subject was authenticated.  
   
- <list type="table">  
-<listheader>  
-<term> Exception type  
+ <list type="table"><listheader><term> Exception type  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> <see cref="T:System.InvalidOperationException" />  
+ </description></listheader><item><term><see cref="T:System.InvalidOperationException" /></term><description> The <see cref="P:System.IdentityModel.Tokens.SamlAuthenticationStatement.AuthenticationInstant" /> property is set and the <see cref="P:System.IdentityModel.Tokens.SamlAuthenticationStatement.IsReadOnly" /> property is <see langword="true" />.  
   
- </term>  
-<description> The <see cref="P:System.IdentityModel.Tokens.SamlAuthenticationStatement.AuthenticationInstant" /> property is set and the <see cref="P:System.IdentityModel.Tokens.SamlAuthenticationStatement.IsReadOnly" /> property is <see langword="true" />.  
-  
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

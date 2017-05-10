@@ -221,8 +221,7 @@
 ## Remarks  
  Use this property to define a simple template that describes how to display the data objects. Setting the <xref:System.Windows.Controls.DataGridComboBoxColumn.DisplayMemberPath%2A> property is equivalent to setting the <xref:System.Windows.Data.Binding.Path%2A> of the <xref:System.Windows.Controls.TextBlock.Text%2A?displayProperty=fullName> property binding in a template. The following template shows an example of the equivalent setting.  
   
- [!code-xml[DataGrid_ComboBoxColumnSample2#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_comboboxcolumnsample2/CS/window1.xaml#1)]
- <!-- TODO: review snippet reference [!code-xml[DataGrid_ComboBoxColumnSample2#1](~/samples/snippets/xaml/VS_Snippets_Wpf/datagrid_comboboxcolumnsample2/xaml/window1.xaml#1)]  -->  
+ [!code-xml[DataGrid_ComboBoxColumnSample2#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_comboboxcolumnsample2/CS/window1.xaml#1)]   
   
  ]]></format>
         </remarks>

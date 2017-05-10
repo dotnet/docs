@@ -6,6 +6,7 @@
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -55,6 +56,100 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="AddAfterSelf">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified content immediately after this node.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+  
+ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+  
+   
+  
+## Examples  
+ The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
+  
+```csharp  
+  
+                XElement srcTree = new XElement("Root",  
+    new XElement("Element1", 1),  
+    new XElement("Element2", 2),  
+    new XElement("Element3", 3),  
+    new XElement("Element4", 4),  
+    new XElement("Element5", 5)  
+);  
+XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5)  
+);  
+XElement child1 = xmlTree.Element("Child1");  
+child1.AddAfterSelf(  
+    from el in srcTree.Elements()  
+    where (int)el > 3  
+    select el  
+);  
+Console.WriteLine(xmlTree);  
+```  
+  
+```vb  
+  
+                Dim srcTree As XElement = _  
+    <Root>  
+        <Element1>1</Element1>  
+        <Element2>2</Element2>  
+        <Element3>3</Element3>  
+        <Element4>4</Element4>  
+        <Element5>5</Element5>  
+    </Root>  
+  
+Dim xmlTree As XElement = _  
+    <Root>  
+        <Child1>1</Child1>  
+        <Child2>2</Child2>  
+        <Child3>3</Child3>  
+        <Child4>4</Child4>  
+        <Child5>5</Child5>  
+    </Root>  
+  
+Dim child1 As XElement = xmlTree.<Child1>(0)  
+child1.AddAfterSelf( _  
+    From el In srcTree.Elements() _  
+    Where CInt(el) > 3 _  
+    Select el _  
+)  
+Console.WriteLine(xmlTree)  
+```  
+  
+ This example produces the following output:  
+  
+```xml  
+  
+                <Root>  
+  <Child1>1</Child1>  
+  <Element4>4</Element4>  
+  <Element5>5</Element5>  
+  <Child2>2</Child2>  
+  <Child3>3</Child3>  
+  <Child4>4</Child4>  
+  <Child5>5</Child5>  
+</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddAfterSelf">
       <MemberSignature Language="C#" Value="public void AddAfterSelf (object content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAfterSelf(object content) cil managed" />
@@ -64,6 +159,7 @@
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -156,6 +252,7 @@ Console.WriteLine(xmlTree)
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -267,6 +364,102 @@ Console.WriteLine(xmlTree)
         <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddBeforeSelf">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified content immediately before this node.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+  
+ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and <xref:System.Xml.Linq.XObject.Changing> events.  
+  
+ The <xref:System.Xml.Linq.XContainer> stores its child notes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.AddBeforeSelf%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might  affect your performance.  
+  
+   
+  
+## Examples  
+ The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
+  
+```csharp  
+  
+                XElement srcTree = new XElement("Root",  
+    new XElement("Element1", 1),  
+    new XElement("Element2", 2),  
+    new XElement("Element3", 3),  
+    new XElement("Element4", 4),  
+    new XElement("Element5", 5)  
+);  
+XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", 1),  
+    new XElement("Child2", 2),  
+    new XElement("Child3", 3),  
+    new XElement("Child4", 4),  
+    new XElement("Child5", 5)  
+);  
+XElement child1 = xmlTree.Element("Child1");  
+child1.AddBeforeSelf(  
+    from el in srcTree.Elements()  
+    where (int)el > 3  
+    select el  
+);  
+Console.WriteLine(xmlTree);  
+```  
+  
+```vb  
+  
+                Dim srcTree As XElement = _   
+        <Root>  
+            <Element1>1</Element1>  
+            <Element2>2</Element2>  
+            <Element3>3</Element3>  
+            <Element4>4</Element4>  
+            <Element5>5</Element5>  
+        </Root>  
+  
+Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>1</Child1>  
+            <Child2>2</Child2>  
+            <Child3>3</Child3>  
+            <Child4>4</Child4>  
+            <Child5>5</Child5>  
+        </Root>  
+  
+Dim child1 As XElement = xmlTree.<Child1>(0)  
+child1.AddBeforeSelf( _  
+From el In srcTree.Elements() _  
+Where CInt(el) > 3 _  
+Select el)  
+  
+Console.WriteLine(xmlTree)  
+```  
+  
+ This example produces the following output:  
+  
+```xml  
+  
+                <Root>  
+  <Element4>4</Element4>  
+  <Element5>5</Element5>  
+  <Child1>1</Child1>  
+  <Child2>2</Child2>  
+  <Child3>3</Child3>  
+  <Child4>4</Child4>  
+  <Child5>5</Child5>  
+</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddBeforeSelf">
       <MemberSignature Language="C#" Value="public void AddBeforeSelf (object content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddBeforeSelf(object content) cil managed" />
@@ -276,6 +469,7 @@ Console.WriteLine(xmlTree)
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -370,6 +564,7 @@ Console.WriteLine(xmlTree)
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -484,6 +679,28 @@ Console.WriteLine(xmlTree)
         <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Ancestors">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a collection of the ancestor elements of this node.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Optionally a node name can be specified to filter for ancestor elements with a specific name.  
+  
+ The nodes in the returned collection are in reverse document order.  
+  
+ This method uses deferred execution.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Ancestors">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; Ancestors ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; Ancestors() cil managed" />
@@ -493,6 +710,7 @@ Console.WriteLine(xmlTree)
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -573,6 +791,7 @@ Root
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -655,6 +874,7 @@ Child
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -761,6 +981,7 @@ el1 is before el2
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -792,7 +1013,7 @@ el1 is before el2
   
  Base64 and BinHex data are not supported. If you attempt to retrieve these types of data (for example, by calling <xref:System.Xml.XmlReader.ReadElementContentAsBase64%2A>), the reader will throw <xref:System.NotSupportedException>.  
   
- The `xml` declaration is not surfaced by the reader. While reading, you will not encounter a node of type <xref:System.Xml.XmlNodeType>.  
+ The `xml` declaration is not surfaced by the reader. While reading, you will not encounter a node of type <xref:System.Xml.XmlNodeType.XmlDeclaration>.  
   
    
   
@@ -938,6 +1159,7 @@ Console.WriteLine(newTree)
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -970,6 +1192,7 @@ Console.WriteLine(newTree)
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1074,6 +1297,7 @@ True
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1160,6 +1384,24 @@ Next
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ElementsAfterSelf">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a collection of the sibling elements after this node, in document order.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method uses deferred execution.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ElementsAfterSelf">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; ElementsAfterSelf ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; ElementsAfterSelf() cil managed" />
@@ -1169,6 +1411,7 @@ Next
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1255,6 +1498,7 @@ Child5
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1335,6 +1579,24 @@ Child4
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ElementsBeforeSelf">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a collection of the sibling elements before this node, in document order.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method uses deferred execution.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ElementsBeforeSelf">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; ElementsBeforeSelf ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; ElementsBeforeSelf() cil managed" />
@@ -1344,6 +1606,7 @@ Child4
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1431,6 +1694,7 @@ Child2
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1520,6 +1784,7 @@ Child2
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1601,6 +1866,7 @@ Child 3 Information
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1692,6 +1958,7 @@ Child5 is after Child3
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1785,6 +2052,7 @@ Child5 is not before Child3
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1897,6 +2165,7 @@ NodeType: Element   Child3
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1991,6 +2260,7 @@ Node type: Element
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -2084,6 +2354,7 @@ Node type: Element
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -2197,6 +2468,7 @@ NodeType: Element   Child1
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -2311,6 +2583,30 @@ ccc
         <exception cref="T:System.Xml.XmlException">The underlying <see cref="T:System.Xml.XmlReader" /> throws an exception.</exception>
       </Docs>
     </Member>
+    <Member MemberName="ReadFromAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Xml.Linq.XNode&gt; ReadFromAsync (System.Xml.XmlReader reader, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Xml.Linq.XNode&gt; ReadFromAsync(class System.Xml.XmlReader reader, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ReadFromAsync(System.Xml.XmlReader,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Xml.Linq.XNode&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="reader">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public void Remove ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove() cil managed" />
@@ -2320,6 +2616,7 @@ ccc
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -2400,6 +2697,78 @@ Console.WriteLine(xmlTree)
         <exception cref="T:System.InvalidOperationException">The parent is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReplaceWith">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Replaces this node with the specified content.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+  
+ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+  
+ The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.ReplaceWith%2A> method must  traverse the list of direct child nodes under the parent container. Therefore, using this method might affect your performance.  
+  
+   
+  
+## Examples  
+ The following example uses this method to replace the contents of a node with different content.  
+  
+```csharp  
+  
+                XElement xmlTree = new XElement("Root",  
+    new XElement("Child1", "child1 content"),  
+    new XElement("Child2", "child2 content"),  
+    new XElement("Child3", "child3 content"),  
+    new XElement("Child4", "child4 content"),  
+    new XElement("Child5", "child5 content")  
+);  
+XElement child3 = xmlTree.Element("Child3");  
+child3.ReplaceWith(  
+    new XElement("NewChild", "new content")  
+);  
+Console.WriteLine(xmlTree);  
+```  
+  
+```vb  
+  
+                Dim xmlTree As XElement = _   
+        <Root>  
+            <Child1>child1 content</Child1>  
+            <Child2>child2 content</Child2>  
+            <Child3>child3 content</Child3>  
+            <Child4>child4 content</Child4>  
+            <Child5>child5 content</Child5>  
+        </Root>  
+  
+Dim child3 As XElement = xmlTree.<Child3>(0)  
+child3.ReplaceWith(<NewChild>new content</NewChild>)  
+Console.WriteLine(xmlTree)  
+```  
+  
+ This example produces the following output:  
+  
+```xml  
+  
+                <Root>  
+  <Child1>child1 content</Child1>  
+  <Child2>child2 content</Child2>  
+  <NewChild>new content</NewChild>  
+  <Child4>child4 content</Child4>  
+  <Child5>child5 content</Child5>  
+</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReplaceWith">
       <MemberSignature Language="C#" Value="public void ReplaceWith (object content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReplaceWith(object content) cil managed" />
@@ -2409,6 +2778,7 @@ Console.WriteLine(xmlTree)
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -2503,6 +2873,7 @@ Console.WriteLine(xmlTree)
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -2626,6 +2997,7 @@ Console.WriteLine(xmlTree)
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -2689,6 +3061,7 @@ Console.WriteLine(xmlTree)
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -2757,6 +3130,7 @@ Console.WriteLine(root.ToString(SaveOptions.None))
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -2850,325 +3224,29 @@ Console.WriteLine(sb.ToString())
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Ancestors">
+    <Member MemberName="WriteToAsync">
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task WriteToAsync (System.Xml.XmlWriter writer, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteToAsync(class System.Xml.XmlWriter writer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.WriteToAsync(System.Xml.XmlWriter,System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
       <Docs>
-        <summary>Returns a collection of the ancestor elements of this node.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Optionally a node name can be specified to filter for ancestor elements with a specific name.  
-  
- The nodes in the returned collection are in reverse document order.  
-  
- This method uses deferred execution.  
-  
- ]]></format>
-        </remarks>
+        <param name="writer">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ElementsAfterSelf">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XDocument</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a collection of the sibling elements after this node, in document order.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method uses deferred execution.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ReplaceWith">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XDocument</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Replaces this node with the specified content.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
-  
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
- The <xref:System.Xml.Linq.XContainer> stores its child nodes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.ReplaceWith%2A> method must  traverse the list of direct child nodes under the parent container. Therefore, using this method might affect your performance.  
-  
-   
-  
-## Examples  
- The following example uses this method to replace the contents of a node with different content.  
-  
-```csharp  
-  
-                XElement xmlTree = new XElement("Root",  
-    new XElement("Child1", "child1 content"),  
-    new XElement("Child2", "child2 content"),  
-    new XElement("Child3", "child3 content"),  
-    new XElement("Child4", "child4 content"),  
-    new XElement("Child5", "child5 content")  
-);  
-XElement child3 = xmlTree.Element("Child3");  
-child3.ReplaceWith(  
-    new XElement("NewChild", "new content")  
-);  
-Console.WriteLine(xmlTree);  
-```  
-  
-```vb  
-  
-                Dim xmlTree As XElement = _   
-        <Root>  
-            <Child1>child1 content</Child1>  
-            <Child2>child2 content</Child2>  
-            <Child3>child3 content</Child3>  
-            <Child4>child4 content</Child4>  
-            <Child5>child5 content</Child5>  
-        </Root>  
-  
-Dim child3 As XElement = xmlTree.<Child3>(0)  
-child3.ReplaceWith(<NewChild>new content</NewChild>)  
-Console.WriteLine(xmlTree)  
-```  
-  
- This example produces the following output:  
-  
-```xml  
-  
-                <Root>  
-  <Child1>child1 content</Child1>  
-  <Child2>child2 content</Child2>  
-  <NewChild>new content</NewChild>  
-  <Child4>child4 content</Child4>  
-  <Child5>child5 content</Child5>  
-</Root>  
-```  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddAfterSelf">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XDocument</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the specified content immediately after this node.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
-  
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
-   
-  
-## Examples  
- The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
-  
-```csharp  
-  
-                XElement srcTree = new XElement("Root",  
-    new XElement("Element1", 1),  
-    new XElement("Element2", 2),  
-    new XElement("Element3", 3),  
-    new XElement("Element4", 4),  
-    new XElement("Element5", 5)  
-);  
-XElement xmlTree = new XElement("Root",  
-    new XElement("Child1", 1),  
-    new XElement("Child2", 2),  
-    new XElement("Child3", 3),  
-    new XElement("Child4", 4),  
-    new XElement("Child5", 5)  
-);  
-XElement child1 = xmlTree.Element("Child1");  
-child1.AddAfterSelf(  
-    from el in srcTree.Elements()  
-    where (int)el > 3  
-    select el  
-);  
-Console.WriteLine(xmlTree);  
-```  
-  
-```vb  
-  
-                Dim srcTree As XElement = _  
-    <Root>  
-        <Element1>1</Element1>  
-        <Element2>2</Element2>  
-        <Element3>3</Element3>  
-        <Element4>4</Element4>  
-        <Element5>5</Element5>  
-    </Root>  
-  
-Dim xmlTree As XElement = _  
-    <Root>  
-        <Child1>1</Child1>  
-        <Child2>2</Child2>  
-        <Child3>3</Child3>  
-        <Child4>4</Child4>  
-        <Child5>5</Child5>  
-    </Root>  
-  
-Dim child1 As XElement = xmlTree.<Child1>(0)  
-child1.AddAfterSelf( _  
-    From el In srcTree.Elements() _  
-    Where CInt(el) > 3 _  
-    Select el _  
-)  
-Console.WriteLine(xmlTree)  
-```  
-  
- This example produces the following output:  
-  
-```xml  
-  
-                <Root>  
-  <Child1>1</Child1>  
-  <Element4>4</Element4>  
-  <Element5>5</Element5>  
-  <Child2>2</Child2>  
-  <Child3>3</Child3>  
-  <Child4>4</Child4>  
-  <Child5>5</Child5>  
-</Root>  
-```  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ElementsBeforeSelf">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XDocument</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a collection of the sibling elements before this node, in document order.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method uses deferred execution.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddBeforeSelf">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XDocument</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the specified content immediately before this node.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For details about the valid content that can be passed to this method, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
-  
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and <xref:System.Xml.Linq.XObject.Changing> events.  
-  
- The <xref:System.Xml.Linq.XContainer> stores its child notes as a singly-linked list of <xref:System.Xml.Linq.XNode> objects. This means that the <xref:System.Xml.Linq.XNode.AddBeforeSelf%2A> method must traverse the list of direct child nodes under the parent container. Therefore, using this method might  affect your performance.  
-  
-   
-  
-## Examples  
- The following example uses a LINQ query to create an <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, which it then passes to this method. This adds the results of a query to the tree in the desired location.  
-  
-```csharp  
-  
-                XElement srcTree = new XElement("Root",  
-    new XElement("Element1", 1),  
-    new XElement("Element2", 2),  
-    new XElement("Element3", 3),  
-    new XElement("Element4", 4),  
-    new XElement("Element5", 5)  
-);  
-XElement xmlTree = new XElement("Root",  
-    new XElement("Child1", 1),  
-    new XElement("Child2", 2),  
-    new XElement("Child3", 3),  
-    new XElement("Child4", 4),  
-    new XElement("Child5", 5)  
-);  
-XElement child1 = xmlTree.Element("Child1");  
-child1.AddBeforeSelf(  
-    from el in srcTree.Elements()  
-    where (int)el > 3  
-    select el  
-);  
-Console.WriteLine(xmlTree);  
-```  
-  
-```vb  
-  
-                Dim srcTree As XElement = _   
-        <Root>  
-            <Element1>1</Element1>  
-            <Element2>2</Element2>  
-            <Element3>3</Element3>  
-            <Element4>4</Element4>  
-            <Element5>5</Element5>  
-        </Root>  
-  
-Dim xmlTree As XElement = _   
-        <Root>  
-            <Child1>1</Child1>  
-            <Child2>2</Child2>  
-            <Child3>3</Child3>  
-            <Child4>4</Child4>  
-            <Child5>5</Child5>  
-        </Root>  
-  
-Dim child1 As XElement = xmlTree.<Child1>(0)  
-child1.AddBeforeSelf( _  
-From el In srcTree.Elements() _  
-Where CInt(el) > 3 _  
-Select el)  
-  
-Console.WriteLine(xmlTree)  
-```  
-  
- This example produces the following output:  
-  
-```xml  
-  
-                <Root>  
-  <Element4>4</Element4>  
-  <Element5>5</Element5>  
-  <Child1>1</Child1>  
-  <Child2>2</Child2>  
-  <Child3>3</Child3>  
-  <Child4>4</Child4>  
-  <Child5>5</Child5>  
-</Root>  
-```  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
+    </Member>
   </Members>
 </Type>

@@ -31,6 +31,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor is called by the runtime tracking infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WorkflowTrackingRecord ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -134,9 +151,9 @@
   
 |<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent> Value|<xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventArgs%2A> Object|  
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
-|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs>|  
-|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowSuspendedEventArgs>|  
-|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent>|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent.Exception>|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowExceptionEventArgs>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent.Suspended>|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowSuspendedEventArgs>|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowEvent.Terminated>|<xref:System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs>|  
   
  This property is set by the runtime tracking infrastructure.  
   
@@ -225,22 +242,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The constructor is called by the runtime tracking infrastructure.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

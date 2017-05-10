@@ -178,7 +178,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState.Created> state, as this is the only state that is both mutable and not disposed.  
   
  ]]></format>
         </remarks>
@@ -346,7 +346,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.ServiceHostBase> can only be detached when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ The <xref:System.ServiceModel.ServiceHostBase> can only be detached when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState.Created> state, as this is the only state that is both mutable and not disposed.  
   
  Sets the <xref:System.ServiceModel.ServiceHostBase> associated with the channel dispatcher to `null`.  
   
@@ -475,7 +475,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState.Created> state, as this is the only state that is both mutable and not disposed.  
   
    
   
@@ -537,7 +537,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.IsTransactedReceive%2A> property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ The <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.IsTransactedReceive%2A> property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState.Created> state, as this is the only state that is both mutable and not disposed.  
   
    
   
@@ -598,12 +598,12 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the channel dispatcher adds addressing headers to request-reply messages.</summary>
         <value>
-          <see langword="true" /> if the proxy does not add any addressing headers; otherwise, <see langword="false" />. The default is <see langword="false" />. See Remarks.</value>
+          <see langword="true" /> if the proxy does not add any addressing headers; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState.Created> state, as this is the only state that is both mutable and not disposed.  
   
  Set the <xref:System.ServiceModel.Dispatcher.ClientRuntime.ManualAddressing%2A> property to `true` if you want to prevent the client from adding Message ID and ReplyTo addressing headers to request/response messages so that your application can control these headers.  
   
@@ -657,7 +657,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.MaxTransactedBatchSize%2A> property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ The <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.MaxTransactedBatchSize%2A> property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState.Created> state, as this is the only state that is both mutable and not disposed.  
   
    
   
@@ -694,7 +694,7 @@
 ## Remarks  
  Specifies the versions of SOAP and WS-Addressing associated with a message and its exchange.  
   
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState.Created> state, as this is the only state that is both mutable and not disposed.  
   
    
   
@@ -997,7 +997,7 @@
 ## Remarks  
  If a binding implements <xref:System.ServiceModel.Channels.IBindingRuntimePreferences>, [!INCLUDE[indigo1](~/includes/indigo1-md.md)] assigns the value of the <xref:System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously%2A> property to this property. So if this value is `true`, the `false` default value of <xref:System.ServiceModel.Channels.IBindingRuntimePreferences.ReceiveSynchronously%2A> is overridden.  
   
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState.Created> state, as this is the only state that is both mutable and not disposed.  
   
    
   
@@ -1052,7 +1052,7 @@
 ## Remarks  
  This provides access to the controls used to optimize the availability and performance of a service.  
   
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState.Created> state, as this is the only state that is both mutable and not disposed.  
   
    
   
@@ -1088,7 +1088,7 @@
 ## Remarks  
  Use the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher.TransactionIsolationLevel%2A> property to get or set the default isolation level for new transactions created by the dispatcher for the service.  
   
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState.Created> state, as this is the only state that is both mutable and not disposed.  
   
    
   
@@ -1123,7 +1123,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ This property can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState.Created> state, as this is the only state that is both mutable and not disposed.  
   
    
   

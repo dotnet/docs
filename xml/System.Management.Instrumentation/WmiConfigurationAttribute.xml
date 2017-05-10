@@ -142,13 +142,13 @@
    
   
 ## Examples  
- In the following example, the <xref:System.Management.Instrumentation.WmiConfigurationAttribute> is used to indicate that the assembly it is contained in implements a provider that is exposed through the root\NVPair namespace. Because the hosting model is not <xref:System.Management.Instrumentation.ManagementHostingModel>, it is an in-process provider. The value <xref:System.Management.Instrumentation.ManagementHostingModel> indicates that the in-process provider runs under the NetworkService security context.  
+ In the following example, the <xref:System.Management.Instrumentation.WmiConfigurationAttribute> is used to indicate that the assembly it is contained in implements a provider that is exposed through the root\NVPair namespace. Because the hosting model is not <xref:System.Management.Instrumentation.ManagementHostingModel.Decoupled>, it is an in-process provider. The value <xref:System.Management.Instrumentation.ManagementHostingModel.NetworkService> indicates that the in-process provider runs under the NetworkService security context.  
   
 ```  
 [assembly: WmiConfiguration("root\\NVPair", HostingModel = ManagementHostingModel.NetworkService)]  
 ```  
   
- In the next example, the <xref:System.Management.Instrumentation.WmiConfigurationAttribute> is used to indicate that the assembly it is contained in implements a provider that is exposed through the root\NVPair namespace. The value <xref:System.Management.Instrumentation.ManagementHostingModel> indicates that it is a decoupled provider.  
+ In the next example, the <xref:System.Management.Instrumentation.WmiConfigurationAttribute> is used to indicate that the assembly it is contained in implements a provider that is exposed through the root\NVPair namespace. The value <xref:System.Management.Instrumentation.ManagementHostingModel.Decoupled> indicates that it is a decoupled provider.  
   
 ```  
 [assembly: WmiConfiguration("root\\NVPair", HostingModel = ManagementHostingModel.Decoupled)]  

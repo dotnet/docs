@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
   </Base>
@@ -77,6 +81,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="bindable" Type="System.Boolean" />
       </Parameters>
@@ -88,7 +96,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you mark a property with the <xref:System.ComponentModel.BindableAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.BindableAttribute>. For a property marked with the <xref:System.ComponentModel.BindableAttribute> set to `false`, the value is <xref:System.ComponentModel.BindableAttribute.No>. Therefore, to check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.BindableAttribute.Yes?displayProperty=fullName> or <xref:System.ComponentModel.BindableAttribute.No?displayProperty=fullName>.  
+ When you mark a property with the <xref:System.ComponentModel.BindableAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.BindableAttribute.Yes>. For a property marked with the <xref:System.ComponentModel.BindableAttribute> set to `false`, the value is <xref:System.ComponentModel.BindableAttribute.No>. Therefore, to check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.BindableAttribute.Yes?displayProperty=fullName> or <xref:System.ComponentModel.BindableAttribute.No?displayProperty=fullName>.  
   
    
   
@@ -117,6 +125,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="flags" Type="System.ComponentModel.BindableSupport" />
       </Parameters>
@@ -127,7 +139,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you mark a property with the <xref:System.ComponentModel.BindableAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.BindableAttribute>. For a property marked with the <xref:System.ComponentModel.BindableAttribute> set to `false`, the value is <xref:System.ComponentModel.BindableAttribute.No>. Therefore, to check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.BindableAttribute.Yes?displayProperty=fullName> or <xref:System.ComponentModel.BindableAttribute.No?displayProperty=fullName>.  
+ When you mark a property with the <xref:System.ComponentModel.BindableAttribute> set to `true`, the value of this attribute is set to the constant member <xref:System.ComponentModel.BindableAttribute.Yes>. For a property marked with the <xref:System.ComponentModel.BindableAttribute> set to `false`, the value is <xref:System.ComponentModel.BindableAttribute.No>. Therefore, to check the value of this attribute in your code, you must specify the attribute as <xref:System.ComponentModel.BindableAttribute.Yes?displayProperty=fullName> or <xref:System.ComponentModel.BindableAttribute.No?displayProperty=fullName>.  
   
    
   
@@ -156,6 +168,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="bindable" Type="System.Boolean" />
         <Parameter Name="direction" Type="System.ComponentModel.BindingDirection" />
@@ -182,6 +198,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="flags" Type="System.ComponentModel.BindableSupport" />
         <Parameter Name="direction" Type="System.ComponentModel.BindingDirection" />
@@ -206,6 +226,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -254,6 +278,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.BindableAttribute</ReturnType>
       </ReturnValue>
@@ -283,6 +311,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.BindingDirection</ReturnType>
       </ReturnValue>
@@ -305,6 +337,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -334,6 +370,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -357,6 +397,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -382,6 +426,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.BindableAttribute</ReturnType>
@@ -413,6 +461,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.BindableAttribute</ReturnType>

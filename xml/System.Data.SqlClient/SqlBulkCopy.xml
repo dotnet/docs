@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
@@ -58,6 +59,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -105,6 +107,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -154,6 +157,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -201,6 +205,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -241,6 +246,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -265,7 +271,7 @@
   
  Zero (the default) indicates that each <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> operation is a single batch.  
   
- If the <xref:System.Data.SqlClient.SqlBulkCopy> instance has been declared without the <xref:System.Data.SqlClient.SqlBulkCopyOptions> option in effect, rows are sent to the server <xref:System.Data.SqlClient.SqlBulkCopy.BatchSize%2A> rows at a time, but no transaction-related action is taken. If <xref:System.Data.SqlClient.SqlBulkCopyOptions> is in effect, each batch of rows is inserted as a separate transaction.  
+ If the <xref:System.Data.SqlClient.SqlBulkCopy> instance has been declared without the <xref:System.Data.SqlClient.SqlBulkCopyOptions.UseInternalTransaction> option in effect, rows are sent to the server <xref:System.Data.SqlClient.SqlBulkCopy.BatchSize%2A> rows at a time, but no transaction-related action is taken. If <xref:System.Data.SqlClient.SqlBulkCopyOptions.UseInternalTransaction> is in effect, each batch of rows is inserted as a separate transaction.  
   
  The <xref:System.Data.SqlClient.SqlBulkCopy.BatchSize%2A> property can be set at any time. If a bulk copy is already in progress, the current batch is sized according to the previous batch size. Subsequent batches use the new size. If the <xref:System.Data.SqlClient.SqlBulkCopy.BatchSize%2A> is initially zero and changed while a <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> operation is already in progress, that operation loads the data as a single batch. Any subsequent <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> operations on the same <xref:System.Data.SqlClient.SqlBulkCopy> instance use the new <xref:System.Data.SqlClient.SqlBulkCopy.BatchSize%2A>.  
   
@@ -294,6 +300,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -341,6 +348,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -390,6 +398,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -426,6 +435,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -479,6 +489,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -500,7 +511,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When <xref:System.Data.SqlClient.SqlBulkCopy.EnableStreaming%2A> is `true`, <xref:System.Data.SqlClient.SqlBulkCopy> reads from an <xref:System.Data.IDataReader> object using <xref:System.Data.CommandBehavior>, optimizing memory usage by using the <xref:System.Data.IDataReader> streaming capabilities. When it’s set to false, the <xref:System.Data.SqlClient.SqlBulkCopy> class loads all the data returned by the <xref:System.Data.IDataReader> object into memory before sending it to [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] or SQL Azure.  
+ When <xref:System.Data.SqlClient.SqlBulkCopy.EnableStreaming%2A> is `true`, <xref:System.Data.SqlClient.SqlBulkCopy> reads from an <xref:System.Data.IDataReader> object using <xref:System.Data.CommandBehavior.SequentialAccess>, optimizing memory usage by using the <xref:System.Data.IDataReader> streaming capabilities. When it’s set to false, the <xref:System.Data.SqlClient.SqlBulkCopy> class loads all the data returned by the <xref:System.Data.IDataReader> object into memory before sending it to [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] or SQL Azure.  
   
  ]]></format>
         </remarks>
@@ -514,6 +525,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -563,6 +575,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -613,6 +626,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -644,6 +658,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteToServer">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies all rows from a data source to a destination table specified by the <see cref="P:System.Data.SqlClient.SqlBulkCopy.DestinationTableName" /> property of the <see cref="T:System.Data.SqlClient.SqlBulkCopy" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If multiple active result sets (MARS) is disabled, <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> makes the connection busy. If MARS is enabled, you can interleave calls to <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> with other commands in the same connection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteToServer">
       <MemberSignature Language="C#" Value="public void WriteToServer (System.Data.Common.DbDataReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteToServer(class System.Data.Common.DbDataReader reader) cil managed" />
@@ -652,6 +683,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -683,6 +715,10 @@
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -727,6 +763,10 @@
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -774,6 +814,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -820,6 +864,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -838,7 +886,7 @@
  Only rows in the <xref:System.Data.DataTable> that are in the states indicated in the `rowState` argument and have not been deleted are copied to the destination table.  
   
 > [!NOTE]
->  If <xref:System.Data.DataRowState> is specified, any <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, and <xref:System.Data.DataRowState> rows will also be copied to the server. No exception will be raised.  
+>  If <xref:System.Data.DataRowState.Deleted> is specified, any <xref:System.Data.DataRowState.Unchanged>, <xref:System.Data.DataRowState.Added>, and <xref:System.Data.DataRowState.Modified> rows will also be copied to the server. No exception will be raised.  
   
  While the bulk copy operation is in progress, the associated destination <xref:System.Data.SqlClient.SqlConnection> is busy serving it, and no other operations can be performed on the connection.  
   
@@ -861,6 +909,35 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteToServerAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>An asynchronous version of <see cref="Overload:System.Data.SqlClient.SqlBulkCopy.WriteToServer" />, which copies all rows from a data source to a destination table specified by the <see cref="P:System.Data.SqlClient.SqlBulkCopy.DestinationTableName" /> property of the <see cref="T:System.Data.SqlClient.SqlBulkCopy" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If multiple active result sets (MARS) is disabled, <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> makes the connection busy. If MARS is enabled, you can interleave calls to <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> with other commands in the same connection.  
+  
+ The number of rows that are rolled back when one fails depends on several things:  
+  
+-   If <xref:System.Data.SqlClient.SqlBulkCopyOptions.UseInternalTransaction> is specified.  
+  
+-   If you have your own transaction.  
+  
+-   The value of <xref:System.Data.SqlClient.SqlBulkCopy.BatchSize%2A>.  
+  
+ When there is an error while sending data to the server, the current batch (as specified by <xref:System.Data.SqlClient.SqlBulkCopy.BatchSize%2A>) will be rolled back. If <xref:System.Data.SqlClient.SqlBulkCopyOptions.UseInternalTransaction> is not specified and you have your own transaction, the entire transaction will be rolled back (which includes all previous batches as well).  
+  
+ Use <xref:System.Data.SqlClient.SqlBulkCopy.SqlRowsCopied> to know how many rows were copied to the server.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteToServerAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task WriteToServerAsync (System.Data.Common.DbDataReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task WriteToServerAsync(class System.Data.Common.DbDataReader reader) cil managed" />
@@ -869,6 +946,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -900,6 +978,10 @@
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -944,6 +1026,10 @@
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -986,6 +1072,10 @@
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1033,6 +1123,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1066,6 +1157,10 @@
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1114,6 +1209,10 @@
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -1158,6 +1257,10 @@
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1205,6 +1308,10 @@
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -1257,6 +1364,10 @@
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -1297,51 +1408,5 @@
         <exception cref="T:System.Data.SqlClient.SqlException">Returned in the task object, any error returned by [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] that occurred while opening the connection.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteToServerAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>An asynchronous version of <see cref="Overload:System.Data.SqlClient.SqlBulkCopy.WriteToServer" />, which copies all rows from a data source to a destination table specified by the <see cref="P:System.Data.SqlClient.SqlBulkCopy.DestinationTableName" /> property of the <see cref="T:System.Data.SqlClient.SqlBulkCopy" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If multiple active result sets (MARS) is disabled, <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> makes the connection busy. If MARS is enabled, you can interleave calls to <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> with other commands in the same connection.  
-  
- The number of rows that are rolled back when one fails depends on several things:  
-  
--   If <xref:System.Data.SqlClient.SqlBulkCopyOptions> is specified.  
-  
--   If you have your own transaction.  
-  
--   The value of <xref:System.Data.SqlClient.SqlBulkCopy.BatchSize%2A>.  
-  
- When there is an error while sending data to the server, the current batch (as specified by <xref:System.Data.SqlClient.SqlBulkCopy.BatchSize%2A>) will be rolled back. If <xref:System.Data.SqlClient.SqlBulkCopyOptions> is not specified and you have your own transaction, the entire transaction will be rolled back (which includes all previous batches as well).  
-  
- Use <xref:System.Data.SqlClient.SqlBulkCopy.SqlRowsCopied> to know how many rows were copied to the server.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteToServer">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Copies all rows from a data source to a destination table specified by the <see cref="P:System.Data.SqlClient.SqlBulkCopy.DestinationTableName" /> property of the <see cref="T:System.Data.SqlClient.SqlBulkCopy" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If multiple active result sets (MARS) is disabled, <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> makes the connection busy. If MARS is enabled, you can interleave calls to <xref:System.Data.SqlClient.SqlBulkCopy.WriteToServer%2A> with other commands in the same connection.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

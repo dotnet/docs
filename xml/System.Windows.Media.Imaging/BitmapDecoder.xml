@@ -137,7 +137,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Media.Imaging.BitmapCacheOption> cache option if you wish to close the `bitmapStream` after the decoder is created. The default <xref:System.Windows.Media.Imaging.BitmapCacheOption> cache option retains access to the stream until the bitmap is needed, and cleanup is handled by the garbage collector.  
+ Use the <xref:System.Windows.Media.Imaging.BitmapCacheOption.OnLoad> cache option if you wish to close the `bitmapStream` after the decoder is created. The default <xref:System.Windows.Media.Imaging.BitmapCacheOption.OnDemand> cache option retains access to the stream until the bitmap is needed, and cleanup is handled by the garbage collector.  
   
    
   

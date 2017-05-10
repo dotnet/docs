@@ -165,9 +165,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method does nothing when the <xref:System.Windows.Data.Binding.Mode%2A> of the binding is not <xref:System.Windows.Data.BindingMode> or <xref:System.Windows.Data.BindingMode>.  
+ This method does nothing when the <xref:System.Windows.Data.Binding.Mode%2A> of the binding is not <xref:System.Windows.Data.BindingMode.TwoWay> or <xref:System.Windows.Data.BindingMode.OneWayToSource>.  
   
- If the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> value of your binding is set to <xref:System.Windows.Data.UpdateSourceTrigger>, you must call the <xref:System.Windows.Data.BindingExpression.UpdateSource%2A> method or the changes will not propagate back to the source.  
+ If the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> value of your binding is set to <xref:System.Windows.Data.UpdateSourceTrigger.Explicit>, you must call the <xref:System.Windows.Data.BindingExpression.UpdateSource%2A> method or the changes will not propagate back to the source.  
   
  ]]></format>
         </remarks>

@@ -22,15 +22,14 @@
  To be able to pause, resume, remove, or otherwise control a <xref:System.Windows.Media.Animation.BeginStoryboard.Storyboard%2A> interactively, set the <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A> property of its <xref:System.Windows.Media.Animation.BeginStoryboard> and use a <xref:System.Windows.Media.Animation.ControllableStoryboardAction> object (such as <xref:System.Windows.Media.Animation.PauseStoryboard>, <xref:System.Windows.Media.Animation.ResumeStoryboard>, or <xref:System.Windows.Media.Animation.StopStoryboard>) to control it by referencing its <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A>. If the <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A> of <xref:System.Windows.Media.Animation.BeginStoryboard> is unspecified, the <xref:System.Windows.Media.Animation.BeginStoryboard.Storyboard%2A> cannot be interactively controlled after it is begun. See [How to: Use Event Triggers to Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-use-event-triggers-to-control-a-storyboard-after-it-starts.md) for more information.  
   
 ## When to Remove Storyboards  
- You should use the <xref:System.Windows.Media.Animation.RemoveStoryboard> action to remove any storyboards begun with a <xref:System.Windows.Media.Animation.BeginStoryboard.HandoffBehavior%2A> of <xref:System.Windows.Media.Animation.HandoffBehavior>. It's also a good idea to remove background animations when the object they animate is no longer being used. For example, if you apply an indefinitely repeating storyboard using an element's <xref:System.Windows.FrameworkElement.Loaded> event, you should also create an <xref:System.Windows.EventTrigger> that uses a <xref:System.Windows.Media.Animation.RemoveStoryboard> action to remove the storyboard on the element's <xref:System.Windows.FrameworkElement.Unloaded> event.  
+ You should use the <xref:System.Windows.Media.Animation.RemoveStoryboard> action to remove any storyboards begun with a <xref:System.Windows.Media.Animation.BeginStoryboard.HandoffBehavior%2A> of <xref:System.Windows.Media.Animation.HandoffBehavior.Compose>. It's also a good idea to remove background animations when the object they animate is no longer being used. For example, if you apply an indefinitely repeating storyboard using an element's <xref:System.Windows.FrameworkElement.Loaded> event, you should also create an <xref:System.Windows.EventTrigger> that uses a <xref:System.Windows.Media.Animation.RemoveStoryboard> action to remove the storyboard on the element's <xref:System.Windows.FrameworkElement.Unloaded> event.  
   
    
   
 ## Examples  
  The following example shows how to remove a <xref:System.Windows.Media.Animation.Storyboard> to stop it from continuing when the user navigates away from the page containing the <xref:System.Windows.Media.Animation.Storyboard>.  
   
- [!code-xml[Storyboard_snip#RemoveStoryboardExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Storyboard_snip/CS/removestoryboardexample.xaml#removestoryboardexamplewholepage)]
- <!-- TODO: review snippet reference [!code-xml[Storyboard_snip#RemoveStoryboardExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/Storyboard_snip/xaml/removestoryboardexample.xaml#removestoryboardexamplewholepage)]  -->  
+ [!code-xml[Storyboard_snip#RemoveStoryboardExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Storyboard_snip/CS/removestoryboardexample.xaml#removestoryboardexamplewholepage)]   
   
  ]]></format>
     </remarks>

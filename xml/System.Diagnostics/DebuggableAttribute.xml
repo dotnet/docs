@@ -8,6 +8,7 @@
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -59,6 +60,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -79,7 +81,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling the <xref:System.Diagnostics.DebuggableAttribute.%23ctor%28System.Diagnostics.DebuggableAttribute.DebuggingModes%29> constructor with a `modes` parameter value of <xref:System.Diagnostics.DebuggableAttribute.DebuggingModes> is equivalent to calling the <xref:System.Diagnostics.DebuggableAttribute.%23ctor%28System.Boolean%2CSystem.Boolean%29> constructor with an `isJITTrackingEnabled` parameter value of `true`.  
+ Calling the <xref:System.Diagnostics.DebuggableAttribute.%23ctor%28System.Diagnostics.DebuggableAttribute.DebuggingModes%29> constructor with a `modes` parameter value of <xref:System.Diagnostics.DebuggableAttribute.DebuggingModes.Default> is equivalent to calling the <xref:System.Diagnostics.DebuggableAttribute.%23ctor%28System.Boolean%2CSystem.Boolean%29> constructor with an `isJITTrackingEnabled` parameter value of `true`.  
   
  ]]></format>
         </remarks>
@@ -98,6 +100,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="isJITTrackingEnabled" Type="System.Boolean" />
@@ -137,6 +143,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Diagnostics.DebuggableAttribute+DebuggingModes</ReturnType>
       </ReturnValue>
@@ -166,6 +176,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -197,6 +211,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

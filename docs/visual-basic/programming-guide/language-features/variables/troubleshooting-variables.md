@@ -59,7 +59,7 @@ This page lists some common problems that can occur when working with variables 
   
  However, the common language runtime (CLR) uses *case-sensitive* binding. Therefore, when you produce an assembly or a DLL and make it available to other assemblies, your names are no longer case-insensitive. For example, if you define a class with an element called `ABC`, and other assemblies make use of your class through the common language runtime, they must refer to the element as `ABC`. If you subsequently recompile your class and change the element's name to `abc`, the other assemblies using your class can no longer access that element. Therefore, when you release an updated version of an assembly, you should not change the alphabetic case of any public elements.  
   
- For more information, see [Common Language Runtime](http://msdn.microsoft.com/library/059a624e-f7db-4134-ba9f-08b676050482).  
+ For more information, see [Common Language Runtime](../../../../standard/clr.md).  
   
 ### Correct Approach  
  To allow other components to access your variables, treat their names as if they were case-sensitive. When you are testing your class or module, make sure other assemblies are binding to the variables you expect them to. Once you have published a component, do not make any modifications to existing variable names, including changing their cases.  

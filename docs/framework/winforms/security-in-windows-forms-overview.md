@@ -81,11 +81,11 @@ Before the release of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-m
 |Permission Elevation|Prompts the user with a security dialog box the first time your application runs. The **Permission Elevation** dialog box informs the user about who published the application, so that the user can make an informed decision about whether to grant it additional trust|  
 |Trusted Application Deployment|Involves a system administrator performing a one-time installation of a publisher's Authenticode certificate on a client computer. From that point on, any applications signed with the certificate are regarded as trusted, and can run at full trust on the local computer without additional prompting.|  
   
- Which technology you choose will depend on your deployment environment. For more information, see [Choosing a ClickOnce Deployment Strategy](http://msdn.microsoft.com/library/98bcab65-ab8b-4ed1-9adc-fdacf92b8106).  
+ Which technology you choose will depend on your deployment environment. For more information, see [Choosing a ClickOnce Deployment Strategy](/visualstudio/deployment/choosing-a-clickonce-deployment-strategy).  
   
  By default, [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] applications deployed using either [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] or the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)] SDK tools (Mage.exe and MageUI.exe) are configured to run on a client computer that has Full Trust. If you are deploying your application by using partial trust or by using only some additional permissions, you will have to change this default. You can do this with either [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] or the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)] SDK tool MageUI.exe when you configure your deployment. For more information about how to use MageUI.exe, see Walkthrough: Deploying a ClickOnce Application from the Command Line.  Also see [How to: Set Custom Permissions for a ClickOnce Application](http://msdn.microsoft.com/library/hafybdaa\(v=vs.110\)) or [How to: Set Custom Permissions for a ClickOnce Application](http://msdn.microsoft.com/library/hafybdaa\(v=vs.120\)).  
   
- For more information about the security aspects of [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] and Permission Elevation, see [Securing ClickOnce Applications](http://msdn.microsoft.com/library/a05b5f2f-d1f2-471a-8096-8b11f7554265). For more information about Trusted Application Deployment, see [Trusted Application Deployment Overview](http://msdn.microsoft.com/library/b24a1702-8fbe-45b1-87a0-9618a0708f1d).  
+ For more information about the security aspects of [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] and Permission Elevation, see [Securing ClickOnce Applications](/visualstudio/deployment/securing-clickonce-applications). For more information about Trusted Application Deployment, see [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview).  
   
 ### Testing the Application  
  If you have deployed your Windows Forms application by using [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)], you can enable debugging in partial trust or a restricted permission set from the development environment.  Also see [How to: Debug a ClickOnce Application with Restricted Permissions](http://msdn.microsoft.com/library/593zkfdf\(v=vs.110\)) or [How to: Debug a ClickOnce Application with Restricted Permissions](http://msdn.microsoft.com/library/593zkfdf\(v=vs.120\)).  
@@ -93,7 +93,7 @@ Before the release of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-m
 ## See Also  
  [Windows Forms Security](../../../docs/framework/winforms/windows-forms-security.md)   
  [Code Access Security Basics](../../../docs/framework/misc/code-access-security-basics.md)   
- [ClickOnce Security and Deployment](http://msdn.microsoft.com/library/abab6d34-c3c2-45c1-a8b6-43c7d3131e7a)   
- [Trusted Application Deployment Overview](http://msdn.microsoft.com/library/b24a1702-8fbe-45b1-87a0-9618a0708f1d)   
+ [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)   
+ [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview)   
  [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)   
  [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../../../docs/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md)

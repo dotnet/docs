@@ -190,9 +190,9 @@ To create a self-contained deployment with a smaller footprint, start by followi
 
 1. Replace the `<TargetFramework>` element with the following:
 
-  ```xml
-  <TargetFramework>netstandard1.6</TargetFramework>
-  ```
+   ```xml
+   <TargetFramework>netstandard1.6</TargetFramework>
+   ```
 
    Instead of using the entire `netcoreapp1.1` framework, which includes .NET Core CLR, the .NET Core Library, and a number of other system components, this indicates that our app uses only the .NET Standard Library.
 

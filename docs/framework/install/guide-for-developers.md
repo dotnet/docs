@@ -55,7 +55,7 @@ You can install the **Web or Offline installer** on:
 
 For a full list, see [System Requirements](~/docs/framework/get-started/system-requirements.md).  
 
-For a general introduction to the .NET Framework for both users and developers, see [Getting Started](http://msdn.microsoft.com/library/c693fd34-88fe-4d90-b332-19eeadf3b7e7). For information about deploying the .NET Framework with your app, see the [deployment guide](~/docs/framework/deployment/deployment-guide-for-developers.md). To read about the architecture and key features of the .NET Framework, see the [overview](~/docs/framework/get-started/overview.md).  
+For a general introduction to the .NET Framework for both users and developers, see [Getting Started](../get-started/index.md). For information about deploying the .NET Framework with your app, see the [deployment guide](~/docs/framework/deployment/deployment-guide-for-developers.md). To read about the architecture and key features of the .NET Framework, see the [overview](~/docs/framework/get-started/overview.md).  
 
 
 ## Installation choices

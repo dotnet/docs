@@ -31,7 +31,7 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
  Two versions of Mage.exe and MageUI.exe are included as a component of the [!INCLUDE[vs_dev10_long](../../../includes/vs-dev10-long-md.md)] setup. To see version information, run MageUI.exe, select **Help**, and select **About**. This documentation describes version 4.0.x.x of Mage.exe and MageUI.exe.  
   
 > [!NOTE]
->  MageUI.exe does not support the [compatibleFrameworks](http://msdn.microsoft.com/library/f6c3ee55-9e65-403d-8664-3ebde872c7d4) element when saving an application manifest that has already been signed with a certificate using MageUI.exe. Instead, you must use [Mage.exe](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md).  
+>  MageUI.exe does not support the [compatibleFrameworks](/visualstudio/deployment/compatibleframeworks-element-clickonce-deployment) element when saving an application manifest that has already been signed with a certificate using MageUI.exe. Instead, you must use [Mage.exe](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md).  
   
 ## UIElement List  
  The following table lists the menu and toolbar items that are available.  
@@ -73,10 +73,10 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 |**Sign with certificate file**|Signs the manifest with a digital certificate stored on the file system.|  
 |**File**|Provides an area to type the path to the .pfx file representing the certificate.|  
 |**...**|Opens a **Choose File** dialog box for selecting an existing .pfx file.|  
-|**New**|Generates a new .pfx that is not verifiable through a Certificate Authority (CA). For more information about the types of certificates used for signing [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] deployments, see [Trusted Application Deployment Overview](http://msdn.microsoft.com/library/b24a1702-8fbe-45b1-87a0-9618a0708f1d).|  
+|**New**|Generates a new .pfx that is not verifiable through a Certificate Authority (CA). For more information about the types of certificates used for signing [!INCLUDE[ndptecclick](../../../includes/ndptecclick-md.md)] deployments, see [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview).|  
 |**Password**|Provides an area to type the password used for signing with this certificate. If not applicable, can be left blank.|  
 |**Sign with stored certificate**|Displays a selectable list of digital certificates stored in your computer's certificate store.|  
-|**TimeStamping URI**|Displays the Uniform Resource Locator (URI) of a digital timestamping service. Timestamping the manifests prevents you from having to re-sign the manifests if your digital certificate expires before you deploy the next version of your application. For more information, see [Windows root certificate program members](http://go.microsoft.com/fwlink/?LinkId=159000) and [ClickOnce and Authenticode](http://msdn.microsoft.com/library/ab5b6712-f32a-4e33-842f-e88ab4818ccf).|  
+|**TimeStamping URI**|Displays the Uniform Resource Locator (URI) of a digital timestamping service. Timestamping the manifests prevents you from having to re-sign the manifests if your digital certificate expires before you deploy the next version of your application. For more information, see [Windows root certificate program members](http://go.microsoft.com/fwlink/?LinkId=159000) and [ClickOnce and Authenticode](/visualstudio/deployment/clickonce-and-authenticode).|  
 |**Don't Sign**|Allows you to save the manifest without adding a signature from a digital certificate.|  
   
 ## Tab and Panel Descriptions  
@@ -130,16 +130,16 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 |**Populate**|Adds all of the files in the application directory and subdirectories to the application manifest. If MageUI.exe finds a single executable file in the directory, it automatically marks this as the Entry Point, which is the file first executed when the ClickOnce application is launched on the client.|  
 |**Application Files**|Lists all of the files in the application. Each file has three editable attributes, discussed below.|  
 |**File Type**|File Type can be one of four values:<br /><br /> -   None.<br />-   Entry Point. The application's primary executable. Only one executable file can be marked as the entry point.<br />-   Data File. A file, such as an XML file, that supplies data to the application.<br />-   Icon File. An application icon, such as appears on the desktop or in the corner of an application's window.|  
-|**Optional**|Files marked optional are not downloaded on initial install or update, but may be downloaded at run time using the System.Deployment On-Demand API. For more information, see [Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API Using the Designer](http://msdn.microsoft.com/library/59a0dd5f-1cab-4f2f-b780-0ab7399905d5).|  
+|**Optional**|Files marked optional are not downloaded on initial install or update, but may be downloaded at run time using the System.Deployment On-Demand API. For more information, see [Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API Using the Designer](/visualstudio/deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer).|  
 |**Group**|A label for a set of optional files. You can apply a Group label to a set of files, and use the On-Demand API to download a batch of files with a single API call.|  
   
 ### Permissions Required Tab  
- Use the **Permissions Required** tab if you need to grant your application more access to the local computer than is granted by default. For more information, see [Securing ClickOnce Applications](http://msdn.microsoft.com/library/a05b5f2f-d1f2-471a-8096-8b11f7554265).  
+ Use the **Permissions Required** tab if you need to grant your application more access to the local computer than is granted by default. For more information, see [Securing ClickOnce Applications](/visualstudio/deployment/securing-clickonce-applications).  
   
 |UI Element|Description|  
 |----------------|-----------------|  
 |**Permission set type**|The minimum permission set required by this application to run on the client. For a description of these permission sets and which permissions they do or do not demand, see [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3).|  
-|**Details**|The XML created for the application manifest to represent the permission set. Unless you have a good understanding of the application manifest XML format, you should not edit this XML manually. For more information, see [ClickOnce Application Manifest](http://msdn.microsoft.com/library/29570cec-4e53-4660-a850-abc4fa150243).|  
+|**Details**|The XML created for the application manifest to represent the permission set. Unless you have a good understanding of the application manifest XML format, you should not edit this XML manually. For more information, see [ClickOnce Application Manifest](/visualstudio/deployment/clickonce-application-manifest).|  
   
 ### Deployment Manifest Tab  
  The **Deployment Manifest** tab contains the following tabs.  
@@ -201,6 +201,6 @@ MageUI.exe supports the same functionality as the command-line tool Mage.exe, bu
 |**Select Manifest**|Allows you to choose the application manifest. All of the other fields on this page will populate when you choose an application manifest.|  
   
 ## See Also  
- [ClickOnce Security and Deployment](http://msdn.microsoft.com/library/abab6d34-c3c2-45c1-a8b6-43c7d3131e7a)   
- [Walkthrough: Manually Deploying a ClickOnce Application](http://msdn.microsoft.com/library/ccee6551-a1b9-4ca2-8845-9c1cf4ac2560)   
+ [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)   
+ [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)   
  [Mage.exe (Manifest Generation and Editing Tool)](../../../docs/framework/tools/mage-exe-manifest-generation-and-editing-tool.md)

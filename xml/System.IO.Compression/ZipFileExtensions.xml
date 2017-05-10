@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.IO.Compression.FileSystem</AssemblyName>
@@ -68,6 +69,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.FileSystem</AssemblyName>
@@ -143,6 +145,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.FileSystem</AssemblyName>
@@ -220,6 +223,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.FileSystem</AssemblyName>
@@ -286,6 +290,31 @@
  An archive entry was compressed by using a compression method that is not supported.</exception>
       </Docs>
     </Member>
+    <Member MemberName="ExtractToDirectory">
+      <MemberSignature Language="C#" Value="public static void ExtractToDirectory (this System.IO.Compression.ZipArchive source, string destinationDirectoryName, bool overwriteFiles);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ExtractToDirectory(class System.IO.Compression.ZipArchive source, string destinationDirectoryName, bool overwriteFiles) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.Compression.ZipFileExtensions.ExtractToDirectory(System.IO.Compression.ZipArchive,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.IO.Compression.ZipArchive" RefType="this" />
+        <Parameter Name="destinationDirectoryName" Type="System.String" />
+        <Parameter Name="overwriteFiles" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="destinationDirectoryName">To be added.</param>
+        <param name="overwriteFiles">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ExtractToFile">
       <MemberSignature Language="C#" Value="public static void ExtractToFile (this System.IO.Compression.ZipArchiveEntry source, string destinationFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ExtractToFile(class System.IO.Compression.ZipArchiveEntry source, string destinationFileName) cil managed" />
@@ -294,6 +323,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.FileSystem</AssemblyName>
@@ -382,6 +412,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.ZipFile</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression.FileSystem</AssemblyName>

@@ -418,7 +418,7 @@ This article demonstrates how to create a simple Windows Service application in 
      If the service uninstalls successfully, installutil.exe will report that your service was successfully removed. For more information, see [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md).  
   
 ## Next Steps  
- You can create a standalone setup program that others can use to install your Windows service, but it requires additional steps. ClickOnce doesn't support Windows services, so you can't use the Publish Wizard. You can use a full edition of InstallShield, which Microsoft doesn't provide. For more information about InstallShield, see [InstallShield Limited Edition](http://msdn.microsoft.com/library/151e46e5-86da-4336-b6d0-42b5326c4884). You can also use the [Windows Installer XML Toolset](http://go.microsoft.com/fwlink/?LinkId=249067) to create an installer for a Windows service.  
+ You can create a standalone setup program that others can use to install your Windows service, but it requires additional steps. ClickOnce doesn't support Windows services, so you can't use the Publish Wizard. You can use a full edition of InstallShield, which Microsoft doesn't provide. For more information about InstallShield, see [InstallShield Limited Edition](/visualstudio/deployment/installshield-limited-edition). You can also use the [Windows Installer XML Toolset](http://go.microsoft.com/fwlink/?LinkId=249067) to create an installer for a Windows service.  
   
  You might explore the use of a <xref:System.ServiceProcess.ServiceController> component, which enables you to send commands to the service you have installed.  
   

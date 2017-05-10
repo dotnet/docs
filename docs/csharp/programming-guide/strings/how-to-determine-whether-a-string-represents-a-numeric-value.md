@@ -64,5 +64,5 @@ bool result = int.TryParse(s, out i); //i now = 108
  [How to: Convert a byte Array to an int](../../../csharp/programming-guide/types/how-to-convert-a-byte-array-to-an-int.md)   
  [How to: Convert a String to a Number](../../../csharp/programming-guide/types/how-to-convert-a-string-to-a-number.md)   
  [How to: Convert Between Hexadecimal Strings and Numeric Types](../../../csharp/programming-guide/types/how-to-convert-between-hexadecimal-strings-and-numeric-types.md)   
- [Parsing Numeric Strings](http://msdn.microsoft.com/library/e39324ee-72e5-42d4-a80d-bf3ee7fc6c59)   
+ [Parsing Numeric Strings](../../../standard/base-types/parsing-numeric.md)   
  [Formatting Types](../../../standard/base-types/formatting-types.md)

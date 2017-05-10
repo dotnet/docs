@@ -55,7 +55,7 @@ This article helps you get started deploying the .NET Framework with your applic
   
 -   Deploying the .NET Framework with a client application (for developers):  
   
-    -   [Using InstallShield](../../../docs/framework/deployment/deployment-guide-for-developers.md#installshield) in a setup and deployment project  
+    -   [Using InstallShield](../../../docs/framework/deployment/deployment-guide-for-developers.md#installshield-deployment) in a setup and deployment project  
   
     -   [Using a Visual Studio ClickOnce application](../../../docs/framework/deployment/deployment-guide-for-developers.md#clickonce-deployment)  
   

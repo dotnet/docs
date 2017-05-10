@@ -47,4 +47,4 @@ The specified Clipboard format is incompatible with the method being executed. A
 -   Remove the invalid format and specify a valid one.  
   
 ## See Also  
- [Clipboard: Adding Other Formats](http://msdn.microsoft.com/library/aea58159-65ed-4385-aeaa-3d9d5281903b)
+ [Clipboard: Adding Other Formats](/cpp/mfc/clipboard-adding-other-formats)

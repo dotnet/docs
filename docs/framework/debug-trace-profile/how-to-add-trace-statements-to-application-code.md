@@ -94,7 +94,7 @@ The methods used most often for tracing are the methods for writing output to li
     ```  
   
     > [!NOTE]
-    >  You can use **Assert** with both tracing and debugging. This example outputs the call stack to any listener in the **Listeners** collection. For more information, see [Assertions in Managed Code](http://msdn.microsoft.com/library/70ab2522-6486-4076-a1a9-e0f11cd0f3a1) and <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>.  
+    >  You can use **Assert** with both tracing and debugging. This example outputs the call stack to any listener in the **Listeners** collection. For more information, see [Assertions in Managed Code](/visualstudio/debugger/assertions-in-managed-code) and <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>.  
   
 ## See Also  
  <xref:System.Diagnostics.Debug.WriteIf%2A?displayProperty=fullName>   

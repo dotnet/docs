@@ -25,7 +25,7 @@ This example shows how use the <xref:System.Diagnostics.Stopwatch> class to meas
  [!code-csharp[PLINQ#19](../../../samples/snippets/csharp/VS_Snippets_Misc/plinq/cs/measure2.cs#19)]
  [!code-vb[PLINQ#19](../../../samples/snippets/visualbasic/VS_Snippets_Misc/plinq/vb/measure2.vb#19)]  
   
- The total execution time is a useful metric when you are experimenting with query implementations, but it does not always tell the whole story. To get a deeper and richer view of the interaction of the query threads with one another and with other running processes, use the Concurrency Visualizer. For more information, see [Concurrency Visualizer](http://msdn.microsoft.com/library/ae5879a0-1e1a-455a-ba72-148e57f59289).  
+ The total execution time is a useful metric when you are experimenting with query implementations, but it does not always tell the whole story. To get a deeper and richer view of the interaction of the query threads with one another and with other running processes, use the Concurrency Visualizer. For more information, see [Concurrency Visualizer](/visualstudio/profiling/concurrency-visualizer).  
   
 ## See Also  
  [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)

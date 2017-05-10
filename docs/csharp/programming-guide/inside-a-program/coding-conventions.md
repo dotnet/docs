@@ -215,8 +215,8 @@ The [C# Language Specification](http://go.microsoft.com/fwlink/?LinkId=199552) d
      [!code-cs[csProgGuideCodingConventions#30](../../../csharp/programming-guide/inside-a-program/codesnippet/CSharp/coding-conventions_26.cs)]  
   
 ## Security  
- Follow the guidelines in [Secure Coding Guidelines](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177).  
+ Follow the guidelines in [Secure Coding Guidelines](../../../standard/security/secure-coding-guidelines.md).  
   
 ## See Also  
  [Visual Basic Coding Conventions](../../../visual-basic/programming-guide/program-structure/coding-conventions.md)   
- [Secure Coding Guidelines](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177)
+ [Secure Coding Guidelines](../../../standard/security/secure-coding-guidelines.md)

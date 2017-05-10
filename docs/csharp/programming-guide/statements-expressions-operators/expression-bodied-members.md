@@ -12,21 +12,6 @@ helpviewer_keywords:
   - "C# language, expresion-bodied members"
 author: "rpetrusha"
 ms.author: "ronpet"
-translation.priority.ht: 
-  - "de-de"
-  - "es-es"
-  - "fr-fr"
-  - "it-it"
-  - "ja-jp"
-  - "ko-kr"
-  - "ru-ru"
-  - "zh-cn"
-  - "zh-tw"
-translation.priority.mt: 
-  - "cs-cz"
-  - "pl-pl"
-  - "pt-br"
-  - "tr-tr"
 ---
 # Expression-bodied members (C# programming guide)
 Expression body definitions let you provide a member's implementation in a very concise, readable form. You can use an expression body definition whenever the logic for any supported member, such as a method or property, consists of a single expression. An expression body definition has the following general syntax:
@@ -37,7 +22,7 @@ member => expression;
 
 where *expression* is any valid expression. 
 
-Support for expression body definitions was introduced for methods and property get accessors in C# 6 and was expanded in C# 7. Expression body definitions can be used with the type members listed in the following table. 
+Support for expression body definitions was introduced for methods and property get accessors in C# 6 and was expanded in C# 7. Expression body definitions can be used with the type members listed in the following table: 
 
 |Member  |Supported as of... |
 |---------|---------|
@@ -50,11 +35,11 @@ Support for expression body definitions was introduced for methods and property 
 
 ## Methods
 
-An expression-bodied method consists of a single expression that returns a value whose type matches the method's return type, or, for methods that return `void`, that performs some operation. For example, types that override the <xref:System.Object.ToString</xref> method typically include a single expression that returns the string representation of the current object. 
+An expression-bodied method consists of a single expression that returns a value whose type matches the method's return type, or, for methods that return `void`, that performs some operation. For example, types that override the <xref:System.Object.ToString%2A</xref> method typically include a single expression that returns the string representation of the current object. 
 
-The following example defines a `Person` class that overrides the <xref:System.Object.ToString</xref> method with an expression body definition. It also defines a `Show` method that displays a name to the console. Note that the `return` keyword is not used in the `ToString` expression body definition.
+The following example defines a `Person` class that overrides the <xref:System.Object.ToString%2A</xref> method with an expression body definition. It also defines a `Show` method that displays a name to the console. Note that the `return` keyword is not used in the `ToString` expression body definition.
 
-[!code-cs[expression-bodied-methods](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-methods.cs#1)]  
+[!code-cs[expression-bodied-methods](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-methods.cs)]  
 
 For more information, see [Methods (C# Programming Guide)](../classes-and-structs/methods.md).
  
@@ -80,7 +65,7 @@ For more information, see [Destructors (C# Programming Guide)](../classes-and-st
 
 ## Property get statements
 
-If you choose to implement a property get accessor yourself, you can use an expression body definition for single-line statements that simply return the the proeprty value. Note that the `return` statement is not used.
+If you choose to implement a property get accessor yourself, you can use an expression body definition for single-line statements that simply return the property value. Note that the `return` statement isn't used.
 
 The following example defines a `Location.Name` property whose property get accessor returns the value of the private `locationName` field that backs the property. 
 

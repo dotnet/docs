@@ -1,7 +1,7 @@
 ---
 title: "Expressions (C# Programming Guide) | Microsoft Docs"
 
-ms.date: "2015-07-20"
+ms.date: "2017-05-11"
 ms.prod: .net
 
 
@@ -39,7 +39,7 @@ An *expression* is a sequence of one or more operands and zero or more operators
   
  Expressions can use operators that in turn use other expressions as parameters, or method calls whose parameters are in turn other method calls, so expressions can range from simple to very complex. Following are two examples of expressions:  
   
-```cs  
+```csharp  
 ((x < 10) && ( x > 5)) || ((x > 20) && (x < 25));
    
 System.Convert.ToInt32("35");  
@@ -71,7 +71,7 @@ System.Convert.ToInt32("35");
 ## Invocation expressions  
  In the following code example, the call to `DoWork` is an invocation expression.  
   
-```cs
+```csharp
 DoWork();  
 ```  
   

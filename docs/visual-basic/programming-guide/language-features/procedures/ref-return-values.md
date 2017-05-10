@@ -68,6 +68,6 @@ The best way to handle this scenario is to pass the reference return value by re
 ## See also
 
 [Passing arguments by value and by reference](passing-arguments-by-value-and-by-reference.md)   
-[Procedures in Visual Basic](procedures.md)   
+[Procedures in Visual Basic](index.md)   
 
 

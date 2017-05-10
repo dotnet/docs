@@ -42,7 +42,7 @@ namespace ServiceModel.Samples
         [DataContract]
         public class LibraryItem
         {
-            //code not shown.
+            // Code not shown.
         }
 
         [DataContract]

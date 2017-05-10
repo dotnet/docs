@@ -33,11 +33,10 @@
 ## Examples  
  The following example shows how to use the standard <xref:System.Configuration.DpapiProtectedConfigurationProvider> to protect or unprotect a configuration section.  
   
-<!-- TODO: review snippet reference  [!CODE [System.Configuration.DpapiProtectedConfigurationProvider#1](System.Configuration.DpapiProtectedConfigurationProvider#1)]  -->  
   
  The following configuration excerpts show the configuration section before and after the protection has been applied.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
   <connectionStrings>  
@@ -48,7 +47,7 @@
 </configuration>  
 ```  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <connectionStrings>  

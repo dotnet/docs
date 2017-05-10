@@ -27,11 +27,6 @@
   
  The <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> class implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface. This allows the collection that is storing the toolbox items to provide notifications when properties like the <xref:System.Activities.Presentation.Toolbox.ToolboxCategory.CategoryName%2A> property are changed and methods like <xref:System.Activities.Presentation.Toolbox.ToolboxCategory.Add%2A> and <xref:System.Activities.Presentation.Toolbox.ToolboxCategory.Remove%2A> are used to change the contents of the collection.  
   
-   
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_ToolboxCategory#0](WFD_ToolboxCategory#0)]  -->  
-  
  ]]></format>
     </remarks>
   </Docs>

@@ -2,7 +2,7 @@
 title: .NET Core Versioning | Microsoft Docs
 description: .NET Core Versioning
 keywords: .NET, .NET Core
-author: richlander
+author: richlander, beleroy
 ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article
@@ -17,7 +17,9 @@ ms.assetid: f6f684b1-1d2c-4105-8376-7c1959e23803
 
 This article aims at clarifying how the .NET Core SDK and runtime are versioned.
 
-TL;DR: There are lots of moving parts that version independently in .NET Core, but going forward we'll make sure that there is an easy to understand top-level version number that everybody understands to be *the* version of ".NET Core" as a whole. The rest of this document goes into the minute details of the versioning of all those parts, but you shouldn't need to know all those in order to use .NET Core, or build libraries that target it.
+## Summary
+
+There are lots of moving parts that version independently in .NET Core, but starting with .NET core 2.0, we'll make sure that there is an easy to understand top-level version number that everybody understands to be *the* version of ".NET Core" as a whole. The rest of this document goes into the details of the versioning of all those parts, but you shouldn't need to know all those in order to use .NET Core, or build libraries that target it.
 
 ## The past
 
@@ -33,89 +35,94 @@ We're unifying several version numbers:
 * The SDK and CLI
 * The `Microsoft.NETCore.App` metapackage
 
-This makes it easier for users to know what version of the SDK to install on their dev machines, and what the corresponding version of the shared framework should be when time comes to provision a production environment. When downloading a SDK or runtime, the version number you'll see is going to be the same, the one you care about. The tooling you'll get with that will be guaranteed to work with the runtime, but its version will no longer be part of the download name.
-
-### NET Core 2 Releases
-
-There will be a number of preview releases during the 2.0 cycle culminating in the final late-summer release. All aspects of naming, versioning and branding will be consistent and understandable.
-
-| Date  | Release                     | Base Branding and Versioning |
-| :--   | :--                         | :--                          |
-| April | Private VS 15.3 Preview     | 2.0.0-Preview 1-[build]      |
-| May   | Microsoft Build 2017        | 2.0.0-Preview 1-final        |
-| June  | Public Preview (RC)         | 2.0.0-Preview 2-final        |
-| July  | Final Release               | 2.0.0                        |
+This makes it easier for users to know what version of the SDK to install on their dev machines, and what the corresponding version of the shared framework should be when time comes to provision a production environment. When downloading a SDK or runtime, the version number you'll see is going to be the same.
 
 ### Installers
 
 Going forward, downloads for our [daily builds](https://github.com/dotnet/core-setup#daily-builds) and [our releases](https://www.microsoft.com/net/download/core) will adhere to a new naming scheme that will be easier to understand.
 The installer UI in those downloads will also be modified to clearly present the names and versions of the components being installed. In particular, titles will show the same version number that is in the download's file name.
 
-#### Current name format
+#### File name format
 
-`[product]-[component]-[platform]-[arch].[major].[minor].[patch]-[previewN]-[optional build #].[file ext]`
+`[product]-[major].[minor].[patch]-[previewN]-[optional build #]-[rid]-[component].[file ext]`
 
-Notice a few things with the list:
-
-1. It's difficult to easily scan the component / version pair
-2. Nothing is obviously presented as a Runtime component
-3. Naming inconsistency between sdk and dev packages across platforms.
+Here are some examples of this format:
 
 ```
-dotnet-osx-x64.1.0.4.pkg                            # Mac runtime installer
-dotnet-dev-win-x64.1.0.1.exe                        # Windows SDK installer
-dotnet-dev-fedora.24-x64.1.0.1.tar.gz               # Fedora 24 binary archive
+dotnet-runtime-2.0.4-macos.10.12-x64.pkg            # Mac runtime installer
+dotnet-sdk-2.0.4-win10-x64.exe                      # Windows SDK installer
+dotnet-sdk-2.0.4-fedora.24-x64.tar.gz               # Fedora 24 binary archive
 
 #Ubuntu file set needed for the SDK
-dotnet-host-ubuntu.16.04-x64.1.0.1.deb              # Host / muxer
-dotnet-hostfxr-ubuntu.16.04-x64.1.0.1.deb           # Host policy
-dotnet-sharedframework-ubuntu.16.04-x64.1.0.4.deb   # Runtime
-dotnet-sdk-ubuntu.16.04-x64.1.0.1.deb               # SDK
+dotnet-host-2.0.4-ubuntu.16.04-x64.deb              # Host / muxer and host policy
+dotnet-runtime-2.0.4-ubuntu.16.04-x64.deb           # runtime
+dotnet-sdk-2.0.4-ubuntu.16.04-x64.deb               # SDK tools
 ```
 
-#### Proposed name format change
+The format is readable and clearly shows what you're downloading, what version it is, and where you can use it. The runtime package name includes `runtime`, and the SDK includes `SDK`.
 
-`[product]-[major].[minor].[patch]-[preview-N]-[optional build #]-[rid]-[component].[file ext]`
+#### UI string format
 
-The proposed format change mitigates the issues highlighted above in a few ways.
+All web site descriptions and UI strings in the installers are kept consistent, accurate, and simple. Following are some examples of this.
 
-1. Readability is greatly enhanced by ordering the information in increasing level of granularity from left to right: `product->version->platform->component`.
-1. The runtime/shared framework package name includes 'runtime'.
-1. The SDK package is named to consistently represent what is being installed. 'sdk' is renamed 'tools' and the top-level aggregate package is renamed 'sdk'.
+| Installer | Window Title | Other content in installer | What is installed |
+| :--       | :--          | :--           | :--               |
+| SDK       | .NET Core 2.0 SDK (x64) Installer | .NET Core 2.0.4 SDK  | .NET Core 2.0.4 Tools + .NET Core 2.0.4 Runtime |
+| Runtime   | .NET Core 2.0 Runtime (x64) Installer | .NET Core 2.0.4 Runtime | .NET Core 2.0.4 Runtime |
 
-```
-dotnet-1.0.4-osx.10.12-x64-runtime.pkg              # Mac runtime installer
-dotnet-1.0.1-win10-x64-sdk.exe                      # Windows SDK installer
-dotnet-1.0.1-fedora.24-x64-sdk.tar.gz               # Fedora 24 binary archive
+Preview releases will differ only slighty:
 
-#Ubuntu file set needed for the SDK
-dotnet-1.0.1-ubuntu.16.04-x64-host.deb              # Host / muxer
-dotnet-1.0.1-ubuntu.16.04-x64-hostfxr.deb           # Host policy
-dotnet-1.0.4-ubuntu.16.04-x64-runtime.deb           # rename component to runtime from sharedframework
-dotnet-1.0.1-ubuntu.16.04-x64-tools.deb             # rename component to tools from sdk
-```
+| Installer | Window Title | Other content in installer | What is installed |
+| :--       | :--          | :--           | :--               |
+| SDK       | .NET Core 2.0 Preview 1 SDK (x64) Installer | .NET Core 2.0.0 Preview 1 SDK  | .NET Core 2.0.0 Preview 1 Tools + .NET Core 2.0.0 Preview 1 Runtime |
+| Runtime   | .NET Core 2.0 Preview 1 Runtime (x64) Installer | .NET Core 2.0.0 Preview 1 Runtime | .NET Core 2.0.0 Preview 1 Runtime |
+
+It may happen that an SDK release contains more than one version of the runtime. When that happens, the installer UX will look like the following (only the SDK is shown since the Runtime is irrelevant):
+
+| Installer | Window Title | Other content in installer | What is installed |
+| :--       | :--          | :--           | :--               |
+| SDK       | .NET Core 2.1 SDK (x64) Installer | .NET Core 2.1.1 SDK and Runtime <br> .NET Core 2.0.6 Runtime | .NET Core 2.1.1 Tools + .NET Core 2.1.1 Runtime + .NET Core 2.0.6 Runtime|
+
+It is also possible that .NET Core Tools need to be updated, without runtime changes. In that case, we would bump the SDK version (for example, to 2.1.2) and then have the Runtime catch up the next time it shipped (for example, both the Runtime and SDK ship the following time as 2.1.3).
 
 ### Package managers
 
-.NET Core can be distributed by other entities than Microsoft. In particular, Linux distribution owners and package maintainers may add .NET Core packages to their package managers. We are issuing recommendations for how those packages should be named and versioned.
+.NET Core can be distributed by other entities than Microsoft. In particular, Linux distribution owners and package maintainers may add .NET Core packages to their package managers. We are issuing [recommendations for how those packages should be named and versioned](../building/distribution-packaging.md).
 
 #### Minimum package set
 
-* `dotnet-[major].[minor]`: a shared framework with the specified version (only the latest patch version for a given major+minor combination should be available in the package manager). New patch versions update the package, but new minor or major versions are separate packages.
+* `dotnet-runtime-[major].[minor]`: a runtime with the specified version (only the latest patch version for a given major+minor combination should be available in the package manager). New patch versions update the package, but new minor or major versions are separate packages.
+ 
   **Dependencies**: `dotnet-host`
+
 * `dotnet-sdk`: the latest SDK. `update` rolls forward major, minor, and patch versions.
+
   **Dependencies**: the latest `dotnet-sdk-[major].[minor]`.
+
 * `dotnet-sdk-[major].[minor]`: the SDK with the specified version. The version specified is the highest included version of included shared frameworks, so that users can easily relate an SDK to a shared framework. New patch versions update the package, but new minor or major versions are separate packages.
-  **Dependencies**: `dotnet-host`, one or more `dotnet-[major].[minor]` (one of those is used by the SDK code itself, the others are here for users to build and run against).
+
+  **Dependencies**: `dotnet-host`, one or more `dotnet-runtime-[major].[minor]` (one of those is used by the SDK code itself, the others are here for users to build and run against).
+
 * `dotnet-host`: the latest host.
 
 ##### Preview versions
 
-Package maintainers may decide to include preview versions of the shared framework and SDK. Those should never be included in the unversioned package (`dotnet` and `dotnet-sdk`), but may be released as versioned packages with an additional preview marker appended to the major and minor version sections of the name. For example, there may be a `dotnet-sdk-2.0-preview-1-final` package.
+Package maintainers may decide to include preview versions of the runtime and SDK. Those should never be included in the unversioned `dotnet-sdk` package, but may be released as versioned packages with an additional preview marker appended to the major and minor version sections of the name. For example, there may be a `dotnet-sdk-2.0-preview-1-final` package.
 
 ### Docker
 
-A general Docker tag naming convention is to place the version number before the component name, such as: `2.0.4-runtime`, or `2.0.4-sdk`.
+A general Docker tag naming convention is to place the version number before the component name. This convention may continue to be utilized. The current tags include only the Runtime version as follows.
+
+* 1.0.8-runtime
+* 1.0.8-sdk
+* 2.0.4-runtime
+* 2.0.4-sdk
+* 2.1.1-runtime
+* 2.1.1-sdk
+
+The SDK tags should be updated to represent the SDK version rather than Runtime.
+
+It is also possible that we need to fix the .NET Core Tools but re-ship an existing runtime. In that case, we would bump the SDK version (for example, to 2.1.2) and then have the Runtime catch up the next time it shipped (for example, both the Runtime and SDK ship the following time as 2.1.3).
 
 ## Semantic Versioning
 
@@ -159,13 +166,11 @@ We maintain two trains of releases for .NET Core, to enable users to pick the le
 - Long Term Support (LTS) means you'll get new features less frequently, but you'll have a more mature platform, that will be supported for a longer period.
 - Current means you'll get new features and APIs more frequently, but the flipside is that you'll have a shorter window of time to install updates, and those will happen more frequently. Current is also fully supported.
 
-An increment of the `MAJOR` number means a new LTS. For LTS, the `MINOR` number is always 0. We do release patches for LTS when necessary, however, so you may have LTS versions such as `2.0.3`.
+A "current" version may get promoted to LTS.
 
-A new Current version will have an incremented `MINOR` or `PATCH` number, but `MAJOR` number changes are reserved for LTS.
+"LTS" and "Current" should be considered as labels that we put on specific releases to make a statement about the associated level of support.
 
-This makes it easy to recognize what train a release belongs to: if the `MINOR` number is zero, it's LTS. If it's not zero, it's a Current train version.
-
-## Versioning Scheme
+## Versioning scheme details
 
 .NET Core is made of the following parts:
 
@@ -175,7 +180,7 @@ This makes it easy to recognize what train a release belongs to: if the `MINOR` 
 - a shared framework implementation, distributed as packages. Each package is versioned independently, particularly for patch versioning.
 - Optionally, a set of metapackages that reference fine-grained packages as a versioned unit. Metapackages can be versioned separately from packages.
 
-.NET Core also includes a set of target frameworks (for example, `netstandard` or `netcoreapp`) that represent a progressively larger API set, described in a set of snapshots with version numbers that grow with the API surface.
+.NET Core also includes a set of target frameworks (for example, `netstandard` or `netcoreapp`) that represent a progressively larger API set, as version numbers are incremented.
 
 ### .NET Standard
 
@@ -219,7 +224,7 @@ Target framework versions are updated when new APIs are added. They have no conc
 
 ## Versioning in Practice
 
-When you download .NET Core, the name of the file you download carries the version, e.g. `dotnet-1.0.1-win10-x64-sdk.exe`.
+When you download .NET Core, the name of the file you download carries the version, e.g. `dotnet-sdk-2.0.4-win10-x64.exe`.
 
 There are commits and pull requests on .NET Core repos on GitHub on a daily basis, resulting in new builds of many libraries. It is not practical to create new public versions of .NET Core for every change. Instead, changes will be aggregated over some loosely-defined period of time (for example, weeks or months) before making a new public stable .NET Core version.
 
@@ -231,14 +236,14 @@ A new version of .NET Core could mean several things:
 
 ### Shipping a patch release
 
-After shipping a .NET Core v1.0.0 stable version, patch-level changes (no new APIs) are made to .NET Core libraries to fix bugs and improve performance and reliability. The various metapackages are updated to reference the updated .NET Core library packages. The metapackages are versioned as patch updates (`MAJOR.MINOR.PATCH`). Target frameworks are never updated as part of patch releases. A new .NET Core distribution is released with a version number that matches that of the `Microsoft.NETCore.App` metapackage. That release may be made on the LTS or Current release train.
+After shipping a .NET Core v1.0.0 stable version, patch-level changes (no new APIs) are made to .NET Core libraries to fix bugs and improve performance and reliability. The various metapackages are updated to reference the updated .NET Core library packages. The metapackages are versioned as patch updates (`MAJOR.MINOR.PATCH`). Target frameworks are never updated as part of patch releases. A new .NET Core distribution is released with a version number that matches that of the `Microsoft.NETCore.App` metapackage.
 
 ### Shipping a minor release
 
-After shipping a .NET Core stable (LTS) version with an incremented `MAJOR` version number, new APIs are added to .NET Core libraries to enable new scenarios. The various metapackages are updated to reference the updated .NET Core library packages. The metapackages are versioned as patch updates with `MAJOR` and `MINOR` version numbers matching the new framework version. New target framework names with the new `MAJOR.MINOR` version are added to describe the new APIs (e.g. `netcoreapp2.1`). A new .NET Core distribution is released with a matching version number to the `Microsoft.NETCore.App` metapackage. That release is made on the Current release train.
+After shipping a .NET Core version with an incremented `MAJOR` version number, new APIs are added to .NET Core libraries to enable new scenarios. The various metapackages are updated to reference the updated .NET Core library packages. The metapackages are versioned as patch updates with `MAJOR` and `MINOR` version numbers matching the new framework version. New target framework names with the new `MAJOR.MINOR` version are added to describe the new APIs (e.g. `netcoreapp2.1`). A new .NET Core distribution is released with a matching version number to the `Microsoft.NETCore.App` metapackage.
 
 ### Shipping a major release
 
-Every time a new LTS version of .NET Core ships, the `MAJOR` version number gets incremented, and the `MINOR` version number gets reset to zero. The new LTS contains at least all the APIs that were added by minor releases after the previous LTS. A new LTS should enable major new scenarios, and may also drop support for an older platform.
+Every time a new major version of .NET Core ships, the `MAJOR` version number gets incremented, and the `MINOR` version number gets reset to zero. The new major version contains at least all the APIs that were added by minor releases after the previous major version. A new major version should enable important new scenarios, and may also drop support for an older platform.
 
-The various metapackages are updated to reference the updated .NET Core library packages. The `Microsoft.NETCore.App` metapackage and the `netcore` framework are versioned as a major update matching the `MAJOR` version number of the new LTS release.
+The various metapackages are updated to reference the updated .NET Core library packages. The `Microsoft.NETCore.App` metapackage and the `netcore` framework are versioned as a major update matching the `MAJOR` version number of the new release.

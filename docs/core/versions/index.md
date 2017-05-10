@@ -2,7 +2,7 @@
 title: .NET Core Versioning | Microsoft Docs
 description: .NET Core Versioning
 keywords: .NET, .NET Core
-author: richlander, beleroy
+author: beleroy
 ms.author: mairaw
 ms.date: 06/20/2016
 ms.topic: article

@@ -168,4 +168,4 @@ End Sub
   
 ## See Also  
  <xref:System.Activities.Presentation.WorkflowItemsPresenter>   
- [Developing Applications with the Workflow Designer](http://msdn.microsoft.com/library/4cd062b1-b496-4668-bbc1-ee85545e066d)
+ [Developing Applications with the Workflow Designer](/visualstudio/workflow-designer/developing-applications-with-the-workflow-designer)

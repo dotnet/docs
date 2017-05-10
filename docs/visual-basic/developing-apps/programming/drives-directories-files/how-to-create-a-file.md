@@ -70,5 +70,5 @@ This example creates an empty text file at the specified path using the <xref:Sy
 ## See Also  
  <xref:System.IO>   
  <xref:System.IO.File.Create%2A>   
- [Using Libraries from Partially Trusted Code](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74)   
+ [Using Libraries from Partially Trusted Code](../../../../framework/misc/using-libraries-from-partially-trusted-code.md)   
  [Code Access Security Basics](https://msdn.microsoft.com/library/33tceax8)

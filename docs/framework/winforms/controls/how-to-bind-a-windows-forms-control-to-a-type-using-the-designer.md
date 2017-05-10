@@ -64,4 +64,4 @@ When you are building controls that interact with data, you sometimes need to bi
 ## See Also  
  [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)   
  [How to: Bind a Windows Forms Control to a Type](../../../../docs/framework/winforms/controls/how-to-bind-a-windows-forms-control-to-a-type.md)   
- [Bind controls to data in Visual Studio](http://msdn.microsoft.com/library/be8b6623-86a6-493e-ab7a-050de4661fd6)
+ [Bind controls to data in Visual Studio](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio)

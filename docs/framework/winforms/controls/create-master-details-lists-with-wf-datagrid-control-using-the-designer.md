@@ -37,7 +37,7 @@ manager: "wpickett"
 1.  Add two <xref:System.Windows.Forms.DataGrid> controls to the form. For more information, see [How to: Add Controls to Windows Forms](../../../../docs/framework/winforms/controls/how-to-add-controls-to-windows-forms.md). In [!INCLUDE[vsprvslong](../../../../includes/vsprvslong-md.md)], the <xref:System.Windows.Forms.DataGrid> control is not in the **Toolbox** by default. For more information, see [How to: Add Items to the Toolbox](http://msdn.microsoft.com/en-us/458e119e-17fe-450b-b889-e31c128bd7e0).  
   
     > [!NOTE]
-    >  The following steps are not applicable to [!INCLUDE[vsprvslong](../../../../includes/vsprvslong-md.md)], which uses the **Data Sources** window for design-time data binding. For more information, see [Bind controls to data in Visual Studio](http://msdn.microsoft.com/library/be8b6623-86a6-493e-ab7a-050de4661fd6) and [How to: Display Related Data in a Windows Forms Application](http://msdn.microsoft.com/library/60b1f1ec-6257-42ab-83f0-06d54ed364fd).  
+    >  The following steps are not applicable to [!INCLUDE[vsprvslong](../../../../includes/vsprvslong-md.md)], which uses the **Data Sources** window for design-time data binding. For more information, see [Bind controls to data in Visual Studio](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio) and [How to: Display Related Data in a Windows Forms Application](http://msdn.microsoft.com/library/60b1f1ec-6257-42ab-83f0-06d54ed364fd).  
   
 2.  Drag two or more tables from **Server Explorer** to the form.  
   
@@ -63,4 +63,4 @@ manager: "wpickett"
  [DataGrid Control](../../../../docs/framework/winforms/controls/datagrid-control-windows-forms.md)   
  [DataGrid Control Overview](../../../../docs/framework/winforms/controls/datagrid-control-overview-windows-forms.md)   
  [How to: Bind the Windows Forms DataGrid Control to a Data Source](../../../../docs/framework/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)   
- [Bind controls to data in Visual Studio](http://msdn.microsoft.com/library/be8b6623-86a6-493e-ab7a-050de4661fd6)
+ [Bind controls to data in Visual Studio](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio)

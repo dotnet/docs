@@ -50,5 +50,5 @@ The profiling API enables a profiler to monitor a program's execution by the com
  Describes the unmanaged structures that the profiling API uses.  
   
 ## Related Sections  
- [Walkthrough: Identifying Performance Problems](http://msdn.microsoft.com/library/36f6f123-0c14-4763-99c3-bd60ecb95b87)  
+ [Walkthrough: Identifying Performance Problems](/visualstudio/profiling/walkthrough-identifying-performance-problems)  
  Explains how to use the built-in profiling tools in the Microsoft Visual Studio 2005 Team System. These tools provide an alternative approach to using the profiling API.

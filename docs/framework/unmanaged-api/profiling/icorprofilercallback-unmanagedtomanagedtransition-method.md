@@ -65,5 +65,5 @@ HRESULT UnmanagedToManagedTransition(
 ## See Also  
  [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)   
  [ManagedToUnmanagedTransition Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-managedtounmanagedtransition-method.md)   
- [Using Explicit PInvoke in C++ (DllImport Attribute)](http://msdn.microsoft.com/library/18e5218c-6916-48a1-a127-f66e22ef15fc)   
- [Using C++ Interop (Implicit PInvoke)](http://msdn.microsoft.com/library/5f710bf1-88ae-4c4e-8326-b3f0b7c4c68a)
+ [Using Explicit PInvoke in C++ (DllImport Attribute)](/cpp/dotnet/using-explicit-pinvoke-in-cpp-dllimport-attribute)   
+ [Using C++ Interop (Implicit PInvoke)](/cpp/dotnet/using-cpp-interop-implicit-pinvoke)

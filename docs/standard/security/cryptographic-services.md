@@ -258,7 +258,7 @@ manager: "wpickett"
   
 <a name="clickonce"></a>   
 ## ClickOnce Manifests  
- In the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)], the following cryptography classes let you obtain and verify information about manifest signatures for applications that are deployed using [ClickOnce technology](http://msdn.microsoft.com/library/abab6d34-c3c2-45c1-a8b6-43c7d3131e7a):  
+ In the [!INCLUDE[net_v35_short](../../../includes/net-v35-short-md.md)], the following cryptography classes let you obtain and verify information about manifest signatures for applications that are deployed using [ClickOnce technology](/visualstudio/deployment/clickonce-security-and-deployment):  
   
 -   The <xref:System.Security.Cryptography.ManifestSignatureInformation> class obtains information about a manifest signature when you use its <xref:System.Security.Cryptography.ManifestSignatureInformation.VerifySignature%2A> method overloads.  
   

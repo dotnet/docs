@@ -83,6 +83,6 @@ public class TestDefine
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Preprocessor Directives](../../../csharp/language-reference/preprocessor-directives/index.md)   
  [const](../../../csharp/language-reference/keywords/const.md)   
- [How to: Compile Conditionally with Trace and Debug](http://msdn.microsoft.com/library/56d051c3-012c-42c1-9a58-7270edc624aa)   
+ [How to: Compile Conditionally with Trace and Debug](../../../framework/debug-trace-profile/how-to-compile-conditionally-with-trace-and-debug.md)   
  [#undef](../../../csharp/language-reference/preprocessor-directives/preprocessor-undef.md)   
  [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md)

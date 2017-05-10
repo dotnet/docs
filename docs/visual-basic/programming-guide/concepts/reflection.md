@@ -53,26 +53,26 @@ System.Console.WriteLine(info)
 ## Reflection Overview  
  Reflection is useful in the following situations:  
   
--   When you have to access attributes in your program's metadata. For more information, see [Retrieving Information Stored in Attributes](http://msdn.microsoft.com/library/37dfe4e3-7da0-48b6-a3d9-398981524e1c).  
+-   When you have to access attributes in your program's metadata. For more information, see [Retrieving Information Stored in Attributes](../../../standard/attributes/retrieving-information-stored-in-attributes.md).  
   
 -   For examining and instantiating types in an assembly.  
   
 -   For building new types at runtime. Use classes in <xref:System.Reflection.Emit>.  
   
--   For performing late binding, accessing methods on types created at run time. See the topic [Dynamically Loading and Using Types](http://msdn.microsoft.com/library/db985bec-5942-40ec-b13a-771ae98623dc).  
+-   For performing late binding, accessing methods on types created at run time. See the topic [Dynamically Loading and Using Types](../../../framework/reflection-and-codedom/dynamically-loading-and-using-types.md).  
   
 ## Related Sections  
  For more information:  
   
--   [Reflection](http://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775)  
+-   [Reflection](../../../framework/reflection-and-codedom/reflection.md)  
   
--   [Viewing Type Information](http://msdn.microsoft.com/library/7e7303a9-4064-4738-b4e7-b75974ed70d2)  
+-   [Viewing Type Information](../../../framework/reflection-and-codedom/viewing-type-information.md)  
   
--   [Reflection and Generic Types](http://msdn.microsoft.com/library/f7180fc5-dd41-42d4-8a8e-1b34288e06de)  
+-   [Reflection and Generic Types](../../../framework/reflection-and-codedom/reflection-and-generic-types.md)  
   
 -   <xref:System.Reflection.Emit>  
   
--   [Retrieving Information Stored in Attributes](http://msdn.microsoft.com/library/37dfe4e3-7da0-48b6-a3d9-398981524e1c)  
+-   [Retrieving Information Stored in Attributes](../../../standard/attributes/retrieving-information-stored-in-attributes.md)  
   
 ## See Also  
  [Visual Basic Programming Guide](../../../visual-basic/programming-guide/index.md)   

@@ -20,7 +20,7 @@ manager: "wpickett"
 
 # ServicePointManager.s\_ServicePointTable field
 
-`ServicePointManager.s_ServicePointTable` is a <xref:System.​Collections.​Hashtable> that contains the list of active HTTP connections (<xref:System.​Net.​Service​Point>s) in the <xref:System.​App​Domain>.
+`ServicePointManager.s_ServicePointTable` is a <xref:System.Collections.Hashtable> that contains the list of active HTTP connections (<xref:System.Net.ServicePoint>s) in the <xref:System.AppDomain>.
 
 ## Syntax
   

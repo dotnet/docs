@@ -20,7 +20,7 @@ manager: "wpickett"
 
 # ServicePoint.m\_ConnectionGroupList field
 
-`ServicePoint.m_ConnectionGroupList` is a <xref:System.​Collections.​Hashtable> of connection groups, each holding a connection for the <xref:System.​Net.​Service​Point>'s URI.
+`ServicePoint.m_ConnectionGroupList` is a <xref:System.Collections.Hashtable> of connection groups, each holding a connection for the <xref:System.Net.ServicePoint>'s URI.
 
 ## Syntax
   

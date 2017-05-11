@@ -20,7 +20,7 @@ manager: "wpickett"
 
 # ConnectionGroup class
 
-The `ConnectionGroup` class groups a list of connections within the <xref:System.​Net.​Service​Point> context and is used to maintain context for network resources (for example, proxies and separate clients).
+The `ConnectionGroup` class groups a list of connections within the <xref:System.Net.ServicePoint> context and is used to maintain context for network resources (for example, proxies and separate clients).
 
 ## Syntax
   

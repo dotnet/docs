@@ -20,7 +20,7 @@ manager: "wpickett"
 
 # ConnectionGroup.m\_ConnectionList field
 
-`ConnectionGroup.m_ConnectionList` is an <xref:System.​Collections.​Array​List> of connection objects that serves the same URI and share the same values for some other properties like expiration and authentication.
+`ConnectionGroup.m_ConnectionList` is an <xref:System.Collections.ArrayList> of connection objects that serves the same URI and share the same values for some other properties like expiration and authentication.
 
 ## Syntax
   

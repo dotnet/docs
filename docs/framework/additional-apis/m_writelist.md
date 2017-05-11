@@ -20,7 +20,7 @@ manager: "wpickett"
 
 # Connection.m\_WriteList field
 
-`Connection.m_WriteList` is an <xref:System.​Collections.​Array​List> of <xref:System.Net.HttpWebRequest> objects that are queued up to be sent over HTTP.
+`Connection.m_WriteList` is an <xref:System.Collections.ArrayList> of <xref:System.Net.HttpWebRequest> objects that are queued up to be sent over HTTP.
 
 ## Syntax
   

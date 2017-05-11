@@ -112,7 +112,7 @@ Deploying a self-contained deployment without third-party dependencies involves 
      </PropertyGroup>
      ```
 
-   Note that the `<RuntimeIdentifier>` element can appear in any `<PropertyGroup>` in your *csproj* file. A complete sample *csproj* file appears later in this section.
+   Note that the `<RuntimeIdentifiers>` element can appear in any `<PropertyGroup>` in your *csproj* file. A complete sample *csproj* file appears later in this section.
 
 1. Update the project's dependencies and tools.
 

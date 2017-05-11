@@ -20,7 +20,7 @@ If the schema of the <xref:System.Data.DataSet> is known at application design t
   
  [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] also supports querying over a typed <xref:System.Data.DataSet>. With a typed <xref:System.Data.DataSet>, you do not have to use the generic <xref:System.Data.DataRowExtensions.Field%2A> method or <xref:System.Data.DataRowExtensions.SetField%2A> method to access column data.  Property names are available at compile time because the type information is included in the <xref:System.Data.DataSet>. [!INCLUDE[linq_dataset](../../../../includes/linq-dataset-md.md)] provides access to column values as the correct type, so that type mismatch errors are caught when the code is compiled instead of at run time.  
   
- Before you can begin querying a typed <xref:System.Data.DataSet>, you must generate the class by using the DataSet Designer in [!INCLUDE[vs_orcas_long](../../../../includes/vs-orcas-long-md.md)].  For more information, see [Create and configure datasets](http://msdn.microsoft.com/library/58f33b43-24e1-43b1-b08b-b74329960bd6).  
+ Before you can begin querying a typed <xref:System.Data.DataSet>, you must generate the class by using the DataSet Designer in [!INCLUDE[vs_orcas_long](../../../../includes/vs-orcas-long-md.md)].  For more information, see [Create and configure datasets](/visualstudio/data-tools/create-and-configure-datasets-in-visual-studio).  
   
 ## Example  
  The following example shows a query over a typed <xref:System.Data.DataSet>:  

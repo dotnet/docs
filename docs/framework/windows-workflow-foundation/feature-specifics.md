@@ -183,7 +183,7 @@ manager: "erikre"
   
 -   Designer Documentation:  
   
-    -   [Flowchart Activity Designers](http://msdn.microsoft.com/library/8b7b4aa6-d27d-45c8-87c2-641440d38afc)  
+    -   [Flowchart Activity Designers](/visualstudio/workflow-designer/flowchart-activity-designers)  
   
 ### Flowchart Scenarios  
  A flowchart activity can be used to implement a guessing game. The guessing game is very simple: the computer selects a random number and the player has to guess that number. When the player submits each guess, the computer shows him a hint (i.e. “try a lower number”). If the player finds the number in less than 7 attempts, he receives a special congratulation from the computer. This game can be implemented with a combination of the following procedural activities:  
@@ -215,9 +215,9 @@ manager: "erikre"
   
 -   Designer Documentation:  
   
-    -   [Parallel Activity Designer](http://msdn.microsoft.com/library/0306dc3b-075a-4091-ac3a-96486fbabed5)  
+    -   [Parallel Activity Designer](/visualstudio/workflow-designer/parallel-activity-designer)  
   
-    -   [ParallelForEach\<T> Activity Designer](http://msdn.microsoft.com/library/e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7)  
+    -   [ParallelForEach\<T> Activity Designer](/visualstudio/workflow-designer/parallelforeach-t-activity-designer)  
   
 ### Procedural Activity Scenarios  
   
@@ -236,7 +236,7 @@ manager: "erikre"
   
     -   [InvokeMethod](../../../docs/framework/windows-workflow-foundation/samples/invokemethod.md)  
   
--   Designer Documentation: [InvokeMethod Activity Designer](http://msdn.microsoft.com/library/15e6efdc-52ca-46d8-9c5e-063f7c8265a6)  
+-   Designer Documentation: [InvokeMethod Activity Designer](/visualstudio/workflow-designer/invokemethod-activity-designer)  
   
 ### InvokeMethod Scenarios  
   
@@ -257,7 +257,7 @@ manager: "erikre"
   
     2.  [Using Procedural Activities](../../../docs/framework/windows-workflow-foundation/samples/using-procedural-activities.md)  
   
--   Designer Documentation: [Error Handling Activity Designers](http://msdn.microsoft.com/library/9679ca32-ad7f-4089-824e-fdb931e47a30)  
+-   Designer Documentation: [Error Handling Activity Designers](/visualstudio/workflow-designer/error-handling-activity-designers)  
   
 ### Error handling scenarios  
  A set of activities needs to be executed, and specific logic needs to be executed when an error occurs. If during that error handling logic it is found that the error is not recoverable, the exception will be rethrown, and the parent activity (or the host) will deal with the problem.  
@@ -271,7 +271,7 @@ manager: "erikre"
   
 -   Sample: [Using the Pick Activity](../../../docs/framework/windows-workflow-foundation/samples/using-the-pick-activity.md)  
   
--   Designer documentation: [Pick Activity Designer](http://msdn.microsoft.com/library/642c0a47-1b47-45de-a19a-ca0606cedd7a)  
+-   Designer documentation: [Pick Activity Designer](/visualstudio/workflow-designer/pick-activity-designer)  
   
 ### Pick Scenario  
  A user needs to be prompted for input. Under normal circumstances, the developer would use a method call like <xref:System.Console.ReadLine%2A> to prompt for a user’s input. The problem with this setup is that the program waits until the user enters something. In this scenario, a time-out is needed to unblock a blocking activity. A common scenario is one that requires a task to be completed within a given time duration. Timing out a blocking activity is a scenario where Pick adds a lot of value.  

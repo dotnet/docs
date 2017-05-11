@@ -57,7 +57,7 @@ The **/debug** option causes the compiler to generate debugging information and 
 > [!NOTE]
 >  One difference between **/debug:pdbonly** and **/debug:full** is that with **/debug:full** the compiler emits a <xref:System.Diagnostics.DebuggableAttribute>, which is used to tell the JIT compiler that debug information is available. Therefore, you will get an error if your code contains the <xref:System.Diagnostics.DebuggableAttribute> set to false if you use **/debug:full**.  
   
- For more information on how to configure the debug performance of an application, see [Making an Image Easier to Debug](http://msdn.microsoft.com/library/7d90ea7a-150f-4f97-98a7-f9c26541b9a3).  
+ For more information on how to configure the debug performance of an application, see [Making an Image Easier to Debug](../../../framework/debug-trace-profile/making-an-image-easier-to-debug.md).  
   
  To change the location of the .pdb file, see [/pdb (C# Compiler Options)](../../../csharp/language-reference/compiler-options/pdb-compiler-option.md).  
   

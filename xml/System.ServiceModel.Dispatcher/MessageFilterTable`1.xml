@@ -408,6 +408,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMatchingFilter">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the match criterion of exactly one filter in the table is satisfied by the specified message or message buffer and returns that filter in an <see langword="out" /> parameter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Tests whether a message satisfies any of the filters in the filter table.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetMatchingFilter">
       <MemberSignature Language="C#" Value="public bool GetMatchingFilter (System.ServiceModel.Channels.Message message, out System.ServiceModel.Dispatcher.MessageFilter result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetMatchingFilter(class System.ServiceModel.Channels.Message message, class System.ServiceModel.Dispatcher.MessageFilter result) cil managed" />
@@ -478,6 +495,23 @@
         <exception cref="T:System.ServiceModel.Dispatcher.MultipleFilterMatchesException">More than one <see cref="T:System.ServiceModel.Dispatcher.ActionMessageFilter" /> matches the <paramref name="messageBuffer" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMatchingFilters">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the match criterion of a <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> in the table is satisfied by the specified message or buffered message, and adds the matching filters to a collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method when more than one filter is expected to match the message and the matching filters are required.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetMatchingFilters">
       <MemberSignature Language="C#" Value="public bool GetMatchingFilters (System.ServiceModel.Channels.Message message, System.Collections.Generic.ICollection&lt;System.ServiceModel.Dispatcher.MessageFilter&gt; results);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetMatchingFilters(class System.ServiceModel.Channels.Message message, class System.Collections.Generic.ICollection`1&lt;class System.ServiceModel.Dispatcher.MessageFilter&gt; results) cil managed" />
@@ -561,6 +595,25 @@
           <paramref name="results" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMatchingValue">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the match criterion of exactly one <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> in the table is satisfied by the specified message or buffered message and adds the matching filter data to a collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use one of these methods when a single filter is expected to match the message and only the `FilterData` from the matching filter must be recovered.  
+  
+ Use <xref:System.ServiceModel.Dispatcher.MessageFilterTable%601.GetMatchingValue%2A> to inspect message headers and <xref:System.ServiceModel.Dispatcher.MessageFilterTable%601.GetMatchingValue%2A> to inspect a buffered message, which can include looking at the message body.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetMatchingValue">
       <MemberSignature Language="C#" Value="public bool GetMatchingValue (System.ServiceModel.Channels.Message message, out TFilterData data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetMatchingValue(class System.ServiceModel.Channels.Message message, !TFilterData data) cil managed" />
@@ -632,6 +685,23 @@
         <exception cref="T:System.ServiceModel.Dispatcher.MultipleFilterMatchesException">More than one filter matches the <paramref name="messageBuffer" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMatchingValues">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the match criterion of at least one filter in the table is satisfied by the specified message or buffered message and adds the <paramref name="FilterData" /> of the matching filters to a collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method when more than one filter is expected to match the message or buffered message and only the `FilterData` is required.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetMatchingValues">
       <MemberSignature Language="C#" Value="public bool GetMatchingValues (System.ServiceModel.Channels.Message message, System.Collections.Generic.ICollection&lt;TFilterData&gt; results);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetMatchingValues(class System.ServiceModel.Channels.Message message, class System.Collections.Generic.ICollection`1&lt;!TFilterData&gt; results) cil managed" />
@@ -989,75 +1059,5 @@ myFilters(filter)
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetMatchingValue">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that indicates whether the match criterion of exactly one <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> in the table is satisfied by the specified message or buffered message and adds the matching filter data to a collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use one of these methods when a single filter is expected to match the message and only the `FilterData` from the matching filter must be recovered.  
-  
- Use <xref:System.ServiceModel.Dispatcher.MessageFilterTable%601.GetMatchingValue%2A> to inspect message headers and <xref:System.ServiceModel.Dispatcher.MessageFilterTable%601.GetMatchingValue%2A> to inspect a buffered message, which can include looking at the message body.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetMatchingFilters">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that indicates whether the match criterion of a <see cref="T:System.ServiceModel.Dispatcher.MessageFilter" /> in the table is satisfied by the specified message or buffered message, and adds the matching filters to a collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method when more than one filter is expected to match the message and the matching filters are required.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetMatchingFilter">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that indicates whether the match criterion of exactly one filter in the table is satisfied by the specified message or message buffer and returns that filter in an <see langword="out" /> parameter.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Tests whether a message satisfies any of the filters in the filter table.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetMatchingValues">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that indicates whether the match criterion of at least one filter in the table is satisfied by the specified message or buffered message and adds the <paramref name="FilterData" /> of the matching filters to a collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method when more than one filter is expected to match the message or buffered message and only the `FilterData` is required.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

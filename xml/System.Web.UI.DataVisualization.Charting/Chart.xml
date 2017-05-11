@@ -1822,6 +1822,27 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="HitTest">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines the chart element, if any, that is located at a point defined by the given X and Y coordinates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call this method to determine the chart element, if any, that is located at a specified point.  
+  
+ This method is often used in some mouse-related event—for example, MouseDown—to determine which chart element the end-user clicked. The X and Y mouse coordinates obtained from the event parameters are then used for the `x` and `y` parameter values of this method call.  
+  
+ The properties of the returned <xref:System.Web.UI.DataVisualization.Charting.HitTestResult> object can then be used to determine which chart element was clicked; the <xref:System.Web.UI.DataVisualization.Charting.HitTestResult> object also provides an instance of the actual object selected, if any.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="HitTest">
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.HitTestResult HitTest (int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.HitTestResult HitTest(int32 x, int32 y) cil managed" />
@@ -3363,26 +3384,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="HitTest">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines the chart element, if any, that is located at a point defined by the given X and Y coordinates.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call this method to determine the chart element, if any, that is located at a specified point.  
-  
- This method is often used in some mouse-related event—for example, MouseDown—to determine which chart element the end-user clicked. The X and Y mouse coordinates obtained from the event parameters are then used for the `x` and `y` parameter values of this method call.  
-  
- The properties of the returned <xref:System.Web.UI.DataVisualization.Charting.HitTestResult> object can then be used to determine which chart element was clicked; the <xref:System.Web.UI.DataVisualization.Charting.HitTestResult> object also provides an instance of the actual object selected, if any.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

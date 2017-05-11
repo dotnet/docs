@@ -441,6 +441,28 @@ class MyXmlDataDocument : XmlDataDocument {
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the <see langword="XmlDataDocument" /> using the specified data source and synchronizes the <see cref="T:System.Data.DataSet" /> with the loaded data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  In order to view the XML data relationally, you must first specify a schema to use for data mapping. This can be done either by calling the <xref:System.Data.DataSet.ReadXmlSchema%2A> method or by creating the tables and columns within the `DataSet` manually. This step must be done before calling `Load`.  
+  
+ `XmlDataDocument` does not support creating entity references. If the data includes entity references, the `Load` method resolves and expands any entity references. However, if you are using the `Load` overload that takes a <xref:System.Xml.XmlReader> as an argument, you must specify an `XmlReader` that can resolve entities.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Load">
       <MemberSignature Language="C#" Value="public override void Load (System.IO.Stream inStream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Load(class System.IO.Stream inStream) cil managed" />
@@ -609,27 +631,5 @@ class MyXmlDataDocument : XmlDataDocument {
         <exception cref="T:System.NotSupportedException">The XML being loaded contains entity references, and the reader cannot resolve entities.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Load">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Loads the <see langword="XmlDataDocument" /> using the specified data source and synchronizes the <see cref="T:System.Data.DataSet" /> with the loaded data.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  In order to view the XML data relationally, you must first specify a schema to use for data mapping. This can be done either by calling the <xref:System.Data.DataSet.ReadXmlSchema%2A> method or by creating the tables and columns within the `DataSet` manually. This step must be done before calling `Load`.  
-  
- `XmlDataDocument` does not support creating entity references. If the data includes entity references, the `Load` method resolves and expands any entity references. However, if you are using the `Load` overload that takes a <xref:System.Xml.XmlReader> as an argument, you must specify an `XmlReader` that can resolve entities.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

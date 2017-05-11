@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents an easing function that creates an animation that accelerates and/or decelerates using a sine formula (see remarks below).</summary>
+    <summary>Represents an easing function that creates an animation that accelerates and/or decelerates using a sine formula.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -45,8 +45,7 @@
 ## Examples  
  The following example applies a <xref:System.Windows.Media.Animation.SineEase> easing function to a <xref:System.Windows.Media.Animation.DoubleAnimation> to create a decelerating animation.  
   
- [!code-xml[SineEase#SineEase](~/samples/snippets/csharp/VS_Snippets_Wpf/sineease/CS/window1.xaml#sineease)]
- <!-- TODO: review snippet reference [!code-xml[SineEase#SineEase](~/samples/snippets/xaml/VS_Snippets_Wpf/sineease/xaml/window1.xaml#sineease)]  -->  
+ [!code-xml[SineEase#SineEase](~/samples/snippets/csharp/VS_Snippets_Wpf/sineease/CS/window1.xaml#sineease)]   
   
  ]]></format>
     </remarks>

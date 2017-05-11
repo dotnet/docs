@@ -45,7 +45,7 @@ Windows APIs are dynamic-link libraries (DLLs) that are part of the Windows oper
   
  The advantage of using Windows APIs in your code is that they can save development time because they contain dozens of useful functions that are already written and waiting to be used. The disadvantage is that Windows APIs can be difficult to work with and unforgiving when things go wrong.  
   
- Windows APIs represent a special category of interoperability. Windows APIs do not use managed code, do not have built-in type libraries, and use data types that are different than those used with Visual Studio. Because of these differences, and because Windows APIs are not COM objects, interoperability with Windows APIs and the [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] is performed using platform invoke, or PInvoke. Platform invoke is a service that enables managed code to call unmanaged functions implemented in DLLs. For more information, see [Consuming Unmanaged DLL Functions](http://msdn.microsoft.com/library/eca7606e-ebfb-4f47-b8d9-289903fdc045). You can use PInvoke in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] by using either the `Declare` statement or applying the `DllImport` attribute to an empty procedure.  
+ Windows APIs represent a special category of interoperability. Windows APIs do not use managed code, do not have built-in type libraries, and use data types that are different than those used with Visual Studio. Because of these differences, and because Windows APIs are not COM objects, interoperability with Windows APIs and the [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] is performed using platform invoke, or PInvoke. Platform invoke is a service that enables managed code to call unmanaged functions implemented in DLLs. For more information, see [Consuming Unmanaged DLL Functions](../../../framework/interop/consuming-unmanaged-dll-functions.md). You can use PInvoke in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] by using either the `Declare` statement or applying the `DllImport` attribute to an empty procedure.  
   
  Windows API calls were an important part of [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] programming in the past, but are seldom necessary with [!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]. Whenever possible, you should use managed code from the [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] to perform tasks, instead of Windows API calls. This walkthrough provides information for those situations in which using Windows APIs is necessary.  
   
@@ -114,7 +114,7 @@ Windows APIs are dynamic-link libraries (DLLs) that are part of the Windows oper
 3.  Run the project by pressing F5. The message box is displayed with both **Yes** and **No** response buttons. Click either one.  
   
 #### Data Marshaling  
- [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] automatically converts the data types of parameters and return values for Windows API calls, but you can use the `MarshalAs` attribute to explicitly specify unmanaged data types that an API expects. For more information about interop marshaling, see [Interop Marshaling](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
+ [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] automatically converts the data types of parameters and return values for Windows API calls, but you can use the `MarshalAs` attribute to explicitly specify unmanaged data types that an API expects. For more information about interop marshaling, see [Interop Marshaling](../../../framework/interop/interop-marshaling.md).  
   
 ###### To use Declare and MarshalAs in an API call  
   
@@ -176,5 +176,5 @@ Windows APIs are dynamic-link libraries (DLLs) that are part of the Windows oper
  [Auto](../../../visual-basic/language-reference/modifiers/auto.md)   
  [Alias](../../../visual-basic/language-reference/statements/alias-clause.md)   
  [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)   
- [Creating Prototypes in Managed Code](http://msdn.microsoft.com/library/ecdcf25d-cae3-4f07-a2b6-8397ac6dc42d)   
- [Marshaling a Delegate as a Callback Method](http://msdn.microsoft.com/library/6ddd7866-9804-4571-84de-83f5cc017a5a)
+ [Creating Prototypes in Managed Code](../../../framework/interop/creating-prototypes-in-managed-code.md)   
+ [Marshaling a Delegate as a Callback Method](../../../framework/interop/marshaling-a-delegate-as-a-callback-method.md)

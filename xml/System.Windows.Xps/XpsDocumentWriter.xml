@@ -54,6 +54,31 @@
         <exception cref="T:System.Windows.Xps.XpsWriterException">No asynchronous write operation is in progress.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateVisualsCollator">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Windows.Xps.VisualsToXpsDocument" /> that can write <see cref="T:System.Windows.Media.Visual" /> objects to a document or print queue.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Xps.VisualsToXpsDocument> writes to the same target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue> as the <xref:System.Windows.Xps.XpsDocumentWriter> that creates the <xref:System.Windows.Xps.VisualsToXpsDocument>.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Xps.XpsDocumentWriter.CreateVisualsCollator%2A> method.  
+  
+ [!code-csharp[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#createandwritetovisualscollator)]
+ [!code-vb[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#createandwritetovisualscollator)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateVisualsCollator">
       <MemberSignature Language="C#" Value="public override System.Windows.Documents.Serialization.SerializerWriterCollator CreateVisualsCollator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Documents.Serialization.SerializerWriterCollator CreateVisualsCollator() cil managed" />
@@ -1495,30 +1520,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateVisualsCollator">
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a <see cref="T:System.Windows.Xps.VisualsToXpsDocument" /> that can write <see cref="T:System.Windows.Media.Visual" /> objects to a document or print queue.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Xps.VisualsToXpsDocument> writes to the same target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue> as the <xref:System.Windows.Xps.XpsDocumentWriter> that creates the <xref:System.Windows.Xps.VisualsToXpsDocument>.  
-  
-   
-  
-## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.XpsDocumentWriter.CreateVisualsCollator%2A> method.  
-  
- [!code-csharp[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#createandwritetovisualscollator)]
- [!code-vb[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#createandwritetovisualscollator)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

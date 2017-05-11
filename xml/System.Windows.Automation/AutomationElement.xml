@@ -912,6 +912,23 @@
         <exception cref="T:System.Windows.Automation.ElementNotAvailableException">The UI for the <see cref="T:System.Windows.Automation.AutomationElement" /> no longer exists.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCachedPropertyValue">
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the cached value of the specified property from an <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A> retrieves the specified property from the cache of the <xref:System.Windows.Automation.AutomationElement>. To retrieve the current property, call <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCachedPropertyValue">
       <MemberSignature Language="C#" Value="public object GetCachedPropertyValue (System.Windows.Automation.AutomationProperty property);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetCachedPropertyValue(class System.Windows.Automation.AutomationProperty property) cil managed" />
@@ -1096,6 +1113,25 @@
         <exception cref="T:System.Windows.Automation.ElementNotAvailableException">The UI for the <see cref="T:System.Windows.Automation.AutomationElement" /> no longer exists.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCurrentPropertyValue">
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the current value of the specified property from an <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value returned by the <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A> method is current at the time it is called. The value can subsequently change by other applications interacting with the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].  
+  
+ For some forms of [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)], this method will incur cross-process performance overhead. Applications can concentrate overhead by caching properties and then retrieving them by using <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCurrentPropertyValue">
       <MemberSignature Language="C#" Value="public object GetCurrentPropertyValue (System.Windows.Automation.AutomationProperty property);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetCurrentPropertyValue(class System.Windows.Automation.AutomationProperty property) cil managed" />
@@ -3141,41 +3177,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetCachedPropertyValue">
-      <AssemblyInfo>
-        <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the cached value of the specified property from an <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A> retrieves the specified property from the cache of the <xref:System.Windows.Automation.AutomationElement>. To retrieve the current property, call <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetCurrentPropertyValue">
-      <AssemblyInfo>
-        <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the current value of the specified property from an <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value returned by the <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A> method is current at the time it is called. The value can subsequently change by other applications interacting with the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].  
-  
- For some forms of [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)], this method will incur cross-process performance overhead. Applications can concentrate overhead by caching properties and then retrieving them by using <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

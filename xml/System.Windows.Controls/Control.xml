@@ -1346,7 +1346,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button>.  If you add this to your application as a resource, all the buttons in the application will appear as ellipses but will still function as buttons.  
   
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample_snip#ButtonCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snip/CSharp/Window1.xaml#buttonct)]  -->  
+ [!code-xml[StylingIntroSample_snippet#ButtonCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snippet/CSharp/Window1.xaml#buttonct)]   
   
  ]]></format>
         </remarks>

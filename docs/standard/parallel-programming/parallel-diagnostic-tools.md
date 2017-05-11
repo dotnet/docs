@@ -22,14 +22,14 @@ manager: "wpickett"
 ## Debugging  
  The Visual Studio debugger adds new windows for debugging parallel applications. For more information, see the following topics:  
   
--   [Using the Parallel Stacks Window](http://msdn.microsoft.com/library/f50efb78-5206-4803-bb42-426ef8133f2f)  
+-   [Using the Parallel Stacks Window](/visualstudio/debugger/using-the-parallel-stacks-window)  
   
--   [Using the Tasks Window](http://msdn.microsoft.com/library/bd5e0612-a0dc-41cf-a7af-1e87d0d5c35f)  
+-   [Using the Tasks Window](/visualstudio/debugger/using-the-tasks-window)  
   
--   [Walkthrough: Debugging a Parallel Application](http://msdn.microsoft.com/library/2820ac4c-c893-4d87-8c62-83981d561493).  
+-   [Walkthrough: Debugging a Parallel Application](/visualstudio/debugger/walkthrough-debugging-a-parallel-application).  
   
 ## Profiling  
- The Concurrency Visualizer report views enable you to visualize how the threads in a parallel program interact with each other and with threads from other processes on the system. For more information, see [Concurrency Visualizer](http://msdn.microsoft.com/library/ae5879a0-1e1a-455a-ba72-148e57f59289).  
+ The Concurrency Visualizer report views enable you to visualize how the threads in a parallel program interact with each other and with threads from other processes on the system. For more information, see [Concurrency Visualizer](/visualstudio/profiling/concurrency-visualizer).  
   
 ## See Also  
  [Parallel Programming](../../../docs/standard/parallel-programming/index.md)

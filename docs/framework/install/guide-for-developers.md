@@ -55,10 +55,10 @@ You can install the **Web or Offline installer** on:
 - Windows Server 2012 R2 and earlier  
   
 For a full list, see [System Requirements](~/docs/framework/get-started/system-requirements.md).  
-  
-For a general introduction to the .NET Framework for both users and developers, see [Getting Started with the .NET Framework](~/docs/framework/get-started/index.md). For information about deploying the .NET Framework with your app, see the [deployment guide](~/docs/framework/deployment/deployment-guide-for-developers.md). To read about the architecture and key features of the .NET Framework, see the [overview](~/docs/framework/get-started/overview.md).  
-  
-<a name="choices"></a>   
+
+For a general introduction to the .NET Framework for both users and developers, see [Getting Started](../get-started/index.md). For information about deploying the .NET Framework with your app, see the [deployment guide](~/docs/framework/deployment/deployment-guide-for-developers.md). To read about the architecture and key features of the .NET Framework, see the [overview](~/docs/framework/get-started/overview.md).  
+
+<a name="choices"></a>
 ## Installation choices
 
 Install a developer targeting pack to develop against the most recent version of the .NET Framework in Visual Studio or another development environment, or download the .NET Framework redistributable for distribution with your app or control.  

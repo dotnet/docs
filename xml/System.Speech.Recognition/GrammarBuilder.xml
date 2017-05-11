@@ -84,6 +84,30 @@ private Grammar CreateColorGrammar()
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.GrammarBuilder" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Instances of this class can also be obtained by implicit conversions from other classes or by combining a <xref:System.Speech.Recognition.GrammarBuilder> object with a second object to from a new <xref:System.Speech.Recognition.GrammarBuilder>. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> methods.  
+  
+ To add constraints to an existing <xref:System.Speech.Recognition.GrammarBuilder>, use the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A>, <xref:System.Speech.Recognition.GrammarBuilder.Append%2A>, <xref:System.Speech.Recognition.GrammarBuilder.AppendDictation%2A>, <xref:System.Speech.Recognition.GrammarBuilder.AppendRuleReference%2A>, and <xref:System.Speech.Recognition.GrammarBuilder.AppendWildcard%2A> methods, and the <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operator.  
+  
+> [!IMPORTANT]
+>  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+  
+ For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public GrammarBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -647,6 +671,30 @@ private static Grammar CreatePizzaGrammar()
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Speech.Recognition.GrammarBuilder" /> that contains a sequence of two grammar elements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The static <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods provide another mechanism by which you can combine various types to create diversity and flexibility in grammars built with <xref:System.Speech.Recognition.GrammarBuilder>. These methods correspond to the static <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> methods, which are also defined on the <xref:System.Speech.Recognition.GrammarBuilder> class. The order of the parameters determines the order of the elements in the new <xref:System.Speech.Recognition.GrammarBuilder>.  
+  
+ A <xref:System.Speech.Recognition.GrammarBuilder> can also be obtained from <xref:System.Speech.Recognition.Choices>, <xref:System.Speech.Recognition.SemanticResultKey>, <xref:System.Speech.Recognition.SemanticResultValue>, and [String](http://go.microsoft.com/fwlink/?LinkId=159733) objects. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operators.  
+  
+> [!IMPORTANT]
+>  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+  
+ For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public static System.Speech.Recognition.GrammarBuilder Add (System.Speech.Recognition.Choices choices, System.Speech.Recognition.GrammarBuilder builder);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Speech.Recognition.GrammarBuilder Add(class System.Speech.Recognition.Choices choices, class System.Speech.Recognition.GrammarBuilder builder) cil managed" />
@@ -991,6 +1039,30 @@ private Grammar CreateColorGrammar()
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Append">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends a grammar element to the current sequence of grammar elements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use these methods to append grammar elements to an existing <xref:System.Speech.Recognition.GrammarBuilder>. As you create grammar elements, you can append them to the existing builder to progressively develop the constraints for a speech recognition grammar. Each element is added to the end of the current sequence of elements.  
+  
+ This method has overloads for appending <xref:System.Speech.Recognition.GrammarBuilder>, <xref:System.String>, <xref:System.Speech.Recognition.Choices>, <xref:System.Speech.Recognition.SemanticResultKey>, and <xref:System.Speech.Recognition.SemanticResultValue> objects.  
+  
+> [!IMPORTANT]
+>  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+  
+ For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Append">
       <MemberSignature Language="C#" Value="public void Append (System.Speech.Recognition.Choices alternateChoices);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Append(class System.Speech.Recognition.Choices alternateChoices) cil managed" />
@@ -1611,6 +1683,25 @@ public static Grammar CreatePhonePhrase()
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AppendDictation">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends a dictation grammar to the current sequence of grammar elements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.Recognition.GrammarBuilder.AppendDictation%2A> methods allow you to append a dictation grammar as a rule to a <xref:System.Speech.Recognition.GrammarBuilder>.  
+  
+ For more information on dictation grammars, see <xref:System.Speech.Recognition.DictationGrammar>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AppendDictation">
       <MemberSignature Language="C#" Value="public void AppendDictation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendDictation() cil managed" />
@@ -1696,6 +1787,31 @@ grammarWithDictation.Name = "Grammar with Dictation";
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AppendRuleReference">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends a grammar file or a grammar rule to the current sequence of grammar elements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.Recognition.GrammarBuilder.AppendRuleReference%2A> methods can append a grammar file or a grammar rule from a file. These methods allow applications to make use of pre-deployed or publicly available grammar rules. The application must have read access to the location of specified grammar files.  
+  
+ These methods can read a speech recognition grammar from the following formats.  
+  
+-   XML-format files that conform to the W3C [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201761)  
+  
+-   Binary files that conform to the Microsoft Speech Recognition Grammar Binary Format (.cfg file extension)  
+  
+ Compiling an XML-format SRGS grammar file to a binary grammar file with the .cfg extension can reduce the time consumed by searches for a match, especially if the grammar requires recognition of a large number of words and phrases. For information about compiling SRGS grammars to the CFG binary format, see <xref:System.Speech.Recognition.SrgsGrammar.SrgsGrammarCompiler>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AppendRuleReference">
       <MemberSignature Language="C#" Value="public void AppendRuleReference (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AppendRuleReference(string path) cil managed" />
@@ -2086,6 +2202,28 @@ private static Grammar CreatePizzaGrammar()
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Addition">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Speech.Recognition.GrammarBuilder" /> that corresponds to a sequence of two grammar elements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The order of the operands determines the order of the elements in the new <xref:System.Speech.Recognition.GrammarBuilder>.  
+  
+> [!IMPORTANT]
+>  Caution is recommended when combining <xref:System.Speech.Recognition.Choices> or <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances with other grammar elements. The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
+  
+ For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="op_Addition">
       <MemberSignature Language="C#" Value="public static System.Speech.Recognition.GrammarBuilder op_Addition (System.Speech.Recognition.Choices choices, System.Speech.Recognition.GrammarBuilder builder);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Speech.Recognition.GrammarBuilder op_Addition(class System.Speech.Recognition.Choices choices, class System.Speech.Recognition.GrammarBuilder builder) cil managed" />
@@ -2360,6 +2498,33 @@ private Grammar CreateColorGrammar()
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Implicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts another type to a <see cref="T:System.Speech.Recognition.GrammarBuilder" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implicit conversion creates a new instance of <xref:System.Speech.Recognition.GrammarBuilder>. You can cast each of the following classes to a <xref:System.Speech.Recognition.GrammarBuilder>.  
+  
+-   <xref:System.Speech.Recognition.Choices>  
+  
+-   <xref:System.Speech.Recognition.SemanticResultKey>  
+  
+-   <xref:System.Speech.Recognition.SemanticResultValue>  
+  
+-   <xref:System.String>  
+  
+ Each of the implicit casts is equivalent to calling the constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="op_Implicit">
       <MemberSignature Language="C#" Value="public static System.Speech.Recognition.GrammarBuilder op_Implicit (System.Speech.Recognition.Choices choices);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Speech.Recognition.GrammarBuilder op_Implicit(class System.Speech.Recognition.Choices choices) cil managed" />
@@ -2448,170 +2613,5 @@ private Grammar CreateColorGrammar()
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="op_Implicit">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts another type to a <see cref="T:System.Speech.Recognition.GrammarBuilder" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Implicit conversion creates a new instance of <xref:System.Speech.Recognition.GrammarBuilder>. You can cast each of the following classes to a <xref:System.Speech.Recognition.GrammarBuilder>.  
-  
--   <xref:System.Speech.Recognition.Choices>  
-  
--   <xref:System.Speech.Recognition.SemanticResultKey>  
-  
--   <xref:System.Speech.Recognition.SemanticResultValue>  
-  
--   <xref:System.String>  
-  
- Each of the implicit casts is equivalent to calling the constructor.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.GrammarBuilder" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Instances of this class can also be obtained by implicit conversions from other classes or by combining a <xref:System.Speech.Recognition.GrammarBuilder> object with a second object to from a new <xref:System.Speech.Recognition.GrammarBuilder>. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> methods.  
-  
- To add constraints to an existing <xref:System.Speech.Recognition.GrammarBuilder>, use the <xref:System.Speech.Recognition.GrammarBuilder.Add%2A>, <xref:System.Speech.Recognition.GrammarBuilder.Append%2A>, <xref:System.Speech.Recognition.GrammarBuilder.AppendDictation%2A>, <xref:System.Speech.Recognition.GrammarBuilder.AppendRuleReference%2A>, and <xref:System.Speech.Recognition.GrammarBuilder.AppendWildcard%2A> methods, and the <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operator.  
-  
-> [!IMPORTANT]
->  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
-  
- For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Append">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Appends a grammar element to the current sequence of grammar elements.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use these methods to append grammar elements to an existing <xref:System.Speech.Recognition.GrammarBuilder>. As you create grammar elements, you can append them to the existing builder to progressively develop the constraints for a speech recognition grammar. Each element is added to the end of the current sequence of elements.  
-  
- This method has overloads for appending <xref:System.Speech.Recognition.GrammarBuilder>, <xref:System.String>, <xref:System.Speech.Recognition.Choices>, <xref:System.Speech.Recognition.SemanticResultKey>, and <xref:System.Speech.Recognition.SemanticResultValue> objects.  
-  
-> [!IMPORTANT]
->  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
-  
- For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new <see cref="T:System.Speech.Recognition.GrammarBuilder" /> that contains a sequence of two grammar elements.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The static <xref:System.Speech.Recognition.GrammarBuilder.Add%2A> methods provide another mechanism by which you can combine various types to create diversity and flexibility in grammars built with <xref:System.Speech.Recognition.GrammarBuilder>. These methods correspond to the static <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> methods, which are also defined on the <xref:System.Speech.Recognition.GrammarBuilder> class. The order of the parameters determines the order of the elements in the new <xref:System.Speech.Recognition.GrammarBuilder>.  
-  
- A <xref:System.Speech.Recognition.GrammarBuilder> can also be obtained from <xref:System.Speech.Recognition.Choices>, <xref:System.Speech.Recognition.SemanticResultKey>, <xref:System.Speech.Recognition.SemanticResultValue>, and [String](http://go.microsoft.com/fwlink/?LinkId=159733) objects. For more information, see the <xref:System.Speech.Recognition.GrammarBuilder.op_Implicit%2A> and <xref:System.Speech.Recognition.GrammarBuilder.op_Addition%2A> operators.  
-  
-> [!IMPORTANT]
->  The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
-  
- For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="op_Addition">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new <see cref="T:System.Speech.Recognition.GrammarBuilder" /> that corresponds to a sequence of two grammar elements.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The order of the operands determines the order of the elements in the new <xref:System.Speech.Recognition.GrammarBuilder>.  
-  
-> [!IMPORTANT]
->  Caution is recommended when combining <xref:System.Speech.Recognition.Choices> or <xref:System.Speech.Recognition.GrammarBuilder> objects that contain <xref:System.Speech.Recognition.SemanticResultValue> or <xref:System.Speech.Recognition.SemanticResultKey> instances with other grammar elements. The speech recognizer can throw an exception when using a speech recognition grammar that contains duplicate semantic elements with the same key name or multiple semantic elements that could repeatedly modify the value of the same semantic element. For more information about building a speech recognition grammar that contains semantic information, see [Using SemanticResultKey and SemanticResultValue Objects](http://msdn.microsoft.com/en-us/0fea1236-5261-4608-89b3-9ce9ffc22a1c).  
-  
- For more information about building and using speech recognition grammars, see [Speech Recognition](http://msdn.microsoft.com/en-us/6a7dc524-07fc-4862-8d48-8c10dc64b919) and [Creating GrammarBuilder Grammars](http://msdn.microsoft.com/en-us/7e2cc577-cb05-4318-9da3-7c8675d3d9ae).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AppendDictation">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Appends a dictation grammar to the current sequence of grammar elements.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Speech.Recognition.GrammarBuilder.AppendDictation%2A> methods allow you to append a dictation grammar as a rule to a <xref:System.Speech.Recognition.GrammarBuilder>.  
-  
- For more information on dictation grammars, see <xref:System.Speech.Recognition.DictationGrammar>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AppendRuleReference">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Appends a grammar file or a grammar rule to the current sequence of grammar elements.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Speech.Recognition.GrammarBuilder.AppendRuleReference%2A> methods can append a grammar file or a grammar rule from a file. These methods allow applications to make use of pre-deployed or publicly available grammar rules. The application must have read access to the location of specified grammar files.  
-  
- These methods can read a speech recognition grammar from the following formats.  
-  
--   XML-format files that conform to the W3C [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201761)  
-  
--   Binary files that conform to the Microsoft Speech Recognition Grammar Binary Format (.cfg file extension)  
-  
- Compiling an XML-format SRGS grammar file to a binary grammar file with the .cfg extension can reduce the time consumed by searches for a match, especially if the grammar requires recognition of a large number of words and phrases. For information about compiling SRGS grammars to the CFG binary format, see <xref:System.Speech.Recognition.SrgsGrammar.SrgsGrammarCompiler>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

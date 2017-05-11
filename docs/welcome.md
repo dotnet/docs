@@ -4,7 +4,7 @@ description: Getting started with the .NET family of technologies.
 keywords: .NET, .NET Core, getting started, news
 author: richlander
 ms.author: mairaw
-ms.date: 04/06/2017
+ms.date: 05/11/2017
 ms.topic: article
 ms.prod: .net
 ms.devlang: dotnet
@@ -20,6 +20,10 @@ Build many types of apps with .NET, such as cloud, IoT, and games using free cro
 ## News
 
 - [Introducing .NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/)
+- [Announcing .NET Core 2.0 Preview 1](https://blogs.msdn.microsoft.com/dotnet/2017/05/10/announcing-net-core-2-0-preview-1/)
+- [Announcing ASP.NET 2.0 Preview 1 and Updates for .NET Web Developers](https://blogs.msdn.microsoft.com/webdev/2017/05/10/aspnet-2-preview-1/)
+- [A fresh update to Visual Studio 2017 and the next preview](https://blogs.msdn.microsoft.com/visualstudio/2017/05/10/update-to-visual-studio-2017-and-next-preview/)
+- [Visual Studio for Mac: now generally available](https://blogs.msdn.microsoft.com/visualstudio/2017/05/10/visual-studio-for-mac-now-generally-available/)
 - [Announcing .NET Core Tools 1.0 (.NET Core 1.0.4, .NET Core 1.1.1, .NET Core SDK 1.0.1)](https://blogs.msdn.microsoft.com/dotnet/2017/03/07/announcing-net-core-tools-1-0/)
 - [Announcing Visual Studio 2017 General Availability](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/announcing-visual-studio-2017-general-availability-and-more/)
 - [What's new for .NET Core and Visual Studio 2017 (video)](https://channel9.msdn.com/events/Visual-Studio/Visual-Studio-2017-Launch/T108)
@@ -28,6 +32,7 @@ Build many types of apps with .NET, such as cloud, IoT, and games using free cro
 - [Announcing F# 4.1 and the Visual F# Tools for Visual Studio 2017](https://blogs.msdn.microsoft.com/dotnet/2017/03/07/announcing-f-4-1-and-the-visual-f-tools-for-visual-studio-2017-2/)
 - [Open Source Xamarin, Ready for you!](https://blog.xamarin.com/live-from-evolve-open-source-xamarin-ready-for-you/)
 - [The week in .NET](https://blogs.msdn.microsoft.com/dotnet/tag/week-in-net/)
+- [Build 2017 on Channel 9 - Video on Microsoft's latest technologies and news!](https://channel9.msdn.com/?wt.mc_id=build_hp#programGuide)
 
 ## Documentation
 

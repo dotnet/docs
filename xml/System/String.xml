@@ -10795,10 +10795,9 @@ String 'This is a string.' in domain 'NewDomain': 75CC8236
   
  The following example defines a string containing the characters that serve as delimiters in a delimited string. It then calls the <xref:System.String.ToCharArray%2A> method to create a character array that can be passed to the <xref:System.String.Split%28System.Char%5B%5D%29> method to separate the delimited string into its individual substrings.  
   
- [!code-cpp[StringSplit2#1](~/samples/snippets/cpp/VS_Snippets_CLR/StringSplit2/CPP/stringsplit2.cpp#1)]
- [!code-csharp[StringSplit2#1](~/samples/snippets/csharp/VS_Snippets_CLR/StringSplit2/CS/Split1.cs#1)]
- <!-- TODO: review snippet reference [!code-csharp[StringSplit2#1](~/samples/snippets/csharp/VS_Snippets_CLR/StringSplit2/CS/stringsplit2.cs#1)]  -->
- [!code-vb[StringSplit2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/StringSplit2/VB/stringsplit2.vb#1)]  
+ [!code-cpp[StringSplit2#1](~/samples/snippets/cpp/VS_Snippets_CLR/StringSplit2/CPP/stringsplit2.cpp#1)] 
+ [!code-csharp[StringSplit2#1](~/samples/snippets/csharp/VS_Snippets_CLR/StringSplit2/CS/stringsplit2.cs#1)] 
+ [!code-vb[StringSplit2#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/StringSplit2/VB/stringsplit2.vb#1)]   
   
  ]]></format>
         </remarks>

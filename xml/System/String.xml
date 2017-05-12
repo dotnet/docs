@@ -5178,7 +5178,7 @@ index[,alignment][ :formatString] }
 > [!IMPORTANT]
 >  If two string objects are equal, the <xref:System.String.GetHashCode%2A> method returns identical values. However, there is not a unique hash code value for each unique string value. Different strings can return the same hash code.  
 >   
->  The hash code itself is not guaranteed to be stable. Hash codes for identical strings can differ across versions of the .NET Framework and across platforms (such as 32-bit and 64-bit) for a single version of the .NET Framework. In some cases, they can even differ by application domain.  
+>  The hash code itself is not guaranteed to be stable. Hash codes for identical strings can differ across versions of the .NET Framework and across platforms (such as 32-bit and 64-bit) for a single version of the .NET Framework. In some cases, they can even differ by application domain. This implies two subsequent runs of the same program may return different hash codes.  
 >   
 >  As a result, hash codes should never be used outside of the application domain in which they were created, they should never be used as key fields in a collection, and they should never be persisted.  
 >   

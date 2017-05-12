@@ -29,26 +29,29 @@ Reference return values can produce more compact code, as well as allow an objec
 
 There are some restrictions on the value that a method can return as a reference return value. These include:
 
-- The return value cannot be a local variable in the procedure that returns it. It most have global scope. Attempting to return a local variable generates compiler error CS8168, "Cannot return local 'obj' by reference because it is not a ref local."
+- The return value cannot be `void`. Attempting to define a method with a `void` reference return value generates compiler error CS1547, "Keyword 'void' cannot be used in this context."
+ 
+- The return value cannot be a local variable in the procedure that returns it; it must have global scope. Attempting to return a local variable generates compiler error CS8168, "Cannot return local 'obj' by reference because it is not a ref local."
 
 - The return value cannot be a `null`. Attempting to return `null` generates compiler error CS8156, "An expression cannot be used in this context because it may not be returned by reference."
- 
-- The return value cannot be a null reference (an uninitialized object). Attempting to return a null reference generates compiler error CS8168, "Cannot return local 'obj' by reference because it is not a ref local."
- 
-- The return value cannot be a constant, an enumeration member, or a field or property of a `class` or `struct`. Attempting to return these generates compiler error CS8156, "An expression cannot be used in this context because it may not be returned by reference."  
 
+   If a method with a ref return needs to return a null value, you can either return a null (uninstantiated) value for a reference type or a [nullable type](../nullable-types/index.md) for a value type.
+ 
+- The return value cannot be a constant, an enumeration member, or a property of a `class` or `struct`. Attempting to return these generates compiler error CS8156, "An expression cannot be used in this context because it may not be returned by reference."
+
+In addition, because an asynchronous method may return before it has finished execution and its return value is known, reference return values are not allowed on `async` methods.
+ 
 ## Defining a ref return value
 
 You define a ref return value by adding the [ref](language-reference/keywords/ref.md) keyword to the return type of the method signature. For example, the following signature indicates that the `GetContactInformation` property returns a reference to a `Person` object to the caller:
 
-```cs
+```csharp
 public ref Person GetContactInformation(string fname, string lname);
 ```
 
+In addition, the name of the object returned by each [return](language-reference/keywords/return.md) statement in the method body must be preceded by the [ref](language-reference/keywords/ref.md) keyword. For example, the following `return` statement returns a `Person` object named `p` by reference:
 
-In addition to including the `ref` keyword in the method signature, the name of the object returned by each [return](language-reference/keywords/return.md) statement in the method body must be preceded by the [ref](language-reference/keywords/ref.md) keyword. For example, the following `return` statement returns a `Person` object named `p` by reference:
-
-```cs
+```csharp
 return ref p;
 ```
 
@@ -60,18 +63,23 @@ A caller can handle a ref return value in either of two ways:
 
 - As a reference return value. The caller must define the variable to which the reference return value is assigned as a [ref local](#ref-local), and any changes to the value returned by the method call are reflected in the state of the called type. 
 
-### Ref locals
+## Ref locals
 
 To handle the reference return value as a reference, the caller must declare the value to be a *ref local* by using the `ref` keyword. For example, if the value returned by the `Person.GetContactInfomation` method is to be consumed as a reference rather than a value, the method call appears as:
 
-```cs
-ref Person p = Person.GetContactInformation("Brandie", "Best");
+```csharp
+ref Person p = ref contacts.GetContactInformation("Brandie", "Best");
 ```
-Subsequent changes to the `Person` object returned by the method are reflected in the 
 
-## Ref return values: an example
+Note that the `ref` keyword is used both before the local variable declaration *and* before the method call. Failure to include both `ref` keywords in the variable declaration and assignment results in compiler error CS8172, "Cannot initialize a by-reference variable with a value." 
+ 
+Subsequent changes to the `Person` object returned by the method are reflected in the `contacts` object.
 
-The following example defines a `NumberStore` class that stores an array of integer values. The `FindNumber` method returns by reference the first number that is greater than or equal to the number passed as an argument. 
+If `p` is not defined as a ref local by using the `ref` keyword, any changes made to `p` by the caller are not reflected in the `contacts` object.
+ 
+## Ref returns and ref locals: an example
+
+The following example defines a `NumberStore` class that stores an array of integer values. The `FindNumber` method returns by reference the first number that is greater than or equal to the number passed as an argument. If no number is greater than or equal to the argument, the method returns the number in index 0. 
 
 [!CODE-cs[ref-returns](../../samples/snippets/csharp/programming-guide/ref-returns/ref-returns1.cs#1)]
 
@@ -79,10 +87,8 @@ The following example calls the `NumberStore.FindNumber` method to retrieve the 
 
 [!CODE-cs[ref-returns](../../samples/snippets/csharp/programming-guide/ref-returns/ref-returns1.cs#2)]
 
-Without support for reference return values, such an operation is usually performed by returning the index of the array element along with its value. The caller can then use this index to modify the value in a separate method call. However, the caller can also modify the index to access and possibly modify other array values. In contrast, 
+Without support for reference return values, such an operation is usually performed by returning the index of the array element along with its value. The caller can then use this index to modify the value in a separate method call. However, the caller can also modify the index to access and possibly modify other array values.  
  
-- Returning the entire array to the caller. In this case, the caller can 
-- 
 ## See also
 
 [ref keyword](language-reference/keywords/ref.md)

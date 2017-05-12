@@ -33,7 +33,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # ref (C# Reference)
-<<<<<<< Updated upstream
+
 The `ref` keyword indicates a value that is passed by reference. It is used in three different contexts: 
 
 - In a method signature and in a method call, to pass an argument to a method by reference. See [Passing an argument by reference](#passing-an-argument-by-reference) for more information.
@@ -41,15 +41,6 @@ The `ref` keyword indicates a value that is passed by reference. It is used in t
 - In a method signature, to return a value to the caller by reference. See [Reference return values](#reference-return-values) for more information.
 
 - In a member body, to indicate that a reference return value is stored locally as a reference that the caller intends to modify. See [Ref locals](#ref-locals) for more information.
-=======
-The `ref` keyword indicates that a value is passed by reference. It is used in three different contexts: 
-
-- In a method signature and in a method call, to pass an argument to a method by reference. See [Passing an argument by reference](passing-an-argument-by-reference) for more information.
-
-- In a method signature, to return a value to the caller by reference. See [Reference return values](reference-return-values) for more information.
-
-- In a member body, to indicate that a reference return value is stored locally as a reference that the caller intends to modify. See [Ref locals](ref-locals) for more information.
->>>>>>> Stashed changes
 
 ## Passing an argument by reference
 
@@ -84,19 +75,58 @@ Members of a class can't have signatures that differ only by `ref` and `out`. A 
   
 -   Iterator methods, which include a [yield return](../../../csharp/language-reference/keywords/yield.md) or `yield break` statement.  
   
-### Example
+## Passing an argument by reference: An example
 
-The previous examples pass value types by reference. You can also use the `ref` keyword to pass reference types by reference. Passing a reference type by reference enables the called method to replace the object in the caller to which the reference parameter refers. The storage location of the object is passed to the method as the value of the reference parameter. If you change the value in the storage location of the parameter (to point to a new object), you also change the storage location to which the caller refers. The following example passes an instance of a reference type as a `ref` parameter. For more information about how to pass reference types by value and by reference, see [Passing Reference-Type Parameters](../../../csharp/programming-guide/classes-and-structs/passing-reference-type-parameters.md).  
+The previous examples pass value types by reference. You can also use the `ref` keyword to pass reference types by reference. Passing a reference type by reference enables the called method to replace the object to which the reference parameter refers in the caller. The storage location of the object is passed to the method as the value of the reference parameter. If you change the value in the storage location of the parameter (to point to a new object), you also change the storage location to which the caller refers. The following example passes an instance of a reference type as a `ref` parameter.   
   
  [!code-cs[csrefKeywordsMethodParams#8](../../../csharp/language-reference/keywords/codesnippet/CSharp/ref_4.cs)]  
+
+For more information about how to pass reference types by value and by reference, see [Passing Reference-Type Parameters](../../../csharp/programming-guide/classes-and-structs/passing-reference-type-parameters.md).
   
 ## Reference return values
 
-Reference return values (or ref returns) are values that a method returns by reference to the caller by reference. That is, the caller can modify the value returned by a method, and that change is reflected in the state of the object that contains the method. The reference return value must be stored to a variable that is explicitly defined as a [ref local](ref-locals).
+Reference return values (or ref returns) are values that a method returns by reference to the caller. That is, the caller can modify the value returned by a method, and that change is reflected in the state of the object that contains the method. 
 
+A reference return value is defined by using the `ref` keyword:
+
+- In the method signature. For example, the following method signature inidicates that the `GetCurrentPrice` method returns a <xref:System.Decimal> value by reference.
+
+   ```csharp
+   public ref decimal GetCurrentValue()
+   ``` 
+- Before each `return` statement in the method. For example:
+ 
+   ```csharp
+   ref return Decimal.Zero;
+   ``` 
+
+In order for the caller to modify the an object's state, the reference return value must be stored to a variable that is explicitly defined as a [ref local](ref-locals). 
+
+For an example, see [A ref returns and ref locals example](#a-ref-returns-and-ref-locals-example)
 
 ## Ref locals
 
+A ref local is a reference return value that the caller chooses to handle as a returned reference rather than a returned value. Any modifications to the value of the ref local are reflected in the state of the object whose method returned the value by reference.
+
+You define a ref local by using the `ref` keyword before the variable declaration, as well as immediately before the call to the method that returns the value by reference. 
+
+For example, the following statement defines a ref local value that is returned by a method named `GetEstimatedValue`:
+
+```csharp
+ref decimal estValue = ref Building.GetEstimatedValue();
+```
+
+Note that the `ref` keyword must be used in both places, or the compiler generates error CS8172, "Cannot initialize a by-reference variable with a value." 
+ 
+## A ref returns and ref locals example
+
+The following example defines a `Book` class that has two <xref:System.String> fields, `Title` and `Author`. It also defines a `BookCollection` class that includes a private array of `Book` objects. Individual book objects are returned by reference by calling its `GetBookByTitle` method.
+
+[!code-cs[csrefreturns](../../../csharp/language-reference/keywords/codesnippet/CSharp/ref_5.cs#1)]  
+
+When the caller stores the value returned by the `GetBookByTitle` method as a ref local, changes that the caller makes to the return value are reflected in the `BookCollection` object, as the following example shows.
+
+[!code-cs[csrefreturns](../../../csharp/language-reference/keywords/codesnippet/CSharp/ref_5.cs#2)]  
 
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  

@@ -20,7 +20,7 @@
  AntiAlias and HighQuality are equivalent and specify rendering with smoothing applied.  
   
 > [!NOTE]
->  When the <xref:System.Drawing.Graphics.SmoothingMode%2A?displayProperty=fullName> property is specified by using the <xref:System.Drawing.Drawing2D.SmoothingMode> enumeration, it does not affect text. To set the text rendering quality, use the <xref:System.Drawing.Graphics.TextRenderingHint%2A?displayProperty=fullName> property and the <xref:System.Drawing.Text.TextRenderingHint> enumeration.  
+>  When the <xref:System.Drawing.Graphics.SmoothingMode%2A?displayProperty=fullName> property is specified by using the <xref:System.Drawing.Drawing2D.SmoothingMode.None> enumeration, it does not affect text. To set the text rendering quality, use the <xref:System.Drawing.Graphics.TextRenderingHint%2A?displayProperty=fullName> property and the <xref:System.Drawing.Text.TextRenderingHint> enumeration.  
   
 > [!NOTE]
 >  When the<xref:System.Drawing.Graphics.SmoothingMode%2A?displayProperty=fullName> property is specified by using the <xref:System.Drawing.Drawing2D.SmoothingMode> enumeration, it does not affect areas filled by a path gradient brush. Areas filled by using a <xref:System.Drawing.Drawing2D.PathGradientBrush> object are rendered the same way (aliased) regardless of the setting for the <xref:System.Drawing.Graphics.SmoothingMode%2A?displayProperty=fullName> property.  

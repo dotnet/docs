@@ -112,7 +112,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Services.Protocols.SoapMessage.ContentType%2A> property can only be accessed in the <xref:System.Web.Services.Protocols.SoapMessageStage> and <xref:System.Web.Services.Protocols.SoapMessageStage> stages; otherwise, an <xref:System.InvalidOperationException> is thrown.  
+ The <xref:System.Web.Services.Protocols.SoapMessage.ContentType%2A> property can only be accessed in the <xref:System.Web.Services.Protocols.SoapMessageStage.BeforeSerialize> and <xref:System.Web.Services.Protocols.SoapMessageStage.BeforeDeserialize> stages; otherwise, an <xref:System.InvalidOperationException> is thrown.  
   
  Use the <xref:System.Web.Services.Protocols.SoapMessage.ContentEncoding%2A> property, instead of the <xref:System.Web.Services.Protocols.SoapMessage.ContentType%2A> property to provide supplementary information about the encoding of a SOAP message.  
   
@@ -149,7 +149,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The asserted stage is different for XML Web service clients and XML Web service methods. An XML Web service method's in parameters are available after the SOAP request is deserialized in the <xref:System.Web.Services.Protocols.SoapMessageStage> stage. For an XML Web service client, the in parameters are available prior to the SOAP request serialization process in the <xref:System.Web.Services.Protocols.SoapMessageStage> stage.  
+ The asserted stage is different for XML Web service clients and XML Web service methods. An XML Web service method's in parameters are available after the SOAP request is deserialized in the <xref:System.Web.Services.Protocols.SoapMessageStage.AfterDeserialize> stage. For an XML Web service client, the in parameters are available prior to the SOAP request serialization process in the <xref:System.Web.Services.Protocols.SoapMessageStage.BeforeSerialize> stage.  
   
  <xref:System.Web.Services.Protocols.SoapMessage.EnsureInStage%2A> can be called during any <xref:System.Web.Services.Protocols.SoapMessageStage>, however an <xref:System.InvalidOperationException> is thrown when in parameters are not available.  
   
@@ -178,7 +178,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The asserted stage is different for XML Web service clients and XML Web service methods. An XML Web service method's out parameters are available prior to the SOAP response serialization process in the <xref:System.Web.Services.Protocols.SoapMessageStage> stage. In an XML Web service client, the out parameters are available after the SOAP response deserialization process in the <xref:System.Web.Services.Protocols.SoapMessageStage> stage.  
+ The asserted stage is different for XML Web service clients and XML Web service methods. An XML Web service method's out parameters are available prior to the SOAP response serialization process in the <xref:System.Web.Services.Protocols.SoapMessageStage.BeforeSerialize> stage. In an XML Web service client, the out parameters are available after the SOAP response deserialization process in the <xref:System.Web.Services.Protocols.SoapMessageStage.AfterDeserialize> stage.  
   
  <xref:System.Web.Services.Protocols.SoapMessage.EnsureOutStage%2A> can be called during any <xref:System.Web.Services.Protocols.SoapMessageStage>, however an <xref:System.InvalidOperationException> is thrown when out parameters are not available.  
   
@@ -217,7 +217,7 @@
    
   
 ## Examples  
- The following example asserts that the current <xref:System.Web.Services.Protocols.SoapMessageStage> is either <xref:System.Web.Services.Protocols.SoapMessageStage> or <xref:System.Web.Services.Protocols.SoapMessageStage>; if it is not, an exception is thrown.  
+ The following example asserts that the current <xref:System.Web.Services.Protocols.SoapMessageStage> is either <xref:System.Web.Services.Protocols.SoapMessageStage.BeforeSerialize> or <xref:System.Web.Services.Protocols.SoapMessageStage.BeforeDeserialize>; if it is not, an exception is thrown.  
   
  [!code-cpp[Classic SoapMessage.EnsureStage Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic SoapMessage.EnsureStage Example/CPP/source.cpp#1)]
  [!code-csharp[Classic SoapMessage.EnsureStage Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapMessage.EnsureStage Example/CS/source.cs#1)]
@@ -280,7 +280,7 @@
 ## Remarks  
  The <xref:System.Web.Services.Protocols.SoapMessage.GetInParameterValue%2A> property is only accessible when in parameters are available. ASP.NET throws <xref:System.InvalidOperationException> when accessing the <xref:System.Web.Services.Protocols.SoapMessage.GetInParameterValue%2A> property if in parameters are not available.  
   
- In a <xref:System.Web.Services.Protocols.SoapClientMessage> the in parameters are available in the <xref:System.Web.Services.Protocols.SoapMessageStage><xref:System.Web.Services.Protocols.SoapMessageStage>. In a <xref:System.Web.Services.Protocols.SoapServerMessage> the in parameters are available in the <xref:System.Web.Services.Protocols.SoapMessageStage><xref:System.Web.Services.Protocols.SoapMessageStage>.  
+ In a <xref:System.Web.Services.Protocols.SoapClientMessage> the in parameters are available in the <xref:System.Web.Services.Protocols.SoapMessageStage.BeforeSerialize><xref:System.Web.Services.Protocols.SoapMessageStage>. In a <xref:System.Web.Services.Protocols.SoapServerMessage> the in parameters are available in the <xref:System.Web.Services.Protocols.SoapMessageStage.AfterDeserialize><xref:System.Web.Services.Protocols.SoapMessageStage>.  
   
    
   
@@ -292,7 +292,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The <paramref name="index" /> parameter is less than 0 or greater than the length of the parameters array.</exception>
-        <exception cref="T:System.InvalidOperationException">Accessing this property when in parameters are not available. For details see the Remarks section.</exception>
+        <exception cref="T:System.InvalidOperationException">Accessing this property when in parameters are not available.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetOutParameterValue">
@@ -321,7 +321,7 @@
 ## Remarks  
  If out parameters are not available, ASP.NET throws an <xref:System.InvalidOperationException> when accessing the <xref:System.Web.Services.Protocols.SoapMessage.GetOutParameterValue%2A> property.  
   
- In a <xref:System.Web.Services.Protocols.SoapClientMessage> the out parameters are available in the <xref:System.Web.Services.Protocols.SoapMessageStage><xref:System.Web.Services.Protocols.SoapMessageStage>. In a <xref:System.Web.Services.Protocols.SoapServerMessage> the out parameters are available in the <xref:System.Web.Services.Protocols.SoapMessageStage> of the <xref:System.Web.Services.Protocols.SoapMessageStage>.  
+ In a <xref:System.Web.Services.Protocols.SoapClientMessage> the out parameters are available in the <xref:System.Web.Services.Protocols.SoapMessageStage.AfterDeserialize><xref:System.Web.Services.Protocols.SoapMessageStage>. In a <xref:System.Web.Services.Protocols.SoapServerMessage> the out parameters are available in the <xref:System.Web.Services.Protocols.SoapMessageStage.BeforeSerialize> of the <xref:System.Web.Services.Protocols.SoapMessageStage>.  
   
    
   
@@ -333,7 +333,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The <paramref name="index" /> parameter is greater than the length of the parameters array.</exception>
-        <exception cref="T:System.InvalidOperationException">Accessing this property when out parameters are not available. For details see the Remarks section.</exception>
+        <exception cref="T:System.InvalidOperationException">Accessing this property when out parameters are not available.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetReturnValue">
@@ -359,7 +359,7 @@
 ## Remarks  
  If a return value is not available, ASP.NET throws <xref:System.InvalidOperationException> when accessing the <xref:System.Web.Services.Protocols.SoapMessage.GetReturnValue%2A> property.  
   
- In a <xref:System.Web.Services.Protocols.SoapClientMessage> the return value is available when the <xref:System.Web.Services.Protocols.SoapMessageStage> value is <xref:System.Web.Services.Protocols.SoapMessageStage>. In a <xref:System.Web.Services.Protocols.SoapServerMessage> the return value is available when <xref:System.Web.Services.Protocols.SoapMessageStage> value is <xref:System.Web.Services.Protocols.SoapMessageStage>.  
+ In a <xref:System.Web.Services.Protocols.SoapClientMessage> the return value is available when the <xref:System.Web.Services.Protocols.SoapMessageStage> value is <xref:System.Web.Services.Protocols.SoapMessageStage.AfterDeserialize>. In a <xref:System.Web.Services.Protocols.SoapServerMessage> the return value is available when <xref:System.Web.Services.Protocols.SoapMessageStage> value is <xref:System.Web.Services.Protocols.SoapMessageStage.BeforeSerialize>.  
   
    
   
@@ -374,7 +374,7 @@
   
  OR  
   
- The return value is not available. For details see the Remarks section</exception>
+ The return value is not available.</exception>
       </Docs>
     </Member>
     <Member MemberName="Headers">
@@ -399,7 +399,7 @@
 ## Remarks  
  SOAP headers are an optional portion of a SOAP request or SOAP response. For more details on using SOAP headers in XML Web services created using ASP.NET and their clients, see the <xref:System.Web.Services.Protocols.SoapHeader> class.  
   
- Although the <xref:System.Web.Services.Protocols.SoapMessage.Headers%2A> property can be accessed at any stage, it is only populated with the SOAP header information in the <xref:System.Web.Services.Protocols.SoapMessageStage> and <xref:System.Web.Services.Protocols.SoapMessageStage> stages.  
+ Although the <xref:System.Web.Services.Protocols.SoapMessage.Headers%2A> property can be accessed at any stage, it is only populated with the SOAP header information in the <xref:System.Web.Services.Protocols.SoapMessageStage.BeforeSerialize> and <xref:System.Web.Services.Protocols.SoapMessageStage.AfterDeserialize> stages.  
   
  ]]></format>
         </remarks>
@@ -425,7 +425,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although <xref:System.Web.Services.Protocols.SoapMessage.MethodInfo%2A> can be accessed during any <xref:System.Web.Services.Protocols.SoapMessageStage>, it only has data during <xref:System.Web.Services.Protocols.SoapMessageStage> and <xref:System.Web.Services.Protocols.SoapMessageStage>.  
+ Although <xref:System.Web.Services.Protocols.SoapMessage.MethodInfo%2A> can be accessed during any <xref:System.Web.Services.Protocols.SoapMessageStage>, it only has data during <xref:System.Web.Services.Protocols.SoapMessageStage.AfterDeserialize> and <xref:System.Web.Services.Protocols.SoapMessageStage.BeforeSerialize>.  
   
    
   
@@ -502,7 +502,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For a <xref:System.Web.Services.Protocols.SoapServerMessage>, the <xref:System.Web.Services.Protocols.SoapServerMessage.SoapVersion%2A> property is guaranteed to be valid after the <xref:System.Web.Services.Protocols.SoapMessageStage> stage. In the <xref:System.Web.Services.Protocols.SoapMessageStage> stage the property is available, however the SOAP message has not been completely processed and SOAP extensions that may alter the contents of the SOAP message have not run.  
+ For a <xref:System.Web.Services.Protocols.SoapServerMessage>, the <xref:System.Web.Services.Protocols.SoapServerMessage.SoapVersion%2A> property is guaranteed to be valid after the <xref:System.Web.Services.Protocols.SoapMessageStage.BeforeDeserialize> stage. In the <xref:System.Web.Services.Protocols.SoapMessageStage.BeforeDeserialize> stage the property is available, however the SOAP message has not been completely processed and SOAP extensions that may alter the contents of the SOAP message have not run.  
   
  ]]></format>
         </remarks>

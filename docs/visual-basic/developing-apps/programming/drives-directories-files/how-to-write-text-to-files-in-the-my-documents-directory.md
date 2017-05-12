@@ -58,7 +58,7 @@ The `My.Computer.FileSystem.SpecialDirectories` object allows you to access spec
  Replace `test.txt` with the name of the file you want to write to.  
   
 ## Robust Programming  
- This code rethrows all the exceptions that may occur when writing text to the file. You can reduce the likelihood of exceptions by using Windows Forms controls such as the [OpenFileDialog](http://msdn.microsoft.com/library/d2efa832-a272-42ff-aa26-c4ac13ff59ba) and the [SaveFileDialog](http://msdn.microsoft.com/library/6f5d9321-37d7-4448-ac4c-a33c42b2a766) components that limit the user choices to valid file names. Using these controls is not foolproof, however. The file system can change between the time the user selects a file and the time that the code executes. Exception handling is therefore nearly always necessary when with working with files.  
+ This code rethrows all the exceptions that may occur when writing text to the file. You can reduce the likelihood of exceptions by using Windows Forms controls such as the [OpenFileDialog](../../../../framework/winforms/controls/openfiledialog-component-windows-forms.md) and the [SaveFileDialog](../../../../framework/winforms/controls/savefiledialog-component-windows-forms.md) components that limit the user choices to valid file names. Using these controls is not foolproof, however. The file system can change between the time the user selects a file and the time that the code executes. Exception handling is therefore nearly always necessary when with working with files.  
   
 ## .NET Framework Security  
  If you are running in a partial-trust context, the code might throw an exception due to insufficient privileges. For more information, see [Code Access Security Basics](https://msdn.microsoft.com/library/33tceax8).  

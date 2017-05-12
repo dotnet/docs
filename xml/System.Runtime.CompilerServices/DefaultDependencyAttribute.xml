@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
   </Base>
@@ -30,9 +34,9 @@
   
  Apply the <xref:System.Runtime.CompilerServices.DefaultDependencyAttribute> attribute to a dependent assembly to determine the preferred default binding.  
   
- A dependency that is likely to be loaded (<xref:System.Runtime.CompilerServices.LoadHint>) will cause Ngen.exe to bind to that dependency.  Using this hint allows Ngen.exe to generate code that will result in a reduced working set and improved throughput but at the cost of always loading the dependency when the parent assembly is loaded.  
+ A dependency that is likely to be loaded (<xref:System.Runtime.CompilerServices.LoadHint.Always>) will cause Ngen.exe to bind to that dependency.  Using this hint allows Ngen.exe to generate code that will result in a reduced working set and improved throughput but at the cost of always loading the dependency when the parent assembly is loaded.  
   
- When you apply the <xref:System.Runtime.CompilerServices.DependencyAttribute> attribute to an assembly with a value of <xref:System.Runtime.CompilerServices.LoadHint>, the native image generation service consults the dependent assembly for its preferred default binding, which is specified by the <xref:System.Runtime.CompilerServices.DefaultDependencyAttribute> attribute.  
+ When you apply the <xref:System.Runtime.CompilerServices.DependencyAttribute> attribute to an assembly with a value of <xref:System.Runtime.CompilerServices.LoadHint.Default>, the native image generation service consults the dependent assembly for its preferred default binding, which is specified by the <xref:System.Runtime.CompilerServices.DefaultDependencyAttribute> attribute.  
   
    
   
@@ -59,6 +63,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="loadHintArgument" Type="System.Runtime.CompilerServices.LoadHint" />
@@ -92,6 +100,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.LoadHint</ReturnType>

@@ -54,6 +54,31 @@
         <exception cref="T:System.Windows.Xps.XpsWriterException">No asynchronous write operation is in progress.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateVisualsCollator">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Windows.Xps.VisualsToXpsDocument" /> that can write <see cref="T:System.Windows.Media.Visual" /> objects to a document or print queue.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Xps.VisualsToXpsDocument> writes to the same target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue> as the <xref:System.Windows.Xps.XpsDocumentWriter> that creates the <xref:System.Windows.Xps.VisualsToXpsDocument>.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Xps.XpsDocumentWriter.CreateVisualsCollator%2A> method.  
+  
+ [!code-csharp[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#createandwritetovisualscollator)]
+ [!code-vb[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#createandwritetovisualscollator)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateVisualsCollator">
       <MemberSignature Language="C#" Value="public override System.Windows.Documents.Serialization.SerializerWriterCollator CreateVisualsCollator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Documents.Serialization.SerializerWriterCollator CreateVisualsCollator() cil managed" />
@@ -386,9 +411,9 @@
   
  Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds the <xref:System.Windows.Documents.FixedDocument> elements in the source to the sequence of <xref:System.Windows.Documents.FixedDocument> elements in the target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue>.  
   
- If `notificationLevel` is specified as <xref:System.Windows.Xps.XpsDocumentNotificationLevel>, notifications are produced only when the document is serialized, not printed.  To receive notifications the document must be reserialized.  When a document is reserialized all content from the <xref:System.IO.Packaging.Package> that is not required to be preserved by the [XML Paper Specification (XPS)](http://go.microsoft.com/fwlink/?LinkID=65761) is removed.  The reserialization will also remove all extensions from the <xref:System.Windows.Documents.FixedPage> markup, including any extended [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] content.  
+ If `notificationLevel` is specified as <xref:System.Windows.Xps.XpsDocumentNotificationLevel.ReceiveNotificationEnabled>, notifications are produced only when the document is serialized, not printed.  To receive notifications the document must be reserialized.  When a document is reserialized all content from the <xref:System.IO.Packaging.Package> that is not required to be preserved by the [XML Paper Specification (XPS)](http://go.microsoft.com/fwlink/?LinkID=65761) is removed.  The reserialization will also remove all extensions from the <xref:System.Windows.Documents.FixedPage> markup, including any extended [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] content.  
   
- If `notificationLevel` is specified as <xref:System.Windows.Xps.XpsDocumentNotificationLevel> the document will not be reserialized and any extended content will be preserved, even when printed.  
+ If `notificationLevel` is specified as <xref:System.Windows.Xps.XpsDocumentNotificationLevel.ReceiveNotificationDisabled> the document will not be reserialized and any extended content will be preserved, even when printed.  
   
  By design this <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> method does not call the <xref:System.Windows.Xps.XpsDocumentWriter.WritingPrintTicketRequired> event.  
   
@@ -832,9 +857,9 @@
   
  Although the <xref:System.Windows.Xps.Packaging.XpsDocument> class has a singular name, an <xref:System.Windows.Xps.Packaging.XpsDocument> can be one <xref:System.Windows.Documents.FixedDocument> or a set of multiple documents. This method adds the <xref:System.Windows.Documents.FixedDocument> elements in the source to the sequence of <xref:System.Windows.Documents.FixedDocument> elements in the target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue>.  
   
- If `notificationLevel` is specified as <xref:System.Windows.Xps.XpsDocumentNotificationLevel>, notifications are produced only when the document is serialized, not printed.  To receive notifications the document must be reserialized.  When a document is reserialized all content from the <xref:System.IO.Packaging.Package> that is not required to be preserved by the [XML Paper Specification](http://go.microsoft.com/fwlink/?LinkID=65761) is removed.  The reserialization will also remove all extensions from the <xref:System.Windows.Documents.FixedPage> markup, including any extended [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] content.  
+ If `notificationLevel` is specified as <xref:System.Windows.Xps.XpsDocumentNotificationLevel.ReceiveNotificationEnabled>, notifications are produced only when the document is serialized, not printed.  To receive notifications the document must be reserialized.  When a document is reserialized all content from the <xref:System.IO.Packaging.Package> that is not required to be preserved by the [XML Paper Specification](http://go.microsoft.com/fwlink/?LinkID=65761) is removed.  The reserialization will also remove all extensions from the <xref:System.Windows.Documents.FixedPage> markup, including any extended [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] content.  
   
- If `notificationLevel` is specified as <xref:System.Windows.Xps.XpsDocumentNotificationLevel> the document will not be reserialized and any extended content will be preserved, even when printed.  
+ If `notificationLevel` is specified as <xref:System.Windows.Xps.XpsDocumentNotificationLevel.ReceiveNotificationDisabled> the document will not be reserialized and any extended content will be preserved, even when printed.  
   
  By design this <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> method does not call the <xref:System.Windows.Xps.XpsDocumentWriter.WritingPrintTicketRequired> event.  
   
@@ -1495,30 +1520,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateVisualsCollator">
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a <see cref="T:System.Windows.Xps.VisualsToXpsDocument" /> that can write <see cref="T:System.Windows.Media.Visual" /> objects to a document or print queue.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Xps.VisualsToXpsDocument> writes to the same target <xref:System.Windows.Xps.Packaging.XpsDocument> or <xref:System.Printing.PrintQueue> as the <xref:System.Windows.Xps.XpsDocumentWriter> that creates the <xref:System.Windows.Xps.VisualsToXpsDocument>.  
-  
-   
-  
-## Examples  
- The following example shows how to use the <xref:System.Windows.Xps.XpsDocumentWriter.CreateVisualsCollator%2A> method.  
-  
- [!code-csharp[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsSave/CSharp/XpsSaveHelper.cs#createandwritetovisualscollator)]
- [!code-vb[XpsSave#CreateAndWriteToVisualsCollator](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsSave/visualbasic/xpssavehelper.vb#createandwritetovisualscollator)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

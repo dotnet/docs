@@ -75,6 +75,6 @@ These examples show you how to perform the following tasks:
  [!code-cs[csProgGuideTypes#38](../../../csharp/programming-guide/nullable-types/codesnippet/CSharp/how-to-convert-between-hexadecimal-strings-and-numeric-types_5.cs)]  
   
 ## See Also  
- [Standard Numeric Format Strings](http://msdn.microsoft.com/library/580e57eb-ac47-4ffd-bccd-3a1637c2f467)   
+ [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)   
  [Types](../../../csharp/programming-guide/types/index.md)   
  [How to: Determine Whether a String Represents a Numeric Value](../../../csharp/programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)

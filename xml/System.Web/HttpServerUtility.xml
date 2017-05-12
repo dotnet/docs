@@ -858,6 +858,23 @@
         <exception cref="T:System.ApplicationException">The current page request is a callback.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TransferRequest">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs an asynchronous execution of the specified URL.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.HttpServerUtility.TransferRequest%2A> was introduced in the .NET Framework version 3.5. For summary information about the .NET Framework, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TransferRequest">
       <MemberSignature Language="C#" Value="public void TransferRequest (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TransferRequest(string path) cil managed" />
@@ -1112,6 +1129,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="UrlEncode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encodes a string for reliable HTTP transmission from the Web server to a client through the URL.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.HttpServerUtility.UrlEncode%2A> is a convenient way to access the <xref:System.Web.HttpUtility.UrlEncode%2A?displayProperty=fullName> method at run time from an ASP.NET application. Internally, <xref:System.Web.HttpServerUtility.UrlEncode%2A> uses <xref:System.Web.HttpUtility.UrlEncode%2A?displayProperty=fullName> to encode strings.  
+  
+ To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="UrlEncode">
       <MemberSignature Language="C#" Value="public string UrlEncode (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string UrlEncode(string s) cil managed" />
@@ -1288,41 +1324,5 @@
         <exception cref="T:System.ArgumentNullException">The value of the <paramref name="input" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="UrlEncode">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Encodes a string for reliable HTTP transmission from the Web server to a client through the URL.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Web.HttpServerUtility.UrlEncode%2A> is a convenient way to access the <xref:System.Web.HttpUtility.UrlEncode%2A?displayProperty=fullName> method at run time from an ASP.NET application. Internally, <xref:System.Web.HttpServerUtility.UrlEncode%2A> uses <xref:System.Web.HttpUtility.UrlEncode%2A?displayProperty=fullName> to encode strings.  
-  
- To encode or decode values outside of a web application, use the <xref:System.Net.WebUtility> class.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TransferRequest">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Performs an asynchronous execution of the specified URL.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Web.HttpServerUtility.TransferRequest%2A> was introduced in the .NET Framework version 3.5. For summary information about the .NET Framework, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

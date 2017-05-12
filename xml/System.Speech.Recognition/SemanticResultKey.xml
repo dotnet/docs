@@ -84,6 +84,27 @@ private void pwdGrammar()
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Constructs an instance of <see cref="T:System.Speech.Recognition.SemanticResultKey" /> and associates the key with grammar components.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructors for <xref:System.Speech.Recognition.SemanticResultKey> specify a text tag (the semantic key) and a set of grammar components to add to a speech recognition grammar.  
+  
+ The grammar components can be specified either as an array of <xref:System.Speech.Recognition.GrammarBuilder> objects, or as an array of <xref:System.String> instances.  
+  
+ If the grammar components are used in recognition, you can access the returned <xref:System.Speech.Recognition.SemanticValue> using the text tag provided to the constructor of <xref:System.Speech.Recognition.SemanticResultKey> as a semantic key. The <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of the <xref:System.Speech.Recognition.SemanticValue> instance will be determined by the grammar components used in the definition of <xref:System.Speech.Recognition.SemanticResultKey>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SemanticResultKey (string semanticResultKey, System.Speech.Recognition.GrammarBuilder[] builders);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string semanticResultKey, class System.Speech.Recognition.GrammarBuilder[] builders) cil managed" />
@@ -333,26 +354,5 @@ private Grammar CreateGrammarBuilderRGBSemantics()
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Constructs an instance of <see cref="T:System.Speech.Recognition.SemanticResultKey" /> and associates the key with grammar components.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The constructors for <xref:System.Speech.Recognition.SemanticResultKey> specify a text tag (the semantic key) and a set of grammar components to add to a speech recognition grammar.  
-  
- The grammar components can be specified either as an array of <xref:System.Speech.Recognition.GrammarBuilder> objects, or as an array of <xref:System.String> instances.  
-  
- If the grammar components are used in recognition, you can access the returned <xref:System.Speech.Recognition.SemanticValue> using the text tag provided to the constructor of <xref:System.Speech.Recognition.SemanticResultKey> as a semantic key. The <xref:System.Speech.Recognition.SemanticValue.Value%2A> property of the <xref:System.Speech.Recognition.SemanticValue> instance will be determined by the grammar components used in the definition of <xref:System.Speech.Recognition.SemanticResultKey>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -17,7 +17,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridView> control can resize its columns to make them fill the available horizontal width of the control or to make them display the full contents of all cells or of specified cells.  
   
- With <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode> mode, the preferred width of a column is determined by resizing all columns in that mode so that all visible columns in the control exactly fill the horizontal width of the available display area. With other modes, the preferred column width is the minimum width required to display the largest cell value from all cells or a subset of cells in that column, such as the subset of cells that are in currently displayed rows. Using a subset of cells to determine the new width is useful to avoid a performance penalty when working with many rows of data.  
+ With <xref:System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill> mode, the preferred width of a column is determined by resizing all columns in that mode so that all visible columns in the control exactly fill the horizontal width of the available display area. With other modes, the preferred column width is the minimum width required to display the largest cell value from all cells or a subset of cells in that column, such as the subset of cells that are in currently displayed rows. Using a subset of cells to determine the new width is useful to avoid a performance penalty when working with many rows of data.  
   
  Content-based automatic resizing prevents users from adjusting column widths with the mouse. User resizing is enabled in fill mode, however.  
   

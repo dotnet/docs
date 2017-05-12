@@ -37,7 +37,7 @@ translation.priority.ht:
 # Generics and Reflection (C# Programming Guide)
 Because the Common Language Runtime (CLR) has access to generic type information at run time, you can use reflection to obtain information about generic types in the same way as for non-generic types. For more information, see [Generics in the Run Time](../../../csharp/programming-guide/generics/generics-in-the-run-time.md).  
   
- In the [!INCLUDE[dnprdnlong](../../../csharp/programming-guide/events/includes/dnprdnlong_md.md)] several new members are added to the <xref:System.Type> class to enable run-time information for generic types. See the documentation on these classes for more information on how to use these methods and properties. The <xref:System.Reflection.Emit> namespace also contains new members that support generics. See [How to: Define a Generic Type with Reflection Emit](http://msdn.microsoft.com/library/07d5f01a-7b5b-40ea-9b15-f21561098fe4).  
+ In the [!INCLUDE[dnprdnlong](../../../csharp/programming-guide/events/includes/dnprdnlong_md.md)] several new members are added to the <xref:System.Type> class to enable run-time information for generic types. See the documentation on these classes for more information on how to use these methods and properties. The <xref:System.Reflection.Emit> namespace also contains new members that support generics. See [How to: Define a Generic Type with Reflection Emit](../../../framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md).  
   
  For a list of the invariant conditions for terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A> property remarks.  
   
@@ -69,5 +69,5 @@ Because the Common Language Runtime (CLR) has access to generic type information
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Generics](../../../csharp/programming-guide/generics/index.md)   
- [Reflection and Generic Types](http://msdn.microsoft.com/library/f7180fc5-dd41-42d4-8a8e-1b34288e06de)   
+ [Reflection and Generic Types](../../../framework/reflection-and-codedom/reflection-and-generic-types.md)   
  [Generics](https://msdn.microsoft.com/library/ms172192)

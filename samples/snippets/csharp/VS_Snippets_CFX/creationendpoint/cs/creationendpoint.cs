@@ -103,7 +103,7 @@ namespace Microsoft.Samples.WF.CreationEndpoint
             }
             return creationContext;
         }
-// <Snippet1>
+// </Snippet1>
     }
 
 

@@ -295,7 +295,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In a case where more than one match is possible, a property value of 1 will return only the first match found. A value of <xref:System.Int32> will return all matches.  
+ In a case where more than one match is possible, a property value of 1 will return only the first match found. A value of <xref:System.Int32.MaxValue> will return all matches.  
   
  This property returns the same information as the <xref:System.Web.Services.Description.MimeTextMatch.RepeatsString%2A> property, but as a 32-bit signed integer rather than as a string.  
   

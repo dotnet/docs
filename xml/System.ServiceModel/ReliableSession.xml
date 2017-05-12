@@ -72,7 +72,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The <paramref name="reliableSessionBindingElement" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="binding" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="InactivityTimeout">

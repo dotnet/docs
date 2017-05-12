@@ -113,63 +113,37 @@
         <summary>Returns a <see cref="T:System.Data.DataTable" /> that contains information about all installed providers that implement <see cref="T:System.Data.Common.DbProviderFactory" />.</summary>
         <returns>Returns a <see cref="T:System.Data.DataTable" /> containing <see cref="T:System.Data.DataRow" /> objects that contain the following data.  
   
- <list type="table">  
-<listheader>  
-<term> Column ordinal  
+ <list type="table"><listheader><term> Column ordinal  
   
- </term>  
-<description> Column name  
+ </term><description> Column name  
   
- </description>  
-<description> Description  
+ </description><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> 0  
+ </description></listheader><item><term> 0  
   
- </term>  
-<description> **Name**  
+ </term><description> **Name**  
   
- </description>  
-<description> Human-readable name for the data provider.  
+ </description><description> Human-readable name for the data provider.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> **Description**  
+ </term><description> **Description**  
   
- </description>  
-<description> Human-readable description of the data provider.  
+ </description><description> Human-readable description of the data provider.  
   
- </description>  
-</item>  
-<item>  
-<term> 2  
+ </description></item><item><term> 2  
   
- </term>  
-<description> **InvariantName**  
+ </term><description> **InvariantName**  
   
- </description>  
-<description> Name that can be used programmatically to refer to the data provider.  
+ </description><description> Name that can be used programmatically to refer to the data provider.  
   
- </description>  
-</item>  
-<item>  
-<term> 3  
+ </description></item><item><term> 3  
   
- </term>  
-<description> **AssemblyQualifiedName**  
+ </term><description> **AssemblyQualifiedName**  
   
- </description>  
-<description> Fully qualified name of the factory class, which contains enough information to instantiate the object.  
+ </description><description> Fully qualified name of the factory class, which contains enough information to instantiate the object.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

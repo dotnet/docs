@@ -764,7 +764,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Overrides of this method should not treat cardinality-related mismatches as errors, and should not throw exceptions in those cases. For example, if <xref:System.ComponentModel.Composition.Primitives.ImportDefinition.Cardinality%2A> is <xref:System.ComponentModel.Composition.Primitives.ImportCardinality> and there are zero <xref:System.ComponentModel.Composition.Primitives.Export> objects that match the conditions of the specified <xref:System.ComponentModel.Composition.Primitives.ImportDefinition>, an empty <xref:System.Collections.Generic.IEnumerable%601> collection should be returned.  
+ Overrides of this method should not treat cardinality-related mismatches as errors, and should not throw exceptions in those cases. For example, if <xref:System.ComponentModel.Composition.Primitives.ImportDefinition.Cardinality%2A> is <xref:System.ComponentModel.Composition.Primitives.ImportCardinality.ExactlyOne> and there are zero <xref:System.ComponentModel.Composition.Primitives.Export> objects that match the conditions of the specified <xref:System.ComponentModel.Composition.Primitives.ImportDefinition>, an empty <xref:System.Collections.Generic.IEnumerable%601> collection should be returned.  
   
  ]]></format>
         </remarks>

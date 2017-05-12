@@ -57,7 +57,7 @@ EXTERN_GUID(GUID_ManagedName, 0xf21f359, 0xab84, 0x41e8, 0x9a, 0x78, 0x36, 0xd1,
   
  Use <xref:System.Runtime.InteropServices.ComTypes.ITypeInfo2.GetCustData%2A?displayProperty=fullName> or <xref:System.Runtime.InteropServices.ComTypes.ITypeLib2.GetCustData%2A?displayProperty=fullName> to retrieve the managed name from the attribute.  
   
- For more information, see [Interface Attributes](http://msdn.microsoft.com/library/27fcdfee-abce-4585-8b53-ee31635356e8) in the Visual C++ reference documentation.  
+ For more information, see [Interface Attributes](/cpp/windows/interface-attributes) in the Visual C++ reference documentation.  
   
 ## Example  
  The following example shows a library definition using the `GUID_ManagedName` attribute.  

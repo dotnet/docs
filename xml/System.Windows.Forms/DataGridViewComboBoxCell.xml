@@ -256,7 +256,7 @@
   
  The behavior and appearance of the drop-down arrow is indicated by the <xref:System.Windows.Forms.DataGridViewComboBoxCell.FlatStyle%2A> property.  
   
- To enable cell highlighting when the mouse pointer is over the cell, you must set the <xref:System.Windows.Forms.DataGridViewComboBoxCell.DisplayStyle%2A> property to <xref:System.Windows.Forms.DataGridViewComboBoxDisplayStyle> and the <xref:System.Windows.Forms.DataGridViewComboBoxCell.FlatStyle%2A> property value to <xref:System.Windows.Forms.FlatStyle>.  
+ To enable cell highlighting when the mouse pointer is over the cell, you must set the <xref:System.Windows.Forms.DataGridViewComboBoxCell.DisplayStyle%2A> property to <xref:System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox> and the <xref:System.Windows.Forms.DataGridViewComboBoxCell.FlatStyle%2A> property value to <xref:System.Windows.Forms.FlatStyle.Popup>.  
   
  Setting the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.DisplayStyle%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewComboBoxCell.DisplayStyle%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
   
@@ -387,7 +387,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewComboBoxCell.FlatStyle%2A> property affects the behavior and appearance of the drop-down arrow in the cell.  
   
- To enable cell highlighting when the mouse pointer is over the cell, you must set the <xref:System.Windows.Forms.DataGridViewComboBoxCell.DisplayStyle%2A> property to <xref:System.Windows.Forms.DataGridViewComboBoxDisplayStyle> and the <xref:System.Windows.Forms.DataGridViewComboBoxCell.FlatStyle%2A> property value to <xref:System.Windows.Forms.FlatStyle>.  
+ To enable cell highlighting when the mouse pointer is over the cell, you must set the <xref:System.Windows.Forms.DataGridViewComboBoxCell.DisplayStyle%2A> property to <xref:System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox> and the <xref:System.Windows.Forms.DataGridViewComboBoxCell.FlatStyle%2A> property value to <xref:System.Windows.Forms.FlatStyle.Popup>.  
   
  Setting the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.FlatStyle%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewComboBoxCell.FlatStyle%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
   
@@ -688,7 +688,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Windows.Forms.DataGridView.EditMode%2A> property of the <xref:System.Windows.Forms.DataGridView> control is set to <xref:System.Windows.Forms.DataGridViewEditMode> or <xref:System.Windows.Forms.DataGridViewEditMode>, the control uses this method to determine whether a key other than F2 that is pressed by the user while this cell has focus will cause the cell to enter edit mode.  
+ When the <xref:System.Windows.Forms.DataGridView.EditMode%2A> property of the <xref:System.Windows.Forms.DataGridView> control is set to <xref:System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke> or <xref:System.Windows.Forms.DataGridViewEditMode.EditOnKeystrokeOrF2>, the control uses this method to determine whether a key other than F2 that is pressed by the user while this cell has focus will cause the cell to enter edit mode.  
   
  This method returns `true` if the e parameter indicates one of the following keys or key combinations: F4, ALT+UP ARROW, ALT+DOWN ARROW, or an ordinary data-entry key (such as a letter, number, punctuation mark, or the SPACE key) unmodified by ALT or CTRL, excluding SHIFT+SPACE, which is used by the control for selection purposes. For more information, see [Default Keyboard and Mouse Handling in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/default-keyboard-and-mouse-handling-in-the-windows-forms-datagridview-control.md).  
   

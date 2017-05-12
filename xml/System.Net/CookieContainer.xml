@@ -7,6 +7,7 @@
     <AssemblyVersion>3.9.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -47,6 +48,7 @@
         <AssemblyVersion>3.9.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -64,7 +66,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor initializes all fields to their default values. <xref:System.Net.CookieContainer> is used to initialize <xref:System.Net.CookieContainer.Capacity%2A>, <xref:System.Net.CookieContainer.DefaultCookieLengthLimit> is used for <xref:System.Net.CookieContainer.MaxCookieSize%2A>, and <xref:System.Net.CookieContainer.DefaultPerDomainCookieLimit> is used for <xref:System.Net.CookieContainer.PerDomainCapacity%2A>.  
+ The default constructor initializes all fields to their default values. <xref:System.Net.CookieContainer.DefaultCookieLimit> is used to initialize <xref:System.Net.CookieContainer.Capacity%2A>, <xref:System.Net.CookieContainer.DefaultCookieLengthLimit> is used for <xref:System.Net.CookieContainer.MaxCookieSize%2A>, and <xref:System.Net.CookieContainer.DefaultPerDomainCookieLimit> is used for <xref:System.Net.CookieContainer.PerDomainCapacity%2A>.  
   
  ]]></format>
         </remarks>
@@ -83,6 +85,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="capacity" Type="System.Int32" />
@@ -115,6 +121,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="capacity" Type="System.Int32" />
@@ -158,6 +168,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -200,6 +214,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -231,6 +249,7 @@
         <AssemblyVersion>3.9.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -286,6 +305,7 @@
         <AssemblyVersion>3.9.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -335,6 +355,7 @@
         <AssemblyVersion>3.9.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -375,6 +396,7 @@
         <AssemblyVersion>3.9.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -395,7 +417,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value of this property is <xref:System.Net.CookieContainer>. If <xref:System.Net.CookieContainer.Count%2A> equals or exceeds <xref:System.Net.CookieContainer.Capacity%2A>, one or more <xref:System.Net.Cookie> instances are removed from the container. Enough instances are removed to bring <xref:System.Net.CookieContainer.Count%2A> below <xref:System.Net.CookieContainer.Capacity%2A> as follows: if there are expired <xref:System.Net.Cookie> instances in scope, they are cleaned up. If not, then the least recently used <xref:System.Net.CookieCollection> is found and removed from the container.  
+ The default value of this property is <xref:System.Net.CookieContainer.DefaultCookieLimit>. If <xref:System.Net.CookieContainer.Count%2A> equals or exceeds <xref:System.Net.CookieContainer.Capacity%2A>, one or more <xref:System.Net.Cookie> instances are removed from the container. Enough instances are removed to bring <xref:System.Net.CookieContainer.Count%2A> below <xref:System.Net.CookieContainer.Capacity%2A> as follows: if there are expired <xref:System.Net.Cookie> instances in scope, they are cleaned up. If not, then the least recently used <xref:System.Net.CookieCollection> is found and removed from the container.  
   
  ]]></format>
         </remarks>
@@ -411,6 +433,7 @@
         <AssemblyVersion>3.9.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -447,6 +470,7 @@
         <AssemblyVersion>3.9.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -483,6 +507,7 @@
         <AssemblyVersion>3.9.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -519,6 +544,7 @@
         <AssemblyVersion>3.9.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -563,6 +589,7 @@
         <AssemblyVersion>3.9.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -605,6 +632,7 @@
         <AssemblyVersion>3.9.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -643,6 +671,7 @@
         <AssemblyVersion>3.9.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -685,6 +714,7 @@
         <AssemblyVersion>3.9.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -169,7 +169,7 @@ MachineKey.Unprotect(..., "Private message", "Recipient: " + username)
   
  When the <xref:System.Web.Security.MachineKey.Unprotect%2A> method is called, the value that is provided for the `purposes` parameter must be the same value that was provided to the <xref:System.Web.Security.MachineKey.Protect%2A> method. Otherwise the operation will fail with a <xref:System.Security.Cryptography.CryptographicException> exception.  
   
- The configuration settings that are required for the <xref:System.Web.Configuration.MachineKeyCompatibilityMode?displayProperty=fullName> option are required for this method even if the <xref:System.Web.Configuration.MachineKeySection.CompatibilityMode%2A?displayProperty=fullName> property is not set to the <xref:System.Web.Configuration.MachineKeyCompatibilityMode> option.  
+ The configuration settings that are required for the <xref:System.Web.Configuration.MachineKeyCompatibilityMode?displayProperty=fullName> option are required for this method even if the <xref:System.Web.Configuration.MachineKeySection.CompatibilityMode%2A?displayProperty=fullName> property is not set to the <xref:System.Web.Configuration.MachineKeyCompatibilityMode.Framework45> option.  
   
  ]]></format>
         </remarks>

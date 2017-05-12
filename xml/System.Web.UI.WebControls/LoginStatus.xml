@@ -338,16 +338,16 @@
   
 |<xref:System.Web.UI.WebControls.LoginStatus.LogoutAction%2A> value|Action taken|  
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|  
-|<xref:System.Web.UI.WebControls.LogoutAction>|Redirects the user to the URL contained in the <xref:System.Web.UI.WebControls.LoginStatus.LogoutPageUrl%2A> property. If <xref:System.Web.UI.WebControls.LoginStatus.LogoutPageUrl%2A> is empty, the user is redirected to the login page defined in the application configuration settings.|  
-|<xref:System.Web.UI.WebControls.LogoutAction>|Redirects the user to the login page defined in the application configuration settings.|  
-|<xref:System.Web.UI.WebControls.LogoutAction>|Refreshes the current page.|  
+|<xref:System.Web.UI.WebControls.LogoutAction.Redirect>|Redirects the user to the URL contained in the <xref:System.Web.UI.WebControls.LoginStatus.LogoutPageUrl%2A> property. If <xref:System.Web.UI.WebControls.LoginStatus.LogoutPageUrl%2A> is empty, the user is redirected to the login page defined in the application configuration settings.|  
+|<xref:System.Web.UI.WebControls.LogoutAction.RedirectToLoginPage>|Redirects the user to the login page defined in the application configuration settings.|  
+|<xref:System.Web.UI.WebControls.LogoutAction.Refresh>|Refreshes the current page.|  
   
  This property cannot be set by themes or style sheet themes. For more information, see <xref:System.Web.UI.ThemeableAttribute> and [ASP.NET Themes and Skins](http://msdn.microsoft.com/library/5df3ebbd-d46c-4502-9406-02f9df4ef2c3).  
   
    
   
 ## Examples  
- The following code example sets the <xref:System.Web.UI.WebControls.LoginStatus.LogoutAction%2A> property to the <xref:System.Web.UI.WebControls.LogoutAction> value to send the user to the login page.  
+ The following code example sets the <xref:System.Web.UI.WebControls.LoginStatus.LogoutAction%2A> property to the <xref:System.Web.UI.WebControls.LogoutAction.RedirectToLoginPage> value to send the user to the login page.  
   
  <!-- TODO: review snippet reference [!code-csharp[LoginStatusLogoutAction#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusLogoutAction/CS/loginstatuslogoutactioncs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[LoginStatusLogoutAction#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusLogoutAction/VB/loginstatuslogoutactionvb.aspx#1)]  -->  
@@ -436,7 +436,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.LoginStatus.LogoutAction%2A> property is set to <xref:System.Web.UI.WebControls.LogoutAction>, the user is redirected to the URL contained in <xref:System.Web.UI.WebControls.LoginStatus.LogoutPageUrl%2A>.  
+ When the <xref:System.Web.UI.WebControls.LoginStatus.LogoutAction%2A> property is set to <xref:System.Web.UI.WebControls.LogoutAction.Redirect>, the user is redirected to the URL contained in <xref:System.Web.UI.WebControls.LoginStatus.LogoutPageUrl%2A>.  
   
  If <xref:System.Web.UI.WebControls.LoginStatus.LogoutAction%2A> is set to any other value, the contents of the <xref:System.Web.UI.WebControls.LoginStatus.LogoutPageUrl%2A> property are ignored.  
   
@@ -445,7 +445,7 @@
    
   
 ## Examples  
- The following code example sets the <xref:System.Web.UI.WebControls.LoginStatus.LogoutPageUrl%2A> property to a logout page and the <xref:System.Web.UI.WebControls.LoginStatus.LogoutAction%2A> property to <xref:System.Web.UI.WebControls.LogoutAction> so that the user is redirected when logging out.  
+ The following code example sets the <xref:System.Web.UI.WebControls.LoginStatus.LogoutPageUrl%2A> property to a logout page and the <xref:System.Web.UI.WebControls.LoginStatus.LogoutAction%2A> property to <xref:System.Web.UI.WebControls.LogoutAction.Redirect> so that the user is redirected when logging out.  
   
  <!-- TODO: review snippet reference [!code-csharp[LoginStatusLogoutPageUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginStatusLogoutPageUrl/CS/loginstatuslogoutpageurlcs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[LoginStatusLogoutPageUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginStatusLogoutPageUrl/VB/loginstatuslogoutpageurlvb.aspx#1)]  -->  

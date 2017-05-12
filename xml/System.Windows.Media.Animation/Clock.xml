@@ -218,7 +218,7 @@
 ## Remarks  
  The value of this property indicates the <xref:System.Windows.Media.Animation.Clock.CurrentTime%2A> normalized by the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of this clock's <xref:System.Windows.Media.Animation.Clock.Timeline%2A>.  
   
- A clock that is <xref:System.Windows.Media.Animation.ClockState> has a <xref:System.Windows.Media.Animation.Clock.CurrentProgress%2A> of 1.0.  
+ A clock that is <xref:System.Windows.Media.Animation.ClockState.Filling> has a <xref:System.Windows.Media.Animation.Clock.CurrentProgress%2A> of 1.0.  
   
 ## Using a Timeline as a Timer  
  A timeline's clock will only progress when there's an event hander associated with it or (in the case of an <xref:System.Windows.Media.Animation.AnimationClock> object) it is associated with a property. For this reason (and others), it's not recommended that you use a <xref:System.Windows.Media.Animation.Timeline> as a timer.  
@@ -276,7 +276,7 @@
   
  Pausing a <xref:System.Windows.Media.Animation.Clock> does not change its <xref:System.Windows.Media.Animation.Clock.CurrentState%2A>. To be notified when a clock becomes paused, use the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> event.  
   
- Although this event occurs when the <xref:System.Windows.Media.Animation.ClockState> becomes invalid, that doesn't necessarily mean the <xref:System.Windows.Media.Animation.ClockState> changed: a <xref:System.Windows.Media.Animation.Clock> that switches from <xref:System.Windows.Media.Animation.ClockState> to <xref:System.Windows.Media.Animation.ClockState> and then back to <xref:System.Windows.Media.Animation.ClockState> in the same tick will cause this event to fire, but its <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> property won't actually change.  
+ Although this event occurs when the <xref:System.Windows.Media.Animation.ClockState> becomes invalid, that doesn't necessarily mean the <xref:System.Windows.Media.Animation.ClockState> changed: a <xref:System.Windows.Media.Animation.Clock> that switches from <xref:System.Windows.Media.Animation.ClockState.Active> to <xref:System.Windows.Media.Animation.ClockState.Filling> and then back to <xref:System.Windows.Media.Animation.ClockState.Active> in the same tick will cause this event to fire, but its <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> property won't actually change.  
   
  ]]></format>
         </remarks>

@@ -1,7 +1,7 @@
 //<SnippetWindowClosingCODEBEHIND1>
-using System;
-using System.ComponentModel;
-using System.Windows;
+using System; // EventArgs
+using System.ComponentModel; // CancelEventArgs
+using System.Windows; // window
 
 namespace CSharp
 {

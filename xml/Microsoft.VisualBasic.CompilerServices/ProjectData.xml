@@ -123,6 +123,23 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetProjectError">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>The Visual Basic compiler uses this helper method to capture exceptions in the <see langword="Err" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see <xref:Microsoft.VisualBasic.Information.Err%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetProjectError">
       <MemberSignature Language="C#" Value="public static void SetProjectError (Exception ex);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetProjectError(class System.Exception ex) cil managed" />
@@ -199,22 +216,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName="SetProjectError">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>The Visual Basic compiler uses this helper method to capture exceptions in the <see langword="Err" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For more information, see <xref:Microsoft.VisualBasic.Information.Err%2A>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

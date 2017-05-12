@@ -201,9 +201,9 @@
   
 |Parameter value|Return value|  
 |---------------------|------------------|  
-|<xref:System.Windows.Forms.AccessibleNavigation> or<br /><br /> <xref:System.Windows.Forms.AccessibleNavigation>|An accessible object that represents the first <xref:System.Windows.Forms.DataGridViewRow> that is a data row in the <xref:System.Windows.Forms.DataGridView>.|  
-|<xref:System.Windows.Forms.AccessibleNavigation>|An accessible object that represents the first column header in the <xref:System.Windows.Forms.DataGridView>. If the <xref:System.Windows.Forms.DataGridView.RowHeadersVisible%2A> property is set to `true`, the accessible object represents the <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell>.|  
-|<xref:System.Windows.Forms.AccessibleNavigation>|An accessible object that represents the column header for the last visible column.|  
+|<xref:System.Windows.Forms.AccessibleNavigation.Next> or<br /><br /> <xref:System.Windows.Forms.AccessibleNavigation.Down>|An accessible object that represents the first <xref:System.Windows.Forms.DataGridViewRow> that is a data row in the <xref:System.Windows.Forms.DataGridView>.|  
+|<xref:System.Windows.Forms.AccessibleNavigation.FirstChild>|An accessible object that represents the first column header in the <xref:System.Windows.Forms.DataGridView>. If the <xref:System.Windows.Forms.DataGridView.RowHeadersVisible%2A> property is set to `true`, the accessible object represents the <xref:System.Windows.Forms.DataGridViewTopLeftHeaderCell>.|  
+|<xref:System.Windows.Forms.AccessibleNavigation.LastChild>|An accessible object that represents the column header for the last visible column.|  
 |All other <xref:System.Windows.Forms.AccessibleNavigation> values|`null`.|  
   
  ]]></format>

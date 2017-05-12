@@ -7,6 +7,10 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Permissions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -27,7 +31,7 @@
  <xref:System.Security.Permissions.RegistryPermissionAccess> values are independent; rights to one type of access do not imply rights to another. For instance, `Write` permission does not imply permission to `Read` or `Create`.  
   
 > [!NOTE]
->  Although NoAccess and AllAccess appear in <xref:System.Security.Permissions.RegistryPermissionAccess>, they are not valid for use as the parameter for <xref:System.Security.Permissions.RegistryPermission.GetPathList%2A> because they describe no registry variable access types or all registry variable access types, respectively, and <xref:System.Security.Permissions.RegistryPermission.GetPathList%2A> expects a single registry variable access type.  
+>  Although NoAccess and AllAccess appear in <xref:System.Security.Permissions.RegistryPermissionAccess.NoAccess>, they are not valid for use as the parameter for <xref:System.Security.Permissions.RegistryPermission.GetPathList%2A> because they describe no registry variable access types or all registry variable access types, respectively, and <xref:System.Security.Permissions.RegistryPermission.GetPathList%2A> expects a single registry variable access type.  
   
  ]]></format>
     </remarks>
@@ -41,6 +45,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,6 +69,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.RegistryPermissionAccess</ReturnType>
       </ReturnValue>
@@ -76,6 +88,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -95,6 +111,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.RegistryPermissionAccess</ReturnType>
       </ReturnValue>
@@ -110,6 +130,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

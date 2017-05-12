@@ -9,6 +9,7 @@
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -37,7 +38,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Apply the <xref:System.Runtime.InteropServices.DefaultCharSetAttribute> attribute at the assembly level or module level to set the <xref:System.Runtime.InteropServices.DllImportAttribute> value for any call to <xref:System.Runtime.InteropServices.DllImportAttribute> that does not include a <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> named argument specified by the user.  
+ Apply the <xref:System.Runtime.InteropServices.DefaultCharSetAttribute> attribute at the assembly level or module level to set the <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> value for any call to <xref:System.Runtime.InteropServices.DllImportAttribute> that does not include a <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> named argument specified by the user.  
   
  A <xref:System.Runtime.InteropServices.DllImportAttribute.CharSet> named argument specified by the user overrides the setting of <xref:System.Runtime.InteropServices.DefaultCharSetAttribute>.  
   
@@ -47,7 +48,7 @@
    
   
 ## Examples  
- The following code example changes the default <xref:System.Runtime.InteropServices.CharSet> value from <xref:System.Runtime.InteropServices.CharSet> to <xref:System.Runtime.InteropServices.CharSet>.  
+ The following code example changes the default <xref:System.Runtime.InteropServices.CharSet> value from <xref:System.Runtime.InteropServices.CharSet.Ansi> to <xref:System.Runtime.InteropServices.CharSet.Auto>.  
   
  `using System.Runtime.InteropServices;`  
   
@@ -71,6 +72,7 @@
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -102,6 +104,7 @@
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

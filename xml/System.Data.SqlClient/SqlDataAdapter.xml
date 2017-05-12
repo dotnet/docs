@@ -7,6 +7,10 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Data.SqlClient</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Data.Common.DbDataAdapter</BaseTypeName>
   </Base>
@@ -32,7 +36,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.SqlClient.SqlDataAdapter>, serves as a bridge between a <xref:System.Data.DataSet> and SQL Server for retrieving and saving data. The <xref:System.Data.SqlClient.SqlDataAdapter> provides this bridge by mapping <xref:System.Data.Common.DbDataAdapter.Fill%2A>, which changes the data in the <xref:System.Data.DataSet> to match the data in the data source, and <xref:System.Data.Common.DbDataAdapter.Update%2A>, which changes the data in the data source to match the data in the <xref:System.Data.DataSet>, using the appropriate Transact-SQL statements against the data source. The update is performed on a by-row basis. For every inserted, modified, and deleted row, the <xref:System.Data.Common.DbDataAdapter.Update%2A> method determines the type of change that has been performed on it (`Insert`, `Update`, or `Delete`). Depending on the type of change, the `Insert`, `Update`, or `Delete` command template executes to propagate the modified row to the data source. When the <xref:System.Data.SqlClient.SqlDataAdapter> fills a <xref:System.Data.DataSet>, it creates the necessary tables and columns for the returned data if they do not already exist. However, primary key information is not included in the implicitly created schema unless the <xref:System.Data.Common.DataAdapter.MissingSchemaAction%2A> property is set to <xref:System.Data.MissingSchemaAction>. You may also have the <xref:System.Data.SqlClient.SqlDataAdapter> create the schema of the <xref:System.Data.DataSet>, including primary key information, before filling it with data using `FillSchema`. For more information, see [Adding Existing Constraints to a DataSet](~/docs/framework/data/adonet/adding-existing-constraints-to-a-dataset.md).  
+ The <xref:System.Data.SqlClient.SqlDataAdapter>, serves as a bridge between a <xref:System.Data.DataSet> and SQL Server for retrieving and saving data. The <xref:System.Data.SqlClient.SqlDataAdapter> provides this bridge by mapping <xref:System.Data.Common.DbDataAdapter.Fill%2A>, which changes the data in the <xref:System.Data.DataSet> to match the data in the data source, and <xref:System.Data.Common.DbDataAdapter.Update%2A>, which changes the data in the data source to match the data in the <xref:System.Data.DataSet>, using the appropriate Transact-SQL statements against the data source. The update is performed on a by-row basis. For every inserted, modified, and deleted row, the <xref:System.Data.Common.DbDataAdapter.Update%2A> method determines the type of change that has been performed on it (`Insert`, `Update`, or `Delete`). Depending on the type of change, the `Insert`, `Update`, or `Delete` command template executes to propagate the modified row to the data source. When the <xref:System.Data.SqlClient.SqlDataAdapter> fills a <xref:System.Data.DataSet>, it creates the necessary tables and columns for the returned data if they do not already exist. However, primary key information is not included in the implicitly created schema unless the <xref:System.Data.Common.DataAdapter.MissingSchemaAction%2A> property is set to <xref:System.Data.MissingSchemaAction.AddWithKey>. You may also have the <xref:System.Data.SqlClient.SqlDataAdapter> create the schema of the <xref:System.Data.DataSet>, including primary key information, before filling it with data using `FillSchema`. For more information, see [Adding Existing Constraints to a DataSet](~/docs/framework/data/adonet/adding-existing-constraints-to-a-dataset.md).  
   
  <xref:System.Data.SqlClient.SqlDataAdapter> is used in conjunction with <xref:System.Data.SqlClient.SqlConnection> and <xref:System.Data.SqlClient.SqlCommand> to increase performance when connecting to a SQL Server database.  
   
@@ -72,6 +76,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlDataAdapter" /> class.</summary>
@@ -109,6 +117,10 @@
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="selectCommand" Type="System.Data.SqlClient.SqlCommand" />
@@ -155,6 +167,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="selectCommandText" Type="System.String" />
         <Parameter Name="selectConnection" Type="System.Data.SqlClient.SqlConnection" />
@@ -199,6 +215,10 @@
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="selectCommandText" Type="System.String" />
@@ -345,6 +365,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
@@ -481,6 +505,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
@@ -529,6 +557,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -551,6 +583,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -572,6 +608,10 @@
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlClient.SqlRowUpdatedEventHandler</ReturnType>
@@ -628,6 +668,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlClient.SqlRowUpdatingEventHandler</ReturnType>
       </ReturnValue>
@@ -683,6 +727,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
@@ -727,6 +775,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
       </ReturnValue>
@@ -752,6 +804,10 @@
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
@@ -779,6 +835,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
       </ReturnValue>
@@ -805,6 +865,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
       </ReturnValue>
@@ -830,6 +894,10 @@
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -877,6 +945,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -884,40 +956,23 @@
         <summary>Gets or sets the number of rows that are processed in each round-trip to the server.</summary>
         <value>The number of rows to process per-batch.  
   
- <list type="table">  
-<listheader>  
-<term> Value is  
+ <list type="table"><listheader><term> Value is  
   
- </term>  
-<description> Effect  
+ </term><description> Effect  
   
- </description>  
-</listheader>  
-<item>  
-<term> 0  
+ </description></listheader><item><term> 0  
   
- </term>  
-<description> There is no limit on the batch size..  
+ </term><description> There is no limit on the batch size..  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> Disables batch updating.  
+ </term><description> Disables batch updating.  
   
- </description>  
-</item>  
-<item>  
-<term> &gt;1  
+ </description></item><item><term> &gt;1  
   
- </term>  
-<description> Changes are sent using batches of <see cref="P:System.Data.SqlClient.SqlDataAdapter.UpdateBatchSize" /> operations at a time.  
+ </term><description> Changes are sent using batches of <see cref="P:System.Data.SqlClient.SqlDataAdapter.UpdateBatchSize" /> operations at a time.  
   
- </description>  
-</item>  
-</list>  
+ </description></item></list>  
   
  When setting this to a value other than 1, all the commands associated with the <see cref="T:System.Data.SqlClient.SqlDataAdapter" /> have to have their **UpdatedRowSource** property set to <see langword="None" /> or <see langword="OutputParameters" />. An exception is thrown otherwise.</value>
         <remarks>
@@ -945,6 +1000,10 @@
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

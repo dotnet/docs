@@ -44,5 +44,5 @@ The .NET Framework 2.0 introduced new capabilities for working with connection s
  Demonstrates techniques for protecting information used to connect to a data source.  
   
 ## See Also  
- [Connecting to a Data Source](http://msdn.microsoft.com/library/ef6c8c98-5979-43a8-9fb5-5bb06fc59f36)   
+ [Connecting to a Data Source](/cpp/data/odbc/connecting-to-a-data-source)   
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

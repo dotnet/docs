@@ -68,14 +68,14 @@ Namespace ServiceDescriptionSnippet
 			Dim sd2 As New ServiceDescription(endpoints)
 			' </Snippet2>
 
-			'// <Snippet3>
-			'// Iterate through the list of behaviors in the ServiceDescription
+			' <Snippet3>
+			' Iterate through the list of behaviors in the ServiceDescription
 			Dim svcDesc As ServiceDescription = serviceHost.Description
 			Dim sbCol As KeyedByTypeCollection(Of IServiceBehavior) = svcDesc.Behaviors
 			For Each behavior As IServiceBehavior In sbCol
 				Console.WriteLine("Behavior: {0}", CType(behavior, Object).ToString())
 			Next behavior
-			'</Snippet3>
+			' </Snippet3>
 
 			' <Snippet4>
 			' svcDesc is a ServiceDescription.

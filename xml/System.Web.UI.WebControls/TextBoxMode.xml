@@ -17,11 +17,11 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.TextBoxMode> enumeration represents the different display options for <xref:System.Web.UI.WebControls.TextBox> controls.  
   
- SingleLine mode displays the <xref:System.Web.UI.WebControls.TextBox> control as a single row. If the user enters text that exceeds the physical size of the <xref:System.Web.UI.WebControls.TextBox> control, the text will scroll horizontally.  
+ SingleLine mode displays the <xref:System.Web.UI.WebControls.TextBoxMode.SingleLine> control as a single row. If the user enters text that exceeds the physical size of the <xref:System.Web.UI.WebControls.TextBox> control, the text will scroll horizontally.  
   
- MultiLine mode displays the height of the <xref:System.Web.UI.WebControls.TextBox> based on the <xref:System.Web.UI.WebControls.TextBox.Rows%2A> property, and allows data entry on multiple lines. The text will automatically wrap if the <xref:System.Web.UI.WebControls.TextBox.Wrap%2A> property is set to `true`. If the user enters text that exceeds the physical size of the <xref:System.Web.UI.WebControls.TextBox>, the text will scroll accordingly and scroll bars will appear.  
+ MultiLine mode displays the height of the <xref:System.Web.UI.WebControls.TextBox> based on the <xref:System.Web.UI.WebControls.TextBox.Rows%2A> property, and allows data entry on multiple lines. The text will automatically wrap if the <xref:System.Web.UI.WebControls.TextBox.Wrap%2A> property is set to `true`. If the user enters text that exceeds the physical size of the <xref:System.Web.UI.WebControls.TextBox.Rows%2A>, the text will scroll accordingly and scroll bars will appear.  
   
- The behavior of Password mode is similar to SingleLine mode except that all characters entered in the <xref:System.Web.UI.WebControls.TextBox> control are masked and are not saved in view state.  
+ The behavior of Password mode is similar to SingleLine mode except that all characters entered in the <xref:System.Web.UI.WebControls.TextBox.Wrap%2A> control are masked and are not saved in view state.  
   
  The remaining options correspond to `type` attribute values for the `input` element in the HTML5 specification.  
   

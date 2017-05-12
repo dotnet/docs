@@ -20,9 +20,9 @@
   
  To enable a user to close a message box, <xref:System.Windows.MessageBox.Show%2A> displays a message box that has an **OK** button and a **Close** button in the title bar.  
   
- You can also use a message box to ask a user a question. The user answers by clicking one of several buttons that you specify to display by using the <xref:System.Windows.MessageBoxButton> enumeration. You can pass this enumeration to several overloads of the <xref:System.Windows.MessageBox.Show%2A> method. The default value of the <xref:System.Windows.MessageBoxButton> enumeration is <xref:System.Windows.MessageBoxButton>.  
+ You can also use a message box to ask a user a question. The user answers by clicking one of several buttons that you specify to display by using the <xref:System.Windows.MessageBoxButton> enumeration. You can pass this enumeration to several overloads of the <xref:System.Windows.MessageBox.Show%2A> method. The default value of the <xref:System.Windows.MessageBoxButton> enumeration is <xref:System.Windows.MessageBoxButton.OK>.  
   
- You can determine which button a user clicks by examining the value that <xref:System.Windows.MessageBox.Show%2A> returns. The return value is a value of the <xref:System.Windows.MessageBoxResult> enumeration, where each value equates to one of the buttons that a message box can display. The default value for message box is <xref:System.Windows.MessageBoxResult> because **OK** is the default message box button. However, some overloads of the <xref:System.Windows.MessageBox.Show%2A> method enable you to provide a different <xref:System.Windows.MessageBoxResult> default value.  
+ You can determine which button a user clicks by examining the value that <xref:System.Windows.MessageBox.Show%2A> returns. The return value is a value of the <xref:System.Windows.MessageBoxResult> enumeration, where each value equates to one of the buttons that a message box can display. The default value for message box is <xref:System.Windows.MessageBoxResult.OK> because **OK** is the default message box button. However, some overloads of the <xref:System.Windows.MessageBox.Show%2A> method enable you to provide a different <xref:System.Windows.MessageBoxResult> default value.  
   
  Message boxes can communicate information and can ask questions that have varying degrees of importance. Message boxes use icons to indicate importance. For example, icons can indicate whether the message is informational, is a warning, or is important. The <xref:System.Windows.MessageBoxImage> enumeration encapsulates the set of possible message box icons. By default, a message box does not display an icon. However, you can pass a <xref:System.Windows.MessageBoxImage> value to one of several <xref:System.Windows.MessageBox.Show%2A> method overloads in order to specify that the message box includes an icon.  
   
@@ -36,6 +36,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Show">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays a message box.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use an overload of the <xref:System.Windows.MessageBox.Show%2A> method, which enables you to specify an owner window. Otherwise, the message box is owned by the window that is currently active.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Show">
       <MemberSignature Language="C#" Value="public static System.Windows.MessageBoxResult Show (string messageBoxText);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.MessageBoxResult Show(string messageBoxText) cil managed" />
@@ -534,22 +551,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Show">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Displays a message box.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use an overload of the <xref:System.Windows.MessageBox.Show%2A> method, which enables you to specify an owner window. Otherwise, the message box is owned by the window that is currently active.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -194,7 +194,7 @@
         <ReturnType>System.Windows.Media.Stretch</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Controls.Viewbox" /> <see cref="T:System.Windows.Media.Stretch" /> mode, which determines how content fits into the available space.</summary>
+        <summary>Gets or sets the <see cref="T:System.Windows.Controls.Viewbox" /><see cref="T:System.Windows.Media.Stretch" /> mode, which determines how content fits into the available space.</summary>
         <value>A <see cref="T:System.Windows.Media.Stretch" /> that determines how content fits in the available space. The default is <see cref="F:System.Windows.Media.Stretch.Uniform" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -206,7 +206,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Viewbox>|  
+|Identifier field|<xref:System.Windows.Controls.Viewbox.StretchProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
   
    
@@ -248,7 +248,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Viewbox>|  
+|Identifier field|<xref:System.Windows.Controls.Viewbox.StretchDirectionProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
   
    

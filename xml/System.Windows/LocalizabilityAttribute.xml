@@ -70,24 +70,24 @@
   
 |Category setting|Meaning|  
 |----------------------|-------------|  
-|<xref:System.Windows.LocalizationCategory>|Resource does not belong to a standard category.|  
-|<xref:System.Windows.LocalizationCategory>|A lengthy piece of descriptive text.|  
-|<xref:System.Windows.LocalizationCategory>|A single line of text, such as a title.|  
-|<xref:System.Windows.LocalizationCategory>|A short text string, such as a control label.|  
-|<xref:System.Windows.LocalizationCategory>|A <xref:System.Windows.Controls.Button> or related control.|  
-|<xref:System.Windows.LocalizationCategory>|A <xref:System.Windows.Controls.CheckBox> or related control.|  
-|<xref:System.Windows.LocalizationCategory>|A <xref:System.Windows.Controls.ComboBox> or related control, such as <xref:System.Windows.Controls.ComboBoxItem>.|  
-|<xref:System.Windows.LocalizationCategory>|A <xref:System.Windows.Controls.ListBox> or related control, such as <xref:System.Windows.Controls.ListBoxItem>.|  
-|<xref:System.Windows.LocalizationCategory>|A <xref:System.Windows.Controls.Menu> or related control, such as <xref:System.Windows.Controls.MenuItem>.|  
-|<xref:System.Windows.LocalizationCategory>|A <xref:System.Windows.Controls.RadioButton> or related control.|  
-|<xref:System.Windows.LocalizationCategory>|A <xref:System.Windows.Controls.ToolTip> or related control.|  
-|<xref:System.Windows.LocalizationCategory>|A <xref:System.Windows.Documents.Hyperlink> or related control.|  
-|<xref:System.Windows.LocalizationCategory>|A <xref:System.Windows.Documents.FlowDocument> or other panel that can contain text.|  
-|<xref:System.Windows.LocalizationCategory>|[!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] data.|  
-|<xref:System.Windows.LocalizationCategory>|Font-related data such as font family, font style, or font size.|  
-|<xref:System.Windows.LocalizationCategory>|Inherits category from parent node.|  
-|<xref:System.Windows.LocalizationCategory>|Do not localize this resource. This does not apply to any child nodes of the resource.|  
-|<xref:System.Windows.LocalizationCategory>|Do not localize this resource, or any of its child nodes whose category is set to <xref:System.Windows.LocalizationCategory>.|  
+|<xref:System.Windows.LocalizationCategory.None>|Resource does not belong to a standard category.|  
+|<xref:System.Windows.LocalizationCategory.Text>|A lengthy piece of descriptive text.|  
+|<xref:System.Windows.LocalizationCategory.Title>|A single line of text, such as a title.|  
+|<xref:System.Windows.LocalizationCategory.Label>|A short text string, such as a control label.|  
+|<xref:System.Windows.LocalizationCategory.Button>|A <xref:System.Windows.Controls.Button> or related control.|  
+|<xref:System.Windows.LocalizationCategory.CheckBox>|A <xref:System.Windows.Controls.CheckBox> or related control.|  
+|<xref:System.Windows.LocalizationCategory.ComboBox>|A <xref:System.Windows.Controls.ComboBox> or related control, such as <xref:System.Windows.Controls.ComboBoxItem>.|  
+|<xref:System.Windows.LocalizationCategory.ListBox>|A <xref:System.Windows.Controls.ListBox> or related control, such as <xref:System.Windows.Controls.ListBoxItem>.|  
+|<xref:System.Windows.LocalizationCategory.Menu>|A <xref:System.Windows.Controls.Menu> or related control, such as <xref:System.Windows.Controls.MenuItem>.|  
+|<xref:System.Windows.LocalizationCategory.RadioButton>|A <xref:System.Windows.Controls.RadioButton> or related control.|  
+|<xref:System.Windows.LocalizationCategory.ToolTip>|A <xref:System.Windows.Controls.ToolTip> or related control.|  
+|<xref:System.Windows.LocalizationCategory.Hyperlink>|A <xref:System.Windows.Documents.Hyperlink> or related control.|  
+|<xref:System.Windows.LocalizationCategory.TextFlow>|A <xref:System.Windows.Documents.FlowDocument> or other panel that can contain text.|  
+|<xref:System.Windows.LocalizationCategory.XmlData>|[!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] data.|  
+|<xref:System.Windows.LocalizationCategory.Font>|Font-related data such as font family, font style, or font size.|  
+|<xref:System.Windows.LocalizationCategory.Inherit>|Inherits category from parent node.|  
+|<xref:System.Windows.LocalizationCategory.Ignore>|Do not localize this resource. This does not apply to any child nodes of the resource.|  
+|<xref:System.Windows.LocalizationCategory.NeverLocalize>|Do not localize this resource, or any of its child nodes whose category is set to <xref:System.Windows.LocalizationCategory.Inherit>.|  
   
    
   
@@ -123,9 +123,9 @@
   
 |Modifiability setting|Meaning|  
 |---------------------------|-------------|  
-|<xref:System.Windows.Modifiability>|Targeted value is modifiable by localizers.|  
-|<xref:System.Windows.Modifiability>|Targeted value is not modifiable by localizers.|  
-|<xref:System.Windows.Modifiability>|Targeted value's modifiability is inherited from its parent node.|  
+|<xref:System.Windows.Modifiability.Modifiable>|Targeted value is modifiable by localizers.|  
+|<xref:System.Windows.Modifiability.Unmodifiable>|Targeted value is not modifiable by localizers.|  
+|<xref:System.Windows.Modifiability.Inherit>|Targeted value's modifiability is inherited from its parent node.|  
   
    
   
@@ -161,9 +161,9 @@
   
 |Readability setting|Meaning|  
 |-------------------------|-------------|  
-|<xref:System.Windows.Readability>|Targeted value is readable text.|  
-|<xref:System.Windows.Readability>|Targeted value is not readable.|  
-|<xref:System.Windows.Readability>|Targeted value's readability is inherited from its parent node.|  
+|<xref:System.Windows.Readability.Readable>|Targeted value is readable text.|  
+|<xref:System.Windows.Readability.Unreadable>|Targeted value is not readable.|  
+|<xref:System.Windows.Readability.Inherit>|Targeted value's readability is inherited from its parent node.|  
   
    
   

@@ -91,7 +91,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.TabItem>|  
+|Identifier field|<xref:System.Windows.Controls.TabItem.IsSelectedProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Journal%2A>|  
   
    
@@ -99,8 +99,7 @@
 ## Examples  
  The following example shows how to use the <xref:System.Windows.Controls.TabItem.IsSelected%2A> property to select a <xref:System.Windows.Controls.TabItem> programmatically.  
   
- [!code-xml[TabControlStyles#4](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlStyles/CS/Pane1.xaml#4)]
- <!-- TODO: review snippet reference [!code-xml[TabControlStyles#4](~/samples/snippets/xaml/VS_Snippets_Wpf/TabControlStyles/XAML/Pane1.xaml#4)]  -->  
+ [!code-xml[TabControlStyles#4](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlStyles/CS/Pane1.xaml#4)]   
   
  ]]></format>
         </remarks>

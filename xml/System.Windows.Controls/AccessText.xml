@@ -196,7 +196,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.AccessText>|  
+|Identifier field|<xref:System.Windows.Controls.AccessText.BaselineOffsetProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -250,7 +250,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.AccessText>|  
+|Identifier field|<xref:System.Windows.Controls.AccessText.FontFamilyProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
   
    
@@ -314,7 +314,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.AccessText>|  
+|Identifier field|<xref:System.Windows.Controls.AccessText.FontSizeProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
   
 <a name="xamlAttributeUsage_FontSize"></a>   
@@ -505,7 +505,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.AccessText>|  
+|Identifier field|<xref:System.Windows.Controls.AccessText.FontWeightProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
   
    
@@ -724,11 +724,11 @@
 ## Remarks  
  <xref:System.Windows.Controls.AccessText.LineHeight%2A> properties control the line box that is reserved for text. <xref:System.Windows.Controls.AccessText.LineHeight%2A> allows users to set a suggestion of height. <xref:System.Windows.LineStackingStrategy> defines how the <xref:System.Windows.Controls.AccessText.LineHeight%2A> is enforced.  
   
- You can set the <xref:System.Windows.Controls.AccessText.LineStackingStrategy%2A> property to <xref:System.Windows.LineStackingStrategy> or <xref:System.Windows.LineStackingStrategy>.  
+ You can set the <xref:System.Windows.Controls.AccessText.LineStackingStrategy%2A> property to <xref:System.Windows.LineStackingStrategy.MaxHeight> or <xref:System.Windows.LineStackingStrategy.BlockLineHeight>.  
   
--   The <xref:System.Windows.LineStackingStrategy> value increases the line to the tallest object in the line. It ensures that no item overdraws or is trimmed.  
+-   The <xref:System.Windows.LineStackingStrategy.MaxHeight> value increases the line to the tallest object in the line. It ensures that no item overdraws or is trimmed.  
   
--   The <xref:System.Windows.LineStackingStrategy> value enforces a <xref:System.Windows.Controls.AccessText.LineHeight%2A> value on all lines. If the <xref:System.Windows.Controls.AccessText.LineHeight%2A> property does not provide sufficient space, the text is either overdrawn or trimmed. Which occurs depends on the <xref:System.Windows.UIElement.ClipProperty> value.  
+-   The <xref:System.Windows.LineStackingStrategy.BlockLineHeight> value enforces a <xref:System.Windows.Controls.AccessText.LineHeight%2A> value on all lines. If the <xref:System.Windows.Controls.AccessText.LineHeight%2A> property does not provide sufficient space, the text is either overdrawn or trimmed. Which occurs depends on the <xref:System.Windows.UIElement.ClipProperty> value.  
   
 <a name="dependencyPropertyInfo_LineStackingStrategy"></a>   
 ## Dependency Property Information  
@@ -904,7 +904,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.AccessText>|  
+|Identifier field|<xref:System.Windows.Controls.AccessText.TextProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
   
    
@@ -1201,7 +1201,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.AccessText>|  
+|Identifier field|<xref:System.Windows.Controls.AccessText.TextWrappingProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
   
    
@@ -1209,8 +1209,7 @@
 ## Examples  
  The following example uses the <xref:System.Windows.Controls.AccessText.TextWrapping%2A> property of <xref:System.Windows.Controls.AccessText> to make a multiple-line label.  
   
- <!-- TODO: review snippet reference [!code-xml[Label#4](~/samples/snippets/xaml/VS_Snippets_Wpf/Label/XAML/Pane1.xaml#4)]  -->
- <!-- TODO: review snippet reference [!code-xml[Label#4](~/samples/snippets/csharp/VS_Snippets_Wpf/Label/CS/Pane1.xaml#4)]  -->  
+ [!code-xml[LabelSnippet#4](~/samples/snippets/csharp/VS_Snippets_Wpf/LabelSnippet/CS/Pane1.xaml#4)]   
   
  ]]></format>
         </remarks>

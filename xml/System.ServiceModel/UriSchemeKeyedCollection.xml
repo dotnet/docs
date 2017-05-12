@@ -51,7 +51,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.UriSchemeKeyedCollection" /> class.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="addresses" /> is <see langword="null" />.</exception>
+          <paramref name="uris" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetKeyForItem">

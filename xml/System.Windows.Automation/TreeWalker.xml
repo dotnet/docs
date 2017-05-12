@@ -104,7 +104,7 @@
    
   
 ## Examples  
- The following example shows <xref:System.Windows.Automation.TreeWalker> being used to construct a tree view of elements in a subtree. The usage for <xref:System.Windows.Automation.TreeWalker.ContentViewWalker> is identical.  
+ The following example shows <xref:System.Windows.Automation.TreeWalker.ControlViewWalker> being used to construct a tree view of elements in a subtree. The usage for <xref:System.Windows.Automation.TreeWalker.ContentViewWalker> is identical.  
   
  [!code-csharp[UIAClient_snip#171](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#171)]
  [!code-vb[UIAClient_snip#171](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#171)]  
@@ -145,6 +145,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetFirstChild">
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the first child element of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Windows.Automation.AutomationElement> can have additional child elements that do not match the current view condition and thus are not returned when navigating the element tree.  
+  
+ The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the first child element will be returned as the first child on subsequent passes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetFirstChild">
       <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElement GetFirstChild (System.Windows.Automation.AutomationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationElement GetFirstChild(class System.Windows.Automation.AutomationElement element) cil managed" />
@@ -217,6 +236,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetLastChild">
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the last child element of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Windows.Automation.AutomationElement> can have additional child elements that do not match the current view condition and thus are not returned when navigating the element tree.  
+  
+ The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the last child element will be returned as the last child on subsequent passes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetLastChild">
       <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElement GetLastChild (System.Windows.Automation.AutomationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationElement GetLastChild(class System.Windows.Automation.AutomationElement element) cil managed" />
@@ -281,6 +319,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetNextSibling">
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the next sibling element of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Windows.Automation.AutomationElement> can have additional sibling elements that do not match the current view condition and thus are not returned when navigating the element tree.  
+  
+ The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the next sibling element will be returned as the next sibling on subsequent passes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetNextSibling">
       <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElement GetNextSibling (System.Windows.Automation.AutomationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationElement GetNextSibling(class System.Windows.Automation.AutomationElement element) cil managed" />
@@ -353,6 +410,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetParent">
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the parent element of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the parent element will be returned as the parent on subsequent passes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetParent">
       <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElement GetParent (System.Windows.Automation.AutomationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationElement GetParent(class System.Windows.Automation.AutomationElement element) cil managed" />
@@ -416,6 +490,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetPreviousSibling">
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the previous sibling of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Windows.Automation.AutomationElement> can have additional sibling elements that do not match the current view condition and thus are not returned when navigating the element tree.  
+  
+ The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the previous sibling element will be returned as the previous sibling on subsequent passes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetPreviousSibling">
       <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElement GetPreviousSibling (System.Windows.Automation.AutomationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationElement GetPreviousSibling(class System.Windows.Automation.AutomationElement element) cil managed" />
@@ -480,6 +573,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Normalize">
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the ancestor element nearest to the specified <see cref="T:System.Windows.Automation.AutomationElement" /> in the tree view used by this instance of <see cref="T:System.Windows.Automation.TreeWalker" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The element is normalized by navigating up the ancestor chain in the tree until an element that satisfies the view condition for the <xref:System.Windows.Automation.TreeWalker> object is reached. If the root element is reached, the root element is returned even if it does not satisfy the view condition.  
+  
+ This method is useful for applications that obtain references to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements by hit-testing. The application might want to work only with specific types of elements, and can use <xref:System.Windows.Automation.TreeWalker.Normalize%2A> to make sure that no matter what element is initially retrieved (for example, when a scroll bar gets the input focus), only the element of interest (such as a content element) is ultimately retrieved.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Normalize">
       <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElement Normalize (System.Windows.Automation.AutomationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationElement Normalize(class System.Windows.Automation.AutomationElement element) cil managed" />
@@ -567,7 +679,7 @@
    
   
 ## Examples  
- The following example shows <xref:System.Windows.Automation.TreeWalker> being used to construct a tree view of elements in a subtree. The usage for <xref:System.Windows.Automation.TreeWalker.RawViewWalker> is identical.  
+ The following example shows <xref:System.Windows.Automation.TreeWalker.ControlViewWalker> being used to construct a tree view of elements in a subtree. The usage for <xref:System.Windows.Automation.TreeWalker.RawViewWalker> is identical.  
   
  [!code-csharp[UIAClient_snip#171](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#171)]
  [!code-vb[UIAClient_snip#171](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#171)]  
@@ -576,117 +688,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Normalize">
-      <AssemblyInfo>
-        <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the ancestor element nearest to the specified <see cref="T:System.Windows.Automation.AutomationElement" /> in the tree view used by this instance of <see cref="T:System.Windows.Automation.TreeWalker" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The element is normalized by navigating up the ancestor chain in the tree until an element that satisfies the view condition for the <xref:System.Windows.Automation.TreeWalker> object is reached. If the root element is reached, the root element is returned even if it does not satisfy the view condition.  
-  
- This method is useful for applications that obtain references to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] elements by hit-testing. The application might want to work only with specific types of elements, and can use <xref:System.Windows.Automation.TreeWalker.Normalize%2A> to make sure that no matter what element is initially retrieved (for example, when a scroll bar gets the input focus), only the element of interest (such as a content element) is ultimately retrieved.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetParent">
-      <AssemblyInfo>
-        <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the parent element of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the parent element will be returned as the parent on subsequent passes.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetPreviousSibling">
-      <AssemblyInfo>
-        <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the previous sibling of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional sibling elements that do not match the current view condition and thus are not returned when navigating the element tree.  
-  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the previous sibling element will be returned as the previous sibling on subsequent passes.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetFirstChild">
-      <AssemblyInfo>
-        <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the first child element of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional child elements that do not match the current view condition and thus are not returned when navigating the element tree.  
-  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the first child element will be returned as the first child on subsequent passes.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetNextSibling">
-      <AssemblyInfo>
-        <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the next sibling element of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional sibling elements that do not match the current view condition and thus are not returned when navigating the element tree.  
-  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the next sibling element will be returned as the next sibling on subsequent passes.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetLastChild">
-      <AssemblyInfo>
-        <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the last child element of the specified <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Windows.Automation.AutomationElement> can have additional child elements that do not match the current view condition and thus are not returned when navigating the element tree.  
-  
- The structure of the <xref:System.Windows.Automation.AutomationElement> tree changes as the visible [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] elements on the desktop change. It is not guaranteed that an element returned as the last child element will be returned as the last child on subsequent passes.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -52,6 +53,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -86,6 +88,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -105,7 +108,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Specify this attribute on a property to query again and refresh all properties in the <xref:System.Windows.Forms.PropertyGrid> when the property value changes. The <xref:System.Windows.Forms.PropertyGrid> caches data. The <xref:System.ComponentModel.RefreshProperties> mode causes the Properties window to query each property again and refresh its view.  
+ Specify this attribute on a property to query again and refresh all properties in the <xref:System.Windows.Forms.PropertyGrid> when the property value changes. The <xref:System.Windows.Forms.PropertyGrid> caches data. The <xref:System.ComponentModel.RefreshProperties.All> mode causes the Properties window to query each property again and refresh its view.  
   
  ]]></format>
         </remarks>
@@ -119,6 +122,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -152,6 +156,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -184,6 +189,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -218,6 +224,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -237,6 +247,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -264,6 +275,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

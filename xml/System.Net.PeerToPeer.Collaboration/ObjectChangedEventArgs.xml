@@ -18,7 +18,7 @@
 ## Remarks  
  PeerObjects are run-time data items associated with an application, such as certificates, pictures, avatars, or specific descriptions. They may also be referred to as a host peer's registered applications, objects and presence information.  When a <xref:System.Net.PeerToPeer.Collaboration.PeerObject> is changed, an event is raised.  
   
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration> session begins.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration> session begins.  
   
  ]]></format>
     </remarks>

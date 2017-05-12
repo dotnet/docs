@@ -145,7 +145,7 @@
 ## Remarks  
  Although the method signature accepts any object that implements the <xref:System.Security.IPermission> interface, an <xref:System.ArgumentException> exception will be thrown if calling the <xref:System.Object.GetType%2A> method on the object referenced by the `target` parameter does not return <xref:System.Configuration.ConfigurationPermission?displayProperty=fullName>.  
   
- If the object referenced by the `target` parameter is `null`, the comparison is done between the permission state of the <xref:System.Configuration.ConfigurationPermission> object and the <xref:System.Security.Permissions.PermissionState> value of the <xref:System.Security.Permissions.PermissionState> enumeration.  
+ If the object referenced by the `target` parameter is `null`, the comparison is done between the permission state of the <xref:System.Configuration.ConfigurationPermission> object and the <xref:System.Security.Permissions.PermissionState.None> value of the <xref:System.Security.Permissions.PermissionState> enumeration.  
   
  ]]></format>
         </remarks>

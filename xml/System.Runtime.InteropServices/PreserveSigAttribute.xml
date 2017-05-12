@@ -9,6 +9,7 @@
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -46,7 +47,7 @@
  The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) also applies this attribute; it applies the attribute to dispinterfaces when it imports a type library.  
   
 > [!NOTE]
->  Return types of <xref:System.Runtime.InteropServices.UnmanagedType>, <xref:System.Guid>, and <xref:System.Object> are not supported by the <xref:System.Runtime.InteropServices.PreserveSigAttribute> class when interoperation occurs from COM to managed code and the managed code is marked with the <xref:System.Runtime.InteropServices.PreserveSigAttribute> class.  When you attempt to use one of these return types with the <xref:System.Runtime.InteropServices.PreserveSigAttribute> class during these conditions, a <xref:System.TypeLoadException> is thrown.  
+>  Return types of <xref:System.Runtime.InteropServices.UnmanagedType.Currency>, <xref:System.Guid>, and <xref:System.Object> are not supported by the <xref:System.Runtime.InteropServices.PreserveSigAttribute> class when interoperation occurs from COM to managed code and the managed code is marked with the <xref:System.Runtime.InteropServices.PreserveSigAttribute> class.  When you attempt to use one of these return types with the <xref:System.Runtime.InteropServices.PreserveSigAttribute> class during these conditions, a <xref:System.TypeLoadException> is thrown.  
   
    
   
@@ -95,6 +96,7 @@ int DoSomething ([in] long l);
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

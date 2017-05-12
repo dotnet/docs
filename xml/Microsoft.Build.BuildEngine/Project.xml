@@ -29,6 +29,26 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.BuildEngine.Project" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildProperty><xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> classes to list all the items and properties in the project.  
+  
+ [!code-csharp[msbuild_ListItemsAndProperties#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ListItemsAndProperties/CS/Program.cs#1)]
+ [!code-vb[msbuild_ListItemsAndProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ListItemsAndProperties/VB/Module1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Project ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -461,7 +481,7 @@
 ## Remarks  
  If the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> attribute is not present on the [Project Element (MSBuild)](http://msdn.microsoft.com/library/d1cda56a-dbef-4109-9201-39e962e3f653) element, getting the value returns the default Tools version of the parent <xref:Microsoft.Build.BuildEngine>.  
   
- The <xref:Microsoft.Build.BuildEngine.Project.DefaultToolsVersion%2A> value can differ from the Tools version used during a build if its value is overridden during construction of the <xref:Microsoft.Build.BuildEngine.Project> instance or it is set to a specific value with the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> property. Setting the <xref:Microsoft.Build.BuildEngine.Project.DefaultToolsVersion%2A> value cannot change the Tools version if it has been overridden, but you can change the Tools version using the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> property.  
+ The <xref:Microsoft.Build.BuildEngine.Project.DefaultToolsVersion%2A> value can differ from the Tools version used during a build if its value is overridden during construction of the <xref:Microsoft.Build.BuildEngine.Project.DefaultToolsVersion%2A> instance or it is set to a specific value with the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> property. Setting the <xref:Microsoft.Build.BuildEngine.Project.DefaultToolsVersion%2A> value cannot change the Tools version if it has been overridden, but you can change the Tools version using the <xref:Microsoft.Build.BuildEngine.Project.ToolsVersion%2A> property.  
   
  For more information about Tools versions, see `MSBuild Tool Set (ToolsVersion)`.  
   
@@ -879,6 +899,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the contents of a project file into the <see cref="T:Microsoft.Build.BuildEngine.Project" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildProperty>, <xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> classes to list all the items and properties in the project.  
+  
+ [!code-csharp[msbuild_ListItemsAndProperties#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ListItemsAndProperties/CS/Program.cs#1)]
+ [!code-vb[msbuild_ListItemsAndProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ListItemsAndProperties/VB/Module1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Load">
       <MemberSignature Language="C#" Value="public void Load (System.IO.TextReader textReader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(class System.IO.TextReader textReader) cil managed" />
@@ -1265,6 +1305,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemovePropertyGroupsWithMatchingCondition">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes all &lt;PropertyGroup&gt;'s from the main project file that have a specific "Condition."</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This will not remove any property groups from imported project files.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemovePropertyGroupsWithMatchingCondition">
       <MemberSignature Language="C#" Value="public void RemovePropertyGroupsWithMatchingCondition (string matchCondition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemovePropertyGroupsWithMatchingCondition(string matchCondition) cil managed" />
@@ -1766,62 +1823,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.BuildEngine.Project" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildProperty><xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> classes to list all the items and properties in the project.  
-  
- [!code-csharp[msbuild_ListItemsAndProperties#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ListItemsAndProperties/CS/Program.cs#1)]
- [!code-vb[msbuild_ListItemsAndProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ListItemsAndProperties/VB/Module1.vb#1)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Load">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Loads the contents of a project file into the <see cref="T:Microsoft.Build.BuildEngine.Project" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a <xref:Microsoft.Build.BuildEngine.Project> object and uses the <xref:Microsoft.Build.BuildEngine.BuildItem>, <xref:Microsoft.Build.BuildEngine.BuildProperty>, <xref:Microsoft.Build.BuildEngine.BuildItemGroup>, and <xref:Microsoft.Build.BuildEngine.BuildPropertyGroup> classes to list all the items and properties in the project.  
-  
- [!code-csharp[msbuild_ListItemsAndProperties#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_ListItemsAndProperties/CS/Program.cs#1)]
- [!code-vb[msbuild_ListItemsAndProperties#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_ListItemsAndProperties/VB/Module1.vb#1)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RemovePropertyGroupsWithMatchingCondition">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes all &lt;PropertyGroup&gt;'s from the main project file that have a specific "Condition."</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This will not remove any property groups from imported project files.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

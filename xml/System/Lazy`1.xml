@@ -8,6 +8,7 @@
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -70,15 +71,15 @@
  **Alternative to locking** In certain situations, you might want to avoid the overhead of the <xref:System.Lazy%601> object's default locking behavior. In rare situations, there might be a potential for deadlocks. In such cases, you can use the <xref:System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29> or <xref:System.Lazy%601.%23ctor%28System.Func%7B%600%7D%2CSystem.Threading.LazyThreadSafetyMode%29> constructor, and specify <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName>. This enables the <xref:System.Lazy%601> object to create a copy of the lazily initialized object on each of several threads if the threads call the <xref:System.Lazy%601.Value%2A> property simultaneously. The <xref:System.Lazy%601> object ensures that all threads use the same instance of the lazily initialized object and discards the instances that are not used. Thus, the cost of reducing the locking overhead is that your program might sometimes create and discard extra copies of an expensive object. In most cases, this is unlikely. The examples for the <xref:System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29> and <xref:System.Lazy%601.%23ctor%28System.Func%7B%600%7D%2CSystem.Threading.LazyThreadSafetyMode%29> constructors demonstrate this behavior.  
   
 > [!IMPORTANT]
->  When you specify <xref:System.Threading.LazyThreadSafetyMode>, exceptions are never cached, even if you specify a factory method.  
+>  When you specify <xref:System.Threading.LazyThreadSafetyMode.PublicationOnly>, exceptions are never cached, even if you specify a factory method.  
   
- **Equivalent constructors** In addition to enabling the use of <xref:System.Threading.LazyThreadSafetyMode>, the <xref:System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29> and <xref:System.Lazy%601.%23ctor%28System.Func%7B%600%7D%2CSystem.Threading.LazyThreadSafetyMode%29> constructors can duplicate the functionality of the other constructors. The following table shows the parameter values that produce equivalent behavior.  
+ **Equivalent constructors** In addition to enabling the use of <xref:System.Threading.LazyThreadSafetyMode.PublicationOnly>, the <xref:System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29> and <xref:System.Lazy%601.%23ctor%28System.Func%7B%600%7D%2CSystem.Threading.LazyThreadSafetyMode%29> constructors can duplicate the functionality of the other constructors. The following table shows the parameter values that produce equivalent behavior.  
   
 |To create a <xref:System.Lazy%601> object that is|For constructors that have a `LazyThreadSafetyMode` `mode` parameter, set `mode` to|For constructors that have a Boolean `isThreadSafe` parameter, set `isThreadSafe` to|For constructors with no thread safety parameters|  
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|-------------------------------------------------------|  
-|Fully thread safe; uses locking to ensure that only one thread initializes the value.|<xref:System.Threading.LazyThreadSafetyMode>|`true`|All such constructors are fully thread safe.|  
-|Not thread safe.|<xref:System.Threading.LazyThreadSafetyMode>|`false`|Not applicable.|  
-|Fully thread safe; threads race to initialize the value.|<xref:System.Threading.LazyThreadSafetyMode>|Not applicable.|Not applicable.|  
+|Fully thread safe; uses locking to ensure that only one thread initializes the value.|<xref:System.Threading.LazyThreadSafetyMode.ExecutionAndPublication>|`true`|All such constructors are fully thread safe.|  
+|Not thread safe.|<xref:System.Threading.LazyThreadSafetyMode.None>|`false`|Not applicable.|  
+|Fully thread safe; threads race to initialize the value.|<xref:System.Threading.LazyThreadSafetyMode.PublicationOnly>|Not applicable.|Not applicable.|  
   
  **Other capabilities** For information about the use of <xref:System.Lazy%601> with thread-static fields, or as the backing store for properties, see [Lazy Initialization](~/docs/framework/performance/lazy-initialization.md).  
   
@@ -139,6 +140,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -200,6 +202,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -256,6 +259,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -327,6 +331,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -389,6 +394,24 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Lazy (T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Lazy`1.#ctor(`0)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Lazy (Func&lt;T&gt; valueFactory, bool isThreadSafe);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`1&lt;!T&gt; valueFactory, bool isThreadSafe) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.#ctor(System.Func{`0},System.Boolean)" />
@@ -399,6 +422,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -476,6 +500,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -500,12 +525,12 @@
 ## Remarks  
  The thread safety mode of a <xref:System.Lazy%601> instance describes the behavior when multiple threads try to initialize the <xref:System.Lazy%601> instance.  
   
- Exceptions that are thrown by `valueFactory` are cached, unless `mode` is <xref:System.Threading.LazyThreadSafetyMode>. For more information, see the <xref:System.Lazy%601> class or the <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName> enumeration.  
+ Exceptions that are thrown by `valueFactory` are cached, unless `mode` is <xref:System.Threading.LazyThreadSafetyMode.PublicationOnly>. For more information, see the <xref:System.Lazy%601> class or the <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName> enumeration.  
   
    
   
 ## Examples  
- The following example demonstrates the use of this constructor to create a lazy initializer that enables multiple threads to race to create an object lazily. Multiple threads might succeed in creating instances, but all threads use the instance that was created first. In addition, the example demonstrates that exceptions are never cached when you specify <xref:System.Threading.LazyThreadSafetyMode>, even if initialization is performed by a function instead of by the default constructor of the lazily created type.  
+ The following example demonstrates the use of this constructor to create a lazy initializer that enables multiple threads to race to create an object lazily. Multiple threads might succeed in creating instances, but all threads use the instance that was created first. In addition, the example demonstrates that exceptions are never cached when you specify <xref:System.Threading.LazyThreadSafetyMode.PublicationOnly>, even if initialization is performed by a function instead of by the default constructor of the lazily created type.  
   
 > [!NOTE]
 >  For an example that demonstrates how to use this constructor in single-threaded scenarios (specifying <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName> for `mode`), see the <xref:System.Lazy%601.%23ctor%28System.Boolean%29> constructor. For an example that demonstrates how to use this constructor to provide locking instead of race conditions in multithreaded scenarios (specifying <xref:System.Threading.LazyThreadSafetyMode?displayProperty=fullName> for `mode`), see the <xref:System.Lazy%601.%23ctor> constructor.  
@@ -527,7 +552,7 @@
  [!code-csharp[System.Lazy\`1.ctorFuncLTSM#FactoryFunc](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.lazy`1.ctorfuncltsm/cs/example.cs#factoryfunc)]
  [!code-vb[System.Lazy\`1.ctorFuncLTSM#FactoryFunc](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.lazy`1.ctorfuncltsm/vb/example.vb#factoryfunc)]  
   
- With any other <xref:System.Threading.LazyThreadSafetyMode> setting, an unhandled exception in the initialization function would be cached. However, <xref:System.Threading.LazyThreadSafetyMode> suppresses exception caching. The output from the example demonstrates that a subsequent attempt to initialize the object succeeds.  
+ With any other <xref:System.Threading.LazyThreadSafetyMode> setting, an unhandled exception in the initialization function would be cached. However, <xref:System.Threading.LazyThreadSafetyMode.PublicationOnly> suppresses exception caching. The output from the example demonstrates that a subsequent attempt to initialize the object succeeds.  
   
 > [!NOTE]
 >  The exception message usually appears after messages indicating that other threads have successfully initialized the object. This is because of the delay introduced by throwing and catching the exception.  
@@ -564,6 +589,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -606,6 +632,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -647,6 +674,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

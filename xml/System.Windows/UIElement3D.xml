@@ -137,7 +137,7 @@
   
  The default is <see langword="false" />.  
   
- Do not routinely ask to rehandle a routed event. For more information, see Remarks.</param>
+ Do not routinely ask to rehandle a routed event.</param>
         <summary>Adds a routed event handler for a specified routed event, adding the handler to the handler collection on the current element. Specify <paramref name="handledEventsToo" /> as <see langword="true" /> to have the provided handler be invoked for routed event that had already been marked as handled by another element along the event route.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -874,7 +874,7 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the element can receive focus.</summary>
         <value>
-          <see langword="true" /> if the element is focusable; otherwise <see langword="false" />. The default is <see langword="false" />, but see Remarks.</value>
+          <see langword="true" /> if the element is focusable; otherwise <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -10587,7 +10587,7 @@
 ## Remarks  
  Setting this property affects the value of <xref:System.Windows.UIElement3D.IsVisible%2A>, which in turn may raise the <xref:System.Windows.UIElement3D.IsVisibleChanged> event. However, <xref:System.Windows.UIElement3D.IsVisible%2A> has other factors that influence it, for instance the visibility settings of parents that contain it.  
   
- Elements where <xref:System.Windows.UIElement3D.Visibility%2A> is not <xref:System.Windows.Visibility> do not participate in input events (or commands) and are not reported in hit testing.  
+ Elements where <xref:System.Windows.UIElement3D.Visibility%2A> is not <xref:System.Windows.Visibility.Visible> do not participate in input events (or commands) and are not reported in hit testing.  
   
  <xref:System.Windows.UIElement3D.Visibility%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   

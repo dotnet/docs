@@ -693,12 +693,10 @@
       <Docs>
         <param name="timeout">The time period, in milliseconds, the balloon tip should display.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  This parameter is deprecated as of Windows Vista. Notification display times are now based on system accessibility settings.  
   
-</para>  
-</block></param>
+</para></block></param>
         <summary>Displays a balloon tip in the taskbar for the specified time period.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -745,12 +743,10 @@
       <Docs>
         <param name="timeout">The time period, in milliseconds, the balloon tip should display.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  This parameter is deprecated as of Windows Vista. Notification display times are now based on system accessibility settings.  
   
-</para>  
-</block></param>
+</para></block></param>
         <param name="tipTitle">The title to display on the balloon tip.</param>
         <param name="tipText">The text to display on the balloon tip.</param>
         <param name="tipIcon">One of the <see cref="T:System.Windows.Forms.ToolTipIcon" /> values.</param>

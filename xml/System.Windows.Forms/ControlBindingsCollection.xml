@@ -532,7 +532,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ControlBindingsCollection.DefaultDataSourceUpdateMode%2A> property is used in cases where a <xref:System.Windows.Forms.Binding> without a <xref:System.Windows.Forms.Binding.DataSourceUpdateMode%2A> specified is added to the collection. The default value for Windows Forms controls is <xref:System.Windows.Forms.DataSourceUpdateMode>  
+ The <xref:System.Windows.Forms.ControlBindingsCollection.DefaultDataSourceUpdateMode%2A> property is used in cases where a <xref:System.Windows.Forms.Binding> without a <xref:System.Windows.Forms.Binding.DataSourceUpdateMode%2A> specified is added to the collection. The default value for Windows Forms controls is <xref:System.Windows.Forms.DataSourceUpdateMode.OnValidation>  
   
  ]]></format>
         </remarks>

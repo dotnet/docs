@@ -145,7 +145,7 @@
   
 -   If the cell is currently in edit mode, this method commits and ends the edit.  
   
--   If the cell is not in edit mode and the <xref:System.Windows.Forms.DataGridView.EditMode%2A?displayProperty=fullName> property is set to <xref:System.Windows.Forms.DataGridViewEditMode>, this method returns.  
+-   If the cell is not in edit mode and the <xref:System.Windows.Forms.DataGridView.EditMode%2A?displayProperty=fullName> property is set to <xref:System.Windows.Forms.DataGridViewEditMode.EditProgrammatically>, this method returns.  
   
 -   If none of the preceding actions is taken, this method causes the cell to enter edit mode.  
   
@@ -327,12 +327,12 @@
   
 |Parameter value|Description|  
 |---------------------|-----------------|  
-|<xref:System.Windows.Forms.AccessibleNavigation>|The <xref:System.Windows.Forms.DataGridViewCell> to the right of the current cell. <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Navigate%2A> returns `null` if the current cell is in the right-most column.|  
-|<xref:System.Windows.Forms.AccessibleNavigation>|The <xref:System.Windows.Forms.DataGridViewCell> to the left of the current cell. <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Navigate%2A> returns an accessible object for the row header if the current cell is in the left-most column.|  
-|<xref:System.Windows.Forms.AccessibleNavigation>|The <xref:System.Windows.Forms.DataGridViewCell> that has the next higher index. <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Navigate%2A> returns `null` if the current cell is in the first column.|  
-|<xref:System.Windows.Forms.AccessibleNavigation>|The <xref:System.Windows.Forms.DataGridViewCell> that has the next lower index. <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Navigate%2A> returns `null` if the current cell is in the last column.|  
-|<xref:System.Windows.Forms.AccessibleNavigation>|The <xref:System.Windows.Forms.DataGridViewCell> in the same column and one row above the current cell. <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Navigate%2A> returns `null` if the current cell is in the first row.|  
-|<xref:System.Windows.Forms.AccessibleNavigation>|The <xref:System.Windows.Forms.DataGridViewCell> in the same column and one row below the current cell. <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Navigate%2A> returns `null` if the current cell is in the last row.|  
+|<xref:System.Windows.Forms.AccessibleNavigation.Right>|The <xref:System.Windows.Forms.DataGridViewCell> to the right of the current cell. <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Navigate%2A> returns `null` if the current cell is in the right-most column.|  
+|<xref:System.Windows.Forms.AccessibleNavigation.Left>|The <xref:System.Windows.Forms.DataGridViewCell> to the left of the current cell. <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Navigate%2A> returns an accessible object for the row header if the current cell is in the left-most column.|  
+|<xref:System.Windows.Forms.AccessibleNavigation.Next>|The <xref:System.Windows.Forms.DataGridViewCell> that has the next higher index. <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Navigate%2A> returns `null` if the current cell is in the first column.|  
+|<xref:System.Windows.Forms.AccessibleNavigation.Previous>|The <xref:System.Windows.Forms.DataGridViewCell> that has the next lower index. <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Navigate%2A> returns `null` if the current cell is in the last column.|  
+|<xref:System.Windows.Forms.AccessibleNavigation.Up>|The <xref:System.Windows.Forms.DataGridViewCell> in the same column and one row above the current cell. <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Navigate%2A> returns `null` if the current cell is in the first row.|  
+|<xref:System.Windows.Forms.AccessibleNavigation.Down>|The <xref:System.Windows.Forms.DataGridViewCell> in the same column and one row below the current cell. <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Navigate%2A> returns `null` if the current cell is in the last row.|  
 |All other <xref:System.Windows.Forms.AccessibleNavigation> values|`null`.|  
   
  ]]></format>
@@ -431,10 +431,10 @@
   
 |Parameter value|Action|  
 |---------------------|------------|  
-|<xref:System.Windows.Forms.AccessibleSelection>|The <xref:System.Windows.Forms.DataGridView> takes focus.|  
-|<xref:System.Windows.Forms.AccessibleSelection>|The <xref:System.Windows.Forms.DataGridViewCell> that owns this <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject> takes focus.|  
-|<xref:System.Windows.Forms.AccessibleSelection>|The <xref:System.Windows.Forms.DataGridViewCell> is added to the <xref:System.Windows.Forms.DataGridView.SelectedCells%2A> property.|  
-|<xref:System.Windows.Forms.AccessibleSelection>|The <xref:System.Windows.Forms.DataGridViewCell> is removed from the <xref:System.Windows.Forms.DataGridView.SelectedCells%2A> property.|  
+|<xref:System.Windows.Forms.AccessibleSelection.TakeFocus>|The <xref:System.Windows.Forms.DataGridView> takes focus.|  
+|<xref:System.Windows.Forms.AccessibleSelection.TakeSelection>|The <xref:System.Windows.Forms.DataGridViewCell> that owns this <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject> takes focus.|  
+|<xref:System.Windows.Forms.AccessibleSelection.AddSelection>|The <xref:System.Windows.Forms.DataGridViewCell> is added to the <xref:System.Windows.Forms.DataGridView.SelectedCells%2A> property.|  
+|<xref:System.Windows.Forms.AccessibleSelection.RemoveSelection>|The <xref:System.Windows.Forms.DataGridViewCell> is removed from the <xref:System.Windows.Forms.DataGridView.SelectedCells%2A> property.|  
 |All other <xref:System.Windows.Forms.AccessibleSelection> values|No action is taken.|  
   
  ]]></format>
@@ -462,7 +462,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The return value always includes the <xref:System.Windows.Forms.AccessibleStates> and <xref:System.Windows.Forms.AccessibleStates> values. It also includes the <xref:System.Windows.Forms.AccessibleStates> value if the associated cell is selected, the <xref:System.Windows.Forms.AccessibleStates> value if the cell has keyboard focus, and the <xref:System.Windows.Forms.AccessibleStates> value if the cell is not currently displayed.  
+ The return value always includes the <xref:System.Windows.Forms.AccessibleStates.Selectable> and <xref:System.Windows.Forms.AccessibleStates.Focusable> values. It also includes the <xref:System.Windows.Forms.AccessibleStates.Selected> value if the associated cell is selected, the <xref:System.Windows.Forms.AccessibleStates.Focused> value if the cell has keyboard focus, and the <xref:System.Windows.Forms.AccessibleStates.Offscreen> value if the cell is not currently displayed.  
   
  ]]></format>
         </remarks>

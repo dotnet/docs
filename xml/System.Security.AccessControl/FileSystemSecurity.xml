@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -54,6 +55,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,6 +86,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -138,6 +141,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -168,6 +172,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -189,13 +194,13 @@
 ## Remarks  
  The <xref:System.Security.AccessControl.FileSystemSecurity.AddAccessRule%2A> method adds a new rule to the list of rules contained within a <xref:System.Security.AccessControl.FileSystemSecurity> object.  
   
- If an access control list (ACL) already exists for the specified rule, the <xref:System.Security.AccessControl.FileSystemSecurity.AddAccessRule%2A> method will still add the rule, with one exception: a <xref:System.Security.AccessControl.FileSystemAccessRule> object created using the <xref:System.Security.AccessControl.AccessControlType> enumeration value supersedes an object created using the <xref:System.Security.AccessControl.AccessControlType> enumeration value.  
+ If an access control list (ACL) already exists for the specified rule, the <xref:System.Security.AccessControl.FileSystemSecurity.AddAccessRule%2A> method will still add the rule, with one exception: a <xref:System.Security.AccessControl.FileSystemAccessRule> object created using the <xref:System.Security.AccessControl.AccessControlType.Deny> enumeration value supersedes an object created using the <xref:System.Security.AccessControl.AccessControlType.Allow> enumeration value.  
   
  To persist new or changed ACL information to a file, use the <xref:System.IO.File.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  To persist new or changed ACL information to a directory, use the <xref:System.IO.Directory.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  
   
  To retrieve ACL information from a file, use the <xref:System.IO.File.GetAccessControl%2A> or <xref:System.IO.FileInfo.GetAccessControl%2A> method.  To retrieve ACL information from a directory, use the <xref:System.IO.Directory.GetAccessControl%2A> or <xref:System.IO.DirectoryInfo.GetAccessControl%2A> method.  
   
- When you add an access rule without setting the <xref:System.Security.AccessControl.FileSystemRights> flag, the <xref:System.Security.AccessControl.FileSystemRights> flag will be automatically added to your rule.  If you remove the rule later without specifying the <xref:System.Security.AccessControl.FileSystemRights> flag, the flag will automatically be removed.  
+ When you add an access rule without setting the <xref:System.Security.AccessControl.FileSystemRights.Synchronize> flag, the <xref:System.Security.AccessControl.FileSystemRights.Synchronize> flag will be automatically added to your rule.  If you remove the rule later without specifying the <xref:System.Security.AccessControl.FileSystemRights.Synchronize> flag, the flag will automatically be removed.  
   
    
   
@@ -219,6 +224,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -263,6 +269,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -317,6 +324,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -347,6 +355,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -368,13 +377,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRule%2A> method removes either all matching <xref:System.Security.AccessControl.AccessControlType> access rules or all matching <xref:System.Security.AccessControl.AccessControlType> access rules from the current <xref:System.Security.AccessControl.FileSystemSecurity> object.  For example, you can use this method to remove all <xref:System.Security.AccessControl.AccessControlType> access rules for a user by passing a <xref:System.Security.AccessControl.FileSystemAccessRule> object created using the <xref:System.Security.AccessControl.AccessControlType> value, the <xref:System.Security.AccessControl.FileSystemRights> value, and a user account.  When you do this, the <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRule%2A> method removes any deny rules that specify the <xref:System.Security.AccessControl.FileSystemRights> value or the <xref:System.Security.AccessControl.FileSystemRights> value.  
+ The <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRule%2A> method removes either all matching <xref:System.Security.AccessControl.AccessControlType.Deny> access rules or all matching <xref:System.Security.AccessControl.AccessControlType.Allow> access rules from the current <xref:System.Security.AccessControl.FileSystemSecurity> object.  For example, you can use this method to remove all <xref:System.Security.AccessControl.AccessControlType.Deny> access rules for a user by passing a <xref:System.Security.AccessControl.FileSystemAccessRule> object created using the <xref:System.Security.AccessControl.AccessControlType.Deny> value, the <xref:System.Security.AccessControl.FileSystemRights.Read> value, and a user account.  When you do this, the <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRule%2A> method removes any deny rules that specify the <xref:System.Security.AccessControl.FileSystemRights.Read> value or the <xref:System.Security.AccessControl.FileSystemRights.Write> value.  
   
  To persist new or changed access control list (ACL) information to a file, use the <xref:System.IO.File.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  To persist new or changed ACL information to a directory, use the <xref:System.IO.Directory.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  
   
  To retrieve ACL information from a file, use the <xref:System.IO.File.GetAccessControl%2A> or <xref:System.IO.FileInfo.GetAccessControl%2A> method.  To retrieve ACL information from a directory, use the <xref:System.IO.Directory.GetAccessControl%2A> or <xref:System.IO.DirectoryInfo.GetAccessControl%2A> method.  
   
- When you add an access rule without setting the <xref:System.Security.AccessControl.FileSystemRights> flag, the <xref:System.Security.AccessControl.FileSystemRights> flag will be automatically added to your rule.  If you remove the rule later without specifying the <xref:System.Security.AccessControl.FileSystemRights> flag, the flag will automatically be removed.  
+ When you add an access rule without setting the <xref:System.Security.AccessControl.FileSystemRights.Synchronize> flag, the <xref:System.Security.AccessControl.FileSystemRights.Synchronize> flag will be automatically added to your rule.  If you remove the rule later without specifying the <xref:System.Security.AccessControl.FileSystemRights.Synchronize> flag, the flag will automatically be removed.  
   
    
   
@@ -398,6 +407,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -423,7 +433,7 @@
   
  To retrieve ACL information from a file, use the <xref:System.IO.File.GetAccessControl%2A> or <xref:System.IO.FileInfo.GetAccessControl%2A> method.  To retrieve ACL information from a directory, use the <xref:System.IO.Directory.GetAccessControl%2A> or <xref:System.IO.DirectoryInfo.GetAccessControl%2A> method.  
   
- When you add an access rule without setting the <xref:System.Security.AccessControl.FileSystemRights> flag, the <xref:System.Security.AccessControl.FileSystemRights> flag will be automatically added to your rule.  If you remove the rule later without specifying the <xref:System.Security.AccessControl.FileSystemRights> flag, the flag will automatically be removed.  
+ When you add an access rule without setting the <xref:System.Security.AccessControl.FileSystemRights.Synchronize> flag, the <xref:System.Security.AccessControl.FileSystemRights.Synchronize> flag will be automatically added to your rule.  If you remove the rule later without specifying the <xref:System.Security.AccessControl.FileSystemRights.Synchronize> flag, the flag will automatically be removed.  
   
  ]]></format>
         </remarks>
@@ -438,6 +448,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -457,13 +468,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRuleSpecific%2A> method removes the specified <xref:System.Security.AccessControl.AccessControlType> access rule or the specified matching <xref:System.Security.AccessControl.AccessControlType> access rule from the current <xref:System.Security.AccessControl.FileSystemSecurity> object.  For example, you can use this method to remove a specified <xref:System.Security.AccessControl.AccessControlType> access rule for a user by passing a <xref:System.Security.AccessControl.FileSystemAccessRule> object created using the <xref:System.Security.AccessControl.AccessControlType> value, the <xref:System.Security.AccessControl.FileSystemRights> value, and a user account.  When you do this, the <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRuleSpecific%2A> method removes only the deny rule that specifies the <xref:System.Security.AccessControl.FileSystemRights> value.  It does not remove any deny rules that specify the <xref:System.Security.AccessControl.FileSystemRights> value.  
+ The <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRuleSpecific%2A> method removes the specified <xref:System.Security.AccessControl.AccessControlType.Deny> access rule or the specified matching <xref:System.Security.AccessControl.AccessControlType.Allow> access rule from the current <xref:System.Security.AccessControl.FileSystemSecurity> object.  For example, you can use this method to remove a specified <xref:System.Security.AccessControl.AccessControlType.Deny> access rule for a user by passing a <xref:System.Security.AccessControl.FileSystemAccessRule> object created using the <xref:System.Security.AccessControl.AccessControlType.Deny> value, the <xref:System.Security.AccessControl.FileSystemRights.Read> value, and a user account.  When you do this, the <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRuleSpecific%2A> method removes only the deny rule that specifies the <xref:System.Security.AccessControl.FileSystemRights.Read> value.  It does not remove any deny rules that specify the <xref:System.Security.AccessControl.FileSystemRights.Write> value.  
   
  To persist new or changed access control list (ACL) information to a file, use the <xref:System.IO.File.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  To persist new or changed ACL information to a directory, use the <xref:System.IO.Directory.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  
   
  To retrieve ACL information from a file, use the <xref:System.IO.File.GetAccessControl%2A> or <xref:System.IO.FileInfo.GetAccessControl%2A> method.  To retrieve ACL information from a directory, use the <xref:System.IO.Directory.GetAccessControl%2A> or <xref:System.IO.DirectoryInfo.GetAccessControl%2A> method.  
   
- When you add an access rule without setting the <xref:System.Security.AccessControl.FileSystemRights> flag, the <xref:System.Security.AccessControl.FileSystemRights> flag will be automatically added to your rule.  If you remove the rule later without specifying the <xref:System.Security.AccessControl.FileSystemRights> flag, the flag will automatically be removed.  
+ When you add an access rule without setting the <xref:System.Security.AccessControl.FileSystemRights.Synchronize> flag, the <xref:System.Security.AccessControl.FileSystemRights.Synchronize> flag will be automatically added to your rule.  If you remove the rule later without specifying the <xref:System.Security.AccessControl.FileSystemRights.Synchronize> flag, the flag will automatically be removed.  
   
  ]]></format>
         </remarks>
@@ -478,6 +489,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -499,7 +511,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRule%2A> method removes either all matching <xref:System.Security.AccessControl.AccessControlType> audit rules or all matching <xref:System.Security.AccessControl.AccessControlType> audit rules from the current <xref:System.Security.AccessControl.FileSystemSecurity> object.  For example, you can use this method to remove all <xref:System.Security.AccessControl.AccessControlType> audit rules for a user by passing a <xref:System.Security.AccessControl.FileSystemAuditRule> object created using the <xref:System.Security.AccessControl.AccessControlType> value, the <xref:System.Security.AccessControl.AuditFlags> value, and a user account.  When you do this, the <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRule%2A> method removes any deny rules that specify the <xref:System.Security.AccessControl.AuditFlags> value or the <xref:System.Security.AccessControl.AuditFlags> value.  
+ The <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRule%2A> method removes either all matching <xref:System.Security.AccessControl.AccessControlType.Deny> audit rules or all matching <xref:System.Security.AccessControl.AccessControlType.Allow> audit rules from the current <xref:System.Security.AccessControl.FileSystemSecurity> object.  For example, you can use this method to remove all <xref:System.Security.AccessControl.AccessControlType.Deny> audit rules for a user by passing a <xref:System.Security.AccessControl.FileSystemAuditRule> object created using the <xref:System.Security.AccessControl.AccessControlType.Deny> value, the <xref:System.Security.AccessControl.AuditFlags.Failure> value, and a user account.  When you do this, the <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRule%2A> method removes any deny rules that specify the <xref:System.Security.AccessControl.AuditFlags.Failure> value or the <xref:System.Security.AccessControl.AuditFlags.Success> value.  
   
    
   
@@ -522,6 +534,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -556,6 +569,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -575,7 +589,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRuleSpecific%2A> method removes the specified matching <xref:System.Security.AccessControl.AccessControlType> audit rule or the specified matching <xref:System.Security.AccessControl.AccessControlType> audit rule from the current <xref:System.Security.AccessControl.FileSystemSecurity> object.  For example, you can use this method to remove a specified <xref:System.Security.AccessControl.AccessControlType> audit rule for a user by passing a <xref:System.Security.AccessControl.FileSystemAuditRule> object created using the <xref:System.Security.AccessControl.AccessControlType> value, the <xref:System.Security.AccessControl.AuditFlags> value, and a user account.  When you do this, the <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRuleSpecific%2A> method removes only a deny rule that specifies the <xref:System.Security.AccessControl.AuditFlags> value.  It does not remove any deny rules that specify the <xref:System.Security.AccessControl.AuditFlags> value.  
+ The <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRuleSpecific%2A> method removes the specified matching <xref:System.Security.AccessControl.AccessControlType.Deny> audit rule or the specified matching <xref:System.Security.AccessControl.AccessControlType.Allow> audit rule from the current <xref:System.Security.AccessControl.FileSystemSecurity> object.  For example, you can use this method to remove a specified <xref:System.Security.AccessControl.AccessControlType.Deny> audit rule for a user by passing a <xref:System.Security.AccessControl.FileSystemAuditRule> object created using the <xref:System.Security.AccessControl.AccessControlType.Deny> value, the <xref:System.Security.AccessControl.AuditFlags.Failure> value, and a user account.  When you do this, the <xref:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRuleSpecific%2A> method removes only a deny rule that specifies the <xref:System.Security.AccessControl.AuditFlags.Failure> value.  It does not remove any deny rules that specify the <xref:System.Security.AccessControl.AuditFlags.Success> value.  
   
  ]]></format>
         </remarks>
@@ -590,6 +604,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -609,7 +624,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.AccessControl.FileSystemSecurity.ResetAccessRule%2A> method adds the specified access control list (ACL) rule or overwrites any identical ACL rules that match the `rule` parameter.  For example, if the `rule` parameter specifies a <xref:System.Security.AccessControl.FileSystemRights> value and the <xref:System.Security.AccessControl.FileSystemSecurity.ResetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.Security.AccessControl.FileSystemRights> value, the identical rule will be overwritten.  If the <xref:System.Security.AccessControl.FileSystemSecurity.ResetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.Security.AccessControl.FileSystemRights> value, the identical rule will also be overwritten.  
+ The <xref:System.Security.AccessControl.FileSystemSecurity.ResetAccessRule%2A> method adds the specified access control list (ACL) rule or overwrites any identical ACL rules that match the `rule` parameter.  For example, if the `rule` parameter specifies a <xref:System.Security.AccessControl.FileSystemRights.Read> value and the <xref:System.Security.AccessControl.FileSystemSecurity.ResetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.Security.AccessControl.FileSystemRights.Read> value, the identical rule will be overwritten.  If the <xref:System.Security.AccessControl.FileSystemSecurity.ResetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.Security.AccessControl.FileSystemRights.Write> value, the identical rule will also be overwritten.  
   
  To persist new or changed ACL information to a file, use the <xref:System.IO.File.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  To persist new or changed ACL information to a directory, use the <xref:System.IO.Directory.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  
   
@@ -628,6 +643,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -647,7 +663,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.AccessControl.FileSystemSecurity.SetAccessRule%2A> method adds the specified access control list (ACL) rule or overwrites any identical ACL rules that match the <xref:System.Security.AccessControl.FileSystemRights> value of the `rule` parameter.  For example, if the `rule` parameter specifies a <xref:System.Security.AccessControl.FileSystemRights> value and the <xref:System.Security.AccessControl.FileSystemSecurity.SetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.Security.AccessControl.FileSystemRights> value, the identical rule will be overwritten.  If the <xref:System.Security.AccessControl.FileSystemSecurity.SetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.Security.AccessControl.FileSystemRights> value, the identical rule will not be overwritten.  
+ The <xref:System.Security.AccessControl.FileSystemSecurity.SetAccessRule%2A> method adds the specified access control list (ACL) rule or overwrites any identical ACL rules that match the <xref:System.Security.AccessControl.FileSystemRights> value of the `rule` parameter.  For example, if the `rule` parameter specifies a <xref:System.Security.AccessControl.FileSystemRights.Read> value and the <xref:System.Security.AccessControl.FileSystemSecurity.SetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.Security.AccessControl.FileSystemRights.Read> value, the identical rule will be overwritten.  If the <xref:System.Security.AccessControl.FileSystemSecurity.SetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.Security.AccessControl.FileSystemRights.Write> value, the identical rule will not be overwritten.  
   
  To persist new or changed ACL information to a file, use the <xref:System.IO.File.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  To persist new or changed ACL information to a directory, use the <xref:System.IO.Directory.SetAccessControl%2A> or <xref:System.IO.FileInfo.SetAccessControl%2A> method.  
   
@@ -666,6 +682,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -685,7 +702,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Security.AccessControl.FileSystemSecurity.SetAuditRule%2A> method adds the specified audit rule or overwrites any identical audit rules that match the <xref:System.Security.AccessControl.FileSystemRights> value of the `rule` parameter.  For example, if the `rule` parameter specifies a <xref:System.Security.AccessControl.FileSystemRights> value and the <xref:System.Security.AccessControl.FileSystemSecurity.SetAuditRule%2A> method finds an identical audit rule that specifies the <xref:System.Security.AccessControl.FileSystemRights> value, the identical rule will be overwritten.  If the <xref:System.Security.AccessControl.FileSystemSecurity.SetAuditRule%2A> method finds an identical audit rule that specifies the <xref:System.Security.AccessControl.FileSystemRights> value, the identical rule will not be overwritten.  
+ The <xref:System.Security.AccessControl.FileSystemSecurity.SetAuditRule%2A> method adds the specified audit rule or overwrites any identical audit rules that match the <xref:System.Security.AccessControl.FileSystemRights> value of the `rule` parameter.  For example, if the `rule` parameter specifies a <xref:System.Security.AccessControl.FileSystemRights.Read> value and the <xref:System.Security.AccessControl.FileSystemSecurity.SetAuditRule%2A> method finds an identical audit rule that specifies the <xref:System.Security.AccessControl.FileSystemRights.Read> value, the identical rule will be overwritten.  If the <xref:System.Security.AccessControl.FileSystemSecurity.SetAuditRule%2A> method finds an identical audit rule that specifies the <xref:System.Security.AccessControl.FileSystemRights.Write> value, the identical rule will not be overwritten.  
   
  ]]></format>
         </remarks>

@@ -69,14 +69,14 @@
         <Parameter Name="imageType" Type="System.Windows.Xps.Packaging.XpsImageType" />
       </Parameters>
       <Docs>
-        <param name="imageType">The image type to write. See Remarks for examples.</param>
+        <param name="imageType">The image type to write.</param>
         <summary>Adds an <see cref="T:System.Windows.Xps.Packaging.XpsThumbnail" /> image for the <see cref="T:System.Windows.Documents.FixedDocumentSequence" />.</summary>
         <returns>The new <see cref="T:System.Windows.Xps.Packaging.XpsThumbnail" /> for the <see cref="T:System.Windows.Documents.FixedDocumentSequence" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For example, the `imageType` might be <xref:System.Windows.Xps.Packaging.XpsImageType> or <xref:System.Windows.Xps.Packaging.XpsImageType>.  
+ For example, the `imageType` might be <xref:System.Windows.Xps.Packaging.XpsImageType.JpegImageType> or <xref:System.Windows.Xps.Packaging.XpsImageType.PngImageType>.  
   
  ]]></format>
         </remarks>

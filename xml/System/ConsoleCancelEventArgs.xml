@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Console</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -25,7 +26,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A user can interrupt a console application process by simultaneously pressing the <xref:System.ConsoleModifiers> modifier key and the <xref:System.ConsoleKey> console key (Ctrl+C), or the <xref:System.ConsoleModifiers> modifier key and the Break console key (Ctrl+Break). The .NET Framework consequently provides a <xref:System.ConsoleCancelEventArgs> object to the event handler for the <xref:System.Console.CancelKeyPress?displayProperty=fullName> event to specify whether the process should be cancelled.  
+ A user can interrupt a console application process by simultaneously pressing the <xref:System.ConsoleModifiers.Control> modifier key and the <xref:System.ConsoleKey.C> console key (Ctrl+C), or the <xref:System.ConsoleModifiers.Control> modifier key and the Break console key (Ctrl+Break). The .NET Framework consequently provides a <xref:System.ConsoleCancelEventArgs> object to the event handler for the <xref:System.Console.CancelKeyPress?displayProperty=fullName> event to specify whether the process should be cancelled.  
   
  If the <xref:System.ConsoleCancelEventArgs.Cancel%2A> property is set to `true` in the event handler, the process is resumed; otherwise, the process is terminated. By default, the value of the <xref:System.ConsoleCancelEventArgs> property is `false`, and the process terminates.  
   
@@ -50,6 +51,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -99,6 +101,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

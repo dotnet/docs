@@ -60,6 +60,24 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ClientBase`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use to create a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client object from the endpoint information in the application configuration file. The main function of the constructor is to create a <xref:System.ServiceModel.ChannelFactory%601?displayProperty=fullName> where the type parameter is the type of the target service contract.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected ClientBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -126,7 +144,7 @@
       </Parameters>
       <Docs>
         <param name="instance">To be added.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ClientBase`1" /> class using the <paramref name="callbackInstance" /> as the callback object in a duplex conversation.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ClientBase`1" /> class using the <paramref name="instance" /> as the callback object in a duplex conversation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1037,23 +1055,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ClientBase`1" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use to create a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client object from the endpoint information in the application configuration file. The main function of the constructor is to create a <xref:System.ServiceModel.ChannelFactory%601?displayProperty=fullName> where the type parameter is the type of the target service contract.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

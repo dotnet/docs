@@ -43,7 +43,7 @@
 ## Remarks  
  This method causes the target <xref:System.Windows.Media.Animation.Clock> to behave as though its <xref:System.Windows.Media.Animation.Timeline> object's <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A> were set to the time of the next tick. The timeline's actual <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A> setting is ignored (but not changed).  
   
- This method changes the target clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> to <xref:System.Windows.Media.Animation.ClockState>. The <xref:System.Windows.Media.Animation.ClockController.Begin%2A> method does not resume a paused clock.  
+ This method changes the target clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> to <xref:System.Windows.Media.Animation.ClockState.Active>. The <xref:System.Windows.Media.Animation.ClockController.Begin%2A> method does not resume a paused clock.  
   
  This method has no effect on the timing tree until the next time a tick is processed. As a side-effect, the appropriate events will also not be raised until then. Calling this method triggers the <xref:System.Windows.Media.Animation.Clock.CurrentStateInvalidated> and <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> events.  
   
@@ -88,7 +88,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can pause a <xref:System.Windows.Media.Animation.Clock> regardless of its current state, and pausing a clock does not change its current state. A clock can be paused while <xref:System.Windows.Media.Animation.ClockState>, <xref:System.Windows.Media.Animation.ClockState>, or <xref:System.Windows.Media.Animation.ClockState>. The only way to unpause a clock is by using the <xref:System.Windows.Media.Animation.ClockController.Resume%2A> method. Pausing a clock implicitly pauses its children.  
+ You can pause a <xref:System.Windows.Media.Animation.Clock> regardless of its current state, and pausing a clock does not change its current state. A clock can be paused while <xref:System.Windows.Media.Animation.ClockState.Active>, <xref:System.Windows.Media.Animation.ClockState.Stopped>, or <xref:System.Windows.Media.Animation.ClockState.Filling>. The only way to unpause a clock is by using the <xref:System.Windows.Media.Animation.ClockController.Resume%2A> method. Pausing a clock implicitly pauses its children.  
   
  Calling this method when the target clock is already paused has no effect.  
   
@@ -150,7 +150,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can pause or resume a <xref:System.Windows.Media.Animation.Clock> regardless of its current state, and pausing or resuming a clock does not change its current state. A clock can be paused while <xref:System.Windows.Media.Animation.ClockState>, <xref:System.Windows.Media.Animation.ClockState>, or <xref:System.Windows.Media.Animation.ClockState>. The only way to resume a paused clock is by using the <xref:System.Windows.Media.Animation.ClockController.Resume%2A> method. Resuming a clock implicitly resumes its children. Calling this method on a clock that is not paused has no effect.  
+ You can pause or resume a <xref:System.Windows.Media.Animation.Clock> regardless of its current state, and pausing or resuming a clock does not change its current state. A clock can be paused while <xref:System.Windows.Media.Animation.ClockState.Active>, <xref:System.Windows.Media.Animation.ClockState.Stopped>, or <xref:System.Windows.Media.Animation.ClockState.Filling>. The only way to resume a paused clock is by using the <xref:System.Windows.Media.Animation.ClockController.Resume%2A> method. Resuming a clock implicitly resumes its children. Calling this method on a clock that is not paused has no effect.  
   
  Resuming a paused clock triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> event.  
   
@@ -184,7 +184,7 @@
 ## Remarks  
  Seek operations do not take the <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> or <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A> settings of this clock's timeline into account: the clock is treated as though its timeline has a <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> of 1 and no <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A>.  
   
- This method changes the clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> to <xref:System.Windows.Media.Animation.ClockState>. This method has no effect on the timing tree until the next time a tick is processed. As a side-effect, the appropriate events also will not be raised until then.  
+ This method changes the clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> to <xref:System.Windows.Media.Animation.ClockState.Active>. This method has no effect on the timing tree until the next time a tick is processed. As a side-effect, the appropriate events also will not be raised until then.  
   
  Seeking a storyboard triggers the <xref:System.Windows.Media.Animation.Clock.CurrentGlobalSpeedInvalidated> and <xref:System.Windows.Media.Animation.Clock.CurrentStateInvalidated> events.  
   
@@ -232,7 +232,7 @@
   
  If the target clock has children, their current time is updated accordingly.  
   
- This method changes the clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> to <xref:System.Windows.Media.Animation.ClockState>.  
+ This method changes the clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> to <xref:System.Windows.Media.Animation.ClockState.Active>.  
   
  Seeking a storyboard triggers the <xref:System.Windows.Media.Animation.Clock.CurrentGlobalSpeedInvalidated> and <xref:System.Windows.Media.Animation.Clock.CurrentStateInvalidated> events.  
   
@@ -267,9 +267,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method advances the target clock's current time to the end of its active period; the clock's behavior at this point is specified by the <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> setting of its <xref:System.Windows.Media.Animation.Timeline>. If the timeline's <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property is set to <xref:System.Windows.Media.Animation.FillBehavior>, the clock fills; if the property is set to <xref:System.Windows.Media.Animation.FillBehavior>, the clock stops.  
+ This method advances the target clock's current time to the end of its active period; the clock's behavior at this point is specified by the <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> setting of its <xref:System.Windows.Media.Animation.Timeline>. If the timeline's <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property is set to <xref:System.Windows.Media.Animation.FillBehavior.HoldEnd>, the clock fills; if the property is set to <xref:System.Windows.Media.Animation.FillBehavior.Stop>, the clock stops.  
   
- This method has an effect only if the target clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> is <xref:System.Windows.Media.Animation.ClockState>.  
+ This method has an effect only if the target clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> is <xref:System.Windows.Media.Animation.ClockState.Active>.  
   
  This method has no effect on the timing tree until the next time a tick is processed. As a side-effect, the appropriate events also will not be raised until then.  
   

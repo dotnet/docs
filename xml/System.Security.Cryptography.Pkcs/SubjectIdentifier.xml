@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -51,6 +53,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -64,32 +67,15 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.SubjectIdentifier.Value" /> property retrieves the value of the subject identifier. Use the <see cref="P:System.Security.Cryptography.Pkcs.SubjectIdentifier.Type" /> property to determine the type of subject identifier, and use the <see cref="P:System.Security.Cryptography.Pkcs.SubjectIdentifier.Value" /> property to retrieve the corresponding value.</summary>
         <value>An <see cref="T:System.Object" /> object that represents the value of the subject identifier. This <see cref="T:System.Object" /> can be one of the following objects as determined by the <see cref="P:System.Security.Cryptography.Pkcs.SubjectIdentifier.Type" /> property.  
   
- <list type="table">  
-<listheader>  
-<term> <see cref="P:System.Security.Cryptography.Pkcs.SubjectIdentifier.Type" /> property  
+ <list type="table"><listheader><term><see cref="P:System.Security.Cryptography.Pkcs.SubjectIdentifier.Type" /> property  
   
- </term>  
-<description> Object  
+ </term><description> Object  
   
- </description>  
-</listheader>  
-<item>  
-<term> IssuerAndSerialNumber  
+ </description></listheader><item><term> IssuerAndSerialNumber  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.Xml.X509IssuerSerial" />  
+ </term><description><see cref="T:System.Security.Cryptography.Xml.X509IssuerSerial" /></description></item><item><term> SubjectKeyIdentifier  
   
- </description>  
-</item>  
-<item>  
-<term> SubjectKeyIdentifier  
-  
- </term>  
-<description> <see cref="T:System.String" />  
-  
- </description>  
-</item>  
-</list></value>
+ </term><description><see cref="T:System.String" /></description></item></list></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

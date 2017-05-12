@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Security.Principal.Windows</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -62,6 +63,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -136,6 +138,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -185,6 +188,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -197,7 +201,7 @@
       </Parameters>
       <Docs>
         <param name="userToken">The account token for the user on whose behalf the code is running.</param>
-        <param name="type">(Informational use only.) The type of authentication used to identify the user. For more information, see Remarks.</param>
+        <param name="type">(Informational use only.) The type of authentication used to identify the user.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.WindowsIdentity" /> class for the user represented by the specified Windows account token and the specified authentication type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -250,6 +254,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
@@ -293,7 +301,7 @@
       </Parameters>
       <Docs>
         <param name="sUserPrincipalName">The UPN for the user on whose behalf the code is running.</param>
-        <param name="type">(Informational use only.) The type of authentication used to identify the user. For more information, see Remarks.</param>
+        <param name="type">(Informational use only.) The type of authentication used to identify the user.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.WindowsIdentity" /> class for the user represented by the specified User Principal Name (UPN) and the specified authentication type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -343,7 +351,7 @@
       </Parameters>
       <Docs>
         <param name="userToken">The account token for the user on whose behalf the code is running.</param>
-        <param name="type">(Informational use only.) The type of authentication used to identify the user. For more information, see Remarks.</param>
+        <param name="type">(Informational use only.) The type of authentication used to identify the user.</param>
         <param name="acctType">One of the enumeration values.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.WindowsIdentity" /> class for the user represented by the specified Windows account token, the specified authentication type, and the specified Windows account type.</summary>
         <remarks>
@@ -404,7 +412,7 @@
       </Parameters>
       <Docs>
         <param name="userToken">The account token for the user on whose behalf the code is running.</param>
-        <param name="type">(Informational use only.) The type of authentication used to identify the user. For more information, see Remarks.</param>
+        <param name="type">(Informational use only.) The type of authentication used to identify the user.</param>
         <param name="acctType">One of the enumeration values.</param>
         <param name="isAuthenticated">
           <see langword="true" /> to indicate that the user is authenticated; otherwise, <see langword="false" />.</param>
@@ -450,6 +458,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -473,6 +482,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -518,6 +528,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -545,6 +556,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -568,6 +580,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -608,6 +621,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -646,6 +660,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -671,7 +686,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
   
  When the `disposing` parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Security.Principal.WindowsIdentity> references. This method invokes the `Dispose()` method of each referenced object.  
   
@@ -693,6 +708,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -735,6 +751,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -772,6 +789,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -808,6 +826,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -843,6 +862,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -939,7 +959,7 @@
  On Windows NT platforms, the current user must have sufficient rights to allow impersonation.  
   
 > [!NOTE]
->  Calling the <xref:System.Security.Principal.WindowsIdentity.Impersonate%28System.IntPtr%29> method with a `userToken` value of <xref:System.IntPtr> is equivalent to calling the Win32 `RevertToSelf` function. If another user is currently being impersonated, control reverts to the original user.  
+>  Calling the <xref:System.Security.Principal.WindowsIdentity.Impersonate%28System.IntPtr%29> method with a `userToken` value of <xref:System.IntPtr.Zero> is equivalent to calling the Win32 `RevertToSelf` function. If another user is currently being impersonated, control reverts to the original user.  
   
  For more information about calls to unmanaged code, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
   
@@ -973,6 +993,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1016,6 +1037,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1058,6 +1080,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1082,6 +1105,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1099,7 +1123,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code shows the use of the <xref:System.Security.Principal.WindowsIdentity.IsGuest%2A> property to return a value indicating whether the user account is identified as a <xref:System.Security.Principal.WindowsAccountType> account by the system. This code example is part of a larger example provided for the <xref:System.Security.Principal.WindowsIdentity> class.  
+ The following code shows the use of the <xref:System.Security.Principal.WindowsIdentity.IsGuest%2A> property to return a value indicating whether the user account is identified as a <xref:System.Security.Principal.WindowsAccountType.Guest> account by the system. This code example is part of a larger example provided for the <xref:System.Security.Principal.WindowsIdentity> class.  
   
  [!code-cpp[System.Security.Principal.WindowsIdentity_AllMembers#12](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Principal.WindowsIdentity_AllMembers/CPP/windowsidentitymembers.cpp#12)]
  [!code-csharp[System.Security.Principal.WindowsIdentity_AllMembers#12](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Principal.WindowsIdentity_AllMembers/CS/windowsidentitymembers.cs#12)]
@@ -1117,6 +1141,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1134,7 +1159,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code shows the use of the <xref:System.Security.Principal.WindowsIdentity.IsSystem%2A> property to return a value indicating whether the user account is identified as a <xref:System.Security.Principal.WindowsAccountType> account by the system. This code example is part of a larger example provided for the <xref:System.Security.Principal.WindowsIdentity> class.  
+ The following code shows the use of the <xref:System.Security.Principal.WindowsIdentity.IsSystem%2A> property to return a value indicating whether the user account is identified as a <xref:System.Security.Principal.WindowsAccountType.System> account by the system. This code example is part of a larger example provided for the <xref:System.Security.Principal.WindowsIdentity> class.  
   
  [!code-cpp[System.Security.Principal.WindowsIdentity_AllMembers#11](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Principal.WindowsIdentity_AllMembers/CPP/windowsidentitymembers.cpp#11)]
  [!code-csharp[System.Security.Principal.WindowsIdentity_AllMembers#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Principal.WindowsIdentity_AllMembers/CS/windowsidentitymembers.cs#11)]
@@ -1152,6 +1177,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1191,6 +1217,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1234,6 +1261,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1349,6 +1377,7 @@ public class ImpersonationDemo
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1471,6 +1500,10 @@ public class ImpersonationDemo
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1492,6 +1525,10 @@ public class ImpersonationDemo
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1526,6 +1563,10 @@ public class ImpersonationDemo
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
@@ -1564,6 +1605,7 @@ public class ImpersonationDemo
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

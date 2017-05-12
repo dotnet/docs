@@ -160,11 +160,11 @@ manager: "wpickett"
   
 -   [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../../../docs/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md).  
   
--   [Securing ClickOnce Applications](http://msdn.microsoft.com/library/a05b5f2f-d1f2-471a-8096-8b11f7554265).  
+-   [Securing ClickOnce Applications](/visualstudio/deployment/securing-clickonce-applications).  
   
  If your                  [!INCLUDE[TLA2#tla_xbap](../../../includes/tla2sharptla-xbap-md.md)] requires full trust, you can use the same tools to increase the requested permissions. Although an                  [!INCLUDE[TLA2#tla_xbap](../../../includes/tla2sharptla-xbap-md.md)] will only receive full trust if it is installed on and launched from the local computer, the intranet, or from a URL that is listed in the browser's                  trusted or allowed                  sites. If the application is installed from the intranet or a trusted site, the user will receive the standard ClickOnce prompt notifying them of the elevated permissions. The user can choose to continue or cancel the installation.  
   
- Alternatively, you can use the ClickOnce Trusted Deployment model for full trust deployment from any security zone. For more information, see                  [Trusted Application Deployment Overview](http://msdn.microsoft.com/library/b24a1702-8fbe-45b1-87a0-9618a0708f1d) and                  [Security](../../../docs/framework/wpf/security-wpf.md).  
+ Alternatively, you can use the ClickOnce Trusted Deployment model for full trust deployment from any security zone. For more information, see                  [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview) and                  [Security](../../../docs/framework/wpf/security-wpf.md).  
   
 ## See Also  
  [Security](../../../docs/framework/wpf/security-wpf.md)   

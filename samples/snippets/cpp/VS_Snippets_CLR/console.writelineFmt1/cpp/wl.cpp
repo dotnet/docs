@@ -1,3 +1,4 @@
+// <Snippet1>
 // This code example demonstrates the Console.WriteLine() method.
 // Formatting for this example uses the "en-US" culture.
 
@@ -98,3 +99,4 @@ Standard Enumeration Format Specifiers
 (X) Hexadecimal:. . . . . . . 00000003
 
 */
+// </Snippet1>

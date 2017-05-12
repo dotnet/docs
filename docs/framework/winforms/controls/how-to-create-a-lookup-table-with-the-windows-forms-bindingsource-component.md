@@ -103,4 +103,4 @@ A lookup table is a table of data that has a column that displays data from reco
  <xref:System.Windows.Forms.BindingSource>   
  [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)   
  [ComboBox Control](../../../../docs/framework/winforms/controls/combobox-control-windows-forms.md)   
- [Bind controls to data in Visual Studio](http://msdn.microsoft.com/library/be8b6623-86a6-493e-ab7a-050de4661fd6)
+ [Bind controls to data in Visual Studio](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio)

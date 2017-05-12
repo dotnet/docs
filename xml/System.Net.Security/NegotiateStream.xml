@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Net.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -60,6 +61,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Security.NegotiateStream" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To prevent the <xref:System.Net.Security.NegotiateStream> from closing the stream that you supply, use the <xref:System.Net.Security.NegotiateStream.%23ctor%28System.IO.Stream%2CSystem.Boolean%29> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NegotiateStream (System.IO.Stream innerStream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream innerStream) cil managed" />
@@ -68,6 +86,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -110,6 +129,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -132,7 +152,7 @@
       <Docs>
         <param name="innerStream">A <see cref="T:System.IO.Stream" /> object used by the <see cref="T:System.Net.Security.NegotiateStream" /> for sending and receiving data.</param>
         <param name="leaveInnerStreamOpen">
-          <see langword="true" /> to indicate that closing this <see cref="T:System.Net.Security.NegotiateStream" /> has no effect on <c>innerstream</c>; <see langword="false" /> to indicate that closing this <see cref="T:System.Net.Security.NegotiateStream" /> also closes <c>innerStream</c>. See the Remarks section for more information.</param>
+          <see langword="true" /> to indicate that closing this <see cref="T:System.Net.Security.NegotiateStream" /> has no effect on <c>innerstream</c>; <see langword="false" /> to indicate that closing this <see cref="T:System.Net.Security.NegotiateStream" /> also closes <c>innerStream</c>.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Security.NegotiateStream" /> class using the specified <see cref="T:System.IO.Stream" /> and stream closure behavior.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -172,6 +192,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.MonoTODO</AttributeName>
@@ -187,7 +211,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The authentication uses the client's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
+ The authentication uses the client's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -220,6 +244,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.MonoTODO</AttributeName>
@@ -240,7 +268,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
+ The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -273,6 +301,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.MonoTODO</AttributeName>
@@ -295,7 +327,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
+ The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
   
  The <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding> used for extended protection that is passed to this method in the `binding` parameter would be retrieved by an application from <xref:System.Net.Security.SslStream.TransportContext%2A> property on the associated <xref:System.Net.Security.SslStream>.  
   
@@ -333,6 +365,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.MonoTODO</AttributeName>
@@ -357,7 +393,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
   
  If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
   
@@ -392,6 +428,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.MonoTODO</AttributeName>
@@ -418,7 +458,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
   
  The <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding> used for extended protection that is passed to this method in the `binding` parameter would be retrieved by an application from <xref:System.Net.Security.SslStream.TransportContext%2A> property on the associated <xref:System.Net.Security.SslStream>.  
   
@@ -452,6 +492,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -475,7 +516,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The authentication uses the client's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
+ The authentication uses the client's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -502,6 +543,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -530,7 +572,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
+ The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -557,6 +599,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -587,7 +630,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
+ The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>, and mutual authentication is requested. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
   
  The <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding> used for extended protection that is passed to this method in the `binding` parameter would be retrieved by an application from <xref:System.Net.Security.SslStream.TransportContext%2A> property on the associated <xref:System.Net.Security.SslStream>.  
   
@@ -619,6 +662,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -651,7 +695,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
   
  If the authentication fails, you receive an <xref:System.Security.Authentication.AuthenticationException> or an <xref:System.Security.Authentication.InvalidCredentialException>. In this case, you can retry the authentication with a different credential.  
   
@@ -680,6 +724,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -714,7 +759,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
   
  The <xref:System.Security.Authentication.ExtendedProtection.ChannelBinding> used for extended protection that is passed to this method in the `binding` parameter would be retrieved by an application from <xref:System.Net.Security.SslStream.TransportContext%2A> property on the associated <xref:System.Net.Security.SslStream>.  
   
@@ -740,6 +785,24 @@
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AuthenticateAsServer">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Handles the server side of an authentication for a client-server connection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These methods block while the authentication is in progress. To prevent the application from blocking while waiting for the authentication to complete, use the <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AuthenticateAsServer">
       <MemberSignature Language="C#" Value="public virtual void AuthenticateAsServer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AuthenticateAsServer() cil managed" />
@@ -753,6 +816,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -769,7 +836,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, and the security level is <xref:System.Net.Security.ProtectionLevel>.  
+ The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, and the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -800,6 +867,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.MonoTODO</AttributeName>
@@ -818,9 +889,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, and the security level is <xref:System.Net.Security.ProtectionLevel>.  
+ The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, and the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
   
- If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
+ If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never>.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -851,6 +922,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -912,6 +987,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.MonoTODO</AttributeName>
@@ -936,7 +1015,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
+ If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never>.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -971,6 +1050,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -994,7 +1074,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, and the security level is <xref:System.Net.Security.ProtectionLevel>.  
+ The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, and the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -1017,6 +1097,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1043,9 +1124,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, and the security level is <xref:System.Net.Security.ProtectionLevel>.  
+ The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, and the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
   
- If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
+ If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never>.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -1069,6 +1150,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1129,6 +1211,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1161,7 +1244,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
+ If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never>.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -1186,6 +1269,24 @@
         <exception cref="T:System.PlatformNotSupportedException">The <paramref name="policy" /> parameter was set to <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always" /> on a platform that does not support extended protection.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginAuthenticateAsClient">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to authenticate the client side of a client-server connection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of this method do not block while authentication is in progress. To block while waiting for the authentication to complete, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginAuthenticateAsClient">
       <MemberSignature Language="C#" Value="public virtual IAsyncResult BeginAuthenticateAsClient (AsyncCallback asyncCallback, object asyncState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAuthenticateAsClient(class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
@@ -1199,6 +1300,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1221,7 +1326,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The authentication uses the client's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, and the security level is <xref:System.Net.Security.ProtectionLevel>. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
+ The authentication uses the client's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, and the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>. The <xref:System.Net.Security.NegotiateStream> class will construct the SPN used for mutual authentication.  
   
  This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method overloads.  
   
@@ -1263,6 +1368,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1327,6 +1436,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1393,6 +1506,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.MonoTODO</AttributeName>
@@ -1422,7 +1539,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
   
  This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method overloads.  
   
@@ -1463,6 +1580,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.MonoTODO</AttributeName>
@@ -1494,7 +1615,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> value. Successful authentication does not guarantee that the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
   
  This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> method overloads.  
   
@@ -1520,6 +1641,24 @@
         <exception cref="T:System.ObjectDisposedException">This object has been closed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginAuthenticateAsServer">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to handle the server side of authenticating a client-server connection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The overloads of this method do not block while the authentication is in progress. To block while waiting for the authentication to complete, use the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginAuthenticateAsServer">
       <MemberSignature Language="C#" Value="public virtual IAsyncResult BeginAuthenticateAsServer (AsyncCallback asyncCallback, object asyncState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAuthenticateAsServer(class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
@@ -1533,6 +1672,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1555,7 +1698,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>.  
+ The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -1586,6 +1729,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.MonoTODO</AttributeName>
@@ -1609,9 +1756,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel>, the security level is <xref:System.Net.Security.ProtectionLevel>.  
+ The authentication uses the server's <xref:System.Net.CredentialCache.DefaultCredentials%2A>. No Service Principal Name (SPN) is specified for the server. The impersonation level is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>, the security level is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
   
- If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
+ If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never>.  
   
  When authentication succeeds, you must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>. Check the <xref:System.Net.Security.NegotiateStream.IsMutuallyAuthenticated%2A> property to determine whether mutual authentication occurred.  
   
@@ -1643,6 +1790,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.MonoTODO</AttributeName>
@@ -1670,7 +1821,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that, the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> value. Successful authentication does not guarantee that, the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
   
  This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> method overloads.  
   
@@ -1710,6 +1861,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.MonoTODO</AttributeName>
@@ -1739,9 +1894,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel> value. Successful authentication does not guarantee that, the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
+ Use the `requiredProtectionLevel` parameter to request security services for data transmitted using the authenticated stream. For example, to have the data encrypted and signed, specify the <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> value. Successful authentication does not guarantee that, the requested <xref:System.Net.Security.ProtectionLevel> has been granted. You must check the <xref:System.Net.Security.NegotiateStream.IsEncrypted%2A> and <xref:System.Net.Security.NegotiateStream.IsSigned%2A> properties to determine what security services are used by the <xref:System.Net.Security.NegotiateStream>.  
   
- If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement>.  
+ If the `policy` parameter is `null`, then an extended protection policy is used that has <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.PolicyEnforcement%2A> set to <xref:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never>.  
   
  This method is asynchronous and does not block while the operation completes. To block until the operation completes, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> method overloads.  
   
@@ -1781,6 +1936,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1865,6 +2024,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.MonoTODO</AttributeName>
@@ -1947,6 +2110,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1990,6 +2154,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2032,6 +2197,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2080,6 +2246,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2129,6 +2296,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.MonoTODO</AttributeName>
@@ -2148,7 +2319,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
   
  When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.Net.Security.NegotiateStream> references. This method invokes the `Dispose()` method of each referenced object.  
   
@@ -2175,6 +2346,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2224,6 +2399,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2275,6 +2454,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2332,6 +2515,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.MonoTODO</AttributeName>
@@ -2381,6 +2568,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2420,6 +2608,28 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="FlushAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task FlushAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task FlushAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Security.NegotiateStream.FlushAsync(System.Threading.CancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ImpersonationLevel">
       <MemberSignature Language="C#" Value="public virtual System.Security.Principal.TokenImpersonationLevel ImpersonationLevel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Principal.TokenImpersonationLevel ImpersonationLevel" />
@@ -2428,6 +2638,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2453,7 +2664,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You must successfully authenticate before calling this method. Clients specify the impersonation level when they request authentication by calling one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A> methods. If you authenticate without specifying a <xref:System.Security.Principal.TokenImpersonationLevel> , <xref:System.Security.Principal.TokenImpersonationLevel> is used.  
+ You must successfully authenticate before calling this method. Clients specify the impersonation level when they request authentication by calling one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> or <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsClient%2A> methods. If you authenticate without specifying a <xref:System.Security.Principal.TokenImpersonationLevel> , <xref:System.Security.Principal.TokenImpersonationLevel.Identification> is used.  
   
    
   
@@ -2476,6 +2687,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2524,6 +2736,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2572,6 +2785,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2622,6 +2836,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2672,6 +2887,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2720,6 +2936,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2763,6 +2980,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2802,6 +3020,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2864,6 +3083,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2908,6 +3128,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2956,6 +3177,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3002,6 +3224,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3037,6 +3260,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3117,6 +3341,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3153,76 +3378,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AuthenticateAsServer">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Handles the server side of an authentication for a client-server connection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- These methods block while the authentication is in progress. To prevent the application from blocking while waiting for the authentication to complete, use the <xref:System.Net.Security.NegotiateStream.BeginAuthenticateAsServer%2A> method.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Security.NegotiateStream" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- To prevent the <xref:System.Net.Security.NegotiateStream> from closing the stream that you supply, use the <xref:System.Net.Security.NegotiateStream.%23ctor%28System.IO.Stream%2CSystem.Boolean%29> constructor.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginAuthenticateAsClient">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous operation to authenticate the client side of a client-server connection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The overloads of this method do not block while authentication is in progress. To block while waiting for the authentication to complete, use one of the <xref:System.Net.Security.NegotiateStream.AuthenticateAsClient%2A> methods.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginAuthenticateAsServer">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous operation to handle the server side of authenticating a client-server connection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The overloads of this method do not block while the authentication is in progress. To block while waiting for the authentication to complete, use the <xref:System.Net.Security.NegotiateStream.AuthenticateAsServer%2A> method.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

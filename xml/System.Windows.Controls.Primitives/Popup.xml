@@ -112,7 +112,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.Popup>|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.Popup.AllowsTransparencyProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -342,7 +342,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.Popup>|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.Popup.CustomPopupPlacementCallbackProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -539,10 +539,9 @@
    
   
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.Primitives.Popup> and sets the <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A> and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffset%2A> properties to 20.  The <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> property is set to <xref:System.Windows.Controls.Primitives.PlacementMode> (which is the default), so the target origin is the bottom left corner of the target area and the popup alignment point is the top left corner of the <xref:System.Windows.Controls.Primitives.Popup>.  
+ The following example creates a <xref:System.Windows.Controls.Primitives.Popup> and sets the <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A> and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffset%2A> properties to 20.  The <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> property is set to <xref:System.Windows.Controls.Primitives.PlacementMode.Bottom> (which is the default), so the target origin is the bottom left corner of the target area and the popup alignment point is the top left corner of the <xref:System.Windows.Controls.Primitives.Popup>.  
   
- <!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#5](~/samples/snippets/xaml/VS_Snippets_Wpf/PopupPositionSnippets/XAML/Window1.xaml#5)]  -->
- <!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#5](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippets/CS/Window1.xaml#5)]  -->  
+ [!code-xml[PopupPositionSnippet#5](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#5)]   
   
  ]]></format>
         </remarks>
@@ -903,7 +902,7 @@
 ## Remarks  
  You can position a popup by setting the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>, <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.Placement%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffsetProperty> properties. For more information, see [Popup Placement Behavior](~/docs/framework/wpf/controls/popup-placement-behavior.md).  
   
- If the <xref:System.Windows.SystemParameters.MenuDropAlignment%2A> property is `true`, setting <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> to <xref:System.Windows.Controls.Primitives.PlacementMode> or <xref:System.Windows.Controls.Primitives.PlacementMode> reverses the position of the <xref:System.Windows.Controls.Primitives.Popup>; a <xref:System.Windows.Controls.Primitives.Popup> with <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> set to <xref:System.Windows.Controls.Primitives.PlacementMode> aligns its left edge with the right edge of <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> and a <xref:System.Windows.Controls.Primitives.Popup> with <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> set to <xref:System.Windows.Controls.Primitives.PlacementMode> aligns its right edge with the left edge of <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>.  
+ If the <xref:System.Windows.SystemParameters.MenuDropAlignment%2A> property is `true`, setting <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> to <xref:System.Windows.Controls.Primitives.PlacementMode.Left> or <xref:System.Windows.Controls.Primitives.PlacementMode.Right> reverses the position of the <xref:System.Windows.Controls.Primitives.Popup>; a <xref:System.Windows.Controls.Primitives.Popup> with <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> set to <xref:System.Windows.Controls.Primitives.PlacementMode.Left> aligns its left edge with the right edge of <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> and a <xref:System.Windows.Controls.Primitives.Popup> with <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> set to <xref:System.Windows.Controls.Primitives.PlacementMode.Right> aligns its right edge with the left edge of <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A>.  
   
 <a name="dependencyPropertyInfo_Placement"></a>   
 ## Dependency Property Information  
@@ -918,8 +917,7 @@
 ## Examples  
  The following example creates four <xref:System.Windows.Controls.Primitives.Popup> controls that are relative to an image. Each <xref:System.Windows.Controls.Primitives.Popup> has a different value for the placement property.  
   
- <!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/PopupPositionSnippets/XAML/Window1.xaml#3)]  -->
- <!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippets/CS/Window1.xaml#3)]  -->  
+ [!code-xml[PopupPositionSnippet#3](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#3)]   
   
  ]]></format>
         </remarks>
@@ -984,8 +982,7 @@
 ## Examples  
  The following example sets the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A> property of a <xref:System.Windows.Controls.Primitives.Popup>. The <xref:System.Windows.Rect.X%2A>, <xref:System.Windows.Rect.Y%2A>, <xref:System.Windows.Rect.Width%2A>, and <xref:System.Windows.Rect.Height%2A> properties of the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A> are 50, 50, 50, and 100, respectively. The <xref:System.Windows.Controls.Primitives.Popup> is relative to the bounds of the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A> property. Note that the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A> property does not create a visible element in the application; the example creates a <xref:System.Windows.Shapes.Rectangle> with the same bounds to represent the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>.  
   
- <!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#6](~/samples/snippets/xaml/VS_Snippets_Wpf/PopupPositionSnippets/XAML/Window1.xaml#6)]  -->
- <!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#6](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippets/CS/Window1.xaml#6)]  -->  
+ [!code-xml[PopupPositionSnippet#6](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#6)]   
   
  ]]></format>
         </remarks>
@@ -1053,8 +1050,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.Primitives.Popup> that is the child of a <xref:System.Windows.Controls.Canvas>, and sets <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> to `ellipse1`, so the popup is relative to the <xref:System.Windows.Shapes.Ellipse>.  
   
- <!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#2](~/samples/snippets/xaml/VS_Snippets_Wpf/PopupPositionSnippets/XAML/Window1.xaml#2)]  -->
- <!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippets/CS/Window1.xaml#2)]  -->  
+ [!code-xml[PopupPositionSnippet#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#2)]    
   
  ]]></format>
         </remarks>
@@ -1184,7 +1180,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.Popup>|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.Popup.StaysOpenProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -1331,10 +1327,9 @@
    
   
 ## Examples  
- The following example creates a <xref:System.Windows.Controls.Primitives.Popup> and sets the <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A> and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffset%2A> properties to 20.  The <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> property is set to <xref:System.Windows.Controls.Primitives.PlacementMode> (which is the default), so the target origin is the bottom left corner of the target area, and the popup alignment point is the top left corner of the <xref:System.Windows.Controls.Primitives.Popup>.  
+ The following example creates a <xref:System.Windows.Controls.Primitives.Popup> and sets the <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A> and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffset%2A> properties to 20.  The <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> property is set to <xref:System.Windows.Controls.Primitives.PlacementMode.Bottom> (which is the default), so the target origin is the bottom left corner of the target area, and the popup alignment point is the top left corner of the <xref:System.Windows.Controls.Primitives.Popup>.  
   
- <!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#5](~/samples/snippets/xaml/VS_Snippets_Wpf/PopupPositionSnippets/XAML/Window1.xaml#5)]  -->
- <!-- TODO: review snippet reference [!code-xml[PopupPositionSnippets#5](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippets/CS/Window1.xaml#5)]  -->  
+ [!code-xml[PopupPositionSnippet#5](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS/Window1.xaml#5)]     
   
  ]]></format>
         </remarks>

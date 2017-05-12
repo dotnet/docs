@@ -75,7 +75,7 @@ namespace Microsoft.Samples.ChannelCache.EchoWorkflowClient
 
         static void CreateClientWorkflow()
         {
-            // </Snippet2>
+            // <Snippet2>
             Variable<string> message = new Variable<string>("message", "client");
             Variable<string> result = new Variable<string> { Name = "result" };
             

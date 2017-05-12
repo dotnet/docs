@@ -69,9 +69,7 @@
   
  The following code example shows a simple configuration file for the preceding service that creates one endpoint.  
   
- <!-- TODO: review snippet reference [!code[ServiceContractAttribute#2](~/samples/snippets/common/VS_Snippets_CFX/servicecontractattribute/common/hostapplication.exe.config#2)]  -->
- <!-- TODO: review snippet reference [!code-csharp[ServiceContractAttribute#2](~/samples/snippets/csharp/VS_Snippets_CFX/servicecontractattribute/cs/hostapplication.exe.config#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[ServiceContractAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/servicecontractattribute/vb/hostapplication.exe.config#2)]  -->  
+ [!code-xml[ServiceContractAttribute#2](~/samples/snippets/csharp/VS_Snippets_CFX/servicecontractattribute/cs/hostapplication.exe.config#2)]   
   
  The following code example shows a simple client that invokes the preceding `SampleService`.  
   
@@ -343,7 +341,7 @@
 ## Remarks  
  Use the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A> property to require bindings that support sessions between endpoints. A session is a way of correlating a set of messages exchanged between two or more endpoints. If your service supports channel sessions, you can then use the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property to specify the relationship between instances your service contract implementation and the channel session. If a binding does not support sessions, an exception is thrown.  
   
- For example, if the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A> property is set to <xref:System.ServiceModel.SessionMode?displayProperty=fullName> and the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property is set to <xref:System.ServiceModel.InstanceContextMode>, clients can use the same connection to make repeated calls to the same service object.  
+ For example, if the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A> property is set to <xref:System.ServiceModel.SessionMode?displayProperty=fullName> and the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property is set to <xref:System.ServiceModel.InstanceContextMode.PerSession>, clients can use the same connection to make repeated calls to the same service object.  
   
  For more information about sessions and service instances, see [Using Sessions](~/docs/framework/wcf/using-sessions.md) and [Sessions, Instancing, and Concurrency](~/docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
   

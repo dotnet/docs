@@ -30,7 +30,7 @@
 ## Examples  
  The following example shows how to use key frames with easing functions associated with them to create an animation of a rectangle that contracts upward, slows down, then expands downward (as though falling), and then bounces to a stop.  
   
-<!-- TODO: review snippet reference  [!CODE [EasingFunctionDoubleKeyFrame#EasingFunctionDoubleKeyFrame](EasingFunctionDoubleKeyFrame#EasingFunctionDoubleKeyFrame)]  -->  
+ [!code-xml[EasingFunctionDoubleKeyFrame_Snippet#EasingFunctionDoubleKeyFrame](~/samples/snippets/csharp/VS_Snippets_Wpf/easingfunctiondoublekeyframe_snippet/CS/window1.xaml#easingfunctiondoublekeyframe)] 
   
  ]]></format>
     </remarks>

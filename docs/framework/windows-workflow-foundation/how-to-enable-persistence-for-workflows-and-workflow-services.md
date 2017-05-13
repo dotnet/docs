@@ -59,8 +59,8 @@ wsh.DurableInstancingOptions.InstanceStore = new SqlWorkflowInstanceStore();
   <system.serviceModel>  
     <behaviors>  
       <serviceBehaviors>  
-        <behavior name=”myBehavior”>  
-          <SqlWorkflowInstanceStore connectionString=”Data Source=myDatatbaseServer;Initial Catalog=myPersistenceDatabase”>  
+        <behavior name="myBehavior">  
+          <SqlWorkflowInstanceStore connectionString="Data Source=myDatatbaseServer;Initial Catalog=myPersistenceDatabase">  
         </behavior>  
       </serviceBehaviors>  
     <behaviors>  

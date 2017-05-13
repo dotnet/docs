@@ -607,7 +607,7 @@
       <Docs>
         <param name="buffer">The buffer to be sent over the connection.</param>
         <param name="messageType">Indicates whether the application is sending a binary or text message.</param>
-        <param name="endOfMessage">Indicates whether the data in “buffer” is the last part of a message.</param>
+        <param name="endOfMessage">Indicates whether the data in "buffer" is the last part of a message.</param>
         <param name="cancellationToken">The token that propagates the notification that operations should be canceled.</param>
         <summary>Sends data over the <see cref="T:System.Net.WebSockets.WebSocket" /> connection asynchronously.</summary>
         <returns>The task object representing the asynchronous operation.</returns>

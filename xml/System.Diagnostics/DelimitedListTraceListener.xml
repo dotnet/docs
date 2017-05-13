@@ -29,7 +29,7 @@
  The trace output is in a delimited text format that uses the delimiter specified by the <xref:System.Diagnostics.DelimitedListTraceListener.Delimiter%2A> property. The delimiter is used to terminate each field in a line of output. For example, to display the trace output in a Microsoft Excel spreadsheet, you might specify a comma (",") as a delimiter and create a comma-separated value (CSV) file.  
   
 > [!IMPORTANT]
->  <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a`try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+>  <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a`try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
   
  You can enable or disable a <xref:System.Diagnostics.DelimitedListTraceListener> through the application configuration file and then use the configured <xref:System.Diagnostics.DelimitedListTraceListener> in your application. Alternately, you can create a <xref:System.Diagnostics.DelimitedListTraceListener> in your code.  
   

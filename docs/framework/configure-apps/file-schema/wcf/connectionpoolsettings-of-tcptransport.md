@@ -30,10 +30,10 @@ Specifies additional connection pool settings for a TCP transport.
 ```  
   
 <connectionPoolSettings  
-    groupName=”String”  
+    groupName="String"  
     idleTimeout"TimeSpan"  
         leaseTimeout="TimeSpan"  
-    maxOutboundConnectionsPerEndpopint=”Integer” />  
+    maxOutboundConnectionsPerEndpopint="Integer" />  
 ```  
   
 ## Attributes and Elements  

@@ -275,7 +275,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="Create">
@@ -913,7 +913,7 @@ async Task TestWriter(Stream stream)
       <Docs>
         <summary>Releases all resources used by the current instance of the <see cref="T:System.Xml.XmlWriter" /> class.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -948,7 +948,7 @@ async Task TestWriter(Stream stream)
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Xml.XmlWriter" /> and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -997,7 +997,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="FlushAsync">
@@ -1036,7 +1036,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="LookupPrefix">
@@ -1084,7 +1084,7 @@ async Task TestWriter(Stream stream)
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="ns" /> is either <see langword="null" /> or <see langword="String.Empty" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="Settings">
@@ -1122,7 +1122,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteAttributes">
@@ -1186,7 +1186,7 @@ async Task TestWriter(Stream stream)
         <exception cref="T:System.ArgumentNullException">
           <paramref name="reader" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Xml.XmlException">The reader is not positioned on an <see langword="element" />, <see langword="attribute" /> or <see langword="XmlDeclaration" /> node.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteAttributesAsync">
@@ -1239,7 +1239,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteAttributeString">
@@ -1250,7 +1250,7 @@ async Task TestWriter(Stream stream)
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <summary>When overridden in a derived class, writes an attribute with the specified value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1319,7 +1319,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.ArgumentException">The <see langword="xml:space" /> or <see langword="xml:lang" /> attribute value is invalid.</exception>
       </Docs>
     </Member>
@@ -1384,7 +1384,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.ArgumentException">The <see langword="xml:space" /> or <see langword="xml:lang" /> attribute value is invalid.</exception>
       </Docs>
     </Member>
@@ -1451,7 +1451,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.ArgumentException">The <see langword="xml:space" /> or <see langword="xml:lang" /> attribute value is invalid.</exception>
         <exception cref="T:System.Xml.XmlException">The <paramref name="localName" /> or <paramref name="ns" /> is <see langword="null" />.</exception>
       </Docs>
@@ -1501,7 +1501,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBase64">
@@ -1564,7 +1564,7 @@ async Task TestWriter(Stream stream)
  -or-  
   
  The buffer length minus <paramref name="index" /> is less than <paramref name="count" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBase64Async">
@@ -1610,7 +1610,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBinHex">
@@ -1665,7 +1665,7 @@ async Task TestWriter(Stream stream)
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> or <paramref name="count" /> is less than zero.  
   
@@ -1717,7 +1717,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteCData">
@@ -1769,7 +1769,7 @@ async Task TestWriter(Stream stream)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The text would result in a non-well formed XML document.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteCDataAsync">
@@ -1811,7 +1811,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteCharEntity">
@@ -1860,7 +1860,7 @@ async Task TestWriter(Stream stream)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The character is in the surrogate pair character range, <see langword="0xd800" /> - <see langword="0xdfff" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteCharEntityAsync">
@@ -1902,7 +1902,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteChars">
@@ -1965,7 +1965,7 @@ async Task TestWriter(Stream stream)
   
  The buffer length minus <paramref name="index" /> is less than <paramref name="count" />; the call results in surrogate pair characters being split or an invalid surrogate pair being written.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="buffer" /> parameter value is not valid.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteCharsAsync">
@@ -2011,7 +2011,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteComment">
@@ -2065,7 +2065,7 @@ async Task TestWriter(Stream stream)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The text would result in a non-well-formed XML document.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteCommentAsync">
@@ -2107,7 +2107,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteDocType">
@@ -2167,7 +2167,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.ArgumentException">The value for <paramref name="name" /> would result in invalid XML.</exception>
       </Docs>
     </Member>
@@ -2216,7 +2216,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteElementString">
@@ -2227,7 +2227,7 @@ async Task TestWriter(Stream stream)
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <summary>Writes an element containing a string value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2294,7 +2294,7 @@ async Task TestWriter(Stream stream)
   
  The parameter values are not valid.</exception>
         <exception cref="T:System.Text.EncoderFallbackException">There is a character in the buffer that is a valid XML character but is not valid for the output encoding. For example, if the output encoding is ASCII, you should only use characters from the range of 0 to 127 for element and attribute names. The invalid character might be in the argument of this method or in an argument of previous methods that were writing to the buffer. Such characters are escaped by character entity references when possible (for example, in text nodes or attribute values). However, the character entity reference is not allowed in element and attribute names, comments, processing instructions, or CDATA sections.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteElementString">
@@ -2354,7 +2354,7 @@ async Task TestWriter(Stream stream)
   
  The parameter values are not valid.</exception>
         <exception cref="T:System.Text.EncoderFallbackException">There is a character in the buffer that is a valid XML character but is not valid for the output encoding. For example, if the output encoding is ASCII, you should only use characters from the range of 0 to 127 for element and attribute names. The invalid character might be in the argument of this method or in an argument of previous methods that were writing to the buffer. Such characters are escaped by character entity references when possible (for example, in text nodes or attribute values). However, the character entity reference is not allowed in element and attribute names, comments, processing instructions, or CDATA sections.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteElementString">
@@ -2407,7 +2407,7 @@ async Task TestWriter(Stream stream)
   
  The parameter values are not valid.</exception>
         <exception cref="T:System.Text.EncoderFallbackException">There is a character in the buffer that is a valid XML character but is not valid for the output encoding. For example, if the output encoding is ASCII, you should only use characters from the range of 0 to 127 for element and attribute names. The invalid character might be in the argument of this method or in an argument of previous methods that were writing to the buffer. Such characters are escaped by character entity references when possible (for example, in text nodes or attribute values). However, the character entity reference is not allowed in element and attribute names, comments, processing instructions, or CDATA sections.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteElementStringAsync">
@@ -2463,7 +2463,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteEndAttribute">
@@ -2508,7 +2508,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteEndAttributeAsync">
@@ -2547,7 +2547,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteEndDocument">
@@ -2598,7 +2598,7 @@ async Task TestWriter(Stream stream)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The XML document is invalid.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteEndDocumentAsync">
@@ -2637,7 +2637,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteEndElement">
@@ -2688,7 +2688,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteEndElementAsync">
@@ -2727,7 +2727,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteEntityRef">
@@ -2778,7 +2778,7 @@ async Task TestWriter(Stream stream)
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="name" /> is either <see langword="null" /> or <see langword="String.Empty" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteEntityRefAsync">
@@ -2820,7 +2820,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteFullEndElement">
@@ -2868,7 +2868,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteFullEndElementAsync">
@@ -2907,7 +2907,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteName">
@@ -2952,7 +2952,7 @@ async Task TestWriter(Stream stream)
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="name" /> is not a valid XML name; or <paramref name="name" /> is either <see langword="null" /> or <see langword="String.Empty" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteNameAsync">
@@ -2994,7 +2994,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteNmToken">
@@ -3037,7 +3037,7 @@ async Task TestWriter(Stream stream)
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="name" /> is not a valid NmToken; or <paramref name="name" /> is either <see langword="null" /> or <see langword="String.Empty" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteNmTokenAsync">
@@ -3079,7 +3079,7 @@ async Task TestWriter(Stream stream)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteNode">
@@ -3090,7 +3090,7 @@ async Task TestWriter(Stream stream)
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <summary>Copies everything from the source object to the current writer instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3204,7 +3204,7 @@ while (!reader.EOF){
           <paramref name="reader" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="reader" /> contains invalid characters.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteNode">
@@ -3273,7 +3273,7 @@ while (!reader.EOF){
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="navigator" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteNodeAsync">
@@ -3284,7 +3284,7 @@ while (!reader.EOF){
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <summary>Asynchronously copies everything from the source object to the current writer instance.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3338,7 +3338,7 @@ while (!reader.EOF){
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteNodeAsync">
@@ -3388,7 +3388,7 @@ while (!reader.EOF){
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteProcessingInstruction">
@@ -3457,7 +3457,7 @@ writer.Close();
  <paramref name="name" /> is either <see langword="null" /> or <see langword="String.Empty" />.  
   
  This method is being used to create an XML declaration after <see cref="M:System.Xml.XmlWriter.WriteStartDocument" /> has already been called.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteProcessingInstructionAsync">
@@ -3501,7 +3501,7 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteQualifiedName">
@@ -3569,7 +3569,7 @@ writer.Close();
           <paramref name="localName" /> is either <see langword="null" /> or <see langword="String.Empty" />.  
   
  <paramref name="localName" /> is not a valid name.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteQualifiedNameAsync">
@@ -3621,7 +3621,7 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteRaw">
@@ -3632,7 +3632,7 @@ writer.Close();
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <summary>When overridden in a derived class, writes raw markup manually.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3694,7 +3694,7 @@ writer.Close();
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="data" /> is either <see langword="null" /> or <see langword="String.Empty" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteRaw">
@@ -3752,7 +3752,7 @@ writer.Close();
  -or-  
   
  The buffer length minus <paramref name="index" /> is less than <paramref name="count" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteRawAsync">
@@ -3763,7 +3763,7 @@ writer.Close();
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <summary>Asynchronously writes raw markup manually.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3814,7 +3814,7 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteRawAsync">
@@ -3860,7 +3860,7 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteStartAttribute">
@@ -3871,7 +3871,7 @@ writer.Close();
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <summary>When overridden in a derived class, writes the start of an attribute.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3923,7 +3923,7 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Text.EncoderFallbackException">There is a character in the buffer that is a valid XML character but is not valid for the output encoding. For example, if the output encoding is ASCII, you should only use characters from the range of 0 to 127 for element and attribute names. The invalid character might be in the argument of this method or in an argument of previous methods that were writing to the buffer. Such characters are escaped by character entity references when possible (for example, in text nodes or attribute values). However, the character entity reference is not allowed in element and attribute names, comments, processing instructions, or CDATA sections.</exception>
       </Docs>
     </Member>
@@ -3975,7 +3975,7 @@ writer.Close();
  ]]></format>
         </remarks>
         <exception cref="T:System.Text.EncoderFallbackException">There is a character in the buffer that is a valid XML character but is not valid for the output encoding. For example, if the output encoding is ASCII, you should only use characters from the range of 0 to 127 for element and attribute names. The invalid character might be in the argument of this method or in an argument of previous methods that were writing to the buffer. Such characters are escaped by character entity references when possible (for example, in text nodes or attribute values). However, the character entity reference is not allowed in element and attribute names, comments, processing instructions, or CDATA sections.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteStartAttribute">
@@ -4023,7 +4023,7 @@ writer.Close();
  ]]></format>
         </remarks>
         <exception cref="T:System.Text.EncoderFallbackException">There is a character in the buffer that is a valid XML character but is not valid for the output encoding. For example, if the output encoding is ASCII, you should only use characters from the range of 0 to 127 for element and attribute names. The invalid character might be in the argument of this method or in an argument of previous methods that were writing to the buffer. Such characters are escaped by character entity references when possible (for example, in text nodes or attribute values). However, the character entity reference is not allowed in element and attribute names, comments, processing instructions, or CDATA sections.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteStartAttributeAsync">
@@ -4069,7 +4069,7 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteStartDocument">
@@ -4080,7 +4080,7 @@ writer.Close();
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <summary>When overridden in a derived class, writes the XML declaration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4133,7 +4133,7 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteStartDocument">
@@ -4180,7 +4180,7 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteStartDocumentAsync">
@@ -4191,7 +4191,7 @@ writer.Close();
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
         <summary>Asynchronously writes the XML declaration.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4239,7 +4239,7 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteStartDocumentAsync">
@@ -4281,7 +4281,7 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteStartElement">
@@ -4292,7 +4292,7 @@ writer.Close();
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <summary>When overridden in a derived class, writes the specified start tag.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4351,7 +4351,7 @@ writer.Close();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Text.EncoderFallbackException">There is a character in the buffer that is a valid XML character but is not valid for the output encoding. For example, if the output encoding is ASCII, you should only use characters from the range of 0 to 127 for element and attribute names. The invalid character might be in the argument of this method or in an argument of previous methods that were writing to the buffer. Such characters are escaped by character entity references when possible (for example, in text nodes or attribute values). However, the character entity reference is not allowed in element and attribute names, comments, processing instructions, or CDATA sections.</exception>
       </Docs>
     </Member>
@@ -4409,7 +4409,7 @@ writer.WriteEndElement();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Text.EncoderFallbackException">There is a character in the buffer that is a valid XML character but is not valid for the output encoding. For example, if the output encoding is ASCII, you should only use characters from the range of 0 to 127 for element and attribute names. The invalid character might be in the argument of this method or in an argument of previous methods that were writing to the buffer. Such characters are escaped by character entity references when possible (for example, in text nodes or attribute values). However, the character entity reference is not allowed in element and attribute names, comments, processing instructions, or CDATA sections.</exception>
       </Docs>
     </Member>
@@ -4464,7 +4464,7 @@ writer.WriteEndElement();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <exception cref="T:System.Text.EncoderFallbackException">There is a character in the buffer that is a valid XML character but is not valid for the output encoding. For example, if the output encoding is ASCII, you should only use characters from the range of 0 to 127 for element and attribute names. The invalid character might be in the argument of this method or in an argument of previous methods that were writing to the buffer. Such characters are escaped by character entity references when possible (for example, in text nodes or attribute values). However, the character entity reference is not allowed in element and attribute names, comments, processing instructions, or CDATA sections.</exception>
       </Docs>
     </Member>
@@ -4511,7 +4511,7 @@ writer.WriteEndElement();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteState">
@@ -4542,7 +4542,7 @@ writer.WriteEndElement();
         <summary>When overridden in a derived class, gets the state of the writer.</summary>
         <value>One of the <see cref="T:System.Xml.WriteState" /> values.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteString">
@@ -4611,7 +4611,7 @@ test&lt;item&gt;test
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The text string contains an invalid surrogate pair.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteStringAsync">
@@ -4653,7 +4653,7 @@ test&lt;item&gt;test
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteSurrogateCharEntity">
@@ -4705,7 +4705,7 @@ test&lt;item&gt;test
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An invalid surrogate character pair was passed.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteSurrogateCharEntityAsync">
@@ -4749,7 +4749,7 @@ test&lt;item&gt;test
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteValue">
@@ -4760,7 +4760,7 @@ test&lt;item&gt;test
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
         <summary>Writes a single simple-typed value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4846,7 +4846,7 @@ test&lt;item&gt;test
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An invalid value was specified.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteValue">
@@ -4902,7 +4902,7 @@ test&lt;item&gt;test
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An invalid value was specified.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteValue">
@@ -4943,7 +4943,7 @@ test&lt;item&gt;test
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteValue">
@@ -4993,7 +4993,7 @@ test&lt;item&gt;test
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An invalid value was specified.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteValue">
@@ -5051,7 +5051,7 @@ test&lt;item&gt;test
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An invalid value was specified.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteValue">
@@ -5101,7 +5101,7 @@ test&lt;item&gt;test
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An invalid value was specified.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteValue">
@@ -5151,7 +5151,7 @@ test&lt;item&gt;test
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An invalid value was specified.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteValue">
@@ -5202,7 +5202,7 @@ test&lt;item&gt;test
         </remarks>
         <exception cref="T:System.ArgumentException">An invalid value was specified.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteValue">
@@ -5252,7 +5252,7 @@ test&lt;item&gt;test
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An invalid value was specified.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteValue">
@@ -5300,7 +5300,7 @@ test&lt;item&gt;test
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An invalid value was specified.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteWhitespace">
@@ -5344,7 +5344,7 @@ test&lt;item&gt;test
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The string contains non-white space characters.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteWhitespaceAsync">
@@ -5386,7 +5386,7 @@ test&lt;item&gt;test
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="XmlLang">
@@ -5424,7 +5424,7 @@ test&lt;item&gt;test
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="XmlSpace">
@@ -5474,7 +5474,7 @@ test&lt;item&gt;test
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
   </Members>

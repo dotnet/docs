@@ -191,7 +191,7 @@ manager: "erikre"
 ```xml  
 <configuration>  
 <appSettings>   
-<add key=”System:Xml:Serialization:UseLegacySerializerGeneration” value=”true” />  
+<add key="System:Xml:Serialization:UseLegacySerializerGeneration" value="true" />  
                </appSettings>  
 </configuration>  
   

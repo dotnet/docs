@@ -52,7 +52,7 @@ manager: "erikre"
         // ...  
         context.GetExtension<DocumentStatusExtension>().DocumentId = Guid.NewGuid();  
         context.GetExtension<DocumentStatusExtension>().UserName = "John Smith";  
-        context.GetExtension<DocumentStatusExtension>().ApprovalStatus = “Approved”;  
+        context.GetExtension<DocumentStatusExtension>().ApprovalStatus = "Approved";  
         context.GetExtension<DocumentStatusExtension>().LastUpdateTime = DateTime.Now();  
         // ...  
     }  

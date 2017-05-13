@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.IdentityModel.Services.WSFederationMessage> class represents either a WS-Federation request or a WS-Federation response. More specialized classes that represent specific WS-Federation messages derive from <xref:System.IdentityModel.Services.WSFederationMessage>; for example, the <xref:System.IdentityModel.Services.SignInRequestMessage> class, which represents a WS-Federation sign-in request message.  
   
- The <xref:System.IdentityModel.Services.WSFederationMessage> class exposes several properties that can be used to set or access individual message parameters. These parameters can also be set or accessed through the <xref:System.IdentityModel.Services.FederationMessage.Parameters%2A> dictionary. For example, you can read the wencoding parameter in the message either through the <xref:System.IdentityModel.Services.WSFederationMessage.Encoding%2A> property or by specifying “wencoding” as the key to the <xref:System.IdentityModel.Services.FederationMessage.Parameters%2A> dictionary.  
+ The <xref:System.IdentityModel.Services.WSFederationMessage> class exposes several properties that can be used to set or access individual message parameters. These parameters can also be set or accessed through the <xref:System.IdentityModel.Services.FederationMessage.Parameters%2A> dictionary. For example, you can read the wencoding parameter in the message either through the <xref:System.IdentityModel.Services.WSFederationMessage.Encoding%2A> property or by specifying "wencoding" as the key to the <xref:System.IdentityModel.Services.FederationMessage.Parameters%2A> dictionary.  
   
  The <xref:System.IdentityModel.Services.WSFederationMessage> contains static methods that you can call to create the appropriate WS-Federation message from: a URL that includes a query string; a base URL and a collection of WS-Federation parameter names and values; or form post data in an HTTP request.  
   
@@ -43,7 +43,7 @@
       </Parameters>
       <Docs>
         <param name="baseUrl">The base URL to which the WS-Federation message applies. This is the URL without any query parameters. Sets the <see cref="P:System.IdentityModel.Services.FederationMessage.BaseUri" /> property.</param>
-        <param name="action">The wa parameter of the message. Specifies the action to be performed; for example “wsignin1.0” for a WS-Federation sign-in request. Sets the <see cref="P:System.IdentityModel.Services.WSFederationMessage.Action" /> property.</param>
+        <param name="action">The wa parameter of the message. Specifies the action to be performed; for example "wsignin1.0" for a WS-Federation sign-in request. Sets the <see cref="P:System.IdentityModel.Services.WSFederationMessage.Action" /> property.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.WSFederationMessage" /> class from the base URL to which the message applies and the action to be performed (the wa message parameter).</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -73,7 +73,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The wa parameter specifies the action to be performed. For example, for sign-in scenarios the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property is set to “wsignin1.0” and for sign-out scenarios, the property is set to “wsignout1.0” . The wa parameter is required, so this property cannot be set to `null` or an empty string.  
+ The wa parameter specifies the action to be performed. For example, for sign-in scenarios the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property is set to "wsignin1.0" and for sign-out scenarios, the property is set to "wsignout1.0" . The wa parameter is required, so this property cannot be set to `null` or an empty string.  
   
  ]]></format>
         </remarks>
@@ -186,7 +186,7 @@
   
  <paramref name="collection" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IdentityModel.Services.WSFederationMessageException">The wa parameter in the parameter collection is not recognized.</exception>
-        <exception cref="T:System.ArgumentException">A sign-in response message has both the wresult and wresultptr parameter in the parameter collection. (A valid sign-in response message has the wa parameter equal to “wsignin1.0” and either the wresult or the wresultptr parameter, but not both.)</exception>
+        <exception cref="T:System.ArgumentException">A sign-in response message has both the wresult and wresultptr parameter in the parameter collection. (A valid sign-in response message has the wa parameter equal to "wsignin1.0" and either the wresult or the wresultptr parameter, but not both.)</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateFromUri">

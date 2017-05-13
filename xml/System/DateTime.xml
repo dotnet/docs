@@ -6394,11 +6394,11 @@ An object that is equivalent to the date and time contained in `s`.
   
  Some uses of this method include:  
   
--   Getting a string that displays the date and time in the current culture’s short date and time format. To do this, you use the “G” format specifier.  
+-   Getting a string that displays the date and time in the current culture’s short date and time format. To do this, you use the "G" format specifier.  
   
--   Getting a string that contains only the month and year. To do this, you use the “MM/yyyy” format string. The format string uses the current culture’s date separator.  
+-   Getting a string that contains only the month and year. To do this, you use the "MM/yyyy" format string. The format string uses the current culture’s date separator.  
   
--   Getting a string that contains the date and time in a specific format. For example, the “MM/dd/yyyyHH:mm” format string displays the date and time string in a fixed format such as “19//03//2013 18:06". The format string uses “/” as a fixed date separator regardless of culture-specific settings.  
+-   Getting a string that contains the date and time in a specific format. For example, the "MM/dd/yyyyHH:mm" format string displays the date and time string in a fixed format such as "19//03//2013 18:06". The format string uses "/" as a fixed date separator regardless of culture-specific settings.  
   
 -   Getting a date in a condensed format that could be used for serializing a date string. For example, the "yyyyMMdd" format string displays a four-digit year followed by a two-digit month and a two-digit day with no date separator.  
   

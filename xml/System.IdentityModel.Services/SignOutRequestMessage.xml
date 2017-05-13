@@ -11,14 +11,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a WS-Federation sign-out message. This message is created when the received message has the action parameter (wa) set to “wsignout1.0”.</summary>
+    <summary>Represents a WS-Federation sign-out message. This message is created when the received message has the action parameter (wa) set to "wsignout1.0".</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A WS-Federation sign-out message is sent by a relying party (RP) to a security token service (STS) to sign out of the current session with that STS. The wa parameter must be set to “wsignout1.0” and an optional wreply parameter may be set to indicate the URL to which the client should be redirected by the STS after sign-out completes.  
+ A WS-Federation sign-out message is sent by a relying party (RP) to a security token service (STS) to sign out of the current session with that STS. The wa parameter must be set to "wsignout1.0" and an optional wreply parameter may be set to indicate the URL to which the client should be redirected by the STS after sign-out completes.  
   
- A <xref:System.IdentityModel.Services.SignOutRequestMessage> message is created by the static methods of the <xref:System.IdentityModel.Services.WSFederationMessage> class, for example the <xref:System.IdentityModel.Services.WSFederationMessage.CreateFromUri%2A> method, when the wa parameter is set to “wsignout1.0”.  
+ A <xref:System.IdentityModel.Services.SignOutRequestMessage> message is created by the static methods of the <xref:System.IdentityModel.Services.WSFederationMessage> class, for example the <xref:System.IdentityModel.Services.WSFederationMessage.CreateFromUri%2A> method, when the wa parameter is set to "wsignout1.0".  
   
  [!INCLUDE[wif_wsfed_ref](~/includes/wif-wsfed-ref-md.md)]  
   
@@ -45,7 +45,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The wa message parameter (the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property) is initialized to “wsignout1.0”.  
+ The wa message parameter (the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property) is initialized to "wsignout1.0".  
   
  ]]></format>
         </remarks>
@@ -76,7 +76,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The wa message parameter (the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property) is initialized to “wsignout1.0”.  
+ The wa message parameter (the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property) is initialized to "wsignout1.0".  
   
  ]]></format>
         </remarks>
@@ -134,7 +134,7 @@
       <Docs>
         <summary>Validates the current instance.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The wa parameter (the <see cref="P:System.IdentityModel.Services.WSFederationMessage.Action" /> property) is not set to “wsignout1.0”.</exception>
+        <exception cref="T:System.InvalidOperationException">The wa parameter (the <see cref="P:System.IdentityModel.Services.WSFederationMessage.Action" /> property) is not set to "wsignout1.0".</exception>
       </Docs>
     </Member>
     <Member MemberName="Write">

@@ -53,10 +53,10 @@ Provides configuration for the <xref:System.IdentityModel.Tokens.SamlSecurityTok
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|mapToWindows|Specifies whether the token handler should map the validating token to a Windows account by using the incoming UPN claim. The default is “false”.|  
-|issuerCertificateRevocationMode|An <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode> value that specifies the revocation mode to use for the X.509 certificate. The default value is “Online”.|  
-|issuerCertificateValidationMode|An <xref:System.ServiceModel.Security.X509CertificateValidationMode> value that specifies the validation mode to use for the X.509 certificate. The default value is “PeerOrChainTrust”.|  
-|issuerCertificateTrustedStoreLocation|A <xref:System.Security.Cryptography.X509Certificates.StoreLocation> value that specifies the X.509 certificate store. The default value is “LocalMachine”.|  
+|mapToWindows|Specifies whether the token handler should map the validating token to a Windows account by using the incoming UPN claim. The default is "false".|  
+|issuerCertificateRevocationMode|An <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode> value that specifies the revocation mode to use for the X.509 certificate. The default value is "Online".|  
+|issuerCertificateValidationMode|An <xref:System.ServiceModel.Security.X509CertificateValidationMode> value that specifies the validation mode to use for the X.509 certificate. The default value is "PeerOrChainTrust".|  
+|issuerCertificateTrustedStoreLocation|A <xref:System.Security.Cryptography.X509Certificates.StoreLocation> value that specifies the X.509 certificate store. The default value is "LocalMachine".|  
 |issuerCertificateValidator|A custom type that derives from <xref:System.IdentityModel.Selectors.X509CertificateValidator>. If the `issuerCertificateValidationMode` attribute is "Custom", an instance of this type is used for issuer certificate validation.|  
   
 ### Child Elements  

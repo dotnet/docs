@@ -48,7 +48,7 @@
  By default, a <xref:System.IO.TextWriter> is not thread safe. See <xref:System.IO.TextWriter.Synchronized%2A?displayProperty=fullName> for a thread-safe wrapper.  
   
 > [!IMPORTANT]
->  This type implements the <xref:System.IDisposable> interface. When you have finished using any type that derives from this type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IO.TextWriter.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see Dispose and the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+>  This type implements the <xref:System.IDisposable> interface. When you have finished using any type that derives from this type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IO.TextWriter.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see Dispose and the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   

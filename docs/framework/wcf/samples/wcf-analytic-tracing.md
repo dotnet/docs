@@ -26,7 +26,7 @@ This sample demonstrates how to add your own tracing events into the stream of a
  This sample uses the <xref:System.Diagnostics.Eventing.EventProvider?displayProperty=fullName> class, which implements <xref:System.IDisposable?displayProperty=fullName>. When implementing tracing for a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service, it is likely that you may use the <xref:System.Diagnostics.Eventing.EventProvider>’s resources for the lifetime of the service. For this reason, and for readability, this sample never disposes of the wrapped <xref:System.Diagnostics.Eventing.EventProvider>. If for some reason your service has different requirements for tracing and you must dispose of this resource, then you should modify this sample in accordance with the best practices for disposing of unmanaged resources. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] disposing unmanaged resources, see [Implementing a Dispose Method](http://go.microsoft.com/fwlink/?LinkId=166436).  
   
 ## Self-Hosting vs. Web Hosting  
- For Web-hosted services, WCF’s analytic traces provide a field, called “HostReference”, which is used to identify the service that is emitting the traces. The extensible user traces can participate in this model and this sample demonstrates best practices for doing so. The format of a Web host reference when the pipe ‘&#124;’ character actually appears in the resulting string can be any one of the following:  
+ For Web-hosted services, WCF’s analytic traces provide a field, called "HostReference", which is used to identify the service that is emitting the traces. The extensible user traces can participate in this model and this sample demonstrates best practices for doing so. The format of a Web host reference when the pipe ‘&#124;’ character actually appears in the resulting string can be any one of the following:  
   
 -   If the application is not at the root.  
   
@@ -36,7 +36,7 @@ This sample demonstrates how to add your own tracing events into the stream of a
   
      \<SiteName>&#124;\<ServiceVirtualPath>&#124;\<ServiceName>  
   
- For self-hosted services, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]’s analytic traces do not populate the “HostReference” field. The `WCFUserEventProvider` class in this sample behaves consistently when used by a self-hosted service.  
+ For self-hosted services, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]’s analytic traces do not populate the "HostReference" field. The `WCFUserEventProvider` class in this sample behaves consistently when used by a self-hosted service.  
   
 ## Custom Event Details  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]’s ETW Event Provider manifest defines three events that are designed to be emitted by [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service authors from within service code. The following table shows a breakdown of the three events.  
@@ -99,7 +99,7 @@ This sample demonstrates how to add your own tracing events into the stream of a
   
 13. Locate the event with the ID of 303 and double-click it to open it up and inspect its contents.  
   
-     This event was emitted by the `Add()` method of the ICalculator service and has a payload equal to “2+3=5”.  
+     This event was emitted by the `Add()` method of the ICalculator service and has a payload equal to "2+3=5".  
   
 #### To clean up (Optional)  
   
@@ -112,7 +112,7 @@ This sample demonstrates how to add your own tracing events into the stream of a
 4.  Click **Clear** to clear the events.  
   
 ## Known Issue  
- There is a known issue in the **Event Viewer** where it may fail to decode ETW events. You may see an error message that says: “The description for Event ID \<id> from source Microsoft-Windows-Application Server-Applications cannot be found. Either the component that raises this event is not installed on your local computer or the installation is corrupted. You can install or repair the component on the local computer.” If you encounter this error, select **Refresh** from the **Actions** menu. The event should then decode properly.  
+ There is a known issue in the **Event Viewer** where it may fail to decode ETW events. You may see an error message that says: "The description for Event ID \<id> from source Microsoft-Windows-Application Server-Applications cannot be found. Either the component that raises this event is not installed on your local computer or the installation is corrupted. You can install or repair the component on the local computer." If you encounter this error, select **Refresh** from the **Actions** menu. The event should then decode properly.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  

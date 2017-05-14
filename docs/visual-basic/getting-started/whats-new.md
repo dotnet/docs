@@ -60,7 +60,7 @@ This page lists key feature names for each version of Visual Basic with descript
  `Async` / `await`, iterators, caller info attributes  
   
  Visual Basic / Visual Studio .NET 2013  
- technology previews of .NET Compiler Platform (“Roslyn”)  
+ technology previews of .NET Compiler Platform ("Roslyn")  
   
  Visual Basic / Visual Studio .NET 2015  
  Current version, see below  

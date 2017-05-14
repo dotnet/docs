@@ -19,7 +19,7 @@ This sample demonstrates how to create a class that derives from <xref:System.Wi
 ## Discussion  
  This sample demonstrates how to create a custom writer.  
   
- To build a custom XAML writer, create a class that inherits from <xref:System.Windows.Markup.XamlWriter>. As XAML writers are often nested, it is typical to keep track of an “inner” XAML writer. These “inner’ writers can be thought of as the reference to the remaining stack of XAML writers, allowing you to have multiple entry points to do work and then delegate processing to the remainder of the stack.  
+ To build a custom XAML writer, create a class that inherits from <xref:System.Windows.Markup.XamlWriter>. As XAML writers are often nested, it is typical to keep track of an "inner" XAML writer. These "inner’ writers can be thought of as the reference to the remaining stack of XAML writers, allowing you to have multiple entry points to do work and then delegate processing to the remainder of the stack.  
   
  In this sample, there are a few items of interest. One is the check to see whether the item being written is from a designer namespace. Note that this also strips out the use of other types from the designer namespace in a workflow.  
   

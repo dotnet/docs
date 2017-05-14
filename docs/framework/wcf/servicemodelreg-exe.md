@@ -75,7 +75,7 @@ File name: 'System.ServiceModel, Version=2.0.0.0, Culture=neutral, PublicKeyToke
 %windir%\Microsoft.NET\Framework64\v2.0.50727\config\machine.config   
 ```  
   
- Locate any XML nodes in this file that refer to “System.ServiceModel, Version=2.0.0.0”, delete them and any child nodes. Save the file and re-run ServiceModelReg.exe resolves this problem.  
+ Locate any XML nodes in this file that refer to "System.ServiceModel, Version=2.0.0.0", delete them and any child nodes. Save the file and re-run ServiceModelReg.exe resolves this problem.  
   
 ## Examples  
  The following examples show how to use the most common options of the ServiceModelReg.exe tool.  

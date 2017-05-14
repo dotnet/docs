@@ -35,7 +35,7 @@ This section discusses how to develop a modification SQL generation module for y
   
  ![Diagram](../../../../../docs/framework/data/adonet/ef/media/558ba7b3-dd19-48d0-b91e-30a76415bf5f.gif "558ba7b3-dd19-48d0-b91e-30a76415bf5f")  
   
- DbModificationCommandTree has a Target property that represents the target set for the modification operation. The Target’s Expression property, which defines the input set is always DbScanExpression.  A DbScanExpression can either represent a table or a view, or a set of data defined with a query if the metadata property “Defining Query” of its Target is non-null.  
+ DbModificationCommandTree has a Target property that represents the target set for the modification operation. The Target’s Expression property, which defines the input set is always DbScanExpression.  A DbScanExpression can either represent a table or a view, or a set of data defined with a query if the metadata property "Defining Query" of its Target is non-null.  
   
  A DbScanExpression that represents a query could only reach a provider as a target of modification if the set was defined by using a defining query in the model but no function was provided for the corresponding modification operation. Providers may not be able to support such a scenario (SqlClient, for example, does not).  
   

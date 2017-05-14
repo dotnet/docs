@@ -36,7 +36,7 @@ Specifies binding, contract, and address properties for a service endpoint, whic
    bindingName="String"  
    bindingNamespace="String"  
    contract="String"  
-   endpointConfiguration=”String”   isSystemEndpoint=”Boolean”   kind=”String”   listenUriMode="Explicit/Unique"  
+   endpointConfiguration="String"   isSystemEndpoint="Boolean"   kind="String"   listenUriMode="Explicit/Unique"  
    listenUri="Uri"  
 </endpoint>  
 ```  

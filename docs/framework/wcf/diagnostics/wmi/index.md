@@ -72,7 +72,7 @@ manager: "erikre"
 4.  Select the specific group or user that you want to control access and use the **Allow** or **Deny** checkbox to configure permissions.  
   
 ## Granting WCF WMI Registration Permissions to Additional Users  
- WCF exposes management data to WMI. It does so by hosting an in-process WMI provider, sometimes called a “decoupled provider”. For the management data to be exposed, the account that registers this provider must have the appropriate permissions. In Windows, only a small set of privileged accounts can register decoupled providers by default. This is a problem because users commonly want to expose WMI data from a WCF service running under an account that is not in the default set.  
+ WCF exposes management data to WMI. It does so by hosting an in-process WMI provider, sometimes called a "decoupled provider". For the management data to be exposed, the account that registers this provider must have the appropriate permissions. In Windows, only a small set of privileged accounts can register decoupled providers by default. This is a problem because users commonly want to expose WMI data from a WCF service running under an account that is not in the default set.  
   
  To provide this access, an administrator must grant the following permissions to the additional account in the following order:  
   
@@ -85,9 +85,9 @@ manager: "erikre"
 1.  Run the following PowerShell script.  
   
     ```powershell  
-    write-host “”  
-    write-host “Granting Access to root/servicemodel WMI namespace to built in users group”  
-    write-host “”  
+    write-host ""  
+    write-host "Granting Access to root/servicemodel WMI namespace to built in users group"  
+    write-host ""  
   
     # Create the binary representation of the permissions to grant in SDDL  
     $newPermissions = "O:BAG:BAD:P(A;CI;CCDCLCSWRPWPRCWD;;;BA)(A;CI;CC;;;NS)(A;CI;CC;;;LS)(A;CI;CC;;;BU)"  
@@ -114,11 +114,11 @@ manager: "erikre"
   
     $outsddl = $converter.BinarySDToSDDL($binarySD[0])  
     write-host "New ACL:      "$outsddl.SDDL  
-    write-host “”  
+    write-host ""  
   
     ```  
   
-     This PowerShell script uses Security Descriptor Definition Language (SDDL) to grant the Built-In Users group access to the “root/servicemodel” WMI namespace. It specifies the following ACLs:  
+     This PowerShell script uses Security Descriptor Definition Language (SDDL) to grant the Built-In Users group access to the "root/servicemodel" WMI namespace. It specifies the following ACLs:  
   
     -   Built-In Administrator (BA) - Already Had Access.  
   
@@ -133,9 +133,9 @@ manager: "erikre"
 1.  Run the following PowerShell script.  
   
     ```powershell  
-    write-host “”  
-    write-host “Granting WCF provider registration access to built in users group”  
-    write-host “”  
+    write-host ""  
+    write-host "Granting WCF provider registration access to built in users group"  
+    write-host ""  
     # Set security on ServiceModel provider  
     $provider = get-WmiObject -namespace "root\servicemodel" __Win32Provider  
   
@@ -145,7 +145,7 @@ manager: "erikre"
     # Commit the changes and display it to the console  
     $result = $provider.Put()  
     write-host "New ACL:      "$provider.SecurityDescriptor  
-    write-host “”  
+    write-host ""  
   
     ```  
   

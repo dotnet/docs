@@ -192,7 +192,7 @@ The following procedure describes how to migrate an ASP.NET Web Service to [!INC
       <service name="MyOrganization.Adder "  
         behaviorConfiguration="AdderBehavior">  
        <endpoint   
-        address="”  
+        address=""  
         binding="basicHttpBinding"  
         contract="AdderSoap "/>  
        </service>  

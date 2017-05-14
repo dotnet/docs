@@ -33,7 +33,7 @@ The Discovery specification does not require that endpoints that participate in 
   [<d:Sig Scheme="xs:anyURI"   
          [KeyId="xs:base64Binary"]?  
           Refs="..."  
-         [PrefixList]=”xs:NMTOKENS”   
+         [PrefixList]="xs:NMTOKENS"   
           Sig="xs:base64Binary"   
           ... />]?  
   ...   

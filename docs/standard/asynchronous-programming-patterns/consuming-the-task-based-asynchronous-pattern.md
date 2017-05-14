@@ -521,14 +521,14 @@ public async  void btnDownload_Click(object sender, EventArgs e)
         {  
             Bitmap bmp = await download;  
             pictureBox.Image = bmp;  
-            status.Text = “Downloaded”;  
+            status.Text = "Downloaded";  
         }  
         else  
         {  
             pictureBox.Image = null;  
-            status.Text = “Timed out”;  
+            status.Text = "Timed out";  
             var ignored = download.ContinueWith(  
-                t => Trace(“Task finally completed”));  
+                t => Trace("Task finally completed"));  
         }  
     }  
     finally { btnDownload.Enabled = true; }  
@@ -549,11 +549,11 @@ public async  void btnDownload_Click(object sender, RoutedEventArgs e)
         if (downloads == await Task.WhenAny(downloads, Task.Delay(3000)))  
         {  
             foreach(var bmp in downloads) panel.AddImage(bmp);  
-            status.Text = “Downloaded”;  
+            status.Text = "Downloaded";  
         }  
         else  
         {  
-            status.Text = “Timed out”;  
+            status.Text = "Timed out";  
             downloads.ContinueWith(t => Log(t));  
         }  
     }  
@@ -657,9 +657,9 @@ public static async  Task<T> NeedOnlyOne(
   
 ```csharp  
 double currentPrice = await NeedOnlyOne(  
-    ct => GetCurrentPriceFromServer1Async(“msft”, ct),  
-    ct => GetCurrentPriceFromServer2Async(“msft”, ct),  
-    ct => GetCurrentPriceFromServer3Async(“msft”, ct));  
+    ct => GetCurrentPriceFromServer1Async("msft", ct),  
+    ct => GetCurrentPriceFromServer2Async("msft", ct),  
+    ct => GetCurrentPriceFromServer3Async("msft", ct));  
 ```  
   
 ### Interleaved Operations  

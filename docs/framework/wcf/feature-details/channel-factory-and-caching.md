@@ -38,8 +38,8 @@ WCF client applications use the <xref:System.ServiceModel.ChannelFactory%601> cl
   
 |Cache Setting Value|Description|  
 |-------------------------|-----------------|  
-|<xref:System.ServiceModel.CacheSetting.AlwaysOn>|All instances of <xref:System.ServiceModel.ClientBase%601> within the app-domain can participate in caching. The developer has determined that there are no adverse security implications to caching. Caching will not be turned off even if “security-sensitive” properties on <xref:System.ServiceModel.ClientBase%601> are accessed. The “security-sensitive” properties of <xref:System.ServiceModel.ClientBase%601> are <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A>, <xref:System.ServiceModel.ClientBase%601.Endpoint%2A> and <xref:System.ServiceModel.ClientBase%601.ChannelFactory%2A>.|  
-|<xref:System.ServiceModel.CacheSetting.Default>|Only instances of <xref:System.ServiceModel.ClientBase%601> created from endpoints defined in configuration files participate in caching within the app-domain. Any instances of <xref:System.ServiceModel.ClientBase%601> created programmatically within that app-domain will not participate in caching. Also, caching will be disabled for an instance of <xref:System.ServiceModel.ClientBase%601> once any of its “security-sensitive” properties is accessed.|  
+|<xref:System.ServiceModel.CacheSetting.AlwaysOn>|All instances of <xref:System.ServiceModel.ClientBase%601> within the app-domain can participate in caching. The developer has determined that there are no adverse security implications to caching. Caching will not be turned off even if "security-sensitive" properties on <xref:System.ServiceModel.ClientBase%601> are accessed. The "security-sensitive" properties of <xref:System.ServiceModel.ClientBase%601> are <xref:System.ServiceModel.ClientBase%601.ClientCredentials%2A>, <xref:System.ServiceModel.ClientBase%601.Endpoint%2A> and <xref:System.ServiceModel.ClientBase%601.ChannelFactory%2A>.|  
+|<xref:System.ServiceModel.CacheSetting.Default>|Only instances of <xref:System.ServiceModel.ClientBase%601> created from endpoints defined in configuration files participate in caching within the app-domain. Any instances of <xref:System.ServiceModel.ClientBase%601> created programmatically within that app-domain will not participate in caching. Also, caching will be disabled for an instance of <xref:System.ServiceModel.ClientBase%601> once any of its "security-sensitive" properties is accessed.|  
 |<xref:System.ServiceModel.CacheSetting.AlwaysOff>|Caching is turned off for all instances of <xref:System.ServiceModel.ClientBase%601> of a particular type within the app-domain in question.|  
   
  The following code snippets illustrate how to use the <xref:System.ServiceModel.ClientBase%601.CacheSetting%2A> property.  
@@ -77,7 +77,7 @@ class Program
       int i = 1;   
       foreach (string msg in messages)   
       {   
-         using (TestClient proxy = new TestClient (“MyEndpoint”, new EndpointAddress(address)))   
+         using (TestClient proxy = new TestClient ("MyEndpoint", new EndpointAddress(address)))   
          {   
             if (i == 4)   
             {   
@@ -104,7 +104,7 @@ class Program
       ClientBase.CacheSettings = CacheSettings.AlwaysOff;   
       foreach (string msg in messages)   
       {   
-         using (TestClient proxy = new TestClient (“MyEndpoint”, new EndpointAddress(address)))   
+         using (TestClient proxy = new TestClient ("MyEndpoint", new EndpointAddress(address)))   
          {   
             proxy.Test(msg);   
          }           

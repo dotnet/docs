@@ -160,8 +160,8 @@ When creating an application, you often want to defer decisions to the administr
   
 ```xml  
 <protocolMapping>  
-    <add scheme=”http” binding=”basicHttpBinding” bindingConfiguration=”shortTimeout” />  
-    <add scheme=”https” binding=”basicHttpBinding” bindingConfiguration=”Secure” />  
+    <add scheme="http" binding="basicHttpBinding" bindingConfiguration="shortTimeout" />  
+    <add scheme="https" binding="basicHttpBinding" bindingConfiguration="Secure" />  
 </protocolMapping>  
 <bindings>  
     <basicHttpBinding   

@@ -30,8 +30,8 @@ Specifies settings that are used to find and validate an X.509 certificate in a 
   <federationConfiguration>  
     <serviceCertificate>  
       <certificateReference   
-        storeName=”AddressBook||AuthRoot||CertificateAuthority||Disallowed||My||Root||TrustedPeople||TrustedPublisher”  
-        storeLocation=”CurrentUser||LocalMachine”  
+        storeName="AddressBook||AuthRoot||CertificateAuthority||Disallowed||My||Root||TrustedPeople||TrustedPublisher"  
+        storeLocation="CurrentUser||LocalMachine"  
         x509FindType="FindByThumbprint||FindBySubjectName||FindBySubjectDistinguishedName||FindByIssuerName||FindByIssuerDistinguishedName||FindBySerialNumber||FindByTimeValid||FindByTimeNotYetValid||FindByTimeExpired||FindByTemplateName||FindByApplicationPolicy||FindByCertificatePolicy||FindByExtension||FindByKeyUsage||FindBySubjectKeyIdentifier"  
         findValue=xs:String  
         isChainIncluded=xs:Boolean >  
@@ -48,11 +48,11 @@ Specifies settings that are used to find and validate an X.509 certificate in a 
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|storeName|The name of the X.509 certificate store. The default is “My”. Optional.|  
-|storeLocation|A <xref:System.Security.Cryptography.X509Certificates.StoreLocation> value that specifies the location of the X.509 certificate store. The default value is “LocalMachine”. Optional.|  
-|x509FindType|An <xref:System.Security.Cryptography.X509Certificates.X509FindType> value that specifies the type of search that is to be executed. The default is “FindBySubjectDistinguishedName”. Optional.|  
+|storeName|The name of the X.509 certificate store. The default is "My". Optional.|  
+|storeLocation|A <xref:System.Security.Cryptography.X509Certificates.StoreLocation> value that specifies the location of the X.509 certificate store. The default value is "LocalMachine". Optional.|  
+|x509FindType|An <xref:System.Security.Cryptography.X509Certificates.X509FindType> value that specifies the type of search that is to be executed. The default is "FindBySubjectDistinguishedName". Optional.|  
 |findValue|The value to search for in the X.509 certificate store. Optional.|  
-|isChainIncluded|Specifies whether validation should be performed by using the certificate chain. The default is “true”; validation is performed by using the certificate chain. Optional.|  
+|isChainIncluded|Specifies whether validation should be performed by using the certificate chain. The default is "true"; validation is performed by using the certificate chain. Optional.|  
   
 ### Child Elements  
  None  

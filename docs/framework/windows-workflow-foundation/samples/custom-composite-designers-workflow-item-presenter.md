@@ -14,7 +14,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # Custom Composite Designers - Workflow Item Presenter
-The <xref:System.Activities.Presentation.WorkflowItemPresenter> is a key type in the WF designer programming model that allows for the creation of a “drop zone” where an arbitrary activity can be placed. This sample shows how to build an activity designer that surfaces such a “drop zone.”  
+The <xref:System.Activities.Presentation.WorkflowItemPresenter> is a key type in the WF designer programming model that allows for the creation of a "drop zone" where an arbitrary activity can be placed. This sample shows how to build an activity designer that surfaces such a "drop zone."  
   
  This sample demonstrates:  
   

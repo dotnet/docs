@@ -24,7 +24,7 @@ This topic describes activity propagation in the [!INCLUDE[indigo1](../../../../
  To do this, use the `ActivityTracing` setting as demonstrated in the previous example. In addition, set the `propagateActivity` attribute for the `System.ServiceModel` trace source at all endpoints.  
   
 ```  
-<source name="System.ServiceModel" switchValue="Verbose,ActivityTracing" propagateActivity=”true” >  
+<source name="System.ServiceModel" switchValue="Verbose,ActivityTracing" propagateActivity="true" >  
 ```  
   
  Activity propagation is a configurable capability that causes [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] to add a header to outbound messages, which includes the activity ID on the TLS. By including this on subsequent traces on the server side, we can correlate client and server activities.  
@@ -41,8 +41,8 @@ This topic describes activity propagation in the [!INCLUDE[indigo1](../../../../
  The gAId is propagated through the ActivityId message header, as illustrated in the following XML schema.  
   
 ```  
-<xsd:element name=”ActivityId” type=”integer” minOccurs=”0”>  
-  <xsd:attribute name=”CorrelationId” type=”integer” minOccurs=”0”/>  
+<xsd:element name="ActivityId" type="integer" minOccurs="0">  
+  <xsd:attribute name="CorrelationId" type="integer" minOccurs="0"/>  
 </xsd:element>  
 ```  
   

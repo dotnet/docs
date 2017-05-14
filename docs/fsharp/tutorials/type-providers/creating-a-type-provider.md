@@ -771,7 +771,7 @@ As a simple example, consider a type provider for accessing scientific data in C
 This section shows how to provide a type that you can use to get rows with a `Distance` property of type `float<meter>` and a `Time` property of type `float<second>`. For simplicity, the following assumptions are made:
 
 
-- Header names are either unit-less or have the form “Name (unit)” and don't contain commas.
+- Header names are either unit-less or have the form "Name (unit)" and don't contain commas.
 <br />
 
 - Units are all Systeme International (SI) units as the [Microsoft.FSharp.Data.UnitSystems.SI.UnitNames Module (F#)](https://msdn.microsoft.com/library/3cb43485-11f5-4aa7-a779-558f19d4013b) module defines.

@@ -64,7 +64,7 @@ catch (InvalidCastException e)
  Using `catch` arguments is one way to filter for the exceptions you want to handle.  You can also use a predicate expression that further examines the exception to decide whether to handle it.  If the predicate expression returns false, then the search for a handler continues.  
   
 ```csharp  
-catch (ArgumentException e) when (e.ParamName == “…”)  
+catch (ArgumentException e) when (e.ParamName == "…")  
 {  
 }  
 ```  

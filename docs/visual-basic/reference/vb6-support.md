@@ -20,7 +20,7 @@ Update: March 2016
 
 ## Executive summary
 
-The Visual Basic team is committed to “It Just Works” compatibility for Visual Basic 6.0 applications on the following supported Windows operating systems: 
+The Visual Basic team is committed to "It Just Works" compatibility for Visual Basic 6.0 applications on the following supported Windows operating systems: 
 - Windows Vista
 - Windows Server 2008 including R2
 - Windows 7

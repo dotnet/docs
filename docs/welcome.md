@@ -21,12 +21,12 @@ This documentation covers the breadth of .NET across platforms and languages.  Y
 
 - [.NET Platform Guide](standard/index.md)
 - [.NET Core Guide](core/index.md)
-- [.NET Framework on Docker Guide](framework/index.md)
+- [.NET Framework Guide](framework/index.md)
 - [C# Guide](csharp/index.md)
 - [F# Guide](fsharp/index.md)
 - [Visual Basic Guide](visual-basic/index.md)
 
-Additionally, you can browse the [.NET API reference](https://docs.microsoft.com/dotnet/api/).
+Additionally, you can browse the [.NET API reference](https://docs.microsoft.com/dotnet/api).
 
 ## Open Source
 

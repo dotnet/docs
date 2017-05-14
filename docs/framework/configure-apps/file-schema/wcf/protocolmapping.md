@@ -24,7 +24,7 @@ Represents a configuration section for defining a set of default protocol mappin
 ## Syntax  
   
 ```vb  
-   <protocolMapping>    <add binding="String”         bindingConfiguration="String”         scheme="http/net.msmq/net.pipe/net.tcp"/></protocolMapping>  
+   <protocolMapping>    <add binding="String"         bindingConfiguration="String"         scheme="http/net.msmq/net.pipe/net.tcp"/></protocolMapping>  
 ```  
   
 ```csharp  

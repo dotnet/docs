@@ -25,7 +25,7 @@ Represents a default protocol mapping between a transport protocol scheme (e.g.,
 ## Syntax  
   
 ```vb  
-   <protocolMapping>    <add binding="String”         bindingConfiguration="String”         scheme="http/net.msmq/net.pipe/net.tcp"/></protocolMapping>  
+   <protocolMapping>    <add binding="String"         bindingConfiguration="String"         scheme="http/net.msmq/net.pipe/net.tcp"/></protocolMapping>  
 ```  
   
 ```csharp  

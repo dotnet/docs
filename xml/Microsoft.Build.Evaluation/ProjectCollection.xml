@@ -273,7 +273,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In the MSBuild versions that were delivered with .Net 4.5 and Visual Studio 12.0, you must call UnloadProject() before the ProjectCollection goes out of scope.”  
+ In the MSBuild versions that were delivered with .Net 4.5 and Visual Studio 12.0, you must call UnloadProject() before the ProjectCollection goes out of scope."  
   
  ]]></format>
         </remarks>

@@ -87,7 +87,7 @@ Some .NET Framework technologies are not available in .NET Core. Some of them wi
 
 * WCF services implementation. Even when there’s a [WCF-Client library](https://github.com/dotnet/wcf) to consume WCF services from .NET Core, as of June 2016, WCF server implementation is only available on the .NET Framework. This scenario is not part of the current plan for .NET Core but it’s being considered for the future.
 
-* Workflow related services: Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service) and WCF Data Services (formerly known as “ADO.NET Data Services”) are only available on the .NET Framework and there are no plans to bring them to .NET Core.
+* Workflow related services: Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service) and WCF Data Services (formerly known as "ADO.NET Data Services") are only available on the .NET Framework and there are no plans to bring them to .NET Core.
 
 * Windows Presentation Foundation (WPF) and Windows Forms: WPF and Windows Forms applications are only available on the .NET Framework. There are no plans to port them to .NET Core. 
 

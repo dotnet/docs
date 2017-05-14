@@ -594,9 +594,9 @@ namespace SampleSynthesis
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A phoneme is a basic component of written language, typically a letter of an alphabet (or the combination of two letters) that represents one or more distinct sounds. For example, the letter “c” is a phoneme that may sound like “s” in “cinder”, or like “k” in “catch”. A written word is an assemblage of phonemes. Changing a phoneme in a word will alter its spelling.  
+ A phoneme is a basic component of written language, typically a letter of an alphabet (or the combination of two letters) that represents one or more distinct sounds. For example, the letter "c" is a phoneme that may sound like "s" in "cinder", or like "k" in "catch". A written word is an assemblage of phonemes. Changing a phoneme in a word will alter its spelling.  
   
- A <xref:System.Speech.Synthesis.SpeechSynthesizer> instance generates a <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached> event for each portion of a word that constitutes a phoneme. For example, for the word “theme” would generate three <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached> events; one for the “th” sound, one for the “e” sound, and one for the “m” sound (me).  
+ A <xref:System.Speech.Synthesis.SpeechSynthesizer> instance generates a <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached> event for each portion of a word that constitutes a phoneme. For example, for the word "theme" would generate three <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached> events; one for the "th" sound, one for the "e" sound, and one for the "m" sound (me).  
   
  For an example and information about data associated with the event, see <xref:System.Speech.Synthesis.PhonemeReachedEventArgs>.  
   
@@ -2264,7 +2264,7 @@ namespace SampleSynthesis
 ## Remarks  
  A viseme is the basic position of the mouth and face when pronouncing a phoneme. Visemes are visual representations of phonemes.  
   
- System.Speech supports 21 visemes for US English, each of which corresponds to one or more phonemes.  <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached> events are raised when a new phoneme reached has a different corresponding viseme than the previous phoneme reached. Since some visemes represent more than one phoneme, a <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached> event is not generated if the next phoneme reached corresponds to the same viseme as the previous phoneme. For example, for the spoken words “this zone”, a <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached> event is raised for the “s” in “this” and the “z” in “zone”. However, a <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached> event is not raised for the “z” in “zone” because it corresponds to the same viseme as the “s” in “this”.  
+ System.Speech supports 21 visemes for US English, each of which corresponds to one or more phonemes.  <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached> events are raised when a new phoneme reached has a different corresponding viseme than the previous phoneme reached. Since some visemes represent more than one phoneme, a <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached> event is not generated if the next phoneme reached corresponds to the same viseme as the previous phoneme. For example, for the spoken words "this zone", a <xref:System.Speech.Synthesis.SpeechSynthesizer.PhonemeReached> event is raised for the "s" in "this" and the "z" in "zone". However, a <xref:System.Speech.Synthesis.SpeechSynthesizer.VisemeReached> event is not raised for the "z" in "zone" because it corresponds to the same viseme as the "s" in "this".  
   
  The following is a list of the 21 SAPI phonemes and phoneme groups that correspond to a viseme in US English.  
   

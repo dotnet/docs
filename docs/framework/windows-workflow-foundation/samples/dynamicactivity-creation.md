@@ -117,14 +117,14 @@ DynamicActivity act = new DynamicActivity()
 </Activity>  
 ```  
   
- The XAML can be created visually using the [!INCLUDE[wfd1](../../../../includes/wfd1-md.md)]. If it is included in a Visual Studio project, be sure to set its “Build Action” to “None” to prevent it from being compiled. The XAML can then be loaded dynamically using the following call.  
+ The XAML can be created visually using the [!INCLUDE[wfd1](../../../../includes/wfd1-md.md)]. If it is included in a Visual Studio project, be sure to set its "Build Action" to "None" to prevent it from being compiled. The XAML can then be loaded dynamically using the following call.  
   
 ```  
 Activity act2 = ActivityXamlServices.Load(@"FindAverage.xaml");  
   
 ```  
   
- The <xref:System.Activities.DynamicActivity> instance created programmatically or through loading a XAML workflow can be used as shown in the following code example. Please note that “act” passed to the `WorkflowInvoker.Invoke` is the “act” <xref:System.Activities.Activity> defined in the first code example.  
+ The <xref:System.Activities.DynamicActivity> instance created programmatically or through loading a XAML workflow can be used as shown in the following code example. Please note that "act" passed to the `WorkflowInvoker.Invoke` is the "act" <xref:System.Activities.Activity> defined in the first code example.  
   
 ```  
 IDictionary<string, object> results = WorkflowInvoker.Invoke(act, new Dictionary<string, object> { { "Numbers", numbers } });  

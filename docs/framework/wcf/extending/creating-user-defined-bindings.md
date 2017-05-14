@@ -73,7 +73,7 @@ Binding customBinding = new CustomBinding(
   
  The <xref:System.ServiceModel.Channels.Binding.CreateBindingElements%2A> method returns a new <xref:System.ServiceModel.Channels.BindingElementCollection> that contains the binding elements for the binding. The collection is ordered, and should contain the protocol binding elements first, followed by the encoding binding element, followed by the transport binding element. When using the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] system-provided binding elements, you must follow the binding element ordering rules specified in [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md). This collection should never reference objects referenced within the user-defined binding class; consequently, binding authors must return a `Clone()` of the <xref:System.ServiceModel.Channels.BindingElementCollection> on each call to <xref:System.ServiceModel.Channels.Binding.CreateBindingElements%2A>.  
   
- The <xref:System.ServiceModel.Channels.Binding.Scheme%2A> property represents the URI scheme for the transport protocol in use on the binding. For example, the *WSHttpBinding* and the *NetTcpBinding* return “http” and “net.tcp” from their respective <xref:System.ServiceModel.Channels.Binding.Scheme%2A> properties.  
+ The <xref:System.ServiceModel.Channels.Binding.Scheme%2A> property represents the URI scheme for the transport protocol in use on the binding. For example, the *WSHttpBinding* and the *NetTcpBinding* return "http" and "net.tcp" from their respective <xref:System.ServiceModel.Channels.Binding.Scheme%2A> properties.  
   
  For a complete list of optional methods and properties for user-defined bindings, see <xref:System.ServiceModel.Channels.Binding>.  
   

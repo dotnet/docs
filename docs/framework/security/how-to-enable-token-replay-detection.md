@@ -74,7 +74,7 @@ manager: "mbaldwin"
     ```  
     <system.identityModel>  
         <identityConfiguration>  
-            <tokenReplayDetection enabled=”true”/>  
+            <tokenReplayDetection enabled="true"/>  
     ```  
   
 ## Step 2 – Test Your Solution  

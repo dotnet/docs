@@ -29,10 +29,10 @@ A configuration element used to configure the <xref:System.ServiceModel.UdpBindi
 <udpBinding>  
    <binding   
        closeTimeout="TimeSpan"   
-       duplicateMessageHistoryLength=”Integer"  
+       duplicateMessageHistoryLength="Integer"  
        maxBufferPoolSize="Integer"  
-       maxBufferSize="Integer"       maxPendingMessagesTotalSize=”Integer”  
-       maxReceivedMessageSize="Integer"       maxRetransmitCount=”Integer”  
+       maxBufferSize="Integer"       maxPendingMessagesTotalSize="Integer"  
+       maxReceivedMessageSize="Integer"       maxRetransmitCount="Integer"  
        multicastInterfaceId="Integer"  
               name="string"   
        openTimeout="TimeSpan"   
@@ -83,7 +83,7 @@ A configuration element used to configure the <xref:System.ServiceModel.UdpBindi
 |[\<bindings>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## Remarks  
- The UdpBinding allows WCF services to communicate over the UDP transport. It allows for “fire and forget” message exchanges where a client sends a message to a service and expects no response back.  
+ The UdpBinding allows WCF services to communicate over the UDP transport. It allows for "fire and forget" message exchanges where a client sends a message to a service and expects no response back.  
   
 ## Example  
  The following example shows how to configure the <xref:System.ServiceModel.UdpBinding> using the <`udpBinding`> element.  

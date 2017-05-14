@@ -95,7 +95,7 @@ Every endpoint has an address associated with it, which is used to locate and id
 ```  
   
 <system.serviceModel>  
-  <serviceHostingEnvironment multipleSiteBindingsEnabled=”true” >  
+  <serviceHostingEnvironment multipleSiteBindingsEnabled="true" >  
   </serviceHostingEnvironment>  
 </system.serviceModel>  
 ```  

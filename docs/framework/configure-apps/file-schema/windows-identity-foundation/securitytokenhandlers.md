@@ -40,7 +40,7 @@ Specifies a collection of security token handlers that are registered with the e
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|name|Specifies the name of a token handler collection. The only values recognized by the framework are “ActAs” and “OnBehalfOf”. If token handler collections are specified with either of these names, the collection will be used when processing ActAs or OnBehalfOf tokens respectively.|  
+|name|Specifies the name of a token handler collection. The only values recognized by the framework are "ActAs" and "OnBehalfOf". If token handler collections are specified with either of these names, the collection will be used when processing ActAs or OnBehalfOf tokens respectively.|  
   
 ### Child Elements  
   

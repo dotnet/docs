@@ -66,9 +66,9 @@ Receive AddItem = new Receive
   
 ```xml  
 <endpoint  
-  contract=”IOrderContract”  
-  binding = “basicHttpContextBinding”  
-  address=”http://localhost:8080/OrderService” />  
+  contract="IOrderContract"  
+  binding = "basicHttpContextBinding"  
+  address="http://localhost:8080/OrderService" />  
 ```  
   
 ### Configuring Context Correlation in a Workflow Client  

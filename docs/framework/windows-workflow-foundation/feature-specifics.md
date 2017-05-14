@@ -79,7 +79,7 @@ manager: "erikre"
   
     -   On a <xref:System.ServiceModel.Activities.Receive> activity, click on the <xref:System.ServiceModel.Activities.Receive.CorrelationInitializers%2A> property and add a a <xref:System.ServiceModel.Activities.RequestReplyCorrelationInitializer> using the CorrelationHandle created in the first step above.  
   
-    -   Create a <xref:System.ServiceModel.Activities.SendReply> activity by right-clicking on the <xref:System.ServiceModel.Activities.Receive> and clicking “Create SendReply”. Paste it into your workflow after the <xref:System.ServiceModel.Activities.Receive> activity.  
+    -   Create a <xref:System.ServiceModel.Activities.SendReply> activity by right-clicking on the <xref:System.ServiceModel.Activities.Receive> and clicking "Create SendReply". Paste it into your workflow after the <xref:System.ServiceModel.Activities.Receive> activity.  
   
 -   An example of mapping a piece of data to a service instance is content-based correlation which maps a piece of data (for example, an order ID) to a particular workflow instance.  
   
@@ -186,7 +186,7 @@ manager: "erikre"
     -   [Flowchart Activity Designers](/visualstudio/workflow-designer/flowchart-activity-designers)  
   
 ### Flowchart Scenarios  
- A flowchart activity can be used to implement a guessing game. The guessing game is very simple: the computer selects a random number and the player has to guess that number. When the player submits each guess, the computer shows him a hint (i.e. “try a lower number”). If the player finds the number in less than 7 attempts, he receives a special congratulation from the computer. This game can be implemented with a combination of the following procedural activities:  
+ A flowchart activity can be used to implement a guessing game. The guessing game is very simple: the computer selects a random number and the player has to guess that number. When the player submits each guess, the computer shows him a hint (i.e. "try a lower number"). If the player finds the number in less than 7 attempts, he receives a special congratulation from the computer. This game can be implemented with a combination of the following procedural activities:  
   
 -   <xref:System.Activities.Statements.Sequence>  
   
@@ -221,7 +221,7 @@ manager: "erikre"
   
 ### Procedural Activity Scenarios  
   
--   <xref:System.Activities.Statements.Parallel>Parallel: An intranet document management system has a document approval workflow. Documents need to be approved by people in several departments before they can be published to the intranet. There isn’t an established order for the approvals; they can occur at any time while the document is in the “approval pending” phase. When a user submits a document for review it must be approved by her direct manager, the intranet administrator, and the internal communications manager.  
+-   <xref:System.Activities.Statements.Parallel>Parallel: An intranet document management system has a document approval workflow. Documents need to be approved by people in several departments before they can be published to the intranet. There isn’t an established order for the approvals; they can occur at any time while the document is in the "approval pending" phase. When a user submits a document for review it must be approved by her direct manager, the intranet administrator, and the internal communications manager.  
   
 -   <xref:System.Activities.Statements.ParallelForEach%601>: A WF application manages corporate buys within a large company. The corporate rules dictate that before planning any purchase operation, the valuations of three different vendors is required. An employee from the buying department selects three vendors from the company’s vendor list. After these vendors have been selected and notified, the company will wait for their economic proposals. The proposals can come in any order. To implement this scenario in WF, we use a <xref:System.Activities.Statements.ParallelForEach%601> that will iterate through our collection of vendors and ask for their economic proposals. After all offers are gathered, the best one is selected and displayed.  
   

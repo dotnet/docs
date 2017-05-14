@@ -24,7 +24,7 @@ This configuration section contains all the workflow configuration elements.
   <behaviors>  
     <serviceBehaviors>  
     <behavior name="String">  
-      <bufferReceive maxPendingMessagesPerChannel=”Integer” />  
+      <bufferReceive maxPendingMessagesPerChannel="Integer" />  
       <etwTracking profileName="String" />  
      <sendMessageChannelCache allowUnsafeCaching="Boolean" >          
         <channelSettings idleTimeout="TimeSpan" leaseTimeout="TimeSpan" maxItemsInCache="Integer" />  

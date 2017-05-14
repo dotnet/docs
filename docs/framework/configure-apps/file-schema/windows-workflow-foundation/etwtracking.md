@@ -25,7 +25,7 @@ A service behavior that allows a service to utilize ETW tracking using an <xref:
 ## Syntax  
   
 ```  
-<behaviors>  <serviceBehaviors>    <behavior name=String">      <etwTracking profileName=”String” />    </behavior>  </serviceBehaviors></behaviors>  
+<behaviors>  <serviceBehaviors>    <behavior name=String">      <etwTracking profileName="String" />    </behavior>  </serviceBehaviors></behaviors>  
 ```  
   
 ## Attributes and Elements  

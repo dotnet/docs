@@ -101,7 +101,7 @@ newGrammar.SpeechRecognized +=
       {  
         // Signifies recognition by a grammar with no semantics.  
         // Parse the string, assuming that the last word is color,  
-        // and search for “background” or “foreground” in the input.  
+        // and search for "background" or "foreground" in the input.  
         if (eventArgs.Result.Text.Contains("foreground"))   
         {  
           changeBackGround = false;  

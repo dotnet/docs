@@ -43,7 +43,7 @@
  Regardless of recursion policy, only one thread can be in write mode at any time. When a thread is in write mode, no other thread can enter the lock in any mode. Only one thread can be in upgradeable mode at any time. Any number of threads can be in read mode, and there can be one thread in upgradeable mode while other threads are in read mode.  
   
 > [!IMPORTANT]
->  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+>  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
   
  <xref:System.Threading.ReaderWriterLockSlim> has managed thread affinity; that is, each <xref:System.Threading.Thread> object must make its own method calls to enter and exit lock modes. No thread can change the mode of another thread.  
   

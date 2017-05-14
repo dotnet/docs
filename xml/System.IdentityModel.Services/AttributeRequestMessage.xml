@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a WS-Federation Attribute Request message. This message is created when the wa parameter in the received message is “wattr1.0”.</summary>
+    <summary>Represents a WS-Federation Attribute Request message. This message is created when the wa parameter in the received message is "wattr1.0".</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -41,7 +41,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The wa message parameter (the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property) is initialized to “wattr1.0”.  
+ The wa message parameter (the <xref:System.IdentityModel.Services.WSFederationMessage.Action%2A> property) is initialized to "wattr1.0".  
   
  ]]></format>
         </remarks>

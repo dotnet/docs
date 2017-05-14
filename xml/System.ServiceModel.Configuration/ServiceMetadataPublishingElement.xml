@@ -216,7 +216,7 @@
 ## Remarks  
  If the <xref:System.ServiceModel.Configuration.ServiceMetadataPublishingElement.HttpGetUrl%2A> property is not specified, the address at which the metadata is published is the service address plus a "?wsdl". For example, if the service address is "http://localhost:8080/CalculatorService", the HTTP/Get metadata address is "http://localhost:8080/CalculatorService?wsdl".  
   
- If this property is `false`, or the address of the service is not based on HTTP or HTTPS, “?wsdl” is ignored.  
+ If this property is `false`, or the address of the service is not based on HTTP or HTTPS, "?wsdl" is ignored.  
   
  ]]></format>
         </remarks>
@@ -331,7 +331,7 @@
 ## Remarks  
  If the <xref:System.ServiceModel.Configuration.ServiceMetadataPublishingElement.HttpsGetUrl%2A> property is not specified, the address at which the metadata is published is the service address plus a "?wsdl". For example, if the service address is "https://localhost:8080/CalculatorService", the HTTP/Get metadata address is "https://localhost:8080/CalculatorService?wsdl".  
   
- If this property is `false`, or the address of the service is not based on HTTP or HTTPS, “?wsdl” is ignored.  
+ If this property is `false`, or the address of the service is not based on HTTP or HTTPS, "?wsdl" is ignored.  
   
  ]]></format>
         </remarks>

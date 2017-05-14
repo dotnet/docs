@@ -1718,7 +1718,7 @@
 ## Remarks  
  The <xref:System.ServiceModel.Channels.SecurityHeaderLayout> enumeration contains the following members:  
   
--   <xref:System.ServiceModel.Channels.SecurityHeaderLayout.Strict>: Items are added to the security header according to the general principle of “declare before use”.  
+-   <xref:System.ServiceModel.Channels.SecurityHeaderLayout.Strict>: Items are added to the security header according to the general principle of "declare before use".  
   
 -   <xref:System.ServiceModel.Channels.SecurityHeaderLayout.Lax>: Items are added to the security header in any order that conforms to WSS: SOAP Message security.  
   

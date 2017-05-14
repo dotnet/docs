@@ -1135,8 +1135,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a string value specifying the behavior when a mismatch between the target processor architecture and the architecture of a primary reference. When this is “Error”, an error will be logged for a mismatch. When this is “Warning”, a warning will be logged for a mismatch. When this is “None”, no error or warning will be logged for a mismatch.</summary>
-        <value>Returns a string value of “Error”, “Warning” or “None”.</value>
+        <summary>Gets or sets a string value specifying the behavior when a mismatch between the target processor architecture and the architecture of a primary reference. When this is "Error", an error will be logged for a mismatch. When this is "Warning", a warning will be logged for a mismatch. When this is "None", no error or warning will be logged for a mismatch.</summary>
+        <value>Returns a string value of "Error", "Warning" or "None".</value>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

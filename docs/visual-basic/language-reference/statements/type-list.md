@@ -60,7 +60,7 @@ Specifies the *type parameters* for a *generic* programming element. Multiple pa
   
 ```  
   
-[genericmodifier] typename [ As constraintlist ]  
+[genericmodifier] typename [ As constraintlist ]  
 ```  
   
 ## Parts  

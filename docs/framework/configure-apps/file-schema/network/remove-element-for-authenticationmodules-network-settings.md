@@ -40,8 +40,8 @@ Removes an authentication module from the application.
   
 ```  
   
-      <remove   
-   name = "authentication module name"   
+      <remove   
+   name = "authentication module name"   
 />  
 ```  
   

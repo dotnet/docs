@@ -64,8 +64,8 @@ Declares and allocates storage space for one or more variables.
 ## Syntax  
   
 ```  
-[ <attributelist> ] [ accessmodifier ] [[ Shared ] [ Shadows ] | [ Static ]] [ ReadOnly ]   
-Dim [ WithEvents ] variablelist  
+[ <attributelist> ] [ accessmodifier ] [[ Shared ] [ Shadows ] | [ Static ]] [ ReadOnly ]   
+Dim [ WithEvents ] variablelist  
 ```  
   
 ## Parts  

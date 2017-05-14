@@ -241,7 +241,7 @@ dp|http://schemas.microsoft.com/net/2006/06/duplex|
  The following policy assertion this indicates that messages sent/received must use WS-Addressing 1.0.  
   
 ```vb  
-<wsam:Addressing/>   
+<wsam:Addressing/>   
 ```  
   
  The following policy assertion has an Endpoint Policy Subject [WS-PA] and indicates that messages sent and received from the endpoint must use WS-Addressing 2004/08.  
@@ -265,8 +265,8 @@ dp|http://schemas.microsoft.com/net/2006/06/duplex|
 ```xml  
 <wsam:Addressing>  
     <wsp:Policy>  
-        <wsam:AnonymousResponses />   
-    </wsp:Policy>  
+        <wsam:AnonymousResponses />   
+    </wsp:Policy>  
 </wsam:Addressing>  
 ```  
   
@@ -285,9 +285,9 @@ dp|http://schemas.microsoft.com/net/2006/06/duplex|
 ```xml  
 <wsam:Addressing>  
     <wsp:Policy>  
-      <wsam:NonAnonymousResponses />   
-   </wsp:Policy>  
-  </wsam:Addressing>  
+      <wsam:NonAnonymousResponses />   
+   </wsp:Policy>  
+  </wsam:Addressing>  
 ```  
   
  Use of the following assertion that has Endpoint Policy Subject [WS-PA] on endpoints that use WSDL 1.1 SOAP 1.x HTTP bindings requires two separate converse HTTP connections to be used for messages flowing from requester to responder and responder to requester, respectively.  
@@ -514,7 +514,7 @@ Content-Length: 0
  where `msg-id` is defined in RFC 2822 (that supersedes RFC 822, referenced in RFC 2045) as:  
   
 ```  
-msg-id    =       [CFWS] "<" id-left "@" id-right ">" [CFWS]  
+msg-id    =       [CFWS] "<" id-left "@" id-right ">" [CFWS]  
 ```  
   
  and is effectively an e-mail address enclosed within "\<" and  ">". The `[CFWS]` prefix and suffix were added in RFC 2822 to carry comments and should not be used to preserve interoperability.  
@@ -530,7 +530,7 @@ Content-ID: <http://tempuri.org/0>
  R4144: MTOM processors should accept Content-ID header values that match the following relaxed `msg-id`.  
   
 ```  
-msg-id-relaxed =     [CFWS] "<" (absoluteURI | mail-address) ">" [CFWS]  
+msg-id-relaxed =     [CFWS] "<" (absoluteURI | mail-address) ">" [CFWS]  
 mail-address   =     id-left "@" id-right  
 ```  
   

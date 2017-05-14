@@ -28,14 +28,14 @@ Use <xref:System.Data.Linq.DataContext.GetCommand%2A> to display SQL commands an
   
 ```  
 Customers from London:  
-    Thomas Hardy  
-    Victoria Ashworth  
-    Elizabeth Brown  
-    Ann Devon  
-    Simon Crowther  
-    Marie Bertrand  
-    Hari Kumar  
-    Dominique Perrier  
+    Thomas Hardy  
+    Victoria Ashworth  
+    Elizabeth Brown  
+    Ann Devon  
+    Simon Crowther  
+    Marie Bertrand  
+    Hari Kumar  
+    Dominique Perrier  
 ```  
   
 ```  

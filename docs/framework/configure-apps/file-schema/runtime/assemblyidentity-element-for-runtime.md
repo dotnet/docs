@@ -40,7 +40,7 @@ Contains identifying information about the assembly.
   
 ```  
   
-   <assemblyIdentity    
+   <assemblyIdentity    
 name="assembly name"  
 publicKeyToken="public key token"  
 culture="assembly culture"/>  
@@ -88,26 +88,26 @@ culture="assembly culture"/>
   
 ```  
 <configuration>  
-   <runtime>  
-      <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  
-         <dependentAssembly>  
-            <assemblyIdentity name="MyAssembly"  
-                  publicKeyToken="14a739be0244c389"  
-                  culture="neutral"  
-                  processorArchitecture="x86" />  
-            <bindingRedirect oldVersion= "1.0.0.0"   
-                  newVersion="1.1.0.0" />  
-         </dependentAssembly>  
-         <dependentAssembly>  
-            <assemblyIdentity name="MyAssembly"  
-                  publicKeyToken="14a739be0244c389"  
-                  culture="neutral"   
-                  processorArchitecture="ia64" />  
-            <bindingRedirect oldVersion="1.0.0.0"   
-                  newVersion="2.0.0.0" />  
-         </dependentAssembly>  
-      </assemblyBinding>  
-   </runtime>  
+   <runtime>  
+      <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  
+         <dependentAssembly>  
+            <assemblyIdentity name="MyAssembly"  
+                  publicKeyToken="14a739be0244c389"  
+                  culture="neutral"  
+                  processorArchitecture="x86" />  
+            <bindingRedirect oldVersion= "1.0.0.0"   
+                  newVersion="1.1.0.0" />  
+         </dependentAssembly>  
+         <dependentAssembly>  
+            <assemblyIdentity name="MyAssembly"  
+                  publicKeyToken="14a739be0244c389"  
+                  culture="neutral"   
+                  processorArchitecture="ia64" />  
+            <bindingRedirect oldVersion="1.0.0.0"   
+                  newVersion="2.0.0.0" />  
+         </dependentAssembly>  
+      </assemblyBinding>  
+   </runtime>  
 </configuration>  
 ```  
   

@@ -92,7 +92,7 @@ Applies policy to a type, if that policy has been applied to the containing type
 ```xml  
   
 <Type Name="Explicit{ET}">  
-    <ImpliesType Name="Implicit{ET}" Dynamic="Required Public" />  
+    <ImpliesType Name="Implicit{ET}" Dynamic="Required Public" />  
 </Type>  
   
 ```  
@@ -104,7 +104,7 @@ Applies policy to a type, if that policy has been applied to the containing type
 ```xml  
   
 <Type Name="System.Collections.Generic.IList{T}">  
-   <ImpliesType Name="System.Collections.Generic.List{T}" Serialize="Public" />  
+   <ImpliesType Name="System.Collections.Generic.List{T}" Serialize="Public" />  
 </Type>  
   
 ```  
@@ -114,10 +114,10 @@ Applies policy to a type, if that policy has been applied to the containing type
 ```xml  
   
 <Type Name="MyType">  
-    <Method Name="MakeEnumerable{T}" Signature="(System.String, T)" Dynamic="Included">  
-        <ImpliesType Name="T[]" Dynamic="Public" />  
-        <ImpliesType Name="System.Collections.Generic.List{T}" Dynamic="Public">  
-    </Method>  
+    <Method Name="MakeEnumerable{T}" Signature="(System.String, T)" Dynamic="Included">  
+        <ImpliesType Name="T[]" Dynamic="Public" />  
+        <ImpliesType Name="System.Collections.Generic.List{T}" Dynamic="Public">  
+    </Method>  
 </Type>  
   
 ```  

@@ -23,23 +23,23 @@ Tracking profiles contain tracking queries that permit a tracking participant to
   
 ```  
 <system.serviceModel>  
-    ...  
-    <tracking>    
-      <trackingProfile name="Sample Tracking Profile">  
-        <workflow activityDefinitionId="*">  
-          <workflowInstanceQueries>  
-            <workflowInstanceQuery>  
-              <states>  
-                <state name="Started"/>  
-                <state name="Completed"/>  
-              </states>  
-            </workflowInstanceQuery>  
-          </workflowInstanceQueries>  
-        </workflow>  
-      </trackingProfile>          
-    </profiles>  
-  </tracking>  
-    ...  
+    ...  
+    <tracking>    
+      <trackingProfile name="Sample Tracking Profile">  
+        <workflow activityDefinitionId="*">  
+          <workflowInstanceQueries>  
+            <workflowInstanceQuery>  
+              <states>  
+                <state name="Started"/>  
+                <state name="Completed"/>  
+              </states>  
+            </workflowInstanceQuery>  
+          </workflowInstanceQueries>  
+        </workflow>  
+      </trackingProfile>          
+    </profiles>  
+  </tracking>  
+    ...  
 </system.serviceModel>  
   
 ```  
@@ -331,12 +331,12 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
   
 ```  
 <activityStateQuery activityName="SendEmailActivity">  
-  <states>  
-    <state name="Closed"/>  
-  </states>  
-  <annotations>  
-    <annotation name="MailServer" value="Mail Server1"/>  
-  </annotations>  
+  <states>  
+    <state name="Closed"/>  
+  </states>  
+  <annotations>  
+    <annotation name="MailServer" value="Mail Server1"/>  
+  </annotations>  
 </activityStateQuery>  
   
 ```  

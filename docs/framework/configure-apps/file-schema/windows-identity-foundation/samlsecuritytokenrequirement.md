@@ -28,21 +28,21 @@ Provides configuration for the <xref:System.IdentityModel.Tokens.SamlSecurityTok
   
 ```  
 <system.identityModel>  
-  <identityConfiguration>  
-    <securityTokenHandlers>  
-      <add>  
-        <samlSecurityTokenRequirement   
-            issuerCertificateValidationMode="None||ChainTrust||PeerTrust||PeerOrChainTrust||Custom"  
-            issuerCertificateRevocationMode="NoCheck||Offline||Online"  
-            issuerCertificateTrustedStoreLocation="CurrentLocation||LocalMachine"  
-            issuerCertificateValidator="Namespace.Class Assembly"  
-            mapToWindows=xs:boolean  
-          <nameClaimType value=xs:string />  
-          <roleClaimType value=xs:string />  
-        </samlSecurityTokenRequirement>  
-      </add>  
-    </securityTokenHandlers>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <securityTokenHandlers>  
+      <add>  
+        <samlSecurityTokenRequirement   
+            issuerCertificateValidationMode="None||ChainTrust||PeerTrust||PeerOrChainTrust||Custom"  
+            issuerCertificateRevocationMode="NoCheck||Offline||Online"  
+            issuerCertificateTrustedStoreLocation="CurrentLocation||LocalMachine"  
+            issuerCertificateValidator="Namespace.Class Assembly"  
+            mapToWindows=xs:boolean  
+          <nameClaimType value=xs:string />  
+          <roleClaimType value=xs:string />  
+        </samlSecurityTokenRequirement>  
+      </add>  
+    </securityTokenHandlers>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   

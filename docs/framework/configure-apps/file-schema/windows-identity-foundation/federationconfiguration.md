@@ -25,8 +25,8 @@ Configures the <xref:System.IdentityModel.Services.WSFederationAuthenticationMod
   
 ```  
 <system.identityModel.services>  
-  <federationConfiguration name=xs:string identityConfigurationName=xs:string>  
-  </federationConfiguration>  
+  <federationConfiguration name=xs:string identityConfigurationName=xs:string>  
+  </federationConfiguration>  
 </system.identityModel.services>  
 ```  
   

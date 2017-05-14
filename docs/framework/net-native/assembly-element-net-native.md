@@ -90,9 +90,9 @@ Applies runtime reflection policy to all the types in a specified assembly.
 ```xml  
   
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">   
-  <Application>   
-     <Assembly Name="*Application*" Dynamic="Required All" />   
-  </Application>   
+  <Application>   
+     <Assembly Name="*Application*" Dynamic="Required All" />   
+  </Application>   
 </Directives>  
   
 ```  

@@ -41,14 +41,14 @@ The .NET Framework 4.6 adds TLS 1.1 and TLS 1.2 to the WCF SSL protocol default 
             <bindings>  
                 <netTcpBinding>  
                     <binding>  
-                        <security mode= "None|Transport|Message|TransportWithMessageCredential" >  
+                        <security mode= "None|Transport|Message|TransportWithMessageCredential" >  
                             <transport clientCredentialType="None|Windows|Certificate"  
                                                 protectionLevel="None|Sign|EncryptAndSign"  
                                                 sslProtocols="Ssl3|Tls1|Tls11">  
-                            </transport>  
+                            </transport>  
                         </security>  
                     </binding>  
-                </netTcpBinding>  
+                </netTcpBinding>  
             </bindings>  
         </system.ServiceModel>  
     </configuration>  

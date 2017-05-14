@@ -1,5 +1,5 @@
 ---
-title: Getting started with .NET Core
+title: Get started with .NET Core
 description: Find resources to learn how to build .NET Core applications on Windows, Linux and macOS.
 keywords: .NET, .NET Core
 author: mairaw
@@ -11,7 +11,7 @@ ms.devlang: dotnet
 ms.assetid: d1453a0d-317c-4da6-b68e-422a2c0bfe49
 ---
 
-# Getting started with .NET Core
+# Get started with .NET Core
 
 .NET Core runs on [Windows](#windows), [Linux](#linux), and [macOS / OS X](#os-x--macos).
 

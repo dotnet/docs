@@ -29,7 +29,7 @@ References any static by-value code entity that is defined in a [!INCLUDE[TLA#tl
 ## XAML Attribute Usage  
   
 ```  
-<object property="{x:Static prefix:typeName.staticMemberName}" .../>  
+<object property="{x:Static prefix:typeName.staticMemberName}" .../>  
 ```  
   
 ## XAML Values  

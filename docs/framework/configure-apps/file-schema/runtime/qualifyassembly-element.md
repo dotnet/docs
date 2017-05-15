@@ -41,7 +41,7 @@ Specifies the full name of the assembly that should be dynamically loaded when a
   
       <qualifyAssembly partialName=  
       "PartialAssemblyName"  
-                 fullName="FullAssemblyName"/>  
+                 fullName="FullAssemblyName"/>  
 ```  
   
 ## Attributes and Elements  

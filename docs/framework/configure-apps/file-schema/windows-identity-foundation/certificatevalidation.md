@@ -26,13 +26,13 @@ Controls the settings that token handlers use to validate certificates. These se
   
 ```  
 <system.identityModel>  
-  <identityConfiguration>  
-    <certificateValidation  
-      certificateValidationMode="None||ChainTrust||PeerTrust||PeerOrChainTrust||Custom"  
-      revocationMode="NoCheck||Offline||Online"  
-      trustedStoreLocation="CurrentLocation||LocalMachine" >  
-    </certificateValidation>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <certificateValidation  
+      certificateValidationMode="None||ChainTrust||PeerTrust||PeerOrChainTrust||Custom"  
+      revocationMode="NoCheck||Offline||Online"  
+      trustedStoreLocation="CurrentLocation||LocalMachine" >  
+    </certificateValidation>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   

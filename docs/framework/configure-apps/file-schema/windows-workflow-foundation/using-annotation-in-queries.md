@@ -21,12 +21,12 @@ Annotations allow you to arbitrarily tag tracking records with a value that can 
   
 ```  
 <activityStateQuery activityName="SendEmailActivity">  
-  <states>  
-    <state name="Closed"/>  
-  </states>  
-  <annotations>  
-    <annotation name="MailServer" value="Mail Server1"/>  
-  </annotations>  
+  <states>  
+    <state name="Closed"/>  
+  </states>  
+  <annotations>  
+    <annotation name="MailServer" value="Mail Server1"/>  
+  </annotations>  
 </activityStateQuery>  
   
 ```  

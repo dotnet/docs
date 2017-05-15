@@ -34,7 +34,7 @@ Provides configuration for the default in-memory <xref:System.Runtime.Caching.Ob
   
 ```  
 <system.runtime.caching >  
-   <!-- child elements -->  
+   <!-- child elements -->  
 </system.runtime.caching >  
 ```  
   

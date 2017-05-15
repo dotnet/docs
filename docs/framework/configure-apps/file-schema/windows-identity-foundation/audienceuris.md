@@ -28,17 +28,17 @@ Specifies the set of URIs that are acceptable identifiers of the relying party (
   
 ```  
 <system.identityModel>  
-  <identityConfiguration>  
-    <securityTokenHandlers>  
-      <securityTokenHandlerConfiguration>  
-        <audienceUris mode=xs:string>  
-          <add value=xs:string />  
-          <clear />  
-          <remove value=xs:string />  
-        </audienceUris>  
-      </securityTokenHandlerConfiguration>  
-    </securityTokenHandlers>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <securityTokenHandlers>  
+      <securityTokenHandlerConfiguration>  
+        <audienceUris mode=xs:string>  
+          <add value=xs:string />  
+          <clear />  
+          <remove value=xs:string />  
+        </audienceUris>  
+      </securityTokenHandlerConfiguration>  
+    </securityTokenHandlers>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   

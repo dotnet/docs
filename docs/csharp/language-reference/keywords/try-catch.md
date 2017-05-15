@@ -76,15 +76,15 @@ catch (ArgumentException e) when (e.ParamName == "…")
 ```csharp  
 catch (FileNotFoundException e)  
 {  
-    // FileNotFoundExceptions are handled here.  
+    // FileNotFoundExceptions are handled here.  
 }  
 catch (IOException e)  
 {  
-    // Extract some information from this exception, and then   
-    // throw it to the parent method.  
-    whenDo not initialize (e.Source != null)  
-        Console.WriteLine("IOException source: {0}", e.Source);  
-    throw;  
+    // Extract some information from this exception, and then   
+    // throw it to the parent method.  
+    whenDo not initialize (e.Source != null)  
+        Console.WriteLine("IOException source: {0}", e.Source);  
+    throw;  
 }  
 ```  
   

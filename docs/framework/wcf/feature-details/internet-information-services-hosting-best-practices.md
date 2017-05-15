@@ -57,16 +57,16 @@ This topic outlines some best practices for hosting [!INCLUDE[indigo1](../../../
   
 ```  
 <system.serviceModel>  
-    <serviceHostingEnvironment aspNetCompatibilityEnabled="false" />      
-  </system.serviceModel>  
-  <system.webServer>  
-    <modules>  
-      <remove name="ServiceModel"/>  
-      <add name="ServiceModel"   
-           preCondition="integratedMode,runtimeVersionv2.0"   
-           type="System.ServiceModel.Activation.ServiceHttpModule, System.ServiceModel,Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>  
-    </modules>  
-    </system.webServer>  
+    <serviceHostingEnvironment aspNetCompatibilityEnabled="false" />      
+  </system.serviceModel>  
+  <system.webServer>  
+    <modules>  
+      <remove name="ServiceModel"/>  
+      <add name="ServiceModel"   
+           preCondition="integratedMode,runtimeVersionv2.0"   
+           type="System.ServiceModel.Activation.ServiceHttpModule, System.ServiceModel,Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>  
+    </modules>  
+    </system.webServer>  
   
 ```  
   
@@ -74,18 +74,18 @@ This topic outlines some best practices for hosting [!INCLUDE[indigo1](../../../
   
 ```  
 <system.serviceModel>  
-    <serviceHostingEnvironment aspNetCompatibilityEnabled="true" />      
-  </system.serviceModel>  
-  <system.webServer>  
-    <handlers>  
-          <clear/>  
-          <add name="TestAsyncHttpHandler"   
-               path="*.svc"   
-               verb="*"   
-               type="System.ServiceModel.Activation.ServiceHttpHandlerFactory, System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"           
-               />  
-    </handlers>      
-  </system.webServer>  
+    <serviceHostingEnvironment aspNetCompatibilityEnabled="true" />      
+  </system.serviceModel>  
+  <system.webServer>  
+    <handlers>  
+          <clear/>  
+          <add name="TestAsyncHttpHandler"   
+               path="*.svc"   
+               verb="*"   
+               type="System.ServiceModel.Activation.ServiceHttpHandlerFactory, System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"           
+               />  
+    </handlers>      
+  </system.webServer>  
   
 ```  
   

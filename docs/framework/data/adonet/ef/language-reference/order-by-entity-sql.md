@@ -27,12 +27,12 @@ Specifies the sort order used on objects returned in a SELECT statement.
 ```  
   
 [ ORDER BY   
-   {  
-      order_by_expression [SKIP n] [LIMIT n]  
-      [ COLLATE collation_name ]  
-      [ ASC | DESC ]  
-   }  
-   [ ,…n ]   
+   {  
+      order_by_expression [SKIP n] [LIMIT n]  
+      [ COLLATE collation_name ]  
+      [ ASC | DESC ]  
+   }  
+   [ ,…n ]   
 ]  
 ```  
   

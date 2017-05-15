@@ -145,7 +145,7 @@ NameOf(o.Equals) -> ' result "Equals".  Warning: "Access of static member of ins
  If you need to get the fully-qualified name, you can use the `typeof` expression along with `nameof`.  For example:
 ```csharp  
 class C {
-    void f(int i) {  
+    void f(int i) {  
         Log($"{typeof(C)}.{nameof(f)}", "method entry");  
     }
 }

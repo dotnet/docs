@@ -29,19 +29,19 @@ Configures the list of trusted issuer certificates used by the configuration-bas
   
 ```  
 <system.identityModel>  
-  <identityConfiguration>  
-    <securityTokenHandlers>  
-      <securityTokenHandlerConfiguration>  
-        <issuerNameRegistry>  
-          <trustedIssuers>  
-            <add thumbprint=xs:string name=xs:string>  
-            <clear>  
-            <remove thumbprint=xs:string>  
-          </trustedIssuers>  
-        </issuerNameRegistry>  
-      </securityTokenHandlerConfiguration>  
-    </securityTokenHandlers>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <securityTokenHandlers>  
+      <securityTokenHandlerConfiguration>  
+        <issuerNameRegistry>  
+          <trustedIssuers>  
+            <add thumbprint=xs:string name=xs:string>  
+            <clear>  
+            <remove thumbprint=xs:string>  
+          </trustedIssuers>  
+        </issuerNameRegistry>  
+      </securityTokenHandlerConfiguration>  
+    </securityTokenHandlers>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   

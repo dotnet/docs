@@ -27,12 +27,12 @@ Specifies a custom type for certificate validation. This type is used only if th
   
 ```  
 \<system.identityModel>  
-  <identityConfiguration>  
-    <certificateValidation>  
-      \<certificateValidator type=xs:string>  
-      </certificateValidator>  
-    </certificateValidation>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <certificateValidation>  
+      \<certificateValidator type=xs:string>  
+      </certificateValidator>  
+    </certificateValidation>  
+  </identityConfiguration>  
 \</system.identityModel>  
 ```  
   

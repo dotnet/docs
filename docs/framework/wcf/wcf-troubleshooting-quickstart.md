@@ -72,7 +72,7 @@ This topic lists a number of known issues customers have run into while developi
 ```  
 public class MyServiceHost : ServiceHost  
 {  
-  public MyServiceHost(Type serviceType, params Uri[] baseAddresses)    
+  public MyServiceHost(Type serviceType, params Uri[] baseAddresses)    
     : base(serviceType, baseAddresses)  
   { Console.WriteLine("MyServiceHost Constructor"); }  
   

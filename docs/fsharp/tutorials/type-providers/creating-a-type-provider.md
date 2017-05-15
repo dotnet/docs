@@ -937,20 +937,20 @@ extends [mscorlib]System.Object
 .custom instance void [FSharp.Core]Microsoft.FSharp.Core.CompilationMappingAtt
 ribute::.ctor(valuetype [FSharp.Core]Microsoft.FSharp.Core.SourceConstructFlags)
 = ( 01 00 07 00 00 00 00 00 )
-.method public static int32  function1() cil managed
+.method public static int32  function1() cil managed
 {
-// Code size       24 (0x18)
-.maxstack  3
+// Code size       24 (0x18)
+.maxstack  3
 .locals init ([0] object obj1)
-IL_0000:  nop
-IL_0001:  ldstr      "some data"
-IL_0006:  unbox.any  [mscorlib]System.Object
-IL_000b:  stloc.0
-IL_000c:  ldloc.0
-IL_000d:  call       !!0 [FSharp.Core_2]Microsoft.FSharp.Core.LanguagePrimit
+IL_0000:  nop
+IL_0001:  ldstr      "some data"
+IL_0006:  unbox.any  [mscorlib]System.Object
+IL_000b:  stloc.0
+IL_000c:  ldloc.0
+IL_000d:  call       !!0 [FSharp.Core_2]Microsoft.FSharp.Core.LanguagePrimit
 ives/IntrinsicFunctions::UnboxGeneric<string>(object)
-IL_0012:  callvirt   instance int32 [mscorlib_3]System.String::get_Length()
-IL_0017:  ret
+IL_0012:  callvirt   instance int32 [mscorlib_3]System.String::get_Length()
+IL_0017:  ret
 } // end of method Module1::function1
 
 } // end of class Module1

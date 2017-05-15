@@ -40,7 +40,7 @@ Specifies where the common language runtime can find an assembly.
   
 ```  
   
-   <codeBase    
+   <codeBase    
 version="Assembly version"  
 href="URL of assembly"/>  
 ```  

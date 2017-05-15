@@ -31,6 +31,7 @@
     <summary>Provides a wrapper for a generic ActiveX control for use as a base class by the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for derived classes to inherit this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="ActiveXInstance">
@@ -65,6 +66,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AllowDrop">
@@ -97,6 +99,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">This property is being set.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AttachInterfaces">
@@ -129,6 +132,7 @@
         <block subset="none" type="overrides">
           <para>Derived classes can override this method to cast the underlying ActiveX object to an appropriate interface and cache it in a member variable. This value must then be released in an override of the <see cref="M:System.Windows.Forms.WebBrowserBase.DetachInterfaces" /> method.</para>
         </block>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -159,6 +163,7 @@
         <value>A <see cref="T:System.Drawing.Color" /> that represents the background of the control.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BackColorChanged">
@@ -186,6 +191,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BackgroundImage">
@@ -218,6 +224,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">This property is being set.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageChanged">
@@ -245,6 +252,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageLayout">
@@ -276,6 +284,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">This property is being set.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageLayoutChanged">
@@ -303,6 +312,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BindingContextChanged">
@@ -330,6 +340,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ChangeUICues">
@@ -357,6 +368,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -384,6 +396,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateSink">
@@ -413,6 +426,7 @@
         <block subset="none" type="overrides">
           <para>Derived classes can override this method to attach to a connection point in the underlying ActiveX control.</para>
         </block>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateWebBrowserSiteBase">
@@ -433,6 +447,7 @@
         <returns>A <see cref="T:System.Windows.Forms.WebBrowserSiteBase" /> that represents the site of the underlying ActiveX control.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Cursor">
@@ -464,6 +479,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">This property is being set.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CursorChanged">
@@ -491,6 +507,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DefaultSize">
@@ -509,6 +526,7 @@
         <summary>Gets the default size of the control.</summary>
         <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DetachInterfaces">
@@ -538,6 +556,7 @@
         <block subset="none" type="overrides">
           <para>Derived classes can override this method to release a reference to the underlying ActiveX object that was cached in an override of the <see cref="M:System.Windows.Forms.WebBrowserBase.AttachInterfaces(System.Object)" /> method.</para>
         </block>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DetachSink">
@@ -567,6 +586,7 @@
         <block subset="none" type="overrides">
           <para>Derived classes can override this method to disconnect a connection point attached in an override of the <see cref="M:System.Windows.Forms.WebBrowserBase.CreateSink" /> method.</para>
         </block>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -589,6 +609,7 @@
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.Control" /> and its child controls and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DoubleClick">
@@ -616,6 +637,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DragDrop">
@@ -643,6 +665,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DragEnter">
@@ -670,6 +693,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DragLeave">
@@ -697,6 +721,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DragOver">
@@ -724,6 +749,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DrawToBitmap">
@@ -753,6 +779,7 @@
         <summary>This method is not supported by this control.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -785,6 +812,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">This property is being set.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EnabledChanged">
@@ -812,6 +840,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Enter">
@@ -839,6 +868,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -869,6 +899,7 @@
         <value>The value of this property is not meaningful for this control.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FontChanged">
@@ -896,6 +927,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -926,6 +958,7 @@
         <value>The value of this property is not meaningful for this control.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ForeColorChanged">
@@ -953,6 +986,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GiveFeedback">
@@ -980,6 +1014,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="HelpRequested">
@@ -1007,6 +1042,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ImeMode">
@@ -1037,6 +1073,7 @@
         <value>The value of this property is not meaningful for this control.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ImeModeChanged">
@@ -1064,6 +1101,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsInputChar">
@@ -1087,6 +1125,7 @@
         <returns>
           <see langword="true" /> if the character should be sent directly to the control and not preprocessed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="KeyDown">
@@ -1114,6 +1153,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="KeyPress">
@@ -1141,6 +1181,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="KeyUp">
@@ -1168,6 +1209,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Layout">
@@ -1195,6 +1237,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Leave">
@@ -1222,6 +1265,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MouseCaptureChanged">
@@ -1249,6 +1293,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MouseClick">
@@ -1276,6 +1321,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MouseDoubleClick">
@@ -1303,6 +1349,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MouseDown">
@@ -1330,6 +1377,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MouseEnter">
@@ -1357,6 +1405,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MouseHover">
@@ -1384,6 +1433,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MouseLeave">
@@ -1411,6 +1461,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MouseMove">
@@ -1438,6 +1489,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MouseUp">
@@ -1465,6 +1517,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MouseWheel">
@@ -1492,6 +1545,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnBackColorChanged">
@@ -1513,6 +1567,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.BackColorChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnFontChanged">
@@ -1534,6 +1589,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.FontChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnForeColorChanged">
@@ -1555,6 +1611,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.ForeColorChanged" /> event.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnGotFocus">
@@ -1576,6 +1633,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.GotFocus" /> event.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnHandleCreated">
@@ -1618,6 +1676,7 @@
   
  When overriding <see cref="M:System.Windows.Forms.WebBrowserBase.OnHandleCreated(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.WebBrowserBase.OnHandleCreated(System.EventArgs)" /> method at the beginning of your implementation so that registered delegates receive the event.</para>
         </block>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnLostFocus">
@@ -1639,6 +1698,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.Control.LostFocus" /> event.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnParentChanged">
@@ -1661,6 +1721,7 @@
         <summary>This member overrides <see cref="M:System.Windows.Forms.Control.OnParentChanged(System.EventArgs)" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Reflection.TargetInvocationException">Unable to get the window handle for the ActiveX control. Windowless ActiveX controls are not supported.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnRightToLeftChanged">
@@ -1683,6 +1744,7 @@
         <summary>This method is not meaningful for this control.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnVisibleChanged">
@@ -1705,6 +1767,7 @@
         <summary>This member overrides <see cref="M:System.Windows.Forms.Control.OnVisibleChanged(System.EventArgs)" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Reflection.TargetInvocationException">Unable to get the window handle for the ActiveX control. Windowless ActiveX controls are not supported.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Paint">
@@ -1732,6 +1795,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PreProcessMessage">
@@ -1755,6 +1819,7 @@
         <returns>
           <see langword="true" /> if the message was processed by the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProcessDialogKey">
@@ -1789,6 +1854,7 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Windows.Forms.Control.ProcessDialogKey(System.Windows.Forms.Keys)" /> method in a derived class, a control should return <see langword="true" /> to indicate that it has processed the key. For keys that are not processed by the control, the result of calling the base class's <see cref="M:System.Windows.Forms.Control.ProcessDialogChar(System.Char)" /> method should be returned. Controls will seldom, if ever, need to override this method.</para>
         </block>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProcessMnemonic">
@@ -1812,6 +1878,7 @@
         <returns>
           <see langword="true" /> if the character was processed as a mnemonic by the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="QueryAccessibilityHelp">
@@ -1839,6 +1906,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="QueryContinueDrag">
@@ -1866,6 +1934,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RightToLeft">
@@ -1897,6 +1966,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">This property is being set.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RightToLeftChanged">
@@ -1924,6 +1994,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Site">
@@ -1942,6 +2013,7 @@
         <summary>Gets or sets the site of the control.</summary>
         <value>The <see cref="T:System.ComponentModel.ISite" /> associated with the <see cref="T:System.Windows.Forms.Control" />, if any.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StyleChanged">
@@ -1969,6 +2041,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -2003,6 +2076,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">This property is being set.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TextChanged">
@@ -2030,6 +2104,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">A handler is being added to this event.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UseWaitCursor">
@@ -2062,6 +2137,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">This property is being set.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WndProc">
@@ -2084,6 +2160,7 @@
         <summary>This member overrides <see cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" />.</summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for derived classes to override this method. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; [NIB: Named Permission Sets](http://msdn.microsoft.com/en-us/08250d67-c99d-4ab0-8d2b-b0e12019f6e3): <see langword="FullTrust" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

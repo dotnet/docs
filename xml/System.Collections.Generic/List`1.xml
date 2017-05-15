@@ -6,6 +6,7 @@
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -52,9 +53,7 @@
   </Attributes>
   <Docs>
     <typeparam name="T">The type of elements in the list.</typeparam>
-    <summary>Represents a strongly typed list of objects that can be accessed by index. Provides methods to search, sort, and manipulate lists.  
-  
- To browse the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/collections/generic/list.cs#cf7f4095e4de7646).</summary>
+    <summary>Represents a strongly typed list of objects that can be accessed by index. Provides methods to search, sort, and manipulate lists.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -137,6 +136,7 @@
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -187,6 +187,7 @@
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -209,7 +210,7 @@
 ## Remarks  
  The elements are copied onto the <xref:System.Collections.Generic.List%601> in the same order they are read by the enumerator of the collection.  
   
- This constructor is an O(`n`) operation, where `n` is the number of elements in `collection`.  
+ This constructor is an O(*n*) operation, where *n* is the number of elements in `collection`.  
   
    
   
@@ -235,6 +236,7 @@
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -261,7 +263,7 @@
   
  The capacity can be decreased by calling the <xref:System.Collections.Generic.List%601.TrimExcess%2A> method or by setting the <xref:System.Collections.Generic.List%601.Capacity%2A> property explicitly. Decreasing the capacity reallocates memory and copies all the elements in the <xref:System.Collections.Generic.List%601>.  
   
- This constructor is an O(`n`) operation, where `n` is `capacity`.  
+ This constructor is an O(*n*) operation, where *n* is `capacity`.  
   
    
   
@@ -287,6 +289,7 @@
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -314,7 +317,7 @@
   
  If <xref:System.Collections.Generic.List%601.Count%2A> already equals <xref:System.Collections.Generic.List%601.Capacity%2A>, the capacity of the <xref:System.Collections.Generic.List%601> is increased by automatically reallocating the internal array, and the existing elements are copied to the new array before the new element is added.  
   
- If <xref:System.Collections.Generic.List%601.Count%2A> is less than <xref:System.Collections.Generic.List%601.Capacity%2A>, this method is an O(1) operation. If the capacity needs to be increased to accommodate the new element, this method becomes an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ If <xref:System.Collections.Generic.List%601.Count%2A> is less than <xref:System.Collections.Generic.List%601.Capacity%2A>, this method is an O(1) operation. If the capacity needs to be increased to accommodate the new element, this method becomes an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
@@ -347,6 +350,7 @@
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -374,7 +378,7 @@
   
  If the new <xref:System.Collections.Generic.List%601.Count%2A> (the current <xref:System.Collections.Generic.List%601.Count%2A> plus the size of the collection) will be greater than <xref:System.Collections.Generic.List%601.Capacity%2A>, the capacity of the <xref:System.Collections.Generic.List%601> is increased by automatically reallocating the internal array to accommodate the new elements, and the existing elements are copied to the new array before the new elements are added.  
   
- If the <xref:System.Collections.Generic.List%601> can accommodate the new elements without increasing the <xref:System.Collections.Generic.List%601.Capacity%2A>, this method is an O(`n`) operation, where `n` is the number of elements to be added. If the capacity needs to be increased to accommodate the new elements, this method becomes an O(`n` + `m`) operation, where `n` is the number of elements to be added and `m` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ If the <xref:System.Collections.Generic.List%601> can accommodate the new elements without increasing the <xref:System.Collections.Generic.List%601.Capacity%2A>, this method is an O(*n*) operation, where *n* is the number of elements to be added. If the capacity needs to be increased to accommodate the new elements, this method becomes an O(*n* + *m*) operation, where *n* is the number of elements to be added and *m* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
@@ -399,6 +403,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -448,6 +453,7 @@
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -482,7 +488,7 @@
   
  If the <xref:System.Collections.Generic.List%601> does not contain the specified value, the method returns a negative integer. You can apply the bitwise complement operation (~) to this negative integer to get the index of the first element that is larger than the search value. When inserting the value into the <xref:System.Collections.Generic.List%601>, this index should be used as the insertion point to maintain the sort order.  
   
- This method is an O(log `n`) operation, where `n` is the number of elements in the range.  
+ This method is an O(log *n*) operation, where *n* is the number of elements in the range.  
   
    
   
@@ -509,6 +515,7 @@
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -553,7 +560,7 @@
   
  If the <xref:System.Collections.Generic.List%601> does not contain the specified value, the method returns a negative integer. You can apply the bitwise complement operation (~) to this negative integer to get the index of the first element that is larger than the search value. When inserting the value into the <xref:System.Collections.Generic.List%601>, this index should be used as the insertion point to maintain the sort order.  
   
- This method is an O(log `n`) operation, where `n` is the number of elements in the range.  
+ This method is an O(log *n*) operation, where *n* is the number of elements in the range.  
   
    
   
@@ -585,6 +592,7 @@
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -629,7 +637,7 @@
   
  If the <xref:System.Collections.Generic.List%601> does not contain the specified value, the method returns a negative integer. You can apply the bitwise complement operation (~) to this negative integer to get the index of the first element that is larger than the search value. When inserting the value into the <xref:System.Collections.Generic.List%601>, this index should be used as the insertion point to maintain the sort order.  
   
- This method is an O(log `n`) operation, where `n` is the number of elements in the range.  
+ This method is an O(log *n*) operation, where *n* is the number of elements in the range.  
   
    
   
@@ -669,6 +677,7 @@
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -695,7 +704,7 @@
   
  If the capacity is significantly larger than the count and you want to reduce the memory used by the <xref:System.Collections.Generic.List%601>,  you can  decrease capacity by calling the <xref:System.Collections.Generic.List%601.TrimExcess%2A> method or by setting the <xref:System.Collections.Generic.List%601.Capacity%2A> property explicitly to a lower value. When the value of <xref:System.Collections.Generic.List%601.Capacity%2A> is set explicitly, the internal array is also reallocated to accommodate the specified capacity, and all the elements are copied.  
   
- Retrieving the value of this property is an O(1) operation; setting the property is an O(`n`) operation, where `n` is the new capacity.  
+ Retrieving the value of this property is an O(1) operation; setting the property is an O(*n*) operation, where *n* is the new capacity.  
   
    
   
@@ -730,6 +739,7 @@
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -754,7 +764,7 @@
   
  <xref:System.Collections.Generic.List%601.Capacity%2A> remains unchanged. To reset the capacity of the <xref:System.Collections.Generic.List%601>, call the <xref:System.Collections.Generic.List%601.TrimExcess%2A> method or set the <xref:System.Collections.Generic.List%601.Capacity%2A> property directly. Decreasing the capacity reallocates memory and copies all the elements in the <xref:System.Collections.Generic.List%601>. Trimming an empty <xref:System.Collections.Generic.List%601> sets the capacity of the <xref:System.Collections.Generic.List%601> to the default capacity.  
   
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
@@ -779,6 +789,7 @@
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -806,7 +817,7 @@
 ## Remarks  
  This method determines equality by using the default equality comparer, as defined by the object's implementation of the <xref:System.IEquatable%601.Equals%2A?displayProperty=fullName> method for `T` (the type of values in the list).  
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
@@ -839,6 +850,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.List&lt;TOutput&gt;</ReturnType>
       </ReturnValue>
@@ -861,7 +876,7 @@
   
  The current <xref:System.Collections.Generic.List%601> remains unchanged.  
   
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
@@ -887,6 +902,7 @@
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -914,12 +930,12 @@
   
  The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Collections.Generic.List%601>.  
   
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
 ## Examples  
- The following example demonstrates all three overloads of the <xref:System.Collections.Generic.List%601.CopyTo%2A> method. A <xref:System.Collections.Generic.List%601> of strings is created and populated with 5 strings. An empty string array of 15 elements is created, and the <xref:System.Collections.Generic.List%601.CopyTo%28%600%5B%5D%29> method overload is used to copy all the elements of the list to the array beginning at the first element of the array. The [CopyTo(T\<xref:System.Collections.Generic.List%601.CopyTo%28%600%5B%5D%2CSystem.Int32%29> method overload is used to copy all the elements of the list to the array beginning at array index 6 (leaving index 5 empty). Finally, the [CopyTo(Int32, T\<xref:System.Collections.Generic.List%601.CopyTo%28System.Int32%2C%600%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method overload is used to copy 3 elements from the list, beginning with index 2, to the array beginning at array index 12 (leaving index 11 empty). The contents of the array are then displayed.  
+ The following example demonstrates all three overloads of the <xref:System.Collections.Generic.List%601.CopyTo%2A> method. A <xref:System.Collections.Generic.List%601> of strings is created and populated with 5 strings. An empty string array of 15 elements is created, and the <xref:System.Collections.Generic.List%601.CopyTo%28%600%5B%5D%29> method overload is used to copy all the elements of the list to the array beginning at the first element of the array. The <xref:System.Collections.Generic.List%601.CopyTo%28%600%5B%5D%2CSystem.Int32%29> method overload is used to copy all the elements of the list to the array beginning at array index 6 (leaving index 5 empty). Finally, the <xref:System.Collections.Generic.List%601.CopyTo%28System.Int32%2C%600%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method overload is used to copy 3 elements from the list, beginning with index 2, to the array beginning at array index 12 (leaving index 11 empty). The contents of the array are then displayed.  
   
  [!code-cpp[List\`1_CopyTo#1](~/samples/snippets/cpp/VS_Snippets_CLR/List`1_CopyTo/cpp/source.cpp#1)]
  [!code-csharp[List\`1_CopyTo#1](~/samples/snippets/csharp/VS_Snippets_CLR/List`1_CopyTo/cs/source.cs#1)]
@@ -941,6 +957,7 @@
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -970,12 +987,12 @@
   
  The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Collections.Generic.List%601>.  
   
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
 ## Examples  
- The following example demonstrates all three overloads of the <xref:System.Collections.Generic.List%601.CopyTo%2A> method. A <xref:System.Collections.Generic.List%601> of strings is created and populated with 5 strings. An empty string array of 15 elements is created, and the [CopyTo(T\<xref:System.Collections.Generic.List%601.CopyTo%28%600%5B%5D%29> method overload is used to copy all the elements of the list to the array beginning at the first element of the array. The [CopyTo Method (T\<xref:System.Collections.Generic.List%601.CopyTo%28%600%5B%5D%2CSystem.Int32%29> method overload is used to copy all the elements of the list to the array beginning at array index 6 (leaving index 5 empty). Finally, the [CopyTo(Int32, T\<xref:System.Collections.Generic.List%601.CopyTo%28System.Int32%2C%600%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method overload is used to copy 3 elements from the list, beginning with index 2, to the array beginning at array index 12 (leaving index 11 empty). The contents of the array are then displayed.  
+ The following example demonstrates all three overloads of the <xref:System.Collections.Generic.List%601.CopyTo%2A> method. A <xref:System.Collections.Generic.List%601> of strings is created and populated with 5 strings. An empty string array of 15 elements is created, and the <xref:System.Collections.Generic.List%601.CopyTo%28%600%5B%5D%29> method overload is used to copy all the elements of the list to the array beginning at the first element of the array. The <xref:System.Collections.Generic.List%601.CopyTo%28%600%5B%5D%2CSystem.Int32%29> method overload is used to copy all the elements of the list to the array beginning at array index 6 (leaving index 5 empty). Finally, the <xref:System.Collections.Generic.List%601.CopyTo%28System.Int32%2C%600%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method overload is used to copy 3 elements from the list, beginning with index 2, to the array beginning at array index 12 (leaving index 11 empty). The contents of the array are then displayed.  
   
  [!code-cpp[List\`1_CopyTo#1](~/samples/snippets/cpp/VS_Snippets_CLR/List`1_CopyTo/cpp/source.cpp#1)]
  [!code-csharp[List\`1_CopyTo#1](~/samples/snippets/csharp/VS_Snippets_CLR/List`1_CopyTo/cs/source.cs#1)]
@@ -999,6 +1016,7 @@
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1032,12 +1050,12 @@
   
  The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Collections.Generic.List%601>.  
   
- This method is an O(`n`) operation, where `n` is `count`.  
+ This method is an O(*n*) operation, where *n* is `count`.  
   
    
   
 ## Examples  
- The following example demonstrates all three overloads of the <xref:System.Collections.Generic.List%601.CopyTo%2A> method. A <xref:System.Collections.Generic.List%601> of strings is created and populated with 5 strings. An empty string array of 15 elements is created, and the [CopyTo(T\<xref:System.Collections.Generic.List%601.CopyTo%28%600%5B%5D%29> method overload is used to copy all the elements of the list to the array beginning at the first element of the array. The [CopyTo(T\<xref:System.Collections.Generic.List%601.CopyTo%28%600%5B%5D%2CSystem.Int32%29> method overload is used to copy all the elements of the list to the array beginning at array index 6 (leaving index 5 empty). Finally, the [CopyTo Method (Int32, T\<xref:System.Collections.Generic.List%601.CopyTo%28System.Int32%2C%600%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method overload is used to copy 3 elements from the list, beginning with index 2, to the array beginning at array index 12 (leaving index 11 empty). The contents of the array are then displayed.  
+ The following example demonstrates all three overloads of the <xref:System.Collections.Generic.List%601.CopyTo%2A> method. A <xref:System.Collections.Generic.List%601> of strings is created and populated with 5 strings. An empty string array of 15 elements is created, and the <xref:System.Collections.Generic.List%601.CopyTo%28%600%5B%5D%29> method overload is used to copy all the elements of the list to the array beginning at the first element of the array. The <xref:System.Collections.Generic.List%601.CopyTo%28%600%5B%5D%2CSystem.Int32%29> method overload is used to copy all the elements of the list to the array beginning at array index 6 (leaving index 5 empty). Finally, the <xref:System.Collections.Generic.List%601.CopyTo%28System.Int32%2C%600%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method overload is used to copy 3 elements from the list, beginning with index 2, to the array beginning at array index 12 (leaving index 11 empty). The contents of the array are then displayed.  
   
  [!code-cpp[List\`1_CopyTo#1](~/samples/snippets/cpp/VS_Snippets_CLR/List`1_CopyTo/cpp/source.cpp#1)]
  [!code-csharp[List\`1_CopyTo#1](~/samples/snippets/csharp/VS_Snippets_CLR/List`1_CopyTo/cs/source.cs#1)]
@@ -1074,6 +1092,7 @@
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1128,6 +1147,7 @@
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1155,7 +1175,7 @@
 ## Remarks  
  The <xref:System.Predicate%601> is a delegate to a method that returns `true` if the object passed to it matches the conditions defined in the delegate.  The elements of the current <xref:System.Collections.Generic.List%601> are individually passed to the <xref:System.Predicate%601> delegate, and processing is stopped when a match is found.  
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
@@ -1195,6 +1215,7 @@
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1224,7 +1245,7 @@
 > [!IMPORTANT]
 >  When searching a list containing value types, make sure the default value for the type does not satisfy the search predicate. Otherwise, there is no way to distinguish between a default value indicating that no match was found and a list element that happens to have the default value for the type. If the default value satisfies the search predicate, use the <xref:System.Collections.Generic.List%601.FindIndex%2A> method instead.  
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
@@ -1266,6 +1287,7 @@
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1292,7 +1314,7 @@
 ## Remarks  
  The <xref:System.Predicate%601> is a delegate to a method that returns `true` if the object passed to it matches the conditions defined in the delegate.  The elements of the current <xref:System.Collections.Generic.List%601> are individually passed to the <xref:System.Predicate%601> delegate, and the elements that match the conditions are saved in the returned <xref:System.Collections.Generic.List%601>.  
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
@@ -1329,6 +1351,7 @@
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1365,7 +1388,7 @@ public bool methodName(T obj)
 Public Function methodName(obj As T) As Boolean  
 ```  
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
@@ -1400,6 +1423,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1438,7 +1462,7 @@ public bool methodName(T obj)
 Public Function methodName(obj As T) As Boolean  
 ```  
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is the number of elements from `startIndex` to the end of the <xref:System.Collections.Generic.List%601>.  
+ This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is the number of elements from `startIndex` to the end of the <xref:System.Collections.Generic.List%601>.  
   
    
   
@@ -1475,6 +1499,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1515,7 +1540,7 @@ public bool methodName(T obj)
 Public Function methodName(obj As T) As Boolean  
 ```  
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is `count`.  
+ This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is `count`.  
   
    
   
@@ -1560,6 +1585,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1589,7 +1615,7 @@ Public Function StartsWith(e As Employee) As Boolean
 > [!IMPORTANT]
 >  When searching a list containing value types, make sure the default value for the type does not satisfy the search predicate. Otherwise, there is no way to distinguish between a default value indicating that no match was found and a list element that happens to have the default value for the type. If the default value satisfies the search predicate, use the <xref:System.Collections.Generic.List%601.FindLastIndex%2A> method instead.  
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
@@ -1626,6 +1652,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1654,7 +1681,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
  The <xref:System.Predicate%601> is a delegate to a method that returns `true` if the object passed to it matches the conditions defined in the delegate.  The elements of the current <xref:System.Collections.Generic.List%601> are individually passed to the <xref:System.Predicate%601> delegate.  
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
@@ -1691,6 +1718,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1721,7 +1749,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
  The <xref:System.Predicate%601> is a delegate to a method that returns `true` if the object passed to it matches the conditions defined in the delegate.  The elements of the current <xref:System.Collections.Generic.List%601> are individually passed to the <xref:System.Predicate%601> delegate.  
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is the number of elements from the beginning of the <xref:System.Collections.Generic.List%601> to `startIndex`.  
+ This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is the number of elements from the beginning of the <xref:System.Collections.Generic.List%601> to `startIndex`.  
   
  ]]></format>
         </remarks>
@@ -1740,6 +1768,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1772,7 +1801,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
  The <xref:System.Predicate%601> is a delegate to a method that returns `true` if the object passed to it matches the conditions defined in the delegate.  The elements of the current <xref:System.Collections.Generic.List%601> are individually passed to the <xref:System.Predicate%601> delegate.  
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is `count`.  
+ This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is `count`.  
   
    
   
@@ -1818,6 +1847,7 @@ Public Function StartsWith(e As Employee) As Boolean
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1843,7 +1873,7 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  The <xref:System.Action%601> is a delegate to a method that performs an action on the object passed to it.  The elements of the current <xref:System.Collections.Generic.List%601> are individually passed to the <xref:System.Action%601> delegate.  
   
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
  Modifying the underlying collection in the body of the <xref:System.Action%601> delegate is not supported and causes undefined behavior.  
   
@@ -1874,6 +1904,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1926,6 +1957,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1958,7 +1990,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
  In contrast, a deep copy of a collection copies the elements and everything directly or indirectly referenced by the elements.  
   
- This method is an O(`n`) operation, where `n` is `count`.  
+ This method is an O(*n*) operation, where *n* is `count`.  
   
    
   
@@ -1990,6 +2022,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2018,7 +2051,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
  This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
@@ -2042,6 +2075,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2072,7 +2106,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
  This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is the number of elements from `index` to the end of the <xref:System.Collections.Generic.List%601>.  
+ This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is the number of elements from `index` to the end of the <xref:System.Collections.Generic.List%601>.  
   
    
   
@@ -2098,6 +2132,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2130,7 +2165,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
  This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is `count`.  
+ This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is `count`.  
   
    
   
@@ -2164,6 +2199,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2195,7 +2231,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
  If `index` is equal to <xref:System.Collections.Generic.List%601.Count%2A>, `item` is added to the end of <xref:System.Collections.Generic.List%601>.  
   
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
@@ -2232,6 +2268,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2265,7 +2302,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
  The order of the elements in the collection is preserved in the <xref:System.Collections.Generic.List%601>.  
   
- This method is an O(`n` + `m`) operation, where `n` is the number of elements to be added and `m` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method is an O(*n* + *m*) operation, where *n* is the number of elements to be added and *m* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
@@ -2297,6 +2334,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2361,6 +2399,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2389,7 +2428,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
  This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
@@ -2413,6 +2452,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2443,7 +2483,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
  This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is the number of elements from the beginning of the <xref:System.Collections.Generic.List%601> to `index`.  
+ This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is the number of elements from the beginning of the <xref:System.Collections.Generic.List%601> to `index`.  
   
    
   
@@ -2469,6 +2509,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2501,7 +2542,7 @@ Public Function StartsWith(e As Employee) As Boolean
   
  This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is `count`.  
+ This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is `count`.  
   
    
   
@@ -2535,6 +2576,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2562,7 +2604,7 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  If type `T` implements the <xref:System.IEquatable%601> generic interface, the equality comparer is the <xref:System.IEquatable%601.Equals%2A> method of that interface; otherwise, the default equality comparer is <xref:System.Object.Equals%2A?displayProperty=fullName>.  
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
@@ -2593,6 +2635,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2619,7 +2662,7 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  The <xref:System.Predicate%601> is a delegate to a method that returns `true` if the object passed to it matches the conditions defined in the delegate.  The elements of the current <xref:System.Collections.Generic.List%601> are individually passed to the <xref:System.Predicate%601> delegate, and the elements that match the conditions are removed from the <xref:System.Collections.Generic.List%601>.  
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
@@ -2656,6 +2699,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2681,7 +2725,7 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  When you call <xref:System.Collections.Generic.List%601.RemoveAt%2A> to remove an item, the remaining items in the list are renumbered to replace the removed item. For example, if you remove the item at index 3, the item at index 4 is moved to the 3 position. In addition, the number of items in the list (as represented by the <xref:System.Collections.Generic.List%601.Count%2A> property) is reduced by 1.  
   
- This method is an O(`n`) operation, where `n` is (<xref:System.Collections.Generic.List%601.Count%2A> - `index`).  
+ This method is an O(*n*) operation, where *n* is (<xref:System.Collections.Generic.List%601.Count%2A> - `index`).  
   
    
   
@@ -2711,6 +2755,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2738,7 +2783,7 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  The items are removed and all the elements following them in the <xref:System.Collections.Generic.List%601> have their indexes reduced by `count`.  
   
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
@@ -2770,6 +2815,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2792,7 +2838,7 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  This method uses <xref:System.Array.Reverse%2A?displayProperty=fullName> to reverse the order of the elements.  
   
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
@@ -2816,6 +2862,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2843,7 +2890,7 @@ Public Function StartsWith(e As Employee) As Boolean
 ## Remarks  
  This method uses <xref:System.Array.Reverse%2A?displayProperty=fullName> to reverse the order of the elements.  
   
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
@@ -2866,6 +2913,56 @@ Public Function StartsWith(e As Employee) As Boolean
           <paramref name="index" /> and <paramref name="count" /> do not denote a valid range of elements in the <see cref="T:System.Collections.Generic.List`1" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Sort">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sorts the elements in the <see cref="T:System.Collections.Generic.List`1" /> or a portion of it.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Overloaded method syntax  
+ The  <xref:System.Collections.Generic.List%601.Sort%2A> methods enable you to sort with the default comparer for the object type in the list, or specify a customer sort method.  
+  
+ [List\<T>.Sort()](xref:System.Collections.Generic.List%601.Sort%28%29)
+ Sorts the elements in the entire list using the default comparer of the object type held in the list.  
+  
+ [List\<T>.Sort M(Comparison\<T> comparison)](xref:System.Collections.Generic.List%601.Sort%28System.Comparison%7B%600%7D%29)
+ Sorts the elements in the entire list using the specified comparer.  
+  
+ [List\<T>.Sort(IComparer\<T> comparer)](xref:System.Collections.Generic.List%601.Sort%28System.Collections.Generic.IComparer%7B%600%7D%29)
+ Sorts the elements in the entire list using the specified <xref:System.Comparison%601?displayProperty=fullName>.  
+  
+ [List\<T>.Sort(Int32 index, Int32 count, IComparer\<T> comparer)](xref:System.Collections.Generic.List%601.Sort%28System.Int32,System.Int32,System.Collections.Generic.IComparer%7B%600%7D%29)
+ Sorts the elements in a range of elements in list using the specified comparer.  
+  
+## Parameters  
+  
+|Parameter|Type|Description|  
+|---------------|----------|-----------------|  
+|`comparison`|<xref:System.Comparison%601>|The delegate method to use when comparing elements|  
+|comparer|<xref:System.Collections.Generic.IComparer%601>|The <xref:System.Collections.Generic.IComparer%601> implementation to use when comparing elements, or null to use the default comparer <xref:System.Collections.Generic.Comparer%601.Default>.|  
+|`index`|<xref:System.Int32>|The zero-based starting index of the range to sort.|  
+|`count`|<xref:System.Int32>|The length of the range to sort.|  
+  
+## Exceptions  
+  
+|Exception|Condition|  
+|---------------|---------------|  
+|<xref:System.InvalidOperationException>|`comparer` is not specified or `null`, and the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> cannot find implementation of the <xref:System.IComparable%601?displayProperty=fullName> generic interface or the <xref:System.IComparable?displayProperty=fullName> interface for type T.|  
+|<xref:System.ArgumentNullException>|`comparison` is `null`.|  
+|<xref:System.ArgumentException>|The implementation of `comparison` or `comparer` caused an error during the sort. For example, `comparison` might not return 0 when comparing an item with itself.<br /><br /> -or-<br /><br /> `index` and `count` do not specify a valid range in the <xref:System.Collections.Generic.List%601>.|  
+|<xref:System.ArgumentOutOfRangeException>|`index` is less than 0 or `count` is less than 0.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Sort">
       <MemberSignature Language="C#" Value="public void Sort ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort() cil managed" />
@@ -2875,6 +2972,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2901,13 +2999,13 @@ Public Function StartsWith(e As Employee) As Boolean
   
 -   If the partition size is fewer than 16 elements, it uses an insertion sort algorithm.  
   
--   If the number of partitions exceeds 2 * LogN, where *N* is the range of the input array, it uses a Heapsort algorithm.  
+-   If the number of partitions exceeds 2 log *n*, where *n* is the range of the input array, it uses a Heapsort algorithm.  
   
 -   Otherwise, it uses a Quicksort algorithm.  
   
  This implementation performs an unstable sort; that is, if two elements are equal, their order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal.  
   
- On average, this method is an O(`n` log `n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>; in the worst case it is an O(`n` ^ 2) operation.  
+ On average, this method is an O(*n* log *n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>; in the worst case it is an O(*n*<sup>2</sup>) operation.  
   
    
   
@@ -2944,6 +3042,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2975,13 +3074,13 @@ Public Function StartsWith(e As Employee) As Boolean
   
 -   If the partition size is fewer than 16 elements, it uses an insertion sort algorithm.  
   
--   If the number of partitions exceeds 2 * LogN, where *N* is the range of the input array, it uses a Heapsort algorithm.  
+-   If the number of partitions exceeds 2 log *n*, where *n* is the range of the input array, it uses a Heapsort algorithm.  
   
 -   Otherwise, it uses a Quicksort algorithm.  
   
  This implementation performs an unstable sort; that is, if two elements are equal, their order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal.  
   
- On average, this method is an O(`n` log `n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>; in the worst case it is an O(`n` ^ 2) operation.  
+ On average, this method is an O(*n* log *n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>; in the worst case it is an O(*n*<sup>2</sup>) operation.  
   
    
   
@@ -3014,6 +3113,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3045,13 +3145,13 @@ Public Function StartsWith(e As Employee) As Boolean
   
 -   If the partition size is fewer than 16 elements, it uses an insertion sort algorithm  
   
--   If the number of partitions exceeds 2 * LogN, where N is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
+-   If the number of partitions exceeds 2 log *n*, where *n* is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
   
 -   Otherwise, it uses a Quicksort algorithm.  
   
  This implementation performs an unstable sort; that is, if two elements are equal, their order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal.  
   
- On average, this method is an O(`n` log `n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>; in the worst case it is an O(`n` ^ 2) operation.  
+ On average, this method is an O(*n* log *n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>; in the worst case it is an O(*n*<sup>2</sup>) operation.  
   
    
   
@@ -3087,6 +3187,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3122,13 +3223,13 @@ Public Function StartsWith(e As Employee) As Boolean
   
 -   If the partition size is fewer than 16 elements, it uses an insertion sort algorithm  
   
--   If the number of partitions exceeds 2 * LogN, where N is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
+-   If the number of partitions exceeds 2 log *n*, where *n* is the range of the input array, it uses a [Heapsort](http://en.wikipedia.org/wiki/Heapsort) algorithm.  
   
 -   Otherwise, it uses a Quicksort algorithm.  
   
  This implementation performs an unstable sort; that is, if two elements are equal, their order might not be preserved. In contrast, a stable sort preserves the order of elements that are equal.  
   
- On average, this method is an O(`n` log `n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>; in the worst case it is an O(`n` ^ 2) operation.  
+ On average, this method is an O(*n* log *n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>; in the worst case it is an O(*n*<sup>2</sup>) operation.  
   
    
   
@@ -3172,6 +3273,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3212,6 +3314,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3264,6 +3367,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3293,7 +3397,7 @@ Public Function StartsWith(e As Employee) As Boolean
 > [!NOTE]
 >  If the type of the source <xref:System.Collections.ICollection> cannot be cast automatically to the type of the destination `array`, the nongeneric implementations of <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName> throw <xref:System.InvalidCastException>, whereas the generic implementations throw <xref:System.ArgumentException>.  
   
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
  ]]></format>
         </remarks>
@@ -3326,6 +3430,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3368,6 +3473,7 @@ Public Function StartsWith(e As Employee) As Boolean
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3437,6 +3543,7 @@ finally
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3489,6 +3596,7 @@ finally
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3513,7 +3621,7 @@ finally
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.Collections.Generic.List%601.Count%2A> is less than <xref:System.Collections.Generic.List%601.Capacity%2A>, this method is an O(1) operation. If the capacity needs to be increased to accommodate the new element, this method becomes an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ If <xref:System.Collections.Generic.List%601.Count%2A> is less than <xref:System.Collections.Generic.List%601.Capacity%2A>, this method is an O(1) operation. If the capacity needs to be increased to accommodate the new element, this method becomes an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
  ]]></format>
         </remarks>
@@ -3530,6 +3638,7 @@ finally
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3557,7 +3666,7 @@ finally
 ## Remarks  
  This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
  ]]></format>
         </remarks>
@@ -3572,6 +3681,7 @@ finally
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3598,7 +3708,7 @@ finally
 ## Remarks  
  This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
  ]]></format>
         </remarks>
@@ -3615,6 +3725,7 @@ finally
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3642,7 +3753,7 @@ finally
 ## Remarks  
  If `index` equals the number of items in the <xref:System.Collections.IList>, then `item` is appended to the end.  
   
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
  ]]></format>
         </remarks>
@@ -3661,6 +3772,7 @@ finally
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3701,6 +3813,7 @@ finally
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3741,6 +3854,7 @@ finally
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3785,6 +3899,7 @@ finally
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3810,7 +3925,7 @@ finally
 ## Remarks  
  This method determines equality using the default equality comparer <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=fullName> for `T`, the type of values in the list.  
   
- This method performs a linear search; therefore, this method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method performs a linear search; therefore, this method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
  ]]></format>
         </remarks>
@@ -3827,6 +3942,7 @@ finally
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3848,9 +3964,9 @@ finally
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The elements are copied using <xref:System.Array.Copy%2A?displayProperty=fullName>, which is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ The elements are copied using <xref:System.Array.Copy%2A?displayProperty=fullName>, which is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
@@ -3874,6 +3990,7 @@ finally
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3899,7 +4016,7 @@ finally
 > [!NOTE]
 >  The current threshold of 90 percent might change in future releases.  
   
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
  To reset a <xref:System.Collections.Generic.List%601> to its initial state, call the <xref:System.Collections.Generic.List%601.Clear%2A> method before calling the <xref:System.Collections.Generic.List%601.TrimExcess%2A> method. Trimming an empty <xref:System.Collections.Generic.List%601> sets the capacity of the <xref:System.Collections.Generic.List%601> to the default capacity.  
   
@@ -3933,6 +4050,7 @@ finally
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3960,7 +4078,7 @@ finally
 ## Remarks  
  The <xref:System.Predicate%601> is a delegate to a method that returns `true` if the object passed to it matches the conditions defined in the delegate.  The elements of the current <xref:System.Collections.Generic.List%601> are individually passed to the <xref:System.Predicate%601> delegate, and processing is stopped when the delegate returns `false` for any element. The elements are processed in order, and all calls are made on a single thread.  
   
- This method is an O(`n`) operation, where `n` is <xref:System.Collections.Generic.List%601.Count%2A>.  
+ This method is an O(*n*) operation, where *n* is <xref:System.Collections.Generic.List%601.Count%2A>.  
   
    
   
@@ -3984,55 +4102,5 @@ finally
           <paramref name="match" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Sort">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sorts the elements in the <see cref="T:System.Collections.Generic.List`1" /> or a portion of it.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-## Overloaded method syntax  
- The  <xref:System.Collections.Generic.List%601.Sort%2A> methods enable you to sort with the default comparer for the object type in the list, or specify a customer sort method.  
-  
- [List\<T>.Sort()](http://msdn.microsoft.com/en-us/library/b0zbh7b6\(v=vs.110\).aspx)  
- Sorts the elements in the entire list using the default comparer of the object type held in the list.  
-  
- [List\<T>.Sort M(Comparison\<T> comparison)](http://msdn.microsoft.com/en-us/library/w56d4y5z\(v=vs.110\).aspx)  
- Sorts the elements in the entire list using the specified comparer.  
-  
- [List\<T>.Sort(IComparer\<T> comparer)](http://msdn.microsoft.com/en-us/library/234b841s\(v=vs.110\).aspx)  
- Sorts the elements in the entire list using the specified <xref:System.Comparison%601?displayProperty=fullName>.  
-  
- [List\<T>.Sort(Int32 index, Int32 count, IComparer\<T> comparer)](http://msdn.microsoft.com/en-us/library/8ce6t5ad\(v=vs.110\).aspx)  
- Sorts the elements in a range of elements in list using the specified comparer.  
-  
-## Parameters  
-  
-|Parameter|Type|Description|  
-|---------------|----------|-----------------|  
-|`comparison`|<xref:System.Comparison%601>|The delegate method to use when comparing elements|  
-|comparer|<xref:System.Collections.Generic.IComparer%601>|The  HYPERLINK "http://msdn.microsoft.com/en-us/library/8ehhxeaf(v=vs.110).aspx" IComparer\<T> implementation to use when comparing elements, or null to use the default comparer  HYPERLINK "http://msdn.microsoft.com/en-us/library/azhsac5f(v=vs.110).aspx" Comparer\<T>.Default.|  
-|`index`|<xref:System.Int32>|The zero-based starting index of the range to sort.|  
-|`count`|<xref:System.Int32>|The length of the range to sort.|  
-  
-## Exceptions  
-  
-|Exception|Condition|  
-|---------------|---------------|  
-|<xref:System.InvalidOperationException>|`comparer` is not specified or `null`, and the default comparer <xref:System.Collections.Generic.Comparer%601.Default%2A?displayProperty=fullName> cannot find implementation of the <xref:System.IComparable%601?displayProperty=fullName> generic interface or the <xref:System.IComparable?displayProperty=fullName> interface for type T.|  
-|<xref:System.ArgumentNullException>|`comparison` is `null`.|  
-|<xref:System.ArgumentException>|The implementation of `comparison` or `comparer` caused an error during the sort. For example, `comparison` might not return 0 when comparing an item with itself.<br /><br /> -or-<br /><br /> `index` and `count` do not specify a valid range in the <xref:System.Collections.Generic.List%601>.|  
-|<xref:System.ArgumentOutOfRangeException>|`index` is less than 0 or `count` is less than 0.|  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

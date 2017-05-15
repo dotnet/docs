@@ -8,6 +8,7 @@
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -43,9 +44,9 @@
   
 -   You can iterate the members of the <xref:System.Text.RegularExpressions.GroupCollection> object  by using a `foreach` (C#) or `For Each` (Visual Basic) construct.  
   
--   You can use the [GroupCollection.Item\<xref:System.Text.RegularExpressions.GroupCollection.Item%28System.Int32%29?displayProperty=fullName> property to retrieve groups by the number of the capturing group. Note that you can determine which numbered groups are present in a regular expression by calling the instance <xref:System.Text.RegularExpressions.Regex.GetGroupNumbers%2A?displayProperty=fullName> method.  
+-   You can use the <xref:System.Text.RegularExpressions.GroupCollection.Item%28System.Int32%29?displayProperty=fullName> property to retrieve groups by the number of the capturing group. Note that you can determine which numbered groups are present in a regular expression by calling the instance <xref:System.Text.RegularExpressions.Regex.GetGroupNumbers%2A?displayProperty=fullName> method.  
   
--   You can use the [GroupCollection.Item\<xref:System.Text.RegularExpressions.GroupCollection.Item%28System.String%29?displayProperty=fullName> property to retrieve groups by the name of the capturing group. Note that you can determine which named groups are present in a regular expression by calling the instance <xref:System.Text.RegularExpressions.Regex.GetGroupNames?displayProperty=fullName> method.  
+-   You can use the <xref:System.Text.RegularExpressions.GroupCollection.Item%28System.String%29?displayProperty=fullName> property to retrieve groups by the name of the capturing group. Note that you can determine which named groups are present in a regular expression by calling the instance <xref:System.Text.RegularExpressions.Regex.GetGroupNames?displayProperty=fullName> method.  
   
    
   
@@ -86,6 +87,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -123,6 +125,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -174,6 +177,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -235,6 +239,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -303,6 +308,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.Match</ReturnType>

@@ -257,7 +257,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.ListViewPagedDataSource.GetItemProperties%2A> method to obtain a <xref:System.ComponentModel.PropertyDescriptorCollection?displayProperty=fullName> object that represents the properties that are used to bind data. The <xref:System.Web.UI.WebControls.ListViewPagedDataSource.GetItemProperties%2A> method calls the [ITypedList.GetItemProperties(PropertyDescriptor\<xref:System.ComponentModel.ITypedList.GetItemProperties%2A?displayProperty=fullName> method of the underlying data source object. If the <xref:System.Web.UI.WebControls.ListViewPagedDataSource.DataSource%2A> property is `null` or does not implement the <xref:System.ComponentModel.ITypedList?displayProperty=fullName> interface, `null` is returned.  
+ Use the <xref:System.Web.UI.WebControls.ListViewPagedDataSource.GetItemProperties%2A> method to obtain a <xref:System.ComponentModel.PropertyDescriptorCollection?displayProperty=fullName> object that represents the properties that are used to bind data. The <xref:System.Web.UI.WebControls.ListViewPagedDataSource.GetItemProperties%2A> method calls the <xref:System.ComponentModel.ITypedList.GetItemProperties%2A?displayProperty=fullName> method of the underlying data source object. If the <xref:System.Web.UI.WebControls.ListViewPagedDataSource.DataSource%2A> property is `null` or does not implement the <xref:System.ComponentModel.ITypedList?displayProperty=fullName> interface, `null` is returned.  
   
  ]]></format>
         </remarks>

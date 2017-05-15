@@ -2,7 +2,7 @@
 title: "How to: Detect When Text in a TextBox Has Changed | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "detecting text change"
 ms.assetid: 1c39ee14-e37f-49fb-a0d1-a9824ca13584
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Detect When Text in a TextBox Has Changed

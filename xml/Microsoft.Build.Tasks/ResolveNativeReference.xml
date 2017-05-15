@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>ResolveNativeReference</c> task. Use the <c>ResolveNativeReference</c> element in your project file to create and execute this task. For usage and parameter information, see [ResolveNativeReference Task](http://msdn.microsoft.com/library/56acd101-de77-4eec-92c6-f5c6d2187579).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.ResolveNativeReference" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AdditionalSearchPaths">
@@ -51,6 +53,7 @@
         <summary>Gets or sets the search paths for resolving assembly identities of native references.</summary>
         <value>The search paths for resolving assembly identities of native references.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ContainedComComponents">
@@ -74,6 +77,7 @@
         <summary>Gets or sets the COM components of the native assembly.</summary>
         <value>The COM components of the native assembly.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ContainedLooseEtcFiles">
@@ -97,6 +101,7 @@
         <summary>Gets or sets the loose Etc files listed in the native manifest.</summary>
         <value>The loose Etc files listed in the native manifest.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ContainedLooseTlbFiles">
@@ -120,6 +125,7 @@
         <summary>Gets or sets the loose .tlb files of the native assembly.</summary>
         <value>The loose .tlb files of the native assembly.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ContainedPrerequisiteAssemblies">
@@ -143,6 +149,7 @@
         <summary>Gets or sets the assemblies that must be present before the manifest can be used.</summary>
         <value>The assemblies that must be present before the manifest can be used.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ContainedTypeLibraries">
@@ -166,6 +173,7 @@
         <summary>Gets or sets the type libraries of the native assembly.</summary>
         <value>The type libraries of the native assembly.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ContainingReferenceFiles">
@@ -189,6 +197,7 @@
         <summary>Gets or sets the reference files.</summary>
         <value>The reference files.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -209,6 +218,7 @@
         <returns>
           <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NativeReferences">
@@ -232,6 +242,7 @@
         <summary>Gets or sets the Win32 native assembly references.</summary>
         <value>The Win32 native assembly references.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

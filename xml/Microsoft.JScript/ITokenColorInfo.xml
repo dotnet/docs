@@ -18,6 +18,7 @@
   <Docs>
     <summary>Defines properties for coloring specific units of code.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Color">
@@ -36,6 +37,7 @@
         <summary>When implemented in a class, gets the color that should be used to show a unit of code.</summary>
         <value>The color that should be used to show the unit of code.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EndPosition">
@@ -54,6 +56,7 @@
         <summary>When implemented in a class, gets the position where a unit of code ends.</summary>
         <value>The position where the unit of code ends.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StartPosition">
@@ -72,6 +75,7 @@
         <summary>When implemented in a class, gets the position where a unit of code starts.</summary>
         <value>The position where the unit of code starts.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -116,7 +116,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Windows.Forms.RadioButton.Appearance%2A> value is set to <xref:System.Windows.Forms.Appearance>, then the <xref:System.Windows.Forms.RadioButton> control is drawn with a circular check box. If the value is set to <xref:System.Windows.Forms.Appearance>, then the <xref:System.Windows.Forms.RadioButton> is drawn as a control that can be toggled to an up or down state. Either type can display text, an image, or both.  
+ If the <xref:System.Windows.Forms.RadioButton.Appearance%2A> value is set to <xref:System.Windows.Forms.Appearance.Normal>, then the <xref:System.Windows.Forms.RadioButton> control is drawn with a circular check box. If the value is set to <xref:System.Windows.Forms.Appearance.Button>, then the <xref:System.Windows.Forms.RadioButton> is drawn as a control that can be toggled to an up or down state. Either type can display text, an image, or both.  
   
    
   
@@ -412,7 +412,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the <xref:System.Windows.Forms.ControlStyles> style bit is set to `false` for the <xref:System.Windows.Forms.RadioButton> control, and the <xref:System.Windows.Forms.RadioButton.DoubleClick> event is not raised.  
+ By default, the <xref:System.Windows.Forms.ControlStyles.StandardClick> style bit is set to `false` for the <xref:System.Windows.Forms.RadioButton> control, and the <xref:System.Windows.Forms.RadioButton.DoubleClick> event is not raised.  
   
  ]]></format>
         </remarks>
@@ -444,7 +444,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the <xref:System.Windows.Forms.ControlStyles> style bit is set to `false` for the <xref:System.Windows.Forms.RadioButton> control, and the <xref:System.Windows.Forms.RadioButton.MouseDoubleClick> event is not raised.  
+ By default, the <xref:System.Windows.Forms.ControlStyles.StandardClick> style bit is set to `false` for the <xref:System.Windows.Forms.RadioButton> control, and the <xref:System.Windows.Forms.RadioButton.MouseDoubleClick> event is not raised.  
   
  ]]></format>
         </remarks>

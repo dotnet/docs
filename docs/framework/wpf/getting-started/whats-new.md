@@ -2,7 +2,7 @@
 title: "What&#39;s New in WPF Version 4.5 | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "WPF, what's new"
 ms.assetid: db086ae4-70bb-4862-95db-2eaca5216bc3
 caps.latest.revision: 55
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # What&#39;s New in WPF Version 4.5
@@ -53,7 +53,7 @@ manager: "wpickett"
   
 <a name="ribbon_control"></a>   
 ## Ribbon control  
- WPF 4.5 ships with a <xref:System.Windows.Controls.Ribbon.Ribbon> control that hosts a Quick Access Toolbar, Application Menu, and tabs.  For more information, see the [Ribbon Overview](http://msdn.microsoft.com/library/2bdef092-190d-47e3-9440-e862b95dacaa).  
+ WPF 4.5 ships with a <xref:System.Windows.Controls.Ribbon.Ribbon> control that hosts a Quick Access Toolbar, Application Menu, and tabs.  For more information, see the [Ribbon Overview](/visualstudio/vsto/ribbon-overview).  
   
 <a name="grouped_virtualization"></a>   
 ## Improved performance when displaying large sets of grouped data  

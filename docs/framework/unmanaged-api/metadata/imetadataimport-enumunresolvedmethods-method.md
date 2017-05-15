@@ -2,18 +2,19 @@
 title: "IMetaDataImport::EnumUnresolvedMethods Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport.EnumUnresolvedMethods"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::EnumUnresolvedMethods"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "EnumUnresolvedMethods method [.NET Framework metadata]"
   - "IMetaDataImport::EnumUnresolvedMethods method [.NET Framework metadata]"
 ms.assetid: eb3187d7-74cf-44b1-aeeb-7a8d2b60e3b7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

@@ -2,7 +2,7 @@
 title: "RadioButton Control Overview (Windows Forms) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "radio buttons, about radio buttons"
 ms.assetid: cd11f0c2-d098-4022-adf9-1455bc166a13
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # RadioButton Control Overview (Windows Forms)

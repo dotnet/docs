@@ -2,18 +2,19 @@
 title: "IHostTask::SetCLRTask Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostTask.SetCLRTask"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostTask::SetCLRTask"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SetCLRTask method [.NET Framework hosting]"
   - "IHostTask::SetCLRTask method [.NET Framework hosting]"
 ms.assetid: e9d39c80-41a1-49e7-bb5e-ea3433bfb5d7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

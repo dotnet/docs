@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>GetFrameworkSdkPath</c> task. Use the <c>GetFrameworkSdkPath</c> element in your project file to create and execute this task. For usage and parameter information, see [GetFrameworkSdkPath Task](http://msdn.microsoft.com/library/2ef82b98-02b6-40cf-a9b5-f0e882fb5064).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.GetFrameworkSdkPath" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -55,6 +57,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FrameworkSdkVersion20Path">
@@ -78,6 +81,7 @@
         <summary>Gets or sets the path to the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 2.0 SDK.</summary>
         <value>The path to the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 2.0 SDK.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FrameworkSdkVersion35Path">
@@ -101,6 +105,7 @@
         <summary>Gets or sets the path to the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 3.5 SDK.</summary>
         <value>The path to the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] 3.5 SDK.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FrameworkSdkVersion40Path">
@@ -124,6 +129,7 @@
         <summary>The path to the v4.0 .NET SDK if it could be found. It will be String.Empty if the SDK was not found.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FrameworkSdkVersion45Path">
@@ -147,6 +153,7 @@
         <summary>The path to the v4.5 .NET SDK if it could be found. It will be String.Empty if the SDK was not found.</summary>
         <value>Returns <see cref="T:System.String" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -170,6 +177,7 @@
         <summary>Gets or sets the path to the latest version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] SDK.</summary>
         <value>The path to the latest version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] SDK.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

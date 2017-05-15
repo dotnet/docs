@@ -2,7 +2,7 @@
 title: "Walkthrough: Hosting a Win32 Control in WPF | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "Win32 code, WPF interoperation"
 ms.assetid: a676b1eb-fc55-4355-93ab-df840c41cea0
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Hosting a Win32 Control in WPF
@@ -148,7 +148,7 @@ manager: "wpickett"
  [!code-csharp[WPFHostingWin32Control#AppendDeleteText](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WPFHostingWin32Control/CSharp/Page1.xaml.cs#appenddeletetext)]
  [!code-vb[WPFHostingWin32Control#AppendDeleteText](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WPFHostingWin32Control/VisualBasic/Page1.xaml.vb#appenddeletetext)]  
   
- When the user selects an item changes their selection, the control notifies the host window by sending it a WM_COMMAND message, which raises the                  <xref:System.Windows.Interop.HwndHost.MessageHook> event for the page. The handler receives the same information as the main window procedure of the host window. It also passes a reference to a Boolean value,                  `handled`. You set to                  `handled` to                  `true` to indicate that you have handled the message and no further processing is needed.  
+ When the user selects an item or changes their selection, the control notifies the host window by sending it a WM_COMMAND message, which raises the                  <xref:System.Windows.Interop.HwndHost.MessageHook> event for the page. The handler receives the same information as the main window procedure of the host window. It also passes a reference to a Boolean value,                  `handled`. You set                  `handled` to                  `true` to indicate that you have handled the message and no further processing is needed.  
   
  WM_COMMAND is sent for a variety of reasons, so you must examine the notification ID to determine whether it is an event that you wish to handle. The ID is contained in the high word of the                  `wParam` parameter. Since                  [!INCLUDE[TLA#tla_net](../../../../includes/tlasharptla-net-md.md)] does not have a HIWORD macro, the sample uses bitwise operators to extract the ID. If the user has made or changed their selection, the ID will be LBN_SELCHANGE.  
   

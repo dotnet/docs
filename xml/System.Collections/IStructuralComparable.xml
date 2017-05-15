@@ -8,6 +8,7 @@
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -68,6 +69,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -96,40 +98,23 @@
         <summary>Determines whether the current collection object precedes, occurs in the same position as, or follows another object in the sort order.</summary>
         <returns>An integer that indicates the relationship of the current collection object to <paramref name="other" />, as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Return value  
+ <list type="table"><listheader><term> Return value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> -1  
+ </description></listheader><item><term> -1  
   
- </term>  
-<description> The current instance precedes <paramref name="other" />.  
+ </term><description> The current instance precedes <paramref name="other" />.  
   
- </description>  
-</item>  
-<item>  
-<term> 0  
+ </description></item><item><term> 0  
   
- </term>  
-<description> The current instance and <paramref name="other" /> are equal.  
+ </term><description> The current instance and <paramref name="other" /> are equal.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> The current instance follows <paramref name="other" />.  
+ </term><description> The current instance follows <paramref name="other" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

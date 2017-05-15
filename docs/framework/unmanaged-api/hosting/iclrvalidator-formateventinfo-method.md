@@ -2,18 +2,19 @@
 title: "ICLRValidator::FormatEventInfo Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRValidator.FormatEventInfo"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRValidator::FormatEventInfo"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "FormatEventInfo method, ICLRValidator interface [.NET Framework hosting]"
   - "ICLRValidator::FormatEventInfo method [.NET Framework hosting]"
 ms.assetid: 808e1f1d-52f4-47c4-83cc-dcf47d075219
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

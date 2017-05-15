@@ -2,11 +2,10 @@
 title: "Managed Execution Process | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -117,6 +116,6 @@ manager: "wpickett"
  [Ilasm.exe (IL Assembler)](../../docs/framework/tools/ilasm-exe-il-assembler.md)   
  [Security](../../docs/standard/security/index.md)   
  [Interoperating with Unmanaged Code](../../docs/framework/interop/index.md)   
- [Deployment](../../docs/framework/deployment/net-framework-and-applications.md)   
+ [Deployment](../../docs/framework/deployment/net-framework-applications.md)   
  [Assemblies in the Common Language Runtime](../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)   
  [Application Domains](../../docs/framework/app-domains/application-domains.md)

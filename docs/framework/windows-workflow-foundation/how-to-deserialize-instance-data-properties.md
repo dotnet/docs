@@ -2,7 +2,7 @@
 title: "How to: Deserialize Instance Data Properties | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -24,7 +24,7 @@ There may be situations when a user or workflow administrator may want to manual
   
 -   WriteOnlyComplexDataProperties  
   
- Primitive data properties refer to properties whose .NET Framework types are considered to be “common” (for example, Int32 and String), while complex data properties refer to all other types. An exact enumeration of primitive types is found later in this code example.  
+ Primitive data properties refer to properties whose .NET Framework types are considered to be "common" (for example, Int32 and String), while complex data properties refer to all other types. An exact enumeration of primitive types is found later in this code example.  
   
  Read/write properties refer to properties that are returned back to the Workflow Runtime when an instance is loaded. WriteOnly properties are written to the database and then never read again.  
   

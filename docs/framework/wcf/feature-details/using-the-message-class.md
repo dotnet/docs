@@ -2,7 +2,7 @@
 title: "Using the Message Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -136,12 +136,12 @@ The <xref:System.ServiceModel.Channels.Message> class is fundamental to [!INCLUD
  The `MessageBuffer` class has other members worth noting. The <xref:System.ServiceModel.Channels.MessageBuffer.Close%2A> method can be called to free resources when the buffer contents are no longer required. The <xref:System.ServiceModel.Channels.MessageBuffer.BufferSize%2A> property returns the size of the allocated buffer. The <xref:System.ServiceModel.Channels.MessageBuffer.MessageContentType%2A> property returns the MIME content type of the message.  
   
 ## Accessing the Message Body for Debugging  
- For debugging purposes, you can call the <xref:System.ServiceModel.Channels.Message.ToString%2A> method to get a representation of the message as a string. This representation generally matches the way a message would look on the wire if it were encoded with the text encoder, except that the XML would be better formatted for human readability. The one exception to this is the message body. The body can be read only once, and `ToString` does not change the message state. Therefore, the `ToString` method might not be able to access the body and might substitute a placeholder (for example, “…” or three dots) instead of the message body. Therefore, do not use `ToString` to log messages if the body content of the messages is important.  
+ For debugging purposes, you can call the <xref:System.ServiceModel.Channels.Message.ToString%2A> method to get a representation of the message as a string. This representation generally matches the way a message would look on the wire if it were encoded with the text encoder, except that the XML would be better formatted for human readability. The one exception to this is the message body. The body can be read only once, and `ToString` does not change the message state. Therefore, the `ToString` method might not be able to access the body and might substitute a placeholder (for example, "…" or three dots) instead of the message body. Therefore, do not use `ToString` to log messages if the body content of the messages is important.  
   
 ## Accessing Other Message Parts  
  Various properties are provided to access information about the message other than its body contents. However, these cannot be called once the message has been closed:  
   
--   The <xref:System.ServiceModel.Channels.Message.Headers%2A> property represents the message headers. See the section on “Working with Headers” later in this topic.  
+-   The <xref:System.ServiceModel.Channels.Message.Headers%2A> property represents the message headers. See the section on "Working with Headers" later in this topic.  
   
 -   The <xref:System.ServiceModel.Channels.Message.Properties%2A> property represents the message properties, which are pieces of named data attached to the message that do not generally get emitted when the message is sent. See the section on "Working with Properties" later in this topic.  
   
@@ -166,12 +166,12 @@ The <xref:System.ServiceModel.Channels.Message> class is fundamental to [!INCLUD
   
  In the SOAP header model, headers can have an `Actor` value that specifies the intended recipient of the header. The most basic `FindHeader` overload searches only headers intended for the ultimate receiver of the message. However, another overload enables you to specify which `Actor` values are included in the search. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the SOAP specification.  
   
- A [CopyTo(MessageHeaderInfo\<xref:System.ServiceModel.Channels.MessageHeaders.CopyTo%28System.ServiceModel.Channels.MessageHeaderInfo%5B%5D%2CSystem.Int32%29> method is provided to copy headers from a <xref:System.ServiceModel.Channels.MessageHeaders> collection to an array of <xref:System.ServiceModel.Channels.MessageHeaderInfo> objects.  
+ A <xref:System.ServiceModel.Channels.MessageHeaders.CopyTo%28System.ServiceModel.Channels.MessageHeaderInfo%5B%5D%2CSystem.Int32%29> method is provided to copy headers from a <xref:System.ServiceModel.Channels.MessageHeaders> collection to an array of <xref:System.ServiceModel.Channels.MessageHeaderInfo> objects.  
   
  To access the XML data in a header, you can call <xref:System.ServiceModel.Channels.MessageHeaders.GetReaderAtHeader%2A> and return an XML reader for the specific header index. If you want to deserialize the header contents into an object, use <xref:System.ServiceModel.Channels.MessageHeaders.GetHeader%60%601%28System.Int32%29> or one of the other overloads. The most basic overloads deserialize headers using the <xref:System.Runtime.Serialization.DataContractSerializer> configured in the default way. If you want to use a different serializer or a different configuration of the `DataContractSerializer`, use one of the overloads that take an `XmlObjectSerializer`. There are also overloads that take the header name, namespace, and optionally a list of `Actor` values instead of an index; this is a combination of `FindHeader` and `GetHeader`.  
   
 ## Working with Properties  
- A `Message` instance can contain an arbitrary number of named objects of arbitrary types. This collection is accessed through the `Properties` property of type `MessageProperties`. The collection implements the <xref:System.Collections.Generic.IDictionary%602> interface and acts as a mapping from <xref:System.String> to <xref:System.Object>. Normally, property values do not map directly to any part of the message on the wire, but rather provide various message processing hints to the various channels in the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] channel stack or to the [CopyTo(MessageHeaderInfo\<xref:System.ServiceModel.Channels.MessageHeaders.CopyTo%28System.ServiceModel.Channels.MessageHeaderInfo%5B%5D%2CSystem.Int32%29> service framework. For an example, see [Data Transfer Architectural Overview](../../../../docs/framework/wcf/feature-details/data-transfer-architectural-overview.md).  
+ A `Message` instance can contain an arbitrary number of named objects of arbitrary types. This collection is accessed through the `Properties` property of type `MessageProperties`. The collection implements the <xref:System.Collections.Generic.IDictionary%602> interface and acts as a mapping from <xref:System.String> to <xref:System.Object>. Normally, property values do not map directly to any part of the message on the wire, but rather provide various message processing hints to the various channels in the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] channel stack or to the <xref:System.ServiceModel.Channels.MessageHeaders.CopyTo%28System.ServiceModel.Channels.MessageHeaderInfo%5B%5D%2CSystem.Int32%29> service framework. For an example, see [Data Transfer Architectural Overview](../../../../docs/framework/wcf/feature-details/data-transfer-architectural-overview.md).  
   
 ## Inheriting from the Message Class  
  If the built-in message types created using `CreateMessage` do not meet your requirements, create a class that derives from the `Message` class.  

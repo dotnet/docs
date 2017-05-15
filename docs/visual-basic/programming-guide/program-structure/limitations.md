@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "Visual Basic code, limitations"
 ms.assetid: cf1646b7-5d24-48c6-9616-bda8a4849d91
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

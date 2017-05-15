@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "objects [Visual Basic], list of items"
 ms.assetid: fe941aba-6340-455c-8b1f-ffd9c3eb1ac5
 caps.latest.revision: 29
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

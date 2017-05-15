@@ -22,6 +22,7 @@
   <Docs>
     <summary>Represents the runtime state of a dynamically generated method.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,6 +44,7 @@
         <param name="locals">The hoisted local variables from the parent context.</param>
         <summary>Creates an object to hold state of a dynamically generated method.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Constants">
@@ -61,6 +63,7 @@
       <Docs>
         <summary>Represents the non-trivial constants and locally executable expressions that are referenced by a dynamically generated method.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Locals">
@@ -79,6 +82,7 @@
       <Docs>
         <summary>Represents the hoisted local variables from the parent context.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

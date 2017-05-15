@@ -2,18 +2,19 @@
 title: "ICorDebugClass::GetModule Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugClass.GetModule"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugClass::GetModule"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetModule method, ICorDebugClass interface [.NET Framework debugging]"
   - "ICorDebugClass::GetModule method [.NET Framework debugging]"
 ms.assetid: 87029cc4-e5e1-42d5-8b98-655bb7ece520
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

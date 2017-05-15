@@ -2,7 +2,7 @@
 title: "How to: Implement Two-Way Communication Between DHTML Code and Client Application Code | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "DHTML, embedding in Windows Forms"
 ms.assetid: 55353a32-b09e-4479-a521-ff3a5ff9a708
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Implement Two-Way Communication Between DHTML Code and Client Application Code

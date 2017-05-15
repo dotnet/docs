@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines an encoder that is used to encode [!INCLUDE[TLA#tla_wdp](~/includes/tlasharptla-wdp-md.md)] images.</summary>
+    <summary>Defines an encoder that is used to encode Microsoft Windows Media Photo images.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -75,56 +75,31 @@
         <summary>Gets or sets the level of alpha frequency data to discard during a compressed domain transcode.</summary>
         <value>The level of alpha data to discard when encoding the image. The value range is 0 (no data discarded) to 4 (alpha channel completely discarded). The default is 1.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> 0  
+ </description></listheader><item><term> 0  
   
- </term>  
-<description> No image frequency data is discarded.  
+ </term><description> No image frequency data is discarded.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> FlexBits are discarded. The image quality of the image is reduced without changing the effective resolution of the image.  
+ </term><description> FlexBits are discarded. The image quality of the image is reduced without changing the effective resolution of the image.  
   
- </description>  
-</item>  
-<item>  
-<term> 2  
+ </description></item><item><term> 2  
   
- </term>  
-<description> HighPass frequency data band is discarded. The image's effective resolution is reduced by a factor of 4 in both dimensions.  
+ </term><description> HighPass frequency data band is discarded. The image's effective resolution is reduced by a factor of 4 in both dimensions.  
   
- </description>  
-</item>  
-<item>  
-<term> 3  
+ </description></item><item><term> 3  
   
- </term>  
-<description> HighPass and LowPass frequency data bands are discarded. The image's effective resolution is reduced by a factor of 16 in both dimensions.  
+ </term><description> HighPass and LowPass frequency data bands are discarded. The image's effective resolution is reduced by a factor of 16 in both dimensions.  
   
- </description>  
-</item>  
-<item>  
-<term> 4  
+ </description></item><item><term> 4  
   
- </term>  
-<description> The alpha channel is completely discarded. The pixel format is changed to reflect the removal of the alpha channel.  
+ </term><description> The alpha channel is completely discarded. The pixel format is changed to reflect the removal of the alpha channel.  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -348,48 +323,27 @@
         <summary>Gets or sets the level of image data to discard during a compressed domain transcode.</summary>
         <value>The level of image data to discard during a compressed domain encoding of the image. The value range is 0 (no data discarded) to 3 (HighPass and LowPass discarded). The default is 1.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> 0  
+ </description></listheader><item><term> 0  
   
- </term>  
-<description> No image frequency data is discarded.  
+ </term><description> No image frequency data is discarded.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> FlexBits are discarded. The image quality of the image is reduced without changing the effective resolution of the image.  
+ </term><description> FlexBits are discarded. The image quality of the image is reduced without changing the effective resolution of the image.  
   
- </description>  
-</item>  
-<item>  
-<term> 2  
+ </description></item><item><term> 2  
   
- </term>  
-<description> HighPass frequency data band is discarded. The image's effective resolution is reduced by a factor of 4 in both dimensions.  
+ </term><description> HighPass frequency data band is discarded. The image's effective resolution is reduced by a factor of 4 in both dimensions.  
   
- </description>  
-</item>  
-<item>  
-<term> 3  
+ </description></item><item><term> 3  
   
- </term>  
-<description> HighPass and LowPass frequency data bands are discarded. The image's effective resolution is reduced by a factor of 16 in both dimensions.  
+ </term><description> HighPass and LowPass frequency data bands are discarded. The image's effective resolution is reduced by a factor of 16 in both dimensions.  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -500,40 +454,23 @@
         <summary>Gets or sets the overlap processing level.</summary>
         <value>The overlap processing level. The default is 1.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> 0  
+ </description></listheader><item><term> 0  
   
- </term>  
-<description> No overlap processing is enabled.  
+ </term><description> No overlap processing is enabled.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> One level of overlap processing is enabled. Encoded values of 4x4 blocks are modified based on the values of neighboring blocks.  
+ </term><description> One level of overlap processing is enabled. Encoded values of 4x4 blocks are modified based on the values of neighboring blocks.  
   
- </description>  
-</item>  
-<item>  
-<term> 2  
+ </description></item><item><term> 2  
   
- </term>  
-<description> Two levels of overlap processing are enabled. In addition to the first level of processing, encoded values of 16x16 macro blocks are modified based on the values of neighboring macro blocks.  
+ </term><description> Two levels of overlap processing are enabled. In addition to the first level of processing, encoded values of 16x16 macro blocks are modified based on the values of neighboring macro blocks.  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -613,48 +550,27 @@
         <summary>Gets or sets the sub-sampling level for RGB image encoding.</summary>
         <value>The sub-sampling level for RGB image encoding. The range is 0 to 3. The default is 3.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> 0  
+ </description></listheader><item><term> 0  
   
- </term>  
-<description> 4:0:0 encoding. Chroma content is discarded; luminance is preserved.  
+ </term><description> 4:0:0 encoding. Chroma content is discarded; luminance is preserved.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> 4:2:0 encoding. Chroma resolution is reduced by 1/4 of luminance resolution.  
+ </term><description> 4:2:0 encoding. Chroma resolution is reduced by 1/4 of luminance resolution.  
   
- </description>  
-</item>  
-<item>  
-<term> 2  
+ </description></item><item><term> 2  
   
- </term>  
-<description> 4:2:2 encoding. Chroma resolution is reduced to 1/2 of luminance resolution.  
+ </term><description> 4:2:2 encoding. Chroma resolution is reduced to 1/2 of luminance resolution.  
   
- </description>  
-</item>  
-<item>  
-<term> 3  
+ </description></item><item><term> 3  
   
- </term>  
-<description> 4:4:4 encoding. Chroma resolution is preserved.  
+ </term><description> 4:4:4 encoding. Chroma resolution is preserved.  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

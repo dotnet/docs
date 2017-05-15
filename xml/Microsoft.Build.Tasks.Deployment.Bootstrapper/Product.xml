@@ -28,6 +28,7 @@
   <Docs>
     <summary>Represents a product that the <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder" /> finds in the <see cref="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder.Path" /> property.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,6 +44,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see langword="Product" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Includes">
@@ -61,6 +63,7 @@
         <summary>Gets all products that this product installs.</summary>
         <value>A <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductCollection" /> object that represents all products that this product installs.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -79,6 +82,7 @@
         <summary>Gets a human-readable name for this product.</summary>
         <value>A string that represents a human-readable name for this product.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProductBuilder">
@@ -97,6 +101,7 @@
         <summary>Gets a buildable version of the product.</summary>
         <value>A <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder" /> object that represents a buildable version of the product.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProductCode">
@@ -115,6 +120,7 @@
         <summary>Gets a string that indicates the unique product identifier of this product.</summary>
         <value>A string that indicates the unique product identifier of this product.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

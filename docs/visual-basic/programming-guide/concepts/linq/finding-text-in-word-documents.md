@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: eea9819b-a78a-4552-bf13-8837fc0e7a37
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Finding Text in Word Documents (Visual Basic)

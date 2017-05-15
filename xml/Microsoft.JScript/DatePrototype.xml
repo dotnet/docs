@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides static methods and properties for <see cref="T:Microsoft.JScript.DateObject" /> objects. All methods of this class are called by passing in a reference to the object that is requesting access to the method. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="constructor">
@@ -31,6 +32,7 @@
         <summary>Gets a reference to a prototype-based object that is using this prototype.</summary>
         <value>A reference to a prototype-based object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="getDate">
@@ -58,6 +60,7 @@
         <summary>Gets the date value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
         <returns>The date value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="getDay">
@@ -85,6 +88,7 @@
         <summary>Gets the day-of-the-week value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
         <returns>The day-of-the-week value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="getFullYear">
@@ -112,6 +116,7 @@
         <summary>Gets the year value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
         <returns>The year value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="getHours">
@@ -139,6 +144,7 @@
         <summary>Gets the hour value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
         <returns>The hour value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="getMilliseconds">
@@ -166,6 +172,7 @@
         <summary>Gets the millisecond value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
         <returns>The millisecond value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="getMinutes">
@@ -193,6 +200,7 @@
         <summary>Gets the minutes value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
         <returns>The minutes value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="getMonth">
@@ -220,6 +228,7 @@
         <summary>Gets the month value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
         <returns>The month value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="getSeconds">
@@ -247,6 +256,7 @@
         <summary>Gets the seconds value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
         <returns>The seconds value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="getTime">
@@ -274,6 +284,7 @@
         <summary>Gets the time value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
         <returns>The time value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="getTimezoneOffset">
@@ -301,6 +312,7 @@
         <summary>Gets the offset of the specified <see cref="T:Microsoft.JScript.DateObject" /> from Coordinated Universal Time (UTC).</summary>
         <returns>The difference between <paramref name="thisob" /> and Coordinated Universal Time (UTC).</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="getUTCDate">
@@ -328,6 +340,7 @@
         <summary>Gets the date value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The date value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="getUTCDay">
@@ -355,6 +368,7 @@
         <summary>Gets the day-of-the-week value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The day-of-the-week value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="getUTCFullYear">
@@ -382,6 +396,7 @@
         <summary>Gets the year value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The year value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="getUTCHours">
@@ -409,6 +424,7 @@
         <summary>Gets the hour value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The hour value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="getUTCMilliseconds">
@@ -436,6 +452,7 @@
         <summary>Gets the millisecond value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The millisecond value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="getUTCMinutes">
@@ -463,6 +480,7 @@
         <summary>Gets the minutes value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The minutes value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="getUTCMonth">
@@ -490,6 +508,7 @@
         <summary>Gets the month value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The month value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="getUTCSeconds">
@@ -517,6 +536,7 @@
         <summary>Gets the seconds value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The seconds value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="getVarDate">
@@ -544,6 +564,7 @@
         <summary>Returns the specified <see cref="T:Microsoft.JScript.DateObject" /> as a <see cref="T:System.DateTime" /> object.</summary>
         <returns>The value of <paramref name="thisob" />, expressed as a <see cref="T:System.DateTime" /> object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="getYear">
@@ -574,6 +595,7 @@
         <summary>Gets the year value of the specified <see cref="T:Microsoft.JScript.DateObject" />, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The year value of <paramref name="thisob" />, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="setDate">
@@ -603,6 +625,7 @@
         <summary>Sets the date value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified date value.</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="setFullYear">
@@ -636,6 +659,7 @@
         <summary>Sets the year value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified year value.</summary>
         <returns>The year value that is set for <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="setHours">
@@ -671,6 +695,7 @@
         <summary>Sets the hour value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified hour value.</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="setMilliseconds">
@@ -700,6 +725,7 @@
         <summary>Sets the millisecond value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified millisecond value.</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="setMinutes">
@@ -733,6 +759,7 @@
         <summary>Sets the minutes value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified minutes value.</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="setMonth">
@@ -764,6 +791,7 @@
         <summary>Sets the month value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified month value.</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="setSeconds">
@@ -795,6 +823,7 @@
         <summary>Sets the seconds value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified seconds value.</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="setTime">
@@ -824,6 +853,7 @@
         <summary>Sets the time value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified time value.</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="setUTCDate">
@@ -853,6 +883,7 @@
         <summary>Sets the date value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified date value, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="setUTCFullYear">
@@ -886,6 +917,7 @@
         <summary>Sets the year value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified year value, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="setUTCHours">
@@ -921,6 +953,7 @@
         <summary>Sets the hour value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified hour value, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="setUTCMilliseconds">
@@ -950,6 +983,7 @@
         <summary>Sets the millisecond value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified millisecond value, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="setUTCMinutes">
@@ -983,6 +1017,7 @@
         <summary>Sets the minutes value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified minutes value, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="setUTCMonth">
@@ -1014,6 +1049,7 @@
         <summary>Sets the month value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified month value, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="setUTCSeconds">
@@ -1045,6 +1081,7 @@
         <summary>Sets the seconds value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified seconds value, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set, expressed in UTC.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="setYear">
@@ -1077,6 +1114,7 @@
         <summary>Sets the year value of a <see cref="T:Microsoft.JScript.DateObject" /> to the specified year value.</summary>
         <returns>The new value of <paramref name="thisob" /> after the value is set.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toDateString">
@@ -1104,6 +1142,7 @@
         <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the day of the week, the month, the date, and the year.</summary>
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toGMTString">
@@ -1134,6 +1173,7 @@
         <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the day of the week, the month, the date, the year, and the time, expressed in Coordinated Universal Time (UTC). Use <see cref="M:Microsoft.JScript.DatePrototype.toUTCString(System.Object)" /> instead, when you can.</summary>
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toLocaleDateString">
@@ -1161,6 +1201,7 @@
         <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the date but not the time.</summary>
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toLocaleString">
@@ -1188,6 +1229,7 @@
         <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the date and time.</summary>
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toLocaleTimeString">
@@ -1215,6 +1257,7 @@
         <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the time but not the date.</summary>
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toString">
@@ -1242,6 +1285,7 @@
         <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the day of the week, the month, the date, the time, the time zone, and the year.</summary>
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toTimeString">
@@ -1269,6 +1313,7 @@
         <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the time and the time zone.</summary>
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toUTCString">
@@ -1296,6 +1341,7 @@
         <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.DateObject" /> that contains the day of the week, the month, the date, the year, and the time, expressed in Coordinated Universal Time (UTC).</summary>
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="valueOf">
@@ -1323,6 +1369,7 @@
         <summary>Returns the value of the specified <see cref="T:Microsoft.JScript.DateObject" />.</summary>
         <returns>The value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

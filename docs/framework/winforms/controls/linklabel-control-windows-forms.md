@@ -2,7 +2,7 @@
 title: "LinkLabel Control (Windows Forms) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "LinkLabel control [Windows Forms]"
 ms.assetid: af1fd04e-e126-4fd7-9a4e-13b49010c5ca
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # LinkLabel Control (Windows Forms)

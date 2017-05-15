@@ -2,18 +2,19 @@
 title: "_CorImageUnloading Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "_CorImageUnloading"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "_CorImageUnloading"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "_CorImageUnloading function [.NET Framework hosting]"
 ms.assetid: b4367214-6dac-4280-aa11-fd487ff30bc4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -34,7 +37,7 @@ Notifies the loader when the managed module images are unloaded.
 ## Syntax  
   
 ```  
-STDAPI (VOID) _CorImageUnloading(   
+STDAPI (VOID) _CorImageUnloading(   
    [in] PVOID* ImageBase  
 );  
 ```  

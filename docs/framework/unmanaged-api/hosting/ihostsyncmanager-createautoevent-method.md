@@ -2,18 +2,19 @@
 title: "IHostSyncManager::CreateAutoEvent Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostSyncManager.CreateAutoEvent"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostSyncManager::CreateAutoEvent"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostSyncManager::CreateAutoEvent method [.NET Framework hosting]"
   - "CreateAutoEvent method [.NET Framework hosting]"
 ms.assetid: 3153643e-cf5c-4b44-8e0e-c2b22cb08208
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

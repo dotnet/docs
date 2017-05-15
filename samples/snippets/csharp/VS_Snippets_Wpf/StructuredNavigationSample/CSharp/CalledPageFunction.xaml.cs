@@ -1,9 +1,9 @@
 //<SnippetCalledPageFunctionCODEBEHIND1>
 //<SnippetAcceptsInitialDataCODEBEHIND1>
 //<SnippetReturnCODEBEHIND1>
-using System; // String
-using System.Windows; // RoutedEventArgs, RoutedEventHandler
-using System.Windows.Navigation; // PageFunction
+using System;
+using System.Windows;
+using System.Windows.Navigation;
 
 namespace StructuredNavigationSample
 {

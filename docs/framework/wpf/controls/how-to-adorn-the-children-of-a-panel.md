@@ -2,7 +2,7 @@
 title: "How to: Adorn the Children of a Panel | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "Panel control, binding adorners to children"
 ms.assetid: 4cc9b972-b472-4e5c-bdf3-3702d7fbb1f5
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Adorn the Children of a Panel

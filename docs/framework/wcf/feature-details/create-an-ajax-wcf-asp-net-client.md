@@ -2,7 +2,7 @@
 title: "How to: Create an AJAX-Enabled WCF Service and an ASP.NET Client that Accesses the Service | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -175,6 +175,4 @@ alert(result);
 </body>  
 </html>  
   
-```  
-  
-<!-- TODO: review snippet reference  [!CODE [Microsoft.Win32.RegistryKey#4](Microsoft.Win32.RegistryKey#4)]  -->
+```     

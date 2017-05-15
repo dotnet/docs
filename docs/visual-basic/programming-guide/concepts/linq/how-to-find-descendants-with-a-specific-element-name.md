@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 78915518-0d25-4051-ab55-929779989510
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Find Descendants with a Specific Element Name (Visual Basic)

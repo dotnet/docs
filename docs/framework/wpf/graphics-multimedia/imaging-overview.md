@@ -2,7 +2,7 @@
 title: "Imaging Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,8 +26,8 @@ helpviewer_keywords:
   - "rotating images"
 ms.assetid: 72aad87a-e6f3-4937-94cd-a18b7766e990
 caps.latest.revision: 32
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Imaging Overview

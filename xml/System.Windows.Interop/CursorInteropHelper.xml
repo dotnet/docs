@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a static helper class for [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]/[!INCLUDE[TLA2#tla_win32](~/includes/tla2sharptla-win32-md.md)] interoperation with one method, which is used to obtain a [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] <see cref="T:System.Windows.Input.Cursor" /> object based on a provided [!INCLUDE[TLA#tla_win32](~/includes/tlasharptla-win32-md.md)] cursor handle.</summary>
+    <summary>Provides a static helper class for WPF/Win32 interoperation with one method, which is used to obtain a Windows Presentation Foundation (WPF) <see cref="T:System.Windows.Input.Cursor" /> object based on a provided Win32 cursor handle.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

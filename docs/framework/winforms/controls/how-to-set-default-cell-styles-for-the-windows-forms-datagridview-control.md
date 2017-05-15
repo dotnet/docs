@@ -2,7 +2,7 @@
 title: "How to: Set Default Cell Styles for the Windows Forms DataGridView Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "data grids, cell styles"
 ms.assetid: 1aaaca43-5340-447e-99c0-9177d9776aa1
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set Default Cell Styles for the Windows Forms DataGridView Control

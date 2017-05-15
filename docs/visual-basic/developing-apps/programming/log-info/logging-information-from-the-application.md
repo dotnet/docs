@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "examples [Visual Basic], logging application information"
 ms.assetid: 8bf4f047-22d6-48d6-aec5-93b98ad5b8e8
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

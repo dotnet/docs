@@ -2,7 +2,7 @@
 title: "How to: Provide a Toolbox Bitmap for a Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "bitmaps [Windows Forms], custom controls"
 ms.assetid: 0ed0840a-616d-41ba-a27d-3573241932ad
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Provide a Toolbox Bitmap for a Control

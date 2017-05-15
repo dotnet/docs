@@ -2,18 +2,19 @@
 title: "ICorProfilerInfo3::GetAppDomainsContainingModule Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo3.GetAppDomainsContainingModule Method"
-apilocation: 
+api_location: 
   - "Mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo3::GetAppDomainsContainingModule"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetAppDomainsContainingModule method [.NET Framework profiling]"
   - "ICorProfilerInfo3::GetAppDomainsContainingModule method [.NET Framework profiling]"
 ms.assetid: 603b3881-ea94-4dca-95cd-91eebac873a0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

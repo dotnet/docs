@@ -2,7 +2,7 @@
 title: "Developing Custom Windows Forms Controls with the .NET Framework | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Control class, Windows Forms"
 ms.assetid: 236cebc0-bd71-4f18-9fd6-5d0e592375df
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Developing Custom Windows Forms Controls with the .NET Framework

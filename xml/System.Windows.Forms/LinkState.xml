@@ -12,6 +12,7 @@
   <Docs>
     <summary>Specifies constants that define the state of the link.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Active">
@@ -28,6 +29,7 @@
       </ReturnValue>
       <Docs>
         <summary>The state of a link that has been clicked.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Hover">
@@ -44,6 +46,7 @@
       </ReturnValue>
       <Docs>
         <summary>The state of a link over which a mouse pointer is resting.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -60,6 +63,7 @@
       </ReturnValue>
       <Docs>
         <summary>The state of a link in its normal state (none of the other states apply).</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Visited">
@@ -76,6 +80,7 @@
       </ReturnValue>
       <Docs>
         <summary>The state of a link that has been visited.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

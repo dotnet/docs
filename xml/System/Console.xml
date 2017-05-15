@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Console</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -20,9 +21,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the standard input, output, and error streams for console applications. This class cannot be inherited.  
-  
- To browse the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/console.cs#f907d79481da6ba4).</summary>
+    <summary>Represents the standard input, output, and error streams for console applications. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -187,6 +186,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -238,6 +238,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -287,6 +288,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -345,6 +347,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -402,6 +405,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -457,6 +461,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -511,6 +516,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -539,6 +545,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -593,6 +600,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -639,6 +647,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -686,6 +695,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -732,6 +742,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -774,6 +785,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -829,6 +841,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -849,14 +862,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A get operation for a Windows-based application, in which a console does not exist, returns <xref:System.ConsoleColor>.  
+ A get operation for a Windows-based application, in which a console does not exist, returns <xref:System.ConsoleColor.Gray>.  
   
    
   
 ## Examples  
  The following example checks whether the console's background color is black and, if it is, it changes the background color to red and the foreground color to black.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.ConsoleColor#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.consolecolor/cs/Example2.cs#2)]  -->
+ [!code-csharp[System.ConsoleColor#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.consolecolor/cs/Example2.cs#2)] 
  [!code-vb[System.ConsoleColor#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.consolecolor/vb/Example2.vb#2)]  
   
  The following example saves the values of the <xref:System.ConsoleColor> enumeration to an array and stores the current values of the <xref:System.Console.BackgroundColor%2A> and <xref:System.Console.ForegroundColor%2A> properties to variables. It then changes the foreground color to each color in the <xref:System.ConsoleColor> enumeration except to the color that matches the current background, and it changes the background color to each color in the <xref:System.ConsoleColor> enumeration except to the color that matches the current foreground. (If the foreground color is the same as the background color, the text isn't visible.) Finally, it calls the <xref:System.Console.ResetColor%2A> method to restore the original console colors.  
@@ -880,6 +893,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -925,6 +939,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -965,6 +980,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -993,6 +1009,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1021,6 +1038,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1049,6 +1067,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1097,6 +1116,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1124,6 +1144,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1151,6 +1172,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1220,6 +1242,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1298,6 +1321,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1326,6 +1350,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1377,6 +1402,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
@@ -1407,6 +1436,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1457,6 +1487,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
@@ -1496,6 +1530,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1546,6 +1581,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
@@ -1585,6 +1624,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1629,6 +1669,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1680,6 +1721,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1701,14 +1743,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Console.Read%2A> method blocks its return while you type input characters; it terminates when you press the <xref:System.ConsoleKey> key. Pressing Enter appends a platform-dependent line termination sequence to your input (for example, Windows appends a carriage return-linefeed sequence). Subsequent calls to the <xref:System.Console.Read%2A> method retrieve your input one character at a time. After the final character is retrieved, <xref:System.Console.Read%2A> blocks its return again and the cycle repeats.  
+ The <xref:System.Console.Read%2A> method blocks its return while you type input characters; it terminates when you press the <xref:System.ConsoleKey.Enter> key. Pressing Enter appends a platform-dependent line termination sequence to your input (for example, Windows appends a carriage return-linefeed sequence). Subsequent calls to the <xref:System.Console.Read%2A> method retrieve your input one character at a time. After the final character is retrieved, <xref:System.Console.Read%2A> blocks its return again and the cycle repeats.  
   
 > [!IMPORTANT]
 >  The <xref:System.Console.ReadLine%2A> method, or the <xref:System.Console.KeyAvailable%2A> property and <xref:System.Console.ReadKey%2A> method are preferable to using the <xref:System.Console.Read%2A> method.  
   
  Note that the method does not return -1 unless you perform one of the following actions:  
   
--   Simultaneously press the <xref:System.ConsoleModifiers> modifier key and <xref:System.ConsoleKey> console key (Ctrl+Z), which signals the end-of-file condition.  
+-   Simultaneously press the <xref:System.ConsoleModifiers.Control> modifier key and <xref:System.ConsoleKey.Z> console key (Ctrl+Z), which signals the end-of-file condition.  
   
 -   Press an equivalent key that signals the end-of-file condition, such as the F6 function key in Windows.  
   
@@ -1736,6 +1778,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1792,6 +1835,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1851,6 +1895,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1942,6 +1987,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1987,6 +2033,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2047,6 +2094,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2110,6 +2158,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2162,6 +2211,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2214,6 +2264,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2270,6 +2321,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2333,6 +2385,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2391,6 +2444,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2434,6 +2488,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2483,6 +2538,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2538,6 +2594,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2593,6 +2650,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2644,6 +2702,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2699,6 +2758,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2747,6 +2807,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2790,6 +2851,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2822,6 +2884,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2870,6 +2933,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2918,6 +2982,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2966,6 +3031,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3014,6 +3080,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3062,6 +3129,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3110,6 +3178,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3158,6 +3227,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3211,6 +3281,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3264,6 +3335,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3282,7 +3354,7 @@
         <Parameter Name="arg0" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg0">An object to write using <c>format</c>.</param>
         <summary>Writes the text representation of the specified object to the standard output stream using the specified format information.</summary>
         <remarks>
@@ -3312,8 +3384,8 @@
 ## Examples  
  The following example uses the `WriteLine` method to demonstrate the standard formatting specifiers for numbers, dates, and enumerations.  
   
- <!-- TODO: review snippet reference [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)]  -->
- [!code-csharp[console.writelineFmt1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.writelineFmt1/cs/wl.cs#1)]
+ [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)] 
+ [!code-csharp[console.writelineFmt1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.writelineFmt1/cs/wl.cs#1)] 
  [!code-vb[console.writelineFmt1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/console.writelineFmt1/vb/wl.vb#1)]  
   
  The following example illustrates the use of the <xref:System.Console.Write%2A> method.  
@@ -3339,6 +3411,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3363,7 +3436,7 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg">An array of objects to write using <c>format</c>.</param>
         <summary>Writes the text representation of the specified array of objects to the standard output stream using the specified format information.</summary>
         <remarks>
@@ -3398,7 +3471,7 @@
  [!code-csharp[System.Console.Write#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.console.write/cs/WriteParams1.cs#1)]
  [!code-vb[System.Console.Write#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.console.write/vb/WriteParams1.vb#1)]  
   
- Note that the example calls the <xref:System.Console.Write%28System.String%2CSystem.Object%5B%5D%29> method rather than the [WriteLine(String, Object\<xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29> method because it attempts to display the value of the `Person.Remarks` property on the same line. To do this, it examines the value of the <xref:System.Console.CursorLeft%2A> and <xref:System.Console.WindowWidth%2A> properties to determine whether there is enough space for the remark to fit.  If there is, it displays the line. If not, it writes a line, indents three spaces, and displays the remark.  
+ Note that the example calls the <xref:System.Console.Write%28System.String%2CSystem.Object%5B%5D%29> method rather than the <xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29> method because it attempts to display the value of the `Person.Remarks` property on the same line. To do this, it examines the value of the <xref:System.Console.CursorLeft%2A> and <xref:System.Console.WindowWidth%2A> properties to determine whether there is enough space for the remark to fit.  If there is, it displays the line. If not, it writes a line, indents three spaces, and displays the remark.  
   
  The following example is identical to the first, except that it supplies a five-item list as the `arg` argument instead of a parameter array.  
   
@@ -3425,6 +3498,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3474,6 +3548,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3493,7 +3568,7 @@
         <Parameter Name="arg1" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg0">The first object to write using <c>format</c>.</param>
         <param name="arg1">The second object to write using <c>format</c>.</param>
         <summary>Writes the text representation of the specified objects to the standard output stream using the specified format information.</summary>
@@ -3524,7 +3599,7 @@
 ## Examples  
  The following example uses the `WriteLine` method to demonstrate the standard formatting specifiers for numbers, dates, and enumerations.  
   
- <!-- TODO: review snippet reference [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)]  -->
+ [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)] 
  [!code-csharp[console.writelineFmt1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.writelineFmt1/cs/wl.cs#1)]
  [!code-vb[console.writelineFmt1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/console.writelineFmt1/vb/wl.vb#1)]  
   
@@ -3551,6 +3626,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3571,7 +3647,7 @@
         <Parameter Name="arg2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg0">The first object to write using <c>format</c>.</param>
         <param name="arg1">The second object to write using <c>format</c>.</param>
         <param name="arg2">The third object to write using <c>format</c>.</param>
@@ -3603,7 +3679,7 @@
 ## Examples  
  The following example uses the `WriteLine` method to demonstrate the standard formatting specifiers for numbers, dates, and enumerations.  
   
- <!-- TODO: review snippet reference [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)]  -->
+ [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)] 
  [!code-csharp[console.writelineFmt1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.writelineFmt1/cs/wl.cs#1)]
  [!code-vb[console.writelineFmt1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/console.writelineFmt1/vb/wl.vb#1)]  
   
@@ -3652,7 +3728,7 @@
         <Parameter Name="arg3" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg0">The first object to write using <c>format</c>.</param>
         <param name="arg1">The second object to write using <c>format</c>.</param>
         <param name="arg2">The third object to write using <c>format</c>.</param>
@@ -3664,7 +3740,7 @@
 ## Remarks  
   
 > [!NOTE]
->  This API is not CLS-compliant. The CLS-compliant alternative is [Console.Write(String, Object\<xref:System.Console.Write%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>. The C# and Visual Basic compilers automatically resolve a call to this method as a call to [Console.Write(String, Object\<xref:System.Console.Write%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>.  
+>  This API is not CLS-compliant. The CLS-compliant alternative is <xref:System.Console.Write%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>. The C# and Visual Basic compilers automatically resolve a call to this method as a call to <xref:System.Console.Write%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>.  
   
  This method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) of the .NET Framework to convert the value of an object to its text representation and embed that representation in a string. The resulting string is written to the output stream.  
   
@@ -3703,6 +3779,23 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteLine">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the specified data, followed by the current line terminator, to the standard output stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default line terminator is a string whose value is a carriage return followed by a line feed ("\r\n" in C#, or `vbCrLf` in Visual Basic). You can change the line terminator by setting the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName> property of the <xref:System.Console.Out%2A> property to another string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteLine">
       <MemberSignature Language="C#" Value="public static void WriteLine ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine() cil managed" />
@@ -3711,6 +3804,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3756,6 +3850,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3806,6 +3901,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3853,6 +3949,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3892,6 +3989,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3941,6 +4039,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3990,6 +4089,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4039,6 +4139,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4088,6 +4189,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4120,7 +4222,6 @@
 ## Examples  
  The following example uses the <xref:System.Console.WriteLine%28System.Object%29> method to display each value in an object array to the console.  
   
- <!-- TODO: review snippet reference [!code-cpp[System.Console.WriteLine#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Console.WriteLine/CPP/con_writeline.cpp#3)]  -->
  [!code-cpp[System.Console.WriteLine#3](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Console.WriteLine/CPP/writeline_obj1.cpp#3)]
  [!code-csharp[System.Console.WriteLine#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Console.WriteLine/CS/writeline_obj1.cs#3)]
  [!code-vb[System.Console.WriteLine#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Console.WriteLine/VB/writeline_obj1.vb#3)]  
@@ -4139,6 +4240,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4188,6 +4290,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4238,6 +4341,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4292,6 +4396,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4346,6 +4451,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4364,7 +4470,7 @@
         <Parameter Name="arg0" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg0">An object to write using <c>format</c>.</param>
         <summary>Writes the text representation of the specified object, followed by the current line terminator, to the standard output stream using the specified format information.</summary>
         <remarks>
@@ -4421,6 +4527,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4445,7 +4552,7 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg">An array of objects to write using <c>format</c>.</param>
         <summary>Writes the text representation of the specified array of objects, followed by the current line terminator, to the standard output stream using the specified format information.</summary>
         <remarks>
@@ -4477,7 +4584,7 @@
 ## Examples  
  The following example demonstrates the standard formatting specifiers for numbers, dates, and enumerations.  
   
- <!-- TODO: review snippet reference [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)]  -->
+ [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)] 
  [!code-csharp[console.writelineFmt1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.writelineFmt1/cs/wl.cs#1)]
  [!code-vb[console.writelineFmt1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/console.writelineFmt1/vb/wl.vb#1)]  
   
@@ -4506,6 +4613,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4557,6 +4665,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4576,7 +4685,7 @@
         <Parameter Name="arg1" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg0">The first object to write using <c>format</c>.</param>
         <param name="arg1">The second object to write using <c>format</c>.</param>
         <summary>Writes the text representation of the specified objects, followed by the current line terminator, to the standard output stream using the specified format information.</summary>
@@ -4609,7 +4718,7 @@
 ## Examples  
  The following example demonstrates the standard formatting specifiers for numbers, dates, and enumerations.  
   
- <!-- TODO: review snippet reference [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)]  -->
+ [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)] 
  [!code-csharp[console.writelineFmt1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.writelineFmt1/cs/wl.cs#1)]
  [!code-vb[console.writelineFmt1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/console.writelineFmt1/vb/wl.vb#1)]  
   
@@ -4635,6 +4744,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4655,7 +4765,7 @@
         <Parameter Name="arg2" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg0">The first object to write using <c>format</c>.</param>
         <param name="arg1">The second object to write using <c>format</c>.</param>
         <param name="arg2">The third object to write using <c>format</c>.</param>
@@ -4689,7 +4799,7 @@
 ## Examples  
  The following example demonstrates the standard formatting specifiers for numbers, dates, and enumerations.  
   
- <!-- TODO: review snippet reference [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)]  -->
+ [!code-cpp[console.writelineFmt1#1](~/samples/snippets/cpp/VS_Snippets_CLR/console.writelineFmt1/cpp/wl.cpp#1)] 
  [!code-csharp[console.writelineFmt1#1](~/samples/snippets/csharp/VS_Snippets_CLR/console.writelineFmt1/cs/wl.cs#1)]
  [!code-vb[console.writelineFmt1#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/console.writelineFmt1/vb/wl.vb#1)]  
   
@@ -4737,7 +4847,7 @@
         <Parameter Name="arg3" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="format">A composite format string (see Remarks).</param>
+        <param name="format">A composite format string.</param>
         <param name="arg0">The first object to write using <c>format</c>.</param>
         <param name="arg1">The second object to write using <c>format</c>.</param>
         <param name="arg2">The third object to write using <c>format</c>.</param>
@@ -4749,7 +4859,7 @@
 ## Remarks  
   
 > [!NOTE]
->  This API is not CLS-compliant. The CLS-compliant alternative is [Console.WriteLine(String, Object\<xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>. The C# and Visual Basic compilers automatically resolve a call to this method as a call to [Console.WriteLine(String, Object\<xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>.  
+>  This API is not CLS-compliant. The CLS-compliant alternative is <xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>. The C# and Visual Basic compilers automatically resolve a call to this method as a call to <xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>.  
   
  This method uses the [composite formatting feature](~/docs/standard/base-types/composite-formatting.md) of the .NET Framework to convert the value of an object to its text representation and embed that representation in a string. The resulting string is written to the output stream.  
   
@@ -4790,22 +4900,5 @@
         </block>
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteLine">
-      <AssemblyInfo>
-        <AssemblyName>System.Console</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes the specified data, followed by the current line terminator, to the standard output stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default line terminator is a string whose value is a carriage return followed by a line feed ("\r\n" in C#, or `vbCrLf` in Visual Basic). You can change the line terminator by setting the <xref:System.IO.TextWriter.NewLine%2A?displayProperty=fullName> property of the <xref:System.Console.Out%2A> property to another string.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

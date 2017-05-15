@@ -2,18 +2,19 @@
 title: "ICorDebugNativeFrame::GetLocalMemoryValue Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugNativeFrame.GetLocalMemoryValue"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugNativeFrame::GetLocalMemoryValue"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetLocalMemoryValue method [.NET Framework debugging]"
   - "ICorDebugNativeFrame::GetLocalMemoryValue method [.NET Framework debugging]"
 ms.assetid: b600b3a2-9908-42d8-8093-ab6f39e9a2c9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

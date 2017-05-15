@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 31998eed-b95e-47fb-a865-9de1f337d1fb
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Deferred Execution and Lazy Evaluation in LINQ to XML (Visual Basic)

@@ -2,18 +2,19 @@
 title: "IMetaDataFilter::IsTokenMarked Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataFilter.IsTokenMarked"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataFilter::IsTokenMarked"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataFilter::IsTokenMarked method [.NET Framework metadata]"
   - "IsTokenMarked method [.NET Framework metadata]"
 ms.assetid: 7d90dcee-0206-4540-807b-06982fe65f1a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

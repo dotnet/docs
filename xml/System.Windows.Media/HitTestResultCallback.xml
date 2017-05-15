@@ -17,7 +17,7 @@
   </ReturnValue>
   <Docs>
     <param name="result">The <see cref="T:System.Windows.Media.HitTestResult" /> value that represents a visual object that is returned from a hit test.</param>
-    <summary>Represents a callback that is used to customize hit testing. [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] invokes the <see cref="T:System.Windows.Media.HitTestResultCallback" /> to report hit test intersections to the user.</summary>
+    <summary>Represents a callback that is used to customize hit testing. WPF invokes the <see cref="T:System.Windows.Media.HitTestResultCallback" /> to report hit test intersections to the user.</summary>
     <returns>A <see cref="T:System.Windows.Media.HitTestFilterBehavior" /> that represents the action resulting from the hit test.</returns>
     <remarks>
       <format type="text/markdown"><![CDATA[  

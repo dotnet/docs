@@ -2,18 +2,19 @@
 title: "IMetaDataEmit::TranslateSigWithScope Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataEmit.TranslateSigWithScope"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::TranslateSigWithScope"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "TranslateSigWithScope method [.NET Framework metadata]"
   - "IMetaDataEmit::TranslateSigWithScope method [.NET Framework metadata]"
 ms.assetid: 47915d33-b7bf-409e-b484-4ee1df15de22
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

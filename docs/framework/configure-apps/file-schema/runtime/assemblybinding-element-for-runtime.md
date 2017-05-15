@@ -2,7 +2,7 @@
 title: "&lt;assemblyBinding&gt; Element for &lt;runtime&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -37,7 +37,7 @@ Contains information about assembly version redirection and the locations of ass
   
 ```  
   
-      <assemblyBinding    
+      <assemblyBinding    
    xmlns="urn:schemas-microsoft-com:asm.v1" appliesTo="v1.0.3705">  
 </assemblyBinding>  
 ```  

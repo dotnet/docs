@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Linq.Queryable</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
@@ -26,6 +27,7 @@
     <typeparam name="T">The data type of the value that results from executing the expression tree.</typeparam>
     <summary>Represents an expression tree and provides functionality to execute the expression tree after rewriting it.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,6 +38,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -53,6 +56,7 @@
         <param name="expression">An expression tree to associate with the new instance.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Linq.EnumerableExecutor`1" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

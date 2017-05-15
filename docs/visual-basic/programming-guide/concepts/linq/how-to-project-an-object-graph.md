@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 9451eb47-6a31-49d7-84df-73368c618422
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Project an Object Graph (Visual Basic)

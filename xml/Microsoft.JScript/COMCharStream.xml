@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a stream that sends its data to an <see cref="T:Microsoft.JScript.IMessageReceiver" />. The data is stored in a buffer until the data is flushed or the stream is closed.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,6 +32,7 @@
         <param name="messageReceiver">The receiver of the data of the stream.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.COMCharStream" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CanRead">
@@ -50,6 +52,7 @@
         <value>
           <see langword="false" /> in all cases.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CanSeek">
@@ -69,6 +72,7 @@
         <value>
           <see langword="false" /> in all cases.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CanWrite">
@@ -88,6 +92,7 @@
         <value>
           <see langword="true" /> in all cases.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -106,6 +111,7 @@
       <Docs>
         <summary>Sends this stream's data to the <see cref="T:Microsoft.JScript.IMessageReceiver" /> and clears its buffer.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -124,6 +130,7 @@
       <Docs>
         <summary>Sends this stream's data to the <see cref="T:Microsoft.JScript.IMessageReceiver" /> and clears its buffer.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -142,6 +149,7 @@
         <summary>Gets the length of the stream.</summary>
         <value>The length of the stream.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -160,6 +168,7 @@
         <summary>Gets the current position in the stream. The set method does not do anything.</summary>
         <value>The current position in the stream.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -186,6 +195,7 @@
         <summary>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</summary>
         <returns>Throws a <see cref="T:System.NotSupportedException" /> exception in all cases.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Seek">
@@ -210,6 +220,7 @@
         <summary>Sets the position in the current stream. This method does not do anything. It always returns 0.</summary>
         <returns>0 in all cases.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetLength">
@@ -231,6 +242,7 @@
         <param name="value">The new length of the stream.</param>
         <summary>Sets the length of the stream.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -256,6 +268,7 @@
         <param name="count">The number of bytes to copy from <c>buffer</c> to the current stream.</param>
         <summary>Writes the specified byte data to the stream.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

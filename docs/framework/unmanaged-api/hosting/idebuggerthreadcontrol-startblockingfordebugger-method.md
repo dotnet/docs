@@ -2,18 +2,19 @@
 title: "IDebuggerThreadControl::StartBlockingForDebugger Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IDebuggerThreadControl.StartBlockingForDebugger"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "StartBlockingForDebugger"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IDebuggerThreadControl::StartBlockingForDebugger method [.NET Framework hosting]"
   - "StartBlockingForDebugger method [.NET Framework hosting]"
 ms.assetid: 5c8f11b4-35d3-4c39-9bbd-58b896ba5ba6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -2,7 +2,7 @@
 title: "How to: Insert a MenuStrip into an MDI Drop-Down Menu (Windows Forms) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "MDI, merging menu items"
 ms.assetid: 0fad444e-26d9-49af-8860-044d9c10d608
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Insert a MenuStrip into an MDI Drop-Down Menu (Windows Forms)

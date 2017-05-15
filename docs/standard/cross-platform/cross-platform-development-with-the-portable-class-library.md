@@ -2,11 +2,10 @@
 title: "Cross-Platform Development with the Portable Class Library | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -207,21 +206,21 @@ Version Information example
  When you deploy a Silverlight-based app that references a Portable Class Library assembly, you must ensure that the minimum runtime version required for the app matches its targeted version. If you target Silverlight 4, the version must be 4.0.60129.0 or later. You set the version by including `<param name="minRuntimeVersion" value="4.0.60129.0" />` in the webpage that hosts the Silverlight-based app, as follows:  
   
 ```xaml  
-<div id="silverlightControlHost">  
-    <object data="data:application/x-silverlight-2,"   
-           type="application/x-silverlight-2" width="100%" height="100%">  
-    <param name="source" value="ClientBin/SilverlightApplication.xap"/>  
-    <param name="onError" value="onSilverlightError" />  
-    <param name="background" value="white" />  
-    <param name="minRuntimeVersion" value="4.0.60129.0" />  
-    <param name="autoUpgrade" value="true" />  
-    <a href="http://go.microsoft.com/fwlink/?LinkID=149156&v=4.0.50826.0"   
+<div id="silverlightControlHost">  
+    <object data="data:application/x-silverlight-2,"   
+           type="application/x-silverlight-2" width="100%" height="100%">  
+    <param name="source" value="ClientBin/SilverlightApplication.xap"/>  
+    <param name="onError" value="onSilverlightError" />  
+    <param name="background" value="white" />  
+    <param name="minRuntimeVersion" value="4.0.60129.0" />  
+    <param name="autoUpgrade" value="true" />  
+    <a href="http://go.microsoft.com/fwlink/?LinkID=149156&v=4.0.50826.0"   
              style="text-decoration:none">  
-      <img src=http://go.microsoft.com/fwlink/?LinkId=161376  
-             alt="Get Microsoft Silverlight" style="border-style:none"/>  
+      <img src=http://go.microsoft.com/fwlink/?LinkId=161376  
+             alt="Get Microsoft Silverlight" style="border-style:none"/>  
     </a>  
   </object>  
-   <iframe id="_sl_historyFrame"   
+   <iframe id="_sl_historyFrame"   
               style="visibility:hidden;height:0px;width:0px;border:0px">  
    </iframe>  
 </div>  
@@ -233,4 +232,4 @@ Version Information example
  [App Resources for Libraries That Target Multiple Platforms](../../../docs/standard/cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md)   
  [.NET Portability Analyzer](http://visualstudiogallery.msdn.microsoft.com/1177943e-cfb7-4822-a8a6-e56c7905292b)   
  [.NET Framework Support for Windows Store Apps and Windows Runtime](../../../docs/standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md)   
- [Deployment](../../../docs/framework/deployment/net-framework-and-applications.md)
+ [Deployment](../../../docs/framework/deployment/net-framework-applications.md)

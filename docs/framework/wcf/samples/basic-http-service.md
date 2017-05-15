@@ -2,7 +2,7 @@
 title: "Basic HTTP Service | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,7 +16,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # Basic HTTP Service
-This sample demonstrates how to implement an HTTP-based, RPC-based service - popularly referred to as “POX” (Plain Old XML) service – using the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] REST Programming model. This sample consists of two components: a self-hosted [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] HTTP service (Service.cs) and a console application (Program.cs) that creates the service and makes calls to it.  
+This sample demonstrates how to implement an HTTP-based, RPC-based service - popularly referred to as "POX" (Plain Old XML) service – using the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] REST Programming model. This sample consists of two components: a self-hosted [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] HTTP service (Service.cs) and a console application (Program.cs) that creates the service and makes calls to it.  
   
 ## Sample Details  
  The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service exposes 2 operations, `EchoWithGet` and `EchoWithPost`, which returns the string that was passed as input.  

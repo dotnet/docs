@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>CreateProperty</c> task. Use the <c>CreateProperty</c> element in your project file to create and execute this task. For usage and parameter information, see [CreateProperty Task](http://msdn.microsoft.com/library/fbc31a88-62d4-43d2-b739-68ef3fac38f5).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.CreateProperty" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -48,6 +50,7 @@
         <returns>
           <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -71,6 +74,7 @@
         <summary>Gets or sets the value to copy to the new property.</summary>
         <value>The value to copy to the new property</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ValueSetByTask">
@@ -101,6 +105,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

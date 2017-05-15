@@ -2,7 +2,7 @@
 title: "How To: Opt Out of File Dialog Box Automatic Upgrade | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "AutoUpgradeEnabled property"
 ms.assetid: 522e482e-cc01-48b1-8d59-9617dc2c4ac1
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How To: Opt Out of File Dialog Box Automatic Upgrade

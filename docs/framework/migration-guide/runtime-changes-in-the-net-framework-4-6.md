@@ -2,7 +2,7 @@
 title: "Runtime Changes in the .NET Framework 4.6 | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -98,4 +98,4 @@ In rare cases, runtime changes may affect existing apps that target the previous
 |Feature|Change|Impact|Scope|  
 |-------------|------------|------------|-----------|  
 |64-bit JIT compilation|Starting with the .NET Framework 4.6, a new 64-bit JIT compiler is used for just-in-time compilation. This change does not affect the  32-bit JIT compiler.|In some cases, an unexpected exception is thrown or a different behavior is observed than if an app is run using 32-bit compiler or the older 64-bit JIT compiler. **Note:**  All of these issues have been addressed in the new 64-bit compiler released with the .NET Framework 4.6.2. Most have also been addressed in service releases of the .NET Framework 4.6 and 4.6.1 that are included with Windows Update. <br /><br /> For more information, see [Mitigation: New 64-bit JIT Compiler](../../../docs/framework/migration-guide/mitigation-new-64-bit-jit-compiler.md).|Edge|  
-|Exception handling (returning from a `try` region)|Unlike the older JIT64 just-in-time compiler, the new 64-bit JIT compiler does not allow an IL `ret` instruction in a `try` region.|Returning from a `try` region is disallowed by the ECMA-335 specification, and no known managed compiler generates such IL. However, the JIT64 compiler will execute such IL if it is generated using reflection emit.<br /><br /> If your app generates IL that includes a `ret` opcode in a `try` region, you can:<br /><br /> -   Target the .NET Framework 4.5 or add the [\<useLegacyJIT>](../../../docs/framework/configure-apps/file-schema/runtime/uselegacyjit-element.md) element to your application configuration file use the old JIT compiler and avoid the change.<br />-   Update the generated IL to return after the `try` region.<br />-|Edge|
+|Exception handling (returning from a `try` region)|Unlike the older JIT64 just-in-time compiler, the new 64-bit JIT compiler does not allow an IL `ret` instruction in a `try` region.|Returning from a `try` region is disallowed by the ECMA-335 specification, and no known managed compiler generates such IL. However, the JIT64 compiler will execute such IL if it is generated using reflection emit.<br /><br /> If your app generates IL that includes a `ret` opcode in a `try` region, you can:<br /><br /> -   Target the .NET Framework 4.5 or add the [\<useLegacyJit>](../../../docs/framework/configure-apps/file-schema/runtime/uselegacyjit-element.md) element to your application configuration file to use the old JIT compiler and avoid the change.<br />-   Update the generated IL to return after the `try` region.<br />-|Edge|

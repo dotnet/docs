@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrTextFieldParser_MaxLineSizeExceeded"
 ms.assetid: c59116d9-9856-47af-b32d-616d8f2d10d3
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

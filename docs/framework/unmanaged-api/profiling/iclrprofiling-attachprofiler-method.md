@@ -2,18 +2,19 @@
 title: "ICLRProfiling::AttachProfiler Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IClrProfiling.AttachProfiler Method"
-apilocation: 
+api_location: 
   - "Mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IClrProfiling::AttachProfiler"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "AttachProfiler method [.NET Framework profiling]"
   - "IClrProfiling::AttachProfiler method [.NET Framework profiling]"
 ms.assetid: 535a6839-c443-405b-a6f4-e2af90725d5b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

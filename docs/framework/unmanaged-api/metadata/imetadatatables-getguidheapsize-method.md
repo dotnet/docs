@@ -2,18 +2,19 @@
 title: "IMetaDataTables::GetGuidHeapSize Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataTables.GetGuidHeapSize"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataTables::GetGuidHeapSize"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetGuidHeapSize method [.NET Framework metadata]"
   - "IMetaDataTables::GetGuidHeapSize method [.NET Framework metadata]"
 ms.assetid: e875cbee-1ad9-4f1a-bf03-38cdb8ff371a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

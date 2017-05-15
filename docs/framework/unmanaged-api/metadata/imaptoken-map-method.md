@@ -2,18 +2,19 @@
 title: "IMapToken::Map Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMapToken.Map"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMapToken::Map"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IMapToken::Map method [.NET Framework metadata]"
   - "Map method [.NET Framework metadata]"
 ms.assetid: b9b4bf2f-1098-43d6-9619-a99b4bda1940
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

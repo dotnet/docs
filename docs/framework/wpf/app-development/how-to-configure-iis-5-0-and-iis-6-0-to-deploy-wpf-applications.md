@@ -2,7 +2,7 @@
 title: "How to: Configure IIS 5.0 and IIS 6.0 to Deploy WPF Applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "registering MIME types"
 ms.assetid: c6e8c2cb-9ba2-4e75-a0d5-180ec9639433
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Configure IIS 5.0 and IIS 6.0 to Deploy WPF Applications

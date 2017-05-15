@@ -16,6 +16,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -76,6 +80,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Text.Decoder" /> class.</summary>
@@ -111,6 +119,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -194,6 +206,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -231,9 +247,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Remember that the <xref:System.Text.Decoder> object saves state between calls to [Convert Method (Byte\[\], Int32, Int32, Char\<xref:System.Text.Decoder.Convert%2A>. When the application is done with a stream of data, it should set the `flush` parameter to `true` to make sure that the state information is flushed. With this setting, the decoder ignores invalid bytes at the end of the data block and clears the internal buffer. Any remaining processed data that is part of a logical unit, such as the high surrogate of a surrogate pair, is converted according to the current fallback settings.  
+ Remember that the <xref:System.Text.Decoder> object saves state between calls to <xref:System.Text.Decoder.Convert%2A>. When the application is done with a stream of data, it should set the `flush` parameter to `true` to make sure that the state information is flushed. With this setting, the decoder ignores invalid bytes at the end of the data block and clears the internal buffer. Any remaining processed data that is part of a logical unit, such as the high surrogate of a surrogate pair, is converted according to the current fallback settings.  
   
- The `Convert` method is designed to be used in a loop to decode an arbitrary amount of input, such as data read from a file or stream. It stores the output of the decoding operation in a fixed-size buffer. <xref:System.Text.Decoder.GetChars%2A> will throw an exception if the output buffer isn't large enough, but [Convert Method (Byte\[\], Int32, Int32, Char\<xref:System.Text.Decoder.Convert%2A> will fill as much space as possible and return the bytes read and chars written. Also see the <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> topic for more comments.  
+ The `Convert` method is designed to be used in a loop to decode an arbitrary amount of input, such as data read from a file or stream. It stores the output of the decoding operation in a fixed-size buffer. <xref:System.Text.Decoder.GetChars%2A> will throw an exception if the output buffer isn't large enough, but <xref:System.Text.Decoder.Convert%2A> will fill as much space as possible and return the bytes read and chars written. Also see the <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> topic for more comments.  
   
  The `completed` output parameter indicates whether all the data in the input buffer was converted and stored in the output buffer. This parameter is set to `false` if the number of bytes specified by the `byteCount` parameter cannot be converted without exceeding the number of characters specified by the `charCount` parameter. In that situation, the application should use the contents of the output buffer or provide a new output buffer, increment the `bytes` parameter by the number of bytes specified by the `bytesUsed` parameter, then call the `Convert` method again to process the remaining input.  
   
@@ -242,7 +258,7 @@
    
   
 ## Examples  
- The following code example uses the <xref:System.Text.Encoder.Convert%2A> method to convert a file of UTF-16 characters to UTF-8. It then uses the [Convert Method (Byte\[\], Int32, Int32, Char\<xref:System.Text.Decoder.Convert%2A> method to convert the UTF-8 characters back to UTF-16 characters.  
+ The following code example uses the <xref:System.Text.Encoder.Convert%2A> method to convert a file of UTF-16 characters to UTF-8. It then uses the <xref:System.Text.Decoder.Convert%2A> method to convert the UTF-8 characters back to UTF-16 characters.  
   
  [!code-csharp[sys.txt.EncoderDecoder.convert#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.txt.EncoderDecoder.convert/cs/edCvt.cs#1)]
  [!code-vb[sys.txt.EncoderDecoder.convert#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.txt.EncoderDecoder.convert/vb/edCvt.vb#1)]  
@@ -287,6 +303,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -328,6 +348,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -362,6 +386,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -432,6 +460,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -452,14 +484,14 @@
 ## Remarks  
  This method does not affect the state of the decoder.  
   
- To calculate the exact array size that <xref:System.Text.Decoder.GetChars%2A> requires to store the resulting characters, the application should use [GetCharCount Method (Byte\<xref:System.Text.Decoder.GetCharCount%2A>.  
+ To calculate the exact array size that <xref:System.Text.Decoder.GetChars%2A> requires to store the resulting characters, the application should use <xref:System.Text.Decoder.GetCharCount%2A>.  
   
  If `GetChars` is called with `flush` set to `false`, the decoder stores trailing bytes at the end of the data block in an internal buffer and uses them in the next decoding operation. The application should call `GetCharCount` on a block of data immediately before calling `GetChars` on the same block, so that any trailing bytes from the previous block are included in the calculation.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the [GetCharCount Method (Byte\<xref:System.Text.Decoder.GetCharCount%2A> method to calculate the number of characters required to decode the specified range of bytes in the array.  
+ The following code example demonstrates how to use the <xref:System.Text.Decoder.GetCharCount%2A> method to calculate the number of characters required to decode the specified range of bytes in the array.  
   
  [!code-cpp[System.Text.Decoder.GetCharCount Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.Decoder.GetCharCount Example/CPP/getcharcount-byte[]-int32-int32.cpp#1)]
  [!code-csharp[System.Text.Decoder.GetCharCount Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.Decoder.GetCharCount Example/CS/getcharcount-byte[]-int32-int32.cs#1)]
@@ -501,6 +533,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -529,7 +565,7 @@
 ## Remarks  
  This method does not affect the state of the decoder.  
   
- To calculate the exact array size that <xref:System.Text.Decoder.GetChars%2A> requires to store the resulting characters, the application should use [GetCharCount Method (Byte\<xref:System.Text.Decoder.GetCharCount%2A>.  
+ To calculate the exact array size that <xref:System.Text.Decoder.GetChars%2A> requires to store the resulting characters, the application should use <xref:System.Text.Decoder.GetCharCount%2A>.  
   
  If `GetChars` is called with `flush` set to `false`, the decoder stores trailing bytes at the end of the data block in an internal buffer and uses them in the next decoding operation. The application should call `GetCharCount` on a block of data immediately before calling `GetChars` on the same block, so that any trailing bytes from the previous block are included in the calculation.  
   
@@ -563,6 +599,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -645,6 +685,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -667,18 +711,18 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Remember that the <xref:System.Text.Decoder> object saves state between calls to [GetChars Method (Byte\[\], Int32, Int32, Char\<xref:System.Text.Decoder.GetChars%2A>. When the application is done with a stream of data, it should set the `flush` parameter to `true` to make sure that the state information is flushed. With this setting, the decoder ignores invalid bytes at the end of the data block and clears the internal buffer.  
+ Remember that the <xref:System.Text.Decoder> object saves state between calls to <xref:System.Text.Decoder.GetChars%2A>. When the application is done with a stream of data, it should set the `flush` parameter to `true` to make sure that the state information is flushed. With this setting, the decoder ignores invalid bytes at the end of the data block and clears the internal buffer.  
   
  To calculate the exact array size that `GetChars` requires to store the resulting characters, the application should use <xref:System.Text.Decoder.GetCharCount%2A>.  
   
  If `GetChars` is called with `flush` set to `false`, the decoder stores trailing bytes at the end of the data block in an internal buffer and uses them in the next decoding operation. The application should call `GetCharCount` on a block of data immediately before calling `GetChars` on the same block, so that any trailing bytes from the previous block are included in the calculation.  
   
- If your application is to convert many segments of an input stream, consider using the <xref:System.Text.Decoder.Convert%2A> method. [GetChars Method (Byte\[\], Int32, Int32, Char\<xref:System.Text.Decoder.GetChars%2A> will throw an exception if the output buffer isn't large enough, but <xref:System.Text.Decoder.Convert%2A> will fill as much space as possible and return the bytes read and chars written. Also see the <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> topic for more comments.  
+ If your application is to convert many segments of an input stream, consider using the <xref:System.Text.Decoder.Convert%2A> method. <xref:System.Text.Decoder.GetChars%2A> will throw an exception if the output buffer isn't large enough, but <xref:System.Text.Decoder.Convert%2A> will fill as much space as possible and return the bytes read and chars written. Also see the <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> topic for more comments.  
   
    
   
 ## Examples  
- The following example demonstrates how to decode a range of elements from a byte array and store them in a Unicode character array. The <xref:System.Text.Decoder.GetCharCount%2A> method is used to calculate the number of characters needed to store the decoded elements in the array `bytes`. The [GetChars Method (Byte\[\], Int32, Int32, Char\<xref:System.Text.Decoder.GetChars%2A> method decodes the specified elements in the byte array and stores them in the new character array.  
+ The following example demonstrates how to decode a range of elements from a byte array and store them in a Unicode character array. The <xref:System.Text.Decoder.GetCharCount%2A> method is used to calculate the number of characters needed to store the decoded elements in the array `bytes`. The <xref:System.Text.Decoder.GetChars%2A> method decodes the specified elements in the byte array and stores them in the new character array.  
   
  [!code-cpp[System.Text.Decoder.GetChars Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.Decoder.GetChars Example/CPP/getchars-byte[]-int32-int32-char[]-int32.cpp#1)]
  [!code-csharp[System.Text.Decoder.GetChars Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.Decoder.GetChars Example/CS/getchars-byte[]-int32-int32-char[]-int32.cs#1)]
@@ -730,6 +774,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -755,13 +803,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Remember that the <xref:System.Text.Decoder> object saves state between calls to [GetChars Method (Byte\[\], Int32, Int32, Char\<xref:System.Text.Decoder.GetChars%2A>. When the application is done with a stream of data, it should set the `flush` parameter to `true` to make sure that the state information is flushed. With this setting, the decoder ignores invalid bytes at the end of the data block and clears the internal buffer.  
+ Remember that the <xref:System.Text.Decoder> object saves state between calls to <xref:System.Text.Decoder.GetChars%2A>. When the application is done with a stream of data, it should set the `flush` parameter to `true` to make sure that the state information is flushed. With this setting, the decoder ignores invalid bytes at the end of the data block and clears the internal buffer.  
   
  To calculate the exact array size that `GetChars` requires to store the resulting characters, the application should use <xref:System.Text.Decoder.GetCharCount%2A>.  
   
  If `GetChars` is called with `flush` set to `false`, the decoder stores trailing bytes at the end of the data block in an internal buffer and uses them in the next decoding operation. The application should call `GetCharCount` on a block of data immediately before calling `GetChars` on the same block, so that any trailing bytes from the previous block are included in the calculation.  
   
- If your application is to convert many segments of an input stream, consider using the <xref:System.Text.Decoder.Convert%2A> method. [GetChars Method (Byte\[\], Int32, Int32, Char\<xref:System.Text.Decoder.GetChars%2A> will throw an exception if the output buffer isn't large enough, but <xref:System.Text.Decoder.Convert%2A> will fill as much space as possible and return the bytes read and chars written. Also see the <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> topic for more comments.  
+ If your application is to convert many segments of an input stream, consider using the <xref:System.Text.Decoder.Convert%2A> method. <xref:System.Text.Decoder.GetChars%2A> will throw an exception if the output buffer isn't large enough, but <xref:System.Text.Decoder.Convert%2A> will fill as much space as possible and return the bytes read and chars written. Also see the <xref:System.Text.Encoding.GetChars%2A?displayProperty=fullName> topic for more comments.  
   
  ]]></format>
         </remarks>
@@ -808,6 +856,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

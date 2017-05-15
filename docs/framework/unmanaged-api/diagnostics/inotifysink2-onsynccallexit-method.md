@@ -2,18 +2,19 @@
 title: "INotifySink2::OnSyncCallExit Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "INotifySink2.OnSyncCallExit"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "INotifySink2::OnSyncCallExit"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "INotifySink2::OnSyncCallExit method [.NET Framework debugging]"
   - "OnSyncCallExit method [.NET Framework debugging]"
 ms.assetid: d9d7600e-a8f5-443a-96de-67d26e130f2d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

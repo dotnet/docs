@@ -21,6 +21,7 @@
   <Docs>
     <summary>Exposes functionality that you must have to create a bootstrapper.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Build">
@@ -48,6 +49,7 @@
         <summary>Generates a bootstrapper based on the specified settings.</summary>
         <returns>A <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildResults" /> object that represents the results of the bootstrapper generation.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -71,6 +73,7 @@
         <summary>Gets or sets the location of the required bootstrapper files.</summary>
         <value>A string value that represents the location of the required bootstrapper files.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Products">
@@ -94,6 +97,7 @@
         <summary>Gets all products available at the current bootstrapper path.</summary>
         <value>A <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductCollection" /> object that represents all products available at the current bootstrapper <see cref="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBootstrapperBuilder.Path" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

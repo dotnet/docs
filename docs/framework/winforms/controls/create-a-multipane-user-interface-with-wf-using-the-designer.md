@@ -2,7 +2,7 @@
 title: "How to: Create a Multipane User Interface with Windows Forms Using the Designer | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "multipane user interface"
 ms.assetid: c3f9294d-a26c-4198-9242-f237f55f7573
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create a Multipane User Interface with Windows Forms Using the Designer

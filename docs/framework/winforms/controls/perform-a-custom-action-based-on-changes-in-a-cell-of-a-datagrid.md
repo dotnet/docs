@@ -2,7 +2,7 @@
 title: "How to: Perform a Custom Action Based on Changes in a Cell of a Windows Forms DataGridView Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "data grids, detecting changes in cells"
 ms.assetid: 7fa44d01-97f4-4ccb-a149-bc72628d2c36
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Perform a Custom Action Based on Changes in a Cell of a Windows Forms DataGridView Control

@@ -2,6 +2,7 @@
 title: "&lt;identityConfiguration&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,11 +25,11 @@ Specifies service-level identity settings.
   
 ```  
 <system.identityModel>  
-  <identityConfiguration  
-      name=xs:string  
-      saveBootstrapContext=xs:boolean>  
-      maximumClockSkew=TimeSpan >  
-  </identityConfiguration>  
+  <identityConfiguration  
+      name=xs:string  
+      saveBootstrapContext=xs:boolean>  
+      maximumClockSkew=TimeSpan >  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   
@@ -41,7 +42,7 @@ Specifies service-level identity settings.
 |---------------|-----------------|  
 |name|The name of the identity configuration section. You can use this name to reference a specific configuration section. If no `name` attribute is specified, the section defines the default configuration. The default configuration is always used for passive federation scenarios. For more information, see the [\<federationConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md) element.|  
 |saveBootstrapContext|Specifies whether bootstrap tokens should be included in the session token. The value may also be set on a token handler collection by setting the `saveBootstrapContext` attribute on the [\<securityTokenHandlerConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlerconfiguration.md) element. A value set on the token handler collection overrides the value set on the service.|  
-|maximumClockSkew|A <xref:System.TimeSpan> that specifies the maximum allowed clock skew. Controls the maximum allowed clock skew when performing time-sensitive operations, such as validating the expiration time of a sign-in session. The default is 5 minutes, “00:05:00”. For more information about how to specify <xref:System.TimeSpan> values, see [Timespan Values](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/index.md). The maximum clock skew may also be set on a token handler collection by setting the `maximumClockSkew` attribute on the [\<securityTokenHandlerConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlerconfiguration.md) element. A value set on the token handler collection overrides the value set on the service.|  
+|maximumClockSkew|A <xref:System.TimeSpan> that specifies the maximum allowed clock skew. Controls the maximum allowed clock skew when performing time-sensitive operations, such as validating the expiration time of a sign-in session. The default is 5 minutes, "00:05:00". For more information about how to specify <xref:System.TimeSpan> values, see [Timespan Values](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/index.md). The maximum clock skew may also be set on a token handler collection by setting the `maximumClockSkew` attribute on the [\<securityTokenHandlerConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/securitytokenhandlerconfiguration.md) element. A value set on the token handler collection overrides the value set on the service.|  
   
 ### Child Elements  
   
@@ -89,7 +90,7 @@ Specifies service-level identity settings.
 > -   [\<serviceTokenResolver>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/servicetokenresolver.md)  
   
 ## Example  
- The following example creates an identity configuration named “alternateConfiguration”. The identity configuration specifies default settings.  
+ The following example creates an identity configuration named "alternateConfiguration". The identity configuration specifies default settings.  
   
 ```  
 <system.identityModel>  

@@ -2,7 +2,7 @@
 title: "Providing Accessibility Information for Controls on a Windows Form | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "accessibility, Windows Forms controls"
 ms.assetid: 887dee6f-5059-4d57-957d-7c6fcd4acb10
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Providing Accessibility Information for Controls on a Windows Form

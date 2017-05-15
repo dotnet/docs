@@ -2,7 +2,7 @@
 title: "How to: Iterate Through All Nodes of a Windows Forms TreeView Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "tree nodes in TreeView control, iterating through"
 ms.assetid: 427f8928-ebcf-4beb-887f-695b905d5134
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Iterate Through All Nodes of a Windows Forms TreeView Control

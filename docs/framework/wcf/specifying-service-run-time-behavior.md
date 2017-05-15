@@ -2,7 +2,7 @@
 title: "Specifying Service Run-Time Behavior | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -62,7 +62,7 @@ Once you have designed a service contract ([Designing Service Contracts](../../.
   
  However, you can also create a service object yourself and create the service host using that object. To do so, you must also set the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=fullName> property to <xref:System.ServiceModel.InstanceContextMode> or an exception is thrown when the service host is opened.  
   
- Use the [ServiceHost.ServiceHost(Object, Uri\<xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29?displayProperty=fullName> constructor to create such a service. It provides an alternative to implementing a custom <xref:System.ServiceModel.Dispatcher.IInstanceContextInitializer?displayProperty=fullName> when you wish to provide a specific object instance for use by a singleton service. You can use this overload when your service implementation type is difficult to construct (for example, if it does not implement a default public constructor that has no parameters).  
+ Use the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29?displayProperty=fullName> constructor to create such a service. It provides an alternative to implementing a custom <xref:System.ServiceModel.Dispatcher.IInstanceContextInitializer?displayProperty=fullName> when you wish to provide a specific object instance for use by a singleton service. You can use this overload when your service implementation type is difficult to construct (for example, if it does not implement a default public constructor that has no parameters).  
   
  Note that when an object is provided to this constructor, some features related to the [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] instancing behavior work differently. For example, calling <xref:System.ServiceModel.InstanceContext.ReleaseServiceInstance%2A?displayProperty=fullName> has no effect when a well-known object instance is provided. Similarly, any other instance release mechanism is ignored. The <xref:System.ServiceModel.ServiceHost> class always behaves as if the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A?displayProperty=fullName> property is set to <xref:System.ServiceModel.ReleaseInstanceMode?displayProperty=fullName> for all operations.  
   

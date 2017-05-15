@@ -2,18 +2,19 @@
 title: "ICLRSyncManager::DeleteRWLockOwnerIterator Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRSyncManager.DeleteRWLockOwnerIterator"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRSyncManager::DeleteRWLockOwnerIterator"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRSyncManager::DeleteRWLockOwnerIterator method [.NET Framework hosting]"
   - "DeleteRWLockOwnerIterator method [.NET Framework hosting]"
 ms.assetid: fcfd340a-b7d6-44e4-8167-2c05b789d483
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

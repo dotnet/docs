@@ -2,18 +2,19 @@
 title: "IMetaDataImport::ResetEnum Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport.ResetEnum"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::ResetEnum"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ResetEnum method [.NET Framework metadata]"
   - "IMetaDataImport::ResetEnum method [.NET Framework metadata]"
 ms.assetid: dda867b5-1050-49ba-b01c-fcc83b7a5617
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

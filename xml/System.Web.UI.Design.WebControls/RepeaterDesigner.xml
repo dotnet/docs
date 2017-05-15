@@ -17,6 +17,7 @@
   <Docs>
     <summary>Extends design-time behavior for the <see cref="T:System.Web.UI.WebControls.Repeater" /> control.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,6 +33,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.RepeaterDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
@@ -50,6 +52,7 @@
         <summary>Gets the action list collection for the control designer.</summary>
         <value>A <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> object that contains the <see cref="T:System.ComponentModel.Design.DesignerActionList" /> items for the control designer.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DataMember">
@@ -68,6 +71,7 @@
         <summary>Gets or sets the name of a specific table or view in the data source object to bind the <see cref="T:System.Web.UI.WebControls.Repeater" /> control to.</summary>
         <value>The name of a table or view in the data source.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DataSource">
@@ -86,6 +90,7 @@
         <summary>A data-binding expression that identifies the source of data for the associated <see cref="T:System.Web.UI.WebControls.Repeater" /> control.</summary>
         <value>A data binding expression.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DataSourceDesigner">
@@ -104,6 +109,7 @@
         <summary>Provides access to the associated designer component for the data source.</summary>
         <value>An <see cref="T:System.Web.UI.Design.IDataSourceDesigner" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DataSourceID">
@@ -122,6 +128,7 @@
         <summary>Gets or sets the <see cref="P:System.Web.UI.WebControls.Repeater.DataSourceID" /> property of the associated control.</summary>
         <value>The ID of the associated control's data source control.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DesignerView">
@@ -140,6 +147,7 @@
         <summary>Gets the <see cref="T:System.Web.UI.Design.DesignerDataSourceView" /> object associated with the data source of this designer.</summary>
         <value>The <see cref="T:System.Web.UI.Design.DesignerDataSourceView" /> associated with the data source of this designer.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -172,6 +180,7 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.Design.WebControls.RepeaterDesigner.Dispose(System.Boolean)" /> method can be called multiple times by other objects. When overriding it, ensure that you do not reference objects that have been disposed in an earlier call to <see cref="M:System.Web.UI.Design.WebControls.RepeaterDesigner.Dispose(System.Boolean)" />. For more information about how to implement this method, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md). For more information about the Dispose and Finalize methods, see [Dispose Pattern](~/docs/standard/design-guidelines/dispose-pattern.md).</para>
         </block>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExecuteChooseDataSourcePostSteps">
@@ -197,6 +206,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeDataSource">
@@ -219,6 +229,7 @@
         <summary>Returns design-time sample data based on the <see cref="M:System.Web.UI.Design.WebControls.RepeaterDesigner.GetResolvedSelectedDataSource" /> method and using the specified number of rows.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerable" /> object containing sample data for use at design time.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeDataSource">
@@ -243,6 +254,7 @@
         <summary>Returns design-time sample data based on the provided data and using the specified number of rows.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerable" /> object containing sample data for use at design time.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -262,6 +274,7 @@
         <summary>Retrieves the HTML markup to be used for the design-time representation of the control.</summary>
         <returns>Design-time HTML markup.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetEmptyDesignTimeHtml">
@@ -281,6 +294,7 @@
         <summary>Retrieves the HTML markup to represent a Web server control at design time that will have no visual representation at run time.</summary>
         <returns>The HTML markup used to represent a control at design time that would otherwise have no visual representation. The default is a rectangle that contains the type and ID of the component.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetErrorDesignTimeHtml">
@@ -303,6 +317,7 @@
         <summary>Retrieves the HTML markup that provides information about the specified exception.</summary>
         <returns>The design-time HTML markup for the specified exception.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetResolvedSelectedDataSource">
@@ -329,6 +344,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetSelectedDataSource">
@@ -355,6 +371,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -376,6 +393,7 @@
         <param name="component">The associated <see cref="T:System.Web.UI.WebControls.Repeater" /> control.</param>
         <summary>Initializes the designer with the provided <see cref="T:System.Web.UI.WebControls.Repeater" /> control.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnComponentChanged">
@@ -399,6 +417,7 @@
         <param name="ce">The event data.</param>
         <summary>Called when the associated control changes.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnDataSourceChanged">
@@ -417,6 +436,7 @@
       <Docs>
         <summary>Handles changes made to the data source</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -438,6 +458,7 @@
         <param name="properties">The properties for the class of the component.</param>
         <summary>Filters the properties to replace the runtime data source property descriptor with the designer's property descriptor.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TemplatesExist">
@@ -456,6 +477,7 @@
         <summary>Gets a value indicating whether the associated control has any templates defined.</summary>
         <value>A value that indicates whether any templates are defined for the associated control.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

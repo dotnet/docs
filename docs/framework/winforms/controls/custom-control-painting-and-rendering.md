@@ -2,7 +2,7 @@
 title: "Custom Control Painting and Rendering | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "user controls [Windows Forms], painting"
 ms.assetid: a09dbf76-0966-4cbf-a66a-2083ba98e068
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Custom Control Painting and Rendering

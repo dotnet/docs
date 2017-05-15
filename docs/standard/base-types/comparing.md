@@ -1,12 +1,11 @@
 ---
-title: "Comparing Strings in the .NET Framework | Microsoft Docs"
+title: "Comparing Strings in .NET | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -26,8 +25,8 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-# Comparing Strings in the .NET Framework
-The .NET Framework provides several methods to compare the values of strings. The following table lists and describes the value-comparison methods.  
+# Comparing Strings in .NET
+.NET provides several methods to compare the values of strings. The following table lists and describes the value-comparison methods.  
   
 |Method name|Use|  
 |-----------------|---------|  

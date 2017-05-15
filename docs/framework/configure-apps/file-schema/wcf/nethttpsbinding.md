@@ -2,7 +2,7 @@
 title: "&lt;netHttpsBinding&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,39 +29,37 @@ Next Element
 ```  
 -->
   
-```csharp  
-  
+```xml
 <netHttpsBinding>  
-   <binding   
-       allowCookies="Boolean"  
-       bypassProxyOnLocal="Boolean"  
-       closeTimeout="TimeSpan"   
-       hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
-       maxBufferPoolSize="Integer"  
-       maxBufferSize="Integer"  
-       maxReceivedMessageSize="Integer"  
-       messageEncoding="Binary/Text/Mtom"  
-       name="string"   
-       openTimeout="TimeSpan"   
-       proxyAddress="URI"  
-        receiveTimeout="TimeSpan"  
-       sendTimeout="TimeSpan"  
-              textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"  
-              transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"  
-       useDefaultWebProxy="Boolean"  
-       <security mode="None/Transport/Message/TransportWithMessageCredential/TransportCredentialOnly">  
-           <transport clientCredentialType="None/Basic/Digest/Ntlm/Windows/Certificate"  
-                  proxyCredentialType="None/Basic/Digest/Ntlm/Windows"  
-                                    realm="string" />  
-           <message   
-                 algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
-                            clientCredentialType="UserName/Certificate"/>  
-       </security>  
-       <readerQuotas   
-            maxArrayLength="Integer"  
-            maxBytesPerRead="Integer"  
-            maxDepth="Integer"             maxNameTableCharCount="Integer"                maxStringContentLength="Integer" />  
-   </binding>  
+  <binding allowCookies="Boolean"  
+           bypassProxyOnLocal="Boolean"  
+           closeTimeout="TimeSpan"   
+           hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
+           maxBufferPoolSize="Integer"  
+           maxBufferSize="Integer"  
+           maxReceivedMessageSize="Integer"  
+           messageEncoding="Binary/Text/Mtom"  
+           name="string"   
+           openTimeout="TimeSpan"   
+           proxyAddress="URI"  
+           receiveTimeout="TimeSpan"  
+           sendTimeout="TimeSpan"  
+           textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"  
+           transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"  
+           useDefaultWebProxy="Boolean">
+    <security mode="None/Transport/Message/TransportWithMessageCredential/TransportCredentialOnly">  
+      <transport clientCredentialType="None/Basic/Digest/Ntlm/Windows/Certificate"  
+                 proxyCredentialType="None/Basic/Digest/Ntlm/Windows"  
+                 realm="string" />  
+      <message algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15" 
+               clientCredentialType="UserName/Certificate"/>  
+    </security>  
+    <readerQuotas maxArrayLength="Integer" 
+                  maxBytesPerRead="Integer" 
+                  maxDepth="Integer" 
+                  maxNameTableCharCount="Integer" 
+                  maxStringContentLength="Integer" />  
+  </binding>  
 </netHttpsBinding>  
 ```  
   
@@ -98,11 +96,7 @@ Next Element
   
 |Element|Description|  
 |-------------|-----------------|  
-<<<<<<< HEAD:docs/framework/configure-apps/file-schema/wcf/nethttpsbinding.md
-|[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-basichttpbinding.md)|Defines the security settings for the binding. This element is of type `System.ServiceModel.Configuration.NetHttpSecurityElement`.|  
-=======
-|[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-basichttpbinding.md)|Defines the security settings for the binding. This element is of type <xref:System.ServiceModel.Configuration.NetHttpSecurityElement>.|  
->>>>>>> seo changes:docs/framework/configure-apps/file-schema/wcf/nethttpsbinding.md
+|[\<security>](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-nethttpbinding.md)|Defines the security settings for the binding. This element is of type <xref:System.ServiceModel.Configuration.BasicHttpsSecurityElement>. |  
 |[\<readerQuotas>](http://msdn.microsoft.com/library/3e5e42ff-cef8-478f-bf14-034449239bfd)|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
   
 ### Parent Elements  
@@ -122,34 +116,33 @@ Next Element
 ```xml  
 <system.serviceModel>   
   <services>  
-    <service   
-        type="Microsoft.ServiceModel.Samples.CalculatorService"  
-        behaviorConfiguration="CalculatorServiceBehavior">  
-       <endpoint address=""  
-             binding="netHttpsBinding"  
-             bindingConfiguration="Binding1"   
-             contract="Microsoft.ServiceModel.Samples.ICalculator" />  
+    <service type="Microsoft.ServiceModel.Samples.CalculatorService"  
+             behaviorConfiguration="CalculatorServiceBehavior">  
+      <endpoint address=""  
+                binding="netHttpsBinding"  
+                bindingConfiguration="Binding1"   
+                contract="Microsoft.ServiceModel.Samples.ICalculator" />  
     </service>  
   </services>  
   <bindings>  
-     <netHttpsBinding>  
-        <binding name="Binding1"   
-               hostNameComparisonMode="StrongWildcard"   
-               receiveTimeout="00:10:00"  
-               sendTimeout="00:10:00"  
-               openTimeout="00:10:00"  
-               closeTimeout="00:10:00"  
-               maxReceivedMessageSize="65536"   
-               maxBufferSize="65536"   
-               maxBufferPoolSize="524288"   
-               transferMode="Buffered"   
-               messageEncoding="Binary"   
-               textEncoding="utf-8"  
-               bypassProxyOnLocal="false"  
-               useDefaultWebProxy="true" >  
-              <security mode="None" />  
-         </binding>  
-     </netHttpsBinding>  
+    <netHttpsBinding>  
+      <binding name="Binding1"   
+               hostNameComparisonMode="StrongWildcard" 
+               receiveTimeout="00:10:00" 
+               sendTimeout="00:10:00" 
+               openTimeout="00:10:00" 
+               closeTimeout="00:10:00" 
+               maxReceivedMessageSize="65536" 
+               maxBufferSize="65536" 
+               maxBufferPoolSize="524288" 
+               transferMode="Buffered" 
+               messageEncoding="Binary" 
+               textEncoding="utf-8" 
+               bypassProxyOnLocal="false" 
+               useDefaultWebProxy="true">  
+        <security mode="None" />  
+      </binding>  
+    </netHttpsBinding>  
   </bindings>  
 </system.serviceModel>  
 ```  

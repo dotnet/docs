@@ -2,18 +2,19 @@
 title: "ICLRStrongName::StrongNameSignatureVerificationEx Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRStrongName.StrongNameSignatureVerificationEx"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameSignatureVerificationEx"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "StrongNameSignatureVerificationEx method, ICLRStrongName interface [.NET Framework hosting]"
   - "ICLRStrongName::StrongNameSignatureVerificationEx method [.NET Framework hosting]"
 ms.assetid: dbd2f662-208b-4174-b301-5c99af91040f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

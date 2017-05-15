@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Drawing.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
@@ -17,7 +18,8 @@
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
-  <Interfaces />
+  <Interfaces>
+  </Interfaces>
   <Docs>
     <summary>Stores a set of four integers that represent the location and size of a rectangle</summary>
     <remarks>
@@ -60,6 +62,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -88,6 +91,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -131,6 +135,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -164,6 +169,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -194,6 +200,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -231,6 +238,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -277,6 +285,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -316,6 +325,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -341,6 +351,28 @@
       </Docs>
     </Member>
     <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Drawing.Rectangle other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Drawing.Rectangle other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Equals(System.Drawing.Rectangle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Drawing.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Rectangle.Equals(System.Object)" />
@@ -348,6 +380,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -378,6 +411,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -430,6 +464,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -457,6 +492,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -490,6 +526,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -535,6 +572,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -584,6 +622,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -634,6 +673,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -674,6 +714,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -717,6 +758,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -758,6 +800,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -795,6 +838,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -821,6 +865,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -847,6 +892,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -892,6 +938,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -923,6 +970,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -955,6 +1003,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -987,6 +1036,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1020,6 +1070,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1061,6 +1112,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1087,6 +1139,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1113,6 +1166,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1140,6 +1194,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1181,6 +1236,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1229,6 +1285,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1262,6 +1319,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1295,6 +1353,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "ListBox control [Windows Forms], populating from an enumeration"
 ms.assetid: e5aa10eb-cfcd-4a3b-8e76-f06b8f2002be
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

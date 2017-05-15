@@ -2,18 +2,19 @@
 title: "IHostPolicyManager::OnTimeout Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostPolicyManager.OnTimeout"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostPolicyManager::OnTimeout"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostPolicyManager::OnTimeout method [.NET Framework hosting]"
   - "OnTimeout method [.NET Framework hosting]"
 ms.assetid: 0a313b51-5e4d-4714-a86b-af75cf3902e6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

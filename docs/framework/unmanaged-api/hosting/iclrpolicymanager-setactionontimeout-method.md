@@ -2,18 +2,19 @@
 title: "ICLRPolicyManager::SetActionOnTimeout Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRPolicyManager.SetActionOnTimeout"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRPolicyManager::SetActionOnTimeout"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SetActionOnTimeout method [.NET Framework hosting]"
   - "ICLRPolicyManager::SetActionOnTimeout method [.NET Framework hosting]"
 ms.assetid: 38439fa1-2b99-4fa8-a6ec-08afc0f83b9c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

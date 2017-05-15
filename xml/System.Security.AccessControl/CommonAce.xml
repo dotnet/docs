@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -23,21 +24,21 @@
 ## Remarks  
  The <xref:System.Security.AccessControl.CommonAce> class represents the eight most common ACE types:  
   
--   <xref:System.Security.AccessControl.AceType>  
+-   <xref:System.Security.AccessControl.AceType.AccessAllowed>  
   
--   <xref:System.Security.AccessControl.AceType>  
+-   <xref:System.Security.AccessControl.AceType.AccessAllowedCallback>  
   
--   <xref:System.Security.AccessControl.AceType>  
+-   <xref:System.Security.AccessControl.AceType.AccessDenied>  
   
--   <xref:System.Security.AccessControl.AceType>  
+-   <xref:System.Security.AccessControl.AceType.AccessDeniedCallback>  
   
--   <xref:System.Security.AccessControl.AceType>  
+-   <xref:System.Security.AccessControl.AceType.SystemAudit>  
   
--   <xref:System.Security.AccessControl.AceType>  
+-   <xref:System.Security.AccessControl.AceType.SystemAuditCallback>  
   
--   <xref:System.Security.AccessControl.AceType>  
+-   <xref:System.Security.AccessControl.AceType.SystemAlarm>  
   
--   <xref:System.Security.AccessControl.AceType>  
+-   <xref:System.Security.AccessControl.AceType.SystemAlarmCallback>  
   
  ]]></format>
     </remarks>
@@ -51,6 +52,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -85,6 +87,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -108,6 +111,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -138,6 +142,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

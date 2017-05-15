@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>GetAssemblyIdentity</c> task. Use the <c>GetAssemblyIdentity</c> element in your project file to create and execute this task. For usage and parameter information, see [GetAssemblyIdentity Task](http://msdn.microsoft.com/library/a977e072-37ad-4941-84a6-32a4483be55d).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.GetAssemblyIdentity" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Assemblies">
@@ -51,6 +53,7 @@
         <summary>Gets or sets the retrieved assembly identities.</summary>
         <value>The retrieved assembly identities.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AssemblyFiles">
@@ -74,6 +77,7 @@
         <summary>Gets or sets the files to retrieve identities from.</summary>
         <value>The files to retrieve identities from.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -94,6 +98,7 @@
         <returns>
           <see langword="true" /> if the <c>GetAssemblyIdentity</c> task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

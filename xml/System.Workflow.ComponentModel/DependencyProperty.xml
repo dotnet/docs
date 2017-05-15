@@ -29,7 +29,7 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- Dependency properties support three use cases. First, if an instance property of an activity is implemented by using a dependency property, that property can be assigned an <xref:System.Workflow.ComponentModel.ActivityBind> instead of an actual value. Second, activity properties that are metadata (that is, the value cannot change at run time) should be implemented by using dependency properties, specifying the <xref:System.Workflow.ComponentModel.DependencyPropertyOptions> option. Third, dependency properties support attached properties, which are properties that are applied to dependency objects dynamically.  
+ Dependency properties support three use cases. First, if an instance property of an activity is implemented by using a dependency property, that property can be assigned an <xref:System.Workflow.ComponentModel.ActivityBind> instead of an actual value. Second, activity properties that are metadata (that is, the value cannot change at run time) should be implemented by using dependency properties, specifying the <xref:System.Workflow.ComponentModel.DependencyPropertyOptions.Metadata> option. Third, dependency properties support attached properties, which are properties that are applied to dependency objects dynamically.  
   
    
   

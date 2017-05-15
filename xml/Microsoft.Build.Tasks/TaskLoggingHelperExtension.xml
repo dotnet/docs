@@ -13,6 +13,7 @@
   <Docs>
     <summary>Enables logging of various messages. Also, enables loading and formatting of resources.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,6 +38,7 @@
         <param name="helpKeywordPrefix">The prefix for composing Help keywords.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.TaskLoggingHelperExtension" /> class with the task instance, primary resources, shared resources, and a Help keyword prefix.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FormatResourceString">
@@ -76,6 +78,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TaskSharedResources">
@@ -101,6 +104,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

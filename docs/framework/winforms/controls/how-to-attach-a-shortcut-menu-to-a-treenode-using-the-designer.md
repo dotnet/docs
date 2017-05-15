@@ -2,7 +2,7 @@
 title: "How to: Attach a Shortcut Menu to a TreeNode Using the Designer | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "TreeNode, attaching a shortcut menu using Designer"
 ms.assetid: 8e45e184-1313-4f8f-90ff-2cd5789b2268
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Attach a Shortcut Menu to a TreeNode Using the Designer

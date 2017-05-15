@@ -13,6 +13,7 @@
   <Docs>
     <summary>This task resolves the following items in the build process to files for manifest generation: built items, dependencies, satellites, content, debug symbols, and documentation) to files for manifest generation.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.ResolveManifestFiles" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DeploymentManifestEntryPoint">
@@ -53,6 +55,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EntryPoint">
@@ -71,6 +74,7 @@
         <summary>Gets or sets the managed assembly or ClickOnce manifest reference that is the entry point to the manifest.</summary>
         <value>The entry point.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -91,6 +95,7 @@
         <returns>
           <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExtraFiles">
@@ -109,6 +114,7 @@
         <summary>Gets or sets the extra files.</summary>
         <value>The extra files.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Files">
@@ -127,6 +133,7 @@
         <summary>Gets or sets the input files.</summary>
         <value>The input files.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ManagedAssemblies">
@@ -145,6 +152,7 @@
         <summary>Gets or sets the managed assemblies.</summary>
         <value>The managed assemblies.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NativeAssemblies">
@@ -163,6 +171,7 @@
         <summary>Gets or sets the native assemblies.</summary>
         <value>The native assemblies.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OutputAssemblies">
@@ -186,6 +195,7 @@
         <summary>Gets or sets the generated assemblies.</summary>
         <value>The generated assemblies.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OutputDeploymentManifestEntryPoint">
@@ -216,6 +226,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OutputEntryPoint">
@@ -239,6 +250,7 @@
         <summary>Gets or sets the output entry point.</summary>
         <value>An output entry point.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OutputFiles">
@@ -262,6 +274,7 @@
         <summary>Gets or sets the output files.</summary>
         <value>The output files.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PublishFiles">
@@ -280,6 +293,7 @@
         <summary>Gets or sets the publish files.</summary>
         <value>The publish files.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SatelliteAssemblies">
@@ -298,6 +312,7 @@
         <summary>Gets or sets the satellite assemblies.</summary>
         <value>The satellite assemblies.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SigningManifests">
@@ -316,6 +331,7 @@
         <summary>Gets or sets a value that indicates whether the manifests are signed.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TargetCulture">
@@ -334,6 +350,7 @@
         <summary>Gets or sets the target culture for satellite assemblies.</summary>
         <value>The target culture for satellite assemblies.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TargetFrameworkVersion">
@@ -352,6 +369,7 @@
         <summary>Gets or sets the target .NET Framework version.</summary>
         <value>The version of the target .NET Framework.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

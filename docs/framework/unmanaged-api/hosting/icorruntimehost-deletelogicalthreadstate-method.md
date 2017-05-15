@@ -2,18 +2,19 @@
 title: "ICorRuntimeHost::DeleteLogicalThreadState Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorRuntimeHost.DeleteLogicalThreadState"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::DeleteLogicalThreadState"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorRuntimeHost::DeleteLogicalThreadState method [.NET Framework hosting]"
   - "DeleteLogicalThreadState method [.NET Framework hosting]"
 ms.assetid: 34ffc4a6-6553-43df-9b43-779effb67e2c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

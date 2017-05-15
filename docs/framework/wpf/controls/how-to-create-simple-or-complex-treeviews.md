@@ -2,7 +2,7 @@
 title: "How to: Create Simple or Complex TreeViews | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "Control class, TreeView, creating"
 ms.assetid: 1defbb78-b8e7-4c0e-b650-576453ac828d
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create Simple or Complex TreeViews

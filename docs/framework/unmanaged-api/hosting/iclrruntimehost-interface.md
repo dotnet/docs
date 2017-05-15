@@ -2,18 +2,19 @@
 title: "ICLRRuntimeHost Interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRRuntimeHost"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRRuntimeHost"
 dev_langs: 
@@ -21,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRRuntimeHost interface [.NET Framework hosting]"
 ms.assetid: cb0c5f65-3791-47bc-b833-2f84f4101ba5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 26
 author: "rpetrusha"
 ms.author: "ronpet"

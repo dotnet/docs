@@ -2,7 +2,7 @@
 title: "How to: Define an Icon for a ToolBar Button Using the Designer | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "ToolBar control [Windows Forms], adding icons to buttons"
 ms.assetid: d848f38e-67f2-49d4-8e88-01c845c06c02
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Define an Icon for a ToolBar Button Using the Designer

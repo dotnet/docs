@@ -13,6 +13,7 @@
   <Docs>
     <summary>Stores objects that represent the static methods of the <see cref="T:Microsoft.JScript.ErrorPrototype" /> class. The <see cref="T:Microsoft.JScript.LenientErrorPrototype" /> class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="constructor">
@@ -30,6 +31,7 @@
       <Docs>
         <summary>Stores a reference to an <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="name">
@@ -47,6 +49,7 @@
       <Docs>
         <summary>Stores a string that contains the name of the subtype of the error.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toString">
@@ -64,6 +67,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.ErrorPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ErrorPrototype" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

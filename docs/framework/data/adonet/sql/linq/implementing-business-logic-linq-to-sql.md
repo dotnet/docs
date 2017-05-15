@@ -2,7 +2,7 @@
 title: "Implementing Business Logic (LINQ to SQL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -72,7 +72,7 @@ public partial class MyNorthWindDataContext : System.Data.Linq.DataContext
         #endregion  
 ```  
   
- If you implement the Insert, Update and Delete methods in your partial class, the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] runtime will call them instead of its own default methods when <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called. This enables you to override the default behavior for create / read / update / delete operations. For more information, see [Walkthrough: Customizing the insert, update, and delete behavior of entity classes](../Topic/Walkthrough:%20Customizing%20the%20insert,%20update,%20and%20delete%20behavior%20of%20entity%20classes.md).  
+ If you implement the Insert, Update and Delete methods in your partial class, the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] runtime will call them instead of its own default methods when <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called. This enables you to override the default behavior for create / read / update / delete operations. For more information, see [Walkthrough: Customizing the insert, update, and delete behavior of entity classes](https://docs.microsoft.com/visualstudio/data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes).  
   
  The `OnCreated` method is called in the class constructor.  
   
@@ -180,14 +180,14 @@ partial class Customer
   
  For more information about how to add business logic to your application by using partial methods, see the following topics:  
   
- [How to: Add validation to entity classes](http://msdn.microsoft.com/library/61107da9-7fa3-4dba-b101-ae46536f52c4)  
+ [How to: Add validation to entity classes](/visualstudio/data-tools/how-to-add-validation-to-entity-classes)  
   
- [Walkthrough: Customizing the insert, update, and delete behavior of entity classes](../Topic/Walkthrough:%20Customizing%20the%20insert,%20update,%20and%20delete%20behavior%20of%20entity%20classes.md)  
+ [Walkthrough: Customizing the insert, update, and delete behavior of entity classes](https://docs.microsoft.com/visualstudio/data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes)  
   
  [Walkthrough: Adding Validation to Entity Classes](http://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)  
   
 ## See Also  
  [Partial Classes and Methods](~/docs/csharp/programming-guide/classes-and-structs/partial-classes-and-methods.md)   
  [Partial Methods](~/docs/visual-basic/programming-guide/language-features/procedures/partial-methods.md)   
- [LINQ to SQL Tools in Visual Studio](http://msdn.microsoft.com/library/45e477c0-5c6b-41f9-b2d0-2808fb4f6537)   
+ [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)   
  [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md)

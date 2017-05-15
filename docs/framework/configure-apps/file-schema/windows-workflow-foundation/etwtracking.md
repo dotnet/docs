@@ -2,7 +2,7 @@
 title: "&lt;etwTracking&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -25,7 +25,7 @@ A service behavior that allows a service to utilize ETW tracking using an <xref:
 ## Syntax  
   
 ```  
-<behaviors>  <serviceBehaviors>    <behavior name=String">      <etwTracking profileName=”String” />    </behavior>  </serviceBehaviors></behaviors>  
+<behaviors>  <serviceBehaviors>    <behavior name=String">      <etwTracking profileName="String" />    </behavior>  </serviceBehaviors></behaviors>  
 ```  
   
 ## Attributes and Elements  

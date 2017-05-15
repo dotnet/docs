@@ -2,7 +2,7 @@
 title: "DataGrid Control (Windows Forms) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "data [Windows Forms], displaying on Windows Forms"
 ms.assetid: 1d9d5683-43d2-42dd-b6c3-e43f4cf0de99
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # DataGrid Control (Windows Forms)

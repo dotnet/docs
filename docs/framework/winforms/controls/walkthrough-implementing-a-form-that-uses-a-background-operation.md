@@ -2,7 +2,7 @@
 title: "Walkthrough: Implementing a Form That Uses a Background Operation | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "background operations"
 ms.assetid: 4691b796-9200-471a-89c3-ba4c7cc78c03
 caps.latest.revision: 25
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Implementing a Form That Uses a Background Operation
@@ -160,7 +160,7 @@ If you have an operation that will take a long time to complete, and you do not 
   
 -   Use multiple <xref:System.ComponentModel.BackgroundWorker> objects for several simultaneous operations.  
   
--   To debug your multithreaded application, see [How to: Use the Threads Window](http://msdn.microsoft.com/library/adfbe002-3d7b-42a9-b42a-5ac0903dfc25).  
+-   To debug your multithreaded application, see [How to: Use the Threads Window](/visualstudio/debugger/how-to-use-the-threads-window).  
   
 -   Implement your own component that supports the asynchronous programming model. For more information, see [Event-based Asynchronous Pattern Overview](../../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md).  
   

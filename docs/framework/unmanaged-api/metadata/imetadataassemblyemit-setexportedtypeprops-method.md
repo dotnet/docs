@@ -2,18 +2,19 @@
 title: "IMetaDataAssemblyEmit::SetExportedTypeProps Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataAssemblyEmit.SetExportedTypeProps"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyEmit::SetExportedTypeProps"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SetExportedTypeProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyEmit::SetExportedTypeProps method [.NET Framework metadata]"
 ms.assetid: 1c090153-fd5f-46c7-9cff-39a78d992c8f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

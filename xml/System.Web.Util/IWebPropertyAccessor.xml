@@ -10,6 +10,7 @@
   <Docs>
     <summary>Provides the interface for implementing property accessors.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="GetProperty">
@@ -32,6 +33,7 @@
         <summary>Gets the value of a specified property.</summary>
         <returns>The value of the specified property.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetProperty">
@@ -55,6 +57,7 @@
         <param name="value">The object containing the value of the property.</param>
         <summary>Sets the specified property with the given value.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -2,7 +2,7 @@
 title: "Configuring Services Using Configuration Files | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -183,7 +183,7 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
        \<endpoint   
           address="myAddress3" behaviorConfiguration="myBehavior"  
           binding="basicHttpBinding"  
-          contract=”MyContract” />  
+          contract="MyContract" />  
       </service>  
     </services>  
    \</system.serviceModel>  
@@ -273,7 +273,7 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
   
  Behavior merge applies to both endpoint behaviors and service behaviors in configuration.  
   
- If a child behavior collection contains a behavior that’s already present in the parent behavior collection, the child behavior overrides the parent. So if a parent behavior collection had `<serviceMetadata httpGetEnabled="False" />` and a child behavior collection had `<serviceMetadata httpGetEnabled="True" />`, the child behavior would override the parent behavior in the behavior collection and httpGetEnabled would be “true”.  
+ If a child behavior collection contains a behavior that’s already present in the parent behavior collection, the child behavior overrides the parent. So if a parent behavior collection had `<serviceMetadata httpGetEnabled="False" />` and a child behavior collection had `<serviceMetadata httpGetEnabled="True" />`, the child behavior would override the parent behavior in the behavior collection and httpGetEnabled would be "true".  
   
 ## See Also  
  [Simplified Configuration](../../../docs/framework/wcf/simplified-configuration.md)   

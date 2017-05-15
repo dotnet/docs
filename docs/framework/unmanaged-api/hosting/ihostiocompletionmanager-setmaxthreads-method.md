@@ -2,18 +2,19 @@
 title: "IHostIoCompletionManager::SetMaxThreads Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostIoCompletionManager.SetMaxThreads"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostIoCompletionManager::SetMaxThreads"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostIoCompletionManager::SetMaxThreads method [.NET Framework hosting]"
   - "SetMaxThreads method, IHostIoCompletionManager interface [.NET Framework hosting]"
 ms.assetid: ebad4f40-d9f1-4dc6-9b27-a89c9eb3926f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

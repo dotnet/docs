@@ -2,7 +2,7 @@
 title: "How to: Set ToolTips for Controls on a Windows Form at Design Time | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], tooltips"
 ms.assetid: c4b60637-4c0a-44c2-a103-f66dff887936
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set ToolTips for Controls on a Windows Form at Design Time

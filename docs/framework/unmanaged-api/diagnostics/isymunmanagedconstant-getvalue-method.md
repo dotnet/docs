@@ -2,18 +2,19 @@
 title: "ISymUnmanagedConstant::GetValue Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedConstant.GetValue"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedConstant::GetValue"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetValue method, ISymUnmanagedConstant interface [.NET Framework debugging]"
   - "ISymUnmanagedConstant::GetValue method [.NET Framework debugging]"
 ms.assetid: 0036fc10-e768-47a8-b9cf-bf47faf8d194
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

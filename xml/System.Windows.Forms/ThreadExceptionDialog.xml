@@ -21,6 +21,7 @@
   <Docs>
     <summary>Implements a dialog box that is displayed when an unhandled exception occurs in a thread.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,6 +47,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AutoSize">
@@ -76,6 +78,7 @@
         <value>
           <see langword="true" /> if the dialog box automatically sizes; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AutoSizeChanged">
@@ -101,6 +104,7 @@
       <Docs>
         <summary>Occurs when the <see cref="P:System.Windows.Forms.ThreadExceptionDialog.AutoSize" /> property changes.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

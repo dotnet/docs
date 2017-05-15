@@ -2,18 +2,19 @@
 title: "ICorProfilerInfo2::GetStringLayout Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo2.GetStringLayout"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetStringLayout"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetStringLayout method [.NET Framework profiling]"
   - "ICorProfilerInfo2::GetStringLayout method [.NET Framework profiling]"
 ms.assetid: 43189651-a535-4803-a1d1-f1c427ace2ca
+topic_type: 
+  - "apiref"
 caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"

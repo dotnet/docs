@@ -13,6 +13,7 @@
   <Docs>
     <summary>Performs relational comparison operations. This class belongs to the abstract syntax tree category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,6 +32,7 @@
         <param name="operatorTok">One of the <see cref="T:Microsoft.JScript.JSToken" /> enumeration values. Specifies the comparison to perform.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.Relational" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EvaluateRelational">
@@ -60,6 +62,7 @@
         <summary>Performs a relational comparison operation on the specified operands.</summary>
         <returns>The result of the operation.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="JScriptCompare">
@@ -84,6 +87,7 @@
         <summary>Performs a relational comparison operation on the specified operands.</summary>
         <returns>The result of the operation.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

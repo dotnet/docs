@@ -2,7 +2,7 @@
 title: "How to: Hit Test Using a Win32 Host Container | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "Win32 host containers, hit tests using"
 ms.assetid: 9491f7f3-d8ba-4573-a888-2f064d1349dc
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Hit Test Using a Win32 Host Container

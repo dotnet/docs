@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,6 +44,7 @@
         <param name="reference">The reference to the assembly.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.ReferenceAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="reference">
@@ -60,6 +62,7 @@
       <Docs>
         <summary>Specifies the reference to the assembly.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

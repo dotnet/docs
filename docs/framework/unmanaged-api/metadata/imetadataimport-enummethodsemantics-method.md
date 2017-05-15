@@ -2,18 +2,19 @@
 title: "IMetaDataImport::EnumMethodSemantics Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport.EnumMethodSemantics"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::EnumMethodSemantics"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "EnumMethodSemantics method [.NET Framework metadata]"
   - "IMetaDataImport::EnumMethodSemantics method [.NET Framework metadata]"
 ms.assetid: e7e3c630-9691-46d6-94df-b5593a7bb08a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

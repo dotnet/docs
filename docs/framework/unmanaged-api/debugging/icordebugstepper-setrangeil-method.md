@@ -2,18 +2,19 @@
 title: "ICorDebugStepper::SetRangeIL Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugStepper.SetRangeIL"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugStepper::SetRangeIL"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SetRangeIL method [.NET Framework debugging]"
   - "ICorDebugStepper::SetRangeIL method [.NET Framework debugging]"
 ms.assetid: a20c95f0-6da7-4b41-b27f-584211cebb92
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

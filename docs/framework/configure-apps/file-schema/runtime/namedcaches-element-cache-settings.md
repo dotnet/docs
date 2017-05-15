@@ -2,7 +2,7 @@
 title: "&lt;namedCaches&gt; Element (Cache Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,7 +36,7 @@ Specifies a collection of configuration settings for the named <xref:System.Runt
   
 ```  
 <namedCaches>  
-  <add name="default"   
+  <add name="default"   
 </namedCaches>  
 ```  
   

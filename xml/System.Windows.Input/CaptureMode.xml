@@ -17,7 +17,7 @@
 ## Remarks  
  When <xref:System.Windows.Input.CaptureMode> is set to Element, mouse capture is applied only to the element which has captured the mouse.  
   
- When <xref:System.Windows.Input.CaptureMode> is set to SubTree, mouse capture is applied to the element that has mouse capture or one of its child elements if the mouse is over the child element.  
+ When <xref:System.Windows.Input.CaptureMode.Element> is set to SubTree, mouse capture is applied to the element that has mouse capture or one of its child elements if the mouse is over the child element.  
   
  ]]></format>
     </remarks>

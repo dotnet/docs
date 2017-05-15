@@ -2,18 +2,19 @@
 title: "ISymUnmanagedVariable::GetAttributes Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedVariable.GetAttributes"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedVariable::GetAttributes"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetAttributes method [.NET Framework debugging]"
   - "ISymUnmanagedVariable::GetAttributes method [.NET Framework debugging]"
 ms.assetid: 80f168af-a6a6-4c8f-b9e6-8a82dc834ed5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

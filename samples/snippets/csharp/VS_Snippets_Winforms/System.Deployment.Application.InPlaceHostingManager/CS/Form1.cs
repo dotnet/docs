@@ -4,7 +4,7 @@ using System.Text;
 using System.Deployment.Application;
 using System.Windows.Forms; 
 //using System.Xml.Linq;
-using System.Xml; // required for the manifest in the completed event args
+using System.Xml;
 
 namespace InPlaceHostingManagerProject
 {

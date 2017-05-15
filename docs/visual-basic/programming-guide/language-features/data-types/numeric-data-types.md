@@ -34,8 +34,8 @@ helpviewer_keywords:
   - "Decimal data type, numeric data types"
 ms.assetid: a27bd4d0-7e14-43eb-9cc4-b42eaab323c9
 caps.latest.revision: 25
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

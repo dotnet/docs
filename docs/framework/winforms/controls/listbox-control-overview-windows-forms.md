@@ -2,7 +2,7 @@
 title: "ListBox Control Overview (Windows Forms) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "ListBox control [Windows Forms], about ListBox control"
 ms.assetid: 37ea226b-6fc8-4c70-936a-c6af4e0cad4c
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ListBox Control Overview (Windows Forms)

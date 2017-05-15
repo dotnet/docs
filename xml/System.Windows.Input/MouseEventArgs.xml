@@ -187,7 +187,7 @@
    
   
 ## Examples  
- The following example prints a message if the state of the <xref:System.Windows.Input.MouseEventArgs.LeftButton%2A> property is <xref:System.Windows.Input.MouseButtonState>.  
+ The following example prints a message if the state of the <xref:System.Windows.Input.MouseEventArgs.LeftButton%2A> property is <xref:System.Windows.Input.MouseButtonState.Pressed>.  
   
  [!code-csharp[mousesnippetsample#MouseEventArgsLeftButtonDown](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mouseeventargsleftbuttondown)]
  [!code-vb[mousesnippetsample#MouseEventArgsLeftButtonDown](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mouseeventargsleftbuttondown)]  
@@ -220,7 +220,7 @@
    
   
 ## Examples  
- The following example prints a message if the state of the <xref:System.Windows.Input.MouseEventArgs.MiddleButton%2A> property is <xref:System.Windows.Input.MouseButtonState>.  
+ The following example prints a message if the state of the <xref:System.Windows.Input.MouseEventArgs.MiddleButton%2A> property is <xref:System.Windows.Input.MouseButtonState.Pressed>.  
   
  [!code-csharp[mousesnippetsample#MouseEventArgsMiddleButtonDown](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mouseeventargsmiddlebuttondown)]
  [!code-vb[mousesnippetsample#MouseEventArgsMiddleButtonDown](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mouseeventargsmiddlebuttondown)]  
@@ -286,7 +286,7 @@
    
   
 ## Examples  
- The following example prints a message if the state of the <xref:System.Windows.Input.MouseEventArgs.RightButton%2A> property is <xref:System.Windows.Input.MouseButtonState>.  
+ The following example prints a message if the state of the <xref:System.Windows.Input.MouseEventArgs.RightButton%2A> property is <xref:System.Windows.Input.MouseButtonState.Pressed>.  
   
  [!code-csharp[mousesnippetsample#MouseEventArgsRightButtonDown](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mouseeventargsrightbuttondown)]
  [!code-vb[mousesnippetsample#MouseEventArgsRightButtonDown](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mouseeventargsrightbuttondown)]  
@@ -347,7 +347,7 @@
    
   
 ## Examples  
- The following example prints a message if the state of the <xref:System.Windows.Input.MouseEventArgs.XButton1%2A> property is <xref:System.Windows.Input.MouseButtonState>.  
+ The following example prints a message if the state of the <xref:System.Windows.Input.MouseEventArgs.XButton1%2A> property is <xref:System.Windows.Input.MouseButtonState.Pressed>.  
   
  [!code-csharp[mousesnippetsample#MouseEventArgsXButton1ButtonDown](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mouseeventargsxbutton1buttondown)]
  [!code-vb[mousesnippetsample#MouseEventArgsXButton1ButtonDown](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mouseeventargsxbutton1buttondown)]  
@@ -380,7 +380,7 @@
    
   
 ## Examples  
- The following example prints a message if the state of the <xref:System.Windows.Input.MouseEventArgs.XButton2%2A> property is <xref:System.Windows.Input.MouseButtonState>.  
+ The following example prints a message if the state of the <xref:System.Windows.Input.MouseEventArgs.XButton2%2A> property is <xref:System.Windows.Input.MouseButtonState.Pressed>.  
   
  [!code-csharp[mousesnippetsample#MouseEventArgsXButton2ButtonDown](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseSnippetSample/CSharp/Window1.xaml.cs#mouseeventargsxbutton2buttondown)]
  [!code-vb[mousesnippetsample#MouseEventArgsXButton2ButtonDown](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseSnippetSample/visualbasic/window1.xaml.vb#mouseeventargsxbutton2buttondown)]  

@@ -2,7 +2,7 @@
 title: "How to: Handle the ContextMenuStrip Opening Event | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "shortcut menus, event handling"
 ms.assetid: b661b3dd-7815-4cc2-a1aa-a9a391ab3427
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Handle the ContextMenuStrip Opening Event

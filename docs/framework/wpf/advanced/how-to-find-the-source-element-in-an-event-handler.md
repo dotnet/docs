@@ -2,7 +2,7 @@
 title: "How to: Find the Source Element in an Event Handler | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "event handlers, finding source element in"
 ms.assetid: 85f71c5a-b714-4c65-9711-7d905c2bbe98
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Find the Source Element in an Event Handler

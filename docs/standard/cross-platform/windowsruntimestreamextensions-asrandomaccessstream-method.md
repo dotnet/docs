@@ -2,16 +2,15 @@
 title: "WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream) Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
+api_name: 
   - "System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream"
-apilocation: 
+api_location: 
   - "System.Runtime.WindowsRuntime.dll"
 dev_langs: 
   - "VB"
@@ -36,15 +35,15 @@ manager: "wpickett"
   
 ```csharp  
 [CLSCompliantAttribute(false)]  
-public static  IRandomAccessStream AsRandomAccessStream(Stream stream)  
+public static  IRandomAccessStream AsRandomAccessStream(Stream stream)  
 ```  
   
 ```vb  
 'Declaration  
 <ExtensionAttribute> _  
 <CLSCompliantAttribute(False)> _  
-Public Shared Function AsRandomAccessStream ( _  
-        stream As Stream) As IRandomAccessStream  
+Public Shared Function AsRandomAccessStream ( _  
+        stream As Stream) As IRandomAccessStream  
 ```  
   
 #### Parameters  

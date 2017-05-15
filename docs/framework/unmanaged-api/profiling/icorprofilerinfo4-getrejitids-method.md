@@ -2,18 +2,19 @@
 title: "ICorProfilerInfo4::GetReJITIDs Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo4.GetReJITIDs"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo4::GetReJITIDs"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetReJITIDs method, ICorProfilerInfo4 interface [.NET Framework profiling]"
   - "ICorProfilerInfo4::GetReJITIDs method [.NET Framework profiling]"
 ms.assetid: 634ac28c-a5b7-4fc3-af84-256c24ca8177
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

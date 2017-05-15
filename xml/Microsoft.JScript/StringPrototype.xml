@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides static methods and properties for <see cref="T:Microsoft.JScript.StringObject" /> objects. All methods of this class are called by passing in a reference to the object that is requesting access to the method. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="anchor">
@@ -40,8 +41,9 @@
         <param name="thisob">The object that this method is acting upon.</param>
         <param name="anchorName">The name attribute of the anchor element.</param>
         <summary>Converts the specified object to text enclosed in anchor tags, and gives the anchor element the specified name attribute.</summary>
-        <returns>A string in the form <c>"&lt;A NAME=\""+</c> <paramref name="anchorName" /> <c>+"\"&gt;"+</c> <paramref name="thisob" /> <c>+"&lt;/A&gt;"</c>.</returns>
+        <returns>A string in the form <c>"&lt;A NAME=\""+</c><paramref name="anchorName" /><c>+"\"&gt;"+</c><paramref name="thisob" /><c>+"&lt;/A&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="big">
@@ -67,8 +69,9 @@
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
         <summary>Converts the specified object to text enclosed in bigger text markup tags.</summary>
-        <returns>A string in the form <c>"&lt;BIG&gt;"+</c> <paramref name="thisob" /> <c>+"&lt;/BIG&gt;"</c>.</returns>
+        <returns>A string in the form <c>"&lt;BIG&gt;"+</c><paramref name="thisob" /><c>+"&lt;/BIG&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="blink">
@@ -94,8 +97,9 @@
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
         <summary>Converts the specified object to text enclosed in blink markup tags.</summary>
-        <returns>A string in the form <c>"&lt;BLINK&gt;"+</c> <paramref name="thisob" /> <c>+"&lt;/BLINK&gt;"</c>.</returns>
+        <returns>A string in the form <c>"&lt;BLINK&gt;"+</c><paramref name="thisob" /><c>+"&lt;/BLINK&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="bold">
@@ -121,8 +125,9 @@
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
         <summary>Converts the specified object to text enclosed in bold text markup tags.</summary>
-        <returns>A string in the form <c>"&lt;B&gt;"+</c> <paramref name="thisob" /> <c>+"&lt;/B&gt;"</c>.</returns>
+        <returns>A string in the form <c>"&lt;B&gt;"+</c><paramref name="thisob" /><c>+"&lt;/B&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="charAt">
@@ -152,6 +157,7 @@
         <summary>Returns the character at the specified position in the specified object.</summary>
         <returns>The character at <paramref name="pos" />, if there is one.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="charCodeAt">
@@ -181,6 +187,7 @@
         <summary>Returns the ASCII code of the character at the specified position in the specified object.</summary>
         <returns>The code of the character at <paramref name="pos" />, if there is one.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="concat">
@@ -216,6 +223,7 @@
         <summary>Appends the specified arguments to the specified object.</summary>
         <returns>A string representation of <paramref name="thisob" />, with <paramref name="args" /> appended.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="constructor">
@@ -234,6 +242,7 @@
         <summary>Gets a reference to a prototype-based object that is using this prototype.</summary>
         <value>A reference to a prototype-based object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="fixed">
@@ -259,8 +268,9 @@
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
         <summary>Converts the specified object to text enclosed in fixed-width text markup tags.</summary>
-        <returns>A string in the form <c>"&lt;TT&gt;"+</c> <paramref name="thisob" /> <c>+"&lt;/TT&gt;"</c>.</returns>
+        <returns>A string in the form <c>"&lt;TT&gt;"+</c><paramref name="thisob" /><c>+"&lt;/TT&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="fontcolor">
@@ -288,8 +298,9 @@
         <param name="thisob">The object that this method is acting upon.</param>
         <param name="colorName">The color attribute of the font element.</param>
         <summary>Converts the specified object to text enclosed in font tags, and gives the element the specified color attribute.</summary>
-        <returns>A string in the form <c>"&lt;FONT COLOR=\""+</c> <paramref name="colorName" /> <c>+"\"&gt;"+</c> <paramref name="thisob" /> <c>+"&lt;/FONT&gt;"</c>.</returns>
+        <returns>A string in the form <c>"&lt;FONT COLOR=\""+</c><paramref name="colorName" /><c>+"\"&gt;"+</c><paramref name="thisob" /><c>+"&lt;/FONT&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="fontsize">
@@ -317,8 +328,9 @@
         <param name="thisob">The object that this method is acting upon.</param>
         <param name="fontSize">The size attribute of the font element.</param>
         <summary>Converts the specified object to text enclosed in font tags, and gives the element the specified size attribute.</summary>
-        <returns>A string in the form <c>"&lt;FONT SIZE=\""+</c> <paramref name="fontSize" /> <c>+"\"&gt;"+</c> <paramref name="thisob" /> <c>+"&lt;/FONT&gt;"</c>.</returns>
+        <returns>A string in the form <c>"&lt;FONT SIZE=\""+</c><paramref name="fontSize" /><c>+"\"&gt;"+</c><paramref name="thisob" /><c>+"&lt;/FONT&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="indexOf">
@@ -350,6 +362,7 @@
         <summary>Searches for the first occurrence of the specified string in the specified object, starting from the specified character position.</summary>
         <returns>The position of the first occurrence of <paramref name="searchString" />, if it is found.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="italics">
@@ -375,8 +388,9 @@
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
         <summary>Converts the specified object to text enclosed in italic text markup tags.</summary>
-        <returns>A string in the form <c>"&lt;I&gt;"+</c> <paramref name="thisob" /> <c>+"&lt;/I&gt;"</c>.</returns>
+        <returns>A string in the form <c>"&lt;I&gt;"+</c><paramref name="thisob" /><c>+"&lt;/I&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="lastIndexOf">
@@ -408,6 +422,7 @@
         <summary>Searches for the last occurrence of the specified string in the specified object, starting from the specified character position.</summary>
         <returns>The position of the last occurrence of <paramref name="searchString" />, if it is found.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="link">
@@ -435,8 +450,9 @@
         <param name="thisob">The object that this method is acting upon.</param>
         <param name="linkRef">The target attribute of the anchor element.</param>
         <summary>Converts the specified object to text enclosed in anchor tags, and gives the anchor element the link target attribute that is specified.</summary>
-        <returns>A string in the form <c>"&lt;A HREF=\""+</c> <paramref name="linkRef" /> <c>+"\"&gt;"+</c> <paramref name="thisob" /> <c>+"&lt;/A&gt;"</c>.</returns>
+        <returns>A string in the form <c>"&lt;A HREF=\""+</c><paramref name="linkRef" /><c>+"\"&gt;"+</c><paramref name="thisob" /><c>+"&lt;/A&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="localeCompare">
@@ -466,6 +482,7 @@
         <summary>Compares the two specified strings and returns an integer that indicates the lexical relationship between them.</summary>
         <returns>A negative value when <paramref name="thisob" /> is less than <paramref name="thatob" />; zero when <paramref name="thisob" /> equals <paramref name="thatob" />; a positive value when <paramref name="thisob" /> is greater than <paramref name="thatob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="match">
@@ -497,6 +514,7 @@
         <summary>Runs a search for the specified regular expression pattern on the specified object.</summary>
         <returns>The result of the search for the regular expression pattern.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="replace">
@@ -528,6 +546,7 @@
         <summary>Runs a search for the specified regular expression pattern on the first specified object, and replaces any matches with the third specified object.</summary>
         <returns>The new string, after the replacement is made.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="search">
@@ -559,6 +578,7 @@
         <summary>Runs a search for the specified regular expression pattern on the specified object.</summary>
         <returns>If the search is successful, the index of the match; otherwise, -1.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="slice">
@@ -590,6 +610,7 @@
         <summary>Creates a new string that contains the specified consecutive characters from the specified string.</summary>
         <returns>A new string that contains the consecutive characters between <paramref name="start" /> and <paramref name="end" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="small">
@@ -615,8 +636,9 @@
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
         <summary>Converts the specified object to text enclosed in smaller text markup tags.</summary>
-        <returns>A string in the form <c>"&lt;SMALL&gt;"+</c> <paramref name="thisob" /> <c>+"&lt;/SMALL&gt;"</c>.</returns>
+        <returns>A string in the form <c>"&lt;SMALL&gt;"+</c><paramref name="thisob" /><c>+"&lt;/SMALL&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="split">
@@ -650,6 +672,7 @@
         <summary>Returns an array that contains the substrings in the specified object that are delimited by the specified characters. The number of substrings in the array is constrained by the specified limit.</summary>
         <returns>An array that contains the substrings in <paramref name="thisob" /> that are delimited by <paramref name="separator" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="strike">
@@ -675,8 +698,9 @@
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
         <summary>Converts the specified object to text enclosed in strikethrough markup tags.</summary>
-        <returns>A string in the form <c>"&lt;STRIKE&gt;"+</c> <paramref name="thisob" /> <c>+"&lt;/STRIKE&gt;"</c>.</returns>
+        <returns>A string in the form <c>"&lt;STRIKE&gt;"+</c><paramref name="thisob" /><c>+"&lt;/STRIKE&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="sub">
@@ -702,8 +726,9 @@
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
         <summary>Converts the specified object to text enclosed in subscript markup tags.</summary>
-        <returns>A string in the form <c>"&lt;SUB&gt;"+</c> <paramref name="thisob" /> <c>+"&lt;/SUB&gt;"</c>.</returns>
+        <returns>A string in the form <c>"&lt;SUB&gt;"+</c><paramref name="thisob" /><c>+"&lt;/SUB&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="substr">
@@ -738,6 +763,7 @@
         <summary>Creates a new string that contains the specified number of consecutive characters from the specified string, starting from the specified character position. Use <see cref="M:Microsoft.JScript.StringPrototype.substring(System.Object,System.Double,System.Object)" /> instead, if you can.</summary>
         <returns>A new string that contains <paramref name="count" /> consecutive characters, starting at <paramref name="start" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="substring">
@@ -769,6 +795,7 @@
         <summary>Creates a new string that contains the specified consecutive characters from the specified string.</summary>
         <returns>A new string that contains the consecutive characters between <paramref name="start" /> and <paramref name="end" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="sup">
@@ -794,8 +821,9 @@
       <Docs>
         <param name="thisob">The object that this method is acting upon.</param>
         <summary>Converts the specified object to text enclosed in superscript markup tags.</summary>
-        <returns>A string in the form <c>"&lt;SUP&gt;"+</c> <paramref name="thisob" /> <c>+"&lt;/SUP&gt;"</c>.</returns>
+        <returns>A string in the form <c>"&lt;SUP&gt;"+</c><paramref name="thisob" /><c>+"&lt;/SUP&gt;"</c>.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toLocaleLowerCase">
@@ -823,6 +851,7 @@
         <summary>Returns a copy of the specified string converted to lowercase, based on the casing rules of <see cref="P:System.Globalization.CultureInfo.CurrentUICulture" />.</summary>
         <returns>A lowercase string.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toLocaleUpperCase">
@@ -850,6 +879,7 @@
         <summary>Returns a copy of the specified string converted to uppercase, based on the casing rules of <see cref="P:System.Globalization.CultureInfo.CurrentUICulture" />.</summary>
         <returns>An uppercase string.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toLowerCase">
@@ -877,6 +907,7 @@
         <summary>Returns a copy of the specified string converted to lowercase, based on the casing rules of <see cref="P:System.Globalization.CultureInfo.InvariantCulture" />.</summary>
         <returns>A lowercase string.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toString">
@@ -904,6 +935,7 @@
         <summary>Creates a string representation of the specified object.</summary>
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toUpperCase">
@@ -931,6 +963,7 @@
         <summary>Returns a copy of the specified string converted to uppercase, based on the casing rules of <see cref="P:System.Globalization.CultureInfo.InvariantCulture" />.</summary>
         <returns>An uppercase string.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="valueOf">
@@ -958,6 +991,7 @@
         <summary>Returns the value of the specified object.</summary>
         <returns>The value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

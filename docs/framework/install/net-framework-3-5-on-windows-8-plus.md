@@ -2,7 +2,7 @@
 title: "Installing the .NET Framework 3.5 on Windows 8, Windows 8.1 and Windows 10 | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -55,7 +55,7 @@ The .NET Framework is an integral part of many applications running on Windows a
 ## Enable the .NET Framework 3.5 in Control Panel  
  You can enable the .NET Framework 3.5 yourself through Control Panel. This option requires an Internet connection.  
   
-1.  Press the Windows key ![Windows logo](../../../docs/framework/get-started/media/windowskeyboardlogo.png "Windowskeyboardlogo") on your keyboard, type Windows Features, and press Enter. This brings up the **Turn Windows features on or off** dialog box. Alternately, open Control Panel, click on the Programs items, and then click on “Turn Windows features on or off” under Programs and Features.  
+1.  Press the Windows key ![Windows logo](../../../docs/framework/get-started/media/windowskeyboardlogo.png "Windowskeyboardlogo") on your keyboard, type Windows Features, and press Enter. This brings up the **Turn Windows features on or off** dialog box. Alternately, open Control Panel, click on the Programs items, and then click on "Turn Windows features on or off" under Programs and Features.  
   
 2.  Select the **.NET Framework 3.5 (includes .NET 2.0 and 3.0)** check box, press OK, and reboot your computer if prompted.  
   

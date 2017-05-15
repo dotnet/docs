@@ -8,6 +8,7 @@
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -44,7 +45,7 @@
   
 -   The <xref:System.Threading.Mutex> class. See [Mutexes](~/docs/standard/threading/mutexes.md).  
   
--   The <xref:System.Threading.EventWaitHandle> class and its derived classes, <xref:System.Threading.AutoResetEvent> and <xref:System.Threading.ManualResetEvent>. See [EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](../Topic/EventWaitHandle,%20AutoResetEvent,%20CountdownEvent,%20ManualResetEvent.md).  
+-   The <xref:System.Threading.EventWaitHandle> class and its derived classes, <xref:System.Threading.AutoResetEvent> and <xref:System.Threading.ManualResetEvent>. See [EventWaitHandle, AutoResetEvent, CountdownEvent, ManualResetEvent](~/docs/standard/threading/eventwaithandle-autoresetevent-countdownevent-manualresetevent.md).  
   
 -   The <xref:System.Threading.Semaphore> class. See [Semaphore and SemaphoreSlim](~/docs/standard/threading/semaphore-and-semaphoreslim.md).  
   
@@ -65,7 +66,7 @@
  The overloads of these methods provide timeout intervals for abandoning the wait, and the opportunity to exit a synchronization context before entering the wait, allowing other threads to use the synchronization context.  
   
 > [!IMPORTANT]
->  This type implements the <xref:System.IDisposable> interface. When you have finished using the type or a type derived from it, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.Threading.WaitHandle.Close%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+>  This type implements the <xref:System.IDisposable> interface. When you have finished using the type or a type derived from it, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.Threading.WaitHandle.Close%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
   
  <xref:System.Threading.WaitHandle> implements the <xref:System.IDisposable.Dispose%2A> pattern. See [Dispose Pattern](~/docs/standard/design-guidelines/dispose-pattern.md). When you derive from <xref:System.Threading.WaitHandle>, use the <xref:System.Threading.WaitHandle.SafeWaitHandle%2A> property to store your native handle operating system handle. You do not need to override the protected <xref:System.Threading.WaitHandle.Dispose%2A> method unless you use additional unmanaged resources.  
   
@@ -94,6 +95,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -123,6 +125,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -159,6 +165,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -199,6 +206,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -253,6 +261,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("Use the SafeWaitHandle property instead.")</AttributeName>
@@ -295,6 +307,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -336,6 +349,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -384,6 +401,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -443,6 +464,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -512,6 +537,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -579,6 +608,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -611,7 +641,7 @@
 > [!NOTE]
 >  The <xref:System.Threading.WaitHandle.WaitAll%2A> method is not supported on threads that have <xref:System.STAThreadAttribute>.  
   
- Calling this method overload is equivalent to calling the [WaitAll(WaitHandle\<xref:System.Threading.WaitHandle.WaitAll%28System.Threading.WaitHandle%5B%5D%2CSystem.Int32%2CSystem.Boolean%29> method overload and specifying -1 (or <xref:System.Threading.Timeout.Infinite?displayProperty=fullName>) for `millisecondsTimeout`and `true` for `exitContext`.  
+ Calling this method overload is equivalent to calling the <xref:System.Threading.WaitHandle.WaitAll%28System.Threading.WaitHandle%5B%5D%2CSystem.Int32%2CSystem.Boolean%29> method overload and specifying -1 (or <xref:System.Threading.Timeout.Infinite?displayProperty=fullName>) for `millisecondsTimeout` and `true` for `exitContext`.  
   
    
   
@@ -632,12 +662,12 @@
   
  <paramref name="waitHandles" /> is an array with no elements and the .NET Framework version is 2.0 or later.</exception>
         <exception cref="T:System.DuplicateWaitObjectException">
-          <block subset="none" type="note">  
-<para>  
+          <block subset="none" type="note">
+            <para>  
  In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.ArgumentException" />, instead.  
   
-</para>  
-</block>  
+</para>
+          </block>  
   
  The <paramref name="waitHandles" /> array contains elements that are duplicates.</exception>
         <exception cref="T:System.NotSupportedException">The number of objects in <paramref name="waitHandles" /> is greater than the system permits.  
@@ -662,6 +692,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -696,7 +727,7 @@
 > [!NOTE]
 >  The <xref:System.Threading.WaitHandle.WaitAll%2A> method is not supported on threads that have <xref:System.STAThreadAttribute>.  
   
- Calling this method overload is the same as calling the [WaitAll(WaitHandle\<xref:System.Threading.WaitHandle.WaitAll%28System.Threading.WaitHandle%5B%5D%2CSystem.Int32%2CSystem.Boolean%29> overload and specifying `false` for `exitContext`.  
+ Calling this method overload is the same as calling the <xref:System.Threading.WaitHandle.WaitAll%28System.Threading.WaitHandle%5B%5D%2CSystem.Int32%2CSystem.Boolean%29> overload and specifying `false` for `exitContext`.  
   
  ]]></format>
         </remarks>
@@ -710,12 +741,12 @@
   
  <paramref name="waitHandles" /> is an array with no elements.</exception>
         <exception cref="T:System.DuplicateWaitObjectException">
-          <block subset="none" type="note">  
-<para>  
+          <block subset="none" type="note">
+            <para>  
  In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.ArgumentException" />, instead.  
   
-</para>  
-</block>  
+</para>
+          </block>  
   
  The <paramref name="waitHandles" /> array contains elements that are duplicates.</exception>
         <exception cref="T:System.NotSupportedException">The number of objects in <paramref name="waitHandles" /> is greater than the system permits.  
@@ -740,6 +771,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -776,7 +808,7 @@
   
  The maximum value for `timeout` is <xref:System.Int32.MaxValue?displayProperty=fullName>.  
   
- Calling this method overload is the same as calling the [WaitAll(WaitHandle\<xref:System.Threading.WaitHandle.WaitAll%28System.Threading.WaitHandle%5B%5D%2CSystem.TimeSpan%2CSystem.Boolean%29> overload and specifying `false` for `exitContext`.  
+ Calling this method overload is the same as calling the <xref:System.Threading.WaitHandle.WaitAll%28System.Threading.WaitHandle%5B%5D%2CSystem.TimeSpan%2CSystem.Boolean%29> overload and specifying `false` for `exitContext`.  
   
  ]]></format>
         </remarks>
@@ -790,12 +822,12 @@
   
  <paramref name="waitHandles" /> is an array with no elements.</exception>
         <exception cref="T:System.DuplicateWaitObjectException">
-          <block subset="none" type="note">  
-<para>  
+          <block subset="none" type="note">
+            <para>  
  In the [.NET for Windows Store apps](http://go.microsoft.com/fwlink/?LinkID=247912) or the [Portable Class Library](~/docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md), catch the base class exception, <see cref="T:System.ArgumentException" />, instead.  
   
-</para>  
-</block>  
+</para>
+          </block>  
   
  The <paramref name="waitHandles" /> array contains elements that are duplicates.</exception>
         <exception cref="T:System.NotSupportedException">The number of objects in <paramref name="waitHandles" /> is greater than the system permits.  
@@ -826,6 +858,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -862,11 +898,11 @@
 >  The <xref:System.Threading.WaitHandle.WaitAll%2A> method is not supported on threads that have <xref:System.STAThreadAttribute>.  
   
 ## Notes on Exiting the Context  
- The `exitContext` parameter has no effect unless the [WaitAll Method (WaitHandle\<xref:System.Threading.WaitHandle.WaitAll%2A> method is called from inside a nondefault managed context. This can happen if your thread is inside a call to an instance of a class derived from <xref:System.ContextBoundObject>. Even if you are currently executing a method on a class that is not derived from <xref:System.ContextBoundObject>, like <xref:System.String>, you can be in a nondefault context if a <xref:System.ContextBoundObject> is on your stack in the current application domain.  
+ The `exitContext` parameter has no effect unless the <xref:System.Threading.WaitHandle.WaitAll%2A> method is called from inside a nondefault managed context. This can happen if your thread is inside a call to an instance of a class derived from <xref:System.ContextBoundObject>. Even if you are currently executing a method on a class that is not derived from <xref:System.ContextBoundObject>, like <xref:System.String>, you can be in a nondefault context if a <xref:System.ContextBoundObject> is on your stack in the current application domain.  
   
- When your code is executing in a nondefault context, specifying `true` for `exitContext` causes the thread to exit the nondefault managed context (that is, to transition to the default context) before executing the [WaitAll Method (WaitHandle\<xref:System.Threading.WaitHandle.WaitAll%2A> method. The thread returns to the original nondefault context after the call to the [WaitAll Method (WaitHandle\<xref:System.Threading.WaitHandle.WaitAll%2A> method completes.  
+ When your code is executing in a nondefault context, specifying `true` for `exitContext` causes the thread to exit the nondefault managed context (that is, to transition to the default context) before executing the <xref:System.Threading.WaitHandle.WaitAll%2A> method. The thread returns to the original nondefault context after the call to the <xref:System.Threading.WaitHandle.WaitAll%2A> method completes.  
   
- This can be useful when the context-bound class has the <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> attribute. In that case, all calls to members of the class are automatically synchronized, and the synchronization domain is the entire body of code for the class. If code in the call stack of a member calls the [WaitAll Method (WaitHandle\<xref:System.Threading.WaitHandle.WaitAll%2A> method and specifies `true` for `exitContext`, the thread exits the synchronization domain, allowing a thread that is blocked on a call to any member of the object to proceed. When the [WaitAll Method (WaitHandle\<xref:System.Threading.WaitHandle.WaitAll%2A> method returns, the thread that made the call must wait to reenter the synchronization domain.  
+ This can be useful when the context-bound class has the <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> attribute. In that case, all calls to members of the class are automatically synchronized, and the synchronization domain is the entire body of code for the class. If code in the call stack of a member calls the <xref:System.Threading.WaitHandle.WaitAll%2A> method and specifies `true` for `exitContext`, the thread exits the synchronization domain, allowing a thread that is blocked on a call to any member of the object to proceed. When the <xref:System.Threading.WaitHandle.WaitAll%2A> method returns, the thread that made the call must wait to reenter the synchronization domain.  
   
    
   
@@ -916,6 +952,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -948,11 +988,11 @@
  The maximum value for `timeout` is <xref:System.Int32.MaxValue?displayProperty=fullName>.  
   
 ## Notes on Exiting the Context  
- The `exitContext` parameter has no effect unless the [WaitAll Method (WaitHandle\<xref:System.Threading.WaitHandle.WaitAll%2A> method is called from inside a nondefault managed context. This can happen if your thread is inside a call to an instance of a class derived from <xref:System.ContextBoundObject>. Even if you are currently executing a method on a class that is not derived from <xref:System.ContextBoundObject>, like <xref:System.String>, you can be in a nondefault context if a <xref:System.ContextBoundObject> is on your stack in the current application domain.  
+ The `exitContext` parameter has no effect unless the <xref:System.Threading.WaitHandle.WaitAll%2A> method is called from inside a nondefault managed context. This can happen if your thread is inside a call to an instance of a class derived from <xref:System.ContextBoundObject>. Even if you are currently executing a method on a class that is not derived from <xref:System.ContextBoundObject>, like <xref:System.String>, you can be in a nondefault context if a <xref:System.ContextBoundObject> is on your stack in the current application domain.  
   
- When your code is executing in a nondefault context, specifying `true` for `exitContext` causes the thread to exit the nondefault managed context (that is, to transition to the default context) before executing the [WaitAll Method (WaitHandle\<xref:System.Threading.WaitHandle.WaitAll%2A> method. It returns to the original nondefault context after the call to the [WaitAll Method (WaitHandle\<xref:System.Threading.WaitHandle.WaitAll%2A> method completes.  
+ When your code is executing in a nondefault context, specifying `true` for `exitContext` causes the thread to exit the nondefault managed context (that is, to transition to the default context) before executing the <xref:System.Threading.WaitHandle.WaitAll%2A> method. It returns to the original nondefault context after the call to the <xref:System.Threading.WaitHandle.WaitAll%2A> method completes.  
   
- This can be useful when the context-bound class has <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>. In that case, all calls to members of the class are automatically synchronized, and the synchronization domain is the entire body of code for the class. If code in the call stack of a member calls the [WaitAll Method (WaitHandle\<xref:System.Threading.WaitHandle.WaitAll%2A> method and specifies `true` for `exitContext`, the thread exits the synchronization domain, allowing a thread that is blocked on a call to any member of the object to proceed. When the [WaitAll Method (WaitHandle\<xref:System.Threading.WaitHandle.WaitAll%2A> method returns, the thread that made the call must wait to reenter the synchronization domain.  
+ This can be useful when the context-bound class has <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>. In that case, all calls to members of the class are automatically synchronized, and the synchronization domain is the entire body of code for the class. If code in the call stack of a member calls the <xref:System.Threading.WaitHandle.WaitAll%2A> method and specifies `true` for `exitContext`, the thread exits the synchronization domain, allowing a thread that is blocked on a call to any member of the object to proceed. When the <xref:System.Threading.WaitHandle.WaitAll%2A> method returns, the thread that made the call must wait to reenter the synchronization domain.  
   
    
   
@@ -1003,6 +1043,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1041,7 +1082,7 @@
   
  This method returns when any handle is signaled. If more than one object becomes signaled during the call, the return value is the array index of the signaled object with the smallest index value of all the signaled objects. On some implementations, if more that 64 handles are passed, a <xref:System.NotSupportedException> is thrown.  
   
- Calling this method overload is equivalent to calling the [WaitAny(WaitHandle\<xref:System.Threading.WaitHandle.WaitAny%28System.Threading.WaitHandle%5B%5D%2CSystem.Int32%2CSystem.Boolean%29> method overload and specifying -1 (or <xref:System.Threading.Timeout.Infinite?displayProperty=fullName>) for `millisecondsTimeout`and `true` for `exitContext`.  
+ Calling this method overload is equivalent to calling the <xref:System.Threading.WaitHandle.WaitAny%28System.Threading.WaitHandle%5B%5D%2CSystem.Int32%2CSystem.Boolean%29> method overload and specifying -1 (or <xref:System.Threading.Timeout.Infinite?displayProperty=fullName>) for `millisecondsTimeout` and `true` for `exitContext`.  
   
    
   
@@ -1079,6 +1120,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1116,7 +1158,7 @@
   
  This method returns when the wait terminates, either when any of the handles are signaled or when a timeout occurs. If more than one object becomes signaled during the call, the return value is the array index of the signaled object with the smallest index value of all the signaled objects. On some implementations, if more that 64 handles are passed, a <xref:System.NotSupportedException> is thrown.  
   
- Calling this method overload is the same as calling the [WaitAny(WaitHandle\<xref:System.Threading.WaitHandle.WaitAny%28System.Threading.WaitHandle%5B%5D%2CSystem.Int32%2CSystem.Boolean%29> overload and specifying `false` for `exitContext`.  
+ Calling this method overload is the same as calling the <xref:System.Threading.WaitHandle.WaitAny%28System.Threading.WaitHandle%5B%5D%2CSystem.Int32%2CSystem.Boolean%29> overload and specifying `false` for `exitContext`.  
   
  ]]></format>
         </remarks>
@@ -1145,6 +1187,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1184,7 +1227,7 @@
   
  The maximum value for `timeout` is <xref:System.Int32.MaxValue?displayProperty=fullName>.  
   
- Calling this method overload is the same as calling the [WaitAny(WaitHandle\<xref:System.Threading.WaitHandle.WaitAny%28System.Threading.WaitHandle%5B%5D%2CSystem.TimeSpan%2CSystem.Boolean%29> overload and specifying `false` for `exitContext`.  
+ Calling this method overload is the same as calling the <xref:System.Threading.WaitHandle.WaitAny%28System.Threading.WaitHandle%5B%5D%2CSystem.TimeSpan%2CSystem.Boolean%29> overload and specifying `false` for `exitContext`.  
   
  ]]></format>
         </remarks>
@@ -1219,6 +1262,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1259,11 +1306,11 @@
  This method returns when the wait terminates, either when any of the handles are signaled or when a timeout occurs. If more than one object becomes signaled during the call, the return value is the array index of the signaled object with the smallest index value of all the signaled objects. On some implementations, if more that 64 handles are passed, a <xref:System.NotSupportedException> is thrown.  
   
 ## Notes on Exiting the Context  
- The `exitContext` parameter has no effect unless the [WaitAny Method (WaitHandle\<xref:System.Threading.WaitHandle.WaitAny%2A> method is called from inside a nondefault managed context. This can happen if your thread is inside a call to an instance of a class derived from <xref:System.ContextBoundObject>. Even if you are currently executing a method on a class that does not derive from <xref:System.ContextBoundObject>, like <xref:System.String>, you can be in a nondefault context if a <xref:System.ContextBoundObject> is on your stack in the current application domain.  
+ The `exitContext` parameter has no effect unless the <xref:System.Threading.WaitHandle.WaitAny%2A> method is called from inside a nondefault managed context. This can happen if your thread is inside a call to an instance of a class derived from <xref:System.ContextBoundObject>. Even if you are currently executing a method on a class that does not derive from <xref:System.ContextBoundObject>, like <xref:System.String>, you can be in a nondefault context if a <xref:System.ContextBoundObject> is on your stack in the current application domain.  
   
- When your code is executing in a nondefault context, specifying `true` for `exitContext` causes the thread to exit the nondefault managed context (that is, to transition to the default context) before executing the [WaitAny Method (WaitHandle\<xref:System.Threading.WaitHandle.WaitAny%2A> method. The thread returns to the original nondefault context after the call to the [WaitAny Method (WaitHandle\<xref:System.Threading.WaitHandle.WaitAny%2A> method completes.  
+ When your code is executing in a nondefault context, specifying `true` for `exitContext` causes the thread to exit the nondefault managed context (that is, to transition to the default context) before executing the <xref:System.Threading.WaitHandle.WaitAny%2A> method. The thread returns to the original nondefault context after the call to the <xref:System.Threading.WaitHandle.WaitAny%2A> method completes.  
   
- This can be useful when the context-bound class has <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>. In that case, all calls to members of the class are automatically synchronized, and the synchronization domain is the entire body of code for the class. If code in the call stack of a member calls the [WaitAny Method (WaitHandle\<xref:System.Threading.WaitHandle.WaitAny%2A> method and specifies `true` for `exitContext`, the thread exits the synchronization domain, allowing a thread that is blocked on a call to any member of the object to proceed. When the [WaitAny Method (WaitHandle\<xref:System.Threading.WaitHandle.WaitAny%2A> method returns, the thread that made the call must wait to reenter the synchronization domain.  
+ This can be useful when the context-bound class has <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>. In that case, all calls to members of the class are automatically synchronized, and the synchronization domain is the entire body of code for the class. If code in the call stack of a member calls the <xref:System.Threading.WaitHandle.WaitAny%2A> method and specifies `true` for `exitContext`, the thread exits the synchronization domain, allowing a thread that is blocked on a call to any member of the object to proceed. When the <xref:System.Threading.WaitHandle.WaitAny%2A> method returns, the thread that made the call must wait to reenter the synchronization domain.  
   
    
   
@@ -1306,6 +1353,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.MayFail)</AttributeName>
@@ -1344,11 +1395,11 @@
  The maximum value for `timeout` is <xref:System.Int32.MaxValue?displayProperty=fullName>.  
   
 ## Notes on Exiting the Context  
- The `exitContext` parameter has no effect unless the [WaitAny Method (WaitHandle\<xref:System.Threading.WaitHandle.WaitAny%2A> method is called from inside a nondefault managed context. This can happen if your thread is inside a call to an instance of a class derived from <xref:System.ContextBoundObject>. Even if you are currently executing a method on a class that does not derive from <xref:System.ContextBoundObject>, like <xref:System.String>, you can be in a nondefault context if a <xref:System.ContextBoundObject> is on your stack in the current application domain.  
+ The `exitContext` parameter has no effect unless the <xref:System.Threading.WaitHandle.WaitAny%2A> method is called from inside a nondefault managed context. This can happen if your thread is inside a call to an instance of a class derived from <xref:System.ContextBoundObject>. Even if you are currently executing a method on a class that does not derive from <xref:System.ContextBoundObject>, like <xref:System.String>, you can be in a nondefault context if a <xref:System.ContextBoundObject> is on your stack in the current application domain.  
   
- When your code is executing in a nondefault context, specifying `true` for `exitContext` causes the thread to exit the nondefault managed context (that is, to transition to the default context) before executing the [WaitAny Method (WaitHandle\<xref:System.Threading.WaitHandle.WaitAny%2A> method. The thread returns to the original nondefault context after the call to the [WaitAny Method (WaitHandle\<xref:System.Threading.WaitHandle.WaitAny%2A> method completes.  
+ When your code is executing in a nondefault context, specifying `true` for `exitContext` causes the thread to exit the nondefault managed context (that is, to transition to the default context) before executing the <xref:System.Threading.WaitHandle.WaitAny%2A> method. The thread returns to the original nondefault context after the call to the <xref:System.Threading.WaitHandle.WaitAny%2A> method completes.  
   
- This can be useful when the context-bound class has <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>. In that case, all calls to members of the class are automatically synchronized, and the synchronization domain is the entire body of code for the class. If code in the call stack of a member calls the [WaitAny Method (WaitHandle\<xref:System.Threading.WaitHandle.WaitAny%2A> method and specifies `true` for `exitContext`, the thread exits the synchronization domain, allowing a thread that is blocked on a call to any member of the object to proceed. When the [WaitAny Method (WaitHandle\<xref:System.Threading.WaitHandle.WaitAny%2A> method returns, the thread that made the call must wait to reenter the synchronization domain.  
+ This can be useful when the context-bound class has <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>. In that case, all calls to members of the class are automatically synchronized, and the synchronization domain is the entire body of code for the class. If code in the call stack of a member calls the <xref:System.Threading.WaitHandle.WaitAny%2A> method and specifies `true` for `exitContext`, the thread exits the synchronization domain, allowing a thread that is blocked on a call to any member of the object to proceed. When the <xref:System.Threading.WaitHandle.WaitAny%2A> method returns, the thread that made the call must wait to reenter the synchronization domain.  
   
    
   
@@ -1392,6 +1443,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1449,6 +1501,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1511,6 +1564,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1572,6 +1626,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1637,6 +1695,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1706,6 +1768,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -119,7 +119,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Services.Protocols.HtmlFormParameterWriter.WriteRequest%2A>method calls the [M:System.Web.Services.Protocols.UrlEncodedParameterWriter.Encode(System.IO.TextWriter writer,object\<xref:System.Web.Services.Protocols.UrlEncodedParameterWriter.Encode%2A> writer,object[] values)?qualifyHint=True&autoUpgrade=True method.  
+ The <xref:System.Web.Services.Protocols.HtmlFormParameterWriter.WriteRequest%2A>method calls the <xref:System.Web.Services.Protocols.UrlEncodedParameterWriter.Encode%2A> writer,object[] values)?qualifyHint=True&autoUpgrade=True method.  
   
  ]]></format>
         </remarks>

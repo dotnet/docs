@@ -2,18 +2,19 @@
 title: "IMetaDataEmit::DefineImportType Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataEmit.DefineImportType"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineImportType"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "DefineImportType method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineImportType method [.NET Framework metadata]"
 ms.assetid: 37fd27af-8062-4904-ace4-51bb78ec600a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

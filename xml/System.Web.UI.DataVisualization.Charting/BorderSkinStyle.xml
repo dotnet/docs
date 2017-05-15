@@ -18,7 +18,7 @@
  The <xref:System.Web.UI.DataVisualization.Charting.BorderSkin> class represents the style of the border skin used for a chart image. If you set the <xref:System.Web.UI.DataVisualization.Charting.BorderSkin.SkinStyle> property to None, no skin will be used. This is the default value for the <xref:System.Web.UI.DataVisualization.Charting.BorderSkin.SkinStyle> property.  
   
 > [!NOTE]
->  The difference between the sets of border skin styles that use frames and follow either the naming convention [FrameThin*](assetId:///FrameThin*?qualifyHint=False&amp;autoUpgrade=True) or "[FrameTitle*](assetId:///FrameTitle*?qualifyHint=False&amp;autoUpgrade=True)—for example, FrameThin1 or FrameTitle1—is the shape and thickness of their frames.  
+>  The difference between the sets of border skin styles that use frames and follow either the naming convention "FrameThin*" or "FrameTitle*" (for example, System.Web.UI.DataVisualization.Charting.BorderSkinStyle.FrameThin1 or System.Web.UI.DataVisualization.Charting.BorderSkinStyle.FrameTitle1) is the shape and thickness of their frames.  
   
  In addition, if you use one of the "FrameThin" style border skins, the title of the chart will not be displayed. However, if you use one of the "FrameTitle" style border skins, the title of the chart will appear in the top-horizontal part of the frame.  
   

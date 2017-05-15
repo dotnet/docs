@@ -2,7 +2,7 @@
 title: "WPF XAML Namescopes | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,8 +24,8 @@ helpviewer_keywords:
   - "classes, FrameworkContentElement"
 ms.assetid: 52bbf4f2-15fc-40d4-837b-bb4c21ead7d4
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # WPF XAML Namescopes

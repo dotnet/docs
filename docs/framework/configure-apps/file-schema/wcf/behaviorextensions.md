@@ -2,7 +2,7 @@
 title: "&lt;behaviorExtensions&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,11 +21,11 @@ Behavior extensions enable the user to create user-defined behavior elements. Th
 ```  
 <system.serviceModel>  
     <extensions>  
-        <behaviorExtensions>  
-            <add name="myBehavior" type="Microsoft.ServiceModel.Samples.MyBehaviorSection, MyBehavior,  
+        <behaviorExtensions>  
+            <add name="myBehavior" type="Microsoft.ServiceModel.Samples.MyBehaviorSection, MyBehavior,  
                 Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />  
-       </behaviorExtensions>  
-    </extensions>  
+       </behaviorExtensions>  
+    </extensions>  
 </system.serviceModel>  
 ```  
   

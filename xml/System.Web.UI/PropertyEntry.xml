@@ -22,6 +22,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="DeclaringType">
@@ -40,6 +41,7 @@
         <summary>Gets the type of the class that declares this member.</summary>
         <value>The <see cref="T:System.Type" /> that declares this member.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -58,6 +60,7 @@
         <summary>Gets or sets the value pertaining to the filter portion of an expression.</summary>
         <value>A <see cref="T:System.String" /> containing the value of the filter on an expression.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -76,6 +79,7 @@
         <summary>Gets or sets the property name that the expression applies to.</summary>
         <value>A <see cref="T:System.String" /> containing the property name.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PropertyInfo">
@@ -94,6 +98,7 @@
         <summary>Gets or sets an object containing attributes of the property the expression applies to.</summary>
         <value>A <see cref="T:System.Reflection.PropertyInfo" /> containing the attributes of the property.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -112,6 +117,7 @@
         <summary>Gets or sets the type of the entry.</summary>
         <value>The <see cref="T:System.Type" /> of the entry.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

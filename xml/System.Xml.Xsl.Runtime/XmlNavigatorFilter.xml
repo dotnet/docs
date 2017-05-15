@@ -23,6 +23,7 @@
     <summary>
       <see langword="XmlNavigatorFilter" /> provides a flexible filtering abstraction over <see cref="T:System.Xml.XPath.XPathNavigator" />. Callers do not know what type of filtering will occur; they simply call <see cref="M:System.Xml.Xsl.Runtime.XmlNavigatorFilter.MoveToContent(System.Xml.XPath.XPathNavigator)" /> or <see cref="M:System.Xml.Xsl.Runtime.XmlNavigatorFilter.MoveToFollowingSibling(System.Xml.XPath.XPathNavigator)" />. The filter implementation invokes the appropriate operation on the <see cref="T:System.Xml.XPath.XPathNavigator" /> in order to skip over filtered nodes.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,6 +43,7 @@
       <Docs>
         <summary>Provides a flexible filtering abstraction over <see cref="T:System.Xml.XPath.XPathNavigator" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsFiltered">
@@ -69,6 +71,7 @@
         <returns>
           <see langword="true" /> if the current node matches the condition, otherwise returns <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MoveToContent">
@@ -103,6 +106,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MoveToFollowing">
@@ -139,6 +143,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MoveToFollowingSibling">
@@ -173,6 +178,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MoveToNextContent">
@@ -207,6 +213,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MoveToPreviousSibling">
@@ -241,6 +248,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

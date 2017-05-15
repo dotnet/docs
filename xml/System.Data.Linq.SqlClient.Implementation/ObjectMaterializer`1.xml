@@ -21,6 +21,7 @@
     <typeparam name="TDataReader">The type of the data reader.</typeparam>
     <summary>Defines methods for dynamically materializing objects.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,6 +37,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.SqlClient.Implementation.ObjectMaterializer`1" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Arguments">
@@ -53,6 +55,7 @@
       <Docs>
         <summary>Captures internal state for the fast materializer.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BufferReader">
@@ -70,6 +73,7 @@
       <Docs>
         <summary>Represents a reader that reads data rows in a forward-only manner.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CanDeferLoad">
@@ -89,6 +93,7 @@
         <value>
           <see langword="true" /> if deferred loading is enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Convert&lt;TOutput&gt;">
@@ -115,6 +120,7 @@
         <summary>Changes the type of each element in a specified sequence.</summary>
         <returns>A sequence that contains the type-converted elements.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateGroup&lt;TKey,TElement&gt;">
@@ -145,6 +151,7 @@
         <summary>Creates a group from a specified key and collection of values.</summary>
         <returns>A group that has the specified key and the specified collection of values.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateOrderedEnumerable&lt;TElement&gt;">
@@ -171,6 +178,7 @@
         <summary>Creates an ordered sequence from a specified collection of values.</summary>
         <returns>An ordered sequence that contains the specified values.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DataReader">
@@ -188,6 +196,7 @@
       <Docs>
         <summary>Represents a data reader.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ErrorAssignmentToNull">
@@ -210,6 +219,7 @@
         <summary>Returns an exception that indicates that a <see langword="null" /> value was tried to be assigned to a non-nullable value type.</summary>
         <returns>An exception that indicates that a <see langword="null" /> value was attempted to be assigned to a non-nullable value type.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExecuteSubQuery">
@@ -234,6 +244,7 @@
         <summary>When overridden in a derived class, executes a query.</summary>
         <returns>The results from executing the query.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetLinkSource&lt;T&gt;">
@@ -264,6 +275,7 @@
         <summary>When overridden in a derived class, creates a new deferred source.</summary>
         <returns>An enumerable deferred source.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetNestedLinkSource&lt;T&gt;">
@@ -294,6 +306,7 @@
         <summary>When overridden in a derived class, creates a new deferred source.</summary>
         <returns>An enumerable deferred source.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Globals">
@@ -311,6 +324,7 @@
       <Docs>
         <summary>Captures internal state for the fast materializer.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InsertLookup">
@@ -335,6 +349,7 @@
         <summary>When overridden in a derived class, inserts a value into a data structure.</summary>
         <returns>The value that was inserted into the data structure.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Locals">
@@ -352,6 +367,7 @@
       <Docs>
         <summary>Captures internal state for the fast materializer.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Ordinals">
@@ -369,6 +385,7 @@
       <Docs>
         <summary>Represents column ordinals of a data reader.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -389,6 +406,7 @@
         <returns>
           <see langword="true" /> if there are more rows; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SendEntityMaterialized">
@@ -412,6 +430,7 @@
         <param name="instance">The parameter to pass to the invoked method.</param>
         <summary>When overridden in a derived class, invokes the method represented by <see cref="P:System.Data.Linq.Mapping.MetaType.OnLoadedMethod" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

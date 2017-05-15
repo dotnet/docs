@@ -2,7 +2,7 @@
 title: "How to: Bind Windows Forms Controls with the BindingSource Component Using the Designer | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "data binding, BindingSource component"
 ms.assetid: 391ae170-de5c-40f8-8233-91cb2ee4683a
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Bind Windows Forms Controls with the BindingSource Component Using the Designer
@@ -28,7 +28,7 @@ After you have added controls to your form and determined the user interface for
   
  One or more controls on a form can be bound to data; in the following procedure, a <xref:System.Windows.Forms.TextBox> control is bound to a data source.  
   
- To complete the procedure, it is assumed that you will bind to a data source derived from a database. For more information on creating data sources from other stores of data, see [Add new data sources](http://msdn.microsoft.com/library/ed28c625-bb89-4037-bfde-cfa435d182a2).  
+ To complete the procedure, it is assumed that you will bind to a data source derived from a database. For more information on creating data sources from other stores of data, see [Add new data sources](/visualstudio/data-tools/add-new-data-sources).  
   
 > [!NOTE]
 >  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -70,5 +70,5 @@ After you have added controls to your form and determined the user interface for
 ## See Also  
  <xref:System.Windows.Forms.BindingSource>   
  <xref:System.Windows.Forms.BindingNavigator>   
- [Add new data sources](http://msdn.microsoft.com/library/ed28c625-bb89-4037-bfde-cfa435d182a2)   
+ [Add new data sources](/visualstudio/data-tools/add-new-data-sources)   
  [Data Sources Window](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)

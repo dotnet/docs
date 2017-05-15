@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 82bf3348-c503-4854-a91f-71f9835779ff
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Introduction to Pure Functional Transformations (Visual Basic)

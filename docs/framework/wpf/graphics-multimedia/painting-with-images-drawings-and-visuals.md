@@ -2,7 +2,7 @@
 title: "Painting with Images, Drawings, and Visuals | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "brushes, painting with visuals"
 ms.assetid: 779aac3f-8d41-49d8-8130-768244aa2240
 caps.latest.revision: 28
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Painting with Images, Drawings, and Visuals

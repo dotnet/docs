@@ -2,22 +2,23 @@
 title: "StrongNameErrorInfo Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "StrongNameErrorInfo"
-apilocation: 
+api_location: 
   - "mscoree.dll"
   - "mscorsn.dll"
   - "clr.dll"
   - "mscorwks.dll"
   - "mscoreei.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "StrongNameErrorInfo"
 dev_langs: 
@@ -25,6 +26,8 @@ dev_langs:
 helpviewer_keywords: 
   - "StrongNameErrorInfo function [.NET Framework strong naming]"
 ms.assetid: e91bf8c3-7c26-4732-938e-2e5b04abfc99
+topic_type: 
+  - "apiref"
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

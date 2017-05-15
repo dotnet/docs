@@ -22,6 +22,7 @@
   <Docs>
     <summary>Defines methods for resolving scope. The global scope object of the <see cref="T:Microsoft.JScript.Vsa.VsaEngine" /> implements this interface.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="AddItem">
@@ -46,6 +47,7 @@
         <summary>When implemented in a class, adds an item to the scope.</summary>
         <returns>The new item, if it is successfully added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateDynamicItem">
@@ -70,6 +72,7 @@
         <summary>When implemented in a class, adds an item to the scope. The <see cref="T:Microsoft.JScript.Vsa.VsaEngine" /> must be running to use this method.</summary>
         <returns>The new item, if it is successfully added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetItem">
@@ -92,6 +95,7 @@
         <summary>When implemented in a class, gets the item from the scope that is designated by the specified name.</summary>
         <returns>The item that is named <paramref name="itemName" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetItemAtIndex">
@@ -114,6 +118,7 @@
         <summary>When implemented in a class, gets the item from the scope that is designated by the specified index value.</summary>
         <returns>The item at <paramref name="index" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetItemCount">
@@ -133,6 +138,7 @@
         <summary>When implemented in a class, gets the number of items in the scope.</summary>
         <returns>The number of items in the scope.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetObject">
@@ -152,6 +158,7 @@
         <summary>When implemented in a class, gets a reference to the global scope.</summary>
         <returns>A reference to the global scope.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -170,6 +177,7 @@
         <summary>When implemented in a class, gets a reference to the parent object.</summary>
         <value>The parent scope.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RemoveItem">
@@ -191,6 +199,7 @@
         <param name="item">The item to remove.</param>
         <summary>When implemented in a class, removes the specified <see cref="T:Microsoft.JScript.Vsa.IJSVsaItem" /> object from the scope.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RemoveItem">
@@ -212,6 +221,7 @@
         <param name="itemName">The name of the item to remove.</param>
         <summary>When implemented in a class, removes the item that is designated by the specified name from the scope.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RemoveItemAtIndex">
@@ -233,6 +243,7 @@
         <param name="index">The index of the item to remove.</param>
         <summary>When implemented in a class, removes the item that is designated by the specified index value from the scope.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

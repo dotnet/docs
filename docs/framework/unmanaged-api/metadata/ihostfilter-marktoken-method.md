@@ -2,18 +2,19 @@
 title: "IHostFilter::MarkToken Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostFilter.MarkToken"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostFilter::MarkToken"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "MarkToken method, IHostFilter interface [.NET Framework metadata]"
   - "IHostFilter::MarkToken method [.NET Framework metadata]"
 ms.assetid: d7061343-d0a3-4fd5-b312-61974f98bd62
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Visual Basic code, operators"
 ms.assetid: cb44c210-686f-4417-a13f-51c0d60161f8
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -2,7 +2,7 @@
 title: "x:Subclass Directive | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,7 +29,7 @@ Modifies XAML markup compile behavior when `x:Class` is also provided. Instead o
 ## XAML Attribute Usage  
   
 ```  
-<object x:Class="namespace.classname" x:Subclass="subclassNamespace.subclassName">  
+<object x:Class="namespace.classname" x:Subclass="subclassNamespace.subclassName">  
    ...  
 </object>  
 ```  

@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Interfaces />
   <Attributes>
     <Attribute>
@@ -48,6 +52,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -65,56 +73,31 @@
         <summary>Creates a connection between a data object and an advisory sink. This method is called by an object that supports an advisory sink and enables the advisory sink to be notified of changes in the object's data.</summary>
         <returns>This method supports the standard return values E_INVALIDARG, E_UNEXPECTED, and E_OUTOFMEMORY, as well as the following:  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> S_OK  
+ </description></listheader><item><term> S_OK  
   
- </term>  
-<description> The advisory connection was created.  
+ </term><description> The advisory connection was created.  
   
- </description>  
-</item>  
-<item>  
-<term> E_NOTIMPL  
+ </description></item><item><term> E_NOTIMPL  
   
- </term>  
-<description> This method is not implemented on the data object.  
+ </term><description> This method is not implemented on the data object.  
   
- </description>  
-</item>  
-<item>  
-<term> DV_E_LINDEX  
+ </description></item><item><term> DV_E_LINDEX  
   
- </term>  
-<description> There is an invalid value for <see cref="F:System.Runtime.InteropServices.ComTypes.FORMATETC.lindex" />; currently, only -1 is supported.  
+ </term><description> There is an invalid value for <see cref="F:System.Runtime.InteropServices.ComTypes.FORMATETC.lindex" />; currently, only -1 is supported.  
   
- </description>  
-</item>  
-<item>  
-<term> DV_E_FORMATETC  
+ </description></item><item><term> DV_E_FORMATETC  
   
- </term>  
-<description> There is an invalid value for the <paramref name="pFormatetc" /> parameter.  
+ </term><description> There is an invalid value for the <paramref name="pFormatetc" /> parameter.  
   
- </description>  
-</item>  
-<item>  
-<term> OLE_E_ADVISENOTSUPPORTED  
+ </description></item><item><term> OLE_E_ADVISENOTSUPPORTED  
   
- </term>  
-<description> The data object does not support change notification.  
+ </term><description> The data object does not support change notification.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -138,6 +121,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -172,6 +159,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -183,32 +174,19 @@
         <summary>Creates an object that can be used to enumerate the current advisory connections.</summary>
         <returns>This method supports the standard return value E_OUTOFMEMORY, as well as the following:  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> S_OK  
+ </description></listheader><item><term> S_OK  
   
- </term>  
-<description> The enumerator object is successfully instantiated or there are no connections.  
+ </term><description> The enumerator object is successfully instantiated or there are no connections.  
   
- </description>  
-</item>  
-<item>  
-<term> OLE_E_ADVISENOTSUPPORTED  
+ </description></item><item><term> OLE_E_ADVISENOTSUPPORTED  
   
- </term>  
-<description> This object does not support advisory notifications.  
+ </term><description> This object does not support advisory notifications.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -233,6 +211,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.IEnumFORMATETC</ReturnType>
       </ReturnValue>
@@ -244,40 +226,23 @@
         <summary>Creates an object for enumerating the <see cref="T:System.Runtime.InteropServices.ComTypes.FORMATETC" /> structures for a data object. These structures are used in calls to <see cref="M:System.Runtime.InteropServices.ComTypes.IDataObject.GetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" /> or <see cref="M:System.Runtime.InteropServices.ComTypes.IDataObject.SetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@,System.Boolean)" />.</summary>
         <returns>This method supports the standard return values E_INVALIDARG and E_OUTOFMEMORY, as well as the following:  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> S_OK  
+ </description></listheader><item><term> S_OK  
   
- </term>  
-<description> The enumerator object was successfully created.  
+ </term><description> The enumerator object was successfully created.  
   
- </description>  
-</item>  
-<item>  
-<term> E_NOTIMPL  
+ </description></item><item><term> E_NOTIMPL  
   
- </term>  
-<description> The direction specified by the <paramref name="direction" /> parameter is not supported.  
+ </term><description> The direction specified by the <paramref name="direction" /> parameter is not supported.  
   
- </description>  
-</item>  
-<item>  
-<term> OLE_S_USEREG  
+ </description></item><item><term> OLE_S_USEREG  
   
- </term>  
-<description> Requests that OLE enumerate the formats from the registry.  
+ </term><description> Requests that OLE enumerate the formats from the registry.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -302,6 +267,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -315,56 +284,31 @@
         <summary>Provides a standard <see cref="T:System.Runtime.InteropServices.ComTypes.FORMATETC" /> structure that is logically equivalent to a more complex structure. Use this method to determine whether two different <see cref="T:System.Runtime.InteropServices.ComTypes.FORMATETC" /> structures would return the same data, removing the need for duplicate rendering.</summary>
         <returns>This method supports the standard return values E_INVALIDARG, E_UNEXPECTED, and E_OUTOFMEMORY, as well as the following:  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> S_OK  
+ </description></listheader><item><term> S_OK  
   
- </term>  
-<description> The returned <see cref="T:System.Runtime.InteropServices.ComTypes.FORMATETC" /> structure is different from the one that was passed.  
+ </term><description> The returned <see cref="T:System.Runtime.InteropServices.ComTypes.FORMATETC" /> structure is different from the one that was passed.  
   
- </description>  
-</item>  
-<item>  
-<term> DATA_S_SAMEFORMATETC  
+ </description></item><item><term> DATA_S_SAMEFORMATETC  
   
- </term>  
-<description> The <see cref="T:System.Runtime.InteropServices.ComTypes.FORMATETC" /> structures are the same and <see langword="null" /> is returned in the <paramref name="formatOut" /> parameter.  
+ </term><description> The <see cref="T:System.Runtime.InteropServices.ComTypes.FORMATETC" /> structures are the same and <see langword="null" /> is returned in the <paramref name="formatOut" /> parameter.  
   
- </description>  
-</item>  
-<item>  
-<term> DV_E_LINDEX  
+ </description></item><item><term> DV_E_LINDEX  
   
- </term>  
-<description> There is an invalid value for <see cref="F:System.Runtime.InteropServices.ComTypes.FORMATETC.lindex" />; currently, only -1 is supported.  
+ </term><description> There is an invalid value for <see cref="F:System.Runtime.InteropServices.ComTypes.FORMATETC.lindex" />; currently, only -1 is supported.  
   
- </description>  
-</item>  
-<item>  
-<term> DV_E_FORMATETC  
+ </description></item><item><term> DV_E_FORMATETC  
   
- </term>  
-<description> There is an invalid value for the <paramref name="pFormatetc" /> parameter.  
+ </term><description> There is an invalid value for the <paramref name="pFormatetc" /> parameter.  
   
- </description>  
-</item>  
-<item>  
-<term> OLE_E_NOTRUNNING  
+ </description></item><item><term> OLE_E_NOTRUNNING  
   
- </term>  
-<description> The application is not running.  
+ </term><description> The application is not running.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -388,6 +332,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -424,6 +372,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -459,6 +411,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -470,64 +426,35 @@
         <summary>Determines whether the data object is capable of rendering the data described in the <see cref="T:System.Runtime.InteropServices.ComTypes.FORMATETC" /> structure. Objects attempting a paste or drop operation can call this method before calling <see cref="M:System.Runtime.InteropServices.ComTypes.IDataObject.GetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" /> to get an indication of whether the operation may be successful.</summary>
         <returns>This method supports the standard return values E_INVALIDARG, E_UNEXPECTED, and E_OUTOFMEMORY, as well as the following:  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> S_OK  
+ </description></listheader><item><term> S_OK  
   
- </term>  
-<description> A subsequent call to <see cref="M:System.Runtime.InteropServices.ComTypes.IDataObject.GetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" /> would probably be successful.  
+ </term><description> A subsequent call to <see cref="M:System.Runtime.InteropServices.ComTypes.IDataObject.GetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" /> would probably be successful.  
   
- </description>  
-</item>  
-<item>  
-<term> DV_E_LINDEX  
+ </description></item><item><term> DV_E_LINDEX  
   
- </term>  
-<description> An invalid value for <see cref="F:System.Runtime.InteropServices.ComTypes.FORMATETC.lindex" />; currently, only -1 is supported.  
+ </term><description> An invalid value for <see cref="F:System.Runtime.InteropServices.ComTypes.FORMATETC.lindex" />; currently, only -1 is supported.  
   
- </description>  
-</item>  
-<item>  
-<term> DV_E_FORMATETC  
+ </description></item><item><term> DV_E_FORMATETC  
   
- </term>  
-<description> An invalid value for the <paramref name="pFormatetc" /> parameter.  
+ </term><description> An invalid value for the <paramref name="pFormatetc" /> parameter.  
   
- </description>  
-</item>  
-<item>  
-<term> DV_E_TYMED  
+ </description></item><item><term> DV_E_TYMED  
   
- </term>  
-<description> An invalid <see cref="F:System.Runtime.InteropServices.ComTypes.FORMATETC.tymed" /> value.  
+ </term><description> An invalid <see cref="F:System.Runtime.InteropServices.ComTypes.FORMATETC.tymed" /> value.  
   
- </description>  
-</item>  
-<item>  
-<term> DV_E_DVASPECT  
+ </description></item><item><term> DV_E_DVASPECT  
   
- </term>  
-<description> An invalid <see cref="F:System.Runtime.InteropServices.ComTypes.FORMATETC.dwAspect" /> value.  
+ </term><description> An invalid <see cref="F:System.Runtime.InteropServices.ComTypes.FORMATETC.dwAspect" /> value.  
   
- </description>  
-</item>  
-<item>  
-<term> OLE_E_NOTRUNNING  
+ </description></item><item><term> OLE_E_NOTRUNNING  
   
- </term>  
-<description> The application is not running.  
+ </term><description> The application is not running.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -551,6 +478,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

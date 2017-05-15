@@ -2,18 +2,19 @@
 title: "ICeeGen::GetSectionBlock Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICeeGen.GetSectionBlock"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICeeGen::GetSectionBlock"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetSectionBlock method [.NET Framework metadata]"
   - "ICeeGen::GetSectionBlock method [.NET Framework metadata]"
 ms.assetid: 05c78aaf-5bbd-497e-9ae2-55f4fae0c5fb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

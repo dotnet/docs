@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="ProtectedConfigAction">
@@ -62,6 +63,7 @@
         <param name="exception">The exception to display.</param>
         <summary>Allows specific manipulation of configuration sections and assembly-key containers based on the supplied parameters.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RegisterAsnetMmcAssembly">
@@ -89,6 +91,7 @@
         <param name="exception">The exception to display.</param>
         <summary>Allows the executing Microsoft Management Console (MMC) assembly to be registered or unregistered.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RegisterSystemWebAssembly">
@@ -112,6 +115,7 @@
         <param name="exception">An <see cref="T:System.IntPtr" /> that points to the exception thrown by the method.  If no exception is thrown, the value is <see cref="F:System.IntPtr.Zero" />.</param>
         <summary>Allows the executing Web assembly to be registered or unregistered.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RemoveBrowserCaps">
@@ -134,6 +138,7 @@
         <summary>Allows the browser-capabilities code generator to be uninstalled.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Exception">The attempt to uninstall the browser-capabilities code generator fails.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -2,7 +2,7 @@
 title: "How to: Specify the Edit Mode for the Windows Forms DataGridView Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "data grids, edit mode"
 ms.assetid: 93e117e8-94c4-411b-ba31-645e475ed85c
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Specify the Edit Mode for the Windows Forms DataGridView Control

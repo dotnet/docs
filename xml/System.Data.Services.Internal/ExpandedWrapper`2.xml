@@ -34,6 +34,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,6 +50,7 @@
       <Docs>
         <summary>Creates an instance of the <see cref="T:System.Data.Services.Internal.ExpandedWrapper`2" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InternalGetExpandedPropertyValue">
@@ -89,6 +91,7 @@
         <summary>Get or sets the property to expand.</summary>
         <value>The property to expand.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

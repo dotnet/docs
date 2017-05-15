@@ -2,7 +2,7 @@
 title: "How to: Set the Text Displayed by a Windows Forms Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,8 +28,8 @@ helpviewer_keywords:
   - "forms, captions"
 ms.assetid: 36b95bff-8780-479d-b86a-f1a0673653aa
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set the Text Displayed by a Windows Forms Control

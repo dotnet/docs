@@ -39,6 +39,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,6 +55,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.GenerateApplicationManifest" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ClrVersion">
@@ -79,6 +81,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConfigFile">
@@ -104,6 +107,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Dependencies">
@@ -129,6 +133,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ErrorReportUrl">
@@ -154,6 +159,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FileAssociations">
@@ -187,6 +193,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Files">
@@ -205,6 +212,7 @@
         <summary>Gets or sets the full paths of files to include in the manifest.</summary>
         <value>Paths to files that are included in the manifest.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetObjectType">
@@ -253,6 +261,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IconFile">
@@ -278,6 +287,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsolatedComReferences">
@@ -303,6 +313,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ManifestType">
@@ -334,6 +345,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnManifestLoaded">
@@ -405,6 +417,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Product">
@@ -430,6 +443,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Publisher">
@@ -455,6 +469,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RequiresMinimumFramework35SP1">
@@ -474,6 +489,7 @@
         <value>
           <see langword="true" /> if the application requires .NET Framework 3.5 SP1; <see langword="false" /> otherwise.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SuiteName">
@@ -492,6 +508,7 @@
         <summary>Gets or sets the name of the folder on the **Start** menu where the application is located after ClickOnce deployment.</summary>
         <value>A string that represents the name of a **Start** menu folder.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SupportUrl">
@@ -517,6 +534,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TargetFrameworkProfile">
@@ -535,6 +553,7 @@
         <summary>Gets or sets the target framework profile.</summary>
         <value>Returns the target framework profile.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TargetFrameworkSubset">
@@ -553,6 +572,7 @@
         <summary>Gets or sets the name of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] subset to target.</summary>
         <value>The name of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] subset.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TrustInfoFile">
@@ -578,6 +598,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UseApplicationTrust">
@@ -605,6 +626,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ValidateInputs">

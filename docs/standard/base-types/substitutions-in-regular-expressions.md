@@ -2,11 +2,10 @@
 title: "Substitutions in Regular Expressions | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -33,7 +32,7 @@ manager: "wpickett"
 |`${` *name* `}`|Includes the last substring matched by the named group that is designated by `(?<`*name*`> )` in the replacement string. For more information, see [Substituting a Named Group](#Named).|  
 |`$$`|Includes a single "$" literal in the replacement string. For more information, see [Substituting a "$" Symbol](#DollarSign).|  
 |`$&`|Includes a copy of the entire match in the replacement string. For more information, see [Substituting the Entire Match](#EntireMatch).|  
-|`$``|Includes all the text of the input string before the match in the replacement string. For more information, see [Substituting the Text before the Match](#BeforeMatch).|  
+|<code>$`</code>|Includes all the text of the input string before the match in the replacement string. For more information, see [Substituting the Text before the Match](#BeforeMatch).|  
 |`$'`|Includes all the text of the input string after the match in the replacement string. For more information, see [Substituting the Text after the Match](#AfterMatch).|  
 |`$+`|Includes the last group captured in the replacement string. For more information, see [Substituting the Last Captured Group](#LastGroup).|  
 |`$_`|Includes the entire input string in the replacement string. For more information, see [Substituting the Entire Input String](#EntireString).|  
@@ -142,14 +141,14 @@ manager: "wpickett"
   
 <a name="BeforeMatch"></a>   
 ## Substituting the Text Before the Match  
- The `$`` substitution replaces the matched string with the entire input string before the match. That is, it duplicates the input string up to the match while removing the matched text. Any text that follows the matched text is unchanged in the result string. If there are multiple matches in an input string, the replacement text is derived from the original input string, rather than from the string in which text has been replaced by earlier matches. \(The example provides an illustration.\) If there is no match, the `$`` substitution has no effect.  
+ The <code>$`</code> substitution replaces the matched string with the entire input string before the match. That is, it duplicates the input string up to the match while removing the matched text. Any text that follows the matched text is unchanged in the result string. If there are multiple matches in an input string, the replacement text is derived from the original input string, rather than from the string in which text has been replaced by earlier matches. \(The example provides an illustration.\) If there is no match, the <code>$`</code> substitution has no effect.  
   
- The following example uses the regular expression pattern `\d+` to match a sequence of one or more decimal digits in the input string. The replacement string `$`` replaces these digits with the text that precedes the match.  
+ The following example uses the regular expression pattern `\d+` to match a sequence of one or more decimal digits in the input string. The replacement string <code>$`</code> replaces these digits with the text that precedes the match.  
   
  [!code-csharp[Conceptual.Regex.Language.Substitutions#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.substitutions/cs/before1.cs#4)]
  [!code-vb[Conceptual.Regex.Language.Substitutions#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.substitutions/vb/before1.vb#4)]  
   
- In this example, the input string `"aa1bb2cc3dd4ee5"` contains five matches. The following table illustrates how the `$`` substitution causes the regular expression engine to replace each match in the input string. Inserted text is shown in bold in the results column.  
+ In this example, the input string `"aa1bb2cc3dd4ee5"` contains five matches. The following table illustrates how the <code>$`</code> substitution causes the regular expression engine to replace each match in the input string. Inserted text is shown in bold in the results column.  
   
 |Match|Position|String before match|Result string|  
 |-----------|--------------|-------------------------|-------------------|  

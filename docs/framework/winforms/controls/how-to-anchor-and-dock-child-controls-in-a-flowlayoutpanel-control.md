@@ -2,7 +2,7 @@
 title: "How to: Anchor and Dock Child Controls in a FlowLayoutPanel Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "child controls, anchoring and docking"
 ms.assetid: a2bcdfca-9b63-45e6-9c0e-3411015cba98
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Anchor and Dock Child Controls in a FlowLayoutPanel Control

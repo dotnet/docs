@@ -2,18 +2,19 @@
 title: "ICLRAssemblyIdentityManager::GetReferencedAssembliesFromStream Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRAssemblyIdentityManager.GetReferencedAssembliesFromStream"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRAssemblyIdentityManager::GetReferencedAssembliesFromStream"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRAssemblyIdentityManager::GetReferencedAssembliesFromStream method [.NET Framework hosting]"
   - "GetReferencedAssembliesFromStream method [.NET Framework hosting]"
 ms.assetid: fe9849c1-c3fc-477b-a31f-e8619f5516f5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

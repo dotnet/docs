@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "custom events"
 ms.assetid: 998b6a90-67c5-4d2c-8b11-366d3e355505
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

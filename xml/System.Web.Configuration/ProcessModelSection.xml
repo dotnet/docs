@@ -181,7 +181,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When this property value is set to <xref:System.Web.Configuration.ProcessModelComAuthenticationLevel>, DCOM determines the authentication level using its normal security-negotiation algorithm. The default value assigned to this property, as specified in the Machine.config file, is <xref:System.Web.Configuration.ProcessModelComAuthenticationLevel>. In this case, DCOM authenticates the credentials of the client only when the client establishes a relationship with the server.  
+ When this property value is set to <xref:System.Web.Configuration.ProcessModelComAuthenticationLevel.Default>, DCOM determines the authentication level using its normal security-negotiation algorithm. The default value assigned to this property, as specified in the Machine.config file, is <xref:System.Web.Configuration.ProcessModelComAuthenticationLevel.Connect>. In this case, DCOM authenticates the credentials of the client only when the client establishes a relationship with the server.  
   
    
   
@@ -219,7 +219,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When this property value is set to <xref:System.Web.Configuration.ProcessModelComImpersonationLevel>, DCOM determines the impersonation level using its normal security-negotiation algorithm. The default value assigned to this property, as specified in the Machine.config file, is <xref:System.Web.Configuration.ProcessModelComImpersonationLevel>. In this case, the server process can impersonate the client's security context while acting on behalf of the client.  
+ When this property value is set to <xref:System.Web.Configuration.ProcessModelComImpersonationLevel.Default>, DCOM determines the impersonation level using its normal security-negotiation algorithm. The default value assigned to this property, as specified in the Machine.config file, is <xref:System.Web.Configuration.ProcessModelComImpersonationLevel.Impersonate>. In this case, the server process can impersonate the client's security context while acting on behalf of the client.  
   
    
   

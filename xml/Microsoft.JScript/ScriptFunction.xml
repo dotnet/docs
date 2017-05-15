@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a prototype-based object that is defined by a constructor function. Most of the constructor function classes, such as <see cref="T:Microsoft.JScript.DateConstructor" />, <see cref="T:Microsoft.JScript.NumberConstructor" />, <see cref="T:Microsoft.JScript.StringConstructor" />, and <see cref="T:Microsoft.JScript.ObjectConstructor" />, inherit from this class. This class belongs to the objects and functions category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,6 +41,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -76,6 +78,7 @@
         <summary>Creates an instance of the prototype-based object, passing in the specified arguments.</summary>
         <returns>An instance of the object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetPrototypeForConstructedObject">
@@ -102,6 +105,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ilength">
@@ -119,6 +123,7 @@
       <Docs>
         <summary>Stores the number of elements that are in the <paramref name="args" /> parameter of the <see cref="M:Microsoft.JScript.ScriptFunction.CreateInstance(System.Object[])" /> method.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -164,6 +169,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InvokeMember">
@@ -205,6 +211,7 @@
         <summary>Invokes the specified member.</summary>
         <returns>The return value of the call to the member.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="length">
@@ -223,6 +230,7 @@
         <summary>Gets or sets the number of elements that are in the <paramref name="args" /> parameter of the <see cref="M:Microsoft.JScript.ScriptFunction.CreateInstance(System.Object[])" /> method.</summary>
         <value>The number of elements that are in the <paramref name="args" /> parameter of the <see cref="M:Microsoft.JScript.ScriptFunction.CreateInstance(System.Object[])" /> method.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="prototype">
@@ -248,6 +256,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -267,6 +276,7 @@
         <summary>Returns a string representation of the constructor function.</summary>
         <returns>A string that contains the name of the constructor function and a placeholder for the code.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

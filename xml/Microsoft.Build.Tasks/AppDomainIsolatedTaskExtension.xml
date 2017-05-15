@@ -18,6 +18,7 @@
   <Docs>
     <summary>Provides the same functionality as the <see cref="T:Microsoft.Build.Utilities.Task" /> class, but derives from <see cref="T:System.MarshalByRefObject" /> so that it can be instantiated in its own application domain.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Log">
@@ -36,6 +37,7 @@
         <summary>Gets an instance of a <see cref="T:Microsoft.Build.Tasks.TaskLoggingHelperExtension" /> class containing task logging methods.</summary>
         <value>The logging helper object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

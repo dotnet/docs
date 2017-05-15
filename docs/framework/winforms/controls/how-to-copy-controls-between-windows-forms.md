@@ -2,7 +2,7 @@
 title: "How to: Copy Controls Between Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "controls [Windows Forms], copying"
 ms.assetid: 106c1eb2-1fba-4f69-b2ec-9ea3fa182f1e
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Copy Controls Between Windows Forms

@@ -13,7 +13,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To associate a converter with a <xref:System.Windows.Data.MultiBinding>, create a class that implements the <xref:System.Windows.Data.IMultiValueConverter> interface, and then implement the [Convert(Object\<xref:System.Windows.Data.IMultiValueConverter.Convert%2A> and [ConvertBack(Object, Type\<xref:System.Windows.Data.IMultiValueConverter.ConvertBack%2A> methods.  
+ To associate a converter with a <xref:System.Windows.Data.MultiBinding>, create a class that implements the <xref:System.Windows.Data.IMultiValueConverter> interface, and then implement the <xref:System.Windows.Data.IMultiValueConverter.Convert%2A> and <xref:System.Windows.Data.IMultiValueConverter.ConvertBack%2A> methods.  
   
  Individual bindings in the collection can have their own value converters. For more information, see <xref:System.Windows.Data.IValueConverter>.  
   

@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="AddObject">
@@ -56,6 +57,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AndObject">
@@ -87,6 +89,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CompareObject">
@@ -112,40 +115,43 @@
         <param name="TextCompare">Required. <see langword="True" /> to perform a case-insensitive string comparison; otherwise, <see langword="False" />.</param>
         <summary>Represents Visual Basic comparison operators.</summary>
         <returns>
-          <list type="table">  
-<listheader>  
-<term> Value  
+          <list type="table">
+            <listheader>
+              <term> Value  
   
- </term>  
-<description> Condition  
+ </term>
+              <description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> -1  
+ </description>
+            </listheader>
+            <item>
+              <term> -1  
   
- </term>  
-<description> <paramref name="Left" /> is less than <paramref name="Right" />.  
+ </term>
+              <description>
+                <paramref name="Left" /> is less than <paramref name="Right" />.  
   
- </description>  
-</item>  
-<item>  
-<term> 0  
+ </description>
+            </item>
+            <item>
+              <term> 0  
   
- </term>  
-<description> <paramref name="Left" /> and <paramref name="Right" /> are equal.  
+ </term>
+              <description>
+                <paramref name="Left" /> and <paramref name="Right" /> are equal.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description>
+            </item>
+            <item>
+              <term> 1  
   
- </term>  
-<description> <paramref name="Left" /> is greater than <paramref name="Right" />.  
+ </term>
+              <description>
+                <paramref name="Left" /> is greater than <paramref name="Right" />.  
   
- </description>  
-</item>  
-</list>
+ </description>
+            </item>
+          </list>
         </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -155,6 +161,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CompareObjectEqual">
@@ -189,6 +196,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CompareObjectGreater">
@@ -223,6 +231,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CompareObjectGreaterEqual">
@@ -257,6 +266,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CompareObjectLess">
@@ -291,6 +301,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CompareObjectLessEqual">
@@ -325,6 +336,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CompareObjectNotEqual">
@@ -359,6 +371,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CompareString">
@@ -384,40 +397,43 @@
         <param name="TextCompare">Required. <see langword="True" /> to perform a case-insensitive string comparison; otherwise, <see langword="False" />.</param>
         <summary>Performs binary or text string comparison when given two strings.</summary>
         <returns>
-          <list type="table">  
-<listheader>  
-<term> Value  
+          <list type="table">
+            <listheader>
+              <term> Value  
   
- </term>  
-<description> Condition  
+ </term>
+              <description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> -1  
+ </description>
+            </listheader>
+            <item>
+              <term> -1  
   
- </term>  
-<description> <paramref name="Left" /> is less than <paramref name="Right" />.  
+ </term>
+              <description>
+                <paramref name="Left" /> is less than <paramref name="Right" />.  
   
- </description>  
-</item>  
-<item>  
-<term> 0  
+ </description>
+            </item>
+            <item>
+              <term> 0  
   
- </term>  
-<description> <paramref name="Left" /> is equal to <paramref name="Right" />.  
+ </term>
+              <description>
+                <paramref name="Left" /> is equal to <paramref name="Right" />.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description>
+            </item>
+            <item>
+              <term> 1  
   
- </term>  
-<description> <paramref name="Left" /> is greater than <paramref name="Right" />.  
+ </term>
+              <description>
+                <paramref name="Left" /> is greater than <paramref name="Right" />.  
   
- </description>  
-</item>  
-</list>
+ </description>
+            </item>
+          </list>
         </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -429,6 +445,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConcatenateObject">
@@ -460,6 +477,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConditionalCompareObjectEqual">
@@ -493,6 +511,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConditionalCompareObjectGreater">
@@ -526,6 +545,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConditionalCompareObjectGreaterEqual">
@@ -559,6 +579,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConditionalCompareObjectLess">
@@ -592,6 +613,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConditionalCompareObjectLessEqual">
@@ -625,6 +647,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConditionalCompareObjectNotEqual">
@@ -658,6 +681,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DivideObject">
@@ -689,6 +713,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExponentObject">
@@ -720,6 +745,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FallbackInvokeUserDefinedOperator">
@@ -752,6 +778,7 @@
         <summary>Executes a late-bound evaluation of a user-defined operator. This helper method is not meant to be called directly from your code.</summary>
         <returns>The result returned from the user-defined operator.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IntDivideObject">
@@ -783,6 +810,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LeftShiftObject">
@@ -814,6 +842,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LikeObject">
@@ -848,6 +877,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LikeString">
@@ -882,6 +912,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ModObject">
@@ -913,6 +944,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MultiplyObject">
@@ -944,6 +976,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NegateObject">
@@ -973,6 +1006,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NotObject">
@@ -1002,6 +1036,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OrObject">
@@ -1033,6 +1068,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PlusObject">
@@ -1062,6 +1098,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RightShiftObject">
@@ -1093,6 +1130,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SubtractObject">
@@ -1124,6 +1162,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XorObject">
@@ -1155,6 +1194,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

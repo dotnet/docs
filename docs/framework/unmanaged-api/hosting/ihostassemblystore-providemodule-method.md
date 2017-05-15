@@ -2,18 +2,19 @@
 title: "IHostAssemblyStore::ProvideModule Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostAssemblyStore.ProvideModule"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostAssemblyStore::ProvideModule"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostAssemblyStore::ProvideModule method [.NET Framework hosting]"
   - "ProvideModule method [.NET Framework hosting]"
 ms.assetid: f42e3dd0-c88e-4748-b6c0-4c515a633180
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

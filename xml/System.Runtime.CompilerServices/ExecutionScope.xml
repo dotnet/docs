@@ -26,6 +26,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="CreateDelegate">
@@ -51,6 +52,7 @@
         <summary>Creates a delegate that can be used to execute a dynamically generated method.</summary>
         <returns>A <see cref="T:System.Delegate" /> that can execute a dynamically generated method.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateHoistedLocals">
@@ -71,6 +73,7 @@
         <summary>Creates an array to store the hoisted local variables.</summary>
         <returns>An array to store hoisted local variables.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Globals">
@@ -89,6 +92,7 @@
       <Docs>
         <summary>Represents the non-trivial constants and locally executable expressions that are referenced by a dynamically generated method.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsolateExpression">
@@ -114,6 +118,7 @@
         <summary>Frees a specified expression tree of external parameter references by replacing the parameter with its current value.</summary>
         <returns>An expression tree that does not contain external parameter references.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Locals">
@@ -132,6 +137,7 @@
       <Docs>
         <summary>Represents the hoisted local variables from the parent context.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -150,6 +156,7 @@
       <Docs>
         <summary>Represents the execution scope of the calling delegate.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

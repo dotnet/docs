@@ -2,18 +2,19 @@
 title: "ICorDebugProcess2::GetVersion Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugProcess2.GetVersion"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugProcess2::GetVersion"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetVersion method, ICorDebugProcess2 nterface [.NET Framework debugging]"
   - "ICorDebugProcess2::GetVersion method [.NET Framework debugging]"
 ms.assetid: e11d5a75-61d9-4548-aedf-79c26079bd17
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,6 +47,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InitializeLifetimeService">
@@ -73,6 +75,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StartListenerChannel">
@@ -94,6 +97,7 @@
         <param name="listenerChannelCallback">The callback for the listener channel.</param>
         <summary>Starts a protocol listener channel.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -123,6 +127,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StopListenerChannel">
@@ -147,6 +152,7 @@
           <see langword="true" /> to stop the protocol immediately; otherwise, <see langword="false" />.</param>
         <summary>Stops the specified process protocol handler.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StopProtocol">
@@ -176,6 +182,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

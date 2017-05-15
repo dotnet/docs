@@ -2,7 +2,7 @@
 title: "How to: Hide ToolStripMenuItems Using the Designer | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "menu items, hiding"
 ms.assetid: 8f1b057e-3d8a-4f11-88df-935f7b29a836
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Hide ToolStripMenuItems Using the Designer

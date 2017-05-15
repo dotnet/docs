@@ -41,8 +41,7 @@ The `string` type represents a sequence of zero or more Unicode characters. `str
  Although `string` is a reference type, the equality operators (`==` and `!=`) are defined to compare the values of `string` objects, not references. This makes testing for string equality more intuitive. For example:  
   
 ```csharp  
-  
-      string a = "hello";  
+string a = "hello";  
 string b = "h";  
 // Append to contents of 'b'  
 b += "ello";  
@@ -55,7 +54,6 @@ Console.WriteLine((object)a == (object)b);
  The + operator concatenates strings:  
   
 ```csharp  
-  
 string a = "good " + "morning";  
 ```  
   
@@ -63,17 +61,15 @@ string a = "good " + "morning";
   
  Strings are *immutable*--the contents of a string object cannot be changed after the object is created, although the syntax makes it appear as if you can do this. For example, when you write this code, the compiler actually creates a new string object to hold the new sequence of characters, and that new object is assigned to b. The string "h" is then eligible for garbage collection.  
   
-```csharp  
-  
-      string b = "h";  
+```csharp
+string b = "h";  
 b += "ello";  
 ```  
   
  The [] operator can be used for readonly access to individual characters of a `string`:  
   
 ```csharp  
-  
-      string str = "test";  
+string str = "test";  
 char x = str[2];  // x = 's';  
 ```  
   
@@ -86,8 +82,7 @@ char x = str[2];  // x = 's';
  String literals can contain any character literal. Escape sequences are included. The following example uses escape sequence `\\` for backslash, `\u0066` for the letter f, and `\n` for newline.  
   
 ```  
-  
-      string a = "\\\u0066\n";  
+string a = "\\\u0066\n";  
 Console.WriteLine(a);  
 ```  
   
@@ -125,11 +120,11 @@ Console.WriteLine(a);
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Best Practices for Using Strings](http://msdn.microsoft.com/library/b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7)   
+ [Best Practices for Using Strings](../../../standard/base-types/best-practices-strings.md)   
  [C# Keywords](../../../csharp/language-reference/keywords/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Reference Types](../../../csharp/language-reference/keywords/reference-types.md)   
  [Value Types](../../../csharp/language-reference/keywords/value-types.md)   
- [Basic String Operations](http://msdn.microsoft.com/library/8133d357-90b5-4b62-9927-43323d99b6b6)   
- [Creating New Strings](http://msdn.microsoft.com/library/06fdf123-2fac-4459-8904-eb48ab908a30)   
+ [Basic String Operations](../../../standard/base-types/basic-string-operations.md)   
+ [Creating New Strings](../../../standard/base-types/creating-new.md)   
  [Formatting Numeric Results Table](../../../csharp/language-reference/keywords/formatting-numeric-results-table.md)

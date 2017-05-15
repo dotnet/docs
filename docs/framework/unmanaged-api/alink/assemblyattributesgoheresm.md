@@ -2,18 +2,19 @@
 title: "AssemblyAttributesGoHereSM | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "AssemblyAttributesGoHereSM"
-apilocation: 
+api_location: 
   - "alink.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "AssemblyAttributesGoHereSM"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "AssemblyAttributesGoHereSM type"
   - "Alink API, AssemblyAttributesGoHereSM type"
 ms.assetid: 4cf9bf39-1527-49e0-a0e9-55e7a018bf66
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"

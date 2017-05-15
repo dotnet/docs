@@ -2,18 +2,19 @@
 title: "ICorDebugController::SetAllThreadsDebugState Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugController.SetAllThreadsDebugState"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugController::SetAllThreadsDebugState"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SetAllThreadsDebugState method [.NET Framework debugging]"
   - "ICorDebugController::SetAllThreadsDebugState method [.NET Framework debugging]"
 ms.assetid: bdda4bd7-4743-4d58-a22b-8067e967db95
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

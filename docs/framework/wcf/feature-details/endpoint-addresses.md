@@ -2,7 +2,7 @@
 title: "Endpoint Addresses | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -74,9 +74,9 @@ Every endpoint has an address associated with it, which is used to locate and id
 <system.serviceModel>  
   <serviceHostingEnvironment>  
      <baseAddressPrefixFilters>  
-        <add prefix="net.tcp://payroll.myorg.com:8000"/>  
-        <add prefix="http://shipping.myorg.com:8000"/>  
-    </baseAddressPrefixFilters>  
+        <add prefix="net.tcp://payroll.myorg.com:8000"/>  
+        <add prefix="http://shipping.myorg.com:8000"/>  
+    </baseAddressPrefixFilters>  
   </serviceHostingEnvironment>  
 </system.serviceModel>  
 ```  
@@ -95,7 +95,7 @@ Every endpoint has an address associated with it, which is used to locate and id
 ```  
   
 <system.serviceModel>  
-  <serviceHostingEnvironment multipleSiteBindingsEnabled=”true” >  
+  <serviceHostingEnvironment multipleSiteBindingsEnabled="true" >  
   </serviceHostingEnvironment>  
 </system.serviceModel>  
 ```  

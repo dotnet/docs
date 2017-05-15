@@ -13,6 +13,7 @@
   <Docs>
     <summary>Binds the members of a function to an object.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="ToString">
@@ -32,6 +33,7 @@
         <summary>Creates a string representation of the function.</summary>
         <returns>A string representation of the function that contains the function source, the function members, and the function name.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

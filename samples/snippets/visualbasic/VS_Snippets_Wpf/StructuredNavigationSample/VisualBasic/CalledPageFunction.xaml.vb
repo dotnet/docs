@@ -1,9 +1,9 @@
 '<SnippetCalledPageFunctionCODEBEHIND1>
 '<SnippetAcceptsInitialDataCODEBEHIND1>
 '<SnippetReturnCODEBEHIND1>
-Imports System ' String
-Imports System.Windows ' RoutedEventArgs, RoutedEventHandler
-Imports System.Windows.Navigation ' PageFunction
+Imports System
+Imports System.Windows
+Imports System.Windows.Navigation
 
 Namespace StructuredNavigationSample
 

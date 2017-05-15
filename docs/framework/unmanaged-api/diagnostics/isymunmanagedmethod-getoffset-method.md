@@ -2,18 +2,19 @@
 title: "ISymUnmanagedMethod::GetOffset Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedMethod.GetOffset"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedMethod::GetOffset"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetOffset method, ISymUnmanagedMethod interface [.NET Framework debugging]"
   - "ISymUnmanagedMethod::GetOffset method [.NET Framework debugging]"
 ms.assetid: 8bf3cb62-89bf-4159-ad53-de606aba89e8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

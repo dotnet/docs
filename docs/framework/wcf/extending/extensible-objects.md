@@ -2,7 +2,7 @@
 title: "Extensible Objects | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,15 +44,15 @@ where T : IExtensibleObject<T>
   
  When an extension is added to the collection, <xref:System.ServiceModel.IExtension%601.Attach%2A> is called before it goes into the collection. When an extension is removed from the collection, <xref:System.ServiceModel.IExtension%601.Detach%2A> is called after it is removed. This means (assuming appropriate synchronization) an extension can count on only being found in the collection while it is between <xref:System.ServiceModel.IExtension%601.Attach%2A> and <xref:System.ServiceModel.IExtension%601.Detach%2A>.  
   
- The object passed to <!--zz <xref:System.ServiceModel.IExtensionCollection%601.FindAll%2A> --> `FindAll` or <!--zz <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> --> `Find` need not be <xref:System.ServiceModel.IExtension%601> (for example, you can pass any object), but the returned extension is an <xref:System.ServiceModel.IExtension%601>.  
+ The object passed to <xref:System.ServiceModel.IExtensionCollection%601.FindAll%60%601%2A> or <xref:System.ServiceModel.IExtensionCollection%601.Find%60%601%2A> need not be <xref:System.ServiceModel.IExtension%601> (for example, you can pass any object), but the returned extension is an <xref:System.ServiceModel.IExtension%601>.  
   
- If no extension in the collection is an <xref:System.ServiceModel.IExtension%601>, <!--zz <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> --> `Find` returns null, and <!--zz <xref:System.ServiceModel.IExtensionCollection%601.FindAll%2A> --> `FindAll` returns an empty collection.  If multiple extensions implement <xref:System.ServiceModel.IExtension%601>, <!--zz <xref:System.ServiceModel.IExtensionCollection%601.Find%2A> --> `Find` returns one of them.  The value returned from <!--zz <xref:System.ServiceModel.IExtensionCollection%601.FindAll%2A> --> `FindAll` is a snapshot.  
+ If no extension in the collection is an <xref:System.ServiceModel.IExtension%601>, <xref:System.ServiceModel.IExtensionCollection%601.Find%60%601%2A> returns null, and <xref:System.ServiceModel.IExtensionCollection%601.FindAll%60%601%2A> returns an empty collection. If multiple extensions implement <xref:System.ServiceModel.IExtension%601>, <xref:System.ServiceModel.IExtensionCollection%601.Find%60%601%2A> returns one of them. The value returned from <xref:System.ServiceModel.IExtensionCollection%601.FindAll%60%601%2A> is a snapshot.  
   
  There are two main scenarios. The first scenario uses the <xref:System.ServiceModel.IExtensibleObject%601.Extensions%2A> property as a type-based dictionary to insert state on an object to enable another component to look it up using the type.  
   
  The second scenario uses the <xref:System.ServiceModel.IExtension%601.Attach%2A> and <xref:System.ServiceModel.IExtension%601.Detach%2A> properties to enable an object to participate in custom behavior, such as registering for events, watching state transitions, and so on.  
   
- The <xref:System.ServiceModel.IExtensionCollection%601> interface is a collection of the <xref:System.ServiceModel.IExtension%601> objects that allow for retrieving the <xref:System.ServiceModel.IExtension%601> by its type. <xref:System.ServiceModel.IExtensionCollection%601.Find%2A?displayProperty=fullName> returns the most recently added object that is an <xref:System.ServiceModel.IExtension%601> of that type.  
+ The <xref:System.ServiceModel.IExtensionCollection%601> interface is a collection of the <xref:System.ServiceModel.IExtension%601> objects that allow for retrieving the <xref:System.ServiceModel.IExtension%601> by its type. <xref:System.ServiceModel.IExtensionCollection%601.Find%60%601%2A?displayProperty=fullName> returns the most recently added object that is an <xref:System.ServiceModel.IExtension%601> of that type.  
   
 ### Extensible Objects in Windows Communication Foundation  
  There are four extensible objects in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]:  

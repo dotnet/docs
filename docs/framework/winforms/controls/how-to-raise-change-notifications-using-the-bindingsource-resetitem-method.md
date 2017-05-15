@@ -2,7 +2,7 @@
 title: "How to: Raise Change Notifications Using the BindingSource ResetItem Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "change notifications"
 ms.assetid: ab8b4096-37ff-4e30-aabc-de79a2f2e972
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Raise Change Notifications Using the BindingSource ResetItem Method

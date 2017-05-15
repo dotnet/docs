@@ -25,6 +25,7 @@
   <Docs>
     <summary>Enables JScript to communicate with an external COM method. This class is used by an external COM implementation to expose its objects to JScript because JScript needs a managed <see cref="T:System.Reflection.MemberInfo" /> in order to bind to an external object.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,6 +41,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.COMMethodInfo" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="_comObject">
@@ -57,6 +59,7 @@
       <Docs>
         <summary>Stores a managed object that enables JScript to communicate with this external COM method.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="_name">
@@ -74,6 +77,7 @@
       <Docs>
         <summary>Stores the name of the external COM method that this object represents.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -94,6 +98,7 @@
           <see cref="F:System.Reflection.MethodAttributes.Public" />
         </value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DeclaringType">
@@ -112,6 +117,7 @@
         <summary>Gets the type that declares this method.</summary>
         <value>null, because the type that declares this method is an external COM object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EmptyParams">
@@ -129,6 +135,7 @@
       <Docs>
         <summary>Stores an array of <see cref="T:System.Reflection.ParameterInfo" /> objects that has zero elements.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetBaseDefinition">
@@ -149,6 +156,7 @@
         <returns>
           <see langword="this" /> in all cases.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetCOMMemberInfo">
@@ -168,6 +176,7 @@
         <summary>Gets a managed object that enables JScript to communicate with this external COM method.</summary>
         <returns>A managed object that enables JScript to communicate with this external COM method.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMethodImplementationFlags">
@@ -188,6 +197,7 @@
         <returns>
           <see cref="F:System.Reflection.MethodImplAttributes.Managed" /> and <see cref="F:System.Reflection.MethodImplAttributes.IL" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetParameters">
@@ -207,6 +217,7 @@
         <summary>Gets the parameters of this external COM method.</summary>
         <returns>An array of <see cref="T:System.Reflection.ParameterInfo" /> objects that has zero elements.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -230,6 +241,7 @@
         <param name="dispatch">Information that enables JScript to access the external COM method.</param>
         <summary>Initializes the information that enables JScript to communicate with this external COM method.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -260,6 +272,7 @@
         <summary>Calls the external COM method by using the <see cref="T:Microsoft.JScript.COMMemberInfo" /> that was specified to the <see cref="M:Microsoft.JScript.COMMethodInfo.Initialize(System.String,Microsoft.JScript.COMMemberInfo)" /> method.</summary>
         <returns>The return value of the call to the external COM method.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MemberType">
@@ -279,6 +292,7 @@
         <value>
           <see cref="F:System.Reflection.MemberTypes.Method" />, because this class derives from <see cref="T:System.Reflection.MethodInfo" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MethodHandle">
@@ -297,6 +311,7 @@
         <summary>Throws an <see cref="F:Microsoft.JScript.JSError.InternalError" /> exception in all cases.</summary>
         <value>Throws an <see cref="F:Microsoft.JScript.JSError.InternalError" /> exception in all cases.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -315,6 +330,7 @@
         <summary>Gets the name of the external COM method that this object represents.</summary>
         <value>The name of the external COM method that this object represents.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ReflectedType">
@@ -333,6 +349,7 @@
         <summary>Gets the class object that was used to obtain this instance through reflection.</summary>
         <value>null, because this instance was not obtained through reflection.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ReturnType">
@@ -351,6 +368,7 @@
         <summary>Gets the type of the return value of this method.</summary>
         <value>null in all cases.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ReturnTypeCustomAttributes">
@@ -369,6 +387,7 @@
         <summary>Gets the custom attributes for the type of the return value of this method.</summary>
         <value>null in all cases.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -388,6 +407,7 @@
         <summary>Returns a string that represents the current method.</summary>
         <returns>An empty string.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

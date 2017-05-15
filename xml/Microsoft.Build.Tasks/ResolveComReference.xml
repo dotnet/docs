@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,6 +36,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.ResolveComReference" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DelaySign">
@@ -54,6 +56,7 @@
         <value>
           <see langword="true" /> if the <c>ResolveComReference</c> task places the public key in the assembly; <see langword="false" /> if the <c>ResolveComReference</c> task fully signs the assembly.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EnvironmentVariables">
@@ -72,6 +75,7 @@
         <summary>Gets or sets an array of name-value pairs of environment variables that should be passed to the spawned tlbimp.exe and aximp.exe in addition to (or selectively overriding) the regular environment block.</summary>
         <value>Returns an array of name-value pairs of environment variables.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -92,6 +96,7 @@
         <returns>
           <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExecuteAsTool">
@@ -110,6 +115,7 @@
         <summary>Property to allow multitargeting of ResolveComReferences: If true, tlbimp.exe and aximp.exe from the appropriate target framework will be run out-of-proc to generate the necessary wrapper assemblies.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IncludeVersionInInteropName">
@@ -128,6 +134,7 @@
         <summary>When set to true, the typelib version will be included in the wrapper name. Default is false.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="KeyContainer">
@@ -146,6 +153,7 @@
         <summary>Gets or sets a container that holds a key pair.</summary>
         <value>A container that holds a key pair.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="KeyFile">
@@ -164,6 +172,7 @@
         <summary>Gets or sets an item that contains a key pair.</summary>
         <value>An item that contains a key pair.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoClassMembers">
@@ -183,6 +192,7 @@
         <value>
           <see langword="true" /> if the task should pass the <see cref="F:System.Runtime.InteropServices.TypeLibImporterFlags.PreventClassMembers" /> flag to .tlb wrapper generation; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ResolvedAssemblyReferences">
@@ -201,6 +211,7 @@
         <summary>Gets or sets the resolved assembly references.</summary>
         <value>The resolved assembly references.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ResolvedFiles">
@@ -224,6 +235,7 @@
         <summary>Gets or sets the fully qualified files on disk that correspond to the physical locations of the type libraries that were provided as input to this task.</summary>
         <value>The fully qualified files on disk that correspond to the physical locations of the type libraries that were provided as input to this task.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ResolvedModules">
@@ -247,6 +259,7 @@
         <summary>Gets or sets the paths to the modules that were found.</summary>
         <value>The paths to the modules that were found.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SdkToolsPath">
@@ -265,6 +278,7 @@
         <summary>If ExecuteAsTool is true, this must be set to the SDK tools path for the framework version being targeted.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Silent">
@@ -283,6 +297,7 @@
         <summary>Gets or sets a flag specifying whether messages or warnings are logged. Default is <see langword="false" />, messages and warnings are logged.</summary>
         <value>Returns the flag.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StateFile">
@@ -301,6 +316,7 @@
         <summary>Gets or sets the cache file for COM component timestamps.</summary>
         <value>The cache file for COM component timestamps.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TargetFrameworkVersion">
@@ -319,6 +335,7 @@
         <summary>The project target framework version. Default is empty. which means there will be no filtering for the reference based on their target framework.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TargetProcessorArchitecture">
@@ -337,6 +354,7 @@
         <summary>Gets or sets the name of the preferred target processor architecture, which is passed to the tlbimp.exe /machine flag after translation, for example x86, ia64, amd64 or msil.</summary>
         <value>Returns the name of the preferred target processor architecture.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TypeLibFiles">
@@ -362,6 +380,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TypeLibNames">
@@ -387,6 +406,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WrapperOutputDirectory">
@@ -405,6 +425,7 @@
         <summary>Gets or sets the location on disk where the generated interop assembly is placed.</summary>
         <value>The location on disk where the generated interop assembly is placed.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

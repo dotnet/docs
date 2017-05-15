@@ -10,6 +10,7 @@
   <Docs>
     <summary>Represents methods that process editing requests.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="BeginEdit">
@@ -35,6 +36,7 @@
         <returns>
           <see langword="true" /> if the operation can be performed; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EndEdit">
@@ -69,6 +71,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

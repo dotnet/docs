@@ -25,6 +25,7 @@
   <Docs>
     <summary>A sequence of XML items that dynamically expands and allows random access to items.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,6 +45,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -66,6 +68,7 @@
         <param name="capacity">A value of type <see langword="Int32" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -88,6 +91,7 @@
         <param name="item">An instance of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddClone">
@@ -113,6 +117,7 @@
         <param name="item">An instance of the <see cref="T:System.Xml.XPath.XPathItem" /> class.</param>
         <summary>Adds an item to the sequence. If the item is a navigator, this method clones it before adding it to the sequence.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateOrReuse">
@@ -139,6 +144,7 @@
         <summary>Clears and reuses an <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> object if it is available. If the <paramref name="seq" /> parameter is null, creates a new <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" />.</summary>
         <returns>An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> class.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateOrReuse">
@@ -167,6 +173,7 @@
         <summary>Clears and reuses an <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> object if it is available. If the <paramref name="seq" /> parameter is null, creates a new <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" />. This method then adds a new item to reused or new sequence.</summary>
         <returns>An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> class.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -188,6 +195,7 @@
       <Docs>
         <summary>Returns a properly initialized, empty <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

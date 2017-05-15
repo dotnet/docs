@@ -2,18 +2,19 @@
 title: "ICorProfilerCallback::RemotingClientInvocationFinished Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.RemotingClientInvocationFinished"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::RemotingClientInvocationFinished"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "RemotingClientInvocationFinished method [.NET Framework profiling]"
   - "ICorProfilerCallback::RemotingClientInvocationFinished method [.NET Framework profiling]"
 ms.assetid: ea4b283b-1210-4f41-a7a2-c398b1adde4e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

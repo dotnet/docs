@@ -13,6 +13,7 @@
   <Docs>
     <summary>Extracts a class name from a language source file.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="IsInsideConditionalBlock">
@@ -32,6 +33,7 @@
         <value>
           <see langword="true" /> to indicate the extracted class name exists inside a block of conditionally compiled code; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -50,6 +52,7 @@
         <summary>Gets or sets the extracted class name.</summary>
         <value>The extracted class name.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

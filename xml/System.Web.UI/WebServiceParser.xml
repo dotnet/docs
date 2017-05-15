@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides a parser for Web service handlers.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="DefaultDirectiveName">
@@ -31,6 +32,7 @@
         <summary>Gets the default directive name.</summary>
         <value>A <see cref="T:System.String" /> containing the default directive name.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetCompiledType">
@@ -55,6 +57,7 @@
         <summary>Returns the compiled type for a given input file.</summary>
         <returns>A <see cref="T:System.Type" /> as specified by the <see cref="T:System.Web.HttpContext" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

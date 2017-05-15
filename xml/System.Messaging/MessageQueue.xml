@@ -46,7 +46,7 @@
   
  Unlike <xref:System.Messaging.MessageQueue.Purge%2A>, <xref:System.Messaging.MessageQueue.Create%28System.String%29> and <xref:System.Messaging.MessageQueue.Delete%28System.String%29> are `static` members, so you can call them without creating a new instance of the <xref:System.Messaging.MessageQueue> class.  
   
- You can set the <xref:System.Messaging.MessageQueue> object's <xref:System.Messaging.MessageQueue.Path%2A> property with one of three names: the friendly name, the <xref:System.Messaging.MessageQueue.FormatName%2A>, or the <xref:System.Messaging.MessageQueue.Label%2A>. The friendly name, which is defined by the queue's <xref:System.Messaging.MessageQueue.MachineName%2A> and <xref:System.Messaging.MessageQueue.QueueName%2A> properties, is <xref:System.Messaging.MessageQueue.MachineName%2A>\\[QueueName](assetId:///P:System.Messaging.MessageQueue.QueueName?qualifyHint=False&autoUpgrade=True) for a public queue, and <xref:System.Messaging.MessageQueue.MachineName%2A>\\`Private$`\\[QueueName](assetId:///P:System.Messaging.MessageQueue.QueueName?qualifyHint=False&autoUpgrade=True) for a private queue. The <xref:System.Messaging.MessageQueue.FormatName%2A> property allows offline access to message queues. Lastly, you can use the queue's <xref:System.Messaging.MessageQueue.Label%2A> property to set the queue's <xref:System.Messaging.MessageQueue.Path%2A>.  
+ You can set the <xref:System.Messaging.MessageQueue> object's <xref:System.Messaging.MessageQueue.Path%2A> property with one of three names: the friendly name, the <xref:System.Messaging.MessageQueue.FormatName%2A>, or the <xref:System.Messaging.MessageQueue.Label%2A>. The friendly name, which is defined by the queue's <xref:System.Messaging.MessageQueue.MachineName%2A> and <xref:System.Messaging.MessageQueue.QueueName%2A> properties, is <xref:System.Messaging.MessageQueue.MachineName%2A>\\<xref:System.Messaging.MessageQueue.QueueName%2A> for a public queue, and <xref:System.Messaging.MessageQueue.MachineName%2A>\\`Private$`\\<xref:System.Messaging.MessageQueue.QueueName%2A> for a private queue. The <xref:System.Messaging.MessageQueue.FormatName%2A> property allows offline access to message queues. Lastly, you can use the queue's <xref:System.Messaging.MessageQueue.Label%2A> property to set the queue's <xref:System.Messaging.MessageQueue.Path%2A>.  
   
  For a list of initial property values for an instance of <xref:System.Messaging.MessageQueue>, see the <xref:System.Messaging.MessageQueue.%23ctor%2A> constructor.  
   
@@ -201,7 +201,7 @@
         <Parameter Name="sharedModeDenyReceive" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="path">The location of the queue referenced by this <see cref="T:System.Messaging.MessageQueue" />, which can be "." for the local computer. For information about the proper syntax for this parameter, see the Remarks section.</param>
+        <param name="path">The location of the queue referenced by this <see cref="T:System.Messaging.MessageQueue" />, which can be "." for the local computer.</param>
         <param name="sharedModeDenyReceive">
           <see langword="true" /> to grant exclusive read access to the first application that accesses the queue; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueue" /> class that references the Message Queuing queue at the specified path and with the specified read-access restriction.</summary>

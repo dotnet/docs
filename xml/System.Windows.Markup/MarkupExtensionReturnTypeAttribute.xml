@@ -91,8 +91,8 @@
       </Parameters>
       <Docs>
         <param name="returnType">The return type that this  [!INCLUDE[TLA#tla_netframewkattr](~/includes/tlasharptla-netframewkattr-md.md)] reports.</param>
-        <param name="expressionType">Do not use; see Remarks.</param>
-        <summary>Do not use, see Remarks.</summary>
+        <param name="expressionType">Deprecated; do not use.</param>
+        <summary>Deprecated; do not use.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -121,8 +121,8 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Do not use; see Remarks.</summary>
-        <value>Do not use; see Remarks.</value>
+        <summary>Deprecated; do not use.</summary>
+        <value>Deprecated; do not use.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

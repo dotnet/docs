@@ -2,7 +2,7 @@
 title: "How to: Display Print Preview in Windows Forms Applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], print preview"
 ms.assetid: e394134c-0886-4517-bd8d-edc4a3749eb5
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Display Print Preview in Windows Forms Applications

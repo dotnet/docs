@@ -2,7 +2,7 @@
 title: "How to: Render on a Per Frame Interval Using CompositionTarget | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "rendering per frame using CompositionTarget objects"
 ms.assetid: 701246cd-66b7-4d69-ada9-17b3b433d95d
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Render on a Per Frame Interval Using CompositionTarget

@@ -2,7 +2,7 @@
 title: "ScrollViewer Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "ScrollViewer control, about ScrollViewer control"
 ms.assetid: 94a13b94-cfdf-4b12-a1aa-90cb50c6e9b9
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ScrollViewer Overview

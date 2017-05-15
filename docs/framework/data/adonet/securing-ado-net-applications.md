@@ -2,7 +2,7 @@
 title: "Securing ADO.NET Applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -54,7 +54,7 @@ Writing a secure ADO.NET application involves more than avoiding common coding p
  [Resources for Creating Secure Applications](http://msdn.microsoft.com/en-us/0ebf5f69-76f2-498a-a2df-83cf3443e132)  
  Provides links to topics for creating secure applications.  
   
- [Security Bibliography](http://msdn.microsoft.com/library/3e839007-c388-4fc4-a6d1-8127cd207750)  
+ [Security Bibliography](/visualstudio/ide/security-bibliography)  
  Provides links to external resources available online and in print.  
   
 ## See Also  

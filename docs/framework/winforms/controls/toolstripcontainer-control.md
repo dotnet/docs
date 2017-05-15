@@ -2,7 +2,7 @@
 title: "ToolStripContainer Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "ToolStrip control [Windows Forms], ToolStripContainer"
 ms.assetid: 378fa5b4-38e1-46f4-8e5c-d0c19dcd0200
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ToolStripContainer Control

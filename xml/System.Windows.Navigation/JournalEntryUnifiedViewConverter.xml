@@ -16,7 +16,7 @@
   </Interfaces>
   <Docs>
     <summary>
-      <see cref="T:System.Windows.Navigation.JournalEntryUnifiedViewConverter" /> merges navigation back history and navigation forward history (as exposed by <see cref="T:System.Windows.Controls.Frame" /> or <see cref="T:System.Windows.Navigation.NavigationWindow" />) into a single, [!INCLUDE[TLA#tla_ie7](~/includes/tlasharptla-ie7-md.md)]-style navigation menu.</summary>
+      <see cref="T:System.Windows.Navigation.JournalEntryUnifiedViewConverter" /> merges navigation back history and navigation forward history (as exposed by <see cref="T:System.Windows.Controls.Frame" /> or <see cref="T:System.Windows.Navigation.NavigationWindow" />) into a single, Windows Internet Explorer 7-style navigation menu.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -51,8 +51,7 @@
 ## Examples  
  The following example shows how to construct a text-based navigation history menu. The menu uses <xref:System.Windows.Navigation.JournalEntryUnifiedViewConverter> to combine both the back and forward navigation histories of the hosted <xref:System.Windows.Controls.Frame> navigator.  
   
- [!code-xml[JournalEntryUnifiedPositionConverterSnippets#JournalEntryUnifiedPositionConverterWithMenuXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/JournalEntryUnifiedPositionConverterSnippets/CS/mainwindow.xaml#journalentryunifiedpositionconverterwithmenuxaml)]
- <!-- TODO: review snippet reference [!code-xml[JournalEntryUnifiedPositionConverterSnippets#JournalEntryUnifiedPositionConverterWithMenuXAML](~/samples/snippets/xaml/VS_Snippets_Wpf/JournalEntryUnifiedPositionConverterSnippets/xaml/mainwindow.xaml#journalentryunifiedpositionconverterwithmenuxaml)]  -->  
+ [!code-xml[JournalEntryUnifiedPositionConverterSnippets#JournalEntryUnifiedPositionConverterWithMenuXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/JournalEntryUnifiedPositionConverterSnippets/CS/mainwindow.xaml#journalentryunifiedpositionconverterwithmenuxaml)]   
   
  ]]></format>
     </remarks>

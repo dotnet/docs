@@ -2,18 +2,19 @@
 title: "ICorDebugEditAndContinueErrorInfo::GetErrorCode Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugEditAndContinueErrorInfo.GetErrorCode"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugEditAndContinueErrorInfo::GetErrorCode"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetErrorCode method [.NET Framework debugging]"
   - "ICorDebugEditAndContinueErrorInfo::GetErrorCode method [.NET Framework debugging]"
 ms.assetid: 2f82fb2c-a42e-48bf-af41-a15e40f636c6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

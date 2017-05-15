@@ -2,7 +2,7 @@
 title: "How to: Prevent Row Addition and Deletion in the Windows Forms DataGridView Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "data grids, disabling data entry"
 ms.assetid: ef9539ce-539b-404e-84b6-ac282b64b88c
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Prevent Row Addition and Deletion in the Windows Forms DataGridView Control

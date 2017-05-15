@@ -255,7 +255,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property of a <xref:System.Web.UI.WebControls.ButtonField> object is set to the <xref:System.Web.UI.WebControls.ButtonType> or <xref:System.Web.UI.WebControls.ButtonType> value, use the <xref:System.Web.UI.WebControls.ButtonField.DataTextField%2A> property to specify the name of the field to bind to the <xref:System.Web.UI.WebControls.ButtonField> object. The values of the field are then displayed as the text for the buttons in the <xref:System.Web.UI.WebControls.ButtonField> object. Optionally, you can format the displayed text by setting the <xref:System.Web.UI.WebControls.ButtonField.DataTextFormatString%2A> property.  
+ When the <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property of a <xref:System.Web.UI.WebControls.ButtonField> object is set to the <xref:System.Web.UI.WebControls.ButtonType.Button> or <xref:System.Web.UI.WebControls.ButtonType.Link> value, use the <xref:System.Web.UI.WebControls.ButtonField.DataTextField%2A> property to specify the name of the field to bind to the <xref:System.Web.UI.WebControls.ButtonField> object. The values of the field are then displayed as the text for the buttons in the <xref:System.Web.UI.WebControls.ButtonField> object. Optionally, you can format the displayed text by setting the <xref:System.Web.UI.WebControls.ButtonField.DataTextFormatString%2A> property.  
   
  Instead of using the <xref:System.Web.UI.WebControls.ButtonField.DataTextField%2A> property to bind a <xref:System.Web.UI.WebControls.ButtonField> object to a field from a data source, you can use the <xref:System.Web.UI.WebControls.ButtonField.Text%2A> property to display static text for the text of the buttons in the <xref:System.Web.UI.WebControls.ButtonField> object. When the <xref:System.Web.UI.WebControls.ButtonField.Text%2A> property is used, each button shares the same caption.  
   
@@ -410,7 +410,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property of a <xref:System.Web.UI.WebControls.ButtonField> object is set to the <xref:System.Web.UI.WebControls.ButtonType> value, use the <xref:System.Web.UI.WebControls.ButtonField.ImageUrl%2A> property to specify the image to display for each button. This image can be in any file format (.jpg, .gif, .bmp, and so on), as long as the client browser supports that format.  
+ When the <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property of a <xref:System.Web.UI.WebControls.ButtonField> object is set to the <xref:System.Web.UI.WebControls.ButtonType.Image> value, use the <xref:System.Web.UI.WebControls.ButtonField.ImageUrl%2A> property to specify the image to display for each button. This image can be in any file format (.jpg, .gif, .bmp, and so on), as long as the client browser supports that format.  
   
  The value of this property is stored in view state.  
   
@@ -525,7 +525,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property of a <xref:System.Web.UI.WebControls.ButtonField> object is set to the <xref:System.Web.UI.WebControls.ButtonType> or <xref:System.Web.UI.WebControls.ButtonType> value, use the <xref:System.Web.UI.WebControls.ButtonField.Text%2A> property to display static text for the caption of the buttons in the <xref:System.Web.UI.WebControls.ButtonField>. Each button shares the same caption.  
+ When the <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property of a <xref:System.Web.UI.WebControls.ButtonField> object is set to the <xref:System.Web.UI.WebControls.ButtonType.Button> or <xref:System.Web.UI.WebControls.ButtonType.Link> value, use the <xref:System.Web.UI.WebControls.ButtonField.Text%2A> property to display static text for the caption of the buttons in the <xref:System.Web.UI.WebControls.ButtonField>. Each button shares the same caption.  
   
  Instead of using the <xref:System.Web.UI.WebControls.ButtonField.Text%2A> property to display static text in a <xref:System.Web.UI.WebControls.ButtonField> object, you can use the <xref:System.Web.UI.WebControls.ButtonField.DataTextField%2A> property to bind the <xref:System.Web.UI.WebControls.ButtonField> to a field in a data source. The values of the field are then displayed as the caption of the buttons.  
   

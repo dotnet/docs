@@ -39,6 +39,7 @@
     <typeparam name="T">The type of this <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" />.</typeparam>
     <summary>A sequence of XML values that dynamically expands and allows random access to items.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,6 +59,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -80,6 +82,7 @@
         <param name="capacity">The size of this collection.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -102,6 +105,7 @@
         <param name="value">The only value in this <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" />.</param>
         <summary>Constructs a singleton <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" /> that has <paramref name="value" /> as its only element.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -126,6 +130,7 @@
         <param name="size">The size of the array.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -151,6 +156,7 @@
         <param name="value">An object to add to the collection.</param>
         <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -173,6 +179,7 @@
       <Docs>
         <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -200,6 +207,7 @@
         <returns>
           <see langword="true" /> if the specified value is in the sequence; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -227,6 +235,7 @@
         <param name="index">A value of type <see langword="int" />.</param>
         <summary>Copies the contents of this sequence to the specified array, starting at the specified index in the array.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -249,6 +258,7 @@
         <summary>Returns the number of items in the sequence.</summary>
         <value>A value of type <see langword="int" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateOrReuse">
@@ -275,6 +285,7 @@
         <summary>Clears and reuses the specified <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" /> if it is available. If the <paramref name="seq" /> parameter is <see langword="null" />, creates a new <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" />.</summary>
         <returns>An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" /> class.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateOrReuse">
@@ -303,6 +314,7 @@
         <summary>Clears and reuses the specified <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" /> it is available. If the <paramref name="seq" /> parameter is <see langword="null" />, creates a new <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" /> and adds <paramref name="item" /> to the collection.</summary>
         <returns>An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" /> class.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -324,6 +336,7 @@
       <Docs>
         <summary>Creates a new instance of <see cref="T:System.Xml.Xsl.Runtime.XmlQuerySequence`1" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -347,6 +360,7 @@
         <summary>Returns <see cref="T:System.Collections.Generic.IEnumerator`1" />.</summary>
         <returns>An instance of the <see cref="T:System.Collections.Generic.IEnumerator`1" /> class.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -373,6 +387,7 @@
         <summary>Returns the index of the specified value in the sequence.</summary>
         <returns>The index.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -399,6 +414,7 @@
         <summary>Returns the item at the specified index.</summary>
         <value>The item at the specified index.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnItemsChanged">
@@ -421,6 +437,7 @@
       <Docs>
         <summary>Called when one or more items in the cache have been added or removed. This method can also be called from the <see cref="M:System.Xml.Xsl.Runtime.XmlQuerySequence`1.SortByKeys(System.Array)" /> method.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SortByKeys">
@@ -446,6 +463,7 @@
         <param name="keys">A value of type <see langword="array" />.</param>
         <summary>Sort the items in the cache using the keys contained in the specified array.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;T&gt;.Add">
@@ -471,6 +489,7 @@
         <param name="value">The sequence value.</param>
         <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;T&gt;.Clear">
@@ -493,6 +512,7 @@
       <Docs>
         <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly">
@@ -541,6 +561,7 @@
         <summary>Removes the specified item from the collection</summary>
         <returns>Returns <see langword="true" /> if the item was removed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IList&lt;T&gt;.Insert">
@@ -568,6 +589,7 @@
         <param name="value">The sequence value.</param>
         <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IList&lt;T&gt;.RemoveAt">
@@ -593,6 +615,7 @@
         <param name="index">The sequence index.</param>
         <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -620,6 +643,7 @@
         <param name="index">The specified index.</param>
         <summary>Copies the contents of this sequence to the specified array, starting at the specified index in the target array.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -689,6 +713,7 @@
         <summary>Returns the <see cref="T:System.Collections.IEnumerator" />.</summary>
         <returns>Returns the <see cref="T:System.Collections.IEnumerator" /> of the query sequence collection.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">
@@ -715,6 +740,7 @@
         <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
         <returns>The index of the item added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Clear">
@@ -737,6 +763,7 @@
       <Docs>
         <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Contains">
@@ -764,6 +791,7 @@
         <returns>
           <see langword="true" /> if the specified value is in the sequence; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IndexOf">
@@ -790,6 +818,7 @@
         <summary>Returns the index of the specified value in the sequence.</summary>
         <returns>The index of the specified value in the sequence.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Insert">
@@ -817,6 +846,7 @@
         <param name="value">The specified value.</param>
         <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.IsFixedSize">
@@ -912,6 +942,7 @@
         <param name="value">The specified value.</param>
         <summary>Not implemented. Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.RemoveAt">
@@ -937,6 +968,7 @@
         <param name="index">The specified index.</param>
         <summary>Throws the <see cref="T:System.NotSupportedException" /> exception.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

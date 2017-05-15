@@ -2,7 +2,7 @@
 title: "How to: Print with a WebBrowser Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], WebBrowser control"
 ms.assetid: 3fb2a305-64ce-4b6c-9258-5330d3f21b6c
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Print with a WebBrowser Control

@@ -2,7 +2,7 @@
 title: "&lt;behavior&gt; of &lt;serviceBehaviors&gt; of workflow | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -28,7 +28,7 @@ The **behavior** element contains a collection of settings for the behavior of a
 <system.ServiceModel>  
   <behaviors>  
     <serviceBehaviors>  
-    <behavior name=String">      <bufferReceive maxPendingMessagesPerChannel=”Integer” />      <etwTracking profileName=”String” />     <sendMessageChannelCache allowUnsafeCaching="Boolean" >                <channelSettings idleTimeout="TimeSpan" leaseTimeout="TimeSpan" maxItemsInCache="Integer" />        <factorySettings idleTimeout="TimeSpan" leaseTimeout="TimeSpan" maxItemsInCache="Integer" />     </sendMessageChannelCache>      <sqlWorkflowInstanceStore           connectionStringName=”String”           honstLockRenewalPeriod=”TimeSpan”          instanceCompletionAction=”DeleteNothing/DeleteAll”          instanceEncodingAction=”None/GZip”          instanceLockedExceptionAction=”NoRetry/BasicRetry/AggressiveRetry”          runnableInstancesDetectionPeriod=”TimeSpan” />      <workflowIdle timeToPersist=”TimeSpan”          timeToUnload=”TimeSpan” />      <workflowUnhandledException action=”Abandon/AbandonAndSuspend/Cancel/Terminate” />    </behavior>    </serviceBehaviors>  
+    <behavior name=String">      <bufferReceive maxPendingMessagesPerChannel="Integer" />      <etwTracking profileName="String" />     <sendMessageChannelCache allowUnsafeCaching="Boolean" >                <channelSettings idleTimeout="TimeSpan" leaseTimeout="TimeSpan" maxItemsInCache="Integer" />        <factorySettings idleTimeout="TimeSpan" leaseTimeout="TimeSpan" maxItemsInCache="Integer" />     </sendMessageChannelCache>      <sqlWorkflowInstanceStore           connectionStringName="String"           honstLockRenewalPeriod="TimeSpan"          instanceCompletionAction="DeleteNothing/DeleteAll"          instanceEncodingAction="None/GZip"          instanceLockedExceptionAction="NoRetry/BasicRetry/AggressiveRetry"          runnableInstancesDetectionPeriod="TimeSpan" />      <workflowIdle timeToPersist="TimeSpan"          timeToUnload="TimeSpan" />      <workflowUnhandledException action="Abandon/AbandonAndSuspend/Cancel/Terminate" />    </behavior>    </serviceBehaviors>  
   </behaviors>  
 </system.ServiceModel>  
 ```  

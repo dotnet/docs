@@ -25,7 +25,7 @@
 ## Remarks  
  The <xref:System.Windows.Input.MouseAction> enumeration specifies constants which correspond to actions performed by the mouse, such as RightClick and RightDoubleClick.  
   
- <xref:System.Windows.Input.MouseAction> can be used with a <xref:System.Windows.Input.MouseGesture> to create a input gesture which can be bound to a command using a <xref:System.Windows.Input.MouseBinding>.  For more information about commanding, see the [Commanding Overview](~/docs/framework/wpf/advanced/commanding-overview.md).  
+ <xref:System.Windows.Input.MouseAction.RightClick> can be used with a <xref:System.Windows.Input.MouseGesture> to create a input gesture which can be bound to a command using a <xref:System.Windows.Input.MouseBinding>.  For more information about commanding, see the [Commanding Overview](~/docs/framework/wpf/advanced/commanding-overview.md).  
   
    
   

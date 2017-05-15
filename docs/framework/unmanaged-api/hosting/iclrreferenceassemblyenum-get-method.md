@@ -2,18 +2,19 @@
 title: "ICLRReferenceAssemblyEnum::Get Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRReferenceAssemblyEnum.Get"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRReferenceAssemblyEnum::Get"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRReferenceAssemblyEnum::Get method [.NET Framework hosting]"
   - "Get method, ICLRReferenceAssemblyEnum interface [.NET Framework hosting]"
 ms.assetid: f21c1612-9c5d-4abc-a337-577086d29c17
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

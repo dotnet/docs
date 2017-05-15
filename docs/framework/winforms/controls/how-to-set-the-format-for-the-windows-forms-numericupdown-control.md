@@ -2,7 +2,7 @@
 title: "How to: Set the Format for the Windows Forms NumericUpDown Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "up-down controls, formatting numeric values"
 ms.assetid: fa7c5557-6bfb-45b2-975d-8887b23b0ba0
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set the Format for the Windows Forms NumericUpDown Control

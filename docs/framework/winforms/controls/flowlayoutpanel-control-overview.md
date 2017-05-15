@@ -2,7 +2,7 @@
 title: "FlowLayoutPanel Control Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "FlowLayoutPanel control [Windows Forms], about FlowLayoutPanel control"
 ms.assetid: 3883e024-f5a0-456d-9c27-b4dfa1cc9045
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # FlowLayoutPanel Control Overview

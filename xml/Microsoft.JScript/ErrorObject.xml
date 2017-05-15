@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents an error object. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="description">
@@ -30,6 +31,7 @@
       <Docs>
         <summary>Specifies the message that explains the reason for the error.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="message">
@@ -47,6 +49,7 @@
       <Docs>
         <summary>Specifies the message that explains the reason for the error.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="number">
@@ -71,6 +74,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -115,6 +119,7 @@
         <summary>Converts an <see cref="T:Microsoft.JScript.ErrorObject" /> to an <see cref="T:System.Exception" />, implicitly.</summary>
         <returns>The converted <see cref="T:Microsoft.JScript.ErrorObject" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

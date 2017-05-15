@@ -18,6 +18,7 @@
   <Docs>
     <summary>Represents a COM class that is described in a manifest.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ClsId">
@@ -56,6 +58,7 @@
         <summary>Gets the class identifier (ClsId) for a <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass" /> object.</summary>
         <value>A <see cref="T:System.String" /> formatted in the pattern {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}, where the value of the GUID is represented as a series of lower-case hexadecimal digits in groups of 8, 4, 4, 4, and 12 digits and separated by hyphens. An example of a return value is "{382c74c3-721d-4f34-80e5-57657b6cbc27}".</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -79,6 +82,7 @@
         <summary>Gets the description of a <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass" /> object.</summary>
         <value>A description of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProgId">
@@ -102,6 +106,7 @@
         <summary>Gets the programmatic identifier (ProgId) of a <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass" /> object.</summary>
         <value>The programmatic identifier of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ThreadingModel">
@@ -125,6 +130,7 @@
         <summary>Gets the threading model of a <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass" /> object.</summary>
         <value>A string such as "Apartment".</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TlbId">
@@ -148,6 +154,7 @@
         <summary>Gets a value that is the identifier of the type library that contains type information about the class.</summary>
         <value>The identifier of the type library that contains type information about the class. A <see cref="T:System.String" /> formatted in the pattern {xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx}, where the value of the GUID is represented as a series of lower-case hexadecimal digits in groups of 8, 4, 4, 4, and 12 digits and separated by hyphens. An example of a return value is "{382c74c3-721d-4f34-80e5-57657b6cbc27}".</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XmlClsId">
@@ -177,6 +184,7 @@
         <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.ClsId" /> property to an XML file.</summary>
         <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.ClsId" /> property.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XmlDescription">
@@ -206,6 +214,7 @@
         <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.Description" /> property to an XML file.</summary>
         <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.Description" /> property.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XmlProgId">
@@ -235,6 +244,7 @@
         <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.ProgId" /> property to an XML file.</summary>
         <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.ProgId" /> property.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XmlThreadingModel">
@@ -264,6 +274,7 @@
         <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.ThreadingModel" /> property to an XML file.</summary>
         <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.ThreadingModel" /> property.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XmlTlbId">
@@ -293,6 +304,7 @@
         <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.TlbId" /> property to an XML file.</summary>
         <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.TlbId" /> property.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -28,6 +28,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="dbkind">
@@ -43,7 +44,7 @@
         <ReturnType>Microsoft.VisualBasic.Compatibility.VB6.DBKINDENUM</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBID" /> <see langword="Structure" />.</summary>
+        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBID" /><see langword="Structure" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -52,6 +53,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="uGuid">
@@ -67,7 +69,7 @@
         <ReturnType>Microsoft.VisualBasic.Compatibility.VB6.UGUID</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBID" /> <see langword="Structure" />.</summary>
+        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBID" /><see langword="Structure" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -76,6 +78,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="uName">
@@ -91,7 +94,7 @@
         <ReturnType>Microsoft.VisualBasic.Compatibility.VB6.UNAME</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBID" /> <see langword="Structure" />.</summary>
+        <summary>A field for the internal <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DBID" /><see langword="Structure" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -100,6 +103,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

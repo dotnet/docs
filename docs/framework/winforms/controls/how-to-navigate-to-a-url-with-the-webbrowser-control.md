@@ -2,7 +2,7 @@
 title: "How to: Navigate to a URL with the WebBrowser Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], WebBrowser control"
 ms.assetid: b3ec38cb-f509-4d0b-bd79-9f3611259c62
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Navigate to a URL with the WebBrowser Control

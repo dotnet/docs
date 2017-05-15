@@ -2,7 +2,7 @@
 title: "WPF Architecture | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -46,8 +46,8 @@ helpviewer_keywords:
   - "System.Windows.Controls.Control class"
 ms.assetid: 8579c10b-76ab-4c52-9691-195ce02333c8
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # WPF Architecture

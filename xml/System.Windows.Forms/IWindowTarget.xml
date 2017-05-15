@@ -17,6 +17,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="OnHandleChange">
@@ -45,6 +46,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnMessage">
@@ -66,6 +68,7 @@
         <param name="m">The Windows message to process.</param>
         <summary>Processes the Windows messages.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

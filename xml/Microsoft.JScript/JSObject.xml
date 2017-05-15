@@ -20,6 +20,7 @@
   <Docs>
     <summary>Represents an object in JScript. This class belongs to the objects and functions category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,6 +36,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JSObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddField">
@@ -57,6 +59,7 @@
         <summary>Adds the specified field to the object.</summary>
         <returns>The new field, if it is successfully added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="field_table">
@@ -74,6 +77,7 @@
       <Docs>
         <summary>Stores a list of fields that are dynamically added and removed from the object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMember">
@@ -98,6 +102,7 @@
         <summary>Gets an array of <see cref="T:System.Reflection.MemberInfo" /> objects that correspond to all members that match the specified name.</summary>
         <returns>An array of members that match the <paramref name="name" /> argument.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMembers">
@@ -120,6 +125,7 @@
         <summary>Gets an array of <see cref="T:System.Reflection.MemberInfo" /> objects that correspond to all members of the current script object.</summary>
         <returns>An array of objects that contains all members of the current object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetMemberValue2">
@@ -143,6 +149,7 @@
         <param name="value">The new value of the field.</param>
         <summary>Sets the value of a field that was dynamically added to the object and stored in <see cref="F:Microsoft.JScript.JSObject.field_table" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -162,6 +169,7 @@
         <summary>Returns an enumerator that iterates through the members of the object.</summary>
         <returns>An enumerator object that is used to iterate through the members of the object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices.Expando.IExpando.AddMethod">
@@ -186,6 +194,7 @@
         <summary>Adds the specified method to the object. <see cref="M:Microsoft.JScript.JSObject.System#Runtime#InteropServices#Expando#IExpando#AddMethod(System.String,System.Delegate)" /> is not implemented in JScript.</summary>
         <returns>null in all cases.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices.Expando.IExpando.AddProperty">
@@ -208,6 +217,7 @@
         <summary>Adds the specified property to the object. This method is not implemented in JScript.</summary>
         <returns>null in all cases.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices.Expando.IExpando.RemoveMember">
@@ -229,6 +239,7 @@
         <param name="m">The name of the member to remove.</param>
         <summary>Removes the specified member from the object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -248,6 +259,7 @@
         <summary>Returns a string that represents the current object.</summary>
         <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -2,7 +2,7 @@
 title: "&lt;persistenceProvider&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,7 +39,7 @@ Specifies the type of the persistence provider implementation to use, as well as
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|persistenceOperationTimeout|A <xref:System.TimeSpan> value that specifies the time-out used for persistence operations. The default is “00:00:30”.|  
+|persistenceOperationTimeout|A <xref:System.TimeSpan> value that specifies the time-out used for persistence operations. The default is "00:00:30".|  
 |type|A string that specifies the type of the persistence provider factory to use.|  
   
 ### Child Elements  

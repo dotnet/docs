@@ -121,7 +121,7 @@
    
   
 ## Examples  
- The following code example uses the [CopyTo Method (MembershipProvider\<xref:System.Web.Security.MembershipProviderCollection.CopyTo%2A> method to copy the contents of a <xref:System.Web.Security.MembershipProviderCollection> to an array of <xref:System.Web.Security.MembershipProvider> objects.  
+ The following code example uses the <xref:System.Web.Security.MembershipProviderCollection.CopyTo%2A> method to copy the contents of a <xref:System.Web.Security.MembershipProviderCollection> to an array of <xref:System.Web.Security.MembershipProvider> objects.  
   
  [!code-csharp[System.Web.Security.MembershipProviderCollection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipProviderCollection/CS/snippetscs.aspx#3)]
  [!code-vb[System.Web.Security.MembershipProviderCollection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipProviderCollection/VB/snippetsvb.aspx#3)]  

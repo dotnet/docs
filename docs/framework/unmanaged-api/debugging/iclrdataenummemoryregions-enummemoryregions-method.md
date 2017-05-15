@@ -2,18 +2,19 @@
 title: "ICLRDataEnumMemoryRegions::EnumMemoryRegions Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRDataEnumMemoryRegions.EnumMemoryRegions"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRDataEnumMemoryRegions::EnumMemoryRegions"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRDataEnumMemoryRegions::EnumMemoryRegions method [.NET Framework debugging]"
   - "EnumMemoryRegions method [.NET Framework debugging]"
 ms.assetid: 22d2e339-f174-40b5-a478-0b744501566f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

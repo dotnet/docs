@@ -2,18 +2,19 @@
 title: "ICorProfilerCallback::ModuleLoadFinished Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.ModuleLoadFinished"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ModuleLoadFinished"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ModuleLoadFinished method [.NET Framework profiling]"
   - "ICorProfilerCallback::ModuleLoadFinished method [.NET Framework profiling]"
 ms.assetid: 050649e5-ffc0-4458-a0a4-d9ee128a219e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

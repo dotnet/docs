@@ -13,6 +13,7 @@
   <Docs>
     <summary>Encapsulates a recycle limit monitor.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Dispose">
@@ -31,6 +32,7 @@
       <Docs>
         <summary>Releases all resources used by the recycle limit monitor.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InitializeLifetimeService">
@@ -50,6 +52,7 @@
         <summary>Obtains a lifetime service object to control the lifetime policy for this instance.</summary>
         <returns>Returns nulls.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

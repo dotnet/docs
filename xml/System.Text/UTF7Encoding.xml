@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -69,6 +70,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -114,6 +116,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -161,6 +164,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -205,6 +209,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -268,6 +273,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -333,6 +339,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -366,12 +373,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetBytes%2A> to store the resulting bytes, the application uses [GetByteCount Method (Char\<xref:System.Text.UTF7Encoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A>. The [GetByteCount Method (Char\<xref:System.Text.UTF7Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> method generally executes faster.  
+ To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetBytes%2A> to store the resulting bytes, the application uses <xref:System.Text.UTF7Encoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A>. The <xref:System.Text.UTF7Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> method generally executes faster.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the [GetByteCount Method (Char\<xref:System.Text.UTF7Encoding.GetByteCount%2A> method to return the number of bytes required to encode an array of Unicode characters.  
+ The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetByteCount%2A> method to return the number of bytes required to encode an array of Unicode characters.  
   
  [!code-cpp[System.Text.UTF7Encoding.GetByteCount Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetByteCount Example/CPP/getbytecount-char[]-int32-int32.cpp#1)]
  [!code-csharp[System.Text.UTF7Encoding.GetByteCount Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetByteCount Example/CS/getbytecount-char[]-int32-int32.cs#1)]
@@ -406,6 +413,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -482,6 +490,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -570,6 +579,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -610,7 +620,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To calculate the exact array size required by [GetBytes Method (String, Int32, Int32, Byte\<xref:System.Text.UTF7Encoding.GetBytes%2A> to store the resulting bytes, the application uses <xref:System.Text.UTF7Encoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A>. The <xref:System.Text.UTF7Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> method generally executes faster.  
+ To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetBytes%2A> to store the resulting bytes, the application uses <xref:System.Text.UTF7Encoding.GetByteCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A>. The <xref:System.Text.UTF7Encoding.GetByteCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxByteCount%2A> method generally executes faster.  
   
  Data to be converted, such as data read from a stream, might be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.UTF7Encoding.GetDecoder%2A> method or the <xref:System.Text.UTF7Encoding.GetEncoder%2A> method, respectively.  
   
@@ -620,7 +630,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the [GetBytes Method (String, Int32, Int32, Byte\<xref:System.Text.UTF7Encoding.GetBytes%2A> method to encode a range of elements from a Unicode character array, and store the encoded bytes in a range of elements in a byte array.  
+ The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetBytes%2A> method to encode a range of elements from a Unicode character array, and store the encoded bytes in a range of elements in a byte array.  
   
  [!code-cpp[System.Text.UTF7Encoding.GetBytes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetBytes Example/CPP/getbytes-char[]-int32-int32-byte[]-int32.cpp#1)]
  [!code-csharp[System.Text.UTF7Encoding.GetBytes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetBytes Example/CS/getbytes-char[]-int32-int32-byte[]-int32.cs#1)]
@@ -661,6 +671,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -726,6 +737,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -759,12 +771,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetChars%2A> to store the resulting characters, use [GetCharCount Method (Byte\<xref:System.Text.UTF7Encoding.GetCharCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A>. The [GetCharCount Method (Byte\<xref:System.Text.UTF7Encoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> method generally executes faster.  
+ To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetChars%2A> to store the resulting characters, use <xref:System.Text.UTF7Encoding.GetCharCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A>. The <xref:System.Text.UTF7Encoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> method generally executes faster.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the [GetCharCount Method (Byte\<xref:System.Text.UTF7Encoding.GetCharCount%2A> method to return the number of characters produced by decoding a range of elements in a byte array.  
+ The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetCharCount%2A> method to return the number of characters produced by decoding a range of elements in a byte array.  
   
  [!code-cpp[System.Text.UnicodeEncoding.GetCharCount Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UnicodeEncoding.GetCharCount Example/CPP/getcharcount-byte[]-int32-int32.cpp#1)]
  [!code-csharp[System.Text.UnicodeEncoding.GetCharCount Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UnicodeEncoding.GetCharCount Example/CS/getcharcount-byte[]-int32-int32.cs#1)]
@@ -799,6 +811,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -875,6 +888,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -912,7 +926,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To calculate the exact array size required by [GetChars Method (Byte\[\], Int32, Int32, Char\<xref:System.Text.UTF7Encoding.GetChars%2A> to store the resulting characters, use <xref:System.Text.UTF7Encoding.GetCharCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A>. The <xref:System.Text.UTF7Encoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> method generally executes faster.  
+ To calculate the exact array size required by <xref:System.Text.UTF7Encoding.GetChars%2A> to store the resulting characters, use <xref:System.Text.UTF7Encoding.GetCharCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A>. The <xref:System.Text.UTF7Encoding.GetCharCount%2A> method generally allows allocation of less memory, while the <xref:System.Text.UTF7Encoding.GetMaxCharCount%2A> method generally executes faster.  
   
  Data to be converted, such as data read from a stream, might be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.UTF7Encoding.GetDecoder%2A> method or the <xref:System.Text.UTF7Encoding.GetEncoder%2A> method, respectively.  
   
@@ -922,7 +936,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the [GetChars Method (Byte\[\], Int32, Int32, Char\<xref:System.Text.UTF7Encoding.GetChars%2A> method to decode a range of elements in a byte array and store the result in a character array.  
+ The following code example demonstrates how to use the <xref:System.Text.UTF7Encoding.GetChars%2A> method to decode a range of elements in a byte array and store the result in a character array.  
   
  [!code-cpp[System.Text.UTF7Encoding.GetChars Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetChars Example/CPP/getchars-byte[]-int32-int32-char[]-int32.cpp#1)]
  [!code-csharp[System.Text.UTF7Encoding.GetChars Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UTF7Encoding.GetChars Example/CS/getchars-byte[]-int32-int32-char[]-int32.cs#1)]
@@ -963,6 +977,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1007,6 +1022,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1051,6 +1067,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1091,6 +1108,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1158,6 +1176,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1225,6 +1244,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

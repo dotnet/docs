@@ -2,18 +2,19 @@
 title: "IHostSecurityManager::OpenThreadToken Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostSecurityManager.OpenThreadToken"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostSecurityManager::OpenThreadToken"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostSecurityManager::OpenThreadToken method [.NET Framework hosting]"
   - "OpenThreadToken method [.NET Framework hosting]"
 ms.assetid: d5999052-8bf0-4a9e-8621-da6284406b18
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

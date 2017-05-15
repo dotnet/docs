@@ -281,9 +281,8 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the print server beeps in response to an error condition in the printer.</summary>
         <value>
-          <see cref="T:System.Boolean" />  
-  
- <see langword="true" /> if the print server beeps in response to an error; otherwise, <see langword="false" />.</value>
+          <see cref="T:System.Boolean" />
+          <see langword="true" /> if the print server beeps in response to an error; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -306,7 +305,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The method requires that the <xref:System.Printing.PrintServer> object be created with <xref:System.Printing.PrintSystemDesiredAccess> rights.  
+ The method requires that the <xref:System.Printing.PrintServer> object be created with <xref:System.Printing.PrintSystemDesiredAccess.AdministrateServer> rights.  
   
  ]]></format>
         </remarks>
@@ -315,7 +314,7 @@
   
  \- or -  
   
- The <see cref="T:System.Printing.PrintServer" /> object was not created with sufficient rights. See Remarks.</exception>
+ The <see cref="T:System.Printing.PrintServer" /> object was not created with sufficient rights.</exception>
       </Docs>
     </Member>
     <Member MemberName="DefaultPortThreadPriority">
@@ -750,7 +749,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the `printQueueProperty` parameter to initialize one, and only one, of the queue's <xref:System.Printing.PrintQueue.ShareName%2A>, <xref:System.Printing.PrintQueue.Comment%2A>, or <xref:System.Printing.PrintQueue.Location%2A> properties. If you want to initialize more than one, use the [InstallPrintQueue(String, String, String\<xref:System.Printing.PrintServer.InstallPrintQueue%28System.String%2CSystem.String%2CSystem.String%5B%5D%2CSystem.String%2CSystem.Printing.PrintQueueAttributes%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Int32%2CSystem.Int32%29> overload of this method.  
+ Use the `printQueueProperty` parameter to initialize one, and only one, of the queue's <xref:System.Printing.PrintQueue.ShareName%2A>, <xref:System.Printing.PrintQueue.Comment%2A>, or <xref:System.Printing.PrintQueue.Location%2A> properties. If you want to initialize more than one, use the <xref:System.Printing.PrintServer.InstallPrintQueue%28System.String%2CSystem.String%2CSystem.String%5B%5D%2CSystem.String%2CSystem.Printing.PrintQueueAttributes%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.String%2CSystem.Int32%2CSystem.Int32%29> overload of this method.  
   
  ]]></format>
         </remarks>
@@ -799,7 +798,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you do not want to initialize all three of the queue's <xref:System.Printing.PrintQueue.ShareName%2A>, <xref:System.Printing.PrintQueue.Comment%2A>, or <xref:System.Printing.PrintQueue.Location%2A> properties; you can pass an empty string for one or more of `printQueueShareName`, `printQueueComment`, and `printQueueLocation`. If you want to initialize just one of these properties, use the [InstallPrintQueue(String, String, String\<xref:System.Printing.PrintServer.InstallPrintQueue%28System.String%2CSystem.String%2CSystem.String%5B%5D%2CSystem.String%2CSystem.Printing.PrintQueueAttributes%2CSystem.Printing.PrintQueueStringProperty%2CSystem.Int32%2CSystem.Int32%29> overload of this method.  
+ If you do not want to initialize all three of the queue's <xref:System.Printing.PrintQueue.ShareName%2A>, <xref:System.Printing.PrintQueue.Comment%2A>, or <xref:System.Printing.PrintQueue.Location%2A> properties; you can pass an empty string for one or more of `printQueueShareName`, `printQueueComment`, and `printQueueLocation`. If you want to initialize just one of these properties, use the <xref:System.Printing.PrintServer.InstallPrintQueue%28System.String%2CSystem.String%2CSystem.String%5B%5D%2CSystem.String%2CSystem.Printing.PrintQueueAttributes%2CSystem.Printing.PrintQueueStringProperty%2CSystem.Int32%2CSystem.Int32%29> overload of this method.  
   
  ]]></format>
         </remarks>

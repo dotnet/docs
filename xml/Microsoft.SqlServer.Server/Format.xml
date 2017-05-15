@@ -57,7 +57,7 @@
   
 -   All the fields of the aggregate must be *blittable*, that is, they must have a common representation in both managed and unmanaged memory and not require special handling by the interop marshaler.  
   
--   All the fields of the UDT should be of one of the following types that can be serialized: `bool`, `byte`,`sbyte`,`short`,`ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, <xref:System.Data.SqlTypes.SqlByte>, <xref:System.Data.SqlTypes.SqlInt16>, <xref:System.Data.SqlTypes.SqlInt32>, <xref:System.Data.SqlTypes.SqlInt64>, <xref:System.Data.SqlTypes.SqlDateTime>, <xref:System.Data.SqlTypes.SqlSingle>, <xref:System.Data.SqlTypes.SqlDouble>, <xref:System.Data.SqlTypes.SqlMoney>, or other value types defined by the user that contain fields of one of these types.  
+-   All the fields of the UDT should be of one of the following types that can be serialized: `bool`, `byte`, `sbyte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, <xref:System.Data.SqlTypes.SqlByte>, <xref:System.Data.SqlTypes.SqlInt16>, <xref:System.Data.SqlTypes.SqlInt32>, <xref:System.Data.SqlTypes.SqlInt64>, <xref:System.Data.SqlTypes.SqlDateTime>, <xref:System.Data.SqlTypes.SqlSingle>, <xref:System.Data.SqlTypes.SqlDouble>, <xref:System.Data.SqlTypes.SqlMoney>, or other value types defined by the user that contain fields of one of these types.  
   
 -   The aggregate must not specify a value for `MaxByteSize`.  
   

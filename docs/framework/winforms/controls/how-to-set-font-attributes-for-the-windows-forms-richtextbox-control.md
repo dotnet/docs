@@ -2,7 +2,7 @@
 title: "How to: Set Font Attributes for the Windows Forms RichTextBox Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "formatting [Windows Forms]"
 ms.assetid: 2bc23ddb-0529-4489-a1a2-ad253cb43f9a
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set Font Attributes for the Windows Forms RichTextBox Control

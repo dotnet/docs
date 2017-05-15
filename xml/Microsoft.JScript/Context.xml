@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="EndColumn">
@@ -38,6 +39,7 @@
         <summary>Gets the column number in the line where this code ends. This includes whitespace at the start of the line.</summary>
         <value>The column number where this code ends.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EndLine">
@@ -56,6 +58,7 @@
         <summary>Gets the ending line number of this code.</summary>
         <value>The ending line number of this code.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EndPosition">
@@ -74,6 +77,7 @@
         <summary>Gets the position in the code string where this code ends, because all lines of code are stored in a single string.</summary>
         <value>The position in the code string where this code ends.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetCode">
@@ -93,6 +97,7 @@
         <summary>Gets the code that the context contains, discarding any whitespace.</summary>
         <returns>The code that the context contains.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetToken">
@@ -112,6 +117,7 @@
         <summary>Gets an individual unit of code, or a *token*, that the context contains.</summary>
         <returns>An individual unit of code, or a *token*, that the context contains.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StartColumn">
@@ -130,6 +136,7 @@
         <summary>Gets the column number in the line where this code starts. This includes whitespace at the start of the line.</summary>
         <value>The column number where this code starts.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StartLine">
@@ -148,6 +155,7 @@
         <summary>Gets the line number where this code starts.</summary>
         <value>The line number where this code starts.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StartPosition">
@@ -166,6 +174,7 @@
         <summary>Gets the position in the code string where this code starts, because all lines of code are stored in a single string.</summary>
         <value>The position in the code string where this code starts.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

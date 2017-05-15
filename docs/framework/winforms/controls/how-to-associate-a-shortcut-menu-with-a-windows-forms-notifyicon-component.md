@@ -2,7 +2,7 @@
 title: "How to: Associate a Shortcut Menu with a Windows Forms NotifyIcon Component | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "shortcut menus, for background processes"
 ms.assetid: d68f3926-08d3-4f7d-949f-1981b29cf188
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Associate a Shortcut Menu with a Windows Forms NotifyIcon Component

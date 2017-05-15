@@ -54,7 +54,7 @@
 ## Remarks  
  The <xref:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider.%23ctor%2A> constructor creates a new adapter and attaches it to the serialization manager. This adds itself as a serializer for resources into the serialization manager, and, if not already added, adds itself as an extender provider to the root component.  
   
- If the `model` parameter is not <xref:System.ComponentModel.Design.Serialization.CodeDomLocalizationModel>, the <xref:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider> provides the `Language` and `Localizable` properties.  
+ If the `model` parameter is not <xref:System.ComponentModel.Design.Serialization.CodeDomLocalizationModel.None>, the <xref:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider> provides the `Language` and `Localizable` properties.  
   
  ]]></format>
         </remarks>
@@ -85,7 +85,7 @@
 ## Remarks  
  The <xref:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider.%23ctor%2A> constructor creates a new adapter and attaches it to the serialization manager. This adds itself as a serializer for resources into the serialization manager, and, if not already added, adds itself as an extender provider to the root component.  
   
- If the `model` parameter is not <xref:System.ComponentModel.Design.Serialization.CodeDomLocalizationModel>, the <xref:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider> provides the `Language` and `Localizable` properties.  
+ If the `model` parameter is not <xref:System.ComponentModel.Design.Serialization.CodeDomLocalizationModel.None>, the <xref:System.ComponentModel.Design.Serialization.CodeDomLocalizationProvider> provides the `Language` and `Localizable` properties.  
   
  If `supportedCultures` is not provided, the default is all cultures that are currently installed on the computer. If an array of cultures is provided, and it includes cultures that are not installed on the computer, those cultures are not available.  
   

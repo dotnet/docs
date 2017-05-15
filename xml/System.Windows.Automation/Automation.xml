@@ -210,7 +210,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If either of the arguments is a null reference (`Nothing` in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]), [Compare Method (Int32\<xref:System.Windows.Automation.Automation.Compare%2A> throws an <xref:System.ArgumentNullException> exception.  
+ If either of the arguments is a null reference (`Nothing` in [!INCLUDE[TLA#tla_visualbnet](~/includes/tlasharptla-visualbnet-md.md)]), <xref:System.Windows.Automation.Automation.Compare%2A> throws an <xref:System.ArgumentNullException> exception.  
   
    
   
@@ -397,7 +397,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Used by itself, this condition is functionally identical to <xref:System.Windows.Automation.Condition>.  
+ Used by itself, this condition is functionally identical to <xref:System.Windows.Automation.Condition.TrueCondition>.  
   
  ]]></format>
         </remarks>

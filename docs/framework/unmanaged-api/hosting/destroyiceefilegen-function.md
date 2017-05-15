@@ -2,20 +2,21 @@
 title: "DestroyICeeFileGen Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "DestroyICeeFileGen"
-apilocation: 
+api_location: 
   - "mscoree.dll"
   - "mscorpehost.dll"
   - "mscorpe.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "DestroyICeeFileGen"
 dev_langs: 
@@ -23,6 +24,8 @@ dev_langs:
 helpviewer_keywords: 
   - "DestroyICeeFileGen function [.NET Framework hosting]"
 ms.assetid: dc1e2235-e721-4cb2-a0b8-6b0c030d7bab
+topic_type: 
+  - "apiref"
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

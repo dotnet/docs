@@ -8,6 +8,7 @@
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -44,7 +45,7 @@
   
     -   <xref:System.Boolean>. The <xref:System.Boolean.Parse%28System.String%29?displayProperty=fullName> and <xref:System.Convert.ToBoolean%28System.String%29?displayProperty=fullName> methods require the string to be converted to be "True", "true", "False", or "false". Any other value throws a <xref:System.FormatException> exception.  
   
-    -   <xref:System.DateTime> and <xref:System.DateTimeOffset>. All date and time data is interpreted based on the formatting conventions of a particular culture: either the current thread culture (or, in some cases, the current application domain culture), the invariant culture, or a specified culture. When you call the <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> and [DateTimeOffset.ParseExact(String, String\<xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> methods, date and time data must also conform *exactly* to a pattern specified by one or more [standard format strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) or [custom format strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md) that are provided as arguments in the method call. If it doesn't conform to an expected culture-specific pattern, a <xref:System.FormatException> exception is thrown. This means that date and time data saved in a culture-specific format on one system might not parse successfully on another system.  
+    -   <xref:System.DateTime> and <xref:System.DateTimeOffset>. All date and time data is interpreted based on the formatting conventions of a particular culture: either the current thread culture (or, in some cases, the current application domain culture), the invariant culture, or a specified culture. When you call the <xref:System.DateTime.ParseExact%28System.String%2CSystem.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> and <xref:System.DateTimeOffset.ParseExact%28System.String%2CSystem.String%5B%5D%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> methods, date and time data must also conform *exactly* to a pattern specified by one or more [standard format strings](~/docs/standard/base-types/standard-date-and-time-format-strings.md) or [custom format strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md) that are provided as arguments in the method call. If it doesn't conform to an expected culture-specific pattern, a <xref:System.FormatException> exception is thrown. This means that date and time data saved in a culture-specific format on one system might not parse successfully on another system.  
   
          For more information about parsing dates and times, see [Parsing Date and Time Strings](~/docs/standard/base-types/parsing-datetime.md) and the documentation for the method that threw the exception.  
   
@@ -110,7 +111,7 @@
      [!code-csharp[System.FormatException#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/example3.cs#4)]
      [!code-vb[System.FormatException#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/example3.vb#4)]  
   
--   You've supplied the object list in a composite formatting method as a strongly typed parameter array, and the <xref:System.FormatException> exception indicates that the index of one or more format items exceeds the number of arguments in the object list. This occurs because no explicit conversion between array types exists, so instead the compiler treats the array as a single argument rather than as a parameter array. For example, the following call to the [Console.WriteLine(String, Object\<xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method throws a <xref:System.FormatException> exception, although the highest index of the format items is 3, and the parameter array of type <xref:System.Int32> has four elements.  
+-   You've supplied the object list in a composite formatting method as a strongly typed parameter array, and the <xref:System.FormatException> exception indicates that the index of one or more format items exceeds the number of arguments in the object list. This occurs because no explicit conversion between array types exists, so instead the compiler treats the array as a single argument rather than as a parameter array. For example, the following call to the <xref:System.Console.WriteLine%28System.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method throws a <xref:System.FormatException> exception, although the highest index of the format items is 3, and the parameter array of type <xref:System.Int32> has four elements.  
   
      [!code-csharp[System.FormatException#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.formatexception/cs/qa1.cs#5)]
      [!code-vb[System.FormatException#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.formatexception/vb/qa1.vb#5)]  
@@ -139,6 +140,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -180,6 +182,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -227,6 +230,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
@@ -256,6 +263,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

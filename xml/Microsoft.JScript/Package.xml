@@ -13,6 +13,7 @@
   <Docs>
     <summary>Creates packages of JScript code for use by other code. This class belongs to the abstract syntax tree category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="JScriptPackage">
@@ -36,6 +37,7 @@
         <param name="engine">A reference to the scripting engine.</param>
         <summary>Creates the specified package by using the specified scripting engine.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

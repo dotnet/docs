@@ -2,7 +2,7 @@
 title: "WCF Service Host (WcfSvcHost.exe) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -88,7 +88,7 @@ manager: "erikre"
   
     -   **Service**: Lists all the services.  
   
-    -   **Status**: Lists the status of the service. Valid values are "Started”, “Stopped,” and “Error”.  
+    -   **Status**: Lists the status of the service. Valid values are "Started", "Stopped," and "Error".  
   
     -   **Metadata Address**: Displays the metadata address of the services.  
   

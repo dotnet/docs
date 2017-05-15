@@ -115,7 +115,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example uses the [CopyTo Method (InstanceDataCollection\<xref:System.Diagnostics.InstanceDataCollectionCollection.CopyTo%2A> method to convert an <xref:System.Diagnostics.InstanceDataCollectionCollection> into an array of <xref:System.Diagnostics.InstanceDataCollection> objects. Each element of the <xref:System.Diagnostics.InstanceDataCollection> array is passed to a function for further processing.  
+ The following code example uses the <xref:System.Diagnostics.InstanceDataCollectionCollection.CopyTo%2A> method to convert an <xref:System.Diagnostics.InstanceDataCollectionCollection> into an array of <xref:System.Diagnostics.InstanceDataCollection> objects. Each element of the <xref:System.Diagnostics.InstanceDataCollection> array is passed to a function for further processing.  
   
  [!code-csharp[System.Diagnostics.InstanceData.CopyTo#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.CopyTo/CS/instdatacopyto.cs#5)]
  [!code-vb[System.Diagnostics.InstanceData.CopyTo#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Diagnostics.InstanceData.CopyTo/VB/instdatacopyto.vb#5)]  

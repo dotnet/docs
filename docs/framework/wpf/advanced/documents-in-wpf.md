@@ -2,7 +2,7 @@
 title: "Documents in WPF | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "browser-viewable documents"
 ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 caps.latest.revision: 36
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Documents in WPF

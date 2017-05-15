@@ -10,6 +10,7 @@
   <Docs>
     <summary>Defines methods for resolving scope. This interface is implemented by all objects that take part in a scope hierarchy.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="GetDefaultThisObject">
@@ -29,6 +30,7 @@
         <summary>When implemented in a class, gets the current default scope. Either the contained object of a <see langword="with" /> statement scope, or the global scope.</summary>
         <returns>The current default scope.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetField">
@@ -60,6 +62,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetGlobalScope">
@@ -79,6 +82,7 @@
         <summary>When implemented in a class, gets the global scope by searching the scope hierarchy until it finds a scope that includes static variables, for example, a module scope.</summary>
         <returns>The global scope.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetLocalField">
@@ -101,6 +105,7 @@
         <summary>When implemented in a class, gets the local declaration of a field that has the specified name. This is used at compile time for error checking.</summary>
         <returns>The local declaration of the field.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMemberValue">
@@ -132,6 +137,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

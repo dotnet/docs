@@ -2,18 +2,19 @@
 title: "ICorRuntimeHost::MapFile Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorRuntimeHost.MapFile"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::MapFile"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorRuntimeHost::MapFile method [.NET Framework hosting]"
   - "MapFile method [.NET Framework hosting]"
 ms.assetid: 45ae0502-0a31-4342-b7e3-f36e1cf738f3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

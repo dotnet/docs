@@ -2,7 +2,7 @@
 title: "Using the XmlSerializer Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -174,14 +174,14 @@ manager: "erikre"
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
-  <system.xml.serialization>  
-    <xmlSerializer tempFilesLocation='e:\temp\XmlSerializerBug' useLegacySerializerGeneration="true" />  
-  </system.xml.serialization>  
-  <system.diagnostics>  
-    <switches>  
-      <add name="XmlSerialization.Compilation" value="1" />  
-    </switches>  
-  </system.diagnostics>  
+  <system.xml.serialization>  
+    <xmlSerializer tempFilesLocation='e:\temp\XmlSerializerBug' useLegacySerializerGeneration="true" />  
+  </system.xml.serialization>  
+  <system.diagnostics>  
+    <switches>  
+      <add name="XmlSerialization.Compilation" value="1" />  
+    </switches>  
+  </system.diagnostics>  
 </configuration>  
   
 ```  
@@ -191,7 +191,7 @@ manager: "erikre"
 ```xml  
 <configuration>  
 <appSettings>   
-<add key=”System:Xml:Serialization:UseLegacySerializerGeneration” value=”true” />  
+<add key="System:Xml:Serialization:UseLegacySerializerGeneration" value="true" />  
                </appSettings>  
 </configuration>  
   

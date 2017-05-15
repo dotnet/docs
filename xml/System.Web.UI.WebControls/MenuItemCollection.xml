@@ -332,14 +332,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the [CopyTo Method (MenuItem\<xref:System.Web.UI.WebControls.MenuItemCollection.CopyTo%2A> method to copy the contents of the current <xref:System.Web.UI.WebControls.MenuItemCollection> object into the specified zero-based array. Items are copied starting at the specified index of the target array. With the array, you can then use array syntax to access the items in the <xref:System.Web.UI.WebControls.MenuItemCollection> object.  
+ Use the <xref:System.Web.UI.WebControls.MenuItemCollection.CopyTo%2A> method to copy the contents of the current <xref:System.Web.UI.WebControls.MenuItemCollection> object into the specified zero-based array. Items are copied starting at the specified index of the target array. With the array, you can then use array syntax to access the items in the <xref:System.Web.UI.WebControls.MenuItemCollection> object.  
   
  As an alternative, you can also use the <xref:System.Web.UI.WebControls.MenuItemCollection.GetEnumerator%2A> method to create an enumerator that can be used to access the items in the collection.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the [CopyTo Method (MenuItem\<xref:System.Web.UI.WebControls.MenuItemCollection.CopyTo%2A> method to copy the items in a <xref:System.Web.UI.WebControls.MenuItemCollection> object to an array of <xref:System.Web.UI.WebControls.MenuItem> objects.  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.MenuItemCollection.CopyTo%2A> method to copy the items in a <xref:System.Web.UI.WebControls.MenuItemCollection> object to an array of <xref:System.Web.UI.WebControls.MenuItem> objects.  
   
  <!-- TODO: review snippet reference [!code-csharp[MenuItemCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MenuItemCollectionCopyTo/CS/menuitemcollectioncopytocs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[MenuItemCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MenuItemCollectionCopyTo/VB/menuitemcollectioncopytovb.aspx#1)]  -->  

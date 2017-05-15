@@ -13,6 +13,7 @@
   <Docs>
     <summary>Stores constructor function objects, data type information, and objects that represent the static methods of the <see cref="T:Microsoft.JScript.GlobalObject" /> class. The <see cref="T:Microsoft.JScript.LenientGlobalObject" /> class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="ActiveXObject">
@@ -31,6 +32,7 @@
         <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ActiveXObjectConstructor" /> constructor function object.</summary>
         <value>An <see cref="T:Microsoft.JScript.ActiveXObjectConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Array">
@@ -49,6 +51,7 @@
         <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ArrayConstructor" /> constructor function object.</summary>
         <value>An <see cref="T:Microsoft.JScript.ArrayConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="boolean">
@@ -66,6 +69,7 @@
       <Docs>
         <summary>Stores the managed type that corresponds to the JScript <see langword="boolean" /> data type.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Boolean">
@@ -84,6 +88,7 @@
         <summary>Gets or sets a prototype-based object that is defined by a <see cref="T:Microsoft.JScript.BooleanConstructor" /> constructor function object.</summary>
         <value>A <see cref="T:Microsoft.JScript.BooleanConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="byte">
@@ -101,6 +106,7 @@
       <Docs>
         <summary>Stores the managed type that corresponds to the JScript <see langword="byte" /> data type.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="char">
@@ -118,6 +124,7 @@
       <Docs>
         <summary>Stores the managed type that corresponds to the JScript <see langword="char" /> data type.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -136,6 +143,7 @@
         <summary>Gets or sets a prototype-based object that is defined by a <see cref="T:Microsoft.JScript.LenientDateConstructor" /> constructor function object.</summary>
         <value>A <see cref="T:Microsoft.JScript.LenientDateConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="decimal">
@@ -153,6 +161,7 @@
       <Docs>
         <summary>Stores the managed type that corresponds to the JScript <see langword="decimal" /> data type.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="decodeURI">
@@ -170,6 +179,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.decodeURI(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="decodeURIComponent">
@@ -187,6 +197,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.decodeURIComponent(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="double">
@@ -204,6 +215,7 @@
       <Docs>
         <summary>Stores the managed type that corresponds to the JScript <see langword="double" /> data type.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="encodeURI">
@@ -221,6 +233,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.encodeURI(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="encodeURIComponent">
@@ -238,6 +251,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.encodeURIComponent(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Enumerator">
@@ -256,6 +270,7 @@
         <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.EnumeratorConstructor" /> constructor function object.</summary>
         <value>An <see cref="T:Microsoft.JScript.EnumeratorConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -274,6 +289,7 @@
         <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ErrorConstructor" /> constructor function object.</summary>
         <value>An <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="escape">
@@ -296,6 +312,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.escape(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="eval">
@@ -313,6 +330,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.eval(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EvalError">
@@ -331,6 +349,7 @@
         <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ErrorConstructor" /> constructor function object, and that is initialized as an <see cref="F:Microsoft.JScript.ErrorType.EvalError" />.</summary>
         <value>An <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="float">
@@ -348,6 +367,7 @@
       <Docs>
         <summary>Stores the managed type that corresponds to the JScript <see langword="float" /> data type.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Function">
@@ -366,6 +386,7 @@
         <summary>Gets or sets a prototype-based object that is defined by a <see cref="T:Microsoft.JScript.FunctionConstructor" /> constructor function object.</summary>
         <value>A <see cref="T:Microsoft.JScript.FunctionConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetObject">
@@ -383,6 +404,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.GetObject(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Infinity">
@@ -400,6 +422,7 @@
       <Docs>
         <summary>Represents positive infinity.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="int">
@@ -417,6 +440,7 @@
       <Docs>
         <summary>Stores the managed type that corresponds to the JScript <see langword="int" /> data type.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="isFinite">
@@ -434,6 +458,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.isFinite(System.Double)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="isNaN">
@@ -451,6 +476,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.isNaN(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="long">
@@ -468,6 +494,7 @@
       <Docs>
         <summary>Stores the managed type that corresponds to the JScript <see langword="long" /> data type.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Math">
@@ -486,6 +513,7 @@
         <summary>Gets or sets a <see cref="T:Microsoft.JScript.LenientMathObject" /> object.</summary>
         <value>A <see cref="T:Microsoft.JScript.LenientMathObject" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NaN">
@@ -503,6 +531,7 @@
       <Docs>
         <summary>Represents a value that is not a number (NaN).</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Number">
@@ -521,6 +550,7 @@
         <summary>Gets or sets a prototype-based object that is defined by a <see cref="T:Microsoft.JScript.NumberConstructor" /> constructor function object.</summary>
         <value>A <see cref="T:Microsoft.JScript.NumberConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Object">
@@ -539,6 +569,7 @@
         <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ObjectConstructor" /> constructor function object.</summary>
         <value>An <see cref="T:Microsoft.JScript.ObjectConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="parseFloat">
@@ -556,6 +587,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.parseFloat(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="parseInt">
@@ -573,6 +605,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.parseInt(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RangeError">
@@ -591,6 +624,7 @@
         <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ErrorConstructor" /> constructor function object, and that is initialized as a <see cref="F:Microsoft.JScript.ErrorType.RangeError" />.</summary>
         <value>An <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ReferenceError">
@@ -609,6 +643,7 @@
         <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ErrorConstructor" /> constructor function object, and that is initialized as a <see cref="F:Microsoft.JScript.ErrorType.ReferenceError" />.</summary>
         <value>An <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RegExp">
@@ -627,6 +662,7 @@
         <summary>Gets or sets a prototype-based object that is defined by a <see cref="T:Microsoft.JScript.RegExpConstructor" /> constructor function object.</summary>
         <value>A <see cref="T:Microsoft.JScript.RegExpConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="sbyte">
@@ -644,6 +680,7 @@
       <Docs>
         <summary>Stores the managed type that corresponds to the JScript <see langword="sbyte" /> data type.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ScriptEngine">
@@ -661,6 +698,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngine" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ScriptEngineBuildVersion">
@@ -678,6 +716,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngineBuildVersion" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ScriptEngineMajorVersion">
@@ -695,6 +734,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngineMajorVersion" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ScriptEngineMinorVersion">
@@ -712,6 +752,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngineMinorVersion" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="short">
@@ -729,6 +770,7 @@
       <Docs>
         <summary>Stores the managed type that corresponds to the JScript <see langword="short" /> data type.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="String">
@@ -747,6 +789,7 @@
         <summary>Gets or sets a prototype-based object that is defined by a <see cref="T:Microsoft.JScript.LenientStringConstructor" /> constructor function object.</summary>
         <value>A <see cref="T:Microsoft.JScript.LenientStringConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SyntaxError">
@@ -765,6 +808,7 @@
         <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ErrorConstructor" /> constructor function object, and that is initialized as a <see cref="F:Microsoft.JScript.ErrorType.SyntaxError" />.</summary>
         <value>An <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TypeError">
@@ -783,6 +827,7 @@
         <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ErrorConstructor" /> constructor function object, and that is initialized as a <see cref="F:Microsoft.JScript.ErrorType.TypeError" />.</summary>
         <value>An <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="uint">
@@ -800,6 +845,7 @@
       <Docs>
         <summary>Stores the managed type that corresponds to the JScript <see langword="uint" /> data type.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ulong">
@@ -817,6 +863,7 @@
       <Docs>
         <summary>Stores the managed type that corresponds to the JScript <see langword="ulong" /> data type.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="undefined">
@@ -834,6 +881,7 @@
       <Docs>
         <summary>Represents a value that is null.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="unescape">
@@ -856,6 +904,7 @@
       <Docs>
         <summary>Stores an object that represents the static <see cref="M:Microsoft.JScript.GlobalObject.unescape(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="URIError">
@@ -874,6 +923,7 @@
         <summary>Gets or sets a prototype-based object that is defined by an <see cref="T:Microsoft.JScript.ErrorConstructor" /> constructor function object, and that is initialized as a <see cref="F:Microsoft.JScript.ErrorType.URIError" />.</summary>
         <value>An <see cref="T:Microsoft.JScript.ErrorConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ushort">
@@ -891,6 +941,7 @@
       <Docs>
         <summary>Stores the managed type that corresponds to the JScript <see langword="ushort" /> data type.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="VBArray">
@@ -909,6 +960,7 @@
         <summary>Gets or sets a prototype-based object that is defined by a <see cref="T:Microsoft.JScript.VBArrayConstructor" /> constructor function object.</summary>
         <value>A <see cref="T:Microsoft.JScript.VBArrayConstructor" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="void">
@@ -926,6 +978,7 @@
       <Docs>
         <summary>Stores the managed type that corresponds to the return value of a function that does not return a value.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -18,6 +18,7 @@
   <Docs>
     <summary>Defines methods for iterating over a collection of <see cref="T:Microsoft.JScript.ITokenColorInfo" /> objects.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="GetNext">
@@ -37,6 +38,7 @@
         <summary>When implemented in a class, returns the next item in a collection of <see cref="T:Microsoft.JScript.ITokenColorInfo" /> objects.</summary>
         <returns>The next item in the collection.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -55,6 +57,7 @@
       <Docs>
         <summary>When implemented in a class, sets the enumerator to its initial position before the first item in a collection of <see cref="T:Microsoft.JScript.ITokenColorInfo" /> objects.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

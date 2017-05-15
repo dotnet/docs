@@ -22,6 +22,7 @@
 ## XAML Text Usage  
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,6 +38,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.ComponentResourceKeyConverter" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CanConvertFrom">
@@ -71,6 +73,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="sourceType" /> is <see langword="null" />.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -105,6 +108,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="destinationType" /> is <see langword="null" />.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -139,6 +143,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Cannot perform the conversion.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -179,6 +184,7 @@
           <paramref name="value" /> is not type of <see cref="T:System.Windows.ComponentResourceKey" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="destinationType" /> is <see langword="null" />.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

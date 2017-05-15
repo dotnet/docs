@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "sample applications [Visual Basic]"
 ms.assetid: 09c6bc12-25fd-4359-a5fc-8dab8dddbfd2
 caps.latest.revision: 40
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

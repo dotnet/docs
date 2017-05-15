@@ -2,18 +2,19 @@
 title: "IMetaDataAssemblyImport::FindExportedTypeByName Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataAssemblyImport.FindExportedTypeByName"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyImport::FindExportedTypeByName"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "FindExportedTypeByName method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::FindExportedTypeByName method [.NET Framework metadata]"
 ms.assetid: 46264b2c-574d-4dde-aafc-77187a104fdd
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

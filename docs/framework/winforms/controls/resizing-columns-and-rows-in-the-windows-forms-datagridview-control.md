@@ -2,7 +2,7 @@
 title: "Resizing Columns and Rows in the Windows Forms DataGridView Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "data grids, resizing columns and rows"
 ms.assetid: 7532764d-e5c1-4943-a08b-6377a722d3b6
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Resizing Columns and Rows in the Windows Forms DataGridView Control

@@ -2,7 +2,7 @@
 title: "RelativeSource MarkupExtension | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "XAML, RelativeSource markup extension"
 ms.assetid: 26be4721-49b5-4717-a92e-7d54ad0d3a81
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # RelativeSource MarkupExtension
@@ -26,13 +26,13 @@ Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding sour
 ## XAML Attribute Usage  
   
 ```  
-<Binding RelativeSource="{RelativeSource modeEnumValue}" .../>  
+<Binding RelativeSource="{RelativeSource modeEnumValue}" .../>  
 ```  
   
 ## XAML Attribute Usage (nested within Binding extension)  
   
 ```  
-<object property="{Binding RelativeSource={RelativeSource modeEnumValue} ...}" .../>  
+<object property="{Binding RelativeSource={RelativeSource modeEnumValue} ...}" .../>  
 ```  
   
 ## XAML Object Element Usage  
@@ -40,7 +40,7 @@ Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding sour
 ```  
 <Binding>  
   <Binding.RelativeSource>  
-    <RelativeSource Mode="modeEnumValue"/>  
+    <RelativeSource Mode="modeEnumValue"/>  
   </Binding.RelativeSource>  
 </Binding>  
 - or   
@@ -48,7 +48,7 @@ Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding sour
   <Binding.RelativeSource>  
     <RelativeSource  
       Mode="FindAncestor"  
-      AncestorType="{x:Type typeName}"  
+      AncestorType="{x:Type typeName}"  
       AncestorLevel="intLevel"  
     />  
   </Binding.RelativeSource>  

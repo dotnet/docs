@@ -2,7 +2,7 @@
 title: "WPF Windows Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -35,8 +35,8 @@ helpviewer_keywords:
   - "displaying XAML pages"
 ms.assetid: 737d04ec-8861-46c3-8d44-fa11d3528d23
 caps.latest.revision: 65
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # WPF Windows Overview
@@ -261,10 +261,9 @@ Users interact with              [!INCLUDE[TLA#tla_wpf](../../../../includes/tla
   
  <xref:System.Windows.Window.Closing> is raised before the window closes, and it provides a mechanism by which window closure can be prevented. One common reason to prevent window closure is if window content contains modified data. In this situation, the                          <xref:System.Windows.Window.Closing> event can be handled to determine whether data is dirty and, if so, to ask the user whether to either continue closing the window without saving the data or to cancel window closure. The following example shows the key aspects of handling                          <xref:System.Windows.Window.Closing>.  
   
- [!code-csharp[WindowClosingSnippets#WindowClosingCODEBEHIND1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowClosingSnippets/CSharp/DataWindow.xaml.cs#windowclosingcodebehind1)]
- [!code-vb[WindowClosingSnippets#WindowClosingCODEBEHIND1](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WindowClosingSnippets/visualbasic/datawindow.xaml.vb#windowclosingcodebehind1)]  
-[!code-csharp[WindowClosingSnippets#WindowClosingCODEBEHIND2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowClosingSnippets/CSharp/DataWindow.xaml.cs#windowclosingcodebehind2)]
-[!code-vb[WindowClosingSnippets#WindowClosingCODEBEHIND2](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WindowClosingSnippets/visualbasic/datawindow.xaml.vb#windowclosingcodebehind2)]  
+ [!code-csharp[WindowClosingSnippets](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowClosingSnippets/CSharp/DataWindow.xaml.cs)]
+ [!code-vb[WindowClosingSnippets](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/WindowClosingSnippets/visualbasic/datawindow.xaml.vb)]  
+ 
   
  The                          <xref:System.Windows.Window.Closing> event handler is passed a                          <xref:System.ComponentModel.CancelEventArgs>, which implements the                          `Boolean`<xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property that you set to                          `true` to prevent a window from closing.  
   
@@ -302,11 +301,11 @@ Users interact with              [!INCLUDE[TLA#tla_wpf](../../../../includes/tla
   
  You can also specify the initial location of a                  <xref:System.Windows.Window> when it first appears by setting the                  <xref:System.Windows.Window.WindowStartupLocation%2A> property with one of the following                  <xref:System.Windows.WindowStartupLocation> enumeration values:  
   
--   <xref:System.Windows.WindowStartupLocation> (default)  
+-   <xref:System.Windows.WindowStartupLocation.CenterOwner> (default)  
   
--   <xref:System.Windows.WindowStartupLocation>  
+-   <xref:System.Windows.WindowStartupLocation.CenterScreen>  
   
--   <xref:System.Windows.WindowStartupLocation>  
+-   <xref:System.Windows.WindowStartupLocation.Manual>  
   
  If the startup location is specified as                  <xref:System.Windows.WindowStartupLocation>, and the                  <xref:System.Windows.Window.Left%2A> and                  <xref:System.Windows.Window.Top%2A> properties have not been set,                  <xref:System.Windows.Window> will ask                  [!INCLUDE[TLA2#tla_mswin](../../../../includes/tla2sharptla-mswin-md.md)] for a location to appear in.  
   

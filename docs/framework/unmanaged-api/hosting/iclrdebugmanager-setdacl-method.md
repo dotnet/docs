@@ -2,18 +2,19 @@
 title: "ICLRDebugManager::SetDacl Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRDebugManager.SetDacl"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRDebugManager::SetDacl"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SetDacl method [.NET Framework hosting]"
   - "ICLRDebugManager::SetDacl method [.NET Framework hosting]"
 ms.assetid: 52f4af3f-e02b-4c20-9fd9-e8e4f4d6fc31
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -39,6 +39,7 @@
     <block subset="none" type="overrides">
       <para>The <see cref="P:System.Runtime.Remoting.Contexts.ContextAttribute.Name" /> property must not be overridden in any user derived class. The current <see cref="M:System.Runtime.Remoting.Contexts.ContextAttribute.Equals(System.Object)" /> and <see cref="M:System.Runtime.Remoting.Contexts.ContextAttribute.GetHashCode" /> methods depend on the default functionality. To provide advanced behavior for a class extending the <see cref="T:System.Runtime.Remoting.Contexts.ContextAttribute" /> class and override the <see cref="P:System.Runtime.Remoting.Contexts.ContextAttribute.Name" /> property, you also have to override the default implementation of the <see cref="M:System.Runtime.Remoting.Contexts.ContextAttribute.Equals(System.Object)" /> and <see cref="M:System.Runtime.Remoting.Contexts.ContextAttribute.GetHashCode" /> methods.</para>
     </block>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,6 +59,7 @@
         <param name="name">The name of the context attribute.</param>
         <summary>Creates an instance of the <see cref="T:System.Runtime.Remoting.Contexts.ContextAttribute" /> class with the specified name.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AttributeName">
@@ -76,6 +78,7 @@
       <Docs>
         <summary>Indicates the name of the context attribute.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -100,6 +103,7 @@
         <returns>
           <see langword="true" /> if <paramref name="o" /> is not <see langword="null" /> and if the object names are equivalent; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Freeze">
@@ -129,6 +133,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -149,6 +154,7 @@
         <summary>Returns the hashcode for this instance of <see cref="T:System.Runtime.Remoting.Contexts.ContextAttribute" />.</summary>
         <returns>The hashcode for this instance of <see cref="T:System.Runtime.Remoting.Contexts.ContextAttribute" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetPropertiesForNewContext">
@@ -179,6 +185,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="ctorMsg" /> parameter is <see langword="null" />.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsContextOK">
@@ -206,6 +213,7 @@
           <see langword="true" /> if the passed in context is okay; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">Either <paramref name="ctx" /> or <paramref name="ctorMsg" /> is <see langword="null" />.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsNewContextOK">
@@ -240,6 +248,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -269,6 +278,7 @@
         <block subset="none" type="overrides">
           <para>The current property must not be overridden in any user derived class. The current <see cref="M:System.Runtime.Remoting.Contexts.ContextAttribute.Equals(System.Object)" /> and <see cref="M:System.Runtime.Remoting.Contexts.ContextAttribute.GetHashCode" /> method implementations depend on the default functionality. If you wish to provide advanced behavior for a class extending the <see cref="T:System.Runtime.Remoting.Contexts.ContextAttribute" /> and override the <see cref="P:System.Runtime.Remoting.Contexts.ContextAttribute.Name" /> property, you have to also override the default implementation of the <see cref="M:System.Runtime.Remoting.Contexts.ContextAttribute.Equals(System.Object)" /> and <see cref="M:System.Runtime.Remoting.Contexts.ContextAttribute.GetHashCode" /> methods.</para>
         </block>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

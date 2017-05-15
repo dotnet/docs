@@ -2,7 +2,7 @@
 title: "ServiceModel Registration Tool (ServiceModelReg.exe) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -75,7 +75,7 @@ File name: 'System.ServiceModel, Version=2.0.0.0, Culture=neutral, PublicKeyToke
 %windir%\Microsoft.NET\Framework64\v2.0.50727\config\machine.config   
 ```  
   
- Locate any XML nodes in this file that refer to “System.ServiceModel, Version=2.0.0.0”, delete them and any child nodes. Save the file and re-run ServiceModelReg.exe resolves this problem.  
+ Locate any XML nodes in this file that refer to "System.ServiceModel, Version=2.0.0.0", delete them and any child nodes. Save the file and re-run ServiceModelReg.exe resolves this problem.  
   
 ## Examples  
  The following examples show how to use the most common options of the ServiceModelReg.exe tool.  

@@ -2,7 +2,7 @@
 title: "&lt;ImpliesType&gt; Element (.NET Native) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -91,8 +91,8 @@ Applies policy to a type, if that policy has been applied to the containing type
   
 ```xml  
   
-<Type Name=”Explicit{ET}”>  
-    <ImpliesType Name=”Implicit{ET}” Dynamic=”Required Public” />  
+<Type Name="Explicit{ET}">  
+    <ImpliesType Name="Implicit{ET}" Dynamic="Required Public" />  
 </Type>  
   
 ```  
@@ -103,8 +103,8 @@ Applies policy to a type, if that policy has been applied to the containing type
   
 ```xml  
   
-<Type Name=”System.Collections.Generic.IList{T}”>  
-   <ImpliesType Name=”System.Collections.Generic.List{T}” Serialize=”Public” />  
+<Type Name="System.Collections.Generic.IList{T}">  
+   <ImpliesType Name="System.Collections.Generic.List{T}" Serialize="Public" />  
 </Type>  
   
 ```  
@@ -113,11 +113,11 @@ Applies policy to a type, if that policy has been applied to the containing type
   
 ```xml  
   
-<Type Name=”MyType”>  
-    <Method Name=”MakeEnumerable{T}” Signature=”(System.String, T)” Dynamic=”Included”>  
-        <ImpliesType Name=”T[]” Dynamic=”Public” />  
-        <ImpliesType Name=”System.Collections.Generic.List{T}” Dynamic=”Public”>  
-    </Method>  
+<Type Name="MyType">  
+    <Method Name="MakeEnumerable{T}" Signature="(System.String, T)" Dynamic="Included">  
+        <ImpliesType Name="T[]" Dynamic="Public" />  
+        <ImpliesType Name="System.Collections.Generic.List{T}" Dynamic="Public">  
+    </Method>  
 </Type>  
   
 ```  

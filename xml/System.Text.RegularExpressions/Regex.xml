@@ -8,6 +8,7 @@
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -27,9 +28,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Represents an immutable regular expression.  
-  
- To browse the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#System/regex/system/text/regularexpressions/Regex.cs#bbe3b2eb80ae5526).</summary>
+    <summary>Represents an immutable regular expression.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -199,6 +198,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -233,6 +233,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -255,7 +256,7 @@
 ## Remarks  
  The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see the [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md) topics.  
   
- Calling the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%29> constructor is equivalent to calling the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%29> constructor with a value of <xref:System.Text.RegularExpressions.RegexOptions> for the `options` argument.  
+ Calling the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%29> constructor is equivalent to calling the <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%29> constructor with a value of <xref:System.Text.RegularExpressions.RegexOptions.None> for the `options` argument.  
   
  A <xref:System.Text.RegularExpressions.Regex> object is immutable, which means that it can be used only for the match pattern you define when you create it. However, it can be used any number of times without being recompiled.  
   
@@ -295,6 +296,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
@@ -321,6 +326,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -380,6 +386,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -408,7 +415,7 @@
   
  A <xref:System.Text.RegularExpressions.Regex> object is immutable, which means that it can be used only for the match pattern that you define when you create it. However, it can be used any number of times without being recompiled.  
   
- The `matchTimeout` parameter specifies how long a pattern-matching method should try to find a match before it times out. If no match is found in that time interval, the pattern-matching method throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. `matchTimeout` overrides any default time-out value defined for the application domain in which the <xref:System.Text.RegularExpressions.Regex> object is created. The instance pattern-matching methods that observe the `matchTimeout`time-out interval include the following:  
+ The `matchTimeout` parameter specifies how long a pattern-matching method should try to find a match before it times out. If no match is found in that time interval, the pattern-matching method throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. `matchTimeout` overrides any default time-out value defined for the application domain in which the <xref:System.Text.RegularExpressions.Regex> object is created. The instance pattern-matching methods that observe the `matchTimeout` time-out interval include the following:  
   
 -   <xref:System.Text.RegularExpressions.Regex.IsMatch%2A>  
   
@@ -468,6 +475,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -514,6 +522,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Hashtable</ReturnType>
       </ReturnValue>
@@ -531,6 +543,7 @@
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -568,6 +581,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Hashtable</ReturnType>
       </ReturnValue>
@@ -585,6 +602,7 @@
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -617,6 +635,7 @@
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -644,6 +663,7 @@
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -687,7 +707,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [CompileToAssembly Method (RegexCompilationInfo\<xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%29> method generates a .NET Framework assembly in which each regular expression defined in the `regexinfos` array is represented by a class. Typically, the [CompileToAssembly Method (RegexCompilationInfo\<xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%29> method is called from a separate application that generates an assembly of compiled regular expressions. Each regular expression included in the assembly has the following characteristics:  
+ The <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%29> method generates a .NET Framework assembly in which each regular expression defined in the `regexinfos` array is represented by a class. Typically, the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%29> method is called from a separate application that generates an assembly of compiled regular expressions. Each regular expression included in the assembly has the following characteristics:  
   
 -   It is derived from the <xref:System.Text.RegularExpressions.Regex> class.  
   
@@ -757,7 +777,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [CompileToAssembly Method (RegexCompilationInfo\<xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%2CSystem.Reflection.Emit.CustomAttributeBuilder%5B%5D%29> method generates a .NET Framework assembly in which each regular expression defined in the `regexinfos` array is represented by a class. Typically, the [CompileToAssembly Method (RegexCompilationInfo\<xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%2CSystem.Reflection.Emit.CustomAttributeBuilder%5B%5D%29> method is called from a separate application that generates an assembly of compiled regular expressions. Each regular expression included in the assembly has the following characteristics:  
+ The <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%2CSystem.Reflection.Emit.CustomAttributeBuilder%5B%5D%29> method generates a .NET Framework assembly in which each regular expression defined in the `regexinfos` array is represented by a class. Typically, the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%2CSystem.Reflection.Emit.CustomAttributeBuilder%5B%5D%29> method is called from a separate application that generates an assembly of compiled regular expressions. Each regular expression included in the assembly has the following characteristics:  
   
 -   It is derived from the <xref:System.Text.RegularExpressions.Regex> class.  
   
@@ -779,7 +799,7 @@
   
 5.  Instantiate a <xref:System.Reflection.Emit.CustomAttributeBuilder> object by passing its constructor the <xref:System.Reflection.ConstructorInfo> object retrieved in step 3 and the <xref:System.Object> array created in step 4.  
   
- You can then pass an array of these <xref:System.Reflection.Emit.CustomAttributeBuilder> objects instead of the `attributes` parameter to the [CompileToAssembly Method (RegexCompilationInfo\<xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%2CSystem.Reflection.Emit.CustomAttributeBuilder%5B%5D%29?displayProperty=fullName> method.  
+ You can then pass an array of these <xref:System.Reflection.Emit.CustomAttributeBuilder> objects instead of the `attributes` parameter to the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%2CSystem.Reflection.Emit.CustomAttributeBuilder%5B%5D%29?displayProperty=fullName> method.  
   
    
   
@@ -845,7 +865,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [CompileToAssembly Method (RegexCompilationInfo\[\], AssemblyName, CustomAttributeBuilder\<xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%2CSystem.Reflection.Emit.CustomAttributeBuilder%5B%5D%2CSystem.String%29> method generates a .NET Framework assembly in which each regular expression defined in the `regexinfos` array is represented by a class. Typically, the [CompileToAssembly Method (RegexCompilationInfo\[\], AssemblyName, CustomAttributeBuilder\<xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%2CSystem.Reflection.Emit.CustomAttributeBuilder%5B%5D%2CSystem.String%29> method is called from a separate application that generates an assembly of compiled regular expressions. Each regular expression included in the assembly has the following characteristics:  
+ The [\], AssemblyName, CustomAttributeBuilder\<xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%2CSystem.Reflection.Emit.CustomAttributeBuilder%5B%5D%2CSystem.String%29> method generates a .NET Framework assembly in which each regular expression defined in the `regexinfos` array is represented by a class. Typically, the [\], AssemblyName, CustomAttributeBuilder\<xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%2CSystem.Reflection.Emit.CustomAttributeBuilder%5B%5D%2CSystem.String%29> method is called from a separate application that generates an assembly of compiled regular expressions. Each regular expression included in the assembly has the following characteristics:  
   
 -   It is derived from the <xref:System.Text.RegularExpressions.Regex> class.  
   
@@ -867,7 +887,7 @@
   
 5.  Instantiate a <xref:System.Reflection.Emit.CustomAttributeBuilder> object by passing its constructor the <xref:System.Reflection.ConstructorInfo> object retrieved in step 3 and the <xref:System.Object> array created in step 4.  
   
- You can then pass an array of these <xref:System.Reflection.Emit.CustomAttributeBuilder> objects instead of the `attributes` parameter to the [CompileToAssembly Method (RegexCompilationInfo\[\], AssemblyName, CustomAttributeBuilder\<xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%2CSystem.Reflection.Emit.CustomAttributeBuilder%5B%5D%2CSystem.String%29> method.  
+ You can then pass an array of these <xref:System.Reflection.Emit.CustomAttributeBuilder> objects instead of the `attributes` parameter to the [\], AssemblyName, CustomAttributeBuilder\<xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%2CSystem.Reflection.Emit.CustomAttributeBuilder%5B%5D%2CSystem.String%29> method.  
   
  ]]></format>
         </remarks>
@@ -900,6 +920,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -964,6 +985,7 @@
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -993,6 +1015,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1054,6 +1077,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1113,6 +1137,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1179,6 +1204,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1224,6 +1250,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1281,6 +1308,7 @@
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1310,6 +1338,7 @@
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1344,6 +1373,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1419,6 +1449,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1497,6 +1528,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1582,6 +1614,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1679,6 +1712,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1788,6 +1822,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1855,6 +1890,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1915,6 +1951,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1993,6 +2030,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2025,7 +2063,7 @@
   
  The regular expression pattern for which the <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%2CSystem.Int32%29> method searches is defined by the call to one of the <xref:System.Text.RegularExpressions.Regex> class constructors. For more information about the elements that can form a regular expression pattern, see [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
- The <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%2CSystem.Int32%29> method searches the portion of `input` defined by the `beginning` and `length` parameters for the regular expression pattern. `beginning` always defines the index of the leftmost character to include in the search, and `length` defines the maximum number of characters to search. Together, they define the range of the search. If the search proceeds from left to right (the default), the regular expression engine searches from the character at index `beginning` to the character at index `beginning``+``length``– 1`. If the regular expression engine was instantiated by using the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option so that the search proceeds from right to left, the regular expression engine searches from the character at index `beginning``+``length``– 1` to the character at index `beginning`. This method returns the first match that it finds within this range. You can retrieve subsequent matches by repeatedly calling the returned <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=fullName> method.  
+ The <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%2CSystem.Int32%29> method searches the portion of `input` defined by the `beginning` and `length` parameters for the regular expression pattern. `beginning` always defines the index of the leftmost character to include in the search, and `length` defines the maximum number of characters to search. Together, they define the range of the search. If the search proceeds from left to right (the default), the regular expression engine searches from the character at index `beginning` to the character at index `beginning` + `length` – 1. If the regular expression engine was instantiated by using the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option so that the search proceeds from right to left, the regular expression engine searches from the character at index `beginning` + `length` – 1 to the character at index `beginning`. This method returns the first match that it finds within this range. You can retrieve subsequent matches by repeatedly calling the returned <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=fullName> method.  
   
  You can determine whether the regular expression pattern has been found in the input string by checking the value of the returned <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Group.Success%2A> property. If a match is found, the returned <xref:System.Text.RegularExpressions.Match> object's <xref:System.Text.RegularExpressions.Capture.Value%2A> property contains the substring from `input` that matches the regular expression pattern. If no match is found, its value is <xref:System.String.Empty?displayProperty=fullName>.  
   
@@ -2044,7 +2082,7 @@
   
  -or-  
   
- <paramref name="beginning" /> <see langword="+" /> <paramref name="length" /> <see langword="–1" /> identifies a position that is outside the range of <paramref name="input" />.</exception>
+ <paramref name="beginning" /><see langword="+" /><paramref name="length" /><see langword="–1" /> identifies a position that is outside the range of <paramref name="input" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
       </Docs>
     </Member>
@@ -2059,6 +2097,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2140,6 +2179,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2216,6 +2256,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2249,7 +2290,7 @@
   
  The regular expression pattern for which the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%29> method searches is defined by the call to one of the <xref:System.Text.RegularExpressions.Regex> class constructors. For more information about the elements that can form a regular expression pattern, see [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
- The <xref:System.Text.RegularExpressions.Regex.Matches%2A> method uses lazy evaluation to populate the returned <xref:System.Text.RegularExpressions.MatchCollection> object. Accessing members of this collection such as <xref:System.Text.RegularExpressions.MatchCollection.Count%2A?displayProperty=fullName> and <xref:System.Text.RegularExpressions.MatchCollection.CopyTo%2A?displayProperty=fullName> causes the collection to be populated immediately. To take advantage of lazy evaluation, you should iterate the collection by using a construct such as `foreach` in C# and `For``Each`…`Next` in Visual Basic.  
+ The <xref:System.Text.RegularExpressions.Regex.Matches%2A> method uses lazy evaluation to populate the returned <xref:System.Text.RegularExpressions.MatchCollection> object. Accessing members of this collection such as <xref:System.Text.RegularExpressions.MatchCollection.Count%2A?displayProperty=fullName> and <xref:System.Text.RegularExpressions.MatchCollection.CopyTo%2A?displayProperty=fullName> causes the collection to be populated immediately. To take advantage of lazy evaluation, you should iterate the collection by using a construct such as `foreach` in C# and `For Each`…`Next` in Visual Basic.  
   
  Because of its lazy evaluation, calling the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%29> method does not throw a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. However, the exception is thrown when an operation is performed on the <xref:System.Text.RegularExpressions.MatchCollection> object returned by this method, if the <xref:System.Text.RegularExpressions.Regex.MatchTimeout%2A> property is not <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=fullName> and a matching operation exceeds the time-out interval.  
   
@@ -2287,6 +2328,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2320,7 +2362,7 @@
   
  The regular expression pattern for which the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.Int32%29> method searches is defined by the call to one of the <xref:System.Text.RegularExpressions.Regex> class constructors. For more information about the elements that can form a regular expression pattern, see [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
- The <xref:System.Text.RegularExpressions.Regex.Matches%2A> method uses lazy evaluation to populate the returned <xref:System.Text.RegularExpressions.MatchCollection> object. Accessing members of this collection such as <xref:System.Text.RegularExpressions.MatchCollection.Count%2A?displayProperty=fullName> and <xref:System.Text.RegularExpressions.MatchCollection.CopyTo%2A?displayProperty=fullName> causes the collection to be populated immediately. To take advantage of lazy evaluation, you should iterate the collection by using a construct such as `foreach` in C# and `For``Each`…`Next` in Visual Basic.  
+ The <xref:System.Text.RegularExpressions.Regex.Matches%2A> method uses lazy evaluation to populate the returned <xref:System.Text.RegularExpressions.MatchCollection> object. Accessing members of this collection such as <xref:System.Text.RegularExpressions.MatchCollection.Count%2A?displayProperty=fullName> and <xref:System.Text.RegularExpressions.MatchCollection.CopyTo%2A?displayProperty=fullName> causes the collection to be populated immediately. To take advantage of lazy evaluation, you should iterate the collection by using a construct such as `foreach` in C# and `For Each`…`Next` in Visual Basic.  
   
  Because of its lazy evaluation, calling the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.Int32%29> method does not throw a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. However, the exception is thrown when an operation is performed on the <xref:System.Text.RegularExpressions.MatchCollection> object returned by this method, if the <xref:System.Text.RegularExpressions.Regex.MatchTimeout%2A> property is not <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=fullName> and a matching operation exceeds the time-out interval..  
   
@@ -2360,6 +2402,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2395,7 +2438,7 @@
   
  The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
- The <xref:System.Text.RegularExpressions.Regex.Matches%2A> method uses lazy evaluation to populate the returned <xref:System.Text.RegularExpressions.MatchCollection> object. Accessing members of this collection such as <xref:System.Text.RegularExpressions.MatchCollection.Count%2A?displayProperty=fullName> and <xref:System.Text.RegularExpressions.MatchCollection.CopyTo%2A?displayProperty=fullName> causes the collection to be populated immediately. To take advantage of lazy evaluation, you should iterate the collection by using a construct such as `foreach` in C# and `For``Each`…`Next` in Visual Basic.  
+ The <xref:System.Text.RegularExpressions.Regex.Matches%2A> method uses lazy evaluation to populate the returned <xref:System.Text.RegularExpressions.MatchCollection> object. Accessing members of this collection such as <xref:System.Text.RegularExpressions.MatchCollection.Count%2A?displayProperty=fullName> and <xref:System.Text.RegularExpressions.MatchCollection.CopyTo%2A?displayProperty=fullName> causes the collection to be populated immediately. To take advantage of lazy evaluation, you should iterate the collection by using a construct such as `foreach` in C# and `For Each`…`Next` in Visual Basic.  
   
  Because of its lazy evaluation, calling the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%29> method does not throw a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. However, the exception is thrown when an operation is performed on the <xref:System.Text.RegularExpressions.MatchCollection> object returned by this method, if a time-out interval is defined by the "REGEX_DEFAULT_MATCH_TIMEOUT" property of the current application domain and a matching operation exceeds this time-out interval.  
   
@@ -2437,6 +2480,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2474,7 +2518,7 @@
   
  The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
- The <xref:System.Text.RegularExpressions.Regex.Matches%2A> method uses lazy evaluation to populate the returned <xref:System.Text.RegularExpressions.MatchCollection> object. Accessing members of this collection such as <xref:System.Text.RegularExpressions.MatchCollection.Count%2A?displayProperty=fullName> and <xref:System.Text.RegularExpressions.MatchCollection.CopyTo%2A?displayProperty=fullName> causes the collection to be populated immediately. To take advantage of lazy evaluation, you should iterate the collection by using a construct such as `foreach` in C# and `For``Each`…`Next` in Visual Basic.  
+ The <xref:System.Text.RegularExpressions.Regex.Matches%2A> method uses lazy evaluation to populate the returned <xref:System.Text.RegularExpressions.MatchCollection> object. Accessing members of this collection such as <xref:System.Text.RegularExpressions.MatchCollection.Count%2A?displayProperty=fullName> and <xref:System.Text.RegularExpressions.MatchCollection.CopyTo%2A?displayProperty=fullName> causes the collection to be populated immediately. To take advantage of lazy evaluation, you should iterate the collection by using a construct such as `foreach` in C# and `For Each`…`Next` in Visual Basic.  
   
  Because of its lazy evaluation, calling the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%29> method does not throw a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. However, the exception is thrown when an operation is performed on the <xref:System.Text.RegularExpressions.MatchCollection> object returned by this method, if a time-out interval is defined by the "REGEX_DEFAULT_MATCH_TIMEOUT" property of the current application domain and a matching operation exceeds this time-out interval.  
   
@@ -2518,6 +2562,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2557,7 +2602,7 @@
   
  The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
- The <xref:System.Text.RegularExpressions.Regex.Matches%2A> method uses lazy evaluation to populate the returned <xref:System.Text.RegularExpressions.MatchCollection> object. Accessing members of this collection such as <xref:System.Text.RegularExpressions.MatchCollection.Count%2A?displayProperty=fullName> and <xref:System.Text.RegularExpressions.MatchCollection.CopyTo%2A?displayProperty=fullName> causes the collection to be populated immediately. To take advantage of lazy evaluation, you should iterate the collection by using a construct such as `foreach` in C# and `For``Each`…`Next` in Visual Basic.  
+ The <xref:System.Text.RegularExpressions.Regex.Matches%2A> method uses lazy evaluation to populate the returned <xref:System.Text.RegularExpressions.MatchCollection> object. Accessing members of this collection such as <xref:System.Text.RegularExpressions.MatchCollection.Count%2A?displayProperty=fullName> and <xref:System.Text.RegularExpressions.MatchCollection.CopyTo%2A?displayProperty=fullName> causes the collection to be populated immediately. To take advantage of lazy evaluation, you should iterate the collection by using a construct such as `foreach` in C# and `For Each`…`Next` in Visual Basic.  
   
  Because of its lazy evaluation, calling the <xref:System.Text.RegularExpressions.Regex.Matches%2A> method does not throw a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. However, an exception is thrown when an operation is performed on the <xref:System.Text.RegularExpressions.MatchCollection> object returned by this method, if a matching operation exceeds this time-out interval specified by the`matchTimeout` parameter.  
   
@@ -2611,6 +2656,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2655,6 +2701,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2696,6 +2743,7 @@
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2725,6 +2773,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2806,6 +2855,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2881,6 +2931,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2946,6 +2997,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3039,6 +3091,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3093,7 +3146,7 @@
    
   
 ## Examples  
- The following example uses a regular expression to extract the individual words from a string, and then uses a <xref:System.Text.RegularExpressions.MatchEvaluator> delegate to call a method named `WordScramble` that scrambles the individual letters in the word. To do this, the `WordScramble` method creates an array that contains the characters in the match. It also creates a parallel array that it populates with random floating-point numbers. The arrays are sorted by calling the [Array.Sort\<TKey, TValue>(TKey\[\], TValue\<xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29?displayProperty=fullName> method, and the sorted array is provided as an argument to a <xref:System.String> class constructor. This newly created string is then returned by the `WordScramble` method. The regular expression pattern `\w+` matches one or more word characters; the regular expression engine will continue to add characters to the match until it encounters a non-word character, such as a white-space character.  
+ The following example uses a regular expression to extract the individual words from a string, and then uses a <xref:System.Text.RegularExpressions.MatchEvaluator> delegate to call a method named `WordScramble` that scrambles the individual letters in the word. To do this, the `WordScramble` method creates an array that contains the characters in the match. It also creates a parallel array that it populates with random floating-point numbers. The arrays are sorted by calling the <xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29?displayProperty=fullName> method, and the sorted array is provided as an argument to a <xref:System.String> class constructor. This newly created string is then returned by the `WordScramble` method. The regular expression pattern `\w+` matches one or more word characters; the regular expression engine will continue to add characters to the match until it encounters a non-word character, such as a white-space character.  
   
  [!code-csharp[System.Text.RegularExpressions.Regex.Replace#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.regex.replace/cs/replace5.cs#2)]
  [!code-vb[System.Text.RegularExpressions.Regex.Replace#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.regex.replace/vb/replace5.vb#2)]  
@@ -3120,6 +3173,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3207,6 +3261,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3286,6 +3341,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3318,7 +3374,7 @@
 ## Remarks  
  The static `Replace` methods are equivalent to constructing a <xref:System.Text.RegularExpressions.Regex> object with the specified regular expression pattern and calling the instance method `Replace`.  
   
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md). If you specify <xref:System.Text.RegularExpressions.RegexOptions> for the `options` parameter, the search for matches begins at the end of the input string and moves left; otherwise, the search begins at the start of the input string and moves right.  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md). If you specify <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft> for the `options` parameter, the search for matches begins at the end of the input string and moves left; otherwise, the search begins at the start of the input string and moves right.  
   
  The `replacement` parameter specifies the string that is to replace each match in `input`. `replacement` can consist of any combination of literal text and [substitutions](~/docs/standard/base-types/substitutions-in-regular-expressions.md). For example, the replacement pattern `a*${test}b` inserts the string "a*" followed by the substring that is matched by the `test` capturing group, if any, followed by the string "b". The * character is not recognized as a metacharacter within a replacement pattern.  
   
@@ -3378,6 +3434,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3427,7 +3484,7 @@
   
  Your custom method returns a string that replaces the matched input.  
   
- If you specify <xref:System.Text.RegularExpressions.RegexOptions> for the `options` parameter, the search for matches begins at the end of the input string and moves left; otherwise, the search begins at the start of the input string and moves right.  
+ If you specify <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft> for the `options` parameter, the search for matches begins at the end of the input string and moves left; otherwise, the search begins at the start of the input string and moves right.  
   
  The <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception is thrown if the execution time of the replacement operation exceeds the time-out interval specified for the application domain in which the method is called. If no time-out is defined in the application domain's properties, or if the time-out value is <xref:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout?displayProperty=fullName>, no exception is thrown.  
   
@@ -3436,7 +3493,7 @@
    
   
 ## Examples  
- The following example uses a regular expression to extract the individual words from a string, and then uses a <xref:System.Text.RegularExpressions.MatchEvaluator> delegate to call a method named `WordScramble` that scrambles the individual letters in the word. To do this, the `WordScramble` method creates an array that contains the characters in the match. It also creates a parallel array that it populates with random floating-point numbers. The arrays are sorted by calling the [Array.Sort\<TKey, TValue>(TKey\[\], TValue\<xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29?displayProperty=fullName> method, and the sorted array is provided as an argument to a <xref:System.String> class constructor. This newly created string is then returned by the `WordScramble` method. The regular expression pattern `\w+` matches one or more word characters; the regular expression engine will continue to add characters to the match until it encounters a non-word character, such as a white-space character. The call to the <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.MatchEvaluator%2CSystem.Text.RegularExpressions.RegexOptions%29> method includes the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option so that the comment in the regular expression pattern `\w+  # Matches all the characters in a word.` is ignored by the regular expression engine.  
+ The following example uses a regular expression to extract the individual words from a string, and then uses a <xref:System.Text.RegularExpressions.MatchEvaluator> delegate to call a method named `WordScramble` that scrambles the individual letters in the word. To do this, the `WordScramble` method creates an array that contains the characters in the match. It also creates a parallel array that it populates with random floating-point numbers. The arrays are sorted by calling the <xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29?displayProperty=fullName> method, and the sorted array is provided as an argument to a <xref:System.String> class constructor. This newly created string is then returned by the `WordScramble` method. The regular expression pattern `\w+` matches one or more word characters; the regular expression engine will continue to add characters to the match until it encounters a non-word character, such as a white-space character. The call to the <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.MatchEvaluator%2CSystem.Text.RegularExpressions.RegexOptions%29> method includes the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option so that the comment in the regular expression pattern `\w+  # Matches all the characters in a word.` is ignored by the regular expression engine.  
   
  [!code-csharp[System.Text.RegularExpressions.Regex.Replace#10](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.regex.replace/cs/replace6.cs#10)]
  [!code-vb[System.Text.RegularExpressions.Regex.Replace#10](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.regex.replace/vb/replace6.vb#10)]  
@@ -3462,6 +3519,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3535,6 +3593,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3569,7 +3628,7 @@
 ## Remarks  
  The static `Replace` methods are equivalent to constructing a <xref:System.Text.RegularExpressions.Regex> object with the specified regular expression pattern and calling the instance method `Replace`.  
   
- The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md). If you specify <xref:System.Text.RegularExpressions.RegexOptions> for the `options` parameter, the search for matches begins at the end of the input string and moves left; otherwise, the search begins at the start of the input string and moves right.  
+ The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md). If you specify <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft> for the `options` parameter, the search for matches begins at the end of the input string and moves left; otherwise, the search begins at the start of the input string and moves right.  
   
  The `replacement` parameter specifies the string that is to replace each match in `input`. `replacement` can consist of any combination of literal text and [substitutions](~/docs/standard/base-types/substitutions-in-regular-expressions.md). For example, the replacement pattern `a*${test}b` inserts the string "a*" followed by the substring that is matched by the `test` capturing group, if any, followed by the string "b". The * character is not recognized as a metacharacter within a replacement pattern.  
   
@@ -3639,6 +3698,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3690,7 +3750,7 @@
   
  Your custom method returns a string that replaces the matched input.  
   
- If you specify <xref:System.Text.RegularExpressions.RegexOptions> for the `options` parameter, the search for matches begins at the end of the input string and moves left; otherwise, the search begins at the start of the input string and moves right.  
+ If you specify <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft> for the `options` parameter, the search for matches begins at the end of the input string and moves left; otherwise, the search begins at the start of the input string and moves right.  
   
  The `matchTimeout` parameter specifies how long a pattern matching method should try to find a match before it times out. Setting a time-out interval prevents regular expressions that rely on excessive backtracking from appearing to "stop responding when they process input that contains near matches. For more information, see [Best Practices for Regular Expressions](~/docs/standard/base-types/best-practices.md) and [Backtracking](~/docs/standard/base-types/backtracking-in-regular-expressions.md). If no match is found in that time interval, the method throws a <xref:System.Text.RegularExpressions.RegexMatchTimeoutException> exception. `matchTimeout` overrides any default time-out value defined for the application domain in which the method executes.  
   
@@ -3699,7 +3759,7 @@
    
   
 ## Examples  
- The following example uses a regular expression to extract the individual words from a string, and then uses a <xref:System.Text.RegularExpressions.MatchEvaluator> delegate to call a method named `WordScramble` that scrambles the individual letters in the word. To do this, the `WordScramble` method creates an array that contains the characters in the match. It also creates a parallel array that it populates with random floating-point numbers. The arrays are sorted by calling the [Array.Sort\<TKey, TValue>(TKey\[\], TValue\<xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29?displayProperty=fullName> method, and the sorted array is provided as an argument to a <xref:System.String> class constructor. This newly created string is then returned by the `WordScramble` method. The regular expression pattern `\w+` matches one or more word characters; the regular expression engine will continue to add characters to the match until it encounters a non-word character, such as a white-space character. The call to the <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.MatchEvaluator%2CSystem.Text.RegularExpressions.RegexOptions%29> method includes the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option so that the comment in the regular expression pattern `\w+  # Matches all the characters in a word.` is ignored by the regular expression engine.  
+ The following example uses a regular expression to extract the individual words from a string, and then uses a <xref:System.Text.RegularExpressions.MatchEvaluator> delegate to call a method named `WordScramble` that scrambles the individual letters in the word. To do this, the `WordScramble` method creates an array that contains the characters in the match. It also creates a parallel array that it populates with random floating-point numbers. The arrays are sorted by calling the <xref:System.Array.Sort%60%602%28%60%600%5B%5D%2C%60%601%5B%5D%2CSystem.Collections.Generic.IComparer%7B%60%600%7D%29?displayProperty=fullName> method, and the sorted array is provided as an argument to a <xref:System.String> class constructor. This newly created string is then returned by the `WordScramble` method. The regular expression pattern `\w+` matches one or more word characters; the regular expression engine will continue to add characters to the match until it encounters a non-word character, such as a white-space character. The call to the <xref:System.Text.RegularExpressions.Regex.Replace%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.MatchEvaluator%2CSystem.Text.RegularExpressions.RegexOptions%29> method includes the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option so that the comment in the regular expression pattern `\w+  # Matches all the characters in a word.` is ignored by the regular expression engine.  
   
  [!code-csharp[System.Text.RegularExpressions.Regex.Replace#13](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.regularexpressions.regex.replace/cs/replace13.cs#13)]
  [!code-vb[System.Text.RegularExpressions.Regex.Replace#13](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.regex.replace/vb/replace13.vb#13)]  
@@ -3738,6 +3798,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3759,7 +3820,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Text.RegularExpressions.Regex.RightToLeft%2A> is `true` if the <xref:System.Text.RegularExpressions.Regex> instance was created with the <xref:System.Text.RegularExpressions.RegexOptions> option.  
+ <xref:System.Text.RegularExpressions.Regex.RightToLeft%2A> is `true` if the <xref:System.Text.RegularExpressions.Regex> instance was created with the <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft> option.  
   
  ]]></format>
         </remarks>
@@ -3774,6 +3835,7 @@
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3803,6 +3865,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3827,7 +3890,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> methods are similar to the [String.Split(Char\<xref:System.String.Split%28System.Char%5B%5D%29?displayProperty=fullName> method, except that <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> splits the string at a delimiter determined by a regular expression instead of a set of characters. The string is split as many times as possible. If no delimiter is found, the return value contains one element whose value is the original input string.  
+ The <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> methods are similar to the <xref:System.String.Split%28System.Char%5B%5D%29?displayProperty=fullName> method, except that <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> splits the string at a delimiter determined by a regular expression instead of a set of characters. The string is split as many times as possible. If no delimiter is found, the return value contains one element whose value is the original input string.  
   
  If multiple matches are adjacent to one another, an empty string is inserted into the array. For example, splitting a string on a single hyphen causes the returned array to include an empty string in the position where two adjacent hyphens are found, as the following code shows.  
   
@@ -3876,6 +3939,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3943,6 +4007,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4027,6 +4092,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4100,6 +4166,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4128,7 +4195,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> methods are similar to the [String.Split(Char\<xref:System.String.Split%28System.Char%5B%5D%29?displayProperty=fullName> method, except that <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> splits the string at a delimiter determined by a regular expression instead of a set of characters. The string is split as many times as possible. If no delimiter is found, the return value contains one element whose value is the original `input` string.  
+ The <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> methods are similar to the <xref:System.String.Split%28System.Char%5B%5D%29?displayProperty=fullName> method, except that <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> splits the string at a delimiter determined by a regular expression instead of a set of characters. The string is split as many times as possible. If no delimiter is found, the return value contains one element whose value is the original `input` string.  
   
  The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
@@ -4180,6 +4247,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4210,7 +4278,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> methods are similar to the [String.Split(Char\<xref:System.String.Split%28System.Char%5B%5D%29?displayProperty=fullName> method, except that <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> splits the string at a delimiter determined by a regular expression instead of a set of characters. The string is split as many times as possible. If no delimiter is found, the return value contains one element whose value is the original `input` string.  
+ The <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> methods are similar to the <xref:System.String.Split%28System.Char%5B%5D%29?displayProperty=fullName> method, except that <xref:System.Text.RegularExpressions.Regex.Split%2A?displayProperty=fullName> splits the string at a delimiter determined by a regular expression instead of a set of characters. The string is split as many times as possible. If no delimiter is found, the return value contains one element whose value is the original `input` string.  
   
  The `pattern` parameter consists of regular expression language elements that symbolically describe the string to match. For more information about regular expressions, see [.NET Framework Regular Expressions](~/docs/standard/base-types/regular-expressions.md) and [Regular Expression Language - Quick Reference](~/docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
@@ -4275,6 +4343,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -4300,6 +4372,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4342,6 +4415,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4399,6 +4473,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -4424,6 +4502,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -4444,6 +4526,7 @@
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

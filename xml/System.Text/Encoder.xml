@@ -16,6 +16,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -78,6 +82,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Text.Encoder" /> class.</summary>
@@ -113,6 +121,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -196,6 +208,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -233,9 +249,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Remember that the <xref:System.Text.Encoder> object saves state between calls to [Convert Method (Char\[\], Int32, Int32, Byte\<xref:System.Text.Encoder.Convert%2A>. When the application is done with a stream of data, it should set the `flush` parameter to `true` to make sure that the state information is flushed. With this setting, the encoder ignores invalid bytes at the end of the data block and clears the internal buffer. Any remaining processed data that is part of a logical unit, such as the high surrogate of a surrogate pair, is converted according to the current fallback settings.  
+ Remember that the <xref:System.Text.Encoder> object saves state between calls to <xref:System.Text.Encoder.Convert%2A>. When the application is done with a stream of data, it should set the `flush` parameter to `true` to make sure that the state information is flushed. With this setting, the encoder ignores invalid bytes at the end of the data block and clears the internal buffer. Any remaining processed data that is part of a logical unit, such as the high surrogate of a surrogate pair, is converted according to the current fallback settings.  
   
- The `Convert` method is designed to be used in a loop to decode an arbitrary amount of input, such as data read from a file or stream. It stores the output of the encoding operation in a fixed-size buffer. <xref:System.Text.Encoder.GetBytes%2A> will throw an exception if the output buffer isn't large enough, but [Convert Method (Char\[\], Int32, Int32, Byte\<xref:System.Text.Encoder.Convert%2A> will fill as much space as possible and return the chars read and bytes written. Also see the <xref:System.Text.Encoding.GetBytes%2A?displayProperty=fullName> topic for more comments.  
+ The `Convert` method is designed to be used in a loop to decode an arbitrary amount of input, such as data read from a file or stream. It stores the output of the encoding operation in a fixed-size buffer. <xref:System.Text.Encoder.GetBytes%2A> will throw an exception if the output buffer isn't large enough, but <xref:System.Text.Encoder.Convert%2A> will fill as much space as possible and return the chars read and bytes written. Also see the <xref:System.Text.Encoding.GetBytes%2A?displayProperty=fullName> topic for more comments.  
   
  The `completed` output parameter indicates whether all the data in the input buffer was converted and stored in the output buffer. This parameter is set to `false` if the number of characters specified by the `charCount` parameter cannot be converted without exceeding the number of bytes specified by the `byteCount` parameter. In that situation, the application should use the contents of the output buffer or provide a new output buffer, increment the `chars` parameter by the number of characters specified by the `charsUsed` parameter, then call the `Convert` method again to process the remaining input.  
   
@@ -244,7 +260,7 @@
    
   
 ## Examples  
- The following example uses the [Convert Method (Char\[\], Int32, Int32, Byte\<xref:System.Text.Encoder.Convert%2A> method to convert a file of UTF-16 characters to UTF-8, then uses the <xref:System.Text.Decoder.Convert%2A> method to convert the UTF-8 characters back to UTF-16 characters.  
+ The following example uses the <xref:System.Text.Encoder.Convert%2A> method to convert a file of UTF-16 characters to UTF-8, then uses the <xref:System.Text.Decoder.Convert%2A> method to convert the UTF-8 characters back to UTF-16 characters.  
   
  [!code-csharp[sys.txt.EncoderDecoder.convert#1](~/samples/snippets/csharp/VS_Snippets_CLR/sys.txt.EncoderDecoder.convert/cs/edCvt.cs#1)]
  [!code-vb[sys.txt.EncoderDecoder.convert#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/sys.txt.EncoderDecoder.convert/vb/edCvt.vb#1)]  
@@ -288,6 +304,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -335,6 +355,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -369,6 +393,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -439,6 +467,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -462,14 +494,14 @@
 ## Remarks  
  This method does not affect the state of the encoder.  
   
- To calculate the exact array size that <xref:System.Text.Encoder.GetBytes%2A> requires to store the resulting bytes, the application should use [GetByteCount Method (Char\<xref:System.Text.Encoder.GetByteCount%2A>.  
+ To calculate the exact array size that <xref:System.Text.Encoder.GetBytes%2A> requires to store the resulting bytes, the application should use <xref:System.Text.Encoder.GetByteCount%2A>.  
   
  If `GetBytes` is called with `flush` set to `false`, the encoder stores trailing characters at the end of the data block in an internal buffer and uses them in the next encoding operation. The application should call `GetByteCount` on a block of data immediately before calling `GetBytes` on the same block, so that any trailing characters from the previous block are included in the calculation.  
   
    
   
 ## Examples  
- The following code example demonstrates how to use the [GetByteCount Method (Char\<xref:System.Text.Encoder.GetByteCount%2A> method to return the number of bytes required to encode an array of characters using a Unicode <xref:System.Text.Encoder>.  
+ The following code example demonstrates how to use the <xref:System.Text.Encoder.GetByteCount%2A> method to return the number of bytes required to encode an array of characters using a Unicode <xref:System.Text.Encoder>.  
   
  [!code-cpp[System.Text.Encoder.GetByteCount Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.Encoder.GetByteCount Example/CPP/getbytecount-char[]-int32-int32.cpp#1)]
  [!code-csharp[System.Text.Encoder.GetByteCount Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.Encoder.GetByteCount Example/CS/getbytecount-char[]-int32-int32.cs#1)]
@@ -505,6 +537,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -587,6 +623,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -612,18 +652,18 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Remember that the <xref:System.Text.Encoder> object saves state between calls to [GetBytes Method (Char\[\], Int32, Int32, Byte\<xref:System.Text.Encoder.GetBytes%2A>. When the application is done with a stream of data, it should set the `flush` parameter to `true` in the last call to `GetBytes` to make sure that the state information is flushed and that the encoded bytes are properly terminated. With this setting, the encoder ignores invalid bytes at the end of the data block, such as unmatched surrogates or incomplete combining sequences, and clears the internal buffer.  
+ Remember that the <xref:System.Text.Encoder> object saves state between calls to <xref:System.Text.Encoder.GetBytes%2A>. When the application is done with a stream of data, it should set the `flush` parameter to `true` in the last call to `GetBytes` to make sure that the state information is flushed and that the encoded bytes are properly terminated. With this setting, the encoder ignores invalid bytes at the end of the data block, such as unmatched surrogates or incomplete combining sequences, and clears the internal buffer.  
   
  To calculate the exact buffer size that `GetBytes` requires to store the resulting characters, the application should use <xref:System.Text.Encoder.GetByteCount%2A>.  
   
  If `GetBytes` is called with `flush` set to `false`, the encoder stores trailing bytes at the end of the data block in an internal buffer and uses them in the next encoding operation. The application should call `GetByteCount` on a block of data immediately before calling `GetBytes` on the same block, so that any trailing characters from the previous block are included in the calculation.  
   
- If your application is to convert many segments of an input stream, consider using the <xref:System.Text.Encoder.Convert%2A> method. [GetBytes Method (Char\[\], Int32, Int32, Byte\<xref:System.Text.Encoder.GetBytes%2A> will throw an exception if the output buffer isn't large enough, but <xref:System.Text.Encoder.Convert%2A> will fill as much space as possible and return the chars read and bytes written. Also see the <xref:System.Text.Encoding.GetBytes%2A?displayProperty=fullName> topic for more comments.  
+ If your application is to convert many segments of an input stream, consider using the <xref:System.Text.Encoder.Convert%2A> method. <xref:System.Text.Encoder.GetBytes%2A> will throw an exception if the output buffer isn't large enough, but <xref:System.Text.Encoder.Convert%2A> will fill as much space as possible and return the chars read and bytes written. Also see the <xref:System.Text.Encoding.GetBytes%2A?displayProperty=fullName> topic for more comments.  
   
    
   
 ## Examples  
- The following example demonstrates how to encode a range of elements from a character array and store the encoded bytes in a range of elements in a byte array. The <xref:System.Text.Encoder.GetByteCount%2A> method is used to determine the size of the array required by [GetBytes Method (Char\[\], Int32, Int32, Byte\<xref:System.Text.Encoder.GetBytes%2A>.  
+ The following example demonstrates how to encode a range of elements from a character array and store the encoded bytes in a range of elements in a byte array. The <xref:System.Text.Encoder.GetByteCount%2A> method is used to determine the size of the array required by <xref:System.Text.Encoder.GetBytes%2A>.  
   
  [!code-cpp[System.Text.Encoder.GetBytes Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.Encoder.GetBytes Example/CPP/getbytes-char[]-int32-int32-byte[]-int32.cpp#1)]
  [!code-csharp[System.Text.Encoder.GetBytes Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.Encoder.GetBytes Example/CS/getbytes-char[]-int32-int32-byte[]-int32.cs#1)]
@@ -673,6 +713,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "regional options"
 ms.assetid: c3a99596-f09a-44a5-81dd-1b89a094f1df
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

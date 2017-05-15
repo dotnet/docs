@@ -2,7 +2,7 @@
 title: "How to: Bind a Windows Forms Control to a Type | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "types [Windows Forms], binding controls to"
 ms.assetid: 94faeebb-d2bc-45d6-86d7-96a42661b43d
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Bind a Windows Forms Control to a Type

@@ -2,18 +2,19 @@
 title: "ICLRStrongName::StrongNameTokenFromAssembly Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRStrongName.StrongNameTokenFromAssembly"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameTokenFromAssembly"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRStrongName::StrongNameTokenFromAssembly method [.NET Framework hosting]"
   - "StrongNameTokenFromAssembly method, ICLRStrongName interface [.NET Framework hosting]"
 ms.assetid: fc725afb-b66b-4015-aa44-1c0d1304197f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

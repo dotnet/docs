@@ -2,7 +2,7 @@
 title: "How to: Play a System Sound from a Windows Form | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], sounds"
 ms.assetid: afb206ff-4824-4804-a8d4-185bf5ad8e7c
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Play a System Sound from a Windows Form

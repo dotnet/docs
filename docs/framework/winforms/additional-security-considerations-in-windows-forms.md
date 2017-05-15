@@ -2,7 +2,7 @@
 title: "Additional Security Considerations in Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "Clipboard, securing access"
 ms.assetid: 15abda8b-0527-47c7-aedb-77ab595f2bf1
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Additional Security Considerations in Windows Forms
@@ -106,4 +106,4 @@ manager: "wpickett"
  [More Secure Printing in Windows Forms](../../../docs/framework/winforms/more-secure-printing-in-windows-forms.md)   
  [Security in Windows Forms Overview](../../../docs/framework/winforms/security-in-windows-forms-overview.md)   
  [Windows Forms Security](../../../docs/framework/winforms/windows-forms-security.md)   
- [Securing ClickOnce Applications](http://msdn.microsoft.com/library/a05b5f2f-d1f2-471a-8096-8b11f7554265)
+ [Securing ClickOnce Applications](/visualstudio/deployment/securing-clickonce-applications)

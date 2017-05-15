@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "queries [Visual Basic], Group Join"
 ms.assetid: 37dbf79c-7b5c-421b-bbb7-dadfd2b92a1c
 caps.latest.revision: 24
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

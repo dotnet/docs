@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Mail</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -21,11 +25,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Mail.MailAddress> class is used by the <xref:System.Net.Mail.SmtpClient> and <xref:System.Net.Mail.MailMessage> classes to store address information for e-mail messages.  
+The <xref:System.Net.Mail.MailAddress> class is used by the <xref:System.Net.Mail.SmtpClient> and <xref:System.Net.Mail.MailMessage> classes to store address information for e-mail messages.  
   
- A mail address is composed of a <xref:System.Net.Mail.MailAddress.User%2A> name, <xref:System.Net.Mail.MailAddress.Host%2A> name and optionally, a <xref:System.Net.Mail.MailAddress.DisplayName%2A>. The <xref:System.Net.Mail.MailAddress.DisplayName%2A> can contain non-ASCII characters if you encode them.  
+A mail address is composed of a <xref:System.Net.Mail.MailAddress.User%2A> name, <xref:System.Net.Mail.MailAddress.Host%2A> name and optionally, a <xref:System.Net.Mail.MailAddress.DisplayName%2A>. The <xref:System.Net.Mail.MailAddress.DisplayName%2A> can contain non-ASCII characters if you encode them.  
   
- The <xref:System.Net.Mail.MailAddress> class supports the following mail address formats:  
+The <xref:System.Net.Mail.MailAddress> class supports the following mail address formats:  
   
 -   A simple address format of `user@host`. If a <xref:System.Net.Mail.MailAddress.DisplayName%2A> is not set, this is the mail address format generated.  
   
@@ -35,7 +39,7 @@
   
 -   Quotes are added around the <xref:System.Net.Mail.MailAddress.DisplayName%2A> for `display name <user@host>`, if these are not included.  
   
--   Unicode characters are supported in the <xref:System.Net.Mail.MailAddress.DisplayName%2A>. property.  
+-   Unicode characters are supported in the <xref:System.Net.Mail.MailAddress.DisplayName%2A> property.  
   
 -   A <xref:System.Net.Mail.MailAddress.User%2A> name with quotes. For example, `"user name"@host`.  
   
@@ -45,45 +49,45 @@
   
 -   Comments. For example, `(comment)"display name"(comment)<(comment)user(comment)@(comment)domain(comment)>(comment)`. Comments are removed before transmission.  
   
- A comma is used to separate elements in a list of mail addresses. As a result, a comma should not be used in unquoted display names in a list. The following mail addresses would be allowed  
+A comma is used to separate elements in a list of mail addresses. As a result, a comma should not be used in unquoted display names in a list. The following mail addresses would be allowed:
   
- `"John, Doe" <user@host>, "Bob, Smith" <user2@host>`  
+`"John, Doe" <user@host>, "Bob, Smith" <user2@host>`  
   
- The following mail address would not be allowed:  
+The following mail address would not be allowed:  
   
- `John, Doe <user@host>, Bob, Smith <user2@host>`  
+`John, Doe <user@host>, Bob, Smith <user2@host>`  
   
- Quotes can be embedded in a quoted string, but they must be escaped. The following mail addresses would be allowed  
+Quotes can be embedded in a quoted string, but they must be escaped. The following mail addresses would be allowed:
   
- `"John \"Jr\" Doe" <user@host>`  
+`"John \"Jr\" Doe" <user@host>`  
   
- `"\"John \\\"Jr\\\" Doe\" <user@host>"`  
+`"\"John \\\"Jr\\\" Doe\" <user@host>"`  
   
- The following mail address would not be allowed:  
+The following mail address would not be allowed:  
   
- `"John "Jr" Doe" <user@host>`  
+`"John "Jr" Doe" <user@host>`  
   
- When the username is note quoted, all text between the start of the string (or comma) and the address are considered part of the <xref:System.Net.Mail.MailAddress.DisplayName%2A>, including comments.  
+When the username is note quoted, all text between the start of the string (or comma) and the address are considered part of the <xref:System.Net.Mail.MailAddress.DisplayName%2A>, including comments. For example:
   
- -- Example: (non comment) unquoted display (non comment) name (non comment) \<user@host>  
+`(non comment) unquoted display (non comment) name (non comment) <user@host>`
   
- Although the <xref:System.Net.Mail.MailAddress> class accepts a mail address as valid, other mail servers may not accept the mail address.  
+Although the <xref:System.Net.Mail.MailAddress> class accepts a mail address as valid, other mail servers may not accept the mail address.  
   
- The <xref:System.Net.Mail.MailAddress> class does not support the following mail address formats:  
+The <xref:System.Net.Mail.MailAddress> class does not support the following mail address formats:  
   
- Mixed quoted and unquoted display names. For example, `display "name" <user@host>`  
+- Mixed quoted and unquoted display names. For example, `display "name" <user@host>`.
   
- Groups, as defined in RFC 2822 Section 3.4 published by the IETF.  
+- Groups, as defined in RFC 2822 Section 3.4 published by the IETF.  
   
- The obsolete user name formats of `"user"."name"@host, user."name"@host` or `"user".name@host`  
+- The obsolete user name formats of `"user"."name"@host`, `user."name"@host` or `"user".name@host`.
   
    
   
 ## Examples  
- The following code example demonstrates sending an e-mail message by using the <xref:System.Net.Mail.SmtpClient>, <xref:System.Net.Mail.MailAddress>, and <xref:System.Net.Mail.MailMessage> classes.  
+The following code example demonstrates sending an e-mail message by using the <xref:System.Net.Mail.SmtpClient>, <xref:System.Net.Mail.MailAddress>, and <xref:System.Net.Mail.MailMessage> classes.  
   
- [!code-cpp[NclMailSync#10](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#10)]
- [!code-csharp[NclMailSync#10](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#10)]  
+[!code-cpp[NclMailSync#10](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLMailSync/CPP/NclMailSync.cpp#10)]
+[!code-csharp[NclMailSync#10](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLMailSync/CS/mail.cs#10)]  
   
  ]]></format>
     </remarks>
@@ -102,6 +106,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Mail</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="address" Type="System.String" />
@@ -160,6 +168,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Mail</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="address" Type="System.String" />
         <Parameter Name="displayName" Type="System.String" />
@@ -213,6 +225,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Mail</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -286,6 +302,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Mail</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -323,6 +343,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Mail</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -364,6 +388,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Mail</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -391,6 +419,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Mail</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -422,6 +454,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Mail</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -460,6 +496,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Mail</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -503,6 +543,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Mail</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

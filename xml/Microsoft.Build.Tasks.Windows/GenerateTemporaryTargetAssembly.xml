@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>GenerateTemporaryTargetAssembly</c> task. Use the <c>GenerateTemporaryTargetAssembly</c> element in your project file to create and execute this task. For usage and parameter information, see [GenerateTemporaryTargetAssembly](http://msdn.microsoft.com/library/92b6539c-6897-45e0-8989-0c234bbfe782).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AssemblyName">
@@ -51,6 +53,7 @@
         <summary>Gets or sets the short name of the assembly that is generated for a project and is also the name of the target assembly that is temporarily generated.</summary>
         <value>The short name of the assembly that is generated for a project and is also the name of the target assembly that is temporarily generated.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CompileTargetName">
@@ -74,6 +77,7 @@
         <summary>Gets or sets the MS Build target name which is used to generate assembly from source code files.</summary>
         <value>The MS Build target name which is used to generate assembly from source code files.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CompileTypeName">
@@ -97,6 +101,7 @@
         <summary>Gets or sets the appropriate item name which can be accepted by managed compiler task.</summary>
         <value>The appropriate item name which can be accepted by managed compiler task.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CurrentProject">
@@ -120,6 +125,7 @@
         <summary>Gets or sets the full path of current project file.</summary>
         <value>The full path of current project file.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -140,6 +146,7 @@
         <returns>
           <see langword="true" /> if the task executed successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GeneratedCodeFiles">
@@ -158,6 +165,7 @@
         <summary>Gets or sets a list of generated code files.</summary>
         <value>A list of generated code files.  This can have 0 items.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IntermediateOutputPath">
@@ -181,6 +189,7 @@
         <summary>Gets or sets the directory that the temporary target assembly is generated to.</summary>
         <value>The directory that the temporary target assembly is generated to.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MSBuildBinPath">
@@ -204,6 +213,7 @@
         <summary>Gets or sets the MS Build binary path.</summary>
         <value>The MS Build binary path.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ReferencePath">
@@ -222,6 +232,7 @@
         <summary>Gets or sets a list of resolved reference assemblies.</summary>
         <value>A list of resolved reference assemblies.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ReferencePathTypeName">
@@ -245,6 +256,7 @@
         <summary>Gets or sets the item name which is used to keep the Reference list in managed compiler task.</summary>
         <value>The item name which is used to keep the Reference list in managed compiler task.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

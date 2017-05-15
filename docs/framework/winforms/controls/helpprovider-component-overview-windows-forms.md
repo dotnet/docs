@@ -2,7 +2,7 @@
 title: "HelpProvider Component Overview (Windows Forms) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "Windows Forms, context-sensitive Help"
 ms.assetid: 6b10c2cc-c577-4cb5-9669-e37b33416af9
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # HelpProvider Component Overview (Windows Forms)

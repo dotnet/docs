@@ -22,6 +22,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,6 +38,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Configuration.DataContractSerializerSection" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DeclaredTypes">
@@ -60,6 +62,7 @@
         <summary>Gets a collection of types added to the <see cref="P:System.Runtime.Serialization.DataContractSerializer.KnownTypes" /> property.</summary>
         <value>A <see cref="T:System.Runtime.Serialization.Configuration.DeclaredTypeElementCollection" /> that contains the known types.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Properties">

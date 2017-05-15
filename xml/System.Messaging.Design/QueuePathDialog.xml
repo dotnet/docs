@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a path editor control.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,6 +32,7 @@
         <param name="provider">A <see cref="T:System.IServiceProvider" /> that can be used to obtain services.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Messaging.Design.QueuePathDialog" /> class, using the specified service provider.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -49,6 +51,7 @@
         <param name="uiService">A <see cref="T:System.Windows.Forms.Design.IUIService" /> that enables interaction with the user interface of the hosting development environment object.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Messaging.Design.QueuePathDialog" /> class, using the specified UI service.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ChoosePath">
@@ -67,6 +70,7 @@
       <Docs>
         <summary>Updates the path editor control when a queue path is selected.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DoubleClicked">
@@ -90,6 +94,7 @@
         <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Occurs when the control is double-clicked.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnFormClosing">
@@ -111,6 +116,7 @@
         <param name="e">A <see cref="T:System.Windows.Forms.FormClosingEventArgs" /> object that contains the arguments for the form closing event handler.</param>
         <summary>Event handler for the form closing event of the queue path editor control.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnHandleCreated">
@@ -132,6 +138,7 @@
         <param name="e">A <see cref="T:System.Windows.Forms.FormClosingEventArgs" /> object that contains the arguments for the form creation event handler.</param>
         <summary>Event handler for the form creation event of the queue path editor control.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -150,6 +157,7 @@
         <summary>Gets the queue path.</summary>
         <value>The path for the queue.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SelectQueue">
@@ -171,6 +179,7 @@
         <param name="queue">The <see cref="T:System.Messaging.MessageQueue" /> to be selected.</param>
         <summary>Selects the specified queue.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

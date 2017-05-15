@@ -2,7 +2,7 @@
 title: "&lt;transport&gt; of &lt;netHttpBinding&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,7 +18,7 @@ manager: "erikre"
 # &lt;transport&gt; of &lt;netHttpBinding&gt;
 Defines properties that control authentication parameters for the HTTP transport.  
   
- \<system.ServiceModel>  
+\<system.serviceModel>  
 \<bindings>  
 \<netHttpBinding>  
 \<binding>  
@@ -27,22 +27,20 @@ Defines properties that control authentication parameters for the HTTP transport
   
 ## Syntax  
   
-```  
+```xml
 <netHttpBinding>  
-    <binding>  
-        <security  
-        mode="None|Transport|Message|TransportWithMessageCredential|TransportCredentialOnly">  
-            <transport clientCredentialType="None|Basic|Digest|Ntlm|Windows"  
-             proxyCredentialType="None|Basic|Digest|Ntlm|Windows" realm="string" >  
-                <extendedProtectionPolicy  
-                     policyEnforcement="Never|WhenSupported|Always"  
-                     protectionScenario="TransportSelected|TrustedProxy">  
-                    <customServiceNames></customServiceNames>  
-                        </extendedProtectionPolicy>  
-            </transport>  
-        </security>  
-    </binding>  
-</basicHttpBinding>  
+  <binding>  
+    <security mode="None|Transport|Message|TransportWithMessageCredential|TransportCredentialOnly">  
+      <transport clientCredentialType="None|Basic|Digest|Ntlm|Windows"  
+                 proxyCredentialType="None|Basic|Digest|Ntlm|Windows" realm="string">  
+        <extendedProtectionPolicy policyEnforcement="Never|WhenSupported|Always"  
+                                  protectionScenario="TransportSelected|TrustedProxy">  
+          <customServiceNames></customServiceNames>  
+        </extendedProtectionPolicy>  
+      </transport>  
+    </security>  
+  </binding>  
+</netHttpBinding>  
 ```  
   
 ## Attributes and Elements  
@@ -91,40 +89,39 @@ Defines properties that control authentication parameters for the HTTP transport
 ## Example  
  The following example demonstrates the use of SSL transport security with the basic binding. By default, the basic binding supports HTTP communication.  
   
-```  
+```xml
 <system.serviceModel>  
-   <services>  
-      <service   
-          type="Microsoft.ServiceModel.Samples.CalculatorService"  
-          behaviorConfiguration="CalculatorServiceBehavior">  
-         <endpoint address=""  
-               binding="netHttpBinding"  
-               bindingConfiguration="Binding1"   
-               contract="Microsoft.ServiceModel.Samples.ICalculator" />  
-      </service>  
-   </services>  
-    <bindings>  
-        <netHttpBinding>  
-        <!-- Configure basicHttpBinding with Transport security -- >  
-        <!-- mode and clientCredentialType set to None.-->  
-           <binding name="Binding1">  
-               <security mode="Transport">  
-                   <transport clientCredentialType="None"  
-                              proxyCredentialType="None">  
-                       <extendedProtectionPolicy  
-                          policyEnforcement="WhenSupported"  
-                          protectionScenario="TransportSelected">  
-                    <customServiceNames></customServiceNames>  
-                       </extendedProtectionPolicy>  
-               </security>  
-           </binding>  
-        </netHttpBinding>  
-    </bindings>  
+  <services>  
+    <service type="Microsoft.ServiceModel.Samples.CalculatorService"  
+             behaviorConfiguration="CalculatorServiceBehavior">  
+      <endpoint address=""  
+                binding="netHttpBinding"  
+                bindingConfiguration="Binding1"   
+                contract="Microsoft.ServiceModel.Samples.ICalculator" />  
+    </service>  
+  </services>  
+  <bindings>  
+    <netHttpBinding>  
+      <!-- Configure basicHttpBinding with Transport security -- >  
+      <!-- mode and clientCredentialType set to None.-->  
+      <binding name="Binding1">  
+        <security mode="Transport">  
+          <transport clientCredentialType="None"  
+                     proxyCredentialType="None">  
+            <extendedProtectionPolicy policyEnforcement="WhenSupported"  
+                                      protectionScenario="TransportSelected">  
+              <customServiceNames></customServiceNames>  
+            </extendedProtectionPolicy>
+          </transport> 
+        </security>  
+      </binding>  
+    </netHttpBinding>  
+  </bindings>  
 </system.serviceModel>  
 ```  
   
 ## See Also  
- <xref:System.ServiceModel.BasicHttpSecurityMode.Transport%2A>     
+ <xref:System.ServiceModel.BasicHttpSecurityMode.Transport>
  <xref:System.ServiceModel.Configuration.HttpTransportSecurityElement>   
  <xref:System.ServiceModel.HttpTransportSecurity>   
  [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)   

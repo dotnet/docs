@@ -1,5 +1,5 @@
-Imports System.Windows ' Application, RoutedEventArgs
-Imports System.Windows.Controls ' Page
+Imports System.Windows
+Imports System.Windows.Controls
 
 Namespace SDKSample
 	Partial Public Class HomePage

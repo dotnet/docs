@@ -2,7 +2,7 @@
 title: "FolderBrowserDialog Component Overview (Windows Forms) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "folders [Windows Forms], enabling browsing in applications"
 ms.assetid: 796b622c-3ba9-4356-93bb-e217fc52f2c7
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # FolderBrowserDialog Component Overview (Windows Forms)

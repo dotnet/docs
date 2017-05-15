@@ -22,6 +22,7 @@
   <Docs>
     <summary>Constructs a collation that uses the specified culture and compare options.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Equals">
@@ -49,6 +50,7 @@
         <summary>Returns <see langword="true" /> if this XML extension function has the same values as another XML extension function.</summary>
         <returns>Returns <see langword="true" /> if this XML extension function has the same values as another XML extension function, otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -72,6 +74,7 @@
         <summary>Returns the object's hash code.</summary>
         <returns>Returns the object's hash code.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

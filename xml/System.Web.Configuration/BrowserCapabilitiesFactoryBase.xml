@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,6 +36,7 @@
       <Docs>
         <summary>Used internally by the configuration system to create a new instance of this class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BrowserElements">
@@ -58,6 +60,7 @@
         <summary>Used internally by the configuration system to represent a collection of information relating to various browser capabilities.</summary>
         <value>A dictionary of browser capabilities.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConfigureBrowserCapabilities">
@@ -81,6 +84,7 @@
         <param name="browserCaps">An <see cref="T:System.Web.HttpBrowserCapabilities" /> object.</param>
         <summary>Used internally at run time to configure an <see cref="T:System.Web.HttpBrowserCapabilities" /> object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConfigureCustomCapabilities">
@@ -111,6 +115,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsBrowserUnknown">
@@ -134,6 +139,7 @@
         <returns>
           <see langword="true" /> if the represented browser does not have an available adapter; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MatchedHeaders">
@@ -157,6 +163,7 @@
         <summary>Used internally by the configuration system to represent a collection of request-header values.</summary>
         <value>A collection of request headers.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PopulateBrowserElements">
@@ -183,6 +190,7 @@
         <param name="dictionary">A collection of key/value pairs representing the browser capabilities.</param>
         <summary>Used internally by the configuration system to populate a collection of browser capabilities based on the supported browser.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PopulateMatchedHeaders">
@@ -209,6 +217,7 @@
         <param name="dictionary">A collection of key/value pairs representing the browser capabilities.</param>
         <summary>Used internally by the configuration system to populate a collection of request headers based on the supported browser.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -2,7 +2,7 @@
 title: "How to: Save Files Using the SaveFileDialog Component | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "OpenFile method, saving files with SaveFileDialog component"
 ms.assetid: 02e8f409-b83f-4707-babb-e71f6b223d90
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Save Files Using the SaveFileDialog Component

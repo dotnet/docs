@@ -2,7 +2,7 @@
 title: "Query expression basics"
 description: Introduces concepts related to query expressions
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 11/30/2016

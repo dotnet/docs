@@ -2,18 +2,19 @@
 title: "GetALinkMessageDll Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "GetALinkMessageDll"
-apilocation: 
+api_location: 
   - "alink.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "GetALinkMessageDll"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "Alink API, GetALinkMessageDll function"
   - "GetALinkMessageDll function"
 ms.assetid: 67985a22-88a2-4c54-8d99-4bcde9d6213e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"

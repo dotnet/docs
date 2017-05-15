@@ -80,6 +80,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by this <see cref="T:System.Drawing.Image" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Always call <xref:System.Drawing.Image.Dispose%2A> before you release your last reference to the <xref:System.Drawing.Image>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Drawing.Image> object's `Finalize` method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
@@ -202,7 +221,7 @@
 |`ImageFlagsReadOnly`|65536|  
 |`ImageFlagsCaching`|131072|  
   
- For example, if the <xref:System.Drawing.Image.Flags%2A> property for an image returned 77960, the <xref:System.Drawing.Imaging.ImageFlags> for the image would be <xref:System.Drawing.Imaging.ImageFlags>, <xref:System.Drawing.Imaging.ImageFlags>, <xref:System.Drawing.Imaging.ImageFlags>, <xref:System.Drawing.Imaging.ImageFlags>, and <xref:System.Drawing.Imaging.ImageFlags>.  
+ For example, if the <xref:System.Drawing.Image.Flags%2A> property for an image returned 77960, the <xref:System.Drawing.Imaging.ImageFlags> for the image would be <xref:System.Drawing.Imaging.ImageFlags.ReadOnly>, <xref:System.Drawing.Imaging.ImageFlags.HasRealDpi>, <xref:System.Drawing.Imaging.ImageFlags.HasRealPixelSize>, <xref:System.Drawing.Imaging.ImageFlags.ColorSpaceYcbcr>, and <xref:System.Drawing.Imaging.ImageFlags.PartiallyScalable>.  
   
  ]]></format>
         </remarks>
@@ -1600,24 +1619,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases all resources used by this <see cref="T:System.Drawing.Image" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Always call <xref:System.Drawing.Image.Dispose%2A> before you release your last reference to the <xref:System.Drawing.Image>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Drawing.Image> object's `Finalize` method.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

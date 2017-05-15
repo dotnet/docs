@@ -29,6 +29,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +57,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -74,6 +76,7 @@
         <summary>Gets or sets the object name.</summary>
         <value>The object name, or <see langword="null" /> if the property has not been set.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -92,6 +95,7 @@
         <summary>Gets the parent of an accessible object.</summary>
         <value>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents the parent of an accessible object, or <see langword="null" /> if there is no parent object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Role">
@@ -110,6 +114,7 @@
         <summary>Gets the role of this accessible object.</summary>
         <value>The <see cref="F:System.Windows.Forms.AccessibleRole.ListItem" /> value.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="State">
@@ -128,6 +133,7 @@
         <summary>Gets the state of the <see cref="T:System.Windows.Forms.RadioButton" /> control.</summary>
         <value>If the <see cref="P:System.Windows.Forms.RadioButton.Checked" /> property is set to true, returns <see cref="F:System.Windows.Forms.AccessibleStates.Checked" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -146,6 +152,7 @@
         <summary>Gets the value of an accessible object.</summary>
         <value>The Name property of the <see cref="T:System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

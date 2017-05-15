@@ -22,6 +22,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,6 +50,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -78,6 +80,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -100,6 +103,7 @@
         <param name="context">An <see cref="T:System.Xml.Serialization.ImportContext" /> that describes the context in which a set of schema are bound to .NET Framework code entities.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.SoapSchemaImporter" /> class specifying the schemas, compiler options, and the context of the schemas.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -122,6 +126,7 @@
         <param name="options">One of the <see cref="T:System.Xml.Serialization.CodeGenerationOptions" /> that specifies various options for generating a .NET Framework type.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.SoapSchemaImporter" /> class specifying the schemas, compiler options, and names of related code entities.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -146,6 +151,7 @@
         <param name="context">An <see cref="T:System.Xml.Serialization.ImportContext" /> that describes the context in which a set of schema are bound to .NET Framework code entities.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.SoapSchemaImporter" /> class specifying the schemas, compiler options, and names of related code entities.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ImportDerivedTypeMapping">
@@ -182,6 +188,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ImportMembersMapping">
@@ -217,6 +224,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ImportMembersMapping">
@@ -252,6 +260,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ImportMembersMapping">
@@ -284,12 +293,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [ImportMembersMapping Method (String, String, SoapSchemaMember\<xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method of the <xref:System.Xml.Serialization.SoapSchemaImporter> class is used by the Wsdl.exe tool while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of calling this method directly, use Wsdl.exe.  
+ The <xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method of the <xref:System.Xml.Serialization.SoapSchemaImporter> class is used by the Wsdl.exe tool while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of calling this method directly, use Wsdl.exe.  
   
- The <xref:System.Xml.Serialization.SoapSchemaImporter> class is used only when a WSDL document specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification. The parameter values to the [ImportMembersMapping Method (String, String, SoapSchemaMember\<xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method are taken from a message definition in a WSDL document, including the part elements the message element contains.  
+ The <xref:System.Xml.Serialization.SoapSchemaImporter> class is used only when a WSDL document specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification. The parameter values to the <xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method are taken from a message definition in a WSDL document, including the part elements the message element contains.  
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ImportMembersMapping">
@@ -327,12 +337,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The [ImportMembersMapping Method (String, String, SoapSchemaMember\<xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method of the <xref:System.Xml.Serialization.SoapSchemaImporter> class is used by the Wsdl.exe tool while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of calling this method directly, use Wsdl.exe.  
+ The <xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method of the <xref:System.Xml.Serialization.SoapSchemaImporter> class is used by the Wsdl.exe tool while generating client proxy classes or abstract server classes from a Web Services Description Language (WSDL) document. Instead of calling this method directly, use Wsdl.exe.  
   
- The <xref:System.Xml.Serialization.SoapSchemaImporter> class is used only when a WSDL document specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification. The parameter values to the [ImportMembersMapping Method (String, String, SoapSchemaMember\<xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method are taken from a message definition in a WSDL document, including the part elements the message element contains.  
+ The <xref:System.Xml.Serialization.SoapSchemaImporter> class is used only when a WSDL document specifies SOAP encoding, as described in Section 5 of the SOAP 1.1 specification. The parameter values to the <xref:System.Xml.Serialization.SoapSchemaImporter.ImportMembersMapping%2A> method are taken from a message definition in a WSDL document, including the part elements the message element contains.  
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

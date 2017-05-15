@@ -38,7 +38,7 @@
  The <xref:System.AppDomainManager> is the managed equivalent of the unmanaged host. An <xref:System.AppDomainManager> object participates in the creation of new application domains in a process and can customize the new <xref:System.AppDomain> before other managed code runs. The <xref:System.AppDomainManager> can also supply host managers that participate in other aspects of common language runtime execution. For example, an <xref:System.AppDomainManager> can identify a <xref:System.Security.HostSecurityManager> object that participates in the security decisions of the application domain.  
   
 > [!NOTE]
->  Only assemblies granted `FullTrust`, such as assemblies in the global assembly cache or identified as `fullTrustAssemblies` in the [AppDomain.CreateDomain(String, Evidence, AppDomainSetup, PermissionSet, StrongName\<xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> method can be loaded in the  <xref:System.AppDomainManager.%23ctor%2A> constructor and the <xref:System.AppDomainManager.InitializeNewDomain%2A> method.  
+>  Only assemblies granted `FullTrust`, such as assemblies in the global assembly cache or identified as `fullTrustAssemblies` in the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> method can be loaded in the  <xref:System.AppDomainManager.%23ctor%2A> constructor and the <xref:System.AppDomainManager.InitializeNewDomain%2A> method.  
   
 > [!NOTE]
 >  This class contains a link demand and an inheritance demand at the class level. A <xref:System.Security.SecurityException> is thrown when either the immediate caller or the derived class does not have infrastructure permission. For details about security demands, see [Link Demands](~/docs/framework/misc/link-demands.md) and [Inheritance Demands](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9).  
@@ -77,7 +77,7 @@
 ## Remarks  
   
 > [!NOTE]
->  Only assemblies granted `FullTrust`, such as assemblies in the global assembly cache or identified as `fullTrustAssemblies` in the [AppDomain.CreateDomain(String, Evidence, AppDomainSetup, PermissionSet, StrongName\<xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> method can be loaded in the  <xref:System.AppDomainManager.%23ctor%2A> constructor and the <xref:System.AppDomainManager.InitializeNewDomain%2A> method.  
+>  Only assemblies granted `FullTrust`, such as assemblies in the global assembly cache or identified as `fullTrustAssemblies` in the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> method can be loaded in the  <xref:System.AppDomainManager.%23ctor%2A> constructor and the <xref:System.AppDomainManager.InitializeNewDomain%2A> method.  
   
  ]]></format>
         </remarks>
@@ -360,7 +360,7 @@
  Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], you can use this method to sandbox the default application domain at application startup, or to modify the sandbox of a new application domain. To do this, adjust the <xref:System.Security.Policy.ApplicationTrust.DefaultGrantSet%2A> and <xref:System.Security.Policy.ApplicationTrust.FullTrustAssemblies%2A> properties on the <xref:System.Security.Policy.ApplicationTrust> object that is assigned to the <xref:System.AppDomainSetup.ApplicationTrust%2A?displayProperty=fullName> property of `appDomainInfo`, before you initialize the application domain.  
   
 > [!NOTE]
->  Only assemblies granted `FullTrust`, such as assemblies in the global assembly cache or identified as `fullTrustAssemblies` in the [AppDomain.CreateDomain(String, Evidence, AppDomainSetup, PermissionSet, StrongName\<xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> method can be loaded in the  <xref:System.AppDomainManager.%23ctor%2A> constructor and the <xref:System.AppDomainManager.InitializeNewDomain%2A> method.  
+>  Only assemblies granted `FullTrust`, such as assemblies in the global assembly cache or identified as `fullTrustAssemblies` in the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29?displayProperty=fullName> method can be loaded in the  <xref:System.AppDomainManager.%23ctor%2A> constructor and the <xref:System.AppDomainManager.InitializeNewDomain%2A> method.  
   
    
   

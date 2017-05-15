@@ -2,18 +2,19 @@
 title: "ICorProfilerInfo::SetILInstrumentedCodeMap Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo.SetILInstrumentedCodeMap"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::SetILInstrumentedCodeMap"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo::SetILInstrumentedCodeMap method [.NET Framework profiling]"
   - "SetILInstrumentedCodeMap method [.NET Framework profiling]"
 ms.assetid: bce1dcf8-b4ec-4e73-a917-f2df1ad49c8a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

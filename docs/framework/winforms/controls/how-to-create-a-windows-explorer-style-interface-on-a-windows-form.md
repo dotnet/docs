@@ -2,7 +2,7 @@
 title: "How to: Create a Windows Explorer–Style Interface on a Windows Form | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "forms, Windows Explorer type"
 ms.assetid: 9a3d5f4f-5dda-4350-9ad5-57ce5976dc47
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create a Windows Explorer–Style Interface on a Windows Form

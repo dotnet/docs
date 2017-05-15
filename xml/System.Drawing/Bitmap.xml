@@ -19,14 +19,14 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Encapsulates a [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] bitmap, which consists of the pixel data for a graphics image and its attributes. A <see cref="T:System.Drawing.Bitmap" /> is an object used to work with images defined by pixel data.</summary>
+    <summary>Encapsulates a GDI+ bitmap, which consists of the pixel data for a graphics image and its attributes. A <see cref="T:System.Drawing.Bitmap" /> is an object used to work with images defined by pixel data.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
  A bitmap consists of the pixel data for a graphics image and its attributes. There are many standard formats for saving a bitmap to a file. [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] supports the following file formats: BMP, GIF, EXIF, JPG, PNG and TIFF. For more information about supported formats, see [Types of Bitmaps](~/docs/framework/winforms/advanced/types-of-bitmaps.md).  
   
- You can create images from files, streams, and other sources by using one of the <xref:System.Drawing.Bitmap.%23ctor%2A> constructors and save them to a stream or to the file system with the <xref:System.Drawing.Image.Save%2A> method. Images are drawn to the screen or to memory by using the <xref:System.Drawing.Graphics.DrawImage%2A> method of the <xref:System.Drawing.Graphics> object. For a list of topics about working with image files, see [Working with Images, Bitmaps, Icons, and Metafiles](../Topic/Working%20with%20Images,%20Bitmaps,%20Icons,%20and%20Metafiles.md).  
+ You can create images from files, streams, and other sources by using one of the <xref:System.Drawing.Bitmap.%23ctor%2A> constructors and save them to a stream or to the file system with the <xref:System.Drawing.Image.Save%2A> method. Images are drawn to the screen or to memory by using the <xref:System.Drawing.Graphics.DrawImage%2A> method of the <xref:System.Drawing.Graphics> object. For a list of topics about working with image files, see [Working with Images, Bitmaps, Icons, and Metafiles](~/docs/framework/winforms/advanced/working-with-images-bitmaps-icons-and-metafiles.md).  
   
 > [!NOTE]
 >  The <xref:System.Drawing.Bitmap> class is not accessible across application domains. For example, if you create a dynamic <xref:System.AppDomain> and create several brushes, pens, and bitmaps in that domain, then pass these objects back to the main application domain, you can successfully use the pens and brushes. However, if you call the <xref:System.Drawing.Graphics.DrawImage%2A> method to draw the marshaled <xref:System.Drawing.Bitmap>, you receive the following exception.  
@@ -178,7 +178,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor creates a <xref:System.Drawing.Bitmap> with a <xref:System.Drawing.Imaging.PixelFormat> enumeration value of <xref:System.Drawing.Imaging.PixelFormat>.  
+ This constructor creates a <xref:System.Drawing.Bitmap> with a <xref:System.Drawing.Imaging.PixelFormat> enumeration value of <xref:System.Drawing.Imaging.PixelFormat.Format32bppArgb>.  
   
  ]]></format>
         </remarks>
@@ -793,7 +793,7 @@
   
  The <xref:System.Drawing.Imaging.BitmapData> specifies the attributes of the <xref:System.Drawing.Bitmap>, such as size, pixel format, the starting address of the pixel data in memory, and length of each scan line (stride).  
   
- When calling this method, you should use a member of the <xref:System.Drawing.Imaging.PixelFormat?displayProperty=fullName> enumeration that contains a specific bits-per-pixel (BPP) value. Using <xref:System.Drawing.Imaging.PixelFormat?displayProperty=fullName> values such as <xref:System.Drawing.Imaging.PixelFormat> and <xref:System.Drawing.Imaging.PixelFormat> will throw an <xref:System.ArgumentException?displayProperty=fullName>. Also, passing the incorrect pixel format for a bitmap will throw an <xref:System.ArgumentException?displayProperty=fullName>.  
+ When calling this method, you should use a member of the <xref:System.Drawing.Imaging.PixelFormat?displayProperty=fullName> enumeration that contains a specific bits-per-pixel (BPP) value. Using <xref:System.Drawing.Imaging.PixelFormat?displayProperty=fullName> values such as <xref:System.Drawing.Imaging.PixelFormat.Indexed> and <xref:System.Drawing.Imaging.PixelFormat.Gdi> will throw an <xref:System.ArgumentException?displayProperty=fullName>. Also, passing the incorrect pixel format for a bitmap will throw an <xref:System.ArgumentException?displayProperty=fullName>.  
   
    
   
@@ -845,7 +845,7 @@
 ## Remarks  
  Use the <xref:System.Drawing.Bitmap.LockBits%2A> method to lock an existing bitmap in system memory so that it can be changed programmatically. You can change the color of an image with the <xref:System.Drawing.Bitmap.SetPixel%2A> method, although the <xref:System.Drawing.Bitmap.LockBits%2A> method offers better performance for large-scale changes.  
   
- When calling this method, you should use a member of the <xref:System.Drawing.Imaging.PixelFormat?displayProperty=fullName> enumeration that contains a specific bits-per-pixel (BPP) value. Using <xref:System.Drawing.Imaging.PixelFormat?displayProperty=fullName> values, such as <xref:System.Drawing.Imaging.PixelFormat> and <xref:System.Drawing.Imaging.PixelFormat>, will throw an <xref:System.ArgumentException?displayProperty=fullName>. Also, passing the incorrect pixel format for a bitmap will throw an <xref:System.ArgumentException?displayProperty=fullName>.  
+ When calling this method, you should use a member of the <xref:System.Drawing.Imaging.PixelFormat?displayProperty=fullName> enumeration that contains a specific bits-per-pixel (BPP) value. Using <xref:System.Drawing.Imaging.PixelFormat?displayProperty=fullName> values, such as <xref:System.Drawing.Imaging.PixelFormat.Indexed> and <xref:System.Drawing.Imaging.PixelFormat.Gdi>, will throw an <xref:System.ArgumentException?displayProperty=fullName>. Also, passing the incorrect pixel format for a bitmap will throw an <xref:System.ArgumentException?displayProperty=fullName>.  
   
  This version of the <xref:System.Drawing.Bitmap.LockBits%2A> method is intended to be used with a `flags` value of <xref:System.Drawing.Imaging.ImageLockMode?displayProperty=fullName>.  
   
@@ -881,7 +881,7 @@
 ## Remarks  
  The system palette defines one color as the default transparent, or alpha, color. This method makes the default transparent color transparent for this <xref:System.Drawing.Bitmap>. If no transparent color is specified by the system, <xref:System.Drawing.Color.LightGray%2A> is the transparent color.  
   
- When you call <xref:System.Drawing.Bitmap.MakeTransparent%2A>, the bitmap will be converted to the <xref:System.Drawing.Imaging.PixelFormat> format, as this format supports an alpha channel.  
+ When you call <xref:System.Drawing.Bitmap.MakeTransparent%2A>, the bitmap will be converted to the <xref:System.Drawing.Imaging.PixelFormat.Format32bppArgb> format, as this format supports an alpha channel.  
   
    
   
@@ -920,7 +920,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you call <xref:System.Drawing.Bitmap.MakeTransparent%2A>, the bitmap will be converted to the <xref:System.Drawing.Imaging.PixelFormat> format, as this format supports an alpha channel.  
+ When you call <xref:System.Drawing.Bitmap.MakeTransparent%2A>, the bitmap will be converted to the <xref:System.Drawing.Imaging.PixelFormat.Format32bppArgb> format, as this format supports an alpha channel.  
   
    
   

@@ -2,7 +2,7 @@
 title: "Visual Layer Programming How-to Topics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "visual layer"
 ms.assetid: ac550423-60a3-43e6-a0bc-d65ef026e0cb
 caps.latest.revision: 77
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Visual Layer Programming How-to Topics

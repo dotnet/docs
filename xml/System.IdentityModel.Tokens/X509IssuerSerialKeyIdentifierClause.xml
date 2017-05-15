@@ -163,7 +163,7 @@
         <param name="clause">To be added.</param>
         <summary>Returns a value that indicates whether the key identifier for this instance matches the specified key identifier.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="keyIdentifierClause" /> is a <see cref="T:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause" /> type and the key identifier clauses match; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if <paramref name="clause" /> is a <see cref="T:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause" /> type and the key identifier clauses match; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -6,6 +6,10 @@
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Configuration.ConfigurationConverterBase</BaseTypeName>
   </Base>
@@ -18,9 +22,9 @@
 ## Remarks  
  This type, like all the other configuration converter types, converts strings found in the configuration file to and from the related strongly typed properties.  
   
- In particular, the <xref:System.Configuration.InfiniteIntConverter> class converts string values, assigned to a configuration property, to integer values and vice versa. If the configuration property has a string value of "infinite", it converts this value to <xref:System.Int32> and vice versa.  
+ In particular, the <xref:System.Configuration.InfiniteIntConverter> class converts string values, assigned to a configuration property, to integer values and vice versa. If the configuration property has a string value of "infinite", it converts this value to <xref:System.Int32.MaxValue> and vice versa.  
   
- This converter is used with integer types. The infinite value is persisted as <xref:System.Int32>.  
+ This converter is used with integer types. The infinite value is persisted as <xref:System.Int32.MaxValue>.  
   
    
   
@@ -43,6 +47,10 @@
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.InfiniteIntConverter" /> class.</summary>
@@ -63,6 +71,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -96,6 +108,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents the exception state when code execution returns out of a <see langword="finally" /> block.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.ReturnOutOfFinally" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -46,6 +48,7 @@
         <param name="m">The message that describes the error.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.ReturnOutOfFinally" /> class, using the specified error message.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -66,6 +69,7 @@
         <param name="e">The exception that is the cause of the current exception.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.ReturnOutOfFinally" /> class, using the specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

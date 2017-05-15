@@ -2,11 +2,10 @@
 title: "Chaining Tasks by Using Continuation Tasks | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -52,7 +51,7 @@ In asynchronous programming, it is very common for one asynchronous operation, o
 ## Creating a continuation for multiple antecedents  
  You can also create a continuation that will run when any or all of a group of tasks has completed. To execute a continuation when all antecedent tasks have completed, you call the static (`Shared` in Visual Basic) <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName> method or the instance <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAll%2A?displayProperty=fullName> method. To execute a continuation when any of the antecedent tasks has completed, you call the static (`Shared` in Visual Basic) <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=fullName> method or the instance <xref:System.Threading.Tasks.TaskFactory.ContinueWhenAny%2A?displayProperty=fullName> method.  
   
- Note that calls to the <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName> and <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=fullName> overloads do not block the calling thread.  However, you typically call all but the <xref:System.Threading.Tasks.Task.WhenAll%28System.Collections.Generic.IEnumerable%7BSystem.Threading.Tasks.Task%7D%29?displayProperty=fullName> and  [Task.WhenAll(Task\<xref:System.Threading.Tasks.Task.WhenAll%28System.Threading.Tasks.Task%5B%5D%29?displayProperty=fullName> methods to retrieve the returned  <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=fullName> property, which does block the calling thread.  
+ Note that calls to the <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=fullName> and <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=fullName> overloads do not block the calling thread.  However, you typically call all but the <xref:System.Threading.Tasks.Task.WhenAll%28System.Collections.Generic.IEnumerable%7BSystem.Threading.Tasks.Task%7D%29?displayProperty=fullName> and  <xref:System.Threading.Tasks.Task.WhenAll%28System.Threading.Tasks.Task%5B%5D%29?displayProperty=fullName> methods to retrieve the returned  <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=fullName> property, which does block the calling thread.  
   
  The following example calls the <xref:System.Threading.Tasks.Task.WhenAll%28System.Collections.Generic.IEnumerable%7BSystem.Threading.Tasks.Task%7D%29?displayProperty=fullName> method to create a continuation task that reflects the results of its ten antecedent tasks. Each antecedent task squares an index value that ranges from one to ten. If the antecedents complete successfully (their <xref:System.Threading.Tasks.Task.Status%2A?displayProperty=fullName> property is <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>), the <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=fullName> property of the continuation is an array of the <xref:System.Threading.Tasks.Task%601.Result%2A?displayProperty=fullName> values returned by each antecedent. The example adds them to compute the sum of squares for all numbers between one and ten.  
   
@@ -120,7 +119,7 @@ In asynchronous programming, it is very common for one asynchronous operation, o
   
  Continuation state is useful when you convert existing code that uses the [Asynchronous Programming Model (APM)](../../../docs/standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md) to use the TPL. In the APM, you typically provide object state in the **Begin*Method*** method and later access that state by using the <xref:System.IAsyncResult.AsyncState%2A?displayProperty=fullName> property. By using the <xref:System.Threading.Tasks.Task.ContinueWith%2A> method, you can preserve this state when you convert code that uses the APM to use the TPL.  
   
- Continuation state can also be useful when you work with <xref:System.Threading.Tasks.Task> objects in the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] debugger. For example, in the **Parallel Tasks** window, the **Task** column displays the string representation of the state object for each task. For more information about the **Parallel Tasks** window, see [Using the Tasks Window](http://msdn.microsoft.com/library/bd5e0612-a0dc-41cf-a7af-1e87d0d5c35f).  
+ Continuation state can also be useful when you work with <xref:System.Threading.Tasks.Task> objects in the [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] debugger. For example, in the **Parallel Tasks** window, the **Task** column displays the string representation of the state object for each task. For more information about the **Parallel Tasks** window, see [Using the Tasks Window](/visualstudio/debugger/using-the-tasks-window).  
   
  The following example shows how to use continuation state. It creates a chain of continuation tasks. Each task provides the current time, a <xref:System.DateTime> object, for the `state` parameter of the <xref:System.Threading.Tasks.Task.ContinueWith%2A> method. Each <xref:System.DateTime> object represents the time at which the continuation task is created. Each task produces as its result a second <xref:System.DateTime> object that represents the time at which the task finishes. After all tasks finish, this example displays the creation time and the time at which each continuation task finishes.  
   

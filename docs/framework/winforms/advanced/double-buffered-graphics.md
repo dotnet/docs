@@ -2,7 +2,7 @@
 title: "Double Buffered Graphics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], double-buffered graphics"
 ms.assetid: 4f6fef99-0972-436e-9d73-0167e4033f71
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Double Buffered Graphics

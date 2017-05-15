@@ -2,7 +2,7 @@
 title: "How to: Set Up Automatic Menu Merging for MDI Applications | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Merging, automatic menu"
 ms.assetid: 55e32cad-1141-4a56-aa33-d9543ca3d393
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set Up Automatic Menu Merging for MDI Applications

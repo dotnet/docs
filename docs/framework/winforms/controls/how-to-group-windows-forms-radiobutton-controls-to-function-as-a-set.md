@@ -2,7 +2,7 @@
 title: "How to: Group Windows Forms RadioButton Controls to Function as a Set | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "RadioButton control [Windows Forms], grouping"
 ms.assetid: 58f8fe34-50b7-49d8-a2be-c271be3c6b32
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Group Windows Forms RadioButton Controls to Function as a Set

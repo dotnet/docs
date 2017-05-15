@@ -2,7 +2,7 @@
 title: "Choosing a Message Encoder | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -47,37 +47,47 @@ This topic discusses criteria for choosing among the message encoders that are i
 |3rd Party Tool Support|Support areas for an encoding include development and diagnosis. Third-party developers have made a large investment in libraries and toolkits for handling messages encoded in the POX format.|Text (POX)|  
 |Interoperability|This factor refers to the ability of a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] encoder to interoperate with non-[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services.|Text<br /><br /> MTOM (partial)|  
   
- Note: When using the Binary Encoder, using the IgnoreWhitespace setting when creating a XMLReader will have no effect.  For example, if you do the following inside a service operation:  
-  
-```csharp  
-public void OperationContract(XElement input)  
-        {  
-            Console.WriteLine("{0}", input.Value);  
-            int counter = 0;  
-            var xreader = input.CreateReader();  
-            var reader = XmlReader.Create(xreader, new XmlReaderSettings() { IgnoreWhitespace = true });  
-            while (reader.Read())  
-            {  
-                counter++;  
-            }  
-  
-            Console.WriteLine("Read {0} lines with reader", counter);  
-        }  
-  
+Note: When using the Binary Encoder, using the IgnoreWhitespace setting when creating a XMLReader will have no effect.  For example, if you do the following inside a service operation:  
+
+```csharp
+public void OperationContract(XElement input)
+{
+    Console.WriteLine("{0}", input.Value);
+    int counter = 0;
+    var xreader = input.CreateReader();
+    var reader = XmlReader.Create(xreader, new XmlReaderSettings() { IgnoreWhitespace = true });
+    while (reader.Read())
+    {
+        counter++;
+    }
+
+    Console.WriteLine("Read {0} lines with reader", counter);
+}
 ```  
   
- The IgnoreWhitespace setting is ignored.  
+The IgnoreWhitespace setting is ignored.  
   
-## Compression and the Binary Encoder  
- Beginning with WCF 4.5 the WCF binary encoder adds support for compression. This enables you to use the gzip/deflate algorithm for sending compressed messages from a WCF client and also respond with compressed messages from a self-hosted WCF service. This feature enables compression on both the HTTP and TCP transports. An IIS hosted WCF service can always be enabled for sending compressed responses by configuring the IIS host server. The type of compression is configured with the <xref:System.ServiceModel.Channels.BinaryMessageEncodingElement.CompressionFormat%2A> property. This property is set to one of the <xref:System.ServiceModel.Channels.CompressionFormat> enum values:  
+## Compression and the Binary Encoder
+
+Beginning with WCF 4.5 the WCF binary encoder adds support for compression. This enables you to use the gzip/deflate algorithm for sending compressed messages from a WCF client and also respond with compressed messages from a self-hosted WCF service. This feature enables compression on both the HTTP and TCP transports. An IIS hosted WCF service can always be enabled for sending compressed responses by configuring the IIS host server. The type of compression is configured with the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CompressionFormat%2A?displayProperty=fullName> property. This property is set to one of the <xref:System.ServiceModel.Channels.CompressionFormat?displayProperty=fullName> enum values:
+
+* `CompressionFormat.Deflate`
+* `CompressionFormat.GZip`
+* `CompressionFormat.None`
   
-|CompressionFormat Value|Description|  
-|-----------------------------|-----------------|  
-|F:System.ServiceModel.Channels.CompressionFormat.Deflate|Uses Deflate compression.|  
-|F:System.ServiceModel.Channels.CompressionFormat.GZip|Uses GZip compression|  
-|F:System.ServiceModel.Channels.CompressionFormat.None|No compression will be used|  
+Since this property is only exposed on the binaryMessageEncodingBindingElement, you will need to create a custom binding like the following to use this feature:
+
+ ```xml
+ <customBinding>
+   <binding name="BinaryCompressionBinding">
+     <binaryMessageEncoding compressionFormat ="GZip" />
+     <httpTransport />
+  </binding>
+</customBinding>
+ ```
+
+Both the client and the service need to agree to send and receive compressed messages and therefore the compressionFormat property must be configured on the binaryMessageEncoding element on both client and service. A ProtocolException is thrown if either the service or client is not configured for compression but the other side is.Enabling compression should be carefully considered. Compression is mostly useful if network bandwidth is a bottleneck. In the case where the CPU is the bottleneck, compression will decrease throughput. Appropriate testing must be done in a simulated environment to find out if this benefits the application  
   
- Since this property is only exposed on the binaryMessageEncodingBindingElement, you will need to create a custom binding like the following to use this feature:\<customBinding>        \<binding name="BinaryCompressionBinding">          \<binaryMessageEncoding compressionFormat ="GZip"/>          \<httpTransport />        \</binding>      \</customBinding>Both the client and the service need to agree to send and receive compressed messages and therefore the compressionFormat property must be configured on the binaryMessageEncoding element on both client and service. A ProtocolException is thrown if either the service or client is not configured for compression but the other side is.Enabling compression should be carefully considered. Compression is mostly useful if network bandwidth is a bottleneck. In the case where the CPU is the bottleneck, compression will decrease throughput. Appropriate testing must be done in a simulated environment to find out if this benefits the application  
-  
-## See Also  
- [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)
+## See Also
+
+[Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)

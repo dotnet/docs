@@ -2,7 +2,7 @@
 title: "How to: Trigger Menu Events for Toolbar Buttons | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "toolbars [Windows Forms], click event handlers"
 ms.assetid: 98374f70-993d-4ca4-89fb-48fea6ce5b45
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Trigger Menu Events for Toolbar Buttons

@@ -13,6 +13,7 @@
   <Docs>
     <summary>Scans JScript code searching for individual units of code, or *tokens*. This class belongs to the scanning and parsing category. For more information about scanning and parsing, see [Create a Language Compiler for the .NET Framework](http://go.microsoft.com/fwlink/?LinkId=110392).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JSScanner" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -46,6 +48,7 @@
         <param name="sourceContext">The source code to scan.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JSScanner" /> class, specifying the source code to scan.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentLine">
@@ -65,6 +68,7 @@
         <summary>Gets the current line number in the code. This is a pointer that moves as the code is scanned.</summary>
         <returns>The current line number in the code.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetCurrentPosition">
@@ -87,6 +91,7 @@
         <summary>Gets the current position in the code string. This is a pointer that moves as the code is scanned.</summary>
         <returns>The current position in the code string.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetNextToken">
@@ -105,6 +110,7 @@
       <Docs>
         <summary>Scans for the next token in the code.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetSourceCode">
@@ -131,6 +137,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetStartLinePosition">
@@ -150,6 +157,7 @@
         <summary>Gets the position in the code string where the first line of the current code starts. All lines of code are stored in a single string. This is a pointer that moves as the code is scanned.</summary>
         <returns>The position in the code string where the first line of the current code starts.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetStringLiteral">
@@ -169,6 +177,7 @@
         <summary>Gets a string that has been scanned and had all its escape sequences replaced.</summary>
         <returns>A string that has been scanned and had all its escape sequences replaced.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GotEndOfLine">
@@ -189,6 +198,7 @@
         <returns>
           <see langword="true" /> if the end of the line was reached; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsKeyword">
@@ -212,6 +222,7 @@
         <returns>
           <see langword="true" /> if the token is a keyword; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsOperator">
@@ -235,6 +246,7 @@
         <returns>
           <see langword="true" /> if the token is an operator; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetAuthoringMode">
@@ -264,6 +276,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetSource">
@@ -285,6 +298,7 @@
         <param name="sourceContext">The source code to scan.</param>
         <summary>Sets the source code to scan.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SkipMultiLineComment">
@@ -304,6 +318,7 @@
         <summary>Skips a comment that spans multiple lines, and advances the pointers that identify the current position in the code.</summary>
         <returns>The new current position in the code string.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

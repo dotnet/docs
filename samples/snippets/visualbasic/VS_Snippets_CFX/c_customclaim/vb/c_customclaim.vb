@@ -1,4 +1,4 @@
- '<snippet0>
+'<snippet0>
 '<snippet1>
 Imports System
 Imports System.IdentityModel.Claims
@@ -49,8 +49,9 @@ NotInheritable Public Class MyResourceType
         Set
             Me.number_value = value
         End Set
-    End Property '</snippet2>
+    End Property
 End Class 'MyResourceType
+'</snippet2>
 
 Class Program
     
@@ -59,12 +60,13 @@ Class Program
         '<snippet4>
         ' Create claim with custom claim type and primitive resource
         Dim c1 As New Claim("http://example.org/claims/simplecustomclaim", "Driver's License", Rights.PossessProperty)
-        ' </snippet4>
+        '</snippet4>
         '<snippet5>
         ' Create claim with custom claim type and structured resource type
         Dim c2 As New Claim("http://example.org/claims/complexcustomclaim", New MyResourceType("Martin", 38), Rights.PossessProperty)
-    
-    End Sub 'Main ' </snippet5>
-End Class 'Program '</snippet3>
+        '</snippet5>
+        '</snippet3>
+    End Sub 'Main
+End Class 'Program
 ' Do something with claims
 '</snippet0>

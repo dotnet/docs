@@ -2,18 +2,19 @@
 title: "ICorDebugClass2::GetParameterizedType Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugClass2.GetParameterizedType"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugClass2::GetParameterizedType"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetParameterizedType method [.NET Framework debugging]"
   - "ICorDebugClass2::GetParameterizedType method [.NET Framework debugging]"
 ms.assetid: 94b591c4-9302-4af2-a510-089496afb036
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

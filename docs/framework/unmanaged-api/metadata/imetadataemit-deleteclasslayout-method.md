@@ -2,18 +2,19 @@
 title: "IMetaDataEmit::DeleteClassLayout Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataEmit.DeleteClassLayout"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DeleteClassLayout"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "DeleteClassLayout method [.NET Framework metadata]"
   - "IMetaDataEmit::DeleteClassLayout method [.NET Framework metadata]"
 ms.assetid: 65a4ad49-fa49-4b36-8ed1-76dd6a185ab4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

@@ -2,7 +2,7 @@
 title: "Diagnostic Traces | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -62,11 +62,11 @@ Traces are the publishing of specific messages that are generated during applica
 |TransactionAborted|Warning|TransactionTraceId|  
 |TransactionInDoubt|Warning|TransactionTraceId|  
 |TransactionScopeCreated|Info|TransactionScopeResult, which can be the following:<br /><br /> -   New transaction.<br />-   Transaction passed.<br />-   Dependent transaction passed.<br />-   Using current transaction.<br />-   No transaction.<br /><br /> new current TransactionTraceId|  
-|TransactionScopeDisposed|Info|TransactionTraceId of the scope’s “expected” current transaction.|  
-|TransactionScopeIncomplete|Warning|TransactionTraceId of the scope’s “expected” current transaction.|  
-|TransactionScopeNestedIncorrectly|Warning|TransactionTraceId of the scope’s “expected” current transaction.|  
+|TransactionScopeDisposed|Info|TransactionTraceId of the scope’s "expected" current transaction.|  
+|TransactionScopeIncomplete|Warning|TransactionTraceId of the scope’s "expected" current transaction.|  
+|TransactionScopeNestedIncorrectly|Warning|TransactionTraceId of the scope’s "expected" current transaction.|  
 |TransactionScopeCurrentTransactionChanged|Warning|Old current TransactionTraceId, other TransactionTraceId|  
-|TransactionScopeTimeout|Warning|TransactionTraceId of the scope’s “expected” current transaction.|  
+|TransactionScopeTimeout|Warning|TransactionTraceId of the scope’s "expected" current transaction.|  
 |DependentCloneCreated|Info|TransactionTraceId, type of dependent transaction created (RollbackIfNotComplete/BlockCommitUntilComplete)|  
 |DependentCloneComplete|Info|TransactionTraceId|  
 |RecoveryComplete|Info|Resource Manager GUID (from base)|  

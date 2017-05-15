@@ -2,18 +2,19 @@
 title: "ICorDebugController::Stop Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugController.Stop"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugController::Stop"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "Stop method, ICorDebugController interface [.NET Framework debugging]"
   - "ICorDebugController::Stop method [.NET Framework debugging]"
 ms.assetid: c34e79be-a7fb-479e-8dec-d126a4c330e5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

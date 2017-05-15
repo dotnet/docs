@@ -2,18 +2,19 @@
 title: "ICorDebugHeapValue3::GetMonitorEventWaitList Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugHeapValue3.GetMonitorEventWaitList"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugHeapValue3::GetMonitorEventWaitList"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugHeapValue3::GetMonitorEventWaitList method [.NET Framework debugging]"
   - "GetMonitorEventWaitList method [.NET Framework debugging]"
 ms.assetid: 035a9035-ac66-4953-b48a-99652b42b7fe
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

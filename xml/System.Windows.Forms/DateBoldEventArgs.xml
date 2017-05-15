@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides data for events that are internal to the <see cref="T:System.Windows.Forms.MonthCalendar" /> control.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="DaysToBold">
@@ -31,6 +32,7 @@
         <summary>Gets or sets dates that are bold.</summary>
         <value>The dates that are bold.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -49,6 +51,7 @@
         <summary>Gets the number of dates that are bold.</summary>
         <value>The number of dates that are bold.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StartDate">
@@ -67,6 +70,7 @@
         <summary>Gets the first date that is bold.</summary>
         <value>The first date that is bold.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

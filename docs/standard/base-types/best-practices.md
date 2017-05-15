@@ -1,12 +1,11 @@
 ---
-title: "Best Practices for Regular Expressions in the .NET Framework | Microsoft Docs"
+title: "Best Practices for Regular Expressions in .NET | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -18,8 +17,8 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-# Best Practices for Regular Expressions in the .NET Framework
-<a name="top"></a> The regular expression engine in the .NET Framework is a powerful, full-featured tool that processes text based on pattern matches rather than on comparing and matching literal text. In most cases, it performs pattern matching rapidly and efficiently. However, in some cases, the regular expression engine can appear to be very slow. In extreme cases, it can even appear to stop responding as it processes a relatively small input over the course of hours or even days.  
+# Best Practices for Regular Expressions in .NET
+<a name="top"></a> The regular expression engine in .NET is a powerful, full-featured tool that processes text based on pattern matches rather than on comparing and matching literal text. In most cases, it performs pattern matching rapidly and efficiently. However, in some cases, the regular expression engine can appear to be very slow. In extreme cases, it can even appear to stop responding as it processes a relatively small input over the course of hours or even days.  
   
  This topic outlines some of the best practices that developers can adopt to ensure that their regular expressions achieve optimal performance. It contains the following sections:  
   
@@ -73,7 +72,7 @@ manager: "wpickett"
   
 <a name="ObjectInstantiation"></a>   
 ## Handle Object Instantiation Appropriately  
- At the heart of the .NET Framework’s regular expression object model is the <xref:System.Text.RegularExpressions.Regex?displayProperty=fullName> class, which represents the regular expression engine. Often, the single greatest factor that affects regular expression performance is the way in which the <xref:System.Text.RegularExpressions.Regex> engine is used. Defining a regular expression involves tightly coupling the regular expression engine with a regular expression pattern. That coupling process, whether it involves instantiating a <xref:System.Text.RegularExpressions.Regex> object by passing its constructor a regular expression pattern or calling a static method by passing it the regular expression pattern along with the string to be analyzed, is by necessity an expensive one.  
+ At the heart of .NET’s regular expression object model is the <xref:System.Text.RegularExpressions.Regex?displayProperty=fullName> class, which represents the regular expression engine. Often, the single greatest factor that affects regular expression performance is the way in which the <xref:System.Text.RegularExpressions.Regex> engine is used. Defining a regular expression involves tightly coupling the regular expression engine with a regular expression pattern. That coupling process, whether it involves instantiating a <xref:System.Text.RegularExpressions.Regex> object by passing its constructor a regular expression pattern or calling a static method by passing it the regular expression pattern along with the string to be analyzed, is by necessity an expensive one.  
   
 > [!NOTE]
 >  For a more detailed discussion of the performance implications of using interpreted and compiled regular expressions, see [Optimizing Regular Expression Performance, Part II: Taking Charge of Backtracking](http://go.microsoft.com/fwlink/?LinkId=211566) in the BCL Team blog.  
@@ -146,9 +145,9 @@ manager: "wpickett"
 |`[.?:;!]`|Match a period, question mark, colon, semicolon, or exclamation point.|  
   
 ### Regular Expressions: Compiled to an Assembly  
- The .NET Framework also enables you to create an assembly that contains compiled regular expressions. This moves the performance hit of regular expression compilation from run time to design time. However, it also involves some additional work: You must define the regular expressions in advance and compile them to an assembly. The compiler can then reference this assembly when compiling source code that uses the assembly’s regular expressions. Each compiled regular expression in the assembly is represented by a class that derives from <xref:System.Text.RegularExpressions.Regex>.  
+ .NET also enables you to create an assembly that contains compiled regular expressions. This moves the performance hit of regular expression compilation from run time to design time. However, it also involves some additional work: You must define the regular expressions in advance and compile them to an assembly. The compiler can then reference this assembly when compiling source code that uses the assembly’s regular expressions. Each compiled regular expression in the assembly is represented by a class that derives from <xref:System.Text.RegularExpressions.Regex>.  
   
- To compile regular expressions to an assembly, you call the [Regex.CompileToAssembly(RegexCompilationInfo\<xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%29?displayProperty=fullName> method and pass it an array of <xref:System.Text.RegularExpressions.RegexCompilationInfo> objects that represent the regular expressions to be compiled, and an <xref:System.Reflection.AssemblyName> object that contains information about the assembly to be created.  
+ To compile regular expressions to an assembly, you call the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%28System.Text.RegularExpressions.RegexCompilationInfo%5B%5D%2CSystem.Reflection.AssemblyName%29?displayProperty=fullName> method and pass it an array of <xref:System.Text.RegularExpressions.RegexCompilationInfo> objects that represent the regular expressions to be compiled, and an <xref:System.Reflection.AssemblyName> object that contains information about the assembly to be created.  
   
  We recommend that you compile regular expressions to an assembly in the following situations:  
   
@@ -218,7 +217,7 @@ manager: "wpickett"
  [!code-csharp[Conceptual.RegularExpressions.BestPractices#11](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/cs/backtrack4.cs#11)]
  [!code-vb[Conceptual.RegularExpressions.BestPractices#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.bestpractices/vb/backtrack4.vb#11)]  
   
- The regular expression language in the .NET Framework includes the following language elements that you can use to eliminate nested quantifiers. For more information, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).  
+ The regular expression language in .NET includes the following language elements that you can use to eliminate nested quantifiers. For more information, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).  
   
 |Language element|Description|  
 |----------------------|-----------------|  
@@ -252,7 +251,7 @@ manager: "wpickett"
   
 <a name="Capture"></a>   
 ## Capture Only When Necessary  
- Regular expressions in the .NET Framework support a number of grouping constructs, which let you group a regular expression pattern into one or more subexpressions. The most commonly used grouping constructs in the .NET Framework regular expression language are `(`*subexpression*`)`, which defines a numbered capturing group, and `(?<`*name*`>`*subexpression*`)`, which defines a named capturing group. Grouping constructs are essential for creating backreferences and for defining a subexpression to which a quantifier is applied.  
+ Regular expressions in .NET support a number of grouping constructs, which let you group a regular expression pattern into one or more subexpressions. The most commonly used grouping constructs in .NET regular expression language are `(`*subexpression*`)`, which defines a numbered capturing group, and `(?<`*name*`>`*subexpression*`)`, which defines a named capturing group. Grouping constructs are essential for creating backreferences and for defining a subexpression to which a quantifier is applied.  
   
  However, the use of these language elements has a cost. They cause the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=fullName> property to be populated with the most recent unnamed or named captures, and if a single grouping construct has captured multiple substrings in the input string, they also populate the <xref:System.Text.RegularExpressions.CaptureCollection> object returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=fullName> property of a particular capturing group with multiple <xref:System.Text.RegularExpressions.Capture> objects.  
   
@@ -294,6 +293,6 @@ manager: "wpickett"
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Details of Regular Expression Behavior](../../../docs/standard/base-types/details-of-regular-expression-behavior.md)|Examines the implementation of the regular expression engine in the .NET Framework. The topic focuses on the flexibility of regular expressions and explains the developer's responsibility for ensuring the efficient and robust operation of the regular expression engine.|  
+|[Details of Regular Expression Behavior](../../../docs/standard/base-types/details-of-regular-expression-behavior.md)|Examines the implementation of the regular expression engine in .NET. The topic focuses on the flexibility of regular expressions and explains the developer's responsibility for ensuring the efficient and robust operation of the regular expression engine.|  
 |[Backtracking](../../../docs/standard/base-types/backtracking-in-regular-expressions.md)|Explains what backtracking is and how it affects regular expression performance, and examines language elements that provide alternatives to backtracking.|  
-|[Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)|Describes the elements of the regular expression language in the .NET Framework and provides links to detailed documentation for each language element.|
+|[Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)|Describes the elements of the regular expression language in .NET and provides links to detailed documentation for each language element.|

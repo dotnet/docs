@@ -2,19 +2,20 @@
 title: "ICorProfilerCallback7::ModuleInMemorySymbolsUpdated Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
+api_name: 
   - "ICorProfiler7.ModuleInMemorySymbolsUpdated"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
   - "corprof.idl"
-apitype: "COM"
+api_type: 
+  - "COM"
 dev_langs: 
   - "C++"
 ms.assetid: f362a896-3247-4894-9727-e48dbbcd2c78

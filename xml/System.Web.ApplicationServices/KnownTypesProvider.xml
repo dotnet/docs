@@ -13,6 +13,7 @@
   <Docs>
     <summary>Creates an array of <see cref="T:System.Type" /> objects that contain the types of individual profile properties.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="GetKnownTypes">
@@ -35,6 +36,7 @@
         <summary>Creates an array of <see cref="T:System.Type" /> objects that contain the types of individual profile properties.</summary>
         <returns>An array of types of individual profile properties.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

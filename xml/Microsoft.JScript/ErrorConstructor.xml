@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a prototype-based object that is defined by a constructor function. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="CreateInstance">
@@ -46,6 +47,7 @@
         <summary>Creates an instance of the prototype-based object, passing in the specified arguments.</summary>
         <returns>The instance of the object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -79,6 +81,7 @@
         <summary>Creates an instance of the prototype-based object, passing in the specified arguments.</summary>
         <returns>The instance of the object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

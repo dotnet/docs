@@ -91,13 +91,13 @@
 ## Remarks  
  The <xref:System.ServiceModel.Security.SecurityTokenAttachmentMode> is an enumeration of the ways in which security tokens can be attached to messages. It includes the following members:  
   
--   <xref:System.ServiceModel.Security.SecurityTokenAttachmentMode>  
+-   <xref:System.ServiceModel.Security.SecurityTokenAttachmentMode.Endorsing>  
   
--   <xref:System.ServiceModel.Security.SecurityTokenAttachmentMode>  
+-   <xref:System.ServiceModel.Security.SecurityTokenAttachmentMode.Signed>  
   
--   <xref:System.ServiceModel.Security.SecurityTokenAttachmentMode>  
+-   <xref:System.ServiceModel.Security.SecurityTokenAttachmentMode.SignedEncrypted>  
   
--   <xref:System.ServiceModel.Security.SecurityTokenAttachmentMode>  
+-   <xref:System.ServiceModel.Security.SecurityTokenAttachmentMode.SignedEndorsing>  
   
  ]]></format>
         </remarks>

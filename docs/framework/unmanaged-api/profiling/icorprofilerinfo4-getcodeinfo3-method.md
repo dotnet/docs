@@ -2,18 +2,19 @@
 title: "ICorProfilerInfo4::GetCodeInfo3 Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo4.GetCodeInfo3"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo4::GetCodeInfo3"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetCodeInfo3 method, ICorProfilerInfo4 interface [.NET Framework profiling]"
   - "ICorProfilerInfo4::GetCodeInfo3 method [.NET Framework profiling]"
 ms.assetid: bb8c105e-4d9a-4684-8c05-ed6909cc1b8c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

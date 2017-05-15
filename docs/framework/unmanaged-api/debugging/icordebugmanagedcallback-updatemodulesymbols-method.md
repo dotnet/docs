@@ -2,18 +2,19 @@
 title: "ICorDebugManagedCallback::UpdateModuleSymbols Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugManagedCallback.UpdateModuleSymbols"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugManagedCallback::UpdateModuleSymbols"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "UpdateModuleSymbols method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::UpdateModuleSymbols method [.NET Framework debugging]"
 ms.assetid: 0863f644-58e8-45a0-b0c3-a28e99b20938
+topic_type: 
+  - "apiref"
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

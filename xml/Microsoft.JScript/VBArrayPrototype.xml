@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides static methods and properties for <see cref="T:Microsoft.JScript.VBArrayObject" /> objects. All methods of this class are called by passing in a reference to the object that is requesting access to the method. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="constructor">
@@ -31,6 +32,7 @@
         <summary>Gets a reference to a prototype-based object that is using this prototype.</summary>
         <value>A reference to a prototype-based object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="dimensions">
@@ -58,6 +60,7 @@
         <summary>Determines the number of dimensions in the specified array.</summary>
         <returns>The number of dimensions in <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="getItem">
@@ -100,6 +103,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="lbound">
@@ -129,6 +133,7 @@
         <summary>Gets the lower bound of the specified dimension in the specified array.</summary>
         <returns>The lower bound of <paramref name="dimension" /> in <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toArray">
@@ -159,6 +164,7 @@
         <returns>
           <paramref name="thisob" /> expressed as an <see cref="T:Microsoft.JScript.ArrayObject" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ubound">
@@ -188,6 +194,7 @@
         <summary>Gets the upper bound of the specified dimension in the specified array.</summary>
         <returns>The upper bound of <paramref name="dimension" /> in <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

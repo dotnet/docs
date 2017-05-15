@@ -18,7 +18,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Encapsulates a [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] drawing surface. This class cannot be inherited.</summary>
+    <summary>Encapsulates a GDI+ drawing surface. This class cannot be inherited.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -29,7 +29,7 @@
   
  You can draw many different shapes and lines by using a <xref:System.Drawing.Graphics> object. For more information about how to draw lines and shapes, see the specific `Draw`*GraphicalElement* method for the line or shape you want to draw. These methods include <xref:System.Drawing.Graphics.DrawLine%2A>, <xref:System.Drawing.Graphics.DrawArc%2A>, <xref:System.Drawing.Graphics.DrawClosedCurve%2A>, <xref:System.Drawing.Graphics.DrawPolygon%2A>, and <xref:System.Drawing.Graphics.DrawRectangle%2A>. For more information about how to draw lines and shapes, see [Using a Pen to Draw Lines and Shapes](~/docs/framework/winforms/advanced/using-a-pen-to-draw-lines-and-shapes.md) and [Using a Brush to Fill Shapes](~/docs/framework/winforms/advanced/using-a-brush-to-fill-shapes.md).  
   
- You can also draw images and icons by using the <xref:System.Drawing.Graphics.DrawImage%2A> and <xref:System.Drawing.Graphics.DrawIcon%2A> methods, respectively. To perform a bit-block transfer of color data from the screen to the drawing surface of the <xref:System.Drawing.Graphics> object, see <xref:System.Drawing.Graphics.CopyFromScreen%2A>. For more information about how to draw images with a <xref:System.Drawing.Graphics> object, see [Working with Images, Bitmaps, Icons, and Metafiles](../Topic/Working%20with%20Images,%20Bitmaps,%20Icons,%20and%20Metafiles.md).  
+ You can also draw images and icons by using the <xref:System.Drawing.Graphics.DrawImage%2A> and <xref:System.Drawing.Graphics.DrawIcon%2A> methods, respectively. To perform a bit-block transfer of color data from the screen to the drawing surface of the <xref:System.Drawing.Graphics> object, see <xref:System.Drawing.Graphics.CopyFromScreen%2A>. For more information about how to draw images with a <xref:System.Drawing.Graphics> object, see [Working with Images, Bitmaps, Icons, and Metafiles](~/docs/framework/winforms/advanced/working-with-images-bitmaps-icons-and-metafiles.md).  
   
  In addition, you can manipulate the coordinate system used by the <xref:System.Drawing.Graphics> object. For more information on the coordinate system and how to manipulate it, see [Coordinate Systems and Transformations](~/docs/framework/winforms/advanced/coordinate-systems-and-transformations.md).  
   
@@ -427,7 +427,7 @@
  The compositing mode determines whether pixels from a source image overwrite or are combined with background pixels.  
   
 > [!NOTE]
->  You should not use a <xref:System.Drawing.Graphics.CompositingMode%2A> property value of <xref:System.Drawing.Drawing2D.CompositingMode> when the <xref:System.Drawing.Graphics.TextRenderingHint%2A> property is set to <xref:System.Drawing.Text.TextRenderingHint>. An exception could occur or the image may not render correctly.  
+>  You should not use a <xref:System.Drawing.Graphics.CompositingMode%2A> property value of <xref:System.Drawing.Drawing2D.CompositingMode.SourceCopy> when the <xref:System.Drawing.Graphics.TextRenderingHint%2A> property is set to <xref:System.Drawing.Text.TextRenderingHint.ClearTypeGridFit>. An exception could occur or the image may not render correctly.  
   
  ]]></format>
         </remarks>
@@ -3497,7 +3497,7 @@
    
   
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code first defines a callback method for the <xref:System.Drawing.Graphics.DrawImageAbort> delegate; the definition is simplistic and merely tests to see whether the [DrawImage Method (Image, PointF\<xref:System.Drawing.Graphics.DrawImage%2A> method calls it with a null `callBackData` parameter. The main body of the example performs the following actions:  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code first defines a callback method for the <xref:System.Drawing.Graphics.DrawImageAbort> delegate; the definition is simplistic and merely tests to see whether the <xref:System.Drawing.Graphics.DrawImage%2A> method calls it with a null `callBackData` parameter. The main body of the example performs the following actions:  
   
 -   Creates an instance of the <xref:System.Drawing.Graphics.DrawImageAbort> callback method.  
   
@@ -3519,7 +3519,7 @@
   
  For the original, unadjusted parallelogram, the position locates the image on the screen, and the size of the rectangle and the size and shape of the parallelogram determines the scaling and shearing of the drawn image.  
   
- Because this example uses an overload that does not pass a `callBackData` parameter, the <xref:System.Drawing.Graphics.DrawImageAbort> callback returns `true`, which causes the [DrawImage Method (Image, PointF\<xref:System.Drawing.Graphics.DrawImage%2A> method to end, and the exception-handling code included in the example prints out the exception text rather than drawing the image.  
+ Because this example uses an overload that does not pass a `callBackData` parameter, the <xref:System.Drawing.Graphics.DrawImageAbort> callback returns `true`, which causes the <xref:System.Drawing.Graphics.DrawImage%2A> method to end, and the exception-handling code included in the example prints out the exception text rather than drawing the image.  
   
  [!code-cpp[System.Drawing.ClassicGraphicsExamples#44](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicGraphicsExamples/CPP/form1.cpp#44)]
  [!code-csharp[System.Drawing.ClassicGraphicsExamples#44](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicGraphicsExamples/CS/form1.cs#44)]
@@ -3578,7 +3578,7 @@
    
   
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code first defines a callback method for the <xref:System.Drawing.Graphics.DrawImageAbort> delegate; the definition is simplistic and merely tests to see whether the [DrawImage Method (Image, Point\<xref:System.Drawing.Graphics.DrawImage%2A> method calls it with a null `callBackData` parameter. The main body of the example performs the following actions:  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code first defines a callback method for the <xref:System.Drawing.Graphics.DrawImageAbort> delegate; the definition is simplistic and merely tests to see whether the <xref:System.Drawing.Graphics.DrawImage%2A> method calls it with a null `callBackData` parameter. The main body of the example performs the following actions:  
   
 -   Creates an instance of the <xref:System.Drawing.Graphics.DrawImageAbort> callback method.  
   
@@ -3600,7 +3600,7 @@
   
  For the original, unadjusted parallelogram, the position locates the image on the screen, and the size of the rectangle and the size and shape of the parallelogram determines the scaling and shearing of the drawn image.  
   
- Because this example uses an overload that passes a `callBackData` parameter, the <xref:System.Drawing.Graphics.DrawImageAbort> callback returns `false`, which causes the [DrawImage Method (Image, Point\<xref:System.Drawing.Graphics.DrawImage%2A> method to continue, and the example draws the adjusted image to the screen.  
+ Because this example uses an overload that passes a `callBackData` parameter, the <xref:System.Drawing.Graphics.DrawImageAbort> callback returns `false`, which causes the <xref:System.Drawing.Graphics.DrawImage%2A> method to continue, and the example draws the adjusted image to the screen.  
   
  [!code-cpp[System.Drawing.ClassicGraphicsExamples#39](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicGraphicsExamples/CPP/form1.cpp#39)]
  [!code-csharp[System.Drawing.ClassicGraphicsExamples#39](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicGraphicsExamples/CS/form1.cs#39)]
@@ -3657,7 +3657,7 @@
    
   
 ## Examples  
- The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Pa`<xref:System.Windows.Forms.Control.Paint> event handler. The code first defines a callback method for the <xref:System.Drawing.Graphics.DrawImageAbort> delegate; the definition is simplistic and merely tests to see whether the [DrawImage Method (Image, PointF\<xref:System.Drawing.Graphics.DrawImage%2A> method calls it with a null `callBackData` parameter. The main body of the example performs the following actions:  
+ The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the `Pa`<xref:System.Windows.Forms.Control.Paint> event handler. The code first defines a callback method for the <xref:System.Drawing.Graphics.DrawImageAbort> delegate; the definition is simplistic and merely tests to see whether the <xref:System.Drawing.Graphics.DrawImage%2A> method calls it with a null `callBackData` parameter. The main body of the example performs the following actions:  
   
 -   Creates an instance of the <xref:System.Drawing.Graphics.DrawImageAbort> callback method.  
   
@@ -3679,7 +3679,7 @@
   
  For the original, unadjusted parallelogram, the position locates the image on the screen, and the size of the rectangle and the size and shape of the parallelogram determines the scaling and shearing of the drawn image.  
   
- Because this example uses an overload that passes a `callBackData` parameter, the <xref:System.Drawing.Graphics.DrawImageAbort> callback returns `false`, which causes the [DrawImage Method (Image, PointF\<xref:System.Drawing.Graphics.DrawImage%2A> method to continue, and the example draws the adjusted image to the screen.  
+ Because this example uses an overload that passes a `callBackData` parameter, the <xref:System.Drawing.Graphics.DrawImageAbort> callback returns `false`, which causes the <xref:System.Drawing.Graphics.DrawImage%2A> method to continue, and the example draws the adjusted image to the screen.  
   
  [!code-cpp[System.Drawing.ClassicGraphicsExamples#45](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicGraphicsExamples/CPP/form1.cpp#45)]
  [!code-csharp[System.Drawing.ClassicGraphicsExamples#45](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicGraphicsExamples/CS/form1.cs#45)]
@@ -5246,7 +5246,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about how to draw a <xref:System.Drawing.RectangleF>, see[DrawRectangles(Pen, RectangleF\<xref:System.Drawing.Graphics.DrawRectangles%28System.Drawing.Pen%2CSystem.Drawing.RectangleF%5B%5D%29>.  
+ For information about how to draw a <xref:System.Drawing.RectangleF>, see<xref:System.Drawing.Graphics.DrawRectangles%28System.Drawing.Pen%2CSystem.Drawing.RectangleF%5B%5D%29>.  
   
    
   
@@ -5300,7 +5300,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about how to draw a <xref:System.Drawing.RectangleF>, see [DrawRectangles(Pen, RectangleF\<xref:System.Drawing.Graphics.DrawRectangles%28System.Drawing.Pen%2CSystem.Drawing.RectangleF%5B%5D%29>.  
+ For information about how to draw a <xref:System.Drawing.RectangleF>, see <xref:System.Drawing.Graphics.DrawRectangles%28System.Drawing.Pen%2CSystem.Drawing.RectangleF%5B%5D%29>.  
   
    
   
@@ -5353,7 +5353,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about how to draw a <xref:System.Drawing.RectangleF>, see [DrawRectangles(Pen, RectangleF\<xref:System.Drawing.Graphics.DrawRectangles%28System.Drawing.Pen%2CSystem.Drawing.RectangleF%5B%5D%29>.  
+ For information about how to draw a <xref:System.Drawing.RectangleF>, see <xref:System.Drawing.Graphics.DrawRectangles%28System.Drawing.Pen%2CSystem.Drawing.RectangleF%5B%5D%29>.  
   
    
   
@@ -7904,7 +7904,7 @@
   
 -   Creates an array of four points to define a spline.  
   
--   Sets the fill mode to <xref:System.Drawing.Drawing2D.FillMode>.  
+-   Sets the fill mode to <xref:System.Drawing.Drawing2D.FillMode.Winding>.  
   
 -   Fills the curve on the screen.  
   
@@ -7966,7 +7966,7 @@
   
 -   Creates an array of four points to define a spline.  
   
--   Sets the fill mode to <xref:System.Drawing.Drawing2D.FillMode>.  
+-   Sets the fill mode to <xref:System.Drawing.Drawing2D.FillMode.Winding>.  
   
 -   Fills the curve on the screen.  
   
@@ -8030,7 +8030,7 @@
   
 -   Creates an array of four points to define a spline.  
   
--   Sets the fill mode to <xref:System.Drawing.Drawing2D.FillMode>.  
+-   Sets the fill mode to <xref:System.Drawing.Drawing2D.FillMode.Winding>.  
   
 -   Sets the tension to 1.0.  
   
@@ -8093,7 +8093,7 @@
   
 -   Creates an array of four points to define a spline.  
   
--   Sets the fill mode to <xref:System.Drawing.Drawing2D.FillMode>.  
+-   Sets the fill mode to <xref:System.Drawing.Drawing2D.FillMode.Winding>.  
   
 -   Sets the tension to 1.0.  
   
@@ -8697,7 +8697,7 @@
   
 -   Creates an array of seven points to define a polygon.  
   
--   Sets the fill mode to <xref:System.Drawing.Drawing2D.FillMode>.  
+-   Sets the fill mode to <xref:System.Drawing.Drawing2D.FillMode.Winding>.  
   
 -   Fills the polygonal area on the screen.  
   
@@ -8753,7 +8753,7 @@
   
 -   Creates an array of seven points to define a polygon.  
   
--   Sets the fill mode to <xref:System.Drawing.Drawing2D.FillMode>.  
+-   Sets the fill mode to <xref:System.Drawing.Drawing2D.FillMode.Winding>.  
   
 -   Fills the polygonal area on the screen.  
   
@@ -9195,7 +9195,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A value of <xref:System.Drawing.Drawing2D.FlushIntention> for the `intention` parameter specifies that the method return immediately after beginning the flush, while a value of <xref:System.Drawing.Drawing2D.FlushIntention> specifies that the method wait before returning until any existing operations finish.  
+ A value of <xref:System.Drawing.Drawing2D.FlushIntention.Flush> for the `intention` parameter specifies that the method return immediately after beginning the flush, while a value of <xref:System.Drawing.Drawing2D.FlushIntention.Sync> specifies that the method wait before returning until any existing operations finish.  
   
  ]]></format>
         </remarks>
@@ -9445,23 +9445,23 @@
 ## Remarks  
  If the image has an indexed pixel format, this method throws an exception with the message, "A Graphics object cannot be created from an image that has an indexed pixel format." The indexed pixel formats are shown in the following list.  
   
--   <xref:System.Drawing.Imaging.PixelFormat>  
+-   <xref:System.Drawing.Imaging.PixelFormat.Format1bppIndexed>  
   
--   <xref:System.Drawing.Imaging.PixelFormat>  
+-   <xref:System.Drawing.Imaging.PixelFormat.Format4bppIndexed>  
   
--   <xref:System.Drawing.Imaging.PixelFormat>  
+-   <xref:System.Drawing.Imaging.PixelFormat.Format8bppIndexed>  
   
  You can save the indexed image as another format by using the <xref:System.Drawing.Image.Save%28System.String%2CSystem.Drawing.Imaging.ImageFormat%29> method and then retrieve a <xref:System.Drawing.Graphics> object for the new image.  
   
  This method also throws an exception if the image has any of the following pixel formats.  
   
--   <xref:System.Drawing.Imaging.PixelFormat>  
+-   <xref:System.Drawing.Imaging.PixelFormat.Undefined>  
   
--   <xref:System.Drawing.Imaging.PixelFormat>  
+-   <xref:System.Drawing.Imaging.PixelFormat.DontCare>  
   
--   <xref:System.Drawing.Imaging.PixelFormat>  
+-   <xref:System.Drawing.Imaging.PixelFormat.Format16bppArgb1555>  
   
--   <xref:System.Drawing.Imaging.PixelFormat>  
+-   <xref:System.Drawing.Imaging.PixelFormat.Format16bppGrayScale>  
   
  You should always call the <xref:System.Drawing.Graphics.Dispose%2A> method to release the <xref:System.Drawing.Graphics> and related resources created by the <xref:System.Drawing.Graphics.FromImage%2A> method.  
   
@@ -9835,7 +9835,7 @@
   
 -   Creates a second rectangle with upper-left corner at (100, 100).  
   
--   Creates a region and sets it to the second rectangle, and sets the clipping region to the intersection of this region and the current clipping region (the first rectangle) using a combine mode of <xref:System.Drawing.Drawing2D.CombineMode>.  
+-   Creates a region and sets it to the second rectangle, and sets the clipping region to the intersection of this region and the current clipping region (the first rectangle) using a combine mode of <xref:System.Drawing.Drawing2D.CombineMode.Replace>.  
   
 -   Fills a large rectangle that includes both previous regions with a solid blue brush.  
   
@@ -9899,7 +9899,7 @@
 ## Examples  
  The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
   
--   Creates a rectangular clipping region and sets it as the clipping region for the graphics object of the form using <xref:System.Drawing.Drawing2D.CombineMode>.  
+-   Creates a rectangular clipping region and sets it as the clipping region for the graphics object of the form using <xref:System.Drawing.Drawing2D.CombineMode.Replace>.  
   
 -   Creates two points, one inside the clipping region and one outside.  
   
@@ -9942,7 +9942,7 @@
 ## Examples  
  The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
   
--   Creates a rectangular clipping region and sets it as the clipping region for the graphics of the form using <xref:System.Drawing.Drawing2D.CombineMode>.  
+-   Creates a rectangular clipping region and sets it as the clipping region for the graphics of the form using <xref:System.Drawing.Drawing2D.CombineMode.Replace>.  
   
 -   Creates two points, one inside the clipping region and one outside.  
   
@@ -9985,7 +9985,7 @@
 ## Examples  
  The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
   
--   Creates a rectangular clipping region and sets it as the clipping region for the graphics object of the form using<xref:System.Drawing.Drawing2D.CombineMode>.  
+-   Creates a rectangular clipping region and sets it as the clipping region for the graphics object of the form using<xref:System.Drawing.Drawing2D.CombineMode.Replace>.  
   
 -   Creates the location and size of two rectangles, one inside the clipping region and one outside.  
   
@@ -10028,7 +10028,7 @@
 ## Examples  
  The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
   
--   Creates a rectangular clipping region and sets it as the clipping region for the graphics object of the form using <xref:System.Drawing.Drawing2D.CombineMode>.  
+-   Creates a rectangular clipping region and sets it as the clipping region for the graphics object of the form using <xref:System.Drawing.Drawing2D.CombineMode.Replace>.  
   
 -   Creates two rectangles, one inside the clipping region and one outside.  
   
@@ -10072,7 +10072,7 @@
 ## Examples  
  The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
   
--   Creates a rectangular clipping region and sets it as the clipping region for the graphics object of the form using <xref:System.Drawing.Drawing2D.CombineMode>.  
+-   Creates a rectangular clipping region and sets it as the clipping region for the graphics object of the form using <xref:System.Drawing.Drawing2D.CombineMode.Replace>.  
   
 -   Creates two points, one inside the clipping region and one outside.  
   
@@ -10116,7 +10116,7 @@
 ## Examples  
  The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
   
--   Creates a rectangular clipping region and sets it as the clipping region for the graphics object of the form using <xref:System.Drawing.Drawing2D.CombineMode>.  
+-   Creates a rectangular clipping region and sets it as the clipping region for the graphics object of the form using <xref:System.Drawing.Drawing2D.CombineMode.Replace>.  
   
 -   Creates two points, one inside the clipping region and one outside.  
   
@@ -10164,7 +10164,7 @@
 ## Examples  
  The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
   
--   Creates a rectangular clipping region and sets it as the clipping region for the graphics object of the form using <xref:System.Drawing.Drawing2D.CombineMode>.  
+-   Creates a rectangular clipping region and sets it as the clipping region for the graphics object of the form using <xref:System.Drawing.Drawing2D.CombineMode.Replace>.  
   
 -   Creates the location and size of two rectangles, one inside the clipping region and one outside.  
   
@@ -10212,7 +10212,7 @@
 ## Examples  
  The following code example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs>`e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. The code performs the following actions:  
   
--   Creates a rectangular clipping region and sets it as the clipping region for the graphics object of the form using <xref:System.Drawing.Drawing2D.CombineMode>.  
+-   Creates a rectangular clipping region and sets it as the clipping region for the graphics object of the form using <xref:System.Drawing.Drawing2D.CombineMode.Replace>.  
   
 -   Creates the location and size of two rectangles, one inside the clipping region and one outside.  
   
@@ -10343,7 +10343,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Graphics.MeasureString%2A> method is designed for use with individual strings and includes a small amount of extra space before and after the string to allow for overhanging glyphs. Also, the <xref:System.Drawing.Graphics.DrawString%2A> method adjusts glyph points to optimize display quality and might display a string narrower than reported by <xref:System.Drawing.Graphics.MeasureString%2A>. To obtain metrics suitable for adjacent strings in layout (for example, when implementing formatted text), use the <xref:System.Drawing.Graphics.MeasureCharacterRanges%2A> method or one of the <xref:System.Drawing.Graphics.MeasureString%2A> methods that takes a <xref:System.Drawing.StringFormat>, and pass <xref:System.Drawing.StringFormat.GenericTypographic%2A>. Also, ensure the <xref:System.Drawing.Graphics.TextRenderingHint%2A> for the <xref:System.Drawing.Graphics> is <xref:System.Drawing.Text.TextRenderingHint>.  
+ The <xref:System.Drawing.Graphics.MeasureString%2A> method is designed for use with individual strings and includes a small amount of extra space before and after the string to allow for overhanging glyphs. Also, the <xref:System.Drawing.Graphics.DrawString%2A> method adjusts glyph points to optimize display quality and might display a string narrower than reported by <xref:System.Drawing.Graphics.MeasureString%2A>. To obtain metrics suitable for adjacent strings in layout (for example, when implementing formatted text), use the <xref:System.Drawing.Graphics.MeasureCharacterRanges%2A> method or one of the <xref:System.Drawing.Graphics.MeasureString%2A> methods that takes a <xref:System.Drawing.StringFormat>, and pass <xref:System.Drawing.StringFormat.GenericTypographic%2A>. Also, ensure the <xref:System.Drawing.Graphics.TextRenderingHint%2A> for the <xref:System.Drawing.Graphics> is <xref:System.Drawing.Text.TextRenderingHint.AntiAlias>.  
   
    
   
@@ -10399,7 +10399,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Graphics.MeasureString%2A> method is designed for use with individual strings and includes a small amount of extra space before and after the string to allow for overhanging glyphs. Also, the <xref:System.Drawing.Graphics.DrawString%2A> method adjusts glyph points to optimize display quality and might display a string narrower than reported by <xref:System.Drawing.Graphics.MeasureString%2A>. To obtain metrics suitable for adjacent strings in layout (for example, when implementing formatted text), use the <xref:System.Drawing.Graphics.MeasureCharacterRanges%2A> method or one of the <xref:System.Drawing.Graphics.MeasureString%2A> methods that takes a <xref:System.Drawing.StringFormat>, and pass <xref:System.Drawing.StringFormat.GenericTypographic%2A>. Also, ensure the <xref:System.Drawing.Graphics.TextRenderingHint%2A> for the <xref:System.Drawing.Graphics> is <xref:System.Drawing.Text.TextRenderingHint>.  
+ The <xref:System.Drawing.Graphics.MeasureString%2A> method is designed for use with individual strings and includes a small amount of extra space before and after the string to allow for overhanging glyphs. Also, the <xref:System.Drawing.Graphics.DrawString%2A> method adjusts glyph points to optimize display quality and might display a string narrower than reported by <xref:System.Drawing.Graphics.MeasureString%2A>. To obtain metrics suitable for adjacent strings in layout (for example, when implementing formatted text), use the <xref:System.Drawing.Graphics.MeasureCharacterRanges%2A> method or one of the <xref:System.Drawing.Graphics.MeasureString%2A> methods that takes a <xref:System.Drawing.StringFormat>, and pass <xref:System.Drawing.StringFormat.GenericTypographic%2A>. Also, ensure the <xref:System.Drawing.Graphics.TextRenderingHint%2A> for the <xref:System.Drawing.Graphics> is <xref:System.Drawing.Text.TextRenderingHint.AntiAlias>.  
   
    
   
@@ -10456,7 +10456,7 @@
 ## Remarks  
  The `width` parameter specifies the maximum value of the width component of the returned <xref:System.Drawing.SizeF> structure (<xref:System.Drawing.SizeF.Width%2A>). If the `width` parameter is less than the actual width of the string, the returned <xref:System.Drawing.SizeF.Width%2A> component is truncated to a value representing the maximum number of characters that will fit within the specified width. To accommodate the entire string, the returned <xref:System.Drawing.SizeF.Height%2A> component is adjusted to a value that allows displaying the string with character wrap.  
   
- The <xref:System.Drawing.Graphics.MeasureString%2A> method is designed for use with individual strings and includes a small amount of extra space before and after the string to allow for overhanging glyphs. Also, the <xref:System.Drawing.Graphics.DrawString%2A> method adjusts glyph points to optimize display quality and might display a string narrower than reported by <xref:System.Drawing.Graphics.MeasureString%2A>. To obtain metrics suitable for adjacent strings in layout (for example, when implementing formatted text), use the <xref:System.Drawing.Graphics.MeasureCharacterRanges%2A> method or one of the <xref:System.Drawing.Graphics.MeasureString%2A> methods that takes a <xref:System.Drawing.StringFormat>, and pass <xref:System.Drawing.StringFormat.GenericTypographic%2A>. Also, ensure the <xref:System.Drawing.Graphics.TextRenderingHint%2A> for the <xref:System.Drawing.Graphics> is <xref:System.Drawing.Text.TextRenderingHint>.  
+ The <xref:System.Drawing.Graphics.MeasureString%2A> method is designed for use with individual strings and includes a small amount of extra space before and after the string to allow for overhanging glyphs. Also, the <xref:System.Drawing.Graphics.DrawString%2A> method adjusts glyph points to optimize display quality and might display a string narrower than reported by <xref:System.Drawing.Graphics.MeasureString%2A>. To obtain metrics suitable for adjacent strings in layout (for example, when implementing formatted text), use the <xref:System.Drawing.Graphics.MeasureCharacterRanges%2A> method or one of the <xref:System.Drawing.Graphics.MeasureString%2A> methods that takes a <xref:System.Drawing.StringFormat>, and pass <xref:System.Drawing.StringFormat.GenericTypographic%2A>. Also, ensure the <xref:System.Drawing.Graphics.TextRenderingHint%2A> for the <xref:System.Drawing.Graphics> is <xref:System.Drawing.Text.TextRenderingHint.AntiAlias>.  
   
    
   
@@ -10515,7 +10515,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Graphics.MeasureString%2A> method is designed for use with individual strings and includes a small amount of extra space before and after the string to allow for overhanging glyphs. Also, the <xref:System.Drawing.Graphics.DrawString%2A> method adjusts glyph points to optimize display quality and might display a string narrower than reported by <xref:System.Drawing.Graphics.MeasureString%2A>. To obtain metrics suitable for adjacent strings in layout (for example, when implementing formatted text), use the <xref:System.Drawing.Graphics.MeasureCharacterRanges%2A> method or one of the <xref:System.Drawing.Graphics.MeasureString%2A> methods that takes a <xref:System.Drawing.StringFormat>, and pass <xref:System.Drawing.StringFormat.GenericTypographic%2A>. Also, ensure the <xref:System.Drawing.Graphics.TextRenderingHint%2A> for the <xref:System.Drawing.Graphics> is <xref:System.Drawing.Text.TextRenderingHint>.  
+ The <xref:System.Drawing.Graphics.MeasureString%2A> method is designed for use with individual strings and includes a small amount of extra space before and after the string to allow for overhanging glyphs. Also, the <xref:System.Drawing.Graphics.DrawString%2A> method adjusts glyph points to optimize display quality and might display a string narrower than reported by <xref:System.Drawing.Graphics.MeasureString%2A>. To obtain metrics suitable for adjacent strings in layout (for example, when implementing formatted text), use the <xref:System.Drawing.Graphics.MeasureCharacterRanges%2A> method or one of the <xref:System.Drawing.Graphics.MeasureString%2A> methods that takes a <xref:System.Drawing.StringFormat>, and pass <xref:System.Drawing.StringFormat.GenericTypographic%2A>. Also, ensure the <xref:System.Drawing.Graphics.TextRenderingHint%2A> for the <xref:System.Drawing.Graphics> is <xref:System.Drawing.Text.TextRenderingHint.AntiAlias>.  
   
    
   
@@ -10526,7 +10526,7 @@
   
 -   Creates a point to locate the upper-left corner of the string.  
   
--   Creates a string format object and sets its format flags to <xref:System.Drawing.StringFormatFlags>.  
+-   Creates a string format object and sets its format flags to <xref:System.Drawing.StringFormatFlags.DirectionVertical>.  
   
 -   Creates a size object to measure the string.  
   
@@ -10580,7 +10580,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Graphics.MeasureString%2A> method is designed for use with individual strings and includes a small amount of extra space before and after the string to allow for overhanging glyphs. Also, the <xref:System.Drawing.Graphics.DrawString%2A> method adjusts glyph points to optimize display quality and might display a string narrower than reported by <xref:System.Drawing.Graphics.MeasureString%2A>. To obtain metrics suitable for adjacent strings in layout (for example, when implementing formatted text), use the <xref:System.Drawing.Graphics.MeasureCharacterRanges%2A> method or one of the <xref:System.Drawing.Graphics.MeasureString%2A> methods that takes a <xref:System.Drawing.StringFormat>, and pass <xref:System.Drawing.StringFormat.GenericTypographic%2A>. Also, ensure the <xref:System.Drawing.Graphics.TextRenderingHint%2A> for the <xref:System.Drawing.Graphics> is <xref:System.Drawing.Text.TextRenderingHint>.  
+ The <xref:System.Drawing.Graphics.MeasureString%2A> method is designed for use with individual strings and includes a small amount of extra space before and after the string to allow for overhanging glyphs. Also, the <xref:System.Drawing.Graphics.DrawString%2A> method adjusts glyph points to optimize display quality and might display a string narrower than reported by <xref:System.Drawing.Graphics.MeasureString%2A>. To obtain metrics suitable for adjacent strings in layout (for example, when implementing formatted text), use the <xref:System.Drawing.Graphics.MeasureCharacterRanges%2A> method or one of the <xref:System.Drawing.Graphics.MeasureString%2A> methods that takes a <xref:System.Drawing.StringFormat>, and pass <xref:System.Drawing.StringFormat.GenericTypographic%2A>. Also, ensure the <xref:System.Drawing.Graphics.TextRenderingHint%2A> for the <xref:System.Drawing.Graphics> is <xref:System.Drawing.Text.TextRenderingHint.AntiAlias>.  
   
    
   
@@ -10591,7 +10591,7 @@
   
 -   Sets the maximum layout size of the string, creating a size object to measure the string.  
   
--   Creates a string format object and sets its format flags to <xref:System.Drawing.StringFormatFlags>.  
+-   Creates a string format object and sets its format flags to <xref:System.Drawing.StringFormatFlags.DirectionVertical>.  
   
 -   Measures the size of the string, using the string, the font object, the maximum layout size, and the string format.  
   
@@ -10642,7 +10642,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Graphics.MeasureString%2A> method is designed for use with individual strings and includes a small amount of extra space before and after the string to allow for overhanging glyphs. Also, the <xref:System.Drawing.Graphics.DrawString%2A> method adjusts glyph points to optimize display quality and might display a string narrower than reported by <xref:System.Drawing.Graphics.MeasureString%2A>. To obtain metrics suitable for adjacent strings in layout (for example, when implementing formatted text), use the <xref:System.Drawing.Graphics.MeasureCharacterRanges%2A> method or one of the <xref:System.Drawing.Graphics.MeasureString%2A> methods that takes a <xref:System.Drawing.StringFormat>, and pass <xref:System.Drawing.StringFormat.GenericTypographic%2A>. Also, ensure the <xref:System.Drawing.Graphics.TextRenderingHint%2A> for the <xref:System.Drawing.Graphics> is <xref:System.Drawing.Text.TextRenderingHint>.  
+ The <xref:System.Drawing.Graphics.MeasureString%2A> method is designed for use with individual strings and includes a small amount of extra space before and after the string to allow for overhanging glyphs. Also, the <xref:System.Drawing.Graphics.DrawString%2A> method adjusts glyph points to optimize display quality and might display a string narrower than reported by <xref:System.Drawing.Graphics.MeasureString%2A>. To obtain metrics suitable for adjacent strings in layout (for example, when implementing formatted text), use the <xref:System.Drawing.Graphics.MeasureCharacterRanges%2A> method or one of the <xref:System.Drawing.Graphics.MeasureString%2A> methods that takes a <xref:System.Drawing.StringFormat>, and pass <xref:System.Drawing.StringFormat.GenericTypographic%2A>. Also, ensure the <xref:System.Drawing.Graphics.TextRenderingHint%2A> for the <xref:System.Drawing.Graphics> is <xref:System.Drawing.Text.TextRenderingHint.AntiAlias>.  
   
    
   
@@ -10653,7 +10653,7 @@
   
 -   Sets the maximum width of the string.  
   
--   Creates a string format object and sets its format flags to<xref:System.Drawing.StringFormatFlags>.  
+-   Creates a string format object and sets its format flags to<xref:System.Drawing.StringFormatFlags.DirectionVertical>.  
   
 -   Creates a size object to measure the string.  
   
@@ -10711,7 +10711,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Graphics.MeasureString%2A> method is designed for use with individual strings and includes a small amount of extra space before and after the string to allow for overhanging glyphs. Also, the <xref:System.Drawing.Graphics.DrawString%2A> method adjusts glyph points to optimize display quality and might display a string narrower than reported by <xref:System.Drawing.Graphics.MeasureString%2A>. To obtain metrics suitable for adjacent strings in layout (for example, when implementing formatted text), use the <xref:System.Drawing.Graphics.MeasureCharacterRanges%2A> method or one of the <xref:System.Drawing.Graphics.MeasureString%2A> methods that takes a <xref:System.Drawing.StringFormat> and pass <xref:System.Drawing.StringFormat.GenericTypographic%2A>. Also ensure the <xref:System.Drawing.Graphics.TextRenderingHint%2A> for the <xref:System.Drawing.Graphics> is <xref:System.Drawing.Text.TextRenderingHint>.  
+ The <xref:System.Drawing.Graphics.MeasureString%2A> method is designed for use with individual strings and includes a small amount of extra space before and after the string to allow for overhanging glyphs. Also, the <xref:System.Drawing.Graphics.DrawString%2A> method adjusts glyph points to optimize display quality and might display a string narrower than reported by <xref:System.Drawing.Graphics.MeasureString%2A>. To obtain metrics suitable for adjacent strings in layout (for example, when implementing formatted text), use the <xref:System.Drawing.Graphics.MeasureCharacterRanges%2A> method or one of the <xref:System.Drawing.Graphics.MeasureString%2A> methods that takes a <xref:System.Drawing.StringFormat> and pass <xref:System.Drawing.StringFormat.GenericTypographic%2A>. Also ensure the <xref:System.Drawing.Graphics.TextRenderingHint%2A> for the <xref:System.Drawing.Graphics> is <xref:System.Drawing.Text.TextRenderingHint.AntiAlias>.  
   
    
   
@@ -10722,7 +10722,7 @@
   
 -   Sets the maximum layout size of the string.  
   
--   Creates a string format object and sets its format flags to <xref:System.Drawing.StringFormatFlags>.  
+-   Creates a string format object and sets its format flags to <xref:System.Drawing.StringFormatFlags.DirectionVertical>.  
   
 -   Creates the integer variables `charactersFitted` and `linesFilled` and a size object to measure the string.  
   
@@ -10817,7 +10817,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A value of<xref:System.Drawing.Drawing2D.MatrixOrder> for the `order` parameter specifies that the order of the multiplication is `matrix` x world transformation. A value of <xref:System.Drawing.Drawing2D.MatrixOrder> for `order` specifies that the order of the multiplication is world transformation x `matrix`.  
+ A value of<xref:System.Drawing.Drawing2D.MatrixOrder.Prepend> for the `order` parameter specifies that the order of the multiplication is `matrix` x world transformation. A value of <xref:System.Drawing.Drawing2D.MatrixOrder.Append> for `order` specifies that the order of the multiplication is world transformation x `matrix`.  
   
    
   
@@ -11284,7 +11284,7 @@
   
 -   Translates the world transformation matrix of the Windows Form by the vector (100, 0).  
   
--   Rotates the world transform by an angle of 30 degrees, appending the rotation matrix to the world transformation matrix with <xref:System.Drawing.Drawing2D.MatrixOrder>.  
+-   Rotates the world transform by an angle of 30 degrees, appending the rotation matrix to the world transformation matrix with <xref:System.Drawing.Drawing2D.MatrixOrder.Append>.  
   
 -   Draws a translated, rotated ellipse with a blue pen.  
   
@@ -11429,7 +11429,7 @@
   
 -   Rotates the world transformation matrix of the Windows Form by 30 degrees.  
   
--   Scales that matrix by a factor of 3 in the x direction and a factor of 1 in the y direction by appending the scaling transformation with the <xref:System.Drawing.Drawing2D.MatrixOrder> member.  
+-   Scales that matrix by a factor of 3 in the x direction and a factor of 1 in the y direction by appending the scaling transformation with the <xref:System.Drawing.Drawing2D.MatrixOrder.Append> member.  
   
 -   Draws a rotated, scaled rectangle with a blue pen.  
   
@@ -11648,7 +11648,7 @@
   
 -   Creates a graphics path and adds an ellipse to the path.  
   
--   Sets the clipping region to the elliptical path with the <xref:System.Drawing.Drawing2D.CombineMode> member.  
+-   Sets the clipping region to the elliptical path with the <xref:System.Drawing.Drawing2D.CombineMode.Replace> member.  
   
 -   Fills a large rectangle with a solid black brush.  
   
@@ -11693,7 +11693,7 @@
   
 -   Sets the clipping region of the temporary <xref:System.Drawing.Graphics> to a small square.  
   
--   Updates the clipping region of the form's graphic object to that of the new <xref:System.Drawing.Graphics> with the <xref:System.Drawing.Drawing2D.CombineMode> member.  
+-   Updates the clipping region of the form's graphic object to that of the new <xref:System.Drawing.Graphics> with the <xref:System.Drawing.Drawing2D.CombineMode.Replace> member.  
   
 -   Fills a large rectangle with a solid black brush.  
   
@@ -11736,7 +11736,7 @@
   
 -   Creates a small rectangle for the clipping region.  
   
--   Sets the clipping region to the rectangle with the <xref:System.Drawing.Drawing2D.CombineMode> member.  
+-   Sets the clipping region to the rectangle with the <xref:System.Drawing.Drawing2D.CombineMode.Replace> member.  
   
 -   Fills a large rectangle with a solid black brush.  
   
@@ -11779,7 +11779,7 @@
   
 -   Creates a small rectangle for the clipping region.  
   
--   Sets the clipping region to the rectangle with the <xref:System.Drawing.Drawing2D.CombineMode> member.  
+-   Sets the clipping region to the rectangle with the <xref:System.Drawing.Drawing2D.CombineMode.Replace> member.  
   
 -   Fills a large rectangle with a solid black brush.  
   
@@ -11822,7 +11822,7 @@
   
 -   Creates a small rectangle for the clipping region.  
   
--   Sets the clipping region to the rectangle with the <xref:System.Drawing.Drawing2D.CombineMode> member.  
+-   Sets the clipping region to the rectangle with the <xref:System.Drawing.Drawing2D.CombineMode.Replace> member.  
   
 -   Fills a large rectangle with a solid black brush.  
   
@@ -11932,7 +11932,7 @@
  The text rendering hint specifies whether text renders with antialiasing.  
   
 > [!NOTE]
->  You should not use a <xref:System.Drawing.Graphics.CompositingMode%2A> property value of <xref:System.Drawing.Drawing2D.CompositingMode> when the <xref:System.Drawing.Graphics.TextRenderingHint%2A> property is set to <xref:System.Drawing.Text.TextRenderingHint>. An exception could occur or the image may not render correctly.  
+>  You should not use a <xref:System.Drawing.Graphics.CompositingMode%2A> property value of <xref:System.Drawing.Drawing2D.CompositingMode.SourceCopy> when the <xref:System.Drawing.Graphics.TextRenderingHint%2A> property is set to <xref:System.Drawing.Text.TextRenderingHint.ClearTypeGridFit>. An exception could occur or the image may not render correctly.  
   
    
   
@@ -12008,7 +12008,7 @@
   
 -   Sets the world transform to translate by amounts 40 in the x direction and 30 in the y direction.  
   
--   Transforms the points from world coordinates (<xref:System.Drawing.Drawing2D.CoordinateSpace>) to page coordinates (<xref:System.Drawing.Drawing2D.CoordinateSpace>).  
+-   Transforms the points from world coordinates (<xref:System.Drawing.Drawing2D.CoordinateSpace.World>) to page coordinates (<xref:System.Drawing.Drawing2D.CoordinateSpace.Page>).  
   
 -   Resets the world transformation to the identity.  
   
@@ -12056,7 +12056,7 @@
   
 -   Sets the world transform to translate by amounts 40 in the x direction and 30 in the y direction.  
   
--   Transforms the points from world coordinates (<xref:System.Drawing.Drawing2D.CoordinateSpace>) to page coordinates (<xref:System.Drawing.Drawing2D.CoordinateSpace>).  
+-   Transforms the points from world coordinates (<xref:System.Drawing.Drawing2D.CoordinateSpace.World>) to page coordinates (<xref:System.Drawing.Drawing2D.CoordinateSpace.Page>).  
   
 -   Resets the world transformation to the identity and draws a red line between the transformed points.  
   

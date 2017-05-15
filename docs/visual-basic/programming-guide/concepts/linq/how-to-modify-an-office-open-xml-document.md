@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 1cefd7f5-8e39-44c4-869c-f8021538a777
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Modify an Office Open XML Document (Visual Basic)

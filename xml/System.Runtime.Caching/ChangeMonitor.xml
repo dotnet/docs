@@ -78,12 +78,10 @@
   
     -   The internal implementation of the <see cref="M:System.Runtime.Caching.ChangeMonitor.OnChanged(System.Object)" /> method automatically calls the <see cref="Overload:System.Runtime.Caching.ChangeMonitor.Dispose" /> method after it calls a callback that is registered through <see cref="M:System.Runtime.Caching.ChangeMonitor.NotifyOnChanged(System.Runtime.Caching.OnChangedCallback)" />.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  This automatic call to the dispose method during the event firing only occurs if the initialization of the <see cref="T:System.Runtime.Caching.ChangeMonitor" /> instance was previously completed.  
   
-</para>  
-</block>  
+</para></block>  
   
  When a derived change monitor's constructor calls the <see cref="M:System.Runtime.Caching.ChangeMonitor.InitializationComplete" /> method, if the state of the change monitor has already changed (that is, the state that is monitored already changed when the constructor was still active) then the <see cref="M:System.Runtime.Caching.ChangeMonitor.InitializationComplete" /> method will automatically dispose of the change monitor.  
   
@@ -116,6 +114,23 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Runtime.Caching.ChangeMonitor" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Caching.ChangeMonitor.Dispose%2A> method is used to release the <xref:System.Runtime.Caching.ChangeMonitor> instance and related resources. The public <xref:System.Runtime.Caching.ChangeMonitor.Dispose%2A> method is invoked to coordinate the disposal process with key life-cycle events of derived change-monitor classes (such as initialization), and to release the <xref:System.Runtime.Caching.ChangeMonitor> instance so that the instance can be garbage collected. The <xref:System.Runtime.Caching.ChangeMonitor.Dispose%2A> method is implemented by derived change-monitor classes to dispose of their managed and unmanaged resources.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
@@ -397,22 +412,5 @@
         </block>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Caching</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases all resources used by the current instance of the <see cref="T:System.Runtime.Caching.ChangeMonitor" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Runtime.Caching.ChangeMonitor.Dispose%2A> method is used to release the <xref:System.Runtime.Caching.ChangeMonitor> instance and related resources. The public <xref:System.Runtime.Caching.ChangeMonitor.Dispose%2A> method is invoked to coordinate the disposal process with key life-cycle events of derived change-monitor classes (such as initialization), and to release the <xref:System.Runtime.Caching.ChangeMonitor> instance so that the instance can be garbage collected. The <xref:System.Runtime.Caching.ChangeMonitor.Dispose%2A> method is implemented by derived change-monitor classes to dispose of their managed and unmanaged resources.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

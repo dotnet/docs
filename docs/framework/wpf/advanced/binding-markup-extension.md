@@ -2,7 +2,7 @@
 title: "Binding Markup Extension | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "XAML, Binding markup extension"
 ms.assetid: 83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63
 caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Binding Markup Extension
@@ -26,14 +26,14 @@ Defers a property value to be a data-bound value, creating an intermediate expre
 ## Binding Expression Usage  
   
 ```  
-<object property="{Binding}" .../>  
+<object property="{Binding}" .../>  
 -or-  
-<object property="{Binding  bindProp1=value1[, bindPropN=valueN]*}" ...  
+<object property="{Binding  bindProp1=value1[, bindPropN=valueN]*}" ...  
 />  
 -or-  
-<object property="{Binding path}" .../>  
+<object property="{Binding path}" .../>  
 -or  
-<object property="{Binding path[, bindPropN=valueN]*}" .../>  
+<object property="{Binding path[, bindPropN=valueN]*}" .../>  
 ```  
   
 ## Syntax Notes  

@@ -35,7 +35,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a WPF framework-level set of properties, events, and methods for [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] elements. This class represents the provided WPF framework-level implementation that is built on the WPF core-level [!INCLUDE[TLA#tla_api#plural](~/includes/tlasharptla-apisharpplural-md.md)] that are defined by <see cref="T:System.Windows.UIElement" />.</summary>
+    <summary>Provides a WPF framework-level set of properties, events, and methods for Windows Presentation Foundation (WPF) elements. This class represents the provided WPF framework-level implementation that is built on the WPF core-level APIs that are defined by <see cref="T:System.Windows.UIElement" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -430,9 +430,9 @@
  Handoff behavior can be specified as an attribute of <xref:System.Windows.Media.Animation.BeginStoryboard>.  
   
 ## Using the Compose HandoffBehavior  
- When you apply a <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.Media.Animation.AnimationTimeline>, or <xref:System.Windows.Media.Animation.AnimationClock> to a property by using the <xref:System.Windows.Media.Animation.HandoffBehavior> <xref:System.Windows.Media.Animation.HandoffBehavior>, any <xref:System.Windows.Media.Animation.Clock> objects previously associated with that property continue to consume system resources; the timing system does not remove the clocks automatically.  
+ When you apply a <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.Media.Animation.AnimationTimeline>, or <xref:System.Windows.Media.Animation.AnimationClock> to a property by using the <xref:System.Windows.Media.Animation.HandoffBehavior.Compose> <xref:System.Windows.Media.Animation.HandoffBehavior>, any <xref:System.Windows.Media.Animation.Clock> objects previously associated with that property continue to consume system resources; the timing system does not remove the clocks automatically.  
   
- To avoid performance issues when you apply a large number of clocks by using <xref:System.Windows.Media.Animation.HandoffBehavior>, you should remove composing clocks from the animated property after they complete. There are several ways to remove a clock:  
+ To avoid performance issues when you apply a large number of clocks by using <xref:System.Windows.Media.Animation.HandoffBehavior.Compose>, you should remove composing clocks from the animated property after they complete. There are several ways to remove a clock:  
   
 -   To remove all clocks from a property, use the <xref:System.Windows.Media.Animation.Animatable.ApplyAnimationClock%28System.Windows.DependencyProperty%2CSystem.Windows.Media.Animation.AnimationClock%29> or <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%28System.Windows.DependencyProperty%2CSystem.Windows.Media.Animation.AnimationTimeline%29> method of the animated object. Specify the property being animated as the first parameter, and `null` as the second. This removes all animation clocks from the property.  
   
@@ -487,9 +487,9 @@
  Handoff behavior can be specified as an attribute of <xref:System.Windows.Media.Animation.BeginStoryboard>.  
   
 ## Using the Compose HandoffBehavior  
- When you apply a <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.Media.Animation.AnimationTimeline>, or <xref:System.Windows.Media.Animation.AnimationClock> to a property by using the <xref:System.Windows.Media.Animation.HandoffBehavior> <xref:System.Windows.Media.Animation.HandoffBehavior>, any <xref:System.Windows.Media.Animation.Clock> objects previously associated with that property continue to consume system resources; the timing system does not remove the clocks automatically.  
+ When you apply a <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.Media.Animation.AnimationTimeline>, or <xref:System.Windows.Media.Animation.AnimationClock> to a property by using the <xref:System.Windows.Media.Animation.HandoffBehavior.Compose> <xref:System.Windows.Media.Animation.HandoffBehavior>, any <xref:System.Windows.Media.Animation.Clock> objects previously associated with that property continue to consume system resources; the timing system does not remove the clocks automatically.  
   
- To avoid performance issues when you apply a large number of clocks by using <xref:System.Windows.Media.Animation.HandoffBehavior>, you should remove composing clocks from the animated property after they complete. There are several ways to remove a clock:  
+ To avoid performance issues when you apply a large number of clocks by using <xref:System.Windows.Media.Animation.HandoffBehavior.Compose>, you should remove composing clocks from the animated property after they complete. There are several ways to remove a clock:  
   
 -   To remove all clocks from a property, use the <xref:System.Windows.Media.Animation.Animatable.ApplyAnimationClock%28System.Windows.DependencyProperty%2CSystem.Windows.Media.Animation.AnimationClock%29> or <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%28System.Windows.DependencyProperty%2CSystem.Windows.Media.Animation.AnimationTimeline%29> method of the animated object. Specify the property being animated as the first parameter, and `null` as the second. This removes all animation clocks from the property.  
   
@@ -599,7 +599,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By calling this method, you raise a <xref:System.Windows.FrameworkElement.RequestBringIntoView> event that originates from the current element. This event is raised so that it can be handled by a <xref:System.Windows.Controls.ScrollViewer>, or a derived or similar class. The expected behavior is that the event is handled by the parent element, marked handled in the event data, and the source of the event is brought into view through the logic embedded in the <xref:System.Windows.Controls.ScrollViewer> control. Neither the <xref:System.Windows.FrameworkElement.RequestBringIntoView> event nor the <xref:System.Windows.FrameworkElement.BringIntoView%2A> method transmit any information about success or failure, other than that the event is typically marked handled on success. Reasons for failure can include the element settings, such as <xref:System.Windows.UIElement.Visibility%2A> being some value other than <xref:System.Windows.Visibility>.  
+ By calling this method, you raise a <xref:System.Windows.FrameworkElement.RequestBringIntoView> event that originates from the current element. This event is raised so that it can be handled by a <xref:System.Windows.Controls.ScrollViewer>, or a derived or similar class. The expected behavior is that the event is handled by the parent element, marked handled in the event data, and the source of the event is brought into view through the logic embedded in the <xref:System.Windows.Controls.ScrollViewer> control. Neither the <xref:System.Windows.FrameworkElement.RequestBringIntoView> event nor the <xref:System.Windows.FrameworkElement.BringIntoView%2A> method transmit any information about success or failure, other than that the event is typically marked handled on success. Reasons for failure can include the element settings, such as <xref:System.Windows.UIElement.Visibility%2A> being some value other than <xref:System.Windows.Visibility.Visible>.  
   
  If you use the signature that does not specify a `targetRectangle`, then the entire element size (its <xref:System.Windows.UIElement.RenderSize%2A>) will be made visible.  
   
@@ -639,7 +639,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By calling this method, you raise a <xref:System.Windows.FrameworkElement.RequestBringIntoView> event that originates from the current element. This event is raised so that it can be handled by a <xref:System.Windows.Controls.ScrollViewer>, or a derived or similar class. The expected behavior is that the event is handled by the parent element, marked handled in the event data, and the source of the event is brought into view through the logic embedded in the <xref:System.Windows.Controls.ScrollViewer> control. Neither the <xref:System.Windows.FrameworkElement.RequestBringIntoView> event nor the <xref:System.Windows.FrameworkElement.BringIntoView%2A> method transmit any information about success or failure, other than that the event is typically marked handled on success. Reasons for failure can include the element settings, such as <xref:System.Windows.UIElement.Visibility%2A> being some value other than <xref:System.Windows.Visibility>.  
+ By calling this method, you raise a <xref:System.Windows.FrameworkElement.RequestBringIntoView> event that originates from the current element. This event is raised so that it can be handled by a <xref:System.Windows.Controls.ScrollViewer>, or a derived or similar class. The expected behavior is that the event is handled by the parent element, marked handled in the event data, and the source of the event is brought into view through the logic embedded in the <xref:System.Windows.Controls.ScrollViewer> control. Neither the <xref:System.Windows.FrameworkElement.RequestBringIntoView> event nor the <xref:System.Windows.FrameworkElement.BringIntoView%2A> method transmit any information about success or failure, other than that the event is typically marked handled on success. Reasons for failure can include the element settings, such as <xref:System.Windows.UIElement.Visibility%2A> being some value other than <xref:System.Windows.Visibility.Visible>.  
   
  If you use the signature that does not specify a `targetRectangle`, then the entire element size (its <xref:System.Windows.UIElement.RenderSize%2A>) will be made visible.  
   
@@ -1097,7 +1097,7 @@
    
   
 ## Examples  
- The following example illustrates the dependency property metadata override usage discussed in Remarks. This code defines a custom control class `NumericUpDown` intended to be used from a dedicated control library assembly. The illustrated static constructor references some private initialization function, registers a class handler (another common control subclassing scenario; see [Marking Routed Events as Handled, and Class Handling](../Topic/Marking%20Routed%20Events%20as%20Handled,%20and%20Class%20Handling.md)) and finally overrides the <xref:System.Windows.FrameworkElement.DefaultStyleKey%2A> dependency property metadata on the `NumericUpDown` class. <xref:System.Windows.FrameworkElement.DefaultStyleKey%2A> always returns its own type as the intended key, which is the convention that the theme style system uses to look up the style for some arbitrary otherwise non-styled control. The complete sample also defines the actual control's theme style that is referenced by that key; see [NumericUpDown Custom Control with Theme and UI Automation Support Sample](http://go.microsoft.com/fwlink/?LinkID=160025).  
+ The following example illustrates the dependency property metadata override usage discussed in Remarks. This code defines a custom control class `NumericUpDown` intended to be used from a dedicated control library assembly. The illustrated static constructor references some private initialization function, registers a class handler (another common control subclassing scenario; see [Marking Routed Events as Handled, and Class Handling](~/docs/framework/wpf/advanced/marking-routed-events-as-handled-and-class-handling.md)) and finally overrides the <xref:System.Windows.FrameworkElement.DefaultStyleKey%2A> dependency property metadata on the `NumericUpDown` class. <xref:System.Windows.FrameworkElement.DefaultStyleKey%2A> always returns its own type as the intended key, which is the convention that the theme style system uses to look up the style for some arbitrary otherwise non-styled control. The complete sample also defines the actual control's theme style that is referenced by that key; see [NumericUpDown Custom Control with Theme and UI Automation Support Sample](http://go.microsoft.com/fwlink/?LinkID=160025).  
   
  [!code-csharp[CustomControlNumericUpDown#StaticCtorOfCustomClassCommonTasks](~/samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp/CustomControlLibrary/NumericUpDown.cs#staticctorofcustomclasscommontasks)]
  [!code-vb[CustomControlNumericUpDown#StaticCtorOfCustomClassCommonTasks](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic/customcontrollibrary/numericupdown.vb#staticctorofcustomclasscommontasks)]  
@@ -1333,7 +1333,7 @@
 ## Remarks  
  This property affects visual appearance but does not report <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A> in metadata. This is because the visual appearance change is event-driven and may not apply at all times, and therefore should not generally report any visual or layout information in metadata.  
   
- Conceptually, the visual behavior of focus applied to a control should be coherent from control to control. The most sensible way to enforce coherence is to only change the focus visual style if you are composing an entire theme. Setting this property on individual control styles and not as part of a theme is not the intended usage of this property, because it may lead to a confusing user experience regarding keyboard focus. If you are intending control-specific behavior that is deliberately not coherent across a theme, a much better approach is to use triggers in styles for individual input state properties, such as <xref:System.Windows.UIElement.IsFocused%2A> or <xref:System.Windows.UIElement.IsKeyboardFocusWithin%2A>, and to do so in a way that does not visually interfere with any existing focus visual style. For more information on the design intention of <xref:System.Windows.FrameworkElement.FocusVisualStyle%2A> and alternative focus properties, see [Styling for Focus in Controls, and FocusVisualStyle](../Topic/Styling%20for%20Focus%20in%20Controls,%20and%20FocusVisualStyle.md).  
+ Conceptually, the visual behavior of focus applied to a control should be coherent from control to control. The most sensible way to enforce coherence is to only change the focus visual style if you are composing an entire theme. Setting this property on individual control styles and not as part of a theme is not the intended usage of this property, because it may lead to a confusing user experience regarding keyboard focus. If you are intending control-specific behavior that is deliberately not coherent across a theme, a much better approach is to use triggers in styles for individual input state properties, such as <xref:System.Windows.UIElement.IsFocused%2A> or <xref:System.Windows.UIElement.IsKeyboardFocusWithin%2A>, and to do so in a way that does not visually interfere with any existing focus visual style. For more information on the design intention of <xref:System.Windows.FrameworkElement.FocusVisualStyle%2A> and alternative focus properties, see [Styling for Focus in Controls, and FocusVisualStyle](~/docs/framework/wpf/advanced/styling-for-focus-in-controls-and-focusvisualstyle.md).  
   
 <a name="xamlAttributeUsage_FocusVisualStyle"></a>   
 ## XAML Attribute Usage  
@@ -1412,7 +1412,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.FrameworkElement>|  
+|Identifier field|<xref:System.Windows.FrameworkElement.ForceCursorProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -1660,7 +1660,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the suggested height of the element.</summary>
-        <value>The height of the element, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]. The default value is <see cref="F:System.Double.NaN" />. This value must be equal to or greater than 0.0. See Remarks for upper bound information.</value>
+        <value>The height of the element, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]. The default value is <see cref="F:System.Double.NaN" />. This value must be equal to or greater than 0.0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1757,13 +1757,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties are explicitly set on an element, these measurements take higher precedent during layout and will cancel the typical effects of setting <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> to <xref:System.Windows.HorizontalAlignment>.  
+ When <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties are explicitly set on an element, these measurements take higher precedent during layout and will cancel the typical effects of setting <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> to <xref:System.Windows.HorizontalAlignment.Stretch>.  
   
- <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> is the [!INCLUDE[TLA#tla_net](~/includes/tlasharptla-net-md.md)] property accessor for what is in reality a dependency property. This particular dependency property quite frequently has its apparent "default" value set differently in subclassed elements, particularly controls. This generally occurs in one of two ways: the dependency property is re-registered to a particular subclass, but with different metadata for setting its defaults; or there is a default style being applied that sets that dependency property value differently. For example, the apparent "default" of <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> for a <xref:System.Windows.Controls.Label> control will be <xref:System.Windows.HorizontalAlignment>, even though <xref:System.Windows.Controls.Label> inherits <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> direct from <xref:System.Windows.FrameworkElement>. This is because that value was reset within the default style of <xref:System.Windows.Controls.Label>, within the style's control template.  
+ <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> is the [!INCLUDE[TLA#tla_net](~/includes/tlasharptla-net-md.md)] property accessor for what is in reality a dependency property. This particular dependency property quite frequently has its apparent "default" value set differently in subclassed elements, particularly controls. This generally occurs in one of two ways: the dependency property is re-registered to a particular subclass, but with different metadata for setting its defaults; or there is a default style being applied that sets that dependency property value differently. For example, the apparent "default" of <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> for a <xref:System.Windows.Controls.Label> control will be <xref:System.Windows.HorizontalAlignment.Left>, even though <xref:System.Windows.Controls.Label> inherits <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> direct from <xref:System.Windows.FrameworkElement>. This is because that value was reset within the default style of <xref:System.Windows.Controls.Label>, within the style's control template.  
   
  <xref:System.Windows.Controls.Canvas> does not use <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> when composing layout, because <xref:System.Windows.Controls.Canvas> is based on absolute positioning.  
   
- When inherited by <xref:System.Windows.Controls.Label> or derived classes, <xref:System.Windows.Controls.Label> redefines the default value of this dependency property to be <xref:System.Windows.HorizontalAlignment>.  
+ When inherited by <xref:System.Windows.Controls.Label> or derived classes, <xref:System.Windows.Controls.Label> redefines the default value of this dependency property to be <xref:System.Windows.HorizontalAlignment.Left>.  
   
 <a name="dependencyPropertyInfo_HorizontalAlignment"></a>   
 ## Dependency Property Information  
@@ -1882,7 +1882,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.FrameworkElement>|  
+|Identifier field|<xref:System.Windows.FrameworkElement.InputScopeProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
   
  ]]></format>
@@ -4087,7 +4087,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a reference to the template parent of this element. This property is not relevant if the element was not created through a template.</summary>
-        <value>The element whose <see cref="T:System.Windows.FrameworkTemplate" /> <see cref="P:System.Windows.FrameworkTemplate.VisualTree" /> caused this element to be created. This value is frequently <see langword="null" />; see Remarks.</value>
+        <value>The element whose <see cref="T:System.Windows.FrameworkTemplate" /><see cref="P:System.Windows.FrameworkTemplate.VisualTree" /> caused this element to be created. This value is frequently <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4127,7 +4127,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the tool-tip object that is displayed for this element in the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].</summary>
-        <value>The tooltip object. See Remarks below for details on why this parameter is not strongly typed.</value>
+        <value>The tooltip object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4569,10 +4569,10 @@
   
  ![Anti&#45;aliased line compared to single pixel line.](~/add/media/pixelsnaplinecompare.PNG "Anti-aliased line compared to single pixel line.")  
   
- When you use layout rounding and <xref:System.Windows.GridUnitType> sizing, the layout system creates small variations in the column or row measurements to avoid subpixel rendering. For example, if a grid has a total width of 100 with 3 columns each of size <xref:System.Windows.GridUnitType>, instead of creating three columns that have an equal width of 33.3, the layout system creates 2 columns that have a width of 33 and one that has a width of 34.  
+ When you use layout rounding and <xref:System.Windows.GridUnitType.Star> sizing, the layout system creates small variations in the column or row measurements to avoid subpixel rendering. For example, if a grid has a total width of 100 with 3 columns each of size <xref:System.Windows.GridUnitType.Star>, instead of creating three columns that have an equal width of 33.3, the layout system creates 2 columns that have a width of 33 and one that has a width of 34.  
   
 > [!NOTE]
->  In .NET 4.6 changes were made to layout rounding to reduce instances of clipping in controls with borders. By default, this feature is enabled if your Target Framework is .NET Framework 4.6 or higher. Applications that target earlier versions of the framework can opt in into the new behavior by adding the following setting to an app.config file: `<runtime>``<AppContextSwitchOverrides      value="Switch.MS.Internal.DoNotApplyLayoutRoundingToMarginsAndBorderThickness=false"/>``</runtime>` The setting only takes effect when the application is running on the .NET Framework 4.6.  
+>  In .NET 4.6 changes were made to layout rounding to reduce instances of clipping in controls with borders. By default, this feature is enabled if your Target Framework is .NET Framework 4.6 or higher. Applications that target earlier versions of the framework can opt in into the new behavior by adding the following setting to an app.config file: `<runtime><AppContextSwitchOverrides value="Switch.MS.Internal.DoNotApplyLayoutRoundingToMarginsAndBorderThickness=false"/></runtime>` The setting only takes effect when the application is running on the .NET Framework 4.6.  
   
    
   
@@ -4653,13 +4653,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties are explicitly set on an element, these measurements take layout precedent and cancel the regular effects of setting this property to <xref:System.Windows.VerticalAlignment>.  
+ When <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties are explicitly set on an element, these measurements take layout precedent and cancel the regular effects of setting this property to <xref:System.Windows.VerticalAlignment.Stretch>.  
   
- <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> is the [!INCLUDE[TLA#tla_net](~/includes/tlasharptla-net-md.md)] property accessor for what is in reality a dependency property. This particular dependency property quite frequently has its apparent "default" value set differently in derived element classes, particularly controls. This generally occurs in one of two ways: the dependency property is re-registered to a particular  derived class, but with different metadata for setting its defaults; or there is a default style being applied that sets that dependency property value differently. For example, the apparent "default" of <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> for a <xref:System.Windows.Controls.ComboBoxItem> control will be <xref:System.Windows.VerticalAlignment>, even though <xref:System.Windows.Controls.ComboBoxItem> inherits <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> direct from <xref:System.Windows.FrameworkElement>. This is because that value was reset within the default style of <xref:System.Windows.Controls.ComboBoxItem>, within the style's control template.  
+ <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> is the [!INCLUDE[TLA#tla_net](~/includes/tlasharptla-net-md.md)] property accessor for what is in reality a dependency property. This particular dependency property quite frequently has its apparent "default" value set differently in derived element classes, particularly controls. This generally occurs in one of two ways: the dependency property is re-registered to a particular  derived class, but with different metadata for setting its defaults; or there is a default style being applied that sets that dependency property value differently. For example, the apparent "default" of <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> for a <xref:System.Windows.Controls.ComboBoxItem> control will be <xref:System.Windows.VerticalAlignment.Center>, even though <xref:System.Windows.Controls.ComboBoxItem> inherits <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> direct from <xref:System.Windows.FrameworkElement>. This is because that value was reset within the default style of <xref:System.Windows.Controls.ComboBoxItem>, within the style's control template.  
   
  <xref:System.Windows.Controls.Canvas> does not use <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> when composing layout, because <xref:System.Windows.Controls.Canvas> is based on absolute positioning.  
   
- When inherited by <xref:System.Windows.Controls.ComboBoxItem> or any derived classes, <xref:System.Windows.Controls.ComboBoxItem> redefines the default value of this property to be <xref:System.Windows.VerticalAlignment>.  
+ When inherited by <xref:System.Windows.Controls.ComboBoxItem> or any derived classes, <xref:System.Windows.Controls.ComboBoxItem> redefines the default value of this property to be <xref:System.Windows.VerticalAlignment.Center>.  
   
 <a name="dependencyPropertyInfo_VerticalAlignment"></a>   
 ## Dependency Property Information  

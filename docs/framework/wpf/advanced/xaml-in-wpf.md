@@ -2,7 +2,7 @@
 title: "XAML in WPF | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Extensible Application Markup Language"
 ms.assetid: 5d858575-a83b-42df-ad3f-047ed2d6e3c8
 caps.latest.revision: 79
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # XAML in WPF

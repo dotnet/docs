@@ -2,18 +2,19 @@
 title: "ICorProfilerCallback::ThreadAssignedToOSThread Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.ThreadAssignedToOSThread"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ThreadAssignedToOSThread"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ThreadAssignedToOSThread method [.NET Framework profiling]"
   - "ICorProfilerCallback::ThreadAssignedToOSThread method [.NET Framework profiling]"
 ms.assetid: f9671e5a-7b14-4f5b-8404-58136422c8b2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

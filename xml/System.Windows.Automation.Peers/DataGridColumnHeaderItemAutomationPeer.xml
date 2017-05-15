@@ -24,7 +24,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Exposes the <see cref="P:System.Windows.Controls.DataGridColumn.Header" /> of a <see cref="T:System.Windows.Controls.DataGridColumn" /> that is in a <see cref="T:System.Windows.Controls.DataGrid" /> to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <summary>Exposes the <see cref="P:System.Windows.Controls.DataGridColumn.Header" /> of a <see cref="T:System.Windows.Controls.DataGridColumn" /> that is in a <see cref="T:System.Windows.Controls.DataGrid" /> to UI Automation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -106,7 +106,7 @@
       <Docs>
         <param name="patternInterface">An enumeration value that specifies the control pattern.</param>
         <summary>Returns the object that supports the specified control pattern of the element that is associated with this automation peer.</summary>
-        <returns>The current <see cref="T:System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer" /> object, if <paramref name="patternInterface" /> is a supported value; otherwise, <see langword="null" />. For more information, see Remarks.</returns>
+        <returns>The current <see cref="T:System.Windows.Automation.Peers.DataGridColumnHeaderItemAutomationPeer" /> object, if <paramref name="patternInterface" /> is a supported value; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

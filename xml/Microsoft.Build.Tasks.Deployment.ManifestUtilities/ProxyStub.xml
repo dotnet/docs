@@ -18,6 +18,7 @@
   <Docs>
     <summary>Represents a proxy in a ClickOnce application manifest. .</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BaseInterface">
@@ -56,6 +58,7 @@
         <summary>Gets the IID of the interface from which the interface described by the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.IID" /> property is derived.</summary>
         <value>The IID of the base interface.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IID">
@@ -86,6 +89,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -109,6 +113,7 @@
         <summary>Gets the name of the component.</summary>
         <value>The name of the component.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NumMethods">
@@ -132,6 +137,7 @@
         <summary>Gets the number of methods in the component.</summary>
         <value>The number of methods in the component.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TlbId">
@@ -155,6 +161,7 @@
         <summary>Gets the GUID for the type library for the component.</summary>
         <value>The GUID for the type library.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XmlBaseInterface">
@@ -184,6 +191,7 @@
         <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.BaseInterface" /> property to an XML file.</summary>
         <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.BaseInterface" /> property.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XmlIID">
@@ -213,6 +221,7 @@
         <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.IID" /> property to an XML file.</summary>
         <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.IID" /> property.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XmlName">
@@ -242,6 +251,7 @@
         <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.Name" /> property to an XML file.</summary>
         <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.Name" /> property.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XmlNumMethods">
@@ -271,6 +281,7 @@
         <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.NumMethods" /> property to an XML file.</summary>
         <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.NumMethods" /> property.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XmlTlbId">
@@ -300,6 +311,7 @@
         <summary>Gets or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.TlbId" /> property to an XML file.</summary>
         <value>The value of the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ProxyStub.TlbId" /> property.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

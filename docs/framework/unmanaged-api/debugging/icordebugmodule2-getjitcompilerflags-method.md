@@ -2,18 +2,19 @@
 title: "ICorDebugModule2::GetJITCompilerFlags Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugModule2.GetJITCompilerFlags"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugModule2::GetJITCompilerFlags"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetJITCompilerFlags method [.NET Framework debugging]"
   - "ICorDebugModule2::GetJITCompilerFlags method [.NET Framework debugging]"
 ms.assetid: 7212d9f4-989b-44e3-b8d4-ffc35922f6a0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

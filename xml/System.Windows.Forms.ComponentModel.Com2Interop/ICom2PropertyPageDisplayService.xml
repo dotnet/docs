@@ -10,6 +10,7 @@
   <Docs>
     <summary>Defines a method that shows the property page for an ActiveX control.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="ShowPropertyPage">
@@ -39,6 +40,7 @@
         <param name="parentHandle">A IntPtr that is the handle of the parent control of the property page.</param>
         <summary>Shows a property page for the specified object.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

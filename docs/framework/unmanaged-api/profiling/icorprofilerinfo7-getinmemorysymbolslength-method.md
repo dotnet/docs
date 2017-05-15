@@ -2,19 +2,20 @@
 title: "ICorProfilerInfo7::GetInMemorySymbolsLength Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
+api_name: 
   - "ICorProfilerInfo7.GetInMemorySymbolsLength"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
   - "icorprof.idl"
-apitype: "COM"
+api_type: 
+  - "COM"
 dev_langs: 
   - "C++"
 ms.assetid: d62c4a4c-8a62-45aa-8f01-a8387cf36159

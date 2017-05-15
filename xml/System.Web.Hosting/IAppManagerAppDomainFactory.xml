@@ -18,6 +18,7 @@
   <Docs>
     <summary>Defines a method used to create an <see cref="T:System.AppDomain" /> instance for a Web-application manager and a method used to stop all <see cref="T:System.AppDomain" /> instances for a Web-application manager.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Create">
@@ -42,6 +43,7 @@
         <summary>Creates a new application domain for the specified Web application.</summary>
         <returns>A new application domain for the specified Web application.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -60,6 +62,7 @@
       <Docs>
         <summary>Stops all application domains associated with this application manager.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

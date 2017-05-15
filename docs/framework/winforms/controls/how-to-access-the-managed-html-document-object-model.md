@@ -2,7 +2,7 @@
 title: "How to: Access the Managed HTML Document Object Model | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "managed HTML DOM, accessing"
 ms.assetid: 40fa5cd5-1ed8-42f6-a93f-9ac01608bbeb
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Access the Managed HTML Document Object Model
@@ -32,9 +32,7 @@ You can access the managed HTML Document Object Model (DOM) from two types of ap
 1.  Host a <xref:System.Windows.Forms.WebBrowser> control within your Windows Forms application and monitor for the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event. For details on hosting controls and monitoring for events, see [Events](../../../../docs/standard/events/index.md).  
   
 2.  Retrieve the <xref:System.Windows.Forms.HtmlDocument> for the current page by accessing the <xref:System.Windows.Forms.WebBrowser.Document%2A> property of the <xref:System.Windows.Forms.WebBrowser> control.  
-  
-<!-- TODO: review snippet reference  [!CODE [AccessHTMLDOMApp#1](AccessHTMLDOMApp#1)]  -->  
-  
+
 ### To access DOM from a UserControl hosted in Internet Explorer  
   
 1.  Create your own custom derived class of the <xref:System.Windows.Forms.UserControl> class. For more information, see [How to: Author Composite Controls](../../../../docs/framework/winforms/controls/how-to-author-composite-controls.md).  
@@ -50,7 +48,7 @@ You can access the managed HTML Document Object Model (DOM) from two types of ap
   
 ## .NET Framework Security  
   
-1.  Your application or <xref:System.Windows.Forms.UserControl> will require full trust in order to access the managed HTML DOM. If you are deploying a Windows Forms application using [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)], you can request full trust using either Permission Elevation or Trusted Application Deployment; see [Securing ClickOnce Applications](http://msdn.microsoft.com/library/a05b5f2f-d1f2-471a-8096-8b11f7554265) for details.  
+1.  Your application or <xref:System.Windows.Forms.UserControl> will require full trust in order to access the managed HTML DOM. If you are deploying a Windows Forms application using [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)], you can request full trust using either Permission Elevation or Trusted Application Deployment; see [Securing ClickOnce Applications](/visualstudio/deployment/securing-clickonce-applications) for details.  
   
 ## See Also  
  [Using the Managed HTML Document Object Model](../../../../docs/framework/winforms/controls/using-the-managed-html-document-object-model.md)

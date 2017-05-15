@@ -2,7 +2,7 @@
 title: "&lt;Directives&gt; Element (.NET Native) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,7 +25,7 @@ The root element in every runtime directives file for [!INCLUDE[net_native](../.
 ```xml  
   
       <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
-   <!-- child elements -->   
+   <!-- child elements -->   
 </Directives>  
 ```  
   

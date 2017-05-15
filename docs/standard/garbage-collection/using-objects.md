@@ -2,11 +2,10 @@
 title: "Using objects that implement IDisposable | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/07/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -22,7 +21,7 @@ manager: "wpickett"
 
 # Using objects that implement IDisposable
 
-The common language runtime's garbage collector reclaims the memory used by unmanaged objects, but types that use unmanaged resources implement the <xref:System.IDisposable> interface to allow this unmanaged memory to be reclaimed. When you finish using an object that implements <xref:System.IDisposable>, you should call the object's <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> implementation. You can do this in one of two ways:  
+The common language runtime's garbage collector reclaims the memory used by managed objects, but types that use unmanaged resources implement the <xref:System.IDisposable> interface to allow the memory allocated to these unmanaged resources to be reclaimed. When you finish using an object that implements <xref:System.IDisposable>, you should call the object's <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> implementation. You can do this in one of two ways:  
   
 * With the C# `using` statement or the Visual Basic `Using` statement.  
   

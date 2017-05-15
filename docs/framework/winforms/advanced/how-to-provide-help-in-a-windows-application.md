@@ -2,7 +2,7 @@
 title: "How to: Provide Help in a Windows Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "forms, providing Help"
 ms.assetid: 7c4e5cec-2bd2-4f0b-8d75-c2b88929bd61
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Provide Help in a Windows Application

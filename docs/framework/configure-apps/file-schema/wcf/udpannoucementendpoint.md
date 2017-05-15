@@ -2,7 +2,7 @@
 title: "&lt;udpAnnoucementEndpoint&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,7 +26,7 @@ This configuration element defines a standard endpoint that is used by services 
 ```  
   
 <system.serviceModel>  
-    <standardEndpoints>       <announcementEndpoint>           <standardEndpoint                  discoveryVersion=”WSDiscovery11/WSDiscoveryApril2005”                  maxAnnouncementDelay=”Timespan”                   multicastAddress=”Uri”                  name="String" />        </announcementEndpoint>            </standardEndpoints>  
+    <standardEndpoints>       <announcementEndpoint>           <standardEndpoint                  discoveryVersion="WSDiscovery11/WSDiscoveryApril2005"                  maxAnnouncementDelay="Timespan"                   multicastAddress="Uri"                  name="String" />        </announcementEndpoint>            </standardEndpoints>  
 </system.serviceModel>  
 ```  
   

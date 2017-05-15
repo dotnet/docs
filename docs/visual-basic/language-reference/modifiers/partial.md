@@ -25,8 +25,8 @@ helpviewer_keywords:
   - "type promotion"
 ms.assetid: 7adaef80-f435-46e1-970a-269fff63b448
 caps.latest.revision: 36
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -54,13 +54,13 @@ Indicates that a type declaration is a partial definition of the type.
 ## Syntax  
   
 ```  
-[ <attrlist> ] [ accessmodifier ] [ Shadows ] [ MustInherit | NotInheritable ] _  
-Partial { Class | Structure | Interface | Module } name [ (Of typelist) ]  
-    [ Inherits classname ]  
-    [ Implements interfacenames ]  
-    [ variabledeclarations ]  
-    [ proceduredeclarations ]  
-{ End Class | End Structure }  
+[ <attrlist> ] [ accessmodifier ] [ Shadows ] [ MustInherit | NotInheritable ] _  
+Partial { Class | Structure | Interface | Module } name [ (Of typelist) ]  
+    [ Inherits classname ]  
+    [ Implements interfacenames ]  
+    [ variabledeclarations ]  
+    [ proceduredeclarations ]  
+{ End Class | End Structure }  
 ```  
   
 ## Parts  

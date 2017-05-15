@@ -2,7 +2,7 @@
 title: "{} Escape Sequence - Markup Extension | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -30,16 +30,16 @@ Provides the XAML escape sequence for attribute values. The escape sequence allo
 ## XAML Attribute Usage  
   
 ```  
-<object property="{} literalValue" .../>  
+<object property="{} literalValue" .../>  
 ```  
   
 ## XAML Property Element Usage  
   
 ```  
 <object>  
-  <object.property>  
-    {} literalValue  
-  </object.property>  
+  <object.property>  
+    {} literalValue  
+  </object.property>  
 </object>  
 ```  
   

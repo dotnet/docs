@@ -8,6 +8,7 @@
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -32,7 +33,7 @@
 ## Remarks  
  The <xref:System.ICustomFormatter> interface includes a single method, <xref:System.ICustomFormatter.Format%2A?displayProperty=fullName>. When this interface is implemented by a reference or value type, the <xref:System.ICustomFormatter.Format%2A> method returns a custom-formatted string representation of an object's value.  
   
- Typically, the <xref:System.ICustomFormatter> interface is implemented with the <xref:System.IFormatProvider> interface to customize the behavior of two .NET Framework composite string formatting methods that include an <xref:System.IFormatProvider> parameter. Specifically, the <xref:System.ICustomFormatter> interface can provide custom formatting of the value of an object passed to the [String.Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> and [StringBuilder.AppendFormat(IFormatProvider, String, Object\<xref:System.Text.StringBuilder.AppendFormat%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> methods.  
+ Typically, the <xref:System.ICustomFormatter> interface is implemented with the <xref:System.IFormatProvider> interface to customize the behavior of two .NET Framework composite string formatting methods that include an <xref:System.IFormatProvider> parameter. Specifically, the <xref:System.ICustomFormatter> interface can provide custom formatting of the value of an object passed to the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> and <xref:System.Text.StringBuilder.AppendFormat%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> methods.  
   
  Providing a custom representation of an object's value requires that you do the following:  
   
@@ -40,7 +41,7 @@
   
 2.  Define a class that implements the <xref:System.IFormatProvider> interface and its single member, the <xref:System.IFormatProvider.GetFormat%2A> method. The <xref:System.IFormatProvider.GetFormat%2A> method returns an instance of your <xref:System.ICustomFormatter> implementation. Often, a single class implements both <xref:System.ICustomFormatter> and <xref:System.IFormatProvider>. In that case, the class's `GetFormat` implementation just returns an instance of itself.  
   
-3.  Pass the <xref:System.IFormatProvider> implementation as the `provider` argument of the [String.Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method or a comparable method.  
+3.  Pass the <xref:System.IFormatProvider> implementation as the `provider` argument of the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method or a comparable method.  
   
  The .NET Framework method will then use your custom formatting instead of its own.  
   
@@ -99,6 +100,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -127,7 +129,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.ICustomFormatter.Format%2A?displayProperty=fullName> is a callback method. It is called by a method that supports custom formatting, such as [String.Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> or [StringBuilder.AppendFormat(IFormatProvider, String, Object\<xref:System.Text.StringBuilder.AppendFormat%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>. The implementation is called once for each format item in a [composite format string](~/docs/standard/base-types/composite-formatting.md). For example, in the following statement, the <xref:System.ICustomFormatter.Format%2A?displayProperty=fullName> method is called three times.  
+ <xref:System.ICustomFormatter.Format%2A?displayProperty=fullName> is a callback method. It is called by a method that supports custom formatting, such as <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> or <xref:System.Text.StringBuilder.AppendFormat%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName>. The implementation is called once for each format item in a [composite format string](~/docs/standard/base-types/composite-formatting.md). For example, in the following statement, the <xref:System.ICustomFormatter.Format%2A?displayProperty=fullName> method is called three times.  
   
  [!code-csharp[System.ICustomFormatter.Class#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.icustomformatter.class/cs/binaryformatter.cs#4)]
  [!code-vb[System.ICustomFormatter.Class#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.icustomformatter.class/vb/binaryformatter.vb#4)]  

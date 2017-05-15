@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="All">
@@ -42,6 +43,7 @@
       </ReturnValue>
       <Docs>
         <summary>You should not use the **XmlFieldOrderOption** enumeration; it is not used by the .NET Framework's remoting infrastructure.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Choice">
@@ -59,6 +61,7 @@
       </ReturnValue>
       <Docs>
         <summary>You should not use the **XmlFieldOrderOption** enumeration; it is not used by the .NET Framework's remoting infrastructure.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Sequence">
@@ -76,6 +79,7 @@
       </ReturnValue>
       <Docs>
         <summary>You should not use the **XmlFieldOrderOption** enumeration; it is not used by the .NET Framework's remoting infrastructure.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -2,7 +2,7 @@
 title: "xml:lang Handling in XAML | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,7 +26,7 @@ The `xml:lang` attribute is an [!INCLUDE[TLA2#tla_xml](../../../includes/tla2sha
 ## XAML Attribute Usage  
   
 ```  
-<object xml:lang="rfc3066lang" />  
+<object xml:lang="rfc3066lang" />  
 ```  
   
 ## XAML Values  

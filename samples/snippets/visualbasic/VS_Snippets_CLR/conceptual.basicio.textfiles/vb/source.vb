@@ -43,7 +43,7 @@ Class WriteTextFiles
                 outputFile.WriteLine(line)
             Next
         End Using
-        ' <SnippetWriteLine>
+        ' </SnippetWriteLine>
 
     End Sub
 
@@ -57,7 +57,7 @@ Class WriteTextFiles
         Using outputFile As New StreamWriter(mydocpath & Convert.ToString("\WriteLines.txt"), True)
             outputFile.WriteLine("Fourth Line")
         End Using
-        ' <SnippetAppendText>
+        ' </SnippetAppendText>
 
     End Sub
 

@@ -969,7 +969,7 @@
 ## Remarks  
  Do not call this method until after the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event on the <xref:System.Windows.Forms.WebBrowser> control has occurred. Calling this method before then can result in an exception, as the document will not have finished loading.  
   
- Whether a value of <xref:System.Windows.Forms.HtmlElementInsertionOrientation> is valid will depend on the type of the element. For example, <xref:System.Windows.Forms.HtmlElementInsertionOrientation> is valid if the element is a `DIV`, but not if it is a `SCRIPT` or `IMG` element, neither of which can contain child elements.  
+ Whether a value of <xref:System.Windows.Forms.HtmlElementInsertionOrientation> is valid will depend on the type of the element. For example, <xref:System.Windows.Forms.HtmlElementInsertionOrientation.AfterBegin> is valid if the element is a `DIV`, but not if it is a `SCRIPT` or `IMG` element, neither of which can contain child elements.  
   
    
   

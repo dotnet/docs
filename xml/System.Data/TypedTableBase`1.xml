@@ -23,7 +23,7 @@
   </Interfaces>
   <Docs>
     <typeparam name="T">The type of objects in the source sequence represented by the table, typically <see cref="T:System.Data.DataRow" />.</typeparam>
-    <summary>This type is used as a base class for typed-<see cref="T:System.Data.DataTable" /> object generation by [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] and the XSD.exe [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] tool, and is not intended to be used directly from your code.</summary>
+    <summary>This type is used as a base class for typed-<see cref="T:System.Data.DataTable" /> object generation by Visual Studio and the XSD.exe .NET Framework tool, and is not intended to be used directly from your code.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

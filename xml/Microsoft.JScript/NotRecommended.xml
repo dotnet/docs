@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,6 +44,7 @@
         <param name="message">The name of the method or field that is not recommended.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.NotRecommended" /> attribute class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsError">
@@ -62,6 +64,7 @@
         <value>
           <see langword="false" /> in all cases.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -80,6 +83,7 @@
         <summary>Gets the name of the method or field that is not recommended.</summary>
         <value>The name of the method or field that is not recommended.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

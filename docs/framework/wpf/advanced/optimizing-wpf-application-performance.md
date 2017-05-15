@@ -2,7 +2,7 @@
 title: "Optimizing WPF Application Performance | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "WPF application, optimizing"
 ms.assetid: ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf
 caps.latest.revision: 45
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Optimizing WPF Application Performance

@@ -2,7 +2,7 @@
 title: "Pens, Lines, and Rectangles in GDI+ | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,8 +25,8 @@ helpviewer_keywords:
   - "lines, dashed"
 ms.assetid: 30b25aae-e3eb-4479-bdb8-187cf651fc84
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Pens, Lines, and Rectangles in GDI+

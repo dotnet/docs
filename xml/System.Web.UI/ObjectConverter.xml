@@ -18,6 +18,7 @@
   <Docs>
     <summary>Converts an object from one object type to another object type. This class is obsolete. Use the <see cref="T:System.Convert" /> class and the <see cref="M:System.String.Format(System.String,System.Object)" /> method instead.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ObjectConverter" /> class. This class is obsolete. Use the <see cref="T:System.Convert" /> class and the <see cref="M:System.String.Format(System.String,System.Object)" /> method instead.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConvertValue">
@@ -61,6 +63,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="Value" /> cannot be converted to type <paramref name="toType" /> with this method.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

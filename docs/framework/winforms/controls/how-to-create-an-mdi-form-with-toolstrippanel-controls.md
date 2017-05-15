@@ -2,7 +2,7 @@
 title: "How to: Create an MDI Form with ToolStripPanel Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "MDI forms, creating"
 ms.assetid: d198ef8e-f7c4-4b3f-a7f5-ce858cb90cec
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create an MDI Form with ToolStripPanel Controls

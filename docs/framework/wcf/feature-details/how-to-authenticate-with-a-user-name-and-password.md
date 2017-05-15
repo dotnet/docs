@@ -2,7 +2,7 @@
 title: "How to: Authenticate with a User Name and Password | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -45,7 +45,7 @@ This topic demonstrates how to enable a [!INCLUDE[indigo1](../../../../includes/
     // ...  
     ```  
   
-     You can use your own certificate, just modify the code to refer to your certificate. For more information about creating and using certificates see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md). Make sure the certificate is in the Trusted People certificate store for the Local Machine. You can do this by running mmc.exe and selecting the **File**, **Add/Remove Snap-in...** menu item. In the **Add or Remove Snap-ins** dialog, select the **Certificates snap-in** and click **Add**. In the Certificates Snap-in dialog select **Computer account**. By default the certificate generated from the Message Security User name sample will be located in the Personal/Certificates folder.  It will be listed as “localhost” under the Issued to column in the MMC window. Drag and drop the certificate into the **Trusted People** folder. This will allow WCF to treat the certificate as a trusted certificate when performing authentication.  
+     You can use your own certificate, just modify the code to refer to your certificate. For more information about creating and using certificates see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md). Make sure the certificate is in the Trusted People certificate store for the Local Machine. You can do this by running mmc.exe and selecting the **File**, **Add/Remove Snap-in...** menu item. In the **Add or Remove Snap-ins** dialog, select the **Certificates snap-in** and click **Add**. In the Certificates Snap-in dialog select **Computer account**. By default the certificate generated from the Message Security User name sample will be located in the Personal/Certificates folder.  It will be listed as "localhost" under the Issued to column in the MMC window. Drag and drop the certificate into the **Trusted People** folder. This will allow WCF to treat the certificate as a trusted certificate when performing authentication.  
   
 ### To call the service passing username and password  
   

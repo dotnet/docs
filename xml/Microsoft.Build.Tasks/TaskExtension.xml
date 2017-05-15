@@ -13,6 +13,7 @@
   <Docs>
     <summary>Contains properties to help extend a task.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Log">
@@ -31,6 +32,7 @@
         <summary>Gets an instance of a <see cref="T:Microsoft.Build.Tasks.TaskLoggingHelperExtension" /> containing task logging methods.</summary>
         <value>An instance of a <see cref="T:Microsoft.Build.Tasks.TaskLoggingHelperExtension" /> containing task logging methods.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -2,7 +2,7 @@
 title: "How to: Set the Size of Status-Bar Panels | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "panels, setting size in status bars"
 ms.assetid: a01bee43-d9eb-4954-84e6-45a93532d08d
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set the Size of Status-Bar Panels

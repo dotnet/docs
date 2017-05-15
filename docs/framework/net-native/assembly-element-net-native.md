@@ -2,7 +2,7 @@
 title: "&lt;Assembly&gt; Element (.NET Native) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -90,9 +90,9 @@ Applies runtime reflection policy to all the types in a specified assembly.
 ```xml  
   
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">   
-  <Application>   
-     <Assembly Name="*Application*" Dynamic="Required All" />   
-  </Application>   
+  <Application>   
+     <Assembly Name="*Application*" Dynamic="Required All" />   
+  </Application>   
 </Directives>  
   
 ```  

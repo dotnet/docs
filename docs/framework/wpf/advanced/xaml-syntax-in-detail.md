@@ -2,7 +2,7 @@
 title: "XAML Syntax In Detail | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,8 +38,8 @@ helpviewer_keywords:
   - "XAML, property element syntax"
 ms.assetid: 67cce290-ca26-4c41-a797-b68aabc45479
 caps.latest.revision: 26
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # XAML Syntax In Detail
@@ -123,7 +123,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
 ```  
 \<!--This will not compile, because Visibility is not a flagwise enumeration.-->  
 ...  
-<Trigger Property="Visibility" Value="Collapsed,Hidden">  
+<Trigger Property="Visibility" Value="Collapsed,Hidden">  
   \<Setter ... />  
 </Trigger>  
 ...  

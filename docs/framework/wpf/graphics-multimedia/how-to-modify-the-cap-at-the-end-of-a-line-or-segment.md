@@ -2,7 +2,7 @@
 title: "How to: Modify the Cap at the End of a Line or Segment | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "graphics, Shape caps"
 ms.assetid: f4bf3416-b3d8-4568-b98e-3eda8f6dbf7a
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Modify the Cap at the End of a Line or Segment

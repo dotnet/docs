@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrIO_CyclicOperation"
 ms.assetid: 850d3a24-5d51-4ac8-a912-630efcd75278
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

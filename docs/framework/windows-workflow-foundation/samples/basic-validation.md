@@ -2,7 +2,7 @@
 title: "Basic Validation | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -23,7 +23,7 @@ This sample consists of an activity, `CreateProduct`, which validates that its `
   
 -   Create a constraint (`PriceGreaterThanCost`). This is where all the validation logic resides.  
   
--   Override <xref:System.Activities.CodeActivity%601.OnGetConstraints%2A> and add the constraint (`PriceGreaterThanCost`) to the constraints <xref:System.Collections.IList>.  
+-   Override `System.Activities.CodeActivity.OnGetConstraints()` and add the constraint (`PriceGreaterThanCost`) to the constraints <xref:System.Collections.IList>.  
   
  The workflow author (main program) must:  
   

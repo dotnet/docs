@@ -2,18 +2,19 @@
 title: "IGCThreadControl::SuspensionEnding Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IGCThreadControl.SuspensionEnding"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "SuspensionEnding"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IGCThreadControl::SuspensionEnding method [.NET Framework hosting]"
   - "SuspensionEnding method, IGCThreadControl interface [.NET Framework hosting]"
 ms.assetid: 70814265-c734-4ddc-9502-fe8b28d2b414
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

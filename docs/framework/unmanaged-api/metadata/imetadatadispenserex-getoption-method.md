@@ -2,18 +2,19 @@
 title: "IMetaDataDispenserEx::GetOption Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataDispenserEx.GetOption"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataDispenserEx::GetOption"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetOption method [.NET Framework metadata]"
   - "IMetaDataDispenserEx::GetOption method [.NET Framework metadata]"
 ms.assetid: d7f794e5-8e25-4d65-850a-7c34fbfce87d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"

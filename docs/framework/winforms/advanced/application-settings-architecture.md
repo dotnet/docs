@@ -2,7 +2,7 @@
 title: "Application Settings Architecture | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "application settings [Windows Forms], architecture"
 ms.assetid: c8eb2ad0-fac6-4ea2-9140-675a4a44d562
 caps.latest.revision: 25
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Application Settings Architecture
@@ -118,12 +118,12 @@ This topic describes how the Application Settings architecture works, and explor
   
  The storage location of these files is slightly different if a user has enabled roaming profiles, which enables a user to define different Windows and application settings when he or she is using other computers within a domain. In that case, both [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] applications and non-[!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] applications will have their `app`.exe.config and *user*.config files stored under %InstallRoot%\Documents and Settings\\*username*\Application Data.  
   
- For more information about how the Application Settings feature works with the new deployment technology, see [ClickOnce and Application Settings](http://msdn.microsoft.com/library/891caba6-faef-4a3c-8f71-60e6fadb60eb). For more information about the [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] Data Directory, see [Accessing Local and Remote Data in ClickOnce Applications](http://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).  
+ For more information about how the Application Settings feature works with the new deployment technology, see [ClickOnce and Application Settings](/visualstudio/deployment/clickonce-and-application-settings). For more information about the [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] Data Directory, see [Accessing Local and Remote Data in ClickOnce Applications](/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications).  
   
 ## Application Settings and Security  
  Application settings are designed to work in partial trust, a restricted environment that is the default for Windows Forms applications hosted over the Internet or an intranet. No special permissions beyond partial trust are needed to use application settings with the default settings provider.  
   
- When application settings are used in a [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] application, the `user`.config file is stored in the [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] data directory. The size of the application's `user`.config file cannot exceed the data directory quota set by [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)]. For more information, see [ClickOnce and Application Settings](http://msdn.microsoft.com/library/891caba6-faef-4a3c-8f71-60e6fadb60eb).  
+ When application settings are used in a [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] application, the `user`.config file is stored in the [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] data directory. The size of the application's `user`.config file cannot exceed the data directory quota set by [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)]. For more information, see [ClickOnce and Application Settings](/visualstudio/deployment/clickonce-and-application-settings).  
   
 ## Custom Settings Providers  
  In the Application Settings architecture, there is a loose coupling between the applications settings wrapper class, derived from <xref:System.Configuration.ApplicationSettingsBase>, and the associated settings provider or providers, derived from <xref:System.Configuration.SettingsProvider>. This association is defined only by the <xref:System.Configuration.SettingsProviderAttribute> applied to the wrapper class or its individual properties. If a settings provider is not explicitly specified, the default provider, <xref:System.Configuration.LocalFileSettingsProvider>, is used. As a result, this architecture supports creating and using custom settings providers.  
@@ -157,5 +157,5 @@ This topic describes how the Application Settings architecture works, and explor
  <xref:System.Configuration.LocalFileSettingsProvider>   
  [Application Settings Overview](../../../../docs/framework/winforms/advanced/application-settings-overview.md)   
  [Application Settings for Custom Controls](../../../../docs/framework/winforms/advanced/application-settings-for-custom-controls.md)   
- [ClickOnce and Application Settings](http://msdn.microsoft.com/library/891caba6-faef-4a3c-8f71-60e6fadb60eb)   
+ [ClickOnce and Application Settings](/visualstudio/deployment/clickonce-and-application-settings)   
  [Application Settings Schema](../../../../docs/framework/configure-apps/file-schema/application-settings-schema.md)

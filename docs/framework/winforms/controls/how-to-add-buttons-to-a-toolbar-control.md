@@ -2,7 +2,7 @@
 title: "How to: Add Buttons to a ToolBar Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "ToolBar control [Windows Forms], adding drop-down menus"
 ms.assetid: 78a58a8d-1041-4e38-9219-4096fa6a5c5c
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add Buttons to a ToolBar Control

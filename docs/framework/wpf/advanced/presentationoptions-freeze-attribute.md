@@ -2,7 +2,7 @@
 title: "PresentationOptions:Freeze Attribute | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "PresentationOptions prefix"
 ms.assetid: 391032dd-2fba-4804-bb8a-3b071797a9f4
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # PresentationOptions:Freeze Attribute
@@ -29,7 +29,7 @@ Sets the <xref:System.Windows.Freezable.IsFrozen%2A> state to `true` on the cont
   xmlns:PresentationOptions="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"  
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
   mc:Ignorable="PresentationOptions">  
-    <freezableElement PresentationOptions:Freeze="true"/>  
+    <freezableElement PresentationOptions:Freeze="true"/>  
 </object>  
 ```  
   

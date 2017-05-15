@@ -2,7 +2,7 @@
 title: "Building a WPF Application (WPF) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "WPF application, building"
 ms.assetid: a58696fd-bdad-4b55-9759-136dfdf8b91c
 caps.latest.revision: 45
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Building a WPF Application (WPF)
@@ -171,6 +171,6 @@ End Sub
   
 ## See Also  
  [Deploying a WPF Application](../../../../docs/framework/wpf/app-development/deploying-a-wpf-application-wpf.md)   
- [WPF MSBuild Reference](http://msdn.microsoft.com/library/94b12890-365d-479a-b239-71109fbcb462)   
+ [WPF MSBuild Reference](/visualstudio/msbuild/wpf-msbuild-reference)   
  [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md)   
  [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)

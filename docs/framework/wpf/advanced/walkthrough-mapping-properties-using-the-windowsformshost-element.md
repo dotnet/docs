@@ -2,7 +2,7 @@
 title: "Walkthrough: Mapping Properties Using the WindowsFormsHost Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "WindowsFormsHost element property mapping"
 ms.assetid: 74809167-bf8e-48b7-a2e7-b4ea08bc7d8c
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Mapping Properties Using the WindowsFormsHost Element

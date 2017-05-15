@@ -2,7 +2,7 @@
 title: "How to: Display More than One Month in the Windows Forms MonthCalendar Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "MonthCalendar control [Windows Forms], formatting display"
 ms.assetid: d197caa2-38a5-4cb4-acc3-562130c2ace3
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Display More than One Month in the Windows Forms MonthCalendar Control

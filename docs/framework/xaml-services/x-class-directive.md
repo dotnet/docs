@@ -2,7 +2,7 @@
 title: "x:Class Directive | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,7 +29,7 @@ Configures XAML markup compilation to join partial classes between markup and co
 ## XAML Attribute Usage  
   
 ```  
-\<object x:Class="namespace.classname"...>  
+\<object x:Class="namespace.classname"...>  
   ...  
 </object>  
 ```  

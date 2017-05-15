@@ -2,7 +2,7 @@
 title: "How to: Open a File That is Dropped on a RichTextBox Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "drag-and-drop [WPF], open a dropped file"
 ms.assetid: 6bb8bb54-f576-41db-a9a7-24102ddeb490
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Open a File That is Dropped on a RichTextBox Control

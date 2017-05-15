@@ -13,6 +13,7 @@
   <Docs>
     <summary>Encapsulates a recycle limit monitor singleton.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Dispose">
@@ -31,6 +32,7 @@
       <Docs>
         <summary>Releases all resources used by the recycle limit monitor.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EnsureCreated">
@@ -49,6 +51,7 @@
       <Docs>
         <summary>Creates a recycle limit monitor singleton if it doesn't already exist.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InitializeLifetimeService">
@@ -68,6 +71,7 @@
         <summary>Obtains a lifetime service object to control the lifetime policy for this instance.</summary>
         <returns>Returns null.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RegisterProxyAndStart">
@@ -91,6 +95,7 @@
         <param name="applicationID">The application ID.</param>
         <summary>Registers a recycle limit monitor proxy and starts a timer.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UnregisterProxyAndStop">
@@ -112,6 +117,7 @@
         <param name="proxy">The recycle limit monitor proxy.</param>
         <summary>Removes a recycle limit monitor proxy.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

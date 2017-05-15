@@ -2,7 +2,7 @@
 title: "Input and Commands How-to Topics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "commanding"
 ms.assetid: a5c266b6-969c-4049-a471-ddca7b10fb89
 caps.latest.revision: 76
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Input and Commands How-to Topics

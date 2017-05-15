@@ -70,7 +70,7 @@
   
 |Item|Description|  
 |----------|-----------------|  
-|<xref:System.Windows.Forms.ImageList.ColorDepth%2A>|In the .NET Framework version 1.0, the default is <xref:System.Windows.Forms.ColorDepth>. In the .NET Framework version 1.1 or later, the default is <xref:System.Windows.Forms.ColorDepth>.|  
+|<xref:System.Windows.Forms.ImageList.ColorDepth%2A>|In the .NET Framework version 1.0, the default is <xref:System.Windows.Forms.ColorDepth.Depth4Bit>. In the .NET Framework version 1.1 or later, the default is <xref:System.Windows.Forms.ColorDepth.Depth8Bit>.|  
 |<xref:System.Windows.Forms.ImageList.ImageSize%2A>|The default is a <xref:System.Drawing.Size> object with a height and width of 16 by 16.|  
 |<xref:System.Windows.Forms.ImageList.TransparentColor%2A>|The default value is <xref:System.Drawing.Color.Transparent%2A>.|  
   

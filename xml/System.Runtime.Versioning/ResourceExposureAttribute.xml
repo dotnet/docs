@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Extensions</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
   </Base>
@@ -29,12 +33,13 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.Versioning.ResourceConsumptionAttribute> attribute must be applied to a member calling a member that has the <xref:System.Runtime.Versioning.ResourceExposureAttribute> attribute applied. `Public` members cannot expose <xref:System.Runtime.Versioning.ResourceScope> or <xref:System.Runtime.Versioning.ResourceScope> resources.  Members with <xref:System.Runtime.Versioning.ResourceScope> scope cannot expose <xref:System.Runtime.Versioning.ResourceScope> resources.  
+ The <xref:System.Runtime.Versioning.ResourceConsumptionAttribute> attribute must be applied to a member calling a member that has the <xref:System.Runtime.Versioning.ResourceExposureAttribute> attribute applied. `Public` members cannot expose <xref:System.Runtime.Versioning.ResourceScope.Assembly> or <xref:System.Runtime.Versioning.ResourceScope.Private> resources.  Members with <xref:System.Runtime.Versioning.ResourceScope.Assembly> scope cannot expose <xref:System.Runtime.Versioning.ResourceScope.Private> resources.  
   
- The graph of methods terminates when an <xref:System.Runtime.Versioning.ResourceExposureAttribute> attribute with a resource scope of <xref:System.Runtime.Versioning.ResourceScope> is applied to a method.  
+ The graph of methods terminates when an <xref:System.Runtime.Versioning.ResourceExposureAttribute> attribute with a resource scope of <xref:System.Runtime.Versioning.ResourceScope.None> is applied to a method.  
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -51,6 +56,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="exposureLevel" Type="System.Runtime.Versioning.ResourceScope" />
       </Parameters>
@@ -58,6 +67,7 @@
         <param name="exposureLevel">The scope of the resource.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Versioning.ResourceExposureAttribute" /> class with the specified exposure level.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ResourceExposureLevel">
@@ -74,6 +84,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Versioning.ResourceScope</ReturnType>
       </ReturnValue>
@@ -81,6 +95,7 @@
         <summary>Gets the resource exposure scope.</summary>
         <value>A <see cref="T:System.Runtime.Versioning.ResourceScope" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

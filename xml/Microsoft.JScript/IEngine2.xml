@@ -18,6 +18,7 @@
   <Docs>
     <summary>Defines extra functionality that is needed by an IActiveScript host. Implemented by the <see cref="T:Microsoft.JScript.Vsa.VsaEngine" /> engine.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Clone">
@@ -40,6 +41,7 @@
         <summary>When implemented in a class, creates a new identical engine that runs in a new application domain, with the same compiled state and named items. This is not implemented in JScript.</summary>
         <returns>The new engine.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CompileEmpty">
@@ -60,6 +62,7 @@
         <returns>
           <see langword="true" /> if the compilation was successful, otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConnectEvents">
@@ -78,6 +81,7 @@
       <Docs>
         <summary>When implemented in a class, communicates to the engine that it can connect any registered event sources that have events to any global event handlers. This is not implemented in JScript.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DisconnectEvents">
@@ -96,6 +100,7 @@
       <Docs>
         <summary>When implemented in a class, directs the engine to unhook event sources from event handlers. This is not implemented in JScript.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetAssembly">
@@ -115,6 +120,7 @@
         <summary>When implemented in a class, gets the compiled assembly that is produced by the compilation step.</summary>
         <returns>The compiled assembly.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetGlobalScope">
@@ -134,6 +140,7 @@
         <summary>When implemented in a class, gets the global scope object.</summary>
         <returns>The global scope object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetModule">
@@ -153,6 +160,7 @@
         <summary>When implemented in a class, gets the code module from the compiled assembly.</summary>
         <returns>The code module from the compiled assembly.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InitVsaEngine">
@@ -176,6 +184,7 @@
         <param name="site">The host-implemented <see cref="T:Microsoft.Vsa.IVsaSite" /> object that is used by the script engine to communicate with the host. For more information, see <see cref="P:Microsoft.Vsa.IVsaEngine.Site" />.</param>
         <summary>When implemented in a class, initializes the <see cref="T:Microsoft.JScript.Vsa.VsaEngine" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Interrupt">
@@ -201,6 +210,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RegisterEventSource">
@@ -222,6 +232,7 @@
         <param name="name">The name of an added item that provides events.</param>
         <summary>When implemented in a class, specifies the name of an item that is marked as an event source, so that the <see cref="M:Microsoft.JScript.IEngine2.ConnectEvents" /> method can determine which events to connect. This is not implemented in JScript.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Restart">
@@ -240,6 +251,7 @@
       <Docs>
         <summary>When implemented in a class, this method is called by the debugger when it has to reset the engine to a clean state before evaluating a new expression. The method resets the added items and the global scope back to their original state.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Run">
@@ -261,6 +273,7 @@
         <param name="domain">The application domain in which to run the compiled code.</param>
         <summary>When implemented in a class, runs the compiled code in the specified application domain. This is not implemented in JScript because managed engines do not support running code in user-provided application domains.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RunEmpty">
@@ -279,6 +292,7 @@
       <Docs>
         <summary>When implemented in a class, runs the compiled code in the current <see cref="T:System.AppDomain" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -1472,7 +1472,7 @@
 ## Remarks  
  An OLE Automation date is implemented as a floating-point number whose value is the number of days from midnight, 30 December 1899. For example, midnight, 31 December 1899 is represented by 1.0; 6 A.M., 1 January 1900 is represented by 2.25; midnight, 29 December 1899 is represented by -1.0; and 6 A.M., 29 December 1899 is represented by -1.25.  
   
- The base OLE Automation Date is midnight, 30 December 1899. The maximum OLE Automation Date is the same as <xref:System.DateTime>, the last moment of 31 December 9999.  
+ The base OLE Automation Date is midnight, 30 December 1899. The maximum OLE Automation Date is the same as <xref:System.DateTime.MaxValue>, the last moment of 31 December 9999.  
   
  For more information about OLE Automation, see the [MSDN Library](http://go.microsoft.com/fwlink/?linkid=37118).  
   

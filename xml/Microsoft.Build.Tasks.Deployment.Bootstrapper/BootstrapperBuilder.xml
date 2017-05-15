@@ -28,6 +28,7 @@
   <Docs>
     <summary>The top-level object for the bootstrapper system.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,6 +44,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see langword="BootstrapperBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -61,6 +63,7 @@
         <param name="visualStudioVersion">The version of [!INCLUDE[vs_current_short](~/includes/vs-current-short-md.md)] to use.</param>
         <summary>Initializes a new instance of the <see langword="BootstrapperBuilder" /> class, using the specified version of [!INCLUDE[vs_current_short](~/includes/vs-current-short-md.md)].</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Build">
@@ -83,6 +86,7 @@
         <summary>Generates a bootstrapper by using the specified settings.</summary>
         <returns>The results of the bootstrapper generation.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetOutputFolders">
@@ -111,6 +115,7 @@
         <summary>Returns the directories to which bootstrapper component files are copied when they are created, given the specified settings.</summary>
         <returns>The directories to which bootstrapper component files are copied when they are created, given the specified settings.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -129,6 +134,7 @@
         <summary>Gets or sets the location of the required bootstrapper files.</summary>
         <value>The path for the required bootstrapper files.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Products">
@@ -147,6 +153,7 @@
         <summary>Gets all products available at the current bootstrapper <see cref="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder.Path" />.</summary>
         <value>All products available at the current bootstrapper <see cref="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder.Path" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

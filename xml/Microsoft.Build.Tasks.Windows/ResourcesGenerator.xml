@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>ResourcesGenerator</c> task. Use the <c>ResourcesGenerator</c> element in your project file to create and execute this task. For usage and parameter information, see [ResourcesGenerator](http://msdn.microsoft.com/library/e782bbac-9ee6-472b-8171-3ee008c77b4e).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Windows.ResourcesGenerator" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -48,6 +50,7 @@
         <returns>
           <see langword="true" /> if the task executed successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OutputPath">
@@ -78,6 +81,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OutputResourcesFile">
@@ -104,6 +108,7 @@
         <summary>Gets or sets the path and name of the generated .resources file.</summary>
         <value>The path and name of the generated .resources file. If the path is not an absolute path, the .resources file is generated relative to the root project directory.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ResourceFiles">
@@ -127,6 +132,7 @@
         <summary>Gets or sets one or more resources to embed in the generated .resources file.</summary>
         <value>One or more resources to embed in the generated .resources file.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

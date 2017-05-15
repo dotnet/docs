@@ -2,7 +2,7 @@
 title: "How to: Display Images in Cells of the Windows Forms DataGridView Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "data grids, displaying images in cells"
 ms.assetid: 53b13d31-1b56-476d-9ab4-18bfac138a22
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Display Images in Cells of the Windows Forms DataGridView Control

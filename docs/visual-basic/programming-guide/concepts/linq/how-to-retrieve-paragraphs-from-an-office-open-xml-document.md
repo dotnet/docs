@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 66053f21-9217-473c-a6f3-a0897be07756
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Retrieve Paragraphs from an Office Open XML Document (Visual Basic)

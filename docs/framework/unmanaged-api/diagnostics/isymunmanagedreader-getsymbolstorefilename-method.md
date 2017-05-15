@@ -2,18 +2,19 @@
 title: "ISymUnmanagedReader::GetSymbolStoreFileName Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedReader.GetSymbolStoreFileName"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::GetSymbolStoreFileName"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetSymbolStoreFileName method [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetSymbolStoreFileName method [.NET Framework debugging]"
 ms.assetid: c84f4846-9bc8-44a4-9a76-e39106d6d8b2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

@@ -2,7 +2,7 @@
 title: "How to: Add to or Remove from a Collection of Controls at Run Time | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "controls [Windows Forms], removing using collections"
 ms.assetid: 771bf895-3d5f-469b-a324-3528f343657e
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add to or Remove from a Collection of Controls at Run Time

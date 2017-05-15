@@ -2,7 +2,7 @@
 title: "Runtime Changes in the .NET Framework 4.7 | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/07/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -35,7 +35,7 @@ The Scope column in the following tables specifies the significance of each chan
 
 ## <a name="WPF" /> Windows Presentation Foundation (WPF)
 
-assetId:///M:System.Windows.Controls.DataGridCellsPanel.BringIndexIntoView(System.Int32)?qualifyHint=False&autoUpgrade=True
+<xref:System.Windows.Controls.DataGridCellsPanel.BringIndexIntoView(System.Int32)>
 
 | Feature | Change | Impact | Scope |
 |---|---|---|---|

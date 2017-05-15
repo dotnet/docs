@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>ConvertToAbsolutePath</c> task. Use the <c>ConvertToAbsolutePath</c> element in your project file to create and execute this task. For usage and parameter information, see [ConvertToAbsolutePath Task](http://msdn.microsoft.com/library/f1af2cb8-b4ef-4a72-be80-22fa526c4491).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.ConvertToAbsolutePath" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AbsolutePaths">
@@ -51,6 +53,7 @@
         <summary>Gets or sets a list of absolute paths.</summary>
         <value>The list of absolute paths.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -71,6 +74,7 @@
         <returns>
           <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Paths">
@@ -94,6 +98,7 @@
         <summary>Gets or sets a list of relative paths to convert to absolute paths.</summary>
         <value>The list of relative paths to convert to absolute paths.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

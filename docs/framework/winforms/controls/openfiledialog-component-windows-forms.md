@@ -2,7 +2,7 @@
 title: "OpenFileDialog Component (Windows Forms) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "OpenFileDialog component"
 ms.assetid: d2efa832-a272-42ff-aa26-c4ac13ff59ba
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # OpenFileDialog Component (Windows Forms)

@@ -20,6 +20,7 @@
   <Docs>
     <summary>Extends the <see cref="T:Microsoft.Vsa.VsaItemType" /> enumeration. Provides extra functionality that is needed by an IActiveScript host.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="EXPRESSION">
@@ -36,6 +37,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies an expression. This applies to an <see cref="T:Microsoft.JScript.IVsaScriptCodeItem" />.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="HOSTOBJECT">
@@ -52,6 +54,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies a host object.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="HOSTSCOPE">
@@ -68,6 +71,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies the scope.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="HOSTSCOPEANDOBJECT">
@@ -84,6 +88,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies both the scope and the object.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -100,6 +105,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies none. This is the default value.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SCRIPTBLOCK">
@@ -116,6 +122,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies a script block. This applies to an <see cref="T:Microsoft.JScript.IVsaScriptCodeItem" />.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SCRIPTSCOPE">
@@ -132,6 +139,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies the script scope.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="STATEMENT">
@@ -148,6 +156,7 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies a single statement. This applies to an <see cref="T:Microsoft.JScript.IVsaScriptCodeItem" />.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

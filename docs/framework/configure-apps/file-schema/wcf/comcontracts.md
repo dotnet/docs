@@ -2,7 +2,7 @@
 title: "&lt;comContracts&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,7 +19,7 @@ manager: "erikre"
 The `comContracts` configuration section contains elements that allow you to specify various properties of a COM+ integration service contract.  
   
 ## Specifying Namespace and Contract  
- COM+ integration service contracts are currently restricted to the “http://tempuri.org” namespace, and contract name is derived from the supporting COM interface. You can, however, specify alternatives by using the `comContracts` section in the configuration file.  
+ COM+ integration service contracts are currently restricted to the "http://tempuri.org" namespace, and contract name is derived from the supporting COM interface. You can, however, specify alternatives by using the `comContracts` section in the configuration file.  
   
  For example, you can use the following configuration to specify the namespace and contract name of the service contract, as well as an option to enforce usage on sessionful bindings.  
   

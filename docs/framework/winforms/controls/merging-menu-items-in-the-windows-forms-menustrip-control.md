@@ -2,7 +2,7 @@
 title: "Merging Menu Items in the Windows Forms MenuStrip Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "merging, general concepts"
 ms.assetid: 95e113ba-f362-4dda-8a76-6d95ddc45cee
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Merging Menu Items in the Windows Forms MenuStrip Control

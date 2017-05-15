@@ -2,18 +2,19 @@
 title: "ICorRuntimeHost::LocksHeldByLogicalThread Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorRuntimeHost.LocksHeldByLogicalThread"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorRuntimeHost::LocksHeldByLogicalThread"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorRuntimeHost::LocksHeldByLogicalThread method [.NET Framework hosting]"
   - "LocksHeldByLogicalThread method [.NET Framework hosting]"
 ms.assetid: c3601255-d894-4d7c-b1df-c31334551700
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

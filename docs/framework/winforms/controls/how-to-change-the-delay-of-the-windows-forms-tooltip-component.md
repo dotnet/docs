@@ -2,7 +2,7 @@
 title: "How to: Change the Delay of the Windows Forms ToolTip Component | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], tooltips"
 ms.assetid: 08979ba7-dd84-477b-ab17-8d06e759be99
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Change the Delay of the Windows Forms ToolTip Component

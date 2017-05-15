@@ -2,11 +2,10 @@
 title: "Security in the .NET Framework | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -47,7 +46,7 @@ The common language runtime and the .NET Framework provide many useful classes a
  [Secure Coding Guidelines for Unmanaged Code](../../../docs/framework/security/secure-coding-guidelines-for-unmanaged-code.md)  
  Describes some of the best practices and security concerns when calling unmanaged code.  
   
- [Windows Identity Foundation](../../../docs/framework/security/windows-identity-foundation.md)  
+ [Windows Identity Foundation](../../../docs/framework/security/index.md)  
  Describes how you can implement claims-based identity in your applications.  
   
 ## Related Sections  

@@ -2,7 +2,7 @@
 title: "Pooling | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -88,7 +88,7 @@ void IInstanceProvider.ReleaseInstance(InstanceContext instanceContext, object i
   
 ```  
   
- The `ReleaseInstance` method provides a “clean up initialization” feature. Normally the pool maintains a minimum number of objects for the lifetime of the pool. However, there can be periods of excessive usage that require creating additional objects in the pool to reach the maximum limit specified in the configuration. Eventually, when the pool becomes less active, those surplus objects can become an extra overhead. Therefore, when the `activeObjectsCount` reaches zero, an idle timer is started that triggers and performs a clean-up cycle.  
+ The `ReleaseInstance` method provides a "clean up initialization" feature. Normally the pool maintains a minimum number of objects for the lifetime of the pool. However, there can be periods of excessive usage that require creating additional objects in the pool to reach the maximum limit specified in the configuration. Eventually, when the pool becomes less active, those surplus objects can become an extra overhead. Therefore, when the `activeObjectsCount` reaches zero, an idle timer is started that triggers and performs a clean-up cycle.  
   
 ## Adding the Behavior  
  Dispatcher-layer extensions are hooked up using the following behaviors:  

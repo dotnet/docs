@@ -2,7 +2,7 @@
 title: "x:Array Markup Extension | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -27,7 +27,7 @@ Provides general support for arrays of objects in XAML through a markup extensio
 ## XAML Object Element Usage  
   
 ```  
-<x:Array Type="typeName">  
+<x:Array Type="typeName">  
   arrayContents  
 </x:Array>  
 ```  

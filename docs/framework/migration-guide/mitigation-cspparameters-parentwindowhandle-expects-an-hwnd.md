@@ -2,6 +2,7 @@
 title: "Mitigation: CspParameters.ParentWindowHandle Expects an HWND | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/07/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -41,7 +42,7 @@ cspParameters.ParentWindowHandle = form.Handle;
 
 Developers who had identified that the correct value was the address of the memory location that held the `form.Handle` value can opt out of this change in behavior by setting the <xref:System.Security.AppContext> switch `Switch.System.Security.Cryptography.DoNotAddrOfCspParentWindowHandle` to `true`:
 
-- By programmatically setting compatibility switches on the [AppContext](assetID:///T:System.Security.AppContext) instance.
+- By programmatically setting compatibility switches on the <xref:System.Security.AppContext> instance.
 
 - By adding the following line to the `<runtime>` section of the app.config file:
    

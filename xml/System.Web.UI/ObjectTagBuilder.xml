@@ -13,6 +13,7 @@
   <Docs>
     <summary>Used by the ASP.NET <see cref="T:System.Web.UI.TemplateParser" /> class to parse server-side <see langword="&lt;object&gt;" /> tags. This class can not be inherited.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ObjectTagBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AppendLiteralString">
@@ -49,6 +51,7 @@
         <param name="s">The content to add to the control.</param>
         <summary>Adds content, such as text or HTML, to a control.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AppendSubBuilder">
@@ -70,6 +73,7 @@
         <param name="subBuilder">The <see cref="T:System.Web.UI.ControlBuilder" /> assigned to the child control.</param>
         <summary>Adds builders to the <see cref="T:System.Web.UI.ObjectTagBuilder" /> object for any child controls that belong to the container control.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Init">
@@ -110,6 +114,7 @@
  \- or -  
   
  The <see langword="classid" /> or <see langword="progid" /> attributes are not included or are invalid.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -13,6 +13,7 @@
   <Docs>
     <summary>Performs increment and decrement operations that correspond to the prefix and postfix syntax. This class belongs to the abstract syntax tree category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,6 +32,7 @@
         <param name="operatorTok">One of the <see cref="T:Microsoft.JScript.JSToken" /> enumeration values. Specifies the operation to perform.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.PostOrPrefixOperator" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EvaluatePostOrPrefix">
@@ -58,6 +60,7 @@
         <summary>Performs an increment or decrement operation on the specified operand.</summary>
         <returns>The result of the operation.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

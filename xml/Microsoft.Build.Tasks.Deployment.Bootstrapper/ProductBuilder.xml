@@ -17,6 +17,7 @@
   <Docs>
     <summary>Represents a buildable version of a <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.Product" />.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Product">
@@ -35,6 +36,7 @@
         <summary>Gets the <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.Product" /> object that corresponds to this <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder" /> object.</summary>
         <value>Returns the <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.Product" /> object that corresponds to this <see cref="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder" /> object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

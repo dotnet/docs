@@ -2,18 +2,19 @@
 title: "ICLRStrongName::StrongNameTokenFromPublicKey Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRStrongName.StrongNameTokenFromPublicKey"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameTokenFromPublicKey"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRStrongName::StrongNameTokenFromPublicKey method [.NET Framework hosting]"
   - "StrongNameTokenFromPublicKey method, ICLRStrongName interface [.NET Framework hosting]"
 ms.assetid: 7962ce88-7e86-4a6f-8298-621b01ffc3c2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -33,7 +36,7 @@ Gets a token that represents a public key. A strong name token is the shortened 
 ## Syntax  
   
 ```  
-HRESULT StrongNameTokenFromPublicKey (   
+HRESULT StrongNameTokenFromPublicKey (   
     [in]  BYTE    *pbPublicKeyBlob,  
     [in]  ULONG   cbPublicKeyBlob,  
     [out] BYTE    **ppbStrongNameToken,  

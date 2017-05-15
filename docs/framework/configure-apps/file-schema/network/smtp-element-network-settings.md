@@ -2,7 +2,7 @@
 title: "&lt;smtp&gt; Element (Network Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -39,9 +39,9 @@ Configures the delivery format, delivery method, and from address for sending e-
 ```  
   
       <smtp  
-  deliveryFormat="format"   
-  deliveryMethod="method"   
-  from="from address"   
+  deliveryFormat="format"   
+  deliveryMethod="method"   
+  from="from address"   
   <specifiedPickupDirectory> … </ specifiedPickupDirectory >  
   <network> … </network>  
 /smtp>  

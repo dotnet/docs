@@ -612,7 +612,7 @@
 ## Examples  
  For an example see:  
   
- [AddBeziers(Point\<xref:System.Drawing.Drawing2D.GraphicsPath.AddBeziers%28System.Drawing.Point%5B%5D%29>  
+ <xref:System.Drawing.Drawing2D.GraphicsPath.AddBeziers%28System.Drawing.Point%5B%5D%29>  
   
  ]]></format>
         </remarks>
@@ -645,7 +645,7 @@
    
   
 ## Examples  
- For an example, see [AddClosedCurve(Point\<xref:System.Drawing.Drawing2D.GraphicsPath.AddClosedCurve%28System.Drawing.Point%5B%5D%2CSystem.Single%29>.  
+ For an example, see <xref:System.Drawing.Drawing2D.GraphicsPath.AddClosedCurve%28System.Drawing.Point%5B%5D%2CSystem.Single%29>.  
   
  ]]></format>
         </remarks>
@@ -678,7 +678,7 @@
    
   
 ## Examples  
- For an example, see [AddClosedCurve(Point\<xref:System.Drawing.Drawing2D.GraphicsPath.AddClosedCurve%28System.Drawing.Point%5B%5D%2CSystem.Single%29>.  
+ For an example, see <xref:System.Drawing.Drawing2D.GraphicsPath.AddClosedCurve%28System.Drawing.Point%5B%5D%2CSystem.Single%29>.  
   
  ]]></format>
         </remarks>
@@ -760,7 +760,7 @@
    
   
 ## Examples  
- For an example, see [AddClosedCurve(Point\<xref:System.Drawing.Drawing2D.GraphicsPath.AddClosedCurve%28System.Drawing.Point%5B%5D%2CSystem.Single%29>.  
+ For an example, see <xref:System.Drawing.Drawing2D.GraphicsPath.AddClosedCurve%28System.Drawing.Point%5B%5D%2CSystem.Single%29>.  
   
  ]]></format>
         </remarks>
@@ -793,7 +793,7 @@
    
   
 ## Examples  
- For an example, see [AddClosedCurve(Point\<xref:System.Drawing.Drawing2D.GraphicsPath.AddClosedCurve%28System.Drawing.Point%5B%5D%2CSystem.Single%29>.  
+ For an example, see <xref:System.Drawing.Drawing2D.GraphicsPath.AddClosedCurve%28System.Drawing.Point%5B%5D%2CSystem.Single%29>.  
   
  ]]></format>
         </remarks>
@@ -826,7 +826,7 @@
    
   
 ## Examples  
- For an example, see [AddCurve(Point\<xref:System.Drawing.Drawing2D.GraphicsPath.AddCurve%28System.Drawing.Point%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Single%29>.  
+ For an example, see <xref:System.Drawing.Drawing2D.GraphicsPath.AddCurve%28System.Drawing.Point%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Single%29>.  
   
  ]]></format>
         </remarks>
@@ -861,7 +861,7 @@
    
   
 ## Examples  
- For an example, see [AddClosedCurve(Point\<xref:System.Drawing.Drawing2D.GraphicsPath.AddClosedCurve%28System.Drawing.Point%5B%5D%2CSystem.Single%29>.  
+ For an example, see <xref:System.Drawing.Drawing2D.GraphicsPath.AddClosedCurve%28System.Drawing.Point%5B%5D%2CSystem.Single%29>.  
   
  ]]></format>
         </remarks>
@@ -896,7 +896,7 @@
    
   
 ## Examples  
- For an example, see [AddCurve(Point\<xref:System.Drawing.Drawing2D.GraphicsPath.AddCurve%28System.Drawing.Point%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Single%29>.  
+ For an example, see <xref:System.Drawing.Drawing2D.GraphicsPath.AddCurve%28System.Drawing.Point%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Single%29>.  
   
  ]]></format>
         </remarks>
@@ -990,7 +990,7 @@
    
   
 ## Examples  
- For an example, see [AddCurve(Point\<xref:System.Drawing.Drawing2D.GraphicsPath.AddCurve%28System.Drawing.Point%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Single%29>.  
+ For an example, see <xref:System.Drawing.Drawing2D.GraphicsPath.AddCurve%28System.Drawing.Point%5B%5D%2CSystem.Int32%2CSystem.Int32%2CSystem.Single%29>.  
   
  ]]></format>
         </remarks>
@@ -1354,7 +1354,7 @@
    
   
 ## Examples  
- For an example, see [AddLines(Point\<xref:System.Drawing.Drawing2D.GraphicsPath.AddLines%28System.Drawing.Point%5B%5D%29>.  
+ For an example, see <xref:System.Drawing.Drawing2D.GraphicsPath.AddLines%28System.Drawing.Point%5B%5D%29>.  
   
  ]]></format>
         </remarks>
@@ -1597,7 +1597,7 @@
    
   
 ## Examples  
- For an example, see [AddPolygon(Point\<xref:System.Drawing.Drawing2D.GraphicsPath.AddPolygon%28System.Drawing.Point%5B%5D%29>.  
+ For an example, see <xref:System.Drawing.Drawing2D.GraphicsPath.AddPolygon%28System.Drawing.Point%5B%5D%29>.  
   
  ]]></format>
         </remarks>
@@ -1729,7 +1729,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- For an example, see [AddRectangles(Rectangle\<xref:System.Drawing.Drawing2D.GraphicsPath.AddRectangles%28System.Drawing.Rectangle%5B%5D%29>.  
+ For an example, see <xref:System.Drawing.Drawing2D.GraphicsPath.AddRectangles%28System.Drawing.Rectangle%5B%5D%29>.  
   
  ]]></format>
         </remarks>
@@ -1777,7 +1777,7 @@
   
 -   Draws the string to the screen.  
   
- There are two important things to be pointed out. First, notice that the `fontStyle` argument is cast as an integer. The <xref:System.Drawing.Drawing2D.GraphicsPath.AddString%2A> method requires this so that two or more <xref:System.Drawing.FontStyle> members can be combined to create the desired font style (in this case, <xref:System.Drawing.FontStyle> and <xref:System.Drawing.FontStyle>). Secondly, notice that the <xref:System.Drawing.Graphics.FillPath%2A> method is used rather than the <xref:System.Drawing.Graphics.DrawPath%2A> method. If <xref:System.Drawing.Graphics.FillPath%2A> is used, solid text is rendered, whereas if <xref:System.Drawing.Graphics.DrawPath%2A> is used, the text will be an outline style.  
+ There are two important things to be pointed out. First, notice that the `fontStyle` argument is cast as an integer. The <xref:System.Drawing.Drawing2D.GraphicsPath.AddString%2A> method requires this so that two or more <xref:System.Drawing.FontStyle> members can be combined to create the desired font style (in this case, <xref:System.Drawing.FontStyle.Italic> and <xref:System.Drawing.FontStyle.Underline>). Secondly, notice that the <xref:System.Drawing.Graphics.FillPath%2A> method is used rather than the <xref:System.Drawing.Graphics.DrawPath%2A> method. If <xref:System.Drawing.Graphics.FillPath%2A> is used, solid text is rendered, whereas if <xref:System.Drawing.Graphics.DrawPath%2A> is used, the text will be an outline style.  
   
  [!code-cpp[System.Drawing.Drawing2D.ClassicGraphicsPathExamples#14](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathExamples/CPP/form1.cpp#14)]
  [!code-csharp[System.Drawing.Drawing2D.ClassicGraphicsPathExamples#14](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Drawing2D.ClassicGraphicsPathExamples/CS/form1.cs#14)]
@@ -3285,7 +3285,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- For an example, see [Warp(PointF\<xref:System.Drawing.Drawing2D.GraphicsPath.Warp%28System.Drawing.PointF%5B%5D%2CSystem.Drawing.RectangleF%2CSystem.Drawing.Drawing2D.Matrix%2CSystem.Drawing.Drawing2D.WarpMode%2CSystem.Single%29>.  
+ For an example, see <xref:System.Drawing.Drawing2D.GraphicsPath.Warp%28System.Drawing.PointF%5B%5D%2CSystem.Drawing.RectangleF%2CSystem.Drawing.Drawing2D.Matrix%2CSystem.Drawing.Drawing2D.WarpMode%2CSystem.Single%29>.  
   
  ]]></format>
         </remarks>
@@ -3317,7 +3317,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- For an example, see [Warp(PointF\<xref:System.Drawing.Drawing2D.GraphicsPath.Warp%28System.Drawing.PointF%5B%5D%2CSystem.Drawing.RectangleF%2CSystem.Drawing.Drawing2D.Matrix%2CSystem.Drawing.Drawing2D.WarpMode%2CSystem.Single%29>.  
+ For an example, see <xref:System.Drawing.Drawing2D.GraphicsPath.Warp%28System.Drawing.PointF%5B%5D%2CSystem.Drawing.RectangleF%2CSystem.Drawing.Drawing2D.Matrix%2CSystem.Drawing.Drawing2D.WarpMode%2CSystem.Single%29>.  
   
  ]]></format>
         </remarks>
@@ -3351,7 +3351,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- For an example, see [Warp(PointF\<xref:System.Drawing.Drawing2D.GraphicsPath.Warp%28System.Drawing.PointF%5B%5D%2CSystem.Drawing.RectangleF%2CSystem.Drawing.Drawing2D.Matrix%2CSystem.Drawing.Drawing2D.WarpMode%2CSystem.Single%29>.  
+ For an example, see <xref:System.Drawing.Drawing2D.GraphicsPath.Warp%28System.Drawing.PointF%5B%5D%2CSystem.Drawing.RectangleF%2CSystem.Drawing.Drawing2D.Matrix%2CSystem.Drawing.Drawing2D.WarpMode%2CSystem.Single%29>.  
   
  ]]></format>
         </remarks>

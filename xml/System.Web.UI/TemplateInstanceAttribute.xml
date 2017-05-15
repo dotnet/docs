@@ -78,7 +78,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default behavior is to create multiple instances of the template using the <xref:System.Web.UI.TemplateInstance> enumeration value.  
+ The default behavior is to create multiple instances of the template using the <xref:System.Web.UI.TemplateInstance.Multiple> enumeration value.  
   
  ]]></format>
         </remarks>
@@ -145,7 +145,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The possible values are either the <xref:System.Web.UI.TemplateInstanceAttribute.Single> field or the <xref:System.Web.UI.TemplateInstance> field.  
+ The possible values are either the <xref:System.Web.UI.TemplateInstanceAttribute.Single> field or the <xref:System.Web.UI.TemplateInstance.Multiple> field.  
   
    
   
@@ -182,7 +182,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value for the <xref:System.Web.UI.TemplateInstanceAttribute> class is the <xref:System.Web.UI.TemplateInstanceAttribute> field.  
+ The default value for the <xref:System.Web.UI.TemplateInstanceAttribute> class is the <xref:System.Web.UI.TemplateInstanceAttribute.Multiple> field.  
   
    
   

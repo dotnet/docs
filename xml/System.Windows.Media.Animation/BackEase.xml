@@ -25,7 +25,7 @@
  ![BackEase formula.](~/add/media/backease-formula.png "BackEase formula.")  
   
 > [!NOTE]
->  Because this animation causes values to retract before progressing, the animation might interpolate into negative numbers unexpectedly. This can cause errors when animating properties that do not allow negative numbers. For example, if you apply this animation to the <xref:System.Windows.FrameworkElement.Height%2A> of an object (e.g. from 0 to 200 with an <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A> of <xref:System.Windows.Media.Animation.EasingMode>), the animation will attempt to interpolate through negative numbers for <xref:System.Windows.FrameworkElement.Height%2A> which will throw an error.  
+>  Because this animation causes values to retract before progressing, the animation might interpolate into negative numbers unexpectedly. This can cause errors when animating properties that do not allow negative numbers. For example, if you apply this animation to the <xref:System.Windows.FrameworkElement.Height%2A> of an object (e.g. from 0 to 200 with an <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A> of <xref:System.Windows.Media.Animation.EasingMode.EaseIn>), the animation will attempt to interpolate through negative numbers for <xref:System.Windows.FrameworkElement.Height%2A> which will throw an error.  
   
  There are several other easing functions besides <xref:System.Windows.Media.Animation.BackEase> which you can explore using the following Silverlight sample.  
   
@@ -45,8 +45,7 @@
 ## Examples  
  The following example applies a <xref:System.Windows.Media.Animation.BackEase> easing function to a <xref:System.Windows.Media.Animation.DoubleAnimation> to create an animation that retracts slightly at the beginning and end of the animation.  
   
- [!code-xml[BackEase_scale#BackEase_scale](~/samples/snippets/csharp/VS_Snippets_Wpf/backease_scale/CS/window1.xaml#backease_scale)]
- <!-- TODO: review snippet reference [!code-xml[BackEase_scale#BackEase_scale](~/samples/snippets/xaml/VS_Snippets_Wpf/backease_scale/xaml/window1.xaml#backease_scale)]  -->  
+ [!code-xml[BackEase_scale#BackEase_scale](~/samples/snippets/csharp/VS_Snippets_Wpf/backease_scale/CS/window1.xaml#backease_scale)]   
   
  ]]></format>
     </remarks>
@@ -88,7 +87,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[DP_ID_field_label](~/includes/dp-id-field-label-md.md)] <xref:System.Windows.Media.Animation.BackEase>  
+ [!INCLUDE[DP_ID_field_label](~/includes/dp-id-field-label-md.md)] <xref:System.Windows.Media.Animation.BackEase.AmplitudeProperty>  
   
  The larger the amplitude, the larger the retraction before and/or after the animation.  
   
@@ -106,8 +105,7 @@
 ## Examples  
  The following example applies a <xref:System.Windows.Media.Animation.BackEase> easing function to a <xref:System.Windows.Media.Animation.DoubleAnimation> to create an animation that retracts slightly at the beginning and end of the animation.  
   
- [!code-xml[BackEase_scale#BackEase_scale](~/samples/snippets/csharp/VS_Snippets_Wpf/backease_scale/CS/window1.xaml#backease_scale)]
- <!-- TODO: review snippet reference [!code-xml[BackEase_scale#BackEase_scale](~/samples/snippets/xaml/VS_Snippets_Wpf/backease_scale/xaml/window1.xaml#backease_scale)]  -->  
+ [!code-xml[BackEase_scale#BackEase_scale](~/samples/snippets/csharp/VS_Snippets_Wpf/backease_scale/CS/window1.xaml#backease_scale)]   
   
  ]]></format>
         </remarks>
@@ -187,9 +185,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method transforms normalized time to control the pace of an animation for the <xref:System.Windows.Media.Animation.EasingMode> case of <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A>.  
+ This method transforms normalized time to control the pace of an animation for the <xref:System.Windows.Media.Animation.EasingMode.EaseIn> case of <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A>.  
   
- You only have to specify your easing function for the <xref:System.Windows.Media.Animation.EasingMode> case because the implementation of the <xref:System.Windows.Media.Animation.EasingFunctionBase.Ease%2A> method transforms `normalizedTime` for the <xref:System.Windows.Media.Animation.EasingMode> and <xref:System.Windows.Media.Animation.EasingMode> cases.  
+ You only have to specify your easing function for the <xref:System.Windows.Media.Animation.EasingMode.EaseIn> case because the implementation of the <xref:System.Windows.Media.Animation.EasingFunctionBase.Ease%2A> method transforms `normalizedTime` for the <xref:System.Windows.Media.Animation.EasingMode.EaseOut> and <xref:System.Windows.Media.Animation.EasingMode.EaseInOut> cases.  
   
  ]]></format>
         </remarks>

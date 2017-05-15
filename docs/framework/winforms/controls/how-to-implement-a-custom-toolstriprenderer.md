@@ -2,7 +2,7 @@
 title: "How to: Implement a Custom ToolStripRenderer | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "ToolStrip control [Windows Forms]"
 ms.assetid: c66fd3f7-2377-4553-8f1b-006527f08f32
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Implement a Custom ToolStripRenderer

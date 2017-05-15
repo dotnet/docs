@@ -2,7 +2,7 @@
 title: "Best Practices for Scaling the Windows Forms DataGridView Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], scaling"
 ms.assetid: 8321a8a6-6340-4fd1-b475-fa090b905aaf
 caps.latest.revision: 31
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Best Practices for Scaling the Windows Forms DataGridView Control

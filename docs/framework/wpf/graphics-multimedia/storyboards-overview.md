@@ -2,7 +2,7 @@
 title: "Storyboards Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "Timelines"
 ms.assetid: 1a698c3c-30f1-4b30-ae56-57e8a39811bd
 caps.latest.revision: 31
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Storyboards Overview

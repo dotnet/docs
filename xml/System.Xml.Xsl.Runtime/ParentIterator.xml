@@ -29,6 +29,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Create">
@@ -56,6 +57,7 @@
         <param name="filter">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlNavigatorFilter" /> class, which enables you to filter nodes based on the name.</param>
         <summary>Initializes the <see cref="T:System.Xml.Xsl.Runtime.ParentIterator" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -85,6 +87,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -116,6 +119,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

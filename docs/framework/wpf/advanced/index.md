@@ -2,7 +2,7 @@
 title: "Advanced (Windows Presentation Foundation) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "XAML [WPF], content models"
 ms.assetid: 58843391-b28c-4d32-adf5-87acaf6578a1
 caps.latest.revision: 82
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Advanced (Windows Presentation Foundation)

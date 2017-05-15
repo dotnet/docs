@@ -2,7 +2,7 @@
 title: "How to: Create a Lookup Table for a Windows Forms ComboBox, ListBox, or CheckedListBox Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "ListBox control [Windows Forms], creating lookup tables"
 ms.assetid: 4ce35f12-1f4e-4317-92d1-af8686a8cfaa
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create a Lookup Table for a Windows Forms ComboBox, ListBox, or CheckedListBox Control

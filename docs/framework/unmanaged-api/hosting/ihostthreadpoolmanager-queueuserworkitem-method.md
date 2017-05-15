@@ -2,18 +2,19 @@
 title: "IHostThreadPoolManager::QueueUserWorkItem Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostThreadPoolManager.QueueUserWorkItem"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostThreadPoolManager::QueueUserWorkItem"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostThreadPoolManager::QueueUserWorkItem method [.NET Framework hosting]"
   - "QueueUserWorkItem method [.NET Framework hosting]"
 ms.assetid: 41602053-8670-4827-9d61-cbfcba509b9c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

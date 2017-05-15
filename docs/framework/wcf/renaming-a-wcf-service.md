@@ -2,7 +2,7 @@
 title: "Renaming a WCF Service | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,7 +28,7 @@ This topic describes how you can rename a [!INCLUDE[indigo1](../../../includes/i
 ```  
 <system.servicemodel>  
    <services>  
-      <service name=”WcfService.NewName”>  
+      <service name="WcfService.NewName">  
       </service>  
    </services>  
 </system.servicemodel>  
@@ -37,7 +37,7 @@ This topic describes how you can rename a [!INCLUDE[indigo1](../../../includes/i
 -   If your service is webhosted, it uses an *.svc file. Open the svc file and modify the name of your service as indicated in the following example. This step is not necessary for self-hosted applications, as there is no svc file.  
   
 ```  
-<%@ ServiceHost Service=”WcfService.NewName”>  
+<%@ ServiceHost Service="WcfService.NewName">  
 ```  
   
 ## Renaming a WCF Service Contract  
@@ -52,7 +52,7 @@ This topic describes how you can rename a [!INCLUDE[indigo1](../../../includes/i
 <system.servicemodel>  
    <services>  
       <service>  
-         <endpoint contract=”WcfService.NewContractName” />  
+         <endpoint contract="WcfService.NewContractName" />  
       </service>  
    </services>  
 </system.servicemodel>  

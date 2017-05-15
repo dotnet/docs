@@ -2,7 +2,7 @@
 title: "System.String Methods | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -44,12 +44,12 @@ manager: "jhubbard"
   
 |Unsupported System.String Non-static Methods|  
 |---------------------------------------------------|  
-|[String.IndexOfAny(Char\<xref:System.String.IndexOfAny%28System.Char%5B%5D%29?displayProperty=fullName>|  
+|<xref:System.String.IndexOfAny%28System.Char%5B%5D%29?displayProperty=fullName>|  
 |<xref:System.String.Split%2A?displayProperty=fullName>|  
 |<xref:System.String.ToCharArray?displayProperty=fullName>|  
 |<xref:System.String.ToUpper%28System.Globalization.CultureInfo%29?displayProperty=fullName>|  
-|[String.TrimEnd(Char\<xref:System.String.TrimEnd%28System.Char%5B%5D%29?displayProperty=fullName>|  
-|[String.TrimStart(Char\<xref:System.String.TrimStart%28System.Char%5B%5D%29?displayProperty=fullName>|  
+|<xref:System.String.TrimEnd%28System.Char%5B%5D%29?displayProperty=fullName>|  
+|<xref:System.String.TrimStart%28System.Char%5B%5D%29?displayProperty=fullName>|  
   
 ## Differences from .NET  
   

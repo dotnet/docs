@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC36810"
 ms.assetid: 9323b5d2-ba14-4e49-91f1-9ad647162144
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -335,12 +335,12 @@
   
 |Operation|Flag Combination|  
 |---------------|----------------------|  
-|To simulate a click|<xref:System.Windows.Forms.AccessibleSelection> OR <xref:System.Windows.Forms.AccessibleSelection>|  
-|To select a target item by simulating CTRL+click|<xref:System.Windows.Forms.AccessibleSelection> OR <xref:System.Windows.Forms.AccessibleSelection>|  
-|To cancel selection of a target item by simulating CTRL+click|<xref:System.Windows.Forms.AccessibleSelection> OR <xref:System.Windows.Forms.AccessibleSelection>|  
-|To simulate SHIFT+click|<xref:System.Windows.Forms.AccessibleSelection> OR <xref:System.Windows.Forms.AccessibleSelection>|  
-|To select a range of objects and put focus on the last object|Specify <xref:System.Windows.Forms.AccessibleSelection> on the starting object to set the selection anchor. Then call Select again and specify <xref:System.Windows.Forms.AccessibleSelection> OR <xref:System.Windows.Forms.AccessibleSelection> on the last object.|  
-|To deselect all objects|Specify <xref:System.Windows.Forms.AccessibleSelection> on any object. This flag deselects all selected objects except the one just selected. Then call Select again and specify <xref:System.Windows.Forms.AccessibleSelection> on the same object.|  
+|To simulate a click|<xref:System.Windows.Forms.AccessibleSelection.TakeFocus> OR <xref:System.Windows.Forms.AccessibleSelection.TakeSelection>|  
+|To select a target item by simulating CTRL+click|<xref:System.Windows.Forms.AccessibleSelection.TakeFocus> OR <xref:System.Windows.Forms.AccessibleSelection.AddSelection>|  
+|To cancel selection of a target item by simulating CTRL+click|<xref:System.Windows.Forms.AccessibleSelection.TakeFocus> OR <xref:System.Windows.Forms.AccessibleSelection.RemoveSelection>|  
+|To simulate SHIFT+click|<xref:System.Windows.Forms.AccessibleSelection.TakeFocus> OR <xref:System.Windows.Forms.AccessibleSelection.ExtendSelection>|  
+|To select a range of objects and put focus on the last object|Specify <xref:System.Windows.Forms.AccessibleSelection.TakeFocus> on the starting object to set the selection anchor. Then call Select again and specify <xref:System.Windows.Forms.AccessibleSelection.TakeFocus> OR <xref:System.Windows.Forms.AccessibleSelection.ExtendSelection> on the last object.|  
+|To deselect all objects|Specify <xref:System.Windows.Forms.AccessibleSelection.TakeSelection> on any object. This flag deselects all selected objects except the one just selected. Then call Select again and specify <xref:System.Windows.Forms.AccessibleSelection.RemoveSelection> on the same object.|  
   
  This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.AccessibleObject> instance is cast to an <xref:Accessibility.IAccessible> interface.  
   

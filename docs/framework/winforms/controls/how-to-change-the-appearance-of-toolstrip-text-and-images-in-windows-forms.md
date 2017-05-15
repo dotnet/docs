@@ -2,7 +2,7 @@
 title: "How to: Change the Appearance of ToolStrip Text and Images in Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "toolbars [Windows Forms], text"
 ms.assetid: d62dc9d1-2edd-4dfa-aed7-1335d6e13d86
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Change the Appearance of ToolStrip Text and Images in Windows Forms

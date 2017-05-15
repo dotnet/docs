@@ -24,6 +24,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -39,6 +40,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JScriptException" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -57,6 +59,7 @@
         <param name="errorNumber">One of the enumeration values. The value specifies the error.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JScriptException" /> class, using the specified <see cref="T:Microsoft.JScript.JSError" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -75,6 +78,7 @@
         <param name="m">The message that describes the error.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JScriptException" /> class, using the specified error message.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -95,6 +99,7 @@
         <param name="context">Contextual information about the source or destination.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JScriptException" /> class, using the specified serialized data.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -115,6 +120,7 @@
         <param name="e">The exception that is the cause of the current exception.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JScriptException" /> class, using the specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Column">
@@ -133,6 +139,7 @@
         <summary>Gets the column in the code in which the error occurs.</summary>
         <value>The column in the code in which the error occurs, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -151,6 +158,7 @@
         <summary>Gets a message that describes the error.</summary>
         <value>A message that describes the error.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EndColumn">
@@ -169,6 +177,7 @@
         <summary>Gets the column in the code in which the error ends.</summary>
         <value>The column in the code in which the error ends, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EndLine">
@@ -187,6 +196,7 @@
         <summary>Gets the line of code in which the error ends.</summary>
         <value>The line of code in which the error ends, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ErrorNumber">
@@ -205,6 +215,7 @@
         <summary>Gets the <see cref="P:System.Exception.HResult" /> code of the error.</summary>
         <value>The <see cref="P:System.Exception.HResult" /> code of the error.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -233,6 +244,7 @@
         <param name="context">Contextual information about the source or destination.</param>
         <summary>Stores information about the exception, including <c>IsError</c> and <c>Code</c> values, in the <see cref="T:System.Runtime.Serialization.SerializationInfo" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Line">
@@ -251,6 +263,7 @@
         <summary>Gets the line of code in which the error occurs.</summary>
         <value>The line of code in which the error occurs, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LineText">
@@ -269,6 +282,7 @@
         <summary>Gets the text of the code in which the error occurs.</summary>
         <value>The text of the code, or an empty string if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -287,6 +301,7 @@
         <summary>Gets a message that describes the error.</summary>
         <value>A message that describes the error.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Microsoft.JScript.Vsa.IJSVsaError.Description">
@@ -341,6 +356,7 @@
         <summary>Gets the <see cref="P:System.Exception.HResult" /> code of the error.</summary>
         <value>The <see cref="P:System.Exception.HResult" /> code of the error.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Severity">
@@ -359,6 +375,7 @@
         <summary>Gets a number between 0 (most severe) and 4 (least severe) that indicates the severity of the error. 0 is the default.</summary>
         <value>A number between 0 and 4.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SourceItem">
@@ -377,6 +394,7 @@
         <summary>Gets the source code item that caused the error.</summary>
         <value>The source code item; or throws a <see cref="T:Microsoft.JScript.NoContextException" /> if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SourceMoniker">
@@ -395,6 +413,7 @@
         <summary>Gets the name of the source code file that contains the error.</summary>
         <value>The name of the source code file, or the string literal "no source" if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StackTrace">
@@ -413,6 +432,7 @@
         <summary>Gets the stack trace information at the time of the error.</summary>
         <value>The stack trace information.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StartColumn">
@@ -431,6 +451,7 @@
         <summary>Gets the column in the code in which the error occurs.</summary>
         <value>The column in the code in which the error occurs, or 0 if the <see cref="T:Microsoft.JScript.Context" /> is null.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

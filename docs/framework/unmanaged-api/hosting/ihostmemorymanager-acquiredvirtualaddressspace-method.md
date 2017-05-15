@@ -2,18 +2,19 @@
 title: "IHostMemoryManager::AcquiredVirtualAddressSpace Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostMemoryManager.AcquiredVirtualAddressSpace"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostMemoryManager::AcquiredVirtualAddressSpace"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostMemoryManager::AcquiredVirtualAddressSpace method [.NET Framework hosting]"
   - "AcquiredVirtualAddressSpace method [.NET Framework hosting]"
 ms.assetid: ef2f83c2-127e-4c38-8385-306c03cd2167
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

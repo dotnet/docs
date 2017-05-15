@@ -2,7 +2,7 @@
 title: "How to: Control When the TextBox Text Updates the Source | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "timing of source updates"
 ms.assetid: ffb7b96a-351d-4c68-81e7-054033781c64
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Control When the TextBox Text Updates the Source

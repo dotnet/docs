@@ -2,18 +2,19 @@
 title: "ICLRRuntimeHost::GetCurrentAppDomainId Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRRuntimeHost.GetCurrentAppDomainId"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRRuntimeHost::GetCurrentAppDomainId"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRRuntimeHost::GetCurrentAppDomainId method [.NET Framework hosting]"
   - "GetCurrentAppDomainId method [.NET Framework hosting]"
 ms.assetid: 33800475-7815-4976-8aca-a1038761a2ef
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

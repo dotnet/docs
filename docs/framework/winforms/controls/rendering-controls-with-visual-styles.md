@@ -2,7 +2,7 @@
 title: "Rendering Controls with Visual Styles | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "visual styles, rendering Windows Forms controls"
 ms.assetid: a5b178ba-610e-46c4-a6c0-509c0886a744
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Rendering Controls with Visual Styles

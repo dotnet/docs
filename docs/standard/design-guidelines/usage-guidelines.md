@@ -2,11 +2,10 @@
 title: "Usage Guidelines | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 dev_langs: 
@@ -33,7 +32,7 @@ This section contains guidelines for using common types in publicly accessible A
 ## In This Section  
  [Arrays](../../../docs/standard/design-guidelines/arrays.md)  
  [Attributes](../../../docs/standard/design-guidelines/attributes.md)  
- [Collections](http://msdn.microsoft.com/library/02586e4c-851d-41d0-a722-feb11c17c74c)  
+ [Collections](/cpp/mfc/collections)  
  [Serialization](../../../docs/standard/design-guidelines/serialization.md)  
  [System.Xml Usage](../../../docs/standard/design-guidelines/system-xml-usage.md)  
  [Equality Operators](../../../docs/standard/design-guidelines/equality-operators.md)  

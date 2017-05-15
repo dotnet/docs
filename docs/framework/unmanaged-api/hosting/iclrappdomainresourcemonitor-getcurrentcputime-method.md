@@ -2,18 +2,19 @@
 title: "ICLRAppDomainResourceMonitor::GetCurrentCpuTime Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRAppDomainResourceMonitor.GetCurrentCpuTime"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRAppDomainResourceMonitor::GetCurrentCpuTime"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRAppDomainResourceMonitor::GetCurrentCpuTime method [.NET Framework hosting]"
   - "GetCurrentCpuTime method [.NET Framework hosting]"
 ms.assetid: ebc9cc33-fcd6-4cae-9ecb-ea21c51874e6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

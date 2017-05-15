@@ -2,21 +2,21 @@
 title: "Deactivate Function (WPF Unmanaged API Reference) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
+api_name: 
   - "Deactivate"
-apilocation: 
+api_location: 
   - "PresentationHost_v0400.dll"
 ms.assetid: 3e81be16-24c7-4399-b242-6268feaa49d7
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Deactivate Function (WPF Unmanaged API Reference)

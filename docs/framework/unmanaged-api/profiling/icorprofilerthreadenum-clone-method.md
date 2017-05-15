@@ -2,18 +2,19 @@
 title: "ICorProfilerThreadEnum::Clone Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerThreadEnum.Clone"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerThreadEnum::Clone"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "Clone method, ICorProfilerThreadEnum interface [.NET Framework profiling]"
   - "ICorProfilerThreadEnum::Clone method [.NET Framework profiling]"
 ms.assetid: 5a278bc9-88e2-4c69-b035-9d550dd77081
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

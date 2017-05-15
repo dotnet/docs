@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Shape control, implementing tabbing"
 ms.assetid: 09731b34-3900-4fcb-a9df-ce5280328433
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

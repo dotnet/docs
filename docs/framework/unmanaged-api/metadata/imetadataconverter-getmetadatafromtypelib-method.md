@@ -2,18 +2,19 @@
 title: "IMetaDataConverter::GetMetaDataFromTypeLib Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataConverter.GetMetaDataFromTypeLib"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataConverter::GetMetaDataFromTypeLib"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataConverter::GetMetaDataFromTypeLib method [.NET Framework metadata]"
   - "GetMetaDataFromTypeLib method [.NET Framework metadata]"
 ms.assetid: 97dc3a56-adfa-431f-889e-06a35ac84d51
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

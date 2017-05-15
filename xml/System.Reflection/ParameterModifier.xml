@@ -15,6 +15,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
@@ -30,7 +34,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Reflection.ParameterModifier> structure is used with the [Type.InvokeMember(String, BindingFlags, Binder, Object, Object\[\], ParameterModifier\[\], CultureInfo, String\<xref:System.Type.InvokeMember%28System.String%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%2CSystem.Object%5B%5D%2CSystem.Reflection.ParameterModifier%5B%5D%2CSystem.Globalization.CultureInfo%2CSystem.String%5B%5D%29?displayProperty=fullName> method overload when passing parameters by reference to a COM component that is accessed late bound. The parameters that are to be passed by reference are specified by a single <xref:System.Reflection.ParameterModifier> structure, which must be passed in an array containing a single element. The single <xref:System.Reflection.ParameterModifier> structure in this array must be initialized with the number of parameters in the member that is to be invoked. To indicate which of these parameters are passed by reference, set the value of the <xref:System.Reflection.ParameterModifier.Item%2A> property (the indexer in C#) to `true` for the index number corresponding to the zero-based position of the parameter.  
+ The <xref:System.Reflection.ParameterModifier> structure is used with the <xref:System.Type.InvokeMember%28System.String%2CSystem.Reflection.BindingFlags%2CSystem.Reflection.Binder%2CSystem.Object%2CSystem.Object%5B%5D%2CSystem.Reflection.ParameterModifier%5B%5D%2CSystem.Globalization.CultureInfo%2CSystem.String%5B%5D%29?displayProperty=fullName> method overload when passing parameters by reference to a COM component that is accessed late bound. The parameters that are to be passed by reference are specified by a single <xref:System.Reflection.ParameterModifier> structure, which must be passed in an array containing a single element. The single <xref:System.Reflection.ParameterModifier> structure in this array must be initialized with the number of parameters in the member that is to be invoked. To indicate which of these parameters are passed by reference, set the value of the <xref:System.Reflection.ParameterModifier.Item%2A> property (the indexer in C#) to `true` for the index number corresponding to the zero-based position of the parameter.  
   
    
   
@@ -63,6 +67,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="parameterCount" Type="System.Int32" />
       </Parameters>
@@ -91,6 +99,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

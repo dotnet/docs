@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a closure function. This class belongs to the objects and functions category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,6 +32,7 @@
         <param name="func">The function that this closure represents.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.Closure" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="arguments">
@@ -48,6 +50,7 @@
       <Docs>
         <summary>The arguments to use for the function.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="caller">
@@ -65,6 +68,7 @@
       <Docs>
         <summary>The calling scope information from the stack frame.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -84,6 +88,7 @@
         <summary>Creates a string representation of the function, such as the name of the function or the context.</summary>
         <returns>A string representation of the function.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -2,19 +2,20 @@
 title: "GetCORSystemDirectory Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "GetCORSystemDirectory"
-apilocation: 
+api_location: 
   - "mscoree.dll"
   - "mscoreei.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "GetCORSystemDirectory"
 dev_langs: 
@@ -22,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GetCORSystemDirectory function [.NET Framework hosting]"
 ms.assetid: 3dcd16a7-dafc-4ca8-b5cd-20ffb37db91d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -35,7 +38,7 @@ Returns the installation directory of the common language runtime (CLR) that is 
 ## Syntax  
   
 ```  
-HRESULT GetCORSystemDirectory (   
+HRESULT GetCORSystemDirectory (   
     [out] LPWSTR  pbuffer,     
     [in]  DWORD   cchBuffer,   
     [out] DWORD*  dwlength  

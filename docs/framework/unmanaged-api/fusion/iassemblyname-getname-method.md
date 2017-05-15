@@ -2,18 +2,19 @@
 title: "IAssemblyName::GetName Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IAssemblyName.GetName"
-apilocation: 
+api_location: 
   - "fusion.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IAssemblyName::GetName"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetName method, IAssemblyName interface [.NET Framework debugging]"
   - "IAssemblyName::GetName method [.NET Framework fusion]"
 ms.assetid: 1dee9781-1cf3-48a9-a376-d18ea1f73280
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

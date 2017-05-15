@@ -28,7 +28,7 @@ Magicians use this technique because every card is in a known location after eac
 
 For our purposes, it is a light hearted look at manipulating sequences of data. The application you'll build will construct a card deck, and then perform a sequence of shuffles, writing the sequence out each time. You'll also compare the updated order to the original order.
 
-This tutorial has multiple steps. After each step, you can run the application and see the progress. You can also see the completed sample in our [GitHub repository](https://github.com/dotnet/docs/blob/master/samples/csharp/getting-started/console-linq).
+This tutorial has multiple steps. After each step, you can run the application and see the progress. You can also see the [completed sample](https://github.com/dotnet/docs/blob/master/samples/csharp/getting-started/console-linq) in the dotnet/docs GitHub repository. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 ## Prerequisites
 
@@ -36,7 +36,7 @@ You’ll need to setup your machine to run .NET core. You can find the installat
 
 ## Create the Application
 
-The first step is to create a new application. Open a command prompt and create a new directory for your application. Make that the current directory. Type the command `dotnet new console` at the command prompt. This creates the starter files for a basic “Hello World” application.
+The first step is to create a new application. Open a command prompt and create a new directory for your application. Make that the current directory. Type the command `dotnet new console` at the command prompt. This creates the starter files for a basic "Hello World" application.
 
 If you've never used C# before, [this tutorial](console-teleprompter.md) explains the structure of a C# program. You can read that and then return here to learn more about LINQ. 
 

@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents the information that is used to call a function. This includes the function, the caller, the arguments, and information about the stack frame. This class belongs to the objects and functions category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="callee">
@@ -30,6 +31,7 @@
       <Docs>
         <summary>A closure function that represents the function that is being called.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="caller">
@@ -47,6 +49,7 @@
       <Docs>
         <summary>The calling scope information from the stack frame.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="length">
@@ -64,6 +67,7 @@
       <Docs>
         <summary>The number of arguments.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

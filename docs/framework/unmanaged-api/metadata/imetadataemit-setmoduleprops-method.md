@@ -2,18 +2,19 @@
 title: "IMetaDataEmit::SetModuleProps Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataEmit.SetModuleProps"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::SetModuleProps"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SetModuleProps method [.NET Framework metadata]"
   - "IMetaDataEmit::SetModuleProps method [.NET Framework metadata]"
 ms.assetid: b74d7629-5f46-458f-8d67-2456a1e7030c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

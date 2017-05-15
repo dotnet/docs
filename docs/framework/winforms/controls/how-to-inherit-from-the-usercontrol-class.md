@@ -2,7 +2,7 @@
 title: "How to: Inherit from the UserControl Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "composite controls, creating"
 ms.assetid: 67713625-e2e4-4f6a-bce7-0855ee5043d9
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Inherit from the UserControl Class

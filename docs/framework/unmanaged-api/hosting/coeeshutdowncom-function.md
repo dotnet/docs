@@ -2,21 +2,22 @@
 title: "CoEEShutDownCOM Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "CoEEShutDownCOM"
-apilocation: 
+api_location: 
   - "mscoree.dll"
   - "clr.dll"
   - "mscorwks.dll"
   - "mscoreei.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "CoEEShutDownCOM"
 dev_langs: 
@@ -24,6 +25,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CoEEShutDownCOM function [.NET Framework hosting]"
 ms.assetid: b634cae2-632f-4737-9be4-92d0652844d7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

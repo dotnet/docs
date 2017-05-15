@@ -2,18 +2,19 @@
 title: "IMetaDataEmit2::SaveDeltaToMemory Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataEmit2.SaveDeltaToMemory"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit2::SaveDeltaToMemory"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SaveDeltaToMemory method [.NET Framework metadata]"
   - "IMetaDataEmit2::SaveDeltaToMemory method [.NET Framework metadata]"
 ms.assetid: e2146726-0084-4c9e-a2d2-e8d461b13b21
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

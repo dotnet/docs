@@ -13,6 +13,7 @@
   <Docs>
     <summary>Creates and compiles <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicReference`1" /> and <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicValue`1" /> expressions.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="CreatePrecompiledVisualBasicReference">
@@ -49,6 +50,7 @@
         <summary>Creates and returns a precompiled <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicReference`1" /> expression.</summary>
         <returns>The precompiled <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicReference`1" /> expression.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreatePrecompiledVisualBasicValue">
@@ -85,6 +87,7 @@
         <summary>Creates and returns a precompiled <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicValue`1" /> expression.</summary>
         <returns>The precompiled <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicValue`1" /> expression.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NameShadowingConstraint">
@@ -103,6 +106,7 @@
         <summary>Gets the constraint used in name shadowing.</summary>
         <value>The constraint used in name shadowing.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RecompileVisualBasicReference">
@@ -131,6 +135,7 @@
         <summary>Recompiles a previously compiled <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicReference`1" /> expression.</summary>
         <returns>The recompiled <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicReference`1" /> expression.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RecompileVisualBasicValue">
@@ -159,6 +164,7 @@
         <summary>Recompiles a previously compiled <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicValue`1" /> expression.</summary>
         <returns>The recompiled <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicValue`1" /> expression.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

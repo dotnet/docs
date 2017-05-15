@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a stream of data. This class sends its data to either a <see cref="T:Microsoft.JScript.COMCharStream" /> or a <see cref="T:System.Console" /> stream.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.ScriptStream" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -45,6 +47,7 @@
       <Docs>
         <summary>Stores a reference to either the standard console <see cref="P:System.Console.Error" /> stream or a custom <see cref="T:Microsoft.JScript.COMCharStream" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Out">
@@ -62,6 +65,7 @@
       <Docs>
         <summary>Stores a reference to either the standard console <see cref="P:System.Console.Out" /> stream or a custom <see cref="T:Microsoft.JScript.COMCharStream" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PrintStackTrace">
@@ -80,6 +84,7 @@
       <Docs>
         <summary>Writes a string that describes the current contents of the call stack. The string is written to the <see cref="F:Microsoft.JScript.ScriptStream.Out" /> stream.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PrintStackTrace">
@@ -101,6 +106,7 @@
         <param name="e">The exception that was thrown.</param>
         <summary>Writes a string that describes the contents of the call stack at the time the specified exception was thrown. The string is written to the <see cref="F:Microsoft.JScript.ScriptStream.Out" /> stream.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -122,6 +128,7 @@
         <param name="str">The string to write to the stream.</param>
         <summary>Writes the specified string to the stream. The string is written to the <see cref="F:Microsoft.JScript.ScriptStream.Out" /> stream.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WriteLine">
@@ -143,6 +150,7 @@
         <param name="str">The string to write to the stream.</param>
         <summary>Writes the specified string to the stream, followed by the line terminator. The string is written to the <see cref="F:Microsoft.JScript.ScriptStream.Out" /> stream.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

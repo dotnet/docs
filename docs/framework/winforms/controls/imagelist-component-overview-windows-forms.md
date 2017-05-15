@@ -2,7 +2,7 @@
 title: "ImageList Component Overview (Windows Forms) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "ImageList component [Windows Forms], about ImageList component"
 ms.assetid: 7e25d89b-5633-40c1-afc3-82e0e301ffa2
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ImageList Component Overview (Windows Forms)

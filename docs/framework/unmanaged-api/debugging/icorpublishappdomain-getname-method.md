@@ -2,18 +2,19 @@
 title: "ICorPublishAppDomain::GetName Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorPublishAppDomain.GetName"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorPublishAppDomain::GetName"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetName method, ICorPublishAppDomain interface [.NET Framework debugging]"
   - "ICorPublishAppDomain::GetName method [.NET Framework debugging]"
 ms.assetid: 6ef8ac9b-9803-4b65-8b13-25f3e0b1bc6b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -2,18 +2,19 @@
 title: "IHostTaskManager::GetCurrentTask Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostTaskManager.GetCurrentTask"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostTaskManager::GetCurrentTask"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetCurrentTask method, IHostTaskManager interface [.NET Framework hosting]"
   - "IHostTaskManager::GetCurrentTask method [.NET Framework hosting]"
 ms.assetid: f17bca49-90bd-4dee-a5e1-b9a57ea46f85
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

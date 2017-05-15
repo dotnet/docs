@@ -2,7 +2,7 @@
 title: "How to: Define Z-Ordering of Docked ToolStrip Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "z-order"
 ms.assetid: 8b595429-ba9f-46af-9c55-3d5cc53f7fff
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Define Z-Ordering of Docked ToolStrip Controls

@@ -2,7 +2,7 @@
 title: "How to: Determine When Formatting Attributes Change in the Windows Forms RichTextBox Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "SelChange event"
 ms.assetid: bdfed015-f77a-41e5-b38f-f8629b2fa166
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Determine When Formatting Attributes Change in the Windows Forms RichTextBox Control

@@ -2,19 +2,20 @@
 title: "ICLRStrongName::GetHashFromHandle Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRStrongName.GetHashFromHandle"
   - "ICLRStrongName.StrongNameCompareAssemblies"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRStrongName::GetHashFromHandle"
 dev_langs: 
@@ -23,6 +24,8 @@ helpviewer_keywords:
   - "GetHashFromHandle method, ICLRStrongName interface [.NET Framework hosting]"
   - "ICLRStrongName::GetHashFromHandle method [.NET Framework hosting]"
 ms.assetid: 3bedbb7d-3cdd-4175-b370-10ae734062db
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

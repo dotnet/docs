@@ -2,18 +2,19 @@
 title: "INotifySink2::OnSyncCallEnter Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "INotifySink2.OnSyncCallEnter"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "INotifySink2::OnSyncCallEnter"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "INotifySink2::OnSyncCallEnter method [.NET Framework debugging]"
   - "OnSyncCallEnter method [.NET Framework debugging]"
 ms.assetid: e33265be-c25d-4145-ad02-c3e89d6f26c1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

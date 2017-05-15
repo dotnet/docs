@@ -2,18 +2,19 @@
 title: "IGCHostControl::RequestVirtualMemLimit Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IGCHostControl.RequestVirtualMemLimit"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "RequestVirtualMemLimit"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IGCHostControl::RequestVirtualMemLimit method [.NET Framework hosting]"
   - "RequestVirtualMemLimit method [.NET Framework hosting]"
 ms.assetid: f4984a8c-4c0e-4460-9aa1-d022b3621228
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -2,7 +2,7 @@
 title: "How to: Set Pictures at Run Time (Windows Forms) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "PictureBox control [Windows Forms], adding pictures"
 ms.assetid: 18ca41d0-68a5-4660-985e-a6c1fbc01d76
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set Pictures at Run Time (Windows Forms)

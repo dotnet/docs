@@ -32,6 +32,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,6 +49,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Contexts.Context" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AllocateDataSlot">
@@ -75,6 +77,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AllocateNamedDataSlot">
@@ -105,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ContextID">
@@ -124,6 +128,7 @@
         <summary>Gets the context ID for the current context.</summary>
         <value>The context ID for the current context.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ContextProperties">
@@ -143,6 +148,7 @@
         <summary>Gets the array of the current context properties.</summary>
         <value>The current context properties array; otherwise, <see langword="null" /> if the context does not have any properties attributed to it.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DefaultContext">
@@ -169,6 +175,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DoCallBack">
@@ -198,6 +205,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -224,6 +232,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FreeNamedDataSlot">
@@ -253,6 +262,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Freeze">
@@ -280,6 +290,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The context is already frozen.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -303,6 +314,7 @@
         <summary>Retrieves the value from the specified slot on the current context.</summary>
         <returns>Returns the data associated with <paramref name="slot" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetNamedDataSlot">
@@ -333,6 +345,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -356,6 +369,7 @@
         <summary>Returns a specific context property, specified by name.</summary>
         <returns>The specified context property.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RegisterDynamicProperty">
@@ -400,6 +414,7 @@
         <exception cref="T:System.ArgumentNullException">Either <paramref name="prop" /> or its name is <see langword="null" />, or it is not dynamic (it does not implement <see cref="T:System.Runtime.Remoting.Contexts.IDynamicProperty" />).</exception>
         <exception cref="T:System.ArgumentException">Both an object as well as a context are specified (both <paramref name="obj" /> and <paramref name="ctx" /> are not <see langword="null" />).</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for plugging code into the CLR infrastructure. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -424,6 +439,7 @@
         <param name="data">The data that is to be added.</param>
         <summary>Sets the data in the specified slot on the current context.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetProperty">
@@ -455,6 +471,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The context is frozen.</exception>
         <exception cref="T:System.ArgumentNullException">The property or the property name is <see langword="null" />.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -475,6 +492,7 @@
         <summary>Returns a <see cref="T:System.String" /> class representation of the current context.</summary>
         <returns>A <see cref="T:System.String" /> class representation of the current context.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UnregisterDynamicProperty">
@@ -506,6 +524,7 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> parameter is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">Both an object as well as a context are specified (both <paramref name="obj" /> and <paramref name="ctx" /> are not <see langword="null" />).</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for plugging code into the CLR infrastructure. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" />.</permission>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

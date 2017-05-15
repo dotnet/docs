@@ -20,6 +20,7 @@
   <Docs>
     <summary>Specifies the JScript error messages. This class belongs to the compilation and run-time state category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="AbstractCannotBePrivate">
@@ -36,6 +37,7 @@
       </ReturnValue>
       <Docs>
         <summary>An abstract method cannot be private.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AbstractCannotBeStatic">
@@ -52,6 +54,7 @@
       </ReturnValue>
       <Docs>
         <summary>Static methods cannot be abstract.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AbstractWithBody">
@@ -68,6 +71,7 @@
       </ReturnValue>
       <Docs>
         <summary>An abstract function cannot have a body.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ActionNotSupported">
@@ -84,6 +88,7 @@
       </ReturnValue>
       <Docs>
         <summary>The object does not support this action.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AmbiguousBindingBecauseOfEval">
@@ -100,6 +105,7 @@
       </ReturnValue>
       <Docs>
         <summary>The presence of <see cref="T:Microsoft.JScript.Eval" /> has made the use of this name ambiguous.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AmbiguousBindingBecauseOfWith">
@@ -116,6 +122,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <see cref="T:Microsoft.JScript.With" /> statement has made the use of this name ambiguous.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AmbiguousConstructorCall">
@@ -132,6 +139,7 @@
       </ReturnValue>
       <Docs>
         <summary>More than one constructor matches this parameter list.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AmbiguousMatch">
@@ -148,6 +156,7 @@
       </ReturnValue>
       <Docs>
         <summary>More than one method or property matches this parameter list.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ArrayLengthAssignIncorrect">
@@ -164,6 +173,7 @@
       </ReturnValue>
       <Docs>
         <summary>Array length must be assigned a finite positive number.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ArrayLengthConstructIncorrect">
@@ -180,6 +190,7 @@
       </ReturnValue>
       <Docs>
         <summary>Array length must be a finite positive integer.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ArrayMayBeCopied">
@@ -196,6 +207,7 @@
       </ReturnValue>
       <Docs>
         <summary>Assigning a JScript array to a <see cref="T:System.Array" /> may cause the array to be copied.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AssemblyAttributesMustBeGlobal">
@@ -212,6 +224,7 @@
       </ReturnValue>
       <Docs>
         <summary>Assembly custom attributes cannot be part of another construct.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AssignmentToReadOnly">
@@ -228,6 +241,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cannot assign to read-only field or property.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BadBreak">
@@ -244,6 +258,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cannot have <see langword="break" /> outside the loop.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BadContinue">
@@ -260,6 +275,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cannot have <see langword="continue" /> outside the loop.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BadFunctionDeclaration">
@@ -276,6 +292,7 @@
       </ReturnValue>
       <Docs>
         <summary>Possible invalid function declaration, function missing, or unrecognized syntax error.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BadHexDigit">
@@ -292,6 +309,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected hexadecimal digit.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BadLabel">
@@ -308,6 +326,7 @@
       </ReturnValue>
       <Docs>
         <summary>There is already a label that has that name.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BadModifierInInterface">
@@ -324,6 +343,7 @@
       </ReturnValue>
       <Docs>
         <summary>This modifier cannot be used on an interface member.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BadOctalLiteral">
@@ -340,6 +360,7 @@
       </ReturnValue>
       <Docs>
         <summary>Malformed octal literal treated as decimal literal.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BadPropertyDeclaration">
@@ -356,6 +377,7 @@
       </ReturnValue>
       <Docs>
         <summary>Invalid property declaration. The <see langword="get" /> accessor must not have arguments and the <see langword="set" /> accessor must have one argument.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BadReturn">
@@ -372,6 +394,7 @@
       </ReturnValue>
       <Docs>
         <summary>Return statement cannot appear outside the function.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BadSwitch">
@@ -388,6 +411,7 @@
       </ReturnValue>
       <Docs>
         <summary>Missing <see langword="case" /> or <see langword="default" /> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BadThrow">
@@ -404,6 +428,7 @@
       </ReturnValue>
       <Docs>
         <summary>A <see langword="throw" /> statement must have an argument unless it is inside the <see langword="catch" /> block of a <see langword="try" /> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BadVariableDeclaration">
@@ -420,6 +445,7 @@
       </ReturnValue>
       <Docs>
         <summary>Possible invalid variable declaration, <see langword="var" /> missing, or unrecognized syntax error.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BadWayToLeaveFinally">
@@ -436,6 +462,7 @@
       </ReturnValue>
       <Docs>
         <summary>It is slow and potentially confusing to leave a <see langword="finally" /> block this way.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BaseClassIsExpandoAlready">
@@ -452,6 +479,7 @@
       </ReturnValue>
       <Docs>
         <summary>A base class is already marked <see cref="T:Microsoft.JScript.Expando" />; current specification will be ignored.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BooleanExpected">
@@ -468,6 +496,7 @@
       </ReturnValue>
       <Docs>
         <summary>No Boolean value found.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CannotAssignToFunctionResult">
@@ -484,6 +513,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cannot assign to a function result.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CannotBeAbstract">
@@ -500,6 +530,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cannot be abstract unless class is marked as abstract.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CannotCallSecurityMethodLateBound">
@@ -516,6 +547,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <see cref="M:System.Security.CodeAccessPermission.Deny" />, <see cref="M:System.Security.CodeAccessPermission.PermitOnly" />, and <see cref="M:System.Security.CodeAccessPermission.Assert" /> security methods cannot be called using late binding.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CannotChangeVisibility">
@@ -532,6 +564,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cannot change visibility specification of a base method.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CannotInstantiateAbstractClass">
@@ -548,6 +581,7 @@
       </ReturnValue>
       <Docs>
         <summary>It is not possible to construct an instance of an abstract class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CannotNestPositionDirective">
@@ -564,6 +598,7 @@
       </ReturnValue>
       <Docs>
         <summary>Position directive must be ended before a new one can be started.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CannotReturnValueFromVoidFunction">
@@ -580,6 +615,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cannot return a value from a void function or constructor.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CannotUseNameOfClass">
@@ -596,6 +632,7 @@
       </ReturnValue>
       <Docs>
         <summary>Only a constructor function can have the same name as the class it appears in.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CannotUseStaticSecurityAttribute">
@@ -612,6 +649,7 @@
       </ReturnValue>
       <Docs>
         <summary>JScript does not support static security attributes.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CantAssignThis">
@@ -628,6 +666,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cannot assign to <see langword="this" />.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CantCreateObject">
@@ -644,6 +683,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cannot create object.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CcInvalidElif">
@@ -660,6 +700,7 @@
       </ReturnValue>
       <Docs>
         <summary>Unmatched <see langword="@elif" />; no <see langword="@if" /> defined.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CcInvalidElse">
@@ -676,6 +717,7 @@
       </ReturnValue>
       <Docs>
         <summary>Unmatched <see langword="@else" />; no <see langword="@if" /> defined.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CcInvalidEnd">
@@ -692,6 +734,7 @@
       </ReturnValue>
       <Docs>
         <summary>Unmatched <see langword="@end" />; no <see langword="@if" /> defined.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CcInvalidInDebugger">
@@ -708,6 +751,7 @@
       </ReturnValue>
       <Docs>
         <summary>Conditional compilation directives and variables cannot be used in the debugger.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CcOff">
@@ -724,6 +768,7 @@
       </ReturnValue>
       <Docs>
         <summary>Conditional compilation is turned off.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CircularDefinition">
@@ -740,6 +785,7 @@
       </ReturnValue>
       <Docs>
         <summary>Circular definition.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ClashWithProperty">
@@ -756,6 +802,7 @@
       </ReturnValue>
       <Docs>
         <summary>The name of the field conflicts with the name of the property.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ClassNotAllowed">
@@ -772,6 +819,7 @@
       </ReturnValue>
       <Docs>
         <summary>Class definition not allowed in this context.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConstructorMayNotHaveReturnType">
@@ -788,6 +836,7 @@
       </ReturnValue>
       <Docs>
         <summary>A constructor cannot have a return type.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CustomAttributeUsedMoreThanOnce">
@@ -804,6 +853,7 @@
       </ReturnValue>
       <Docs>
         <summary>This type of attribute must be unique.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DateExpected">
@@ -820,6 +870,7 @@
       </ReturnValue>
       <Docs>
         <summary>Date object expected.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DelegatesShouldNotBeExplicitlyConstructed">
@@ -836,6 +887,7 @@
       </ReturnValue>
       <Docs>
         <summary>Delegates should not be explicitly constructed; simply use the method name.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Deprecated">
@@ -852,6 +904,7 @@
       </ReturnValue>
       <Docs>
         <summary>The specified type is deprecated.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DifferentReturnTypeFromBase">
@@ -868,6 +921,7 @@
       </ReturnValue>
       <Docs>
         <summary>Method in base has a different return type.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DoesNotHaveAnAddress">
@@ -884,6 +938,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expression does not have an address.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DupDefault">
@@ -901,6 +956,7 @@
       <Docs>
         <summary>
           <see langword="default" /> can appear only once in a <see langword="switch" /> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DuplicateMethod">
@@ -917,6 +973,7 @@
       </ReturnValue>
       <Docs>
         <summary>This method has the same name, parameter types, and return type as another method in this class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DuplicateName">
@@ -933,6 +990,7 @@
       </ReturnValue>
       <Docs>
         <summary>Identifier already in use.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DuplicateNamedParameter">
@@ -949,6 +1007,7 @@
       </ReturnValue>
       <Docs>
         <summary>Duplicate named parameter.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DupVisibility">
@@ -965,6 +1024,7 @@
       </ReturnValue>
       <Docs>
         <summary>Visibility modifier already defined.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EnumeratorExpected">
@@ -981,6 +1041,7 @@
       </ReturnValue>
       <Docs>
         <summary>Enumerator object expected.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EnumNotAllowed">
@@ -998,6 +1059,7 @@
       <Docs>
         <summary>
           <see langword="enum" /> definition not allowed in this context.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ErrEOF">
@@ -1014,6 +1076,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expecting more source characters.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExceptionFromHResult">
@@ -1030,6 +1093,7 @@
       </ReturnValue>
       <Docs>
         <summary>Exception from HRESULT.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExecutablesCannotBeLocalized">
@@ -1046,6 +1110,7 @@
       </ReturnValue>
       <Docs>
         <summary>Executables cannot be localized; <see cref="P:System.Reflection.AssemblyCultureAttribute.Culture" /> should always be empty.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExpandoClassShouldNotImpleEnumerable">
@@ -1063,6 +1128,7 @@
       <Docs>
         <summary>
           <see cref="T:Microsoft.JScript.Expando" /> classes should not implement <see cref="T:System.Collections.IEnumerable" />. The interface is implicitly defined on <see cref="T:Microsoft.JScript.Expando" /> classes.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExpandoMustBePublic">
@@ -1080,6 +1146,7 @@
       <Docs>
         <summary>
           <see cref="T:Microsoft.JScript.Expando" /> methods must be public.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExpandoPrecludesAbstract">
@@ -1097,6 +1164,7 @@
       <Docs>
         <summary>
           <see cref="T:Microsoft.JScript.Expando" /> methods cannot be abstract.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExpandoPrecludesOverride">
@@ -1114,6 +1182,7 @@
       <Docs>
         <summary>
           <see cref="T:Microsoft.JScript.Expando" /> methods cannot override base class methods.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExpandoPrecludesStatic">
@@ -1131,6 +1200,7 @@
       <Docs>
         <summary>
           <see cref="T:Microsoft.JScript.Expando" /> methods cannot be static.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExpectedAssembly">
@@ -1147,6 +1217,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected assembly.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExpressionExpected">
@@ -1163,6 +1234,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected expression.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FileNotFound">
@@ -1179,6 +1251,7 @@
       </ReturnValue>
       <Docs>
         <summary>File not found.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FinalPrecludesAbstract">
@@ -1196,6 +1269,7 @@
       <Docs>
         <summary>
           <see langword="final" /> and <see langword="abstract" /> cannot be used together.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FractionOutOfRange">
@@ -1212,6 +1286,7 @@
       </ReturnValue>
       <Docs>
         <summary>The number of fractional digits is out of range.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FuncEvalAborted">
@@ -1228,6 +1303,7 @@
       </ReturnValue>
       <Docs>
         <summary>Function evaluation was aborted.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FuncEvalBadLocation">
@@ -1244,6 +1320,7 @@
       </ReturnValue>
       <Docs>
         <summary>Function evaluation cannot be done when stopped at this point in the program.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FuncEvalBadThreadNotStarted">
@@ -1260,6 +1337,7 @@
       </ReturnValue>
       <Docs>
         <summary>Function evaluation failed and the thread has not started.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FuncEvalBadThreadState">
@@ -1276,6 +1354,7 @@
       </ReturnValue>
       <Docs>
         <summary>Function evaluation failed. The thread can contain incorrect data.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FuncEvalThreadSleepWaitJoin">
@@ -1292,6 +1371,7 @@
       </ReturnValue>
       <Docs>
         <summary>Function evaluation failed. The thread is sleeping, waiting for an object, or waiting for another thread to finish.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FuncEvalThreadSuspended">
@@ -1308,6 +1388,7 @@
       </ReturnValue>
       <Docs>
         <summary>Function evaluation failed. The thread is suspended.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FuncEvalTimedout">
@@ -1324,6 +1405,7 @@
       </ReturnValue>
       <Docs>
         <summary>Function evaluation timed out.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FuncEvalWebMethod">
@@ -1340,6 +1422,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cannot call a Web method in the debugger.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FunctionExpected">
@@ -1356,6 +1439,7 @@
       </ReturnValue>
       <Docs>
         <summary>A function was expected.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetAndSetAreInconsistent">
@@ -1372,6 +1456,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <see langword="get" /> and <see langword="set" /> methods of this property do not match each other.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="HidesAbstractInBase">
@@ -1388,6 +1473,7 @@
       </ReturnValue>
       <Docs>
         <summary>Method hides <see langword="abstract" /> in a <see langword="base" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="HidesParentMember">
@@ -1405,6 +1491,7 @@
       <Docs>
         <summary>
           <see langword="base" /> class already contains a member by this name.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IllegalAssignment">
@@ -1421,6 +1508,7 @@
       </ReturnValue>
       <Docs>
         <summary>Invalid assignment.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IllegalChar">
@@ -1437,6 +1525,7 @@
       </ReturnValue>
       <Docs>
         <summary>Invalid character.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IllegalEval">
@@ -1453,6 +1542,7 @@
       </ReturnValue>
       <Docs>
         <summary>An <see cref="T:Microsoft.JScript.Eval" /> cannot be called by an alias.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IllegalParamArrayAttribute">
@@ -1469,6 +1559,7 @@
       </ReturnValue>
       <Docs>
         <summary>A variable argument list must be of an array type.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IllegalUseOfSuper">
@@ -1485,6 +1576,7 @@
       </ReturnValue>
       <Docs>
         <summary>It is not valid to use the base class in this way.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IllegalUseOfThis">
@@ -1501,6 +1593,7 @@
       </ReturnValue>
       <Docs>
         <summary>It is not valid to use <see langword="this" /> in the current context.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IllegalVisibility">
@@ -1517,6 +1610,7 @@
       </ReturnValue>
       <Docs>
         <summary>Invalid visibility modifier.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ImplicitlyReferencedAssemblyNotFound">
@@ -1533,6 +1627,7 @@
       </ReturnValue>
       <Docs>
         <summary>A referenced assembly depends on another assembly that is not referenced or could not be found.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ImpossibleConversion">
@@ -1549,6 +1644,7 @@
       </ReturnValue>
       <Docs>
         <summary>The specified conversion or coercion is not possible.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IncompatibleAssemblyReference">
@@ -1565,6 +1661,7 @@
       </ReturnValue>
       <Docs>
         <summary>The assembly referenced is incompatible.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IncompatibleVisibility">
@@ -1581,6 +1678,7 @@
       </ReturnValue>
       <Docs>
         <summary>Incompatible visibility modifier.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IncorrectNumberOfIndices">
@@ -1597,6 +1695,7 @@
       </ReturnValue>
       <Docs>
         <summary>The number of indices does not match the dimension of the array.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InstanceNotAccessibleFromStatic">
@@ -1613,6 +1712,7 @@
       </ReturnValue>
       <Docs>
         <summary>A non-static member is not accessible from a <see langword="static" /> scope.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InterfaceIllegalInInterface">
@@ -1629,6 +1729,7 @@
       </ReturnValue>
       <Docs>
         <summary>Interfaces cannot be declared in an <see langword="interface" />.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InternalError">
@@ -1645,6 +1746,7 @@
       </ReturnValue>
       <Docs>
         <summary>An internal error has been thrown.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InvalidAssemblyKeyFile">
@@ -1661,6 +1763,7 @@
       </ReturnValue>
       <Docs>
         <summary>An invalid assembly key file has been used.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InvalidBaseTypeForEnum">
@@ -1678,6 +1781,7 @@
       <Docs>
         <summary>
           <see langword="enum" /> base type must be a primitive integral type.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InvalidCall">
@@ -1694,6 +1798,7 @@
       </ReturnValue>
       <Docs>
         <summary>Invalid procedure call or argument.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InvalidCustomAttribute">
@@ -1710,6 +1815,7 @@
       </ReturnValue>
       <Docs>
         <summary>A custom attribute class must derive from <see cref="T:System.Attribute" />.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InvalidCustomAttributeArgument">
@@ -1726,6 +1832,7 @@
       </ReturnValue>
       <Docs>
         <summary>Only primitive types are allowed in a custom attribute constructor arguments list.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InvalidCustomAttributeClassOrCtor">
@@ -1742,6 +1849,7 @@
       </ReturnValue>
       <Docs>
         <summary>Unknown custom attribute class or constructor.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InvalidCustomAttributeTarget">
@@ -1758,6 +1866,7 @@
       </ReturnValue>
       <Docs>
         <summary>This attribute is not valid for this type of declaration.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InvalidDebugDirective">
@@ -1774,6 +1883,7 @@
       </ReturnValue>
       <Docs>
         <summary>Invalid debug directive.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InvalidElse">
@@ -1790,6 +1900,7 @@
       </ReturnValue>
       <Docs>
         <summary>Unmatched <see langword="else" />; no <see langword="if" /> defined.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InvalidImport">
@@ -1806,6 +1917,7 @@
       </ReturnValue>
       <Docs>
         <summary>The <see langword="import" /> statement is not valid in this context.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InvalidLanguageOption">
@@ -1822,6 +1934,7 @@
       </ReturnValue>
       <Docs>
         <summary>Must specify either "fast" or "versionSafe" language option.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InvalidPositionDirective">
@@ -1838,6 +1951,7 @@
       </ReturnValue>
       <Docs>
         <summary>An unknown position directive was discovered.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InvalidPrototype">
@@ -1854,6 +1968,7 @@
       </ReturnValue>
       <Docs>
         <summary>This function does not have a valid prototype object.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InvalidResource">
@@ -1870,6 +1985,7 @@
       </ReturnValue>
       <Docs>
         <summary>This is not a valid .resources file.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ItemNotAllowedOnExpandoClass">
@@ -1886,6 +2002,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cannot define the property Item on an <see cref="T:Microsoft.JScript.Expando" /> class. This Item is reserved for the <see cref="T:Microsoft.JScript.Expando" /> fields.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="KeywordUsedAsIdentifier">
@@ -1902,6 +2019,7 @@
       </ReturnValue>
       <Docs>
         <summary>You cannot use a reserved word as an identifier.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MemberInitializerCannotContainFuncExpr">
@@ -1918,6 +2036,7 @@
       </ReturnValue>
       <Docs>
         <summary>A member initializer cannot contain a function expression.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MemberTypeCLSCompliantMismatch">
@@ -1934,6 +2053,7 @@
       </ReturnValue>
       <Docs>
         <summary>Class member cannot be marked Common Language Specification (CLS) compliant because the class is not marked CLS compliant.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MethodClashOnExpandoSuperClass">
@@ -1950,6 +2070,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cannot create the <see cref="T:Microsoft.JScript.Expando" /> class because a property named <c>Item</c> is already defined in the class hierarchy.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MethodInBaseIsNotVirtual">
@@ -1966,6 +2087,7 @@
       </ReturnValue>
       <Docs>
         <summary>A method in a base class that is <see langword="final" /> or not <see langword="virtual" /><see langword="override" /> is ignored. Specify <see langword="hide" />.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MethodNotAllowedOnExpandoClass">
@@ -1982,6 +2104,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cannot define a property named <c>Item</c> on an <see cref="T:Microsoft.JScript.Expando" /> class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MissingConstructForAttributes">
@@ -1998,6 +2121,7 @@
       </ReturnValue>
       <Docs>
         <summary>The list of attributes does not apply to the current context.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MissingNameParameter">
@@ -2014,6 +2138,7 @@
       </ReturnValue>
       <Docs>
         <summary>The specified named parameter name is not one of the formal parameters.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MoreNamedParametersThanArguments">
@@ -2030,6 +2155,7 @@
       </ReturnValue>
       <Docs>
         <summary>Too few arguments specified. The number of named parameter names cannot exceed the number of arguments passed in.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MustBeEOL">
@@ -2046,6 +2172,7 @@
       </ReturnValue>
       <Docs>
         <summary>Directive cannot be followed by other code on the same line.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MustImplementMethod">
@@ -2062,6 +2189,7 @@
       </ReturnValue>
       <Docs>
         <summary>The class must provide an implementation of the method.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MustProvideNameForNamedParameter">
@@ -2078,6 +2206,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cannot provide null or empty named parameter name.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NeedArrayObject">
@@ -2094,6 +2223,7 @@
       </ReturnValue>
       <Docs>
         <summary>A "|" is not an array object. Array object expected.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NeedCompileTimeConstant">
@@ -2110,6 +2240,7 @@
       </ReturnValue>
       <Docs>
         <summary>An expression must be a compile-time constant.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NeedInstance">
@@ -2126,6 +2257,7 @@
       </ReturnValue>
       <Docs>
         <summary>An instance is expected.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NeedInterface">
@@ -2142,6 +2274,7 @@
       </ReturnValue>
       <Docs>
         <summary>An interface name is expected.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NeedObject">
@@ -2158,6 +2291,7 @@
       </ReturnValue>
       <Docs>
         <summary>An object is required.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NeedType">
@@ -2174,6 +2308,7 @@
       </ReturnValue>
       <Docs>
         <summary>A type name is expected.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NestedInstanceTypeCannotBeExtendedByStatic">
@@ -2190,6 +2325,7 @@
       </ReturnValue>
       <Docs>
         <summary>A non-static nested type can be extended only by a non-static type nested in the same class.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NewNotSpecifiedInMethodDeclaration">
@@ -2206,6 +2342,7 @@
       </ReturnValue>
       <Docs>
         <summary>A method matches a method in a base class. Must specify <see langword="override" /> or <see langword="hide" />.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoAt">
@@ -2222,6 +2359,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected <see langword="@" />.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoCatch">
@@ -2238,6 +2376,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected <see langword="catch" />.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoCcEnd">
@@ -2254,6 +2393,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected <see langword="@end" />.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoColon">
@@ -2270,6 +2410,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected ":".</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoComma">
@@ -2286,6 +2427,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected ",".</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoCommaOrTypeDefinitionError">
@@ -2302,6 +2444,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected "," or invalid type declaration; write "&lt;Identifier&gt; : &lt;Type&gt;" not "&lt;Type&gt; &lt;Identifier&gt;".</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoCommentEnd">
@@ -2318,6 +2461,7 @@
       </ReturnValue>
       <Docs>
         <summary>Comment not terminated.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoConstructor">
@@ -2334,6 +2478,7 @@
       </ReturnValue>
       <Docs>
         <summary>No such constructor.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoEqual">
@@ -2350,6 +2495,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected "=".</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoError">
@@ -2366,6 +2512,7 @@
       </ReturnValue>
       <Docs>
         <summary>No error. This is the default (0) value for the enumeration.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoFuncEvalAllowed">
@@ -2382,6 +2529,7 @@
       </ReturnValue>
       <Docs>
         <summary>Function evaluation aborted. To turn on property evaluation, click **Options** on the **Tools** menu and then select the **Debugging** in the tree view.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoIdentifier">
@@ -2398,6 +2546,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected identifier.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoLabel">
@@ -2414,6 +2563,7 @@
       </ReturnValue>
       <Docs>
         <summary>Label not found.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoLeftCurly">
@@ -2430,6 +2580,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected "{".</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoLeftParen">
@@ -2446,6 +2597,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected "(".</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoMemberIdentifier">
@@ -2462,6 +2614,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected identifier or <see langword="string" />.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoMethodInBaseToNew">
@@ -2478,6 +2631,7 @@
       </ReturnValue>
       <Docs>
         <summary>There is no member in a base class to <see langword="hide" />.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoMethodInBaseToOverride">
@@ -2494,6 +2648,7 @@
       </ReturnValue>
       <Docs>
         <summary>There is no member in a base class to <see langword="override" />.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NonCLSCompliantMember">
@@ -2510,6 +2665,7 @@
       </ReturnValue>
       <Docs>
         <summary>The specified member is not CLS compliant.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NonCLSCompliantType">
@@ -2526,6 +2682,7 @@
       </ReturnValue>
       <Docs>
         <summary>The specified type is not CLS compliant.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NonClsException">
@@ -2542,6 +2699,7 @@
       </ReturnValue>
       <Docs>
         <summary>A target threw a non-CLS exception.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NonStaticWithTypeName">
@@ -2558,6 +2716,7 @@
       </ReturnValue>
       <Docs>
         <summary>A non-static member cannot be accessed with the class name.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NonSupportedInDebugger">
@@ -2574,6 +2733,7 @@
       </ReturnValue>
       <Docs>
         <summary>The expression cannot be evaluated in the debugger.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoRightBracket">
@@ -2590,6 +2750,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected "]".</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoRightBracketOrComma">
@@ -2606,6 +2767,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected "," or "]".</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoRightCurly">
@@ -2622,6 +2784,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected "}".</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoRightParen">
@@ -2638,6 +2801,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected ")".</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoRightParenOrComma">
@@ -2654,6 +2818,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected "," or ")".</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoSemicolon">
@@ -2670,6 +2835,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected ";".</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoSuchMember">
@@ -2686,6 +2852,7 @@
       </ReturnValue>
       <Docs>
         <summary>Objects of this type do not have such a member.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoSuchStaticMember">
@@ -2702,6 +2869,7 @@
       </ReturnValue>
       <Docs>
         <summary>Type does not have such a <see langword="static" /> member.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoSuchType">
@@ -2718,6 +2886,7 @@
       </ReturnValue>
       <Docs>
         <summary>Type could not be found. An assembly reference might be missing.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NotAccessible">
@@ -2734,6 +2903,7 @@
       </ReturnValue>
       <Docs>
         <summary>The object or member is not accessible from this scope.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NotAllowedInSuperConstructorCall">
@@ -2750,6 +2920,7 @@
       </ReturnValue>
       <Docs>
         <summary>Object or member is not allowed in a call to the base class constructor.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NotAnExpandoFunction">
@@ -2766,6 +2937,7 @@
       </ReturnValue>
       <Docs>
         <summary>Class members used as constructors should be marked as <see cref="T:Microsoft.JScript.Expando" /> functions.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NotCollection">
@@ -2782,6 +2954,7 @@
       </ReturnValue>
       <Docs>
         <summary>This object is not a collection.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NotConst">
@@ -2798,6 +2971,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected constant.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NotDeletable">
@@ -2814,6 +2988,7 @@
       </ReturnValue>
       <Docs>
         <summary>The object or member cannot be deleted.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NotIndexable">
@@ -2830,6 +3005,7 @@
       </ReturnValue>
       <Docs>
         <summary>Objects of this type are not indexable.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NotInsideClass">
@@ -2846,6 +3022,7 @@
       </ReturnValue>
       <Docs>
         <summary>Valid only inside a class definition.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NotMeantToBeCalledDirectly">
@@ -2862,6 +3039,7 @@
       </ReturnValue>
       <Docs>
         <summary>You cannot call this method directly. If possible, use property accessors instead.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NotOKToCallSuper">
@@ -2878,6 +3056,7 @@
       </ReturnValue>
       <Docs>
         <summary>It is not valid to call a base class constructor from this location.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NotValidForConstructor">
@@ -2894,6 +3073,7 @@
       </ReturnValue>
       <Docs>
         <summary>Not valid for a constructor.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NotValidVersionString">
@@ -2910,6 +3090,7 @@
       </ReturnValue>
       <Docs>
         <summary>Not a valid version string.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NotYetImplemented">
@@ -2926,6 +3107,7 @@
       </ReturnValue>
       <Docs>
         <summary>Not yet implemented.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoVarInEnum">
@@ -2943,6 +3125,7 @@
       <Docs>
         <summary>
           <see langword="enum" /> member declarations should not use the <see langword="var" /> keyword.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoWhile">
@@ -2959,6 +3142,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected <see langword="while" />.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NumberExpected">
@@ -2975,6 +3159,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected a number.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ObjectExpected">
@@ -2991,6 +3176,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expected an object.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OctalLiteralsAreDeprecated">
@@ -3007,6 +3193,7 @@
       </ReturnValue>
       <Docs>
         <summary>Octal literals are deprecated.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OLENoPropOrMethod">
@@ -3023,6 +3210,7 @@
       </ReturnValue>
       <Docs>
         <summary>Object does not support this property or method.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnlyClassesAllowed">
@@ -3039,6 +3227,7 @@
       </ReturnValue>
       <Docs>
         <summary>Only classes are allowed inside a <see langword="package" />.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OnlyClassesAndPackagesAllowed">
@@ -3055,6 +3244,7 @@
       </ReturnValue>
       <Docs>
         <summary>Only classes and packages are allowed inside a library.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OutOfMemory">
@@ -3071,6 +3261,7 @@
       </ReturnValue>
       <Docs>
         <summary>Out of memory.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OutOfStack">
@@ -3087,6 +3278,7 @@
       </ReturnValue>
       <Docs>
         <summary>Out of stack space.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OverrideAndHideUsedTogether">
@@ -3103,6 +3295,7 @@
       </ReturnValue>
       <Docs>
         <summary>Cannot use <see langword="override" /> and <see langword="hide" /> together in a member declaration.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PackageExpected">
@@ -3119,6 +3312,7 @@
       </ReturnValue>
       <Docs>
         <summary>Package name expected.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PackageInWrongContext">
@@ -3135,6 +3329,7 @@
       </ReturnValue>
       <Docs>
         <summary>Package definition is not allowed in this context.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ParamListNotLast">
@@ -3151,6 +3346,7 @@
       </ReturnValue>
       <Docs>
         <summary>A variable argument list must be the last argument.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PossibleBadConversion">
@@ -3167,6 +3363,7 @@
       </ReturnValue>
       <Docs>
         <summary>This conversion may fail at runtime.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PossibleBadConversionFromString">
@@ -3183,6 +3380,7 @@
       </ReturnValue>
       <Docs>
         <summary>Converting a string to a number or Boolean is slow and may fail at run time.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PrecisionOutOfRange">
@@ -3199,6 +3397,7 @@
       </ReturnValue>
       <Docs>
         <summary>The precision is out of range.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PropertyLevelAttributesMustBeOnGetter">
@@ -3215,6 +3414,7 @@
       </ReturnValue>
       <Docs>
         <summary>An attribute that targets the property must be specified on the <see langword="get" /> accessor, if the <see langword="get" /> accessor is present.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RefParamsNonSupportedInDebugger">
@@ -3231,6 +3431,7 @@
       </ReturnValue>
       <Docs>
         <summary>Methods with <see langword="ref" /> parameters cannot be called in the debugger.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RegExpExpected">
@@ -3248,6 +3449,7 @@
       <Docs>
         <summary>
           <see cref="T:Microsoft.JScript.RegExpObject" /> object expected.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RegExpSyntax">
@@ -3264,6 +3466,7 @@
       </ReturnValue>
       <Docs>
         <summary>Syntax error in regular expression.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ShouldBeAbstract">
@@ -3280,6 +3483,7 @@
       </ReturnValue>
       <Docs>
         <summary>A function without a body should be <see langword="abstract" />.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SideEffectsDisallowed">
@@ -3296,6 +3500,7 @@
       </ReturnValue>
       <Docs>
         <summary>The expression causes side effects and will not be evaluated.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StaticIsAlreadyFinal">
@@ -3312,6 +3517,7 @@
       </ReturnValue>
       <Docs>
         <summary>Static methods cannot be <see langword="final" />.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StaticMethodsCannotHide">
@@ -3328,6 +3534,7 @@
       </ReturnValue>
       <Docs>
         <summary>Static methods cannot hide base class methods.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StaticMethodsCannotOverride">
@@ -3344,6 +3551,7 @@
       </ReturnValue>
       <Docs>
         <summary>Static methods cannot override base class methods.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StaticMissingInStaticInit">
@@ -3360,6 +3568,7 @@
       </ReturnValue>
       <Docs>
         <summary>Static initializer must specify the <see langword="static" /> keyword.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StaticRequiresTypeName">
@@ -3376,6 +3585,7 @@
       </ReturnValue>
       <Docs>
         <summary>A static member must be accessed by the class name.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StaticVarNotAvailable">
@@ -3392,6 +3602,7 @@
       </ReturnValue>
       <Docs>
         <summary>A static variable is not available.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StringConcatIsSlow">
@@ -3408,6 +3619,7 @@
       </ReturnValue>
       <Docs>
         <summary>The plus operator is a slow way to concatenate strings. Consider using <see cref="T:System.Text.StringBuilder" /> instead.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StringExpected">
@@ -3424,6 +3636,7 @@
       </ReturnValue>
       <Docs>
         <summary>String expected.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SuperClassConstructorNotAccessible">
@@ -3440,6 +3653,7 @@
       </ReturnValue>
       <Docs>
         <summary>Base class constructor is not accessible from this scope.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SuspectAssignment">
@@ -3457,6 +3671,7 @@
       <Docs>
         <summary>
           <see langword="If" /> condition cannot contain an assignment.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SuspectLoopCondition">
@@ -3473,6 +3688,7 @@
       </ReturnValue>
       <Docs>
         <summary>Loop condition cannot contain a function call.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SuspectSemicolon">
@@ -3489,6 +3705,7 @@
       </ReturnValue>
       <Docs>
         <summary>Empty statement found in <see langword="if" /> statement.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SyntaxError">
@@ -3505,6 +3722,7 @@
       </ReturnValue>
       <Docs>
         <summary>Discovered syntax error.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TooFewParameters">
@@ -3521,6 +3739,7 @@
       </ReturnValue>
       <Docs>
         <summary>Not all required parameters have been supplied.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TooManyParameters">
@@ -3537,6 +3756,7 @@
       </ReturnValue>
       <Docs>
         <summary>There are too many actual parameters. The excess parameters will be ignored.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TooManyTokensSkipped">
@@ -3553,6 +3773,7 @@
       </ReturnValue>
       <Docs>
         <summary>Too many errors. The file might not be a JScript file.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TypeAssemblyCLSCompliantMismatch">
@@ -3569,6 +3790,7 @@
       </ReturnValue>
       <Docs>
         <summary>Type cannot be marked CLS compliant because the assembly is not marked as CLS compliant.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TypeCannotBeExtended">
@@ -3585,6 +3807,7 @@
       </ReturnValue>
       <Docs>
         <summary>Type cannot be extended.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TypeMismatch">
@@ -3601,6 +3824,7 @@
       </ReturnValue>
       <Docs>
         <summary>Type mismatch.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TypeNameTooLong">
@@ -3617,6 +3841,7 @@
       </ReturnValue>
       <Docs>
         <summary>The fully qualified type name is too long. It must be less than 1,024 characters.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TypeObjectNotAvailable">
@@ -3633,6 +3858,7 @@
       </ReturnValue>
       <Docs>
         <summary>The type object for this type is not available.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UncaughtException">
@@ -3649,6 +3875,7 @@
       </ReturnValue>
       <Docs>
         <summary>Exception thrown and not caught.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UndeclaredVariable">
@@ -3665,6 +3892,7 @@
       </ReturnValue>
       <Docs>
         <summary>Variable has not been declared.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UndefinedIdentifier">
@@ -3681,6 +3909,7 @@
       </ReturnValue>
       <Docs>
         <summary>Undefined identifier.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UnexpectedSemicolon">
@@ -3697,6 +3926,7 @@
       </ReturnValue>
       <Docs>
         <summary>Unexpected ";".</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UnreachableCatch">
@@ -3713,6 +3943,7 @@
       </ReturnValue>
       <Docs>
         <summary>Catch clause will never be reached.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UnterminatedString">
@@ -3729,6 +3960,7 @@
       </ReturnValue>
       <Docs>
         <summary>String constant not terminated.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="URIDecodeError">
@@ -3745,6 +3977,7 @@
       </ReturnValue>
       <Docs>
         <summary>The URI to be decoded is not a valid encoding.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="URIEncodeError">
@@ -3761,6 +3994,7 @@
       </ReturnValue>
       <Docs>
         <summary>The URI to be encoded contains an invalid character.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UselessAssignment">
@@ -3777,6 +4011,7 @@
       </ReturnValue>
       <Docs>
         <summary>An assignment creates an <see cref="T:Microsoft.JScript.Expando" /> property that is immediately thrown away.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UselessExpression">
@@ -3793,6 +4028,7 @@
       </ReturnValue>
       <Docs>
         <summary>Expression has no effect.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="VariableLeftUninitialized">
@@ -3809,6 +4045,7 @@
       </ReturnValue>
       <Docs>
         <summary>Uninitialized variables are dangerous and slow to use. Did you intend to leave it uninitialized?</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="VariableMightBeUnitialized">
@@ -3825,6 +4062,7 @@
       </ReturnValue>
       <Docs>
         <summary>Variable might not be initialized.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="VarIllegalInInterface">
@@ -3841,6 +4079,7 @@
       </ReturnValue>
       <Docs>
         <summary>Variables cannot be declared in an interface.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="VBArrayExpected">
@@ -3857,6 +4096,7 @@
       </ReturnValue>
       <Docs>
         <summary>A VBArray is expected.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WriteOnlyProperty">
@@ -3873,6 +4113,7 @@
       </ReturnValue>
       <Docs>
         <summary>The property is write-only.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WrongDirective">
@@ -3889,6 +4130,7 @@
       </ReturnValue>
       <Docs>
         <summary>Wrong debugger directive or wrong position for the directive.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WrongUseOfAddressOf">
@@ -3905,6 +4147,7 @@
       </ReturnValue>
       <Docs>
         <summary>The address of operator can be used only in a list of arguments.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

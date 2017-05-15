@@ -2,7 +2,7 @@
 title: "How to: Respond to Windows Forms Button Clicks | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "Click event, responding to"
 ms.assetid: 7a4951bd-369c-4662-b246-28ad83eda484
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Respond to Windows Forms Button Clicks

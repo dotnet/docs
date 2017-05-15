@@ -2,7 +2,7 @@
 title: "How to: Add Enhancements to ToolStripMenuItems | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,8 +32,8 @@ helpviewer_keywords:
   - "ToolStripMenuItems, showing separator bars"
 ms.assetid: aa5f19bb-b545-4378-bfa6-36ba592f0d7c
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add Enhancements to ToolStripMenuItems

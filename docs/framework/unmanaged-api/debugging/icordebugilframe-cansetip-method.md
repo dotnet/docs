@@ -2,18 +2,19 @@
 title: "ICorDebugILFrame::CanSetIP Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugILFrame.CanSetIP"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugILFrame::CanSetIP"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "CanSetIP method, ICorDebugILFrame interface [.NET Framework debugging]"
   - "ICorDebugILFrame::CanSetIP method [.NET Framework debugging]"
 ms.assetid: 16caf02f-c71e-486c-90b0-f0e54357d8f0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

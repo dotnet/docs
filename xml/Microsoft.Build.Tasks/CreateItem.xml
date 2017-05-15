@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>CreateItem</c> task. Use the <c>CreateItem</c> element in your project file to create and execute this task. For usage and parameter information, see [CreateItem Task](http://msdn.microsoft.com/library/c4311f38-979e-4324-b524-9e8c1cbdc41a).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.CreateItem" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AdditionalMetadata">
@@ -53,6 +55,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Exclude">
@@ -78,6 +81,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -98,6 +102,7 @@
         <returns>
           <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Include">
@@ -128,6 +133,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PreserveExistingMetadata">
@@ -147,6 +153,7 @@
         <value>
           <see langword="true" /> if the <c>CreateItem</c> task should apply the additional metadata only if none already exists; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -2,7 +2,7 @@
 title: "Using Application Settings and User Settings | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "application settings [Windows Forms], how-to topics"
 ms.assetid: 54682d3b-1cbf-4683-9351-012b8b4286b5
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Using Application Settings and User Settings

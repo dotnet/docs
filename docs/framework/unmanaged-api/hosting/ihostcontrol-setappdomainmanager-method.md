@@ -2,18 +2,19 @@
 title: "IHostControl::SetAppDomainManager Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostControl.SetAppDomainManager"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostControl::SetAppDomainManager"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostControl::SetAppDomainManager method [.NET Framework hosting]"
   - "SetAppDomainManager method [.NET Framework hosting]"
 ms.assetid: 6562bbe7-0d67-4c50-a958-3a18cf680375
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

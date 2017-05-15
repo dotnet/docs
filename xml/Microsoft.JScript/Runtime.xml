@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides utility functions.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="DoubleToInt64">
@@ -36,6 +37,7 @@
         <returns>
           <paramref name="val" /> converted to an <see cref="T:System.Int64" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -61,6 +63,7 @@
         <returns>
           <see langword="true" /> if the values are equal; <see langword="false" /> if the values are not equal.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UncheckedDecimalToInt64">
@@ -84,6 +87,7 @@
         <returns>
           <paramref name="val" /> converted to an <see cref="T:System.Int64" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

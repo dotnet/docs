@@ -2,18 +2,19 @@
 title: "ICorProfilerCallback::ObjectReferences Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.ObjectReferences"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::ObjectReferences"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ObjectReferences method [.NET Framework profiling]"
   - "ICorProfilerCallback::ObjectReferences method [.NET Framework profiling]"
 ms.assetid: dd5e9b64-b4a3-4ba6-9be6-ddb540f4ffcf
+topic_type: 
+  - "apiref"
 caps.latest.revision: 18
 author: "mairaw"
 ms.author: "mairaw"

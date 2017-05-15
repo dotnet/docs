@@ -2,7 +2,7 @@
 title: "How to: Set the Text Displayed by a Windows Forms Control Using the Designer | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Windows Forms, setting the text displayed"
 ms.assetid: 9d18e0e0-f17f-4074-837d-e67ceeeaa89d
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set the Text Displayed by a Windows Forms Control Using the Designer

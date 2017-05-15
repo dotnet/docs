@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Net.Requests</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -28,6 +29,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="CacheEntryNotFound">
@@ -38,6 +40,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -53,6 +56,7 @@
       </ReturnValue>
       <Docs>
         <summary>The specified cache entry was not found.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConnectFailure">
@@ -63,6 +67,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -78,6 +83,7 @@
       </ReturnValue>
       <Docs>
         <summary>The remote service point could not be contacted at the transport level.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConnectionClosed">
@@ -88,6 +94,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -103,6 +110,7 @@
       </ReturnValue>
       <Docs>
         <summary>The connection was prematurely closed.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="KeepAliveFailure">
@@ -113,6 +121,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -128,6 +137,7 @@
       </ReturnValue>
       <Docs>
         <summary>The connection for a request that specifies the Keep-alive header was closed unexpectedly.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MessageLengthLimitExceeded">
@@ -138,6 +148,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -153,6 +164,7 @@
       </ReturnValue>
       <Docs>
         <summary>A message was received that exceeded the specified limit when sending a request or receiving a response from the server.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NameResolutionFailure">
@@ -163,6 +175,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -178,6 +191,7 @@
       </ReturnValue>
       <Docs>
         <summary>The name resolver service could not resolve the host name.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Pending">
@@ -188,6 +202,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -203,6 +218,7 @@
       </ReturnValue>
       <Docs>
         <summary>An internal asynchronous request is pending.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PipelineFailure">
@@ -213,6 +229,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -227,7 +244,8 @@
         <ReturnType>System.Net.WebExceptionStatus</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The request was a piplined request and the connection was closed before the response was received.</summary>
+        <summary>The request was a pipelined request and the connection was closed before the response was received.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProtocolError">
@@ -238,6 +256,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -253,6 +272,7 @@
       </ReturnValue>
       <Docs>
         <summary>The response received from the server was complete but indicated a protocol-level error. For example, an HTTP protocol error such as 401 Access Denied would use this status.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProxyNameResolutionFailure">
@@ -263,6 +283,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -278,6 +299,7 @@
       </ReturnValue>
       <Docs>
         <summary>The name resolver service could not resolve the proxy host name.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ReceiveFailure">
@@ -288,6 +310,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -303,6 +326,7 @@
       </ReturnValue>
       <Docs>
         <summary>A complete response was not received from the remote server.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RequestCanceled">
@@ -313,6 +337,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -328,6 +353,7 @@
       </ReturnValue>
       <Docs>
         <summary>The request was canceled, the <see cref="M:System.Net.WebRequest.Abort" /> method was called, or an unclassifiable error occurred. This is the default value for <see cref="P:System.Net.WebException.Status" />.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RequestProhibitedByCachePolicy">
@@ -338,6 +364,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -353,6 +380,7 @@
       </ReturnValue>
       <Docs>
         <summary>The request was not permitted by the cache policy. In general, this occurs when a request is not cacheable and the effective policy prohibits sending the request to the server. You might receive this status if a request method implies the presence of a request body, a request method requires direct interaction with the server, or a request contains a conditional header.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RequestProhibitedByProxy">
@@ -363,6 +391,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -378,6 +407,7 @@
       </ReturnValue>
       <Docs>
         <summary>This request was not permitted by the proxy.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SecureChannelFailure">
@@ -388,6 +418,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -403,6 +434,7 @@
       </ReturnValue>
       <Docs>
         <summary>An error occurred while establishing a connection using SSL.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SendFailure">
@@ -413,6 +445,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -428,6 +461,7 @@
       </ReturnValue>
       <Docs>
         <summary>A complete request could not be sent to the remote server.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ServerProtocolViolation">
@@ -438,6 +472,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -453,6 +488,7 @@
       </ReturnValue>
       <Docs>
         <summary>The server response was not a valid HTTP response.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Success">
@@ -463,6 +499,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -478,6 +515,7 @@
       </ReturnValue>
       <Docs>
         <summary>No error was encountered.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -488,6 +526,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -503,6 +542,7 @@
       </ReturnValue>
       <Docs>
         <summary>No response was received during the time-out period for a request.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TrustFailure">
@@ -513,6 +553,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -528,6 +569,7 @@
       </ReturnValue>
       <Docs>
         <summary>A server certificate could not be validated.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UnknownError">
@@ -538,6 +580,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -553,6 +596,7 @@
       </ReturnValue>
       <Docs>
         <summary>An exception of unknown type has occurred.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

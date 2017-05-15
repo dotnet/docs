@@ -2,11 +2,10 @@
 title: "Regular Expression Example: Changing Date Formats | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -58,4 +57,4 @@ The following code example uses the <xref:System.Text.RegularExpressions.Regex.R
 |`$(year)`|Add the string captured by the `year` capturing group.|  
   
 ## See Also  
- [.NET Framework Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+ [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)

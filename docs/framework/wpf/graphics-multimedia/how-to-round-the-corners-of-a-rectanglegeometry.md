@@ -2,7 +2,7 @@
 title: "How to: Round the Corners of a RectangleGeometry | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "rounding corners of RectangleGeometry objects"
 ms.assetid: 926644bc-1357-4c0b-ac81-694bd090ae87
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Round the Corners of a RectangleGeometry

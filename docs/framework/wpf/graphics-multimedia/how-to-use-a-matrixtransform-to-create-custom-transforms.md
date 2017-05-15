@@ -2,7 +2,7 @@
 title: "How to: Use a MatrixTransform to Create Custom Transforms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "graphics [WPF], custom Transforms"
 ms.assetid: 919381ca-989f-47cf-86b4-1094060236e4
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use a MatrixTransform to Create Custom Transforms

@@ -2,7 +2,7 @@
 title: "How to: Arrange Controls with Snaplines and the Grid in Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "controls [Windows Forms], aligning"
 ms.assetid: bb54bce5-880f-4a36-af68-8cf92058dc1c
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Arrange Controls with Snaplines and the Grid in Windows Forms

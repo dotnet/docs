@@ -2,7 +2,7 @@
 title: "How to: Add Web Browser Capabilities to a Windows Forms Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "Windows Forms, adding Web browser functionality"
 ms.assetid: 3871f072-b57a-435b-9976-e5da28df04a7
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Add Web Browser Capabilities to a Windows Forms Application

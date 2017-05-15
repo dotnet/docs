@@ -2,18 +2,19 @@
 title: "IHostCrst::Leave Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostCrst.Leave"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostCrst::Leave"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostCrst::Leave method [.NET Framework hosting]"
   - "Leave method [.NET Framework hosting]"
 ms.assetid: dfc51d9e-b36d-4dba-9ea1-4f63fa0601ae
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

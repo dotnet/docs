@@ -2,11 +2,10 @@
 title: "Common Type System | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -37,7 +36,7 @@ The common type system defines how types are declared, used, and managed in the 
   
  This topic contains the following sections:  
   
--   [Types in the .NET Framework](#types_in_the_net_framework)  
+-   [Types in .NET](#types_in_the_net_framework)  
   
 -   [Type Definitions](#type_definitions)  
   
@@ -46,14 +45,14 @@ The common type system defines how types are declared, used, and managed in the 
 -   [Characteristics of Type Members](#characteristics_of_type_members)  
   
 <a name="types_in_the_net_framework"></a>   
-## Types in the .NET Framework  
- All types in the .NET Framework are either value types or reference types.  
+## Types in .NET  
+ All types in .NET are either value types or reference types.  
   
  Value types are data types whose objects are represented by the object's actual value. If an instance of a value type is assigned to a variable, that variable is given a fresh copy of the value.  
   
  Reference types are data types whose objects are represented by a reference (similar to a pointer) to the object's actual value. If a reference type is assigned to a variable, that variable references (points to) the original value. No copy is made.  
   
- The common type system in the .NET Framework supports the following five categories of types:  
+ The common type system in .NET supports the following five categories of types:  
   
 -   [Classes](#Classes)  
   
@@ -69,7 +68,7 @@ The common type system defines how types are declared, used, and managed in the 
 ### Classes  
  A class is a reference type that can be derived directly from another class and that is derived implicitly from <xref:System.Object?displayProperty=fullName>. The class defines the operations that an object (which is an instance of the class) can perform (methods, events, or properties) and the data that the object contains (fields). Although a class generally includes both definition and implementation (unlike interfaces, for example, which contain only definition without implementation), it can have one or more members that have no implementation.  
   
- The following table describes some of the characteristics that a class may have. Each language that supports the runtime provides a way to indicate that a class or class member has one or more of these characteristics. However, individual programming languages that target the .NET Framework may not make all these characteristics available.  
+ The following table describes some of the characteristics that a class may have. Each language that supports the runtime provides a way to indicate that a class or class member has one or more of these characteristics. However, individual programming languages that target .NET may not make all these characteristics available.  
   
 |Characteristic|Description|  
 |--------------------|-----------------|  
@@ -88,7 +87,7 @@ The common type system defines how types are declared, used, and managed in the 
   
 <a name="Structures"></a>   
 ### Structures  
- A structure is a value type that derives implicitly from <xref:System.ValueType?displayProperty=fullName>, which in turn is derived from <xref:System.Object?displayProperty=fullName>. A structure is very useful for representing values whose memory requirements are small, and for passing values as by-value parameters to methods that have strongly typed parameters. In the .NET Framework class library, all primitive data types (<xref:System.Boolean>, <xref:System.Byte>, <xref:System.Char>, <xref:System.DateTime>, <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.SByte>, <xref:System.Single>, <xref:System.UInt16>, <xref:System.UInt32>, and <xref:System.UInt64>) are defined as structures.  
+ A structure is a value type that derives implicitly from <xref:System.ValueType?displayProperty=fullName>, which in turn is derived from <xref:System.Object?displayProperty=fullName>. A structure is very useful for representing values whose memory requirements are small, and for passing values as by-value parameters to methods that have strongly typed parameters. In .NET, all primitive data types (<xref:System.Boolean>, <xref:System.Byte>, <xref:System.Char>, <xref:System.DateTime>, <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.SByte>, <xref:System.Single>, <xref:System.UInt16>, <xref:System.UInt32>, and <xref:System.UInt64>) are defined as structures.  
   
  Like classes, structures define both data (the fields of the structure) and the operations that can be performed on that data (the methods of the structure). This means that you can call methods on structures, including the virtual methods defined on the <xref:System.Object?displayProperty=fullName> and <xref:System.ValueType?displayProperty=fullName> classes, and any methods defined on the value type itself. In other words, structures can have fields, properties, and events, as well as static and nonstatic methods. You can create instances of structures, pass them as parameters, store them as local variables, or store them in a field of another value type or reference type. Structures can also implement interfaces.  
   
@@ -140,7 +139,7 @@ The common type system defines how types are declared, used, and managed in the 
   
 <a name="Delegates"></a>   
 ### Delegates  
- Delegates are reference types that serve a purpose similar to that of function pointers in C++. They are used for event handlers and callback functions in the .NET Framework. Unlike function pointers, delegates are secure, verifiable, and type safe. A delegate type can represent any instance method or static method that has a compatible signature.  
+ Delegates are reference types that serve a purpose similar to that of function pointers in C++. They are used for event handlers and callback functions in .NET. Unlike function pointers, delegates are secure, verifiable, and type safe. A delegate type can represent any instance method or static method that has a compatible signature.  
   
  A parameter of a delegate is compatible with the corresponding parameter of a method if the type of the delegate parameter is more restrictive than the type of the method parameter, because this guarantees that an argument passed to the delegate can be passed safely to the method.  
   
@@ -159,7 +158,7 @@ The common type system defines how types are declared, used, and managed in the 
   
  In many cases, such as with callback methods, a delegate represents only one method, and the only actions you have to take are creating the delegate and invoking it.  
   
- For delegates that represent multiple methods, the .NET Framework provides methods of the <xref:System.Delegate> and <xref:System.MulticastDelegate> delegate classes to support operations such as adding a method to a delegate's invocation list (the <xref:System.Delegate.Combine%2A?displayProperty=fullName> method), removing a method (the <xref:System.Delegate.Remove%2A?displayProperty=fullName> method), and getting the invocation list (the <xref:System.Delegate.GetInvocationList%2A?displayProperty=fullName> method).  
+ For delegates that represent multiple methods, .NET provides methods of the <xref:System.Delegate> and <xref:System.MulticastDelegate> delegate classes to support operations such as adding a method to a delegate's invocation list (the <xref:System.Delegate.Combine%2A?displayProperty=fullName> method), removing a method (the <xref:System.Delegate.Remove%2A?displayProperty=fullName> method), and getting the invocation list (the <xref:System.Delegate.GetInvocationList%2A?displayProperty=fullName> method).  
   
 > [!NOTE]
 >  It is not necessary to use these methods for event-handler delegates in C#, C++, and Visual Basic, because these languages provide syntax for adding and removing event handlers.  
@@ -218,7 +217,7 @@ The common type system defines how types are declared, used, and managed in the 
   
  However, most languages impose additional restrictions on type names. All comparisons are done on a byte-by-byte basis, and are therefore case-sensitive and locale-independent.  
   
- Although a type might reference types from other modules and assemblies, a type must be fully defined within one .NET Framework module. (Depending on compiler support, however, it can be divided into multiple source code files.) Type names need be unique only within a namespace. To fully identify a type, the type name must be qualified by the namespace that contains the implementation of the type.  
+ Although a type might reference types from other modules and assemblies, a type must be fully defined within one .NET module. (Depending on compiler support, however, it can be divided into multiple source code files.) Type names need be unique only within a namespace. To fully identify a type, the type name must be qualified by the namespace that contains the implementation of the type.  
   
 ### Base Types and Interfaces  
  A type can inherit values and behaviors from another type. The common type system does not allow types to inherit from more than one base type.  
@@ -321,6 +320,6 @@ The common type system defines how types are declared, used, and managed in the 
 -   A derived type can override an inherited virtual method. The overriding method provides a new definition of the method that will be invoked based on the type of the value at run time rather than the type of the variable known at compile time. A method can override a virtual method only if the virtual method is not marked as `final` and the new method is at least as accessible as the virtual method.  
   
 ## See Also  
- [.NET Framework Class Library](http://go.microsoft.com/fwlink/?LinkID=217856)   
+ [.NET Class Library](http://go.microsoft.com/fwlink/?LinkID=217856)   
  [Common Language Runtime](../../../docs/standard/clr.md)   
- [Type Conversion in the .NET Framework](../../../docs/standard/base-types/type-conversion.md)
+ [Type Conversion in .NET](../../../docs/standard/base-types/type-conversion.md)

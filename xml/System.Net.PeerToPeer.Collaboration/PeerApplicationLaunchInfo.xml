@@ -18,7 +18,7 @@
 ## Remarks  
  An application can inspect the <xref:System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo.Data%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo.Message%2A> properties in this class to get the information specific to the invitation that initiated the application launch.  
   
- Access to this class requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
+ Access to this class requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
   
  ]]></format>
     </remarks>

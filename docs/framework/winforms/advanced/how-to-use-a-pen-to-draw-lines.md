@@ -2,7 +2,7 @@
 title: "How to: Use a Pen to Draw Lines | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "pens, drawing lines"
 ms.assetid: 0828c331-a438-4bdd-a4d6-3ef1e59e8795
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use a Pen to Draw Lines

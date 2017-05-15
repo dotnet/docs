@@ -2,7 +2,7 @@
 title: "ComponentResourceKey Markup Extension | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "XAML, ComponentResourceKey markup extension"
 ms.assetid: d6bcdbe6-61b3-40a7-b381-4e02185b5a85
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # ComponentResourceKey Markup Extension
@@ -27,25 +27,25 @@ Defines and references keys for resources that are loaded from external assembli
 ## XAML Attribute Usage (setting key, compact)  
   
 ```  
-<object x:Key="{ComponentResourceKey {x:Type targetTypeName}, targetID}" .../>  
+<object x:Key="{ComponentResourceKey {x:Type targetTypeName}, targetID}" .../>  
 ```  
   
 ## XAML Attribute Usage (setting key, verbose)  
   
 ```  
-<object x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type targetTypeName}, ResourceID=targetID}" .../>  
+<object x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type targetTypeName}, ResourceID=targetID}" .../>  
 ```  
   
 ## XAML Attribute Usage (requesting resource, compact)  
   
 ```  
-<object property="{DynamicResource {ComponentResourceKey {x:Type targetTypeName}, targetID}}" .../>  
+<object property="{DynamicResource {ComponentResourceKey {x:Type targetTypeName}, targetID}}" .../>  
 ```  
   
 ## XAML Attribute Usage (requesting resource, verbose)  
   
 ```  
-<object property="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type targetTypeName}, ResourceID=targetID}}" .../>  
+<object property="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type targetTypeName}, ResourceID=targetID}}" .../>  
 ```  
   
 ## XAML Values  

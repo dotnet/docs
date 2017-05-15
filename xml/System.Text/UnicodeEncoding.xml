@@ -6,6 +6,7 @@
     <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -100,6 +101,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -144,6 +146,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -162,7 +165,7 @@
         <param name="bigEndian">
           <see langword="true" /> to use the big endian byte order (most significant byte first), or <see langword="false" /> to use the little endian byte order (least significant byte first).</param>
         <param name="byteOrderMark">
-          <see langword="true" /> to specify that the <see cref="M:System.Text.UnicodeEncoding.GetPreamble" /> method returns a Unicode byte order mark; otherwise, <see langword="false" />. See the Remarks section for more information.</param>
+          <see langword="true" /> to specify that the <see cref="M:System.Text.UnicodeEncoding.GetPreamble" /> method returns a Unicode byte order mark; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Text.UnicodeEncoding" /> class. Parameters specify whether to use the big endian byte order and whether the <see cref="M:System.Text.UnicodeEncoding.GetPreamble" /> method returns a Unicode byte order mark.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -197,6 +200,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -216,7 +220,7 @@
         <param name="bigEndian">
           <see langword="true" /> to use the big endian byte order (most significant byte first); <see langword="false" /> to use the little endian byte order (least significant byte first).</param>
         <param name="byteOrderMark">
-          <see langword="true" /> to specify that the <see cref="M:System.Text.UnicodeEncoding.GetPreamble" /> method returns a Unicode byte order mark; otherwise, <see langword="false" />. See the Remarks section for more information.</param>
+          <see langword="true" /> to specify that the <see cref="M:System.Text.UnicodeEncoding.GetPreamble" /> method returns a Unicode byte order mark; otherwise, <see langword="false" />.</param>
         <param name="throwOnInvalidBytes">
           <see langword="true" /> to specify that an exception should be thrown when an invalid encoding is detected; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Text.UnicodeEncoding" /> class. Parameters specify whether to use the big endian byte order, whether to provide a Unicode byte order mark, and whether to throw an exception when an invalid encoding is detected.</summary>
@@ -258,6 +262,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -292,6 +300,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -349,6 +358,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -420,6 +430,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.CLSCompliant(false)</AttributeName>
@@ -482,6 +496,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -515,16 +530,16 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To calculate the exact array size required by <xref:System.Text.UnicodeEncoding.GetBytes%2A> to store the resulting bytes, the application uses [GetByteCount Method (Char\<xref:System.Text.UnicodeEncoding.GetByteCount%2A>. To calculate the maximum array size, you call the <xref:System.Text.UnicodeEncoding.GetMaxByteCount%2A> method. The [GetByteCount Method (Char\<xref:System.Text.UnicodeEncoding.GetByteCount%2A> method generally allocates less memory, while the <xref:System.Text.UnicodeEncoding.GetMaxByteCount%2A> method generally executes faster.  
+ To calculate the exact array size required by <xref:System.Text.UnicodeEncoding.GetBytes%2A> to store the resulting bytes, the application uses <xref:System.Text.UnicodeEncoding.GetByteCount%2A>. To calculate the maximum array size, you call the <xref:System.Text.UnicodeEncoding.GetMaxByteCount%2A> method. The <xref:System.Text.UnicodeEncoding.GetByteCount%2A> method generally allocates less memory, while the <xref:System.Text.UnicodeEncoding.GetMaxByteCount%2A> method generally executes faster.  
   
  With error detection enabled, an invalid sequence causes this method to throw an <xref:System.ArgumentException>. Without error detection, invalid sequences are ignored, and no exception is thrown.  
   
- To ensure that the encoded bytes are decoded properly when they are saved as a file or as a stream, you can prefix a stream of encoded bytes with a preamble. Inserting the preamble at the beginning of a byte stream (such as at the beginning of a series of bytes to be written to a file) is the developer's responsibility, and the number of bytes in the preamble Is not reflected in the value returned by the [GetByteCount Method (Char\<xref:System.Text.UnicodeEncoding.GetByteCount%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method.  
+ To ensure that the encoded bytes are decoded properly when they are saved as a file or as a stream, you can prefix a stream of encoded bytes with a preamble. Inserting the preamble at the beginning of a byte stream (such as at the beginning of a series of bytes to be written to a file) is the developer's responsibility, and the number of bytes in the preamble Is not reflected in the value returned by the <xref:System.Text.UnicodeEncoding.GetByteCount%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method.  
   
    
   
 ## Examples  
- The following example populates an array with a Latin uppercase and lowercase characters and calls the [GetByteCount Method (Char\<xref:System.Text.UnicodeEncoding.GetByteCount%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method to determine the number of bytes needed to encode the Latin lowercase characters. It then displays this information along with the total number of bytes needed if a byte order mark is added. It compares this number with the value returned by the <xref:System.Text.UnicodeEncoding.GetMaxByteCount%2A> method, which indicates maximum number of bytes needed to encode the Latin lowercase characters. The following example populates an array with a combination of Greek and Cyrillic characters and calls the [GetByteCount Method (Char\<xref:System.Text.UnicodeEncoding.GetByteCount%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method to determine the number of bytes needed to encode the Cyrillic characters. It then displays this information along with the total number of bytes needed if a byte order mark is added. It compares this number with the value returned by the <xref:System.Text.UnicodeEncoding.GetMaxByteCount%2A> method, which indicates maximum number of bytes needed to encode the Cyrillic characters.  
+ The following example populates an array with a Latin uppercase and lowercase characters and calls the <xref:System.Text.UnicodeEncoding.GetByteCount%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method to determine the number of bytes needed to encode the Latin lowercase characters. It then displays this information along with the total number of bytes needed if a byte order mark is added. It compares this number with the value returned by the <xref:System.Text.UnicodeEncoding.GetMaxByteCount%2A> method, which indicates maximum number of bytes needed to encode the Latin lowercase characters. The following example populates an array with a combination of Greek and Cyrillic characters and calls the <xref:System.Text.UnicodeEncoding.GetByteCount%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29> method to determine the number of bytes needed to encode the Cyrillic characters. It then displays this information along with the total number of bytes needed if a byte order mark is added. It compares this number with the value returned by the <xref:System.Text.UnicodeEncoding.GetMaxByteCount%2A> method, which indicates maximum number of bytes needed to encode the Cyrillic characters.  
   
  [!code-csharp[System.Text.UnicodeEncoding.GetByteCount#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.unicodeencoding.getbytecount/cs/getbytecount2.cs#2)]
  [!code-vb[System.Text.UnicodeEncoding.GetByteCount#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.unicodeencoding.getbytecount/vb/getbytecount2.vb#2)]  
@@ -564,6 +579,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -637,6 +656,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -681,7 +701,7 @@
  Data to be converted, such as data read from a stream, might be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.UnicodeEncoding.GetDecoder%2A> method or the <xref:System.Text.UnicodeEncoding.GetEncoder%2A> method, respectively.  
   
 > [!NOTE]
->  To ensure that the encoded bytes are decoded properly when they are saved as a file or as a stream, you can prefix a stream of encoded bytes with a preamble. Inserting the preamble at the beginning of a byte stream (such as at the beginning of a series of bytes to be written to a file) is the developer's responsibility. The [GetBytes Method (Char\[\], Int32, Int32, Byte\<xref:System.Text.UnicodeEncoding.GetBytes%2A> method does not prepend a preamble to the beginning of a sequence of encoded bytes.  
+>  To ensure that the encoded bytes are decoded properly when they are saved as a file or as a stream, you can prefix a stream of encoded bytes with a preamble. Inserting the preamble at the beginning of a byte stream (such as at the beginning of a series of bytes to be written to a file) is the developer's responsibility. The <xref:System.Text.UnicodeEncoding.GetBytes%2A> method does not prepend a preamble to the beginning of a sequence of encoded bytes.  
   
    
   
@@ -731,6 +751,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -768,14 +789,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To calculate the exact array size required by [GetBytes Method (String, Int32, Int32, Byte\<xref:System.Text.UnicodeEncoding.GetBytes%2A> to store the resulting bytes, you call the <xref:System.Text.UnicodeEncoding.GetByteCount%2A> method. To calculate the maximum array size, you call the <xref:System.Text.UnicodeEncoding.GetMaxByteCount%2A> method. The <xref:System.Text.UnicodeEncoding.GetByteCount%2A> method generally allocates less memory, while the <xref:System.Text.UnicodeEncoding.GetMaxByteCount%2A> method generally executes faster.  
+ To calculate the exact array size required by <xref:System.Text.UnicodeEncoding.GetBytes%2A> to store the resulting bytes, you call the <xref:System.Text.UnicodeEncoding.GetByteCount%2A> method. To calculate the maximum array size, you call the <xref:System.Text.UnicodeEncoding.GetMaxByteCount%2A> method. The <xref:System.Text.UnicodeEncoding.GetByteCount%2A> method generally allocates less memory, while the <xref:System.Text.UnicodeEncoding.GetMaxByteCount%2A> method generally executes faster.  
   
  With error detection, an invalid sequence causes this method to throw a <xref:System.ArgumentException>. Without error detection, invalid sequences are ignored, and no exception is thrown.  
   
  Data to be converted, such as data read from a stream, might be available only in sequential blocks. In this case, or if the amount of data is so large that it needs to be divided into smaller blocks, the application should use the <xref:System.Text.Decoder> or the <xref:System.Text.Encoder> provided by the <xref:System.Text.UnicodeEncoding.GetDecoder%2A> method or the <xref:System.Text.UnicodeEncoding.GetEncoder%2A> method, respectively.  
   
 > [!NOTE]
->  To ensure that the encoded bytes are decoded properly when they are saved as a file or as a stream, you can prefix a stream of encoded bytes with a preamble. Inserting the preamble at the beginning of a byte stream (such as at the beginning of a series of bytes to be written to a file) is the developer's responsibility. The [GetBytes Method (String, Int32, Int32, Byte\<xref:System.Text.UnicodeEncoding.GetBytes%2A> method does not prepend a preamble to the beginning of a sequence of encoded bytes.  
+>  To ensure that the encoded bytes are decoded properly when they are saved as a file or as a stream, you can prefix a stream of encoded bytes with a preamble. Inserting the preamble at the beginning of a byte stream (such as at the beginning of a series of bytes to be written to a file) is the developer's responsibility. The <xref:System.Text.UnicodeEncoding.GetBytes%2A> method does not prepend a preamble to the beginning of a sequence of encoded bytes.  
   
    
   
@@ -829,6 +850,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -889,6 +914,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -922,14 +948,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To calculate the exact array size required by <xref:System.Text.UnicodeEncoding.GetChars%2A> to store the resulting characters, the application uses [GetCharCount Method (Byte\<xref:System.Text.UnicodeEncoding.GetCharCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UnicodeEncoding.GetMaxCharCount%2A>. The [GetCharCount Method (Byte\<xref:System.Text.UnicodeEncoding.GetCharCount%2A> method generally allocates less memory, while the <xref:System.Text.UnicodeEncoding.GetMaxCharCount%2A> method generally executes faster.  
+ To calculate the exact array size required by <xref:System.Text.UnicodeEncoding.GetChars%2A> to store the resulting characters, the application uses <xref:System.Text.UnicodeEncoding.GetCharCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UnicodeEncoding.GetMaxCharCount%2A>. The <xref:System.Text.UnicodeEncoding.GetCharCount%2A> method generally allocates less memory, while the <xref:System.Text.UnicodeEncoding.GetMaxCharCount%2A> method generally executes faster.  
   
  With error detection, an invalid sequence causes this method to throw a <xref:System.ArgumentException>. Without error detection, invalid sequences are ignored, and no exception is thrown.  
   
    
   
 ## Examples  
- The following example demonstrates how to use the [GetCharCount Method (Byte\<xref:System.Text.UnicodeEncoding.GetCharCount%2A> method to return the number of characters produced by decoding a range of elements in a byte array using <xref:System.Text.UnicodeEncoding>.  
+ The following example demonstrates how to use the <xref:System.Text.UnicodeEncoding.GetCharCount%2A> method to return the number of characters produced by decoding a range of elements in a byte array using <xref:System.Text.UnicodeEncoding>.  
   
  [!code-cpp[System.Text.UnicodeEncoding.GetCharCount Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UnicodeEncoding.GetCharCount Example/CPP/getcharcount-byte[]-int32-int32.cpp#1)]
  [!code-csharp[System.Text.UnicodeEncoding.GetCharCount Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UnicodeEncoding.GetCharCount Example/CS/getcharcount-byte[]-int32-int32.cs#1)]
@@ -970,6 +996,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1042,6 +1072,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1079,7 +1110,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To calculate the exact array size required by [GetChars Method (Byte\[\], Int32, Int32, Char\<xref:System.Text.UnicodeEncoding.GetChars%2A> to store the resulting characters, the application uses <xref:System.Text.UnicodeEncoding.GetCharCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UnicodeEncoding.GetMaxCharCount%2A>. The <xref:System.Text.UnicodeEncoding.GetCharCount%2A> method generally allocates less memory, while the <xref:System.Text.UnicodeEncoding.GetMaxCharCount%2A> method generally executes faster.  
+ To calculate the exact array size required by <xref:System.Text.UnicodeEncoding.GetChars%2A> to store the resulting characters, the application uses <xref:System.Text.UnicodeEncoding.GetCharCount%2A>. To calculate the maximum array size, the application should use <xref:System.Text.UnicodeEncoding.GetMaxCharCount%2A>. The <xref:System.Text.UnicodeEncoding.GetCharCount%2A> method generally allocates less memory, while the <xref:System.Text.UnicodeEncoding.GetMaxCharCount%2A> method generally executes faster.  
   
  With error detection, an invalid sequence causes this method to throw a <xref:System.ArgumentException>. Without error detection, invalid sequences are ignored, and no exception is thrown.  
   
@@ -1090,7 +1121,7 @@
    
   
 ## Examples  
- The following example demonstrates how to use the [GetChars Method (Byte\[\], Int32, Int32, Char\<xref:System.Text.UnicodeEncoding.GetChars%2A> method to decode a range of elements in a byte array and store the result in a character array.  
+ The following example demonstrates how to use the <xref:System.Text.UnicodeEncoding.GetChars%2A> method to decode a range of elements in a byte array and store the result in a character array.  
   
  [!code-cpp[System.Text.UnicodeEncoding.GetChars Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Text.UnicodeEncoding.GetChars Example/CPP/getchars-byte[]-int32-int32-char[]-int32.cpp#1)]
  [!code-csharp[System.Text.UnicodeEncoding.GetChars Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Text.UnicodeEncoding.GetChars Example/CS/getchars-byte[]-int32-int32-char[]-int32.cs#1)]
@@ -1135,6 +1166,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1182,6 +1214,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1234,6 +1267,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1263,6 +1297,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1331,6 +1366,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1399,6 +1435,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1472,6 +1509,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1517,7 +1555,7 @@
    
   
 ## Examples  
- The following example initializes an array by calling the <xref:System.Text.UnicodeEncoding.GetByteCount%2A> method to determine exactly how many bytes are required for an encoded string and then adding the size of the byte order mark (BOM). The example then calls the <xref:System.Text.UnicodeEncoding.GetPreamble%2A> method to store the BOM to the array before calling the <xref:System.Text.Encoding.GetBytes%2A> method to store the encoded bytes to the array. The example then calls the [GetString Method (Byte\<xref:System.Text.UnicodeEncoding.GetString%2A> method to decode the string.  
+ The following example initializes an array by calling the <xref:System.Text.UnicodeEncoding.GetByteCount%2A> method to determine exactly how many bytes are required for an encoded string and then adding the size of the byte order mark (BOM). The example then calls the <xref:System.Text.UnicodeEncoding.GetPreamble%2A> method to store the BOM to the array before calling the <xref:System.Text.Encoding.GetBytes%2A> method to store the encoded bytes to the array. The example then calls the <xref:System.Text.UnicodeEncoding.GetString%2A> method to decode the string.  
   
  [!code-csharp[System.Text.UTF8Encoding.GetString#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.text.utf8encoding.getstring/cs/getstring1.cs#1)]
  [!code-vb[System.Text.UTF8Encoding.GetString#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.utf8encoding.getstring/vb/getstring1.vb#1)]  

@@ -2,11 +2,10 @@
 title: "Optimization for Shared Web Hosting | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -39,11 +38,11 @@ If you are the administrator for a server that is shared by hosting several smal
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
 <configuration>  
-    <runtime>  
-    . . .  
-    <gcTrimCommitOnLowMemory enabled="true"/>  
-    </runtime>  
-    . . .  
+    <runtime>  
+    . . .  
+    <gcTrimCommitOnLowMemory enabled="true"/>  
+    </runtime>  
+    . . .  
 </configuration>  
 ```  
   

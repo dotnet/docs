@@ -2,11 +2,10 @@
 title: "Task-based Asynchronous Pattern (TAP) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -86,7 +85,7 @@ The Task-based Asynchronous Pattern (TAP) is based on the <xref:System.Threading
   
 ```csharp  
   
-public class Progress<T> : IProgress<T>  
+public class Progress<T> : IProgress<T>  
 {  
     public Progress();  
     public Progress(Action<T> handler);  
@@ -98,7 +97,7 @@ public class Progress<T> : IProgress<T>
   
 ```vb  
   
-Public Class Progress(Of T) : Inherits IProgress(Of T)  
+Public Class Progress(Of T) : Inherits IProgress(Of T)  
     Public Sub New()  
     Public Sub New(handler As Action(Of T))  
     Protected Overridable Sub OnReport(value As T)  

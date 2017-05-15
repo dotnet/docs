@@ -2,7 +2,7 @@
 title: "x:Static Markup Extension | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,7 +29,7 @@ References any static by-value code entity that is defined in a [!INCLUDE[TLA#tl
 ## XAML Attribute Usage  
   
 ```  
-<object property="{x:Static prefix:typeName.staticMemberName}" .../>  
+<object property="{x:Static prefix:typeName.staticMemberName}" .../>  
 ```  
   
 ## XAML Values  

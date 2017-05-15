@@ -2,11 +2,10 @@
 title: "How to: Display Localized Date and Time Information to Web Users | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -82,8 +81,8 @@ Because a Web page can be displayed anywhere in the world, operations that parse
 ## Example  
  The following example contains both the HTML source and the code for an ASP.NET Web form that asks the user to input a date and time value. A client-side script also writes information on the local date and time of the user's request and the offset of the user's time zone from UTC to a hidden field. This information is then parsed by the server, which returns a Web page that displays the user's input. It also displays the date and time of the user's request using the user's local time, the time on the server, and UTC.  
   
- <!-- TODO: review snippet reference <!-- TODO: review snippet reference [!code-csharp[Formatting.HowTo.ParseDateInput#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.ParseDateInput/cs/GetDateInfo.aspx#1)]  -->  -->
- <!-- TODO: review snippet reference <!-- TODO: review snippet reference [!code-vb[Formatting.HowTo.ParseDateInput#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.ParseDateInput/vb/GetDateInfo.aspx#1)]  -->  -->  
+ <!-- TODO: review snippet reference [!code-csharp[Formatting.HowTo.ParseDateInput#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.ParseDateInput/cs/GetDateInfo.aspx#1)] --> 
+ <!-- TODO: review snippet reference [!code-vb[Formatting.HowTo.ParseDateInput#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.ParseDateInput/vb/GetDateInfo.aspx#1)] -->     
   
  The client-side script calls the JavaScript `toLocaleString` method. This produces a string that follows the formatting conventions of the user's locale, which is more likely to be successfully parsed on the server.  
   

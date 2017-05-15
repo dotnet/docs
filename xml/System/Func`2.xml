@@ -8,6 +8,7 @@
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -48,9 +49,7 @@
     <typeparam name="T">The type of the parameter of the method that this delegate encapsulates.</typeparam>
     <typeparam name="TResult">The type of the return value of the method that this delegate encapsulates.</typeparam>
     <param name="arg">The parameter of the method that this delegate encapsulates.</param>
-    <summary>Encapsulates a method that has one parameter and returns a value of the type specified by the <paramref name="TResult" /> parameter.  
-  
- To browse the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/action.cs#7a86aba051da82dd).</summary>
+    <summary>Encapsulates a method that has one parameter and returns a value of the type specified by the <paramref name="TResult" /> parameter.</summary>
     <returns>The return value of the method that this delegate encapsulates.</returns>
     <remarks>
       <format type="text/markdown"><![CDATA[  

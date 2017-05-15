@@ -2,7 +2,7 @@
 title: "Resources How-to Topics | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "reusing commonly defined objects"
 ms.assetid: 9f986a6d-7cc8-45ac-bb0f-43177a57649d
 caps.latest.revision: 74
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Resources How-to Topics

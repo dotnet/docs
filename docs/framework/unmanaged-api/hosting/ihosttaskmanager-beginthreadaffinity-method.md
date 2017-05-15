@@ -2,18 +2,19 @@
 title: "IHostTaskManager::BeginThreadAffinity Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostTaskManager.BeginThreadAffinity"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostTaskManager::BeginThreadAffinity"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostTaskManager::BeginThreadAffinity method [.NET Framework hosting]"
   - "BeginThreadAffinity method [.NET Framework hosting]"
 ms.assetid: fea3ab88-ce41-4c5a-847b-bb78cd748da6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

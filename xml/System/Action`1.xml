@@ -8,6 +8,7 @@
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -37,9 +38,7 @@
   <Docs>
     <typeparam name="T">The type of the parameter of the method that this delegate encapsulates.</typeparam>
     <param name="obj">The parameter of the method that this delegate encapsulates.</param>
-    <summary>Encapsulates a method that has a single parameter and does not return a value.  
-  
- To browse the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#mscorlib/system/action.cs#486d58da4553e12d).</summary>
+    <summary>Encapsulates a method that has a single parameter and does not return a value.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

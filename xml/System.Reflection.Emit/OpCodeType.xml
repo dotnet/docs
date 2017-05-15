@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -26,6 +27,7 @@
   <Docs>
     <summary>Describes the types of the Microsoft intermediate language (MSIL) instructions.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Annotation">
@@ -42,6 +44,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("This API has been deprecated.")</AttributeName>
@@ -52,6 +58,7 @@
       </ReturnValue>
       <Docs>
         <summary>This enumerator value is reserved and should not be used.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Macro">
@@ -62,6 +69,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -77,6 +85,7 @@
       </ReturnValue>
       <Docs>
         <summary>These are Microsoft intermediate language (MSIL) instructions that are used as a synonym for other MSIL instructions. For example, <see langword="ldarg.0" /> represents the <see langword="ldarg" /> instruction with an argument of 0.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Nternal">
@@ -87,6 +96,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -102,6 +112,7 @@
       </ReturnValue>
       <Docs>
         <summary>Describes a reserved Microsoft intermediate language (MSIL) instruction.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Objmodel">
@@ -112,6 +123,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -127,6 +139,7 @@
       </ReturnValue>
       <Docs>
         <summary>Describes a Microsoft intermediate language (MSIL) instruction that applies to objects.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Prefix">
@@ -137,6 +150,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -152,6 +166,7 @@
       </ReturnValue>
       <Docs>
         <summary>Describes a prefix instruction that modifies the behavior of the following instruction.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Primitive">
@@ -162,6 +177,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -177,6 +193,7 @@
       </ReturnValue>
       <Docs>
         <summary>Describes a built-in instruction.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

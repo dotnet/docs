@@ -2,18 +2,19 @@
 title: "IHostCrst::Enter Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostCrst.Enter"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostCrst::Enter"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "Enter method [.NET Framework hosting]"
   - "IHostCrst::Enter method [.NET Framework hosting]"
 ms.assetid: 100dd7eb-7053-4295-9bb3-32ba47f6ec79
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -2,7 +2,7 @@
 title: "x:FactoryMethod Directive | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,7 +25,7 @@ Specifies a method other than a constructor that a XAML processor should use to 
 ## XAML Attribute Usage, no x:Arguments  
   
 ```  
-<object x:FactoryMethod="methodname"...>  
+<object x:FactoryMethod="methodname"...>  
   ...  
 </object>  
 ```  
@@ -33,7 +33,7 @@ Specifies a method other than a constructor that a XAML processor should use to 
 ## XAML Attribute Usage, x:Arguments as Element(s)  
   
 ```  
-<object x:FactoryMethod="methodname"...>  
+<object x:FactoryMethod="methodname"...>  
   <x:Arguments>  
     oneOrMoreObjectElements  
   </x:Arguments>  

@@ -2,7 +2,7 @@
 title: "How to: Set the Tile Size for a TileBrush | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "Viewport property of TileBrush"
 ms.assetid: 04f41090-1b46-4e36-832f-d27d28708b8c
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set the Tile Size for a TileBrush

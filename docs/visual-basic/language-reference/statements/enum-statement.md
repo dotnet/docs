@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "constants, enumerated"
 ms.assetid: a45e51f1-65ff-48e1-bf32-79130f137377
 caps.latest.revision: 44
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -47,8 +47,8 @@ Declares an enumeration and defines the values of its members.
 ## Syntax  
   
 ```  
-[ <attributelist> ] [ accessmodifier ]  [ Shadows ]   
-Enum enumerationname [ As datatype ]   
+[ <attributelist> ] [ accessmodifier ]  [ Shadows ]   
+Enum enumerationname [ As datatype ]   
    memberlist  
 End Enum  
 ```  

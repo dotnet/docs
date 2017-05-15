@@ -2,21 +2,21 @@
 title: "Activate Function (WPF Unmanaged API Reference) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-wpf"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
+api_name: 
   - "Acrivate"
-apilocation: 
+api_location: 
   - "PresentationHost_v0400.dll"
 ms.assetid: 1400329c-b598-465f-80f2-e3dabf044811
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Activate Function (WPF Unmanaged API Reference)

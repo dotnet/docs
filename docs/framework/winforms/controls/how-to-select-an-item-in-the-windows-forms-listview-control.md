@@ -2,7 +2,7 @@
 title: "How to: Select an Item in the Windows Forms ListView Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "list views, selecting items"
 ms.assetid: ddea918e-1ddf-47f4-bd09-1e9b4c9d0c39
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Select an Item in the Windows Forms ListView Control

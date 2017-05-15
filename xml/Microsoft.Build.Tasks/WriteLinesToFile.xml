@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>WriteLinesToFile</c> task. Use the <c>WriteLinesToFile</c> element in your project file to create and execute this task. For usage and parameter information, see <c>WriteLinesToFile</c>[WriteLinesToFile Task](http://msdn.microsoft.com/library/9c8862ac-8da5-4437-9430-ecc30421f1c9).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.WriteLinesToFile" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Encoding">
@@ -46,6 +48,7 @@
         <summary>Gets or sets the system text encoding, for example UTF-8.</summary>
         <value>Returns the system text encoding.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -66,6 +69,7 @@
         <returns>
           <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="File">
@@ -89,6 +93,7 @@
         <summary>Gets or sets the file to write the items to.</summary>
         <value>The file to write the items to.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Lines">
@@ -107,6 +112,7 @@
         <summary>Gets or sets the items to write to the file.</summary>
         <value>The items to write to the file.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Overwrite">
@@ -126,6 +132,7 @@
         <value>
           <see langword="true" /> if the task overwrites any existing content in the file; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

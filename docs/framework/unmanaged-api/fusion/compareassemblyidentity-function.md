@@ -2,19 +2,20 @@
 title: "CompareAssemblyIdentity Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "CompareAssemblyIdentity"
-apilocation: 
+api_location: 
   - "fusion.dll"
   - "clr.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "CompareAssemblyIdentity"
 dev_langs: 
@@ -22,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CompareAssemblyIdentity function [.NET Framework fusion]"
 ms.assetid: 8b364ae1-8efa-4744-a7da-81fd093d84d6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

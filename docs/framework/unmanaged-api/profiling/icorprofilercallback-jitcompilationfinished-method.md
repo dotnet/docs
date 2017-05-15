@@ -2,18 +2,19 @@
 title: "ICorProfilerCallback::JITCompilationFinished Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerCallback.JITCompilationFinished"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerCallback::JITCompilationFinished"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "JITCompilationFinished method [.NET Framework profiling]"
   - "ICorProfilerCallback::JITCompilationFinished method [.NET Framework profiling]"
 ms.assetid: 8dcd7537-d0c6-498c-8a56-2c060310ef65
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

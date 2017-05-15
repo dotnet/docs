@@ -2,7 +2,7 @@
 title: "WPF Application Resource, Content, and Data Files | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "application management [WPF]"
 ms.assetid: 7ad2943b-3961-41d3-8fc6-1582d43f5d99
 caps.latest.revision: 25
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # WPF Application Resource, Content, and Data Files

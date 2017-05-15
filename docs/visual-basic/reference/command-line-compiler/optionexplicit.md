@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "-optionexplicit compiler option [Visual Basic]"
 ms.assetid: 5d296ab3-bafe-4c4d-9887-78f162ed86c7
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

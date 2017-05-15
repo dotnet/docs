@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "optioninfer compiler option [Visual Basic]"
 ms.assetid: f6c09db1-0553-464a-abe3-d4510c61d6ed
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

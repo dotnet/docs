@@ -2,7 +2,7 @@
 title: "Load Balancing | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -69,7 +69,7 @@ One way to increase the capacity of [!INCLUDE[indigo1](../../../includes/indigo1
 <configuration>  
  <system.serviceModel>  
     <protocolMapping>  
-      <add scheme=”http” binding=”customBinding” />  
+      <add scheme="http" binding="customBinding" />  
     </protocolMapping>  
     <bindings>  
       <customBinding>  

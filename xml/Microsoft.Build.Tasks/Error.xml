@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>Error</c> task. Use the <c>Error</c> element in your project file to create and execute this task. For usage and parameter information, see [Delete Task](http://msdn.microsoft.com/library/916bb2e3-3017-4828-ae27-c0b5c99bbb48).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Error" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Code">
@@ -46,6 +48,7 @@
         <summary>Gets or sets the error code to associate with the error.</summary>
         <value>The error code to associate with the error.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -66,6 +69,7 @@
         <returns>
           <see langword="false" /> in all cases.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="File">
@@ -84,6 +88,7 @@
         <summary>Relevant file if any. If none is provided, the file containing the Error task will be used.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="HelpKeyword">
@@ -102,6 +107,7 @@
         <summary>Gets or sets the Help keyword to associate with the error.</summary>
         <value>The Help keyword to associate with the error.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -120,6 +126,7 @@
         <summary>Gets or sets the error text.</summary>
         <value>The error text.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -2,7 +2,7 @@
 title: "How to: Create Standard Windows Forms Print Jobs | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "printing [Visual Basic], in Windows applications"
 ms.assetid: 03342b90-9cfe-40b2-838b-b479a13c5dea
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create Standard Windows Forms Print Jobs

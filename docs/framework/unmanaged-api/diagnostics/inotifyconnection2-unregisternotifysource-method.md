@@ -2,18 +2,19 @@
 title: "INotifyConnection2::UnregisterNotifySource Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "INotifyConnection2.UnregisterNotifySource"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "INotifyConnection2::UnregisterNotifySource"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "INotifyConnection2::UnregisterNotifySource method [.NET Framework debugging]"
   - "UnregisterNotifySource method [.NET Framework debugging]"
 ms.assetid: 2fc6c715-646f-41fd-9c12-c59b40575269
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

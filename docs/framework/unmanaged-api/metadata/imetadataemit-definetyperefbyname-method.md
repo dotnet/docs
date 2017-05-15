@@ -2,18 +2,19 @@
 title: "IMetaDataEmit::DefineTypeRefByName Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataEmit.DefineTypeRefByName"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefineTypeRefByName"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "DefineTypeRefByName method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineTypeRefByName method [.NET Framework metadata]"
 ms.assetid: c30a4ce3-2d3e-411a-98df-e62ac4a5dd50
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

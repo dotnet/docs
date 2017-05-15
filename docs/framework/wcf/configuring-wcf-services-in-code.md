@@ -2,7 +2,7 @@
 title: "Configuring WCF Services in Code | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -70,7 +70,7 @@ public class Service1 : IService1
     public string GetData(int value);   
     public static void Configure(ServiceConfiguration config)   
     {   
-        // Enable “Add Service Reference” support   
+        // Enable "Add Service Reference" support   
        config.Description.Behaviors.Add( new ServiceMetadataBehavior { HttpGetEnabled = true });   
        // set up support for http, https, net.tcp, net.pipe   
        config.EnableProtocol(new BasicHttpBinding());   

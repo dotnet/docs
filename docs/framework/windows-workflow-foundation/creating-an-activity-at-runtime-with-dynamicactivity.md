@@ -2,7 +2,7 @@
 title: "Creating an Activity at Runtime with DynamicActivity | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -71,7 +71,7 @@ manager: "erikre"
   
     ```  
   
-6.  Execute the application. A console window with the text “Hello World!” displays.  
+6.  Execute the application. A console window with the text "Hello World!" displays.  
   
 #### To create an activity at runtime using XAML  
   
@@ -97,7 +97,7 @@ manager: "erikre"
     Console.ReadLine();  
     ```  
   
-7.  Execute the application. A console window with the text “Hello World!” appears.  
+7.  Execute the application. A console window with the text "Hello World!" appears.  
   
 8.  Right-click the Workflow1.xaml file in the **Solution Explorer** and select **View Code**. Note that the activity class is created with `x:Class` and the property is created with `x:Property`.  
   

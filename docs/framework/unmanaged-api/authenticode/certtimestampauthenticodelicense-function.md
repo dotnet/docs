@@ -2,18 +2,19 @@
 title: "CertTimestampAuthenticodeLicense Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "CertTimestampAuthenticodeLicense"
-apilocation: 
+api_location: 
   - "clr.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 dev_langs: 
   - "C++"
 ms.assetid: d468325a-21c5-43ce-8567-84e342b22308

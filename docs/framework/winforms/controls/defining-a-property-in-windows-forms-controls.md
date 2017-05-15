@@ -2,7 +2,7 @@
 title: "Defining a Property in Windows Forms Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], defining properties in code"
 ms.assetid: c2eb8277-a842-4d99-89a9-647b901a0434
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Defining a Property in Windows Forms Controls

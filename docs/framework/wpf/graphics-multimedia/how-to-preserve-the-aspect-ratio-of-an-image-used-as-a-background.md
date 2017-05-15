@@ -2,7 +2,7 @@
 title: "How to: Preserve the Aspect Ratio of an Image Used as a Background | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "background images, preserving aspect ratios"
 ms.assetid: 28c39478-13d7-4011-80a3-8b9cc3e54478
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Preserve the Aspect Ratio of an Image Used as a Background

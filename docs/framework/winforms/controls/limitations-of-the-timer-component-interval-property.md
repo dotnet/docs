@@ -2,7 +2,7 @@
 title: "Limitations of the Windows Forms Timer Component&#39;s Interval Property | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Timer component [Windows Forms], limitations of Interval property"
 ms.assetid: 7e5fb513-77e7-4046-a8e8-aab94e61ca0f
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Limitations of the Windows Forms Timer Component&#39;s Interval Property

@@ -2,20 +2,21 @@
 title: "ICorProfilerInfo7::ReadInMemorySymbols | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
+api_name: 
   - "ICorProfilerInfo7.ReadInMemorySymbols"
-apilocation: 
+api_location: 
   - "CorProf.idl"
   - "CorProf.h"
   - "CorGuids.lib"
-apitype: "COM"
+api_type: 
+  - "COM"
 dev_langs: 
   - "C++"
 ms.assetid: 1745a0b9-8332-4777-a670-b549bff3b901

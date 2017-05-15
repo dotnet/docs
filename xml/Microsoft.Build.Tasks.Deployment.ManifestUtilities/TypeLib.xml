@@ -18,6 +18,7 @@
   <Docs>
     <summary>Represents a type library.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Flags">
@@ -56,6 +58,7 @@
         <summary>Gets the string representation of the type library flags for this type library.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="HelpDirectory">
@@ -79,6 +82,7 @@
         <summary>Gets the directory where the Help file for the types in the type library is located.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ResourceId">
@@ -102,6 +106,7 @@
         <summary>Gets the hexadecimal string representation of the locale identifier (LCID).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TlbId">
@@ -125,6 +130,7 @@
         <summary>Gets the unique ID of the type library.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -148,6 +154,7 @@
         <summary>Gets the version number of the type library.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XmlFlags">
@@ -177,6 +184,7 @@
         <summary>Get or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib.Flags" /> property to an XML file.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XmlHelpDirectory">
@@ -206,6 +214,7 @@
         <summary>Get or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib.HelpDirectory" /> property to an XML file.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XmlResourceId">
@@ -235,6 +244,7 @@
         <summary>Get or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib.ResourceId" /> property to an XML file.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XmlTlbId">
@@ -264,6 +274,7 @@
         <summary>Get or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib.TlbId" /> property to an XML file.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XmlVersion">
@@ -293,6 +304,7 @@
         <summary>Get or sets a property that is used to serialize the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.TypeLib.Version" /> property to an XML file.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -19,6 +19,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Completely">
@@ -35,6 +36,7 @@
       </ReturnValue>
       <Docs>
         <summary>A refresh that requests the latest version of the current Web page.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Continue">
@@ -51,6 +53,7 @@
       </ReturnValue>
       <Docs>
         <summary>For internal use only; do not use.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IfExpired">
@@ -67,6 +70,7 @@
       </ReturnValue>
       <Docs>
         <summary>A refresh that requests an update only if the current Web page has expired.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -83,6 +87,7 @@
       </ReturnValue>
       <Docs>
         <summary>A refresh that requests a copy of the current Web page that has been cached on the server.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

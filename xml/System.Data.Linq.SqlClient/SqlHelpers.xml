@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides helper methods for operations that match string patterns.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="GetStringContainsPattern">
@@ -37,6 +38,7 @@
         <summary>Creates a search pattern string where the specified text can have other text before and following it.</summary>
         <returns>A search pattern string that contains the specified string and the '%' character before and after it.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetStringEndsWithPattern">
@@ -61,6 +63,7 @@
         <summary>Creates a search pattern string where the specified text can have other text before it but not following it.</summary>
         <returns>A search pattern string that contains the '%' character followed by the specified string.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetStringStartsWithPattern">
@@ -85,6 +88,7 @@
         <summary>Creates a search pattern string where the specified text can have other text after it but not before it.</summary>
         <returns>A search pattern string that contains the specified string followed by the '%' character.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TranslateVBLikePattern">
@@ -109,6 +113,7 @@
         <summary>Translates a search pattern for the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] <see langword="Like" /> operator to a search pattern for the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] <see langword="LIKE" /> operator.</summary>
         <returns>A search pattern for the [!INCLUDE[ssNoVersion](~/includes/ssnoversion-md.md)] <see langword="LIKE" /> operator that corresponds to the specified [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] <see langword="Like" /> search pattern.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

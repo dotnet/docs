@@ -2,7 +2,7 @@
 title: "How To: Add a Custom Place to a File Dialog Box | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "CustomPlaces collection"
 ms.assetid: 63f6469b-59cd-40f6-9e61-8b5831856780
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How To: Add a Custom Place to a File Dialog Box

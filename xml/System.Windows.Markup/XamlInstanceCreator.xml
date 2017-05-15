@@ -22,6 +22,7 @@
 ## XAML Text Usage  
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,6 +38,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XamlInstanceCreator" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateObject">
@@ -56,6 +58,7 @@
         <summary>When overridden in a derived class, creates a new object to store parser records.</summary>
         <returns>The created object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

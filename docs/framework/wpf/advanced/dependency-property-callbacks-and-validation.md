@@ -2,7 +2,7 @@
 title: "Dependency Property Callbacks and Validation | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "validation of dependency properties"
 ms.assetid: 48db5fb2-da7f-49a6-8e81-3540e7b25825
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Dependency Property Callbacks and Validation

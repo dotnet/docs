@@ -2,7 +2,7 @@
 title: "How to: Group Items in a Windows Forms ListView Control Using the Designer | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "groups, in Windows Forms controls"
 ms.assetid: 8b615000-69d9-4c64-acaf-b54fa09b69e3
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Group Items in a Windows Forms ListView Control Using the Designer

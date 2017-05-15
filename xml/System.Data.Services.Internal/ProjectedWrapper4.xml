@@ -18,6 +18,7 @@
   <Docs>
     <summary>Provides a wrapper over the result element with the ability to project a subset of properties.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -33,6 +34,7 @@
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Data.Services.Internal.ProjectedWrapper4" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InternalGetProjectedPropertyValue">
@@ -73,6 +75,7 @@
         <summary>Gets or sets the property to project.</summary>
         <value>The property to project.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProjectedProperty1">
@@ -91,6 +94,7 @@
         <summary>Gets or sets the property to project.</summary>
         <value>The property to project.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProjectedProperty2">
@@ -109,6 +113,7 @@
         <summary>Gets or sets the property to project.</summary>
         <value>The property to project.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProjectedProperty3">
@@ -127,6 +132,7 @@
         <summary>Gets or sets the property to project.</summary>
         <value>The property to project.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -2,18 +2,19 @@
 title: "IHostTaskManager::EnterRuntime Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostTaskManager.EnterRuntime"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostTaskManager::EnterRuntime"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostTaskManager::EnterRuntime method [.NET Framework hosting]"
   - "EnterRuntime method [.NET Framework hosting]"
 ms.assetid: 1aa7a4b1-636a-4f5e-b834-b406d72f7120
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -65,7 +68,7 @@ HRESULT EnterRuntime ();
   
 ## See Also  
  [Advanced COM Interoperability](http://msdn.microsoft.com/en-us/3ada36e5-2390-4d70-b490-6ad8de92f2fb)   
- [How to: Call Native DLLs from Managed Code Using PInvoke](http://msdn.microsoft.com/library/3273eb4b-38d1-4619-92a6-71bda542be72)   
+ [How to: Call Native DLLs from Managed Code Using PInvoke](/cpp/dotnet/how-to-call-native-dlls-from-managed-code-using-pinvoke)   
  [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)   
  [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)   
  [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)   

@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "property procedures, Get statements"
 ms.assetid: 56b05cdc-bd64-4dfd-bb12-824eacec6f94
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -46,8 +46,8 @@ Declares a `Get` property procedure used to retrieve the value of a property.
 ## Syntax  
   
 ```  
-[ <attributelist> ] [ accessmodifier ] Get()  
-    [ statements ]  
+[ <attributelist> ] [ accessmodifier ] Get()  
+    [ statements ]  
 End Get  
 ```  
   

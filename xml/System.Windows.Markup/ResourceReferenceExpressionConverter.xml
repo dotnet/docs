@@ -22,6 +22,7 @@
 ## XAML Text Usage  
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,6 +38,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.ResourceReferenceExpressionConverter" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CanConvertFrom">
@@ -62,6 +64,7 @@
         <returns>
           <see langword="true" /> if the converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CanConvertTo">
@@ -89,6 +92,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="destinationType" /> is <see langword="null" />.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -115,6 +119,7 @@
         <summary>Converts the specified value to the <see langword="ResourceReferenceExpression" /> type.</summary>
         <returns>The converted value.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ConvertTo">
@@ -147,6 +152,7 @@
           <paramref name="destinationType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> must be of type <see langword="ResourceReferenceExpression" />.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

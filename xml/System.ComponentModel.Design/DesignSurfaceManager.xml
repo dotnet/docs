@@ -311,7 +311,7 @@
 > [!NOTE]
 >  Because <xref:System.ComponentModel.Design.DesignSurfaceManager> does not have any native code to clean up, it does not have a finalizer that calls <xref:System.ComponentModel.Design.DesignSurfaceManager.Dispose%2A>. If you need to call <xref:System.ComponentModel.Design.DesignSurfaceManager.Dispose%2A>, you must add a finalizer yourself.  
   
- This method is called by the public `Dispose()`method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
+ This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
   
  When the `disposing` parameter is true, this method releases all resources held by any managed objects that this <xref:System.ComponentModel.Design.DesignSurfaceManager> references. This method invokes the `Dispose()` method of each referenced object.  
   

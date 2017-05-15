@@ -2,6 +2,7 @@
 title: "How To: Build Claims-Aware ASP.NET MVC Web Application Using WIF | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -128,7 +129,7 @@ manager: "mbaldwin"
     </system.identityModel.services>  
     ```  
   
-5.  Add reference to the [System.IdentityModel](assetId:///System.IdentityModel?qualifyHint=False&amp;autoUpgrade=True) assembly.  
+5.  Add reference to the <xref:System.IdentityModel> assembly.  
   
 6.  Compile the solution to make sure there are errors.  
   

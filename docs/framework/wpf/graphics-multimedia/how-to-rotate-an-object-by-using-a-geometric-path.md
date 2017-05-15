@@ -2,7 +2,7 @@
 title: "How to: Rotate an Object by Using a Geometric Path | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "rotating objects by geometric paths"
 ms.assetid: cb31ca4d-f05a-4c6b-9a18-4b6faaf38d45
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Rotate an Object by Using a Geometric Path

@@ -1,12 +1,11 @@
 ---
-title: "Best Practices for Using Strings in the .NET Framework | Microsoft Docs"
+title: "Best Practices for Using Strings in .NET | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -26,10 +25,10 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-# Best Practices for Using Strings in the .NET Framework
-<a name="top"></a> The .NET Framework provides extensive support for developing localized and globalized applications, and makes it easy to apply the conventions of either the current culture or a specific culture when performing common operations such as sorting and displaying strings. But sorting or comparing strings is not always a culture-sensitive operation. For example, strings that are used internally by an application typically should be handled identically across all cultures. When culturally independent string data, such as XML tags, HTML tags, user names, file paths, and the names of system objects, are interpreted as if they were culture-sensitive, application code can be subject to subtle bugs, poor performance, and, in some cases, security issues.  
+# Best Practices for Using Strings in .NET
+<a name="top"></a> .NET provides extensive support for developing localized and globalized applications, and makes it easy to apply the conventions of either the current culture or a specific culture when performing common operations such as sorting and displaying strings. But sorting or comparing strings is not always a culture-sensitive operation. For example, strings that are used internally by an application typically should be handled identically across all cultures. When culturally independent string data, such as XML tags, HTML tags, user names, file paths, and the names of system objects, are interpreted as if they were culture-sensitive, application code can be subject to subtle bugs, poor performance, and, in some cases, security issues.  
   
- This topic examines the string sorting, comparison, and casing methods in the .NET Framework, presents recommendations for selecting an appropriate string-handling method, and provides additional information about string-handling methods. It also examines how formatted data, such as numeric data and date and time data, is handled for display and for storage.  
+ This topic examines the string sorting, comparison, and casing methods in .NET, presents recommendations for selecting an appropriate string-handling method, and provides additional information about string-handling methods. It also examines how formatted data, such as numeric data and date and time data, is handled for display and for storage.  
   
  This topic contains the following sections:  
   
@@ -41,7 +40,7 @@ manager: "wpickett"
   
 -   [Choosing a StringComparison Member for Your Method Call](#choosing_a_stringcomparison_member_for_your_method_call)  
   
--   [Common String Comparison Methods in the .NET Framework](#common_string_comparison_methods_in_the_net_framework)  
+-   [Common String Comparison Methods in .NET](#common_string_comparison_methods_in_the_net_framework)  
   
 -   [Methods that Perform String Comparison Indirectly](#methods_that_perform_string_comparison_indirectly)  
   
@@ -49,7 +48,7 @@ manager: "wpickett"
   
 <a name="recommendations_for_string_usage"></a>   
 ## Recommendations for String Usage  
- When you develop with the .NET Framework, follow these simple recommendations when you use strings:  
+ When you develop with .NET, follow these simple recommendations when you use strings:  
   
 -   Use overloads that explicitly specify the string comparison rules for string operations. Typically, this involves calling a method overload that has a parameter of type <xref:System.StringComparison>.  
   
@@ -83,7 +82,7 @@ manager: "wpickett"
   
 <a name="specifying_string_comparisons_explicitly"></a>   
 ## Specifying String Comparisons Explicitly  
- Most of the string manipulation methods in the.NET Framework are overloaded. Typically, one or more overloads accept default settings, whereas others accept no defaults and instead define the precise way in which strings are to be compared or manipulated. Most of the methods that do not rely on defaults include a parameter of type <xref:System.StringComparison>, which is an enumeration that explicitly specifies rules for string comparison by culture and case. The following table describes the <xref:System.StringComparison> enumeration members.  
+ Most of the string manipulation methods in .NET are overloaded. Typically, one or more overloads accept default settings, whereas others accept no defaults and instead define the precise way in which strings are to be compared or manipulated. Most of the methods that do not rely on defaults include a parameter of type <xref:System.StringComparison>, which is an enumeration that explicitly specifies rules for string comparison by culture and case. The following table describes the <xref:System.StringComparison> enumeration members.  
   
 |StringComparison member|Description|  
 |-----------------------------|-----------------|  
@@ -128,7 +127,7 @@ manager: "wpickett"
 ### String Comparisons that Use the Current Culture  
  One criterion involves using the conventions of the current culture when comparing strings. Comparisons that are based on the current culture use the thread's current culture or locale. If the culture is not set by the user, it defaults to the setting in the **Regional Options** window in Control Panel. You should always use comparisons that are based on the current culture when data is linguistically relevant, and when it reflects culture-sensitive user interaction.  
   
- However, comparison and casing behavior in the .NET Framework changes when the culture changes. This happens when an application executes on a computer that has a different culture than the computer on which the application was developed, or when the executing thread changes its culture. This behavior is intentional, but it remains non-obvious to many developers. The following example illustrates differences in sort order between the U.S. English ("en-US") and Swedish ("sv-SE") cultures. Note that the words "ångström", "Windows", and "Visual Studio" appear in different positions in the sorted string arrays.  
+ However, comparison and casing behavior in .NET changes when the culture changes. This happens when an application executes on a computer that has a different culture than the computer on which the application was developed, or when the executing thread changes its culture. This behavior is intentional, but it remains non-obvious to many developers. The following example illustrates differences in sort order between the U.S. English ("en-US") and Swedish ("sv-SE") cultures. Note that the words "ångström", "Windows", and "Visual Studio" appear in different positions in the sorted string arrays.  
   
  [!code-csharp[Conceptual.Strings.BestPractices#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.strings.bestpractices/cs/comparison1.cs#3)]
  [!code-vb[Conceptual.Strings.BestPractices#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.strings.bestpractices/vb/comparison1.vb#3)]  
@@ -175,7 +174,7 @@ manager: "wpickett"
   
  Ordinal comparisons are string comparisons in which each byte of each string is compared without linguistic interpretation; for example, "windows" does not match "Windows". This is essentially a call to the C runtime `strcmp` function. Use this comparison when the context dictates that strings should be matched exactly or demands conservative matching policy. Additionally, ordinal comparison is the fastest comparison operation because it applies no linguistic rules when determining a result.  
   
- Strings in the .NET Framework can contain embedded null characters. One of the clearest differences between ordinal and culture-sensitive comparison (including comparisons that use the invariant culture) concerns the handling of embedded null characters in a string. These characters are ignored when you use the <xref:System.String.Compare%2A?displayProperty=fullName> and <xref:System.String.Equals%2A?displayProperty=fullName> methods to perform culture-sensitive comparisons (including comparisons that use the invariant culture). As a result, in culture-sensitive comparisons, strings that contain embedded null characters can be considered equal to strings that do not.  
+ Strings in .NET can contain embedded null characters. One of the clearest differences between ordinal and culture-sensitive comparison (including comparisons that use the invariant culture) concerns the handling of embedded null characters in a string. These characters are ignored when you use the <xref:System.String.Compare%2A?displayProperty=fullName> and <xref:System.String.Equals%2A?displayProperty=fullName> methods to perform culture-sensitive comparisons (including comparisons that use the invariant culture). As a result, in culture-sensitive comparisons, strings that contain embedded null characters can be considered equal to strings that do not.  
   
 > [!IMPORTANT]
 >  Although string comparison methods disregard embedded null characters, string search methods such as <xref:System.String.Contains%2A?displayProperty=fullName>, <xref:System.String.EndsWith%2A?displayProperty=fullName>, <xref:System.String.IndexOf%2A?displayProperty=fullName>, <xref:System.String.LastIndexOf%2A?displayProperty=fullName>, and <xref:System.String.StartsWith%2A?displayProperty=fullName> do not.  
@@ -243,7 +242,7 @@ manager: "wpickett"
  [Back to top](#top)  
   
 <a name="common_string_comparison_methods_in_the_net_framework"></a>   
-## Common String Comparison Methods in the .NET Framework  
+## Common String Comparison Methods in .NET  
  The following sections describe the methods that are most commonly used for string comparison.  
   
 ### String.Compare  
@@ -342,7 +341,7 @@ manager: "wpickett"
   
 <a name="Formatted"></a>   
 ## Displaying and Persisting Formatted Data  
- When you display non-string data such as numbers and dates and times to users, format them by using the user's cultural settings. By default, the <xref:System.String.Format%2A?displayProperty=fullName> method and the `ToString` methods of the numeric types and the date and time types use the current thread culture for formatting operations. To explicitly specify that the formatting method should use the current culture, you can call an overload of a formatting method that has a `provider` parameter, such as [String.Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> or <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=fullName>, and pass it the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property.  
+ When you display non-string data such as numbers and dates and times to users, format them by using the user's cultural settings. By default, the <xref:System.String.Format%2A?displayProperty=fullName> method and the `ToString` methods of the numeric types and the date and time types use the current thread culture for formatting operations. To explicitly specify that the formatting method should use the current culture, you can call an overload of a formatting method that has a `provider` parameter, such as <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> or <xref:System.DateTime.ToString%28System.IFormatProvider%29?displayProperty=fullName>, and pass it the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property.  
   
  You can persist non-string data either as binary data or as formatted data. If you choose to save it as formatted data, you should call a formatting method overload that includes a `provider` parameter and pass it the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> property. The invariant culture provides a consistent format for formatted data that is independent of culture and machine. In contrast, persisting data that is formatted by using cultures other than the invariant culture has a number of limitations:  
   

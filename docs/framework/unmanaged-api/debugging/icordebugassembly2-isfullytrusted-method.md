@@ -2,18 +2,19 @@
 title: "ICorDebugAssembly2::IsFullyTrusted Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugAssembly2.IsFullyTrusted"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugAssembly2::IsFullyTrusted"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugAssembly2::IsFullyTrusted method [.NET Framework debugging]"
   - "IsFullyTrusted method [.NET Framework debugging]"
 ms.assetid: 26cbd27d-12bf-444a-8197-ccd14d37dda3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

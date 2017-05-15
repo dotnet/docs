@@ -2,7 +2,7 @@
 title: "How to: Animate the Size of a FrameworkElement | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "FrameworkElement, animating size of"
 ms.assetid: d4cd5a13-c20d-4a6f-a2ba-14f2c9ce4cef
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Animate the Size of a FrameworkElement

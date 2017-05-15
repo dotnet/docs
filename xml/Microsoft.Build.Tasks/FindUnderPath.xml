@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>FindUnderPath</c> task. Use the <c>FindUnderPath</c> element in your project file to create and execute this task. For usage and parameter information, see [FindUnderPath Task](http://msdn.microsoft.com/library/3c6d58b0-36e8-47aa-bfca-b73dd2045d91).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.FindUnderPath" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -48,6 +50,7 @@
         <returns>
           <see langword="true" /> if task executes successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Files">
@@ -66,6 +69,7 @@
         <summary>Gets or sets the files whose paths should be compared with the path specified by the <see cref="P:Microsoft.Build.Tasks.FindUnderPath.Path" /> property.</summary>
         <value>The files whose paths should be compared with the path specified by the <see cref="P:Microsoft.Build.Tasks.FindUnderPath.Path" /> property.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InPath">
@@ -89,6 +93,7 @@
         <summary>Gets or sets the items that were found under the specified path.</summary>
         <value>The items that were found under the specified path.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OutOfPath">
@@ -112,6 +117,7 @@
         <summary>Gets or sets the items that were not found under the specified path.</summary>
         <value>The items that were not found under the specified path.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Path">
@@ -135,6 +141,7 @@
         <summary>Gets or sets the folder path to use as the reference.</summary>
         <value>The folder path to use as the reference.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UpdateToAbsolutePaths">
@@ -154,6 +161,7 @@
         <value>
           <see langword="true" /> if the paths of the output items should be updated to be absolute; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

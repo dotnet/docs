@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents errors that occur when you run the command-line compiler jsc.exe.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.CmdLineException" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -46,6 +48,7 @@
         <param name="m">The message that describes the error.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.CmdLineException" /> class, using the specified error message.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -66,6 +69,7 @@
         <param name="culture">Culture-specific information.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.CmdLineException" /> class, using the specified error code and culture information.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -86,6 +90,7 @@
         <param name="c">Contextual information about the source or destination.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.CmdLineException" /> class, using serialized data.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -106,6 +111,7 @@
         <param name="e">The exception that is the cause of the current exception, or null if no inner exception is specified.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.CmdLineException" /> class, using the specified error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -128,6 +134,7 @@
         <param name="culture">Culture-specific information.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.CmdLineException" /> class, using the specified error code, context, and culture information.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -156,6 +163,7 @@
         <param name="c">Contextual information about the source or destination</param>
         <summary>Stores serialized object data about the exception that is being thrown.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Message">
@@ -174,6 +182,7 @@
         <summary>Gets a message that describes the current exception.</summary>
         <value>The error message that explains the reason for the exception.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ResourceKey">
@@ -196,6 +205,7 @@
         <summary>Returns the key for the specified error in a resource file.</summary>
         <returns>The key for <paramref name="errorCode" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -2,7 +2,7 @@
 title: "x:Name Directive | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,7 +29,7 @@ Uniquely identifies XAML-defined elements in a XAML namescope. XAML namescopes a
 ## XAML Attribute Usage  
   
 ```  
-<object x:Name="XAMLNameValue".../>  
+<object x:Name="XAMLNameValue".../>  
 ```  
   
 ## XAML Values  

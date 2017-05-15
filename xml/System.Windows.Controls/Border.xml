@@ -103,7 +103,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Border>|  
+|Identifier field|<xref:System.Windows.Controls.Border.BackgroundProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>|  
   
    
@@ -219,7 +219,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Border>|  
+|Identifier field|<xref:System.Windows.Controls.Border.BorderThicknessProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
   
    
@@ -278,7 +278,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Border>|  
+|Identifier field|<xref:System.Windows.Controls.Border.CornerRadiusProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
   
    
@@ -386,7 +386,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Border>|  
+|Identifier field|<xref:System.Windows.Controls.Border.PaddingProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>|  
   
    

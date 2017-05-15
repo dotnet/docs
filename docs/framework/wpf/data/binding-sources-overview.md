@@ -2,7 +2,7 @@
 title: "Binding Sources Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "binding sources"
 ms.assetid: 2df2cd11-6aac-4bdf-ab7b-ea5f464cd5ca
 caps.latest.revision: 25
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Binding Sources Overview
@@ -106,5 +106,5 @@ In data binding, the binding source object refers to the object you obtain data 
  [Specify the Binding Source](../../../../docs/framework/wpf/data/how-to-specify-the-binding-source.md)   
  [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)   
  [How-to Topics](../../../../docs/framework/wpf/data/data-binding-how-to-topics.md)   
- [WPF Data Binding with LINQ to XML Overview](http://msdn.microsoft.com/library/3bf80845-891b-41de-a71b-4080b5bd3ea6)   
+ [WPF Data Binding with LINQ to XML Overview](/visualstudio/designers/wpf-data-binding-with-linq-to-xml-overview)   
  [Data Binding](../../../../docs/framework/wpf/advanced/optimizing-performance-data-binding.md)

@@ -237,7 +237,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the [edmType](assetId:///edmType?qualifyHint=False&amp;autoUpgrade=True) is a primitive type, such as `String`, `Decimal`, `Binary` or `DateTime`, this method invokes one of the corresponding methods declared in the <xref:System.Data.Metadata.Edm.TypeUsage> class. Otherwise, it creates a <xref:System.Data.Metadata.Edm.TypeUsage> object with the specified <xref:System.Data.Metadata.Edm.EdmType> directly.  
+ If the <xref:System.Data.Metadata.Edm.EdmType> is a primitive type, such as `String`, `Decimal`, `Binary` or `DateTime`, this method invokes one of the corresponding methods declared in the <xref:System.Data.Metadata.Edm.TypeUsage> class. Otherwise, it creates a <xref:System.Data.Metadata.Edm.TypeUsage> object with the specified <xref:System.Data.Metadata.Edm.EdmType> directly.  
   
  ]]></format>
         </remarks>

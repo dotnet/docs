@@ -2,18 +2,19 @@
 title: "ICorProfilerInfo::GetInprocInspectionInterface Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo.GetInprocInspectionInterface"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetInprocInspectionInterface"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetInprocInspectionInterface method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetInprocInspectionInterface method [.NET Framework profiling]"
 ms.assetid: 22a92d1d-8849-4af6-8304-ecc53dd1d289
+topic_type: 
+  - "apiref"
 caps.latest.revision: 19
 author: "mairaw"
 ms.author: "mairaw"
@@ -39,7 +42,7 @@ HRESULT GetInprocInspectionInterface(
   
 #### Parameters  
  `ppicd`  
- [out] A pointer to the returned address of an [IUnknown](http://msdn.microsoft.com/library/e6b85472-e54b-4b8c-b19f-4454d6c05a8f) object that can be queried for an `ICorDebugProcess` interface.  
+ [out](/cpp/atl/iunknown) object that can be queried for an `ICorDebugProcess` interface.  
   
 ## Remarks  
  The common language runtime (CLR) debugging API supported limited in-process debugging in the .NET Framework version 1.0. In-process debugging enabled a profiler to use the inspection portions of the debugging API. As a result of customer feedback, in-process debugging has been removed from the .NET Framework in version 2.0, and replaced with a set of functionality that is more in line with the profiling API.  

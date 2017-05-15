@@ -349,7 +349,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the bottom offset has not been set, <xref:System.Windows.Documents.FixedPage.GetBottom%2A> returns <xref:System.Double>.  
+ If the bottom offset has not been set, <xref:System.Windows.Documents.FixedPage.GetBottom%2A> returns <xref:System.Double.NaN>.  
   
  ]]></format>
         </remarks>
@@ -457,7 +457,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the right offset has not been set, <xref:System.Windows.Documents.FixedPage.GetRight%2A> returns <xref:System.Double>.  
+ If the right offset has not been set, <xref:System.Windows.Documents.FixedPage.GetRight%2A> returns <xref:System.Double.NaN>.  
   
  ]]></format>
         </remarks>
@@ -494,7 +494,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the top offset has not been set, <xref:System.Windows.Documents.FixedPage.GetTop%2A> returns <xref:System.Double>.  
+ If the top offset has not been set, <xref:System.Windows.Documents.FixedPage.GetTop%2A> returns <xref:System.Double.NaN>.  
   
  ]]></format>
         </remarks>

@@ -22,6 +22,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,6 +38,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Configuration.DeclaredTypeElement" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -55,6 +57,7 @@
         <param name="typeName">The name of the type that requires a collection of known types.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Configuration.DeclaredTypeElement" /> class with the specified type name.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="KnownTypes">
@@ -78,6 +81,7 @@
         <summary>Gets the collection of known types.</summary>
         <value>A <see cref="T:System.Runtime.Serialization.Configuration.TypeElementCollection" /> that contains the known types.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PostDeserialize">
@@ -142,6 +146,7 @@
         <summary>Gets or sets the name of the declared type that requires a collection of known types.</summary>
         <value>The name of the declared type.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

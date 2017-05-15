@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Resources.ResourceManager</BaseTypeName>
   </Base>
@@ -44,6 +48,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ComponentResourceManager" /> class with default values.</summary>
@@ -63,6 +71,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="t" Type="System.Type" />
@@ -97,6 +109,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -112,7 +128,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method examines all the resources for the current culture used in the development environment. It attempts to find a resource with a key in the format of `objectName``.propertyName`, where `objectName` is passed in as a parameter and `propertyName` is the name of a property. It will then apply that resource's `value` to the corresponding property of the object. If there is no matching property, the resource will be ignored.  
+ This method examines all the resources for the current culture used in the development environment. It attempts to find a resource with a key in the format of `objectName.propertyName`, where `objectName` is passed in as a parameter and `propertyName` is the name of a property. It will then apply that resource's `value` to the corresponding property of the object. If there is no matching property, the resource will be ignored.  
   
  ]]></format>
         </remarks>
@@ -134,6 +150,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -153,7 +173,7 @@
 ## Remarks  
  This method examines all the resources for the provided culture. If `culture` is `null`, the current culture is assumed.  
   
- The <xref:System.ComponentModel.ComponentResourceManager.ApplyResources%2A> method attempts to find a resource with a key in the format of `objectName``.propertyName`, where `objectName` is passed in as a parameter and `propertyName` is the name of a property. It will then apply that resource's `value` to the corresponding property of the object. If there is no matching property, the resource will be ignored.  
+ The <xref:System.ComponentModel.ComponentResourceManager.ApplyResources%2A> method attempts to find a resource with a key in the format of `objectName.propertyName`, where `objectName` is passed in as a parameter and `propertyName` is the name of a property. It will then apply that resource's `value` to the corresponding property of the object. If there is no matching property, the resource will be ignored.  
   
  ]]></format>
         </remarks>

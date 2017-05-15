@@ -2,18 +2,19 @@
 title: "ICorProfilerInfo::GetAssemblyInfo Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo.GetAssemblyInfo"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetAssemblyInfo Method"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetAssemblyInfo method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetAssemblyInfo method [.NET Framework profiling]"
 ms.assetid: 7a3c97c3-1e31-47b1-bf23-386785c509c4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"

@@ -17,6 +17,7 @@
   <Docs>
     <summary>Creates <see cref="T:System.Security.Cryptography.RSAPKCS1SignatureFormatter" /> and <see cref="T:System.Security.Cryptography.RSAPKCS1SignatureDeformatter" /> objects.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -36,6 +37,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Deployment.Internal.CodeSigning.RSAPKCS1SHA256SignatureDescription" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateDeformatter">
@@ -62,6 +64,7 @@
         <summary>Creates an asymmetric signature deformatter instance that has the specified key.</summary>
         <returns>An asymmetric signature deformatter object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateFormatter">
@@ -88,6 +91,7 @@
         <summary>Creates an asymmetric signature formatter instance that has the specified key.</summary>
         <returns>An asymmetric signature formatter object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

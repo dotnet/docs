@@ -2,18 +2,19 @@
 title: "IGCHost::SetGCStartupLimits Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IGCHost.SetGCStartupLimits"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "SetGCStartupLimits"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "SetGCStartupLimits method, IGCHost interface [.NET Framework hosting]"
   - "IGCHost::SetGCStartupLimits method [.NET Framework hosting]"
 ms.assetid: cae53926-82ac-4d1d-b297-0bde0bd1bebb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

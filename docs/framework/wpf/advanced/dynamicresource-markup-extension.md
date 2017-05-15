@@ -2,7 +2,7 @@
 title: "DynamicResource Markup Extension | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "DynamicResource markup extensions"
 ms.assetid: 7324f243-03af-4c2b-b0db-26ac6cdfcbe4
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # DynamicResource Markup Extension
@@ -27,7 +27,7 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
 ## XAML Attribute Usage  
   
 ```  
-<object property="{DynamicResource key}" .../>  
+<object property="{DynamicResource key}" .../>  
 ```  
   
 ## XAML Property Element Usage  
@@ -35,7 +35,7 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
 ```  
 <object>  
   <object.property>  
-    <DynamicResource ResourceKey="key" .../>  
+    <DynamicResource ResourceKey="key" .../>  
   </object.property>  
 </object>  
 ```  
@@ -69,7 +69,7 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
  `DynamicResource` can also be used in a verbose attribute usage that specifies the <xref:System.Windows.DynamicResourceExtension.ResourceKey%2A> property as a property=value pair:  
   
 ```  
-<object property="{DynamicResource ResourceKey=key}" .../>  
+<object property="{DynamicResource ResourceKey=key}" .../>  
 ```  
   
  The verbose usage is often useful for extensions that have more than one settable property, or if some properties are optional. Because `DynamicResource` has only one settable property, which is required, this verbose usage is not typical.  

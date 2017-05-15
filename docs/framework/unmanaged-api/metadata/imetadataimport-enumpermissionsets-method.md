@@ -2,18 +2,19 @@
 title: "IMetaDataImport::EnumPermissionSets Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport.EnumPermissionSets"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::EnumPermissionSets"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "EnumPermissionSets method [.NET Framework metadata]"
   - "IMetaDataImport::EnumPermissionSets method [.NET Framework metadata]"
 ms.assetid: 347d7e5c-c90f-45ad-bd1e-2c7912b0b19c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

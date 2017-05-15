@@ -2,18 +2,19 @@
 title: "IMetaDataImport::EnumModuleRefs Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport.EnumModuleRefs"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::EnumModuleRefs"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "EnumModuleRefs method [.NET Framework metadata]"
   - "IMetaDataImport::EnumModuleRefs method [.NET Framework metadata]"
 ms.assetid: 53441f3a-68d2-477c-906e-37c55dfcfb4d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

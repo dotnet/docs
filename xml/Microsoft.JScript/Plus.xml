@@ -13,6 +13,7 @@
   <Docs>
     <summary>Performs addition and concatenation operations. This class belongs to the abstract syntax tree category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.Plus" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DoOp">
@@ -52,6 +54,7 @@
         <summary>Performs an addition or concatenation operation.</summary>
         <returns>The result of the operation.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="EvaluatePlus">
@@ -81,6 +84,7 @@
         <summary>Performs an addition or concatenation operation.</summary>
         <returns>The result of the operation.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

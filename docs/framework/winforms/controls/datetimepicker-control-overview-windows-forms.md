@@ -2,7 +2,7 @@
 title: "DateTimePicker Control Overview (Windows Forms) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "date and time picker controls"
 ms.assetid: 501af106-e9fc-4efc-b9b3-c9d8dcaf8c5c
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # DateTimePicker Control Overview (Windows Forms)

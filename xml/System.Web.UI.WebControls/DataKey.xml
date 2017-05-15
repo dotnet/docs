@@ -25,9 +25,9 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.DataKey> class is used to represent the primary key for a record in a data-bound control. The primary key for a record can be composed of one of more fields from the data source. Although the <xref:System.Web.UI.WebControls.DataKey> class is not a collection, it can store multiple key field values. The key field values are populated when one of the constructors for the <xref:System.Web.UI.WebControls.DataKey> class is called. You can retrieve a key field value from a <xref:System.Web.UI.WebControls.DataKey> object in the following ways:  
   
--   Use the [Item\<xref:System.Web.UI.WebControls.DataKey.Item%28System.Int32%29?displayProperty=fullName> property to retrieve a key field value at a specific index in the <xref:System.Web.UI.WebControls.DataKey> object.  
+-   Use the <xref:System.Web.UI.WebControls.DataKey.Item%28System.Int32%29?displayProperty=fullName> property to retrieve a key field value at a specific index in the <xref:System.Web.UI.WebControls.DataKey> object.  
   
--   Use the [Item\<xref:System.Web.UI.WebControls.DataKey.Item%28System.String%29?displayProperty=fullName> property to retrieve a key field value of a specific field.  
+-   Use the <xref:System.Web.UI.WebControls.DataKey.Item%28System.String%29?displayProperty=fullName> property to retrieve a key field value of a specific field.  
   
 -   Use the <xref:System.Web.UI.WebControls.DataKey.Value%2A> property to retrieve the value of the key field at index 0 in the <xref:System.Web.UI.WebControls.DataKey> object. This property is often used as a shortcut to retrieve the key value of a record when the primary key contains only one field.  
   
@@ -69,7 +69,7 @@
  Use this constructor to create a new instance of the <xref:System.Web.UI.WebControls.DataKey> class using the specified dictionary of key field values. The field values contained in the <xref:System.Collections.Specialized.IOrderedDictionary> object passed in for the `keyTable` parameter are used to populate the <xref:System.Web.UI.WebControls.DataKey> object.  
   
 > [!NOTE]
->  This version of the constructor does not allow you to specify a list of field names in advance for the <xref:System.Web.UI.WebControls.DataKey> object. Because the field names are not specified in advance, both the field names and values are stored in view state. To specify a list of field names in advance, use the [DataKey(IOrderedDictionary, String\<xref:System.Web.UI.WebControls.DataKey.%23ctor%28System.Collections.Specialized.IOrderedDictionary%2CSystem.String%5B%5D%29> constructor.  
+>  This version of the constructor does not allow you to specify a list of field names in advance for the <xref:System.Web.UI.WebControls.DataKey> object. Because the field names are not specified in advance, both the field names and values are stored in view state. To specify a list of field names in advance, use the <xref:System.Web.UI.WebControls.DataKey.%23ctor%28System.Collections.Specialized.IOrderedDictionary%2CSystem.String%5B%5D%29> constructor.  
   
  ]]></format>
         </remarks>
@@ -182,7 +182,7 @@
  Use the <xref:System.Web.UI.WebControls.DataKey.Item%28System.Int32%29> property to retrieve the value of the key field at the specified index in the <xref:System.Web.UI.WebControls.DataKey> object.  
   
 > [!NOTE]
->  As an alternative, you can also use the [Item\<xref:System.Web.UI.WebControls.DataKey.Item%28System.String%29> property to retrieve a key field value by field name.  
+>  As an alternative, you can also use the <xref:System.Web.UI.WebControls.DataKey.Item%28System.String%29> property to retrieve a key field value by field name.  
   
    
   
@@ -222,7 +222,7 @@
  Use the <xref:System.Web.UI.WebControls.DataKey.Item%28System.String%29> property to retrieve the value of the specified key field from the <xref:System.Web.UI.WebControls.DataKey> object.  
   
 > [!NOTE]
->  As an alternative, you can also use the [Item\<xref:System.Web.UI.WebControls.DataKey.Item%28System.Int32%29> property to retrieve a key field value by index.  
+>  As an alternative, you can also use the <xref:System.Web.UI.WebControls.DataKey.Item%28System.Int32%29> property to retrieve a key field value by index.  
   
    
   

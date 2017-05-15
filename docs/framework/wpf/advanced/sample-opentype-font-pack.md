@@ -2,7 +2,7 @@
 title: "Sample OpenType Font Pack | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "typography, OpenType font pack"
 ms.assetid: 56b46fa1-a44e-419b-8f14-25ad51c715c3
 caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Sample OpenType Font Pack

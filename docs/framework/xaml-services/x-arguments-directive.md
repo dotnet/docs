@@ -2,7 +2,7 @@
 title: "x:Arguments Directive | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,7 +25,7 @@ Packages construction arguments for a non-default constructor object element dec
 ## XAML Element Usage (Nondefault constructor)  
   
 ```  
-<object ...>  
+<object ...>  
   <x:Arguments>  
     oneOrMoreObjectElements  
   </x:Arguments>  
@@ -35,7 +35,7 @@ Packages construction arguments for a non-default constructor object element dec
 ## XAML Element Usage (factory method)  
   
 ```  
-<object x:FactoryMethod="methodName"...>  
+<object x:FactoryMethod="methodName"...>  
   <x:Arguments>  
     oneOrMoreObjectElements  
   </x:Arguments>  

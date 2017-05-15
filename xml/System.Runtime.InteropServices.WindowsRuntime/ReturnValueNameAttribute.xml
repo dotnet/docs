@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -21,7 +22,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the name of the return value of a method in a [!INCLUDE[wrt](~/includes/wrt-md.md)] component.</summary>
+    <summary>Specifies the name of the return value of a method in a Windows Runtime component.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -91,6 +92,7 @@ End Function
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -114,6 +116,7 @@ End Function
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.WindowsRuntime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

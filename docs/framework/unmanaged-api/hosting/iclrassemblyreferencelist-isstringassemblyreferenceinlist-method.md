@@ -2,18 +2,19 @@
 title: "ICLRAssemblyReferenceList::IsStringAssemblyReferenceInList Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRAssemblyReferenceList.IsStringAssemblyReferenceInList"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRAssemblyReferenceList::IsStringAssemblyReferenceInList"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRAssemblyReferenceList::IsStringAssemblyReferenceInList method [.NET Framework hosting]"
   - "IsStringAssemblyReferenceInList method [.NET Framework hosting]"
 ms.assetid: e6121cc3-2f11-42c7-bdae-47808581ff71
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Numerics</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Numerics</AssemblyName>
@@ -113,7 +114,7 @@
 ## Formatting a Complex Number  
  By default, the string representation of a complex number takes the form `(`*real*`,` *imaginary*`)`, where *real* and *imaginary* are the string representations of the <xref:System.Double> values that form the complex number's real and imaginary components. Some overloads of the <xref:System.Numerics.Complex.ToString%2A> method allow customization of the string representations of these <xref:System.Double> values to reflect the formatting conventions of a particular culture or to appear in a particular format defined by a standard or custom numeric format string. (For more information, see [Standard Numeric Format Strings](~/docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](~/docs/standard/base-types/custom-numeric-format-strings.md).)  
   
- One of the more common ways of expressing the string representation of a complex number takes the form a + bi, where a is the complex number's real component, and b is the complex number's imaginary component. In electrical engineering, a complex number is most commonly expressed as a + bj. You can return the string representation of a complex number in either of these two forms. To do this, define a custom format provider by implementing the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces, and then call the [String.Format(IFormatProvider, String, Object\<xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method.  
+ One of the more common ways of expressing the string representation of a complex number takes the form a + bi, where a is the complex number's real component, and b is the complex number's imaginary component. In electrical engineering, a complex number is most commonly expressed as a + bj. You can return the string representation of a complex number in either of these two forms. To do this, define a custom format provider by implementing the <xref:System.ICustomFormatter> and <xref:System.IFormatProvider> interfaces, and then call the <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=fullName> method.  
   
  The following example defines a `ComplexFormatter` class that represents a complex number as a string in the form of either a + bi or a + bj.  
   
@@ -137,6 +138,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -181,6 +183,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -235,6 +238,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -263,7 +267,7 @@
   
  The <xref:System.Numerics.Complex.Acos%2A> method uses the following formula:  
   
- (-<xref:System.Numerics.Complex.ImaginaryOne>) * <xref:System.Numerics.Complex.Log%2A>(`value` + [ImaginaryOne](assetId:///F:System.Numerics.Complex.ImaginaryOne?qualifyHint=False&autoUpgrade=True)*[Sqrt](assetId:///M:System.Numerics.Complex.Sqrt(System.Numerics.Complex)?qualifyHint=False&autoUpgrade=True)([One](assetId:///F:System.Numerics.Complex.One?qualifyHint=False&autoUpgrade=True) - `value` * `value`)))  
+ (-<xref:System.Numerics.Complex.ImaginaryOne>) * <xref:System.Numerics.Complex.Log%2A>(`value` + <xref:System.Numerics.Complex.ImaginaryOne>*<xref:System.Numerics.Complex.Sqrt%2A>(<xref:System.Numerics.Complex.One> - `value` * `value`)))    
   
    
   
@@ -285,6 +289,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -339,6 +344,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -367,7 +373,7 @@
   
  The <xref:System.Numerics.Complex.Asin%2A> method uses the following formula:  
   
- -<xref:System.Numerics.Complex.ImaginaryOne> * <xref:System.Numerics.Complex.Log%2A>([ImaginaryOne](assetId:///F:System.Numerics.Complex.ImaginaryOne?qualifyHint=False&autoUpgrade=True) * value + [Sqrt](assetId:///M:System.Numerics.Complex.Sqrt(System.Numerics.Complex)?qualifyHint=False&autoUpgrade=True)([One](assetId:///F:System.Numerics.Complex.One?qualifyHint=False&autoUpgrade=True) - value * value))  
+ -<xref:System.Numerics.Complex.ImaginaryOne> * <xref:System.Numerics.Complex.Log%2A>(<xref:System.Numerics.Complex.ImaginaryOne> * value + <xref:System.Numerics.Complex.Sqrt%2A>(<xref:System.Numerics.Complex.One> - value * value))    
   
    
   
@@ -389,6 +395,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -417,7 +424,7 @@
   
  The <xref:System.Numerics.Complex.Atan%2A> method uses the following formula:  
   
- <xref:System.Numerics.Complex.ImaginaryOne> / new Complex(2.0, 0.0)) * (<xref:System.Numerics.Complex.Log%2A>([One](assetId:///F:System.Numerics.Complex.One?qualifyHint=False&autoUpgrade=True) - [ImaginaryOne](assetId:///F:System.Numerics.Complex.ImaginaryOne?qualifyHint=False&autoUpgrade=True) * value) - <xref:System.Numerics.Complex.Log%2A>([One](assetId:///F:System.Numerics.Complex.One?qualifyHint=False&autoUpgrade=True) + ImaginaryOne * value)  
+ <xref:System.Numerics.Complex.ImaginaryOne> / new Complex(2.0, 0.0)) * (<xref:System.Numerics.Complex.Log%2A>(<xref:System.Numerics.Complex.One> - <xref:System.Numerics.Complex.ImaginaryOne> * value) - <xref:System.Numerics.Complex.Log%2A>(<xref:System.Numerics.Complex.One> + ImaginaryOne * value)   
   
    
   
@@ -439,6 +446,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -485,6 +493,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -535,6 +544,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -577,6 +587,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -631,6 +642,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -686,6 +698,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -744,6 +757,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -777,8 +791,8 @@
 ## Examples  
  The following example illustrates the <xref:System.Numerics.Complex.Exp%2A> method. It shows that, with some allowance for the lack of precision of the <xref:System.Double> data type, passing the value returned by the <xref:System.Numerics.Complex.Log%2A> method to the <xref:System.Numerics.Complex.Exp%2A> method returns the original <xref:System.Numerics.Complex> value.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Numerics.Complex.Log#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.log/cs/log1.cs#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Numerics.Complex.Log#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.log/vb/log1.vb#1)]  -->  
+ [!code-csharp[System.Numerics.Complex.Log#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.log/cs/log1.cs#1)] 
+ [!code-vb[System.Numerics.Complex.Log#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.log/vb/log1.vb#1)]   
   
  ]]></format>
         </remarks>
@@ -792,6 +806,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -844,6 +859,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -872,6 +888,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -914,6 +931,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -950,6 +968,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -981,8 +1000,8 @@
 ## Examples  
  The following example illustrates the <xref:System.Numerics.Complex.Log%2A> method. It shows that, with some allowance for the lack of precision of the <xref:System.Double> data type, passing the value returned by the <xref:System.Numerics.Complex.Log%2A> method to the <xref:System.Numerics.Complex.Exp%2A> method returns the original <xref:System.Numerics.Complex> value.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Numerics.Complex.Log#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.log/cs/log1.cs#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Numerics.Complex.Log#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.log/vb/log1.vb#1)]  -->  
+ [!code-csharp[System.Numerics.Complex.Log#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.complex.log/cs/log1.cs#1)] 
+ [!code-vb[System.Numerics.Complex.Log#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.complex.log/vb/log1.vb#1)]   
   
  ]]></format>
         </remarks>
@@ -996,6 +1015,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1036,6 +1056,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1074,6 +1095,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1124,6 +1146,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1178,6 +1201,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1226,6 +1250,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1262,6 +1287,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1321,6 +1347,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1372,6 +1399,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1425,6 +1453,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1456,6 +1485,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1487,6 +1517,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1518,6 +1549,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1549,6 +1581,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1580,6 +1613,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1611,6 +1645,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1642,6 +1677,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1678,6 +1714,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1709,6 +1746,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1745,6 +1783,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1781,6 +1820,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1817,6 +1857,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1865,6 +1906,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1916,6 +1958,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1967,6 +2010,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2010,6 +2054,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2058,6 +2103,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2108,6 +2154,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2141,6 +2188,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2183,6 +2231,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2231,6 +2280,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2281,6 +2331,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2323,6 +2374,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2349,7 +2401,7 @@
 ## Remarks  
  The square root of the complex number `value` is calculated by using the following formula:  
   
- <xref:System.Numerics.Complex.FromPolarCoordinates%2A?displayProperty=fullName>([Math.Sqrt](assetId:///M:System.Math.Sqrt(System.Double)?qualifyHint=True&autoUpgrade=True)(`value`.[Magnitude](assetId:///P:System.Numerics.Complex.Magnitude?qualifyHint=False&autoUpgrade=True)), `value`.[Phase](assetId:///P:System.Numerics.Complex.Phase?qualifyHint=False&autoUpgrade=True)/2.0)  
+ <xref:System.Numerics.Complex.FromPolarCoordinates%2A?displayProperty=fullName>(<xref:System.Math.Sqrt%2A?displayProperty=fullName>(`value`.<xref:System.Numerics.Complex.Magnitude%2A>), `value`.<xref:System.Numerics.Complex.Phase%2A>/2.0)   
   
  The <xref:System.Numerics.Complex.Sqrt%2A> method for complex numbers corresponds to the <xref:System.Math.Sqrt%2A?displayProperty=fullName> method for real numbers.  
   
@@ -2365,6 +2417,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2419,6 +2472,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2469,6 +2523,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2511,6 +2566,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2554,6 +2610,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2610,6 +2667,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2666,6 +2724,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2732,6 +2791,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>

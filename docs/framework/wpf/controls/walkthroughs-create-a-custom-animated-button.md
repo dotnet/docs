@@ -2,7 +2,7 @@
 title: "Walkthroughs: Create a Custom Animated Button | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "animation, buttons"
 ms.assetid: e9532c72-460f-4898-9332-613fa21d746a
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthroughs: Create a Custom Animated Button

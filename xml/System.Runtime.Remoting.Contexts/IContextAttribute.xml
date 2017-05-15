@@ -23,6 +23,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="GetPropertiesForNewContext">
@@ -52,6 +53,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsContextOK">
@@ -78,6 +80,7 @@
         <returns>
           <see langword="true" /> if the passed in context is okay; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

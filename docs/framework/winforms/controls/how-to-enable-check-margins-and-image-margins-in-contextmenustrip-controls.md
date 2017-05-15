@@ -2,7 +2,7 @@
 title: "How to: Enable Check Margins and Image Margins in ContextMenuStrip Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "MenuStrip control [Windows Forms]"
 ms.assetid: eb584e71-59da-4012-aaca-dbe1c7c7a156
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Enable Check Margins and Image Margins in ContextMenuStrip Controls

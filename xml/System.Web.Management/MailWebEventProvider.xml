@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Initialize">
@@ -56,6 +57,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">No recipients have been assigned in <paramref name="config" />.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProcessEvent">
@@ -87,6 +89,7 @@
         <block subset="none" type="overrides">
           <para>If buffering is enabled, you must handle adding events to the buffer.</para>
         </block>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProcessEventFlush">
@@ -117,6 +120,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Shutdown">
@@ -142,6 +146,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

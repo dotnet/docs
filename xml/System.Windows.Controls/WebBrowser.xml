@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Hosts and navigates between [!INCLUDE[TLA2#tla_html](~/includes/tla2sharptla-html-md.md)] documents. Enables interoperability between [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] managed code and [!INCLUDE[TLA2#tla_html](~/includes/tla2sharptla-html-md.md)] script.</summary>
+    <summary>Hosts and navigates between HTML documents. Enables interoperability between WPF managed code and HTML script.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -30,7 +30,7 @@
   
 -   When <xref:System.Windows.Controls.WebBrowser> is hosted by a full-trust [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] application (a stand-alone application, for example), <xref:System.Windows.Controls.WebBrowser> can host [!INCLUDE[TLA2#tla_html](~/includes/tla2sharptla-html-md.md)] documents from any location.  
   
--   When <xref:System.Windows.Controls.WebBrowser> is hosted by a partial-trust [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] application (an [!INCLUDE[TLA2#tla_xbap](~/includes/tla2sharptla-xbap-md.md)], for example), <xref:System.Windows.Controls.WebBrowser> can only host documents that are **Site Of Origin** application data files. For more information, see [WPF Application Resource, Content, and Data Files](../Topic/WPF%20Application%20Resource,%20Content,%20and%20Data%20Files.md).  
+-   When <xref:System.Windows.Controls.WebBrowser> is hosted by a partial-trust [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] application (an [!INCLUDE[TLA2#tla_xbap](~/includes/tla2sharptla-xbap-md.md)], for example), <xref:System.Windows.Controls.WebBrowser> can only host documents that are **Site Of Origin** application data files. For more information, see [WPF Application Resource, Content, and Data Files](~/docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md).  
   
 > [!CAUTION]
 >  The <xref:System.Windows.Controls.WebBrowser> control internally instantiates the native WebBrowser ActiveX control. WPF enables security features by applying feature controls to the WebBrowser ActiveX control. The feature controls that are applied differ for XBAPs and stand-alone applications. Some applications should apply additional feature controls to prevent malicious content from running. For more information, see the "WebBrowser Control and Feature Controls" section in [Security (WPF)](~/docs/framework/wpf/security-wpf.md) and [WebBrowser Control Overviews and Tutorials](http://go.microsoft.com/fwlink/?LinkId=179388).  
@@ -668,7 +668,7 @@ private void goNavigateButton_Click(object sender, RoutedEventArgs e)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the [Navigate Method (String, String, Byte\<xref:System.Windows.Controls.WebBrowser.Navigate%28System.String%2CSystem.String%2CSystem.Byte%5B%5D%2CSystem.String%29> method to navigate to a URL that may include escape characters. Use the [Navigate(Uri, String, Byte\<xref:System.Windows.Controls.WebBrowser.Navigate%28System.Uri%2CSystem.String%2CSystem.Byte%5B%5D%2CSystem.String%29> method to navigate to a <xref:System.Uri> that does not include escape characters.  
+ Use the <xref:System.Windows.Controls.WebBrowser.Navigate%28System.String%2CSystem.String%2CSystem.Byte%5B%5D%2CSystem.String%29> method to navigate to a URL that may include escape characters. Use the <xref:System.Windows.Controls.WebBrowser.Navigate%28System.Uri%2CSystem.String%2CSystem.Byte%5B%5D%2CSystem.String%29> method to navigate to a <xref:System.Uri> that does not include escape characters.  
   
  ]]></format>
         </remarks>
@@ -702,7 +702,7 @@ private void goNavigateButton_Click(object sender, RoutedEventArgs e)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the [Navigate(String, String, Byte\<xref:System.Windows.Controls.WebBrowser.Navigate%28System.String%2CSystem.String%2CSystem.Byte%5B%5D%2CSystem.String%29> method to navigate to a URL that may include escape characters. Use the [Navigate Method (Uri, String, Byte\<xref:System.Windows.Controls.WebBrowser.Navigate%28System.Uri%2CSystem.String%2CSystem.Byte%5B%5D%2CSystem.String%29> method to navigate to a <xref:System.Uri> that does not include escape characters.  
+ Use the <xref:System.Windows.Controls.WebBrowser.Navigate%28System.String%2CSystem.String%2CSystem.Byte%5B%5D%2CSystem.String%29> method to navigate to a URL that may include escape characters. Use the <xref:System.Windows.Controls.WebBrowser.Navigate%28System.Uri%2CSystem.String%2CSystem.Byte%5B%5D%2CSystem.String%29> method to navigate to a <xref:System.Uri> that does not include escape characters.  
   
    
   

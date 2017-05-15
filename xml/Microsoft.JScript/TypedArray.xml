@@ -17,6 +17,7 @@
   <Docs>
     <summary>Represents a reflectable reference to the <see cref="T:System.Array" /> class. This class stores the element type of a typed array, but this class does not store data.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -37,6 +38,7 @@
         <param name="rank">The rank (number of dimensions) of the array.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.TypedArray" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -60,6 +62,7 @@
         <returns>
           <see langword="true" /> if <paramref name="obj" /> has the same element type and rank as the current typed array; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetField">
@@ -84,6 +87,7 @@
         <summary>Gets a field of the <see cref="T:System.Array" /> class type that has the specified name.</summary>
         <returns>A field that has the specified name, if one is found; otherwise, null.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetFields">
@@ -106,6 +110,7 @@
         <summary>Gets an array of <see cref="T:System.Reflection.FieldInfo" /> objects that correspond to all fields of the <see cref="T:System.Array" /> class type.</summary>
         <returns>An array of objects that contains all fields of the <see cref="T:System.Array" /> class type.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -125,6 +130,7 @@
         <summary>Serves as a hash function for the element type of the typed array.</summary>
         <returns>A hash code for the current object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMember">
@@ -149,6 +155,7 @@
         <summary>Gets an array of <see cref="T:System.Reflection.MemberInfo" /> objects that correspond to all members of the <see cref="T:System.Array" /> class type that match a specified name.</summary>
         <returns>An array of objects that match the <paramref name="name" /> argument.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMembers">
@@ -171,6 +178,7 @@
         <summary>Gets an array of <see cref="T:System.Reflection.MemberInfo" /> objects that correspond to all members of the <see cref="T:System.Array" /> class type.</summary>
         <returns>An array of objects that contains all members of the <see cref="T:System.Array" /> class type.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMethod">
@@ -195,6 +203,7 @@
         <summary>Gets a method of the <see cref="T:System.Array" /> class type that has the specified name.</summary>
         <returns>A method that has the specified name, if one is found; otherwise, null.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMethod">
@@ -225,6 +234,7 @@
         <summary>Gets a method of the <see cref="T:System.Array" /> class type that has the specified name by using the specified selection criteria.</summary>
         <returns>A method that has the specified name, if one is found; otherwise, null.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMethods">
@@ -247,6 +257,7 @@
         <summary>Gets an array of <see cref="T:System.Reflection.MethodInfo" /> objects that correspond to all methods of the <see cref="T:System.Array" /> class type.</summary>
         <returns>An array of objects that contains all methods of the <see cref="T:System.Array" /> class type.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -269,6 +280,7 @@
         <summary>Gets an array of <see cref="T:System.Reflection.PropertyInfo" /> objects that correspond to all properties of the <see cref="T:System.Array" /> class type.</summary>
         <returns>An array of objects that contains all properties of the <see cref="T:System.Array" /> class type.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -293,6 +305,7 @@
         <summary>Gets a property of the <see cref="T:System.Array" /> class type that has the specified name.</summary>
         <returns>A property that has the specified name, if one is found; otherwise, null.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -325,6 +338,7 @@
         <summary>Gets a property of the <see cref="T:System.Array" /> class type that has the specified name by using the specified selection criteria.</summary>
         <returns>A property that has the specified name, if one is found; otherwise, null.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InvokeMember">
@@ -368,6 +382,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -387,6 +402,7 @@
         <summary>Returns a string that contains the element type of the typed array and the rank information.</summary>
         <returns>A string that contains the element type of the typed array and the rank information.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UnderlyingSystemType">
@@ -412,6 +428,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

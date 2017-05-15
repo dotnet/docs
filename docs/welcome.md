@@ -36,19 +36,25 @@ Build many types of apps with .NET, such as cloud, IoT, and games using free cro
 
 ## Documentation
 
-This documentation will show you how to build an app from scratch. Key sections:
+This documentation covers the breadth of .NET across platforms and languages.  You can get started with .NET and its languages in any of the following sections:
 
-- [C# Guide](csharp/index.md)
-- [F# Guide](fsharp/index.md)
-- [.NET Core API](../api/index.md)
 - [.NET Platform Guide](standard/index.md)
 - [.NET Core Guide](core/index.md)
 - [.NET Framework Guide](framework/index.md)
+- [C# Guide](csharp/index.md)
+- [F# Guide](fsharp/index.md)
+- [Visual Basic Guide](visual-basic/index.md)
+
+Additionally, you can browse the [.NET API reference](https://docs.microsoft.com/dotnet/api).
 
 ## Open source
 
-Many parts of .NET are built by open source contributors. You can contribute to this [.NET Documentation](https://github.com/dotnet/docs). You can also read the source of and contribute to .NET products, including [.NET Core](https://github.com/dotnet/core) and [Xamarin](http://open.xamarin.com). Key projects from Microsoft have been contributed to the [.NET Foundation](http://dotnetfoundation.org).
+This documentation is completely [open source](https://github.com/dotnet/docs).  You can contribute in any way you like, from creating Issues to writing documentation.  Additionally, much of .NET itself is open source:
 
-## Community
+- [.NET Core Home](https://github.com/dotnet/core)
+- [.NET Libraries](https://github.com/dotnet/corefx)
+- [.NET Core Runtime](https://github.com/dotnet/coreclr)
+- [Roslyn (C# and Visual Basic) Compiler Platform and IDE Tools](https://github.com/dotnet/roslyn)
+- [F# Compiler and IDE Tools](https://github.com/microsoft/visualfsharp)
 
 You can join other people who are already active in the [.NET community](https://www.microsoft.com/net/community) to find out what's new or ask for help.

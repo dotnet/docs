@@ -42,12 +42,10 @@
         <summary>Gets or sets the designer that the behavior is associated with.</summary>
         <value>The <see cref="T:System.Web.UI.Design.HtmlControlDesigner" /> that the behavior is associated with.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  The <see cref="T:System.Web.UI.Design.IHtmlControlDesignerBehavior" /> interface is obsolete. Use the <see cref="T:System.Web.UI.Design.IControlDesignerTag" /> and <see cref="T:System.Web.UI.Design.IControlDesignerView" /> interfaces for equivalent control designer functionality.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -67,12 +65,10 @@
         <summary>Gets the element that the designer is associated with.</summary>
         <value>The object that the designer is associated with.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  The <see cref="T:System.Web.UI.Design.IHtmlControlDesignerBehavior" /> interface is obsolete. Use the <see cref="T:System.Web.UI.Design.IControlDesignerTag" /> and <see cref="T:System.Web.UI.Design.IControlDesignerView" /> interfaces for equivalent control designer functionality.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

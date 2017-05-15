@@ -111,7 +111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This pattern must be from an <xref:System.Windows.Automation.AutomationElement> with an <xref:System.Windows.Automation.AutomationElementMode> reference in order to get current values. If the <xref:System.Windows.Automation.AutomationElement> was obtained using <xref:System.Windows.Automation.AutomationElementMode>, it contains only cached data, and attempting to get the current value of any property raises an exception. Use <xref:System.Windows.Automation.TablePattern.Cached%2A> to get the cached value of a property that was previously specified using a <xref:System.Windows.Automation.CacheRequest>.  
+ This pattern must be from an <xref:System.Windows.Automation.AutomationElement> with an <xref:System.Windows.Automation.AutomationElementMode.Full> reference in order to get current values. If the <xref:System.Windows.Automation.AutomationElement> was obtained using <xref:System.Windows.Automation.AutomationElementMode.None>, it contains only cached data, and attempting to get the current value of any property raises an exception. Use <xref:System.Windows.Automation.TablePattern.Cached%2A> to get the cached value of a property that was previously specified using a <xref:System.Windows.Automation.CacheRequest>.  
   
  For information on the properties available and their use, see <xref:System.Windows.Automation.TablePattern.TablePatternInformation>.  
   
@@ -214,7 +214,7 @@
    
   
 ## Examples  
- In the following example, a root element is passed to a function that returns a collection of <xref:System.Windows.Automation.AutomationElement> objects that are descendants of the root and satisfy a set of property conditions. This example retrieves the <xref:System.Windows.Automation.AutomationElement>s that support <xref:System.Windows.Automation.TablePattern> and where the <xref:System.Windows.Automation.TablePattern.RowOrColumnMajorProperty> is either <xref:System.Windows.Automation.RowOrColumnMajor> or <xref:System.Windows.Automation.RowOrColumnMajor>.  
+ In the following example, a root element is passed to a function that returns a collection of <xref:System.Windows.Automation.AutomationElement> objects that are descendants of the root and satisfy a set of property conditions. This example retrieves the <xref:System.Windows.Automation.AutomationElement>s that support <xref:System.Windows.Automation.TablePattern> and where the <xref:System.Windows.Automation.TablePattern.RowOrColumnMajorProperty> is either <xref:System.Windows.Automation.RowOrColumnMajor.Indeterminate> or <xref:System.Windows.Automation.RowOrColumnMajor.ColumnMajor>.  
   
  [!code-csharp[UIATablePattern_snip#100](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATablePattern_snip/CSharp/UIATablePattern_snippets.cs#100)]
  [!code-vb[UIATablePattern_snip#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATablePattern_snip/VisualBasic/UIATablePattern_snippets.vb#100)]  

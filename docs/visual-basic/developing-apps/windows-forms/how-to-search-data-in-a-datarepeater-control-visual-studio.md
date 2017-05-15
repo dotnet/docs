@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "DataRepeater, searching data"
 ms.assetid: a8ab5d17-b94f-43c4-8dd7-d0450226d73f
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -2,7 +2,7 @@
 title: "Markup Compatibility (mc:) Language Features | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "namespaces, XML"
 ms.assetid: 67992d76-8bcc-456c-8232-03807803d69e
 caps.latest.revision: 26
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Markup Compatibility (mc:) Language Features

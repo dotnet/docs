@@ -20,6 +20,7 @@
   <Docs>
     <summary>This enumeration provides three levels of importance for build messages.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Error">
@@ -36,6 +37,7 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates that the message corresponds to a build error.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Info">
@@ -52,6 +54,7 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates that the message corresponds to build information.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -68,6 +71,7 @@
       </ReturnValue>
       <Docs>
         <summary>Indicates that the message corresponds to a build warning.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

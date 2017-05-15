@@ -2,18 +2,19 @@
 title: "IMetaDataDispenser::DefineScope Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataDispenser.DefineScope"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataDispenser::DefineScope"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "DefineScope method [.NET Framework metadata]"
   - "IMetaDataDispenser::DefineScope method [.NET Framework metadata]"
 ms.assetid: af28db02-29af-45ac-aec6-8d6c6123c2ff
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

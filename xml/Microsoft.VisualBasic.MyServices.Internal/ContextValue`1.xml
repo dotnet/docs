@@ -20,7 +20,7 @@
   </Attributes>
   <Docs>
     <typeparam name="T">The type of the object to store.</typeparam>
-    <summary>This class supports <see langword="My" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].</summary>
+    <summary>This class supports <see langword="My" /> in Visual Basic.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -32,6 +32,7 @@
  ]]></format>
     </remarks>
     <altCompliant cref="None" />
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +57,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -91,6 +93,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

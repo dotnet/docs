@@ -2,18 +2,19 @@
 title: "IMetaDataTables2::GetMetaDataStorage Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataTables2.GetMetaDataStorage"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataTables2::GetMetaDataStorage"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetMetaDataStorage method [.NET Framework metadata]"
   - "IMetaDataTables2::GetMetaDataStorage method [.NET Framework metadata]"
 ms.assetid: 667a6d1e-753d-4ea2-8fd8-a8337d1bb9cd
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

@@ -2,11 +2,10 @@
 title: ".NET Framework Regular Expressions | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -29,15 +28,15 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-# .NET Framework Regular Expressions
+# .NET Regular Expressions
 Regular expressions provide a powerful, flexible, and efficient method for processing text. The extensive pattern-matching notation of regular expressions enables you to quickly parse large amounts of text to find specific character patterns; to validate text to ensure that it matches a predefined pattern (such as an e-mail address); to extract, edit, replace, or delete text substrings; and to add the extracted strings to a collection in order to generate a report. For many applications that deal with strings or that parse large blocks of text, regular expressions are an indispensable tool.  
   
 ## How Regular Expressions Work  
- The centerpiece of text processing with regular expressions is the regular expression engine, which is represented by the <xref:System.Text.RegularExpressions.Regex?displayProperty=fullName> object in the .NET Framework. At a minimum, processing text using regular expressions requires that the regular expression engine be provided with the following two items of information:  
+ The centerpiece of text processing with regular expressions is the regular expression engine, which is represented by the <xref:System.Text.RegularExpressions.Regex?displayProperty=fullName> object in .NET. At a minimum, processing text using regular expressions requires that the regular expression engine be provided with the following two items of information:  
   
 -   The regular expression pattern to identify in the text.  
   
-     In the .NET Framework, regular expression patterns are defined by a special syntax or language, which is compatible with Perl 5 regular expressions and adds some additional features such as right-to-left matching. For more information, see [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md).  
+     In .NET, regular expression patterns are defined by a special syntax or language, which is compatible with Perl 5 regular expressions and adds some additional features such as right-to-left matching. For more information, see [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md).  
   
 -   The text to parse for the regular expression pattern.  
   
@@ -88,7 +87,7 @@ Regular expressions provide a powerful, flexible, and efficient method for proce
  Note that the input string includes the substring "this? This". However, because of the intervening punctuation mark, it is not identified as a duplication.  
   
 ### Example 3: Dynamically Building a Culture-Sensitive Regular Expression  
- The following example illustrates the power of regular expressions combined with the flexibility offered by the .NET Framework's globalization features. It uses the <xref:System.Globalization.NumberFormatInfo> object to determine the format of currency values in the system's current culture. It then uses that information to dynamically construct a regular expression that extracts currency values from the text. For each match, it extracts the subgroup that contains the numeric string only, converts it to a <xref:System.Decimal> value, and calculates a running total.  
+ The following example illustrates the power of regular expressions combined with the flexibility offered by .NET's globalization features. It uses the <xref:System.Globalization.NumberFormatInfo> object to determine the format of currency values in the system's current culture. It then uses that information to dynamically construct a regular expression that extracts currency values from the text. For each match, it extracts the subgroup that contains the numeric string only, converts it to a <xref:System.Decimal> value, and calculates a running total.  
   
  [!code-csharp[Conceptual.Regex#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex/cs/example.cs#1)]
  [!code-vb[Conceptual.Regex#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex/vb/example.vb#1)]  
@@ -115,7 +114,7 @@ Regular expressions provide a powerful, flexible, and efficient method for proce
 |-----------|-----------------|  
 |[Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)|Provides information on the set of characters, operators, and constructs that you can use to define regular expressions.|  
 |[The Regular Expression Object Model](../../../docs/standard/base-types/the-regular-expression-object-model.md)|Provides information and code examples that illustrate how to use the regular expression classes.|  
-|[Details of Regular Expression Behavior](../../../docs/standard/base-types/details-of-regular-expression-behavior.md)|Provides information about the capabilities and behavior of .NET Framework regular expressions.|  
+|[Details of Regular Expression Behavior](../../../docs/standard/base-types/details-of-regular-expression-behavior.md)|Provides information about the capabilities and behavior of .NET regular expressions.|  
 |[Regular Expression Examples](../../../docs/standard/base-types/regular-expression-examples.md)|Provides code examples that illustrate typical uses of regular expressions.|  
   
 ## Reference  

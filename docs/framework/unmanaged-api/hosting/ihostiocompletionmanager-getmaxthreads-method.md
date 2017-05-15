@@ -2,18 +2,19 @@
 title: "IHostIoCompletionManager::GetMaxThreads Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostIoCompletionManager.GetMaxThreads"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostIoCompletionManager::GetMaxThreads"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IHostIoCompletionManager::GetMaxThreads method [.NET Framework hosting]"
   - "GetMaxThreads method, IHostIoCompletionManager interface [.NET Framework hosting]"
 ms.assetid: e7a6cadc-2433-4472-a701-58891abcde45
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

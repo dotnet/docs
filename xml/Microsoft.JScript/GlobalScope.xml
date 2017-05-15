@@ -22,6 +22,7 @@
   <Docs>
     <summary>Represents the global scope.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,6 +43,7 @@
         <param name="engine">A reference to the scripting engine.</param>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.GlobalScope" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddField">
@@ -64,6 +66,7 @@
         <summary>Adds the specified field to the global scope.</summary>
         <returns>The new field, if it is successfully added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetDefaultThisObject">
@@ -83,6 +86,7 @@
         <summary>Gets the current default scope, which is either the contained object of a <see langword="with" /> statement scope, or the global scope.</summary>
         <returns>This object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetField">
@@ -107,6 +111,7 @@
         <summary>Gets a field that has the specified name by searching the scope hierarchy. This method searches only the scope that is specified by the lexical level.</summary>
         <returns>A field that has the specified name.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetFields">
@@ -129,6 +134,7 @@
         <summary>Gets an array of <see cref="T:System.Reflection.FieldInfo" /> objects that correspond to all fields of the global scope.</summary>
         <returns>An array of objects that contains all fields of the global scope.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetGlobalScope">
@@ -148,6 +154,7 @@
         <summary>Gets the global scope by returning a reference to this object.</summary>
         <returns>This object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetLocalField">
@@ -170,6 +177,7 @@
         <summary>Gets the local declaration of a field that has the specified name. This is used at compile time for error checking.</summary>
         <returns>The local declaration of the field.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMember">
@@ -194,6 +202,7 @@
         <summary>Gets an array of <see cref="T:System.Reflection.MemberInfo" /> objects that correspond to all members that match a specified name.</summary>
         <returns>An array of objects that match the <paramref name="name" /> argument.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMembers">
@@ -216,6 +225,7 @@
         <summary>Gets an array of <see cref="T:System.Reflection.MemberInfo" /> objects that correspond to all members of the global scope.</summary>
         <returns>An array of objects that contains all members of the global scope.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMethods">
@@ -238,6 +248,7 @@
         <summary>Gets an array of <see cref="T:System.Reflection.MethodInfo" /> objects that correspond to all methods of the global scope.</summary>
         <returns>An array of objects that contains all methods of the global scope.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -260,6 +271,7 @@
         <summary>Gets an array of <see cref="T:System.Reflection.PropertyInfo" /> objects that correspond to all properties of the global scope.</summary>
         <returns>An array of objects that contains all properties of the global scope.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices.Expando.IExpando.AddMethod">
@@ -284,6 +296,7 @@
         <summary>Adds the specified method to the global scope. This method is not implemented in JScript.</summary>
         <returns>null in all cases.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices.Expando.IExpando.AddProperty">
@@ -306,6 +319,7 @@
         <summary>Adds the specified property to the global scope. This method is not implemented in JScript.</summary>
         <returns>null in all cases.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.InteropServices.Expando.IExpando.RemoveMember">
@@ -327,6 +341,7 @@
         <param name="m">The name of the member to remove.</param>
         <summary>Removes the specified member from the global scope.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

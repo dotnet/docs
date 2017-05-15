@@ -2,7 +2,7 @@
 title: "How to: Bind the Windows Forms DataGrid Control to a Data Source | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "data-bound controls, DataGrid"
 ms.assetid: 128cdb07-dfd3-4d60-9d6a-902847667c36
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Bind the Windows Forms DataGrid Control to a Data Source

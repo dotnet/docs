@@ -25,6 +25,7 @@
   <Docs>
     <summary>Defines extra functionality that is needed by an IActiveScript host.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Execute">
@@ -44,6 +45,7 @@
         <summary>When implemented in a class, compiles and runs this code.</summary>
         <returns>The return value from running the code, if there is any; otherwise, null.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StartColumn">
@@ -62,6 +64,7 @@
         <summary>When implemented in a class, gets or sets the column number in the line where this code starts.</summary>
         <value>The column number where this code starts.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StartLine">
@@ -80,6 +83,7 @@
         <summary>When implemented in a class, gets or sets the line number where this code starts.</summary>
         <value>The line number where this code starts.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

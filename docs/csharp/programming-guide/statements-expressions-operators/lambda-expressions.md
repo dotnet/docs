@@ -69,7 +69,7 @@ namespace ConsoleApplication1
 }  
 ```  
   
- The `=>` operator has the same precedence as assignment (`=`) and is [right associative](../../../csharp/programming-guide/statements-expressions-operators/operators.md) (see “Associativity” section of the Operators article).  
+ The `=>` operator has the same precedence as assignment (`=`) and is [right associative](../../../csharp/programming-guide/statements-expressions-operators/operators.md) (see "Associativity" section of the Operators article).  
   
  Lambdas are used in method-based [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq_md.md)] queries as arguments to standard query operator methods such as <xref:System.Linq.Enumerable.Where%2A>.  
   
@@ -115,9 +115,9 @@ namespace ConsoleApplication1
 
  The body of a statement lambda can consist of any number of statements; however, in practice there are typically no more than two or three.  
   
-[!CODE [StatementLamba#1](../../../../samples\snippets\csharp\programming-guide\lambda-expressions/statements.cs#1)]
+[!code-csharp[StatementLamba#1](../../../../samples\snippets\csharp\programming-guide\lambda-expressions/statements.cs#1)]
 
-[!CODE [StatementLamba#2](../../../../samples\snippets\csharp\programming-guide\lambda-expressions/statements.cs#2)]
+[!code-csharp[StatementLamba#2](../../../../samples\snippets\csharp\programming-guide\lambda-expressions/statements.cs#2)]
 
  Statement lambdas, like anonymous methods, cannot be used to create expression trees.  
   

@@ -2,7 +2,7 @@
 title: "Dependency Property Value Precedence | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "metadata, dependency properties"
 ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
 caps.latest.revision: 27
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Dependency Property Value Precedence

@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Common</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Interfaces />
   <Docs>
     <summary>Associates a data source column with a <see cref="T:System.Data.DataSet" /> column, and is implemented by the <see cref="T:System.Data.Common.DataColumnMapping" /> class, which is used in common by .NET Framework data providers.</summary>
@@ -37,32 +41,19 @@
     <block subset="none" type="overrides">
       <para>When you inherit from the <see cref="T:System.Data.IColumnMapping" /> interface, you should implement the following constructors:  
   
- <list type="table">  
-<listheader>  
-<term> Item  
+ <list type="table"><listheader><term> Item  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> ColumnMapping()  
+ </description></listheader><item><term> ColumnMapping()  
   
- </term>  
-<description> Initializes a new instance of the ColumnMapping class.  
+ </term><description> Initializes a new instance of the ColumnMapping class.  
   
- </description>  
-</item>  
-<item>  
-<term> ColumnMapping(string sourceColumn, string dataSetColumn)  
+ </description></item><item><term> ColumnMapping(string sourceColumn, string dataSetColumn)  
   
- </term>  
-<description> Initializes a new instance of the ColumnMapping class with a source with the specified source column name and <see cref="T:System.Data.DataSet" /> column name.  
+ </term><description> Initializes a new instance of the ColumnMapping class with a source with the specified source column name and <see cref="T:System.Data.DataSet" /> column name.  
   
- </description>  
-</item>  
-</list></para>
+ </description></item></list></para>
     </block>
   </Docs>
   <Members>
@@ -79,6 +70,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -112,6 +107,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

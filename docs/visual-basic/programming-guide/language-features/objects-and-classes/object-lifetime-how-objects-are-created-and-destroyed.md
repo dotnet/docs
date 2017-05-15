@@ -33,8 +33,8 @@ helpviewer_keywords:
   - "garbage collection, Visual Basic"
 ms.assetid: f1ee8458-b156-44e0-9a8a-5dd171648cd8
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -172,5 +172,5 @@ End Sub
  <xref:System.IDisposable.Dispose%2A>   
  [Initialization and Termination of Components](http://msdn.microsoft.com/library/58444076-a9d2-4c91-b3f6-0e180dc0695d)   
  [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)   
- [Cleaning Up Unmanaged Resources](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213)   
+ [Cleaning Up Unmanaged Resources](../../../../standard/garbage-collection/unmanaged.md)   
  [Nothing](../../../../visual-basic/language-reference/nothing.md)

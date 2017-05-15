@@ -2,7 +2,7 @@
 title: "How to: Navigate Forward or Back Through Navigation History | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "navigation, through navigation history (forward)"
 ms.assetid: 5939d574-5f53-469e-85f5-1f2b13607caa
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Navigate Forward or Back Through Navigation History

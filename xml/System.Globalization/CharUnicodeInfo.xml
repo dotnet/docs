@@ -16,6 +16,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -66,72 +70,39 @@
     <block subset="none" type="usage">
       <para>Recognized characters and the specific categories to which they belong are defined by the Unicode standard and can change from one version of the Unicode Standard to another. Categorization of characters in a particular version of the  .NET Framework  is based on a single version of the Unicode Standard regardless of the underlying operating system on which the .NET Framework is running. The following table lists versions of the .NET Framework since the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)] and the versions of the Unicode Standard  used to classify characters.  
   
- <list type="table">  
-<listheader>  
-<term> .NET Framework version  
+ <list type="table"><listheader><term> .NET Framework version  
   
- </term>  
-<description> Version of the Unicode Standard  
+ </term><description> Version of the Unicode Standard  
   
- </description>  
-</listheader>  
-<item>  
-<term> [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]  
+ </description></listheader><item><term> [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)]  
   
- </term>  
-<description> [The Unicode Standard, Version 5.0.0](http://www.unicode.org/versions/Unicode5.0.0/)  
+ </term><description> [The Unicode Standard, Version 5.0.0](http://www.unicode.org/versions/Unicode5.0.0/)  
   
- </description>  
-</item>  
-<item>  
-<term> [!INCLUDE[net_v45](~/includes/net-v45-md.md)]  
+ </description></item><item><term> [!INCLUDE[net_v45](~/includes/net-v45-md.md)]  
   
- </term>  
-<description> [The Unicode Standard, Version 5.0.0](http://www.unicode.org/versions/Unicode5.0.0/)  
+ </term><description> [The Unicode Standard, Version 5.0.0](http://www.unicode.org/versions/Unicode5.0.0/)  
   
- </description>  
-</item>  
-<item>  
-<term> [!INCLUDE[net_v451](~/includes/net-v451-md.md)]  
+ </description></item><item><term> [!INCLUDE[net_v451](~/includes/net-v451-md.md)]  
   
- </term>  
-<description> [The Unicode Standard, Version 5.0.0](http://www.unicode.org/versions/Unicode5.0.0/)  
+ </term><description> [The Unicode Standard, Version 5.0.0](http://www.unicode.org/versions/Unicode5.0.0/)  
   
- </description>  
-</item>  
-<item>  
-<term> [!INCLUDE[net_v452](~/includes/net-v452-md.md)]  
+ </description></item><item><term> [!INCLUDE[net_v452](~/includes/net-v452-md.md)]  
   
- </term>  
-<description> [The Unicode Standard, Version 5.0.0](http://www.unicode.org/versions/Unicode5.0.0/)  
+ </term><description> [The Unicode Standard, Version 5.0.0](http://www.unicode.org/versions/Unicode5.0.0/)  
   
- </description>  
-</item>  
-<item>  
-<term> [!INCLUDE[net_v46](~/includes/net-v46-md.md)]  
+ </description></item><item><term> [!INCLUDE[net_v46](~/includes/net-v46-md.md)]  
   
- </term>  
-<description> [The Unicode Standard, Version 6.3.0](http://www.unicode.org/versions/Unicode6.3.0/)  
+ </term><description> [The Unicode Standard, Version 6.3.0](http://www.unicode.org/versions/Unicode6.3.0/)  
   
- </description>  
-</item>  
-<item>  
-<term> [!INCLUDE[net_v461](~/includes/net-v461-md.md)]  
+ </description></item><item><term> [!INCLUDE[net_v461](~/includes/net-v461-md.md)]  
   
- </term>  
-<description> [The Unicode Standard, Version 6.3.0](http://www.unicode.org/versions/Unicode6.3.0/)  
+ </term><description> [The Unicode Standard, Version 6.3.0](http://www.unicode.org/versions/Unicode6.3.0/)  
   
- </description>  
-</item>  
-<item>  
-<term> [!INCLUDE[net_v462](~/includes/net-v462-md.md)]  
+ </description></item><item><term> [!INCLUDE[net_v462](~/includes/net-v462-md.md)]  
   
- </term>  
-<description> [The Unicode Standard, Version 8.0.0](http://www.unicode.org/versions/Unicode8.0.0/)  
+ </term><description> [The Unicode Standard, Version 8.0.0](http://www.unicode.org/versions/Unicode8.0.0/)  
   
- </description>  
-</item>  
-</list>  
+ </description></item></list>  
   
  Each version of the Unicode standard includes information on changes to the Unicode character database since the previous version. The Unicode character database is used by the <see cref="T:System.Globalization.CharUnicodeInfo" /> class for categorizing characters.</para>
     </block>
@@ -151,6 +122,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -169,7 +144,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method converts characters that represent decimal digits to their equivalent integral values. Decimal digits are characters in the <xref:System.Globalization.UnicodeCategory> category that can represent one of ten digits in the decimal (base 10) numbering system, from zero through nine. It includes characters such as U+0030 (DIGIT ZERO) through U+0039 (DIGIT NINE), U+0660 (ARABIC-INDIC DIGIT ZERO) through U+0669 (ARABIC-INDIC DIGIT NINE), U+07C0 (NKO DIGIT ZERO) through U+07C9 (NKO DIGIT NINE), and U+1040 (MYANMAR DIGIT ZERO) through U+1049 (MYANMAR DIGIT NINE).  
+ This method converts characters that represent decimal digits to their equivalent integral values. Decimal digits are characters in the <xref:System.Globalization.UnicodeCategory.DecimalDigitNumber> category that can represent one of ten digits in the decimal (base 10) numbering system, from zero through nine. It includes characters such as U+0030 (DIGIT ZERO) through U+0039 (DIGIT NINE), U+0660 (ARABIC-INDIC DIGIT ZERO) through U+0669 (ARABIC-INDIC DIGIT NINE), U+07C0 (NKO DIGIT ZERO) through U+07C9 (NKO DIGIT NINE), and U+1040 (MYANMAR DIGIT ZERO) through U+1049 (MYANMAR DIGIT NINE).  
   
  For more information about Unicode characters, see the [Unicode Standard](http://go.microsoft.com/fwlink/?linkid=37123).  
   
@@ -200,6 +175,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -220,7 +199,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method converts characters that represent decimal digits to their equivalent integral values. Decimal digits are characters in the <xref:System.Globalization.UnicodeCategory> category that can represent one of ten digits in the decimal (base 10) numbering system, from zero through nine. It includes characters such as U+0030 (DIGIT ZERO) through U+0039 (DIGIT NINE), U+0660 (ARABIC-INDIC DIGIT ZERO) through U+0669 (ARABIC-INDIC DIGIT NINE), U+07C0 (NKO DIGIT ZERO) through U+07C9 (NKO DIGIT NINE), and U+1040 (MYANMAR DIGIT ZERO) through U+1049 (MYANMAR DIGIT NINE).  
+ This method converts characters that represent decimal digits to their equivalent integral values. Decimal digits are characters in the <xref:System.Globalization.UnicodeCategory.DecimalDigitNumber> category that can represent one of ten digits in the decimal (base 10) numbering system, from zero through nine. It includes characters such as U+0030 (DIGIT ZERO) through U+0039 (DIGIT NINE), U+0660 (ARABIC-INDIC DIGIT ZERO) through U+0669 (ARABIC-INDIC DIGIT NINE), U+07C0 (NKO DIGIT ZERO) through U+07C9 (NKO DIGIT NINE), and U+1040 (MYANMAR DIGIT ZERO) through U+1049 (MYANMAR DIGIT NINE).  
   
  For more information about Unicode characters, see the [Unicode Standard](http://go.microsoft.com/fwlink/?linkid=37123).  
   
@@ -254,6 +233,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -303,6 +286,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -364,6 +351,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
@@ -420,6 +411,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -484,6 +479,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
@@ -538,6 +537,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>

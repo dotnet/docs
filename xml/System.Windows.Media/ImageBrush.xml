@@ -23,7 +23,7 @@ An ImageBrush can paint shapes, controls, text, and more
   
  As mentioned, an <xref:System.Windows.Media.ImageBrush> paints an area with an <xref:System.Windows.Media.ImageSource>. The most common type of <xref:System.Windows.Media.ImageSource> to use with an <xref:System.Windows.Media.ImageBrush> is a <xref:System.Windows.Media.Imaging.BitmapImage>, which describes a bitmap graphic. You can use a <xref:System.Windows.Media.DrawingImage> to paint using a <xref:System.Windows.Media.Drawing> object, but it is simpler to use a <xref:System.Windows.Media.DrawingBrush> instead. For more information about <xref:System.Windows.Media.ImageSource> objects, see [Imaging Overview](~/docs/framework/wpf/graphics-multimedia/imaging-overview.md).  
   
- For more information about <xref:System.Windows.Media.ImageBrush> features, see [Painting with Images, Drawings, and Visuals](../Topic/Painting%20with%20Images,%20Drawings,%20and%20Visuals.md) overview.  
+ For more information about <xref:System.Windows.Media.ImageBrush> features, see [Painting with Images, Drawings, and Visuals](~/docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md) overview.  
   
 ## Freezable Features  
  Because the <xref:System.Windows.Media.ImageBrush> class inherits from <xref:System.Windows.Freezable>, <xref:System.Windows.Media.ImageBrush> objects gain several special features, which include the following: they can be declared as , shared among multiple objects, made read-only to improve performance, cloned, and made thread safe. For more information about the features provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
@@ -185,7 +185,7 @@ An ImageBrush can paint shapes, controls, text, and more
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An <xref:System.Windows.Media.ImageBrush> paints an area with an <xref:System.Windows.Media.ImageSource>. The most common type of <xref:System.Windows.Media.ImageSource> to use with an <xref:System.Windows.Media.ImageBrush> is a <xref:System.Windows.Media.Imaging.BitmapImage>, which describes a bitmap graphic. You can use a <xref:System.Windows.Media.DrawingImage> to paint using a <xref:System.Windows.Media.Drawing> object, but it is simpler to use a <xref:System.Windows.Media.DrawingBrush> instead. For more information about <xref:System.Windows.Media.ImageSource> objects, see [Imaging Overview](~/docs/framework/wpf/graphics-multimedia/imaging-overview.md) and [Painting with Images, Drawings, and Visuals](../Topic/Painting%20with%20Images,%20Drawings,%20and%20Visuals.md)  
+ An <xref:System.Windows.Media.ImageBrush> paints an area with an <xref:System.Windows.Media.ImageSource>. The most common type of <xref:System.Windows.Media.ImageSource> to use with an <xref:System.Windows.Media.ImageBrush> is a <xref:System.Windows.Media.Imaging.BitmapImage>, which describes a bitmap graphic. You can use a <xref:System.Windows.Media.DrawingImage> to paint using a <xref:System.Windows.Media.Drawing> object, but it is simpler to use a <xref:System.Windows.Media.DrawingBrush> instead. For more information about <xref:System.Windows.Media.ImageSource> objects, see [Imaging Overview](~/docs/framework/wpf/graphics-multimedia/imaging-overview.md) and [Painting with Images, Drawings, and Visuals](~/docs/framework/wpf/graphics-multimedia/painting-with-images-drawings-and-visuals.md)  
   
 <a name="xamlAttributeUsage_ImageSource"></a>   
 ## XAML Attribute Usage  

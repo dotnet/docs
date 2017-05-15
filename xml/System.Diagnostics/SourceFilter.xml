@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -29,7 +30,7 @@
   
  This class filters events based on a specific trace source set by the user.  
   
- <xref:System.Diagnostics.SourceFilter> overrides the [TraceFilter.ShouldTrace(TraceEventCache, String, TraceEventType, Int32, String, Object\[\], Object, Object\<xref:System.Diagnostics.TraceFilter.ShouldTrace%2A> method and defines a <xref:System.Diagnostics.SourceFilter.Source%2A> property that specifies the name of the trace source to be traced by the listener.  
+ <xref:System.Diagnostics.SourceFilter> overrides the <xref:System.Diagnostics.TraceFilter.ShouldTrace%2A> method and defines a <xref:System.Diagnostics.SourceFilter.Source%2A> property that specifies the name of the trace source to be traced by the listener.  
   
 > [!NOTE]
 >  This filter is provided because multiple trace sources can simultaneously use the same trace listener.  
@@ -46,6 +47,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -88,6 +90,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -143,6 +146,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

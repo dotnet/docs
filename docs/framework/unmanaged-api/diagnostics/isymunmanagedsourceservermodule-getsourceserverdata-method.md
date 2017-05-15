@@ -2,18 +2,19 @@
 title: "ISymUnmanagedSourceServerModule::GetSourceServerData Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedSourceServerModule.GetSourceServerData"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedSourceServerModule::GetSourceServerData"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedSourceServerModule::GetSourceServerData method [.NET Framework debugging]"
   - "GetSourceServerData method [.NET Framework debugging]"
 ms.assetid: 20bdf8ff-2d15-4c64-8950-6888f642d6c0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

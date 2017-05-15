@@ -2,18 +2,19 @@
 title: "ICorDebugRegisterSet2::GetRegistersAvailable Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugRegisterSet2.GetRegistersAvailable"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugRegisterSet2::GetRegistersAvailable"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetRegistersAvailable method, ICorDebugRegisterSet2 interface [.NET Framework debugging]"
   - "ICorDebugRegisterSet2::GetRegistersAvailable method [.NET Framework debugging]"
 ms.assetid: f3ed344b-0d3a-44e8-8000-2a97e0805a2c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

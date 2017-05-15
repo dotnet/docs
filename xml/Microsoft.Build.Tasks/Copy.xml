@@ -17,6 +17,7 @@
   <Docs>
     <summary>Implements the <c>Copy</c> task. Use the <c>Copy</c> element in your project file to create and execute this task. For usage and parameter information, see [Copy Task](http://msdn.microsoft.com/library/a46ba9da-3e4e-4890-b4ea-09a099b6bc40).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,6 +33,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Copy" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -50,6 +52,7 @@
       <Docs>
         <summary>Stop and return (in an undefined state) as soon as possible.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CopiedFiles">
@@ -73,6 +76,7 @@
         <summary>Gets the items that were successfully copied.</summary>
         <value>The items that were successfully copied.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DestinationFiles">
@@ -103,6 +107,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DestinationFolder">
@@ -128,6 +133,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -148,6 +154,7 @@
         <returns>
           <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="OverwriteReadOnlyFiles">
@@ -167,6 +174,7 @@
         <value>
           <see langword="true" /> if the <c>Copy</c> task should overwrite files even if they are marked as read only files; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Retries">
@@ -185,6 +193,7 @@
         <summary>How many times to attempt to copy, if all previous attempts failed. Defaults to zero. Warning: using retries may mask a synchronization problem in your build process.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="RetryDelayMilliseconds">
@@ -203,6 +212,7 @@
         <summary>Delay between any necessary retries. Defaults to <see cref="F:Microsoft.Build.Tasks.Copy.RetryDelayMillisecondsDefault" /></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SkipUnchangedFiles">
@@ -229,6 +239,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SourceFiles">
@@ -252,6 +263,7 @@
         <summary>Gets or sets the files to copy.</summary>
         <value>The files to copy.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UseHardlinksIfPossible">
@@ -270,6 +282,7 @@
         <summary>Indicates if hard links should be used.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

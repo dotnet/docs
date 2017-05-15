@@ -2,18 +2,19 @@
 title: "ICLRTaskManager::CreateTask Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRTaskManager.CreateTask"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRTaskManager::CreateTask"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRTaskManager::CreateTask method [.NET Framework hosting]"
   - "CreateTask method, ICLRTaskManager interface [.NET Framework hosting]"
 ms.assetid: eea570d9-2e53-4320-9ea0-eb777bf9dcf3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

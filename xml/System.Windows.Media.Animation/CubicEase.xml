@@ -42,7 +42,6 @@
 ## Examples  
  The following example applies a <xref:System.Windows.Media.Animation.CubicEase> easing function to a <xref:System.Windows.Media.Animation.DoubleAnimation> to create a decelerating animation.  
   
- <!-- TODO: review snippet reference [!code-xml[CubicEase#CubicEase](~/samples/snippets/xaml/VS_Snippets_Wpf/cubicease/xaml/window1.xaml#cubicease)]  -->
  [!code-xml[CubicEase#CubicEase](~/samples/snippets/csharp/VS_Snippets_Wpf/cubicease/CS/window1.xaml#cubicease)]  
   
  ]]></format>
@@ -121,9 +120,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method transforms normalized time to control the pace of an animation for the <xref:System.Windows.Media.Animation.EasingMode> case of <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A>.  
+ This method transforms normalized time to control the pace of an animation for the <xref:System.Windows.Media.Animation.EasingMode.EaseIn> case of <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A>.  
   
- You only have to specify your easing function for the <xref:System.Windows.Media.Animation.EasingMode> case because the implementation of the <xref:System.Windows.Media.Animation.EasingFunctionBase.Ease%2A> method transforms `normalizedTime` for the <xref:System.Windows.Media.Animation.EasingMode> and <xref:System.Windows.Media.Animation.EasingMode> cases.  
+ You only have to specify your easing function for the <xref:System.Windows.Media.Animation.EasingMode.EaseIn> case because the implementation of the <xref:System.Windows.Media.Animation.EasingFunctionBase.Ease%2A> method transforms `normalizedTime` for the <xref:System.Windows.Media.Animation.EasingMode.EaseOut> and <xref:System.Windows.Media.Animation.EasingMode.EaseInOut> cases.  
   
  ]]></format>
         </remarks>

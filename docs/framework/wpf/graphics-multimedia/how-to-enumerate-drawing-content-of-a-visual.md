@@ -2,7 +2,7 @@
 title: "How to: Enumerate Drawing Content of a Visual | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "enumerating the contents of a Visual [WPF]"
 ms.assetid: 2974ddb3-2997-4713-8fd2-e93d549c58a8
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Enumerate Drawing Content of a Visual

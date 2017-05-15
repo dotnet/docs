@@ -2,18 +2,19 @@
 title: "ITypeNameFactory::GetTypeNameBuilder Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ITypeNameFactory.GetTypeNameBuilder"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetTypeNameBuilder"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ITypeNameFactory::GetTypeNameBuilder method [.NET Framework hosting]"
   - "GetTypeNameBuilder method [.NET Framework hosting]"
 ms.assetid: c682f744-996e-43c7-a9ea-c57cbc755398
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

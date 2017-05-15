@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents a prototype-based object that is defined by a constructor function. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="CreateInstance">
@@ -46,6 +47,7 @@
         <summary>Creates an instance of the prototype-based object, passing in the specified arguments.</summary>
         <returns>An instance of the object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Invoke">
@@ -65,6 +67,7 @@
         <summary>Returns the number of milliseconds that have elapsed since January 1, 1970.</summary>
         <returns>The number of milliseconds that have elapsed since January 1, 1970.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="parse">
@@ -92,6 +95,7 @@
         <summary>Converts the specified string representation of a date and time to its <see cref="T:System.Double" /> equivalent.</summary>
         <returns>A <see cref="T:System.Double" /> equivalent of the date and time that is contained in <paramref name="str" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UTC">
@@ -131,6 +135,7 @@
         <summary>Converts the specified date and time to its <see cref="T:System.Double" /> equivalent.</summary>
         <returns>A <see cref="T:System.Double" /> equivalent of the specified date and time.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

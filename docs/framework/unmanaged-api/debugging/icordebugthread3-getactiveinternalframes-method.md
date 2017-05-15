@@ -2,18 +2,19 @@
 title: "ICorDebugThread3::GetActiveInternalFrames Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugThread3.GetActiveInternalFrames Method"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugThread3::GetActiveInternalFrames"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugThread3::GetActiveInternalFrames method [.NET Framework debugging]"
   - "GetActiveInternalFrames method [.NET Framework debugging]"
 ms.assetid: d69796b4-5b6d-457c-85f6-2cf42e8a8773
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

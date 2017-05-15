@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -47,6 +48,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddObj">
@@ -78,6 +80,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BitAndObj">
@@ -109,6 +112,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BitOrObj">
@@ -140,6 +144,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="BitXorObj">
@@ -171,6 +176,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DivObj">
@@ -202,6 +208,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetObjectValuePrimitive">
@@ -231,6 +238,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IDivObj">
@@ -262,6 +270,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LikeObj">
@@ -296,6 +305,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ModObj">
@@ -327,6 +337,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MulObj">
@@ -358,6 +369,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NegObj">
@@ -387,6 +399,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NotObj">
@@ -416,6 +429,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ObjTst">
@@ -441,40 +455,43 @@
         <param name="TextCompare">Required. <see langword="True" /> to perform a case-insensitive string comparison; otherwise, <see langword="False" />.</param>
         <summary>Performs binary or text string comparison when given two objects.</summary>
         <returns>
-          <list type="table">  
-<listheader>  
-<term> Value  
+          <list type="table">
+            <listheader>
+              <term> Value  
   
- </term>  
-<description> Condition  
+ </term>
+              <description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> -1  
+ </description>
+            </listheader>
+            <item>
+              <term> -1  
   
- </term>  
-<description> <paramref name="o1" /> is less than <paramref name="o2" />.  
+ </term>
+              <description>
+                <paramref name="o1" /> is less than <paramref name="o2" />.  
   
- </description>  
-</item>  
-<item>  
-<term> 0  
+ </description>
+            </item>
+            <item>
+              <term> 0  
   
- </term>  
-<description> <paramref name="o1" /> is equal to <paramref name="o2" />.  
+ </term>
+              <description>
+                <paramref name="o1" /> is equal to <paramref name="o2" />.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description>
+            </item>
+            <item>
+              <term> 1  
   
- </term>  
-<description> <paramref name="o1" /> is greater than <paramref name="o2" />.  
+ </term>
+              <description>
+                <paramref name="o1" /> is greater than <paramref name="o2" />.  
   
- </description>  
-</item>  
-</list>
+ </description>
+            </item>
+          </list>
         </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -484,6 +501,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PlusObj">
@@ -513,6 +531,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PowObj">
@@ -544,6 +563,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ShiftLeftObj">
@@ -575,6 +595,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ShiftRightObj">
@@ -606,6 +627,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StrCatObj">
@@ -637,6 +659,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SubObj">
@@ -668,6 +691,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="XorObj">
@@ -699,6 +723,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

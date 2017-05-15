@@ -2,7 +2,7 @@
 title: ".NET Framework 4.7, 4.6, and 4.5 | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -51,7 +51,7 @@ Describes key new features and changes in the latest versions of the .NET Framew
 [Getting Started](../../docs/framework/get-started/index.md)  
 Provides a comprehensive overview of the .NET Framework and links to additional resources.  
   
-[Migration Guide](../../docs/framework/migration-guide/index.md)
+[Migration Guide](../../docs/framework/migration-guide/index.md)   
 Provides resources and a list of changes you need to consider  if you're migrating your application to a new version of the .NET Framework.  
   
 [Development Guide](../../docs/framework/development-guide.md)  
@@ -60,7 +60,7 @@ Provides a guide to all key technology areas and tasks for application developme
 [Tools](../../docs/framework/tools/index.md)  
 Describes the tools that help you develop, configure, and deploy applications by using .NET Framework technologies.  
   
-[.NET Framework Class Library](/dotnet/api/?view=netframework-4.7)
+[.NET Framework Class Library](/dotnet/api/?view=netframework-4.7)   
 Supplies syntax, code examples, and related information for each class contained in the .NET Framework namespaces.  
   
 [Additional Class Libraries and APIs](../../docs/framework/additional-apis/index.md)  

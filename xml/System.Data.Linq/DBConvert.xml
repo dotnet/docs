@@ -13,6 +13,7 @@
   <Docs>
     <summary>Used internally to convert one type to another.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="ChangeType">
@@ -37,6 +38,7 @@
         <summary>Changes the specified value to the specified type.</summary>
         <returns>An object that contains the converted value of the specified type.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ChangeType&lt;T&gt;">
@@ -63,6 +65,7 @@
         <summary>Changes the specified value to the current type.</summary>
         <returns>An object of the specified type that contains the converted value.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

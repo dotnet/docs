@@ -1,6 +1,6 @@
 // <SNIPPET1>
 using System;
-using System.Security.Policy;  //for evidence object
+using System.Security.Policy;
 namespace AppDomainSnippets
 {
 	class ADShadowCopy

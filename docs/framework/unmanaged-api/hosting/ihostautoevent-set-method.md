@@ -2,18 +2,19 @@
 title: "IHostAutoEvent::Set Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostAutoEvent.Set"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostAutoEvent::Set"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "Set method, IHostAutoEvent interface [.NET Framework hosting]"
   - "IHostAutoEvent::Set method [.NET Framework hosting]"
 ms.assetid: 46becf3e-bc0e-4338-85c0-9ab0df76a1d0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

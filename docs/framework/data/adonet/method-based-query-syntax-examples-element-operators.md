@@ -2,7 +2,7 @@
 title: "Method-Based Query Syntax Examples: Element Operators (LINQ to DataSet) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,8 +24,9 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
   
  The examples in this topic use the following `using`/`Imports` statements:  
   
-<!-- TODO: review snippet reference  [!CODE [DP LINQ to DataSetExamples#ImportsUsing](DP LINQ to DataSetExamples#ImportsUsing)]  -->  
-  
+[!code-csharp[DP LINQ to DataSet Examples#ImportsUsing](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#importsusing)]   
+[!code-vb[DP LINQ to DataSet Examples#ImportsUsing](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#importsusing)]     
+
  For more information, see [How to: Create a LINQ to DataSet Project In Visual Studio](../../../../docs/framework/data/adonet/how-to-create-a-linq-to-dataset-project-in-vs.md).  
   
 ## ElementAt  
@@ -33,14 +34,16 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
 ### Example  
  This example uses the <xref:System.Linq.Enumerable.ElementAt%2A> method to retrieve the fifth address where `PostalCode` == "M4B 1V7".  
   
-<!-- TODO: review snippet reference  [!CODE [DP LINQ to DataSetExamples#ElementAt](DP LINQ to DataSetExamples#ElementAt)]  -->  
+[!code-csharp[DP LINQ to DataSet Examples#ElementAt](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#elementat)]   
+[!code-vb[DP LINQ to DataSet Examples#ElementAt](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#elementat)]     
   
 ## First  
   
 ### Example  
  This example uses the <xref:System.Linq.Enumerable.First%2A> method to return the first contact whose first name is 'Brooke'.  
   
-<!-- TODO: review snippet reference  [!CODE [DP LINQ to DataSetExamples#FirstSimple](DP LINQ to DataSetExamples#FirstSimple)]  -->  
+[!code-csharp[DP LINQ to DataSet Examples#FirstSimple](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#firstsimple)]   
+[!code-vb[DP LINQ to DataSet Examples#FirstSimple](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#firstsimple)] 
   
 ## See Also  
  [Loading Data Into a DataSet](../../../../docs/framework/data/adonet/loading-data-into-a-dataset.md)   

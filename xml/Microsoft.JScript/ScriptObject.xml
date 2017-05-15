@@ -22,6 +22,7 @@
   <Docs>
     <summary>Supports all JScript classes. This is the ultimate base class of all JScript classes. This class belongs to the objects and functions category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="engine">
@@ -39,6 +40,7 @@
       <Docs>
         <summary>Stores a reference to the scripting engine.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetField">
@@ -63,6 +65,7 @@
         <summary>Gets a field that has the specified name.</summary>
         <returns>A field that has the specified <paramref name="name" />, or null if the script object does not contain the field.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetFields">
@@ -85,6 +88,7 @@
         <summary>Gets an array of <see cref="T:System.Reflection.FieldInfo" /> objects that correspond to all fields of the current script object.</summary>
         <returns>An array of objects that contains all fields of the current script object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMember">
@@ -109,6 +113,7 @@
         <summary>When overridden in a derived class, gets an array of <see cref="T:System.Reflection.MemberInfo" /> objects that correspond to all members that match a specified name.</summary>
         <returns>An array of objects that match the <paramref name="name" /> argument.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMembers">
@@ -131,6 +136,7 @@
         <summary>When overridden in a derived class, gets an array of <see cref="T:System.Reflection.MemberInfo" /> objects that correspond to all members of the current script object.</summary>
         <returns>An array of objects that contains all members of the current script object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMethod">
@@ -155,6 +161,7 @@
         <summary>Gets a method that has the specified name.</summary>
         <returns>A method that has the specified <paramref name="name" />, or null if the script object does not contain the method.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMethod">
@@ -185,6 +192,7 @@
         <summary>Gets a method that has the specified name by using the specified selection criteria.</summary>
         <returns>A method that has the specified <paramref name="name" />, or null if the script object does not contain the method.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetMethods">
@@ -207,6 +215,7 @@
         <summary>Gets an array of <see cref="T:System.Reflection.MethodInfo" /> objects that correspond to all methods of the current script object.</summary>
         <returns>An array of objects that contains all methods of the current script object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetParent">
@@ -233,6 +242,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
@@ -255,6 +265,7 @@
         <summary>Gets an array of <see cref="T:System.Reflection.PropertyInfo" /> objects that correspond to all properties of the current script object.</summary>
         <returns>An array of objects that contains all properties of the current script object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -279,6 +290,7 @@
         <summary>Gets a property that has the specified name.</summary>
         <returns>A property that has the specified <paramref name="name" />, or null if the script object does not contain the property.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetProperty">
@@ -311,6 +323,7 @@
         <summary>Gets a property that has the specified name by using the specified selection criteria.</summary>
         <returns>A property that has the specified <paramref name="name" />, or null if the script object does not contain the property.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InvokeMember">
@@ -352,6 +365,7 @@
         <summary>Invokes the specified member.</summary>
         <returns>The return value of the call to the member.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -374,6 +388,7 @@
         <summary>Gets or sets a member of the script object that is designated by the specified <see cref="T:System.Double" /> index value.</summary>
         <value>The value of the member that is at <paramref name="index" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -396,6 +411,7 @@
         <summary>Gets or sets a member of the script object that is designated by the specified <see cref="T:System.Int32" /> index value.</summary>
         <value>The value of the member that is at <paramref name="index" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -431,6 +447,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -453,6 +470,7 @@
         <summary>Gets or sets a member of the script object that is designated by the specified name.</summary>
         <value>The value of the member that is named <paramref name="name" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="parent">
@@ -477,6 +495,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UnderlyingSystemType">
@@ -495,6 +514,7 @@
         <summary>Gets the type of the script object.</summary>
         <value>The type of the script object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WrapMembers">
@@ -526,6 +546,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WrapMembers">
@@ -557,6 +578,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WrapMembers">
@@ -590,6 +612,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

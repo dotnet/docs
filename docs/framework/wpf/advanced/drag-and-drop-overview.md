@@ -2,7 +2,7 @@
 title: "Drag and Drop Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "drop targets [WPF], drag-and-drop"
 ms.assetid: 1a5b27b0-0ac5-4cdf-86c0-86ac0271fa64
 caps.latest.revision: 31
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Drag and Drop Overview

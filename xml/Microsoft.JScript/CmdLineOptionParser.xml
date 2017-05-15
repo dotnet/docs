@@ -13,6 +13,7 @@
   <Docs>
     <summary>Determines whether options that are specified to the command-line compiler jsc.exe are correctly formed, and reads the arguments if any are included.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.CmdLineOptionParser" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsArgumentOption">
@@ -52,6 +54,7 @@
         <summary>Gets the argument from the specified command-line option. Applies to options that have only one name, such as <c>/out:&lt;filename&gt;</c>.</summary>
         <returns>The argument, "" if the argument is not specified, or null if the option or argument is not correctly formed.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsArgumentOption">
@@ -78,6 +81,7 @@
         <summary>Gets the argument from the specified command-line option. Applies to options that can be specified by a short or long form of the option name, such as <c>/r</c> or <c>/reference</c> for <c>/r[eference]:&lt;file list&gt;</c>.</summary>
         <returns>The argument, "" if the argument is not specified, or null if the option or argument is not correctly formed.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsBooleanOption">
@@ -103,6 +107,7 @@
         <returns>
           <see langword="false" /> for <c>-</c>; <see langword="true" /> for <c>+</c> or if the argument is not specified; null if the option or argument is not correctly formed.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsBooleanOption">
@@ -130,6 +135,7 @@
         <returns>
           <see langword="false" /> for <c>-</c>; <see langword="true" /> for <c>+</c> or if the argument is not specified; null if the option or argument is not correctly formed.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsSimpleOption">
@@ -155,6 +161,7 @@
         <returns>
           <see langword="true" /> if the option is correctly formed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

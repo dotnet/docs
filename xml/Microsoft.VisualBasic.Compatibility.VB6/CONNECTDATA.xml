@@ -28,6 +28,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="cookie">
@@ -52,6 +53,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="pUnk">
@@ -67,7 +69,7 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>An <see cref="T:System.IntPtr" /> used by the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.CONNECTDATA" /> <see langword="Structure" />.</summary>
+        <summary>An <see cref="T:System.IntPtr" /> used by the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.CONNECTDATA" /><see langword="Structure" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -76,6 +78,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

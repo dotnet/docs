@@ -17,6 +17,7 @@
   <Docs>
     <summary>Implements the <c>Delete</c> task. Use the <c>Delete</c> element in your project file to create and execute this task. For usage and parameter information, see [Delete Task](http://msdn.microsoft.com/library/916bb2e3-3017-4828-ae27-c0b5c99bbb48).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,6 +33,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Delete" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -50,6 +52,7 @@
       <Docs>
         <summary>Stop and return (in an undefined state) as soon as possible.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DeletedFiles">
@@ -73,6 +76,7 @@
         <summary>Gets or sets the files that were successfully deleted.</summary>
         <value>The files that were successfully deleted.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -93,6 +97,7 @@
         <returns>
           <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Files">
@@ -116,6 +121,7 @@
         <summary>Gets or sets the files to delete.</summary>
         <value>The files to delete.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TreatErrorsAsWarnings">
@@ -142,6 +148,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

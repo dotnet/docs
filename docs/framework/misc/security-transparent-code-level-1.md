@@ -2,7 +2,7 @@
 title: "Security-Transparent Code, Level 1 | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -123,16 +123,16 @@ Public class A
   
     public int SomeProperty  
     {  
-        get {/* transparent */ }  
-        set {/* transparent */ }  
+        get {/* transparent */ }  
+        set {/* transparent */ }  
     }  
 }  
 public class B  
 {      
     internal string SomeOtherProperty  
     {  
-        get { /* transparent */ }  
-        set { /* transparent */ }  
+        get { /* transparent */ }  
+        set { /* transparent */ }  
     }  
 }  
 ```  

@@ -2,18 +2,19 @@
 title: "IHostSyncManager::CreateCrstWithSpinCount Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostSyncManager.CreateCrstWithSpinCount"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostSyncManager::CreateCrstWithSpinCount"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "CreateCrstWithSpinCount method [.NET Framework hosting]"
   - "IHostSyncManager::CreateCrstWithSpinCount method [.NET Framework hosting]"
 ms.assetid: 7280fa8c-3639-4abf-91cb-bc343da742d1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

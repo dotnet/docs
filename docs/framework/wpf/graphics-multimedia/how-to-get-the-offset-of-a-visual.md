@@ -2,7 +2,7 @@
 title: "How to: Get the Offset of a Visual | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "retrieving offset values from visual objects"
 ms.assetid: 889a1dd6-1b11-445a-b351-fbb04c53ee34
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Get the Offset of a Visual

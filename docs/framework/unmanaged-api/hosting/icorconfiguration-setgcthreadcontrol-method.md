@@ -2,18 +2,19 @@
 title: "ICorConfiguration::SetGCThreadControl Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorConfiguration.SetGCThreadControl"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "SetGCThreadControl"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorConfiguration::SetGCThreadControl method [.NET Framework hosting]"
   - "SetGCThreadControl method [.NET Framework hosting]"
 ms.assetid: 72e38e61-3d56-4ae3-b8f6-0ab7922aaf11
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

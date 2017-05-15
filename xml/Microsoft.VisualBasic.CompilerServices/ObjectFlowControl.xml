@@ -18,6 +18,7 @@
   <Docs>
     <summary>The Visual Basic compiler uses this class for object flow control; it is not meant to be called directly from your code.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="CheckForSyncLockOnValueType">
@@ -39,6 +40,7 @@
         <param name="Expression">The data type for which to check for synchronization lock.</param>
         <summary>Checks for a synchronization lock on the specified type.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

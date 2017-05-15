@@ -2,7 +2,7 @@
 title: Language Integrated Query (LINQ)
 description: Introduces Language Integrated Query (LINQ) in C#
 keywords: .NET, .NET Core, LINQ, C#
-author: stevehoag
+author: BillWagner
 ms.author: wiwagn
 ms.date: 11/30/2016
 ms.topic: article
@@ -45,7 +45,7 @@ The following example shows the complete query operation. The complete operation
 To learn more details about LINQ, start by becoming familiar with some basic concepts in [Query expression basics](query-expression-basics.md), and then read the documentation for the LINQ technology in which you are interested:   
 -   XML documents: [LINQ to XML](../programming-guide/concepts/linq/linq-to-xml.md)  
   
--   ADO.NET Entity Framework: [LINQ to entities](http://msdn.microsoft.com/library/641f9b68-9046-47a1-abb0-1c8eaeda0e2d)  
+-   ADO.NET Entity Framework: [LINQ to entities](../../framework/data/adonet/ef/language-reference/linq-to-entities.md)  
   
 -   .NET collections, files, strings and so on: [LINQ to objects](../programming-guide/concepts/linq/linq-to-objects.md)
 

@@ -2,7 +2,7 @@
 title: "How to: Set Font and Color Styles in the Windows Forms DataGridView Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "data grids, color styles"
 ms.assetid: 588f2c57-d963-41b1-9c1d-d02d71818113
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Set Font and Color Styles in the Windows Forms DataGridView Control

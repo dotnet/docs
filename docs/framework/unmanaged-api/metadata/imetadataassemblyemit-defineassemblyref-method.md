@@ -2,18 +2,19 @@
 title: "IMetaDataAssemblyEmit::DefineAssemblyRef Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataAssemblyEmit.DefineAssemblyRef"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataAssemblyEmit::DefineAssemblyRef"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "DefineAssemblyRef method [.NET Framework metadata]"
   - "IMetaDataAssemblyEmit::DefineAssemblyRef method [.NET Framework metadata]"
 ms.assetid: 0b284b18-0084-4b3a-912a-5ebe9f29c88b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"

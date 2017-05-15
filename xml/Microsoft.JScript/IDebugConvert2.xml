@@ -18,6 +18,7 @@
   <Docs>
     <summary>Defines utility methods that convert data from one type to another. Includes methods that convert values to <see cref="T:System.String" /> objects so that they can be displayed by the debugger.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="DecimalToString">
@@ -40,6 +41,7 @@
         <summary>When implemented in a class, converts the specified <see cref="T:System.Decimal" /> value to a <see cref="T:System.String" />.</summary>
         <returns>The string representation of <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="ParseFile">
@@ -54,6 +55,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">
           <paramref name="physicalPath" /> or <paramref name="virtualPath" /> refers to the file currently being parsed.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ParseTemplate">
@@ -81,6 +83,7 @@
         <summary>Parses the template.</summary>
         <returns>Returns the template.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProcessError">
@@ -102,6 +105,7 @@
         <param name="message">The error message text used to create a new <see cref="T:System.Web.ParserError" />.</param>
         <summary>Reports a process error by creating a new <see cref="T:System.Web.ParserError" /> object with the specified message and adding it to a <see cref="T:System.Web.ParserErrorCollection" /> collection.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProcessException">
@@ -124,6 +128,7 @@
         <summary>Reports a parser exception by creating a new <see cref="T:System.Web.ParserError" /> object as the specified <see cref="T:System.Exception" /> exception and adding it to a <see cref="T:System.Web.ParserErrorCollection" /> collection.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Web.HttpCompileException">The <see cref="T:System.Exception" /> to process is a compiler error.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -142,6 +147,7 @@
         <summary>Gets the string that contains the data to be parsed.</summary>
         <value>The data to be parsed.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

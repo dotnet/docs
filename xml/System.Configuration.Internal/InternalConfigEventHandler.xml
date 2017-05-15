@@ -6,6 +6,10 @@
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
@@ -21,5 +25,6 @@
     <param name="e">A configuration event argument.</param>
     <summary>Defines a class used by the .NET Framework infrastructure to support configuration events.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
 </Type>

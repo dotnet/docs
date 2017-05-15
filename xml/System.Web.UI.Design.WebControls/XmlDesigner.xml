@@ -13,6 +13,7 @@
   <Docs>
     <summary>Extends design-time behavior for the <see cref="T:System.Web.UI.WebControls.Xml" /> Web server control.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.XmlDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -69,6 +71,7 @@
   
  [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3)</para>
         </block>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -88,6 +91,7 @@
         <summary>Retrieves the HTML markup that is used to represent the control at design time.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetEmptyDesignTimeHtml">
@@ -107,6 +111,7 @@
         <summary>Gets the HTML that is used to fill an empty control.</summary>
         <returns>The HTML used to fill an empty control.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -128,6 +133,7 @@
         <param name="component">The associated control.</param>
         <summary>Initializes the designer with the control that this instance of the designer is associated with.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

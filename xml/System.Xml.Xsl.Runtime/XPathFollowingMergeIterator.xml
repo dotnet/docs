@@ -29,6 +29,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Create">
@@ -61,6 +62,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -86,10 +88,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Xsl.Runtime.XPathFollowingMergeIterator.Current%2A> property changes when the <xref:System.Xml.Xsl.Runtime.XPathFollowingMergeIterator.MoveNext%2A> method sets the <xref:System.Xml.Xsl.Runtime.XPathFollowingMergeIterator.Current%2A> property to the next node and returns <xref:System.Xml.Xsl.Runtime.IteratorResult>; otherwise, the <xref:System.Xml.Xsl.Runtime.XPathFollowingMergeIterator.Current%2A> property remains unchanged.  
+ The <xref:System.Xml.Xsl.Runtime.XPathFollowingMergeIterator.Current%2A> property changes when the <xref:System.Xml.Xsl.Runtime.XPathFollowingMergeIterator.MoveNext%2A> method sets the <xref:System.Xml.Xsl.Runtime.XPathFollowingMergeIterator.Current%2A> property to the next node and returns <xref:System.Xml.Xsl.Runtime.IteratorResult.HaveCurrentNode>; otherwise, the <xref:System.Xml.Xsl.Runtime.XPathFollowingMergeIterator.Current%2A> property remains unchanged.  
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -117,6 +120,7 @@
         <summary>Moves the iterator to the next following node.</summary>
         <returns>Returns <see cref="F:System.Xml.Xsl.Runtime.IteratorResult.NoMoreNodes" /> if there are no more following nodes. Returns <see cref="F:System.Xml.Xsl.Runtime.IteratorResult.NeedInputNode" /> if the next input node must be fetched first. Returns <see cref="F:System.Xml.Xsl.Runtime.IteratorResult.HaveCurrentNode" /> if the <see cref="P:System.Xml.Xsl.Runtime.XPathFollowingMergeIterator.Current" /> property was set to the next node while iterating through the nodes.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "lambda expressions [Visual Basic], function expression"
 ms.assetid: e8a47a45-4b8a-4f45-a623-7653625dffbc
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -41,10 +41,10 @@ Declares the parameters and code that define a function lambda expression.
 ## Syntax  
   
 ```  
-Function ( [ parameterlist ] ) expression  
+Function ( [ parameterlist ] ) expression  
 - or -  
-Function ( [ parameterlist ] )  
-  [ statements ]  
+Function ( [ parameterlist ] )  
+  [ statements ]  
 End Function  
   
 ```  

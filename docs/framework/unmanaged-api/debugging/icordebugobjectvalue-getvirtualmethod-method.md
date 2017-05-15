@@ -2,18 +2,19 @@
 title: "ICorDebugObjectValue::GetVirtualMethod Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugObjectValue.GetVirtualMethod"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugObjectValue::GetVirtualMethod"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetVirtualMethod method [.NET Framework debugging]"
   - "ICorDebugObjectValue::GetVirtualmethod method [.NET Framework debugging]"
 ms.assetid: f783ebc3-e952-46e6-9325-14dd2c666f21
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

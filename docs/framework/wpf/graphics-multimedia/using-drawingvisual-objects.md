@@ -2,7 +2,7 @@
 title: "Using DrawingVisual Objects | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "DrawingVisual objects in visual layer"
 ms.assetid: 0b4e711d-e640-40cb-81c3-8f5c59909b7d
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Using DrawingVisual Objects

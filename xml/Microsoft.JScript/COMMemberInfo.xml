@@ -18,6 +18,7 @@
   <Docs>
     <summary>Defines methods that enable JScript to communicate with an external COM member. This interface is used by an external COM implementation to expose its objects to JScript because JScript requires a managed <see cref="T:System.Reflection.MemberInfo" /> to bind to an external object.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Call">
@@ -46,6 +47,7 @@
         <summary>When implemented in a class, enables JScript to call an external COM member. Uses the specified binding information.</summary>
         <returns>The value of the call to the external COM member.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -74,6 +76,7 @@
         <summary>When implemented in a class, enables JScript to get the value of an external COM member using the specified binding information.</summary>
         <returns>The value of the external COM member.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -103,6 +106,7 @@
         <param name="culture">Provides information about a specific culture or locale to format numbers, dates, and strings correctly.</param>
         <summary>When implemented in a class, enables JScript to set the value of an external COM member to the specified new value, using the specified binding information.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

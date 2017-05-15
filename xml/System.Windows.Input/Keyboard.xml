@@ -491,7 +491,7 @@
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Input.Keyboard.GetKeyStates%2A> method to determine if the <xref:System.Windows.Input.Key> key is in the <xref:System.Windows.Input.KeyStates> state.  A bit AND operation is used to compare the <xref:System.Windows.Input.KeyStates> returned from <xref:System.Windows.Input.Keyboard.GetKeyStates%2A> and the <xref:System.Windows.Input.Key> state. If the key is down, the background of a <xref:System.Windows.Controls.Button> is changed.  
+ The following example shows how to use the <xref:System.Windows.Input.Keyboard.GetKeyStates%2A> method to determine if the <xref:System.Windows.Input.Key.Return> key is in the <xref:System.Windows.Input.KeyStates.Down> state.  A bit AND operation is used to compare the <xref:System.Windows.Input.KeyStates> returned from <xref:System.Windows.Input.Keyboard.GetKeyStates%2A> and the <xref:System.Windows.Input.Key.Down> state. If the key is down, the background of a <xref:System.Windows.Controls.Button> is changed.  
   
  [!code-csharp[keyargssnippetsample#KeyEventArgsKeyBoardGetKeyStates](~/samples/snippets/csharp/VS_Snippets_Wpf/KeyArgsSnippetSample/CSharp/Window1.xaml.cs#keyeventargskeyboardgetkeystates)]
  [!code-vb[keyargssnippetsample#KeyEventArgsKeyBoardGetKeyStates](~/samples/snippets/visualbasic/VS_Snippets_Wpf/KeyArgsSnippetSample/visualbasic/window1.xaml.vb#keyeventargskeyboardgetkeystates)]  
@@ -553,7 +553,7 @@
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Input.Keyboard.IsKeyDown%2A> method to determine the state of a specific key.  The <xref:System.Windows.Input.Key> key is passed to the <xref:System.Windows.Input.Keyboard.IsKeyDown%2A> method.  If the method returns `true`, the background of a <xref:System.Windows.Controls.Button> is changed.  
+ The following example shows how to use the <xref:System.Windows.Input.Keyboard.IsKeyDown%2A> method to determine the state of a specific key.  The <xref:System.Windows.Input.Key.Return> key is passed to the <xref:System.Windows.Input.Keyboard.IsKeyDown%2A> method.  If the method returns `true`, the background of a <xref:System.Windows.Controls.Button> is changed.  
   
  [!code-csharp[keyargssnippetsample#KeyEventArgsKeyBoardIsKeyDown](~/samples/snippets/csharp/VS_Snippets_Wpf/KeyArgsSnippetSample/CSharp/Window1.xaml.cs#keyeventargskeyboardiskeydown)]
  [!code-vb[keyargssnippetsample#KeyEventArgsKeyBoardIsKeyDown](~/samples/snippets/visualbasic/VS_Snippets_Wpf/KeyArgsSnippetSample/visualbasic/window1.xaml.vb#keyeventargskeyboardiskeydown)]  
@@ -591,7 +591,7 @@
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Input.Keyboard.IsKeyToggled%2A> method to determine the state of a specific key. The <xref:System.Windows.Input.Key> key is passed to the <xref:System.Windows.Input.Keyboard.IsKeyToggled%2A> method.  If the method returns `true`, then the background of a <xref:System.Windows.Controls.Button> is changed.  
+ The following example shows how to use the <xref:System.Windows.Input.Keyboard.IsKeyToggled%2A> method to determine the state of a specific key. The <xref:System.Windows.Input.Key.Return> key is passed to the <xref:System.Windows.Input.Keyboard.IsKeyToggled%2A> method.  If the method returns `true`, then the background of a <xref:System.Windows.Controls.Button> is changed.  
   
  [!code-csharp[keyargssnippetsample#KeyEventArgsKeyBoardIsToggled](~/samples/snippets/csharp/VS_Snippets_Wpf/KeyArgsSnippetSample/CSharp/Window1.xaml.cs#keyeventargskeyboardistoggled)]
  [!code-vb[keyargssnippetsample#KeyEventArgsKeyBoardIsToggled](~/samples/snippets/visualbasic/VS_Snippets_Wpf/KeyArgsSnippetSample/visualbasic/window1.xaml.vb#keyeventargskeyboardistoggled)]  
@@ -629,7 +629,7 @@
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Input.Keyboard.IsKeyUp%2A> method to determine the state of a specific key.  The <xref:System.Windows.Input.Key> key is passed to the <xref:System.Windows.Input.Keyboard.IsKeyUp%2A> method.  If the method returns `true`, then the background of a <xref:System.Windows.Controls.Button> is changed.  
+ The following example shows how to use the <xref:System.Windows.Input.Keyboard.IsKeyUp%2A> method to determine the state of a specific key.  The <xref:System.Windows.Input.Key.Return> key is passed to the <xref:System.Windows.Input.Keyboard.IsKeyUp%2A> method.  If the method returns `true`, then the background of a <xref:System.Windows.Controls.Button> is changed.  
   
  [!code-csharp[keyargssnippetsample#KeyEventArgsKeyBoardIsKeyUp](~/samples/snippets/csharp/VS_Snippets_Wpf/KeyArgsSnippetSample/CSharp/Window1.xaml.cs#keyeventargskeyboardiskeyup)]
  [!code-vb[keyargssnippetsample#KeyEventArgsKeyBoardIsKeyUp](~/samples/snippets/visualbasic/VS_Snippets_Wpf/KeyArgsSnippetSample/visualbasic/window1.xaml.vb#keyeventargskeyboardiskeyup)]  
@@ -758,7 +758,7 @@
    
   
 ## Examples  
- The following example uses a bit AND comparison to determine if the <xref:System.Windows.Input.ModifierKeys> modifier key is pressed.  
+ The following example uses a bit AND comparison to determine if the <xref:System.Windows.Input.ModifierKeys.Control> modifier key is pressed.  
   
  [!code-csharp[keyargssnippetsample#KeyboardModifiersBitOperation](~/samples/snippets/csharp/VS_Snippets_Wpf/KeyArgsSnippetSample/CSharp/Window1.xaml.cs#keyboardmodifiersbitoperation)]
  [!code-vb[keyargssnippetsample#KeyboardModifiersBitOperation](~/samples/snippets/visualbasic/VS_Snippets_Wpf/KeyArgsSnippetSample/visualbasic/window1.xaml.vb#keyboardmodifiersbitoperation)]  

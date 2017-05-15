@@ -2,18 +2,19 @@
 title: "ICLRDebugging::OpenVirtualProcess Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRDebugging.OpenVirtualProcess"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRDebugging::OpenVirtualProcess"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "OpenVirtualProcess method [.NET Framework debugging]"
   - "ICLRDebugging::OpenVirtualProcess method [.NET Framework debugging]"
 ms.assetid: e8ab7c41-d508-4ed9-8a31-ead072b5a314
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

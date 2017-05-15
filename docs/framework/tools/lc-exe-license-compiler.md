@@ -2,7 +2,7 @@
 title: "Lc.exe (License Compiler) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,8 +26,8 @@ helpviewer_keywords:
   - "licensed controls [Windows Forms]"
 ms.assetid: 2de803b8-495e-4982-b209-19a72aba0460
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Lc.exe (License Compiler)
@@ -89,7 +89,7 @@ lc /target:myApp /complist:hostapplic.txt /complist:hostapplic2.txt /complist: h
 ```  
   
 ## Response File Example  
- The following listing shows an example of a response file, `response.rsp`. For more information on response files, see [Response Files](http://msdn.microsoft.com/library/9f53987b-20ee-470a-ab62-fce997bb5e15).  
+ The following listing shows an example of a response file, `response.rsp`. For more information on response files, see [Response Files](/visualstudio/msbuild/msbuild-response-files).  
   
 ```  
 /target:hostapp.exe  

@@ -2,7 +2,7 @@
 title: "Fault Contract | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -120,7 +120,7 @@ catch (FaultException<MathFault> e)
 </behaviors>  
 ```  
   
- Further, the behavior must be associated with the service by setting the `behaviorConfiguration` attribute of the service in the configuration file to “CalculatorServiceBehavior”.  
+ Further, the behavior must be associated with the service by setting the `behaviorConfiguration` attribute of the service in the configuration file to "CalculatorServiceBehavior".  
   
  To catch such faults on the client, the non-generic <xref:System.ServiceModel.FaultException> must be caught.  
   

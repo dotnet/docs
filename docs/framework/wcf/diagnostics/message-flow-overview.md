@@ -2,7 +2,7 @@
 title: "Message Flow Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,9 +40,9 @@ In a distributed system containing interconnected services, it is necessary to d
   
     ```  
     <system.serviceModel>  
-      <diagnostics>  
-        <endToEndTracing propagateActivity="true" messageFlowTracing="true"/>  
-      </diagnostics>  
+      <diagnostics>  
+        <endToEndTracing propagateActivity="true" messageFlowTracing="true"/>  
+      </diagnostics>  
     </system.serviceModel>  
   
     ```  
@@ -53,7 +53,7 @@ In a distributed system containing interconnected services, it is necessary to d
   
     ```  
     <diagnostics>  
-      <endToEndTracing propagateActivity="true" messageFlowTracing="true"/>  
+      <endToEndTracing propagateActivity="true" messageFlowTracing="true"/>  
     </diagnostics>  
   
     ```  

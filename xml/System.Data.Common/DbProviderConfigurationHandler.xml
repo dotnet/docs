@@ -17,6 +17,7 @@
   <Docs>
     <summary>This class can be used by any provider to support a provider-specific configuration section.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,6 +33,7 @@
       <Docs>
         <summary>This class can be used by any provider to support a provider-specific configuration section.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -58,6 +60,7 @@
         <summary>Creates a new <see cref="System.Collections.Specialized.NameValueCollection" /> expression.</summary>
         <returns>The new expression.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

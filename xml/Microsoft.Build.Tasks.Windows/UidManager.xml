@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>UidManager</c> task. Use the <c>UidManager</c> element in your project file to create and execute this task. For usage and parameter information, see [UidManager](http://msdn.microsoft.com/library/4fc7b5a5-11b0-46ca-9656-8c2a0b08d1fe).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Windows.UidManager" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -48,6 +50,7 @@
         <returns>
           <see langword="true" /> if the task executed successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IntermediateDirectory">
@@ -66,6 +69,7 @@
         <summary>Gets or sets the directory that is used to back up the source [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] files that are specified by the <see cref="P:Microsoft.Build.Tasks.Windows.UidManager.MarkupFiles" /> property.</summary>
         <value>The directory that is used to back up the source [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] files that are specified by the <see cref="P:Microsoft.Build.Tasks.Windows.UidManager.MarkupFiles" /> property.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MarkupFiles">
@@ -89,6 +93,7 @@
         <summary>Gets or sets the source [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] files to include for UID checking, updating, or removing.</summary>
         <value>The source [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)] files to include for UID checking, updating, or removing.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Task">
@@ -112,6 +117,7 @@
         <summary>Gets or sets the UID management task that you want to perform. Valid options are **Check**, **Update**, or **Remove**.</summary>
         <value>The UID management task that you want to perform. Valid options are **Check**, **Update**, or **Remove**.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

@@ -2,18 +2,19 @@
 title: "IHostMAlloc::Alloc Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostMAlloc.Alloc"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostMAlloc::Alloc"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "Alloc method, IHostMAlloc interface [.NET Framework hosting]"
   - "IHostMAlloc::Alloc method [.NET Framework hosting]"
 ms.assetid: a3007f5e-d75d-4b37-842b-704e9edced5e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

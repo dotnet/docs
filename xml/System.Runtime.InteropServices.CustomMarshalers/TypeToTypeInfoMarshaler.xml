@@ -22,7 +22,7 @@
 ## Remarks  
  The `ITypeInfo` interface exposed for a .NET type is based on the metadata that would appear in an exported type library. Likewise, the <xref:System.Type> instance exposed for an `ITypeInfo` interface is based on the metadata that would appear in an imported assembly.  
   
- The Type Library Importer (Tlbimp.exe) marks `ITypeInfo` parameters with the appropriate <xref:System.Runtime.InteropServices.MarshalAsAttribute> with the <xref:System.Runtime.InteropServices.UnmanagedType> enumeration member when converting signatures that use `ITypeInfo` parameters to signatures that use <xref:System.Type> parameters.  
+ The Type Library Importer (Tlbimp.exe) marks `ITypeInfo` parameters with the appropriate <xref:System.Runtime.InteropServices.MarshalAsAttribute> with the <xref:System.Runtime.InteropServices.UnmanagedType.CustomMarshaler> enumeration member when converting signatures that use `ITypeInfo` parameters to signatures that use <xref:System.Type> parameters.  
   
  The same conversion functionality can be accomplished without the custom marshaler, by calling <xref:System.Runtime.InteropServices.Marshal.GetITypeInfoForType%2A> and <xref:System.Runtime.InteropServices.Marshal.GetTypeForITypeInfo%2A>.  
   

@@ -8,6 +8,7 @@
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -35,7 +36,7 @@
 ## Remarks  
  <xref:System.ComponentModel.EditorBrowsableAttribute> is a hint to a designer indicating whether a property or method is to be displayed. You can use this type in a visual designer or text editor to determine what is visible to the user. For example, the IntelliSense engine in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] uses this attribute to determine whether to show a property or method.  
   
- In [!INCLUDE[csprcs](~/includes/csprcs-md.md)], you can control when advanced properties appear in IntelliSense and the Properties Window with the **Hide Advanced Members** setting under **Tools &#124; Options &#124; Text Editor &#124; C#**. The corresponding <xref:System.ComponentModel.EditorBrowsableState> is <xref:System.ComponentModel.EditorBrowsableState>.  
+ In [!INCLUDE[csprcs](~/includes/csprcs-md.md)], you can control when advanced properties appear in IntelliSense and the Properties Window with the **Hide Advanced Members** setting under **Tools &#124; Options &#124; Text Editor &#124; C#**. The corresponding <xref:System.ComponentModel.EditorBrowsableState> is <xref:System.ComponentModel.EditorBrowsableState.Advanced>.  
   
 > [!NOTE]
 >  In [!INCLUDE[csprcs](~/includes/csprcs-md.md)], <xref:System.ComponentModel.EditorBrowsableAttribute> does not suppress members from a class in the same assembly.  
@@ -69,6 +70,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.EditorBrowsableAttribute" /> class with <see cref="P:System.ComponentModel.EditorBrowsableAttribute.State" /> set to the default state.</summary>
@@ -93,6 +98,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -123,6 +129,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -158,6 +165,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -189,6 +197,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

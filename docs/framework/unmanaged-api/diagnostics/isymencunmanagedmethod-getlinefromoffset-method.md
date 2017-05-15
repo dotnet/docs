@@ -2,18 +2,19 @@
 title: "ISymENCUnmanagedMethod::GetLineFromOffset Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymENCUnmanagedMethod.GetLineFromOffset"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymENCUnmanagedMethod::GetLineFromOffset"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetLineFromOffset method [.NET Framework debugging]"
   - "ISymENCUnmanagedMethod::GetLineFromOffset method [.NET Framework debugging]"
 ms.assetid: cc09bad2-fb34-4d13-a521-6ec7b1a1d915
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

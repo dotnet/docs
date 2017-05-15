@@ -2,19 +2,20 @@
 title: "StrongNameSignatureGeneration Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "StrongNameSignatureGeneration"
-apilocation: 
+api_location: 
   - "mscoree.dll"
   - "mscorsn.dll"
-apitype: "DLLExport"
+api_type: 
+  - "DLLExport"
 f1_keywords: 
   - "StrongNameSignatureGeneration"
 dev_langs: 
@@ -35,7 +36,7 @@ Generates a strong name signature for the specified assembly.
 ## Syntax  
   
 ```  
-BOOLEAN StrongNameSignatureGeneration (   
+BOOLEAN StrongNameSignatureGeneration (   
     [in]  LPCWSTR   wszFilePath,  
     [in]  LPCWSTR   wszKeyContainer,  
     [in]  BYTE      *pbKeyBlob,  

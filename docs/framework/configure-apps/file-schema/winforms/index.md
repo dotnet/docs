@@ -2,6 +2,7 @@
 title: "Windows Forms Configuration Section | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/07/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -20,9 +21,9 @@ Windows Forms application configuration settings are stored in an application co
 
 ```xml
 <configuration>
-   \<System.Windows.Forms.ConfigurationSection>
-   ...
-   \</System.Windows.Forms.ConfigurationSection>
+  \<System.Windows.Forms.ConfigurationSection>
+  ...
+  \</System.Windows.Forms.ConfigurationSection>
 </configuration>
 ```
 
@@ -44,7 +45,7 @@ Element  |Description |
 
 Element  |Description |
 ---------|---------|
-[`<configuration>`](Configuration%20File%20Schema%20for%20the%20.NET%20Framework.md) | The root element in every configuration file used by the common language runtime and Windows Forms applications |
+[\<configuration>](../configuration-element.md) | The root element in every configuration file used by the common language runtime and Windows Forms applications |
 
 ## Remarks
 
@@ -54,5 +55,5 @@ The `<System.Windows.Forms.ConfigurationSection>` element can include one or mor
 
 ## See also
 
-[Configuration File Schema](Configuration%20File%20Schema%20for%20the%20.NET%20Framework.md)   
-[High DPI Support in Windows Forms](../../../../../docs/framework/winforms/high-dpi-support.md)
+[Configuration File Schema](../index.md)
+[High DPI Support in Windows Forms](../../../../../docs/framework/winforms/high-dpi-support-in-windows-forms.md)

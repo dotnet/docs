@@ -2,18 +2,19 @@
 title: "ICorProfilerInfo2::GetFunctionInfo2 Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo2.GetFunctionInfo2"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo2::GetFunctionInfo2"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetFunctionInfo2 method [.NET Framework profiling]"
   - "ICorProfilerInfo2::GetFunctionInfo2 method [.NET Framework profiling]"
 ms.assetid: 0aa60f24-8bbd-4c83-83c5-86ad191b1d82
+topic_type: 
+  - "apiref"
 caps.latest.revision: 18
 author: "mairaw"
 ms.author: "mairaw"

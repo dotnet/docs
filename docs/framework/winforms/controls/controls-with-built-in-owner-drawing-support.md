@@ -2,7 +2,7 @@
 title: "Controls with Built-In Owner-Drawing Support | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "owner drawing"
 ms.assetid: 3823d01e-9610-43e6-864d-99f9b7c2b351
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Controls with Built-In Owner-Drawing Support

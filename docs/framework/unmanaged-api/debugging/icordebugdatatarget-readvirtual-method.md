@@ -2,18 +2,19 @@
 title: "ICorDebugDataTarget::ReadVirtual Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugDataTarget.ReadVirtual Method"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugDataTarget::ReadVirtual"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugDataTarget::ReadVirtual method [.NET Framework debugging]"
   - "ReadVirtual method, ICorDebugDataTarget interface [.NET Framework debugging]"
 ms.assetid: 55e57640-b3d2-413d-b4f4-fbc27fb8e37c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -28,6 +28,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="GetAppHostConfigFilename">
@@ -47,6 +48,7 @@
         <summary>Gets the application host configuration (.config) file path.</summary>
         <returns>The physical path (including the file name) to the application host configuration file.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetApplicationProperties">
@@ -83,6 +85,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetConfigToken">
@@ -112,6 +115,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetNativeConfigurationSystem">
@@ -131,6 +135,7 @@
         <summary>Retrieves the <c>INativeConfigurationSystem</c> interface.</summary>
         <returns>A pointer to the <c>INativeConfigurationSystem</c> interface.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetRootWebConfigFilename">
@@ -150,6 +155,7 @@
         <summary>Gets the physical path for the ApplicationHost.config file.</summary>
         <returns>The physical path for the ApplicationHost.config file.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MapPath">
@@ -182,6 +188,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

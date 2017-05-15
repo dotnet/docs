@@ -2,7 +2,7 @@
 title: "Troubleshooting Correlation | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -60,16 +60,16 @@ class CustomFactory : WorkflowServiceHostFactory
  When this handler is invoked, the message can be retrieved by using the <xref:System.ServiceModel.UnknownMessageReceivedEventArgs.Message%2A> property of the <xref:System.ServiceModel.UnknownMessageReceivedEventArgs>, and will resemble the following message.  
   
 ```Output  
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">  
-  <s:Header>  
-    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:8080/OrderService</To>  
-    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService/AddItem</Action>  
-  </s:Header>  
-  <s:Body>  
-    <AddItem xmlns="http://tempuri.org/">  
-      <Item>Books</Item>  
-    </AddItem>  
-  </s:Body>  
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">  
+  <s:Header>  
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:8080/OrderService</To>  
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService/AddItem</Action>  
+  </s:Header>  
+  <s:Body>  
+    <AddItem xmlns="http://tempuri.org/">  
+      <Item>Books</Item>  
+    </AddItem>  
+  </s:Body>  
 </s:Envelope>  
   
 ```  

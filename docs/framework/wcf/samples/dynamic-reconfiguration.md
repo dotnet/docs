@@ -2,7 +2,7 @@
 title: "Dynamic Reconfiguration | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -80,7 +80,7 @@ This sample demonstrates the [!INCLUDE[indigo1](../../../../includes/indigo1-md.
   
 6.  The Calculator Service and the Rounding Calculator Service also print out a log of the operations invoked to their respective console windows.  
   
-7.  In the client console window, type “quit” and press ENTER to exit.  
+7.  In the client console window, type "quit" and press ENTER to exit.  
   
 8.  Press ENTER in the services console windows to terminate the services.  
   

@@ -2,7 +2,7 @@
 title: "x:Reference Markup Extension | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,7 +25,7 @@ References an instance that is declared elsewhere in XAML markup. The reference 
 ## XAML Attribute Usage  
   
 ```  
-<object property="{x:Reference instancexName}" .../>  
+<object property="{x:Reference instancexName}" .../>  
 ```  
   
 ## XAML Object Element Usage  
@@ -33,7 +33,7 @@ References an instance that is declared elsewhere in XAML markup. The reference 
 ```  
 <object>  
   <object.property>  
-    <x:Reference Name="instancexName"/>  
+    <x:Reference Name="instancexName"/>  
   </object.property>  
 </object>  
 ```  

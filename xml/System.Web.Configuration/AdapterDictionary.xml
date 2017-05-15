@@ -13,6 +13,7 @@
   <Docs>
     <summary>Used internally at run time by the configuration system to contain the names of the available adapters used to render server controls on different browsers.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Used internally at run time by the configuration system to create a new instance of this class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -50,6 +52,7 @@
         <summary>Used internally at run time by the configuration system to get or set a specified adapter name.</summary>
         <value>The name of the specified adapter.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

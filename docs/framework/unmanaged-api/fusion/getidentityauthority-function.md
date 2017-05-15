@@ -2,19 +2,20 @@
 title: "GetIdentityAuthority Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "GetIdentityAuthority"
-apilocation: 
+api_location: 
   - "fusion.dll"
   - "clr.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "GetIdentityAuthority"
 dev_langs: 
@@ -22,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GetIdentityAuthority function [.NET Framework fusion]"
 ms.assetid: 843cd5ab-d2b7-4ff6-86bd-e68c7a91c098
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -240,7 +240,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the name for the cookie element.</summary>
-        <value>The name for the cookie element. The default element name is “Cookie”.</value>
+        <value>The name for the cookie element. The default element name is "Cookie".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -265,7 +265,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the namespace for the cookie element.</summary>
-        <value>The namespace for the cookie element. The default namespace is “http://schemas.microsoft.com/ws/2006/05/security”.</value>
+        <value>The namespace for the cookie element. The default namespace is "http://schemas.microsoft.com/ws/2006/05/security".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -450,6 +450,23 @@
         <exception cref="T:System.InvalidOperationException">The configuration specified by <paramref name="customConfigElements" /> is not valid. For example, it does not contain a <see langword="&lt;sessionTokenRequirement&gt;" /> element, it contains more than one <see langword="&lt;sessionTokenRequirement&gt;" /> element, a valid <see cref="T:System.TimeSpan" /> value cannot be read from the <see langword="lifetime" /> attribute, or the <see langword="lifetime" /> attribute specifies a value that is less than <see cref="F:System.TimeSpan.Zero" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadToken">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads a <see cref="T:System.IdentityModel.Tokens.SessionSecurityToken" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation deserializes the token from either a WS-Secure Conversation Feb2005 or WS-Secure Conversation 1.3 `<wsc:SecurityContextToken>` element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReadToken">
       <MemberSignature Language="C#" Value="public override System.IdentityModel.Tokens.SecurityToken ReadToken (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IdentityModel.Tokens.SecurityToken ReadToken(class System.Xml.XmlReader reader) cil managed" />
@@ -720,7 +737,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="token" /> <see langword="null" />.</exception>
+          <paramref name="token" />
+          <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="token" /> is not assignable from <see cref="T:System.IdentityModel.Tokens.SessionSecurityToken" />.</exception>
       </Docs>
@@ -768,6 +786,23 @@
         <exception cref="T:System.IdentityModel.Tokens.SecurityTokenException">The <see cref="P:System.IdentityModel.Tokens.SessionSecurityToken.EndpointId" /> property of the specified token is not <see langword="null" /> or empty and its value is different than that specified by the <paramref name="endpointId" /> parameter.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteToken">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Serializes a token.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation serializes the token into either a WS-Secure Conversation Feb2005 or WS-Secure Conversation 1.3 `<wsc:SecurityContextToken>` element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteToken">
       <MemberSignature Language="C#" Value="public virtual byte[] WriteToken (System.IdentityModel.Tokens.SessionSecurityToken sessionToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] WriteToken(class System.IdentityModel.Tokens.SessionSecurityToken sessionToken) cil managed" />
@@ -841,39 +876,5 @@
  The <see cref="P:System.IdentityModel.Tokens.SessionSecurityToken.SecureConversationVersion" /> of the token specifies a version of WS-Secure Conversation that is not supported by the handler.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteToken">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Serializes a token.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default implementation serializes the token into either a WS-Secure Conversation Feb2005 or WS-Secure Conversation 1.3 `<wsc:SecurityContextToken>` element.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ReadToken">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads a <see cref="T:System.IdentityModel.Tokens.SessionSecurityToken" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default implementation deserializes the token from either a WS-Secure Conversation Feb2005 or WS-Secure Conversation 1.3 `<wsc:SecurityContextToken>` element.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

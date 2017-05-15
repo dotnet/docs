@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrGeneral_ArgumentNullException"
 ms.assetid: 2abd995b-36a5-45f0-b3c1-6e0c3b31a875
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

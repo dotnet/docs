@@ -2,7 +2,7 @@
 title: "How to: Bind a Windows Forms Control to a Type Using the Designer | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "types [Windows Forms], binding controls to"
 ms.assetid: 5ab984b5-c2d0-4638-a572-1c84013e8746
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Bind a Windows Forms Control to a Type Using the Designer
@@ -64,4 +64,4 @@ When you are building controls that interact with data, you sometimes need to bi
 ## See Also  
  [BindingSource Component](../../../../docs/framework/winforms/controls/bindingsource-component.md)   
  [How to: Bind a Windows Forms Control to a Type](../../../../docs/framework/winforms/controls/how-to-bind-a-windows-forms-control-to-a-type.md)   
- [Bind controls to data in Visual Studio](http://msdn.microsoft.com/library/be8b6623-86a6-493e-ab7a-050de4661fd6)
+ [Bind controls to data in Visual Studio](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio)

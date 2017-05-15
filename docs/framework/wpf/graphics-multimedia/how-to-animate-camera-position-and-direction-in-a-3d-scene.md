@@ -2,7 +2,7 @@
 title: "How to: Animate Camera Position and Direction in a 3D Scene | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "animation, camera direction in 3-D scenes"
 ms.assetid: 480224b7-a5e5-4165-ba7f-ef760ddff94a
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Animate Camera Position and Direction in a 3D Scene

@@ -2,18 +2,19 @@
 title: "IMetaDataImport::FindMethod Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataImport.FindMethod"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataImport::FindMethod"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "FindMethod method [.NET Framework metadata]"
   - "IMetaDataImport::FindMethod method [.NET Framework metadata]"
 ms.assetid: 0f9bde1d-e306-438d-941b-d0925b322304
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

@@ -2,7 +2,7 @@
 title: "PrintPreviewDialog Control Overview (Windows Forms) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "PrintPreviewDialog control (using designer), about PrintPreviewDialog"
 ms.assetid: efd4ee8d-6edd-47ec-88e4-4a4759bd2384
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # PrintPreviewDialog Control Overview (Windows Forms)

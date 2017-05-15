@@ -2,7 +2,7 @@
 title: "How to: Change the Appearance of the Windows Forms TabControl | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "buttons, displaying tabs as"
 ms.assetid: 7c6cc443-ed62-4d26-b94d-b8913b44f773
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Change the Appearance of the Windows Forms TabControl

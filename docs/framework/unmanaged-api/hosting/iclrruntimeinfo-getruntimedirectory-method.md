@@ -2,18 +2,19 @@
 title: "ICLRRuntimeInfo::GetRuntimeDirectory Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRRuntimeInfo.GetRuntimeDirectory"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRRuntimeInfo::GetRuntimeDirectory"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetRuntimeDirectory method [.NET Framework hosting]"
   - "ICLRRuntimeInfo::GetRuntimeDirectory method [.NET Framework hosting]"
 ms.assetid: 4401546e-4d48-453f-a1fb-b2ebda54df5c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

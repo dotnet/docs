@@ -2,7 +2,7 @@
 title: "How to: Erase Ink on a Custom Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "ink, erasing on custom control"
 ms.assetid: d88c50f9-b4d8-4962-a28b-67d6a15a5fe0
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Erase Ink on a Custom Control

@@ -2,11 +2,10 @@
 title: "Common I-O Tasks | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -18,14 +17,14 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 # Common I/O Tasks
-The <xref:System.IO> namespace provides several classes that allow for various actions, such as reading and writing, to be performed on files, directories, and streams. For more information, see [File and Stream I-O](../../../docs/standard/io/file-and-stream-i-o.md).  
+The <xref:System.IO> namespace provides several classes that allow for various actions, such as reading and writing, to be performed on files, directories, and streams. For more information, see [File and Stream I-O](../../../docs/standard/io/index.md).  
   
 ## Common File Tasks  
   
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
 |Create a text file|<xref:System.IO.File.CreateText%2A?displayProperty=fullName> method<br /><br /> <xref:System.IO.FileInfo.CreateText%2A?displayProperty=fullName> method<br /><br /> <xref:System.IO.File.Create%2A?displayProperty=fullName> method<br /><br /> <xref:System.IO.FileInfo.Create%2A?displayProperty=fullName> method|  
-|Write to a text file|[How to: Write Text to a File](../../../docs/standard/io/how-to-write-text-to-a-file.md)<br /><br /> [How to: Write a Text File (C++/CLI)](http://msdn.microsoft.com/library/39ecdba6-84e0-485c-a202-84cf6d7b8d4a)|  
+|Write to a text file|[How to: Write Text to a File](../../../docs/standard/io/how-to-write-text-to-a-file.md)<br /><br /> [How to: Write a Text File (C++/CLI)](/cpp/dotnet/how-to-write-a-text-file-cpp-cli)|  
 |Read from a text file|[How to: Read Text from a File](../../../docs/standard/io/how-to-read-text-from-a-file.md)|  
 |Append text to a file|[How to: Open and Append to a Log File](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName> method<br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName> method|  
 |Rename or move a file|<xref:System.IO.File.Move%2A?displayProperty=fullName> method<br /><br /> <xref:System.IO.FileInfo.MoveTo%2A?displayProperty=fullName> method|  
@@ -57,6 +56,6 @@ The <xref:System.IO> namespace provides several classes that allow for various a
 |Determine whether a directory exists|<xref:System.IO.Directory.Exists%2A?displayProperty=fullName> method|  
   
 ## See Also  
- [File and Stream I-O](../../../docs/standard/io/file-and-stream-i-o.md)   
+ [File and Stream I-O](../../../docs/standard/io/index.md)   
  [Composing Streams](../../../docs/standard/io/composing-streams.md)   
  [Asynchronous File I/O](../../../docs/standard/io/asynchronous-file-i-o.md)

@@ -2,7 +2,7 @@
 title: "Configuring Bindings for Windows Communication Foundation Services | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -160,8 +160,8 @@ When creating an application, you often want to defer decisions to the administr
   
 ```xml  
 <protocolMapping>  
-    <add scheme=”http” binding=”basicHttpBinding” bindingConfiguration=”shortTimeout” />  
-    <add scheme=”https” binding=”basicHttpBinding” bindingConfiguration=”Secure” />  
+    <add scheme="http" binding="basicHttpBinding" bindingConfiguration="shortTimeout" />  
+    <add scheme="https" binding="basicHttpBinding" bindingConfiguration="Secure" />  
 </protocolMapping>  
 <bindings>  
     <basicHttpBinding   

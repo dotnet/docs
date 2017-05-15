@@ -2,7 +2,7 @@
 title: "How to: Handle the MouseDoubleClick Event for Each Item in a ListView | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -13,8 +13,8 @@ helpviewer_keywords:
   - "ListView controls, MouseDoubleClick event"
 ms.assetid: 81b39369-655a-4585-ac58-4640e5bb8fed
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Handle the MouseDoubleClick Event for Each Item in a ListView

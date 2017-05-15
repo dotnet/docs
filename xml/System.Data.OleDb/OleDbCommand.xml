@@ -727,7 +727,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you specify <xref:System.Data.CommandBehavior> with the <xref:System.Data.OleDb.OleDbCommand.ExecuteReader%2A> method of the <xref:System.Data.OleDb.OleDbCommand> object, the .NET Framework Data Provider for OLE DB performs binding using the OLE DB **IRow** interface if it is available. Otherwise, it uses the **IRowset** interface. If your SQL statement is expected to return only a single row, specifying <xref:System.Data.CommandBehavior> can also improve application performance.  
+ When you specify <xref:System.Data.CommandBehavior.SingleRow> with the <xref:System.Data.OleDb.OleDbCommand.ExecuteReader%2A> method of the <xref:System.Data.OleDb.OleDbCommand> object, the .NET Framework Data Provider for OLE DB performs binding using the OLE DB **IRow** interface if it is available. Otherwise, it uses the **IRowset** interface. If your SQL statement is expected to return only a single row, specifying <xref:System.Data.CommandBehavior.SingleRow> can also improve application performance.  
   
  When the <xref:System.Data.OleDb.OleDbCommand.CommandType%2A> property is set to `StoredProcedure`, the <xref:System.Data.OleDb.OleDbCommand.CommandText%2A> property should be set to the name of the stored procedure. The command executes this stored procedure when you call <xref:System.Data.OleDb.OleDbCommand.ExecuteReader%2A>.  
   
@@ -738,7 +738,7 @@
    
   
 ## Examples  
- The following example creates an <xref:System.Data.OleDb.OleDbCommand>, and then executes it by passing a string that is a Transact-SQL SELECT statement, and a string to use to connect to the data source. <xref:System.Data.CommandBehavior> is set to <xref:System.Data.CommandBehavior>.  
+ The following example creates an <xref:System.Data.OleDb.OleDbCommand>, and then executes it by passing a string that is a Transact-SQL SELECT statement, and a string to use to connect to the data source. <xref:System.Data.CommandBehavior> is set to <xref:System.Data.CommandBehavior.CloseConnection>.  
   
  [!code-csharp[Classic WebData OleDbCommand.ExecuteReader2#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OleDbCommand.ExecuteReader2/CS/mysample.cs#1)]
  [!code-vb[Classic WebData OleDbCommand.ExecuteReader2#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OleDbCommand.ExecuteReader2/VB/mysample.vb#1)]  
@@ -906,6 +906,23 @@ Int32 count = (int32) ExecuteScalar();
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="System.Data.IDbCommand.ExecuteReader">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>For a description of this member, see <see cref="M:System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.OleDb.OleDbCommand> instance is cast to an <xref:System.Data.IDbCommand> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="System.Data.IDbCommand.ExecuteReader">
       <MemberSignature Language="C#" Value="System.Data.IDataReader IDbCommand.ExecuteReader ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Data.IDataReader System.Data.IDbCommand.ExecuteReader() cil managed" />
@@ -1055,22 +1072,5 @@ Int32 count = (int32) ExecuteScalar();
         <exception cref="T:System.ArgumentException">The value entered was not one of the <see cref="T:System.Data.UpdateRowSource" /> values.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="System.Data.IDbCommand.ExecuteReader">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>For a description of this member, see <see cref="M:System.Data.OleDb.OleDbCommand.System.Data.IDbCommand.ExecuteReader" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.OleDb.OleDbCommand> instance is cast to an <xref:System.Data.IDbCommand> interface.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

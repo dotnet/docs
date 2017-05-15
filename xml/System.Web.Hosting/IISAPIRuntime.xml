@@ -18,6 +18,7 @@
   <Docs>
     <summary>Defines the methods that are used to create <see cref="T:System.Web.HttpWorkerRequest" /> objects in the .NET Framework.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="DoGCCollect">
@@ -36,6 +37,7 @@
       <Docs>
         <summary>Forces garbage collection.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ProcessRequest">
@@ -62,6 +64,7 @@
         <returns>
           <see langword="0" /> if <see cref="T:System.Web.HttpWorkerRequest" /> was created successfully; otherwise, <see langword="1" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StartProcessing">
@@ -80,6 +83,7 @@
       <Docs>
         <summary>Starts processing all items in the worker process pipeline.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StopProcessing">
@@ -98,6 +102,7 @@
       <Docs>
         <summary>Stops processing the items in the worker process pipeline.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

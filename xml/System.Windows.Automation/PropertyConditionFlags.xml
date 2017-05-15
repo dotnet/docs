@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- In the following example, IgnoreCase is set in a <xref:System.Windows.Automation.PropertyCondition>.  
+ In the following example, IgnoreCase is set in a <xref:System.Windows.Automation.PropertyConditionFlags.IgnoreCase>.  
   
  [!code-csharp[UIAClient_snip#110](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#110)]
  [!code-vb[UIAClient_snip#110](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#110)]  

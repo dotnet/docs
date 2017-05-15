@@ -2,7 +2,7 @@
 title: "NumericUpDown Control (Windows Forms) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "NumericUpDown control [Windows Forms]"
 ms.assetid: 32b0c20d-4f37-4aea-873d-faded741d2db
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # NumericUpDown Control (Windows Forms)

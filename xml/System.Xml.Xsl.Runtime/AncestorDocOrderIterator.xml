@@ -22,6 +22,7 @@
   <Docs>
     <summary>Iterates over all ancestor nodes according to the <see cref="N:System.Xml.XPath" /> ancestor axis rules, and returns the nodes in document order without duplicates.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="Create">
@@ -52,6 +53,7 @@
           <see langword="true" /> if you want the <c>context</c> node to be returned as a part of the iteration, instead of being filtered out.</param>
         <summary>Initializes the <see cref="T:System.Xml.Xsl.Runtime.AncestorDocOrderIterator" />.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -81,6 +83,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MoveNext">
@@ -112,6 +115,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

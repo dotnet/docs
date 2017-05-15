@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>RemoveDuplicates</c> task. Use the <c>RemoveDuplicates</c> element in your project file to create and execute this task. For usage and parameter information, see [RemoveDuplicates Task](http://msdn.microsoft.com/library/481cbab6-73ff-488c-aba5-2c09f9eb1e04).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.RemoveDuplicates" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -48,6 +50,7 @@
         <returns>
           <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Filtered">
@@ -71,6 +74,7 @@
         <summary>Gets or sets an item collection with all duplicate items removed.</summary>
         <value>An item collection with all duplicate items removed.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Inputs">
@@ -89,6 +93,7 @@
         <summary>Gets or sets the items to remove duplicate items from.</summary>
         <value>The items to remove duplicate items from.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

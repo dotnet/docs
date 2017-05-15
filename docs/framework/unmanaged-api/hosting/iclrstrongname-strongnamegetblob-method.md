@@ -2,19 +2,20 @@
 title: "ICLRStrongName::StrongNameGetBlob Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRStrongName.StrongNameGetBlob"
   - "ICLRStrongName.StrongNameGetBlob"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRStrongName::StrongNameGetBlob"
 dev_langs: 
@@ -23,6 +24,8 @@ helpviewer_keywords:
   - "ICLRStrongName::StrongNameGetBlob method [.NET Framework hosting]"
   - "StrongNameGetBlob method, ICLRStrongName interface [.NET Framework hosting]"
 ms.assetid: a24218f8-7196-44be-b7a2-ee9cdd7a85c4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Visual Basic code, labeling statements"
 ms.assetid: 38f1ff43-2054-42cb-963b-1998e60c6ed4
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

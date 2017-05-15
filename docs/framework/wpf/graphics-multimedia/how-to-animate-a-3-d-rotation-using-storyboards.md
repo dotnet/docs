@@ -2,7 +2,7 @@
 title: "How to: Animate a 3-D Rotation Using Storyboards | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "animation, 3-D translations, with Storyboards"
 ms.assetid: 1020e44e-e21e-49a8-be53-53cbc1910e83
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Animate a 3-D Rotation Using Storyboards

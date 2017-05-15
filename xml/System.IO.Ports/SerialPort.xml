@@ -6,6 +6,10 @@
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Ports</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ComponentModel.Component</BaseTypeName>
   </Base>
@@ -16,9 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a serial port resource.  
-  
- To browse the .NET Framework source code for this type, see the [Reference Source](http://referencesource.microsoft.com/#System/sys/system/io/ports/SerialPort.cs#ae0a3218c6c9f7fe).</summary>
+    <summary>Represents a serial port resource.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -58,6 +60,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.IO.Ports.SerialPort" /> class.</summary>
@@ -89,6 +95,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="container" Type="System.ComponentModel.IContainer" />
       </Parameters>
@@ -113,6 +123,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -141,6 +155,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="portName" Type="System.String" />
         <Parameter Name="baudRate" Type="System.Int32" />
@@ -167,6 +185,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -199,6 +221,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="portName" Type="System.String" />
         <Parameter Name="baudRate" Type="System.Int32" />
@@ -229,6 +255,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -265,6 +295,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
@@ -294,13 +328,7 @@
         <exception cref="T:System.InvalidOperationException">The stream is closed. This can occur because the <see cref="M:System.IO.Ports.SerialPort.Open" /> method has not been called or the <see cref="M:System.IO.Ports.SerialPort.Close" /> method has been called.</exception>
         <exception cref="T:System.NotSupportedException">The stream is in a .NET Compact Framework application and one of the following methods was called:  
   
- <see cref="M:System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />  
-  
- <see cref="M:System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />  
-  
- <see cref="M:System.IO.Stream.EndRead(System.IAsyncResult)" />  
-  
- <see cref="M:System.IO.Stream.EndWrite(System.IAsyncResult)" />  
+ <see cref="M:System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /><see cref="M:System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /><see cref="M:System.IO.Stream.EndRead(System.IAsyncResult)" /><see cref="M:System.IO.Stream.EndWrite(System.IAsyncResult)" />  
   
  The .NET Compact Framework does not support the asynchronous model with base streams.</exception>
       </Docs>
@@ -312,6 +340,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -371,6 +403,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
@@ -411,6 +447,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
@@ -447,6 +487,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
@@ -480,6 +524,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -520,6 +568,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -563,6 +615,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
@@ -601,6 +657,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -654,6 +714,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Diagnostics.MonitoringDescription("")</AttributeName>
@@ -702,6 +766,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -731,6 +799,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -779,6 +851,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -808,6 +884,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -854,6 +934,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
@@ -892,6 +976,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -936,6 +1024,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
@@ -965,6 +1057,10 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1002,6 +1098,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1044,6 +1144,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
@@ -1067,7 +1171,7 @@
 ## Remarks  
  When handshaking is used, the device connected to the <xref:System.IO.Ports.SerialPort> object is instructed to stop sending data when there is at least (<xref:System.IO.Ports.SerialPort.ReadBufferSize%2A>-1024) bytes in the buffer. The device is instructed to start sending data again when there are 1024 or fewer bytes in the buffer. If the device is sending data in blocks that are larger than 1024 bytes, this may cause the buffer to overflow.  
   
- If the <xref:System.IO.Ports.SerialPort.Handshake%2A> property is set to <xref:System.IO.Ports.Handshake> and <xref:System.IO.Ports.SerialPort.CtsHolding%2A> is set to `false`, the XOff character will not be sent. If <xref:System.IO.Ports.SerialPort.CtsHolding%2A> is then set to `true`, more data must be sent before the XOff character will be sent.  
+ If the <xref:System.IO.Ports.SerialPort.Handshake%2A> property is set to <xref:System.IO.Ports.Handshake.RequestToSendXOnXOff> and <xref:System.IO.Ports.SerialPort.CtsHolding%2A> is set to `false`, the XOff character will not be sent. If <xref:System.IO.Ports.SerialPort.CtsHolding%2A> is then set to `true`, more data must be sent before the XOff character will be sent.  
   
    
   
@@ -1097,6 +1201,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1120,6 +1228,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1153,6 +1265,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1191,6 +1307,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1247,6 +1367,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
@@ -1300,6 +1424,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
@@ -1344,6 +1472,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Diagnostics.MonitoringDescription("")</AttributeName>
@@ -1379,6 +1511,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1437,6 +1573,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1459,7 +1599,7 @@
   
  Because the <xref:System.IO.Ports.SerialPort> class buffers data, and the stream contained in the <xref:System.IO.Ports.SerialPort.BaseStream%2A> property does not, the two might conflict about how many bytes are available to read.  The <xref:System.IO.Ports.SerialPort.BytesToRead%2A> property can indicate that there are bytes to read, but these bytes might not be accessible to the stream contained in the <xref:System.IO.Ports.SerialPort.BaseStream%2A> property because they have been buffered to the <xref:System.IO.Ports.SerialPort> class.  
   
- The [Read Method (Byte\<xref:System.IO.Ports.SerialPort.Read%2A> method does not block other operations when the number of bytes read equals `count` but there are still unread bytes available on the serial port.  
+ The <xref:System.IO.Ports.SerialPort.Read%2A> method does not block other operations when the number of bytes read equals `count` but there are still unread bytes available on the serial port.  
   
  ]]></format>
         </remarks>
@@ -1478,6 +1618,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1504,7 +1648,7 @@
   
  Because the <xref:System.IO.Ports.SerialPort> class buffers data, and the stream contained in the <xref:System.IO.Ports.SerialPort.BaseStream%2A> property does not, the two might conflict about how many characters are available to read.  The <xref:System.IO.Ports.SerialPort.BytesToRead%2A> property can indicate that there are characters to read, but these characters might not be accessible to the stream contained in the <xref:System.IO.Ports.SerialPort.BaseStream%2A> property because they have been buffered to the <xref:System.IO.Ports.SerialPort> class.  
   
- The [Read Method (Char\<xref:System.IO.Ports.SerialPort.Read%2A> method does not block other operations when the number of bytes read equals `count` but there are still unread bytes available on the serial port.  
+ The <xref:System.IO.Ports.SerialPort.Read%2A> method does not block other operations when the number of bytes read equals `count` but there are still unread bytes available on the serial port.  
   
  ]]></format>
         </remarks>
@@ -1527,6 +1671,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1570,6 +1718,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1605,6 +1757,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1644,6 +1800,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1674,6 +1834,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1724,6 +1888,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
@@ -1745,7 +1913,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The read time-out value was originally set at 500 milliseconds in the Win32 Communications API. This property allows you to set this value. The time-out can be set to any value greater than zero, or set to <xref:System.IO.Ports.SerialPort>, in which case no time-out occurs. <xref:System.IO.Ports.SerialPort.InfiniteTimeout> is the default.  
+ The read time-out value was originally set at 500 milliseconds in the Win32 Communications API. This property allows you to set this value. The time-out can be set to any value greater than zero, or set to <xref:System.IO.Ports.SerialPort.InfiniteTimeout>, in which case no time-out occurs. <xref:System.IO.Ports.SerialPort.InfiniteTimeout> is the default.  
   
 > [!NOTE]
 >  Users of the unmanaged `COMMTIMEOUTS` structure might expect to set the time-out value to zero to suppress time-outs. To suppress time-outs with the <xref:System.IO.Ports.SerialPort.ReadTimeout%2A> property, however, you must specify <xref:System.IO.Ports.SerialPort.InfiniteTimeout>.  
@@ -1778,6 +1946,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1818,6 +1990,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
@@ -1842,7 +2018,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.Ports.SerialPort.DataReceived> event is also raised if an <xref:System.IO.Ports.SerialData> character is received, regardless of the number of bytes in the internal input buffer and the value of the <xref:System.IO.Ports.SerialPort.ReceivedBytesThreshold%2A> property.  
+ The <xref:System.IO.Ports.SerialPort.DataReceived> event is also raised if an <xref:System.IO.Ports.SerialData.Eof> character is received, regardless of the number of bytes in the internal input buffer and the value of the <xref:System.IO.Ports.SerialPort.ReceivedBytesThreshold%2A> property.  
   
  ]]></format>
         </remarks>
@@ -1856,6 +2032,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -1901,6 +2081,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
@@ -1922,7 +2106,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value for <xref:System.IO.Ports.SerialPort.StopBits%2A> is <xref:System.IO.Ports.StopBits>.  
+ The default value for <xref:System.IO.Ports.SerialPort.StopBits%2A> is <xref:System.IO.Ports.StopBits.One>.  
   
  The <xref:System.IO.Ports.StopBits?displayProperty=fullName> value is not supported.  
   
@@ -1960,6 +2144,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1975,7 +2163,7 @@
 ## Remarks  
  Use this method when you want to write a string as output to a serial port.  
   
- If there are too many bytes in the output buffer and <xref:System.IO.Ports.SerialPort.Handshake%2A> is set to <xref:System.IO.Ports.Handshake> then the <xref:System.IO.Ports.SerialPort> object may raise a <xref:System.ServiceProcess.TimeoutException> while it waits for the device to be ready to accept more data.  
+ If there are too many bytes in the output buffer and <xref:System.IO.Ports.SerialPort.Handshake%2A> is set to <xref:System.IO.Ports.Handshake.XOnXOff> then the <xref:System.IO.Ports.SerialPort> object may raise a <xref:System.ServiceProcess.TimeoutException> while it waits for the device to be ready to accept more data.  
   
  By default, <xref:System.IO.Ports.SerialPort> uses <xref:System.Text.ASCIIEncoding> to encode the characters. <xref:System.Text.ASCIIEncoding> encodes all characters greater than 127 as (char)63 or '?'. To support additional characters in that range, set <xref:System.IO.Ports.SerialPort.Encoding%2A> to <xref:System.Text.UTF8Encoding>, <xref:System.Text.UTF32Encoding>, or <xref:System.Text.UnicodeEncoding>.  
   
@@ -1994,6 +2182,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2015,7 +2207,7 @@
 ## Remarks  
  Use this method when you want to write to a byte buffer to create output to a serial port.  
   
- If there are too many bytes in the output buffer and <xref:System.IO.Ports.SerialPort.Handshake%2A> is set to <xref:System.IO.Ports.Handshake> then the <xref:System.IO.Ports.SerialPort> object may raise a <xref:System.ServiceProcess.TimeoutException> while it waits for the device to be ready to accept more data.  
+ If there are too many bytes in the output buffer and <xref:System.IO.Ports.SerialPort.Handshake%2A> is set to <xref:System.IO.Ports.Handshake.XOnXOff> then the <xref:System.IO.Ports.SerialPort> object may raise a <xref:System.ServiceProcess.TimeoutException> while it waits for the device to be ready to accept more data.  
   
  By default, <xref:System.IO.Ports.SerialPort> uses <xref:System.Text.ASCIIEncoding> to encode the characters. <xref:System.Text.ASCIIEncoding> encodes all characters greater than 127 as (char)63 or '?'. To support additional characters in that range, set <xref:System.IO.Ports.SerialPort.Encoding%2A> to <xref:System.Text.UTF8Encoding>, <xref:System.Text.UTF32Encoding>, or <xref:System.Text.UnicodeEncoding>.  
   
@@ -2038,6 +2230,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2057,7 +2253,7 @@
 ## Remarks  
  Use this method when you want to write to a character buffer to create output to a serial port.  
   
- If there are too many bytes in the output buffer and <xref:System.IO.Ports.SerialPort.Handshake%2A> is set to <xref:System.IO.Ports.Handshake> then the <xref:System.IO.Ports.SerialPort> object may raise a <xref:System.ServiceProcess.TimeoutException> while it waits for the device to be ready to accept more data.  
+ If there are too many bytes in the output buffer and <xref:System.IO.Ports.SerialPort.Handshake%2A> is set to <xref:System.IO.Ports.Handshake.XOnXOff> then the <xref:System.IO.Ports.SerialPort> object may raise a <xref:System.ServiceProcess.TimeoutException> while it waits for the device to be ready to accept more data.  
   
  By default, <xref:System.IO.Ports.SerialPort> uses <xref:System.Text.ASCIIEncoding> to encode the characters. <xref:System.Text.ASCIIEncoding> encodes all characters greater than 127 as (char)63 or '?'. To support additional characters in that range, set <xref:System.IO.Ports.SerialPort.Encoding%2A> to <xref:System.Text.UTF8Encoding>, <xref:System.Text.UTF32Encoding>, or <xref:System.Text.UnicodeEncoding>.  
   
@@ -2078,6 +2274,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
@@ -2119,6 +2319,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2132,7 +2336,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If there are too many bytes in the input buffer and <xref:System.IO.Ports.SerialPort.Handshake%2A> is set to <xref:System.IO.Ports.Handshake> then the <xref:System.IO.Ports.SerialPort> object may raise a <xref:System.ServiceProcess.TimeoutException> while it waits for the device to be ready to accept more data.  
+ If there are too many bytes in the input buffer and <xref:System.IO.Ports.SerialPort.Handshake%2A> is set to <xref:System.IO.Ports.Handshake.XOnXOff> then the <xref:System.IO.Ports.SerialPort> object may raise a <xref:System.ServiceProcess.TimeoutException> while it waits for the device to be ready to accept more data.  
   
  The written output includes the <xref:System.IO.Ports.SerialPort.NewLine%2A> string.  
   
@@ -2161,6 +2365,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Ports</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
@@ -2182,7 +2390,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The write time-out value was originally set at 500 milliseconds in the Win32 Communications API. This property allows you to set this value. The time-out can be set to any value greater than zero, or set to <xref:System.IO.Ports.SerialPort.InfiniteTimeout>, in which case no time-out occurs. <xref:System.IO.Ports.SerialPort> is the default.  
+ The write time-out value was originally set at 500 milliseconds in the Win32 Communications API. This property allows you to set this value. The time-out can be set to any value greater than zero, or set to <xref:System.IO.Ports.SerialPort.InfiniteTimeout>, in which case no time-out occurs. <xref:System.IO.Ports.SerialPort.InfiniteTimeout> is the default.  
   
 > [!NOTE]
 >  Users of the unmanaged `COMMTIMEOUTS` structure might expect to set the time-out value to zero to suppress time-outs. To suppress time-outs with the <xref:System.IO.Ports.SerialPort.WriteTimeout%2A> property, however, you must specify <xref:System.IO.Ports.SerialPort.InfiniteTimeout>.  

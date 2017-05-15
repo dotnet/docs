@@ -51,11 +51,11 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Reflection.MethodBase.IsStatic" /> property of the <paramref name="methodInfo" /> parameter is <see langword="true" />.  
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Reflection.MethodBase.IsStatic" /> property of the <paramref name="method_info" /> parameter is <see langword="true" />.  
   
  -or-  
   
- The <see cref="M:System.Reflection.MethodBase.GetParameters" /> method of the <paramref name="methodInfo" /> parameter does not contain all the parameters required by the method represented by the instance of <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" />.</exception>
+ The <see cref="M:System.Reflection.MethodBase.GetParameters" /> method of the <paramref name="method_info" /> parameter does not contain all the parameters required by the method represented by the instance of <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsyncCallbackParameter">
@@ -251,7 +251,7 @@
       <Docs>
         <param name="method_infos">To be added.</param>
         <summary>Given an array of <see cref="T:System.Reflection.MethodInfo" /> that can contain information about both asynchronous and synchronous methods, creates an array of <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" />.</summary>
-        <returns>An array of <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" />, representing the methods within <paramref name="methodInfos" />.</returns>
+        <returns>An array of <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" />, representing the methods within <paramref name="method_infos" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -262,7 +262,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">A <see langword="Begin" /> asynchronous method is included in <paramref name="methodInfos" /> without a corresponding <see langword="End" /> method.</exception>
+        <exception cref="T:System.InvalidOperationException">A <see langword="Begin" /> asynchronous method is included in <paramref name="method_infos" /> without a corresponding <see langword="End" /> method.</exception>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -614,7 +614,7 @@
         <param name="method_info">To be added.</param>
         <summary>Returns a value indicating whether the method passed in represents a <see langword="Begin" /> method of an asynchronous invocation.</summary>
         <returns>
-          <see langword="true" /> if the <paramref name="methodInfo" /> parameter is a <see langword="Begin" /> method of an asynchronous invocation; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the <paramref name="method_info" /> parameter is a <see langword="Begin" /> method of an asynchronous invocation; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -647,7 +647,7 @@
         <param name="method_info">To be added.</param>
         <summary>Returns a value indicating whether the method passed in represents an <see langword="End" /> method of an asynchronous invocation.</summary>
         <returns>
-          <see langword="true" /> if the <paramref name="methodInfo" /> parameter is an <see langword="End" /> method of an asynchronous invocation; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the <paramref name="method_info" /> parameter is an <see langword="End" /> method of an asynchronous invocation; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

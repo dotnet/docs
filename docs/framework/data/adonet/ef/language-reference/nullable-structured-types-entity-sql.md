@@ -2,7 +2,7 @@
 title: "Nullable Structured Types (Entity SQL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -89,7 +89,7 @@ A `null` instance of a structured type is an instance that does not exist. This 
     {  
         if (reader.IsDBNull(i))  
         {  
-            Console.WriteLine(“[NULL]”);  
+            Console.WriteLine("[NULL]");  
         }  
         else  
         {  

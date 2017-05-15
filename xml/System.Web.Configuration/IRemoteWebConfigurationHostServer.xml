@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="DoEncryptOrDecrypt">
@@ -58,6 +59,7 @@
         <summary>Conditionally encrypts or decrypts the value of the string referenced by the <paramref name="xmlString" /> parameter.</summary>
         <returns>A string containing either the encrypted or decrypted value of the <paramref name="xmlString" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -84,6 +86,7 @@
         <summary>Used internally to support remote access to configuration data.</summary>
         <returns>An <see langword="array" /> of 8-bit unsigned integers (bytes) containing the configuration data.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetFileDetails">
@@ -114,6 +117,7 @@
         <param name="lastWriteDate">The date the file was last written.</param>
         <summary>Gets the details of the configuration file.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetFilePaths">
@@ -142,6 +146,7 @@
         <summary>Used internally to support remote access to configuration data.</summary>
         <returns>A concatenated string representing the file path of the configuration file.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="WriteData">
@@ -169,6 +174,7 @@
         <param name="readTime">Time the file was last accessed.</param>
         <summary>Used internally to support remote access to configuration data.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

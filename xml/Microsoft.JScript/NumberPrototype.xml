@@ -13,6 +13,7 @@
   <Docs>
     <summary>Provides static methods and properties for <see cref="T:Microsoft.JScript.NumberObject" /> objects. All methods of this class are called by passing in a reference to the object that is requesting access to the method. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="constructor">
@@ -31,6 +32,7 @@
         <summary>Gets a reference to a prototype-based object that is using this prototype.</summary>
         <value>A reference to a prototype-based object.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toExponential">
@@ -60,6 +62,7 @@
         <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.NumberObject" /> that uses scientific (E) notation.</summary>
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toFixed">
@@ -89,6 +92,7 @@
         <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.NumberObject" /> that displays the specified number of decimal digits.</summary>
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toLocaleString">
@@ -116,6 +120,7 @@
         <summary>Creates a string representation of the specified object that is based on <see cref="P:System.Globalization.NumberFormatInfo.CurrentInfo" /> and <see cref="T:System.Globalization.CultureInfo" />.</summary>
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toPrecision">
@@ -145,6 +150,7 @@
         <summary>Creates a string representation of the specified <see cref="T:Microsoft.JScript.NumberObject" /> that displays the specified number of precision digits.</summary>
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="toString">
@@ -174,6 +180,7 @@
         <summary>Creates a string representation of the specified object.</summary>
         <returns>A string representation of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="valueOf">
@@ -201,6 +208,7 @@
         <summary>Returns the value of the specified <see cref="T:Microsoft.JScript.NumberObject" />.</summary>
         <returns>The value of <paramref name="thisob" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

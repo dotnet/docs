@@ -21,6 +21,7 @@
   <Docs>
     <summary>Sets iterators for combinations of elements by <see langword="Union" />, <see langword="Intersection" />, or <see langword="Difference" />, which use containment to control two nested iterators. This will return one of the enumeration values from <see cref="M:System.Xml.Xsl.Runtime.IdIterator.MoveNext" />.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="HaveCurrentNode">
@@ -41,6 +42,7 @@
       </ReturnValue>
       <Docs>
         <summary>This iterator's <see cref="P:System.Xml.XPath.XPathNodeIterator.Current" /> property is set to the next node in the iteration.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InitRightIterator">
@@ -61,6 +63,7 @@
       </ReturnValue>
       <Docs>
         <summary>Initialize right-nested iterator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NeedLeftNode">
@@ -81,6 +84,7 @@
       </ReturnValue>
       <Docs>
         <summary>The next node needs to be fetched from the left-nested iterator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NeedRightNode">
@@ -101,6 +105,7 @@
       </ReturnValue>
       <Docs>
         <summary>The next node needs to be fetched from the right-nested iterator.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="NoMoreNodes">
@@ -121,6 +126,7 @@
       </ReturnValue>
       <Docs>
         <summary>Iteration is complete; there are no more nodes.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

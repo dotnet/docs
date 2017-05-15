@@ -2,18 +2,19 @@
 title: "ICLRTask::ExitTask Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRTask.ExitTask"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRTask::ExitTask"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ExitTask method [.NET Framework hosting]"
   - "ICLRTask::ExitTask method [.NET Framework hosting]"
 ms.assetid: 746c85a6-4b33-4f72-a2e9-379fdf2e96af
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

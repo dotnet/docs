@@ -17,6 +17,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="BrowsableAttributes">
@@ -35,6 +36,7 @@
         <summary>Gets or sets the attributes on which the property browser filters.</summary>
         <value>The attributes on which the property browser filters.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ResetBrowsableAttributes">
@@ -53,6 +55,7 @@
       <Docs>
         <summary>Resets the <see cref="P:System.Windows.Forms.PropertyGridInternal.IRootGridEntry.BrowsableAttributes" /> property to the default value.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ShowCategories">
@@ -75,6 +78,7 @@
           <see langword="true" /> to group the properties by category; otherwise, <see langword="false" />.</param>
         <summary>Sorts the properties in the property browser.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

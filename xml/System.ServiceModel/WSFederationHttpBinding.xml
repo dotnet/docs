@@ -18,7 +18,7 @@
 ## Remarks  
  Federation is the ability to share identities across multiple systems for authentication and authorization. These identities can refer to users or to machines. Federated HTTP supports SOAP security as well as mixed-mode security, but it does not support exclusively using transport security. This binding provides [!INCLUDE[indigo1](~/includes/indigo1-md.md)] support for the WS-Federation protocol. Services configured with this binding must use the HTTP transport.  
   
- Bindings consist of a stack of binding elements. The stack of binding elements in <xref:System.ServiceModel.WSFederationHttpBinding> is the same as that contained in <xref:System.ServiceModel.WSHttpBinding> when <xref:System.ServiceModel.WSHttpBinding.Security%2A> is set to the default value of <xref:System.ServiceModel.WSFederationHttpSecurityMode>.  
+ Bindings consist of a stack of binding elements. The stack of binding elements in <xref:System.ServiceModel.WSFederationHttpBinding> is the same as that contained in <xref:System.ServiceModel.WSHttpBinding> when <xref:System.ServiceModel.WSHttpBinding.Security%2A> is set to the default value of <xref:System.ServiceModel.WSFederationHttpSecurityMode.Message>.  
   
  The <xref:System.ServiceModel.WSFederationHttpBinding> controls the details of the message security settings, the values of which are available from the instance of <xref:System.ServiceModel.FederatedMessageSecurityOverHttp> that is returned by the <xref:System.ServiceModel.WSFederationHttpSecurity.Message%2A> property.  
   
@@ -72,7 +72,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value of <xref:System.ServiceModel.WSFederationHttpSecurityMode> is <xref:System.ServiceModel.WSFederationHttpSecurityMode> which specifies that integrity, confidentiality, and server and client authentication are provided using SOAP message security. The details of these settings are available from the instance of <xref:System.ServiceModel.FederatedMessageSecurityOverHttp> that is returned by the <xref:System.ServiceModel.WSFederationHttpSecurity.Message%2A> property.  
+ The default value of <xref:System.ServiceModel.WSFederationHttpSecurityMode> is <xref:System.ServiceModel.WSFederationHttpSecurityMode.Message> which specifies that integrity, confidentiality, and server and client authentication are provided using SOAP message security. The details of these settings are available from the instance of <xref:System.ServiceModel.FederatedMessageSecurityOverHttp> that is returned by the <xref:System.ServiceModel.WSFederationHttpSecurity.Message%2A> property.  
   
  ]]></format>
         </remarks>
@@ -140,7 +140,7 @@
 ## Remarks  
  The stack of binding elements depends on the value of the <xref:System.ServiceModel.WSFederationHttpSecurityMode> set.  
   
- The stack of binding elements in <xref:System.ServiceModel.WSFederationHttpBinding> is the same as that contained in <xref:System.ServiceModel.WSHttpBinding> when <xref:System.ServiceModel.WSHttpBinding.Security%2A> is set to the default value of <xref:System.ServiceModel.WSFederationHttpSecurityMode>.  
+ The stack of binding elements in <xref:System.ServiceModel.WSFederationHttpBinding> is the same as that contained in <xref:System.ServiceModel.WSHttpBinding> when <xref:System.ServiceModel.WSHttpBinding.Security%2A> is set to the default value of <xref:System.ServiceModel.WSFederationHttpSecurityMode.Message>.  
   
 1.  <xref:System.ServiceModel.Channels.TransactionFlowBindingElement>  
   
@@ -150,7 +150,7 @@
   
 4.  <xref:System.ServiceModel.Channels.HttpTransportBindingElement>  
   
- However, setting <xref:System.ServiceModel.WSFederationHttpSecurityMode> to <xref:System.ServiceModel.WSFederationHttpSecurityMode> results in a stack that is something of a hybrid between the <xref:System.ServiceModel.WSHttpBinding> and <xref:System.ServiceModel.BasicHttpBinding> bindings.  
+ However, setting <xref:System.ServiceModel.WSFederationHttpSecurityMode> to <xref:System.ServiceModel.WSFederationHttpSecurityMode.TransportWithMessageCredential> results in a stack that is something of a hybrid between the <xref:System.ServiceModel.WSHttpBinding> and <xref:System.ServiceModel.BasicHttpBinding> bindings.  
   
 1.  <xref:System.ServiceModel.Channels.TransactionFlowBindingElement>  
   

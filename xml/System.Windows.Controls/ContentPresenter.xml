@@ -48,7 +48,7 @@
 ## Examples  
  The following shows a <xref:System.Windows.Controls.Button> <xref:System.Windows.Style> that sets the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.Button>. The <xref:System.Windows.Controls.ControlTemplate> defines that the <xref:System.Windows.Controls.Button> appears as an <xref:System.Windows.Shapes.Ellipse> within a <xref:System.Windows.Controls.Grid> element. The <xref:System.Windows.Controls.ContentPresenter> marks that the <xref:System.Windows.Controls.ContentControl.Content%2A> of the <xref:System.Windows.Controls.Button> should be displayed and centered vertically and horizontally within the <xref:System.Windows.Controls.Grid>.  
   
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample_snip#ButtonCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snip/CSharp/Window1.xaml#buttonct)]  -->  
+ [!code-xml[StylingIntroSample_snippet#ButtonCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snippet/CSharp/Window1.xaml#buttonct)]   
   
  The following image shows the appearance of the <xref:System.Windows.Controls.Button> when this gets applied:  
   
@@ -557,7 +557,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.ContentPresenter>|  
+|Identifier field|<xref:System.Windows.Controls.ContentPresenter.RecognizesAccessKeyProperty>|  
 |Metadata properties set to `true`|None|  
   
    

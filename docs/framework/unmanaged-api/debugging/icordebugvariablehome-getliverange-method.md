@@ -2,18 +2,19 @@
 title: "IcorDebugVariableHome::GetLiveRange Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
-apiname: 
+api_name: 
   - "ICorDebugVariableHome.GetLiveRange"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugVariableHome::GetLiveRange"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugVariableHome::GetLiveRange method [.NET Framework debugging]"
   - "GetLiveRange method, ICorDebugVariableFrame interface [.NET Framework debugging]"
 ms.assetid: 87277e1a-1595-4729-9e25-d1c3ac18ce5f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"

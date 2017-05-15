@@ -2,7 +2,7 @@
 title: "Extending Hosting Using ServiceHostFactory | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -83,7 +83,7 @@ public class DerivedFactory : ServiceHostFactory
  To use this factory instead of the default factory, provide the type name in the @ServiceHost directive as follows:  
   
 ```  
-<% @ServiceHost Factory=”DerivedFactory” Service=”MyService” %>  
+<% @ServiceHost Factory="DerivedFactory" Service="MyService" %>  
 ```  
   
  While there is no technical limit on doing what you want to the <xref:System.ServiceModel.ServiceHost> you return from <xref:System.ServiceModel.Activation.ServiceHostFactory.CreateServiceHost%2A>, we suggest that you keep your factory implementations as simple as possible. If you have lots of custom logic, it is better to put that logic inside of you host instead of inside the factory so that it can be reusable.  

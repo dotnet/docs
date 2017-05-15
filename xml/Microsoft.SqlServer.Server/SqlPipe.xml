@@ -93,6 +93,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Send">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends results directly to the client or current output consumer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The **Send** method sends data straight to the client or caller. It is usually the client that consumes the output from the **Pipe** method, but in the case of nested CLR stored procedures the output consumer can also be a stored procedure. For example, Procedure1 calls <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> with the command text "EXEC Procedure2". Procedure2 is also a managed stored procedure. If Procedure2 now calls <xref:Microsoft.SqlServer.Server.SqlPipe.Send%2A>, the row is sent to Procedure1's reader, not to the client.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Send">
       <MemberSignature Language="C#" Value="public void Send (Microsoft.SqlServer.Server.SqlDataRecord record);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Send(class Microsoft.SqlServer.Server.SqlDataRecord record) cil managed" />
@@ -301,22 +318,5 @@
         <exception cref="T:System.InvalidOperationException">A method other than <see cref="M:Microsoft.SqlServer.Server.SqlPipe.SendResultsRow(Microsoft.SqlServer.Server.SqlDataRecord)" /> or <see cref="M:Microsoft.SqlServer.Server.SqlPipe.SendResultsEnd" /> was called after the <see cref="M:Microsoft.SqlServer.Server.SqlPipe.SendResultsStart(Microsoft.SqlServer.Server.SqlDataRecord)" /> method.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Send">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sends results directly to the client or current output consumer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The **Send** method sends data straight to the client or caller. It is usually the client that consumes the output from the **Pipe** method, but in the case of nested CLR stored procedures the output consumer can also be a stored procedure. For example, Procedure1 calls <xref:System.Data.SqlClient.SqlCommand.ExecuteReader%2A> with the command text "EXEC Procedure2". Procedure2 is also a managed stored procedure. If Procedure2 now calls <xref:Microsoft.SqlServer.Server.SqlPipe.Send%2A>, the row is sent to Procedure1's reader, not to the client.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

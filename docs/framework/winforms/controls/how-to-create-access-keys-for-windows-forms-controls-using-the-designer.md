@@ -2,7 +2,7 @@
 title: "How to: Create Access Keys for Windows Forms Controls Using the Designer | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,8 +26,8 @@ helpviewer_keywords:
   - "ALT key"
 ms.assetid: 4c374c4c-4ca9-4a68-ac96-9dc3ab0f518a
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Create Access Keys for Windows Forms Controls Using the Designer

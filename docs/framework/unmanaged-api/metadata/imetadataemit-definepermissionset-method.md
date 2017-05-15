@@ -2,18 +2,19 @@
 title: "IMetaDataEmit::DefinePermissionSet Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IMetaDataEmit.DefinePermissionSet"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IMetaDataEmit::DefinePermissionSet"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "DefinePermissionSet method [.NET Framework metadata]"
   - "IMetaDataEmit::DefinePermissionSet method [.NET Framework metadata]"
 ms.assetid: 36cffbf7-82ca-4cf9-bf60-50ab491ac2d9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

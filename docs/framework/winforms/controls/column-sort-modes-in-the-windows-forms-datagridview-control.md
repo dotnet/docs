@@ -2,7 +2,7 @@
 title: "Column Sort Modes in the Windows Forms DataGridView Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], sort mode"
 ms.assetid: 43715887-2df9-4da7-bcf1-b9c7c842b2bf
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Column Sort Modes in the Windows Forms DataGridView Control

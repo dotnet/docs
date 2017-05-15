@@ -2,18 +2,19 @@
 title: "ISymUnmanagedDocument::FindClosestLine Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedDocument.FindClosestLine"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedDocument::FindClosestLine"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "FindClosestLine method [.NET Framework debugging]"
   - "ISymUnmanagedDocument::FindClosestLine method [.NET Framework debugging]"
 ms.assetid: 628f2a04-e529-407d-841e-3b3da219a9cb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

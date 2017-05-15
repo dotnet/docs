@@ -2,7 +2,7 @@
 title: "xml:space Handling in XAML | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,13 +26,13 @@ The `xml:space` attribute is an XML-defined attribute that declares the signific
 ## XAML Attribute Usage  
   
 ```  
-<object xml:space="preserve" />  
+<object xml:space="preserve" />  
 ```  
   
  \- or -  
   
 ```  
-<object xml:space="default" />  
+<object xml:space="default" />  
 ```  
   
 ## Remarks  

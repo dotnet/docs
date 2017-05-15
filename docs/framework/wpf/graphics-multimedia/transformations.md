@@ -2,7 +2,7 @@
 title: "Transformations | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,8 +25,8 @@ helpviewer_keywords:
   - "Transforms, about Transforms"
 ms.assetid: 712b543f-d8b2-4dcf-ba2c-f7921c61c6fd
 caps.latest.revision: 50
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Transformations

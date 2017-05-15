@@ -2,7 +2,7 @@
 title: "Application Settings for Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/07/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Windows Forms, application settings"
 ms.assetid: 64090a34-8556-4904-8ea0-20efe9f8c886
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Application Settings for Windows Forms
@@ -51,4 +51,4 @@ Documents the settings to enable High DPI support in Windows Forms Application s
 
 ## See also  
   
-[Windows Forms](http://msdn.microsoft.com/library/627df1e9-b254-41af-bbac-9a4f02810c54)
+[Windows Forms](../index.md)

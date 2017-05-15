@@ -2,18 +2,19 @@
 title: "ICLRAssemblyIdentityManager::IsStronglyNamed Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRAssemblyIdentityManager.IsStronglyNamed"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRAssemblyIdentityManager::IsStronglyNamed"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "IsStronglyNamed method [.NET Framework hosting]"
   - "ICLRAssemblyIdentityManager::IsStronglyNamed method [.NET Framework hosting]"
 ms.assetid: 954bd386-2076-4d00-9d46-38c728aa9cab
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

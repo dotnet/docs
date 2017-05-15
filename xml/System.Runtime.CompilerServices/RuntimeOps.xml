@@ -22,6 +22,7 @@
   <Docs>
     <summary>Contains helper methods called from dynamically generated methods.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="CreateRuntimeVariables">
@@ -50,6 +51,7 @@
         <summary>Creates an interface that can be used to modify closed over variables at runtime.</summary>
         <returns>An interface to access variables.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="CreateRuntimeVariables">
@@ -83,6 +85,7 @@
         <summary>Creates an interface that can be used to modify closed over variables at runtime.</summary>
         <returns>An interface to access variables.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExpandoCheckVersion">
@@ -116,6 +119,7 @@
         <summary>Checks the version of the Expando object.</summary>
         <returns>Returns true if the version is equal; otherwise, false.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExpandoPromoteClass">
@@ -150,6 +154,7 @@
         <param name="newClass">The new class of the Expando object.</param>
         <summary>Promotes an Expando object from one class to a new class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExpandoTryDeleteValue">
@@ -189,6 +194,7 @@
         <summary>Deletes the value of an item in an expando object.</summary>
         <returns>true if the item was successfully removed; otherwise, false.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExpandoTryGetValue">
@@ -230,6 +236,7 @@
         <summary>Gets the value of an item in an expando object.</summary>
         <returns>True if the member exists in the expando object, otherwise false.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ExpandoTrySetValue">
@@ -271,6 +278,7 @@
         <summary>Sets the value of an item in an expando object.</summary>
         <returns>Returns the index for the set member.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MergeRuntimeVariables">
@@ -306,6 +314,7 @@
         <summary>Combines two runtime variable lists and returns a new list.</summary>
         <returns>The merged runtime variables.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Quote">
@@ -341,6 +350,7 @@
         <summary>Quotes the provided expression tree.</summary>
         <returns>The quoted expression.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

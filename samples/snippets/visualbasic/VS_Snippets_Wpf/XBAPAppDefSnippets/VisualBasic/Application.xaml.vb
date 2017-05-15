@@ -1,6 +1,6 @@
 '<SnippetXBAPApplicationDefinitionCODEBEHIND>
 
-Imports System.Windows ' Application
+Imports System.Windows
 
 Namespace SDKSample
 	Partial Public Class App

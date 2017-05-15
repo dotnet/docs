@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "sdkpath compiler option [Visual Basic]"
 ms.assetid: fec8a3f1-b791-4a37-8af7-344859f8212d
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

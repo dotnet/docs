@@ -2,7 +2,7 @@
 title: "How to: Change the Spacing and Alignment of ToolStrip Items in Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "toolbars [Windows Forms], aligning items"
 ms.assetid: cd483466-0f49-43df-addf-e2b5fcd64027
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Change the Spacing and Alignment of ToolStrip Items in Windows Forms

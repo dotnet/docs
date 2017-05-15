@@ -18,6 +18,7 @@
   <Docs>
     <summary>Provides an interface for a managed installer.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="ManagedInstall">
@@ -42,6 +43,7 @@
         <summary>Executes a managed installation.</summary>
         <returns>The return code for installutil.exe. A successful installation returns 0. Other values indicate failure.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

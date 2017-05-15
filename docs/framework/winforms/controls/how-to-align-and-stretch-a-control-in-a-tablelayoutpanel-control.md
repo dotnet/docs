@@ -2,7 +2,7 @@
 title: "How to: Align and Stretch a Control in a TableLayoutPanel Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "controls [Windows Forms], aligning"
 ms.assetid: 7dc1a157-6fee-4995-8ebc-b65bdc0909a8
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Align and Stretch a Control in a TableLayoutPanel Control

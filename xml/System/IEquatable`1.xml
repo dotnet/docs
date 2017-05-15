@@ -8,6 +8,7 @@
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -48,12 +49,10 @@
   
  If you implement <see cref="T:System.IEquatable`1" />, you should also override the base class implementations of <see cref="M:System.Object.Equals(System.Object)" /> and <see cref="M:System.Object.GetHashCode" /> so that their behavior is consistent with that of the <see cref="M:System.IEquatable`1.Equals(`0)" /> method. If you do override <see cref="M:System.Object.Equals(System.Object)" />, your overridden implementation is also called in calls to the static <see langword="Equals(System.Object, System.Object)" /> method on your class. In addition, you should overload the <see langword="op_Equality" /> and <see langword="op_Inequality" /> operators. This ensures that all tests for equality return consistent results.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  For information on overriding <see cref="M:System.Object.Equals(System.Object)" />, see the <see cref="M:System.Object.Equals(System.Object)" /> article.  
   
-</para>  
-</block>  
+</para></block>  
   
  For a value type, you should always implement <see cref="T:System.IEquatable`1" /> and override <see cref="M:System.Object.Equals(System.Object)" /> for better performance. <see cref="M:System.Object.Equals(System.Object)" /> boxes value types and relies on reflection to compare two values for equality. Both your implementation of <see cref="M:System.IEquatable`1.Equals(`0)" /> and your override of <see cref="M:System.Object.Equals(System.Object)" /> should return consistent results.  
   
@@ -72,6 +71,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

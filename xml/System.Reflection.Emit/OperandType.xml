@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -26,6 +27,7 @@
   <Docs>
     <summary>Describes the operand type of Microsoft intermediate language (MSIL) instruction.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="InlineBrTarget">
@@ -36,6 +38,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -51,6 +54,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is a 32-bit integer branch target.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineField">
@@ -61,6 +65,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -76,6 +81,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is a 32-bit metadata token.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineI">
@@ -86,6 +92,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -101,6 +108,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is a 32-bit integer.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineI8">
@@ -111,6 +119,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -126,6 +135,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is a 64-bit integer.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineMethod">
@@ -136,6 +146,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -151,6 +162,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is a 32-bit metadata token.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineNone">
@@ -161,6 +173,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -176,6 +189,7 @@
       </ReturnValue>
       <Docs>
         <summary>No operand.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlinePhi">
@@ -192,6 +206,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("This API has been deprecated.")</AttributeName>
@@ -202,6 +220,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is reserved and should not be used.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineR">
@@ -212,6 +231,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -227,6 +247,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is a 64-bit IEEE floating point number.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineSig">
@@ -237,6 +258,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -252,6 +274,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is a 32-bit metadata signature token.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineString">
@@ -262,6 +285,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -277,6 +301,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is a 32-bit metadata string token.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineSwitch">
@@ -287,6 +312,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -302,6 +328,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is the 32-bit integer argument to a switch instruction.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineTok">
@@ -312,6 +339,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -327,6 +355,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is a <see langword="FieldRef" />, <see langword="MethodRef" />, or <see langword="TypeRef" /> token.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineType">
@@ -337,6 +366,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -352,6 +382,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is a 32-bit metadata token.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InlineVar">
@@ -362,6 +393,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -377,6 +409,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is 16-bit integer containing the ordinal of a local variable or an argument.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ShortInlineBrTarget">
@@ -387,6 +420,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -402,6 +436,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is an 8-bit integer branch target.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ShortInlineI">
@@ -412,6 +447,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -427,6 +463,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is an 8-bit integer.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ShortInlineR">
@@ -437,6 +474,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -452,6 +490,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is a 32-bit IEEE floating point number.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ShortInlineVar">
@@ -462,6 +501,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -477,6 +517,7 @@
       </ReturnValue>
       <Docs>
         <summary>The operand is an 8-bit integer containing the ordinal of a local variable or an argumenta.</summary>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

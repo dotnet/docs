@@ -25,6 +25,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="EnumerateAppDomains">
@@ -46,6 +47,7 @@
         <param name="appDomainInfoEnum">The <see cref="T:System.Web.Hosting.AppDomainInfoEnum" /> interface.</param>
         <summary>Gets an <see cref="T:System.Web.Hosting.AppDomainInfoEnum" /> interface.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Shutdown">
@@ -64,6 +66,7 @@
       <Docs>
         <summary>Sends a request to terminate all applications in an application domain.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ShutdownApplication">
@@ -92,6 +95,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="StartApplication">
@@ -117,6 +121,7 @@
         <param name="runtimeInterface">A runtime manager interface.</param>
         <summary>Starts the specified application</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

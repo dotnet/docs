@@ -2,18 +2,19 @@
 title: "ICLRTask2::BeginPreventAsyncAbort Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICLRTask2.BeginPreventAsyncAbort"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICLRTask2::BeginPreventAsyncAbort"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICLRTask2::BeginPreventAsyncAbort method [.NET Framework hosting]"
   - "BeginPreventAsyncAbort method [.NET Framework hosting]"
 ms.assetid: 75754c2f-38c7-4707-85fe-559db4542729
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

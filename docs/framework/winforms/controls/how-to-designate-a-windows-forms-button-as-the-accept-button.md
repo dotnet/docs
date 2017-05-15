@@ -2,7 +2,7 @@
 title: "How to: Designate a Windows Forms Button as the Accept Button | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Windows Forms controls, default button on form"
 ms.assetid: 22cc9da6-b913-4e04-9554-dee443ac5c3a
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Designate a Windows Forms Button as the Accept Button

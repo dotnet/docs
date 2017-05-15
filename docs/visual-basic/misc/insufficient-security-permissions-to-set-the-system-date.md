@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrSetLocalDateFailure"
 ms.assetid: ea2fe85a-a198-4c12-8754-ab38c36bef4c
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

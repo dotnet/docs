@@ -2,7 +2,7 @@
 title: "Application Startup Time | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "performance [WPF], startup time"
 ms.assetid: f0ec58d8-626f-4d8a-9873-c20f95e08b96
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Application Startup Time
@@ -120,7 +120,7 @@ The amount of time that is required for a WPF application to start can vary grea
 ## Configure ClickOnce to Check for Updates After Startup  
  If your application uses [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)], avoid network access on startup by configuring [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] to check the deployment site for updates after the application starts.  
   
- If you use the XAML browser application (XBAP) model, keep in mind that [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] checks the deployment site for updates even if the XBAP is already in the [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] cache. For more information, see [ClickOnce Security and Deployment](http://msdn.microsoft.com/library/abab6d34-c3c2-45c1-a8b6-43c7d3131e7a).  
+ If you use the XAML browser application (XBAP) model, keep in mind that [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] checks the deployment site for updates even if the XBAP is already in the [!INCLUDE[ndptecclick](../../../../includes/ndptecclick-md.md)] cache. For more information, see [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment).  
   
 ## Configure the PresentationFontCache Service to Start Automatically  
  The first WPF application to run after a reboot is the PresentationFontCache service. The service caches the system fonts, improves font access, and improves overall performance. There is an overhead in starting the service, and in some controlled environments, consider configuring the service to start automatically when the system reboots.  

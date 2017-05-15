@@ -2,7 +2,7 @@
 title: "Walkthrough: Performing Common Tasks Using Smart Tags on Windows Forms Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "designer actions"
 ms.assetid: cac337e6-00f6-4584-80f4-75728f5ea113
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Performing Common Tasks Using Smart Tags on Windows Forms Controls

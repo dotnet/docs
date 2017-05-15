@@ -2,7 +2,7 @@
 title: "Suspended Instance Management | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -36,7 +36,7 @@ This sample demonstrates how to manage workflow instances that have been suspend
   
 2.  Set up the SQL Server database.  
   
-    1.  From a [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] command prompt, run “setup.cmd” from the SuspendedInstanceManagement sample directory, which does the following:  
+    1.  From a [!INCLUDE[vs2010](../../../../includes/vs2010-md.md)] command prompt, run "setup.cmd" from the SuspendedInstanceManagement sample directory, which does the following:  
   
         1.  Creates a persistence database using SQL Server Express. If the persistence database already exists, then it is dropped and re-created  
   

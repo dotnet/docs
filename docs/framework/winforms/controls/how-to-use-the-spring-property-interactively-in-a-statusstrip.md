@@ -2,7 +2,7 @@
 title: "How to: Use the Spring Property Interactively in a StatusStrip | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Spring property [Windows Forms]"
 ms.assetid: 18bde842-a93c-48dd-9db3-15738a1775ce
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use the Spring Property Interactively in a StatusStrip

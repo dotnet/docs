@@ -13,6 +13,7 @@
   <Docs>
     <summary>Represents an enumerator object. This class belongs to the built-in object model category.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="enumerator">
@@ -30,6 +31,7 @@
       <Docs>
         <summary>Contains the enumerator that is represented by the <see cref="T:Microsoft.JScript.EnumeratorObject" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="LoadObject">
@@ -48,6 +50,7 @@
       <Docs>
         <summary>Advances the enumerator to the next element of the collection and stores a reference to the current element of the collection.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

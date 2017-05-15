@@ -113,6 +113,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ClearLog">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears events from the specified event log.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ For example code using this class, see [How To: Export, Archive, and Clear Event Logs](http://msdn.microsoft.com/en-us/7753ff87-f402-41ac-ac64-767e04dd1773).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ClearLog">
       <MemberSignature Language="C#" Value="public void ClearLog (string logName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearLog(string logName) cil managed" />
@@ -441,22 +458,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ClearLog">
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Clears events from the specified event log.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- For example code using this class, see [How To: Export, Archive, and Clear Event Logs](http://msdn.microsoft.com/en-us/7753ff87-f402-41ac-ac64-767e04dd1773).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

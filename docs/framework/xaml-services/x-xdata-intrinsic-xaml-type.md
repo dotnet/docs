@@ -2,7 +2,7 @@
 title: "x:XData Intrinsic XAML Type | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -30,9 +30,9 @@ Enables placement of XML data islands within a XAML production. XML elements wit
   
 ```  
 <x:XData>  
-  <elementDataRoot>  
-    [elementData]  
-  </elementDataRoot>  
+  <elementDataRoot>  
+    [elementData]  
+  </elementDataRoot>  
 </x:XData>  
 ```  
   

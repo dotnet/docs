@@ -27,6 +27,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="CallByName">
@@ -61,6 +62,7 @@
         <summary>Executes a method on an object, or sets or returns a property on an object.</summary>
         <returns>Executes a method on an object, or sets or returns a property on an object.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="IsNumeric">
@@ -83,6 +85,7 @@
         <summary>Returns a Boolean value indicating whether an expression can be evaluated as a number.</summary>
         <returns>Returns a Boolean value indicating whether an expression can be evaluated as a number.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="SystemTypeName">
@@ -105,6 +108,7 @@
         <summary>Returns a string value containing the system data type name of a variable.</summary>
         <returns>Returns a string value containing the system data type name of a variable.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TypeName">
@@ -127,6 +131,7 @@
         <summary>Returns a string value containing data type information about a variable.</summary>
         <returns>Returns a string value containing data type information about a variable.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="VbTypeName">
@@ -149,6 +154,7 @@
         <summary>Returns a string value containing the Visual Basic data type name of a variable.</summary>
         <returns>Returns a string value containing the Visual Basic data type name of a variable.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

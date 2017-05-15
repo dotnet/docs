@@ -2,18 +2,19 @@
 title: "ICorDebugHeapValue2::CreateHandle Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorDebugHeapValue2.CreateHandle"
-apilocation: 
+api_location: 
   - "mscordbi.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorDebugHeapValue2::CreateHandle"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "CreateHandle method [.NET Framework debugging]"
   - "ICorDebugHeapValue2::CreateHandle method [.NET Framework debugging]"
 ms.assetid: fbc418e8-fa22-420d-84ec-e0e1800db041
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

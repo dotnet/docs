@@ -2,18 +2,19 @@
 title: "ICorProfilerInfo::GetILToNativeMapping Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICorProfilerInfo.GetILToNativeMapping"
-apilocation: 
+api_location: 
   - "mscorwks.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICorProfilerInfo::GetILToNativeMapping"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetILToNativeMapping method, ICorProfilerInfo interface [.NET Framework profiling]"
   - "ICorProfilerInfo::GetILToNativeMapping method [.NET Framework profiling]"
 ms.assetid: 6a5431ef-22fb-4e53-bac5-703986297eb1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"

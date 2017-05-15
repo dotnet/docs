@@ -2,7 +2,7 @@
 title: "Hosting in a Windows Service Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -16,7 +16,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # Hosting in a Windows Service Application
-Windows services (formerly known as Windows NT services) provide a process model particularly suited to applications that must live in a long-running executable and do not display any form of user interface. The process lifetime of a Windows service application is managed by the service control manager (SCM), which allows you to start, stop, and pause Windows service applications. You can configure a Windows service process to start automatically when the computer starts, making it a suitable hosting environment for “always on” applications. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] Windows service applications, see [Windows Service Applications](http://go.microsoft.com/fwlink/?LinkId=89450).  
+Windows services (formerly known as Windows NT services) provide a process model particularly suited to applications that must live in a long-running executable and do not display any form of user interface. The process lifetime of a Windows service application is managed by the service control manager (SCM), which allows you to start, stop, and pause Windows service applications. You can configure a Windows service process to start automatically when the computer starts, making it a suitable hosting environment for "always on" applications. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] Windows service applications, see [Windows Service Applications](http://go.microsoft.com/fwlink/?LinkId=89450).  
   
  Applications that host long-running [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services share many characteristics with Windows services. In particular, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services are long-running server executables that do not interact directly with the user and therefore do not implement any form of user interface. As such, hosting [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services inside of a Windows service application is one option for building robust, long-running, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications.  
   
@@ -34,9 +34,9 @@ Windows services (formerly known as Windows NT services) provide a process model
   
 2.  Link the lifetime of the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services to the lifetime of the Windows service application. Typically, you want [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services hosted in a Windows service application to become active when the hosting service starts, stop listening for messages when the hosting service is stopped, and shut down the hosting process when the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service encounters an error. This can be accomplished as follows:  
   
-    -   Override [OnStart(String\<xref:System.ServiceProcess.ServiceBase.OnStart%28System.String%5B%5D%29> to open one or more instances of <xref:System.ServiceModel.ServiceHost>. A single Windows service application can host multiple [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services that start and stop as a group.  
+    -   Override <xref:System.ServiceProcess.ServiceBase.OnStart%28System.String%5B%5D%29> to open one or more instances of <xref:System.ServiceModel.ServiceHost>. A single Windows service application can host multiple [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services that start and stop as a group.  
   
-    -   Override <xref:System.ServiceProcess.ServiceBase.OnStop%2A> to call <xref:System.ServiceModel.Channels.CommunicationObject.Closed> on the <xref:System.ServiceModel.ServiceHost> any running [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services that were started during [OnStart(String\<xref:System.ServiceProcess.ServiceBase.OnStart%28System.String%5B%5D%29>.  
+    -   Override <xref:System.ServiceProcess.ServiceBase.OnStop%2A> to call <xref:System.ServiceModel.Channels.CommunicationObject.Closed> on the <xref:System.ServiceModel.ServiceHost> any running [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services that were started during <xref:System.ServiceProcess.ServiceBase.OnStart%28System.String%5B%5D%29>.  
   
     -   Subscribe to the <xref:System.ServiceModel.Channels.CommunicationObject.Faulted> event of <xref:System.ServiceModel.ServiceHost> and use the <xref:System.ServiceProcess.ServiceController> class to shut down the Windows service application in case of error.  
   

@@ -2,7 +2,7 @@
 title: "How to: Use Transforms on a MediaElement | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "MediaElements, using Transforms on"
 ms.assetid: d89c95e3-27c5-4748-8a27-72e432674032
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Use Transforms on a MediaElement

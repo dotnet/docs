@@ -2,7 +2,7 @@
 title: "How to: Draw Opaque and Semitransparent Lines | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "alpha blending, drawing lines"
 ms.assetid: 8f2508af-f495-4223-b5cc-646cbbb520eb
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Draw Opaque and Semitransparent Lines

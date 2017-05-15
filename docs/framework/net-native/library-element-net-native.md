@@ -2,7 +2,7 @@
 title: "&lt;Library&gt; Element (.NET Native) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -67,9 +67,9 @@ Defines the assembly that contains types and type members whose metadata is avai
 ```xml  
   
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
-  <Library Name=”*Utilities*”>  
-   ...  
-  </Library>  
+  <Library Name="*Utilities*">  
+   ...  
+  </Library>  
 </Directives>  
   
 ```  

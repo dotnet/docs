@@ -2,7 +2,7 @@
 title: "&lt;add&gt; of &lt;filters&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -66,7 +66,7 @@ A XPath filter that specifies the kind of message to be logged.
 ```  
 <messageLogging logEntireMessage="true"  
      logMalformedMessages="true" logMessagesAtServiceLevel="true"  
-     logMessagesAtTransportLevel="true" maxMessagesToLog="420”>  
+     logMessagesAtTransportLevel="true" maxMessagesToLog="420">  
      <filters>  
         <add xmlns:soap="http://www.w3.org/2003/05/soap-envelope">  
                         /soap:Envelope/soap:Headers  

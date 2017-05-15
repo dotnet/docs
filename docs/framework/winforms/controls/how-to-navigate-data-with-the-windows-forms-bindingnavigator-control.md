@@ -2,7 +2,7 @@
 title: "How to: Navigate Data with the Windows Forms BindingNavigator Control | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], BindingNavigator control"
 ms.assetid: 0e5d4f34-bc9b-47cf-9b8d-93acbb1f1dbb
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Navigate Data with the Windows Forms BindingNavigator Control

@@ -20,6 +20,7 @@
   
  ]]></format>
     </remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,6 +41,7 @@
         <param name="parseText">The text to parse during design time.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DesignTimeParseData" /> class without a specified filter.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -64,6 +66,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="parseText" /> is <see langword="null" />.</exception>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DataBindingHandler">
@@ -82,6 +85,7 @@
         <summary>Gets or sets the delegate for data binding at design time.</summary>
         <value>An <see cref="T:System.EventHandler" /> for data binding at design time.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DesignerHost">
@@ -100,6 +104,7 @@
         <summary>Gets the object for managing designer transactions and components.</summary>
         <value>An <see cref="T:System.ComponentModel.Design.IDesignerHost" /> object for managing designer transactions and components.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DocumentUrl">
@@ -118,6 +123,7 @@
         <summary>Gets or sets the URL at which the document is located.</summary>
         <value>A <see cref="T:System.String" /> containing the URL.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -136,6 +142,7 @@
         <summary>Gets the filter used at design time.</summary>
         <value>A <see cref="T:System.String" /> representing the filter.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ParseText">
@@ -154,6 +161,7 @@
         <summary>Gets the text to parse.</summary>
         <value>A <see cref="T:System.String" /> containing the text to parse.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ShouldApplyTheme">
@@ -173,6 +181,7 @@
         <value>
           <see langword="true" /> if a theme should be applied; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="UserControlRegisterEntries">
@@ -191,6 +200,7 @@
         <summary>Gets a collection of information about user control registrations.</summary>
         <value>An <see cref="T:System.Collections.ICollection" /> containing the tag prefix, tag name, and location of the user control. The collection is populated automatically by the .NET Framework at parse time.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

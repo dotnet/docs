@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "default properties"
 ms.assetid: 45fce9b9-d212-4b2d-ab86-6e359b8b57af
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

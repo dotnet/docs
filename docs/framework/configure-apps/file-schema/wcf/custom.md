@@ -2,7 +2,7 @@
 title: "&lt;custom&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -18,7 +18,7 @@ manager: "erikre"
 # &lt;custom&gt;
 Specifies settings for a custom peer resolver service.  
   
- \<system.ServiceModel>  
+\<system.serviceModel>  
 \<bindings>  
 \<netPeerBinding>  
 \<binding>  
@@ -27,13 +27,12 @@ Specifies settings for a custom peer resolver service.
   
 ## Syntax  
   
-```  
-  
-<custom address="Uri"  
-   resolverType="String">  
-      <headers/>  
-   <identity/>  
-</peerResolver>  
+```xml
+<custom address="Uri" 
+        resolverType="String">  
+  <headers/>  
+  <identity/>  
+</custom>  
 ```  
   
 ## Attributes and Elements  
@@ -63,7 +62,7 @@ Specifies settings for a custom peer resolver service.
  This element defines the basic settings for a custom peer resolver service, including the endpoint address of the peer hosting the service and any specific binding settings. For more information on creating a custom resolver, see [Adding a Custom Resolver to a PeerChannel Application](http://msdn.microsoft.com/en-us/12aa3787-2962-439c-ad27-46523c8b0419).  
   
 ## See Also  
- <xref:System.Servicemodel.PeerResolvers.CustomPeerResolverService>   
+ <xref:System.ServiceModel.PeerResolvers.CustomPeerResolverService>   
  <xref:System.ServiceModel.PeerResolvers.PeerCustomResolverSettings>   
  <xref:System.ServiceModel.Configuration.PeerResolverElement.Custom%2A>   
  <xref:System.ServiceModel.Configuration.PeerCustomResolverElement>   

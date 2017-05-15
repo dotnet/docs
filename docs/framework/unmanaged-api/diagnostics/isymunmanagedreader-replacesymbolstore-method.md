@@ -2,18 +2,19 @@
 title: "ISymUnmanagedReader::ReplaceSymbolStore Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ISymUnmanagedReader.ReplaceSymbolStore"
-apilocation: 
+api_location: 
   - "diasymreader.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ISymUnmanagedReader::ReplaceSymbolStore"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ReplaceSymbolStore method [.NET Framework debugging]"
   - "ISymUnmanagedReader::ReplaceSymbolStore method [.NET Framework debugging]"
 ms.assetid: 43257761-8cb1-4eaf-8fb5-1f3980cb66cd
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

@@ -18,6 +18,7 @@
   <Docs>
     <summary>Defines services for authoring JScript code in an editor.</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName="GetCodeSense">
@@ -37,6 +38,7 @@
         <summary>When implemented in a class, gets an object that is used to add IntelliSense to text when JScript code is being authored in an editor.</summary>
         <returns>An object that is used to add IntelliSense to text.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GetColorizer">
@@ -56,6 +58,7 @@
         <summary>When implemented in a class, gets an object that is used to colorize text when JScript code is being authored in an editor.</summary>
         <returns>An object that is used to colorize text.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

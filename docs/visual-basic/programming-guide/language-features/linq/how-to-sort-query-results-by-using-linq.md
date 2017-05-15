@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "query samples [Visual Basic]"
 ms.assetid: 07a4584d-9fd8-4a1d-b7d9-ccf2efa5c84e
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

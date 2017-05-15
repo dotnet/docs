@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "subroutines [Visual Basic], sub expressions"
 ms.assetid: 36b6bfd1-6539-4d8f-a5eb-6541a745ffde
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -39,10 +39,10 @@ Declares the parameters and code that define a subroutine lambda expression.
 ## Syntax  
   
 ```  
-Sub ( [ parameterlist ] ) statement  
+Sub ( [ parameterlist ] ) statement  
 - or -  
-Sub ( [ parameterlist ] )  
-  [ statements ]  
+Sub ( [ parameterlist ] )  
+  [ statements ]  
 End Sub  
   
 ```  

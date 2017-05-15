@@ -2,18 +2,19 @@
 title: "ICeeGen::GetString Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "ICeeGen.GetString"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "ICeeGen::GetString"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "ICeeGen::GetString method [.NET Framework metadata]"
   - "GetString method, ICeeGen interface [.NET Framework metadata]"
 ms.assetid: 7cc22562-128c-440a-9147-55ff20f173d7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

@@ -2,7 +2,7 @@
 title: "Discovery Security Sample | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -33,7 +33,7 @@ The Discovery specification does not require that endpoints that participate in 
   [<d:Sig Scheme="xs:anyURI"   
          [KeyId="xs:base64Binary"]?  
           Refs="..."  
-         [PrefixList]=”xs:NMTOKENS”   
+         [PrefixList]="xs:NMTOKENS"   
           Sig="xs:base64Binary"   
           ... />]?  
   ...   

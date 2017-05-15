@@ -2,18 +2,19 @@
 title: "IHostAutoEvent::Wait Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostAutoEvent.Wait"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostAutoEvent::Wait"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "Wait method, IHostAutoEvent interface [.NET Framework hosting]"
   - "IHostAutoEvent::Wait method [.NET Framework hosting]"
 ms.assetid: 535d51c5-9112-401b-8c36-85f35d7ee609
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

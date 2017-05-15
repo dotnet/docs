@@ -2,7 +2,7 @@
 title: "Walkthrough: Inheriting from a Windows Forms Control with Visual C# | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], inheritance"
 ms.assetid: 09476da0-8d4c-4a4c-b969-649519dfb438
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Walkthrough: Inheriting from a Windows Forms Control with Visual C# #
@@ -38,7 +38,7 @@ With [!INCLUDE[csprcslong](../../../../includes/csprcslong-md.md)], you can crea
   
 2.  Select the **Windows Forms Control Library** project template from the list of [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)] Projects, and type `ValueButtonLib` in the **Name** box.  
   
-     The project name, `ValueButtonLib`, is also assigned to the root namespace by default. The root namespace is used to qualify the names of components in the assembly. For example, if two assemblies provide components named `ValueButton`, you can specify your `ValueButton` component using `ValueButtonLib.ValueButton`. For more information, see [Namespaces](http://msdn.microsoft.com/library/b1c4ab46-3fad-4ffa-9deb-dd50a2d8c65a).  
+     The project name, `ValueButtonLib`, is also assigned to the root namespace by default. The root namespace is used to qualify the names of components in the assembly. For example, if two assemblies provide components named `ValueButton`, you can specify your `ValueButton` component using `ValueButtonLib.ValueButton`. For more information, see [Namespaces](../../../csharp/programming-guide/namespaces/index.md).  
   
 3.  In **Solution Explorer**, right-click **UserControl1.cs**, then choose **Rename** from the shortcut menu. Change the file name to `ValueButton.cs`. Click the **Yes** button when you are asked if you want to rename all references to the code element '`UserControl1`'.  
   

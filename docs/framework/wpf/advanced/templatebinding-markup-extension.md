@@ -2,7 +2,7 @@
 title: "TemplateBinding Markup Extension | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "TemplateBinding markup extensions"
 ms.assetid: 1d25bbfc-dbc2-499d-9f12-419d23d4ac6a
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # TemplateBinding Markup Extension
@@ -27,13 +27,13 @@ Links the value of a property in a control template to be the value of another p
 ## XAML Attribute Usage  
   
 ```  
-<object property="{TemplateBinding sourceProperty}" .../>  
+<object property="{TemplateBinding sourceProperty}" .../>  
 ```  
   
 ## XAML Attribute Usage (for Setter property in template or style)  
   
 ```  
-<Setter Property="propertyName" Value="{TemplateBinding sourceProperty}" .../>  
+<Setter Property="propertyName" Value="{TemplateBinding sourceProperty}" .../>  
 ```  
   
 ## XAML Values  
@@ -57,7 +57,7 @@ Links the value of a property in a control template to be the value of another p
  `TemplateBinding` can also be used in a verbose attribute usage that specifies the <xref:System.Windows.TemplateBindingExtension.Property%2A> property as a property=value pair:  
   
 ```  
-<object property="{TemplateBinding Property=sourceProperty}" .../>  
+<object property="{TemplateBinding Property=sourceProperty}" .../>  
 ```  
   
  The verbose usage is often useful for extensions that have more than one settable property, or if some properties are optional. Because `TemplateBinding` has only one settable property, which is required, this verbose usage is not typical.  

@@ -62,7 +62,7 @@
 ## Remarks  
  This method is called by the public `Dispose` method and the <xref:System.Object.Finalize%2A> method. `Dispose` invokes the protected `Dispose(Boolean)` method with the `disposing` parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with `disposing` set to `false`.  
   
- When the `disposing` parameter is `true`, this method releases all resources that are held by any managed objects that this [{1}](assetId:///{1}?qualifyHint=False&amp;autoUpgrade=True) references. This method invokes the `Dispose` method of each referenced object.  
+ When the `disposing` parameter is `true`, this method releases all resources that are held by any managed objects that this <xref:System.Web.UI.Design.ExtenderControlDesigner> references. This method invokes the `Dispose` method of each referenced object.  
   
  ]]></format>
         </remarks>

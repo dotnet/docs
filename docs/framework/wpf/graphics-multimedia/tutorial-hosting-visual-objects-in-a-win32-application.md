@@ -2,7 +2,7 @@
 title: "Tutorial: Hosting Visual Objects in a Win32 Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "hosting, visual objects in Win32 code"
 ms.assetid: f0e1600c-3217-43d5-875d-1864fa7fe628
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Tutorial: Hosting Visual Objects in a Win32 Application

@@ -13,6 +13,7 @@
   <Docs>
     <summary>Implements the <c>AspNetCompiler</c> task. Use the <c>AspNetCompiler</c> element in your project file to create and execute this task. For usage and parameter information, see [AspNetCompiler Task](http://msdn.microsoft.com/library/f811c019-a67b-4d54-82e6-e29549496f6e).</summary>
     <remarks>To be added.</remarks>
+    <forInternalUseOnly />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,6 +29,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.AspNetCompiler" /> class.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AddCommandLineCommands">
@@ -49,6 +51,7 @@
         <param name="commandLine">Command line builder to add arguments to.</param>
         <summary>Generates command line arguments for the AspNetCompiler tool.</summary>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="AllowPartiallyTrustedCallers">
@@ -75,6 +78,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Clean">
@@ -101,6 +105,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Debug">
@@ -127,6 +132,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="DelaySign">
@@ -146,6 +152,7 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Reflection.AssemblyDelaySignAttribute" /> should be applied to the generated assembly; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -166,6 +173,7 @@
         <returns>
           <see langword="true" /> if task execution succeeded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="FixedNames">
@@ -194,6 +202,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Force">
@@ -213,6 +222,7 @@
         <value>
           <see langword="true" /> if existing files in the <paramref name="targetDir" /> directory and its subdirectories should be overwritten; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="GenerateFullPathToTool">
@@ -232,6 +242,7 @@
         <summary>Returns the full file path of the AspNetCompiler tool.</summary>
         <returns>The full file path of the AspNetCompiler tool.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="KeyContainer">
@@ -258,6 +269,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="KeyFile">
@@ -284,6 +296,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="MetabasePath">
@@ -302,6 +315,7 @@
         <summary>Gets or sets the full IIS metabase path of the application.</summary>
         <value>The full IIS metabase path of the application.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="PhysicalPath">
@@ -327,6 +341,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TargetFrameworkMoniker">
@@ -352,6 +367,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="TargetPath">
@@ -377,6 +393,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ToolName">
@@ -395,6 +412,7 @@
         <summary>Gets the name of the AspNetCompiler tool (aspnet_compiler.exe).</summary>
         <value>The name of the AspNetCompiler tool.</value>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="Updateable">
@@ -421,6 +439,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="ValidateParameters">
@@ -441,6 +460,7 @@
         <returns>
           <see langword="true" /> if task execution should proceed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="VirtualPath">
@@ -466,6 +486,7 @@
   
  ]]></format>
         </remarks>
+        <forInternalUseOnly />
       </Docs>
     </Member>
   </Members>

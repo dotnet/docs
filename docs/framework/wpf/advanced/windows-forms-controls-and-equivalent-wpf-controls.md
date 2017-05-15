@@ -2,7 +2,7 @@
 title: "Windows Forms Controls and Equivalent WPF Controls | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "interoperability [WPF], Windows Forms"
 ms.assetid: 8a157e6b-8054-46db-a5cf-a78966acc7a1
 caps.latest.revision: 27
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # Windows Forms Controls and Equivalent WPF Controls

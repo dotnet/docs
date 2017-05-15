@@ -2,18 +2,19 @@
 title: "IHostControl::GetHostManager Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "dotnet-clr"
 ms.tgt_pltfrm: ""
 ms.topic: "reference"
-apiname: 
+api_name: 
   - "IHostControl.GetHostManager"
-apilocation: 
+api_location: 
   - "mscoree.dll"
-apitype: "COM"
+api_type: 
+  - "COM"
 f1_keywords: 
   - "IHostControl::GetHostManager"
 dev_langs: 
@@ -22,6 +23,8 @@ helpviewer_keywords:
   - "GetHostManager method [.NET Framework hosting]"
   - "IHostControl::GetHostManager method [.NET Framework hosting]"
 ms.assetid: 0fa34bca-ed18-4626-9e78-d33684d18edb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"

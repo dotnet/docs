@@ -2,7 +2,7 @@
 title: "x:Type Markup Extension | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -33,13 +33,13 @@ Supplies the CLR <xref:System.Type> object that is the underlying type for a spe
 ## XAML Attribute Usage  
   
 ```  
-<object property="{x:Type prefix:typeNameValue}" .../>  
+<object property="{x:Type prefix:typeNameValue}" .../>  
 ```  
   
 ## XAML Object Element Usage  
   
 ```  
-<x:Type TypeName="prefix:typeNameValue"/>  
+<x:Type TypeName="prefix:typeNameValue"/>  
 ```  
   
 ## XAML Values  

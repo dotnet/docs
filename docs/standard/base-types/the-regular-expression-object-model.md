@@ -2,11 +2,10 @@
 title: "The Regular Expression Object Model | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net"
 ms.reviewer: ""
 ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
+ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords: 
@@ -45,7 +44,7 @@ ms.author: "ronpet"
 manager: "wpickett"
 ---
 # The Regular Expression Object Model
-<a name="introduction"></a> This topic describes the object model used in working with .NET Framework regular expressions. It contains the following sections:  
+<a name="introduction"></a> This topic describes the object model used in working with .NET regular expressions. It contains the following sections:  
   
 -   [The Regular Expression Engine](#Engine)  
   
@@ -61,7 +60,7 @@ manager: "wpickett"
   
 <a name="Engine"></a>   
 ## The Regular Expression Engine  
- The regular expression engine in the .NET Framework is represented by the <xref:System.Text.RegularExpressions.Regex> class. The regular expression engine is responsible for parsing and compiling a regular expression, and for performing operations that match the regular expression pattern with an input string. The engine is the central component in the .NET Framework regular expression object model.  
+ The regular expression engine in .NET is represented by the <xref:System.Text.RegularExpressions.Regex> class. The regular expression engine is responsible for parsing and compiling a regular expression, and for performing operations that match the regular expression pattern with an input string. The engine is the central component in the .NET regular expression object model.  
   
  You can use the regular expression engine in either of two ways:  
   
@@ -353,5 +352,5 @@ manager: "wpickett"
   
 ## See Also  
  <xref:System.Text.RegularExpressions>   
- [.NET Framework Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)   
+ [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)   
  [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)

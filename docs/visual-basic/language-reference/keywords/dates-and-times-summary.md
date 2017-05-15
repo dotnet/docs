@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "time data types"
 ms.assetid: 914d0563-b53c-492c-ac62-d833ce805f2f
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

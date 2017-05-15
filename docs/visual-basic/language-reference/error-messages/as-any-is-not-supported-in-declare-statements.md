@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC30828"
 ms.assetid: 7e5cf519-8b64-4ac5-8116-705fe26c846d
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -55,4 +55,4 @@ The `Any` data type was used with `Declare` statements in Visual Basic 6.0 and e
  <xref:System.Runtime.InteropServices.MarshalAsAttribute>   
  [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)   
  [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)   
- [Creating Prototypes in Managed Code](http://msdn.microsoft.com/library/ecdcf25d-cae3-4f07-a2b6-8397ac6dc42d)
+ [Creating Prototypes in Managed Code](../../../framework/interop/creating-prototypes-in-managed-code.md)

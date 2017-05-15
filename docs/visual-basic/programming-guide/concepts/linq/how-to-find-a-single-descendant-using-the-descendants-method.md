@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 0c03468c-efc8-4140-98f3-fb67acd9e8e1
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Find a Single Descendant Using the Descendants Method (Visual Basic)

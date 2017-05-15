@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "reading text files, troubleshooting"
 ms.assetid: a8e9b44d-facb-4718-8c0f-466537171182
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

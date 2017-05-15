@@ -25,7 +25,7 @@ title: .NET Documentation
                 </a>
             </li>
             <li>
-                <a href="/dotnet/core/api/">
+                <a href="/dotnet/api/?view=netcore-1.1">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -43,7 +43,7 @@ title: .NET Documentation
                 </a>
             </li>
             <li>
-                <a href="https://msdn.microsoft.com/library/mt472912(v=vs.110).aspx">
+                <a href="/dotnet/api/?view=netframework-4.7">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -81,8 +81,8 @@ title: .NET Documentation
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="/dotnet/articles/welcome">What is .NET?</a></h3>
-                                                <p><a href="/dotnet/articles/standard/getting-started">Get Started</a></p>
+                                                <h3><a href="/dotnet/articles/welcome">.NET Platform Guide</a></h3>
+                                                <p><a href="/dotnet/articles/standard/get-started">Get Started</a></p>
                                                 <p><a href="/dotnet/articles/standard/tour">Tour of .NET</a></p>
                                                 <p><a href="/dotnet/articles/standard/components">.NET Architectural Concepts</a></p>
                                             </div>
@@ -101,7 +101,7 @@ title: .NET Documentation
                                             </div>
                                             <div class="cardText">
                                                 <h3><a href="/dotnet/articles/core">.NET Core Guide</a></h3>
-                                                <p><a href="/dotnet/articles/core/getting-started">Get Started</a></p>
+                                                <p><a href="/dotnet/articles/core/get-started">Get Started</a></p>
                                                 <p><a href="/dotnet/articles/core/tutorials">Tutorials</a></p>
                                                 <p><a href="/dotnet/articles/core/porting">Porting from .NET Framework</a></p>
                                                 <p><a href="/aspnet/core/getting-started">ASP.NET Core</a></p>
@@ -207,17 +207,22 @@ title: .NET Documentation
                                     </div>
                                 </div>
                             </li>
+                            <li class="fullSpan">
+                                <div class="container footer">
+                                    <p><a href="https://github.com/dotnet/Docs/blob/master/CONTRIBUTING.md">Contribute to .NET docs and samples</a></p>
+                                </div>
+                            </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#web">Web</a>
-                        <ul id="web" class="cardsG">
+                        <ul id="web" class="cardsC">
                             <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-web-1.svg" alt="" />
                                                 </div>
                                             </div>
@@ -236,7 +241,7 @@ title: .NET Documentation
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-web-2.svg" alt="" />
                                                 </div>
                                             </div>
@@ -255,7 +260,7 @@ title: .NET Documentation
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-web-3.svg" alt="" />
                                                 </div>
                                             </div>
@@ -274,7 +279,7 @@ title: .NET Documentation
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-web-4.svg" alt="" />
                                                 </div>
                                             </div>
@@ -294,7 +299,7 @@ title: .NET Documentation
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-web-5.svg" alt="" />
                                                 </div>
                                             </div>
@@ -313,7 +318,7 @@ title: .NET Documentation
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-web-6.svg" alt="" />
                                                 </div>
                                             </div>
@@ -332,13 +337,13 @@ title: .NET Documentation
                     </li>
                     <li>
                         <a href="#cloud">Cloud</a>
-                        <ul id="cloud" class="cardsG">
+                        <ul id="cloud" class="cardsC">
                             <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-cloud-1.svg" alt="" />
                                                 </div>
                                             </div>
@@ -358,7 +363,7 @@ title: .NET Documentation
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-cloud-2.svg" alt="" />
                                                 </div>
                                             </div>
@@ -377,7 +382,7 @@ title: .NET Documentation
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-cloud-3.svg" alt="" />
                                                 </div>
                                             </div>
@@ -397,7 +402,7 @@ title: .NET Documentation
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-cloud-4.svg" alt="" />
                                                 </div>
                                             </div>
@@ -416,13 +421,13 @@ title: .NET Documentation
                     </li>
                     <li>
                         <a href="#mobile">Mobile</a>
-                        <ul id="mobile" class="cardsG">
+                        <ul id="mobile" class="cardsC">
                             <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-mobile-1.svg" alt="" />
                                                 </div>
                                             </div>
@@ -441,7 +446,7 @@ title: .NET Documentation
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-mobile-2.svg" alt="" />
                                                 </div>
                                             </div>
@@ -460,7 +465,7 @@ title: .NET Documentation
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-mobile-3.svg" alt="" />
                                                 </div>
                                             </div>
@@ -478,13 +483,13 @@ title: .NET Documentation
                     </li>
                     <li>
                         <a href="#desktop">Desktop</a>
-                        <ul id="desktop" class="cardsG">
+                        <ul id="desktop" class="cardsC">
                             <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-desktop-1.svg" alt="" />
                                                 </div>
                                             </div>
@@ -505,7 +510,7 @@ title: .NET Documentation
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-desktop-2.svg" alt="" />
                                                 </div>
                                             </div>
@@ -525,7 +530,7 @@ title: .NET Documentation
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-desktop-3.svg" alt="" />
                                                 </div>
                                             </div>
@@ -544,7 +549,7 @@ title: .NET Documentation
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-desktop-4.svg" alt="" />
                                                 </div>
                                             </div>
@@ -562,13 +567,13 @@ title: .NET Documentation
                     </li>
                     <li>
                         <a href="#gaming">Gaming</a>
-                        <ul id="gaming" class="cardsG">
+                        <ul id="gaming" class="cardsC">
                             <li>
                                 <div class="cardSize">
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-gaming-1.svg" alt="" />
                                                 </div>
                                             </div>
@@ -589,7 +594,7 @@ title: .NET Documentation
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-gaming-2.svg" alt="" />
                                                 </div>
                                             </div>
@@ -608,7 +613,7 @@ title: .NET Documentation
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-gaming-3.svg" alt="" />
                                                 </div>
                                             </div>
@@ -628,7 +633,7 @@ title: .NET Documentation
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardImageOuter">
-                                                <div class="cardImage">
+                                                <div class="cardImage bgdAccent1">
                                                     <img src="/dotnet/articles/images/hub/net-docs-gaming-4.svg" alt="" />
                                                 </div>
                                             </div>

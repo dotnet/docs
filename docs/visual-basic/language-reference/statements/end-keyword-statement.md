@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "End keyword"
 ms.assetid: 42d6e088-ab0f-4cda-88e8-fdce3e5fcf4f
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -42,26 +42,26 @@ When followed by an additional keyword, terminates the definition of the stateme
   
 ```  
 End AddHandler  
-End Class   
-End Enum   
-End Event   
-End Function   
-End Get   
-End If   
-End Interface   
-End Module   
-End Namespace   
-End Operator   
-End Property   
+End Class   
+End Enum   
+End Event   
+End Function   
+End Get   
+End If   
+End Interface   
+End Module   
+End Namespace   
+End Operator   
+End Property   
 End RaiseEvent  
 End RemoveHandler  
-End Select   
-End Set   
-End Structure   
-End Sub   
-End SyncLock   
-End Try   
-End While   
+End Select   
+End Set   
+End Structure   
+End Sub   
+End SyncLock   
+End Try   
+End While   
 End With  
 ```  
   

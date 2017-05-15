@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "declaring object variables"
 ms.assetid: 2fa77dde-1fb2-439a-80d4-3e9787649fad
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

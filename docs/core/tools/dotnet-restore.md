@@ -1,22 +1,18 @@
 ---
-title: dotnet-restore command | Microsoft Docs
-description: Learn how to restore dependencies and project-specific tools with the dotnet restore command 
+title: dotnet-restore command - .NET Core CLI | Microsoft Docs
+description: Learn how to restore dependencies and project-specific tools with the dotnet restore command.
 keywords: dotnet-restore, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/07/2016
+ms.date: 03/24/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 60489b25-38de-47e6-bed1-59d9f42e2d46
+ms.assetid: fd7a5769-afbe-4838-bbaf-3ae0cfcbb914
 ---
 
-#dotnet-restore
-
-> [!WARNING]
-> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 version,
-> see the [dotnet-restore (.NET Core Tools RC4)](../preview3/tools/dotnet-restore.md) topic.
+# dotnet-restore
 
 ## Name
 
@@ -24,77 +20,67 @@ ms.assetid: 60489b25-38de-47e6-bed1-59d9f42e2d46
 
 ## Synopsis
 
-`dotnet restore [root] [--help] [--force-english-output] [--source]  
-    [--packages] [--disable-parallel] [--fallbacksource] [--configfile] 
-    [--no-cache] [--infer-runtimes] [--verbosity] [--ignore-failed-sources]`
+`dotnet restore [<ROOT>] [-s|--source] [-r|--runtime] [--packages] [--disable-parallel] [--configfile] [--no-cache] [--ignore-failed-sources] [--no-dependencies] [-v|--verbosity] [-h|--help]`
 
 ## Description
 
-The `dotnet restore` command uses NuGet to restore dependencies as well as project-specific tools that are specified in the [project.json](project-json.md) file. 
-By default, the restoration of dependencies and tools are done in parallel.
+The `dotnet restore` command uses NuGet to restore dependencies as well as project-specific tools that are specified in the project file. By default, the restoration of dependencies and tools are performed in parallel.
 
-In order to restore the dependencies, NuGet needs the feeds where the packages are located. 
-Feeds are usually provided via the NuGet.config configuration file; a default one is present when the CLI tools are installed. 
-You can specify more feeds by creating your own NuGet.config file in the project directory. 
-Feeds can also be specified per invocation on the command prompt. 
+In order to restore the dependencies, NuGet needs the feeds where the packages are located. Feeds are usually provided via the *NuGet.config* configuration file. A default configuration file is provided when the CLI tools are installed. You specify additional feeds by creating your own *NuGet.config* file in the project directory. You also specify additional feeds per invocation at a command prompt. 
 
-For dependencies, you can specify where the restored packages are placed during the restore operation using the 
-`--packages` argument. 
-If not specified, the default NuGet package cache is used. 
-It is found in the `.nuget/packages` directory in the user's home directory on all operating systems (for example, */home/user1* on Linux or *C:\Users\user1* on Windows).
+For dependencies, you specify where the restored packages are placed during the restore operation using the `--packages` argument. If not specified, the default NuGet package cache is used, which is found in the `.nuget/packages` directory in the user's home directory on all operating systems (for example, */home/user1* on Linux or *C:\Users\user1* on Windows).
 
-For project-specific tooling, `dotnet restore` first restores the package in which the tool is packed, and then
-proceeds to restore the tool's dependencies as specified in its [project.json](project-json.md). 
+For project-specific tooling, `dotnet restore` first restores the package in which the tool is packed, and then proceeds to restore the tool's dependencies as specified in its project file.
+
+The behavior of the `dotnet restore` command is affected by some of the settings in the *Nuget.Config* file, if present. For example, setting the `globalPackagesFolder` in *NuGet.Config* places the restored NuGet packages in the specified folder. This is an alternative to specifying the `--packages` option on the `dotnet restore` command. For more information, see the [NuGet.Config reference](https://docs.microsoft.com/nuget/schema/nuget-config-file).
+
+## Arguments
+
+`ROOT` 
+    
+Optional path to the project file to restore.
 
 ## Options
-
-`[root]` 
-    
- A list of projects or project folders to restore. Each value can be a path to a [project.json](project-json.md) or [global.json](global-json.md) file, or to a folder. If a folder is specified, the restore operation will recursively search for a [project.json](project-json.md) file in all subdirectories and restores for each [project.json](project-json.md) file found.
 
 `-h|--help`
 
 Prints out a short help for the command.
 
- `--force-english-output`
-
-Forces the application to run using an invariant, English-based culture.
-
 `-s|--source <SOURCE>`
 
-Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the NuGet.config file(s). Multiple sources can be provided by specifying this option multiple times.
+Specifies a NuGet package source to use during the restore operation. This overrides all of the sources specified in the *NuGet.config* file(s). Multiple sources can be provided by specifying this option multiple times.
 
-`--packages <PACKAGES_DIRECTORY]`
+`-r|--runtime <RUNTIME_IDENTIFIER>`
 
-Specifies the directory to place the restored packages in. 
+Specifies a runtime for the package restore. This is used to restore packages for runtimes not explicitly listed in the `<RuntimeIdentifiers>` tag in the *.csproj* file. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Provide multiple RIDs by specifying this option multiple times.
+
+`--packages <PACKAGES_DIRECTORY>`
+
+Specifies the directory for restored packages. 
 
 `--disable-parallel`
 
 Disables restoring multiple projects in parallel. 
 
-`-f|--fallbacksource <FEED>`
-
-Specifies a list of packages sources to use as a fallback in the restore operation if all other sources fail. All valid feed formats are allowed. Multiple fallback sources can be provided by specifying this option multiple times.
-
 `--configfile <FILE>`
 
-The NuGet configuration file (NuGet.config) to use for the restore operation.
+The NuGet configuration file (*NuGet.config*) to use for the restore operation.
 
 `--no-cache`
 
 Specifies to not cache packages and HTTP requests.
 
-`--infer-runtimes`
+`--ignore-failed-sources`
 
-Temporary option to allow NuGet to infer Runtime Identifiers (RIDs) for legacy repositories.
+Only warn about failed sources if there are packages meeting the version requirement.
 
-`--verbosity [LEVEL]`
+`--no-dependencies`
 
-The verbosity of logging to use. Allowed values: `Debug`, `Verbose`, `Information`, `Minimal`, `Warning`, or `Error`.
+When restoring a project with project-to-project (P2P) references, restore the root project and not the references.
 
-` --ignore-failed-sources`
+`--verbosity <LEVEL>`
 
-Only warn about failed sources if there are packages meeting version requirement.
+Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 
 ## Examples
 
@@ -104,16 +90,16 @@ Restore dependencies and tools for the project in the current directory:
 
 Restore dependencies and tools for the `app1` project found in the given path:
 
-`dotnet restore ~/projects/app1/project.json`
+`dotnet restore ~/projects/app1/app1.csproj`
 	
-Restore the dependencies and tools for the project in the current directory using the file path provided as the fallback source:
+Restore the dependencies and tools for the project in the current directory using the file path provided as the source:
 
-`dotnet restore -f c:\packages\mypackages` 
+`dotnet restore -s c:\packages\mypackages` 
 
-Restore the dependencies and tools for the project in the current directory using the two file paths provided as the fallback sources:
+Restore the dependencies and tools for the project in the current directory using the two file paths provided as sources:
 
-`dotnet restore -f c:\packages\mypackages -f c:\packages\myotherpackages` 
+`dotnet restore -s c:\packages\mypackages -s c:\packages\myotherpackages` 
 
-Restore dependencies and tools for the project in the current directory and shows only errors in the output:
+Restore dependencies and tools for the project in the current directory and shows only minimal output:
 
-`dotnet restore --verbosity Error`
+`dotnet restore --verbosity minimal`

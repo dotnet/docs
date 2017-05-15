@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrFileSystem_IllegalOutputAccess"
 ms.assetid: 29a40d2d-10d7-476b-b7c5-d10ab6a3bcce
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

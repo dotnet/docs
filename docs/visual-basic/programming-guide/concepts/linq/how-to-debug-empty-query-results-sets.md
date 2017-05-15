@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: b242c90a-d2b8-4309-8a1e-e4e70736c727
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Debug Empty Query Results Sets (Visual Basic)

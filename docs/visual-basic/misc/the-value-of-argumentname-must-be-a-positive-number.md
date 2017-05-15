@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrApplicationLog_NegativeNumber"
 ms.assetid: 597c412c-499e-49d2-b656-af2d90c292a5
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

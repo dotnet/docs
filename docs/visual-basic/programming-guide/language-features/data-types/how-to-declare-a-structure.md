@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "structures, declaring"
 ms.assetid: d5e98381-eb81-47d4-af83-48cc534a2572
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

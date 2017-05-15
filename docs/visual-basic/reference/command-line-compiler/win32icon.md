@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "/win32icon compiler option [Visual Basic]"
 ms.assetid: aecaab01-9353-46c5-941c-6edabd4eff92
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

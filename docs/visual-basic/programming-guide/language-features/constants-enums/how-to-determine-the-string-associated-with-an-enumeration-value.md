@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "values, enumeration members"
 ms.assetid: 9253e7c8-579c-49a2-8f26-392b20ea99eb
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

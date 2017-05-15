@@ -16,7 +16,7 @@ ms.assetid: fe2e4b4c-6483-4106-a4b4-a33e2e306591
 
 Delegates define a type, which specify a particular method signature. A method (static or instance) that satisfies this signature can be assigned to a variable of that type, then called directly (with the appropriate arguments) or passed as an argument itself to another method and then called. The following example demonstrates delegate use.
 
-```cs
+```csharp
 public class Program
 {
 
@@ -50,7 +50,7 @@ In order to streamline the development process, .NET includes a set of delegate 
 
 We can now take our example above and rewrite it using the `Func<>` delegate instead of a custom type. The program will continue running exactly the same.
 
-```cs
+```csharp
 public class Program
 {
 
@@ -69,11 +69,11 @@ public class Program
 
 ```
 
-For this simple example, having a method defined outside of the Main() method seems a bit superfluous. It is because of this that .NET Framework 2.0 introduced the concept of **anonymous delegates**. With their support you are able to create “inline” delegates without having to specify any additional type or method. You simply inline the definition of the delegate where you need it.
+For this simple example, having a method defined outside of the Main() method seems a bit superfluous. It is because of this that .NET Framework 2.0 introduced the concept of **anonymous delegates**. With their support you are able to create "inline" delegates without having to specify any additional type or method. You simply inline the definition of the delegate where you need it.
 
 For an example, we are going to switch it up and use our anonymous delegate to filter out a list of only even numbers and then print them to the console.
 
-```cs
+```csharp
 public class Program
 {
 
@@ -106,11 +106,11 @@ Notice the highlighted lines. As you can see, the body of the delegate is just a
 
 However, even with this approach, there is still much code that we can throw away. This is where **lambda expressions** come into play.
 
-Lambda expressions, or just “lambdas” for short, were introduced first in C# 3.0, as one of the core building blocks of Language Integrated Query (LINQ). They are just a more convenient syntax for using delegates. They declare a signature and a method body, but don’t have an formal identity of their own, unless they are assigned to a delegate. Unlike delegates, they can be directly assigned as the left-hand side of event registration or in various Linq clauses and methods.
+Lambda expressions, or just "lambdas" for short, were introduced first in C# 3.0, as one of the core building blocks of Language Integrated Query (LINQ). They are just a more convenient syntax for using delegates. They declare a signature and a method body, but don’t have an formal identity of their own, unless they are assigned to a delegate. Unlike delegates, they can be directly assigned as the left-hand side of event registration or in various Linq clauses and methods.
 
 Since a lambda expression is just another way of specifying a delegate, we should be able to rewrite the above sample to use a lambda expression instead of an anonymous delegate.
 
-```cs
+```csharp
 public class Program
 {
 
@@ -138,7 +138,7 @@ If you take a look at the highlighted lines, you can see how a lambda expression
 
 Again, lambdas are just delegates, which means that they can be used as an event handler without any problems, as the following code snippet illustrates.
 
-```cs
+```csharp
 public MainWindow()
 {
     InitializeComponent();

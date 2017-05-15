@@ -2,7 +2,7 @@
 title: "Dynamically specify predicate filters at runtime"
 description: How to dynamically specify predicate filters at runtime.
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 12/1/2016
@@ -30,7 +30,7 @@ In some cases you do not know until run time how many predicates you have to app
   
 5.  Add the following line to the `Main` method in class `DynamicPredicates`, under the declaration of `ids`.  
   
-     ```cs
+     ```csharp
      QueryById(ids);
      ```
 

@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "FileOpen function"
 ms.assetid: 4c145456-5453-4bda-aab5-578dc8bee59a
 caps.latest.revision: 24
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

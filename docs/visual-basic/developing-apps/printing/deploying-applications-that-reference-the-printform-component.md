@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "PrintForm component [Visual Basic], deploying"
 ms.assetid: b595ea44-a712-4625-a761-190c64f59bbe
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -54,5 +54,5 @@ If you want to deploy an application that references the <xref:Microsoft.VisualB
  As an alternative to bootstrapping, you can pre-deploy the <xref:Microsoft.VisualBasic.PowerPacks.Printing.PrintForm> component by using an electronic software distribution system like Microsoft Systems Management Server.  
   
 ## See also  
- [How to: Install Prerequisites with a ClickOnce Application](http://msdn.microsoft.com/library/e964fca5-fdfd-47cf-a1c9-7fb96b1c88b5)   
+ [How to: Install Prerequisites with a ClickOnce Application](/visualstudio/deployment/how-to-install-prerequisites-with-a-clickonce-application)   
  [PrintForm Component](../../../visual-basic/developing-apps/printing/printform-component.md)

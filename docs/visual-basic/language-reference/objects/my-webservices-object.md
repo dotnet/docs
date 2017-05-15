@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "My.WebServices object"
 ms.assetid: f188dc05-2c75-41b6-bb68-122d1c3110a2
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

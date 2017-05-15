@@ -1,87 +1,80 @@
 ---
-title: dotnet-run command | Microsoft Docs
+title: dotnet-run command - .NET Core CLI | Microsoft Docs
 description: The dotnet-run command provides a convenient option to run your application from the source code.
 keywords: dotnet-run, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/07/2016
+ms.date: 03/22/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 495ff50b-cb30-4d30-8f20-beb3d5e7c31f
+ms.assetid: 40d4e60f-9900-4a48-b03c-0bae06792d91
 ---
 
-#dotnet-run
-
-> [!WARNING]
-> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 version,
-> see the [dotnet-run (.NET Core Tools RC4)](../preview3/tools/dotnet-run.md) topic.
+# dotnet-run
 
 ## Name 
 
-`dotnet-run` - Runs source code 'in-place' without any explicit compile or launch commands.
+`dotnet-run` - Runs source code without any explicit compile or launch commands.
 
 ## Synopsis
 
-`dotnet run [--help] [--framework] [--configuration]
-    [--project] [[--] [application arguments]]`
+`dotnet run [-c|--configuration] [-f|--framework] [-p|--project] [[--] [application arguments]] [-h|--help]`
 
 ## Description
-The `dotnet run` command provides a convenient option to run your application from the source code with one command. 
-It compiles source code, generates an output program and then runs that program. 
-This command is useful for fast iterative development and can also be used to run a source-distributed program (for example, a website).
 
-This command relies on [dotnet build](dotnet-build.md) to build source inputs to a .NET assembly, before launching the program. 
-The requirements for this command and the handling of source inputs are all inherited from the build command. 
-The documentation for the build command provides more information on those requirements.
+The `dotnet run` command provides a convenient option to run your application from the source code with one command. It's useful for fast iterative development from the command line. The command depends on the [`dotnet build`](dotnet-build.md) command to build the code. Any requirements for the build, such as that the project must be restored first, apply to `dotnet run` as well. 
 
-Output files are written to the child *bin* folder, which will be created if it doesn't exist. 
-Files will be overwritten as needed. 
-Temporary files are written to the child *obj* folder.  
+Output files are written into the default location, which is `bin/<configuration>/<target>`. For example if you have a `netcoreapp1.0` application and you run `dotnet run`, the output is placed in `bin/Debug/netcoreapp1.0`. Files are overwritten as needed. Temporary files are placed in the `obj` directory. 
 
-In case of a project with multiple specified frameworks, `dotnet run` will first select the .NET Core frameworks. If those do not exist, it will error out. To specify other frameworks, use the `--framework` argument.
+If the project specifies multiple frameworks, executing `dotnet run` results in an error unless the `-f|--framework <FRAMEWORK>` option is used to specify the framework.
 
-The `dotnet run` command must be used in the context of projects, not built assemblies. If you're trying to run a portable application DLL instead, you should use [dotnet](dotnet.md) without any command like in the following example:
+The `dotnet run` command is used in the context of projects, not built assemblies. If you're trying to run a framework-dependent application DLL instead, you must use [dotnet](dotnet.md) without a command. For example, to run `myapp.dll`, use:
  
-`dotnet myapp.dll`
+```
+dotnet myapp.dll
+```
 
-For more information about the `dotnet` driver, see the [.NET Core Command Line Tools (CLI)](index.md) topic.
+For more information on the `dotnet` driver, see the [.NET Core Command Line Tools (CLI)](index.md) topic.
+
+In order to run the application, the `dotnet run` command resolves the dependencies of the application that are outside of the shared runtime from the NuGet cache. Because it uses cached dependencies, it's not recommended to use `dotnet run` to run applications in production. Instead, [create a deployment](../deploying/index.md) using the [`dotnet publish`](dotnet-publish.md) command and deploy the published output. 
 
 ## Options
 
 `--`
 
-Delimits arguments to `dotnet run` from arguments for the application being run. 
-All arguments after this one will be passed to the application being run. 
+Delimits arguments to `dotnet run` from arguments for the application being run. All arguments after this one are passed to the application run. 
 
 `-h|--help`
 
 Prints out a short help for the command.
 
-`-f`, `--framework <FRAMEWORK_IDENTIFIER>`
+`-c|--configuration <CONFIGURATION>`
 
-Runs the application for a given framework identifier (FID). 
+Configuration to use for building the project. The default value is `Debug`.
 
-`-c`, `--configuration <Debug|Release>`
+`-f|--framework <FRAMEWORK>`
 
-Configuration to use when publishing. The default value is `Debug`.
+Builds and runs the app using the specified [framework](../../standard/frameworks.md). The framework must be specified in the project file.
 
-`-p`, `--project [PATH]`
+`-p|--project <PATH/PROJECT.csproj>`
 
-Specifies which project to run. 
-It can be a path to a [project.json](project-json.md) file or to a directory containing a [project.json](project-json.md) file. It defaults to
-current directory if not specified. 
+Specifies the path and name of the project file. (See the NOTE.) It defaults to the current directory if not specified.
+
+> [!NOTE]
+> Use the path and name of the project file with the `-p|--project` option. A regression in the CLI prevents providing a folder path at this time. For more information and to track this issue, see [dotnet run -p, can not start a project (dotnet/cli #5992)](https://github.com/dotnet/cli/issues/5992).
 
 ## Examples
 
 Run the project in the current directory:
+
 `dotnet run` 
 
 Run the specified project:
 
-`dotnet run --project /projects/proj1/project.json`
+`dotnet run --project /projects/proj1/proj1.csproj`
 
-Run the project in the current directory (the `--help` argument in this example is passed to the application being run, since the `--` argument was used):
+Run the project in the current directory (the `--help` argument in this example is passed to the application, since the `--` argument is used):
 
 `dotnet run --configuration Release -- --help`

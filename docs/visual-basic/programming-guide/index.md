@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Visual Basic, language reference"
 ms.assetid: 640e5796-2796-433c-af37-4d2a2334895b
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

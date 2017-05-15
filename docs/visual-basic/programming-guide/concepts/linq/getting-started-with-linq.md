@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "LINQ, Visual Basic"
 ms.assetid: 53c66373-ff43-431f-b4bb-f98362830279
 caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -64,7 +64,7 @@ This section contains overviews, examples, and background information that will 
  [Overview of LINQ to XML in Visual Basic](../../../../visual-basic/programming-guide/language-features/xml/overview-of-linq-to-xml.md)  
  Describes how Visual Basic supports LINQ to XML.  
   
- [LINQ to DataSet Overview](http://msdn.microsoft.com/library/dc20a8fb-03f6-4b68-9c2b-7f7299e3070b)  
+ [LINQ to DataSet Overview](../../../../framework/data/adonet/linq-to-dataset-overview.md)  
  Provides a conceptual overview of LINQ to DataSet.  
   
  [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)  

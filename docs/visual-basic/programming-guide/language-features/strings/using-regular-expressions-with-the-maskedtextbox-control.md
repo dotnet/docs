@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "strings [Visual Basic], masked edit"
 ms.assetid: 2a048fb0-7053-487d-b2c5-ffa5e22ed6f9
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -81,4 +81,4 @@ This example demonstrates how to convert simple regular expressions to work with
  <xref:System.Windows.Forms.MaskedTextBox.Mask%2A>   
  <xref:System.Windows.Forms.MaskedTextBox>   
  [Validating Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/validating-strings.md)   
- [MaskedTextBox Control](http://msdn.microsoft.com/library/235d6121-027d-481d-8d59-4f6794d15d0c)
+ [MaskedTextBox Control](../../../../framework/winforms/controls/maskedtextbox-control-windows-forms.md)

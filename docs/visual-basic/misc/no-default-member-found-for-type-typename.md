@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrMissingMember_NoDefaultMemberFound1"
 ms.assetid: 1869ecb8-7c6a-422f-86ac-5da96c6adc66
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

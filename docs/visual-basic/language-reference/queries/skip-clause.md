@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "Skip clause"
 ms.assetid: f00eb172-3907-4c43-9745-d8546ab86234
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

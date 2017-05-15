@@ -43,7 +43,7 @@ Structs are defined by using the [struct](../../../csharp/language-reference/key
   
 -   Within a struct declaration, fields cannot be initialized unless they are declared as const or static.  
   
--   A struct cannot declare a default constructor (a constructor without parameters) or a destructor.  
+-   A struct cannot declare a default constructor (a constructor without parameters) or a finalizer.  
   
 -   Structs are copied on assignment. When a struct is assigned to a new variable, all the data is copied, and any modification to the new copy does not change the data for the original copy. This is important to remember when working with collections of value types such as Dictionary\<string, myStruct>.  
   
@@ -71,8 +71,6 @@ Structs are defined by using the [struct](../../../csharp/language-reference/key
 -   [How to: Know the Difference Between Passing a Struct and Passing a Class Reference to a Method](../../../csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md)  
   
 -   [How to: Implement User-Defined Conversions Between Structs](../../../csharp/programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)  
-  
--   [More About Variables](http://go.microsoft.com/fwlink/?LinkId=221230) in [Beginning Visual C# 2010](http://go.microsoft.com/fwlink/?LinkId=221214)  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

@@ -32,8 +32,8 @@ helpviewer_keywords:
   - "MyBase keyword, relationship to similar programming elements"
 ms.assetid: f8e241ae-b1ed-4886-9aa0-08c632154029
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

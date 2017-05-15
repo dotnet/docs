@@ -2,8 +2,8 @@
 title: Structs | C# Guide
 description: Learn about the struct type and how you create them
 keywords: .NET, .NET Core, C#
-author:  stevehoag
-ms.author: shoag
+author: BillWagner
+ms.author: wiwagn
 ms.date: 10/12/2016
 ms.topic: article
 ms.prod: .net
@@ -39,7 +39,7 @@ Structs share most of the same syntax as classes, although structs are more limi
   
 -   Within a struct declaration, fields cannot be initialized unless they are declared as `const` or `static`.  
   
--   A struct cannot declare a default constructor (a constructor without parameters) or a destructor.  
+-   A struct cannot declare a default constructor (a constructor without parameters) or a finalizer.  
   
 -   Structs are copied on assignment. When a struct is assigned to a new variable, all the data is copied, and any modification to the new copy does not change the data for the original copy. This is important to remember when working with collections of value types such as Dictionary<string, myStruct>.  
   

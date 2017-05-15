@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "bit shift operators"
 ms.assetid: 64889319-a057-471b-85d8-69fcd4af6230
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

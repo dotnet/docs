@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 865cf54e-f8ac-4871-863b-a3e6fc61a4b9
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Modifying Elements, Attributes, and Nodes in an XML Tree

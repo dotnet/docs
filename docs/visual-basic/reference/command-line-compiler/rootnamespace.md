@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "rootnamespace compiler option [Visual Basic]"
 ms.assetid: e9245edf-6bef-420d-a7c7-324117752783
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

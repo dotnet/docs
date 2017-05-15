@@ -1,10 +1,10 @@
 ---
 title: Attributes | C#
-description: Learn how attributes work in C#
+description: Learn how attributes work in C#.
 keywords: .NET, .NET Core, C#, attributes
 author: mgroves
 ms.author: wiwagn
-ms.date: 1/22/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
@@ -34,10 +34,9 @@ comfortable with.
 
 ## Create the Application
 
-Now that you've installed all the tools, create a new .NET Core
-application. To use the command line generator, execute the following command in your favorite shell:
+Now that you've installed all the tools, create a new .NET Core application. To use the command line generator, execute the following command in your favorite shell:
 
-`dotnet new`
+`dotnet new console`
 
 This command will create barebones .NET core project files. You will need to execute `dotnet restore` to restore the dependencies needed to compile this project.
 

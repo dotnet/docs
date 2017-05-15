@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "ByVal keyword"
 ms.assetid: 1eaf4e58-b305-4785-9e3d-e416b9c75598
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

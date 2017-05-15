@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "XML literals [Visual Basic], white space"
 ms.assetid: dfe3a9ff-d69a-418e-a6b5-476f4ed84219
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrNetwork_UploadAddressNeedsFilename"
 ms.assetid: 0ee11749-0432-4ccb-8c08-1663a4a55ad0
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

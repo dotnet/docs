@@ -56,7 +56,9 @@ infrastructure packages.
 
 Learn more about unit testing in .NET Core projects:
 
-Try this [walkthrough creating unit tests with xunit and the .NET CLI](unit-testing-with-dotnet-test.md).
+Try this [walkthrough creating unit tests with xUnit and the .NET CLI](unit-testing-with-dotnet-test.md). 
 
 The XUnit team has written a tutorial that shows
-[how to use xunit with .NET Core and Visual Studio](http://xunit.github.io/docs/getting-started-dotnet-core.html).
+[how to use xUnit with .NET Core and Visual Studio](http://xunit.github.io/docs/getting-started-dotnet-core.html).
+
+If you prefer using MSTest, try the [walkthrough creating unit tests with MSTest and the .NET CLI](unit-testing-with-mstest.md).

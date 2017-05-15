@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: a958af40-f754-4409-85f9-7746978d4cb3
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Find Descendants of a Child Element (XPath-LINQ to XML) (Visual Basic)

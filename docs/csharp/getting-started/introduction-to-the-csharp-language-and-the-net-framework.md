@@ -33,7 +33,7 @@ translation.priority.ht:
 C# is an elegant and type-safe object-oriented language that enables developers to build a variety of secure and robust applications that run on the [!INCLUDE[dnprdnshort](../../csharp/getting-started/includes/dnprdnshort_md.md)]. You can use C# to create Windows client applications, XML Web services, distributed components, client-server applications, database applications, and much, much more. Visual C# provides an advanced code editor, convenient user interface designers, integrated debugger, and many other tools to make it easier to develop applications based on the C# language and the [!INCLUDE[dnprdnshort](../../csharp/getting-started/includes/dnprdnshort_md.md)].  
   
 > [!NOTE]
->  The [!INCLUDE[csprcs](../../csharp/includes/csprcs_md.md)] documentation assumes that you have an understanding of basic programming concepts. If you are a complete beginner, you might want to explore [!INCLUDE[csprcsxpr](../../csharp/getting-started/includes/csprcsxpr_md.md)], which is available on the Web. You can also take advantage of books and Web resources about C# to learn practical programming skills.  
+> The [!INCLUDE[csprcs](../../csharp/includes/csprcs_md.md)] documentation assumes that you have an understanding of basic programming concepts. If you are a complete beginner, you might want to explore [!INCLUDE[csprcsxpr](../../csharp/getting-started/includes/csprcsxpr_md.md)], which is available on the Web. You can also take advantage of books and Web resources about C# to learn practical programming skills.  
   
 ## C# Language  
  C# syntax is highly expressive, yet it is also simple and easy to learn. The curly-brace syntax of C# will be instantly recognizable to anyone familiar with C, C++ or Java. Developers who know any of these languages are typically able to begin to work productively in C# within a very short time. C# syntax simplifies many of the complexities of C++ and provides powerful features such as nullable value types, enumerations, delegates, lambda expressions and direct memory access, which are not found in Java. C# supports generic methods and types, which provide increased type safety and performance, and iterators, which enable implementers of collection classes to define custom iteration behaviors that are simple to use by client code. [!INCLUDE[vbteclinqext](../../csharp/getting-started/includes/vbteclinqext_md.md)] expressions make the strongly-typed query a first-class language construct.  
@@ -80,15 +80,6 @@ C# is an elegant and type-safe object-oriented language that enables developers 
  In addition to the run time services, the [!INCLUDE[dnprdnshort](../../csharp/getting-started/includes/dnprdnshort_md.md)] also includes an extensive library of over 4000 classes organized into namespaces that provide a wide variety of useful functionality for everything from file input and output to string manipulation to XML parsing, to Windows Forms controls. The typical C# application uses the [!INCLUDE[dnprdnshort](../../csharp/getting-started/includes/dnprdnshort_md.md)] class library extensively to handle common "plumbing" chores.  
   
  For more information about the .NET Framework, see [Overview of the Microsoft .NET Framework](http://msdn.microsoft.com/en-us/d05daf50-00fe-45c7-8383-06fe41697355).  
-  
-## Featured Book Chapters  
- [C# Language Fundamentals](http://go.microsoft.com/fwlink/?LinkId=195416) in [Learning C# 3.0: Master the fundamentals of C# 3.0](http://go.microsoft.com/fwlink/?LinkId=195412)  
-  
- [C# and .NET Programming](http://go.microsoft.com/fwlink/?LinkId=195413) in [Learning C# 3.0: Master the fundamentals of C# 3.0](http://go.microsoft.com/fwlink/?LinkId=195412)  
-  
- [Introducing C#](http://go.microsoft.com/fwlink/?LinkId=221226) in [Beginning Visual C# 2010](http://go.microsoft.com/fwlink/?LinkId=221214)  
-  
- [Visual Studio 2008 and C# Express 2008](http://go.microsoft.com/fwlink/?LinkId=195414) in [Learning C# 3.0: Master the fundamentals of C# 3.0](http://go.microsoft.com/fwlink/?LinkId=195412)  
   
 ## See Also  
  [C#](../../csharp/csharp.md)   

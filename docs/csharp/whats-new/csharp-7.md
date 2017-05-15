@@ -364,7 +364,7 @@ it is declared, you cannot split the declaration and the initialization.
 The C# language has three other rules that protect you from misusing
 the `ref` locals and returns:
 
-* You cannot assign a value to a `ref` variable.
+* You cannot assign a standard method return value to a `ref` local variable.
     - That disallows statements like `ref int i = sequence.Count();`
 * You cannot return a `ref` to a variable whose lifetime does not extend beyond the execution of the method.
     - That means you cannot return a reference to a local variable or a variable with a similar scope.

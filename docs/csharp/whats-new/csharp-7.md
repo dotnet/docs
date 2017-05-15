@@ -368,13 +368,8 @@ the `ref` locals and returns:
     - That disallows statements like `ref int i = sequence.Count();`
 * You cannot return a `ref` to a variable whose lifetime does not extend beyond the execution of the method.
     - That means you cannot return a reference to a local variable or a variable with a similar scope.
-* You cannot return a `ref` to a variable that doesn't exist when the method is ready to set or return the reference.
-    - That means you cannot use `ref` locals and returns with async methods because the compiler cannot know if the referenced variable has been set by the caller (or anywhere outside of the method) before the async method would return.
-
-These rules ensure that you cannot accidentally mix value variables and
-reference variables. They also ensure that you cannot have a reference
-variable refer to storage that hasn't been set or is a candidate for 
-garbage collection.
+* `ref` locals and returns can't be used with async methods.
+    - The compiler can't know if the referenced variable has been set to its final value when the async method returns.
 
 The addition of ref locals and ref returns enable algorithms that are more
 efficient by avoiding copying values, or performing dereferencing operations

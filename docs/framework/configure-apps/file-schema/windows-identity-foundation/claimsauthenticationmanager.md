@@ -26,11 +26,11 @@ Registers a claims authentication manager for the incoming claims.
   
 ```  
 \<system.identityModel>  
-  <identityConfiguration>  
-    \<claimsAuthenticationManager type=xs:string>  
-      <optionalConfigurationElements />  
-    </claimsAuthenticationManager>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    \<claimsAuthenticationManager type=xs:string>  
+      <optionalConfigurationElements />  
+    </claimsAuthenticationManager>  
+  </identityConfiguration>  
 \</system.identityModel>  
 ```  
   

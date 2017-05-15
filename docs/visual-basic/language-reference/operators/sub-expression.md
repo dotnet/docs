@@ -39,10 +39,10 @@ Declares the parameters and code that define a subroutine lambda expression.
 ## Syntax  
   
 ```  
-Sub ( [ parameterlist ] ) statement  
+Sub ( [ parameterlist ] ) statement  
 - or -  
-Sub ( [ parameterlist ] )  
-  [ statements ]  
+Sub ( [ parameterlist ] )  
+  [ statements ]  
 End Sub  
   
 ```  

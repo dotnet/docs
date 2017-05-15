@@ -77,11 +77,11 @@ FindPrivateKey <storeName> <storeLocation> [{ {-n <subjectName>} | {-t <thumbpri
  Where:  
   
 ```  
-       <subjectName> The subject name of the certificate  
-       <thumbprint>  The thumbprint of the certificate (You can use the Certmgr.exe tool to find this)  
-       -f            output file name only  
-       -d            output directory only  
-       -a            output absolute file name  
+       <subjectName> The subject name of the certificate  
+       <thumbprint>  The thumbprint of the certificate (You can use the Certmgr.exe tool to find this)  
+       -f            output file name only  
+       -d            output directory only  
+       -a            output absolute file name  
 ```  
   
  If no parameters are specified at the command prompt then this help text is displayed.  

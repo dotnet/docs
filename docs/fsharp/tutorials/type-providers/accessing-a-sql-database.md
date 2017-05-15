@@ -387,28 +387,28 @@ GO
 
 -- Create the Table1 table.
 CREATE TABLE [dbo].[Table1] (
-  [Id]        INT        NOT NULL,
-  [TestData1] INT        NOT NULL,
+  [Id]        INT        NOT NULL,
+  [TestData1] INT        NOT NULL,
   [TestData2] FLOAT (53) NOT NULL,
-  [Name]      NTEXT      NOT NULL,
+  [Name]      NTEXT      NOT NULL,
   PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
 -- Create the Table2 table.
 CREATE TABLE [dbo].[Table2] (
-  [Id]        INT        NOT NULL,
-  [TestData1] INT        NULL,
+  [Id]        INT        NOT NULL,
+  [TestData1] INT        NULL,
   [TestData2] FLOAT (53) NULL,
-  [Name]      NTEXT      NOT NULL,
+  [Name]      NTEXT      NOT NULL,
   PRIMARY KEY CLUSTERED ([Id] ASC)
 );
 
 
 -- Create the Table3 table.
 CREATE TABLE [dbo].[Table3] (
-  [Id]   INT           NOT NULL,
+  [Id]   INT           NOT NULL,
   [Name] NVARCHAR (50) NOT NULL,
-  [Data] INT           NOT NULL,
+  [Data] INT           NOT NULL,
   PRIMARY KEY CLUSTERED ([Id] ASC)
   );
 GO

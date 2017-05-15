@@ -27,12 +27,12 @@ Sets the custom cookie handler type. This element may only be present if the `mo
   
 ```  
 \<system.identityModel.services>  
-  <federationConfiguration>  
-    \<cookieHandler mode="Custom">  
-      <customCookieHandler type="MyNamespace.MyCustomCookieHandler, MyAssembly" >  
-      </customCookieHandler>  
-    </cookieHandler>  
-  </federationConfiguration>  
+  <federationConfiguration>  
+    \<cookieHandler mode="Custom">  
+      <customCookieHandler type="MyNamespace.MyCustomCookieHandler, MyAssembly" >  
+      </customCookieHandler>  
+    </cookieHandler>  
+  </federationConfiguration>  
 \</system.identityModel.services>  
 ```  
   

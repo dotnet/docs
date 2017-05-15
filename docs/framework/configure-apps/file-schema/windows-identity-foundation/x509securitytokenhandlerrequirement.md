@@ -28,19 +28,19 @@ Provides optional configuration for the <xref:System.IdentityModel.Tokens.X509Se
   
 ```  
 <system.identityModel>  
-  <identityConfiguration>  
-    <securityTokenHandlers>  
-      <add type="System.IdentityModel.Tokens.X509SecurityTokenHandler, System.IdentityModel">  
-        <x509SecurityTokenHandlerRequirement>  
-          mapToWindows=xs:boolean  
-          certificateValidationMode="None||ChainTrust||PeerTrust||PeerOrChainTrust||Custom"  
-          certificateValidator="Namespace.Class, Assembly"  
-          revocationMode="NoCheck||Offline||Online"  
-          trustedStoreLocation="CurrentUser||LocalMachine"  
-        </x509SecurityTokenHandlerRequirement>  
-      </add>  
-    </securityTokenHandlers>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <securityTokenHandlers>  
+      <add type="System.IdentityModel.Tokens.X509SecurityTokenHandler, System.IdentityModel">  
+        <x509SecurityTokenHandlerRequirement>  
+          mapToWindows=xs:boolean  
+          certificateValidationMode="None||ChainTrust||PeerTrust||PeerOrChainTrust||Custom"  
+          certificateValidator="Namespace.Class, Assembly"  
+          revocationMode="NoCheck||Offline||Online"  
+          trustedStoreLocation="CurrentUser||LocalMachine"  
+        </x509SecurityTokenHandlerRequirement>  
+      </add>  
+    </securityTokenHandlers>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   

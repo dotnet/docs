@@ -36,7 +36,7 @@ Gets the public key from a public/private key pair. The key pair can be supplied
 ## Syntax  
   
 ```  
-HRESULT StrongNameGetPublicKey (   
+HRESULT StrongNameGetPublicKey (   
     [in]  LPCWSTR   szKeyContainer,  
     [in]  BYTE      *pbKeyBlob,  
     [in]  ULONG     cbKeyBlob,  

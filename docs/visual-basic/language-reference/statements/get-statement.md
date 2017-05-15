@@ -46,8 +46,8 @@ Declares a `Get` property procedure used to retrieve the value of a property.
 ## Syntax  
   
 ```  
-[ <attributelist> ] [ accessmodifier ] Get()  
-    [ statements ]  
+[ <attributelist> ] [ accessmodifier ] Get()  
+    [ statements ]  
 End Get  
 ```  
   

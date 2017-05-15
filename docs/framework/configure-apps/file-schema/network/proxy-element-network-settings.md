@@ -38,12 +38,12 @@ Defines a proxy server.
   
 ```  
   
-      <proxy   
-  autoDetect="true|false|unspecified"    
-  bypassonlocal="true|false|unspecified"   
+      <proxy   
+  autoDetect="true|false|unspecified"    
+  bypassonlocal="true|false|unspecified"   
 proxyaddress="uriString"  
-  scriptLocation="uriString"   
-  usesystemdefault="true|false|unspecified "   
+  scriptLocation="uriString"   
+  usesystemdefault="true|false|unspecified "   
 />  
 ```  
   

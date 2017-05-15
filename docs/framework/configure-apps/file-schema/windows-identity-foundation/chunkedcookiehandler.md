@@ -27,12 +27,12 @@ Configures the <xref:System.IdentityModel.Services.ChunkedCookieHandler>. This e
   
 ```  
 <system.identityModel.services>  
-  <federationConfiguration>  
-    <cookieHandler mode="Chunked||Default" >  
-      <chunkedCookieHandler size=xs:int >  
-      </chunkedCookieHandler>  
-    </cookieHandler>  
-  </federationConfiguration>  
+  <federationConfiguration>  
+    <cookieHandler mode="Chunked||Default" >  
+      <chunkedCookieHandler size=xs:int >  
+      </chunkedCookieHandler>  
+    </cookieHandler>  
+  </federationConfiguration>  
 </system.identityModel.services>  
 ```  
   

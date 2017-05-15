@@ -36,7 +36,7 @@ Contains settings that specify how the .NET Framework connects to the network.
   
 ```  
   
-      <system.net>   
+      <system.net>   
 </system.net>  
 ```  
   

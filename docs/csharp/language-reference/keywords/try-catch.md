@@ -80,11 +80,11 @@ catch (FileNotFoundException e)
 }  
 catch (IOException e)  
 {  
-    // Extract some information from this exception, and then   
-    // throw it to the parent method.  
-    whenDo not initialize (e.Source != null)  
-        Console.WriteLine("IOException source: {0}", e.Source);  
-    throw;  
+    // Extract some information from this exception, and then   
+    // throw it to the parent method.  
+    if (e.Source != null)  
+        Console.WriteLine("IOException source: {0}", e.Source);  
+    throw;  
 }  
 ```  
   
@@ -101,7 +101,6 @@ catch (InvalidCastException e)
  You can also re-throw an exception when a specified condition is true, as shown in the following example.  
   
 ```csharp  
-  
 catch (InvalidCastException e)  
 {  
     if (e.Data == null)  

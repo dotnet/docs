@@ -40,12 +40,12 @@ Configures the network options for an external Simple Mail Transport Protocol (S
 ```  
   
       <network  
-  clientDomain="string"   
+  clientDomain="string"   
   defaultCredentials="true|false"  
   enableSsl="true|false"  
-  host="string"   
+  host="string"   
 password="string"  
-  port="integer"   
+  port="integer"   
 targetName="string"  
 userName="string"  
 />  

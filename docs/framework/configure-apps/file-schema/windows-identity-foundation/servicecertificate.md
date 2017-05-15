@@ -26,10 +26,10 @@ Configures the X.509 certificate that is used to encrypt and decrypt tokens.
   
 ```  
 <system.identityModel.services>  
-  <federationConfiguration>  
-    <serviceCertificate>  
-    </serviceCertificate>  
-  </federationConfiguration>  
+  <federationConfiguration>  
+    <serviceCertificate>  
+    </serviceCertificate>  
+  </federationConfiguration>  
 </system.identityModel.services>  
 ```  
   

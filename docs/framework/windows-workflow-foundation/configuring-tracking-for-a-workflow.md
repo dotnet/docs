@@ -34,19 +34,19 @@ LogActivity activity = new LogActivity();
   
 WorkflowApplication instance = new WorkflowApplication(activity);  
 EtwTrackingParticipant trackingParticipant =  
-    new EtwTrackingParticipant  
+    new EtwTrackingParticipant  
 {  
   
-        TrackingProfile = new TrackingProfile  
-           {  
-               Name = "SampleTrackingProfile",  
-               ActivityDefinitionId = "ProcessOrder",  
-               Queries = new WorkflowInstanceQuery  
-               {  
-                  States = { "*" }  
-              }  
-          }  
-       };  
+        TrackingProfile = new TrackingProfile  
+           {  
+               Name = "SampleTrackingProfile",  
+               ActivityDefinitionId = "ProcessOrder",  
+               Queries = new WorkflowInstanceQuery  
+               {  
+                  States = { "*" }  
+              }  
+          }  
+       };  
 instance.Extensions.Add(trackingParticipant);  
   
 ```  
@@ -60,9 +60,9 @@ instance.Extensions.Add(trackingParticipant);
   
 <behaviors>  
    <serviceBehaviors>  
-        <behavior>  
-          <etwTracking profileName="Sample Tracking Profile" />  
-        </behavior>              
+        <behavior>  
+          <etwTracking profileName="Sample Tracking Profile" />  
+        </behavior>              
    </serviceBehaviors>  
 <behaviors>  
   
@@ -75,12 +75,12 @@ instance.Extensions.Add(trackingParticipant);
   
 ```  
 ServiceHost svcHost = new ServiceHost(typeof(WorkflowService), new   
-                                 Uri("http://localhost:8001/Sample"));  
+                                 Uri("http://localhost:8001/Sample"));  
 EtwTrackingBehavior trackingBehavior =   
-    new EtwTrackingBehavior  
-    {  
-        ProfileName = "Sample Tracking Profile"  
-    };  
+    new EtwTrackingBehavior  
+    {  
+        ProfileName = "Sample Tracking Profile"  
+    };  
 svcHost.Description.Behaviors.Add(trackingBehavior);  
 svcHost.Open();  
   
@@ -245,7 +245,7 @@ invoker.Invoke();
     3.  Run rc.exe on the resource file generated in the previous step.  
   
         ```  
-        rc.exe  Microsoft.Windows.ApplicationServer.Applications_Provider1.rc  
+        rc.exe  Microsoft.Windows.ApplicationServer.Applications_Provider1.rc  
   
         ```  
   

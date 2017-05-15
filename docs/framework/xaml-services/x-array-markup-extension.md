@@ -27,7 +27,7 @@ Provides general support for arrays of objects in XAML through a markup extensio
 ## XAML Object Element Usage  
   
 ```  
-<x:Array Type="typeName">  
+<x:Array Type="typeName">  
   arrayContents  
 </x:Array>  
 ```  

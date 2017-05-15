@@ -26,10 +26,10 @@ Enables token replay detection and specifies the expiration time for tokens.
   
 ```  
 \<system.identityModel>  
-  <identityConfiguration>  
-    \<tokenReplayDetection enabled=xs:boolean expirationPeriod=TimeSpan>  
-    </tokenReplayDetection>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    \<tokenReplayDetection enabled=xs:boolean expirationPeriod=TimeSpan>  
+    </tokenReplayDetection>  
+  </identityConfiguration>  
 \</system.identityModel>  
 ```  
   

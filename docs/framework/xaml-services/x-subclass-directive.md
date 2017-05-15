@@ -29,7 +29,7 @@ Modifies XAML markup compile behavior when `x:Class` is also provided. Instead o
 ## XAML Attribute Usage  
   
 ```  
-<object x:Class="namespace.classname" x:Subclass="subclassNamespace.subclassName">  
+<object x:Class="namespace.classname" x:Subclass="subclassNamespace.subclassName">  
    ...  
 </object>  
 ```  

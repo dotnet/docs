@@ -76,7 +76,7 @@ catch (ArgumentException e) when (e.ParamName == "…")
 ```csharp  
 catch (FileNotFoundException e)  
 {  
-    // FileNotFoundExceptions are handled here.  
+    // FileNotFoundExceptions are handled here.  
 }  
 catch (IOException e)  
 {  
@@ -101,7 +101,6 @@ catch (InvalidCastException e)
  You can also re-throw an exception when a specified condition is true, as shown in the following example.  
   
 ```csharp  
-  
 catch (InvalidCastException e)  
 {  
     if (e.Data == null)  

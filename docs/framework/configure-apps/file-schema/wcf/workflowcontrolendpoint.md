@@ -26,7 +26,7 @@ This configuration element defines a standard endpoint for controlling the execu
 ```  
   
 <system.serviceModel>  
-    <standardEndpoints>       <workflowControlEndpoint>           <standardEndpoint                  name="String" />        </workflowControlEndpoint>            </standardEndpoints>  
+    <standardEndpoints>       <workflowControlEndpoint>           <standardEndpoint                  name="String" />        </workflowControlEndpoint>            </standardEndpoints>  
 </system.serviceModel>  
 ```  
   

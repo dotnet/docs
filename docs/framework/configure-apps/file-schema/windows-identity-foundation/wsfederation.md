@@ -26,25 +26,25 @@ Provides configuration for the <xref:System.IdentityModel.Services.WSFederationA
   
 ```xml
 <system.identityModel.services>  
-  <federationConfiguration>  
-    <wsFederation authenticationType=xs:string (URI)  
-                  freshness=xs:decimal  
-                  homerealm=xs:string (URI)  
-                  issuer=xs:string (URI)  
-                  persistentCookiesOnPassiveRedirects=xs:boolean  
-                  passiveRedirectEnabled=xs:boolean  
-                  policy=xs:string (URI)  
-                  realm=xs:string (URI)  
-                  reply=xs:string (URI)  
-                  request=xs:string (URI)  
-                  requestPtr=xs:string (URI)  
-                  requireHttps=xs:boolean  
-                  resource=xs:string (URI)  
-                  signInQueryString=xs:string  
-                  signOutQueryString=xs:string  
-                  signOutReply=xs:string (URL)  
-    </wsFederation>  
-  </federationConfiguration>  
+  <federationConfiguration>  
+    <wsFederation authenticationType=xs:string (URI)  
+                  freshness=xs:decimal  
+                  homerealm=xs:string (URI)  
+                  issuer=xs:string (URI)  
+                  persistentCookiesOnPassiveRedirects=xs:boolean  
+                  passiveRedirectEnabled=xs:boolean  
+                  policy=xs:string (URI)  
+                  realm=xs:string (URI)  
+                  reply=xs:string (URI)  
+                  request=xs:string (URI)  
+                  requestPtr=xs:string (URI)  
+                  requireHttps=xs:boolean  
+                  resource=xs:string (URI)  
+                  signInQueryString=xs:string  
+                  signOutQueryString=xs:string  
+                  signOutReply=xs:string (URL)  
+    </wsFederation>  
+  </federationConfiguration>  
 </system.identityModel.services>  
 ```  
   

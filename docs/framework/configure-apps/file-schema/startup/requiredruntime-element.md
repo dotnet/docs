@@ -38,7 +38,7 @@ Specifies that the application supports only version 1.0 of the common language 
   
 ```  
   
-   <requiredRuntime    
+   <requiredRuntime    
 version="runtime version"  
 safemode="true|false"/>  
 ```  

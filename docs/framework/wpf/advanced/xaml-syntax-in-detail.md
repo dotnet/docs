@@ -123,7 +123,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
 ```  
 \<!--This will not compile, because Visibility is not a flagwise enumeration.-->  
 ...  
-<Trigger Property="Visibility" Value="Collapsed,Hidden">  
+<Trigger Property="Visibility" Value="Collapsed,Hidden">  
   \<Setter ... />  
 </Trigger>  
 ...  

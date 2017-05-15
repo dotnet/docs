@@ -40,7 +40,7 @@ Redirects one assembly version to another.
   
 ```  
   
-   <bindingRedirect    
+   <bindingRedirect    
 oldVersion="existing assembly version"  
 newVersion="new assembly version"/>  
 ```  

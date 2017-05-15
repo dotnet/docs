@@ -49,7 +49,7 @@ An interface contains definitions for a group of related functionalities that a 
   
  For more information about abstract classes, see [Abstract and Sealed Classes and Class Members](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).  
   
- Interfaces can contain methods, properties, events, indexers, or any combination of those four member types. For links to examples, see [Related Sections](../../../csharp/programming-guide/interfaces/index.md#BKMK_RelatedSections). An interface can't contain constants, fields, operators, instance constructors, destructors, or types. Interface members are automatically public, and they can't include any access modifiers. Members also can't be [static](../../../csharp/language-reference/keywords/static.md).  
+ Interfaces can contain methods, properties, events, indexers, or any combination of those four member types. For links to examples, see [Related Sections](../../../csharp/programming-guide/interfaces/index.md#BKMK_RelatedSections). An interface can't contain constants, fields, operators, instance constructors, finalizers, or types. Interface members are automatically public, and they can't include any access modifiers. Members also can't be [static](../../../csharp/language-reference/keywords/static.md).  
   
  To implement an interface member, the corresponding member of the implementing class must be public, non-static, and have the same name and signature as the interface member.  
   

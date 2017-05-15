@@ -47,4 +47,4 @@ C# doesn't provide a copy constructor for objects, but you can write one yoursel
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)   
  [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)   
- [Destructors](../../../csharp/programming-guide/classes-and-structs/destructors.md)
+ [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)

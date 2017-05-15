@@ -1,7 +1,7 @@
 ---
 title: "Procedures in Visual Basic | Microsoft Docs"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: "2017-04-28"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -62,7 +62,9 @@ A *procedure* is a block of [!INCLUDE[vbprvb](../../../../csharp/programming-gui
   
 -   Event-handling procedures are `Sub` procedures that execute in response to an event raised by user action or by an occurrence in a program.  
   
--   [Function Procedures](./function-procedures.md) return a value to the calling code. They can perform other actions before returning.  
+-   [Function Procedures](./function-procedures.md) return a value to the calling code. They can perform other actions before returning.
+
+    Some functions written in C# return a *reference return value*. Function callers can modify the return value, and this modification is reflected in the state of the called object. Starting with Visual Basic 2017, Visual Basic code can consume reference return values, although it cannot return a value by reference. For more information, see [Reference return values](ref-return-values.md).
   
 -   [Property Procedures](./property-procedures.md) return and assign values of properties on objects or modules.  
   

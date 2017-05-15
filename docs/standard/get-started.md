@@ -22,7 +22,7 @@ There are a number of ways to get started with .NET.  Because .NET is a massive 
 
 * The [F# Getting Started](../fsharp/tutorials/getting-started/index.md) tutorials provide three primary ways you can use F#: with Visual Studio, Visual Studio Code, or command-line tools.
 
-* The [Visual Basic Getting Started](../visual-basic/getting-started/index.md) articles provide guides for using Visual Basic in Visual Studio and provide a number of other learning resources.
+* The [Visual Basic Getting Started](../visual-basic/getting-started/index.md) articles provide guides for using Visual Basic in Visual Studio.
 
 ## Get started using .NET core
 

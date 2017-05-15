@@ -22,9 +22,7 @@
 ## Examples  
  The following example shows how to create a custom request validator class that allows only a specific string for query-string values.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Imports System  
 Imports System.Web  
 Imports System.Web.Util  
@@ -74,9 +72,7 @@ End Function
 End Class  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 using System;  
 using System.Web;  
 using System.Web.Util;  

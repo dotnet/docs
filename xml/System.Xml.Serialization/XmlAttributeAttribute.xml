@@ -48,8 +48,10 @@
  // Set this to 'default' or 'preserve'.  
  [XmlAttribute("space",   
  Namespace = "http://www.w3.org/XML/1998/namespace")]  
- public string Space   
- [Visual Basic]  
+ public string Space 
+ ```
+
+ ```vb 
  <XmlAttribute("xml:lang")> _  
  Public Lang As String   
  ' Set this to 'default' or 'preserve'.  
@@ -408,7 +410,7 @@
   
  The default setting, `XmlSchemaForm.None`, instructs the <xref:System.Xml.Serialization.XmlSerializer> to check the schema for the XML document to determine whether the namespace is qualified. If the schema does not specify a value for an individual element or attribute, the <xref:System.Xml.Serialization.XmlSerializer> uses the `elementFormDefault` and `attributeFormDefault` values to determine whether an element or attribute is qualified. The following XML code shows a schema:  
   
-```  
+```xml  
 <schema elementFormDefault="qualified"   
 attributeFormDefault="unqualified"... >  
    <element name="Name"/>  

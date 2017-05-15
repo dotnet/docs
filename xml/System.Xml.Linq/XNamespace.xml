@@ -176,9 +176,7 @@ End Module
 ## Using Expanded Names  
  Another way to specify a namespace and a local name is to use an expanded name in the form `{namespace}name`:  
   
- [C#]  
-  
-```  
+```csharp  
 XElement e = new XElement("{http://www.adventure-works.com}Root",  
      new XAttribute("{http://www.adventure-works.com}Att", "content")  
 );  
@@ -1090,9 +1088,7 @@ Console.WriteLine(root)
   
  In Visual Basic, the preferred idiom is:  
   
- [vb]  
-  
-```  
+```vb  
 Imports <xmlns:aw='http://www.adventure-works.com'>  
   
 Module Module1  

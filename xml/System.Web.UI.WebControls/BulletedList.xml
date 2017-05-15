@@ -306,29 +306,21 @@
   
  The following code example shows a relative path to an image file:  
   
- [C#]  
-  
-```  
+```csharp  
 \\Images\\image1.jpg  
 ```  
   
- [Visual Basic]  
-  
-```  
+```vb  
 "Images\image1.jpg"  
 ```  
   
  The following code example shows an absolute path to an image file:  
   
- [C#]  
-  
-```  
+```csharp  
 "c:\\MyImagesDir\\image1.jpg"   
 ```  
   
- [Visual Basic]  
-  
-```  
+```vb  
 "c"\MyImagesDir\image1.jpg"  
 ```  
   

@@ -41,9 +41,7 @@
   
  The <xref:System.Data.Odbc.OdbcConnectionStringBuilder.Item%2A> property handles attempts to insert malicious code. For example, the following code, using the default <xref:System.Data.Odbc.OdbcConnectionStringBuilder.Item%2A> property (the indexer, in C#) correctly escapes the nested key/value pair.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Dim builder As _  
  New System.Data.Odbc.OdbcConnectionStringBuilder  
 ' Take advantage of the Driver property.   
@@ -52,9 +50,7 @@ builder("Server") = "MyServer;NewValue=Bad"
 Console.WriteLine(builder.ConnectionString)  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 System.Data.Odbc.OdbcConnectionStringBuilder builder =   
   new System.Data.Odbc.OdbcConnectionStringBuilder();  
 // Take advantage of the Driver property.   

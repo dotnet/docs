@@ -550,7 +550,7 @@
   
  C# and Visual Basic projects with this code sample can be found on [Developer Code Samples](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=How%20to%20automically%20update%20the%20structure%20of%20a%20cloned%20DataTable).  
   
-```  
+```csharp  
 using System;  
 using System.Linq;  
 using System.Data;  
@@ -885,7 +885,7 @@ GO
   
  You can now compile and run the sample. [How to modify data in DataTable and update to the data source](http://code.msdn.microsoft.com/How-to-modify-data-in-c68d35f4) has Visual Basic and C# projects of this sample.  
   
-```  
+```csharp  
 using System;  
 using System.Data;  
 using System.Data.SqlClient;  
@@ -3706,7 +3706,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
 > [!NOTE]
 >  The `DataSet` does not associate an XML element with its corresponding `DataColumn` or `DataTable` when legal XML characters like ("_") are escaped in the serialized XML. The `DataSet` itself only escapes illegal XML characters in XML element names and hence can only consume the same. When legal characters in XML element name are escaped, the element is ignored while processing.  
   
-```  
+```csharp  
 using System.Data;  
 public class A {  
    static void Main(string[] args) {  

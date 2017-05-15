@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.CertificateValidationMode%2A> is set to <xref:System.ServiceModel.Security.X509CertificateValidationMode>, then you must create a custom certificate validator that inherits from the <xref:System.IdentityModel.Selectors.X509CertificateValidator> class. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][How to: Create a Service that Employs a Custom Certificate Validator](~/docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md).  
+ If the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.CertificateValidationMode%2A> is set to <xref:System.ServiceModel.Security.X509CertificateValidationMode.Custom>, then you must create a custom certificate validator that inherits from the <xref:System.IdentityModel.Selectors.X509CertificateValidator> class. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][How to: Create a Service that Employs a Custom Certificate Validator](~/docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md).  
   
    
   
@@ -61,15 +61,15 @@
 ## Remarks  
  Allowed values of <xref:System.ServiceModel.Security.X509CertificateValidationMode> are:  
   
--   <xref:System.ServiceModel.Security.X509CertificateValidationMode>  
+-   <xref:System.ServiceModel.Security.X509CertificateValidationMode.ChainTrust>  
   
--   <xref:System.ServiceModel.Security.X509CertificateValidationMode>  
+-   <xref:System.ServiceModel.Security.X509CertificateValidationMode.Custom>  
   
--   <xref:System.ServiceModel.Security.X509CertificateValidationMode>  
+-   <xref:System.ServiceModel.Security.X509CertificateValidationMode.None>  
   
--   <xref:System.ServiceModel.Security.X509CertificateValidationMode>  
+-   <xref:System.ServiceModel.Security.X509CertificateValidationMode.PeerOrChainTrust>  
   
--   <xref:System.ServiceModel.Security.X509CertificateValidationMode>  
+-   <xref:System.ServiceModel.Security.X509CertificateValidationMode.PeerTrust>  
   
    
   
@@ -77,7 +77,7 @@
  The following example uses the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.CertificateValidationMode%2A> to print to the screen.  
   
  [!code-csharp[X509ClientCertificateAuthentication#7](~/samples/snippets/csharp/VS_Snippets_CFX/x509clientcertificateauthentication/cs/source.cs#7)]
- <!-- TODO: review snippet reference [!code-vb[X509ClientCertificateAuthentication#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/x509clientcertificateauthentication/vb/source.vb#7)]  -->  
+ [!code-vb[X509ClientCertificateAuthentication#7](~/samples/snippets/visualbasic/VS_Snippets_CFX/x509clientcertificateauthentication/vb/source.vb#7)]   
   
  The property can also be set in a configuration file.  
   
@@ -112,7 +112,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.CertificateValidationMode%2A> property is set to <xref:System.ServiceModel.Security.X509CertificateValidationMode>, you must set the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.CustomCertificateValidator%2A> property to a custom validator that inherits from the <xref:System.IdentityModel.Selectors.X509CertificateValidator> class.  
+ If the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.CertificateValidationMode%2A> property is set to <xref:System.ServiceModel.Security.X509CertificateValidationMode.Custom>, you must set the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.CustomCertificateValidator%2A> property to a custom validator that inherits from the <xref:System.IdentityModel.Selectors.X509CertificateValidator> class.  
   
  [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [How to: Create a Service that Employs a Custom Certificate Validator](~/docs/framework/wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md).  
   
@@ -251,7 +251,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When using certificates, the system validates that the client certificate is not revoked, by checking that the client certificate is not in the revoked certificate list. This check can be performed either by checking online or by checking against a cached revocation list. Revocation checking can be turned off by setting this property to <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode>.  
+ When using certificates, the system validates that the client certificate is not revoked, by checking that the client certificate is not in the revoked certificate list. This check can be performed either by checking online or by checking against a cached revocation list. Revocation checking can be turned off by setting this property to <xref:System.Security.Cryptography.X509Certificates.X509RevocationMode.NoCheck>.  
   
  [!INCLUDE[crdefault](~/includes/crdefault-md.md)] [Working with Certificates](~/docs/framework/wcf/feature-details/working-with-certificates.md).  
   

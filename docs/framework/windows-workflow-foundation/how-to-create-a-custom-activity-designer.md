@@ -14,11 +14,11 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # How to: Create a Custom Activity Designer
-Custom activity designers are typically implemented so that their associated activities are composable with other activities whose designers can be dropped on to the design surface with them. This functionality requires that a custom activity designer provide a “drop zone” where an arbitrary activity can be placed and also the means to manage the resulting collection of elements on the design surface. This topic describes how to create a custom activity designer that contains such a drop zone and how to create a custom activity designer that provides that editing functionality needed to manage the collection of designer elements.  
+Custom activity designers are typically implemented so that their associated activities are composable with other activities whose designers can be dropped on to the design surface with them. This functionality requires that a custom activity designer provide a "drop zone" where an arbitrary activity can be placed and also the means to manage the resulting collection of elements on the design surface. This topic describes how to create a custom activity designer that contains such a drop zone and how to create a custom activity designer that provides that editing functionality needed to manage the collection of designer elements.  
   
  Custom activity designers typically inherit from <xref:System.Activities.Presentation.ActivityDesigner> which is the default base activity designer type for any activities without a specific designer. This type provides the design-time experience of interacting with the property grid and configuring basic aspects such as managing colors and icons.  
   
- <xref:System.Activities.Presentation.ActivityDesigner> uses two helper controls, <xref:System.Activities.Presentation.WorkflowItemPresenter> and <xref:System.Activities.Presentation.WorkflowItemsPresenter> to make it easier to develop custom activity designers. They handle common functionality like dragging and dropping of child elements, deletion, selection, and addition of those child elements. The <xref:System.Activities.Presentation.WorkflowItemPresenter> allows a single child UI element inside, providing the “drop zone”, it while the <xref:System.Activities.Presentation.WorkflowItemsPresenter> can provide support multiple UI elements, including additional functionality like the ordering, moving, deleting, and adding of child elements.  
+ <xref:System.Activities.Presentation.ActivityDesigner> uses two helper controls, <xref:System.Activities.Presentation.WorkflowItemPresenter> and <xref:System.Activities.Presentation.WorkflowItemsPresenter> to make it easier to develop custom activity designers. They handle common functionality like dragging and dropping of child elements, deletion, selection, and addition of those child elements. The <xref:System.Activities.Presentation.WorkflowItemPresenter> allows a single child UI element inside, providing the "drop zone", it while the <xref:System.Activities.Presentation.WorkflowItemsPresenter> can provide support multiple UI elements, including additional functionality like the ordering, moving, deleting, and adding of child elements.  
   
  The other key part of the story that needs highlighting in the implementation of a custom activity designer concerns the way in which the visual edits are bound using [!INCLUDE[avalon2](../../../includes/avalon2-md.md)] data binding to the instance stored in memory of what we are editing in the designer. This is accomplished by the Model Item tree, which is also responsible for enabling change notification and the tracking of events like changes in states.  
   
@@ -173,7 +173,7 @@ Custom activity designers are typically implemented so that their associated act
   
     3.  System.ServiceModel.Activities.dll  
   
-17. Open the App.xaml file and change the value of the StartUpUri to “RehostingWFDesigner.xaml”.  
+17. Open the App.xaml file and change the value of the StartUpUri to "RehostingWFDesigner.xaml".  
   
 18. Right-click the UsingWorkflowItemPresenter project in **Solution Explorer**, select **Add**, then **New Item…** to bring up the **Add New Item** dialogue and select the **Workflow** category form the **Installed Templates** section on the left.  
   

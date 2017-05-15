@@ -293,10 +293,10 @@
         <param name="clause">To be added.</param>
         <summary>Returns a value that indicates whether the key identifier for this instance is equivalent to the specified key identifier clause.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="keyIdentifierClause" /> is of type <see cref="T:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" /> and has the same encrypted key, encryption method and user-readable name as the current instance; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if <paramref name="clause" /> is of type <see cref="T:System.IdentityModel.Tokens.EncryptedKeyIdentifierClause" /> and has the same encrypted key, encryption method and user-readable name as the current instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="keyIdentifierClause" /> is <see langword="null" />.</exception>
+          <paramref name="clause" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Matches">

@@ -36,7 +36,7 @@ Gets a token that represents a public key. A strong name token is the shortened 
 ## Syntax  
   
 ```  
-HRESULT StrongNameTokenFromPublicKey (   
+HRESULT StrongNameTokenFromPublicKey (   
     [in]  BYTE    *pbPublicKeyBlob,  
     [in]  ULONG   cbPublicKeyBlob,  
     [out] BYTE    **ppbStrongNameToken,  

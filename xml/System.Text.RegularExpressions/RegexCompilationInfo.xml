@@ -56,7 +56,7 @@
 ## Remarks  
  Each parameter of the <xref:System.Text.RegularExpressions.RegexCompilationInfo.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.String%2CSystem.String%2CSystem.Boolean%29> constructor directly corresponds to a property of the <xref:System.Text.RegularExpressions.RegexCompilationInfo> class. Because all properties are read/write, their values can also be assigned directly.  
   
- The <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A> method generates an assembly that contains compiled regular expressions. Therefore, you should not specify <xref:System.Text.RegularExpressions.RegexOptions> as one of the values of `options`.  
+ The <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A> method generates an assembly that contains compiled regular expressions. Therefore, you should not specify <xref:System.Text.RegularExpressions.RegexOptions.Compiled> as one of the values of `options`.  
   
  If `ispublic` is `true`, the compiled regular expression class is given public accessibility. That is, it can be instantiated from code that executes in any assembly. If `ispublic` is `false`, the compiled regular expression class is given `internal` (in C#) or `Friend` (in Visual Basic) accessibility. That is, it can be instantiated only from code that executes in the same assembly as the regular expression class.  
   
@@ -127,7 +127,7 @@
 ## Remarks  
  Each parameter of the <xref:System.Text.RegularExpressions.RegexCompilationInfo.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%2CSystem.String%2CSystem.String%2CSystem.Boolean%29> constructor directly corresponds to a property of the <xref:System.Text.RegularExpressions.RegexCompilationInfo> class. Because all properties are read/write, their values can also be assigned directly.  
   
- The <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A> method generates an assembly that contains compiled regular expressions. Therefore, you should not specify <xref:System.Text.RegularExpressions.RegexOptions> as one of the values of `options`.  
+ The <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A> method generates an assembly that contains compiled regular expressions. Therefore, you should not specify <xref:System.Text.RegularExpressions.RegexOptions.Compiled> as one of the values of `options`.  
   
  If `ispublic` is `true`, the compiled regular expression class is given public accessibility. That is, it can be instantiated from code that executes in any assembly. If `ispublic` is `false`, the compiled regular expression class is given `internal` (in C#) or `Friend` (in Visual Basic) accessibility. That is, it can be instantiated only from code that executes in the same assembly as the regular expression class.  
   
@@ -339,7 +339,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A> method generates an assembly that contains compiled regular expressions. Therefore, you do not have to specify <xref:System.Text.RegularExpressions.RegexOptions> as one of the values of this property. If it is present, the <xref:System.Text.RegularExpressions.RegexOptions> option is ignored.  
+ The <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A> method generates an assembly that contains compiled regular expressions. Therefore, you do not have to specify <xref:System.Text.RegularExpressions.RegexOptions.Compiled> as one of the values of this property. If it is present, the <xref:System.Text.RegularExpressions.RegexOptions.Compiled> option is ignored.  
   
  ]]></format>
         </remarks>

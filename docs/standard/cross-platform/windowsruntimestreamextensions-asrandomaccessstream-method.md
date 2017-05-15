@@ -35,15 +35,15 @@ manager: "wpickett"
   
 ```csharp  
 [CLSCompliantAttribute(false)]  
-public static  IRandomAccessStream AsRandomAccessStream(Stream stream)  
+public static  IRandomAccessStream AsRandomAccessStream(Stream stream)  
 ```  
   
 ```vb  
 'Declaration  
 <ExtensionAttribute> _  
 <CLSCompliantAttribute(False)> _  
-Public Shared Function AsRandomAccessStream ( _  
-        stream As Stream) As IRandomAccessStream  
+Public Shared Function AsRandomAccessStream ( _  
+        stream As Stream) As IRandomAccessStream  
 ```  
   
 #### Parameters  

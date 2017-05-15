@@ -2,6 +2,7 @@
 title: "WSFederation Authentication Module Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -48,7 +49,7 @@ Windows Identity Foundation (WIF) includes support for federated authentication 
  The WS-FAM also raises several events that let you customize its functionality in an [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] application.  
   
 ### How the WS-FAM Works  
- The WS-FAM is implemented in the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> class. Typically, you add the WS-FAM to the HTTP pipeline of your [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] RP application. When an unauthenticated user tries to access a protected resource, the RP returns a “401 authorization denied” HTTP response. The WS-FAM intercepts this response instead of allowing the client to receive it, then it redirects the user to the specified STS. The STS issues a security token, which the WS-FAM again intercepts. The WS-FAM uses the token to create an instance of <xref:System.Security.Claims.ClaimsPrincipal> for the authenticated user, which enables regular [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] authorization mechanisms to function.  
+ The WS-FAM is implemented in the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> class. Typically, you add the WS-FAM to the HTTP pipeline of your [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] RP application. When an unauthenticated user tries to access a protected resource, the RP returns a "401 authorization denied" HTTP response. The WS-FAM intercepts this response instead of allowing the client to receive it, then it redirects the user to the specified STS. The STS issues a security token, which the WS-FAM again intercepts. The WS-FAM uses the token to create an instance of <xref:System.Security.Claims.ClaimsPrincipal> for the authenticated user, which enables regular [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] authorization mechanisms to function.  
   
  Because HTTP is stateless, we need a way to avoid repeating this whole process every time that the user tries to access another protected resource. This is where the <xref:System.IdentityModel.Services.SessionAuthenticationModule> comes in. When the STS issues a security token for the user, <xref:System.IdentityModel.Services.SessionAuthenticationModule> also creates a session security token for the user and puts it in a cookie. On subsequent requests, the <xref:System.IdentityModel.Services.SessionAuthenticationModule> intercepts this cookie and uses it to reconstruct the user’s <xref:System.Security.Claims.ClaimsPrincipal>.  
   

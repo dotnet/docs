@@ -276,7 +276,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property determines where the caption appears in relation to the <xref:System.Web.UI.WebControls.Calendar> control. The default value is <xref:System.Web.UI.WebControls.TableCaptionAlign>, which lets the browser determine where to align the caption. The following table explains the relationship between the <xref:System.Web.UI.WebControls.TableCaptionAlign> value and the appearance of the caption.  
+ This property determines where the caption appears in relation to the <xref:System.Web.UI.WebControls.Calendar> control. The default value is <xref:System.Web.UI.WebControls.TableCaptionAlign.NotSet>, which lets the browser determine where to align the caption. The following table explains the relationship between the <xref:System.Web.UI.WebControls.TableCaptionAlign> value and the appearance of the caption.  
   
 |<xref:System.Web.UI.WebControls.TableCaptionAlign> value|Appearance|  
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|  

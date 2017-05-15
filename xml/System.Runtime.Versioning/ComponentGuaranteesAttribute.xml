@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Extensions</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
   </Base>
@@ -46,11 +50,11 @@
   
 <a name="None"></a>   
 ### No Compatibility  
- Marking a component as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions?displayProperty=fullName> indicates that the provider makes no guarantees about compatibility. Clients should avoid taking any dependencies on the exposed interfaces. This level of compatibility is useful for types that are experimental or that are publicly exposed but are intended only for components that are always updated at the same time. <xref:System.Runtime.Versioning.ComponentGuaranteesOptions> explicitly indicates that this component should not be used by external components.  
+ Marking a component as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions?displayProperty=fullName> indicates that the provider makes no guarantees about compatibility. Clients should avoid taking any dependencies on the exposed interfaces. This level of compatibility is useful for types that are experimental or that are publicly exposed but are intended only for components that are always updated at the same time. <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.None> explicitly indicates that this component should not be used by external components.  
   
 <a name="SideBySide"></a>   
 ### Side-by-Side Compatibility  
- Marking a component as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions?displayProperty=fullName> indicates that the component has been tested to work when more than one version of the assembly is loaded into the same application domain. Breaking changes are allowed as long as they are made to the assembly that has the greater version number. Components that are bound to an old version of the assembly are expected to continue to bind to the old version, and other components can bind to the new version. It is also possible to update a component that is declared to be <xref:System.Runtime.Versioning.ComponentGuaranteesOptions> by destructively modifying the old version.  
+ Marking a component as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions?displayProperty=fullName> indicates that the component has been tested to work when more than one version of the assembly is loaded into the same application domain. Breaking changes are allowed as long as they are made to the assembly that has the greater version number. Components that are bound to an old version of the assembly are expected to continue to bind to the old version, and other components can bind to the new version. It is also possible to update a component that is declared to be <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.SideBySide> by destructively modifying the old version.  
   
 <a name="Standard"></a>   
 ### Stable Compatibility  
@@ -72,15 +76,15 @@
   
  Because new versions of stable components are not expected to break existing clients, generally only one version of a stable component is needed in an application domain. However, this is not a requirement, because stable types are not used as well-known exchange types that all components agree upon. Therefore, if a new version of a stable component does inadvertently break some component, and if other components need the new version, it may be possible to fix the problem by loading both the old and new component.  
   
- <xref:System.Runtime.Versioning.ComponentGuaranteesOptions> provides a stronger version compatibility guarantee than <xref:System.Runtime.Versioning.ComponentGuaranteesOptions>. It is a common default for multi-version components.  
+ <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Stable> provides a stronger version compatibility guarantee than <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.None>. It is a common default for multi-version components.  
   
- <xref:System.Runtime.Versioning.ComponentGuaranteesOptions> can be combined with <xref:System.Runtime.Versioning.ComponentGuaranteesOptions>, which states that the component will not break compatibility but is tested to work when more than one version is loaded in a given application domain.  
+ <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Stable> can be combined with <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.SideBySide>, which states that the component will not break compatibility but is tested to work when more than one version is loaded in a given application domain.  
   
- After a type or method is marked as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions>, it can be upgraded to <xref:System.Runtime.Versioning.ComponentGuaranteesOptions>. However, it cannot be downgraded to <xref:System.Runtime.Versioning.ComponentGuaranteesOptions>.  
+ After a type or method is marked as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Stable>, it can be upgraded to <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Exchange>. However, it cannot be downgraded to <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.None>.  
   
 <a name="Exchange"></a>   
 ### Exchange Type Compatibility  
- Marking a type as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions?displayProperty=fullName> provides a stronger version compatibility guarantee than <xref:System.Runtime.Versioning.ComponentGuaranteesOptions>, and should be applied to the most stable of all types. These types are intended to be used for interchange between independently built components across all component boundaries in both time (any version of the CLR or any version of a component or application) and space (cross-process, cross-CLR in one process, cross-application domain in one CLR). If a breaking change is made to an exchange type, it is impossible to fix the issue by loading multiple versions of the type.  
+ Marking a type as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions?displayProperty=fullName> provides a stronger version compatibility guarantee than <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Stable>, and should be applied to the most stable of all types. These types are intended to be used for interchange between independently built components across all component boundaries in both time (any version of the CLR or any version of a component or application) and space (cross-process, cross-CLR in one process, cross-application domain in one CLR). If a breaking change is made to an exchange type, it is impossible to fix the issue by loading multiple versions of the type.  
   
  Exchange types should be changed only when a problem is very serious (such as a severe security issue) or the probability of breakage is very low (that is, if the behavior was already broken in a random way that code could not have conceivably taken a dependency on). You can make the following kinds of changes to an exchange type:  
   
@@ -108,11 +112,11 @@
   
 -   Fixing most bugs. Consumers of the type will rely on the existing behavior.  
   
- After a component, type, or member is marked with the <xref:System.Runtime.Versioning.ComponentGuaranteesOptions> guarantee, it cannot be changed to either <xref:System.Runtime.Versioning.ComponentGuaranteesOptions> or <xref:System.Runtime.Versioning.ComponentGuaranteesOptions>.  
+ After a component, type, or member is marked with the <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Exchange> guarantee, it cannot be changed to either <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Stable> or <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.None>.  
   
  Typically, exchange types are the basic types (such as <xref:System.Int32> and <xref:System.String> in the .NET Framework) and interfaces (such as <xref:System.Collections.Generic.IList%601>, <xref:System.Collections.Generic.IEnumerable%601>, and <xref:System.IComparable%601>) that are commonly used in public interfaces.  
   
- Exchange types may publicly expose only other types that are also marked with <xref:System.Runtime.Versioning.ComponentGuaranteesOptions> compatibility. In addition, exchange types cannot depend on the behavior of Windows APIs that are prone to change.  
+ Exchange types may publicly expose only other types that are also marked with <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Exchange> compatibility. In addition, exchange types cannot depend on the behavior of Windows APIs that are prone to change.  
   
 ## Component Guarantees: A Summary  
  The following table indicates how a component's characteristics and usage affect its compatibility guarantee.  
@@ -130,20 +134,20 @@
 ## Applying the Attribute  
  You can apply the <xref:System.Runtime.Versioning.ComponentGuaranteesAttribute> to an assembly, a type, or a type member. Its application is hierarchical. That is, by default, the guarantee defined by the <xref:System.Runtime.Versioning.ComponentGuaranteesAttribute.Guarantees%2A> property of the attribute at the assembly level defines the guarantee of all types in the assembly and all members in those types. Similarly, if the guarantee is applied to the type, by default it also applies to each member of the type.  
   
- This inherited guarantee can be overridden by applying the <xref:System.Runtime.Versioning.ComponentGuaranteesAttribute> to individual types and type members. However, guarantees that override the default can only weaken the guarantee; they cannot strengthen it. For example, if an assembly is marked with the <xref:System.Runtime.Versioning.ComponentGuaranteesOptions> guarantee, its types and members have no compatibility guarantee, and any other guarantee that is applied to types or members in the assembly is ignored.  
+ This inherited guarantee can be overridden by applying the <xref:System.Runtime.Versioning.ComponentGuaranteesAttribute> to individual types and type members. However, guarantees that override the default can only weaken the guarantee; they cannot strengthen it. For example, if an assembly is marked with the <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.None> guarantee, its types and members have no compatibility guarantee, and any other guarantee that is applied to types or members in the assembly is ignored.  
   
 ## Testing the Guarantee  
- The <xref:System.Runtime.Versioning.ComponentGuaranteesAttribute.Guarantees%2A> property returns a member of the <xref:System.Runtime.Versioning.ComponentGuaranteesOptions> enumeration, which is marked with the <xref:System.FlagsAttribute> attribute. This means that you should test for the flag that you are interested in by masking away potentially unknown flags. For example, the following example tests whether a type is marked as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions>.  
+ The <xref:System.Runtime.Versioning.ComponentGuaranteesAttribute.Guarantees%2A> property returns a member of the <xref:System.Runtime.Versioning.ComponentGuaranteesOptions> enumeration, which is marked with the <xref:System.FlagsAttribute> attribute. This means that you should test for the flag that you are interested in by masking away potentially unknown flags. For example, the following example tests whether a type is marked as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Stable>.  
   
  [!code-csharp[System.Runtime.Versioning.ComponentGuaranteesAttribute.Class#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.versioning.componentguaranteesattribute.class/cs/apply1.cs#1)]
  [!code-vb[System.Runtime.Versioning.ComponentGuaranteesAttribute.Class#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.versioning.componentguaranteesattribute.class/vb/apply1.vb#1)]  
   
- The following example tests whether a type is marked as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions> or <xref:System.Runtime.Versioning.ComponentGuaranteesOptions>.  
+ The following example tests whether a type is marked as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Stable> or <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Exchange>.  
   
  [!code-csharp[System.Runtime.Versioning.ComponentGuaranteesAttribute.Class#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.versioning.componentguaranteesattribute.class/cs/apply1.cs#2)]
  [!code-vb[System.Runtime.Versioning.ComponentGuaranteesAttribute.Class#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.versioning.componentguaranteesattribute.class/vb/apply1.vb#2)]  
   
- The following example tests wither a type is marked as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions> (that is, neither <xref:System.Runtime.Versioning.ComponentGuaranteesOptions> nor <xref:System.Runtime.Versioning.ComponentGuaranteesOptions>).  
+ The following example tests wither a type is marked as <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.None> (that is, neither <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Stable> nor <xref:System.Runtime.Versioning.ComponentGuaranteesOptions.Exchange>).  
   
  [!code-csharp[System.Runtime.Versioning.ComponentGuaranteesAttribute.Class#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.versioning.componentguaranteesattribute.class/cs/apply1.cs#3)]
  [!code-vb[System.Runtime.Versioning.ComponentGuaranteesAttribute.Class#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.versioning.componentguaranteesattribute.class/vb/apply1.vb#3)]  
@@ -165,6 +169,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="guarantees" Type="System.Runtime.Versioning.ComponentGuaranteesOptions" />
@@ -195,6 +203,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.Versioning.ComponentGuaranteesOptions</ReturnType>

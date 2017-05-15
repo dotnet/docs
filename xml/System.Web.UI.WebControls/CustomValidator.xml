@@ -176,12 +176,10 @@ void ServerValidation (object source, ServerValidateEventArgs args)
         <summary>Gets or sets the name of the custom client-side script function used for validation.</summary>
         <value>The name of the custom client script function used for validation. The default value is <see cref="F:System.String.Empty" />, which indicates that this property is not set.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  The function name should not include any parentheses or parameters.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

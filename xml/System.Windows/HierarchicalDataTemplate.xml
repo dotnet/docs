@@ -18,8 +18,7 @@
 ## Examples  
  In the following example, `ListLeagueList` is a list of `League` objects. Each `League` object has a `Name` and a collection of `Division` objects. Each `Division` has a `Name` and a collection of `Team` objects, and each `Team` object has a `Name`.  
   
- <!-- TODO: review snippet reference [!code-xml[HierarchicalDataTemplate#HDT](~/samples/snippets/xaml/VS_Snippets_Wpf/HierarchicalDataTemplate/xaml/window1.xaml#hdt)]  -->
- <!-- TODO: review snippet reference [!code-xml[HierarchicalDataTemplate#HDT](~/samples/snippets/csharp/VS_Snippets_Wpf/HierarchicalDataTemplate/CS/window1.xaml#hdt)]  -->  
+ [!code-xml[HierarchicalDataTemplateSnippet#HDT](~/samples/snippets/csharp/VS_Snippets_Wpf/HierarchicalDataTemplateSnippet/CS/window1.xaml#hdt)]   
   
  The example shows that with the use of <xref:System.Windows.HierarchicalDataTemplate>, you can easily display list data that contains other lists. The following is a screenshot of the example.  
   
@@ -251,8 +250,7 @@
 ## Examples  
  In the following example, `ListLeagueList` is a list of `League` objects. Each `League` object has a `Name` and a collection of `Division` objects. Each `Division` has a `Name` and a collection of `Team` objects, and each `Team` object has a `Name`.  
   
- <!-- TODO: review snippet reference [!code-xml[HierarchicalDataTemplate#HDT](~/samples/snippets/xaml/VS_Snippets_Wpf/HierarchicalDataTemplate/xaml/window1.xaml#hdt)]  -->
- <!-- TODO: review snippet reference [!code-xml[HierarchicalDataTemplate#HDT](~/samples/snippets/csharp/VS_Snippets_Wpf/HierarchicalDataTemplate/CS/window1.xaml#hdt)]  -->  
+ [!code-xml[HierarchicalDataTemplateSnippet#HDT](~/samples/snippets/csharp/VS_Snippets_Wpf/HierarchicalDataTemplateSnippet/CS/window1.xaml#hdt)]   
   
  The example shows that with the use of <xref:System.Windows.HierarchicalDataTemplate>, you can easily display list data that contains other lists. The following is a screenshot of the example.  
   

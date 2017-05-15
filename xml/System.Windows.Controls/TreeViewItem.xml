@@ -675,17 +675,17 @@
 ## Remarks  
  This method sets <xref:System.Windows.RoutedEventArgs.Handled%2A> to `true` and collapses or expands the <xref:System.Windows.Controls.TreeViewItem> when one of the following keys is pressed:  
   
--   <xref:System.Windows.Input.Key>  
+-   <xref:System.Windows.Input.Key.Add>  
   
--   <xref:System.Windows.Input.Key>  
+-   <xref:System.Windows.Input.Key.Subtract>  
   
--   <xref:System.Windows.Input.Key>  
+-   <xref:System.Windows.Input.Key.Left>  
   
--   <xref:System.Windows.Input.Key>  
+-   <xref:System.Windows.Input.Key.Right>  
   
--   <xref:System.Windows.Input.Key>  
+-   <xref:System.Windows.Input.Key.Down>  
   
--   <xref:System.Windows.Input.Key>  
+-   <xref:System.Windows.Input.Key.Up>  
   
  ]]></format>
         </remarks>

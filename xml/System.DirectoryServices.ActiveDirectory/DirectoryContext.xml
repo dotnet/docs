@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -24,12 +25,12 @@
   
 |Target type|<xref:System.DirectoryServices.ActiveDirectory.DirectoryContextType> member|Target name format|  
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|  
-|Domain Controller|<xref:System.DirectoryServices.ActiveDirectory.DirectoryContextType>|The DNS name of the domain controller.|  
-|AD LDS Instance|<xref:System.DirectoryServices.ActiveDirectory.DirectoryContextType>|The DNS name of the AD LDS server and the LDAP port number, for example, ad_lds_instance.fabrikam.com:389.|  
-|Domain|<xref:System.DirectoryServices.ActiveDirectory.DirectoryContextType>|The DNS name of the domain, for example, sales.corp.fabrikam.com.|  
-|Forest|<xref:System.DirectoryServices.ActiveDirectory.DirectoryContextType>|The DNS name of the forest, for example, corp.fabrikam.com.|  
-|Application Partition|<xref:System.DirectoryServices.ActiveDirectory.DirectoryContextType>|The DNS name of the application partition.|  
-|AD LDS Configuration Set|<xref:System.DirectoryServices.ActiveDirectory.DirectoryContextType>|One of the keywords that is associated with the service connection point registered by AD LDS instances for the configuration set.|  
+|Domain Controller|<xref:System.DirectoryServices.ActiveDirectory.DirectoryContextType.DirectoryServer>|The DNS name of the domain controller.|  
+|AD LDS Instance|<xref:System.DirectoryServices.ActiveDirectory.DirectoryContextType.DirectoryServer>|The DNS name of the AD LDS server and the LDAP port number, for example, ad_lds_instance.fabrikam.com:389.|  
+|Domain|<xref:System.DirectoryServices.ActiveDirectory.DirectoryContextType.Domain>|The DNS name of the domain, for example, sales.corp.fabrikam.com.|  
+|Forest|<xref:System.DirectoryServices.ActiveDirectory.DirectoryContextType.Forest>|The DNS name of the forest, for example, corp.fabrikam.com.|  
+|Application Partition|<xref:System.DirectoryServices.ActiveDirectory.DirectoryContextType.ApplicationPartition>|The DNS name of the application partition.|  
+|AD LDS Configuration Set|<xref:System.DirectoryServices.ActiveDirectory.DirectoryContextType.ConfigurationSet>|One of the keywords that is associated with the service connection point registered by AD LDS instances for the configuration set.|  
   
  ]]></format>
     </remarks>
@@ -43,6 +44,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="contextType" Type="System.DirectoryServices.ActiveDirectory.DirectoryContextType" />
@@ -65,6 +67,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="contextType" Type="System.DirectoryServices.ActiveDirectory.DirectoryContextType" />
@@ -93,6 +96,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="contextType" Type="System.DirectoryServices.ActiveDirectory.DirectoryContextType" />
@@ -119,6 +123,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="contextType" Type="System.DirectoryServices.ActiveDirectory.DirectoryContextType" />
@@ -151,6 +156,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.DirectoryContextType</ReturnType>
@@ -169,6 +175,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -187,6 +194,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

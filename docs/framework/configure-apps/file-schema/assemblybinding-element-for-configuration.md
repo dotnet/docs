@@ -34,7 +34,7 @@ Specifies assembly binding policy at the configuration level.
 ## Syntax  
   
 ```  
-<assemblyBinding    
+<assemblyBinding    
    xmlns="urn:schemas-microsoft-com:asm.v1">  
 </assemblyBinding>  
 ```  

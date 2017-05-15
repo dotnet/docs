@@ -73,7 +73,7 @@ This topic discusses what you need to think about when writing diagnostic tools 
   
 <a name="Arch"></a>   
 ## Architecture and terminology  
- Typically, a diagnostic tool has an architecture like the one shown in the following illustration. It uses the term “profiler,” but many such tools go well beyond typical performance or memory profiling into areas such as code coverage, mock object frameworks, time-travel debugging, application monitoring, and so on.  For simplicity, this topic will continue to refer to all these tools as profilers.  
+ Typically, a diagnostic tool has an architecture like the one shown in the following illustration. It uses the term "profiler," but many such tools go well beyond typical performance or memory profiling into areas such as code coverage, mock object frameworks, time-travel debugging, application monitoring, and so on.  For simplicity, this topic will continue to refer to all these tools as profilers.  
   
  The following terminology is used throughout this topic:  
   
@@ -81,10 +81,10 @@ This topic discusses what you need to think about when writing diagnostic tools 
  This is the application that the profiler is analyzing.  Typically, the developer of this application is now using the profiler to help diagnose issues with the application.  Traditionally, this application would be a Windows desktop application, but in this topic, we’re looking at Windows Store apps.  
   
  Profiler DLL  
- This is the component that loads into the process space of the application being analyzed.  This component, also known as the profiler “agent,” implements the [ICorProfilerCallback](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)[ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)(2,3,etc.) interfaces and consumes the [ICorProfilerInfo](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)(2,3,etc.) interfaces to collect data about the analyzed application and potentially modify aspects of the application’s behavior.  
+ This is the component that loads into the process space of the application being analyzed.  This component, also known as the profiler "agent," implements the [ICorProfilerCallback](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)[ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)(2,3,etc.) interfaces and consumes the [ICorProfilerInfo](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)(2,3,etc.) interfaces to collect data about the analyzed application and potentially modify aspects of the application’s behavior.  
   
  Profiler UI  
- This is a desktop application that the profiler user interacts with.  It’s responsible for displaying application status to the user and giving the user the means to control the behavior of the analyzed application.  This component always runs in its own process space, separate from the process space of the application being profiled.  The Profiler UI can also act as the “attach trigger,” which is the process that calls the [ICLRProfiling::AttachProfiler](../../../../docs/framework/unmanaged-api/profiling/iclrprofiling-attachprofiler-method.md) method, to cause the analyzed application to load the Profiler DLL in those cases where the profiler DLL did not load on startup.  
+ This is a desktop application that the profiler user interacts with.  It’s responsible for displaying application status to the user and giving the user the means to control the behavior of the analyzed application.  This component always runs in its own process space, separate from the process space of the application being profiled.  The Profiler UI can also act as the "attach trigger," which is the process that calls the [ICLRProfiling::AttachProfiler](../../../../docs/framework/unmanaged-api/profiling/iclrprofiling-attachprofiler-method.md) method, to cause the analyzed application to load the Profiler DLL in those cases where the profiler DLL did not load on startup.  
   
 > [!IMPORTANT]
 >  Your Profiler UI should remain a Windows desktop application, even when it is used to control and report on a Windows Store app.  Don’t expect to be able to package and ship your diagnostics tool in the Windows Store.  Your tool needs to do things that Windows Store apps cannot do, and many of those things reside inside your Profiler UI.  
@@ -207,7 +207,7 @@ pkgDebugSettings.EnableDebugging(packgeFullName, debuggerCommandLine,
  **Launching the Windows Store app**  
  The moment to launch the Windows Store app has finally arrived. If you’ve already already tried doing this yourself, you may have noticed that [CreateProcess](https://msdn.microsoft.com/library/windows/desktop/ms682425\(v=vs.85\).aspx) is not how you create a Windows Store app process.  Instead, you’ll need to use the [IApplicationActivationManager::ActivateApplication](https://msdn.microsoft.com/library/windows/desktop/Hh706903\(v=vs.85\).aspx) method.  To do that, you’ll need to get the App User Model ID of the Windows Store app that you’re launching.  And that means you’ll need to do a little digging through the manifest.  
   
- While iterating over your packages (see “Choosing a Windows Store App to Profile” in the [Startup load](#Startup) section earlier), you’ll want to grab the set of applications contained in the current package’s manifest:  
+ While iterating over your packages (see "Choosing a Windows Store App to Profile" in the [Startup load](#Startup) section earlier), you’ll want to grab the set of applications contained in the current package’s manifest:  
   
 ```csharp  
   

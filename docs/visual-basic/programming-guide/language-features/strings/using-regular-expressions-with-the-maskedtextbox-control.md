@@ -81,4 +81,4 @@ This example demonstrates how to convert simple regular expressions to work with
  <xref:System.Windows.Forms.MaskedTextBox.Mask%2A>   
  <xref:System.Windows.Forms.MaskedTextBox>   
  [Validating Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/validating-strings.md)   
- [MaskedTextBox Control](http://msdn.microsoft.com/library/235d6121-027d-481d-8d59-4f6794d15d0c)
+ [MaskedTextBox Control](../../../../framework/winforms/controls/maskedtextbox-control-windows-forms.md)

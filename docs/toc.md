@@ -6,7 +6,7 @@
 
 <!-- .NET Core Content -->
 # [.NET Core Guide](core/index.md)
-## [Getting started](core/getting-started.md)
+## [Get started](core/get-started.md)
 ## [Windows Prerequisites](core/windows-prerequisites.md)
 ## [macOS Prerequisites](core/macos-prerequisites.md)
 ## [Tutorials](core/tutorials/index.md)
@@ -83,7 +83,7 @@
 <!-- .NET Framework Content -->
 # [.NET Framework Guide](framework/index.md)
 ## [What's New](framework/whats-new/)
-## [Getting Started](framework/get-started/)
+## [Get Started](framework/get-started/)
 ## [Migration Guide](framework/migration-guide/)
 ## [.NET Framework on Docker Guide](framework/docker/index.md)
 ### [Running Console Apps in Containers](framework//docker/console.md)
@@ -121,7 +121,7 @@
 
 <!-- Start of C# Content -->
 # [C# Guide](csharp/index.md)
-## [Getting Started](csharp/getting-started/)
+## [Get Started](csharp/getting-started/)
 ## [Tutorials](csharp/tutorials/)
 ## [Tour of C#](csharp/tour-of-csharp/)
 <!-- The "What's New" section is short, and one level
@@ -187,10 +187,10 @@
 ### [Functions as First-Class Values](fsharp/introduction-to-functional-programming/functions-as-first-class-values.md)
 
 <!--## [Tutorials](fsharp/tutorials/index.md)-->
-### [Getting Started](fsharp/tutorials/getting-started/index.md)
-#### [Getting Started with Visual Studio](fsharp/tutorials/getting-started/getting-started-visual-studio.md)
-#### [Getting Started with Visual Studio Code and Ionide](fsharp/tutorials/getting-started/getting-started-vscode.md)
-#### [Getting Started with Command-line Tools](fsharp/tutorials/getting-started/getting-started-command-line.md)
+### [Get Started](fsharp/tutorials/getting-started/index.md)
+#### [Get Started with Visual Studio](fsharp/tutorials/getting-started/getting-started-visual-studio.md)
+#### [Get Started with Visual Studio Code and Ionide](fsharp/tutorials/getting-started/getting-started-vscode.md)
+#### [Get Started with Command-line Tools](fsharp/tutorials/getting-started/getting-started-command-line.md)
 ### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)
 #### [F# Interactive Options](fsharp/tutorials/fsharp-interactive/fsharp-interactive-options.md)
 ### [Type Providers](fsharp/tutorials/type-providers/index.md)

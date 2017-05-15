@@ -2,6 +2,7 @@
 title: "&lt;wsFederation&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,25 +26,25 @@ Provides configuration for the <xref:System.IdentityModel.Services.WSFederationA
   
 ```xml
 <system.identityModel.services>  
-  <federationConfiguration>  
-    <wsFederation authenticationType=xs:string (URI)  
-                  freshness=xs:decimal  
-                  homerealm=xs:string (URI)  
-                  issuer=xs:string (URI)  
-                  persistentCookiesOnPassiveRedirects=xs:boolean  
-                  passiveRedirectEnabled=xs:boolean  
-                  policy=xs:string (URI)  
-                  realm=xs:string (URI)  
-                  reply=xs:string (URI)  
-                  request=xs:string (URI)  
-                  requestPtr=xs:string (URI)  
-                  requireHttps=xs:boolean  
-                  resource=xs:string (URI)  
-                  signInQueryString=xs:string  
-                  signOutQueryString=xs:string  
-                  signOutReply=xs:string (URL)  
-    </wsFederation>  
-  </federationConfiguration>  
+  <federationConfiguration>  
+    <wsFederation authenticationType=xs:string (URI)  
+                  freshness=xs:decimal  
+                  homerealm=xs:string (URI)  
+                  issuer=xs:string (URI)  
+                  persistentCookiesOnPassiveRedirects=xs:boolean  
+                  passiveRedirectEnabled=xs:boolean  
+                  policy=xs:string (URI)  
+                  realm=xs:string (URI)  
+                  reply=xs:string (URI)  
+                  request=xs:string (URI)  
+                  requestPtr=xs:string (URI)  
+                  requireHttps=xs:boolean  
+                  resource=xs:string (URI)  
+                  signInQueryString=xs:string  
+                  signOutQueryString=xs:string  
+                  signOutReply=xs:string (URL)  
+    </wsFederation>  
+  </federationConfiguration>  
 </system.identityModel.services>  
 ```  
   
@@ -58,17 +59,17 @@ Provides configuration for the <xref:System.IdentityModel.Services.WSFederationA
 |freshness|The desired maximum age of authentication requests, in minutes. Sets the WS-Federation sign-in request wfresh parameter. Optional. The default is zero. Optional. **Warning:**  In the next release of .NET Framework 4.5, the `freshness` attribute will be of type `xs:string` and its default value will be `null`.|  
 |homeRealm|The home realm of the identity provider (IP) to use for authentication. Sets the WS-Federation sign-in request whr parameter. Optional. The default is an empty string, which specifies that the whr parameter is not included in the request.|  
 |issuer|The URI of the intended token issuer. Sets the base URL of WS-Federation sign-in requests and sign-out requests Required.|  
-|persistentCookiesOnPassiveRedirects|Specifies whether persistent cookies are issued on authentication. Optional. The default is “false”, cookies are not issued.|  
-|passiveRedirectEnabled|Specifies whether the WSFAM is enabled to automatically redirect unauthorized requests to an STS. Optional. The default is “true”, unauthorized requests are automatically redirected.|  
+|persistentCookiesOnPassiveRedirects|Specifies whether persistent cookies are issued on authentication. Optional. The default is "false", cookies are not issued.|  
+|passiveRedirectEnabled|Specifies whether the WSFAM is enabled to automatically redirect unauthorized requests to an STS. Optional. The default is "true", unauthorized requests are automatically redirected.|  
 |policy|A URL that specifies the location of the relevant policy to use on sign-in requests. The default is an empty string. Sets the WS-Federation sign-in request wp parameter. Optional. The default is an empty string, which specifies that the wp parameter is not included in the request.|  
 |realm|The URI of the requesting realm. (A URI that identifies the relying party (RP) to the security token service (STS).) Sets the request wtrealm WS-Federation sign-in request parameter. Required.|  
 |reply|A URL that identifies the address at which the relying party (RP) application would like to receive replies from the Security Token Service (STS). Sets the WS-Federation sign-in request wreply parameter. Optional. The default is an empty string, which specifies that the wreply parameter is not included in the request.|  
 |request|The token issuance request. Sets the WS-Federation sign-in request wreq parameter. Optional. The default is an empty string, which specifies that the wreq parameter is not included in the request. Not including the wreq or the wreqptr parameter in the request implies that the STS knows what kind of token to issue.|  
 |requestPtr|A URL that specifies the location of the token issuance request. Sets the request wreqptr parameter. Optional. The default is an empty string, which specifies that the wreqptr parameter is not included in the request. Not including the wreq or the wreqptr parameter in the request implies that the STS knows what kind of token to issue.|  
-|requireHttps|Specifies whether communication with the security token service (STS) must use HTTPS protocol. Optional. The default is “true”, HTTPS must be used.|  
+|requireHttps|Specifies whether communication with the security token service (STS) must use HTTPS protocol. Optional. The default is "true", HTTPS must be used.|  
 |resource|A URI that identifies the resource being accessed, the relying party (RP), to the to the security token service (STS). Optional. Sets the WS-Federation sign-in request wres parameter. Optional. The default is an empty string, which specifies that the wres parameter is not included in the request. **Note:**  wres is a legacy parameter. Specify the `realm` attribute to use the wtrealm parameter instead.|  
-|signInQueryString|Provides an extensibility point to specify application defined query parameters in the WS-Federation sign-in request URL. Optional. The default is an empty string, which specifies that no additional parameters should be included in the request. The parameters are specified as a query string fragment using the following form: `“param1=value1&param2=value2&param3=value3”` and so on. **Note:**  In a configuration file the ‘&” character in the query string must be specified using its entity reference, `&`.|  
-|signOutQueryString|Provides an extensibility point to specify application defined query parameters in the WS-Federation sign-in request URL. Optional. The default is an empty string, which specifies that no additional parameters should be included in the request. The parameters are specified as a query string fragment using the following form: `“param1=value1&param2=value2&param3=value3”` and so on. **Note:**  In a configuration file the ‘&” character in the query string must be specified using its entity reference, `&`.|  
+|signInQueryString|Provides an extensibility point to specify application defined query parameters in the WS-Federation sign-in request URL. Optional. The default is an empty string, which specifies that no additional parameters should be included in the request. The parameters are specified as a query string fragment using the following form: `"param1=value1&param2=value2&param3=value3"` and so on. **Note:**  In a configuration file the ‘&" character in the query string must be specified using its entity reference, `&`.|  
+|signOutQueryString|Provides an extensibility point to specify application defined query parameters in the WS-Federation sign-in request URL. Optional. The default is an empty string, which specifies that no additional parameters should be included in the request. The parameters are specified as a query string fragment using the following form: `"param1=value1&param2=value2&param3=value3"` and so on. **Note:**  In a configuration file the ‘&" character in the query string must be specified using its entity reference, `&`.|  
 |signOutReply|Specifies the URL to which the client should be redirected by the security token service (STS) during passive sign-out through the WS-Federation protocol. Sets the wreply parameter on a WS-Federation sign-out request. Optional. The default is an empty string, which specifies that no additional parameters should be included in the request.|  
   
 ### Child Elements  

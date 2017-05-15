@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -30,10 +31,10 @@
 |Parameter|Value|  
 |---------------|-----------|  
 |socketOptionLevel|<xref:System.Net.Sockets.SocketOptionLevel?displayProperty=fullName>|  
-|socketOptionName|<xref:System.Net.Sockets.SocketOptionName>|  
+|socketOptionName|<xref:System.Net.Sockets.SocketOptionName.AddMembership>|  
 |object|<xref:System.Net.Sockets.MulticastOption>|  
   
- Use <xref:System.Net.Sockets.SocketOptionName> to drop a multicast group.  
+ Use <xref:System.Net.Sockets.SocketOptionName.DropMembership> to drop a multicast group.  
   
    
   
@@ -60,6 +61,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -96,6 +98,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -125,6 +128,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -176,6 +180,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -219,6 +224,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -246,6 +252,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -266,7 +273,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.MulticastOption.LocalAddress%2A> property contains the IP address of the interface associated with the multicast group membership. If <xref:System.Net.Sockets.MulticastOption.LocalAddress%2A> is set to <xref:System.Net.IPAddress>, the default interface is used.  
+ The <xref:System.Net.Sockets.MulticastOption.LocalAddress%2A> property contains the IP address of the interface associated with the multicast group membership. If <xref:System.Net.Sockets.MulticastOption.LocalAddress%2A> is set to <xref:System.Net.IPAddress.Any>, the default interface is used.  
   
    
   

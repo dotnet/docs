@@ -41,7 +41,7 @@
 ```  
 <bindings>  
     <customBinding>  
-        <binding configurationName=”ReliabilityHTTP”>  
+        <binding configurationName="ReliabilityHTTP">  
             <reliableSession/>  
         </binding>  
     </customBinding>  
@@ -505,7 +505,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To get messages dispatched in order, you also must set the <xref:System.ServiceModel.ConcurrencyMode> to <xref:System.ServiceModel.ConcurrencyMode>.  
+ To get messages dispatched in order, you also must set the <xref:System.ServiceModel.ConcurrencyMode> to <xref:System.ServiceModel.ConcurrencyMode.Single>.  
   
  ]]></format>
         </remarks>

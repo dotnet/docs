@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,6 +32,27 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructors perform validation of the parameters and server, but not do not attempt to validate credentials.  
+  
+ When the principal context object is created without specifying a container, it may be used to represent multiple distinct containers. One container may be used as the base of query operations, while additional containers can hold newly-created principal objects. For example, when users or groups are inserted into the domian context type, the Account Management API uses the default well-known user container, "CN=Users,DC=Fabrikam,DC=com". When computers are inserted in the store, the API uses the default "CN=Computers,DC=Fabrikam,DC=com" container. Note that the default container names can be changed by the domain administrator. Since the principal object constructors can only specify one principal context, additional contexts are exposed as the default behavior when the application creates a domain context without specifying a container. Since the application directory does not have well-known containers, the application must specify a container in the constructor or the <xref:System.ArgumentException> is thrown. Since SAM does not have containers, a <xref:System.ArgumentException> is thrown if the application attempts to specify a container in the constructor.  
+  
+ In each version of the constructor that takes a user name as a parameter, the `userName` string can be in various different formats.  The three supported NameFormats for are Nt4Name, UserPrincipalName, and SamAccountName.  For more information about name formats, see the ADS_NAME_TYPE_ENUM documentation [here](http://go.microsoft.com/fwlink/?LinkID=99942).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PrincipalContext (System.DirectoryServices.AccountManagement.ContextType contextType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DirectoryServices.AccountManagement.ContextType contextType) cil managed" />
@@ -39,6 +61,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="contextType" Type="System.DirectoryServices.AccountManagement.ContextType" />
@@ -59,6 +82,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="contextType" Type="System.DirectoryServices.AccountManagement.ContextType" />
@@ -83,6 +107,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="contextType" Type="System.DirectoryServices.AccountManagement.ContextType" />
@@ -104,7 +129,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
+ The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType.Domain> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
   
  ]]></format>
         </remarks>
@@ -122,6 +147,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="contextType" Type="System.DirectoryServices.AccountManagement.ContextType" />
@@ -145,7 +171,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
+ The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType.Domain> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
   
  ]]></format>
         </remarks>
@@ -165,6 +191,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="contextType" Type="System.DirectoryServices.AccountManagement.ContextType" />
@@ -195,6 +222,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="contextType" Type="System.DirectoryServices.AccountManagement.ContextType" />
@@ -220,7 +248,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
+ The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType.Domain> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
   
  ]]></format>
         </remarks>
@@ -240,6 +268,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="contextType" Type="System.DirectoryServices.AccountManagement.ContextType" />
@@ -267,7 +296,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
+ The <xref:System.InvalidOperationException> may be thrown in subsequent directory operations calls that connect to the server if the container specified for a <xref:System.DirectoryServices.AccountManagement.ContextType.Domain> principal context is not a valid container. A container is defined as an object whose schema class has the principal classes, either user, group, or computer, in its possibleInferiors attribute.  
   
  ]]></format>
         </remarks>
@@ -289,6 +318,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -300,7 +330,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the context type is <xref:System.DirectoryServices.AccountManagement.ContextType>, this property returns the name of the domain controller or application directory instance. When the context type is <xref:System.DirectoryServices.AccountManagement.ContextType>, this property returns the machine name.  
+ When the context type is <xref:System.DirectoryServices.AccountManagement.ContextType.Domain>, this property returns the name of the domain controller or application directory instance. When the context type is <xref:System.DirectoryServices.AccountManagement.ContextType.Machine>, this property returns the machine name.  
   
  ]]></format>
         </remarks>
@@ -314,6 +344,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -325,7 +356,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- All queries are performed under this root, and all inserts are performed into this container. For <xref:System.DirectoryServices.AccountManagement.ContextType> and <xref:System.DirectoryServices.AccountManagement.ContextType> context types, this property is the distinguished name of a container object. For <xref:System.DirectoryServices.AccountManagement.ContextType> context types, this property must be null.  
+ All queries are performed under this root, and all inserts are performed into this container. For <xref:System.DirectoryServices.AccountManagement.ContextType.Domain> and <xref:System.DirectoryServices.AccountManagement.ContextType.ApplicationDirectory> context types, this property is the distinguished name of a container object. For <xref:System.DirectoryServices.AccountManagement.ContextType.Machine> context types, this property must be null.  
   
  ]]></format>
         </remarks>
@@ -339,6 +370,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AccountManagement.ContextType</ReturnType>
@@ -364,6 +396,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -382,6 +415,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -400,6 +434,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.AccountManagement.ContextOptions</ReturnType>
@@ -418,6 +453,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -435,6 +471,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ValidateCredentials">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates the connection to the server and validates the specified credentials if the connection is successful.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In each version of this function, the `userName` string can be in one of a variety of different formats.  For a complete list of the acceptable types of formats, see the ADS_NAME_TYPE_ENUM documentation [here](http://go.microsoft.com/fwlink/?LinkID=99942).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ValidateCredentials">
       <MemberSignature Language="C#" Value="public bool ValidateCredentials (string userName, string password);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ValidateCredentials(string userName, string password) cil managed" />
@@ -443,6 +496,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -475,6 +529,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -502,43 +557,5 @@
         <exception cref="T:System.ArgumentException">The <paramref name="options" /> parameter must specify Negotiate when the context type is <see cref="T:System.DirectoryServices.AccountManagement.ContextType.Machine." /></exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ValidateCredentials">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates the connection to the server and validates the specified credentials if the connection is successful.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In each version of this function, the `userName` string can be in one of a variety of different formats.  For a complete list of the acceptable types of formats, see the ADS_NAME_TYPE_ENUM documentation [here](http://go.microsoft.com/fwlink/?LinkID=99942).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalContext" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.DirectoryServices.AccountManagement.PrincipalContext> constructors perform validation of the parameters and server, but not do not attempt to validate credentials.  
-  
- When the principal context object is created without specifying a container, it may be used to represent multiple distinct containers. One container may be used as the base of query operations, while additional containers can hold newly-created principal objects. For example, when users or groups are inserted into the domian context type, the Account Management API uses the default well-known user container, "CN=Users,DC=Fabrikam,DC=com". When computers are inserted in the store, the API uses the default "CN=Computers,DC=Fabrikam,DC=com" container. Note that the default container names can be changed by the domain administrator. Since the principal object constructors can only specify one principal context, additional contexts are exposed as the default behavior when the application creates a domain context without specifying a container. Since the application directory does not have well-known containers, the application must specify a container in the constructor or the <xref:System.ArgumentException> is thrown. Since SAM does not have containers, a <xref:System.ArgumentException> is thrown if the application attempts to specify a container in the constructor.  
-  
- In each version of the constructor that takes a user name as a parameter, the `userName` string can be in various different formats.  The three supported NameFormats for are Nt4Name, UserPrincipalName, and SamAccountName.  For more information about name formats, see the ADS_NAME_TYPE_ENUM documentation [here](http://go.microsoft.com/fwlink/?LinkID=99942).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

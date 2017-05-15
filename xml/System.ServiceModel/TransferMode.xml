@@ -26,7 +26,7 @@
   
  Streamed transfers can improve the scalability of a service by eliminating the need for large memory buffers. Whether changing the transfer mode actually improves scalability in practice depends on the size of the messages being transferred. Improvements in scalability should be most evident when large messages use streamed instead of buffered transfers.  
   
- By default, the HTTP, TCP/IP and named pipe transports use buffered message transfers. You can set the values of <xref:System.ServiceModel.TransferMode> on the <xref:System.ServiceModel.BasicHttpBinding>, <xref:System.ServiceModel.NetTcpBinding>, <xref:System.ServiceModel.NetNamedPipeBinding> system-provided bindings using the transfer mode properties exposed on them. The mode can be set on the <xref:System.ServiceModel.NetTcpBinding>, for example, by using the <xref:System.ServiceModel.NetTcpBinding.TransferMode%2A> property. It can also be set in the configuration section for the binding.  
+ By default, the HTTP, TCP/IP and named pipe transports use buffered message transfers. You can set the values of <xref:System.ServiceModel.TransferMode.Streamed> on the <xref:System.ServiceModel.BasicHttpBinding>, <xref:System.ServiceModel.NetTcpBinding>, <xref:System.ServiceModel.NetNamedPipeBinding> system-provided bindings using the transfer mode properties exposed on them. The mode can be set on the <xref:System.ServiceModel.NetTcpBinding>, for example, by using the <xref:System.ServiceModel.NetTcpBinding.TransferMode%2A> property. It can also be set in the configuration section for the binding.  
   
  For bindings that do not expose the transfer mode property, the transfer mode can be set on the binding element of the transport and this element can then be added to a custom binding. For example, create an <xref:System.ServiceModel.Channels.HttpTransportBindingElement> and use the <xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.TransferMode%2A> property to set the transfer mode when creating a custom binding. The transfer mode can also be set in the configuration section for the custom binding.  
   
@@ -56,13 +56,13 @@ BinaryMessageEncodingBindingElement encoder = new BinaryMessageEncodingBindingEl
 CustomBinding binding = new CustomBinding(encoder, transport);  
 ```  
   
- The following sample shows <xref:System.ServiceModel.TransferMode> property to Streamed through configuration:  
+ The following sample shows <xref:System.ServiceModel.TransferMode.Streamed> property to Streamed through configuration:  
   
 ```  
 <customBinding>  
     <binding name="streamingBinding">  
         <binaryMessageEncoding />  
-            <tcpTransport transferMode=”Streamed” />  
+            <tcpTransport transferMode="Streamed" />  
      </binding>  
 </customBinding>  
 ```  

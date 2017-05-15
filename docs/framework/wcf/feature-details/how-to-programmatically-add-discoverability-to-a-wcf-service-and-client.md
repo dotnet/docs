@@ -22,7 +22,7 @@ This topic explains how to make a [!INCLUDE[indigo1](../../../../includes/indigo
   
 1.  Open the Self-Host solution in [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)]. The sample is located in the TechnologySamples\Basic\Service\Hosting\SelfHost directory.  
   
-2.  Add a reference to `System.ServiceModel.Discovery.dll` to the service project. You may see an error message saying “System. ServiceModel.Discovery.dll or one of its dependencies requires a later version of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] than the one specified in the project …” If you see this message, right-click the project in the Solution Explorer and choose **Properties**. In the **Project Properties** window, make sure that the **Target Framework** is [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)].  
+2.  Add a reference to `System.ServiceModel.Discovery.dll` to the service project. You may see an error message saying "System. ServiceModel.Discovery.dll or one of its dependencies requires a later version of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] than the one specified in the project …" If you see this message, right-click the project in the Solution Explorer and choose **Properties**. In the **Project Properties** window, make sure that the **Target Framework** is [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)].  
   
 3.  Open the Service.cs file and add the following `using` statement.  
   

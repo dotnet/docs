@@ -36,7 +36,7 @@ Namespace MyMultiplexLog
 				sequence2 = New LogRecordSequence(logStream2, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite)
 		' </Snippet11>
 
-		' <snippet13>
+		' <Snippet13>
 		' Start Appending in two streams with interleaving appends.
 
 				Dim previous1 As SequenceNumber = SequenceNumber.Invalid
@@ -57,7 +57,7 @@ Namespace MyMultiplexLog
 
 		' Append the third record in stream2.
 				previous2 = sequence2.Append(CreateData("MyLogStream2: Using LogRecordSequence..."), previous2, previous2, RecordAppendOptions.ForceFlush)
-		' </snippet13>
+		' </Snippet13>
 
 		' Read the log records from stream1 and stream2.
 
@@ -87,7 +87,7 @@ Namespace MyMultiplexLog
 		' Cleanup...
 				sequence1.Dispose()
 				sequence2.Dispose()
-				' <Snippet12>
+				' </Snippet12>
 
 				LogStore.Delete(myLog)
 

@@ -9,11 +9,11 @@
   
  The <xref:System.Speech.Synthesis.SpeechSynthesizer> class provides access to the functionality of a speech synthesis engine that is installed on the host computer. Installed speech synthesis engines are represented by a voice, for example Microsoft Anna. A <xref:System.Speech.Synthesis.SpeechSynthesizer> instance initializes to the default voice. To configure a <xref:System.Speech.Synthesis.SpeechSynthesizer> instance to use one of the other installed voices, call the <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoice%2A> or <xref:System.Speech.Synthesis.SpeechSynthesizer.SelectVoiceByHints%2A> methods. To get information about which voices are installed, use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> method.  
   
- You can route the output of the <xref:System.Speech.Synthesis.SpeechSynthesizer> to a stream, a file, the default audio device, or to a null device by using one of the methods in the <xref:System.Speech.Synthesis.SpeechSynthesizer> class whose name begins with “`SetOutputTo`”.  
+ You can route the output of the <xref:System.Speech.Synthesis.SpeechSynthesizer> to a stream, a file, the default audio device, or to a null device by using one of the methods in the <xref:System.Speech.Synthesis.SpeechSynthesizer> class whose name begins with "`SetOutputTo`".  
   
  **Create Prompts**  
   
- Use one the methods of the <xref:System.Speech.Synthesis.PromptBuilder> class whose name begins with “`Append`” to build content for prompts from text, Speech Synthesis Markup Language (SSML), files containing text or SSML markup, or prerecorded audio files.  
+ Use one the methods of the <xref:System.Speech.Synthesis.PromptBuilder> class whose name begins with "`Append`" to build content for prompts from text, Speech Synthesis Markup Language (SSML), files containing text or SSML markup, or prerecorded audio files.  
   
  See [Constructing a Complex Prompt](http://msdn.microsoft.com/en-us/552cb356-7344-473e-b0f2-7a9983f8c1a4) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/en-us/610116c7-3817-40ff-857b-5d41e8511043) for more information and examples.  
   

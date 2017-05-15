@@ -36,7 +36,7 @@ Generates a strong name signature for the specified assembly.
 ## Syntax  
   
 ```  
-HRESULT StrongNameSignatureGeneration (   
+HRESULT StrongNameSignatureGeneration (   
     [in]  LPCWSTR   wszFilePath,  
     [in]  LPCWSTR   wszKeyContainer,  
     [in]  BYTE      *pbKeyBlob,  

@@ -75,9 +75,9 @@
   
  There are two ways of signing in to an STS using WSFAM. The first is by enabling passive redirects through the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.PassiveRedirectEnabled%2A> property. In this case, when authorization fails on a requested resource, rather than returning a `401:Access Denied` response to the client, WSFAM builds a WS-Federation sign-in request message from its properties and redirects the client to the STS to retrieve a security token. The second way is to explicitly redirect the client to the STS by calling the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SignIn%2A> method from a web page or custom control in your application. The <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SignIn%2A> method also uses the properties of the WSFAM to construct the sign-in request.  
   
- Any of the overloaded <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut%2A> methods can be used to sign out of the session. This deletes the session cookie on the client. It does not send a WS-Federation sign-out message (“wsignout1.0”) to the STS. To sign-out at the STS, you must use the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.FederatedSignOut%2A> method.  
+ Any of the overloaded <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut%2A> methods can be used to sign out of the session. This deletes the session cookie on the client. It does not send a WS-Federation sign-out message ("wsignout1.0") to the STS. To sign-out at the STS, you must use the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.FederatedSignOut%2A> method.  
   
- The WSFAM handles WS-Federation sign-out clean-up requests (“wsignoutcleanup1.0”), by deleting its session with the client. If the wreply parameter in the sign-out clean-up message is not set, the WSFAM returns an image of a green check mark to the STS that sent the message. This feature can be used by an STS as an acknowledgment that the RP has completed its sign-out.  
+ The WSFAM handles WS-Federation sign-out clean-up requests ("wsignoutcleanup1.0"), by deleting its session with the client. If the wreply parameter in the sign-out clean-up message is not set, the WSFAM returns an image of a green check mark to the STS that sent the message. This feature can be used by an STS as an acknowledgment that the RP has completed its sign-out.  
   
  The WSFAM exposes its functionality -- for example, its request processing pipeline -- through several task-specific methods. You can override these methods in derived classes to alter the behavior of the WSFAM.  
   
@@ -132,7 +132,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the wauth parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <summary>Gets or sets the value of the wauth parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>A URI that specifies the authentication type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -182,6 +182,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CanReadSignInResponse">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the specified HTTP request is a WS-Federation sign-in response message. If the message is a WS-Federation sign-out clean-up message ("wsignoutcleanup1.0"), this method processes the request.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A sign-in response message is sent to the relying party (RP) by a security token service (STS) in response to a sign-in request message.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CanReadSignInResponse">
       <MemberSignature Language="C#" Value="public bool CanReadSignInResponse (System.Web.HttpRequestBase request);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CanReadSignInResponse(class System.Web.HttpRequestBase request) cil managed" />
@@ -199,9 +216,9 @@
       </Parameters>
       <Docs>
         <param name="request">The incoming HTTP request.</param>
-        <summary>Returns a value that indicates whether the specified HTTP request is a WS-Federation sign-in response message. If the message is a WS-Federation sign-out clean-up message (“wsignoutcleanup1.0”), this method processes the request.</summary>
+        <summary>Returns a value that indicates whether the specified HTTP request is a WS-Federation sign-in response message. If the message is a WS-Federation sign-out clean-up message ("wsignoutcleanup1.0"), this method processes the request.</summary>
         <returns>
-          <see langword="true" /> if the specified HTTP request contains a form POST in which the wa parameter is set to “wsignout1.0” and the wresult parameter is not empty; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the specified HTTP request contains a form POST in which the wa parameter is set to "wsignout1.0" and the wresult parameter is not empty; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -235,10 +252,10 @@
       <Docs>
         <param name="request">The incoming HTTP request.</param>
         <param name="onPage">
-          <see langword="true" /> if the call originates while processing a page request. <see langword="false" /> if the caller is an HTTP module. This parameter determines how to terminate processing or send redirects if the incoming message is a WS-Federation sign-out cleanup message (“wsignoutcleanup1.0”).</param>
-        <summary>Returns a value that indicates whether the specified HTTP request is a WS-Federation sign-in response message. If the message is a WS-Federation sign-out clean-up message (“wsignoutcleanup1.0”), this method processes the request.</summary>
+          <see langword="true" /> if the call originates while processing a page request. <see langword="false" /> if the caller is an HTTP module. This parameter determines how to terminate processing or send redirects if the incoming message is a WS-Federation sign-out cleanup message ("wsignoutcleanup1.0").</param>
+        <summary>Returns a value that indicates whether the specified HTTP request is a WS-Federation sign-in response message. If the message is a WS-Federation sign-out clean-up message ("wsignoutcleanup1.0"), this method processes the request.</summary>
         <returns>
-          <see langword="true" /> if the specified HTTP request contains a FORM post in which the wa parameter is set to “wsignout1.0” and the wresult parameter is not empty; otherwise <see langword="false" />.</returns>
+          <see langword="true" /> if the specified HTTP request contains a FORM post in which the wa parameter is set to "wsignout1.0" and the wresult parameter is not empty; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -249,7 +266,7 @@
   
 -   If the incoming request is a form POST, it calls the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.IsSignInResponse%2A> method to determine whether the form POST contains a sign-in response.  
   
--   If the incoming request is not a form POST, and the request contains a WS-Federation sign-out clean-up request (the wa parameter is “wsignoutcleanup1.0”), sign-out clean-up is performed. In this case, the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut%28System.Boolean%29?displayProperty=fullName> method is invoked (with the parameter set to `true` to indicate a sign-out clean-up) to sign out of the session. This also causes the sign-out events to be raised.  
+-   If the incoming request is not a form POST, and the request contains a WS-Federation sign-out clean-up request (the wa parameter is "wsignoutcleanup1.0"), sign-out clean-up is performed. In this case, the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut%28System.Boolean%29?displayProperty=fullName> method is invoked (with the parameter set to `true` to indicate a sign-out clean-up) to sign out of the session. This also causes the sign-out events to be raised.  
   
      Next, if the sign-out clean-up request contains a wreply parameter, the client is redirected to the URL returned by the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.GetSignOutRedirectUrl%2A> method; otherwise, an image of a green check mark is returned to the STS. The receipt of this image can be used by the STS as a confirmation that the sign-out clean-up request was received and successfully processed by the RP.  
   
@@ -377,7 +394,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the wfresh parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <summary>Gets or sets the value of the wfresh parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>The desired maximum age of authentication requests, in minutes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -418,7 +435,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In the URL that is returned: the base URI is set to `issuer`; the wa parameter is set to “wsignout1.0”; the wreply parameter is set to `signOutReply`; and the parameters specified in `signOutQueryString` are present as additional query string parameters.  
+ In the URL that is returned: the base URI is set to `issuer`; the wa parameter is set to "wsignout1.0"; the wreply parameter is set to `signOutReply`; and the parameters specified in `signOutQueryString` are present as additional query string parameters.  
   
  ]]></format>
         </remarks>
@@ -739,7 +756,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the whr parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <summary>Gets or sets the value of the whr parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>The address of the identity provider.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -845,7 +862,7 @@
 ## Remarks  
  This method is called from the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.CanReadSignInResponse%2A> method in the request processing pipeline to determine whether the incoming HTTP request is a WS-Federation sign-in response message.  
   
- The default implementation returns `true` if the wa parameter is “wsignin1.0” and the wreq and wreqptr parameters are not both set.  
+ The default implementation returns `true` if the wa parameter is "wsignin1.0" and the wreq and wreqptr parameters are not both set.  
   
  You can override this method in derived classes to perform additional validation.  
   
@@ -1266,7 +1283,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the wp parameter to be used in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <summary>Gets or sets the value of the wp parameter to be used in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>A URL that identifies the policy to use.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1293,7 +1310,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the wtrealm parameter to be used for WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <summary>Gets or sets the value of the wtrealm parameter to be used for WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>A URI that identifies the relying party (RP) to the security token service (STS).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1426,7 +1443,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the wreply parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <summary>Gets or sets the value of the wreply parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>A URL that identifies the address at which the relying party (RP) application would like to receive replies from the Security Token Service (STS).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1454,7 +1471,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the wreq parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <summary>Gets or sets the value of the wreq parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>The token issuance request expressed as a <see langword="&lt;wst:RequestSecurityToken&gt;" /> element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1481,7 +1498,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the wreqptr parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <summary>Gets or sets the value of the wreqptr parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>A URL that specifies the location of the token issuance request expressed as a <see langword="&lt;wst:RequestSecurityToken&gt;" /> element</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1528,7 +1545,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get or sets the value of the wres parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <summary>Get or sets the value of the wres parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>A URI that identifies the resource being accessed, the relying party (RP), to the to the security token service (STS).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1564,7 +1581,7 @@
 ## Remarks  
  You can add an event handler to modify the token before it is validated. In the event handler you can access the security token through the <xref:System.IdentityModel.Services.SecurityTokenReceivedEventArgs.SecurityToken%2A?displayProperty=fullName> property. The <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SecurityTokenReceived> event is a cancelable event, you can set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true` in an event handler to terminate processing of the WS-Federation sign-in response message.  
   
- This event is raised from inside the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.OnAuthenticateRequest%2A> event-handler delegate when processing a WS-Federation sign-in response message (“wsignin1.0”) received from the security token service (STS). It is raised just after a security token has been deserialized from the wresult or the wresultptr parameter in the sign-in response message, but before the security token is validated.  
+ This event is raised from inside the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.OnAuthenticateRequest%2A> event-handler delegate when processing a WS-Federation sign-in response message ("wsignin1.0") received from the security token service (STS). It is raised just after a security token has been deserialized from the wresult or the wresultptr parameter in the sign-in response message, but before the security token is validated.  
   
    
   
@@ -1595,7 +1612,7 @@
 ## Remarks  
  You can add an event handler to modify the principal created while processing a WS-Federation sign-in response message from a security token service (STS) before it is used to create the session token. In the event handler, you can access the principal through the <xref:System.IdentityModel.Services.SecurityTokenValidatedEventArgs.ClaimsPrincipal%2A> property. The <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SecurityTokenValidated> event is a cancelable event, you can set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true` in an event handler to terminate processing of the WS-Federation sign-in response message.  
   
- This event is raised from inside the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.OnAuthenticateRequest%2A> event-handler delegate when processing a WS-Federation sign-in response message (“wsignin1.0”) received from the security token service (STS). It is raised just after the security token that was deserialized from the wresult or the wresultptr parameter in the sign-in response message has been validated, and before the session security token is created.  
+ This event is raised from inside the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.OnAuthenticateRequest%2A> event-handler delegate when processing a WS-Federation sign-in response message ("wsignin1.0") received from the security token service (STS). It is raised just after the security token that was deserialized from the wresult or the wresultptr parameter in the sign-in response message has been validated, and before the session security token is created.  
   
    
   
@@ -1626,7 +1643,7 @@
 ## Remarks  
  You can add an event handler to modify the session token before it is used to set the thread principal and is written to the session cookie. In the event handler, you can access the session token through the <xref:System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs.SessionToken%2A?displayProperty=fullName> property. You can specify whether a session cookie should be written by setting the <xref:System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs.WriteSessionCookie%2A?displayProperty=fullName> property.  
   
- This event is raised from inside the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.OnAuthenticateRequest%2A> event-handler delegate when processing a WS-Federation sign-in response message (“wsignin1.0”) received from the security token service (STS). It is raised just after the security token that was deserialized from the wresult or the wresultptr parameter in the sign-in response message has been validated, and before the claims principal is set on the <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> (and on the <xref:System.Web.HttpContext.User%2A> property of <xref:System.Web.HttpContext.Current%2A?displayProperty=fullName>).  
+ This event is raised from inside the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.OnAuthenticateRequest%2A> event-handler delegate when processing a WS-Federation sign-in response message ("wsignin1.0") received from the security token service (STS). It is raised just after the security token that was deserialized from the wresult or the wresultptr parameter in the sign-in response message has been validated, and before the claims principal is set on the <xref:System.Threading.Thread.CurrentPrincipal%2A?displayProperty=fullName> (and on the <xref:System.Web.HttpContext.User%2A> property of <xref:System.Web.HttpContext.Current%2A?displayProperty=fullName>).  
   
 > [!IMPORTANT]
 >  To operate sessions in reference mode, Microsoft recommends providing a handler for the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SessionSecurityTokenCreated?displayProperty=fullName> event in the global.asax.cs file and setting the <xref:System.IdentityModel.Tokens.SessionSecurityToken.IsReferenceMode%2A?displayProperty=fullName> property on the token passed in the <xref:System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs.SessionToken%2A?displayProperty=fullName> property. This will ensure that the session token operates in reference mode for every request and is favored over merely setting the <xref:System.IdentityModel.Services.SessionAuthenticationModule.IsReferenceMode%2A?displayProperty=fullName> property on the Session Authentication Module.  
@@ -1835,7 +1852,7 @@
 ## Remarks  
  This event is raised through a call to the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.OnSigningOut%2A> method from inside the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut%28System.Boolean%29?displayProperty=fullName> method while signing out of the session at the relying party (RP). The event is not raised when doing federated sign-out through the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.FederatedSignOut%2A> method.  
   
- You can add an event handler to perform any additional processing that is needed by your application before the session cookie is deleted. You can read the <xref:System.IdentityModel.Services.SigningOutEventArgs.IsIPInitiated%2A> property in the event handler to determine whether the sign-out is the result of receiving a WS-Federation sign-out clean-up request message (“wsignoutcleanup1.0”) from a security token service (STS) or whether it was initiated at the RP.  
+ You can add an event handler to perform any additional processing that is needed by your application before the session cookie is deleted. You can read the <xref:System.IdentityModel.Services.SigningOutEventArgs.IsIPInitiated%2A> property in the event handler to determine whether the sign-out is the result of receiving a WS-Federation sign-out clean-up request message ("wsignoutcleanup1.0") from a security token service (STS) or whether it was initiated at the RP.  
   
  This event is not guaranteed to be called for every session. Cookies may be deleted at the client side, for example, so this event would never be raised.  
   
@@ -1856,7 +1873,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a query string that contains any additional parameters to be sent in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <summary>Gets or sets a query string that contains any additional parameters to be sent in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>A URL fragment that contains the additional message parameters in the following format: <c>param1=value1&amp;param2=value2&amp;paramN=valueN</c>. The default is an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1871,6 +1888,25 @@
         <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SignOut">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Signs out of the current session.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Deletes the current session.  
+  
+ No sign-out request message ("wsignout1.0") is sent to the security token service (STS). To sign-out at the STS using WS-Federation protocol, use the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.FederatedSignOut%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SignOut">
       <MemberSignature Language="C#" Value="public virtual void SignOut ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SignOut() cil managed" />
@@ -1894,7 +1930,7 @@
   
  Invokes the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut%28System.String%29?displayProperty=fullName> method with the `redirectUrl` parameter set to the URL of the current request.  
   
- No sign-out request message (“wsignout1.0”) is sent to the security token service (STS). To sign-out at the STS using WS-Federation protocol, use the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.FederatedSignOut%2A> method.  
+ No sign-out request message ("wsignout1.0") is sent to the security token service (STS). To sign-out at the STS using WS-Federation protocol, use the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.FederatedSignOut%2A> method.  
   
  ]]></format>
         </remarks>
@@ -1917,7 +1953,7 @@
       </Parameters>
       <Docs>
         <param name="isIPRequest">
-          <see langword="true" /> if the request was initiated by the IP-STS via a WS-Federation sign-out cleanup request message (“wsignoutcleanup1.0”); otherwise, <see langword="false" />.</param>
+          <see langword="true" /> if the request was initiated by the IP-STS via a WS-Federation sign-out cleanup request message ("wsignoutcleanup1.0"); otherwise, <see langword="false" />.</param>
         <summary>Signs out of the current session and raises the appropriate events.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1933,9 +1969,9 @@
   
 3.  If an error occurs during sign-out processing, invokes the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.OnSignOutError%2A> method to raise the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOutError> event. An event handler can cancel the processing and prevent an exception from being returned to the caller of <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut%2A>  
   
- You can call the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut%2A?displayProperty=fullName> method with the `isIPRequest` parameter set `false` to sign out of a session without performing a redirect. The method is ultimately called by all of the other overloaded <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut%2A> methods (with the `isIPRequest` parameter set to `false`) to perform the sign out handling. The method is called from the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.CanReadSignInResponse%28System.Web.HttpRequestBase%2CSystem.Boolean%29?displayProperty=fullName> method with the `isIPRequest` parameter set `true` to sign out of the session when it is processing a WS-Federation sign-out clean-up message (“wsignoutcleanup1.0”).  
+ You can call the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut%2A?displayProperty=fullName> method with the `isIPRequest` parameter set `false` to sign out of a session without performing a redirect. The method is ultimately called by all of the other overloaded <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut%2A> methods (with the `isIPRequest` parameter set to `false`) to perform the sign out handling. The method is called from the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.CanReadSignInResponse%28System.Web.HttpRequestBase%2CSystem.Boolean%29?displayProperty=fullName> method with the `isIPRequest` parameter set `true` to sign out of the session when it is processing a WS-Federation sign-out clean-up message ("wsignoutcleanup1.0").  
   
- No sign-out request message (“wsignout1.0”) is sent to the security token service (STS). To sign-out at the STS using WS-Federation protocol, use the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.FederatedSignOut%2A> method.  
+ No sign-out request message ("wsignout1.0") is sent to the security token service (STS). To sign-out at the STS using WS-Federation protocol, use the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.FederatedSignOut%2A> method.  
   
  ]]></format>
         </remarks>
@@ -1967,7 +2003,7 @@
   
  Invokes the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut%28System.String%2CSystem.Boolean%29?displayProperty=fullName> method with the `redirectUrl` parameter and with the `initiateSignoutCleanup` set `false`.  
   
- No sign-out request message (“wsignout1.0”) is sent to the security token service (STS). To sign-out at the STS using WS-Federation protocol, use the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.FederatedSignOut%2A> method.  
+ No sign-out request message ("wsignout1.0") is sent to the security token service (STS). To sign-out at the STS using WS-Federation protocol, use the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.FederatedSignOut%2A> method.  
   
  ]]></format>
         </remarks>
@@ -2003,7 +2039,7 @@
   
  Invokes the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut%28System.Boolean%29?displayProperty=fullName> method with the `initiateSignoutCleanup` parameter set `false`.  
   
- No sign-out request message (“wsignout1.0”) is sent to the security token service (STS). To sign-out at the STS using WS-Federation protocol, use the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.FederatedSignOut%2A> method.  
+ No sign-out request message ("wsignout1.0") is sent to the security token service (STS). To sign-out at the STS using WS-Federation protocol, use the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.FederatedSignOut%2A> method.  
   
  ]]></format>
         </remarks>
@@ -2051,7 +2087,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a query string that contains any additional parameters to be sent in WS-Federation sign-out requests (“wsignout1.0”).</summary>
+        <summary>Gets or sets a query string that contains any additional parameters to be sent in WS-Federation sign-out requests ("wsignout1.0").</summary>
         <value>A URL fragment that contains the additional message parameters in the following format: <c>param1=value1&amp;param2=value2&amp;paramN=valueN</c>. The default is an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2079,7 +2115,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the wreply parameter to use during WS-Federation sign-out requests (“wsignout1.0”).</summary>
+        <summary>Gets or sets the value of the wreply parameter to use during WS-Federation sign-out requests ("wsignout1.0").</summary>
         <value>The URL to which the client should be redirected by the security token service (STS) following sign-out through the WS-Federation protocol.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2146,41 +2182,5 @@
         <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CanReadSignInResponse">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that indicates whether the specified HTTP request is a WS-Federation sign-in response message. If the message is a WS-Federation sign-out clean-up message (“wsignoutcleanup1.0”), this method processes the request.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A sign-in response message is sent to the relying party (RP) by a security token service (STS) in response to a sign-in request message.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SignOut">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Signs out of the current session.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Deletes the current session.  
-  
- No sign-out request message (“wsignout1.0”) is sent to the security token service (STS). To sign-out at the STS using WS-Federation protocol, use the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.FederatedSignOut%2A> method.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -122,7 +122,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The delegate is put in the dispatcher queue at a priority of <xref:System.Windows.Threading.DispatcherPriority>.  
+ The delegate is put in the dispatcher queue at a priority of <xref:System.Windows.Threading.DispatcherPriority.Normal>.  
   
  <xref:System.Windows.Threading.DispatcherSynchronizationContext.Post%2A> starts an asynchronous request to post a message.  
   
@@ -156,7 +156,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The delegate is put in the dispatcher queue at a priority of <xref:System.Windows.Threading.DispatcherPriority>.  
+ The delegate is put in the dispatcher queue at a priority of <xref:System.Windows.Threading.DispatcherPriority.Normal>.  
   
  ]]></format>
         </remarks>

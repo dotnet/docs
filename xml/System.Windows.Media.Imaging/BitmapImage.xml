@@ -199,14 +199,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Set the <xref:System.Windows.Media.Imaging.BitmapImage.CacheOption%2A> to <xref:System.Windows.Media.Imaging.BitmapCacheOption?displayProperty=fullName> if you wish to close a stream used to create the <xref:System.Windows.Media.Imaging.BitmapImage>. The default <xref:System.Windows.Media.Imaging.BitmapCacheOption> cache option retains access to the stream until the image is needed, and cleanup is handled by the garbage collector.  
+ Set the <xref:System.Windows.Media.Imaging.BitmapImage.CacheOption%2A> to <xref:System.Windows.Media.Imaging.BitmapCacheOption?displayProperty=fullName> if you wish to close a stream used to create the <xref:System.Windows.Media.Imaging.BitmapImage>. The default <xref:System.Windows.Media.Imaging.BitmapCacheOption.OnDemand> cache option retains access to the stream until the image is needed, and cleanup is handled by the garbage collector.  
   
 <a name="dependencyPropertyInfo_CacheOption"></a>   
 ## Dependency Property Information  
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Media.Imaging.BitmapImage>|  
+|Identifier field|<xref:System.Windows.Media.Imaging.BitmapImage.CacheOptionProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -382,7 +382,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Media.Imaging.BitmapImage>|  
+|Identifier field|<xref:System.Windows.Media.Imaging.BitmapImage.CreateOptionsProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -681,7 +681,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Rotation is performed after scaling. This means that an image that has a <xref:System.Windows.Media.Imaging.BitmapImage.Rotation%2A> of <xref:System.Windows.Media.Imaging.Rotation>, a <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelWidth%2A> of 10, and <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight%2A> of 5 will result in an image that has a width of 5 and a height of 10.  
+ Rotation is performed after scaling. This means that an image that has a <xref:System.Windows.Media.Imaging.BitmapImage.Rotation%2A> of <xref:System.Windows.Media.Imaging.Rotation.Rotate90>, a <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelWidth%2A> of 10, and <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelHeight%2A> of 5 will result in an image that has a width of 5 and a height of 10.  
   
 <a name="dependencyPropertyInfo_Rotation"></a>   
 ## Dependency Property Information  
@@ -747,7 +747,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Media.Imaging.BitmapImage>|  
+|Identifier field|<xref:System.Windows.Media.Imaging.BitmapImage.SourceRectProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -797,7 +797,7 @@
 ## Remarks  
  If <xref:System.Windows.Media.Imaging.BitmapImage.StreamSource%2A> and <xref:System.Windows.Media.Imaging.BitmapImage.UriSource%2A> are both set, the <xref:System.Windows.Media.Imaging.BitmapImage.StreamSource%2A> value is ignored.  
   
- Set the <xref:System.Windows.Media.Imaging.BitmapImage.CacheOption%2A> property to <xref:System.Windows.Media.Imaging.BitmapCacheOption?displayProperty=fullName> if you wish to close the stream after the <xref:System.Windows.Media.Imaging.BitmapImage> is created. The default <xref:System.Windows.Media.Imaging.BitmapCacheOption> cache option retains access to the stream until the bitmap is needed, and cleanup is handled by the garbage collector.  
+ Set the <xref:System.Windows.Media.Imaging.BitmapImage.CacheOption%2A> property to <xref:System.Windows.Media.Imaging.BitmapCacheOption?displayProperty=fullName> if you wish to close the stream after the <xref:System.Windows.Media.Imaging.BitmapImage> is created. The default <xref:System.Windows.Media.Imaging.BitmapCacheOption.OnDemand> cache option retains access to the stream until the bitmap is needed, and cleanup is handled by the garbage collector.  
   
 <a name="dependencyPropertyInfo_StreamSource"></a>   
 ## Dependency Property Information  

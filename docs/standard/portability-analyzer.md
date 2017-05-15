@@ -18,8 +18,8 @@ Want to make your libraries multi-platform? Want to see how much work is require
 
 ## New targets
 
-*   [.NET Core](https://www.dotnetfoundation.org/netcore): Has a modular design, employs side-by-side, and targets cross-platform scenarios. Side-by-side allows you to adopt new .NET Core versions without breaking other apps.
-*   [ASP.NET Core](https://www.dotnetfoundation.org/aspnet-core): is a modern web-framework built on .NET Core thus giving developers the same benefits.
+*   [.NET Core](https://dotnetfoundation.org/net-core): Has a modular design, employs side-by-side, and targets cross-platform scenarios. Side-by-side allows you to adopt new .NET Core versions without breaking other apps.
+*   [ASP.NET Core](https://dotnetfoundation.org/asp-net-core): is a modern web-framework built on .NET Core thus giving developers the same benefits.
 *   [.NET Native](https://blogs.msdn.microsoft.com/dotnet/2014/04/24/net-native-performance): Improve performance of your Windows Store apps that run on x64 and ARM machines by using .NET Native’s static compilation.
 
 ## How to use Portability Analyzer

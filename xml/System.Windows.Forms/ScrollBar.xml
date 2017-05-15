@@ -322,7 +322,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ScrollBar> control sets the <xref:System.Windows.Forms.ControlStyles> bit flag to `false`, so the <xref:System.Windows.Forms.ScrollBar> will not raise the <xref:System.Windows.Forms.ScrollBar.Click> event.  
+ The <xref:System.Windows.Forms.ScrollBar> control sets the <xref:System.Windows.Forms.ControlStyles.StandardClick> bit flag to `false`, so the <xref:System.Windows.Forms.ScrollBar> will not raise the <xref:System.Windows.Forms.ScrollBar.Click> event.  
   
  ]]></format>
         </remarks>
@@ -416,7 +416,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ScrollBar> control sets the <xref:System.Windows.Forms.ControlStyles> bit flag to false, so the <xref:System.Windows.Forms.ScrollBar> will not raise the <xref:System.Windows.Forms.ScrollBar.DoubleClick> event.  
+ The <xref:System.Windows.Forms.ScrollBar> control sets the <xref:System.Windows.Forms.ControlStyles.StandardClick> bit flag to false, so the <xref:System.Windows.Forms.ScrollBar> will not raise the <xref:System.Windows.Forms.ScrollBar.DoubleClick> event.  
   
  ]]></format>
         </remarks>

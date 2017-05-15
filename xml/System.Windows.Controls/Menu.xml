@@ -95,7 +95,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Menu>|  
+|Identifier field|<xref:System.Windows.Controls.Menu.IsMainMenuProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -103,8 +103,7 @@
 ## Examples  
  The following example shows how to use the <xref:System.Windows.Controls.Menu.IsMainMenu%2A> property to create a <xref:System.Windows.Controls.Menu> that does not receive activation notification.  
   
- <!-- TODO: review snippet reference [!code-xml[MenuStyles#MenuIsMainMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuStyles/CS/pane1.xaml#menuismainmenu)]  -->
- <!-- TODO: review snippet reference [!code-xml[MenuStyles#MenuIsMainMenu](~/samples/snippets/xaml/VS_Snippets_Wpf/MenuStyles/xaml/pane1.xaml#menuismainmenu)]  -->  
+ [!code-xml[MenuStylesSnippet#MenuIsMainMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuStylesSnippet/CS/pane1.xaml#menuismainmenu)]   
   
  ]]></format>
         </remarks>

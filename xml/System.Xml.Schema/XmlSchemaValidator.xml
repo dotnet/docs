@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -32,7 +36,7 @@
  For more information about the <xref:System.Xml.Schema.XmlSchemaValidator> class, see the [XmlSchemaValidator Push-Based Validation](~/docs/standard/data/xml/xmlschemavalidator-push-based-validation.md) topic.  
   
 > [!IMPORTANT]
->  The <xref:System.Xml.Schema.XmlSchemaValidationFlags> and <xref:System.Xml.Schema.XmlSchemaValidationFlags> validation flags of an <xref:System.Xml.Schema.XmlSchemaValidator> object are not set be default. Additionally, the <xref:System.Xml.Schema.XmlSchemaValidator.XmlResolver%2A> property of an <xref:System.Xml.Schema.XmlSchemaValidator> object is `null` by default. As a result, external schemas referenced in include, imports, or redefine elements are not resolved by default.  
+>  The <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessInlineSchema> and <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessSchemaLocation> validation flags of an <xref:System.Xml.Schema.XmlSchemaValidator> object are not set be default. Additionally, the <xref:System.Xml.Schema.XmlSchemaValidator.XmlResolver%2A> property of an <xref:System.Xml.Schema.XmlSchemaValidator> object is `null` by default. As a result, external schemas referenced in include, imports, or redefine elements are not resolved by default.  
   
    
   
@@ -68,6 +72,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="nameTable" Type="System.Xml.XmlNameTable" />
         <Parameter Name="schemas" Type="System.Xml.Schema.XmlSchemaSet" />
@@ -86,14 +94,14 @@
 ## Remarks  
  The following are important notes to consider when using the <xref:System.Xml.Schema.XmlSchemaValidator.%23ctor%2A> constructor.  
   
--   The contents of the <xref:System.Xml.Schema.XmlSchemaSet> parameter are copied into an internal <xref:System.Xml.Schema.XmlSchemaSet> object when the <xref:System.Xml.Schema.XmlSchemaValidationFlags> or the <xref:System.Xml.Schema.XmlSchemaValidationFlags> validation options are set. As a result, changes to the input <xref:System.Xml.Schema.XmlSchemaSet> object during validation do not affect the outcome of validation.  
+-   The contents of the <xref:System.Xml.Schema.XmlSchemaSet> parameter are copied into an internal <xref:System.Xml.Schema.XmlSchemaSet> object when the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessInlineSchema> or the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessSchemaLocation> validation options are set. As a result, changes to the input <xref:System.Xml.Schema.XmlSchemaSet> object during validation do not affect the outcome of validation.  
   
 -   If the <xref:System.Xml.Schema.XmlSchemaSet> parameter specified is not compiled, its <xref:System.Xml.Schema.XmlSchemaSet.Compile%2A> method is called.  
   
 -   The <xref:System.Xml.IXmlNamespaceResolver> parameter is especially important for validating `xs:QName` types. The <xref:System.Xml.Schema.XmlSchemaValidator> class does not copy the in-scope namespaces from the <xref:System.Xml.IXmlNamespaceResolver> object but instead holds a reference to it. This allows new namespaces to be added to the <xref:System.Xml.IXmlNamespaceResolver> object during the validation process.  
   
 > [!IMPORTANT]
->  The <xref:System.Xml.Schema.XmlSchemaValidationFlags> and <xref:System.Xml.Schema.XmlSchemaValidationFlags> validation flags of an <xref:System.Xml.Schema.XmlSchemaValidator> object are not set be default. Additionally, the <xref:System.Xml.Schema.XmlSchemaValidator.XmlResolver%2A> property of an <xref:System.Xml.Schema.XmlSchemaValidator> object is `null` by default. As a result, external schemas referenced in include, imports, or redefine elements are not resolved by default.  
+>  The <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessInlineSchema> and <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessSchemaLocation> validation flags of an <xref:System.Xml.Schema.XmlSchemaValidator> object are not set be default. Additionally, the <xref:System.Xml.Schema.XmlSchemaValidator.XmlResolver%2A> property of an <xref:System.Xml.Schema.XmlSchemaValidator> object is `null` by default. As a result, external schemas referenced in include, imports, or redefine elements are not resolved by default.  
   
    
   
@@ -120,6 +128,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -139,7 +151,7 @@
   
 -   The target namespace of the <xref:System.Xml.Schema.XmlSchema> parameter cannot match that of any element or attribute already encountered by the <xref:System.Xml.Schema.XmlSchemaValidator> object.  
   
--   If the <xref:System.Xml.Schema.XmlSchemaValidationFlags> validation option is not set, the <xref:System.Xml.Schema.XmlSchemaValidator.AddSchema%2A> method does nothing.  
+-   If the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessInlineSchema> validation option is not set, the <xref:System.Xml.Schema.XmlSchemaValidator.AddSchema%2A> method does nothing.  
   
  ]]></format>
         </remarks>
@@ -162,6 +174,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -172,7 +188,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.Schema.XmlSchemaValidator.EndValidation%2A> method ends validation and checks identity constraints for the entire XML document if the <xref:System.Xml.Schema.XmlSchemaValidationFlags> validation option is set.  
+ The <xref:System.Xml.Schema.XmlSchemaValidator.EndValidation%2A> method ends validation and checks identity constraints for the entire XML document if the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessIdentityConstraints> validation option is set.  
   
  ]]></format>
         </remarks>
@@ -192,6 +208,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaAttribute[]</ReturnType>
@@ -227,6 +247,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaParticle[]</ReturnType>
@@ -396,6 +420,10 @@ validator.ValidateEndElement(null);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -428,6 +456,10 @@ validator.ValidateEndElement(null);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -475,6 +507,10 @@ validator.ValidateEndElement(null);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -559,6 +595,10 @@ validator.ValidateEndElement(null);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.IXmlLineInfo</ReturnType>
       </ReturnValue>
@@ -592,6 +632,10 @@ validator.ValidateEndElement(null);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -609,7 +653,7 @@ validator.ValidateEndElement(null);
   
 -   The <xref:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement%2A> method skips validation of the current element content and prepares the <xref:System.Xml.Schema.XmlSchemaValidator> object to validate content in the parent element's context; it is equivalent to skipping validation for all the children of the current element and then calling the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> method.  
   
--   If the current element content is successfully skipped, the <xref:System.Xml.Schema.XmlSchemaInfo> object's (if specified) <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> property is set to <xref:System.Xml.Schema.XmlSchemaValidity>.  
+-   If the current element content is successfully skipped, the <xref:System.Xml.Schema.XmlSchemaInfo> object's (if specified) <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> property is set to <xref:System.Xml.Schema.XmlSchemaValidity.NotKnown>.  
   
 > [!NOTE]
 >  No validation errors are reported on skipped content.  
@@ -632,6 +676,10 @@ validator.ValidateEndElement(null);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -665,6 +713,10 @@ validator.ValidateEndElement(null);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -731,6 +783,10 @@ validator.ValidateEndElement(null);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -796,6 +852,10 @@ validator.ValidateEndElement(null);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -817,7 +877,7 @@ validator.ValidateEndElement(null);
   
 -   If the element name is successfully validated in the current context, the <xref:System.Xml.Schema.XmlSchemaInfo> object's (if specified) <xref:System.Xml.Schema.XmlSchemaInfo.IsNil%2A>, <xref:System.Xml.Schema.XmlSchemaInfo.SchemaType%2A>, <xref:System.Xml.Schema.XmlSchemaInfo.SchemaElement%2A>, and <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> properties are set with the results of the validation.  
   
--   If the element name or any of its attributes are invalid the current context, the <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> property is set to <xref:System.Xml.Schema.XmlSchemaValidity>; otherwise the <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> property is set to <xref:System.Xml.Schema.XmlSchemaValidity>.  
+-   If the element name or any of its attributes are invalid the current context, the <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> property is set to <xref:System.Xml.Schema.XmlSchemaValidity.Invalid>; otherwise the <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> property is set to <xref:System.Xml.Schema.XmlSchemaValidity.NotKnown>.  
   
    
   
@@ -855,6 +915,10 @@ validator.ValidateEndElement(null);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -884,9 +948,9 @@ validator.ValidateEndElement(null);
   
 -   If the element name is successfully validated in the current context, the <xref:System.Xml.Schema.XmlSchemaInfo> object's (if specified) <xref:System.Xml.Schema.XmlSchemaInfo.IsNil%2A>, <xref:System.Xml.Schema.XmlSchemaInfo.SchemaType%2A>, <xref:System.Xml.Schema.XmlSchemaInfo.SchemaElement%2A>, and <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> properties are set with the results of the validation.  
   
--   If the element name or any of its attributes are invalid in the current context, the <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> property is set to <xref:System.Xml.Schema.XmlSchemaValidity>; otherwise the <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> property is set to <xref:System.Xml.Schema.XmlSchemaValidity>.  
+-   If the element name or any of its attributes are invalid in the current context, the <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> property is set to <xref:System.Xml.Schema.XmlSchemaValidity.Invalid>; otherwise the <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> property is set to <xref:System.Xml.Schema.XmlSchemaValidity.NotKnown>.  
   
--   If the <xref:System.Xml.Schema.XmlSchemaValidationFlags> value was not passed as a parameter to the <xref:System.Xml.Schema.XmlSchemaValidator.%23ctor%2A> constructor, `xsi:SchemaLocation` and `xsi:NoNamespaceSchemaLocation` attribute values are ignored.  
+-   If the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessSchemaLocation> value was not passed as a parameter to the <xref:System.Xml.Schema.XmlSchemaValidator.%23ctor%2A> constructor, `xsi:SchemaLocation` and `xsi:NoNamespaceSchemaLocation` attribute values are ignored.  
   
  ]]></format>
         </remarks>
@@ -907,6 +971,10 @@ validator.ValidateEndElement(null);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -930,7 +998,7 @@ validator.ValidateEndElement(null);
   
 -   If the element has a default value, the value returned from the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> method is the default value for the element.  
   
--   If the <xref:System.Xml.Schema.XmlSchemaValidator> object was constructed with the <xref:System.Xml.Schema.XmlSchemaValidationFlags> value as a parameter, the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> method checks the identity constraint rules (if any) that apply to the element.  
+-   If the <xref:System.Xml.Schema.XmlSchemaValidator> object was constructed with the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessIdentityConstraints> value as a parameter, the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> method checks the identity constraint rules (if any) that apply to the element.  
   
 -   If the element is successfully validated in the current context, the <xref:System.Xml.Schema.XmlSchemaInfo> object's (if specified) <xref:System.Xml.Schema.XmlSchemaInfo.IsDefault%2A>, <xref:System.Xml.Schema.XmlSchemaInfo.MemberType%2A>, and <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> properties are set with the results of the validation.  
   
@@ -953,6 +1021,10 @@ validator.ValidateEndElement(null);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -982,7 +1054,7 @@ validator.ValidateEndElement(null);
   
 -   If the element has complex content an <xref:System.InvalidOperationException> is thrown.  
   
--   If the <xref:System.Xml.Schema.XmlSchemaValidator> object was constructed with the <xref:System.Xml.Schema.XmlSchemaValidationFlags> value as a parameter, the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> method checks the identity constraint rules (if any) that apply to the element.  
+-   If the <xref:System.Xml.Schema.XmlSchemaValidator> object was constructed with the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessIdentityConstraints> value as a parameter, the <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement%2A> method checks the identity constraint rules (if any) that apply to the element.  
   
 -   If the element is successfully validated in the current context, the <xref:System.Xml.Schema.XmlSchemaInfo> object's (if specified) <xref:System.Xml.Schema.XmlSchemaInfo.IsDefault%2A>, <xref:System.Xml.Schema.XmlSchemaInfo.MemberType%2A>, and <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> properties are set with the results of the validation.  
   
@@ -1023,6 +1095,10 @@ validator.ValidateEndElement(null);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1042,7 +1118,7 @@ validator.ValidateEndElement(null);
   
 -   The <xref:System.Xml.Schema.XmlSchemaValidator.ValidateEndOfAttributes%2A> method must be called before proceeding with validation of an element's content.  
   
--   If all the required attributes in the element context are present, the <xref:System.Xml.Schema.XmlSchemaInfo> object's (if specified) <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> property is set to <xref:System.Xml.Schema.XmlSchemaValidity>.  
+-   If all the required attributes in the element context are present, the <xref:System.Xml.Schema.XmlSchemaInfo> object's (if specified) <xref:System.Xml.Schema.XmlSchemaInfo.Validity%2A> property is set to <xref:System.Xml.Schema.XmlSchemaValidity.Valid>.  
   
    
   
@@ -1080,6 +1156,10 @@ validator.ValidateEndElement(null);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1121,6 +1201,10 @@ validator.ValidateEndElement(null);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1161,6 +1245,10 @@ validator.ValidateEndElement(null);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1188,6 +1276,10 @@ validator.ValidateEndElement(null);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1217,6 +1309,10 @@ validator.ValidateEndElement(null);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.ValidationEventHandler</ReturnType>
       </ReturnValue>
@@ -1226,7 +1322,7 @@ validator.ValidateEndElement(null);
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If no <xref:System.Xml.Schema.ValidationEventHandler> is specified, an <xref:System.Xml.Schema.XmlSchemaValidationException> is thrown for all schema validation errors with an <xref:System.Xml.Schema.XmlSeverityType> value of <xref:System.Xml.Schema.XmlSeverityType>. An <xref:System.Xml.Schema.XmlSchemaValidationException> is not thrown for validation warnings with an <xref:System.Xml.Schema.XmlSeverityType> value of <xref:System.Xml.Schema.XmlSeverityType>.  
+ If no <xref:System.Xml.Schema.ValidationEventHandler> is specified, an <xref:System.Xml.Schema.XmlSchemaValidationException> is thrown for all schema validation errors with an <xref:System.Xml.Schema.XmlSeverityType> value of <xref:System.Xml.Schema.XmlSeverityType.Error>. An <xref:System.Xml.Schema.XmlSchemaValidationException> is not thrown for validation warnings with an <xref:System.Xml.Schema.XmlSeverityType> value of <xref:System.Xml.Schema.XmlSeverityType.Warning>.  
   
    
   
@@ -1262,6 +1358,10 @@ validator.ValidateEndElement(null);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -1292,6 +1392,10 @@ validator.ValidateEndElement(null);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlResolver</ReturnType>
       </ReturnValue>
@@ -1304,7 +1408,7 @@ validator.ValidateEndElement(null);
 ## Remarks  
   
 > [!IMPORTANT]
->  The <xref:System.Xml.Schema.XmlSchemaValidationFlags> and <xref:System.Xml.Schema.XmlSchemaValidationFlags> validation flags of an <xref:System.Xml.Schema.XmlSchemaValidator> object are not set be default. Additionally, the <xref:System.Xml.Schema.XmlSchemaValidator.XmlResolver%2A> property of an <xref:System.Xml.Schema.XmlSchemaValidator> object is `null` by default. As a result, external schemas referenced in include, imports, or redefine elements are not resolved by default.  
+>  The <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessInlineSchema> and <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessSchemaLocation> validation flags of an <xref:System.Xml.Schema.XmlSchemaValidator> object are not set be default. Additionally, the <xref:System.Xml.Schema.XmlSchemaValidator.XmlResolver%2A> property of an <xref:System.Xml.Schema.XmlSchemaValidator> object is `null` by default. As a result, external schemas referenced in include, imports, or redefine elements are not resolved by default.  
   
  ]]></format>
         </remarks>

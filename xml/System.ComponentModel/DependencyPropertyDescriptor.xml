@@ -837,7 +837,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For example, for the `true` case, the component may implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface, or may have an explicit `propertyName``Changed` event for this property.  
+ For example, for the `true` case, the component may implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface, or may have an explicit `propertyName.Changed` event for this property.  
   
  This property relies on the underlying <xref:System.ComponentModel.PropertyDescriptor>.  
   

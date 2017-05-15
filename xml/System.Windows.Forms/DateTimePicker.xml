@@ -49,9 +49,9 @@
   
  The <xref:System.Windows.Forms.DateTimePicker.Value%2A> property contains the current date and time the control is set to. You can use the <xref:System.Windows.Forms.DateTimePicker.Text%2A> property or the appropriate member of <xref:System.Windows.Forms.DateTimePicker.Value%2A> to get the date and time value. For more information, see [How to: Set and Return Dates with the Windows Forms DateTimePicker Control](~/docs/framework/winforms/controls/how-to-set-and-return-dates-with-the-windows-forms-datetimepicker-control.md). You can limit the dates and times that can be selected by setting the <xref:System.Windows.Forms.DateTimePicker.MinDate%2A> and <xref:System.Windows.Forms.DateTimePicker.MaxDate%2A> properties.  
   
- The values can be displayed in four formats, which are set by the <xref:System.Windows.Forms.DateTimePicker.Format%2A> property: <xref:System.Windows.Forms.DateTimePickerFormat>, <xref:System.Windows.Forms.DateTimePickerFormat>, <xref:System.Windows.Forms.DateTimePickerFormat>, or <xref:System.Windows.Forms.DateTimePickerFormat>. The default date <xref:System.Windows.Forms.DateTimePicker.Format%2A> is <xref:System.Windows.Forms.DateTimePickerFormat?displayProperty=fullName>.  
+ The values can be displayed in four formats, which are set by the <xref:System.Windows.Forms.DateTimePicker.Format%2A> property: <xref:System.Windows.Forms.DateTimePickerFormat.Long>, <xref:System.Windows.Forms.DateTimePickerFormat.Short>, <xref:System.Windows.Forms.DateTimePickerFormat.Time>, or <xref:System.Windows.Forms.DateTimePickerFormat.Custom>. The default date <xref:System.Windows.Forms.DateTimePicker.Format%2A> is <xref:System.Windows.Forms.DateTimePickerFormat?displayProperty=fullName>.  
   
- If you want the <xref:System.Windows.Forms.DateTimePicker> to appear as a control for picking or editing times instead of dates, set the <xref:System.Windows.Forms.DateTimePicker.ShowUpDown%2A> property to `true` and the <xref:System.Windows.Forms.DateTimePicker.Format%2A> property to <xref:System.Windows.Forms.DateTimePickerFormat>. For more information, see [How to: Display Time with the DateTimePicker Control](~/docs/framework/winforms/controls/how-to-display-time-with-the-datetimepicker-control.md).  
+ If you want the <xref:System.Windows.Forms.DateTimePicker> to appear as a control for picking or editing times instead of dates, set the <xref:System.Windows.Forms.DateTimePicker.ShowUpDown%2A> property to `true` and the <xref:System.Windows.Forms.DateTimePicker.Format%2A> property to <xref:System.Windows.Forms.DateTimePickerFormat.Time>. For more information, see [How to: Display Time with the DateTimePicker Control](~/docs/framework/winforms/controls/how-to-display-time-with-the-datetimepicker-control.md).  
   
  If the <xref:System.Windows.Forms.DateTimePicker.Format%2A> property is set to <xref:System.Windows.Forms.DateTimePickerFormat?displayProperty=fullName>, you can create your own format style by setting the <xref:System.Windows.Forms.DateTimePicker.CustomFormat%2A> property and building a custom format string. The custom format string can be a combination of custom field characters and other literal characters. For example, you can display the date as "June 01, 2012 - Friday" by setting the <xref:System.Windows.Forms.DateTimePicker.CustomFormat%2A> property to "MMMM dd, yyyy - dddd". For more information, see [How to: Display a Date in a Custom Format with the Windows Forms DateTimePicker Control](~/docs/framework/winforms/controls/display-a-date-in-a-custom-format-with-wf-datetimepicker-control.md) and [Custom Date and Time Format Strings](~/docs/standard/base-types/custom-date-and-time-format-strings.md).  
   
@@ -1058,7 +1058,7 @@
 > [!NOTE]
 >  The <xref:System.Windows.Forms.DateTimePicker.Format%2A> property must be set to <xref:System.Windows.Forms.DateTimePickerFormat?displayProperty=fullName> for the <xref:System.Windows.Forms.DateTimePicker.CustomFormat%2A> property to affect the formatting of the displayed date and time.  
   
- To display only time in a <xref:System.Windows.Forms.DateTimePicker>, set the <xref:System.Windows.Forms.DateTimePicker.Format%2A> to <xref:System.Windows.Forms.DateTimePickerFormat>, and the <xref:System.Windows.Forms.DateTimePicker.ShowUpDown%2A> property to `true`.  
+ To display only time in a <xref:System.Windows.Forms.DateTimePicker>, set the <xref:System.Windows.Forms.DateTimePicker.Format%2A> to <xref:System.Windows.Forms.DateTimePickerFormat.Time>, and the <xref:System.Windows.Forms.DateTimePicker.ShowUpDown%2A> property to `true`.  
   
    
   
@@ -1947,7 +1947,7 @@
 ## Remarks  
  When the <xref:System.Windows.Forms.DateTimePicker.ShowUpDown%2A> property is set to `true`, a spin button control (also known as an up-down control), rather than a drop-down calendar, is used to adjust time values. The date and time can be adjusted by selecting each element individually and using the up and down buttons to change the value.  
   
- To display only time in a <xref:System.Windows.Forms.DateTimePicker>, set the <xref:System.Windows.Forms.DateTimePicker.Format%2A> property to <xref:System.Windows.Forms.DateTimePickerFormat>, and the <xref:System.Windows.Forms.DateTimePicker.ShowUpDown%2A> property to `true`.  
+ To display only time in a <xref:System.Windows.Forms.DateTimePicker>, set the <xref:System.Windows.Forms.DateTimePicker.Format%2A> property to <xref:System.Windows.Forms.DateTimePickerFormat.Time>, and the <xref:System.Windows.Forms.DateTimePicker.ShowUpDown%2A> property to `true`.  
   
    
   

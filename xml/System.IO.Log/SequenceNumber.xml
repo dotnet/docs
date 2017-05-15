@@ -66,40 +66,23 @@
         <summary>Compares this sequence number with a specified object.</summary>
         <returns>A 32-bit signed integer indicating the lexical relationship between the two comparands.  
   
- <list type="table">  
-<item>  
-<term> Value  
+ <list type="table"><item><term> Value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</item>  
-<item>  
-<term> Less than zero  
+ </description></item><item><term> Less than zero  
   
- </term>  
-<description> This instance is less than <paramref name="other" />.  
+ </term><description> This instance is less than <paramref name="other" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> This instance is equal to <paramref name="other" />.  
+ </term><description> This instance is equal to <paramref name="other" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> This instance is greater than <paramref name="other" />.  
+ </term><description> This instance is greater than <paramref name="other" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1872,7 +1872,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use this property to align the text within a <xref:System.Windows.Forms.TextBox> to match the layout of text on your form. For example, if your controls are all located on the right side of the form, you can set the <xref:System.Windows.Forms.ToolStripTextBox.TextBoxTextAlign%2A> property to <xref:System.Windows.Forms.HorizontalAlignment>, and the text will be aligned with the right side of the control instead of the default left alignment.  
+ You can use this property to align the text within a <xref:System.Windows.Forms.TextBox> to match the layout of text on your form. For example, if your controls are all located on the right side of the form, you can set the <xref:System.Windows.Forms.ToolStripTextBox.TextBoxTextAlign%2A> property to <xref:System.Windows.Forms.HorizontalAlignment.Right>, and the text will be aligned with the right side of the control instead of the default left alignment.  
   
    
   

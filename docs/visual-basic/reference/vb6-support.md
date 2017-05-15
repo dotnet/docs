@@ -20,7 +20,7 @@ Update: March 2016
 
 ## Executive summary
 
-The Visual Basic team is committed to “It Just Works” compatibility for Visual Basic 6.0 applications on the following supported Windows operating systems: 
+The Visual Basic team is committed to "It Just Works" compatibility for Visual Basic 6.0 applications on the following supported Windows operating systems: 
 - Windows Vista
 - Windows Server 2008 including R2
 - Windows 7
@@ -83,7 +83,7 @@ The Visual Basic 6.0 IDE has never been offered in a native 64-bit version, nor 
 
 Since the initial release of this support statement, the Windows 7 operating system has been released. This document has been updated to clarify Microsoft’s support for VB6 on Windows 7.
 
-The VB6 runtime will ship and will be supported in Windows 7 for the lifetime of the OS. Visual Basic 6.0 runtime files continue to be 32-bit only, and all components must be hosted in 32-bit application processes. Developers can think of the support story for Windows 7 as being the same as it is for Windows Vista.
+The VB6 runtime will ship and will be supported in Windows 7 for the lifetime of the OS. Visual Basic 6.0 runtime files continue to be 32-bit only, and all components must be hosted in 32-bit application processes. Developers can think of the support story for Windows 7 as being the same as it is for Windows Vista.
 
 ## Windows 8
 
@@ -101,41 +101,41 @@ The VB6 runtime will ship and will be supported in Windows 8.1 for the lifetime 
 
 Since the initial release of this support statement, the Windows 10 operating system has been released. This document has been updated to clarify Microsoft’s support for VB6 on Windows 10.
 
-The VB6 runtime will ship and will be supported in Windows 10 for the lifetime of the OS. Visual Basic 6.0 runtime files continue to be 32-bit only, and all components must be hosted in 32-bit application processes. Developers can think of the support story for Windows 10 as being the same as it is for Windows 8.1.
+The VB6 runtime will ship and will be supported in Windows 10 for the lifetime of the OS. Visual Basic 6.0 runtime files continue to be 32-bit only, and all components must be hosted in 32-bit application processes. Developers can think of the support story for Windows 10 as being the same as it is for Windows 8.1.
 
 ## Windows Server 2008
 
 Since the initial release of this support statement, the Windows Server 2008 operating system has been released. This document has been updated to clarify Microsoft’s support for VB6 on Windows Server 2008.
 
-The VB6 runtime will ship and will be supported in Windows Server 2008 for the lifetime of the OS. Visual Basic 6.0 runtime files continue to be 32-bit only, and all components must be hosted in 32-bit application processes. Developers can think of the support story for Windows Server 2008 as being the same as it is for Windows Vista.
+The VB6 runtime will ship and will be supported in Windows Server 2008 for the lifetime of the OS. Visual Basic 6.0 runtime files continue to be 32-bit only, and all components must be hosted in 32-bit application processes. Developers can think of the support story for Windows Server 2008 as being the same as it is for Windows Vista.
 
 ## Windows Server 2008 R2
 
 Since the initial release of this support statement, the Windows Server 2008 R2 operating system has been released. This document has been updated to clarify Microsoft’s support for VB6 on Windows Server 2008 R2.
 
-The VB6 runtime will ship and will be supported in Windows Server 2008 R2 for the lifetime of the OS. Visual Basic 6.0 runtime files continue to be 32-bit only, and all components must be hosted in 32-bit application processes. Developers can think of the support story for Windows Server 2008 R2 as being the same as it is for Windows Server 2008.
+The VB6 runtime will ship and will be supported in Windows Server 2008 R2 for the lifetime of the OS. Visual Basic 6.0 runtime files continue to be 32-bit only, and all components must be hosted in 32-bit application processes. Developers can think of the support story for Windows Server 2008 R2 as being the same as it is for Windows Server 2008.
 
 ## Windows Server 2012
 
 Since the initial release of this support statement, the Windows Server 2012 operating system has been released. This document has been updated to clarify Microsoft’s support for VB6 on Windows Server 2012.
 
-The VB6 runtime will ship and will be supported in Windows Server 2012 for the lifetime of the OS. Visual Basic 6.0 runtime files continue to be 32-bit only, and all components must be hosted in 32-bit application processes. Developers can think of the support story for Windows Server 2012 as being the same as it is for Windows Server 2008 R2.
+The VB6 runtime will ship and will be supported in Windows Server 2012 for the lifetime of the OS. Visual Basic 6.0 runtime files continue to be 32-bit only, and all components must be hosted in 32-bit application processes. Developers can think of the support story for Windows Server 2012 as being the same as it is for Windows Server 2008 R2.
 
 ## Windows Server 2012 R2
 
 Since the initial release of this support statement, the Windows Server 2012 R2 operating system has been released. This document has been updated to clarify Microsoft’s support for VB6 on Windows Server 2012 R2.
 
-The VB6 runtime will ship and will be supported in Windows Server 2012 R2 for the lifetime of the OS. Visual Basic 6.0 runtime files continue to be 32-bit only, and all components must be hosted in 32-bit application processes. Developers can think of the support story for Windows Server 2012 R2 as being the same as it is for Windows Server 2012.
+The VB6 runtime will ship and will be supported in Windows Server 2012 R2 for the lifetime of the OS. Visual Basic 6.0 runtime files continue to be 32-bit only, and all components must be hosted in 32-bit application processes. Developers can think of the support story for Windows Server 2012 R2 as being the same as it is for Windows Server 2012.
 
 ## Windows Server 2016
 
 Since the initial release of this support statement, the Windows Server 2016 operating system has been released. This document has been updated to clarify Microsoft’s support for VB6 on Windows Server 2016.
 
-The VB6 runtime will ship and will be supported in Windows Server 2016 for the lifetime of the OS. Visual Basic 6.0 runtime files continue to be 32-bit only, and all components must be hosted in 32-bit application processes. Developers can think of the support story for Windows Server 2016 as being the same as it is for Windows Server 2012.
+The VB6 runtime will ship and will be supported in Windows Server 2016 for the lifetime of the OS. Visual Basic 6.0 runtime files continue to be 32-bit only, and all components must be hosted in 32-bit application processes. Developers can think of the support story for Windows Server 2016 as being the same as it is for Windows Server 2012.
 
 ## Supported Windows operating system versions
 
-This section provides additional information regarding the operating systems that offer some level of support for VB6. 
+This section provides additional information regarding the operating systems that offer some level of support for VB6. 
 
 |Windows operating system|VB6 Supported Runtime</br>Files Shipping in Windows have support?|VB6 Supported Rutime</br>Extended Files</br>to distribute with your application have support?| VB6 IDE has support?|
 |---|---|---|---|
@@ -148,7 +148,7 @@ This section provides additional information regarding the operating systems tha
 |Windows 8, all 64-bit editions (WOW only)|Yes * </br> 32-bit apps running in WOW only|Yes * </br> 32-bit apps running in WOW only|No|
 |Windows 7, all 32-bit editions|Yes *|Yes *|No, but Custom Support Agreements may be available.|
 |Windows 7, all 64-bit editions (WOW only)|Yes * </br> 32-bit apps running in WOW only|Yes * </br> 32-bit apps running in WOW only|No|
-| Windows Vista, all  32-bit editions|Yes *|Yes *|No, but Custom Support Agreements may be available.|
+| Windows Vista, all  32-bit editions|Yes *|Yes *|No, but Custom Support Agreements may be available.|
 |Windows Vista, all x64 editions (WOW only)|Yes * </br> 32-bit apps running in WOW only|Yes * </br> 32-bit apps running in WOW only|No|
 |Windows Server 2008 R2, all x64 editions (WOW only)</br>Windows Server 2008, all x64 editions (WOW only)|Yes * </br> 32-bit apps running in WOW only|Yes * </br> 32-bit apps running in WOW only|No|
 |Windows Server 2008, all 32-bit editions|Yes *|Yes *|No, but Custom Support Agreements may be available.|
@@ -156,7 +156,7 @@ This section provides additional information regarding the operating systems tha
 |Windows 2003 server. all x64 editions including R2|Yes * </br> 32-bit apps running in WOW only|Yes * </br> 32-bit apps running in WOW only|No|
 
 > [!NOTE]
-> &#42;  VB6 runtime support is limited by the OS support lifecycle.  For example, if the target OS is in Extended support, VB6 cannot have a higher level of support than Extended support.
+> &#42;  VB6 runtime support is limited by the OS support lifecycle.  For example, if the target OS is in Extended support, VB6 cannot have a higher level of support than Extended support.
 
 ## Visual Basic 6.0 runtime usage inside VBA and Office
 

@@ -20,11 +20,11 @@
   
  For example, suppose that this is recognized text:  
   
- “july four at twelve thirty one PM, I bought one point six kilograms of fish for fourteen dollars and six cents, at the pike place market in seattle washington nine eight one two two“  
+ "july four at twelve thirty one PM, I bought one point six kilograms of fish for fourteen dollars and six cents, at the pike place market in seattle washington nine eight one two two"  
   
  This is the same text after normalization:  
   
- “July 4 at 12:31 PM, I bought 1.6 kg of fish for $14.06, at the pike place market in Seattle WA 98122“  
+ "July 4 at 12:31 PM, I bought 1.6 kg of fish for $14.06, at the pike place market in Seattle WA 98122"  
   
  In this example there are five substitutions, each of which would be described by an instance of <xref:System.Speech.Recognition.ReplacementText>.  
   

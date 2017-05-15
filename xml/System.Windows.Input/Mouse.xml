@@ -371,6 +371,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Capture">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Captures mouse input to the specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an element captures the mouse, it receives mouse input whether or not the cursor is within its borders.  
+  
+ If a <xref:System.Windows.Input.CaptureMode> is not specified, the default <xref:System.Windows.Input.CaptureMode> is <xref:System.Windows.Input.CaptureMode.Element>.  
+  
+ To release mouse capture, call <xref:System.Windows.Input.Mouse.Capture%2A> passing `null` as the element to capture.  
+  
+ If the mouse is captured when a <xref:System.Windows.Input.Mouse.MouseDown> or <xref:System.Windows.Input.Mouse.MouseUp> event is raised and the input is not going to the element underneath the mouse, <xref:System.Windows.Input.Mouse.PreviewMouseDownOutsideCapturedElement> and <xref:System.Windows.Input.Mouse.PreviewMouseUpOutsideCapturedElement> are raised first.  This enables the captured element a chance to release capture before the <xref:System.Windows.Input.Mouse.MouseDown> and <xref:System.Windows.Input.Mouse.MouseUp> events are routed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Capture">
       <MemberSignature Language="C#" Value="public static bool Capture (System.Windows.IInputElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Capture(class System.Windows.IInputElement element) cil managed" />
@@ -397,7 +420,7 @@
 ## Remarks  
  When an element captures the mouse, it receives mouse input whether or not the cursor is within its borders.  
   
- If a <xref:System.Windows.Input.CaptureMode> is not specified, the default <xref:System.Windows.Input.CaptureMode> is <xref:System.Windows.Input.CaptureMode>.  
+ If a <xref:System.Windows.Input.CaptureMode> is not specified, the default <xref:System.Windows.Input.CaptureMode> is <xref:System.Windows.Input.CaptureMode.Element>.  
   
  To release mouse capture, call <xref:System.Windows.Input.Mouse.Capture%2A> passing `null` as the element to capture.  
   
@@ -636,7 +659,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to determine whether the left mouse button is pressed by checking if the state of the <xref:System.Windows.Input.Mouse.LeftButton%2A> is equal to the <xref:System.Windows.Input.MouseButtonState> enumeration value <xref:System.Windows.Input.MouseButtonState>.  If the button is pressed, a method is called which updates display elements in the sample.  
+ The following example shows how to determine whether the left mouse button is pressed by checking if the state of the <xref:System.Windows.Input.Mouse.LeftButton%2A> is equal to the <xref:System.Windows.Input.MouseButtonState> enumeration value <xref:System.Windows.Input.MouseButtonState.Pressed>.  If the button is pressed, a method is called which updates display elements in the sample.  
   
  [!code-csharp[MouseRelatedSnippets#MouseRelatedSnippetsGetLeftButtonMouse](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseRelatedSnippets/CSharp/Window1.xaml.cs#mouserelatedsnippetsgetleftbuttonmouse)]
  [!code-vb[MouseRelatedSnippets#MouseRelatedSnippetsGetLeftButtonMouse](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseRelatedSnippets/visualbasic/window1.xaml.vb#mouserelatedsnippetsgetleftbuttonmouse)]  
@@ -688,7 +711,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to determine whether the middle mouse button is pressed by checking if the state of the <xref:System.Windows.Input.Mouse.MiddleButton%2A> is equal to the <xref:System.Windows.Input.MouseButtonState> enumeration value <xref:System.Windows.Input.MouseButtonState>.  If the button is pressed, a method is called which updates display elements in the sample.  
+ The following example shows how to determine whether the middle mouse button is pressed by checking if the state of the <xref:System.Windows.Input.Mouse.MiddleButton%2A> is equal to the <xref:System.Windows.Input.MouseButtonState> enumeration value <xref:System.Windows.Input.MouseButtonState.Pressed>.  If the button is pressed, a method is called which updates display elements in the sample.  
   
  [!code-csharp[MouseRelatedSnippets#MouseRelatedSnippetsGetMiddleButtonMouse](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseRelatedSnippets/CSharp/Window1.xaml.cs#mouserelatedsnippetsgetmiddlebuttonmouse)]
  [!code-vb[MouseRelatedSnippets#MouseRelatedSnippetsGetMiddleButtonMouse](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseRelatedSnippets/visualbasic/window1.xaml.vb#mouserelatedsnippetsgetmiddlebuttonmouse)]  
@@ -1465,7 +1488,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to determine whether the right mouse button is pressed by checking if the state of the <xref:System.Windows.Input.Mouse.RightButton%2A> is equal to the <xref:System.Windows.Input.MouseButtonState> enumeration value <xref:System.Windows.Input.MouseButtonState>.  If the button is pressed, a method is called which updates display elements in the sample.  
+ The following example shows how to determine whether the right mouse button is pressed by checking if the state of the <xref:System.Windows.Input.Mouse.RightButton%2A> is equal to the <xref:System.Windows.Input.MouseButtonState> enumeration value <xref:System.Windows.Input.MouseButtonState.Pressed>.  If the button is pressed, a method is called which updates display elements in the sample.  
   
  [!code-csharp[MouseRelatedSnippets#MouseRelatedSnippetsGetRightButtonMouse](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseRelatedSnippets/CSharp/Window1.xaml.cs#mouserelatedsnippetsgetrightbuttonmouse)]
  [!code-vb[MouseRelatedSnippets#MouseRelatedSnippetsGetRightButtonMouse](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseRelatedSnippets/visualbasic/window1.xaml.vb#mouserelatedsnippetsgetrightbuttonmouse)]  
@@ -1563,7 +1586,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to determine whether the first extended mouse button is pressed by checking if the state of <xref:System.Windows.Input.Mouse.XButton1%2A> is equal to the <xref:System.Windows.Input.MouseButtonState> enumeration value <xref:System.Windows.Input.MouseButtonState>.  If the button is pressed, a method is called which updates display elements in the sample.  
+ The following example shows how to determine whether the first extended mouse button is pressed by checking if the state of <xref:System.Windows.Input.Mouse.XButton1%2A> is equal to the <xref:System.Windows.Input.MouseButtonState> enumeration value <xref:System.Windows.Input.MouseButtonState.Pressed>.  If the button is pressed, a method is called which updates display elements in the sample.  
   
  [!code-csharp[MouseRelatedSnippets#MouseRelatedSnippetsGetX1ButtonMouse](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseRelatedSnippets/CSharp/Window1.xaml.cs#mouserelatedsnippetsgetx1buttonmouse)]
  [!code-vb[MouseRelatedSnippets#MouseRelatedSnippetsGetX1ButtonMouse](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseRelatedSnippets/visualbasic/window1.xaml.vb#mouserelatedsnippetsgetx1buttonmouse)]  
@@ -1591,7 +1614,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to determine whether the second extended mouse button is pressed by checking if the state of <xref:System.Windows.Input.Mouse.XButton2%2A> is equal to the <xref:System.Windows.Input.MouseButtonState> enumeration value <xref:System.Windows.Input.MouseButtonState>.  If the button is pressed, a method is called which updates display elements in the sample.  
+ The following example shows how to determine whether the second extended mouse button is pressed by checking if the state of <xref:System.Windows.Input.Mouse.XButton2%2A> is equal to the <xref:System.Windows.Input.MouseButtonState> enumeration value <xref:System.Windows.Input.MouseButtonState.Pressed>.  If the button is pressed, a method is called which updates display elements in the sample.  
   
  [!code-csharp[MouseRelatedSnippets#MouseRelatedSnippetsGetX2ButtonMouse](~/samples/snippets/csharp/VS_Snippets_Wpf/MouseRelatedSnippets/CSharp/Window1.xaml.cs#mouserelatedsnippetsgetx2buttonmouse)]
  [!code-vb[MouseRelatedSnippets#MouseRelatedSnippetsGetX2ButtonMouse](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MouseRelatedSnippets/visualbasic/window1.xaml.vb#mouserelatedsnippetsgetx2buttonmouse)]  
@@ -1600,28 +1623,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Capture">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Captures mouse input to the specified element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When an element captures the mouse, it receives mouse input whether or not the cursor is within its borders.  
-  
- If a <xref:System.Windows.Input.CaptureMode> is not specified, the default <xref:System.Windows.Input.CaptureMode> is <xref:System.Windows.Input.CaptureMode>.  
-  
- To release mouse capture, call <xref:System.Windows.Input.Mouse.Capture%2A> passing `null` as the element to capture.  
-  
- If the mouse is captured when a <xref:System.Windows.Input.Mouse.MouseDown> or <xref:System.Windows.Input.Mouse.MouseUp> event is raised and the input is not going to the element underneath the mouse, <xref:System.Windows.Input.Mouse.PreviewMouseDownOutsideCapturedElement> and <xref:System.Windows.Input.Mouse.PreviewMouseUpOutsideCapturedElement> are raised first.  This enables the captured element a chance to release capture before the <xref:System.Windows.Input.Mouse.MouseDown> and <xref:System.Windows.Input.Mouse.MouseUp> events are routed.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

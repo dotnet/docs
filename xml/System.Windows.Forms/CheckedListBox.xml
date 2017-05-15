@@ -31,7 +31,7 @@
   
  To add objects to the list at run time, assign an array of object references with the <xref:System.Windows.Forms.ListBox.ObjectCollection.AddRange%2A> method. The list then displays the default string value for each object. You can add individual items to the list with the <xref:System.Windows.Forms.CheckedListBox.ObjectCollection.Add%2A> method.  
   
- The <xref:System.Windows.Forms.CheckedListBox> object supports three states through the <xref:System.Windows.Forms.CheckState> enumeration: <xref:System.Windows.Forms.CheckState>, <xref:System.Windows.Forms.CheckState>, and <xref:System.Windows.Forms.CheckState>. You must set the state of <xref:System.Windows.Forms.CheckState> in the code because the user interface for a <xref:System.Windows.Forms.CheckedListBox> does not provide a mechanism to do so.  
+ The <xref:System.Windows.Forms.CheckedListBox> object supports three states through the <xref:System.Windows.Forms.CheckState> enumeration: <xref:System.Windows.Forms.CheckState.Checked>, <xref:System.Windows.Forms.CheckState.Indeterminate>, and <xref:System.Windows.Forms.CheckState.Unchecked>. You must set the state of <xref:System.Windows.Forms.CheckState.Indeterminate> in the code because the user interface for a <xref:System.Windows.Forms.CheckedListBox> does not provide a mechanism to do so.  
   
  If <xref:System.Windows.Forms.ListBox.UseTabStops%2A> is `true`, the <xref:System.Windows.Forms.CheckedListBox> will recognize and expand tab characters in an item's text, creating columns. These tab stops are preset and cannot be changed. To use custom tab stops, set <xref:System.Windows.Forms.ListBox.UseTabStops%2A> to `false`, set <xref:System.Windows.Forms.ListBox.UseCustomTabOffsets%2A> to `true`, and add the custom values to the <xref:System.Windows.Forms.ListBox.CustomTabOffsets%2A> collection.  
   
@@ -52,11 +52,11 @@
   
 |Index|Item|Check State|  
 |-----------|----------|-----------------|  
-|0|Object 1|<xref:System.Windows.Forms.CheckState>|  
-|1|Object 2|<xref:System.Windows.Forms.CheckState>|  
-|2|Object 3|<xref:System.Windows.Forms.CheckState>|  
-|3|Object 4|<xref:System.Windows.Forms.CheckState>|  
-|4|Object 5|<xref:System.Windows.Forms.CheckState>|  
+|0|Object 1|<xref:System.Windows.Forms.CheckState.Unchecked>|  
+|1|Object 2|<xref:System.Windows.Forms.CheckState.Checked>|  
+|2|Object 3|<xref:System.Windows.Forms.CheckState.Unchecked>|  
+|3|Object 4|<xref:System.Windows.Forms.CheckState.Indeterminate>|  
+|4|Object 5|<xref:System.Windows.Forms.CheckState.Checked>|  
   
  The second table provides an example of the indexed collection of the checked items.  
   
@@ -805,7 +805,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can create an event handler for this event to specify the size of an item before it is drawn in the <xref:System.Windows.Forms.CheckedListBox.DrawItem> event. The event is raised only when the <xref:System.Windows.Forms.CheckedListBox.DrawMode%2A> property is set to <xref:System.Windows.Forms.DrawMode>.  
+ You can create an event handler for this event to specify the size of an item before it is drawn in the <xref:System.Windows.Forms.CheckedListBox.DrawItem> event. The event is raised only when the <xref:System.Windows.Forms.CheckedListBox.DrawMode%2A> property is set to <xref:System.Windows.Forms.DrawMode.OwnerDrawVariable>.  
   
  The maximum height of a <xref:System.Windows.Forms.ListBox> item is 255 pixels.  
   

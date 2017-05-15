@@ -52,7 +52,7 @@ Defines the configuration. If omitted, it defaults to `Debug`. This property is 
 
 `-v|--verbosity <LEVEL>`
 
-Sets the verbosity level of the command. Allowed levels are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+Sets the verbosity level of the command. Allowed levels are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
 
 ## Examples
 

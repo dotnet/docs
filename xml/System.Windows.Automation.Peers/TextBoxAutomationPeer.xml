@@ -102,10 +102,10 @@
   
 |The value of `patternInterface`|The return value|  
 |-------------------------------------|----------------------|  
-|<xref:System.Windows.Automation.Peers.PatternInterface>|A reference to the current instance of the <xref:System.Windows.Automation.Peers.TextBoxAutomationPeer>.|  
-|<xref:System.Windows.Automation.Peers.PatternInterface>|The <xref:System.Windows.Automation.Peers.ScrollViewerAutomationPeer> for this <xref:System.Windows.Automation.Peers.TextBoxAutomationPeer>.|  
-|<xref:System.Windows.Automation.Peers.PatternInterface>|An object that implements the <xref:System.Windows.Automation.Provider.ITextProvider> interface.|  
-|<xref:System.Windows.Automation.Peers.PatternInterface>|An object that implements the <xref:System.Windows.Automation.Provider.ISynchronizedInputProvider> interface.|  
+|<xref:System.Windows.Automation.Peers.PatternInterface.Value>|A reference to the current instance of the <xref:System.Windows.Automation.Peers.TextBoxAutomationPeer>.|  
+|<xref:System.Windows.Automation.Peers.PatternInterface.Scroll>|The <xref:System.Windows.Automation.Peers.ScrollViewerAutomationPeer> for this <xref:System.Windows.Automation.Peers.TextBoxAutomationPeer>.|  
+|<xref:System.Windows.Automation.Peers.PatternInterface.Text>|An object that implements the <xref:System.Windows.Automation.Provider.ITextProvider> interface.|  
+|<xref:System.Windows.Automation.Peers.PatternInterface.SynchronizedInput>|An object that implements the <xref:System.Windows.Automation.Provider.ISynchronizedInputProvider> interface.|  
   
  ]]></format>
         </remarks>

@@ -257,7 +257,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewTextBoxCell.InitializeEditingControl%2A> method initializes the hosted editing control as described in the base <xref:System.Windows.Forms.DataGridViewCell.InitializeEditingControl%2A?displayProperty=fullName> method. For every invocation, this method also sets the following visual attributes of the editing control:  
   
--   The <xref:System.Windows.Forms.TextBoxBase.BorderStyle%2A> property is set to <xref:System.Windows.Forms.BorderStyle>.  
+-   The <xref:System.Windows.Forms.TextBoxBase.BorderStyle%2A> property is set to <xref:System.Windows.Forms.BorderStyle.None>.  
   
 -   The <xref:System.Windows.Forms.TextBox.Multiline%2A> and <xref:System.Windows.Forms.TextBox.AcceptsReturn%2A> properties are set to `true`.  
   
@@ -291,7 +291,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Windows.Forms.DataGridView.EditMode%2A> property of the <xref:System.Windows.Forms.DataGridView> control is set to <xref:System.Windows.Forms.DataGridViewEditMode> or <xref:System.Windows.Forms.DataGridViewEditMode>, the control uses this method to determine whether a key other than F2 that is pressed by the user while this cell has focus will cause the cell to enter edit mode.  
+ When the <xref:System.Windows.Forms.DataGridView.EditMode%2A> property of the <xref:System.Windows.Forms.DataGridView> control is set to <xref:System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke> or <xref:System.Windows.Forms.DataGridViewEditMode.EditOnKeystrokeOrF2>, the control uses this method to determine whether a key other than F2 that is pressed by the user while this cell has focus will cause the cell to enter edit mode.  
   
  This method returns `true` if the e parameter indicates an ordinary data-entry key (such as a letter, number, punctuation mark, or the SPACE key) unmodified by ALT or CTRL, excluding SHIFT+SPACE, which is used by the control for selection purposes. For more information, see [Default Keyboard and Mouse Handling in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/default-keyboard-and-mouse-handling-in-the-windows-forms-datagridview-control.md).  
   

@@ -65,7 +65,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.WritingLevel%2A> property is <xref:System.Windows.Documents.Serialization.WritingProgressChangeLevel>, <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.Number%2A> specifies the number of documents that have been written.  For all other <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.WritingLevel%2A> cases, <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.Number%2A> is the number of pages that have been written.  
+ When the <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.WritingLevel%2A> property is <xref:System.Windows.Documents.Serialization.WritingProgressChangeLevel.FixedDocumentSequenceWritingProgress>, <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.Number%2A> specifies the number of documents that have been written.  For all other <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.WritingLevel%2A> cases, <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.Number%2A> is the number of pages that have been written.  
   
  ]]></format>
         </remarks>
@@ -90,7 +90,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.WritingLevel%2A> property is <xref:System.Windows.Documents.Serialization.WritingProgressChangeLevel>, the <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.Number%2A> property specifies the number of documents that have been written.  For all other <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.WritingLevel%2A> cases, the <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.Number%2A> property is the number of pages that have been written.  
+ When the <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.WritingLevel%2A> property is <xref:System.Windows.Documents.Serialization.WritingProgressChangeLevel.FixedDocumentSequenceWritingProgress>, the <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.Number%2A> property specifies the number of documents that have been written.  For all other <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.WritingLevel%2A> cases, the <xref:System.Windows.Documents.Serialization.WritingProgressChangedEventArgs.Number%2A> property is the number of pages that have been written.  
   
  ]]></format>
         </remarks>

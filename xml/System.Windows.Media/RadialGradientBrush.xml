@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Windows.Media.RadialGradientBrush> is similar in programming model to the <xref:System.Windows.Media.LinearGradientBrush>. However, the linear gradient has a start and an end point to define the gradient vector, while the radial gradient has a circle, along with a focal point, to define the gradient behavior. The circle defines the end point of the gradient. In other words, a gradient stop at 1.0 defines the color at the circle's circumference. The focal point defines the center of the gradient. A gradient stop at 0.0 defines the color at the focal point.  
   
- The following image shows a rectangle filled with a radial gradient. The radial gradient that goes from white to gray. The outside circle represents the gradient circle while the red dot denotes the focal point. This gradient has its <xref:System.Windows.Media.GradientBrush.SpreadMethod%2A> set to <xref:System.Windows.Media.GradientSpreadMethod>.  
+ The following image shows a rectangle filled with a radial gradient. The radial gradient that goes from white to gray. The outside circle represents the gradient circle while the red dot denotes the focal point. This gradient has its <xref:System.Windows.Media.GradientBrush.SpreadMethod%2A> set to <xref:System.Windows.Media.GradientSpreadMethod.Pad>.  
   
  ![A radial gradient with highlighted components](~/add/media/art-radialgradientfocalpoint.jpg "A radial gradient with highlighted components")  
 Radial gradient with a highlighted focal point  

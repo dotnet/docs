@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Transactions.Local</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Interfaces>
     <Interface>
       <InterfaceName>System.Transactions.IEnlistmentNotification</InterfaceName>
@@ -24,7 +28,7 @@
 ## Remarks  
  You should note that even when your resource manager implements this interface to support single phase commit optimization, it is not guaranteed that it receives a single phase commit. The transaction manager can still send two phase commit notifications instead.  
   
- To enlist your resource manager as a participant in a transaction, call the <xref:System.Transactions.Transaction.EnlistVolatile%2A> method or the <xref:System.Transactions.Transaction.EnlistDurable%2A> method of the <xref:System.Transactions.Transaction> class. Specifically, the `EnlistmentOptions` parameter should equal to <xref:System.Transactions.EnlistmentOptions> to ensure that a single phase commit is performed. If it is mistakenly set to <xref:System.Transactions.EnlistmentOptions>, no single phase commit occurs.  
+ To enlist your resource manager as a participant in a transaction, call the <xref:System.Transactions.Transaction.EnlistVolatile%2A> method or the <xref:System.Transactions.Transaction.EnlistDurable%2A> method of the <xref:System.Transactions.Transaction> class. Specifically, the `EnlistmentOptions` parameter should equal to <xref:System.Transactions.EnlistmentOptions.None> to ensure that a single phase commit is performed. If it is mistakenly set to <xref:System.Transactions.EnlistmentOptions.EnlistDuringPrepareRequired>, no single phase commit occurs.  
   
  Since the <xref:System.Transactions.ISinglePhaseNotification> interface derives from the <xref:System.Transactions.IEnlistmentNotification> interface, the resource manager must also implement all the methods of the latter for two phase commit notifications.  It is the transaction manager's choice as to whether two phase commit or the single phase commit optimization is used with this resource manager.  However, implementing this interface gives the resource manager the opportunity to take advantage of the optimization when it is available.  
   
@@ -47,6 +51,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Transactions.Local</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

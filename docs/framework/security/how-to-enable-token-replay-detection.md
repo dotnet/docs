@@ -2,6 +2,7 @@
 title: "How To: Enable Token Replay Detection | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -73,7 +74,7 @@ manager: "mbaldwin"
     ```  
     <system.identityModel>  
         <identityConfiguration>  
-            <tokenReplayDetection enabled=”true”/>  
+            <tokenReplayDetection enabled="true"/>  
     ```  
   
 ## Step 2 – Test Your Solution  

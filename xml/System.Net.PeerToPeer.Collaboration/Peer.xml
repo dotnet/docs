@@ -154,6 +154,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetObjects">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the collection of data objects that were registered by the peer from a local cache.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This functionality is only exposed on the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> class.  This functionality is not exposed on any other type of peer for security reasons.  
+  
+ If no objects are found for the endpoint, a collection of size zero (0) is returned.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetObjects">
       <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerObjectCollection GetObjects ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Net.PeerToPeer.Collaboration.PeerObjectCollection GetObjects() cil managed" />
@@ -181,7 +200,7 @@
 ## Remarks  
  This functionality is only exposed on the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> class.  This functionality is not exposed on any other type of peer for security reasons.  
   
- If the peer collaboration session did not instantiate with a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>, this method cannot access objects on the local computer.  The same is true of the applications registered into the collaboration session.  
+ If the peer collaboration session did not instantiate with a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>, this method cannot access objects on the local computer.  The same is true of the applications registered into the collaboration session.  
   
  The collection of peer objects consists of application, data object, and presence information for the peer or endpoint specified by this instance. If no objects are found for the endpoint, a collection of size zero (0) is returned. If the calling peer is subscribed to this endpoint, the cache is automatically updated; otherwise <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshData%2A> must be called prior to calling this method.  
   
@@ -228,7 +247,7 @@
   
  The collection of peer objects consists of application, data object, and presence information for the peer or endpoint specified by this instance. If no objects are found for the endpoint, a collection of size zero (0) is returned. When the calling peer is subscribed to this endpoint, the cache is automatically updated; otherwise <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshData%2A> must be called prior to calling this method.  
   
- The caller is not required to be signed into the collaboration infrastructure for this method to complete successfully.  A successful call to <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshData%2A> or one of the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe%2A> methods must have been completed while the caller was signed in previous to calling this method. Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the collaboration session begins.  
+ The caller is not required to be signed into the collaboration infrastructure for this method to complete successfully.  A successful call to <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshData%2A> or one of the <xref:System.Net.PeerToPeer.Collaboration.PeerContact.Subscribe%2A> methods must have been completed while the caller was signed in previous to calling this method. Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the collaboration session begins.  
   
  NOTE: Additional overloads are defined on the <xref:System.Net.PeerToPeer.Collaboration.Peer> class instead of the derived classes <xref:System.Net.PeerToPeer.Collaboration.PeerContact> and <xref:System.Net.PeerToPeer.Collaboration.PeerNearMe>.  
   
@@ -269,7 +288,7 @@
 ## Remarks  
  Presence information includes status descriptors such as online, offline, and away.  
   
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>.  
   
  ]]></format>
         </remarks>
@@ -301,7 +320,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the Peer Collaboration session begins.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the Peer Collaboration session begins.  
   
  ]]></format>
         </remarks>
@@ -337,7 +356,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the peer collaboration session begins.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the peer collaboration session begins.  
   
  ]]></format>
         </remarks>
@@ -371,7 +390,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the peer collaboration session begins.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the peer collaboration session begins.  
   
  ]]></format>
         </remarks>
@@ -410,7 +429,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the peer collaboration session begins.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the peer collaboration session begins.  
   
  ]]></format>
         </remarks>
@@ -457,7 +476,7 @@
   
  When this method is used, the <xref:System.Net.PeerToPeer.Collaboration.Peer.InviteCompleted> event can still be raised, but the Cancelled property on the associated <xref:System.Net.PeerToPeer.Collaboration.InviteCompletedEventArgs> object will be set to `true.`  
   
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>.  
   
  ]]></format>
         </remarks>
@@ -485,7 +504,7 @@
 ## Remarks  
  The <xref:System.Net.PeerToPeer.Collaboration.PeerInvitationResponse> specifies the result of the invitation operation.  
   
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>.  
   
  ]]></format>
         </remarks>
@@ -654,24 +673,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetObjects">
-      <AssemblyInfo>
-        <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the collection of data objects that were registered by the peer from a local cache.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This functionality is only exposed on the <xref:System.Net.PeerToPeer.Collaboration.PeerContact> class.  This functionality is not exposed on any other type of peer for security reasons.  
-  
- If no objects are found for the endpoint, a collection of size zero (0) is returned.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

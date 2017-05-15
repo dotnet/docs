@@ -15,6 +15,25 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Acos">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>A mathematical function that returns the angle, in radians, whose cosine is the specified numerical value. This angle is called the arccosine.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [ACOS (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140034).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Acos">
       <MemberSignature Language="C#" Value="public static Nullable&lt;double&gt; Acos (Nullable&lt;decimal&gt; arg1);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;float64&gt; Acos(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; arg1) cil managed" />
@@ -123,6 +142,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Asin">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>A mathematical function that returns the angle, in radians, whose sine is the specified numerical value. This angle is called the arcsine.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [ASIN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140039).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Asin">
       <MemberSignature Language="C#" Value="public static Nullable&lt;double&gt; Asin (Nullable&lt;decimal&gt; arg);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;float64&gt; Asin(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; arg) cil managed" />
@@ -195,6 +233,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Atan">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>A mathematical function that returns the angle, in radians, whose tangent is the specified numerical value. This angle is called the arctangent.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [ATAN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140038).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Atan">
       <MemberSignature Language="C#" Value="public static Nullable&lt;double&gt; Atan (Nullable&lt;decimal&gt; arg);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;float64&gt; Atan(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; arg) cil managed" />
@@ -267,6 +324,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Atan2">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the positive angle, in radians, between the positive x-axis and the ray from the origin through the point (x, y), where x and y are the two specified numerical values. The first parameter passed to the function is the y-value and the second parameter is the x-value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [ATN2 (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140037).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Atan2">
       <MemberSignature Language="C#" Value="public static Nullable&lt;double&gt; Atan2 (Nullable&lt;decimal&gt; arg1, Nullable&lt;decimal&gt; arg2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;float64&gt; Atan2(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; arg1, valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; arg2) cil managed" />
@@ -379,6 +455,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CharIndex">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the starting position of one expression found within another expression.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHARINDEX (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140118).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CharIndex">
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; CharIndex (byte[] toSearch, byte[] target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; CharIndex(unsigned int8[] toSearch, unsigned int8[] target) cil managed" />
@@ -615,6 +710,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Checksum">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the checksum value computed over the input arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Checksum">
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; Checksum (byte[] arg1);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; Checksum(unsigned int8[] arg1) cil managed" />
@@ -1641,6 +1755,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ChecksumAggregate">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the checksum of the values in a collection. Null values are ignored.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM_AGG (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ChecksumAggregate">
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; ChecksumAggregate (System.Collections.Generic.IEnumerable&lt;int&gt; arg);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; ChecksumAggregate(class System.Collections.Generic.IEnumerable`1&lt;int32&gt; arg) cil managed" />
@@ -1709,6 +1840,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Cos">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the trigonometric cosine of the specified angle, in radians.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [COS (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140121).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Cos">
       <MemberSignature Language="C#" Value="public static Nullable&lt;double&gt; Cos (Nullable&lt;decimal&gt; arg);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;float64&gt; Cos(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; arg) cil managed" />
@@ -1781,6 +1931,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Cot">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>A mathematical function that returns the trigonometric cotangent of the specified angle, in radians.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [COT (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140122).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Cot">
       <MemberSignature Language="C#" Value="public static Nullable&lt;double&gt; Cot (Nullable&lt;decimal&gt; arg);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;float64&gt; Cot(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; arg) cil managed" />
@@ -1919,6 +2088,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DataLength">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the number of bytes used to represent any expression.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATALENGTH (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140127).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DataLength">
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DataLength (byte[] arg);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DataLength(unsigned int8[] arg) cil managed" />
@@ -2243,6 +2431,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DateAdd">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a new <see langword="datetime" /> value based on adding an interval to the specified date.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEADD (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=140128)  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DateAdd">
       <MemberSignature Language="C#" Value="public static Nullable&lt;DateTime&gt; DateAdd (string datePartArg, Nullable&lt;double&gt; number, Nullable&lt;DateTime&gt; date);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; DateAdd(string datePartArg, valuetype System.Nullable`1&lt;float64&gt; number, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; date) cil managed" />
@@ -2403,6 +2610,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DateDiff">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the number of date and time boundaries crossed between two specified dates.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEDIFF (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=141344)  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DateDiff">
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DateDiff (string datePartArg, Nullable&lt;DateTime&gt; startDate, Nullable&lt;DateTime&gt; endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DateDiff(string datePartArg, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endDate) cil managed" />
@@ -3043,6 +3269,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DateName">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a character string that represents the specified datepart of the specified date.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATENAME (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141345).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DateName">
       <MemberSignature Language="C#" Value="public static string DateName (string datePartArg, Nullable&lt;DateTime&gt; date);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string DateName(string datePartArg, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; date) cil managed" />
@@ -3195,6 +3440,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DatePart">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an integer that represents the specified datepart of the specified date.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEPART (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141346).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DatePart">
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DatePart (string datePartArg, Nullable&lt;DateTime&gt; date);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DatePart(string datePartArg, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; date) cil managed" />
@@ -3347,6 +3611,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Degrees">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the corresponding angle in degrees for an angle specified in radians.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DEGREES (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141348).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Degrees">
       <MemberSignature Language="C#" Value="public static Nullable&lt;decimal&gt; Degrees (Nullable&lt;decimal&gt; arg1);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; Degrees(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; arg1) cil managed" />
@@ -3529,6 +3812,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Exp">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the exponential value of the specified float expression.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [EXP (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141350).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Exp">
       <MemberSignature Language="C#" Value="public static Nullable&lt;double&gt; Exp (Nullable&lt;decimal&gt; arg);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;float64&gt; Exp(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; arg) cil managed" />
@@ -3772,6 +4074,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Log">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the natural logarithm of the specified input value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [LOG (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141358).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Log">
       <MemberSignature Language="C#" Value="public static Nullable&lt;double&gt; Log (Nullable&lt;decimal&gt; arg);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;float64&gt; Log(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; arg) cil managed" />
@@ -3844,6 +4165,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Log10">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the base-10 logarithm of the specified input value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [LOG10 (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141359).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Log10">
       <MemberSignature Language="C#" Value="public static Nullable&lt;double&gt; Log10 (Nullable&lt;decimal&gt; arg);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;float64&gt; Log10(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; arg) cil managed" />
@@ -4023,6 +4363,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="QuoteName">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a Unicode string with the delimiters added to make the input string a valid Microsoft SQL Server delimited identifier.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [QUOTENAME (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141313).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="QuoteName">
       <MemberSignature Language="C#" Value="public static string QuoteName (string stringArg);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string QuoteName(string stringArg) cil managed" />
@@ -4097,6 +4456,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Radians">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the radian measure corresponding to the specified angle in degrees.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [RADIANS (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141314).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Radians">
       <MemberSignature Language="C#" Value="public static Nullable&lt;decimal&gt; Radians (Nullable&lt;decimal&gt; arg);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; Radians(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; arg) cil managed" />
@@ -4241,6 +4619,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Rand">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a pseudo-random float value from 0 through 1, exclusive.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [RAND (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141315).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Rand">
       <MemberSignature Language="C#" Value="public static Nullable&lt;double&gt; Rand ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;float64&gt; Rand() cil managed" />
@@ -4348,6 +4745,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Sign">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the positive (+1), zero (0), or negative (-1) sign of the specified expression.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SIGN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141323).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Sign">
       <MemberSignature Language="C#" Value="public static Nullable&lt;decimal&gt; Sign (Nullable&lt;decimal&gt; arg);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; Sign(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; arg) cil managed" />
@@ -4492,6 +4908,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Sin">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the trigonometric sine of the specified angle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SIN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141324).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Sin">
       <MemberSignature Language="C#" Value="public static Nullable&lt;double&gt; Sin (Nullable&lt;decimal&gt; arg);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;float64&gt; Sin(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; arg) cil managed" />
@@ -4636,6 +5071,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Square">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the square of the specified number.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SQUARE (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141327).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Square">
       <MemberSignature Language="C#" Value="public static Nullable&lt;double&gt; Square (Nullable&lt;decimal&gt; arg1);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;float64&gt; Square(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; arg1) cil managed" />
@@ -4708,6 +5162,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SquareRoot">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the square root of the specified number.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SQRT (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141328).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SquareRoot">
       <MemberSignature Language="C#" Value="public static Nullable&lt;double&gt; SquareRoot (Nullable&lt;decimal&gt; arg);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;float64&gt; SquareRoot(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; arg) cil managed" />
@@ -4780,6 +5253,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="StringConvert">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns character data converted from numeric data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [STR (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141331).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="StringConvert">
       <MemberSignature Language="C#" Value="public static string StringConvert (Nullable&lt;decimal&gt; number);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string StringConvert(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; number) cil managed" />
@@ -5050,6 +5542,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Tan">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the trigonometric tangent of the input expression.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [TAN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141715).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Tan">
       <MemberSignature Language="C#" Value="public static Nullable&lt;double&gt; Tan (Nullable&lt;decimal&gt; arg);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;float64&gt; Tan(valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; arg) cil managed" />
@@ -5158,6 +5669,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="UserName">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a database user name corresponding to a specified identification number.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
+  
+ This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [USER_NAME (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141718).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="UserName">
       <MemberSignature Language="C#" Value="public static string UserName ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UserName() cil managed" />
@@ -5227,535 +5757,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="DataLength">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the number of bytes used to represent any expression.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATALENGTH (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140127).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Tan">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the trigonometric tangent of the input expression.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [TAN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141715).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="StringConvert">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns character data converted from numeric data.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [STR (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141331).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Degrees">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the corresponding angle in degrees for an angle specified in radians.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DEGREES (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141348).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Log">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the natural logarithm of the specified input value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [LOG (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141358).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DateName">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a character string that represents the specified datepart of the specified date.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATENAME (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141345).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Square">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the square of the specified number.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SQUARE (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141327).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SquareRoot">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the square root of the specified number.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SQRT (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141328).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Radians">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the radian measure corresponding to the specified angle in degrees.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [RADIANS (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141314).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Checksum">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the checksum value computed over the input arguments.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Log10">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the base-10 logarithm of the specified input value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [LOG10 (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141359).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Atan2">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the positive angle, in radians, between the positive x-axis and the ray from the origin through the point (x, y), where x and y are the two specified numerical values. The first parameter passed to the function is the y-value and the second parameter is the x-value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [ATN2 (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140037).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ChecksumAggregate">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the checksum of the values in a collection. Null values are ignored.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHECKSUM_AGG (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140120).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="UserName">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a database user name corresponding to a specified identification number.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [USER_NAME (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141718).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Asin">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>A mathematical function that returns the angle, in radians, whose sine is the specified numerical value. This angle is called the arcsine.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [ASIN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140039).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Cos">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the trigonometric cosine of the specified angle, in radians.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [COS (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140121).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DateDiff">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the number of date and time boundaries crossed between two specified dates.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEDIFF (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=141344)  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Acos">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>A mathematical function that returns the angle, in radians, whose cosine is the specified numerical value. This angle is called the arccosine.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [ACOS (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140034).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Rand">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a pseudo-random float value from 0 through 1, exclusive.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [RAND (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141315).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="QuoteName">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a Unicode string with the delimiters added to make the input string a valid Microsoft SQL Server delimited identifier.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [QUOTENAME (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141313).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Sin">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the trigonometric sine of the specified angle.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SIN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141324).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Exp">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the exponential value of the specified float expression.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [EXP (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141350).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DatePart">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an integer that represents the specified datepart of the specified date.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEPART (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141346).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DateAdd">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a new <see langword="datetime" /> value based on adding an interval to the specified date.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [DATEADD (Transact-SQL).](http://go.microsoft.com/fwlink/?LinkId=140128)  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CharIndex">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the starting position of one expression found within another expression.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [CHARINDEX (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140118).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Sign">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the positive (+1), zero (0), or negative (-1) sign of the specified expression.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [SIGN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=141323).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Atan">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>A mathematical function that returns the angle, in radians, whose tangent is the specified numerical value. This angle is called the arctangent.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [ATAN (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140038).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Cot">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>A mathematical function that returns the trigonometric cotangent of the specified angle, in radians.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You cannot call this function directly. This function can only appear within a LINQ to Entities query.  
-  
- This function is translated to a corresponding function in the database. For information about the corresponding SQL Server function, see [COT (Transact-SQL)](http://go.microsoft.com/fwlink/?LinkId=140122).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

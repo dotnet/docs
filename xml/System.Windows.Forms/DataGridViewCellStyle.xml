@@ -442,7 +442,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property to determine whether the <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A> property has been explicitly set without having to store its default value for comparison. This is useful because the <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A> property has a non-empty default value, unlike most other <xref:System.Windows.Forms.DataGridViewCellStyle> properties, which have default values such as `null`, <xref:System.Drawing.Color.Empty>, or <xref:System.Windows.Forms.DataGridViewContentAlignment>.  
+ Use this property to determine whether the <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A> property has been explicitly set without having to store its default value for comparison. This is useful because the <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A> property has a non-empty default value, unlike most other <xref:System.Windows.Forms.DataGridViewCellStyle> properties, which have default values such as `null`, <xref:System.Drawing.Color.Empty>, or <xref:System.Windows.Forms.DataGridViewContentAlignment.NotSet>.  
   
  ]]></format>
         </remarks>
@@ -476,7 +476,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property to determine whether the <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> property has been explicitly set without having to store its default value for comparison. This is useful because the <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> property has a non-empty default value, unlike most other <xref:System.Windows.Forms.DataGridViewCellStyle> properties, which have default values such as `null`, <xref:System.Drawing.Color.Empty>, or <xref:System.Windows.Forms.DataGridViewContentAlignment>.  
+ Use this property to determine whether the <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> property has been explicitly set without having to store its default value for comparison. This is useful because the <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> property has a non-empty default value, unlike most other <xref:System.Windows.Forms.DataGridViewCellStyle> properties, which have default values such as `null`, <xref:System.Drawing.Color.Empty>, or <xref:System.Windows.Forms.DataGridViewContentAlignment.NotSet>.  
   
  ]]></format>
         </remarks>
@@ -510,7 +510,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property to determine whether the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property has been explicitly set without having to store its default value for comparison. This is useful because the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property has a non-empty default value, unlike most other <xref:System.Windows.Forms.DataGridViewCellStyle> properties, which have default values such as `null`, <xref:System.Drawing.Color.Empty>, or <xref:System.Windows.Forms.DataGridViewContentAlignment>.  
+ Use this property to determine whether the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property has been explicitly set without having to store its default value for comparison. This is useful because the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property has a non-empty default value, unlike most other <xref:System.Windows.Forms.DataGridViewCellStyle> properties, which have default values such as `null`, <xref:System.Drawing.Color.Empty>, or <xref:System.Windows.Forms.DataGridViewContentAlignment.NotSet>.  
   
  ]]></format>
         </remarks>
@@ -753,7 +753,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> is <xref:System.Windows.Forms.DataGridViewTriState> for a cell that contains text, the cell displays the text on a single line, and displays any embedded newline characters as box characters. If <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> is <xref:System.Windows.Forms.DataGridViewTriState> for a cell that contains text, the cell displays newline characters as line breaks, but also wraps any lines that exceed the width of the cell.  
+ If <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> is <xref:System.Windows.Forms.DataGridViewTriState.False> for a cell that contains text, the cell displays the text on a single line, and displays any embedded newline characters as box characters. If <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> is <xref:System.Windows.Forms.DataGridViewTriState.True> for a cell that contains text, the cell displays newline characters as line breaks, but also wraps any lines that exceed the width of the cell.  
   
    
   

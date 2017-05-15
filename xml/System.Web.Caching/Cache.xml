@@ -299,7 +299,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method will overwrite an existing cache item whose key matches the `key` parameter. The object added to the cache using this overload of the `Insert` method is inserted with no file or cache dependencies, a priority of <xref:System.Web.Caching.CacheItemPriority>, a sliding expiration value of <xref:System.Web.Caching.Cache.NoSlidingExpiration>, and an absolute expiration value of <xref:System.Web.Caching.Cache.NoAbsoluteExpiration>.  
+ This method will overwrite an existing cache item whose key matches the `key` parameter. The object added to the cache using this overload of the `Insert` method is inserted with no file or cache dependencies, a priority of <xref:System.Web.Caching.CacheItemPriority.Default>, a sliding expiration value of <xref:System.Web.Caching.Cache.NoSlidingExpiration>, and an absolute expiration value of <xref:System.Web.Caching.Cache.NoAbsoluteExpiration>.  
   
    
   
@@ -340,7 +340,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method will overwrite an existing cache item whose key matches the `key` parameter. The object added to the cache using this overload of the `Insert` method is inserted with no file or cache dependencies, a priority of <xref:System.Web.Caching.CacheItemPriority>, a sliding expiration value of <xref:System.Web.Caching.Cache.NoSlidingExpiration>, and an absolute expiration value of <xref:System.Web.Caching.Cache.NoAbsoluteExpiration>.  
+ This method will overwrite an existing cache item whose key matches the `key` parameter. The object added to the cache using this overload of the `Insert` method is inserted with no file or cache dependencies, a priority of <xref:System.Web.Caching.CacheItemPriority.Default>, a sliding expiration value of <xref:System.Web.Caching.Cache.NoSlidingExpiration>, and an absolute expiration value of <xref:System.Web.Caching.Cache.NoAbsoluteExpiration>.  
   
    
   
@@ -387,7 +387,7 @@
 ## Remarks  
  This method will overwrite an existing `Cache` item with the same `key` parameter.  
   
- If the `slidingExpiration` parameter is set to <xref:System.Web.Caching.Cache>, sliding expiration is disabled. If you set the `slidingExpiration` parameter to greater than <xref:System.TimeSpan>, the `absoluteExpiration` parameter is set to <xref:System.DateTime.Now%2A> plus the value contained in the `slidingExpiration` parameter. If the item is requested from the cache before the amount of time specified by the `absoluteExpiration` parameter, the item will be placed in the cache again, and `absoluteExpiration` will again be set to `DateTime.Now` plus the value contained in the `slidingExpiration` parameter. If the item is not requested from the cache before the date in the `absoluteExpiration` parameter, the item is removed from the cache. . The item added to the cache using this overload of the insert method is inserted with a priority of <xref:System.Web.Caching.CacheItemPriority>.  
+ If the `slidingExpiration` parameter is set to <xref:System.Web.Caching.Cache.NoSlidingExpiration>, sliding expiration is disabled. If you set the `slidingExpiration` parameter to greater than <xref:System.TimeSpan.Zero>, the `absoluteExpiration` parameter is set to <xref:System.DateTime.Now%2A> plus the value contained in the `slidingExpiration` parameter. If the item is requested from the cache before the amount of time specified by the `absoluteExpiration` parameter, the item will be placed in the cache again, and `absoluteExpiration` will again be set to `DateTime.Now` plus the value contained in the `slidingExpiration` parameter. If the item is not requested from the cache before the date in the `absoluteExpiration` parameter, the item is removed from the cache. . The item added to the cache using this overload of the insert method is inserted with a priority of <xref:System.Web.Caching.CacheItemPriority.Default>.  
   
    
   
@@ -448,7 +448,7 @@
   
  This method will overwrite an existing `Cache` item with the same `key` parameter.  
   
- You cannot set both the `absoluteExpiration` and `slidingExpiration` parameters. If you intend the cache item to expire at a specific time, you set the `absoluteExpiration` parameter to the specific time, and the `slidingExpiration` parameter to <xref:System.Web.Caching.Cache>.  
+ You cannot set both the `absoluteExpiration` and `slidingExpiration` parameters. If you intend the cache item to expire at a specific time, you set the `absoluteExpiration` parameter to the specific time, and the `slidingExpiration` parameter to <xref:System.Web.Caching.Cache.NoSlidingExpiration>.  
   
  If you intend the cache item to expire after a set period of time since the item was last accessed, you set the `slidingExpiration` parameter to the expiration interval, and you set the `absoluteExpiration` parameter to <xref:System.Web.Caching.Cache.NoAbsoluteExpiration>.  
   
@@ -499,7 +499,7 @@
 ## Remarks  
  This method will overwrite an existing `Cache` item with the same `key` parameter.  
   
- You cannot set both the `absoluteExpiration` and `slidingExpiration` parameters. If you intend the cache item to expire at a specific time, you set the `absoluteExpiration` parameter to the specific time, and the `slidingExpiration` parameter to <xref:System.Web.Caching.Cache>.  
+ You cannot set both the `absoluteExpiration` and `slidingExpiration` parameters. If you intend the cache item to expire at a specific time, you set the `absoluteExpiration` parameter to the specific time, and the `slidingExpiration` parameter to <xref:System.Web.Caching.Cache.NoSlidingExpiration>.  
   
  If you intend the cache item to expire after a certain amount of time has passed since the last access to the item, you set the `slidingExpiration` parameter to the expiration interval, and the `absoluteExpiration` parameter to <xref:System.Web.Caching.Cache.NoAbsoluteExpiration>.  
   
@@ -581,7 +581,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When used, this field sets the `absoluteExpiration` parameter equal to <xref:System.DateTime>, which is a constant representing the largest possible `DateTime` value, 12/31/9999 11:59:59 PM.  
+ When used, this field sets the `absoluteExpiration` parameter equal to <xref:System.DateTime.MaxValue>, which is a constant representing the largest possible `DateTime` value, 12/31/9999 11:59:59 PM.  
   
    
   

@@ -150,6 +150,30 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ShowDialog">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <permission cref="T:System.Security.Permissions.UIPermission">to execute this method without raising of an exception. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <summary>Displays a common dialog.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:Microsoft.Win32.CommonDialog.ShowDialog%2A> performs initialization tasks for all common dialogs before calling <xref:Microsoft.Win32.CommonDialog.RunDialog%2A>. Since <xref:Microsoft.Win32.CommonDialog.RunDialog%2A> requires an owner window, <xref:Microsoft.Win32.CommonDialog.ShowDialog%2A> attempts to assign one in the following order of precedence:  
+  
+-   The current application's *active window*.  
+  
+-   The current application's *parking window*.  
+  
+-   An internally generated hidden window.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ShowDialog">
       <MemberSignature Language="C#" Value="public virtual Nullable&lt;bool&gt; ShowDialog ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Nullable`1&lt;bool&gt; ShowDialog() cil managed" />
@@ -246,29 +270,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ShowDialog">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <permission cref="T:System.Security.Permissions.UIPermission">to execute this method without raising of an exception. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
-        <summary>Displays a common dialog.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:Microsoft.Win32.CommonDialog.ShowDialog%2A> performs initialization tasks for all common dialogs before calling <xref:Microsoft.Win32.CommonDialog.RunDialog%2A>. Since <xref:Microsoft.Win32.CommonDialog.RunDialog%2A> requires an owner window, <xref:Microsoft.Win32.CommonDialog.ShowDialog%2A> attempts to assign one in the following order of precedence:  
-  
--   The current application's *active window*.  
-  
--   The current application's *parking window*.  
-  
--   An internally generated hidden window.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

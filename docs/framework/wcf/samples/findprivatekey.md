@@ -24,7 +24,7 @@ manager: "erikre"
 It can be difficult to find the location and name of the private key file associated with a specific X.509 certificate in the certificate store. The FindPrivateKey.exe tool facilitates this process.  
   
 > [!IMPORTANT]
->  FindPrivateKey is a sample that needs to be compiled prior to use. See the “To build the FindPrivateKey project” section below for instructions on how to build the FindPrivateKey tool.  
+>  FindPrivateKey is a sample that needs to be compiled prior to use. See the "To build the FindPrivateKey project" section below for instructions on how to build the FindPrivateKey tool.  
   
  X.509 certificates are installed by an Administrator or any user in the machine. However the certificate may be accessed by a service running under a different account (for example, the ASPNET on [!INCLUDE[wxp](../../../../includes/wxp-md.md)] or the NETWORK SERVICE accounts on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)]).  
   
@@ -77,11 +77,11 @@ FindPrivateKey <storeName> <storeLocation> [{ {-n <subjectName>} | {-t <thumbpri
  Where:  
   
 ```  
-       <subjectName> The subject name of the certificate  
-       <thumbprint>  The thumbprint of the certificate (You can use the Certmgr.exe tool to find this)  
-       -f            output file name only  
-       -d            output directory only  
-       -a            output absolute file name  
+       <subjectName> The subject name of the certificate  
+       <thumbprint>  The thumbprint of the certificate (You can use the Certmgr.exe tool to find this)  
+       -f            output file name only  
+       -d            output directory only  
+       -a            output absolute file name  
 ```  
   
  If no parameters are specified at the command prompt then this help text is displayed.  

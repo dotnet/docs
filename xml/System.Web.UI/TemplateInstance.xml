@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.TemplateInstance> enumeration specifies values indicating the number of times an instance of a template can be created. The ttribute class uses values from the <xref:System.Web.UI.TemplateInstance> enumeration. In particular, the ttribute.Single and ttribute.Multiple fields specify single and multiple instances of a template, respectively. A single instance of a template allows you to reference controls that are contained within the template.  
+ The <xref:System.Web.UI.TemplateInstance> enumeration specifies values indicating the number of times an instance of a template can be created. The ttribute class uses values from the <xref:System.Web.UI.TemplateInstanceAttribute> enumeration. In particular, the ttribute.Single and ttribute.Multiple fields specify single and multiple instances of a template, respectively. A single instance of a template allows you to reference controls that are contained within the template.  
   
  Examples of controls that use the Single value in property metadata include the <xref:System.Web.UI.WebControls.WebParts.CatalogZone.ZoneTemplate%2A> property of the <xref:System.Web.UI.WebControls.WebParts.CatalogZone> control, the <xref:System.Web.UI.WebControls.WebParts.EditorZone.ZoneTemplate%2A> property of the <xref:System.Web.UI.WebControls.WebParts.EditorZone> control, and the <xref:System.Web.UI.WebControls.WebParts.WebPartZone.ZoneTemplate%2A> property of the <xref:System.Web.UI.WebControls.WebParts.WebPartZone>.  
   

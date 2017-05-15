@@ -519,8 +519,7 @@
 ## Examples  
  The following example specifies two <xref:System.Windows.ResourceDictionary> elements to be merged into the primary <xref:System.Windows.ResourceDictionary>.  
   
- <!-- TODO: review snippet reference [!code-xml[ResourceMerge#MergedXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ResourceMerge/CS/default.xaml#mergedxaml)]  -->
- <!-- TODO: review snippet reference [!code-xml[ResourceMerge#MergedXAML](~/samples/snippets/xaml/VS_Snippets_Wpf/ResourceMerge/xaml/default.xaml#mergedxaml)]  -->  
+ [!code-xml[ResourceMergeDictionary#MergedXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ResourceMergeDictionary/CS/default.xaml#mergedxaml)]   
   
  ]]></format>
         </remarks>
@@ -569,8 +568,8 @@
         <Parameter Name="scopedElement" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">See Remarks.</param>
-        <param name="scopedElement">See Remarks.</param>
+        <param name="name">Not supported.</param>
+        <param name="scopedElement">Not supported.</param>
         <summary>Not supported by this Dictionary implementation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -649,8 +648,7 @@
 ## Examples  
  The following example specifies two <xref:System.Windows.ResourceDictionary> elements to be merged into the primary <xref:System.Windows.ResourceDictionary>.  
   
- <!-- TODO: review snippet reference [!code-xml[ResourceMerge#MergedXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ResourceMerge/CS/default.xaml#mergedxaml)]  -->
- <!-- TODO: review snippet reference [!code-xml[ResourceMerge#MergedXAML](~/samples/snippets/xaml/VS_Snippets_Wpf/ResourceMerge/xaml/default.xaml#mergedxaml)]  -->  
+ [!code-xml[ResourceMergeDictionary#MergedXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/ResourceMergeDictionary/CS/default.xaml#mergedxaml)]   
   
  ]]></format>
         </remarks>
@@ -804,7 +802,7 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">See Remarks</param>
+        <param name="name">Not supported.</param>
         <summary>Not supported by this Dictionary implementation.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -771,7 +771,7 @@ As a simple example, consider a type provider for accessing scientific data in C
 This section shows how to provide a type that you can use to get rows with a `Distance` property of type `float<meter>` and a `Time` property of type `float<second>`. For simplicity, the following assumptions are made:
 
 
-- Header names are either unit-less or have the form “Name (unit)” and don't contain commas.
+- Header names are either unit-less or have the form "Name (unit)" and don't contain commas.
 <br />
 
 - Units are all Systeme International (SI) units as the [Microsoft.FSharp.Data.UnitSystems.SI.UnitNames Module (F#)](https://msdn.microsoft.com/library/3cb43485-11f5-4aa7-a779-558f19d4013b) module defines.
@@ -937,20 +937,20 @@ extends [mscorlib]System.Object
 .custom instance void [FSharp.Core]Microsoft.FSharp.Core.CompilationMappingAtt
 ribute::.ctor(valuetype [FSharp.Core]Microsoft.FSharp.Core.SourceConstructFlags)
 = ( 01 00 07 00 00 00 00 00 )
-.method public static int32  function1() cil managed
+.method public static int32  function1() cil managed
 {
-// Code size       24 (0x18)
-.maxstack  3
+// Code size       24 (0x18)
+.maxstack  3
 .locals init ([0] object obj1)
-IL_0000:  nop
-IL_0001:  ldstr      "some data"
-IL_0006:  unbox.any  [mscorlib]System.Object
-IL_000b:  stloc.0
-IL_000c:  ldloc.0
-IL_000d:  call       !!0 [FSharp.Core_2]Microsoft.FSharp.Core.LanguagePrimit
+IL_0000:  nop
+IL_0001:  ldstr      "some data"
+IL_0006:  unbox.any  [mscorlib]System.Object
+IL_000b:  stloc.0
+IL_000c:  ldloc.0
+IL_000d:  call       !!0 [FSharp.Core_2]Microsoft.FSharp.Core.LanguagePrimit
 ives/IntrinsicFunctions::UnboxGeneric<string>(object)
-IL_0012:  callvirt   instance int32 [mscorlib_3]System.String::get_Length()
-IL_0017:  ret
+IL_0012:  callvirt   instance int32 [mscorlib_3]System.String::get_Length()
+IL_0017:  ret
 } // end of method Module1::function1
 
 } // end of class Module1

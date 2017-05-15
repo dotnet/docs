@@ -25,7 +25,7 @@ A service behavior that enables a service to use buffered receive processing, wh
 ## Syntax  
   
 ```  
-<behaviors>  <serviceBehaviors>    <behavior name=String">      <bufferReceive maxPendingMessagesPerChannel=”Integer” />    </behavior>  </serviceBehaviors></behaviors>  
+<behaviors>  <serviceBehaviors>    <behavior name=String">      <bufferReceive maxPendingMessagesPerChannel="Integer" />    </behavior>  </serviceBehaviors></behaviors>  
 ```  
   
 ## Attributes and Elements  

@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
@@ -43,64 +44,35 @@
   
  When you inherit from the <see cref="T:System.Data.IDataParameter" /> interface, you should implement the following constructors:  
   
- <list type="table">  
-<listheader>  
-<term> Item  
+ <list type="table"><listheader><term> Item  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> PrvParameter()  
+ </description></listheader><item><term> PrvParameter()  
   
- </term>  
-<description> Initializes a new instance of the Parameter class.  
+ </term><description> Initializes a new instance of the Parameter class.  
   
- </description>  
-</item>  
-<item>  
-<term> PrvParameter(string name, PrvDbType dataType)  
+ </description></item><item><term> PrvParameter(string name, PrvDbType dataType)  
   
- </term>  
-<description> Initializes a new instance of the Parameter class with the parameter name and data type.  
+ </term><description> Initializes a new instance of the Parameter class with the parameter name and data type.  
   
- </description>  
-</item>  
-<item>  
-<term> PrvParameter(string name, object value)  
+ </description></item><item><term> PrvParameter(string name, object value)  
   
- </term>  
-<description> Initializes a new instance of the Parameter class with the parameter name and an object that is the value of the Parameter.  
+ </term><description> Initializes a new instance of the Parameter class with the parameter name and an object that is the value of the Parameter.  
   
- </description>  
-</item>  
-<item>  
-<term> PrvParameter(string name, PrvDbType dataType, int size)  
+ </description></item><item><term> PrvParameter(string name, PrvDbType dataType, int size)  
   
- </term>  
-<description> Initializes a new instance of the Parameter class with the parameter name, data type, and width.  
+ </term><description> Initializes a new instance of the Parameter class with the parameter name, data type, and width.  
   
- </description>  
-</item>  
-<item>  
-<term> PrvParameter(string name, PrvDbType dataType, int size, string srcColumn)  
+ </description></item><item><term> PrvParameter(string name, PrvDbType dataType, int size, string srcColumn)  
   
- </term>  
-<description> Initializes a new instance of the DbParameter class with the parameter name, data type, width, and source column name.  
+ </term><description> Initializes a new instance of the DbParameter class with the parameter name, data type, width, and source column name.  
   
- </description>  
-</item>  
-<item>  
-<term> PrvParameter(string parameterName, PrvDbType dbType, int size, ParameterDirection direction, Boolean isNullable, Byte precision, Byte scale, string srcColumn, DataRowVersion srcVersion, object value)  
+ </description></item><item><term> PrvParameter(string parameterName, PrvDbType dbType, int size, ParameterDirection direction, Boolean isNullable, Byte precision, Byte scale, string srcColumn, DataRowVersion srcVersion, object value)  
   
- </term>  
-<description> Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbParameter" /> class with the parameter name, data type, width, source column name, parameter direction, numeric precision, and other properties.  
+ </term><description> Initializes a new instance of the <see cref="T:System.Data.OleDb.OleDbParameter" /> class with the parameter name, data type, width, source column name, parameter direction, numeric precision, and other properties.  
   
- </description>  
-</item>  
-</list></para>
+ </description></item></list></para>
     </block>
   </Docs>
   <Members>
@@ -112,6 +84,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -149,6 +122,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -194,6 +168,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -237,6 +212,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -279,6 +255,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -321,6 +298,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -364,6 +342,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

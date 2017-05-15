@@ -66,7 +66,7 @@
 ## Remarks  
  The defaults are:  
   
--   The <xref:System.ServiceModel.DeliveryRequirementsAttribute.QueuedDeliveryRequirements%2A> property is set to <xref:System.ServiceModel.QueuedDeliveryRequirementsMode>.  
+-   The <xref:System.ServiceModel.DeliveryRequirementsAttribute.QueuedDeliveryRequirements%2A> property is set to <xref:System.ServiceModel.QueuedDeliveryRequirementsMode.Allowed>.  
   
 -   The <xref:System.ServiceModel.DeliveryRequirementsAttribute.RequireOrderedDelivery%2A> property is set to `false`.  
   
@@ -93,7 +93,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.QueuedDeliveryRequirementsMode> instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to confirm that the binding supports queued delivery. The <xref:System.ServiceModel.QueuedDeliveryRequirementsMode> value instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to confirm that the binding does not support queued delivery.  
+ The <xref:System.ServiceModel.QueuedDeliveryRequirementsMode.Required> instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to confirm that the binding supports queued delivery. The <xref:System.ServiceModel.QueuedDeliveryRequirementsMode.NotAllowed> value instructs [!INCLUDE[indigo2](~/includes/indigo2-md.md)] to confirm that the binding does not support queued delivery.  
   
    
   

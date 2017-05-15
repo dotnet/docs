@@ -17,7 +17,7 @@
 ## Remarks  
  The <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType> enumeration represents date and time interval types.  
   
- Note that if you use the <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType> value, properties other than IntervalType or IntervalOffsetType will treat <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType> as an <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType> value.  
+ Note that if you use the <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.NotSet> value, properties other than IntervalType or IntervalOffsetType will treat <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.NotSet> as an <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType.Auto> value.  
   
  The <xref:System.Web.UI.DataVisualization.Charting.DateTimeIntervalType> values are applicable to the <xref:System.Web.UI.DataVisualization.Charting.LabelStyle>, <xref:System.Web.UI.DataVisualization.Charting.Grid>, <xref:System.Web.UI.DataVisualization.Charting.TickMark> and <xref:System.Web.UI.DataVisualization.Charting.StripLine> classes.  
   

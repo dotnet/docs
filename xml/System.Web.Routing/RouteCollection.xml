@@ -321,6 +321,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Ignore">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines a URL pattern that should not be checked for matches against routes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method creates a route that is mapped to the <xref:System.Web.Routing.StopRoutingHandler> route handler. After you call this method, requests that match the specified URL pattern will not be processed as route requests.  
+  
+ ASP.NET routing automatically ignores requests when the URL matches a physical file, such as an image file. In some cases you might also want routing to ignore requests when there is no physical file. For example, the requests that ASP.NET automatically makes for .axd files should not be treated as route requests even though there is no physical file that corresponds to the .axd file-name extension.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Ignore">
       <MemberSignature Language="C#" Value="public void Ignore (string url);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Ignore(string url) cil managed" />
@@ -498,6 +517,31 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="MapPageRoute">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides a way to define routes for Web Forms applications.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.Routing.RouteCollection.Add%2A> method and passing a <xref:System.Web.Routing.Route> object that is created by using the <xref:System.Web.Routing.PageRouteHandler> class.  
+  
+   
+  
+## Examples  
+ The following example shows how to define routes for a Web Forms application by using this method. The example shows a method named `RegisterRoutes` that is called from `Application_Start` in the Global.asax file. The method uses each overload of <xref:System.Web.Routing.RouteCollection.MapPageRoute%2A> to add a route to the application. For more information about how to define routes for Web Forms applications, see [How to: Define Routes for Web Forms Applications](http://msdn.microsoft.com/library/200fe812-d0a6-4531-b9b4-cfc4ee83a678).  
+  
+ [!code-csharp[System.Web.Routing.RouteCollection.MapPageRoute#122](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.routing.routecollection.mappageroute/cs/global.asax#122)]
+ [!code-vb[System.Web.Routing.RouteCollection.MapPageRoute#122](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.routing.routecollection.mappageroute/vb/global.asax#122)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="MapPageRoute">
       <MemberSignature Language="C#" Value="public System.Web.Routing.Route MapPageRoute (string routeName, string routeUrl, string physicalFile);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Routing.Route MapPageRoute(string routeName, string routeUrl, string physicalFile) cil managed" />
@@ -814,49 +858,5 @@ routes.Ignore("{*allaspx}", new {allaspx=@".*\.aspx(/.*)?"});
           <paramref name="item" /> is already in the collection.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Ignore">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Defines a URL pattern that should not be checked for matches against routes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method creates a route that is mapped to the <xref:System.Web.Routing.StopRoutingHandler> route handler. After you call this method, requests that match the specified URL pattern will not be processed as route requests.  
-  
- ASP.NET routing automatically ignores requests when the URL matches a physical file, such as an image file. In some cases you might also want routing to ignore requests when there is no physical file. For example, the requests that ASP.NET automatically makes for .axd files should not be treated as route requests even though there is no physical file that corresponds to the .axd file-name extension.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="MapPageRoute">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides a way to define routes for Web Forms applications.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is provided for coding convenience. It is equivalent to calling the <xref:System.Web.Routing.RouteCollection.Add%2A> method and passing a <xref:System.Web.Routing.Route> object that is created by using the <xref:System.Web.Routing.PageRouteHandler> class.  
-  
-   
-  
-## Examples  
- The following example shows how to define routes for a Web Forms application by using this method. The example shows a method named `RegisterRoutes` that is called from `Application_Start` in the Global.asax file. The method uses each overload of <xref:System.Web.Routing.RouteCollection.MapPageRoute%2A> to add a route to the application. For more information about how to define routes for Web Forms applications, see [How to: Define Routes for Web Forms Applications](http://msdn.microsoft.com/library/200fe812-d0a6-4531-b9b4-cfc4ee83a678).  
-  
- [!code-csharp[System.Web.Routing.RouteCollection.MapPageRoute#122](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.routing.routecollection.mappageroute/cs/global.asax#122)]
- [!code-vb[System.Web.Routing.RouteCollection.MapPageRoute#122](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.routing.routecollection.mappageroute/vb/global.asax#122)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

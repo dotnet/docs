@@ -37,6 +37,24 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Builds a new <see cref="T:System.Windows.Media.Media3D.GeometryModel3D" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[hittest3d#HitTest3D3DN5](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml.cs#hittest3d3dn5)]
+ [!code-vb[hittest3d#HitTest3D3DN5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTest3D/visualbasic/window1.xaml.vb#hittest3d3dn5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public GeometryModel3D ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -116,7 +134,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Media.Media3D.GeometryModel3D>|  
+|Identifier field|<xref:System.Windows.Media.Media3D.GeometryModel3D.BackMaterialProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -241,7 +259,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Media.Media3D.GeometryModel3D>|  
+|Identifier field|<xref:System.Windows.Media.Media3D.GeometryModel3D.GeometryProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -302,7 +320,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Media.Media3D.GeometryModel3D>|  
+|Identifier field|<xref:System.Windows.Media.Media3D.GeometryModel3D.MaterialProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -333,23 +351,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Builds a new <see cref="T:System.Windows.Media.Media3D.GeometryModel3D" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- [!code-csharp[hittest3d#HitTest3D3DN5](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml.cs#hittest3d3dn5)]
- [!code-vb[hittest3d#HitTest3D3DN5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTest3D/visualbasic/window1.xaml.vb#hittest3d3dn5)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

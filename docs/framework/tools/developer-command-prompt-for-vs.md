@@ -97,4 +97,4 @@ The Developer Command Prompt for Visual Studio automatically sets the environmen
   
 ## See Also  
  [Tools](../../../docs/framework/tools/index.md)   
- [Managing External Tools](http://msdn.microsoft.com/library/f382fd40-a98f-4934-8c9a-5aeae881acde)
+ [Managing External Tools](/visualstudio/ide/managing-external-tools)

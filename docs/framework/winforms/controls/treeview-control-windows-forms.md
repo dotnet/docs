@@ -38,10 +38,10 @@ The Windows Forms `TreeView` control displays a hierarchy of nodes, like the way
  [How to: Determine Which TreeView Node Was Clicked](../../../../docs/framework/winforms/controls/how-to-determine-which-treeview-node-was-clicked-windows-forms.md)  
  Gives instructions for determining which node in a tree view was clicked, so the application can respond appropriately.  
   
- [How to: Iterate Through All Nodes of a Windows Forms TreeView Control](http://msdn.microsoft.com/en-us/427f8928-ebcf-4beb-887f-695b905d5134)  
+ [How to: Iterate Through All Nodes of a Windows Forms TreeView Control](how-to-iterate-through-all-nodes-of-a-windows-forms-treeview-control.md)  
  Gives instructions for examining every node in a tree view.  
   
- [How to: Set Icons for the Windows Forms TreeView Control](http://msdn.microsoft.com/en-us/c14ddcc0-e5a6-4c21-a2d5-6799fd491781)  
+ [How to: Set Icons for the Windows Forms TreeView Control](how-to-set-icons-for-the-windows-forms-treeview-control.md)  
  Gives instructions for displaying icons for the nodes of a tree view.  
   
  [How to: Attach a ShortCut Menu to a TreeView Node](../../../../docs/framework/winforms/controls/how-to-attach-a-shortcut-menu-to-a-treeview-node.md)  

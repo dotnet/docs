@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- There are three possible output property values that a path animation can move along - X, Y, and Angle. By specifying one of these values, you are telling the animation to use that property output value of the path to drive the animation. For example, if you are animating the property that specifies the x-coordinate of an object (i.e. <xref:System.Windows.Media.TranslateTransform.X%2A?displayProperty=fullName>) using a <xref:System.Windows.Media.Animation.PathAnimationSource> of Y, then the animation will animate the x-coordinate of the object using the y-coordinates of the path.  
+ There are three possible output property values that a path animation can move along - X, Y, and Angle. By specifying one of these values, you are telling the animation to use that property output value of the path to drive the animation. For example, if you are animating the property that specifies the x-coordinate of an object (i.e. <xref:System.Windows.Media.TranslateTransform.X%2A?displayProperty=fullName>) using a <xref:System.Windows.Media.Animation.PathAnimationSource.Y?displayProperty=fullName> of Y, then the animation will animate the x-coordinate of the object using the y-coordinates of the path.  
   
  ]]></format>
     </remarks>

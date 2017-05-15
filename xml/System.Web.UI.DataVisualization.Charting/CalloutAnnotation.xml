@@ -349,7 +349,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.DataVisualization.Charting.CalloutAnnotation.CalloutAnchorCap%2A> property sets the style of the anchor cap for the line that connects the annotation with the anchor point. This property is only applicable when a <xref:System.Web.UI.DataVisualization.Charting.CalloutStyle> or <xref:System.Web.UI.DataVisualization.Charting.CalloutStyle> callout style is used.  
+ The <xref:System.Web.UI.DataVisualization.Charting.CalloutAnnotation.CalloutAnchorCap%2A> property sets the style of the anchor cap for the line that connects the annotation with the anchor point. This property is only applicable when a <xref:System.Web.UI.DataVisualization.Charting.CalloutStyle.SimpleLine> or <xref:System.Web.UI.DataVisualization.Charting.CalloutStyle.Borderline> callout style is used.  
   
  ]]></format>
         </remarks>

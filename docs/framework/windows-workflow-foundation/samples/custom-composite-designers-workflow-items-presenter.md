@@ -20,7 +20,7 @@ The [System.Activities.Presentation.WorkflowItemsPresenter](https://msdn.microso
   
 -   Creating a custom activity designer with a [System.Activities.Presentation.WorkflowItemsPresenter](https://msdn.microsoft.com/library/system.activities.presentation.workflowitemspresenter\(v=vs.110\).aspx).  
   
--   Creating an activity designer with a “collapsed” and “expanded” view.  
+-   Creating an activity designer with a "collapsed" and "expanded" view.  
   
 -   Overriding a default designer in a rehosted application.  
   
@@ -168,4 +168,4 @@ End Sub
   
 ## See Also  
  <xref:System.Activities.Presentation.WorkflowItemsPresenter>   
- [Developing Applications with the Workflow Designer](http://msdn.microsoft.com/library/4cd062b1-b496-4668-bbc1-ee85545e066d)
+ [Developing Applications with the Workflow Designer](/visualstudio/workflow-designer/developing-applications-with-the-workflow-designer)

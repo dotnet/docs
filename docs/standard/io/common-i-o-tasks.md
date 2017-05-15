@@ -24,7 +24,7 @@ The <xref:System.IO> namespace provides several classes that allow for various a
 |To do this...|See the example in this topic...|  
 |-------------------|--------------------------------------|  
 |Create a text file|<xref:System.IO.File.CreateText%2A?displayProperty=fullName> method<br /><br /> <xref:System.IO.FileInfo.CreateText%2A?displayProperty=fullName> method<br /><br /> <xref:System.IO.File.Create%2A?displayProperty=fullName> method<br /><br /> <xref:System.IO.FileInfo.Create%2A?displayProperty=fullName> method|  
-|Write to a text file|[How to: Write Text to a File](../../../docs/standard/io/how-to-write-text-to-a-file.md)<br /><br /> [How to: Write a Text File (C++/CLI)](http://msdn.microsoft.com/library/39ecdba6-84e0-485c-a202-84cf6d7b8d4a)|  
+|Write to a text file|[How to: Write Text to a File](../../../docs/standard/io/how-to-write-text-to-a-file.md)<br /><br /> [How to: Write a Text File (C++/CLI)](/cpp/dotnet/how-to-write-a-text-file-cpp-cli)|  
 |Read from a text file|[How to: Read Text from a File](../../../docs/standard/io/how-to-read-text-from-a-file.md)|  
 |Append text to a file|[How to: Open and Append to a Log File](../../../docs/standard/io/how-to-open-and-append-to-a-log-file.md)<br /><br /> <xref:System.IO.File.AppendText%2A?displayProperty=fullName> method<br /><br /> <xref:System.IO.FileInfo.AppendText%2A?displayProperty=fullName> method|  
 |Rename or move a file|<xref:System.IO.File.Move%2A?displayProperty=fullName> method<br /><br /> <xref:System.IO.FileInfo.MoveTo%2A?displayProperty=fullName> method|  

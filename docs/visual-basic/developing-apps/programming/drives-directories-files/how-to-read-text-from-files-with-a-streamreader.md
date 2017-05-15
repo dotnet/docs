@@ -60,5 +60,5 @@ The `My.Computer.FileSystem` object provides methods to open a <xref:System.IO.T
  <xref:System.Windows.Forms.OpenFileDialog>   
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFileWriter%2A>   
  <xref:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFileReader%2A>   
- [SaveFileDialog Component](http://msdn.microsoft.com/library/6f5d9321-37d7-4448-ac4c-a33c42b2a766)   
+ [SaveFileDialog Component](../../../../framework/winforms/controls/savefiledialog-component-windows-forms.md)   
  [Reading from Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)

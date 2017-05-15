@@ -1289,6 +1289,29 @@ static class Program
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetUnhandledExceptionMode">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Instructs the application how to respond to unhandled exceptions.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example sets event handlers for exceptions that occur on Windows Forms threads and exceptions that occur on other threads. It sets <xref:System.Windows.Forms.Application.SetUnhandledExceptionMode%2A> so that all exceptions are handled by the application, regardless of the settings in the application's user configuration file. It uses the <xref:System.Windows.Forms.Application.ThreadException> event to handle UI thread exceptions, and the <xref:System.AppDomain.UnhandledException> event to handle non-UI thread exceptions. Since <xref:System.AppDomain.UnhandledException> cannot prevent an application from terminating, the example simply logs the error in the application event log before termination.  
+  
+ This example assumes that you have defined two <xref:System.Windows.Forms.Button> controls, `button1` and `button2`, on your <xref:System.Windows.Forms.Form> class.  
+  
+ [!code-cpp[Classic Application.ThreadException Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Application.ThreadException Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic Application.ThreadException Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Application.ThreadException Example/CS/source.cs#1)]
+ [!code-vb[Classic Application.ThreadException Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic Application.ThreadException Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetUnhandledExceptionMode">
       <MemberSignature Language="C#" Value="public static void SetUnhandledExceptionMode (System.Windows.Forms.UnhandledExceptionMode mode);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetUnhandledExceptionMode(valuetype System.Windows.Forms.UnhandledExceptionMode mode) cil managed" />
@@ -1362,9 +1385,9 @@ static class Program
   
  Call <xref:System.Windows.Forms.Application.SetUnhandledExceptionMode%2A> before you instantiate the main form of your application using the <xref:System.Windows.Forms.Application.Run%2A> method.  
   
- When `threadScope` is `true`, the thread exception mode is set. The thread exception mode overrides the application exception mode if `mode` is not set to <xref:System.Windows.Forms.UnhandledExceptionMode>.  
+ When `threadScope` is `true`, the thread exception mode is set. The thread exception mode overrides the application exception mode if `mode` is not set to <xref:System.Windows.Forms.UnhandledExceptionMode.Automatic>.  
   
- When `threadScope` is `false`, the application exception mode is set. The application exception mode is used for all threads that have the <xref:System.Windows.Forms.UnhandledExceptionMode> mode. Setting the application exception mode does not affect the setting of the current thread.  
+ When `threadScope` is `false`, the application exception mode is set. The application exception mode is used for all threads that have the <xref:System.Windows.Forms.UnhandledExceptionMode.Automatic> mode. Setting the application exception mode does not affect the setting of the current thread.  
   
  To catch exceptions that occur in threads not created and owned by Windows Forms, use the <xref:System.AppDomain.UnhandledException> event handler.  
   
@@ -1653,28 +1676,5 @@ static class Program
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SetUnhandledExceptionMode">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Instructs the application how to respond to unhandled exceptions.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code example sets event handlers for exceptions that occur on Windows Forms threads and exceptions that occur on other threads. It sets <xref:System.Windows.Forms.Application.SetUnhandledExceptionMode%2A> so that all exceptions are handled by the application, regardless of the settings in the application's user configuration file. It uses the <xref:System.Windows.Forms.Application.ThreadException> event to handle UI thread exceptions, and the <xref:System.AppDomain.UnhandledException> event to handle non-UI thread exceptions. Since <xref:System.AppDomain.UnhandledException> cannot prevent an application from terminating, the example simply logs the error in the application event log before termination.  
-  
- This example assumes that you have defined two <xref:System.Windows.Forms.Button> controls, `button1` and `button2`, on your <xref:System.Windows.Forms.Form> class.  
-  
- [!code-cpp[Classic Application.ThreadException Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic Application.ThreadException Example/CPP/source.cpp#1)]
- [!code-csharp[Classic Application.ThreadException Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic Application.ThreadException Example/CS/source.cs#1)]
- [!code-vb[Classic Application.ThreadException Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic Application.ThreadException Example/VB/source.vb#1)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

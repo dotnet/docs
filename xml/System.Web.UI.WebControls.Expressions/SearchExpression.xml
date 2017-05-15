@@ -168,9 +168,9 @@
   
 |Enumeration|Description|  
 |-----------------|-----------------|  
-|<xref:System.Web.UI.WebControls.Expressions.SearchType>|Indicates a search that starts anywhere in a field.|  
-|<xref:System.Web.UI.WebControls.Expressions.SearchType>|Indicates a search that starts at the beginning of a field.|  
-|<xref:System.Web.UI.WebControls.Expressions.SearchType>|Indicates a search that at the end of a field.|  
+|<xref:System.Web.UI.WebControls.Expressions.SearchType.StartsWith>|Indicates a search that starts anywhere in a field.|  
+|<xref:System.Web.UI.WebControls.Expressions.SearchType.Contains>|Indicates a search that starts at the beginning of a field.|  
+|<xref:System.Web.UI.WebControls.Expressions.SearchType.EndsWith>|Indicates a search that at the end of a field.|  
   
  ]]></format>
         </remarks>

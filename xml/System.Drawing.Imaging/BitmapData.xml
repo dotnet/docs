@@ -124,7 +124,7 @@
  The following code example demonstrates how to use the <xref:System.Drawing.Image.PixelFormat%2A>, <xref:System.Drawing.Image.Height%2A>, <xref:System.Drawing.Image.Width%2A>, and <xref:System.Drawing.Imaging.BitmapData.Scan0%2A> properties; the <xref:System.Drawing.Bitmap.LockBits%2A> and <xref:System.Drawing.Bitmap.UnlockBits%2A> methods; and the <xref:System.Drawing.Imaging.ImageLockMode> enumeration. This example is designed to be used with Windows Forms. To run this example, paste it into a form and handle the form's Paint event by calling the `LockUnlockBitsExample` method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
   
 > [!NOTE]
->  The following example code was created for use with an image with the <xref:System.Drawing.Imaging.PixelFormat> format.  
+>  The following example code was created for use with an image with the <xref:System.Drawing.Imaging.PixelFormat.Format24bppRgb> format.  
   
  [!code-cpp[System.Drawing.BitmapMembers#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.BitmapMembers/CPP/form1.cpp#5)]
  [!code-csharp[System.Drawing.BitmapMembers#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.BitmapMembers/CS/form1.cs#5)]

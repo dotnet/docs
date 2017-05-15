@@ -1482,15 +1482,11 @@
 ## Remarks  
  This property is a convenience feature that indicates whether a <xref:System.Numerics.BigInteger> value is evenly divisible by two. It is equivalent to the following expression:  
   
- [C#]  
-  
-```  
+```csharp  
 value % 2 == 0;  
 ```  
   
- [Visual Basic]  
-  
-```  
+```vb  
 value Mod 2 = 0  
 ```  
   

@@ -64,9 +64,7 @@ With [!INCLUDE[csprcslong](../../../../includes/csprcslong-md.md)], you can crea
   
 2.  Locate the `class` statement. Immediately after the `{`, type the following code:  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     // Creates the private variable that will store the value of your   
     // property.  
     private int varValue;  
@@ -137,9 +135,7 @@ With [!INCLUDE[csprcslong](../../../../includes/csprcslong-md.md)], you can crea
   
 9. Insert the following line of code.  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     label1.Text = valueButton1.ButtonValue.ToString();  
     ```  
   

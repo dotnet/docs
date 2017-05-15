@@ -38,9 +38,7 @@
 ## Examples  
  The following example uses <xref:System.Data.OracleClient.OracleCommand>, along with <xref:System.Data.OracleClient.OracleDataAdapter> and <xref:System.Data.OracleClient.OracleConnection>, to select rows from a database. The example is passed an initialized <xref:System.Data.DataSet>, a connection string, a query string that is an SQL SELECT statement, and a string that is the name of the database table. The example then creates an <xref:System.Data.OracleClient.OracleCommandBuilder>.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Private Function SelectOracleRows(connection As String, queryString As String, tableName As String) As DataSet  
   
    Dim connection As New OracleConnection(connection)  
@@ -60,9 +58,7 @@ Private Function SelectOracleRows(connection As String, queryString As String, t
 End Function  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQuery, string myTableName)  
 {  
    OracleConnection myConn = new OracleConnection(myConnection);  

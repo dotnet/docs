@@ -1043,14 +1043,10 @@
   
 ```csharp  
 myFilters[filter]  
-  
 ```  
   
- [Visual Basic]  
-  
-```  
+```vb  
 myFilters(filter)  
-  
 ```  
   
  You can also use the `Item` property to add new elements by setting the values of a `filter`/filter data pair that does not exist in the action filter table. However if `filter` is already in the table, setting the `Item` property overwrites the old value. In contrast, the <xref:System.ServiceModel.Dispatcher.XPathMessageFilterTable%601.Add%2A> method does not modify the filter data of an existing `filter`.  

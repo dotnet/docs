@@ -3874,15 +3874,11 @@
   
  The <xref:System.DateTimeOffset.ToFileTime%2A> method converts the current <xref:System.DateTimeOffset> object's date and time to UTC before it performs the conversion. In other words, calling the <xref:System.DateTimeOffset.ToFileTime%2A> method is equivalent to the following method call:  
   
- [C#]  
-  
-```  
+```csharp  
 this.ToUtcDateTime().ToFileTime();  
 ```  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Me.ToUtcDateTime().ToFileTime()  
 ```  
   

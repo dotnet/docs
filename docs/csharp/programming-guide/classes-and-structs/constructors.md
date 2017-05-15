@@ -41,7 +41,7 @@ Whenever a [class](../../../csharp/language-reference/keywords/class.md) or [str
 
 ## Default constructors
   
-If you don't provide a constructor for your class, C# creates one by default that instantiates the object and sets member variables to the default values as listed in the [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md). If you do not provide a constructor for your struct, C# replies on an *implicit default constructor* to automatically initialize each field of a value type to its default value as listed in the [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md). For more information and examples, see [Instance Constructors](../../../csharp/programming-guide/classes-and-structs/instance-constructors.md).  
+If you don't provide a constructor for your class, C# creates one by default that instantiates the object and sets member variables to the default values as listed in the [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md). If you don't provide a constructor for your struct, C# replies on an *implicit default constructor* to automatically initialize each field of a value type to its default value as listed in the [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md). For more information and examples, see [Instance Constructors](../../../csharp/programming-guide/classes-and-structs/instance-constructors.md).  
 
 ## Constructor syntax
 
@@ -55,7 +55,7 @@ If a constructor can be implemented as a single statement, you can use an [expre
 
 ## Static constructors
 
-The previous examples have all shown instance constructors, which create a new object. A class or struct can also have a static constructor, which initializes static members of the type.  Static constructors are parameterless. If you do not provide a static constructor to initialize static fields, the C# compiler will supply a default static constructor that initializes fields to their default value as listed in the [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md). 
+The previous examples have all shown instance constructors, which create a new object. A class or struct can also have a static constructor, which initializes static members of the type.  Static constructors are parameterless. If you don't provide a static constructor to initialize static fields, the C# compiler will supply a default static constructor that initializes fields to their default value as listed in the [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md). 
 
 The following example uses a static constructor to initialize a static field.
 

@@ -16,7 +16,7 @@ ms.author: "ronpet"
 # Expression-bodied members (C# programming guide)
 Expression body definitions let you provide a member's implementation in a very concise, readable form. You can use an expression body definition whenever the logic for any supported member, such as a method or property, consists of a single expression. An expression body definition has the following general syntax:
 
-```cs
+```csharp
 member => expression;
 ```
 
@@ -73,7 +73,7 @@ The following example defines a `Location.Name` property whose property get acce
 
 Read-only properties that use an expression body definition can be implemented without an explicit `set` statement. The syntax is:
 
-```cs
+```csharp
 PropertyName => returnValue;
 ```
 

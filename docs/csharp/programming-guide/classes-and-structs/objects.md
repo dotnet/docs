@@ -78,7 +78,7 @@ A class or struct definition is like a blueprint that specifies what the type ca
   
 -   [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
   
--   [Destructors](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
+-   [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
   
 -   [Events](../../../csharp/programming-guide/events/index.md)  
   

@@ -76,7 +76,7 @@ All types and type members have an accessibility level, which controls whether t
   
  User-defined operators must always be declared as public. For more information, see [operator (C# Reference)](../../../csharp/language-reference/keywords/operator.md).  
   
- Destructors cannot have accessibility modifiers.  
+ Finalizers cannot have accessibility modifiers.  
   
  To set the access level for a class or struct member, add the appropriate keyword to the member declaration, as shown in the following example.  
   
